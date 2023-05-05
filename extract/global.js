@@ -1,0 +1,108 @@
+const fs = require('fs');
+
+const config = require('./config.json');
+
+global.getExcel = function(file) { return require(`${config.StarRailData_folder}/ExcelOutput/${file}.json`); }
+global.getTextMap = function(langcode) { return require(`${config.StarRailData_folder}/TextMap/TextMap${langcode}.json`); }
+
+const langcodes = ['CHT', 'CN', 'DE', 'EN', 'ES', 'FR', 'ID', 'JP', 'KR', 'PT', 'RU', 'TH', 'VI'];
+
+global.getLanguage = function(abbriev) { return getTextMap(abbriev.toUpperCase()); }
+
+
+global.GetStableHash = require('./GetStableHash.js');
+
+global.TrailblazerHash = -2090701432;
+global.getTrailblazerCanonName = function(textmap, isMale=true) {
+	const str = isMale ? textmap[-1080079556] : textmap[1014580698];
+	if (str.includes('「'))
+		return str.substring(str.indexOf('「')+1, str.indexOf('」'));
+	else if (str.includes('„'))
+		return str.substring(str.indexOf('„')+1, str.indexOf('“'));
+	else if (str.includes('\"'))
+		return str.substring(str.indexOf('\"')+1, str.lastIndexOf('\"'));
+	else
+		return str.substring(str.lastIndexOf(' ')+1);
+};
+
+global.replaceGender = function(str, isMale=true) { return isMale ? replaceGenderM(str) : replaceGenderF(str); }
+global.replaceGenderM = function(str) { return str.replace(/{F#.*?}/gi, '').replace(/{M#(.*?)}/gi, '$1'); }
+global.replaceGenderF = function(str) { return str.replace(/{M#.*?}/gi, '').replace(/{F#(.*?)}/gi, '$1'); }
+
+global.replaceParams = function(str, params) {
+	// if (!str || !params) return str;
+
+	for(let i = 0; i < params.length; i++) {
+		const value = roundTwoDecimals(params[i].Value);
+		str = str.replaceAll(`#${i+1}[i]<`, value+'<');
+		str = str.replaceAll(`#${i+1}[i]%`, roundTwoDecimals(value*100)+'%');
+	}
+	str = str.replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
+	return str.replaceAll('\\n', '\n');
+}
+global.roundTwoDecimals = function(value) {
+	return Math.round(value * 100) / 100;
+}
+
+
+/* =========================================================================================== */
+
+let version = '';
+function setVersion(v) {
+	version = v;
+}
+
+const versioncache = require('./versioncache.json');
+function updateDataVersionAdded(folder, data) {
+	for (let [id, obj] of Object.entries(data)) {
+		if (!versioncache[folder]) versioncache[folder] = {}; // initialize if not exist
+
+		// check if id doesn't exist in version cache
+		if (!versioncache[folder][id] && version !== '') {
+			versioncache[folder][id] = version;
+		}
+
+		if (versioncache[folder][id]) {
+			obj.VersionAdded = versioncache[folder][id];
+		}
+	}
+
+	// save version cache
+	fs.writeFileSync(`./versioncache.json`, JSON.stringify(versioncache, null, '\t'));
+}
+
+// function exportCurve(folder, file) {
+// 	const xcurve = getExcel(file);
+// 	let output = {};
+// 	xcurve.forEach(ele => {
+// 		let curveinfo = {};
+// 		ele.curveInfos.forEach(ele => {
+// 			curveinfo[ele.type] = ele.value;
+// 		});
+// 		output[ele.level] = curveinfo;
+// 	});
+// 	fs.mkdirSync(`${config.starrail_export_folder}/curve`, { recursive: true });
+// 	fs.writeFileSync(`${config.starrail_export_folder}/curve/${folder}.json`, JSON.stringify(output, null, '\t'));
+// }
+
+function exportData(folder, collateFunc, englishonly, skipwrite) {
+	langcodes.forEach(lang => {
+		if(englishonly && lang !== 'EN') return;
+		let data = collateFunc(lang);
+		updateDataVersionAdded(folder, data);
+
+		fs.mkdirSync(`${config.starrail_export_folder}/${lang}`, { recursive: true });
+		if(!skipwrite) {
+			fs.writeFileSync(`${config.starrail_export_folder}/${lang}/${folder}.json`, JSON.stringify(data, null, '\t'));
+			if(JSON.stringify(data).search('undefined') !== -1) console.log('undefined found in '+folder);
+			if(data[""]) console.log('empty key found in '+folder);
+		}
+	});
+	console.log("done "+folder);
+}
+
+module.exports = {
+	setVersion: setVersion,
+	// exportCurve: exportCurve,
+	exportData: exportData
+}

@@ -1,0 +1,2877 @@
+{
+	"1001": {
+		"Id": "1001",
+		"Name": "7 de Março",
+		"ElementType": "Ice",
+		"ElementTypeText": "Gelo",
+		"PathType": "Knight",
+		"PathTypeText": "A Preservação",
+		"Eidolons": [
+			{
+				"Id": "100101",
+				"Name": "Memória de Você",
+				"Description": "Sempre que a Perícia Suprema de 7 de Março Congelar um alvo, ela regenera 6 de Energia."
+			},
+			{
+				"Id": "100102",
+				"Name": "Memória de Ser",
+				"Description": "Ao entrar na batalha, concede um Escudo igual a 24% da DEF de 7 de Março mais 320 ao aliado com menos PV por 3 rodada(s)."
+			},
+			{
+				"Id": "100103",
+				"Name": "Memória de Tudo",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100104",
+				"Name": "Nunca se Renda de Novo",
+				"Description": "O efeito Contra-Ataque do Talento pode ser ativado 1 vez mais em cada rodada. O Dano causado por Contra-Ataques aumenta em 30% da DEF de 7 de Março."
+			},
+			{
+				"Id": "100105",
+				"Name": "Nunca se Esqueça de Novo",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100106",
+				"Name": "É Sempre Assim...",
+				"Description": "Aliados sob a proteção do Escudo concedido pela Perícia restauram PV equivalentes a 4% de seus PV máximos + 106 no início de cada rodada."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100101,
+				"Name": "Flecha Glacial",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Gelo equivalente a <color=#f29e38ff>50%</color> do ATQ de 7 de Março a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Gelo leve a um único inimigo.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 100102,
+				"Name": "O Poder da Fofura",
+				"TriggerKey": "Skill02",
+				"TagType": "Defence",
+				"TagTypeText": "Defesa",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Concede a um único aliado um Escudo que pode absorver Dano igual a <color=#f29e38ff>38%</color> da DEF de 7 de Março mais <color=#f29e38ff>190</color> por 3 rodada(s).\nSe esse aliado tiver 30% ou mais de PV, aumenta significativamente a chance de inimigos atacarem esse aliado.",
+				"SimpleDescription": "Concede um Escudo a um único aliado."
+			},
+			"Ultimate": {
+				"Id": 100103,
+				"Name": "Cascata Glacial",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>90%</color> do ATQ de 7 de Março a todos os inimigos. Ao serem atingidos, os inimigos têm 50% de <u>chance-base</u> de sofrer Congelamento por 1 rodada(s).\nDurante o Congelamento, os inimigos não podem agir e recebem <u>Dano de Gelo Adicional</u> igual a <color=#f29e38ff>30%</color> do ATQ de 7 de Março no início de cada rodada.",
+				"SimpleDescription": "Causa Dano de Gelo a todos os inimigos, com uma chance de também causar Congelamento.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 100104,
+				"Name": "Poder Feminino",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando um aliado com Escudo é atacado por um inimigo, 7 de Março imediatamente <u>Contra-Ataca</u>, causando Dano de Gelo igual a <color=#f29e38ff>50%</color> do ATQ dela. Esse efeito pode ser ativado 2 vez(es) por rodada.",
+				"ElementType": "Ice"
+			},
+			"Technique": {
+				"Id": 100107,
+				"Name": "Beleza Glacial",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Após entrar na batalha, tem 100% de <u>chance-base</u> de causar Congelamento a um inimigo aleatório por 1 rodada(s).\nDurante o Congelamento, o inimigo não pode agir e recebe 50% do ATQ de 7 de Março como Dano de Gelo <u>Adicional</u> no início de cada rodada.",
+				"ElementType": "Ice"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1002": {
+		"Id": "1002",
+		"Name": "Dan Heng",
+		"ElementType": "Wind",
+		"ElementTypeText": "Vento",
+		"PathType": "Rogue",
+		"PathTypeText": "A Caça",
+		"Eidolons": [
+			{
+				"Id": "100201",
+				"Name": "Quanto Mais Alto Você Voa, De Mais Alto Você Cai",
+				"Description": "Quando o inimigo-alvo atacado tem 50% ou mais de PV, a Chance de CRIT aumenta em 12%."
+			},
+			{
+				"Id": "100202",
+				"Name": "Amainar o Octeto Venenoso, Saciar o Vício das Chamas",
+				"Description": "Reduz a recarga do Talento em 1 rodada."
+			},
+			{
+				"Id": "100203",
+				"Name": "Visível e Despercebido",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100204",
+				"Name": "Dragão Rugindo e Sol Crescente",
+				"Description": "Quando Dan Heng usa sua Perícia Suprema para derrotar um inimigo, a próxima ação dele é Avançada Adiante em 100%."
+			},
+			{
+				"Id": "100205",
+				"Name": "Uma Gota de Chuva Alimenta Uma Torrente",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100206",
+				"Name": "A Alma Inquieta Aguarda",
+				"Description": "O estado de Lentidão ativado pela Perícia reduz a VEL do inimigo em mais 8%."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100201,
+				"Name": "Arte de Lanceiro das Nuvens: Ventos do Norte",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Vento igual a <color=#f29e38ff>50%</color> do ATQ de Dan Heng a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Vento leve a um único inimigo.",
+				"ElementType": "Wind"
+			},
+			"Skill": {
+				"Id": 100202,
+				"Name": "Arte de Lanceiro das Nuvens: Enxurrada",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>130%</color> do ATQ de Dan Heng como Dano de Vento a um único inimigo.\nAo realizar um Acerto CRIT, há 100% de <u>chance-base</u> de reduzir a VEL do alvo em 12% por 2 rodada(s).",
+				"SimpleDescription": "Causa Dano de Vento a um único inimigo. Ao realizar um Acerto CRIT, há altas chances de causar Lentidão no inimigo.",
+				"ElementType": "Wind"
+			},
+			"Ultimate": {
+				"Id": 100203,
+				"Name": "Sonho Etéreo",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>240%</color> do ATQ de Dan Heng como Dano de Vento a um único inimigo. Se o inimigo estiver sofrendo de Lentidão, o multiplicador de Dano da Perícia Suprema aumenta em <color=#f29e38ff>72%</color>.",
+				"SimpleDescription": "Causa Dano de Vento massivo a um inimigo. Se o inimigo estiver sofrendo de Lentidão, o multiplicador de Dano causado será maior.",
+				"ElementType": "Wind"
+			},
+			"Talent": {
+				"Id": 100204,
+				"Name": "Superioridade de Alcance",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando Dan Heng é alvo da habilidade de um aliado, a <u>PEN de RES</u> a Vento de seu próximo ataque recebe um aumento de <color=#f29e38ff>18%</color>. Este efeito pode ser ativado novamente depois de 2 rodada(s)."
+			},
+			"Technique": {
+				"Id": 100207,
+				"Name": "Ponta de Lança Divisora",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após Dan Heng usar a sua Técnica, seu ATQ aumenta em 40% no início da próxima batalha por 3 rodada(s)."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1003": {
+		"Id": "1003",
+		"Name": "Himeko",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fogo",
+		"PathType": "Mage",
+		"PathTypeText": "A Erudição",
+		"Eidolons": [
+			{
+				"Id": "100301",
+				"Name": "Infância",
+				"Description": "Após a \"Corrida da Vitória\" ser ativada, a VEL de Himeko tem um aumento de 20% por 2 rodada(s)."
+			},
+			{
+				"Id": "100302",
+				"Name": "Convergência",
+				"Description": "Causa 15% de Dano extra a inimigos cuja porcentagem de PV for igual ou menor que 50%."
+			},
+			{
+				"Id": "100303",
+				"Name": "Equilíbrio",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100304",
+				"Name": "Dedicação",
+				"Description": "Quando a Perícia de Himeko infligir Quebra de Fraqueza em um inimigo, ela ganha 1 ponto(s) extras de Carga."
+			},
+			{
+				"Id": "100305",
+				"Name": "Aspiração",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100306",
+				"Name": "Desbravamento!",
+				"Description": "A Perícia Suprema causa dano mais duas vezes, causando também Dano de Fogo igual a 40% do Dano original a um inimigo aleatório."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100301,
+				"Name": "Ajuste de Lâmina de Serra",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>50%</color> do ATQ de Himeko a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Fogo leve a um único inimigo.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 100302,
+				"Name": "Detonação por Fusão",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Explosão",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>100%</color> do ATQ de Himeko a um único inimigo e <color=#f29e38ff>40%</color> do ATQ de Himeko como Dano de Fogo aos inimigos adjacentes a ele.",
+				"SimpleDescription": "Causa Dano de Fogo a um único inimigo e Dano de Fogo leve a inimigos adjacentes a ele.",
+				"ElementType": "Fire"
+			},
+			"Ultimate": {
+				"Id": 100303,
+				"Name": "Chama Celestial",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>138%</color> do ATQ de Himeko a todos os inimigos. Além disso, Himeko regenera 5 de Energia extra para cada inimigo derrotado.",
+				"SimpleDescription": "Causa Dano de Fogo a todos os inimigos. Se inimigos forem derrotados, regenera Energia.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 100304,
+				"Name": "Corrida da Vitória",
+				"TriggerKey": "SkillP01",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando um inimigo é infligido com Quebra de Fraquza, Himeko ganha 1 ponto de Carga (máximo de 3 pontos).\nSe Himeko estiver com carga total quando um aliado atacar, ela imediatamente realiza 1 <u>Ataque Extra</u>, causa <color=#f29e38ff>70%</color> do ATQ dela como Dano de Fogo a todos os inimigos, consumindo todos os pontos de Carga.\nNo início da batalha, Himeko ganha 1 ponto de Carga.",
+				"ElementType": "Fire"
+			},
+			"Technique": {
+				"Id": 100307,
+				"Name": "Combustão Incompleta",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar a Técnica, cria uma dimensão que dura 15s. Depois entrar em batalha com inimigos na dimensão, há 100% de <u>chance-base</u> de aumentar o Dano de Fogo que os inimigos recebem em 10% por 2 rodada(s). Só 1 dimensão criada por aliados pode existir ao mesmo tempo."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1004": {
+		"Id": "1004",
+		"Name": "Welt",
+		"ElementType": "Imaginary",
+		"ElementTypeText": "Imaginário",
+		"PathType": "Warlock",
+		"PathTypeText": "A Inexistência",
+		"Eidolons": [
+			{
+				"Id": "100401",
+				"Name": "Legado de Honra",
+				"Description": "Após Welt usar sua Perícia Suprema, as habilidades dele são aprimoradas. Da(s) próxima(s) 2 vez(es) que usar seu ATQ Básico ou sua Perícia, causa Dano Adicional de 50% do multiplicador de Dano do ATQ Básico ou 80% do multiplicador de Dano da sua Perícia, respectivamente."
+			},
+			{
+				"Id": "100402",
+				"Name": "Confluência Estelar",
+				"Description": "Quando seu Talento é ativado, Welt regenera 3 de Energia."
+			},
+			{
+				"Id": "100403",
+				"Name": "Prece da Paz",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100404",
+				"Name": "Apelação da Justiça",
+				"Description": "A chance-base para a Perícia infligir Redução de VEL aumenta em 35%."
+			},
+			{
+				"Id": "100405",
+				"Name": "Poder da Bondade",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100406",
+				"Name": "Perspectiva Brilhante",
+				"Description": "Ao usar a Perícia, causa Dano 1 vez a mais a um inimigo aleatório."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100401,
+				"Name": "Supressão Gravitacional",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Imaginário igual a <color=#f29e38ff>50%</color> do ATQ de Welt a um único inimigo.",
+				"SimpleDescription": "Causa Dano Imaginário leve a um único inimigo.",
+				"ElementType": "Imaginary"
+			},
+			"Skill": {
+				"Id": 100402,
+				"Name": "Borda do Vazio",
+				"TriggerKey": "Skill02",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebote",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Imaginário igual a <color=#f29e38ff>36%</color> do ATQ de Welt a um único inimigo e causa Dano mais 2 vezes, causando Dano Imaginário igual a <color=#f29e38ff>36%</color> do ATQ de Welt por acerto a um inimigo aleatório. Ao acertar, há uma <u>chance-base</u> de <color=#f29e38ff>65%</color> de reduzir em 10% a VEL do inimigo por 2 rodada(s).",
+				"SimpleDescription": "Causa Dano Imaginário leve a inimigos aleatórios. Este ataque pode ser Rebatido 3 vezes, com chance de causar Lentidão nos inimigos atingidos.",
+				"ElementType": "Imaginary"
+			},
+			"Ultimate": {
+				"Id": 100403,
+				"Name": "Buraco Negro Sintético",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>90%</color> do ATQ de Welt como Dano Imaginário a todos os inimigos, com 100% de <u>chance-base</u> de que inimigos atingidos por esta habilidade sejam afetados por Aprisionamento por 1 rodada.\nInimigos aprisionados têm <u>ações atrasadas</u> em <color=#f29e38ff>32%</color> e VEL reduzida em 10%.",
+				"SimpleDescription": "Causa Dano Imaginário a todos os inimigos, com altas chances de também causar Aprisionamento.",
+				"ElementType": "Imaginary"
+			},
+			"Talent": {
+				"Id": 100404,
+				"Name": "Distorção Temporal",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Ao atingir um inimigo que já está sob Lentidão, Welt causa um <u>Adicional</u> de <color=#f29e38ff>30%</color> do seu ATQ como Dano Imaginário ao inimigo."
+			},
+			"Technique": {
+				"Id": 100407,
+				"Name": "Aprisionamento Gravitacional",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após Welt usar sua Técnica, cria uma dimensão que dura 15s. Inimigos nessa dimensão têm a VEL de Movimento reduzida em 50%. Depois de entrar em batalha com inimigos na dimensão, há 100% de <u>chance-base</u> de Aprisionar os inimigos por 1 rodada.\nInimigos aprisionados têm <u>ações atrasadas</u> em 20% e VEL reduzida em 10%. Só 1 dimensão criada pelos aliados pode existir ao mesmo tempo."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1005": {
+		"Id": "1005",
+		"Name": "Kafka",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Raio",
+		"PathType": "Warlock",
+		"PathTypeText": "A Inexistência",
+		"Eidolons": [
+			{
+				"Id": "100501",
+				"Name": "Da Capo",
+				"Description": "Ao usar sua Perícia Suprema, os inimigos receberão Dano imediato de todas as fontes de Dano Contínuo em vez de receberem Dano imediato do estado de Choque."
+			},
+			{
+				"Id": "100502",
+				"Name": "Fortississimo",
+				"Description": "Eficiência da Quebra de Fraqueza aumentada em 50%."
+			},
+			{
+				"Id": "100503",
+				"Name": "Capriccio",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100504",
+				"Name": "Recitativo",
+				"Description": "A duração do aumento de Dano Contínuo causado pelo Talento é estendida por 1 rodada(s). Este efeito pode acumular até 2 vez(es)."
+			},
+			{
+				"Id": "100505",
+				"Name": "Doloroso",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100506",
+				"Name": "Leggiero",
+				"Description": "A Perícia Suprema aumenta o multiplicador de Dano do Dano de choque causado aos inimigos em 100% e estende a duração do Choque por 1 rodada(s)."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100501,
+				"Name": "Tumulto da Meia-noite",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>50%</color> do ATQ de Kafka a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Raio leve a um único inimigo.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 100502,
+				"Name": "Luar Carinhoso",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Explosão",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>80%</color> do ATQ de Kafka como Dano de Raio a um inimigo-alvo e <color=#f29e38ff>30%</color> do ATQ de Kafka como Dano de Raio aos inimigos adjacentes a ele.\nSe o inimigo-alvo estiver recebendo Dano Contínuo, todos os Danos Contínuos sobre aquele inimigo causarão Dano imediato de <color=#f29e38ff>80%</color> do seu Dano original.",
+				"SimpleDescription": "Causa Dano de Raio a um inimigo e faz com que o inimigo-alvo receba Dano Contínuo extra. Além disso, causa Dano de Raio leve aos inimigos adjacentes a ele.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 100503,
+				"Name": "Vibração do Crepúsculo",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>48%</color> do ATQ de Kafka como Dano de Raio a todos os inimigos. Há 100% de <u>chance-base</u> de os inimigos atingidos receberem Choque e Dano imediato igual a <color=#f29e38ff>80%</color> do Dano Contínuo. Choque dura 2 rodada(s).\nEnquanto em Choque, inimigos recebem <color=#f29e38ff>75%</color> do ATQ de Kafka como Dano Contínuo de Raio no início de suas rodadas.",
+				"SimpleDescription": "Causa Dano de Raio leve a todos os inimigos, com altas chances de também causar Choque, fazendo com que os inimigos recebam Dano Adicional.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 100504,
+				"Name": "Gentil, Mas Cruel",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Depois que um aliado de Kafka usa um ATQ Básico em um inimigo, Kafka imediatamente usa 1 <u>Ataque Extra</u> e causa <color=#f29e38ff>60%</color> de seu ATQ como Dano de Raio ao inimigo, com chance-base de 100% de aumento do Dano Contínuo infligido em <color=#f29e38ff>15%</color> durante 2 rodadas. Este efeito só pode ser ativado 1 vez por rodada.",
+				"ElementType": "Thunder"
+			},
+			"Technique": {
+				"Id": 100507,
+				"Name": "Misericórdia Não É Perdão",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Após entrar na batalha, causa 50% do ATQ de Kafka como Dano de Raio a um inimigo aleatório. Além disso, todos os inimigos têm 100% de <u>chance-base</u> de receber Choque por 3 rodada(s).\nEnquanto em Choque, inimigos recebem 50% do ATQ de Kafka como Dano Contínuo de Raio no início de cada rodada.",
+				"ElementType": "Thunder"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1006": {
+		"Id": "1006",
+		"Name": "Loba Prateada",
+		"ElementType": "Quantum",
+		"ElementTypeText": "Quântico",
+		"PathType": "Warlock",
+		"PathTypeText": "A Inexistência",
+		"Eidolons": [
+			{
+				"Id": "100601",
+				"Name": "Engenharia Social",
+				"Description": "Quando um inimigo entra na batalha, reduz a RES a Efeito dele em 30% por 2 rodada(s)."
+			},
+			{
+				"Id": "100602",
+				"Name": "Rede de Zumbis",
+				"Description": "Ao usar sua Perícia Suprema, Loba Prateada regenera 8 de Energia para cada penalidade que o inimigo-alvo possui, por até 5 vez(es)."
+			},
+			{
+				"Id": "100603",
+				"Name": "Carga Explosiva",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100604",
+				"Name": "Ataque Rebote",
+				"Description": "Ao usar sua Perícia Suprema, causa Dano Quântico Adicional igual a 20% do ATQ da Loba Prateada para cada penalidade no inimigo-alvo. Este efeito pode ser ativado até 5 vez(es)."
+			},
+			{
+				"Id": "100605",
+				"Name": "Ataque de Força Bruta",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100606",
+				"Name": "Rede Sobreposta",
+				"Description": "Para cada penalidade do inimigo-alvo, aumenta em 20% o Dano causado por Loba Prateada, podendo acumular até 5 vez(es)."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100601,
+				"Name": "Aviso do Sistema",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Quântico igual a <color=#f29e38ff>50%</color> do ATQ de Loba Prateada a um inimigo.",
+				"SimpleDescription": "Causa Dano Quântico leve a um único inimigo.",
+				"ElementType": "Quantum"
+			},
+			"Skill": {
+				"Id": 100602,
+				"Name": "Permitir Mudanças?",
+				"TriggerKey": "Skill02",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Quântico igual a <color=#f29e38ff>70%</color> do ATQ de Loba Prateada a um inimigo, com <color=#f29e38ff>75% </color> de <u>chance-base</u> de infligir o alvo com uma Fraqueza do mesmo Tipo do Tipo de ATQ de um aliado aleatório por 3 rodada(s), e reduz a RES a Dano do inimigo ao mesmo Tipo do ATQ em 20%.\nAlém disso, tem 100% de <u>chance-base</u> de reduzir a RES a Dano do inimigo em <color=#f29e38ff>#6[f1]%</color> por 3 rodada(s).",
+				"SimpleDescription": "Causa Dano Quântico a um único inimigo, com uma chance de infligir Fraquezas extras.",
+				"ElementType": "Quantum"
+			},
+			"Ultimate": {
+				"Id": 100603,
+				"Name": "Usuário Banido",
+				"TriggerKey": "Skill03",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Tem uma <u>chance base</u> de <color=#f29e38ff>85%</color> de diminuir a DEF do inimigo-alvo em <color=#f29e38ff>40%</color> por 3 rodada(s). E, ao mesmo tempo, causa Dano Quântico de <color=#f29e38ff>210%</color> do ATQ de Loba Prateada ao inimigo-alvo.",
+				"SimpleDescription": "Causa Dano Quântico massivo a um único inimigo, com altas chances de diminuir a DEF dele.",
+				"ElementType": "Quantum"
+			},
+			"Talent": {
+				"Id": 100604,
+				"Name": "Esperando Resposta do Sistema...",
+				"TriggerKey": "SkillP01",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Loba Prateada pode criar três tipos de Erros: reduzir em <color=#f29e38ff>#1[f1]%</color> o ATQ, reduzir em <color=#f29e38ff>#2[f1]%</color> a DEF e reduzir em <color=#f29e38ff>#3[f1]%</color> a VEL.\nSempre que a Loba Prateada ataca, tem uma <u>chance-base</u> de <color=#f29e38ff>60%</color> de implantar um Erro aleatório que dura 2 rodada(s) no inimigo-alvo."
+			},
+			"Technique": {
+				"Id": 100607,
+				"Name": "Fechar o Programa",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Após entrar na batalha, ignora os Tipos de Fraqueza e reduz a Tenacidade de todos os inimigos. Inimigos com suas Fraquezas Quebradas desta forma ativarão o efeito de Quebra de Fraqueza contra Dano Quântico.",
+				"ElementType": "Quantum"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1008": {
+		"Id": "1008",
+		"Name": "Arlan",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Raio",
+		"PathType": "Warrior",
+		"PathTypeText": "A Destruição",
+		"Eidolons": [
+			{
+				"Id": "100801",
+				"Name": "Até o Amargo Fim",
+				"Description": "Quando os PV estiverem abaixo ou iguais a 50% dos PV máximos, o Dano da Perícia aumenta em 10%."
+			},
+			{
+				"Id": "100802",
+				"Name": "Libertação",
+				"Description": "Usar a Perícia ou a Perícia Suprema remove 1 penalidade de si mesmo."
+			},
+			{
+				"Id": "100803",
+				"Name": "Superação",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100804",
+				"Name": "Virando o Jogo",
+				"Description": "Ao ser atingido por um golpe fatal depois de entrar em batalha, Arlan restaura seus PV igual a 25% de seus PV máximos ao invés de ser derrubado. Esse efeito é removido automaticamente após ser ativado uma vez ou depois que 2 rodada(s) tiverem passado."
+			},
+			{
+				"Id": "100805",
+				"Name": "Fogo da Forja",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100806",
+				"Name": "Autossacrifício",
+				"Description": "Quando os PV caem para 50% ou menos, a Perícia Suprema causa 20% a mais de Dano. O multiplicador de Dano do Dano recebido pelo inimigo-alvo agora também é aplicado aos inimigos adjacentes."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100801,
+				"Name": "Descarga de Raio",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>50%</color> do ATQ de Arlan a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Raio leve a um único inimigo.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 100802,
+				"Name": "Quebra-Grilhões",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Consome os PV de Arlan, com valor equivalente a 15% de seus PV máximos, para causar <color=#f29e38ff>120%</color> do ATQ de Arlan como Dano de Raio a um único inimigo. Se os PV de Arlan forem insuficientes, os seus PV serão reduzidos a 1 depois de usar a Perícia.",
+				"SimpleDescription": "Consome uma porção dos PV para causar Dano de Raio a um único inimigo.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 100803,
+				"Name": "Punição Frenética",
+				"TriggerKey": "Skill03",
+				"TagType": "Blast",
+				"TagTypeText": "Explosão",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>192%</color> do ATQ de Arlan a um único inimigo e <color=#f29e38ff>96%</color> do ATQ de Arlan como Dano de Raio aos inimigos adjacentes a ele.",
+				"SimpleDescription": "Causa Dano de Raio massivo a um único inimigo e Dano de Raio pequeno a inimigos adjacentes a ele.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 100804,
+				"Name": "Dor e Raiva",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Aumenta o Dano de Arlan com base na porcentagem de PV reduzida de seus PV máximos, até um máximo de <color=#f29e38ff>36%</color> a mais de Dano."
+			},
+			"Technique": {
+				"Id": 100807,
+				"Name": "Colheita Rápida",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Depois de entrar na batalha, causa 80% do ATQ de Arlan como Dano de Raio a todos os inimigos.",
+				"ElementType": "Thunder"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1009": {
+		"Id": "1009",
+		"Name": "Asta",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fogo",
+		"PathType": "Shaman",
+		"PathTypeText": "A Harmonia",
+		"Eidolons": [
+			{
+				"Id": "100901",
+				"Name": "As Estrelas Cantam Sem Versos ou Vocais",
+				"Description": "Ao usar a Perícia, causa Dano 1 vez a mais a um inimigo aleatório."
+			},
+			{
+				"Id": "100902",
+				"Name": "A Lua Fala com Uma Voz Inconstante",
+				"Description": "Ao usar sua Perícia Suprema, os acúmulos de Carga de Asta não serão reduzidos na próxima rodada."
+			},
+			{
+				"Id": "100903",
+				"Name": "Chuva de Meteoros do Desejo",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "100904",
+				"Name": "A Aurora Aquece com Beleza e Alegria",
+				"Description": "A Taxa de Regeneração de Energia de Asta aumenta em 15% quando ela tem 2 ou mais acúmulos de Carga."
+			},
+			{
+				"Id": "100905",
+				"Name": "A Nebulosa se Isola no Cosmo Gélido",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "100906",
+				"Name": "Sonhos Galáticos Tranquilos e Confortáveis",
+				"Description": "A perda de acúmulo(s) de carregamento a cada rodada é diminuída em 1."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100901,
+				"Name": "Raio Espectral",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>50%</color> do ATQ de Asta a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Fogo leve a um único inimigo.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 100902,
+				"Name": "Tempestade de Meteoros",
+				"TriggerKey": "Skill02",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebote",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>25%</color> do ATQ de Asta a um único inimigo e causa Dano mais 4 vezes, com cada acerto causando Dano de Fogo igual a <color=#f29e38ff>25%</color> do ATQ de Asta a um inimigo aleatório.",
+				"SimpleDescription": "Causa Dano de Fogo leve a alvos únicos inimigos e é rebatido 5 vezes.",
+				"ElementType": "Fire"
+			},
+			"Ultimate": {
+				"Id": 100903,
+				"Name": "Bênção Astral",
+				"TriggerKey": "Skill03",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Aumenta a VEL de todos os aliados em <color=#f29e38ff>36</color> por 2 rodada(s).",
+				"SimpleDescription": "Aumenta a VEL de todos os aliados."
+			},
+			"Talent": {
+				"Id": 100904,
+				"Name": "Astrometria",
+				"TriggerKey": "SkillP01",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Ganha 1 acúmulo de Carga para cada inimigo diferente que Asta atingir, além de um acúmulo extra se o inimigo atingido tiver Fraqueza de Fogo.\nPara cada acúmulo de Carga que Asta tiver, aumenta em <color=#f29e38ff>#1[f1]%</color> o ATQ de todos os aliados, até 5 vez(es).\nA partir da segunda rodada, reduz em 3 a contagem de acúmulos de Carga de Asta no início de cada rodada."
+			},
+			"Technique": {
+				"Id": 100907,
+				"Name": "Lampejo Milagroso",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Depois de entrar na batalha, causa 50% do ATQ de Asta como Dano de Fogo a todos os inimigos.",
+				"ElementType": "Fire"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1013": {
+		"Id": "1013",
+		"Name": "Herta",
+		"ElementType": "Ice",
+		"ElementTypeText": "Gelo",
+		"PathType": "Mage",
+		"PathTypeText": "A Erudição",
+		"Eidolons": [
+			{
+				"Id": "101301",
+				"Name": "Vai Ficar Ainda Pior",
+				"Description": "Se o percentual de PV do inimigo for 50% ou menos, o ATQ Básico de Herta causa Dano de Gelo Adicional igual a 40% do ATQ dela."
+			},
+			{
+				"Id": "101302",
+				"Name": "Dar o Pontapé Inicial",
+				"Description": "Sempre que o Talento for ativado, a chance de CRIT deste personagem aumenta em 3%. Este efeito pode se acumular até 5 vez(es)."
+			},
+			{
+				"Id": "101303",
+				"Name": "Eu Sou Este Tipo de Garota",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "101304",
+				"Name": "Dedo na Ferida",
+				"Description": "O Dano aumenta em 10% quando o Talento for ativado."
+			},
+			{
+				"Id": "101305",
+				"Name": "Se For Xingar, Xingue Direito",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "101306",
+				"Name": "Ninguém Pode Me Trair",
+				"Description": "Após usar a Perícia Suprema, o ATQ deste personagem aumenta em 25% por 1 rodada(s)."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 101301,
+				"Name": "Está Olhando o Quê?",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>50%</color> do ATQ de Herta a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Gelo leve a um único inimigo.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 101302,
+				"Name": "Oferta Única",
+				"TriggerKey": "Skill02",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>50%</color> do ATQ de Herta como Dano de Gelo a todos os inimigos. Se o alvo estiver com 50% de PV ou mais, o Dano causado a esse alvo aumenta em 20%.",
+				"SimpleDescription": "Causa Dano de Gelo leve a todos os inimigos. Alvos com mais PV recebem mais Dano.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 101303,
+				"Name": "É Magia, Eu Adicionei Magia",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>120%</color> do ATQ de Herta a todos os inimigos.",
+				"SimpleDescription": "Causa Dano de Gelo a todos os inimigos.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 101304,
+				"Name": "Está Bem, Eu Cuido Disso",
+				"TriggerKey": "SkillP01",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando um ataque de um aliado reduzir os PV de um inimigo a 50% ou menos, Herta usa um <u>Ataque Extra</u>, causando <color=#f29e38ff>25%</color> do ATQ de Herta como Dano de Gelo a todos os inimigos.",
+				"ElementType": "Ice"
+			},
+			"Technique": {
+				"Id": 101307,
+				"Name": "Ainda É Possível Otimizar",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar sua Técnica, no início da próxima batalha o ATQ de Herta aumenta em 40% por 3 rodada(s)."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1101": {
+		"Id": "1101",
+		"Name": "Bronya",
+		"ElementType": "Wind",
+		"ElementTypeText": "Vento",
+		"PathType": "Shaman",
+		"PathTypeText": "A Harmonia",
+		"Eidolons": [
+			{
+				"Id": "110101",
+				"Name": "Aprimore Sua Força",
+				"Description": "Ao usar a Perícia, há 50% de chance fixa de recuperar 1 Ponto de Perícia. Este efeito tem recarga de 1 rodada."
+			},
+			{
+				"Id": "110102",
+				"Name": "Marcha Rápida",
+				"Description": "Ao usar a Perícia, a VEL do aliado-alvo aumenta em 30% depois de realizar a ação, e dura 1 rodada."
+			},
+			{
+				"Id": "110103",
+				"Name": "Bombardeio",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110104",
+				"Name": "Pegue de Surpresa",
+				"Description": "Após um aliado que não seja Bronya usar um ATQ Básico em um inimigo com Fraqueza de Vento, Bronya realiza um Ataque Extra no alvo imediatamente, causando Dano de Vento equivalente a 80% do ATQ Básico de Bronya. Este efeito só pode ser ativado 1 vez por rodada."
+			},
+			{
+				"Id": "110105",
+				"Name": "Incontrolável",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110106",
+				"Name": "Arco-íris Perfurante",
+				"Description": "A duração do efeito de Bônus de Dano da Perícia no aliado-alvo aumenta em 1 rodada(s)."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110101,
+				"Name": "Munição de Ventos Fortes",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Vento igual a <color=#f29e38ff>50%</color> do ATQ de Bronya a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Vento leve a um único inimigo.",
+				"ElementType": "Wind"
+			},
+			"Skill": {
+				"Id": 110102,
+				"Name": "Redistribuição de Combate",
+				"TriggerKey": "Skill02",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Dissipa uma <u>penalidade</u> de um único aliado, permite que ele aja imediatamente, e aumenta seu Dano em <color=#f29e38ff>33%</color> por 1 rodada(s).\nQuando esta Perícia é usada na própria Bronya, ela não pode agir imediatamente novamente.",
+				"SimpleDescription": "Remove 1 <u>penalidade</u> de um único aliado, aumenta o Dano dele e permite que ele aja imediatamente."
+			},
+			"Ultimate": {
+				"Id": 110103,
+				"Name": "A Marcha de Belobog",
+				"TriggerKey": "Skill03",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Aumenta o ATQ de todos os aliados em <color=#f29e38ff>33%</color> e aumenta o Dano CRIT em <color=#f29e38ff>#2[f1]%</color> do Dano CRIT de Bronya mais <color=#f29e38ff>#3[f1]%</color> por 2 rodada(s).",
+				"SimpleDescription": "Aumenta ATQ e Dano CRIT de todos os aliados."
+			},
+			"Talent": {
+				"Id": 110104,
+				"Name": "Liderança",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Após usar o ATQ Básico, a próxima ação de Bronya será <u>Avançada Adiante</u> em <color=#f29e38ff>15%</color>.",
+				"ElementType": "Wind"
+			},
+			"Technique": {
+				"Id": 110107,
+				"Name": "Bandeira de Comando",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após Bronya usar sua Técnica, no início da próxima batalha, o ATQ de todos os aliados aumenta em 15% por 2 rodada(s)."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1102": {
+		"Id": "1102",
+		"Name": "Seele",
+		"ElementType": "Quantum",
+		"ElementTypeText": "Quântico",
+		"PathType": "Rogue",
+		"PathTypeText": "A Caça",
+		"Eidolons": [
+			{
+				"Id": "110201",
+				"Name": "Golpe Extirpador",
+				"Description": "Ao causar Dano a um inimigo com 80% ou menos de PV, a Chance de CRIT aumenta em 15%."
+			},
+			{
+				"Id": "110202",
+				"Name": "Borboleta Dançarina",
+				"Description": "O Bônus de VEL da Perícia de Seele pode acumular até 2 vez(es)."
+			},
+			{
+				"Id": "110203",
+				"Name": "Tumulto Deslumbrante",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110204",
+				"Name": "Fantasma Esvoaçante",
+				"Description": "Seele regenera 15 de Energia quando derrota um inimigo."
+			},
+			{
+				"Id": "110205",
+				"Name": "Estilhaços Perfurantes",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110206",
+				"Name": "Confusão Devastadora",
+				"Description": "Após Seele usar sua Perícia Suprema, inflige Enxurrada de Borboletas ao inimigo-alvo por 1 rodada(s). Inimigos afetados recebem Dano Adicional igual a 15% do Dano da Perícia Suprema de Seele como Dano Quântico cada vez que for atacado. Se o inimigo-alvo for derrotado pelo Dano de Enxurrada de Borboletas ativado pelo ataque de outros aliados, o Talento de Seele não poderá ser ativado.\nQuando Seele é derrubada, a Enxurrada de Borboletas infligida aos inimigos será removida."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110201,
+				"Name": "Agressão",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Quântico igual a <color=#f29e38ff>50%</color> do ATQ de Seele a um único inimigo.",
+				"SimpleDescription": "Causa Dano Quântico leve a um único inimigo.",
+				"ElementType": "Quantum"
+			},
+			"Skill": {
+				"Id": 110202,
+				"Name": "Lâmina Embainhada",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Aumenta a VEL de Seele em 25% por 2 rodada(s) e causa Dano Quântico equivalente a <color=#f29e38ff>110%</color> do ATQ de Seele a um inimigo.",
+				"SimpleDescription": "Causa Dano Quântico a um único inimigo e aumenta VEL.",
+				"ElementType": "Quantum"
+			},
+			"Ultimate": {
+				"Id": 110203,
+				"Name": "Enxurrada de Borboletas",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Seele entra no modo melhorado e causa Dano Quântico igual a <color=#f29e38ff>255%</color> do ATQ dela a um único inimigo.",
+				"SimpleDescription": "Entra no modo melhorado e causa Dano Quântico massivo a um único inimigo.",
+				"ElementType": "Quantum"
+			},
+			"Talent": {
+				"Id": 110204,
+				"Name": "Ressurgimento",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Entra no modo melhorado ao derrotar um inimigo com ATQ Básico, Perícia ou Perícia Suprema, e recebe uma <u>rodada extra</u>. Enquanto estiver nesse modo, o Dano dos ataques de Seele aumenta em <color=#f29e38ff>40%</color> por 1 rodada(s).\nInimigos derrotados durante a <u>rodada extra</u> concedida pelo efeito de \"Ressurgimento\" não ativarão outro \"Ressurgimento\"."
+			},
+			"Technique": {
+				"Id": 110207,
+				"Name": "Ilusão Factícia",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar a sua Técnica, Seele ganha Furtividade por 20s. Enquanto o efeito de Furtividade estiver ativo, Seele não pode ser detectada por inimigos. Ao entrar em uma batalha atacando inimigos, Seele entrará no modo melhorado imediatamente."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1103": {
+		"Id": "1103",
+		"Name": "Serval",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Raio",
+		"PathType": "Mage",
+		"PathTypeText": "A Erudição",
+		"Eidolons": [
+			{
+				"Id": "110301",
+				"Name": "Câmara do Eco",
+				"Description": "O ATQ Básico causa 60% de seu Dano de ATQ Básico como Dano de Raio a um inimigo aleatório adjacente ao alvo."
+			},
+			{
+				"Id": "110302",
+				"Name": "Bis!",
+				"Description": "Sempre que o Talento de Serval ativar Dano Adicional, ela regenera 4 de Energia."
+			},
+			{
+				"Id": "110303",
+				"Name": "Ouça o Batimento das Engrenagens",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110304",
+				"Name": "Faça Barulho!",
+				"Description": "A Perícia Suprema tem uma chance-base de 100% de causar Choque em inimigos que ainda não tiverem esse estado. Esse estado de Choque tem os mesmos efeitos daquele causado pela Perícia."
+			},
+			{
+				"Id": "110305",
+				"Name": "O Rugido Mais Alto de Belobog!",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110306",
+				"Name": "Essa Música Abala os Céus!",
+				"Description": "Serval causa 30% a mais de Dano a inimigos afligidos com Choque."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110301,
+				"Name": "Trovoada Estrondosa",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>50%</color> do ATQ de Serval a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Raio leve a um único inimigo.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 110302,
+				"Name": "Clarão de Raio",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Explosão",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>70%</color> do ATQ de Serval como Dano de Raio a um único inimigo e <color=#f29e38ff>30%</color> do ATQ de Serval como Dano de Raio aos inimigos adjacentes a ele, com 80% de <u>chance-base</u> de os inimigos atingidos receberem Choque por 2 rodada(s).\nQuando em Choque, inimigos recebem Dano Contínuo de raio igual a <color=#f29e38ff>40%</color> do ATQ de Serval no início de cada rodada.",
+				"SimpleDescription": "Causa Dano de Raio leve a um único inimigo e aos inimigos adjacentes a ele, com alta chance de causar Choque nos inimigos atingidos.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 110303,
+				"Name": "A Febre Mecânica Ataca",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>108%</color> do ATQ de Serval a todos os inimigos. Inimigos com Choque terão esse estado prolongado por 2 rodada(s).",
+				"SimpleDescription": "Causa Dano de Raio a todos os inimigos e aumenta a duração de Choque.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 110304,
+				"Name": "Cordas Galvânicas",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Após Serval atacar, causa Dano de Raio <u>Adicional</u> igual a <color=#f29e38ff>36%</color> do ATQ de Serval a todos os inimigos em Choque.",
+				"ElementType": "Thunder"
+			},
+			"Technique": {
+				"Id": 110307,
+				"Name": "Boa Noite, Belobog",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Após entrar na batalha, causa 50% do ATQ de Serval como Dano de Raio a um inimigo aleatório, com 100% de <u>chance-base</u> de todos os inimigos receberem Choque por 3 rodada(s).\nQuando em Choque, inimigos recebem 50% do ATQ de Serval como Dano Contínuo de Raio no início de cada rodada.",
+				"ElementType": "Thunder"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1104": {
+		"Id": "1104",
+		"Name": "Gepard",
+		"ElementType": "Ice",
+		"ElementTypeText": "Gelo",
+		"PathType": "Knight",
+		"PathTypeText": "A Preservação",
+		"Eidolons": [
+			{
+				"Id": "110401",
+				"Name": "Esforço Necessário",
+				"Description": "Ao usar a Perícia, aumenta a chance-base de causar Congelamento ao inimigo atingido em 35%."
+			},
+			{
+				"Id": "110402",
+				"Name": "Frio Perdurante",
+				"Description": "Depois que um inimigo Congelado pela Perícia descongela, a VEL dele é reduzida em 20% por 1 rodada(s)."
+			},
+			{
+				"Id": "110403",
+				"Name": "Nunca Se Renda",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110404",
+				"Name": "A Fé Move Montanhas",
+				"Description": "Quando Gepard estiver em batalha, a RES a Efeito de todos os aliados aumenta em 20%."
+			},
+			{
+				"Id": "110405",
+				"Name": "Punho de Ferro Gélido",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110406",
+				"Name": "Determinação Inabalável",
+				"Description": "Quando seu Talento for ativado, a ação de Gepard é Avançada Adiante em 100%, e ele restaura 50% de seus PV máximos como PV extras."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110401,
+				"Name": "Punho da Condenação",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>50%</color> do ATQ de Gepard a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Gelo leve a um único inimigo.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 110402,
+				"Name": "Golpe Intimidador",
+				"TriggerKey": "Skill02",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>100%</color> do ATQ de Gepard a um único inimigo, com 65% de <u>chance-base</u> de o inimigo sofrer Congelamento por 1 rodada(s).\nDurante o Congelamento, o inimigo não pode agir e sofre Dano <u>Adicional</u> de Gelo igual a <color=#f29e38ff>30%</color> do ATQ de Gepard no início de cada rodada.",
+				"SimpleDescription": "Causa Dano de Gelo a um único inimigo, com uma chance de causar Congelamento.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 110403,
+				"Name": "Muralha Resistente",
+				"TriggerKey": "Skill03",
+				"TagType": "Defence",
+				"TagTypeText": "Defesa",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Aplica um Escudo a todos os aliados, absorvendo Dano igual a <color=#f29e38ff>30% </color>da DEF de Gepard mais <color=#f29e38ff>150 </color>por 3 rodada(s).",
+				"SimpleDescription": "Protege todos os aliados com um Escudo."
+			},
+			"Talent": {
+				"Id": 110404,
+				"Name": "Vontade Inabalável",
+				"TriggerKey": "SkillP01",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Ao ser alvo de um golpe fatal, em vez de ficar <u>derrubado</u>, Gepard restaura imediatamente <color=#f29e38ff>25%</color> de seus PV máximos. Este efeito só pode ser ativado uma vez por batalha."
+			},
+			"Technique": {
+				"Id": 110407,
+				"Name": "Camaradagem",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Defence",
+				"TagTypeText": "Defesa",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após Gepard usar sua Técnica, quando a próxima batalha começar, um Escudo será aplicado a todos os aliados, absorvendo Dano igual a 24% da DEF de Gepard mais 150 por 2 rodada(s)."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1105": {
+		"Id": "1105",
+		"Name": "Natasha",
+		"ElementType": "Physical",
+		"ElementTypeText": "Físico",
+		"PathType": "Priest",
+		"PathTypeText": "A Abundância",
+		"Eidolons": [
+			{
+				"Id": "110501",
+				"Name": "Especialista em Farmacologia",
+				"Description": "Após sofrer um ataque, se os PV atuais estiverem em 30% ou menos, cura a si mesma 1 vez para restaurar 15% de seus PV máximos + 400. Este efeito só pode ser ativado uma vez por batalha."
+			},
+			{
+				"Id": "110502",
+				"Name": "Pesquisa Clínica",
+				"Description": "Usar a sua Perícia Suprema concede cura contínua por 1 rodada(s) aos aliados com 30% de PV ou menos. No início das suas rodadas, os PV dos aliados são restaurados em 6% dos PV máximos de Natasha + 160."
+			},
+			{
+				"Id": "110503",
+				"Name": "A Cura Correta",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110504",
+				"Name": "Cura Milagrosa",
+				"Description": "Após sofrer um ataque, 5 de Energia extra."
+			},
+			{
+				"Id": "110505",
+				"Name": "Tratamento Preventivo",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110506",
+				"Name": "Graça da Médica",
+				"Description": "O ATQ Básico de Natasha causa Dano Físico Adicional igual a 40% dos PV máximos dela."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110501,
+				"Name": "Além da Bondade",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>50%</color> do ATQ de Natasha a um único inimigo.",
+				"SimpleDescription": "Causa Dano Físico leve a um único inimigo.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 110502,
+				"Name": "Amor, Cura e Escolha",
+				"TriggerKey": "Skill02",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Cura um único alvo em <color=#f29e38ff>#1[f1]%</color> dos PV máximos de Natasha mais <color=#f29e38ff>70</color>. Cura o aliado em mais <color=#f29e38ff>#2[f1]%</color> dos PV máximos de Natasha mais <color=#f29e38ff>48</color> no início de cada rodada por 2 rodada(s).",
+				"SimpleDescription": "Restaura PV de um único aliado e cura esse aliado continuamente."
+			},
+			"Ultimate": {
+				"Id": 110503,
+				"Name": "Presente do Renascimento",
+				"TriggerKey": "Skill03",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Cura todos os aliados em <color=#f29e38ff>#1[f1]%</color> dos PV máximos de Natasha mais <color=#f29e38ff>92</color>.",
+				"SimpleDescription": "Restaura PV de todos os aliados."
+			},
+			"Talent": {
+				"Id": 110504,
+				"Name": "Enervação",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Ao curar aliados com PV iguais ou abaixo de 30%, aumenta a Cura Realizada de Natasha em <color=#f29e38ff>25%</color>. Este efeito também funciona na cura contínua."
+			},
+			"Technique": {
+				"Id": 110507,
+				"Name": "Pesquisa Hipnótica",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Após entrar na batalha, causa Dano Físico igual a 80% do ATQ de Natasha a um inimigo aleatório, com 100% de <u>chance-base</u> de causar Enfraquecimento a todos os inimigos.\nQuando enfraquecidos, inimigos causam 30% a menos de Dano a aliados por 1 rodada(s).",
+				"ElementType": "Physical"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1106": {
+		"Id": "1106",
+		"Name": "Pela",
+		"ElementType": "Ice",
+		"ElementTypeText": "Gelo",
+		"PathType": "Warlock",
+		"PathTypeText": "A Inexistência",
+		"Eidolons": [
+			{
+				"Id": "110601",
+				"Name": "Relatório de Vitória",
+				"Description": "Quando Pela derrota um inimigo, ela regenera 5 de Energia."
+			},
+			{
+				"Id": "110602",
+				"Name": "Carregamento Rígido",
+				"Description": "Usar a Perícia para remover uma melhoria aumenta a VEL em 10% por 2 rodada(s)."
+			},
+			{
+				"Id": "110603",
+				"Name": "Força Supressiva",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110604",
+				"Name": "Análise Completa",
+				"Description": "Ao usar a Perícia, há 100% de chance-base de reduzir a RES a Gelo do inimigo-alvo em 12% por 2 rodada(s)."
+			},
+			{
+				"Id": "110605",
+				"Name": "Perigo Total",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110606",
+				"Name": "Busca Fraca",
+				"Description": "Quando Pela ataca um inimigo com alguma penalidade, ela causa Dano de Gelo Adicional igual a 40% do ATQ dela ao inimigo."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110601,
+				"Name": "Tiro Gélido",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>50%</color> do ATQ de Pela a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Gelo leve a um único inimigo.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 110602,
+				"Name": "Geladura",
+				"TriggerKey": "Skill02",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Remove 1 <u>melhoria(s)</u> e causa Dano de Gelo igual a <color=#f29e38ff>105%</color> do ATQ de Pela a um único inimigo.",
+				"SimpleDescription": "Remove 1 <u>melhoria</u> e causa Dano de Gelo a um único inimigo.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 110603,
+				"Name": "Supressão de Zona",
+				"TriggerKey": "Skill03",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>60%</color> do ATQ de Pela a todos os inimigos, com uma <u>chance-base</u> de 100% de infligir a condição Exposto em todos os inimigos.\nInimigos Expostos têm a DEF reduzida em <color=#f29e38ff>30%</color> por 2 rodada(s).",
+				"SimpleDescription": "Tem altas chances de reduzir a DEF dos inimigos, além de causar Dano de Gelo leve a todos os inimigos.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 110604,
+				"Name": "Coleta de Dados",
+				"TriggerKey": "SkillP01",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Se o inimigo estiver sofrendo uma <u>penalidade</u> depois do ataque de Pela, ela recuperará <color=#f29e38ff>#1[f1]</color> de Energia extra. Esse efeito só pode ser acionado uma vez por ataque."
+			},
+			"Technique": {
+				"Id": 110607,
+				"Name": "Ataque Premeditado",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Ao entrar na batalha, Pela causa Dano de Gelo igual a  80% do seu ATQ a um inimigo aleatório, com 100% de <u>chance-base</u> de reduzir a DEF de todos os inimigos em 20% por 2 rodada(s).",
+				"ElementType": "Ice"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1107": {
+		"Id": "1107",
+		"Name": "Clara",
+		"ElementType": "Physical",
+		"ElementTypeText": "Físico",
+		"PathType": "Warrior",
+		"PathTypeText": "A Destruição",
+		"Eidolons": [
+			{
+				"Id": "110701",
+				"Name": "Uma Figura Alta",
+				"Description": "Usar a Perícia não removerá Marcas do Contra-Ataque do inimigo."
+			},
+			{
+				"Id": "110702",
+				"Name": "Um Abraço Apertado",
+				"Description": "Após usar a Perícia Suprema, o ATQ aumenta em 30% por 2 rodada(s)."
+			},
+			{
+				"Id": "110703",
+				"Name": "Armadura de Aço Fria",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110704",
+				"Name": "Aconchego Familiar",
+				"Description": "Após sofrer um ataque, o Dano recebido por Clara é reduzido em 30%. Este efeito dura até o início da rodada seguinte."
+			},
+			{
+				"Id": "110705",
+				"Name": "Uma Pequena Promessa",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110706",
+				"Name": "Longa Companhia",
+				"Description": "Quando outros aliados são atingidos, Svarog também tem 50% de chance fixa de ativar um Contra-Ataque no atacante e marcá-lo com uma Marca do Contra-Ataque. Ao usar a Perícia Suprema, o número de Contra-Ataque(s) Aprimorado(s) aumenta em 1."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110701,
+				"Name": "Eu Quero Ajudar",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>50%</color> do ATQ de Clara a um único inimigo.",
+				"SimpleDescription": "Causa Dano Físico leve a um único inimigo.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 110702,
+				"Name": "Svarog Cuida de Você",
+				"TriggerKey": "Skill02",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>60%</color> do ATQ de Clara a todos os inimigos e adicionalmente causa Dano Físico igual a <color=#f29e38ff>60%</color> do ATQ de Clara a inimigos marcados por Svarog com uma Marca do Contra-Ataque.\nApós o uso desta Perícia, todas as Marcas do Contra-Ataque serão removidas.",
+				"SimpleDescription": "Causa Dano Físico leve a todas as unidades inimigas. Causa Dano Físico extra leve a alvos que tiverem a Marca do Contra-Ataque.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 110703,
+				"Name": "É Promessa, Não Ordem",
+				"TriggerKey": "Skill03",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Após Clara usar sua Perícia Suprema, o Dano causado a ela é reduzido em <color=#f29e38ff>15%</color> extra, e ela terá muito mais chances de ser atacada por inimigos por 2 rodada(s).\nAlém disso, o <u>Contra-Ataque</u> de Svarog é aprimorado. Quando um aliado é atacado, Svarog usa um <u>Contra-Ataque</u> imediatamente, e seu multiplicador de Dano contra o inimigo aumenta em <color=#f29e38ff>96%</color>. Inimigos adjacentes a ele sofrem 50% do Dano causado ao inimigo-alvo. <u>Contra-Ataque(s)</u> aprimorado(s) podem entrar em vigor 2 vez(es).",
+				"SimpleDescription": "Aumenta a RES a Dano e a chance de ser atacada por inimigos, e aumenta os efeitos do <u>Contra-Ataque</u>."
+			},
+			"Talent": {
+				"Id": 110704,
+				"Name": "Porque Somos uma Família",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Sob a proteção de Svarog, o Dano recebido por Clara ao ser atingida por ataques inimigos é reduzido em 10%. Svarog marca inimigos que atacarem Clara com sua Marca do Contra-Ataque e então <u>Contra-Ataca</u>, causando Dano Físico igual a <color=#f29e38ff>80%</color> do ATQ de Clara.",
+				"ElementType": "Physical"
+			},
+			"Technique": {
+				"Id": 110707,
+				"Name": "Um Preço Baixo pela Vitória",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Ao entrar na batalha, a chance de Clara ser atacada por inimigos aumenta por 2 rodada(s).",
+				"ElementType": "Physical"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1108": {
+		"Id": "1108",
+		"Name": "Sampo",
+		"ElementType": "Wind",
+		"ElementTypeText": "Vento",
+		"PathType": "Warlock",
+		"PathTypeText": "A Inexistência",
+		"Eidolons": [
+			{
+				"Id": "110801",
+				"Name": "Amor Crescente",
+				"Description": "Ao usar a Perícia, causa Dano 1 vez(es) a mais a um inimigo aleatório."
+			},
+			{
+				"Id": "110802",
+				"Name": "Entusiasmo Infeccioso",
+				"Description": "Derrotar um inimigo com Cisalhamento de Vento concede 100% de chance-base de infligir 1 acúmulo(s) de Cisalhamento de Vento a todos os inimigos, equivalente ao Cisalhamento de Vento do Talento."
+			},
+			{
+				"Id": "110803",
+				"Name": "Riquinho!",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110804",
+				"Name": "Quanto Maior o Amor, Maior o Ódio",
+				"Description": "Quando a Perícia atinge um inimigo com 5 ou mais acúmulo(s) de Cisalhamento de Vento, o inimigo imediatamente sofre 8% do Dano atual do Cisalhamento de Vento."
+			},
+			{
+				"Id": "110805",
+				"Name": "Cheeeeio de Grana!",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110806",
+				"Name": "Aumento de Gasto",
+				"Description": "O multiplicador de Dano do Talento para Cisalhamento de Vento aumenta em 15%."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110801,
+				"Name": "Lâminas Ofuscantes",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Vento igual a <color=#f29e38ff>50%</color> do ATQ de Sampo a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Vento leve a um único inimigo.",
+				"ElementType": "Wind"
+			},
+			"Skill": {
+				"Id": 110802,
+				"Name": "Amor Ricochete",
+				"TriggerKey": "Skill02",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebote",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Vento igual a <color=#f29e38ff>28%</color> do ATQ de Sampo a um único inimigo, e causa Dano mais 4 vez(es) extras, com cada vez causando Dano de Vento igual a <color=#f29e38ff>28%</color> do ATQ de Sampo a um inimigo aleatório.",
+				"SimpleDescription": "Causa Dano de Vento leve a alvos inimigos únicos e é Rebatido 5 vezes.",
+				"ElementType": "Wind"
+			},
+			"Ultimate": {
+				"Id": 110803,
+				"Name": "Presente Surpresa",
+				"TriggerKey": "Skill03",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Vento igual a <color=#f29e38ff>96%</color> do ATQ de Sampo a todos os inimigos, com 100% de <u>chance-base</u> de aumentar o Dano Contínuo recebido pelo alvo em <color=#f29e38ff>20%</color> por 2 rodada(s).",
+				"SimpleDescription": "Causa Dano de Vento a todos os inimigos, com altas chances de aumentar o Dano Contínuo causado aos alvos.",
+				"ElementType": "Wind"
+			},
+			"Talent": {
+				"Id": 110804,
+				"Name": "Adaga da Ventania",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Os ataques de Sampo têm 65% de <u>chance-base</u> de infligir Cisalhamento de Vento por 3 rodada(s).\nInimigos infligidos com Cisalhamento de Vento recebem Dano Contínuo de Vento igual a <color=#f29e38ff>20%</color> do ATQ de Sampo no início de cada rodada. Cisalhamento de Vento pode se acumular até 5 vez(es)."
+			},
+			"Technique": {
+				"Id": 110807,
+				"Name": "Brilho Ofuscante",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitação",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar a Técnica de Sampo, inflige Cegueira em inimigos em uma área definida por 10 segundos. Inimigos com Cegueira não conseguem detectar sua equipe.\nAo iniciar o combate contra um inimigo com Cegueira, há 100% de <u>chance fixa</u> de atrasar as ações de todos os inimigos em 25%."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1109": {
+		"Id": "1109",
+		"Name": "Hook",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fogo",
+		"PathType": "Warrior",
+		"PathTypeText": "A Destruição",
+		"Eidolons": [
+			{
+				"Id": "110901",
+				"Name": "Deus Ajuda Quem Cedo Madruga",
+				"Description": "A Perícia Aprimorada causa 20% a mais de Dano."
+			},
+			{
+				"Id": "110902",
+				"Name": "Barriga Sã, Corpo São",
+				"Description": "Estende a duração de Queimadura causada pela Perícia em 1 rodada(s)."
+			},
+			{
+				"Id": "110903",
+				"Name": "Não Seja Implicante, Nada É Deselegante",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "110904",
+				"Name": "Tudo Bem Não Saber",
+				"Description": "Quando o Talento é ativado, há uma chance-base de 100% de infligir Queimadura equivalente à da Perícia aos inimigos adjacentes ao inimigo-alvo."
+			},
+			{
+				"Id": "110905",
+				"Name": "Conheçam os Feitos das Toupeiras",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "110906",
+				"Name": "Sempre a Postos Para Atacar",
+				"Description": "Hook causa 20% a mais de Dano a inimigos atingidos por Queimadura."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110901,
+				"Name": "Hehe! Não Vai se Queimar!",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>50%</color> do ATQ de Hook a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Fogo leve a um único inimigo.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 110902,
+				"Name": "Ei! Lembra da Hook?",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>120%</color> do ATQ de Hook a um inimigo-alvo. Além disso, há 100% de <u>chance-base</u> de infligir Queimadura por 2 rodada(s).\nEnquanto tiverem Queimadura, inimigos recebem Dano Contínuo de Fogo igual a <color=#f29e38ff>25%</color> do ATQ de Hook no início de cada rodada.",
+				"SimpleDescription": "Causa Dano de Fogo a um único inimigo, com altas chances de infligir Queimadura nele.",
+				"ElementType": "Fire"
+			},
+			"Ultimate": {
+				"Id": 110903,
+				"Name": "Bum! Lá Vem Fogo!",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa <color=#f29e38ff>240%</color> do ATQ de Hook como Dano de Fogo a um inimigo-alvo.\nApós usar a Perícia Suprema, a próxima Perícia usada é Aprimorada, causando Dano a um único inimigo e aos inimigos adjacentes a ele.",
+				"SimpleDescription": "Causa Dano de Fogo massivo a um único inimigo e Aprimora a próxima Perícia de Hook.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 110904,
+				"Name": "Ha! Óleo nas Chamas!",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Ao atacar um alvo afetado com Queimadura, causa Dano de Fogo <u>Adicional</u> igual a <color=#f29e38ff>50%</color> do ATQ de Hook e regenera 5 de Energia extra.",
+				"ElementType": "Fire"
+			},
+			"Technique": {
+				"Id": 110907,
+				"Name": "Argh! Olha Essa Bagunça!",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca imediatamente o inimigo. Ao entrar em batalha, Hook causa Dano de Fogo igual a 50% de seu ATQ a um inimigo aleatório. Além disso, há 100% de <u>chance-base</u> de infligir Queimadura em todos os inimigos por 3 rodada(s).\nEnquanto tiverem Queimadura, inimigos recebem 50% do ATQ de Hook como Dano Contínuo de Fogo no início de cada rodada.",
+				"ElementType": "Fire"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1201": {
+		"Id": "1201",
+		"Name": "Qingque",
+		"ElementType": "Quantum",
+		"ElementTypeText": "Quântico",
+		"PathType": "Mage",
+		"PathTypeText": "A Erudição",
+		"Eidolons": [
+			{
+				"Id": "120101",
+				"Name": "Surgir Pelas Peças",
+				"Description": "A Perícia Suprema causa 10% a mais de Dano."
+			},
+			{
+				"Id": "120102",
+				"Name": "Dormir nas Peças",
+				"Description": "Sempre que Pegar Peça é ativado, Qingque imediatamente regenera 1 de Energia."
+			},
+			{
+				"Id": "120103",
+				"Name": "Ler Entre as Peças",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "120104",
+				"Name": "Bem nas Peças",
+				"Description": "Depois que a Perícia deste personagem é usada, tem 24% de chance fixa de ganhar Autarquia, que dura até o fim da rodada.\nCom Autarquia, usar o ATQ Básico ou o Ataque Básico Aprimorado ativa imediatamente um Ataque Extra no mesmo alvo, causando Dano Quântico igual a 100% do Dano do ATQ Básico anterior (ou Ataque Básico Aprimorado)."
+			},
+			{
+				"Id": "120105",
+				"Name": "Estratégia para as Peças",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "120106",
+				"Name": "Prevalecer Além das Peças",
+				"Description": "Recupera 1 Ponto de Perícia após usar um ATQ Básico Aprimorado."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120101,
+				"Name": "Colher Flores",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Lança 1 peça de jade do naipe com o menor número de peças nas mãos para causar Dano Quântico igual a <color=#f29e38ff>50%</color> do ATQ de Qingque a um único inimigo.",
+				"SimpleDescription": "Lança uma peça que causa Dano Quântico leve a um único inimigo.",
+				"ElementType": "Quantum"
+			},
+			"Skill": {
+				"Id": 120102,
+				"Name": "Uma Colherada da Lua",
+				"TriggerKey": "Skill02",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Pega 2 peça(s) de jade imediatamente e aumenta o Dano em <color=#f29e38ff>14%</color> até o fim da rodada atual. Esse efeito pode acumular até 4 vez(es). A rodada não acaba após a utilização dessa Perícia.",
+				"SimpleDescription": "Pegar Peça aumenta o Dano de Qingque, e esta rodada não termina."
+			},
+			"Ultimate": {
+				"Id": 120103,
+				"Name": "Um Quarteto? Uhul!",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Quântico igual a <color=#f29e38ff>120%</color> do ATQ de Qingque a todos os inimigos e obtém 4 peças de jade do mesmo naipe.",
+				"SimpleDescription": "Causa Dano Quântico a todos os inimigos, depois obtêm 4 peças do mesmo naipe.",
+				"ElementType": "Quantum"
+			},
+			"Talent": {
+				"Id": 120104,
+				"Name": "Jade Celestial",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando a rodada de um aliado começa, Qingque pega aleatoriamente 1 peça de 3 naipes diferentes. Até 4 peças podem ser seguradas por vez.\nSe Qingque começar sua rodada com 4 peças de um mesmo naipe, ela consumirá todas as peças para entrar no estado \"Mão Oculta\". Enquanto estiver neste estado, Qingque não pode usar sua Perícia novamente. Ao mesmo tempo, o ATQ de Qingque aumenta em <color=#f29e38ff>36%</color>, e o seu ATQ Básico \"Colher Flores\" é aprimorado, tornando-se \"Cereja do Bolo!\". O estado \"Mão Oculta\" acabará ao usar \"Cereja do Bolo!\"."
+			},
+			"Technique": {
+				"Id": 120107,
+				"Name": "Jogo de Paciência",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar sua Técnica, Qingque pega 2 peça(s) de jade quando a batalha começa."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1202": {
+		"Id": "1202",
+		"Name": "Tingyun",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Raio",
+		"PathType": "Shaman",
+		"PathTypeText": "A Harmonia",
+		"Eidolons": [
+			{
+				"Id": "120201",
+				"Name": "A Sorte Sorri com Bondade",
+				"Description": "Após usar a Perícia Suprema, o aliado com Bênção ganha 20% de aumento de VEL por 1 rodada."
+			},
+			{
+				"Id": "120202",
+				"Name": "Dá os Ganhos, Ganha o que Dá",
+				"Description": "O aliado com Bênção regenera 5 de Energia após derrotar um inimigo. Esse efeito só pode ser ativado uma vez por rodada."
+			},
+			{
+				"Id": "120203",
+				"Name": "Legado de Alcíone",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "120204",
+				"Name": "Versatilidade Jovial",
+				"Description": "O multiplicador de Dano concedido pela Bênção aumenta em 20%."
+			},
+			{
+				"Id": "120205",
+				"Name": "Astúcia Tranquila",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "120206",
+				"Name": "A Paz Traz Riqueza a Todos",
+				"Description": "A Perícia Suprema regenera mais 10 de Energia para o aliado-alvo."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120201,
+				"Name": "Expulsão",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Tingyun causa Dano de Raio igual a <color=#f29e38ff>50%</color> de seu ATQ a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Raio leve a um único inimigo.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 120202,
+				"Name": "Melodia Calmante",
+				"TriggerKey": "Skill02",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Concede Bênção a um único aliado e aumenta o ATQ dele em <color=#f29e38ff>25%</color>, até o máximo de <color=#f29e38ff>15%</color> do ATQ atual de Tingyun.\nQuando o aliado com Bênção ataca, ele causa <u>Dano Adicional</u> de Raio igual a <color=#f29e38ff>20%</color> do ATQ daquele aliado 1 vez.\nA Bênção dura por 3 rodada(s) e só tem efeito no último aliado a receber a Perícia de Tingyun.",
+				"SimpleDescription": "Aumenta o ATQ de um único aliado e concede Bênção a ele."
+			},
+			"Ultimate": {
+				"Id": 120203,
+				"Name": "Em Meio às Nuvens Alegres",
+				"TriggerKey": "Skill03",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Regenera 50 de Energia de um aliado e aumenta o Dano dele em <color=#f29e38ff>20%</color> por 2 rodada(s).",
+				"SimpleDescription": "Regenera a Energia de um único aliado e aumenta o Dano causado por ele.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 120204,
+				"Name": "Tornafagulha Violeta",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando um inimigo é atacado por Tingyun, o aliado com Bênção causa imediatamente <u>Dano Adicional</u> de Raio igual a <color=#f29e38ff>30%</color> do ATQ daquele aliado ao mesmo inimigo."
+			},
+			"Technique": {
+				"Id": 120207,
+				"Name": "Brisa Suave",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Tingyun regenera 50 de Energia imediatamente após usar sua Técnica."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1203": {
+		"Id": "1203",
+		"Name": "Luocha",
+		"ElementType": "Imaginary",
+		"ElementTypeText": "Imaginário",
+		"PathType": "Priest",
+		"PathTypeText": "A Abundância",
+		"Eidolons": [
+			{
+				"Id": "120301",
+				"Name": "Ablução da Rapidez",
+				"Description": "Após usar sua Perícia, se o aliado-alvo estiver com PV completamente restaurados, Luocha regenera 10 de Energia extra."
+			},
+			{
+				"Id": "120302",
+				"Name": "Concessão da Pureza",
+				"Description": "Ao usar a Perícia, se o aliado-alvo tiver menos de 50% de seus PV máximos, a Cura Realizada de Luocha aumenta em 30%. Se o aliado-alvo estiver com 50% de seus PV máximos ou mais, ganha de Luocha um Escudo que pode suportar Dano igual a 15% dos PV máximos desse alvo por 1 rodada(s)."
+			},
+			{
+				"Id": "120303",
+				"Name": "Questionamento pelos Tolos",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "120304",
+				"Name": "Julgamento pelo Rei",
+				"Description": "Quando o Campo de Luocha está ativo, inimigos recebem Enfraquecimento e causam 12% a menos de Dano."
+			},
+			{
+				"Id": "120305",
+				"Name": "Cicatriz Abaixo da Dor",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "120306",
+				"Name": "Reunião ao Pó",
+				"Description": "O Dano de Redução de Tenacidade do ATQ Básico deste personagem e a Perícia Suprema é aumentado em 100%."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120301,
+				"Name": "Espinhos do Abismo",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Imaginário igual a <color=#f29e38ff>50%</color> do ATQ de Luocha a um único inimigo.",
+				"SimpleDescription": "Causa Dano Imaginário leve a um único inimigo.",
+				"ElementType": "Imaginary"
+			},
+			"Skill": {
+				"Id": 120302,
+				"Name": "Prece da Flor do Abismo",
+				"TriggerKey": "Skill02",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Após usar sua Perícia, restaura imediatamente os PV de um aliado-alvo em  <color=#f29e38ff>40%</color> do ATQ de Luocha + <color=#f29e38ff>200</color>. Enquanto isso, Luocha ganha 1 acúmulo de Flor do Abismo.\nQuando os PV de um aliado ficarem iguais ou abaixo de 50%, Luocha imediatamente usa sua Perícia uma vez neste aliado (sem consumir Pontos de Perícia). Depois que Luocha agir mais 2 vez(es), este efeito pode ser acionado novamente quando as condições forem cumpridas.",
+				"SimpleDescription": "Restaura PV de um único aliado e ganha 1 acúmulo de Flor do Abismo."
+			},
+			"Ultimate": {
+				"Id": 120303,
+				"Name": "Desejo de Morte",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Remove 1 <u>melhoria(s)</u> de inimigos e causa Dano Imaginário igual a <color=#f29e38ff>80%</color> do ATQ de Luocha a todos os inimigos. Luocha ganha 1 acúmulo de Flor do Abismo.",
+				"SimpleDescription": "Remove 1 <u>melhoria</u> do alvo, causa Dano Imaginário a todos os inimigos, e ganha 1 acúmulo de Flor do Abismo.",
+				"ElementType": "Imaginary"
+			},
+			"Talent": {
+				"Id": 120304,
+				"Name": "Ciclo da Vida",
+				"TriggerKey": "SkillP01",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando tiver 2 acúmulo(s) de Flor do Abismo, Luocha consome todos os acúmulos para ativar um Campo contra o inimigo.\nQuando qualquer inimigo dentro do Campo é atacado por um aliado, esse aliado imediatamente restaura uma quantidade de PV igual a <color=#f29e38ff>#2[f1]%</color> do ATQ de Luocha mais <color=#f29e38ff>70</color>.\nO efeito do Campo dura 2 rodada(s)."
+			},
+			"Technique": {
+				"Id": 120307,
+				"Name": "Misericórdia dos Tolos",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar sua Técnica, no início da próxima batalha, o Talento será ativado imediatamente."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1204": {
+		"Id": "1204",
+		"Name": "Jing Yuan",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Raio",
+		"PathType": "Mage",
+		"PathTypeText": "A Erudição",
+		"Eidolons": [
+			{
+				"Id": "120401",
+				"Name": "Corte, Mares Partidos",
+				"Description": "Quando o Senhor dos Raios ataca, o multiplicador de Dano nos inimigos adjacentes ao inimigo-alvo aumenta em uma quantidade extra igual a 25% do multiplicador de Dano contra o inimigo-alvo."
+			},
+			{
+				"Id": "120402",
+				"Name": "Golpe, Céus Esmagados",
+				"Description": "Depois que o Senhor dos Raios age, o Dano causado pelo ATQ Básico, a Perícia e a Perícia Suprema de Jing Yuan aumentam em 20% por 2 rodada(s)."
+			},
+			{
+				"Id": "120403",
+				"Name": "Ataque, Sóis Subjulgados",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "120404",
+				"Name": "Giro, Estrelas Cercadas",
+				"Description": "A cada acerto do Senhor dos Raios quando ele age, Jing Yuan regenera 2 de Energia."
+			},
+			{
+				"Id": "120405",
+				"Name": "Marcha, Bens Saqueados",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "120406",
+				"Name": "Varredura, Almas Ceifadas",
+				"Description": "Cada golpe lançado pelo Senhor dos Raios ao agir tornará o inimigo-alvo Vulnerável.\nQuando Vulneráveis, inimigos recebem 12% a mais de Dano até o final da rodada atual do Senhor dos Raios, acumulando em até 3 vez(es)."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120401,
+				"Name": "Lux Ignis",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Jing Yuan causa Dano de Raio igual a <color=#f29e38ff>50%</color> de seu ATQ a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Raio leve a um único inimigo.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 120402,
+				"Name": "Zênite Rompido",
+				"TriggerKey": "Skill02",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>50%</color> do ATQ de Jing Yuan a todos os inimigos e aumenta os Golpes por Ação do Senhor dos Raios em 2 na próxima rodada.",
+				"SimpleDescription": "Causa Dano de Raio leve a todos os inimigos e aumenta os Golpes por Ação do Senhor dos Raios.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 120403,
+				"Name": "Portador da Luz",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>120%</color> do ATQ de Jing Yuan a todos os inimigos e aumenta os Golpes por Ação do Senhor dos Raios em 3 na próxima rodada.",
+				"SimpleDescription": "Causa Dano de Raio a todos os inimigos e aumenta os Golpes por Ação do Senhor dos Raios.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 120404,
+				"Name": "Prana Extirpado",
+				"TriggerKey": "SkillP01",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebote",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Invoca o Senhor dos Raios no início da batalha. O Senhor dos Raios tem 60 de VEL base e 3 Golpes por Ação base. Quando o Senhor dos Raios age, seus ataques são considerados <u>Ataques Extras</u>, com cada acerto do Senhor dos Raios causando Dano de Raio igual a <color=#f29e38ff>33%</color> do ATQ de Jing Yuan em um único inimigo, e inimigos adjacentes a ele também recebem Dano de Raio igual a 25% do Dano causado no inimigo-alvo.\nOs Golpes por Ação do Senhor dos Raios podem atingir o máximo de 10. Toda vez que os Golpes por Ação do Senhor dos Raios aumentam em 1, sua VEL aumenta em 10. Ao fim da ação do Senhor dos Raios, a sua VEL e Golpes por Ação voltam aos valores base. \nQuando Jing Yuan é <u>derrubado</u>, o Senhor dos Raios desaparecerá.\nQuando Jing Yuan é afetado por penalidades de <u>Controle Negativo</u>, o Senhor dos Raios será incapaz de agir.",
+				"ElementType": "Thunder"
+			},
+			"Technique": {
+				"Id": 120407,
+				"Name": "Invocação de Espírito",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar sua Técnica, no início da próxima batalha, os Golpes por Ação do Senhor dos Raios aumentam em 3 na primeira rodada."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1206": {
+		"Id": "1206",
+		"Name": "Sushang",
+		"ElementType": "Physical",
+		"ElementTypeText": "Físico",
+		"PathType": "Rogue",
+		"PathTypeText": "A Caça",
+		"Eidolons": [
+			{
+				"Id": "120601",
+				"Name": "Cortar Facilmente",
+				"Description": "Após usar a Perícia contra um inimigo com a Fraqueza quebrada, regenera 1 Ponto de Perícia."
+			},
+			{
+				"Id": "120602",
+				"Name": "Refinar pela Labuta",
+				"Description": "Após ativar a Postura da Espada, o Dano recebido por Sushang é reduzido em 20% por 1 rodada."
+			},
+			{
+				"Id": "120603",
+				"Name": "Surgir da Fama",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "120604",
+				"Name": "Golpear com o Coração",
+				"Description": "Aumenta em 40% o Efeito de Quebra de Sushang."
+			},
+			{
+				"Id": "120605",
+				"Name": "Prevalecer por Taixu",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "120606",
+				"Name": "Permanecer Como Água",
+				"Description": "O Bônus de VEL do Talento é acumulável e pode acumular até 2 vezes. Adicionalmente, após entrar em batalha, Sushang imediatamente ganha 1 acúmulo do Bônus de VEL do seu Talento."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120601,
+				"Name": "Arte do Espadachim das Nuvens: Brilho Estelar",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>50%</color> do ATQ de Sushang a um único inimigo.",
+				"SimpleDescription": "Causa Dano Físico leve a um único inimigo.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 120602,
+				"Name": "Arte do Espadachim das Nuvens: Queda Montanhosa",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>105%</color> do ATQ de Sushang a um inimigo. Além disso, há 33% de chance de ativar a Postura da Espada no último acerto, causando Dano Físico <u>Adicional</u> igual a <color=#f29e38ff>50%</color> do ATQ de Sushang ao inimigo.\nSe o inimigo for infligido com <u>Quebra de Fraqueza</u>, a ativação da Postura da Espada é garantida.",
+				"SimpleDescription": "Causa Dano Físico a um inimigo, com poucas chances de ativar Postura da Espada. Se o inimigo tiver <u>Quebra de Fraqueza</u>, a ativação da Postura da Espada é garantida.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 120603,
+				"Name": "Forma de Taixu: Anúncio do Amanhecer",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>192%</color> do ATQ de Sushang a um único inimigo e imediatamente Avança Adiante a ação dela em 100%. Além disso, o ATQ de Sushang aumenta em <color=#f29e38ff>18%</color> e usar sua Perícia concede 2 chances extras de ativar a Postura da Espada por 2 rodada(s).\nQuando ativada graças às chances extras, a Postura da Espada causa 50% do Dano original.",
+				"SimpleDescription": "Causa Dano Físico massivo a um único inimigo, aprimora o efeito da Postura da Espada e realiza uma ação imediatamente.",
+				"ElementType": "Physical"
+			},
+			"Talent": {
+				"Id": 120604,
+				"Name": "Lâmina Dançante",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando um inimigo sofre Quebra de Fraqueza no campo, a VEL de Sushang aumenta em <color=#f29e38ff>#1[f2]%</color> por 2 rodada(s).",
+				"ElementType": "Physical"
+			},
+			"Technique": {
+				"Id": 120607,
+				"Name": "Arte do Espadachim das Nuvens: Grito de Guerra",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Ataca o inimigo imediatamente. Ao entrar na batalha, Sushang causa Dano Físico igual a 80% do ATQ dela a todos os inimigos.",
+				"ElementType": "Physical"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1209": {
+		"Id": "1209",
+		"Name": "Yanqing",
+		"ElementType": "Ice",
+		"ElementTypeText": "Gelo",
+		"PathType": "Rogue",
+		"PathTypeText": "A Caça",
+		"Eidolons": [
+			{
+				"Id": "120901",
+				"Name": "Sabre Esbelto",
+				"Description": "Quando Yanqing ataca um inimigo com Congelamento, ele causa 60% de seu ATQ como Dano de Gelo Adicional."
+			},
+			{
+				"Id": "120902",
+				"Name": "Serenata do Supino",
+				"Description": "Quando a Sincronia d'Alma de Ferro estiver ativa, a Taxa de Regeneração de Energia aumenta em 10% extra."
+			},
+			{
+				"Id": "120903",
+				"Name": "Espada Erudita",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "120904",
+				"Name": "Perfuração Flamejante",
+				"Description": "Quando os PV atuais estiverem em 80% ou mais, a PEN de RES a Gelo aumenta em 12%."
+			},
+			{
+				"Id": "120905",
+				"Name": "Conflito Crescente",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "120906",
+				"Name": "Ataque Rápido",
+				"Description": "Se as melhorias da Perícia Suprema ainda estiverem em efeito quando um inimigo for derrotado, a sua duração é estendida em 1 rodada."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120901,
+				"Name": "Espinho Congelado",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>50%</color> do ATQ de Yanqing a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Gelo leve a um único inimigo.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 120902,
+				"Name": "Espinho de Ferro Veloz",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Gelo igual a <color=#f29e38ff>110%</color> do ATQ de Yanqing a um único inimigo e ativa a Sincronia d'Alma de Ferro por 1 rodada.",
+				"SimpleDescription": "Causa Dano de Gelo a um único inimigo e ativa a Sincronia d'Alma de Ferro.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 120903,
+				"Name": "Em Meio à Chuva de Bênçãos",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Aumenta a Chance de CRIT de Yanqing em 60%. Quando a Sincronia d'Alma de Ferro está ativa, aumenta o Dano CRIT de Yanqing em mais <color=#f29e38ff>30%</color>. Essa <u>melhoria</u> dura por uma rodada. Depois, causa Dano de Gelo igual a <color=#f29e38ff>210%</color> do ATQ de Yanqing a um único inimigo.",
+				"SimpleDescription": "Aumenta a Chance de CRIT de Yanqing. Aprimora a Sincronia d'Alma de Ferro e causa Dano de Gelo massivo a um único inimigo.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 120904,
+				"Name": "Eu e a Espada Somos Um",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Quando a Sincronia d'Alma de Ferro está ativa, Yanqing tem menos chance de ser atacado por inimigos. A Chance de CRIT de Yanqing aumenta em <color=#f29e38ff>#1[f1]%</color> e o Dano CRIT em <color=#f29e38ff>15%</color>. Depois que Yanqing ataca um inimigo, há uma <u>chance fixa</u> de <color=#f29e38ff>50% </color> de executar um <u>ataque extra</u>, causando Dano de Gelo igual a <color=#f29e38ff>25%</color> do ATQ de Yanqing ao alvo, com uma <u>chance-base</u> de 65% de causar Congelamento no alvo por 1 rodada.\nO alvo com Congelamento não pode realizar ações e sofre <u>Dano Adicional</u> de Gelo igual a <color=#f29e38ff>25%</color> do ATQ de Yanqing no início de cada rodada. \nQuando Yanqing recebe Dano, o efeito da Sincronia d'Alma de Ferro desaparece.",
+				"ElementType": "Ice"
+			},
+			"Technique": {
+				"Id": 120907,
+				"Name": "A Verdadeira Espada",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar sua Técnica, no início da próxima batalha, Yanqing causa 30% a mais de Dano por 2 rodada(s) a inimigos que, no momento, têm PV igual ou superior a 50%."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1211": {
+		"Id": "1211",
+		"Name": "Bailu",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Raio",
+		"PathType": "Priest",
+		"PathTypeText": "A Abundância",
+		"Eidolons": [
+			{
+				"Id": "121101",
+				"Name": "Aqua Ambrosiana",
+				"Description": "Se os PV atuais do aliado-alvo forem igual aos PV máximos dele quando o Revigoramento acabar, regenera 8 de Energia extra para esse alvo."
+			},
+			{
+				"Id": "121102",
+				"Name": "Sono Sílfico",
+				"Description": "Após usar sua Perícia Suprema, aumenta em mais 15% a Cura Realizada de Bailu por 2 rodada(s)."
+			},
+			{
+				"Id": "121103",
+				"Name": "Opulência Onisciente",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "121104",
+				"Name": "Extração Maléfica",
+				"Description": "Toda a cura fornecida pela Perícia faz com que o recipiente cause 10% a mais de Dano por 2 rodada(s). Este efeito pode se acumular até 3 vez(es)."
+			},
+			{
+				"Id": "121105",
+				"Name": "Preocupações Minguantes",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "121106",
+				"Name": "Gota de Divindade Dracônica",
+				"Description": "Bailu pode curar aliados que recebem um golpe fatal mais 1 vez(es) em uma única batalha."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 121101,
+				"Name": "Chute de Diagnóstico",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Raio igual a <color=#f29e38ff>50%</color> do ATQ de Bailu a um único inimigo.",
+				"SimpleDescription": "Causa Dano de Raio leve a um único inimigo.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 121102,
+				"Name": "Cantoria Entre as Nuvens",
+				"TriggerKey": "Skill02",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Cura um aliado em <color=#f29e38ff>#1[f1]%</color> dos PV máximos de Bailu + <color=#f29e38ff>78</color>. Bailu então cura aliados aleatórios 2 vez(es). Após cada cura, os PV restaurados da próxima cura reduzem em 15%.",
+				"SimpleDescription": "Restaura os PV de um único aliado, depois cura aleatoriamente outros aliados."
+			},
+			"Ultimate": {
+				"Id": 121103,
+				"Name": "Trovão Oportuno",
+				"TriggerKey": "Skill03",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Cura todos os aliados em <color=#f29e38ff>#1[f1]%</color> dos PV máximos de Bailu + <color=#f29e38ff>90</color>.\nBailu aplica Revigoramento nos aliados que ainda não tiverem Revigoramento. Para os que já possuírem Revigoramento, Bailu estende a sua duração em 1 rodada.\nO efeito de Revigoramento pode durar por 2 rodada(s). Este efeito não pode acumular.",
+				"SimpleDescription": "Restaura os PV e concede Revigoramento ou prolonga a duração de Revigoramento de todos os aliados."
+			},
+			"Talent": {
+				"Id": 121104,
+				"Name": "Cabaça Cheia de Elixir",
+				"TriggerKey": "SkillP01",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Depois de um aliado Revigorado ser atingido, restaura <color=#f29e38ff>#1[f1]%</color> dos PV máximos de Bailu + <color=#f29e38ff>36</color>. Este efeito pode ser ativado 2 vez(es). Quando um aliado receber um golpe fatal, ele não será <u>derrubado</u>. Bailu o cura imediatamente, curando-o em <color=#f29e38ff>12%</color> dos PV máximos de Bailu + <color=#f29e38ff>120</color> de PV. Este efeito pode ser ativado uma vez por batalha."
+			},
+			"Technique": {
+				"Id": 121107,
+				"Name": "Passeio na Chuva",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Support",
+				"TagTypeText": "Suporte",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar sua Técnica, no início da próxima batalha, todos os aliados recebem Revigoramento por 2 rodada(s)."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8001": {
+		"Id": "8001",
+		"Name": "Desbravador (Físico)",
+		"TrailblazerCanonName": "Caelus",
+		"TrailblazerGender": "M",
+		"ElementType": "Physical",
+		"ElementTypeText": "Físico",
+		"PathType": "Warrior",
+		"PathTypeText": "A Destruição",
+		"Eidolons": [
+			{
+				"Id": "800101",
+				"Name": "Uma Estrela Cadente",
+				"Description": "Quando inimigos são derrotados pela Perícia Suprema do Desbravador, o Desbravador regenera 10 de Energia extra. Esse efeito só pode ser ativado uma vez por ataque."
+			},
+			{
+				"Id": "800102",
+				"Name": "Um Anfitrião Indisposto",
+				"Description": "Atacar inimigos com Fraqueza Física restaura uma quantidade de PV igual a 5% do ATQ do Desbravador."
+			},
+			{
+				"Id": "800103",
+				"Name": "Um Sussurro Condutor",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "800104",
+				"Name": "Um Olhar Destruidor",
+				"Description": "Ao atacar um inimigo com Quebra de Fraqueza, a Chance de CRIT aumenta em 25%."
+			},
+			{
+				"Id": "800105",
+				"Name": "Uma Esperança Sobrevivente",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "800106",
+				"Name": "Um Desejo de Exploração",
+				"Description": "O Talento do Desbravador também é ativado quando ele derrota um inimigo."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800101,
+				"Name": "Golpe de Despedida",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>50%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo.",
+				"SimpleDescription": "Causa Dano Físico leve a um único inimigo.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 800102,
+				"Name": "Home Run Fatal",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Explosão",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>62%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo e inimigos adjacentes. Causa Dano Físico igual a <color=#f29e38ff>62%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo e aos inimigos adjacentes a ele",
+				"SimpleDescription": "Causa Dano Físico a um único inimigo e aos inimigos adjacentes a ele.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 800103,
+				"Name": "Ás de Poeira Estelar",
+				"TriggerKey": "Skill03",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Escolha entre dois modos de ataque para desferir um golpe completo.\nRuptura: Golpe de Despedida causa Dano Físico igual a <color=#f29e38ff>300%</color> do ATQ {F#da}{M#do} Desbrava{M#dor}{F#dora} a um único inimigo.\nRuptura: Home Run Fatal causa Dano Físico igual a <color=#f29e38ff>180%</color> do ATQ {F#da}{M#do} Desbrava{M#dor}{F#dora} a um único inimigo, e Dano Físico igual a <color=#f29e38ff>108%</color> do ATQ {F#da}{M#do} Desbrava{M#dor}{F#dora} aos inimigos adjacentes a ele",
+				"SimpleDescription": "Usa ATQ de alvo único ou uma Explosão para realizar um golpe com força máxima.",
+				"ElementType": "Physical"
+			},
+			"Talent": {
+				"Id": 800104,
+				"Name": "Arremesso Perfeito",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Sempre depois que este personagem inflige uma Quebra de Fraqueza a um inimigo, o ATQ aumenta em <color=#f29e38ff>10%</color>. Este efeito pode acumular até 2 vez(es)."
+			},
+			"Technique": {
+				"Id": 800107,
+				"Name": "Terceiro Golpe Imortal",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Imediatamente cura todos os aliados em 15% de seus PV máximos depois de usar esta Técnica."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8002": {
+		"Id": "8002",
+		"Name": "Desbravadora (Físico)",
+		"TrailblazerCanonName": "Stelle",
+		"TrailblazerGender": "F",
+		"ElementType": "Physical",
+		"ElementTypeText": "Físico",
+		"PathType": "Warrior",
+		"PathTypeText": "A Destruição",
+		"Eidolons": [
+			{
+				"Id": "800201",
+				"Name": "Uma Estrela Cadente",
+				"Description": "Quando inimigos são derrotados pela Perícia Suprema da Desbravadora, a Desbravadora regenera 10 de Energia extra. Esse efeito só pode ser ativado uma vez por ataque."
+			},
+			{
+				"Id": "800202",
+				"Name": "Um Anfitrião Forçado",
+				"Description": "Atacar inimigos com Fraqueza Física restaura uma quantidade de PV igual a 5% do ATQ da Desbravadora."
+			},
+			{
+				"Id": "800203",
+				"Name": "Um Sussurro Guia",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "800204",
+				"Name": "Um Olhar Destruidor",
+				"Description": "Ao atacar um inimigo com Quebra de Fraqueza, a Chance de CRIT aumenta em 25%."
+			},
+			{
+				"Id": "800205",
+				"Name": "Uma Esperança Sobrevivente",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "800206",
+				"Name": "Um Desejo de Exploração",
+				"Description": "O Talento da Desbravadora também é ativado quando ela derrota um inimigo."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800201,
+				"Name": "Golpe de Despedida",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>50%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo.",
+				"SimpleDescription": "Causa Dano Físico leve a um único inimigo.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 800202,
+				"Name": "Home Run Fatal",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Explosão",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Causa Dano Físico igual a <color=#f29e38ff>62%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo e inimigos adjacentes. Causa Dano Físico igual a <color=#f29e38ff>62%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo e aos inimigos adjacentes a ele",
+				"SimpleDescription": "Causa Dano Físico a um único inimigo e aos inimigos adjacentes a ele.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 800203,
+				"Name": "Ás de Poeira Estelar",
+				"TriggerKey": "Skill03",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Escolha entre dois modos de ataque para desferir um golpe completo.\nRuptura: Golpe de Despedida causa Dano Físico igual a <color=#f29e38ff>300%</color> do ATQ {F#da}{M#do} Desbrava{M#dor}{F#dora} a um único inimigo.\nRuptura: Home Run Fatal causa Dano Físico igual a <color=#f29e38ff>180%</color> do ATQ {F#da}{M#do} Desbrava{M#dor}{F#dora} a um único inimigo, e Dano Físico igual a <color=#f29e38ff>108%</color> do ATQ {F#da}{M#do} Desbrava{M#dor}{F#dora} aos inimigos adjacentes a ele",
+				"SimpleDescription": "Usa ATQ de alvo único ou uma Explosão para realizar um golpe com força máxima.",
+				"ElementType": "Physical"
+			},
+			"Talent": {
+				"Id": 800204,
+				"Name": "Arremesso Perfeito",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Sempre depois que este personagem inflige uma Quebra de Fraqueza a um inimigo, o ATQ aumenta em <color=#f29e38ff>10%</color>. Este efeito pode acumular até 2 vez(es)."
+			},
+			"Technique": {
+				"Id": 800207,
+				"Name": "Terceiro Golpe Imortal",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Restore",
+				"TagTypeText": "Restauração",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Imediatamente cura todos os aliados em 15% de seus PV máximos depois de usar esta Técnica."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8003": {
+		"Id": "8003",
+		"Name": "Desbravador (Fogo)",
+		"TrailblazerCanonName": "Caelus",
+		"TrailblazerGender": "M",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fogo",
+		"PathType": "Knight",
+		"PathTypeText": "A Preservação",
+		"Eidolons": [
+			{
+				"Id": "800301",
+				"Name": "Ressonância Sísmica",
+				"Description": "Quando o Desbravador usa seu ATQ Básico, adicionalmente causa Dano de Fogo igual a 25% da DEF do Desbravador. Ao usar seu ATQ Básico Aprimorado, o Desbravador causa Dano de Fogo Adicional igual a 50% de sua DEF."
+			},
+			{
+				"Id": "800302",
+				"Name": "Tenacidade que Desafia o Tempo",
+				"Description": "O Escudo aplicado a todos os aliados pelo Talento do Desbravador bloqueará Dano extra igual a 2% da DEF do Desbravador + 27."
+			},
+			{
+				"Id": "800303",
+				"Name": "Projeto de Desbravamento",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "800304",
+				"Name": "Juramento Fundador de Nações",
+				"Description": "No início da batalha, ganha 4 acúmulo(s) de Vontade de Magma imediatamente."
+			},
+			{
+				"Id": "800305",
+				"Name": "Chama Aquece-Espírito",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "800306",
+				"Name": "Bastião Forja-Cidades",
+				"Description": "Após que o Desbravador usar um ATQ Básico aprimorado ou a Perícia Suprema aprimorada, a DEF dele aumenta em 10%. Acumula até 3 vez(es)."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800301,
+				"Name": "Luz Quebra-Gelo",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>50%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo e ganha 1 acúmulo de Vontade de Magma.",
+				"SimpleDescription": "Causa Dano de Fogo leve a um único inimigo e ganha Vontade de Magma.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 800302,
+				"Name": "Âmbar Ardente",
+				"TriggerKey": "Skill02",
+				"TagType": "Defence",
+				"TagTypeText": "Defesa",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Aumenta a Redução de Dano {F#da Desbravadora}{M#do Desbravador} em <color=#f29e38ff>40%</color> e ganha 1 acúmulo da Vontade de Magma, com 100% de <u>chance-base</u> de Provocar todos os inimigos por 1 rodada(s).",
+				"SimpleDescription": "Reduz o Dano recebido e recebe Vontade de Magma, com uma alta chance de Provocar todos os inimigos."
+			},
+			"Ultimate": {
+				"Id": 800303,
+				"Name": "Lança das Chamas da Guerra",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>50%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} mais <color=#f29e38ff>75%</color> da DEF {F#da Desbravadora}{M#do Desbravador} a todos os inimigos. O próximo ATQ Básico será automaticamente aprimorado e não custará Vontade de Magma.",
+				"SimpleDescription": "Causa Dano de Fogo a todos os inimigos e aprimora o próximo ATQ Básico.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 800304,
+				"Name": "Tesouro dos Arquitetos",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Sempre que {F#a Desbravadora}{M#o Desbravador} sofre um golpe, ganha 1 acúmulo de Vontade de Magma até 8 vez(es).\nQuando Vontade de Magma tiver pelo menos 4 acúmulos, o ATQ Básico {F#da Desbravadora}{M#do Desbravador} é aprimorado, causando Dano a um único inimigo e aos inimigos adjacentes a ele.\nQuando {F#a Desbravadora}{M#o Desbravador} usar ATQ Básico, Perícia ou Perícia Suprema, um Escudo que absorve Dano igual a <color=#f29e38ff>#1[f1]%</color> da DEF {F#da Desbravadora}{M#do Desbravador} + <color=#f29e38ff>20</color> será concedido a todos os aliados. O Escudo dura 2 rodada(s)."
+			},
+			"Technique": {
+				"Id": 800307,
+				"Name": "Chamado do Guardião",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Defence",
+				"TagTypeText": "Defesa",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar Técnica, no início da próxima batalha, ganha um Escudo que absorve Dano igual a 30% da DEF {F#da Desbravadora}{M#do Desbravador} mais 384 por 1 rodada(s)."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8004": {
+		"Id": "8004",
+		"Name": "Desbravadora (Fogo)",
+		"TrailblazerCanonName": "Stelle",
+		"TrailblazerGender": "F",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fogo",
+		"PathType": "Knight",
+		"PathTypeText": "A Preservação",
+		"Eidolons": [
+			{
+				"Id": "800401",
+				"Name": "Ressonância Sísmica",
+				"Description": "Quando a Desbravadora usa seu ATQ Básico, adicionalmente causa Dano de Fogo igual a 25% da DEF da Desbravadora. Ao usar seu ATQ Básico Aprimorado, a Desbravadora causa Dano de Fogo Adicional igual a 50% de sua DEF."
+			},
+			{
+				"Id": "800402",
+				"Name": "Tenacidade que Desafia o Tempo",
+				"Description": "O Escudo aplicado a todos os aliados pelo Talento da Desbravadora bloqueará Dano extra igual a 2% da DEF da Desbravadora + 27."
+			},
+			{
+				"Id": "800403",
+				"Name": "Projeto de Desbravamento",
+				"Description": "Nv. da Perícia +2, até no máximo Nv. 15.\nNv. do Talento +2, até no máximo Nv. 15."
+			},
+			{
+				"Id": "800404",
+				"Name": "Juramento Fundador de Nações",
+				"Description": "No início da batalha, ganha 4 acúmulo(s) de Vontade de Magma imediatamente."
+			},
+			{
+				"Id": "800405",
+				"Name": "Chama Aquece-Espírito",
+				"Description": "Nv. da Perícia Suprema +2, até no máximo Nv. 15.\nNv. do ATQ Básico +1, até no máximo Nv. 10."
+			},
+			{
+				"Id": "800406",
+				"Name": "Bastião Forja-Cidades",
+				"Description": "Após que a Desbravadora usar um ATQ Básico aprimorado ou a Perícia Suprema aprimorada, a DEF dela aumenta em 10%. Acumula até 3 vez(es)."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800401,
+				"Name": "Luz Quebra-Gelo",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Alvo Único",
+				"SkillTypeText": "ATQ Básico",
+				"MaxLevel": 9,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>50%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} a um único inimigo e ganha 1 acúmulo de Vontade de Magma.",
+				"SimpleDescription": "Causa Dano de Fogo leve a um único inimigo e ganha Vontade de Magma.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 800402,
+				"Name": "Âmbar Ardente",
+				"TriggerKey": "Skill02",
+				"TagType": "Defence",
+				"TagTypeText": "Defesa",
+				"SkillTypeText": "Perícia",
+				"MaxLevel": 15,
+				"Description": "Aumenta a Redução de Dano {F#da Desbravadora}{M#do Desbravador} em <color=#f29e38ff>40%</color> e ganha 1 acúmulo da Vontade de Magma, com 100% de <u>chance-base</u> de Provocar todos os inimigos por 1 rodada(s).",
+				"SimpleDescription": "Reduz o Dano recebido e recebe Vontade de Magma, com uma alta chance de Provocar todos os inimigos."
+			},
+			"Ultimate": {
+				"Id": 800403,
+				"Name": "Lança das Chamas da Guerra",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "Área",
+				"SkillTypeText": "Perícia Suprema",
+				"MaxLevel": 15,
+				"Description": "Causa Dano de Fogo igual a <color=#f29e38ff>50%</color> do ATQ {F#da Desbravadora}{M#do Desbravador} mais <color=#f29e38ff>75%</color> da DEF {F#da Desbravadora}{M#do Desbravador} a todos os inimigos. O próximo ATQ Básico será automaticamente aprimorado e não custará Vontade de Magma.",
+				"SimpleDescription": "Causa Dano de Fogo a todos os inimigos e aprimora o próximo ATQ Básico.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 800404,
+				"Name": "Tesouro dos Arquitetos",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Aprimoramento",
+				"SkillTypeText": "Talento",
+				"MaxLevel": 15,
+				"Description": "Sempre que {F#a Desbravadora}{M#o Desbravador} sofre um golpe, ganha 1 acúmulo de Vontade de Magma até 8 vez(es).\nQuando Vontade de Magma tiver pelo menos 4 acúmulos, o ATQ Básico {F#da Desbravadora}{M#do Desbravador} é aprimorado, causando Dano a um único inimigo e aos inimigos adjacentes a ele.\nQuando {F#a Desbravadora}{M#o Desbravador} usar ATQ Básico, Perícia ou Perícia Suprema, um Escudo que absorve Dano igual a <color=#f29e38ff>#1[f1]%</color> da DEF {F#da Desbravadora}{M#do Desbravador} + <color=#f29e38ff>20</color> será concedido a todos os aliados. O Escudo dura 2 rodada(s)."
+			},
+			"Technique": {
+				"Id": 800407,
+				"Name": "Chamado do Guardião",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Defence",
+				"TagTypeText": "Defesa",
+				"SkillTypeText": "Técnica",
+				"MaxLevel": 1,
+				"Description": "Após usar Técnica, no início da próxima batalha, ganha um Escudo que absorve Dano igual a 30% da DEF {F#da Desbravadora}{M#do Desbravador} mais 384 por 1 rodada(s)."
+			}
+		},
+		"VersionAdded": "1.0"
+	}
+}

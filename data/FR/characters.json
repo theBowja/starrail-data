@@ -1,0 +1,2877 @@
+{
+	"1001": {
+		"Id": "1001",
+		"Name": "March 7th",
+		"ElementType": "Ice",
+		"ElementTypeText": "Glace",
+		"PathType": "Knight",
+		"PathTypeText": "La Préservation",
+		"Eidolons": [
+			{
+				"Id": "100101",
+				"Name": "Souvenir de toi",
+				"Description": "Chaque fois que l'ultime de March 7th gèle une cible, elle régénère 6 points d'énergie."
+			},
+			{
+				"Id": "100102",
+				"Name": "Souvenir de ça",
+				"Description": "Accorde un bouclier équivalent à 24% de la DÉF de March 7th + 320 à l'allié dont le pourcentage de PV est le plus faible en entrant en combat, dure 3 tours."
+			},
+			{
+				"Id": "100103",
+				"Name": "Souvenir de tout",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100104",
+				"Name": "Ne plus jamais abandonner",
+				"Description": "L'effet de contre du talent peut être déclenché 1 fois de plus à chaque tour. Les DGT infligés par le contre augmentent d'un montant équivalent à 30% de la DÉF de March 7th."
+			},
+			{
+				"Id": "100105",
+				"Name": "Ne plus jamais oublier",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100106",
+				"Name": "Ça se passe comme ça...",
+				"Description": "Les alliés protégés par le bouclier octroyé par la compétence de March 7th restaurent un montant de PV équivalent à 4% de leurs PV max + 106 au début de chaque tour."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100101,
+				"Name": "Flèche du froid glacial",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>50%</color> de l'ATQ de March 7th à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de glace mineurs à un ennemi unique.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 100102,
+				"Name": "Par le pouvoir de la mignonnerie",
+				"TriggerKey": "Skill02",
+				"TagType": "Defence",
+				"TagTypeText": "Défense",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Accorde un bouclier à un allié unique qui absorbe une quantité de DGT équivalente à <color=#f29e38ff>38%</color> de la DÉF de March 7th + <color=#f29e38ff>190</color> pendant 3 tours.\nSi le pourcentage de PV actuel de l'allié est supérieur ou égal à 30%, les chances que les ennemis attaquent cet allié augmentent considérablement.",
+				"SimpleDescription": "Accorde un bouclier à un allié unique."
+			},
+			"Ultimate": {
+				"Id": 100103,
+				"Name": "Cascade glaciale",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>90%</color> de l'ATQ de March 7th à tous les ennemis. Les ennemis touchés ont 50% de <u>chances de base</u> d'être gelés pendant 1 tour.\nLes ennemis gelés ne peuvent pas agir et subissent des DGT de glace <u>additionnels</u> équivalents à <color=#f29e38ff>30%</color> de l'ATQ de March 7th au début de chaque tour.",
+				"SimpleDescription": "Inflige des DGT de glace à tous les ennemis, avec des chances de les geler.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 100104,
+				"Name": "Girl Power",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsqu'un allié bénéficiant d'un bouclier est attaqué par un ennemi, March 7th <u>contre</u> immédiatement, infligeant des DGT de glace équivalents à <color=#f29e38ff>50%</color> de son ATQ. Cet effet peut être déclenché 2 fois par tour.",
+				"ElementType": "Ice"
+			},
+			"Technique": {
+				"Id": 100107,
+				"Name": "Beauté glacée",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Il y a 100% de <u>chances de base</u> de geler un ennemi aléatoire pendant 1 tour après être entré en combat.\nUn ennemi gelé ne peut pas agir et subit des DGT de glace <u>additionnels</u> équivalents à 50% de l'ATQ de March 7th au début de chaque tour.",
+				"ElementType": "Ice"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1002": {
+		"Id": "1002",
+		"Name": "Dan Heng",
+		"ElementType": "Wind",
+		"ElementTypeText": "Vent",
+		"PathType": "Rogue",
+		"PathTypeText": "La Chasse",
+		"Eidolons": [
+			{
+				"Id": "100201",
+				"Name": "Plus dure sera la chute",
+				"Description": "Lorsque le pourcentage de PV actuel de la cible ennemie est supérieur ou égal à 50%, les chances de coup critique augmentent de 12%."
+			},
+			{
+				"Id": "100202",
+				"Name": "Faire taire le poison et étouffer les flammes",
+				"Description": "Réduit le temps de recharge du talent d'1 tour."
+			},
+			{
+				"Id": "100203",
+				"Name": "Visible et invisible",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100204",
+				"Name": "Dragon rugissant et soleil fulgurant",
+				"Description": "Lorsque Dan Heng utilise son ultime pour éliminer un ennemi, sa prochaine action est avancée de 100 %."
+			},
+			{
+				"Id": "100205",
+				"Name": "Une goutte de pluie nourrit un torrent",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100206",
+				"Name": "L'âme troublée attend",
+				"Description": "L'état Ralenti provoqué par la compétence de Dan Heng réduit la VIT de l'ennemi de 8% supplémentaires."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100201,
+				"Name": "Lance perce-nuages : Vent du nord",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de vent équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Dan Heng à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de vent mineurs à un ennemi unique.",
+				"ElementType": "Wind"
+			},
+			"Skill": {
+				"Id": 100202,
+				"Name": "Lance perce-nuages : Torrent",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de vent équivalents à <color=#f29e38ff>130%</color> de l'ATQ de Dan Heng à un ennemi unique.\nEn cas de coup critique, il y a 100% de <u>chances de base</u> de réduire la VIT de la cible de 12% pendant 2 tours.",
+				"SimpleDescription": "Inflige des DGT de vent à un ennemi unique. En cas de coup critique, il y a de fortes chances de ralentir l'ennemi.",
+				"ElementType": "Wind"
+			},
+			"Ultimate": {
+				"Id": 100203,
+				"Name": "Rêve éthéré",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de vent équivalents à <color=#f29e38ff>240%</color> de l'ATQ de Dan Heng à un ennemi unique. Si l'ennemi est ralenti, le multiplicateur de DGT de l'ultime augmente de <color=#f29e38ff>72%</color>.",
+				"SimpleDescription": "Inflige des DGT de vent massifs à un ennemi unique. Si l'ennemi est ralenti, le multiplicateur des dégâts infligés augmente.",
+				"ElementType": "Wind"
+			},
+			"Talent": {
+				"Id": 100204,
+				"Name": "Portée supérieure",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsque Dan Heng est la cible de la capacité d'un allié, la <u>PÉN de RÉS</u> de vent de sa prochaine attaque augmente de <color=#f29e38ff>18%</color>. Cet effet peut être déclenché à nouveau après 2 tours."
+			},
+			"Technique": {
+				"Id": 100207,
+				"Name": "Pointe affûtée",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique de Dan Heng, son ATQ augmente de 40% pendant 3 tours au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1003": {
+		"Id": "1003",
+		"Name": "Himeko",
+		"ElementType": "Fire",
+		"ElementTypeText": "Feu",
+		"PathType": "Mage",
+		"PathTypeText": "L'Érudition",
+		"Eidolons": [
+			{
+				"Id": "100301",
+				"Name": "Enfance",
+				"Description": "Après avoir déclenché Ruée vers la victoire, la VIT de Himeko augmente de 20% pendant 2 tours."
+			},
+			{
+				"Id": "100302",
+				"Name": "Convergence",
+				"Description": "Inflige 15% de DGT supplémentaires aux ennemis dont le pourcentage de PV est inférieur ou égal à 50%."
+			},
+			{
+				"Id": "100303",
+				"Name": "Assurance",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100304",
+				"Name": "Dévouement",
+				"Description": "Lorsque la compétence de Himeko fait subir une Rupture de faiblesse à un ennemi, elle obtient 1 point de Charge supplémentaire."
+			},
+			{
+				"Id": "100305",
+				"Name": "Aspiration",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100306",
+				"Name": "En avant !",
+				"Description": "L'ultime inflige des DGT 2 fois supplémentaires, infligeant à chaque fois des DGT de feu équivalents à 40% des DGT initiaux à un ennemi aléatoire."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100301,
+				"Name": "Accordage de la lame de scie",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Himeko à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de feu mineurs à un ennemi unique.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 100302,
+				"Name": "Détonation en fusion",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Propagation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>100%</color> de l'ATQ de Himeko à un ennemi unique et des DGT de feu équivalents à <color=#f29e38ff>40%</color> de l'ATQ de Himeko aux ennemis adjacents.",
+				"SimpleDescription": "Inflige des DGT de feu à un ennemi unique et des DGT de feu mineurs aux ennemis adjacents.",
+				"ElementType": "Fire"
+			},
+			"Ultimate": {
+				"Id": 100303,
+				"Name": "Éclat céleste",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>138%</color> de l'ATQ de Himeko à tous les ennemis. Himeko régénère 5 points d'énergie supplémentaires pour chaque ennemi vaincu.",
+				"SimpleDescription": "Inflige des DGT de feu à tous les ennemis et régénère des points d'énergie si des ennemis sont vaincus.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 100304,
+				"Name": "Ruée vers la victoire",
+				"TriggerKey": "SkillP01",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsqu'un ennemi subit une Rupture de faiblesse, Himeko obtient 1 point de Charge (3 points max).\nSi la Charge de Himeko est au maximum lorsqu'un allié attaque, Himeko effectue immédiatement 1 <u>attaque de suivi</u> et inflige des DGT de feu équivalents à <color=#f29e38ff>70%</color> de son ATQ à tous les ennemis, consommant tous les points de Charge.\nHimeko obtient 1 point de Charge en début de combat.",
+				"ElementType": "Fire"
+			},
+			"Technique": {
+				"Id": 100307,
+				"Name": "Combustion incomplète",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Crée une dimension qui dure 15 secondes après utilisation de la technique. Après être entré en combat avec des ennemis dans la dimension, il y a 100% de <u>chances de base</u> d'augmenter les DGT de feu subis par les ennemis de 10% pendant 2 tours. Il ne peut exister qu'1 dimension créée par les alliés à la fois."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1004": {
+		"Id": "1004",
+		"Name": "Welt",
+		"ElementType": "Imaginary",
+		"ElementTypeText": "Imaginaire",
+		"PathType": "Warlock",
+		"PathTypeText": "La Nihilité",
+		"Eidolons": [
+			{
+				"Id": "100401",
+				"Name": "Héritage d'honneur",
+				"Description": "Après utilisation de l'ultime de Welt, ses capacités sont renforcées. Lors des 2 prochaines fois où il utilise son ATQ normale ou sa compétence, il inflige des DGT additionnels à la cible équivalents respectivement à 50% du multiplicateur de DGT de son ATQ normale et à 80% du multiplicateur de DGT de sa compétence."
+			},
+			{
+				"Id": "100402",
+				"Name": "Confluence des étoiles",
+				"Description": "Lorsque son talent est déclenché, Welt régénère 3 points d'énergie."
+			},
+			{
+				"Id": "100403",
+				"Name": "Prière de paix",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100404",
+				"Name": "Au nom de la justice",
+				"Description": "Augmente les chances de base de la compétence de réduire la VIT des ennemis touchés de 35%."
+			},
+			{
+				"Id": "100405",
+				"Name": "Pouvoir de la bonté",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100406",
+				"Name": "Perspective de gloire",
+				"Description": "Lors de l'utilisation de la compétence, inflige des DGT 1 fois supplémentaire à un ennemi aléatoire."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100401,
+				"Name": "Suppression de la gravité",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT imaginaires équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Welt à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT imaginaires mineurs à un ennemi unique.",
+				"ElementType": "Imaginary"
+			},
+			"Skill": {
+				"Id": 100402,
+				"Name": "Frontière du vide",
+				"TriggerKey": "Skill02",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebond",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT imaginaires équivalents à <color=#f29e38ff>36%</color> de l'ATQ de Welt à un ennemi unique et inflige des DGT 2 fois supplémentaires, infligeant à chaque fois des DGT imaginaires équivalents à <color=#f29e38ff>36%</color> de l'ATQ de Welt à un ennemi aléatoire. Les attaques qui touchent un ennemi ont <color=#f29e38ff>65%</color> de <u>chances de base</u> de réduire sa VIT de 10% pendant 2 tours.",
+				"SimpleDescription": "Inflige des DGT imaginaires mineurs à des ennemis aléatoires. Cette attaque peut rebondir 3 fois et a une chance de ralentir les ennemis touchés.",
+				"ElementType": "Imaginary"
+			},
+			"Ultimate": {
+				"Id": 100403,
+				"Name": "Trou noir synthétique",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT imaginaires équivalents à <color=#f29e38ff>90%</color> de l'ATQ de Welt à tous les ennemis, avec 100% de <u>chances de base</u> d'emprisonner les ennemis touchés pendant 1 tour.\nLes ennemis emprisonnés voient leurs <u>actions retardées</u> de <color=#f29e38ff>32%</color> et leur VIT réduite de 10%.",
+				"SimpleDescription": "Inflige des DGT imaginaires à tous les ennemis, avec de fortes chances de les emprisonner.",
+				"ElementType": "Imaginary"
+			},
+			"Talent": {
+				"Id": 100404,
+				"Name": "Distorsion temporelle",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsqu'il touche un ennemi qui est ralenti, Welt lui inflige des DGT imaginaires <u>additionnels</u> équivalents à <color=#f29e38ff>30%</color> de son ATQ."
+			},
+			"Technique": {
+				"Id": 100407,
+				"Name": "Emprisonnement gravitationnel",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Crée une dimension qui dure 15 secondes après utilisation de la technique. Les ennemis dans cette dimension voient leur vitesse de déplacement réduite de 50%. Après être entré en combat avec des ennemis dans la dimension, il y a 100% de <u>chances de base</u> d'emprisonner les ennemis pour 1 tour.\nLes ennemis emprisonnés voient leurs <u>actions retardées</u> de 20% et leur VIT réduite de 10%. Il ne peut exister qu'1 dimension créée par les alliés à la fois."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1005": {
+		"Id": "1005",
+		"Name": "Kafka",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Foudre",
+		"PathType": "Warlock",
+		"PathTypeText": "La Nihilité",
+		"Eidolons": [
+			{
+				"Id": "100501",
+				"Name": "Da capo",
+				"Description": "Après utilisation de l'ultime, les ennemis subissent immédiatement les DGT infligés par tous les effets de dégâts sur la durée actuels au lieu de subir les DGT de Stupéfaction."
+			},
+			{
+				"Id": "100502",
+				"Name": "Fortississimo",
+				"Description": "Augmente l'efficacité de Rupture de faiblesse de 50%."
+			},
+			{
+				"Id": "100503",
+				"Name": "Capriccio",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100504",
+				"Name": "Recitativo",
+				"Description": "L'augmentation des dégâts sur la durée causée par le talent est prolongée de 1 tours. Cet effet devient cumulable et peut se cumuler jusqu'à 2 fois."
+			},
+			{
+				"Id": "100505",
+				"Name": "Doloroso",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100506",
+				"Name": "Leggiero",
+				"Description": "L'ultime augmente le multiplicateur des DGT de Stupéfaction sur les ennemis de 100% et prolonge la durée de Stupéfaction d'1 tour."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100501,
+				"Name": "Tumulte de minuit",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Kafka à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à un ennemi unique.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 100502,
+				"Name": "Caresse du clair de lune",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Propagation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>80%</color> de l'ATQ de Kafka à une cible ennemie et des DGT de foudre équivalents à <color=#f29e38ff>30%</color> de l'ATQ de Kafka aux ennemis adjacents.\nSi la cible ennemie est soumise à des dégâts sur la durée, tous les dégâts sur la durée qu'elle subit actuellement produisent immédiatement des DGT équivalents à <color=#f29e38ff>80%</color> des DGT initiaux.",
+				"SimpleDescription": "Inflige des DGT de foudre à un ennemi ainsi que des dégâts sur la durée supplémentaires. Inflige également des DGT de foudre mineurs aux ennemis adjacents.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 100503,
+				"Name": "Trille crépusculaire",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>48%</color> de l'ATQ de Kafka à tous les ennemis. Les ennemis touchés ont 100% de <u>chances de base</u> d'être stupéfiés et de subir immédiatement des DGT équivalents à <color=#f29e38ff>80%</color> des dégâts sur la durée. Stupéfaction dure 2 tours.\nLes ennemis stupéfiés subissent des dégâts de foudre sur la durée équivalents à <color=#f29e38ff>75%</color> de l'ATQ de Kafka au début de chaque tour.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à tous les ennemis, avec de fortes chances de les stupéfier, ce qui leur inflige des DGT supplémentaires.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 100504,
+				"Name": "Douce mais cruelle",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsqu'un allié de Kafka utilise une ATQ normale sur un ennemi, Kafka lance immédiatement 1 <u>attaque de suivi</u> et inflige des DGT de foudre équivalents à <color=#f29e38ff>60%</color> de sa propre ATQ à cet ennemi, avec 100% de chances de base d'augmenter les dégâts sur la durée subis par cet ennemi de <color=#f29e38ff>15%</color> pendant 2 tours. Cet effet ne peut être déclenché qu'1 fois par tour.",
+				"ElementType": "Thunder"
+			},
+			"Technique": {
+				"Id": 100507,
+				"Name": "La pitié n'est pas un pardon",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Inflige des DGT de foudre équivalents à 50% de l'ATQ de Kafka à un ennemi aléatoire après être entré en combat. D'autre part, tous les ennemis ont 100% de <u>chances de base</u> d'être stupéfiés pendant 3 tours.\nLes ennemis stupéfiés subissent des dégâts de foudre sur la durée équivalents à 50% de l'ATQ de Kafka au début de chaque tour.",
+				"ElementType": "Thunder"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1006": {
+		"Id": "1006",
+		"Name": "Louve d'argent",
+		"ElementType": "Quantum",
+		"ElementTypeText": "Quantique",
+		"PathType": "Warlock",
+		"PathTypeText": "La Nihilité",
+		"Eidolons": [
+			{
+				"Id": "100601",
+				"Name": "Piratage psychologique",
+				"Description": "Lorsqu'un ennemi entre en combat, sa RÉS aux effets diminue de 30% pendant 2 tours."
+			},
+			{
+				"Id": "100602",
+				"Name": "Machine zombie",
+				"Description": "Lorsque qu'elle utilise son ultime, Louve d'argent régénère 8 points d'énergie pour chaque malus actuellement subi par la cible ennemie. Cumulable jusqu'à 5 fois."
+			},
+			{
+				"Id": "100603",
+				"Name": "Charge utile",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100604",
+				"Name": "Cyberattaque",
+				"Description": "Lors de l'utilisation de l'ultime, inflige des DGT quantiques additionnels équivalents à 20% de l'ATQ de Louve d'argent pour chaque malus présent sur la cible ennemie. Cet effet peut être déclenché un maximum de 5 fois."
+			},
+			{
+				"Id": "100605",
+				"Name": "Attaque par force brute",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100606",
+				"Name": "Réseau superposé",
+				"Description": "Pour chaque malus subi par la cible ennemie, augmente les DGT infligés par Louve d'argent de 20%. Cumulable jusqu'à 5 fois."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100601,
+				"Name": "Alerte système",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT quantiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Louve d'argent à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT quantiques mineurs à un ennemi unique.",
+				"ElementType": "Quantum"
+			},
+			"Skill": {
+				"Id": 100602,
+				"Name": "Autoriser les modifications ?",
+				"TriggerKey": "Skill02",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT quantiques équivalents à <color=#f29e38ff>70%</color> de l'ATQ de Louve d'argent à un ennemi unique, avec <color=#f29e38ff>75%</color> de <u>chances de base</u> d'infliger à la cible 1 Faiblesse du même type que l'ATQ d'un allié aléatoire pendant 3 tours, et réduit la RÉS de l'ennemi aux DGT de ce type d'ATQ de 20%.\nD'autre part, il y a 100% de <u>chances de base</u> de réduire la RÉS aux DGT de l'ennemi de <color=#f29e38ff>#6[f1]%</color> pendant 3 tours.",
+				"SimpleDescription": "Inflige des DGT quantiques à un ennemi unique et a une chance de lui infliger une Faiblesse de type supplémentaire.",
+				"ElementType": "Quantum"
+			},
+			"Ultimate": {
+				"Id": 100603,
+				"Name": "Compte bloqué",
+				"TriggerKey": "Skill03",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Il y a <color=#f29e38ff>85%</color> de <u>chances de base</u> de réduire la DÉF de la cible ennemie de <color=#f29e38ff>40%</color> pendant 3 tours. D'autre part, inflige <color=#f29e38ff>210%</color> de l'ATQ de Louve d'argent sous forme de DGT quantiques à la cible ennemie.",
+				"SimpleDescription": "Inflige des DGT quantiques massifs à un ennemi unique, avec de fortes chances de réduire sa DÉF.",
+				"ElementType": "Quantum"
+			},
+			"Talent": {
+				"Id": 100604,
+				"Name": "En attente de la réponse du système...",
+				"TriggerKey": "SkillP01",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Louve d'argent peut créer trois types de Bugs : une réduction d'ATQ de <color=#f29e38ff>#1[f1]%</color>, une réduction de DÉF de <color=#f29e38ff>#2[f1]%</color> ou une réduction de VIT de <color=#f29e38ff>#3[f1]%</color>.\nChaque fois que Louve d'argent attaque, elle a <color=#f29e38ff>60%</color> de <u>chances de base</u> d'implanter un Bug aléatoire qui dure 2 tours à la cible ennemie."
+			},
+			"Technique": {
+				"Id": 100607,
+				"Name": "Arrêt forcé du programme",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Ignore les types de faiblesse et réduit la robustesse de tous les ennemis après être entré en combat. Les ennemis qui subissent une Rupture de faiblesse de cette manière déclenchent l'effet de Rupture de faiblesse quantique.",
+				"ElementType": "Quantum"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1008": {
+		"Id": "1008",
+		"Name": "Arlan",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Foudre",
+		"PathType": "Warrior",
+		"PathTypeText": "La Destruction",
+		"Eidolons": [
+			{
+				"Id": "100801",
+				"Name": "Jusqu'au-boutiste",
+				"Description": "Lorsque les PV du personnage sont inférieurs ou égaux à 50 % de ses PV max, augmente les DGT de la compétence de 10%."
+			},
+			{
+				"Id": "100802",
+				"Name": "Libération",
+				"Description": "Utiliser la compétence ou l'ultime supprime 1 malus qui affecte le personnage."
+			},
+			{
+				"Id": "100803",
+				"Name": "Dépassement de soi",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100804",
+				"Name": "Retournement de situation",
+				"Description": "Lorsqu'il est frappé par un coup fatal après être entré en combat, au lieu de tomber à terre, Arlan restaure immédiatement 25% de ses PV max. Cet effet disparaît automatiquement après avoir été déclenché une fois, ou après 2 tours."
+			},
+			{
+				"Id": "100805",
+				"Name": "Corps et âme",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100806",
+				"Name": "Abnégation",
+				"Description": "Lorsque les PV du personnage sont inférieurs ou égaux à 50 % de ses PV max, l'ultime inflige 20% de DGT supplémentaires. Le multiplicateur de DGT de l'ennemi ciblé s'applique désormais également aux ennemis adjacents."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100801,
+				"Name": "Ruée éclair",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>50%</color> de l'ATQ d'Arlan à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à un ennemi unique.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 100802,
+				"Name": "Briseur de chaînes",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Consomme 15% des PV max d'Arlan pour infliger des DGT de foudre équivalents à <color=#f29e38ff>120%</color> de son ATQ à un ennemi unique. Si les PV d'Arlan ne sont pas suffisants, ses PV sont réduits à 1 après utilisation de sa compétence.",
+				"SimpleDescription": "Consomme une partie de ses propres PV pour infliger des DGT de foudre à un ennemi unique.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 100803,
+				"Name": "Châtiment frénétique",
+				"TriggerKey": "Skill03",
+				"TagType": "Blast",
+				"TagTypeText": "Propagation",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>192%</color> de l'ATQ d'Arlan à un ennemi unique et des DGT de foudre équivalents à <color=#f29e38ff>96%</color> de l'ATQ d'Arlan aux ennemis adjacents.",
+				"SimpleDescription": "Inflige des DGT de foudre massifs à un ennemi unique et des DGT de foudre aux ennemis adjacents.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 100804,
+				"Name": "Douleur et colère",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Augmente les DGT d'Arlan pour chaque pourcentage de PV en dessous de ses PV max, jusqu'à un maximum de <color=#f29e38ff>36%</color> de DGT supplémentaires."
+			},
+			"Technique": {
+				"Id": 100807,
+				"Name": "Moisson rapide",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Inflige des DGT de foudre équivalents à 80% de l'ATQ d'Arlan à tous les ennemis après être entré en combat.",
+				"ElementType": "Thunder"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1009": {
+		"Id": "1009",
+		"Name": "Asta",
+		"ElementType": "Fire",
+		"ElementTypeText": "Feu",
+		"PathType": "Shaman",
+		"PathTypeText": "L'Harmonie",
+		"Eidolons": [
+			{
+				"Id": "100901",
+				"Name": "Chanson d'une étoile sans parole",
+				"Description": "Lors de l'utilisation de la compétence, inflige des DGT 1 fois supplémentaire à un ennemi aléatoire."
+			},
+			{
+				"Id": "100902",
+				"Name": "Aléas des cycles de la lune",
+				"Description": "Après utilisation de l'ultime d'Asta, ses cumuls de Chargement ne diminuent pas au tour suivant."
+			},
+			{
+				"Id": "100903",
+				"Name": "Pluie de météores à volonté",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "100904",
+				"Name": "Manifestation de l'aurore",
+				"Description": "Le taux de régénération d'énergie d'Asta augmente de 15% lorsqu'elle dispose de 2 cumuls de Chargement ou plus."
+			},
+			{
+				"Id": "100905",
+				"Name": "Nébuleuse des profondeurs du cosmos",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "100906",
+				"Name": "Repos de la voie lactée",
+				"Description": "Les cumuls de Chargement perdus à chaque tour diminuent de 1."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 100901,
+				"Name": "Rayon spectral",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>50%</color> de l'ATQ d'Asta à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de feu mineurs à un ennemi unique.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 100902,
+				"Name": "Tempête de météores",
+				"TriggerKey": "Skill02",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebond",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>25%</color> de l'ATQ d'Asta à un ennemi unique et inflige des DGT 4 fois supplémentaires, infligeant à chaque fois des DGT de feu équivalents à <color=#f29e38ff>25%</color> de l'ATQ d'Asta à un ennemi aléatoire.",
+				"SimpleDescription": "Inflige des DGT de feu mineurs à des cibles ennemies uniques pour un total de 5 rebonds.",
+				"ElementType": "Fire"
+			},
+			"Ultimate": {
+				"Id": 100903,
+				"Name": "Bénédiction astrale",
+				"TriggerKey": "Skill03",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Augmente la VIT de tous les alliés de <color=#f29e38ff>36</color> pendant 2 tours.",
+				"SimpleDescription": "Augmente la VIT de tous les alliés."
+			},
+			"Talent": {
+				"Id": 100904,
+				"Name": "Astrométrie",
+				"TriggerKey": "SkillP01",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Obtient 1 cumul de Chargement pour chaque ennemi différent touché par Asta, et 1 cumul supplémentaire si l'ennemi touché a une Faiblesse au feu.\nPour chaque cumul de Chargement d'Asta, l'ATQ de tous les alliés augmente de <color=#f29e38ff>#1[f1]%</color>, effet cumulable jusqu'à 5 fois.\nDès son deuxième tour, le compte de cumuls de Chargement d'Asta diminue de 3 au début de chaque tour."
+			},
+			"Technique": {
+				"Id": 100907,
+				"Name": "Coup de génie",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Inflige des DGT de feu équivalents à 50% de l'ATQ d'Asta à tous les ennemis après être entré en combat.",
+				"ElementType": "Fire"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1013": {
+		"Id": "1013",
+		"Name": "Herta",
+		"ElementType": "Ice",
+		"ElementTypeText": "Glace",
+		"PathType": "Mage",
+		"PathTypeText": "L'Érudition",
+		"Eidolons": [
+			{
+				"Id": "101301",
+				"Name": "Tu en veux encore ?",
+				"Description": "Si le pourcentage des PV de l'ennemi est inférieur ou égal à 50%, l'ATQ normale de Herta inflige des DGT de glace additionnels équivalents à 40% de l'ATQ de Herta."
+			},
+			{
+				"Id": "101302",
+				"Name": "On ne s'arrête pas",
+				"Description": "Chaque fois que le talent est déclenché, les chances de coup critique du personnage augmentent de 3%. Cet effet est cumulable 5 fois."
+			},
+			{
+				"Id": "101303",
+				"Name": "Je suis comme ça",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "101304",
+				"Name": "On frappe là où ça fait mal",
+				"Description": "Les DGT augmentent de 10% lorsque le talent est déclenché."
+			},
+			{
+				"Id": "101305",
+				"Name": "C'est tout ou rien",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "101306",
+				"Name": "On ne me trahit pas",
+				"Description": "L'ATQ du personnage augmente de 25% pendant 1 tour après utilisation de l'ultime."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 101301,
+				"Name": "Qu'est-ce que tu regardes ?",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Herta à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de glace mineurs à un ennemi unique.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 101302,
+				"Name": "Une offre à ne pas manquer",
+				"TriggerKey": "Skill02",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Herta à tous les ennemis. Lorsque le pourcentage de PV d'un ennemi est supérieur ou égal à 50%, les DGT qui lui sont infligés augmentent de 20%.",
+				"SimpleDescription": "Inflige des DGT de glace mineurs à tous les ennemis. Les cibles qui ont le plus de PV subissent des DGT plus importants.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 101303,
+				"Name": "La magie, c'est exquis",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>120%</color> de l'ATQ de Herta à tous les ennemis.",
+				"SimpleDescription": "Inflige des DGT de glace à tous les ennemis.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 101304,
+				"Name": "On n'est pas mieux servi que par soi-même",
+				"TriggerKey": "SkillP01",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsque l'attaque d'un allié réduit le pourcentage de PV d'un ennemi à 50% ou moins, Herta lance une <u>attaque de suivi</u> qui inflige des DGT de glace équivalents à <color=#f29e38ff>25%</color> de son ATQ à tous les ennemis.",
+				"ElementType": "Ice"
+			},
+			"Technique": {
+				"Id": 101307,
+				"Name": "Il y a de la marge de progression",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de sa technique, l'ATQ de Herta augmente de 40% pendant 3 tours au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1101": {
+		"Id": "1101",
+		"Name": "Bronya",
+		"ElementType": "Wind",
+		"ElementTypeText": "Vent",
+		"PathType": "Shaman",
+		"PathTypeText": "L'Harmonie",
+		"Eidolons": [
+			{
+				"Id": "110101",
+				"Name": "Regain de force",
+				"Description": "Lors de l'utilisation de la compétence, il y a 50% de chances fixes de récupérer 1 point de compétence. Cet effet a un temps de recharge d'1 tour."
+			},
+			{
+				"Id": "110102",
+				"Name": "Marche forcée",
+				"Description": "Lors de l'utilisation de la compétence, la VIT de la cible alliée augmente de 30% pour 1 tour après avoir agi."
+			},
+			{
+				"Id": "110103",
+				"Name": "Bombardement",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110104",
+				"Name": "Embuscade",
+				"Description": "Lorsqu'un de ses alliés utilise son ATQ normale sur un ennemi qui a une Faiblesse au vent, Bronya lance immédiatement une attaque de suivi sur la cible, infligeant des DGT de vent équivalents à 80% des DGT de l'ATQ normale de Bronya. Cet effet ne peut être déclenché qu'1 fois par tour."
+			},
+			{
+				"Id": "110105",
+				"Name": "Inarrêtable",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110106",
+				"Name": "Au-delà de l'arc-en-ciel",
+				"Description": "La durée de l'effet d'augmentation de DGT qu'accorde la compétence à une cible alliée est prolongée d'1 tour."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110101,
+				"Name": "Tir du mistral",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de vent équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Bronya à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de vent mineurs à un ennemi unique.",
+				"ElementType": "Wind"
+			},
+			"Skill": {
+				"Id": 110102,
+				"Name": "Redéploiement de combat",
+				"TriggerKey": "Skill02",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Dissipe un <u>malus</u> d'un allié, lui permet d'agir immédiatement et augmente ses DGT de <color=#f29e38ff>33%</color> pendant 1 tour.\nLorsque cette compétence est utilisée sur Bronya, elle ne peut pas agir immédiatement à nouveau.",
+				"SimpleDescription": "Supprime 1 <u>malus</u> d'un allié unique, augmente ses DGT et lui permet d'agir immédiatement."
+			},
+			"Ultimate": {
+				"Id": 110103,
+				"Name": "La marche de Belobog",
+				"TriggerKey": "Skill03",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Augmente l'ATQ de tous les alliés de <color=#f29e38ff>33%</color> et augmente leurs DGT critiques d'un montant équivalent à <color=#f29e38ff>#2[f1]%</color> des DGT critiques de Bronya + <color=#f29e38ff>#3[f1]%</color> pendant 2 tours.",
+				"SimpleDescription": "Augmente l'ATQ et les DGT critiques de tous les alliés."
+			},
+			"Talent": {
+				"Id": 110104,
+				"Name": "Première de cordée",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Après utilisation de son ATQ normale, l'action suivante de Bronya est <u>avancée</u> de <color=#f29e38ff>15%</color>.",
+				"ElementType": "Wind"
+			},
+			"Technique": {
+				"Id": 110107,
+				"Name": "Bannière de commandement",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique de Bronya, l'ATQ de tous les alliés augmente de 15% pendant 2 tours au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1102": {
+		"Id": "1102",
+		"Name": "Seele",
+		"ElementType": "Quantum",
+		"ElementTypeText": "Quantique",
+		"PathType": "Rogue",
+		"PathTypeText": "La Chasse",
+		"Eidolons": [
+			{
+				"Id": "110201",
+				"Name": "Coup tranchant",
+				"Description": "Lorsque le personnage inflige des DGT à un ennemi dont le pourcentage de PV est inférieur ou égal à 80%, les chances de coup critique augmentent de 15%."
+			},
+			{
+				"Id": "110202",
+				"Name": "Papillon dansant",
+				"Description": "L'augmentation de VIT conférée par la compétence de Seele peut être cumulée jusqu'à 2 fois."
+			},
+			{
+				"Id": "110203",
+				"Name": "Tumulte éblouissant",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110204",
+				"Name": "Phantasme d'un instant",
+				"Description": "Seele régénère 15 points d'énergie lorsqu'elle élimine un ennemi."
+			},
+			{
+				"Id": "110205",
+				"Name": "Éclats perçants",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110206",
+				"Name": "Ébranlements éclatants",
+				"Description": "Après utilisation de l'ultime de Seele, inflige l'effet Volée de papillons à la cible ennemie pendant 1 tour. Les ennemis affectés par Volée de papillons subissent des DGT quantiques additionnels équivalents à 15% des DGT de l'ultime de Seele chaque fois qu'ils sont attaqués. Si la cible ennemie est vaincue par les DGT de Volée de papillons provoqués par les attaques d'autres alliés, le talent de Seele ne se déclenche pas.\nLorsque Seele est à terre, l'effet Volée de papillons infligé aux ennemis est supprimé."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110201,
+				"Name": "Représailles",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT quantiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Seele à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT quantiques mineurs à un ennemi unique.",
+				"ElementType": "Quantum"
+			},
+			"Skill": {
+				"Id": 110202,
+				"Name": "Lame rengainée",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Augmente la VIT de Seele de 25% pendant 2 tours et inflige des DGT quantiques équivalents à <color=#f29e38ff>110%</color> de l'ATQ de Seele à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT quantiques à un ennemi unique et augmente la VIT.",
+				"ElementType": "Quantum"
+			},
+			"Ultimate": {
+				"Id": 110203,
+				"Name": "Volée de papillons",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Seele entre immédiatement dans l'état amélioré et inflige des DGT quantiques équivalents à <color=#f29e38ff>255%</color> de son ATQ à un ennemi unique.",
+				"SimpleDescription": "Entre dans l'état amélioré et inflige des DGT quantiques massifs à un ennemi unique.",
+				"ElementType": "Quantum"
+			},
+			"Talent": {
+				"Id": 110204,
+				"Name": "Résurgence",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsqu'elle élimine un ennemi avec son ATQ normale, sa compétence ou son ultime, Seele entre dans l'état amélioré et bénéficie d'un <u>tour supplémentaire</u>. Lorsqu'elle est dans l'état amélioré, les DGT de ses attaques augmentent de <color=#f29e38ff>40%</color> pendant 1 tour.\nLes ennemis vaincus pendant le <u>tour supplémentaire</u> accordé par « Résurgence » ne déclenchent pas « Résurgence » à nouveau."
+			},
+			"Technique": {
+				"Id": 110207,
+				"Name": "Illusion fantôme",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de sa technique, Seele devient furtive pendant 20 secondes. Lorsque Furtivité est active, Seele ne peut pas être détectée par les ennemis. Si elle entre en combat en attaquant un ennemi, elle bénéficie immédiatement de l'état amélioré."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1103": {
+		"Id": "1103",
+		"Name": "Serval",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Foudre",
+		"PathType": "Mage",
+		"PathTypeText": "L'Érudition",
+		"Eidolons": [
+			{
+				"Id": "110301",
+				"Name": "Écho",
+				"Description": "L'ATQ normale inflige des DGT de foudre équivalents à 60% des DGT de l'ATQ normale à un ennemi aléatoire adjacent à la cible."
+			},
+			{
+				"Id": "110302",
+				"Name": "Encore !",
+				"Description": "Chaque fois que le talent de Serval se déclenche pour infliger des DGT additionnels, elle régénère 4 points d'énergie."
+			},
+			{
+				"Id": "110303",
+				"Name": "Battements mécaniques",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110304",
+				"Name": "Faites du bruit !",
+				"Description": "L'ultime a 100% de chances de base d'appliquer l'effet Stupéfaction à un ennemi qui n'est pas déjà stupéfié. L'effet est le même que celui infligé par la compétence."
+			},
+			{
+				"Id": "110305",
+				"Name": "Le plus gros son de Belobog !",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110306",
+				"Name": "Une chanson qui envoie du lourd !",
+				"Description": "Les DGT de Serval augmentent de 30% sur les ennemis stupéfiés."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110301,
+				"Name": "Coup de tonnerre rugissant",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Serval à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à un ennemi unique.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 110302,
+				"Name": "Éclair rapide",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Propagation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>70%</color> de l'ATQ de Serval à un ennemi unique et des DGT de foudre équivalents à <color=#f29e38ff>30%</color> de l'ATQ de Serval aux ennemis adjacents, avec 80% de <u>chances de base</u> de stupéfier les ennemis touchés pendant 2 tours.\nLes ennemis stupéfiés subissent des dégâts de foudre sur la durée équivalents à <color=#f29e38ff>40%</color> de l'ATQ de Serval au début de chaque tour.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à une cible ennemie et aux ennemis adjacents, avec de fortes chances d'infliger l'effet Stupéfaction aux ennemis touchés.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 110303,
+				"Name": "Fièvre mécanique",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>108%</color> de l'ATQ de Serval à tous les ennemis. Augmente la durée de l'effet Stupéfaction de 2 tours pour les ennemis souffrant déjà de cet effet.",
+				"SimpleDescription": "Inflige des DGT de foudre à tous les ennemis et augmente la durée de Stupéfaction.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 110304,
+				"Name": "Accords galvaniques",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Après avoir attaqué, Serval inflige des DGT de foudre <u>additionnels</u> équivalents à <color=#f29e38ff>36%</color> de son ATQ à tous les ennemis stupéfiés.",
+				"ElementType": "Thunder"
+			},
+			"Technique": {
+				"Id": 110307,
+				"Name": "Bonsoir Belobog",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Inflige des DGT de foudre équivalents à 50% de l'ATQ de Serval à un ennemi aléatoire après être entré en combat, avec 100% de <u>chances de base</u> que tous les ennemis soient stupéfiés pendant 3 tours.\nLes ennemis stupéfiés subissent des dégâts de foudre sur la durée équivalents à 50% de l'ATQ de Serval au début de chaque tour.",
+				"ElementType": "Thunder"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1104": {
+		"Id": "1104",
+		"Name": "Gepard",
+		"ElementType": "Ice",
+		"ElementTypeText": "Glace",
+		"PathType": "Knight",
+		"PathTypeText": "La Préservation",
+		"Eidolons": [
+			{
+				"Id": "110401",
+				"Name": "Devoir de diligence",
+				"Description": "Augmente les chances de base que la cible ennemie soit gelée lors de l'utilisation de la compétence de 35%."
+			},
+			{
+				"Id": "110402",
+				"Name": "Froid persistant",
+				"Description": "Quand un ennemi gelé par la compétence est dégelé, sa VIT diminue de 20% pendant 1 tour."
+			},
+			{
+				"Id": "110403",
+				"Name": "Sans reddition",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110404",
+				"Name": "La foi déplace les montagnes",
+				"Description": "Lorsque Gepard participe au combat, la RÉS aux effets de tous les alliés augmente de 20%."
+			},
+			{
+				"Id": "110405",
+				"Name": "Poing de fer froid",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110406",
+				"Name": "Détermination sans faille",
+				"Description": "Lorsque le talent de Gepard est déclenché, son action est avancée de 100 % et il restaure des PV supplémentaires équivalents à 50% de ses PV max."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110401,
+				"Name": "Poing de la conviction",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Gepard à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de glace mineurs à un ennemi unique.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 110402,
+				"Name": "Frappe intimidante",
+				"TriggerKey": "Skill02",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>100%</color> de l'ATQ de Gepard à un ennemi unique avec 65% de <u>chances de base</u> de geler l'ennemi pendant 1 tour.\nUn ennemi gelé ne peut pas agir et subit des DGT de glace <u>additionnels</u> équivalents à <color=#f29e38ff>30%</color> de l'ATQ de Gepard au début de chaque tour.",
+				"SimpleDescription": "Inflige des DGT de glace à un ennemi unique et a une chance de le geler.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 110403,
+				"Name": "Rempart d'endurance",
+				"TriggerKey": "Skill03",
+				"TagType": "Defence",
+				"TagTypeText": "Défense",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Accorde à tous les alliés un bouclier qui absorbe une quantité de DGT équivalente à <color=#f29e38ff>30%</color> de la DÉF de Gepard + <color=#f29e38ff>150</color> pendant 3 tours.",
+				"SimpleDescription": "Accorde un bouclier à tous les alliés."
+			},
+			"Talent": {
+				"Id": 110404,
+				"Name": "Volonté inflexible",
+				"TriggerKey": "SkillP01",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Au lieu de tomber <u>à terre</u> lorsqu'il subit un coup fatal, Gepard restaure immédiatement <color=#f29e38ff>25%</color> de ses PV max. Cet effet ne peut se déclencher qu'une fois par combat."
+			},
+			"Technique": {
+				"Id": 110407,
+				"Name": "Camaraderie",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Defence",
+				"TagTypeText": "Défense",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique de Gepard, tous les alliés gagnent un bouclier qui absorbe des DGT équivalents à 24% de la DÉF de Gepard + 150 pendant 2 tours au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1105": {
+		"Id": "1105",
+		"Name": "Natasha",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physique",
+		"PathType": "Priest",
+		"PathTypeText": "L'Abondance",
+		"Eidolons": [
+			{
+				"Id": "110501",
+				"Name": "Expertise en pharmacologie",
+				"Description": "Après avoir subi une attaque, si le pourcentage de PV actuel du personnage est inférieur ou égal à 30%, il se soigne 1 fois pour restaurer un montant de PV équivalent à 15% de ses PV max + 400. Cet effet ne peut être déclenché qu'1 fois par combat."
+			},
+			{
+				"Id": "110502",
+				"Name": "Recherche clinique",
+				"Description": "Lorsque Natasha utilise son ultime, accorde des soins continus aux alliés dont le pourcentage de PV est inférieur ou égal à 30% pendant 1 tour. Au début de leur tour, ils récupèrent un montant de PV équivalent à 6% des PV max de Natasha + 160."
+			},
+			{
+				"Id": "110503",
+				"Name": "Le bon remède",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110504",
+				"Name": "Remède miracle",
+				"Description": "Régénère 5 points d'énergie supplémentaires après avoir été attaqué."
+			},
+			{
+				"Id": "110505",
+				"Name": "Traitement préventif",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110506",
+				"Name": "Grâce du docteur",
+				"Description": "L'ATQ normale de Natasha inflige des DGT physiques supplémentaires équivalents à 40% de ses PV max."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110501,
+				"Name": "Derrière la bonté",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Natasha à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT physiques mineurs à un ennemi unique.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 110502,
+				"Name": "Aimer, guérir et choisir",
+				"TriggerKey": "Skill02",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Soigne un allié unique à hauteur de <color=#f29e38ff>#1[f1]%</color> des PV max de Natasha + <color=#f29e38ff>70</color>. Soigne encore l'allié à hauteur de <color=#f29e38ff>#2[f1]%</color> des PV max de Natasha + <color=#f29e38ff>48</color> au début de chaque tour pendant 2 tours.",
+				"SimpleDescription": "Restaure les PV d'un allié unique et le soigne continuellement."
+			},
+			"Ultimate": {
+				"Id": 110503,
+				"Name": "Cadeau de la renaissance",
+				"TriggerKey": "Skill03",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Soigne tous les alliés à hauteur de <color=#f29e38ff>#1[f1]%</color> des PV max de Natasha + <color=#f29e38ff>92</color>.",
+				"SimpleDescription": "Restaure des PV à tous les alliés."
+			},
+			"Talent": {
+				"Id": 110504,
+				"Name": "Innervation",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsque Natasha soigne des alliés dont le pourcentage de PV est inférieur ou égal à 30%, les soins qu'elle prodigue augmentent de <color=#f29e38ff>25%</color>. Cet effet fonctionne également sur les soins continus."
+			},
+			"Technique": {
+				"Id": 110507,
+				"Name": "Recherche sur l'hypnose",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Inflige des DGT physiques équivalents à 80% de l'ATQ de Natasha à un ennemi aléatoire avec 100% de <u>chances de base</u> d'affaiblir tous les ennemis après être entré en combat.\nLes ennemis affaiblis infligent 30% de DGT en moins aux alliés pendant 1 tour.",
+				"ElementType": "Physical"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1106": {
+		"Id": "1106",
+		"Name": "Pela",
+		"ElementType": "Ice",
+		"ElementTypeText": "Glace",
+		"PathType": "Warlock",
+		"PathTypeText": "La Nihilité",
+		"Eidolons": [
+			{
+				"Id": "110601",
+				"Name": "Rapport de victoire",
+				"Description": "Lorsque Pela élimine un ennemi, elle régénère 5 points d'énergie."
+			},
+			{
+				"Id": "110602",
+				"Name": "Charge inflexible",
+				"Description": "Utiliser la compétence pour supprimer un bonus ennemi augmente la VIT de 10% pendant 2 tours."
+			},
+			{
+				"Id": "110603",
+				"Name": "Force de répression",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110604",
+				"Name": "Analyse complète",
+				"Description": "Lors de l'utilisation de la compétence, il y a 100% de chances de base de réduire la RÉS à la glace de la cible ennemie de 12% pendant 2 tours."
+			},
+			{
+				"Id": "110605",
+				"Name": "Péril absolu",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110606",
+				"Name": "Poursuite acharnée",
+				"Description": "Lorsque Pela attaque un ennemi qui subit un malus, elle lui inflige des DGT de glace additionnels équivalents à 40% de sa propre ATQ."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110601,
+				"Name": "Tir givré",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Pela à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de glace mineurs à un ennemi unique.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 110602,
+				"Name": "Morsure du givre",
+				"TriggerKey": "Skill02",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Supprime 1 <u>bonus</u> et inflige des DGT de glace équivalents à <color=#f29e38ff>105%</color> de l'ATQ de Pela à un ennemi unique.",
+				"SimpleDescription": "Supprime 1 <u>bonus</u> et inflige des DGT de glace à un ennemi unique.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 110603,
+				"Name": "Suppression de zone",
+				"TriggerKey": "Skill03",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>60%</color> de l'ATQ de Pela à tous les ennemis, avec 100% de <u>chances de base</u> d'infliger Exposé à tous les ennemis.\nLorsqu'ils sont exposés, les ennemis voient leur DÉF réduite de <color=#f29e38ff>30%</color> pendant 2 tours.",
+				"SimpleDescription": "A de fortes chances de diminuer la DÉF des ennemis et inflige des DGT de glace mineurs à tous les ennemis.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 110604,
+				"Name": "Collecte de données",
+				"TriggerKey": "SkillP01",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Si l'ennemi subit un <u>malus</u> après l'attaque de Pela, cette dernière régénère <color=#f29e38ff>#1[f1]</color> points d'énergie supplémentaires. Cet effet ne peut être déclenché qu'1 fois par attaque."
+			},
+			"Technique": {
+				"Id": 110607,
+				"Name": "Frappe préventive",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Pela inflige des DGT de glace équivalents à 80% de son ATQ à un ennemi aléatoire en entrant en combat, avec 100% de <u>chances de base</u> de diminuer la DÉF de tous les ennemis de 20% pendant 2 tours.",
+				"ElementType": "Ice"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1107": {
+		"Id": "1107",
+		"Name": "Clara",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physique",
+		"PathType": "Warrior",
+		"PathTypeText": "La Destruction",
+		"Eidolons": [
+			{
+				"Id": "110701",
+				"Name": "Une silhouette imposante",
+				"Description": "Utiliser la compétence ne fait plus disparaître les Marques de contre des ennemis."
+			},
+			{
+				"Id": "110702",
+				"Name": "Une étreinte intense",
+				"Description": "L'ATQ augmente de 30% pendant 2 tours après utilisation de l'ultime."
+			},
+			{
+				"Id": "110703",
+				"Name": "Armure d'acier froid",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110704",
+				"Name": "Chaleur familiale",
+				"Description": "Lorsque Clara est touchée, les DGT qu'elle subit sont réduits de 30%. Cet effet dure jusqu'au début de son prochain tour."
+			},
+			{
+				"Id": "110705",
+				"Name": "Une petite promesse",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110706",
+				"Name": "Compagnons de longue date",
+				"Description": "Lorsque d'autres alliés sont touchés, Svarog a également 50% de chances fixes de déclencher un contre envers l'assaillant et de le marquer avec une Marque de contre. Le nombre de contres renforcés accordés par l'ultime augmente de 1."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110701,
+				"Name": "Je veux aider",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Clara à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT physiques mineurs à un ennemi unique.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 110702,
+				"Name": "Svarog veille sur toi",
+				"TriggerKey": "Skill02",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>60%</color> de l'ATQ de Clara à tous les ennemis et des DGT physiques supplémentaires équivalents à <color=#f29e38ff>60%</color> de l'ATQ de Clara aux ennemis marqués par Svarog d'une Marque de contre.\nToutes les Marques de contre sont supprimées après utilisation de cette compétence.",
+				"SimpleDescription": "Inflige des DGT physiques mineurs à tous les ennemis et des DGT physiques mineurs supplémentaires aux cibles qui portent une Marque de contre.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 110703,
+				"Name": "C'est une promesse, pas un ordre",
+				"TriggerKey": "Skill03",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Après utilisation de l'ultime de Clara, les DGT qu'elle subit sont réduits de <color=#f29e38ff>15%</color> supplémentaires et ses chances d'être attaquée par des ennemis sont fortement augmentées pendant 2 tours.\nD'autre part, le <u>contre</u> de Svarog est renforcé. Lorsqu'un allié est attaqué, Svarog lance immédiatement un <u>contre</u> et son multiplicateur de DGT contre l'ennemi augmente de <color=#f29e38ff>96%</color>. Les ennemis adjacents subissent 50 % des DGT infligés à la cible ennemie. Le <u>contre</u> renforcé peut prendre effet 2 fois.",
+				"SimpleDescription": "Augmente la RÉS aux DGT et les chances d'être attaqué par des ennemis, et renforce l'effet de <u>contre</u>."
+			},
+			"Talent": {
+				"Id": 110704,
+				"Name": "Parce qu'on est une famille",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Sous la protection de Svarog, les DGT subis par Clara lorsqu'elle est touchée par des attaques ennemies sont réduits de 10%. Svarog marque les ennemis qui attaquent Clara de sa Marque de contre et riposte avec un <u>contre</u>, infligeant des DGT physiques équivalents à <color=#f29e38ff>80%</color> de l'ATQ de Clara.",
+				"ElementType": "Physical"
+			},
+			"Technique": {
+				"Id": 110707,
+				"Name": "Le prix de la victoire",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Les chances pour Clara de se faire attaquer par des ennemis augmentent pendant 2 tours en entrant en combat.",
+				"ElementType": "Physical"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1108": {
+		"Id": "1108",
+		"Name": "Sampo",
+		"ElementType": "Wind",
+		"ElementTypeText": "Vent",
+		"PathType": "Warlock",
+		"PathTypeText": "La Nihilité",
+		"Eidolons": [
+			{
+				"Id": "110801",
+				"Name": "Amour grandissant",
+				"Description": "Lors de l'utilisation de la compétence, inflige des DGT 1 fois supplémentaire à un ennemi aléatoire."
+			},
+			{
+				"Id": "110802",
+				"Name": "Enthousiasme contagieux",
+				"Description": "Vaincre un ennemi affecté par Faille du vent a 100% de chances de base d'infliger à tous les ennemis 1 cumul du même effet Faille du vent que celui provoqué par le talent."
+			},
+			{
+				"Id": "110803",
+				"Name": "Joli cachet !",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110804",
+				"Name": "Amour, gloire et... haine",
+				"Description": "Lorsque la compétence touche un ennemi qui a au moins 5 cumuls de Faille du vent, l'ennemi subit immédiatement 8% des DGT de la Faille du vent actuelle."
+			},
+			{
+				"Id": "110805",
+				"Name": "TRÈS gros cachet !",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110806",
+				"Name": "Envol des dépenses",
+				"Description": "Le multiplicateur des DGT infligés par l'effet Faille du vent du talent augmente de 15%."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110801,
+				"Name": "Lames éblouissantes",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de vent équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Sampo à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de vent mineurs à un ennemi unique.",
+				"ElementType": "Wind"
+			},
+			"Skill": {
+				"Id": 110802,
+				"Name": "Amour rebondissant",
+				"TriggerKey": "Skill02",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebond",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de vent équivalents à <color=#f29e38ff>28%</color> de l'ATQ de Sampo à un ennemi unique et inflige des DGT 4 fois supplémentaires, infligeant à chaque fois des DGT de vent équivalents à <color=#f29e38ff>28%</color> de l'ATQ de Sampo à un ennemi aléatoire.",
+				"SimpleDescription": "Inflige des DGT de vent mineurs à des cibles ennemies uniques pour un total de 5 rebonds.",
+				"ElementType": "Wind"
+			},
+			"Ultimate": {
+				"Id": 110803,
+				"Name": "Cadeau surprise",
+				"TriggerKey": "Skill03",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de vent équivalents à <color=#f29e38ff>96%</color> de l'ATQ de Sampo à tous les ennemis, avec 100% de <u>chances de base</u> d'augmenter les dégâts sur la durée subis par les cibles de <color=#f29e38ff>20%</color> pendant 2 tours.",
+				"SimpleDescription": "Inflige des DGT de vent à tous les ennemis, avec de fortes chances d'augmenter les dégâts sur la durée subis par les cibles.",
+				"ElementType": "Wind"
+			},
+			"Talent": {
+				"Id": 110804,
+				"Name": "Dague de bourrasque",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Les attaques de Sampo ont 65% de <u>chances de base</u> d'infliger Faille du vent pendant 3 tours.\nLes ennemis affectés par Faille du vent subissent des dégâts de vent sur la durée équivalents à <color=#f29e38ff>20%</color> de l'ATQ de Sampo au début de chaque tour. Faille du vent peut être cumulé jusqu'à 5 fois."
+			},
+			"Technique": {
+				"Id": 110807,
+				"Name": "Éblouissement",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Impair",
+				"TagTypeText": "Incapacitation",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique de Sampo, les ennemis situés dans une zone définie subissent Aveuglement pendant 10 secondes. Les ennemis aveuglés ne peuvent pas détecter votre équipe.\nLorsqu'un combat est lancé contre un ennemi aveuglé, il y a 100% de <u>chances fixes</u> de retarder l'action de tous les ennemis de 25%."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1109": {
+		"Id": "1109",
+		"Name": "Hook",
+		"ElementType": "Fire",
+		"ElementTypeText": "Feu",
+		"PathType": "Warrior",
+		"PathTypeText": "La Destruction",
+		"Eidolons": [
+			{
+				"Id": "110901",
+				"Name": "Couche-tôt, lève-tôt",
+				"Description": "Les DGT de la compétence renforcée augmentent de 20%."
+			},
+			{
+				"Id": "110902",
+				"Name": "Quand l'appétit va, tout va",
+				"Description": "Prolonge la durée de l'effet Brûlure infligé par la compétence d'1 tour."
+			},
+			{
+				"Id": "110903",
+				"Name": "Pas la peine de faire la fine bouche",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "110904",
+				"Name": "C'est normal de ne pas savoir",
+				"Description": "Lorsque le talent se déclenche, il y a 100% de chances de base d'infliger une Brûlure équivalente à celle de la compétence aux ennemis adjacents à la cible."
+			},
+			{
+				"Id": "110905",
+				"Name": "Gloire aux Taupes",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "110906",
+				"Name": "Toujours prête à en découdre",
+				"Description": "Les DGT de Hook augmentent de 20% sur les ennemis affectés par l'état Brûlure."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 110901,
+				"Name": "Héhé ! Attention, ça brûle !",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Hook à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de feu mineurs à un ennemi unique.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 110902,
+				"Name": "Hé ! Tu te souviens de moi ?",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>120%</color> de l'ATQ de Hook à un ennemi unique, avec 100% de <u>chances de base</u> de lui infliger Brûlure pendant 2 tours.\nLes ennemis affectés par l'état Brûlure subissent des dégâts de feu sur la durée équivalents à <color=#f29e38ff>25%</color> de l'ATQ de Hook au début de chaque tour.",
+				"SimpleDescription": "Inflige des DGT de feu à un ennemi unique, avec de fortes chances de lui infliger Brûlure.",
+				"ElementType": "Fire"
+			},
+			"Ultimate": {
+				"Id": 110903,
+				"Name": "Boom ! Ça prend feu !",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>240%</color> de l'ATQ de Hook à un ennemi unique.\nAprès utilisation de l'ultime, la prochaine compétence utilisée est renforcée, infligeant des DGT à la cible ennemie et aux ennemis adjacents.",
+				"SimpleDescription": "Inflige des DGT de feu massifs à un ennemi unique et renforce la compétence de Hook lors de sa prochaine utilisation.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 110904,
+				"Name": "Ha ! De l'huile sur le feu !",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsque Hook attaque une cible affectée par l'état Brûlure, elle inflige des DGT de feu <u>additionnels</u> équivalents à <color=#f29e38ff>50%</color> de son ATQ et régénère 5 points d'énergie supplémentaires.",
+				"ElementType": "Fire"
+			},
+			"Technique": {
+				"Id": 110907,
+				"Name": "Aïe ! Regarde-moi ce bazar !",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Hook inflige des DGT de feu équivalents à 50% de son ATQ à un ennemi aléatoire en entrant en combat. D'autre part, il y a 100% de <u>chances de base</u> d'infliger Brûlure à tous les ennemis pendant 3 tours.\nLes ennemis affectés par l'état Brûlure subissent des dégâts de feu sur la durée équivalents à 50% de l'ATQ de Hook au début de chaque tour.",
+				"ElementType": "Fire"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1201": {
+		"Id": "1201",
+		"Name": "Qingque",
+		"ElementType": "Quantum",
+		"ElementTypeText": "Quantique",
+		"PathType": "Mage",
+		"PathTypeText": "L'Érudition",
+		"Eidolons": [
+			{
+				"Id": "120101",
+				"Name": "Avènement des tuiles",
+				"Description": "Les DGT de l'ultime augmentent de 10%."
+			},
+			{
+				"Id": "120102",
+				"Name": "Repos sur l'échiquier",
+				"Description": "Chaque fois que Qingque pioche une tuile, elle régénère immédiatement 1 point d'énergie."
+			},
+			{
+				"Id": "120103",
+				"Name": "Lire entre les tuiles",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "120104",
+				"Name": "Mets de la tuile",
+				"Description": "Après avoir utilisé la compétence, il y a 24% de chances fixes d'obtenir Autonome, qui dure jusqu'à la fin du tour en cours.\nLorsque l'état Autonome est actif, utiliser l'ATQ normale ou l'ATQ normale renforcée lance immédiatement 1 attaque de suivi sur le ou les mêmes cibles, infligeant des DGT quantiques équivalents à 100 % des DGT de l'ATQ normale (ou ATQ normale renforcée) précédente."
+			},
+			{
+				"Id": "120105",
+				"Name": "Tuiles piochées, la chance a tourné",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "120106",
+				"Name": "Prête à gagner, dans le calme et la sérénité",
+				"Description": "Récupère 1 point de compétence après utilisation de l'ATQ normale renforcée."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120101,
+				"Name": "Bonne pioche",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Lance une tuile de jade de la série dont Qingque a le moins de tuiles en main pour infliger des DGT quantiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Qingque à un ennemi unique.",
+				"SimpleDescription": "Lance une tuile pour infliger des DGT quantiques mineurs à un ennemi unique.",
+				"ElementType": "Quantum"
+			},
+			"Skill": {
+				"Id": 120102,
+				"Name": "Coup de pouce",
+				"TriggerKey": "Skill02",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Pioche immédiatement 2 tuiles de jade et augmente les DGT de <color=#f29e38ff>14%</color> jusqu'à la fin du tour en cours. Cet effet peut être cumulé jusqu'à 4 fois. Le tour ne prend pas fin après l'utilisation de cette compétence.",
+				"SimpleDescription": "Pioche des tuiles et augmente les DGT de Qingque. Le tour ne prend pas fin."
+			},
+			"Ultimate": {
+				"Id": 120103,
+				"Name": "Quatre pungs en main ? Tout va bien !",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT quantiques équivalents à <color=#f29e38ff>120%</color> de l'ATQ de Qingque à tous les ennemis et accorde 4 tuiles de jade de la même série.",
+				"SimpleDescription": "Inflige des DGT quantiques à tous les ennemis et accorde 4 tuiles de jade de la même série.",
+				"ElementType": "Quantum"
+			},
+			"Talent": {
+				"Id": 120104,
+				"Name": "Jade céleste",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Au début du tour de chaque allié, Qingque pioche 1 tuile au hasard parmi 3 séries différentes et peut posséder jusqu'à 4 tuiles à la fois.\nSi Qingque commence son tour avec 4 tuiles de la même série, elle les utilise toutes et entre dans l'état « Kong caché ».\nDans cet état, Qingque ne peut plus utiliser sa compétence. D'autre part, son ATQ augmente de <color=#f29e38ff>36%</color> et son ATQ normale « Bonne pioche » est renforcée pour devenir « C'est la tuile ! ». L'état « Kong caché » prend fin après utilisation de « C'est la tuile ! »."
+			},
+			"Technique": {
+				"Id": 120107,
+				"Name": "Accro aux jeux",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique, Qingque pioche 2 tuiles de jade en début de combat."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1202": {
+		"Id": "1202",
+		"Name": "Tingyun",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Foudre",
+		"PathType": "Shaman",
+		"PathTypeText": "L'Harmonie",
+		"Eidolons": [
+			{
+				"Id": "120201",
+				"Name": "Bénédiction de vivacité",
+				"Description": "La VIT de l'allié béni augmente de 20% pendant 1 tour après utilisation de son ultime."
+			},
+			{
+				"Id": "120202",
+				"Name": "Généreuse donatrice",
+				"Description": "L'allié béni régénère 5 points d'énergie après avoir éliminé un ennemi. Cet effet ne peut être déclenché qu'1 fois par tour."
+			},
+			{
+				"Id": "120203",
+				"Name": "Héritage des jours bénis",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "120204",
+				"Name": "Versatilité joviale",
+				"Description": "Le multiplicateur de DGT de la bénédiction augmente de 20%."
+			},
+			{
+				"Id": "120205",
+				"Name": "Passante coquette",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "120206",
+				"Name": "Paix et richesse pour tous",
+				"Description": "L'ultime régénère 10 points d'énergie supplémentaires à la cible alliée."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120201,
+				"Name": "Expulsion",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Tingyun inflige des DGT de foudre équivalents à <color=#f29e38ff>50%</color> de son ATQ à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à un ennemi unique.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 120202,
+				"Name": "Mélodie apaisante",
+				"TriggerKey": "Skill02",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Accorde une bénédiction à un allié unique qui augmente son ATQ de <color=#f29e38ff>25%</color>, dans la limite de <color=#f29e38ff>15%</color> de l'ATQ actuelle de Tingyun.\nLorsque l'allié béni attaque, il inflige des DGT de foudre <u>additionnels</u> équivalents à <color=#f29e38ff>20%</color> de sa propre ATQ 1 fois.\nLa bénédiction dure 3 tours et n'est effective que sur le dernier personnage à bénéficier de la compétence de Tingyun.",
+				"SimpleDescription": "Augmente l'ATQ d'un allié unique tout en lui accordant une bénédiction."
+			},
+			"Ultimate": {
+				"Id": 120203,
+				"Name": "Bienveillance des nuages",
+				"TriggerKey": "Skill03",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Régénère 50 points d'énergie à un allié unique et augmente les DGT qu'il inflige de <color=#f29e38ff>20%</color> pendant 2 tours.",
+				"SimpleDescription": "Régénère l'énergie d'un allié unique et augmente les DGT qu'il inflige.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 120204,
+				"Name": "Déluge d'étincelles pourpres",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsque Tingyun attaque un ennemi, l'allié béni inflige immédiatement des DGT de foudre <u>additionnels</u> équivalents à <color=#f29e38ff>30%</color> de sa propre ATQ au même ennemi."
+			},
+			"Technique": {
+				"Id": 120207,
+				"Name": "Douce brise",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Tingyun régénère immédiatement 50 points d'énergie lorsqu'elle utilise sa technique."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1203": {
+		"Id": "1203",
+		"Name": "Luocha",
+		"ElementType": "Imaginary",
+		"ElementTypeText": "Imaginaire",
+		"PathType": "Priest",
+		"PathTypeText": "L'Abondance",
+		"Eidolons": [
+			{
+				"Id": "120301",
+				"Name": "Ablution de rapidité",
+				"Description": "Après avoir utilisé sa compétence, Luocha régénère 10 points d'énergie supplémentaires si les PV de la cible alliée sont totalement restaurés."
+			},
+			{
+				"Id": "120302",
+				"Name": "Cadeau de pureté",
+				"Description": "Les soins prodigués par Luocha augmentent de 30% lorsqu'il utilise sa compétence sur une cible alliée qui a moins de 50 % de ses PV max. Si les PV de la cible alliée sont supérieurs ou égaux à 50 % de ses PV max, Luocha lui accorde un bouclier capable d'absorber des DGT équivalents à 15% des PV max de la cible alliée pendant 1 tour."
+			},
+			{
+				"Id": "120303",
+				"Name": "Épreuve du fou",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "120304",
+				"Name": "Jugement des épines",
+				"Description": "Lorsque le Champ de Luocha est actif, les ennemis sont affaiblis et les DGT qu'ils infligent diminuent de 12%."
+			},
+			{
+				"Id": "120305",
+				"Name": "Stigmates du tourment",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "120306",
+				"Name": "Retour à la poussière",
+				"Description": "Les DGT à la robustesse de l'ATQ normale et de l'ultime du personnage augmentent de 100%."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120301,
+				"Name": "Épines de l'abîme",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT imaginaires équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Luocha à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT imaginaires mineurs à un ennemi unique.",
+				"ElementType": "Imaginary"
+			},
+			"Skill": {
+				"Id": 120302,
+				"Name": "Prière de la Fleur de l'abîme",
+				"TriggerKey": "Skill02",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Après utilisation de la compétence, restaure immédiatement les PV d'un allié unique à hauteur de <color=#f29e38ff>40%</color> de l'ATQ de Luocha + <color=#f29e38ff>200</color>. D'autre part, Luocha gagne 1 cumul de Fleur de l'abîme.\nLorsque le pourcentage de PV d'un allié est inférieur ou égal à 50%, Luocha utilise immédiatement sa compétence une fois sur cet allié (sans consommer de points de compétence). Après que Luocha a effectué 2 autres actions, cet effet peut être déclenché à nouveau quand les conditions sont réunies.",
+				"SimpleDescription": "Restaure les PV d'un allié unique et gagne 1 cumul de Fleur de l'abîme."
+			},
+			"Ultimate": {
+				"Id": 120303,
+				"Name": "Pulsion de mort",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Supprime 1 <u>bonus</u> ennemi et inflige des DGT imaginaires équivalents à <color=#f29e38ff>80%</color> de l'ATQ de Luocha à tous les ennemis. Luocha gagne 1 cumul de Fleur de l'abîme.",
+				"SimpleDescription": "Supprime 1 <u>bonus</u> de la cible, inflige des DGT imaginaires à tous les ennemis, et accorde 1 cumul de Fleur de l'abîme.",
+				"ElementType": "Imaginary"
+			},
+			"Talent": {
+				"Id": 120304,
+				"Name": "Cycle de la vie",
+				"TriggerKey": "SkillP01",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsque le nombre de cumuls de Fleur de l'abîme atteint 2, Luocha consomme tous les cumuls pour déployer un Champ hostile aux ennemis.\nLorsqu'un ennemi situé dans le Champ est attaqué par un allié, ce dernier restaure immédiatement un montant de PV équivalent à <color=#f29e38ff>#2[f1]%</color> de l'ATQ de Luocha + <color=#f29e38ff>70</color>.\nL'effet du Champ dure 2 tours."
+			},
+			"Technique": {
+				"Id": 120307,
+				"Name": "Miséricorde d'un fou",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique, le talent se déclenche immédiatement au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1204": {
+		"Id": "1204",
+		"Name": "Jing Yuan",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Foudre",
+		"PathType": "Mage",
+		"PathTypeText": "L'Érudition",
+		"Eidolons": [
+			{
+				"Id": "120401",
+				"Name": "Entaille clivante",
+				"Description": "Lorsque le Seigneur de la foudre attaque, le multiplicateur de DGT sur les ennemis adjacents à la cible ennemie augmente d'un montant supplémentaire équivalent à 25% du multiplicateur de DGT de la cible principale."
+			},
+			{
+				"Id": "120402",
+				"Name": "Écrasement céleste",
+				"Description": "Après que le Seigneur de la foudre a agi, les DGT infligés par l'ATQ normale, la compétence et l'ultime de Jing Yuan augmentent de 20% pendant 2 tours."
+			},
+			{
+				"Id": "120403",
+				"Name": "Soumission solaire",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "120404",
+				"Name": "Siège des étoiles",
+				"Description": "Pour chaque frappe du Seigneur de la foudre lorsqu'il agit, Jing Yuan régénère 2 points d'énergie."
+			},
+			{
+				"Id": "120405",
+				"Name": "Trésors de guerre",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "120406",
+				"Name": "Moisson des âmes perdues",
+				"Description": "Chaque frappe du Seigneur de la foudre lors de son action rend la cible ennemie vulnérable.\nLes ennemis vulnérables subissent 12% de DGT supplémentaires jusqu'à la fin du tour actuel du Seigneur de la foudre. Cumulable jusqu'à 3 fois."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120401,
+				"Name": "Feux de la lumière",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Jing Yuan inflige des DGT de foudre équivalents à <color=#f29e38ff>50%</color> de son ATQ à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à un ennemi unique.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 120402,
+				"Name": "Zénith tonitruant",
+				"TriggerKey": "Skill02",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Jing Yuan à tous les ennemis et augmente le nombre de frappes par action du Seigneur de la foudre de 2 pour le tour suivant.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à tous les ennemis et augmente le nombre de frappes par action du Seigneur de la foudre.",
+				"ElementType": "Thunder"
+			},
+			"Ultimate": {
+				"Id": 120403,
+				"Name": "Porteur de lumière",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>120%</color> de l'ATQ de Jing Yuan à tous les ennemis et augmente le nombre de frappes par action du Seigneur de la foudre de 3 pour le tour suivant.",
+				"SimpleDescription": "Inflige des DGT de foudre à tous les ennemis et augmente le nombre de frappes par action du Seigneur de la foudre.",
+				"ElementType": "Thunder"
+			},
+			"Talent": {
+				"Id": 120404,
+				"Name": "Annihilation du prana",
+				"TriggerKey": "SkillP01",
+				"TagType": "Bounce",
+				"TagTypeText": "Rebond",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Invoque le Seigneur de la foudre en début de combat. Le Seigneur de la foudre dispose d'une VIT de base de 60 et d'un nombre de frappes par action de base de 3. Lorsque le Seigneur de la foudre agit, ses frappes sont considérées comme des <u>attaques de suivi</u>, chacune infligeant des DGT de foudre équivalents à <color=#f29e38ff>33%</color> de l'ATQ de Jing Yuan à un ennemi unique, et les ennemis adjacents subissent également des DGT de foudre équivalents à 25% des DGT infligés à l'ennemi principal.\nLe nombre de frappes par action du Seigneur de la foudre peut atteindre un maximum de 10. Chaque fois que le nombre de frappes par action du Seigneur de la foudre augmente de 1, sa VIT augmente de 10. Une fois l'action du Seigneur de la foudre terminée, sa VIT et son nombre de frappes par action retrouvent leurs valeurs de base.\nLorsque Jing Yuan est <u>à terre</u>, le Seigneur de la foudre disparaît.\nLorsque Jing Yuan est affecté par un <u>malus de contrôle</u>, le Seigneur de la foudre ne peut plus agir.",
+				"ElementType": "Thunder"
+			},
+			"Technique": {
+				"Id": 120407,
+				"Name": "Invocation d'esprit",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique, le nombre de frappes par action du Seigneur de la foudre augmente de 3 au premier tour du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1206": {
+		"Id": "1206",
+		"Name": "Sushang",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physique",
+		"PathType": "Rogue",
+		"PathTypeText": "La Chasse",
+		"Eidolons": [
+			{
+				"Id": "120601",
+				"Name": "Tranchant aiguisé",
+				"Description": "Régénère 1 point de compétence après avoir utilisé la compétence contre un ennemi qui subit une Rupture de faiblesse."
+			},
+			{
+				"Id": "120602",
+				"Name": "Surentraînée",
+				"Description": "Après avoir déclenché Posture de l'épée, les DGT subis par Sushang sont réduits de 20% pendant 1 tour."
+			},
+			{
+				"Id": "120603",
+				"Name": "Née de la célébrité",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "120604",
+				"Name": "Rupture du cœur",
+				"Description": "L'effet de Rupture de Sushang augmente de 40%."
+			},
+			{
+				"Id": "120605",
+				"Name": "Victoire du Taixu",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "120606",
+				"Name": "Fluide comme l'eau",
+				"Description": "L'augmentation de VIT conférée par le talent devient cumulable jusqu'à 2 fois. De plus, Sushang obtient immédiatement 1 cumul d'augmentation de VIT après avoir rejoint le combat."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120601,
+				"Name": "Escrime perce-nuages : Étoile brillante",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Sushang à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT physiques mineurs à un ennemi unique.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 120602,
+				"Name": "Escrime perce-nuages : Chute de montagne",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>105%</color> de l'ATQ de Sushang à un ennemi unique. De plus, il y a 33% de chances de déclencher Posture de l'épée lors du coup final, ce qui inflige à l'ennemi des DGT physiques <u>additionnels</u> équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Sushang.\nSi l'ennemi est affecté par <u>Rupture de faiblesse</u>, le déclenchement de Posture de l'épée est garanti.",
+				"SimpleDescription": "Inflige des DGT physiques à un ennemi unique et a une faible chance de déclencher Posture de l'épée. Si l'ennemi est affecté par <u>Rupture de faiblesse</u>, le déclenchement de Posture de l'épée est garanti.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 120603,
+				"Name": "Forme de Taixu : Héraut de l'aube",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>192%</color> de l'ATQ de Sushang à un ennemi unique et avance immédiatement l'action de Sushang de 100 %. De plus, l'ATQ de Sushang augmente de <color=#f29e38ff>18%</color> et l'utilisation de sa compétence a 2 chances supplémentaires de déclencher Posture de l'épée pendant 2 tours.\nLorsque Posture de l'épée est déclenchée par les chances supplémentaires, elle inflige 50% des DGT initiaux.",
+				"SimpleDescription": "Inflige des DGT physiques massifs à un ennemi unique, renforce l'effet de Posture de l'épée et agit immédiatement.",
+				"ElementType": "Physical"
+			},
+			"Talent": {
+				"Id": 120604,
+				"Name": "Lame dansante",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsqu'un ennemi subit une Rupture de faiblesse sur le champ de bataille, la VIT de Sushang augmente de <color=#f29e38ff>#1[f2]%</color> pendant 2 tours.",
+				"ElementType": "Physical"
+			},
+			"Technique": {
+				"Id": 120607,
+				"Name": "Escrime perce-nuages : Cri de guerre",
+				"TriggerKey": "SkillMaze",
+				"TagType": "MazeAttack",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Attaque immédiatement un ennemi. Sushang inflige des DGT physiques équivalents à 80% de son ATQ à tous les ennemis en entrant en combat.",
+				"ElementType": "Physical"
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1209": {
+		"Id": "1209",
+		"Name": "Yanqing",
+		"ElementType": "Ice",
+		"ElementTypeText": "Glace",
+		"PathType": "Rogue",
+		"PathTypeText": "La Chasse",
+		"Eidolons": [
+			{
+				"Id": "120901",
+				"Name": "Coupe franche",
+				"Description": "Lorsque Yanqing attaque un ennemi gelé, il inflige des DGT de glace additionnels équivalents à 60% de son ATQ."
+			},
+			{
+				"Id": "120902",
+				"Name": "Transe du guerrier",
+				"Description": "Lorsque Osmose avec l'acier est active, le taux de régénération d'énergie augmente de 10% supplémentaires."
+			},
+			{
+				"Id": "120903",
+				"Name": "Épéiste de génie",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "120904",
+				"Name": "Froid pénétrant",
+				"Description": "Lorsque les PV actuels du personnage sont supérieurs ou égaux à 80%, sa PÉN de RÉS à la glace augmente de 12%."
+			},
+			{
+				"Id": "120905",
+				"Name": "Lutte sans répit",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "120906",
+				"Name": "Combattant habile",
+				"Description": "Si les bonus accordés par l'ultime sont actifs au moment où un ennemi est vaincu, leur durée est prolongée d'1 tour."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 120901,
+				"Name": "Épine de givre",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Yanqing à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de glace mineurs à un ennemi unique.",
+				"ElementType": "Ice"
+			},
+			"Skill": {
+				"Id": 120902,
+				"Name": "Salve d'aiguillons",
+				"TriggerKey": "Skill02",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de glace équivalents à <color=#f29e38ff>110%</color> de l'ATQ de Yanqing à un ennemi unique et active Osmose avec l'acier pendant 1 tour.",
+				"SimpleDescription": "Inflige des DGT de glace à un ennemi unique et active Osmose avec l'acier.",
+				"ElementType": "Ice"
+			},
+			"Ultimate": {
+				"Id": 120903,
+				"Name": "Béatitude au milieu de l'averse",
+				"TriggerKey": "Skill03",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Augmente les chances de coup critique de Yanqing de 60%. Si Osmose avec l'acier est active, augmente les DGT critiques de Yanqing de <color=#f29e38ff>30%</color> supplémentaires. Ce <u>bonus</u> dure 1 tour avant d'infliger des DGT de glace équivalents à <color=#f29e38ff>210%</color> de l'ATQ de Yanqing à un ennemi unique.",
+				"SimpleDescription": "Augmente les chances de coup critique de Yanqing. Renforce Osmose avec l'acier et inflige des DGT de glace massifs à un ennemi unique.",
+				"ElementType": "Ice"
+			},
+			"Talent": {
+				"Id": 120904,
+				"Name": "Connexion avec la lame",
+				"TriggerKey": "SkillP01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsque Osmose avec l'acier est active, Yanqing est moins susceptible d'être attaqué par des ennemis. Ses chances de coup critique augmentent de <color=#f29e38ff>#1[f1]%</color> et ses DGT critiques de <color=#f29e38ff>15%</color>. Lorsque Yanqing attaque un ennemi, il a <color=#f29e38ff>50%</color> de <u>chances fixes</u> de lancer une <u>attaque de suivi</u>, infligeant des DGT de glace équivalents à <color=#f29e38ff>25%</color> de son ATQ à l'ennemi, avec 65% de <u>chances de base</u> de le geler pendant 1 tour.\nLa cible gelée ne peut pas agir et subit des DGT de glace <u>additionnels</u> équivalents à <color=#f29e38ff>25%</color> de l'ATQ de Yanqing au début de chaque tour.\nLorsque Yanqing subit des DGT, l'effet Osmose avec l'acier disparaît.",
+				"ElementType": "Ice"
+			},
+			"Technique": {
+				"Id": 120907,
+				"Name": "La seule et unique lame",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de sa technique, les DGT de Yanqing augmentent de 30% pendant 2 tours contre les ennemis dont les PV sont supérieurs ou égaux à 50% au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"1211": {
+		"Id": "1211",
+		"Name": "Bailu",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Foudre",
+		"PathType": "Priest",
+		"PathTypeText": "L'Abondance",
+		"Eidolons": [
+			{
+				"Id": "121101",
+				"Name": "Eau d'ambroisie",
+				"Description": "Si les PV de la cible alliée sont au maximum lorsque Revigoration prend fin, elle régénère en plus 8 points d'énergie."
+			},
+			{
+				"Id": "121102",
+				"Name": "Repos sylphique",
+				"Description": "Après utilisation de son ultime, les soins prodigués par Bailu augmentent de 15% supplémentaires pendant 2 tours."
+			},
+			{
+				"Id": "121103",
+				"Name": "Opulence omnisciente",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "121104",
+				"Name": "Suppression du mal",
+				"Description": "Les soins prodigués par la compétence augmentent les DGT infligés par le bénéficiaire de 10% pendant 2 tours. Cet effet peut être cumulé jusqu'à 3 fois."
+			},
+			{
+				"Id": "121105",
+				"Name": "Inquiétudes oubliées",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "121106",
+				"Name": "Mucus de divinité draconique",
+				"Description": "Bailu peut soigner des alliés ayant reçu un coup fatal 1 fois de plus par combat."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 121101,
+				"Name": "Diagnostic musclé",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de foudre équivalents à <color=#f29e38ff>50%</color> de l'ATQ de Bailu à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT de foudre mineurs à un ennemi unique.",
+				"ElementType": "Thunder"
+			},
+			"Skill": {
+				"Id": 121102,
+				"Name": "Chanter parmi les nuages",
+				"TriggerKey": "Skill02",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Soigne immédiatement un allié unique à hauteur de <color=#f29e38ff>#1[f1]%</color> des PV max de Bailu + <color=#f29e38ff>78</color>. Bailu soigne ensuite les alliés de manière aléatoire 2 fois. Après chaque soin, les PV restaurés par le soin suivant diminuent de 15%.",
+				"SimpleDescription": "Restaure les PV d'un allié unique, puis soigne des alliés de manière aléatoire."
+			},
+			"Ultimate": {
+				"Id": 121103,
+				"Name": "Foudroyés par la félicité",
+				"TriggerKey": "Skill03",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Soigne immédiatement tous les alliés à hauteur de <color=#f29e38ff>#1[f1]%</color> des PV max de Bailu + <color=#f29e38ff>90</color>.\nBailu accorde Revigoration aux alliés qui ne bénéficient pas encore de cet effet et prolonge l'effet d'1 tour pour ceux qui en bénéficient déjà.\nL'effet de Revigoration peut durer jusqu'à 2 tours. Cet effet n'est pas cumulable.",
+				"SimpleDescription": "Restaure des PV à tous les alliés et leur accorde Revigoration ou prolonge sa durée."
+			},
+			"Talent": {
+				"Id": 121104,
+				"Name": "Gourde d'élixir",
+				"TriggerKey": "SkillP01",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Lorsqu'un allié qui bénéficie de Revigoration est touché, restaure ses PV à hauteur de <color=#f29e38ff>#1[f1]%</color> des PV max de Bailu + <color=#f29e38ff>36</color>. Cet effet peut se déclencher 2 fois.\nQuand un allié subit un coup fatal, il ne tombe pas <u>à terre</u>, mais Bailu le soigne immédiatement à hauteur de <color=#f29e38ff>12%</color> de ses propres PV max + <color=#f29e38ff>120</color>. Cet effet peut être déclenché 1 fois par combat."
+			},
+			"Technique": {
+				"Id": 121107,
+				"Name": "Flânerie sous la pluie",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Support",
+				"TagTypeText": "Soutien",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique, tous les alliés sont revigorés pendant 2 tours au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8001": {
+		"Id": "8001",
+		"Name": "Pionnier (Physique)",
+		"TrailblazerCanonName": "Caelus",
+		"TrailblazerGender": "M",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physique",
+		"PathType": "Warrior",
+		"PathTypeText": "La Destruction",
+		"Eidolons": [
+			{
+				"Id": "800101",
+				"Name": "Étoile tombée du ciel",
+				"Description": "Lorsque des ennemis sont vaincus par l'ultime du pionnier, ce dernier régénère 10 points d'énergie supplémentaires. Cet effet ne peut être déclenché qu'une fois par attaque."
+			},
+			{
+				"Id": "800102",
+				"Name": "À son corps défendant",
+				"Description": "Attaquer des ennemis ayant une Faiblesse physique restaure une quantité de PV équivalente à 5% de l'ATQ du pionnier à ce dernier."
+			},
+			{
+				"Id": "800103",
+				"Name": "Un chuchotement pour seul guide",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "800104",
+				"Name": "Regard destructeur",
+				"Description": "Les chances de coup critique du personnage augmentent de 25% contre les ennemis victimes d'une Rupture de faiblesse."
+			},
+			{
+				"Id": "800105",
+				"Name": "Un espoir de survie",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "800106",
+				"Name": "Une volonté de pionnier",
+				"Description": "Le talent du pionnier se déclenche également lorsqu'il élimine un ennemi."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800101,
+				"Name": "Coup d'adieu",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT physiques mineurs à un ennemi unique.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 800102,
+				"Name": "Home run final",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Propagation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>62%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique et aux ennemis adjacents.",
+				"SimpleDescription": "Inflige des DGT physiques à un ennemi unique et aux ennemis adjacents.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 800103,
+				"Name": "{M#Lançeur}{F#Lançeuse} de poussière d'étoile",
+				"TriggerKey": "Skill03",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Vous choisissez entre deux modes d'attaque pour infliger un coup dévastateur.\nFrappe écrasante : Coup d'adieu inflige des DGT physiques équivalents à <color=#f29e38ff>300%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique.\nFrappe écrasante : Home run final inflige des DGT physiques équivalents à <color=#f29e38ff>180%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique, ainsi que des DGT physiques équivalents à <color=#f29e38ff>108%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} aux ennemis adjacents.",
+				"SimpleDescription": "Utilise une ATQ sur cible unique ou par propagation pour infliger un coup dévastateur.",
+				"ElementType": "Physical"
+			},
+			"Talent": {
+				"Id": 800104,
+				"Name": "Pickoff parfait",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "L'ATQ augmente de <color=#f29e38ff>10%</color> à chaque fois que le personnage fait subir une Rupture de faiblesse à un ennemi. Effet cumulable jusqu'à 2 fois."
+			},
+			"Technique": {
+				"Id": 800107,
+				"Name": "Troisième prise immortelle",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Soigne immédiatement tous les alliés à hauteur de 15% de leurs PV max respectifs après utilisation de cette technique."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8002": {
+		"Id": "8002",
+		"Name": "Pionnière (Physique)",
+		"TrailblazerCanonName": "Stelle",
+		"TrailblazerGender": "F",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physique",
+		"PathType": "Warrior",
+		"PathTypeText": "La Destruction",
+		"Eidolons": [
+			{
+				"Id": "800201",
+				"Name": "Étoile tombée du ciel",
+				"Description": "Lorsque des ennemis sont vaincus par l'ultime de la pionnière, cette dernière régénère 10 points d'énergie supplémentaires. Cet effet ne peut être déclenché qu'une fois par attaque."
+			},
+			{
+				"Id": "800202",
+				"Name": "À son corps défendant",
+				"Description": "Attaquer des ennemis ayant une Faiblesse physique restaure une quantité de PV équivalente à 5% de l'ATQ de la pionnière à cette dernière."
+			},
+			{
+				"Id": "800203",
+				"Name": "Un chuchotement pour seul guide",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "800204",
+				"Name": "Regard destructeur",
+				"Description": "Les chances de coup critique du personnage augmentent de 25% contre les ennemis victimes d'une Rupture de faiblesse."
+			},
+			{
+				"Id": "800205",
+				"Name": "Un espoir de survie",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "800206",
+				"Name": "Une volonté de pionnier",
+				"Description": "Le talent de la pionnière se déclenche également lorsqu'elle élimine un ennemi."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800201,
+				"Name": "Coup d'adieu",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>50%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique.",
+				"SimpleDescription": "Inflige des DGT physiques mineurs à un ennemi unique.",
+				"ElementType": "Physical"
+			},
+			"Skill": {
+				"Id": 800202,
+				"Name": "Home run final",
+				"TriggerKey": "Skill02",
+				"TagType": "Blast",
+				"TagTypeText": "Propagation",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT physiques équivalents à <color=#f29e38ff>62%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique et aux ennemis adjacents.",
+				"SimpleDescription": "Inflige des DGT physiques à un ennemi unique et aux ennemis adjacents.",
+				"ElementType": "Physical"
+			},
+			"Ultimate": {
+				"Id": 800203,
+				"Name": "{M#Lançeur}{F#Lançeuse} de poussière d'étoile",
+				"TriggerKey": "Skill03",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Vous choisissez entre deux modes d'attaque pour infliger un coup dévastateur.\nFrappe écrasante : Coup d'adieu inflige des DGT physiques équivalents à <color=#f29e38ff>300%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique.\nFrappe écrasante : Home run final inflige des DGT physiques équivalents à <color=#f29e38ff>180%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique, ainsi que des DGT physiques équivalents à <color=#f29e38ff>108%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} aux ennemis adjacents.",
+				"SimpleDescription": "Utilise une ATQ sur cible unique ou par propagation pour infliger un coup dévastateur.",
+				"ElementType": "Physical"
+			},
+			"Talent": {
+				"Id": 800204,
+				"Name": "Pickoff parfait",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "L'ATQ augmente de <color=#f29e38ff>10%</color> à chaque fois que le personnage fait subir une Rupture de faiblesse à un ennemi. Effet cumulable jusqu'à 2 fois."
+			},
+			"Technique": {
+				"Id": 800207,
+				"Name": "Troisième prise immortelle",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Restore",
+				"TagTypeText": "Restauration",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Soigne immédiatement tous les alliés à hauteur de 15% de leurs PV max respectifs après utilisation de cette technique."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8003": {
+		"Id": "8003",
+		"Name": "Pionnier (Feu)",
+		"TrailblazerCanonName": "Caelus",
+		"TrailblazerGender": "M",
+		"ElementType": "Fire",
+		"ElementTypeText": "Feu",
+		"PathType": "Knight",
+		"PathTypeText": "La Préservation",
+		"Eidolons": [
+			{
+				"Id": "800301",
+				"Name": "Déflagration du cœur en fusion",
+				"Description": "Lorsque le pionnier utilise son ATQ normale, il inflige des DGT de feu supplémentaires équivalents à 25% de sa DÉF. Lorsqu'il utilise son ATQ normale renforcée, il inflige des DGT de feu supplémentaires équivalents à 50% de sa DÉF."
+			},
+			{
+				"Id": "800302",
+				"Name": "Ténacité sans faille",
+				"Description": "Le bouclier appliqué à tous les alliés grâce au talent du pionnier absorbe des DGT supplémentaires équivalents à 2% de la DÉF du pionnier + 27."
+			},
+			{
+				"Id": "800303",
+				"Name": "Tout feu, tout flamme",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "800304",
+				"Name": "Serment de survie de la civilisation",
+				"Description": "Gagne immédiatement 4 cumuls de Volonté du magma en début de combat."
+			},
+			{
+				"Id": "800305",
+				"Name": "Flamme d'inspiration",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "800306",
+				"Name": "Remparts de la cité éblouissante",
+				"Description": "Après utilisation de l'ATQ normale renforcée ou de l'ultime du pionnier, sa DÉF augmente de 10%. Cumulable jusqu'à 3 fois."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800301,
+				"Name": "Feu fendeur de glace",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>50%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique et gagne 1 cumul de Volonté du magma.",
+				"SimpleDescription": "Inflige des DGT de feu mineurs à un ennemi unique et gagne Volonté du magma.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 800302,
+				"Name": "Ambre incandescent",
+				"TriggerKey": "Skill02",
+				"TagType": "Defence",
+				"TagTypeText": "Défense",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Augmente la réduction de DGT {M#du pionnier}{F#de la pionnière} de <color=#f29e38ff>40%</color> et lui accorde 1 cumul de Volonté du magma, avec 100% de <u>chances de base</u> de provoquer tous les ennemis pendant 1 tour.",
+				"SimpleDescription": "Réduit les DGT subis et gagne Volonté du magma, avec de fortes chances de provoquer tous les ennemis."
+			},
+			"Ultimate": {
+				"Id": 800303,
+				"Name": "Lance de guerre enflammée",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>50%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} + <color=#f29e38ff>75%</color> de sa DÉF à tous les ennemis. La prochaine ATQ normale est automatiquement renforcée et ne coûte pas de Volonté du magma.",
+				"SimpleDescription": "Inflige des DGT de feu à tous les ennemis et renforce la prochaine ATQ normale.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 800304,
+				"Name": "Trésor des Architectes",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Chaque fois que {M#le pionnier}{F#la pionnière} est {M#touché}{F#touchée}, {M#il}{F#elle} obtient 1 cumul de Volonté du magma pour un maximum de 8 cumuls.\nLorsque Volonté du magma atteint au moins 4 cumuls, l'ATQ normale {M#du pionnier}{F#de la pionnière} est renforcée, infligeant des DGT à un ennemi unique et aux ennemis adjacents.\nLorsque {M#le pionnier}{F#la pionnière} utilise l'ATQ normale, la compétence ou l'ultime, {M#il}{F#elle} accorde un bouclier qui absorbe des DGT équivalents à <color=#f29e38ff>#1[f1]%</color> de sa propre DÉF + <color=#f29e38ff>20</color> à tous les alliés. Le bouclier dure 2 tours."
+			},
+			"Technique": {
+				"Id": 800307,
+				"Name": "Appel de la Gardienne",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Defence",
+				"TagTypeText": "Défense",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique, gagne un bouclier qui absorbe des DGT équivalents à 30% de la DÉF {M#du pionnier}{F#de la pionnière} + 384 pendant 1 tour au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	},
+	"8004": {
+		"Id": "8004",
+		"Name": "Pionnière (Feu)",
+		"TrailblazerCanonName": "Stelle",
+		"TrailblazerGender": "F",
+		"ElementType": "Fire",
+		"ElementTypeText": "Feu",
+		"PathType": "Knight",
+		"PathTypeText": "La Préservation",
+		"Eidolons": [
+			{
+				"Id": "800401",
+				"Name": "Déflagration du cœur en fusion",
+				"Description": "Lorsque la pionnière utilise son ATQ normale, elle inflige des DGT de feu supplémentaires équivalents à 25% de sa DÉF. Lorsqu'elle utilise son ATQ normale renforcée, elle inflige des DGT de feu supplémentaires équivalents à 50% de sa DÉF."
+			},
+			{
+				"Id": "800402",
+				"Name": "Ténacité sans faille",
+				"Description": "Le bouclier appliqué à tous les alliés grâce au talent de la pionnière absorbe des DGT supplémentaires équivalents à 2% de la DÉF de la pionnière + 27."
+			},
+			{
+				"Id": "800403",
+				"Name": "Tout feu, tout flamme",
+				"Description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "800404",
+				"Name": "Serment de survie de la civilisation",
+				"Description": "Gagne immédiatement 4 cumuls de Volonté du magma en début de combat."
+			},
+			{
+				"Id": "800405",
+				"Name": "Flamme d'inspiration",
+				"Description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "800406",
+				"Name": "Remparts de la cité éblouissante",
+				"Description": "Après utilisation de l'ATQ normale renforcée ou de l'ultime de la pionnière, sa DÉF augmente de 10%. Cumulable jusqu'à 3 fois."
+			}
+		],
+		"Skills": {
+			"BasicATK": {
+				"Id": 800401,
+				"Name": "Feu fendeur de glace",
+				"TriggerKey": "Skill01",
+				"TagType": "SingleAttack",
+				"TagTypeText": "Cible unique",
+				"SkillTypeText": "ATQ normale",
+				"MaxLevel": 9,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>50%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} à un ennemi unique et gagne 1 cumul de Volonté du magma.",
+				"SimpleDescription": "Inflige des DGT de feu mineurs à un ennemi unique et gagne Volonté du magma.",
+				"ElementType": "Fire"
+			},
+			"Skill": {
+				"Id": 800402,
+				"Name": "Ambre incandescent",
+				"TriggerKey": "Skill02",
+				"TagType": "Defence",
+				"TagTypeText": "Défense",
+				"SkillTypeText": "Compétence",
+				"MaxLevel": 15,
+				"Description": "Augmente la réduction de DGT {M#du pionnier}{F#de la pionnière} de <color=#f29e38ff>40%</color> et lui accorde 1 cumul de Volonté du magma, avec 100% de <u>chances de base</u> de provoquer tous les ennemis pendant 1 tour.",
+				"SimpleDescription": "Réduit les DGT subis et gagne Volonté du magma, avec de fortes chances de provoquer tous les ennemis."
+			},
+			"Ultimate": {
+				"Id": 800403,
+				"Name": "Lance de guerre enflammée",
+				"TriggerKey": "Skill03",
+				"TagType": "AoEAttack",
+				"TagTypeText": "ZdE",
+				"SkillTypeText": "Ultime",
+				"MaxLevel": 15,
+				"Description": "Inflige des DGT de feu équivalents à <color=#f29e38ff>50%</color> de l'ATQ {M#du pionnier}{F#de la pionnière} + <color=#f29e38ff>75%</color> de sa DÉF à tous les ennemis. La prochaine ATQ normale est automatiquement renforcée et ne coûte pas de Volonté du magma.",
+				"SimpleDescription": "Inflige des DGT de feu à tous les ennemis et renforce la prochaine ATQ normale.",
+				"ElementType": "Fire"
+			},
+			"Talent": {
+				"Id": 800404,
+				"Name": "Trésor des Architectes",
+				"TriggerKey": "SkillP01",
+				"TagType": "Enhance",
+				"TagTypeText": "Renforcement",
+				"SkillTypeText": "Talent",
+				"MaxLevel": 15,
+				"Description": "Chaque fois que {M#le pionnier}{F#la pionnière} est {M#touché}{F#touchée}, {M#il}{F#elle} obtient 1 cumul de Volonté du magma pour un maximum de 8 cumuls.\nLorsque Volonté du magma atteint au moins 4 cumuls, l'ATQ normale {M#du pionnier}{F#de la pionnière} est renforcée, infligeant des DGT à un ennemi unique et aux ennemis adjacents.\nLorsque {M#le pionnier}{F#la pionnière} utilise l'ATQ normale, la compétence ou l'ultime, {M#il}{F#elle} accorde un bouclier qui absorbe des DGT équivalents à <color=#f29e38ff>#1[f1]%</color> de sa propre DÉF + <color=#f29e38ff>20</color> à tous les alliés. Le bouclier dure 2 tours."
+			},
+			"Technique": {
+				"Id": 800407,
+				"Name": "Appel de la Gardienne",
+				"TriggerKey": "SkillMaze",
+				"TagType": "Defence",
+				"TagTypeText": "Défense",
+				"SkillTypeText": "Technique",
+				"MaxLevel": 1,
+				"Description": "Après utilisation de la technique, gagne un bouclier qui absorbe des DGT équivalents à 30% de la DÉF {M#du pionnier}{F#de la pionnière} + 384 pendant 1 tour au début du combat suivant."
+			}
+		},
+		"VersionAdded": "1.0"
+	}
+}
