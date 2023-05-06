@@ -14,5 +14,6 @@ function exportStarRailData() {
 	exportData('enemies', require('./extractfolders/extractEnemies'));
 
 	// Simulated Universe
-	exportData('curios', require('./extractfolders/extractCurios'));
+	exportData('sucurios', require('./extractfolders/extractSUCurios'));
+	exportData('sublessings', require('./extractfolders/extractSUBlessings'));
 }

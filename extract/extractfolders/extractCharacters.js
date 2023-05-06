@@ -43,7 +43,7 @@ function collate(langCode) {
 			const rankData = {
 				Id: rankId+'',
 				Name: language[GetStableHash(rankObj.Name)],
-				Description: global.replaceGender(global.replaceParams(language[GetStableHash(rankObj.Desc)], rankObj.Param), isPlayerMale),
+				Effect: global.replaceGender(global.replaceParams(language[GetStableHash(rankObj.Desc)], rankObj.Param), isPlayerMale),
 			};
 			return rankData;
 		});
@@ -85,9 +85,9 @@ function collateSkills(textmap, skillId) {
 	data.SkillTypeText = textmap[obj['1'].SkillTypeDesc.Hash];
 	data.MaxLevel = obj['1'].MaxLevel;
 
-	data.Description = global.replaceParams(textmap[obj['1'].SkillDesc.Hash], obj['1'].ParamList);
+	data.Effect = global.replaceParams(textmap[obj['1'].SkillDesc.Hash], obj['1'].ParamList);
 	if (textmap[obj['1'].SimpleSkillDesc.Hash])
-		data.SimpleDescription = global.replaceParams(textmap[obj['1'].SimpleSkillDesc.Hash], obj['1'].SimpleParamList);
+		data.AbridgedEffect = global.replaceParams(textmap[obj['1'].SimpleSkillDesc.Hash], obj['1'].SimpleParamList);
 
 	data.ElementType = obj['1'].StanceDamageType;
 
