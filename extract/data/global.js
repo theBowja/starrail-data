@@ -52,6 +52,7 @@ function setVersion(v) {
 	version = v;
 }
 
+if (!fs.existsSync('./versioncache.json')) fs.writeFileSync('./versioncache.json', '{}');
 const versioncache = require('./versioncache.json');
 function updateDataVersionAdded(folder, data) {
 	for (let [id, obj] of Object.entries(data)) {

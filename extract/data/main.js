@@ -19,4 +19,5 @@ function exportStarRailData() {
 	// Simulated Universe
 	exportData('sucurios', require('./extractfolders/extractSUCurios'));
 	exportData('sublessings', require('./extractfolders/extractSUBlessings'));
+	exportData('suabilities', require('./extractfolders/extractSUAbilities'));
 }
