@@ -44,6 +44,73 @@ global.roundTwoDecimals = function(value) {
 	return Math.round(value * 100) / 100;
 }
 
+global.GetRewardsData = function(textmap, rewardId) {
+	if (rewardId === undefined) return undefined;
+
+	const xreward = getExcel('RewardData');
+	const xitem = getExcel('ItemConfig');
+	const xeidolon = getExcel('ItemConfigAvatarRank');
+	const xrelic = getExcel('RelicConfig');
+	const xrelicdata = getExcel('RelicDataInfo');
+	const xweapon = getExcel('EquipmentConfig');
+
+	const rewardObj = xreward[rewardId];
+
+	const rewards = [];
+	if (rewardObj.Hcoin) {
+		rewards.push({
+			Id: 1,
+			Name: textmap[xitem['1'].ItemName.Hash],
+			RewardType: 'ITEM',
+			Count: rewardObj.Hcoin
+		});
+	}
+
+	let i = 1;
+	while(rewardObj[`ItemID_${i}`]) {
+		const itemId = rewardObj[`ItemID_${i}`];
+
+		if (xitem[itemId]) {
+			rewards.push({
+				Id: itemId,
+				Name: textmap[xitem[itemId].ItemName.Hash],
+				RewardType: 'ITEM',
+				Count: rewardObj[`Count_${i}`]
+			});
+		} else if (xrelic[itemId]) {
+			const relicSetId = xrelic[itemId].SetID;
+			rewards.push({
+				Id: itemId,
+				Name: textmap[GetStableHash(xrelicdata[relicSetId][xrelic[itemId].Type].RelicName)],
+				RewardType: 'RELIC',
+				RelicSetId: relicSetId,
+				RelicType: xrelic[itemId].Type,
+				RelicRarity: xrelic[itemId].Rarity,
+				Count: rewardObj[`Count_${i}`]
+			});
+		} else if (xweapon[itemId]) {
+			rewards.push({
+				Id: itemId,
+				Name: textmap[xweapon[itemId].EquipmentName.Hash],
+				RewardType: 'LIGHTCONE',
+				Count: rewardObj[`Count_${i}`]
+			});
+		} else if (xeidolon[itemId]) {
+			rewards.push({
+				Id: itemId,
+				Name: textmap[xeidolon[itemId].ItemName.Hash],
+				RewardType: 'EIDOLON',
+				Count: rewardObj[`Count_${i}`]
+			});
+		} else {
+			console.log(`Unknown reward type for item id ${itemId}`);
+		}
+
+		i++;
+	}
+
+	return rewards;
+}
 
 /* =========================================================================================== */
 
@@ -52,7 +119,7 @@ function setVersion(v) {
 	version = v;
 }
 
-if (!fs.existsSync('./versioncache.json')) fs.writeFileSync('./versioncache.json', '{}');
+// if (!fs.existsSync('./versioncache.json')) fs.writeFileSync('./versioncache.json', '{}');
 const versioncache = require('./versioncache.json');
 function updateDataVersionAdded(folder, data) {
 	for (let [id, obj] of Object.entries(data)) {
