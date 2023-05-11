@@ -1,4 +1,4 @@
-const { getDataAll } = require('../../../main.js');
+import { getDataAll } from '../../main.js';
 
 export default function handler(request, response) {
 	const { lang, folder } = request.query;

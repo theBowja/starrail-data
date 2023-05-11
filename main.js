@@ -33,5 +33,3 @@ module.exports = {
 	getDataAll: getDataAll,
 	getDataItem: getDataItem
 }
-let tmp = getData('EN', 'characters', 1001);
-console.log(tmp);
