@@ -16,6 +16,7 @@ function exportStarRailData() {
 
 	exportData('trailblazelevels', require('./extractfolders/extractTrailblazeLevels'));
 	exportData('achievements', require('./extractfolders/extractAchievements'));
+	exportData('items', require('./extractfolders/extractItems'));
 
 	// Simulated Universe
 	exportData('sucurios', require('./extractfolders/extractSUCurios'));
