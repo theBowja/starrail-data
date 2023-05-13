@@ -14,10 +14,16 @@ If you wish to create an API hosted somewhere else, it should be pretty easy to 
 
 TODO: Returns the list of available languages and folders. Proxy for `TODO`.
 
+Example: https://starrail-data.vercel.app/api/config
+
 ## /api/[lang]/[folder]
 
 Returns all data for a specific folder. Proxy for `getDataAll(lang, folder)`.
 
+Example: https://starrail-data.vercel.app/api/EN/characters
+
 ## /api/[lang]/[folder]/[dataId]
 
 Returns data for a specific data item. Proxy for `getDataItem(lang, folder, dataId)`.
+
+Example: https://starrail-data.vercel.app/api/EN/characters/1001
