@@ -27,3 +27,9 @@ Example: https://starrail-data.vercel.app/api/EN/characters
 Returns data for a specific data item. Proxy for `getDataItem(lang, folder, dataId)`.
 
 Example: https://starrail-data.vercel.app/api/EN/characters/1001
+
+## /api/[lang]/[folder]/search/[query]
+
+Returns data for a specific data item. Proxy for `searchDataProps(lang, folder, query, properties)`.
+
+Example: https://starrail-data.vercel.app/api/EN/characters/search/danheng
