@@ -20,6 +20,9 @@ function exportStarRailData() {
 
 	exportData('loadingtips', require('./extractfolders/extractLoadingTips'));
 
+	exportData('messagecontacts', require('./extractfolders/extractMessageContacts'));
+	exportData('messageconversations', require('./extractfolders/extractMessageConversations'));
+
 	// Simulated Universe
 	exportData('sucurios', require('./extractfolders/extractSUCurios'));
 	exportData('sublessings', require('./extractfolders/extractSUBlessings'));

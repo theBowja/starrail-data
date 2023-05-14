@@ -75,7 +75,7 @@ function collateSkills(textmap, skillId) {
 
 	const data = {};
 
-	data.Id = skillId;
+	data.Id = skillId+'';
 	data.Name = textmap[obj['1'].SkillName.Hash];
 	data.TriggerKey = obj['1'].SkillTriggerKey;
 
