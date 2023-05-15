@@ -41,10 +41,14 @@ function collate(langCode) {
 					message.Id = `choice${index}`;
 					message.MessageType = 'Choice';
 					message.Choices = messageItemIds.map(itemId => {
-						return {
-							Text: textmap[xmitem[itemId].OptionText.Hash].replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', ''),
-							NextMessageId: itemId+''
-						};
+						const choiceData = {};
+						choiceData.ChoiceType = xmitem[itemId].ItemType;
+						if (xmitem[itemId].ItemType === 'Sticker' || xmitem[itemId].ItemType === 'Image') {
+							choiceData.Image = xmimage[xmitem[itemId].ItemImageID].ImagePath;
+						}
+						choiceData.Text = textmap[xmitem[itemId].OptionText.Hash].replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
+						choiceData.NextMessageId = itemId+'';
+						return choiceData;
 					});
 
 					messageItemItems.push(...messageItemIds);
@@ -55,16 +59,15 @@ function collate(langCode) {
 					message.MessageType = messageObj.ItemType;
 					message.SenderType = messageObj.Sender;
 					if (messageObj.Sender === 'NPC' && !messageObj.ContactsID) {
+						message.SenderContactId = obj.MessageContactsID+'';
 						data.ParticpatingContactIds.add(obj.MessageContactsID+'');
-						// message.SenderName = textmap[xcontact[obj.MessageContactsID].Name.Hash]
 					} else if (messageObj.Sender === 'NPC') {
+						message.SenderContactId = messageObj.ContactsID+'';
 						data.ParticpatingContactIds.add(messageObj.ContactsID+'');
-						// message.SenderName = textmap[xcontact[messageObj.ContactsID].Name.Hash]
 					} else {
+						message.SenderContactId = '8001';
 						data.ParticpatingContactIds.add('8001');
-						// message.SenderName = '{NICKNAME}';
 					}
-					// message.SenderProfilePic = '';
 
 					if (messageObj.ItemType === 'Sticker' || messageObj.ItemType === 'Image') {
 						message.Image = xmimage[messageObj.ItemImageID].ImagePath;
@@ -72,10 +75,9 @@ function collate(langCode) {
 
 					message.Text = textmap[messageObj.MainText.Hash].replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
 
-					if (messageObj.NextItemIDList.length === 1) {
-						message.NextMessageId = messageObj.NextItemIDList[0]+'';
-						messageItemItems.push(message.NextMessageId+'');
-					} else if (messageObj.NextItemIDList.length >= 1) {
+					if (messageObj.NextItemIDList.length === 0) {
+						// do nothing
+					} else if (isChoiceMessageItems(textmap, messageObj.NextItemIDList)) {
 						// check if these set of choices haven't already been added
 						const ind = messageItemItems.map(e => e.toString()).indexOf(messageObj.NextItemIDList.toString());
 						if (ind !== -1) {
@@ -84,6 +86,9 @@ function collate(langCode) {
 							message.NextMessageId = `choice${messageItemItems.length}`;
 							messageItemItems.push(messageObj.NextItemIDList);
 						}
+					} else {
+						message.NextMessageId = messageObj.NextItemIDList[0]+'';
+						messageItemItems.push(message.NextMessageId+'');
 					}
 				}
 
@@ -103,5 +108,14 @@ function collate(langCode) {
 	return mydata;
 }
 
+function isChoiceMessageItems(textmap, messageItemIds) {
+	for (const mItemId of messageItemIds) {
+		const text = textmap[xmitem[mItemId].OptionText.Hash];
+		if (text !== undefined && text !== '') {
+			return true;
+		}
+	}
+	return false;
+}
 
 module.exports = collate;
