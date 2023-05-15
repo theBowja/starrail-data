@@ -21,7 +21,7 @@ function collate(langCode) {
 
 		if (enhancedObj) {
 			data.EnhancedEffect = global.replaceParams(language[enhancedObj.BuffDesc.Hash], enhancedObj.ParamList);
-			data.EnhancedAbridgedEffect = global.replaceParams(language[enhancedObj.BuffSimpleDesc.Hash], obj.ParamList).replaceAll('\\n', '\n');
+			data.EnhancedAbridgedEffect = global.replaceParams(language[enhancedObj.BuffSimpleDesc.Hash], enhancedObj.ParamList).replaceAll('\\n', '\n');
 		}
 
 		// data.BuffDescBattle = language[obj.BuffDescBattle.Hash];

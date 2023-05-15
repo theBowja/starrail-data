@@ -30,13 +30,32 @@ global.replaceGenderM = function(str) { return str.replace(/{F#.*?}/gi, '').repl
 global.replaceGenderF = function(str) { return str.replace(/{M#.*?}/gi, '').replace(/{F#(.*?)}/gi, '$1'); }
 
 global.replaceParams = function(str, params) {
-	// if (!str || !params) return str;
+	const regex = /#(\d*?)\[(.*?)\](%?)/g;
+	let match = regex.exec(str);
 
-	for(let i = 0; i < params.length; i++) {
-		const value = roundTwoDecimals(params[i].Value);
-		str = str.replaceAll(`#${i+1}[i]<`, value+'<');
-		str = str.replaceAll(`#${i+1}[i]%`, roundTwoDecimals(value*100)+'%');
+	while (match !== null) {
+		const toreplace = match[0];
+		const index = parseInt(match[1])-1;
+		const format = match[2];
+		const isPercent = match[3] === '%';
+
+		let value = isPercent ? params[index].Value*100 : params[index].Value;
+		value = roundTwoDecimals(value);
+
+		if (format === 'i') { // integer
+			value = Math.floor(value);
+		} else if (format.startsWith('f')) { // float
+			const digits = parseInt(format.substring(1));
+			value = value.toFixed(digits);
+		} else {
+			console.log(`Error: unknown format in replaceParams ${toreplace}`);
+		}
+
+		str = str.replaceAll(toreplace, value+match[3]);
+
+		match = regex.exec(str);
 	}
+
 	str = str.replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
 	return str.replaceAll('\\n', '\n');
 }
