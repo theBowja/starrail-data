@@ -15,11 +15,17 @@ function collate(langCode) {
 		data.Name = language[obj.Name.Hash];
 		data.Signature = language[obj.SignatureText.Hash];
 
-		data.MessageType = language[xmtype[obj.ContactsType]?.Name?.Hash];
+		data.ContactType = obj.ContactsType;
+		data.ContactTypeText = language[xmtype[obj.ContactsType]?.Name?.Hash];
 
-		data.Faction = language[xmcamp[obj.ContactsCamp]?.Name?.Hash];
+		data.FactionType = obj.ContactsCamp;
+		data.FactionTypeText = language[xmcamp[obj.ContactsCamp]?.Name?.Hash];
 
 		data.ConversationIds = Object.values(xmgroup).filter(e => e.MessageContactsID+'' === id).map(e => e.ID+'');
+
+		data.Images = {
+			Icon: obj.IconPath
+		}
 
 		accum[filename] = data;
 		return accum;
