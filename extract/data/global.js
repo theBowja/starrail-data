@@ -25,9 +25,10 @@ global.getTrailblazerCanonName = function(textmap, isMale=true) {
 		return str.substring(str.lastIndexOf(' ')+1);
 };
 
-global.replaceGender = function(str, isMale=true) { return isMale ? replaceGenderM(str) : replaceGenderF(str); }
-global.replaceGenderM = function(str) { return str.replace(/{F#.*?}/gi, '').replace(/{M#(.*?)}/gi, '$1'); }
-global.replaceGenderF = function(str) { return str.replace(/{M#.*?}/gi, '').replace(/{F#(.*?)}/gi, '$1'); }
+global.replaceGender = function(str, isMale=true) { return isMale ? replaceGenderM(str) : replaceGenderF(str); };
+global.replaceGenderM = function(str) { return str.replace(/{F#.*?}/gi, '').replace(/{M#(.*?)}/gi, '$1'); };
+global.replaceGenderF = function(str) { return str.replace(/{M#.*?}/gi, '').replace(/{F#(.*?)}/gi, '$1'); };
+global.sanitizeText = function(str) { return str.replaceAll('<unbreak>', '').replaceAll('</unbreak>', '').replaceAll('\\n', '\n'); };
 
 global.replaceParams = function(str, params) {
 	const regex = /#(\d*?)\[(.*?)\](%?)/g;
@@ -40,7 +41,7 @@ global.replaceParams = function(str, params) {
 		const isPercent = match[3] === '%';
 
 		let value = isPercent ? params[index].Value*100 : params[index].Value;
-		value = roundTwoDecimals(value);
+		value = Math.round(value * 100) / 100; // round to two decimal places
 
 		if (format === 'i') { // integer
 			value = Math.floor(value);

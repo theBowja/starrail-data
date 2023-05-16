@@ -29,10 +29,6 @@ function collate(langCode) {
 			rankData.Effect = replaceParams(language[xsuper[obj.SkillID]['1'].SkillDesc.Hash], rankObj.ParamList)
 			rankData.Params = rankObj.ParamList.map((param, index) => {
 				let value = global.roundTwoDecimals(param.Value);
-				if (data.EffectTemplate.includes(`#${index+1}[i]%`))
-					value = roundTwoDecimals(value * 100) + '%';
-				else
-					value += '';
 				return value;
 			});
 			return rankData;
