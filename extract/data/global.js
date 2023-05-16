@@ -41,7 +41,7 @@ global.replaceParams = function(str, params) {
 		const isPercent = match[3] === '%';
 
 		let value = isPercent ? params[index].Value*100 : params[index].Value;
-		value = Math.round(value * 100) / 100; // round to two decimal places
+		value = Math.round(value * 10000) / 10000; // round to 4 decimal places
 
 		if (format === 'i') { // integer
 			value = Math.floor(value);
@@ -61,7 +61,7 @@ global.replaceParams = function(str, params) {
 	return str.replaceAll('\\n', '\n');
 }
 global.roundTwoDecimals = function(value) {
-	return Math.round(value * 100) / 100;
+	return Math.round(value * 10000) / 10000;
 }
 
 global.GetRewardsData = function(textmap, rewardId) {
