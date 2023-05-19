@@ -6,6 +6,7 @@ function exportStarRailData() {
 	setVersion('1.0');
 
 	exportData('characters', require('./extractfolders/extractCharacters'));
+	exportData('characterskills', require('./extractfolders/extractCharacterSkills'));
 	exportData('charactertraces', require('./extractfolders/extractCharacterTraces'));
 	exportData('lightcones', require('./extractfolders/extractLightCones'));
 	exportData('relicsets', require('./extractfolders/extractRelicSets'));

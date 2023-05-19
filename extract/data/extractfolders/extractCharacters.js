@@ -48,51 +48,11 @@ function collate(langCode) {
 			return rankData;
 		});
 
-		data.Skills = {
-			BasicATK: collateSkills(language, obj.SkillList[0]),
-			Skill: collateSkills(language, obj.SkillList[1]),
-			Ultimate: collateSkills(language, obj.SkillList[2]),
-			Talent: collateSkills(language, obj.SkillList[3]),
-			Technique: collateSkills(language, obj.SkillList[5]),
-		};
-		// TODO: add enhanced basic atk (traveler fire, qingque) and enhanced skills (hook)
-
-
-
 		accum[filename] = data;
 		return accum;
 	}, {});
 
 	return mydata;
 }
-
-function collateSkills(textmap, skillId) {
-	const obj = xskill[skillId];
-	if (!obj) {
-		console.log(`missing skillid: ${skillId}`);
-		return {};
-	}
-
-	const data = {};
-
-	data.Id = skillId+'';
-	data.Name = textmap[obj['1'].SkillName.Hash];
-	data.TriggerKey = obj['1'].SkillTriggerKey;
-
-	data.TagType = obj['1'].SkillEffect;
-	data.TagTypeText = textmap[obj['1'].SkillTag.Hash];
-
-	data.SkillTypeText = textmap[obj['1'].SkillTypeDesc.Hash];
-	data.MaxLevel = obj['1'].MaxLevel;
-
-	data.Effect = global.replaceParams(textmap[obj['1'].SkillDesc.Hash], obj['1'].ParamList);
-	if (textmap[obj['1'].SimpleSkillDesc.Hash])
-		data.AbridgedEffect = global.replaceParams(textmap[obj['1'].SimpleSkillDesc.Hash], obj['1'].SimpleParamList);
-
-	data.ElementType = obj['1'].StanceDamageType;
-
-	return data;
-}
-
 
 module.exports = collate;
