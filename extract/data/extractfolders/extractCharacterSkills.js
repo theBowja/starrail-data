@@ -16,12 +16,16 @@ function collate(langCode) {
 		data.Name = textmap[obj.AvatarName.Hash];
 
 		data.BasicATK = collateSkills(textmap, obj.SkillList[0]);
+		if (obj.SkillList.filter(e => (e+'').endsWith('8')).length > 0)
+			data.EnhancedBasicATK = collateSkills(textmap, obj.SkillList.filter(e => (e+'').endsWith('8'))[0]);
 		data.Skill = collateSkills(textmap, obj.SkillList[1]);
+		if (obj.SkillList.filter(e => (e+'').endsWith('9')).length > 0)
+			data.EnhancedSkill = collateSkills(textmap, obj.SkillList.filter(e => (e+'').endsWith('9'))[0]);
 		data.Ultimate = collateSkills(textmap, obj.SkillList[2]);
+		if (obj.SkillList.filter(e => (e+'').endsWith('10')).length > 0)
+			console.log(`Error: char ${id} skill has enhanced ultimate or something`);
 		data.Talent = collateSkills(textmap, obj.SkillList[3]);
 		data.Technique = collateSkills(textmap, obj.SkillList[5]);
-		// TODO: add enhanced basic atk (traveler fire, qingque) and enhanced skills (hook)
-
 
 		accum[filename] = data;
 		return accum;
@@ -66,6 +70,7 @@ function collateSkills(textmap, skillId) {
 		// 	data.AbridgedEffectValues =  global.roundParams(obj[level].SimpleParamList.map(e => e.Value));
 	}
 
+	data.ImageIcon = obj['1'].SkillIcon;
 
 	return data;
 }
