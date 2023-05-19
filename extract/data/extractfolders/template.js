@@ -4,17 +4,15 @@ const xchar = getExcel('AvatarConfig');
 
 
 function collate(langCode) {
-	const language = getLanguage(langCode);
+	const textmap = getLanguage(langCode);
 	const mydata = Object.entries(xchar).reduce((accum, [id, obj]) => {
 		const data = {};
 		data.Id = id;
 		let filename = id;
 
-		data.Name = language[obj.AvatarName.Hash];
-		data.FullName = language[obj.AvatarFullName.Hash]; // currently no one has this
-		if (data.FullName) console.log(`Character full name: ${data.FullName}`);
+		data.Name = textmap[obj.AvatarName.Hash];
 
-		// data.Description = language[obj.AvatarDesc.Hash];
+		// data.Description = textmap[obj.AvatarDesc.Hash];
 
 		data.DamageType = obj.DamageType;
 		data.AvatarBaseType = obj.AvatarBaseType;

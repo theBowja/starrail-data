@@ -30,7 +30,10 @@ global.replaceGenderM = function(str) { return str.replace(/{F#.*?}/gi, '').repl
 global.replaceGenderF = function(str) { return str.replace(/{M#.*?}/gi, '').replace(/{F#(.*?)}/gi, '$1'); };
 global.sanitizeText = function(str) { return str.replaceAll('<unbreak>', '').replaceAll('</unbreak>', '').replaceAll('\\n', '\n'); };
 
-global.replaceParams = function(str, params) {
+// params: array of numbers that have the property Value with the value of the parameter
+global.replaceParams = function(str, params, applyFormat=true) {
+	if (params[0] !== undefined && params[0].Value !== undefined) params = params.map(e => e.Value);
+
 	const regex = /#(\d*?)\[(.*?)\](%?)/g;
 	let match = regex.exec(str);
 
@@ -40,10 +43,12 @@ global.replaceParams = function(str, params) {
 		const format = match[2];
 		const isPercent = match[3] === '%';
 
-		let value = isPercent ? params[index].Value*100 : params[index].Value;
+		let value = isPercent ? params[index]*100 : params[index];
 		value = Math.round(value * 10000) / 10000; // round to 4 decimal places
 
-		if (format === 'i') { // integer
+		if (!applyFormat) {
+			value = value;
+		} else if (format === 'i') { // integer
 			value = Math.floor(value);
 		} else if (format.startsWith('f')) { // float
 			const digits = parseInt(format.substring(1));
@@ -60,7 +65,13 @@ global.replaceParams = function(str, params) {
 	str = str.replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
 	return str.replaceAll('\\n', '\n');
 }
+global.roundParams = function(params) {
+	return params.map(n => Math.round(n * 10000) / 10000); // round to 4 decimal places
+}
 global.roundTwoDecimals = function(value) {
+	return Math.round(value * 10000) / 10000;
+}
+global.roundFloat = function(value) {
 	return Math.round(value * 10000) / 10000;
 }
 
