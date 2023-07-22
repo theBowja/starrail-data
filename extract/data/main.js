@@ -17,6 +17,7 @@ function exportStarRailData() {
 	exportData('enemies', require('./extractfolders/extractEnemies'));
 
 	exportData('warps', require('./extractfolders/extractWarps'));
+	exportData('travellogs', require('./extractfolders/extractTravelLogs'));
 	exportData('trailblazelevels', require('./extractfolders/extractTrailblazeLevels'));
 	exportData('achievements', require('./extractfolders/extractAchievements'));
 	// exportData('items', require('./extractfolders/extractItems'));

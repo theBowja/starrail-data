@@ -13,3 +13,5 @@ The following is an example command you can use:
 The first parameter is the path to the folder containing the blk files. Likely similar to: `C:\Program Files\Star Rail\Games\StarRail_Data\StreamingAssets\Asb\Windows`.
 
 The second paramater is the path where you want to output all the files to.
+
+`D:\StarRail\AssetStudioCLI\AssetStudioCLI.exe "C:\Program Files\Star Rail\Games\StarRail_Data\StreamingAssets\Asb\Windows" "D:\StarRail\0520" --silent --types "Texture2d" --group_assets "ByContainer" --game "SR"`
