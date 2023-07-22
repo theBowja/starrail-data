@@ -58,7 +58,7 @@
 	"1002013": {
 		"Id": "1002013",
 		"Name": "Lance of the Eternal Freeze",
-		"Introduction": "Cocolia's summoned giant lance of ice. It's surrounded by an icy cold current that can tear through flesh like a blade.",
+		"Introduction": "A giant lance of ice summon by Cocolia. It's surrounded by an icy cold current that can tear through flesh like a blade.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder"
@@ -86,7 +86,7 @@
 	"1002014": {
 		"Id": "1002014",
 		"Name": "Lance of the Eternal Freeze",
-		"Introduction": "Cocolia's summoned giant lance of ice. It's surrounded by an icy cold current that can tear through flesh like a blade.",
+		"Introduction": "A giant lance of ice summon by Cocolia. It's surrounded by an icy cold current that can tear through flesh like a blade.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Quantum"
@@ -170,7 +170,7 @@
 	"1002017": {
 		"Id": "1002017",
 		"Name": "Lance of the Eternal Freeze",
-		"Introduction": "Cocolia's summoned giant lance of ice. It's surrounded by an icy cold current that can tear through flesh like a blade.",
+		"Introduction": "A giant lance of ice summon by Cocolia. It's surrounded by an icy cold current that can tear through flesh like a blade.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder"
@@ -198,7 +198,7 @@
 	"1002018": {
 		"Id": "1002018",
 		"Name": "Lance of the Eternal Freeze",
-		"Introduction": "Cocolia's summoned giant lance of ice. It's surrounded by an icy cold current that can tear through flesh like a blade.",
+		"Introduction": "A giant lance of ice summon by Cocolia. It's surrounded by an icy cold current that can tear through flesh like a blade.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Quantum"
@@ -829,7 +829,7 @@
 				"Id": 100402209,
 				"Name": "Support",
 				"SkillDesc": "When the phase starts, immediately summons Silvermane Soldier or Silvermane Cannoneer.",
-				"SkillTypeDesc": "Ability"
+				"SkillTypeDesc": "Talent"
 			},
 			{
 				"Id": 100402210,
@@ -1378,7 +1378,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
@@ -2687,7 +2687,7 @@
 				"Id": 201201002,
 				"Name": "Candle Flame",
 				"SkillDesc": "When receiving a killing blow, deals Fire DMG to all friendly units, with a high chance to reduce their DEF.",
-				"SkillTypeDesc": "Ability",
+				"SkillTypeDesc": "Talent",
 				"ElementType": "Fire"
 			}
 		],
@@ -3623,16 +3623,102 @@
 			{
 				"Id": 800208004,
 				"Name": "P—Protect You",
-				"SkillDesc": "When entering battle, applies P—Protect You to all friendly units. Each stack of P—Protect You can nullify all DMG received from 1 incoming hit except for DoT. P—Protect You stacks are shared across the team.",
+				"SkillDesc": "When entering battle, applies \"P—Protect You\" to all friendly units. Each stack of \"P—Protect You\" can nullify all DMG received from 1 incoming hit except for DoT. \"P—Protect You\" stacks are shared across the team.",
 				"SkillTypeDesc": "Talent"
 			}
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002081": {
+		"Id": "8002081",
+		"Name": "Trotter of Preservation",
+		"Introduction": "An interdimensional creature lost in the stars, docile in nature, sweet in taste, but inedible. This species spends most of its life feeding and fleeing. Travelers who encounter it see it as a good omen.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "The Treasure Trotter got spooked and will flee in 2 turns.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800208102,
+				"Name": "Run... Run!",
+				"SkillDesc": "The Treasure Trotter is panicking and will flee in 1 turn.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800208103,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "The Trotter flees in an instant.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800208104,
+				"Name": "P—Protect You",
+				"SkillDesc": "When entering battle, applies \"P—Protect You\" to all friendly units. Each stack of \"P—Protect You\" can nullify all DMG received from 1 incoming hit except for DoT. \"P—Protect You\" stacks are shared across the team.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"8002090": {
+		"Id": "8002090",
+		"Name": "Sequence Trotter",
+		"Introduction": "An interdimensional creature lost in the stars, docile in nature, sweet in taste, but inedible. This species spends most of its life feeding and fleeing. Travelers who encounter it see it as a good omen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800209001,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "The Trotter got spooked and will flee in 2 turns.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800209002,
+				"Name": "Run... Run!",
+				"SkillDesc": "The Trotter is panicking and will flee in 1 turn.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800209003,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "The Trotter flees in an instant.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"8003010": {
 		"Id": "8003010",
 		"Name": "Ice Out of Space",
-		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, its parasitize upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
+		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum brought by the Stellaron, it feeds upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -3682,7 +3768,7 @@
 	"8003011": {
 		"Id": "8003011",
 		"Name": "Ice Out of Space (Bug)",
-		"Introduction": "A false projection produced by compromised codes. The original referent entity is a strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, it parasitize upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space (Bug) will freeze targets it touches and delay their actions.",
+		"Introduction": "A false projection produced by compromised codes. The original referent entity is an alien life form that was born out of the Fragmentum brought by a Stellaron and feeds on this world's energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space (Bug) will freeze targets it touches and delay their actions.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -3787,7 +3873,7 @@
 	"8003021": {
 		"Id": "8003021",
 		"Name": "Blaze Out of Space (Bug)",
-		"Introduction": "A false projection produced by compromised codes. The original reference entity is an alien life form that was born out of the Fragmentum brought by a Stellaron and feeds on this world's energy. Its armor carries the flames taken from the core of a star.\nIn combat, the Blaze Out of Space (Bug) will incinerate anything it touches.",
+		"Introduction": "A false projection produced by compromised codes. The original referent entity is an alien life form that was born out of the Fragmentum brought by a Stellaron and feeds on this world's energy. Its armor carries the flames taken from the core of a star.\nIn combat, the Blaze Out of Space (Bug) will incinerate anything it touches.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Ice",
@@ -4651,7 +4737,7 @@
 	"8013011": {
 		"Id": "8013011",
 		"Name": "Voidranger: Trampler (Bug)",
-		"Introduction": "A false projection produced by compromised codes. The original reference entity is a product of the Antimatter Legion utilizing the Warforge to recast and fuse remnants of fallen warriors and Leviathans.\nThough relatively rare, they possess both the intelligence of a warrior and the power and mobility of a Leviathan. Its screech can summon a large number of Voidrangers.",
+		"Introduction": "A false projection produced by compromised codes. The original reference entity is a product of the Antimatter Legion utilizing the Warforge to recast and fuse remnants of fallen warriors and Leviathans.\nThough relatively rare, they possess both the intelligence of a warrior and the power and mobility of a Leviathan. Its screech can summon many Voidrangers.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Wind",
@@ -5238,6 +5324,146 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100202009": {
+		"Id": "100202009",
+		"Name": "Vagrant",
+		"Introduction": "In order to survive, some Underworlders are desperate enough to venture into the Fragmentum in search of anything salvageable. Ancient machinery that they dug up has become their best helper.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Shovel Attack",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspire",
+				"SkillDesc": "Increases a friendly unit's ATK and causes them to act immediately.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202010": {
+		"Id": "100202010",
+		"Name": "Vagrant",
+		"Introduction": "In order to survive, some Underworlders are desperate enough to venture into the Fragmentum in search of anything salvageable. Ancient machinery that they dug up has become their best helper.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Shovel Attack",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspire",
+				"SkillDesc": "Increases a friendly unit's ATK and causes them to act immediately.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202012": {
+		"Id": "100202012",
+		"Name": "Vagrant",
+		"Introduction": "In order to survive, some Underworlders are desperate enough to venture into the Fragmentum in search of anything they can use. Ancient machinery that they dug up has become their best helper.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Shovel Attack",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspire",
+				"SkillDesc": "Increases a friendly unit's ATK and causes them to act immediately.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202013": {
+		"Id": "100202013",
+		"Name": "Vagrant",
+		"Introduction": "In order to survive, some Underworlders are desperate enough to venture into the Fragmentum in search of anything salvageable. Ancient machinery that they dug up has become their best helper.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Shovel Attack",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspire",
+				"SkillDesc": "Increases a friendly unit's ATK and causes them to act immediately.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100203001": {
 		"Id": "100203001",
 		"Name": "Silvermane Cannoneer",
@@ -5484,6 +5710,88 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100203007": {
+		"Id": "100203007",
+		"Name": "Silvermane Cannoneer",
+		"Introduction": "A cannoneer of the Silvermane Guards who wields a portable hand cannon into battle.\nDuring combat, a Silvermane Cannoneer will launch brutal chain attacks along with other allies of theirs.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Barrage",
+				"SkillDesc": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Covering Support",
+				"SkillDesc": "Provides support to a friendly unit. When this unit attacks, it performs a follow-up attack that deals minor Physical DMG to the attacked target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Covering Support",
+				"SkillDesc": "Provides support to a friendly unit. When this unit attacks, it performs a follow-up attack that deals minor Physical DMG to the attacked target and units adjacent to the target.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100203008": {
+		"Id": "100203008",
+		"Name": "Silvermane Cannoneer",
+		"Introduction": "A cannoneer of the Silvermane Guards who wields a portable hand cannon into battle.\nDuring combat, a Silvermane Cannoneer will launch brutal chain attacks along with other allies of theirs.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Barrage",
+				"SkillDesc": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Covering Support",
+				"SkillDesc": "Provides support to a friendly unit. When this unit attacks, it performs a follow-up attack that deals minor Physical DMG to the attacked target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Covering Support",
+				"SkillDesc": "Provides support to a friendly unit. When this unit attacks, it performs a follow-up attack that deals minor Physical DMG to the attacked target and units adjacent to the target.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100204001": {
 		"Id": "100204001",
 		"Name": "Silvermane Soldier",
@@ -5694,13 +6002,13 @@
 			"Ice"
 		],
 		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
 			"Wind": 0,
-			"Thunder": 0,
+			"Thunder": 0.2,
 			"Quantum": 0,
-			"Imaginary": 0
+			"Imaginary": 0.2
 		},
 		"SkillList": [
 			{
@@ -5853,6 +6161,91 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100204015": {
+		"Id": "100204015",
+		"Name": "Silvermane Soldier",
+		"Introduction": "A member of Belobog's Silvermane Guards, tasked with leading the charge into enemy lines.\nSilvermane Soldiers' attacks will reduce their enemies' defense during combat.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum",
+			"Fire"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "Deals Physical DMG to a single target, with a high chance to reduce the target's DEF.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204016": {
+		"Id": "100204016",
+		"Name": "Silvermane Soldier",
+		"Introduction": "A member of Belobog's Silvermane Guards, tasked with leading the charge into enemy lines.\nSilvermane Soldiers' attacks will reduce their enemies' defense during combat.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "Deals Physical DMG to a single target, with a high chance to reduce the target's DEF.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204019": {
+		"Id": "100204019",
+		"Name": "Silvermane Soldier",
+		"Introduction": "A member of Belobog's Silvermane Guards, tasked with leading the charge into enemy lines.\nSilvermane Soldiers' attacks will reduce their enemies' DEF during combat.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "Deals Physical DMG to a single target, with a high chance to reduce the target's DEF.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100204101": {
 		"Id": "100204101",
@@ -6194,6 +6587,96 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100205012": {
+		"Id": "100205012",
+		"Name": "Silvermane Gunner",
+		"Introduction": "An archer of Belobog's Silvermane Guards, tasked with sniping at enemies.\nSilvermane Archers' shots will inflict Bleed on their enemies during combat.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Piercing Grenade",
+				"SkillDesc": "Deals Physical DMG to a single target, with a high chance to cause Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205013": {
+		"Id": "100205013",
+		"Name": "Silvermane Gunner",
+		"Introduction": "A gunner of Belobog's Silvermane Guards, tasked with sniping at enemies.\nSilvermane Gunners' shots will inflict Bleed on their enemies during combat.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Physical",
+			"Fire",
+			"Ice",
+			"Imaginary",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Piercing Grenade",
+				"SkillDesc": "Deals Physical DMG to a single target, with a high chance to cause Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205015": {
+		"Id": "100205015",
+		"Name": "Silvermane Gunner",
+		"Introduction": "An archer of Belobog's Silvermane Guards, tasked with sniping at enemies.\nSilvermane Archers' shots will inflict Bleed on their enemies during combat.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Piercing Grenade",
+				"SkillDesc": "Deals Physical DMG to a single target, with a high chance to cause Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100301001": {
 		"Id": "100301001",
@@ -6578,6 +7061,54 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100301009": {
+		"Id": "100301009",
+		"Name": "Silvermane Lieutenant",
+		"Introduction": "The leader of a squad of Belobog's Silvermane Guards.\nSilvermane Lieutenants can raise a giant shield during combat and enhance themselves. Attacking a Silvermane Lieutenant with their shield raised will immediately result in a fierce counter attack.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Assault",
+				"SkillDesc": "Deals Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Pierce",
+				"SkillDesc": "Deals massive Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Shield Reflect",
+				"SkillDesc": "Enters the Counter state. When attacked by a single character, acts immediately and casts \"Pierce\" on the attacker.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Reinforcement",
+				"SkillDesc": "Summons Silvermane Soldier or Silvermane Gunner",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100301201": {
 		"Id": "100301201",
@@ -7128,6 +7659,108 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101201006": {
+		"Id": "101201006",
+		"Name": "Automaton Hound",
+		"Introduction": "An automaton pieced together with Old World technology. It looks like a transportation vehicle whose purpose has long been forgotten.\nIn combat, Automaton Hound can provide support and restore HP to its allies.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "Immediately recovers all friendly units' HP.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201007": {
+		"Id": "101201007",
+		"Name": "Automaton Hound",
+		"Introduction": "An automaton pieced together with Old World technology. It looks like a transportation vehicle whose purpose has long been forgotten.\nIn combat, Automaton Hound can provide support and restore HP to its allies.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "Immediately recovers all friendly units' HP.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201009": {
+		"Id": "101201009",
+		"Name": "Automaton Hound",
+		"Introduction": "An automaton pieced together with Old World technology. It looks like a transportation vehicle whose purpose has long been forgotten.\nIn combat, Automaton Hounds can provide support and restore HP to its allies.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "Immediately recovers all friendly units' HP.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101202001": {
 		"Id": "101202001",
 		"Name": "Rookie Buster: Silo",
@@ -7422,8 +8055,7 @@
 		"Introduction": "An automaton pieced together with Old World technology. Humans have tasked it with the most basic manual labors.\nIn combat, Automaton Spiders are highly unstable, capable of exploding when damaged.",
 		"ElementalWeaknesses": [
 			"Thunder",
-			"Wind",
-			"Quantum"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -7431,7 +8063,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -7561,6 +8193,198 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101202107": {
+		"Id": "101202107",
+		"Name": "Automaton Spider",
+		"Introduction": "An automaton pieced together with Old World technology. It is tasked with the basic labor tasks for humans.\nIn combat, Automaton Spider is highly unstable, capable of exploding when damaged.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Ram",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Timed Module",
+				"SkillDesc": "The next action uses Self-Exploding Module.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Self-Exploding Module",
+				"SkillDesc": "Self-destructs, dealing Fire DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Chains of Destruction",
+				"SkillDesc": "Deals Fire DMG to adjacent units when suffering a killing blow.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202108": {
+		"Id": "101202108",
+		"Name": "Automaton Spider",
+		"Introduction": "An automaton pieced together with Old World technology. It is tasked with the basic labor tasks for humans.\nIn combat, Automaton Spider is highly unstable, capable of exploding when damaged.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Ram",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Timed Module",
+				"SkillDesc": "The next action uses Self-Exploding Module.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Self-Exploding Module",
+				"SkillDesc": "Self-destructs, dealing Fire DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Chains of Destruction",
+				"SkillDesc": "Deals Fire DMG to adjacent units when suffering a killing blow.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202109": {
+		"Id": "101202109",
+		"Name": "Automaton Spider",
+		"Introduction": "An automaton pieced together with Old World technology. It is tasked with the basic labor tasks for humans.\nIn combat, Automaton Spider is highly unstable, capable of exploding when damaged.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Ram",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Timed Module",
+				"SkillDesc": "The next action uses Self-Exploding Module.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Self-Exploding Module",
+				"SkillDesc": "Self-destructs, dealing Fire DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Chains of Destruction",
+				"SkillDesc": "Deals Fire DMG to adjacent units when suffering a killing blow.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202110": {
+		"Id": "101202110",
+		"Name": "Automaton Spider",
+		"Introduction": "An automaton pieced together with Old World technology. It is tasked with the basic labor tasks for humans.\nIn combat, Automaton Spider is highly unstable, capable of exploding when damaged.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Ram",
+				"SkillDesc": "Deals minor Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Timed Module",
+				"SkillDesc": "The next action uses Self-Exploding Module.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Self-Exploding Module",
+				"SkillDesc": "Self-destructs, dealing Fire DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Chains of Destruction",
+				"SkillDesc": "Deals Fire DMG to adjacent units when suffering a killing blow.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101203001": {
 		"Id": "101203001",
 		"Name": "Automaton Beetle",
@@ -7587,7 +8411,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
@@ -7620,7 +8444,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
@@ -7649,7 +8473,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
@@ -7678,7 +8502,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
@@ -7707,7 +8531,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
@@ -7736,7 +8560,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
@@ -7765,12 +8589,157 @@
 			{
 				"Id": 101203001,
 				"Name": "Unstable Forcefield",
-				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to self. The Barrier nullifies all DMG received except for DoT until after being attacked.",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
 				"SkillTypeDesc": "Ability",
 				"ElementType": "Physical"
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101203008": {
+		"Id": "101203008",
+		"Name": "Automaton Beetle",
+		"Introduction": "An automaton pieced together with Old World technology. A signal light is placed on its legs, and the unit may have been used for mining or construction operations.\nIn combat, Automaton Beetles can create forcefields to shield themselves.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Unstable Forcefield",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203009": {
+		"Id": "101203009",
+		"Name": "Automaton Beetle",
+		"Introduction": "An automaton pieced together with Old World technology. A signal light is placed on its legs, and the unit may have been used for mining or construction operations.\nIn combat, Automaton Beetles can create forcefields to shield themselves.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Unstable Forcefield",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203010": {
+		"Id": "101203010",
+		"Name": "Automaton Beetle",
+		"Introduction": "An automaton pieced together with Old World technology. A signal light is placed on its legs, and the unit may have been used for mining or construction operations.\nIn combat, Automaton Beetles can create forcefields to shield themselves.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Unstable Forcefield",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203011": {
+		"Id": "101203011",
+		"Name": "Automaton Beetle",
+		"Introduction": "An automaton pieced together with Old World technology. A signal light is placed on its legs, and the unit may have been used for mining or construction operations.\nIn combat, Automaton Beetles can create forcefields to shield themselves.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Unstable Forcefield",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203013": {
+		"Id": "101203013",
+		"Name": "Automaton Beetle",
+		"Introduction": "An automaton pieced together with Old World technology. A signal light is placed on its legs, and the unit may have been used for mining or construction operations.\nIn combat, Automaton Beetles can create forcefields to shield themselves.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Unstable Forcefield",
+				"SkillDesc": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -8374,6 +9343,60 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101301012": {
+		"Id": "101301012",
+		"Name": "Automaton Grizzly",
+		"Introduction": "An automaton pieced together with Old World technology. It's been reinforced with durable armor to charge forward and protect the Silvermane Guards.\nIn combat, an Automaton Grizzly will summon Automaton Spiders and unleash a powerful charged attack.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Detonation Order",
+				"SkillDesc": "Summons Automaton Spider.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Enrage Order",
+				"SkillDesc": "Has a chance to Taunt all targets.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Overcombust Order",
+				"SkillDesc": "Enters the Charge state. The next action uses \"Purge Order\" on all targets.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Purge Order",
+				"SkillDesc": "Deals Massive Physical DMG to all targets.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Destruction Order",
+				"SkillDesc": "Deals Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101301013": {
 		"Id": "101301013",
 		"Name": "Automaton Grizzly",
@@ -8427,6 +9450,60 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101301014": {
+		"Id": "101301014",
+		"Name": "Automaton Grizzly",
+		"Introduction": "An automaton pieced together with Old World technology. It has been reinforced with durable armor, so it can charge forward and protect the Silvermane Guards.\nIn combat, Automaton Grizzlys will summon Automaton Spiders and unleash a powerful charged attack.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Detonation Order",
+				"SkillDesc": "Summons Automaton Spider.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Enrage Order",
+				"SkillDesc": "Has a chance to Taunt all targets.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Overcombust Order",
+				"SkillDesc": "Enters the Charge state. The next action uses \"Purge Order\" on all targets.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Purge Order",
+				"SkillDesc": "Deals Massive Physical DMG to all targets.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Destruction Order",
+				"SkillDesc": "Deals Physical DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101302001": {
 		"Id": "101302001",
@@ -8778,14 +9855,13 @@
 		"ElementalWeaknesses": [
 			"Ice",
 			"Thunder",
-			"Imaginary",
-			"Wind"
+			"Imaginary"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0.2,
 			"Ice": 0,
-			"Wind": 0,
+			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -8971,6 +10047,153 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101302012": {
+		"Id": "101302012",
+		"Name": "Automaton Direwolf",
+		"Introduction": "An automaton pieced together with Old World technology. This rare type of humanoid automaton is equipped with a chainsaw on its right arm, presumably used for mining or construction operations.\nIn combat, Automaton Direwolfs will use their chainsaw to Bleed enemies, dealing DoT.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Felling Order",
+				"SkillDesc": "Deals massive Physical DMG to a single target, with a chance to Bleed the hit target. If the hit target is not Shielded, then a random ally of theirs suffers \"Dismantle\" for 1 time.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Lock On Target",
+				"SkillDesc": "Locks Onto a single target. The next action on the target will cast \"Felling Order.\"",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Disintegration Order",
+				"SkillDesc": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Dismantle",
+				"SkillDesc": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302013": {
+		"Id": "101302013",
+		"Name": "Automaton Direwolf",
+		"Introduction": "An automaton pieced together with Old World technology. This rare type of humanoid automaton is equipped with a chainsaw on its right arm, presumably used for mining or construction operations.\nIn combat, Automaton Direwolfs will use their chainsaw to Bleed enemies, dealing DoT.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Felling Order",
+				"SkillDesc": "Deals massive Physical DMG to a single target, with a chance to Bleed the hit target. If the hit target is not Shielded, then a random ally of theirs suffers \"Dismantle\" for 1 time.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Lock On Target",
+				"SkillDesc": "Locks Onto a single target. The next action on the target will cast \"Felling Order.\"",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Disintegration Order",
+				"SkillDesc": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Dismantle",
+				"SkillDesc": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302014": {
+		"Id": "101302014",
+		"Name": "Automaton Direwolf",
+		"Introduction": "An automaton pieced together with Old World technology. This rare type of humanoid automaton is equipped with a chainsaw on its right arm, presumably used for mining or construction operations.\nIn combat, Automaton Direwolfs will use their chainsaw to Bleed enemies, dealing DoT.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Felling Order",
+				"SkillDesc": "Deals massive Physical DMG to a single target, with a chance to Bleed the hit target. If the hit target is not Shielded, then a random ally of theirs suffers \"Dismantle\" for 1 time.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Lock On Target",
+				"SkillDesc": "Locks Onto a single target. The next action on the target will cast \"Felling Order.\"",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Disintegration Order",
+				"SkillDesc": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Dismantle",
+				"SkillDesc": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101401001": {
 		"Id": "101401001",
@@ -9398,7 +10621,7 @@
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0,
@@ -9443,6 +10666,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102201005": {
+		"Id": "102201005",
+		"Name": "Everwinter Shadewalker",
+		"Introduction": "Shades that wander in the Fragmentum after the arrival of the Eternal Freeze. It mimics the form of the Silvermane Guards in a twisted manner. Fitted with the same uniformed armors of the Belobog warriors, its face, however, is replaced by a sheet of faceless ice.\nEverwinter Shadewalkers will swing their ice axe and slow their enemies.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Frost Crush",
+				"SkillDesc": "Deals Ice DMG to a single target and delays their action.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102202001": {
 		"Id": "102202001",
@@ -9514,7 +10766,7 @@
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0,
 			"Thunder": 0,
@@ -9589,6 +10841,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102202006": {
+		"Id": "102202006",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "Shades that wander in the Fragmentum after the arrival of the Eternal Freeze. It mimics the form of the Silvermane Guards in a twisted manner. Fitted with the same uniformed armors as the Belobog warriors, its skull is however replaced with faceless embers.\nIncineration Shadewalkers will swing their fiery ax and burn their enemies in battle.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "Deals Fire DMG to a single target, with a high chance to Burn the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -9811,6 +11092,116 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"102301005": {
+		"Id": "102301005",
+		"Name": "Searing Prowler",
+		"Introduction": "A machine unit prowling in the Fragmentum. Undoubtedly, it is a monster created from the twisted powers of the Fragmentum, not human technology.\nSearing Prowler's attacks will deal bonus damage against enemies inflicted with Burn.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Crimson Blade",
+				"SkillDesc": "Deals Fire DMG to a single target, with a high chance to Burn the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Combustion Slash",
+				"SkillDesc": "Deals Fire DMG to a single target and units adjacent to the target. This attack prioritizes targets afflicted with Burn.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Melt",
+				"SkillDesc": "After attacking a Burned target, receives a DMG increase.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 102301004,
+				"Name": "High-Temperature Operation",
+				"SkillDesc": "Slightly increases ATK and greatly increases SPD. This buff is dispelled upon Weakness Break.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Dancing Cinders",
+				"SkillDesc": "Deals Fire DMG to all targets. Targets suffering from Burn are dealt an extra Fire DMG and have Burn removed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"102301006": {
+		"Id": "102301006",
+		"Name": "Searing Prowler",
+		"Introduction": "A machine unit prowling in the Fragmentum. Undoubtedly, this monstrosity is not a human creation, but one imitated by the Fragmentum's twisted power.\nSearing Prowler's attacks will deal extra damage against enemies afflicted with Burn.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Crimson Blade",
+				"SkillDesc": "Deals Fire DMG to a single target, with a high chance to Burn the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Combustion Slash",
+				"SkillDesc": "Deals Fire DMG to a single target and units adjacent to the target. This attack prioritizes targets afflicted with Burn.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Melt",
+				"SkillDesc": "After attacking a Burned target, receives a DMG increase.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 102301004,
+				"Name": "High-Temperature Operation",
+				"SkillDesc": "Slightly increases ATK and greatly increases SPD. This buff is dispelled upon Weakness Break.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Dancing Cinders",
+				"SkillDesc": "Deals Fire DMG to all targets. Targets suffering from Burn are dealt an extra Fire DMG and have Burn removed.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"102302001": {
 		"Id": "102302001",
 		"Name": "Frigid Prowler",
@@ -9932,6 +11323,67 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102302003": {
+		"Id": "102302003",
+		"Name": "Frigid Prowler",
+		"Introduction": "A machine unit prowling in the Fragmentum. Undoubtedly, this monstrosity is not a human creation, but one imitated by the Fragmentum's twisted power.\nFrigid Prowlers will attract Everwinter Shadewalkers and reduce its enemy's SPD and Ice RES.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102302001,
+				"Name": "Ice Wheel Fist",
+				"SkillDesc": "Deals Ice DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302005,
+				"Name": "Summon Otherling",
+				"SkillDesc": "Summons Everwinter Shadewalker.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 102302006,
+				"Name": "Frozen Storm",
+				"SkillDesc": "Deals Ice DMG to all targets, with a high chance to Deep Freeze the targets.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302007,
+				"Name": "Devour Otherling",
+				"SkillDesc": "Devours 1 Everwinter Shadewalker to increase ATK and Locks Onto a single target. If there are no Everwinter Shadewalkers on the field, DEF is decreased.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 102302008,
+				"Name": "Devour Otherling",
+				"SkillDesc": "Devours 1 Everwinter Shadewalker to increase ATK and Locks Onto a single target. If there are no Everwinter Shadewalkers on the field, DEF is decreased.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 102302009,
+				"Name": "Ice Wheel Crusher",
+				"SkillDesc": "Deals Ice DMG to a single target, with a high chance to Deep Freeze the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"200401001": {
 		"Id": "200401001",
@@ -10305,6 +11757,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"202301004": {
+		"Id": "202301004",
+		"Name": "Disciples of Sanctus Medicus: Shape Shifter",
+		"Introduction": "A cultivator who longed for reviving the Secret Arts of Abundance and guiding the Xianzhou back to the Path of Saints.\nAnd now their wish was fulfilled. Gifted with the power of the ancient miracles which were used as both weapons and armor, one managed to touch the secrets of immortality.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Thunder-Shock",
+				"SkillDesc": "Deals Lightning DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Punishing Bolts",
+				"SkillDesc": "Deals Lightning DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Thudding Calamity",
+				"SkillDesc": "Deals massive Lightning DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Mara-Summon",
+				"SkillDesc": "Consumes HP to summon Mara-Struck Soldier",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Vigor Draining",
+				"SkillDesc": "When there are other friendly units with Rebirth on the field, they have Draining Hit. When hitting a target, they will restore HP.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"202301005": {
 		"Id": "202301005",
 		"Name": "Yutie",
@@ -10607,14 +12114,15 @@
 		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird emitting intense heat, burning everything in its path.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Ice"
+			"Ice",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0.2,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10685,6 +12193,147 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800101005": {
+		"Id": "800101005",
+		"Name": "Flamespawn",
+		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird emitting intense heat radiation, burning everything in its path.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "Deals minor Fire DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101006": {
+		"Id": "800101006",
+		"Name": "Flamespawn",
+		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird emitting intense heat, burning everything in its path.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "Deals minor Fire DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101007": {
+		"Id": "800101007",
+		"Name": "Flamespawn",
+		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird emitting intense heat, burning everything in its path.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "Deals minor Fire DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101008": {
+		"Id": "800101008",
+		"Name": "Flamespawn",
+		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird emitting intense heat, burning everything in its path.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "Deals minor Fire DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101009": {
+		"Id": "800101009",
+		"Name": "Flamespawn",
+		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird emitting intense heat, burning everything in its path.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "Deals minor Fire DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "Frostspawn",
@@ -10747,14 +12396,15 @@
 		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird releasing eerily low temperatures, freezing everything around it.",
 		"ElementalWeaknesses": [
 			"Fire",
-			"Wind"
+			"Wind",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10825,6 +12475,63 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800102006": {
+		"Id": "800102006",
+		"Name": "Frostspawn",
+		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird releasing eerily low temperatures, freezing everything around it.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distract",
+				"SkillDesc": "Deals Ice DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800102007": {
+		"Id": "800102007",
+		"Name": "Frostspawn",
+		"Introduction": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird releasing eerily low temperatures, freezing everything around it.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distract",
+				"SkillDesc": "Deals Ice DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800201001": {
 		"Id": "800201001",
 		"Name": "Imaginary Weaver",
@@ -10874,10 +12581,136 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800204001": {
+		"Id": "800204001",
+		"Name": "Warp Trotter",
+		"Introduction": "An interdimensional creature lost in the stars, docile in nature, sweet in taste, but inedible. This species spends most of its life feeding and fleeing. Travelers who encounter it see it as a good omen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "The Treasure Trotter got spooked and will flee in 2 turns.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800204002,
+				"Name": "Run... Run!",
+				"SkillDesc": "The Treasure Trotter is panicking and will flee in 1 turn.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800204003,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "The Trotter flees in an instant.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800204002": {
+		"Id": "800204002",
+		"Name": "Warp Trotter",
+		"Introduction": "An interdimensional creature lost in the stars, docile in nature, sweet in taste, but inedible. This species spends most of its life feeding and fleeing. Travelers who encounter it see it as a good omen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "The Treasure Trotter got spooked and will flee in 2 turns.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800204002,
+				"Name": "Run... Run!",
+				"SkillDesc": "The Treasure Trotter is panicking and will flee in 1 turn.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800204003,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "The Trotter flees in an instant.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800208101": {
+		"Id": "800208101",
+		"Name": "Trotter of Preservation",
+		"Introduction": "An interdimensional creature lost in the stars, docile in nature, sweet in taste, but inedible. This species spends most of its life feeding and fleeing. Travelers who encounter it see it as a good omen.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "The Treasure Trotter got spooked and will flee in 2 turns.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800208102,
+				"Name": "Run... Run!",
+				"SkillDesc": "The Treasure Trotter is panicking and will flee in 1 turn.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800208103,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "The Trotter flees in an instant.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800208104,
+				"Name": "P—Protect You",
+				"SkillDesc": "When entering battle, applies \"P—Protect You\" to all friendly units. Each stack of \"P—Protect You\" can nullify all DMG received from 1 incoming hit except for DoT. \"P—Protect You\" stacks are shared across the team.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800301001": {
 		"Id": "800301001",
 		"Name": "Ice Out of Space",
-		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, its parasitize upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
+		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum brought by the Stellaron, it feeds upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -10927,7 +12760,7 @@
 	"800301002": {
 		"Id": "800301002",
 		"Name": "Ice Out of Space",
-		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, its parasitize upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
+		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum brought by the Stellaron, it feeds upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Physical"
@@ -10976,7 +12809,7 @@
 	"800301003": {
 		"Id": "800301003",
 		"Name": "Ice Out of Space",
-		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, its parasitize upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
+		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum brought by the Stellaron, it feeds upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -11026,7 +12859,7 @@
 	"800301004": {
 		"Id": "800301004",
 		"Name": "Ice Out of Space",
-		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, its parasitize upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
+		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum brought by the Stellaron, it feeds upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -11076,7 +12909,7 @@
 	"800301005": {
 		"Id": "800301005",
 		"Name": "Ice Out of Space",
-		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, its parasitize upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
+		"Introduction": "A strange being that does not belong to this world. Nurtured in the Fragmentum brought by the Stellaron, it feeds upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -11314,6 +13147,102 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"800302005": {
+		"Id": "800302005",
+		"Name": "Blaze Out of Space",
+		"Introduction": "Born of the Fragmentum and created by the Stellaron, this alien life form feeds on this world's energy. The blazing fires from the core of a star burn on its armor.\nIn combat, the Blaze Out of Space will incinerate anything it touches.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "Deals minor Fire DMG to a single target and has a high chance to inflict Enkindle.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "Enters the Spontaneous Combustion state. Rain of Purifying Flames can be used in subsequent attacks.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "Deals successive minor Fire DMG to a random single target, with a high chance to inflict Enkindle.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "Gains ATK. This buff is dispelled upon Weakness Break.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800302006": {
+		"Id": "800302006",
+		"Name": "Blaze Out of Space",
+		"Introduction": "Born of the Fragmentum and created by the Stellaron, this alien life form feeds on this world's energy. The blazing fires from the core of a star burn on its armor.\nIn combat, the Blaze Out of Space will incinerate anything it touches.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "Deals minor Fire DMG to a single target and has a high chance to inflict Enkindle.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "Enters the Spontaneous Combustion state. Rain of Purifying Flames can be used in subsequent attacks.",
+				"SkillTypeDesc": "Ability"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "Deals successive minor Fire DMG to a random single target, with a high chance to inflict Enkindle.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "Gains ATK. This buff is dispelled upon Weakness Break.",
+				"SkillTypeDesc": "Ability"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -11785,8 +13714,7 @@
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
-			"Wind",
-			"Imaginary"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -11794,7 +13722,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -12073,7 +14001,7 @@
 			"Physical": 0.2,
 			"Fire": 0,
 			"Ice": 0,
-			"Wind": 0.3,
+			"Wind": 0.4,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -12149,6 +14077,90 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"801101002": {
+		"Id": "801101002",
+		"Name": "Baryon",
+		"Introduction": "In order to prevent antiparticles from dissipating and annihilating normal matter, the Antimatter Legion created two types of miniature ion traps for transportation, collectively referred to as Baryons and Antibaryons.\nBaryons have basic intelligence, and can clear the path according to the commands and summons of Voidrangers on the battlefield.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliterate",
+				"SkillDesc": "Deals minor Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101003": {
+		"Id": "801101003",
+		"Name": "Baryon",
+		"Introduction": "In order to prevent antiparticles from dissipating and annihilating normal matter, the Antimatter Legion created two types of miniature ion traps for transportation, collectively referred to as Baryons and Antibaryons.\nBaryons have basic intelligence, and can clear the path according to the commands and summons of Voidrangers on the battlefield.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliterate",
+				"SkillDesc": "Deals minor Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101004": {
+		"Id": "801101004",
+		"Name": "Baryon",
+		"Introduction": "In order to prevent antiparticles from dissipating and annihilating normal matter, the Antimatter Legion created two types of miniature ion traps for transportation, collectively referred to as Baryons and Antibaryons.\nBaryons have basic intelligence, and can clear the path according to the commands and summons of Voidrangers on the battlefield.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliterate",
+				"SkillDesc": "Deals minor Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"801102001": {
 		"Id": "801102001",
 		"Name": "Antibaryon",
@@ -12176,6 +14188,90 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801102002": {
+		"Id": "801102002",
+		"Name": "Antibaryon",
+		"Introduction": "In order to prevent the collision and annihilation of the antiparticles, the Antimatter Legion created two types of miniature ion traps for transportation, collectively referred to as Baryons and Antibaryons.\nAntibaryons have basic intelligence, and can be summoned and respond to the will of Voidrangers on the battlefield to clear their path.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Obliterate",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102003": {
+		"Id": "801102003",
+		"Name": "Antibaryon",
+		"Introduction": "In order to prevent antiparticles from dissipating and annihilating normal matter, the Antimatter Legion created two types of miniature ion traps for transportation, collectively referred to as Baryons and Antibaryons.\nAntibaryons have basic intelligence, and can clear the path according to the commands and summons of Voidrangers on the battlefield.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Obliterate",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102004": {
+		"Id": "801102004",
+		"Name": "Antibaryon",
+		"Introduction": "In order to prevent antiparticles from dissipating and annihilating normal matter, the Antimatter Legion created two types of miniature ion traps for transportation, collectively referred to as Baryons and Antibaryons.\nAntibaryons have basic intelligence, and can clear the path according to the commands and summons of Voidrangers on the battlefield.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Obliterate",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801201001": {
 		"Id": "801201001",
@@ -12463,13 +14559,12 @@
 		"Introduction": "Warriors yet to perish were recast in the Warforge and gained the Destruction's power. Antimatter completes their bodies, and negative particles reverberate throughout their forms.\nViolently aggressive, they embody the will of the Destruction and are basic combat units of the Antimatter Legion, acting only according to their destructive instincts.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Thunder",
-			"Ice"
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0.2,
-			"Ice": 0,
+			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
@@ -12527,6 +14622,111 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801201011": {
+		"Id": "801201011",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "Warriors yet to perish were recast in the Warforge and gained the Destruction's power. Antimatter completes their bodies and negative particles reverberate throughout their forms.\nViolently aggressive, they embody the will of the Destruction and are basic combat units of the Antimatter Legion, acting only according to their destructive instincts.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201012": {
+		"Id": "801201012",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "Warriors yet to perish were recast in the Warforge and gained the Destruction's power. Antimatter completes their bodies and negative particles reverberate throughout their forms.\nViolently aggressive, they embody the will of the Destruction and are basic combat units of the Antimatter Legion, acting only according to their destructive instincts.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201013": {
+		"Id": "801201013",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "Warriors yet to perish were recast in the Warforge and gained the Destruction's power. Antimatter completes their bodies and negative particles reverberate throughout their forms.\nViolently aggressive, they embody the will of the Destruction and are basic combat units of the Antimatter Legion, acting only according to their destructive instincts.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "Deals minor Imaginary DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801202001": {
 		"Id": "801202001",
@@ -12632,6 +14832,41 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801202004": {
+		"Id": "801202004",
+		"Name": "Voidranger: Distorter",
+		"Introduction": "A Voidranger that has successfully survived the effects of annihilation, the positive and negative particles in its body have temporarily achieved a strange balance, granting them more power than ordinary reavers.\nBasic combat units of the Antimatter Legion. They possess some intelligence and are able to control reavers within a small surrounding area.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Nihility's Command",
+				"SkillDesc": "Locks Onto a random unit on your team, making them the target for incoming attacks from all of their enemies.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Shadowless Void Strike",
+				"SkillDesc": "Deals Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -13057,5 +15292,119 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801301006": {
+		"Id": "801301006",
+		"Name": "Voidranger: Trampler",
+		"Introduction": "A product of the Antimatter Legion utilizing the Warforge to recast and fuse remnants of fallen warriors and Leviathans.\nThough relatively rare, they possess both the intelligence of a warrior and the power and mobility of a Leviathan. Its screech can summon a large number of Voidrangers.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unreal Projection",
+				"SkillDesc": "Deals Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Rule of Force",
+				"SkillDesc": "Deals Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "War Trample",
+				"SkillDesc": "Deals minor Quantum DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "Locks on to a single target. Cast End of Bow to this target in the next action.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "End of Bow",
+				"SkillDesc": "Deals massive Quantum DMG to a single target, with a high chance to inflict Entanglement.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801301007": {
+		"Id": "801301007",
+		"Name": "Voidranger: Trampler",
+		"Introduction": "A product of the Antimatter Legion utilizing the Warforge to recast and fuse remnants of fallen warriors and Leviathans.\nThough relatively rare, they possess both the intelligence of a warrior and the power and mobility of a Leviathan. Its screech can summon a large number of Voidrangers.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unreal Projection",
+				"SkillDesc": "Deals Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Rule of Force",
+				"SkillDesc": "Deals Quantum DMG to a single target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "War Trample",
+				"SkillDesc": "Deals minor Quantum DMG to a single target and units adjacent to the target.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "Locks on to a single target. Cast End of Bow to this target in the next action.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "End of Bow",
+				"SkillDesc": "Deals massive Quantum DMG to a single target, with a high chance to inflict Entanglement.",
+				"SkillTypeDesc": "Ability",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
 	}
 }

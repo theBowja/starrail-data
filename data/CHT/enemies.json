@@ -692,7 +692,7 @@
 			{
 				"Id": 100402003,
 				"Name": "戍衛氣場",
-				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害以外的所有傷害。屏障狀態會在受到攻擊後解除。",
+				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -747,7 +747,7 @@
 			{
 				"Id": 100402103,
 				"Name": "戍衛氣場",
-				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害以外的所有傷害。屏障狀態會在受到攻擊後解除。",
+				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -829,7 +829,7 @@
 				"Id": 100402209,
 				"Name": "支援",
 				"SkillDesc": "階段開始時，立即召喚【銀鬃近衛】和【銀鬃炮手】。",
-				"SkillTypeDesc": "技能"
+				"SkillTypeDesc": "天賦"
 			},
 			{
 				"Id": 100402210,
@@ -1378,7 +1378,7 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
@@ -2303,7 +2303,7 @@
 	"1023020": {
 		"Id": "1023020",
 		"Name": "深寒徘徊者",
-		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量仿製而成的怪物。\n深寒徘徊者會吸引永冬災影，同時能降低我方的速度與冰抗性。",
+		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量仿製而成的怪物。\n深寒徘徊者會吸引永冬災影，同時能降低我方的速度與冰屬性抗性。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -2364,7 +2364,7 @@
 	"1023021": {
 		"Id": "1023021",
 		"Name": "深寒徘徊者（錯誤）",
-		"Introduction": "程式碼受到影響後的錯誤投影。參照本體為徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量模仿而成的怪物。\n深寒徘徊者（錯誤）會吸引永冬災影，同時能降低我方的速度與冰抗性。",
+		"Introduction": "程式碼受到影響後的錯誤投影。參照本體為徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量模仿而成的怪物。\n深寒徘徊者（錯誤）會吸引永冬災影，同時能降低我方的速度與冰屬性抗性。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -2451,7 +2451,7 @@
 			{
 				"Id": 200201001,
 				"Name": "雲刃",
-				"SkillDesc": "對指定我方單體造成少量風屬性傷害，並有高機率使目標的傷害承受小幅提高。",
+				"SkillDesc": "對指定我方單體造成少量風屬性傷害，並有高機率使目標受到的傷害小幅提高。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Wind"
 			}
@@ -2687,7 +2687,7 @@
 				"Id": 201201002,
 				"Name": "燭花",
 				"SkillDesc": "受到致命攻擊時對敵方全體造成火屬性傷害，並有高機率使受到攻擊的敵方目標防禦力降低。",
-				"SkillTypeDesc": "技能",
+				"SkillTypeDesc": "天賦",
 				"ElementType": "Fire"
 			}
 		],
@@ -3629,6 +3629,92 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002081": {
+		"Id": "8002081",
+		"Name": "存護撲滿",
+		"Introduction": "迷失在群星中的跨維度生物，性溫、味甘、不可食用。一生中大部分時間花在進食和逃跑上。偶遇它的旅行者視之為吉兆。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "害……害怕",
+				"SkillDesc": "撲滿被驚動了，即將在2個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800208102,
+				"Name": "跑……跑啊",
+				"SkillDesc": "撲滿陷入恐慌，即將在1個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800208103,
+				"Name": "呼……逃走了",
+				"SkillDesc": "撲滿拔腿就跑，瞬間失去了蹤影。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800208104,
+				"Name": "保……保護你",
+				"SkillDesc": "進入戰鬥時，為敵方全體提供【保……保護你】，每層【保……保護你】可抵抗1次除持續傷害以外的所有傷害。敵方全體共用【保……保護你】層數。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"8002090": {
+		"Id": "8002090",
+		"Name": "序列撲滿",
+		"Introduction": "迷失在群星中的跨維度生物，性溫、味甘、不可食用。一生中大部分時間花在進食和逃跑上。偶遇它的旅行者視之為吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800209001,
+				"Name": "害……害怕",
+				"SkillDesc": "撲滿被驚動了，即將在2個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800209002,
+				"Name": "跑……跑啊",
+				"SkillDesc": "撲滿陷入恐慌，即將在1個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800209003,
+				"Name": "呼……逃走了",
+				"SkillDesc": "撲滿拔腿就跑，瞬間失去了蹤影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"8003010": {
 		"Id": "8003010",
 		"Name": "外宇宙之冰",
@@ -4030,7 +4116,7 @@
 			{
 				"Id": 800304006,
 				"Name": "流年盾紗",
-				"SkillDesc": "自身承受自普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
+				"SkillDesc": "自身受到的普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -4085,7 +4171,7 @@
 			{
 				"Id": 800304106,
 				"Name": "流年盾紗",
-				"SkillDesc": "自身承受自普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有可能使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
+				"SkillDesc": "自身受到的普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有可能使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
 				"SkillTypeDesc": "天賦"
 			},
 			{
@@ -4391,7 +4477,7 @@
 	"8012030": {
 		"Id": "8012030",
 		"Name": "虛卒•抹消者",
-		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在遭到攻擊時承受額外傷害。",
+		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在攻擊中受到額外的傷害。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Ice",
@@ -5238,6 +5324,146 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100202009": {
+		"Id": "100202009",
+		"Name": "流浪者",
+		"Introduction": "困居於下層區的人們為了生存，往往會不惜鋌而走險，深入裂界尋找任何可用的物資，而在其中被掘出的古代機器成了他們最好的幫手。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "鏟擊",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "鼓舞",
+				"SkillDesc": "使指定敵方單體攻擊力提高並立即行動。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202010": {
+		"Id": "100202010",
+		"Name": "流浪者",
+		"Introduction": "困居於下層區的人們為了生存，往往會不惜鋌而走險，深入裂界尋找任何可用的物資，而在其中被掘出的古代機器成了他們最好的幫手。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "鏟擊",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "鼓舞",
+				"SkillDesc": "使指定敵方單體攻擊力提高並立即行動。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202012": {
+		"Id": "100202012",
+		"Name": "流浪者",
+		"Introduction": "困居於下層區的人們為了生存，往往會不惜鋌而走險，深入裂界尋找任何可用的物資，而在其中被掘出的古代機器成了他們最好的幫手。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "鏟擊",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "鼓舞",
+				"SkillDesc": "使指定敵方單體攻擊力提高並立即行動。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202013": {
+		"Id": "100202013",
+		"Name": "流浪者",
+		"Introduction": "困居於下層區的人們為了生存，往往會不惜鋌而走險，深入裂界尋找任何可用的物資，而在其中被掘出的古代機器成了他們最好的幫手。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "鏟擊",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "鼓舞",
+				"SkillDesc": "使指定敵方單體攻擊力提高並立即行動。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100203001": {
 		"Id": "100203001",
 		"Name": "銀鬃炮手",
@@ -5484,6 +5710,88 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100203007": {
+		"Id": "100203007",
+		"Name": "銀鬃炮手",
+		"Introduction": "銀鬃鐵衛中的炮手，使用可攜式手炮作戰。\n在戰鬥中，銀鬃炮手會和其他目標發動猛烈的連攜攻擊。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "炮擊",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "掩護支援",
+				"SkillDesc": "為指定敵方單體提供支援，在受支援的敵方目標攻擊我方目標後發動1次追加攻擊，對受到攻擊的我方目標及其相鄰目標造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100203003,
+				"Name": "掩護支援",
+				"SkillDesc": "為指定敵方單體提供支援，在受支援的敵方目標攻擊我方目標後發動1次追加攻擊，對受到攻擊的我方目標及其相鄰目標造成少量物理屬性傷害。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100203008": {
+		"Id": "100203008",
+		"Name": "銀鬃炮手",
+		"Introduction": "銀鬃鐵衛中的炮手，使用可攜式手炮作戰。\n在戰鬥中，銀鬃炮手會和其他目標發動猛烈的連攜攻擊。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "炮擊",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "掩護支援",
+				"SkillDesc": "為指定敵方單體提供支援，在受支援的敵方目標攻擊我方目標後發動1次追加攻擊，對受到攻擊的我方目標及其相鄰目標造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100203003,
+				"Name": "掩護支援",
+				"SkillDesc": "為指定敵方單體提供支援，在受支援的敵方目標攻擊我方目標後發動1次追加攻擊，對受到攻擊的我方目標及其相鄰目標造成少量物理屬性傷害。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100204001": {
 		"Id": "100204001",
 		"Name": "銀鬃近衛",
@@ -5694,13 +6002,13 @@
 			"Ice"
 		],
 		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
 			"Wind": 0,
-			"Thunder": 0,
+			"Thunder": 0.2,
 			"Quantum": 0,
-			"Imaginary": 0
+			"Imaginary": 0.2
 		},
 		"SkillList": [
 			{
@@ -5853,6 +6161,91 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100204015": {
+		"Id": "100204015",
+		"Name": "銀鬃近衛",
+		"Introduction": "貝洛伯格的戍衛部隊「銀鬃鐵衛」中的近衛戰士，負責衝鋒陷陣。\n戰鬥中，銀鬃近衛的攻擊會降低我方的防禦力。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum",
+			"Fire"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "奔襲",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並有高機率使受到攻擊的我方目標防禦力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204016": {
+		"Id": "100204016",
+		"Name": "銀鬃近衛",
+		"Introduction": "貝洛伯格的戍衛部隊「銀鬃鐵衛」中的近衛戰士，負責衝鋒陷陣。\n戰鬥中，銀鬃近衛的攻擊會降低我方的防禦力。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "奔襲",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並有高機率使受到攻擊的我方目標防禦力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204019": {
+		"Id": "100204019",
+		"Name": "銀鬃近衛",
+		"Introduction": "貝洛伯格的戍衛部隊「銀鬃鐵衛」中的近衛戰士，負責衝鋒陷陣。\n戰鬥中，銀鬃近衛的攻擊會降低我方的防禦力。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "奔襲",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並有高機率使受到攻擊的我方目標防禦力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100204101": {
 		"Id": "100204101",
@@ -6194,6 +6587,96 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100205012": {
+		"Id": "100205012",
+		"Name": "銀鬃射手",
+		"Introduction": "貝洛伯格的戍衛部隊「銀鬃鐵衛」中的射手，負責狙擊敵人。\n戰鬥中，銀鬃射手的射擊會對我方造成裂傷。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "破甲榴彈",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並高機率使受到攻擊的我方目標陷入裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205013": {
+		"Id": "100205013",
+		"Name": "銀鬃射手",
+		"Introduction": "貝洛伯格的戍衛部隊「銀鬃鐵衛」中的射手，負責狙擊敵人。\n戰鬥中，銀鬃射手的射擊會對我方造成裂傷。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Physical",
+			"Fire",
+			"Ice",
+			"Imaginary",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "破甲榴彈",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並高機率使受到攻擊的我方目標陷入裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205015": {
+		"Id": "100205015",
+		"Name": "銀鬃射手",
+		"Introduction": "貝洛伯格的戍衛部隊「銀鬃鐵衛」中的射手，負責狙擊敵人。\n戰鬥中，銀鬃射手的射擊會對我方造成裂傷。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "破甲榴彈",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並高機率使受到攻擊的我方目標陷入裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100301001": {
 		"Id": "100301001",
@@ -6579,6 +7062,54 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100301009": {
+		"Id": "100301009",
+		"Name": "銀鬃尉官",
+		"Introduction": "貝洛伯格的戍衛部隊「銀鬃鐵衛」分隊的領導者。\n在戰鬥中，銀鬃尉官會架起巨盾並強化自身。攻擊架盾狀態下的銀鬃尉官會立即遭到強力反擊。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "突擊",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "穿刺",
+				"SkillDesc": "對指定我方單體造成大量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "盾反",
+				"SkillDesc": "進入反擊狀態，在受到我方單體攻擊後自身行動提前並立即對該目標施放【穿刺】技能。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100301004,
+				"Name": "增援",
+				"SkillDesc": "召喚【銀鬃近衛】或【銀鬃射手】。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100301201": {
 		"Id": "100301201",
 		"Name": "銀鬃尉官（完整）",
@@ -6773,7 +7304,7 @@
 			{
 				"Id": 100402003,
 				"Name": "戍衛氣場",
-				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害以外的所有傷害。屏障狀態會在受到攻擊後解除。",
+				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -6828,7 +7359,7 @@
 			{
 				"Id": 100402003,
 				"Name": "戍衛氣場",
-				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害以外的所有傷害。屏障狀態會在受到攻擊後解除。",
+				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -6887,7 +7418,7 @@
 			{
 				"Id": 100402003,
 				"Name": "戍衛氣場",
-				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害以外的所有傷害。屏障狀態會在受到攻擊後解除。",
+				"SkillDesc": "為自身以外的敵方目標提供屏障，屏障狀態下的目標可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -7127,6 +7658,108 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101201006": {
+		"Id": "101201006",
+		"Name": "自動機兵•戰犬",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，形如某種載具，然而人們似乎早就忘卻了它載具的用途。\n戰鬥中自動機兵「戰犬」能提供支援，回復戰友的生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "垂直打擊",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "自癒模組",
+				"SkillDesc": "立即回復敵方全體的生命值。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201007": {
+		"Id": "101201007",
+		"Name": "自動機兵•戰犬",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，形如某種載具，然而人們似乎早就忘卻了它載具的用途。\n戰鬥中自動機兵「戰犬」能提供支援，回復戰友的生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "垂直打擊",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "自癒模組",
+				"SkillDesc": "立即回復敵方全體的生命值。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201009": {
+		"Id": "101201009",
+		"Name": "自動機兵•戰犬",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，形如某種載具，然而人們似乎早就忘卻了它載具的用途。\n戰鬥中自動機兵「戰犬」能提供支援，回復戰友的生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "垂直打擊",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "自癒模組",
+				"SkillDesc": "立即回復敵方全體的生命值。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -7422,8 +8055,7 @@
 		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責替代人類進行最基礎的體力勞動。\n戰鬥中，自動機兵「蜘蛛」的動力非常不穩定，極易在損毀時發生殉爆事故。",
 		"ElementalWeaknesses": [
 			"Thunder",
-			"Wind",
-			"Quantum"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -7431,7 +8063,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -7561,6 +8193,198 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101202107": {
+		"Id": "101202107",
+		"Name": "自動機兵•蜘蛛",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責替代人類進行最基礎的體力勞動。\n戰鬥中，自動機兵「蜘蛛」的動力非常不穩定，極易在損毀時發生殉爆事故。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "衝撞",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "定時模組",
+				"SkillDesc": "下次行動施放【自爆模組】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101202103,
+				"Name": "自爆模組",
+				"SkillDesc": "引爆自身，對指定我方單體及其相鄰目標造成火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "毀滅連鎖",
+				"SkillDesc": "受到致命攻擊後，對相鄰的敵方目標造成火屬性傷害。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202108": {
+		"Id": "101202108",
+		"Name": "自動機兵•蜘蛛",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責替代人類進行最基礎的體力勞動。\n戰鬥中，自動機兵「蜘蛛」的動力非常不穩定，極易在損毀時發生殉爆事故。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "衝撞",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "定時模組",
+				"SkillDesc": "下次行動施放【自爆模組】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101202103,
+				"Name": "自爆模組",
+				"SkillDesc": "引爆自身，對指定我方單體及其相鄰目標造成火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "毀滅連鎖",
+				"SkillDesc": "受到致命攻擊後，對相鄰的敵方目標造成火屬性傷害。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202109": {
+		"Id": "101202109",
+		"Name": "自動機兵•蜘蛛",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責替代人類進行最基礎的體力勞動。\n戰鬥中，自動機兵「蜘蛛」的動力非常不穩定，極易在損毀時發生殉爆事故。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "衝撞",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "定時模組",
+				"SkillDesc": "下次行動施放【自爆模組】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101202103,
+				"Name": "自爆模組",
+				"SkillDesc": "引爆自身，對指定我方單體及其相鄰目標造成火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "毀滅連鎖",
+				"SkillDesc": "受到致命攻擊後，對相鄰的敵方目標造成火屬性傷害。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202110": {
+		"Id": "101202110",
+		"Name": "自動機兵•蜘蛛",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責替代人類進行最基礎的體力勞動。\n戰鬥中，自動機兵「蜘蛛」的動力非常不穩定，極易在損毀時發生殉爆事故。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "衝撞",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "定時模組",
+				"SkillDesc": "下次行動施放【自爆模組】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101202103,
+				"Name": "自爆模組",
+				"SkillDesc": "引爆自身，對指定我方單體及其相鄰目標造成火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "毀滅連鎖",
+				"SkillDesc": "受到致命攻擊後，對相鄰的敵方目標造成火屬性傷害。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101203001": {
 		"Id": "101203001",
 		"Name": "自動機兵•甲蟲",
@@ -7587,7 +8411,7 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
@@ -7620,7 +8444,7 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
@@ -7649,7 +8473,7 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
@@ -7678,7 +8502,7 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
@@ -7707,7 +8531,7 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
@@ -7736,7 +8560,7 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
@@ -7765,12 +8589,157 @@
 			{
 				"Id": 101203001,
 				"Name": "不穩定力場",
-				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，受到攻擊後解除。",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Physical"
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101203008": {
+		"Id": "101203008",
+		"Name": "自動機兵•甲蟲",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責移動的附肢上裝置著信號燈，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「甲蟲」會創造力場護盾保護自己。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "不穩定力場",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203009": {
+		"Id": "101203009",
+		"Name": "自動機兵•甲蟲",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責移動的附肢上裝置著信號燈，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「甲蟲」會創造力場護盾保護自己。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "不穩定力場",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203010": {
+		"Id": "101203010",
+		"Name": "自動機兵•甲蟲",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責移動的附肢上裝置著信號燈，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「甲蟲」會創造力場護盾保護自己。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "不穩定力場",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203011": {
+		"Id": "101203011",
+		"Name": "自動機兵•甲蟲",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責移動的附肢上裝置著信號燈，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「甲蟲」會創造力場護盾保護自己。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "不穩定力場",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203013": {
+		"Id": "101203013",
+		"Name": "自動機兵•甲蟲",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，負責移動的附肢上裝置著信號燈，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「甲蟲」會創造力場護盾保護自己。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "不穩定力場",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害，並為自身提供屏障。屏障可抵抗除持續傷害外的所有傷害，並會在受到攻擊後解除。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -8374,6 +9343,60 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101301012": {
+		"Id": "101301012",
+		"Name": "自動機兵•灰熊",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，加裝了厚重的鎧甲，用於衝鋒陷陣保護銀鬃鐵衛。\n戰鬥中，自動機兵「灰熊」會發出訊號召來「蜘蛛」合作戰鬥，同時會積蓄動能發出強力一擊。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "爆裂指令",
+				"SkillDesc": "召喚【自動機兵•蜘蛛】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301002,
+				"Name": "憤怒指令",
+				"SkillDesc": "有機會使我方全體陷入嘲諷狀態。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301003,
+				"Name": "超載指令",
+				"SkillDesc": "進入蓄力狀態，下次行動對我方全體施放【剿滅指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301004,
+				"Name": "剿滅指令",
+				"SkillDesc": "對我方全體造成大量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "破壞指令",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101301013": {
 		"Id": "101301013",
 		"Name": "自動機兵•灰熊",
@@ -8427,6 +9450,60 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101301014": {
+		"Id": "101301014",
+		"Name": "自動機兵•灰熊",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，加裝了厚重的鎧甲，用於衝鋒陷陣保護銀鬃鐵衛。\n戰鬥中，自動機兵「灰熊」會發出訊號召來「蜘蛛」合作戰鬥，同時會積蓄動能發出強力一擊。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "爆裂指令",
+				"SkillDesc": "召喚【自動機兵•蜘蛛】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301002,
+				"Name": "憤怒指令",
+				"SkillDesc": "有機會使我方全體陷入嘲諷狀態。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301003,
+				"Name": "超載指令",
+				"SkillDesc": "進入蓄力狀態，下次行動對我方全體施放【剿滅指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301004,
+				"Name": "剿滅指令",
+				"SkillDesc": "對我方全體造成大量物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "破壞指令",
+				"SkillDesc": "對指定我方單體造成物理屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101302001": {
 		"Id": "101302001",
@@ -8778,14 +9855,13 @@
 		"ElementalWeaknesses": [
 			"Ice",
 			"Thunder",
-			"Imaginary",
-			"Wind"
+			"Imaginary"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0.2,
 			"Ice": 0,
-			"Wind": 0,
+			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -8971,6 +10047,153 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101302012": {
+		"Id": "101302012",
+		"Name": "自動機兵•齒狼",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，少見的人形機械，其右臂部分統一裝置著鏈鋸，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「齒狼」的鏈鋸會造成裂傷，令對手持續損失生命值。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "砍伐指令",
+				"SkillDesc": "對指定我方單體造成大量物理屬性傷害，每次擊中該目標都有可能使其陷入裂傷狀態。若施放本技能時該目標未持有護盾，則再對我方隨機單體施放1次【解體拆除】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目標鎖定",
+				"SkillDesc": "鎖定指定我方單體，下次行動對其施放【砍伐指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解體指令",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害，並有高機率對其施加1層裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "解體拆除",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害，並有高機率對其施加1層裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302013": {
+		"Id": "101302013",
+		"Name": "自動機兵•齒狼",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，少見的人形機械，其右臂部分統一裝置著鏈鋸，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「齒狼」的鏈鋸會造成裂傷，令對手持續損失生命值。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "砍伐指令",
+				"SkillDesc": "對指定我方單體造成大量物理屬性傷害，每次擊中該目標都有可能使其陷入裂傷狀態。若施放本技能時該目標未持有護盾，則再對我方隨機單體施放1次【解體拆除】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目標鎖定",
+				"SkillDesc": "鎖定指定我方單體，下次行動對其施放【砍伐指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解體指令",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害，並有高機率對其施加1層裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "解體拆除",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害，並有高機率對其施加1層裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302014": {
+		"Id": "101302014",
+		"Name": "自動機兵•齒狼",
+		"Introduction": "以舊世界遺留的科技拼湊製造的自動機器單元，少見的人形機械，其右臂部分統一裝置著鏈鋸，似乎曾用於採集或建造作業。\n戰鬥中，自動機兵「齒狼」的鏈鋸會造成裂傷，令對手持續損失生命值。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "砍伐指令",
+				"SkillDesc": "對指定我方單體造成大量物理屬性傷害，每次擊中該目標都有可能使其陷入裂傷狀態。若施放本技能時該目標未持有護盾，則再對我方隨機單體施放1次【解體拆除】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目標鎖定",
+				"SkillDesc": "鎖定指定我方單體，下次行動對其施放【砍伐指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解體指令",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害，並有高機率對其施加1層裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "解體拆除",
+				"SkillDesc": "對指定我方單體造成少量物理屬性傷害，並有高機率對其施加1層裂傷狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101401001": {
 		"Id": "101401001",
@@ -9398,7 +10621,7 @@
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0,
@@ -9443,6 +10666,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102201005": {
+		"Id": "102201005",
+		"Name": "永冬災影",
+		"Introduction": "寒潮降臨後逡巡在裂界中的虛影。它扭曲地模仿著銀鬃鐵衛的身形，其甲胄著裝與貝洛伯格的戰士們同樣嚴整，頭顱卻被沒有五官的冰稜所取代。\n戰鬥中永冬災影會揮舞冰造的斧刃，延緩敵人的行動。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "霜凍重擊",
+				"SkillDesc": "對指定我方單體造成冰屬性傷害，並使受到攻擊的我方目標行動延後。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102202001": {
 		"Id": "102202001",
@@ -9514,7 +10766,7 @@
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0,
 			"Thunder": 0,
@@ -9589,6 +10841,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102202006": {
+		"Id": "102202006",
+		"Name": "火焚災影",
+		"Introduction": "寒潮降臨後逡巡在裂界中的虛影。它扭曲地模仿著銀鬃鐵衛的身形。其甲胄著裝與貝洛伯格的戰士們同樣嚴整，頭顱卻被沒有五官的燃燼所取代。\n戰鬥中火焚災影會揮舞燃燒的斧刃，灼燒敵人。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "灼炎重擊",
+				"SkillDesc": "對指定我方單體造成火屬性傷害，並有高機率使受到攻擊的我方目標陷入灼燒狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -9811,10 +11092,120 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"102301005": {
+		"Id": "102301005",
+		"Name": "熾燃徘徊者",
+		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量模仿而成的怪物。\n熾燃徘徊者的攻擊會對處於灼燒狀態的敵人造成額外效果。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "赤紅刀鋒",
+				"SkillDesc": "對指定我方單體造成火屬性傷害，並有高機率使受到攻擊的我方目標陷入灼燒狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "燃焰斬擊",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成火屬性傷害，本技能優先攻擊陷入灼燒狀態的我方目標。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "熔解",
+				"SkillDesc": "對陷入灼燒狀態的我方單體發動攻擊後，自身造成的傷害提高。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 102301004,
+				"Name": "高溫運轉",
+				"SkillDesc": "使自身攻擊力小幅提高、速度大幅提高。弱點被擊破後以上增益效果解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102301005,
+				"Name": "飛舞燼火",
+				"SkillDesc": "對我方全體造成火屬性傷害。使陷入灼燒狀態的我方目標受到額外火屬性傷害的同時解除該目標的灼燒狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"102301006": {
+		"Id": "102301006",
+		"Name": "熾燃徘徊者",
+		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量模仿而成的怪物。\n熾燃徘徊者的攻擊會對處於灼燒狀態的敵人造成額外效果。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "赤紅刀鋒",
+				"SkillDesc": "對指定我方單體造成火屬性傷害，並有高機率使受到攻擊的我方目標陷入灼燒狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "燃焰斬擊",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成火屬性傷害，本技能優先攻擊陷入灼燒狀態的我方目標。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "熔解",
+				"SkillDesc": "對陷入灼燒狀態的我方單體發動攻擊後，自身造成的傷害提高。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 102301004,
+				"Name": "高溫運轉",
+				"SkillDesc": "使自身攻擊力小幅提高、速度大幅提高。弱點被擊破後以上增益效果解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102301005,
+				"Name": "飛舞燼火",
+				"SkillDesc": "對我方全體造成火屬性傷害。使陷入灼燒狀態的我方目標受到額外火屬性傷害的同時解除該目標的灼燒狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"102302001": {
 		"Id": "102302001",
 		"Name": "深寒徘徊者",
-		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量仿製而成的怪物。\n深寒徘徊者會吸引永冬災影，同時能降低我方的速度與冰抗性。",
+		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量仿製而成的怪物。\n深寒徘徊者會吸引永冬災影，同時能降低我方的速度與冰屬性抗性。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -9875,7 +11266,7 @@
 	"102302002": {
 		"Id": "102302002",
 		"Name": "深寒徘徊者",
-		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量仿製而成的怪物。\n深寒徘徊者會吸引永冬災影，同時能降低我方的速度與冰抗性。",
+		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量仿製而成的怪物。\n深寒徘徊者會吸引永冬災影，同時能降低我方的速度與冰屬性抗性。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -9932,6 +11323,67 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102302003": {
+		"Id": "102302003",
+		"Name": "深寒徘徊者",
+		"Introduction": "徘徊在裂界中的機械單元，但毫無疑問這並非人類技術造就的產物，而是裂界扭曲的力量仿製而成的怪物。\n深寒徘徊者會吸引永冬災影，同時能降低我方的速度與冰屬性抗性。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102302001,
+				"Name": "冰輪鐵拳",
+				"SkillDesc": "對指定我方單體造成冰屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302005,
+				"Name": "召來衍生物",
+				"SkillDesc": "召喚【永冬災影】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302006,
+				"Name": "凍結風暴",
+				"SkillDesc": "對我方全體造成冰屬性傷害，並有高機率使受到攻擊的我方目標陷入【深寒】狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302007,
+				"Name": "吞噬衍生物",
+				"SkillDesc": "吞噬1個永冬災影使自身攻擊力提高，同時鎖定指定我方單體。若場上沒有永冬災影，則自身防禦力降低。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302008,
+				"Name": "吞噬衍生物",
+				"SkillDesc": "吞噬1個永冬災影使自身攻擊力提高，同時鎖定指定我方單體。若場上沒有永冬災影，則自身防禦力降低。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302009,
+				"Name": "冰輪碎碾",
+				"SkillDesc": "對指定我方單體造成冰屬性傷害，並有高機率使受到攻擊的我方目標陷入【深寒】狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"200401001": {
 		"Id": "200401001",
@@ -10305,6 +11757,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"202301004": {
+		"Id": "202301004",
+		"Name": "「藥王秘傳」煉形者",
+		"Introduction": "渴求復興古老的豐饒之秘，並引領仙舟人再度踏上解脫登仙大道的修煉者。\n如今，他們的願望得遂。受賜於古老神跡的力量，以其為甲胄、為武器，並觸及了長生不死的秘密。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "震擊",
+				"SkillDesc": "對指定我方單體造成雷屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "霆罰",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成雷屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "劫雷",
+				"SkillDesc": "對指定我方單體造成大量雷屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "召遣",
+				"SkillDesc": "消耗自身生命值，召喚【魔陰身士卒】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202301005,
+				"Name": "採氣",
+				"SkillDesc": "當場上其他敵方目標帶有【重生】時，其自身具有【命中回復】。當命中我方目標後，回復其自身生命值。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"202301005": {
 		"Id": "202301005",
 		"Name": "浴鐵",
@@ -10607,14 +12114,15 @@
 		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧，其形態猶如放射高熱，猛烈燃燒的鳥類生命。",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Ice"
+			"Ice",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0.2,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10685,6 +12193,147 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800101005": {
+		"Id": "800101005",
+		"Name": "炎華造物",
+		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧。其形態猶如放射高熱、猛烈燃燒的鳥類生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "擾亂",
+				"SkillDesc": "對指定我方單體造成少量火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101006": {
+		"Id": "800101006",
+		"Name": "炎華造物",
+		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧。其形態猶如放射高熱、猛烈燃燒的鳥類生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "擾亂",
+				"SkillDesc": "對指定我方單體造成少量火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101007": {
+		"Id": "800101007",
+		"Name": "炎華造物",
+		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧。其形態猶如放射高熱、猛烈燃燒的鳥類生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "擾亂",
+				"SkillDesc": "對指定我方單體造成少量火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101008": {
+		"Id": "800101008",
+		"Name": "炎華造物",
+		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧。其形態猶如放射高熱、猛烈燃燒的鳥類生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "擾亂",
+				"SkillDesc": "對指定我方單體造成少量火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101009": {
+		"Id": "800101009",
+		"Name": "炎華造物",
+		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧。其形態猶如放射高熱、猛烈燃燒的鳥類生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "擾亂",
+				"SkillDesc": "對指定我方單體造成少量火屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "霜晶造物",
@@ -10747,14 +12396,15 @@
 		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧，其形態猶如帶來低溫，凍結周遭環境的鳥類生命。",
 		"ElementalWeaknesses": [
 			"Fire",
-			"Wind"
+			"Wind",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10825,6 +12475,63 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800102006": {
+		"Id": "800102006",
+		"Name": "霜晶造物",
+		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧。其形態猶如帶來低溫、凍結周遭環境的鳥類生命。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "擾亂",
+				"SkillDesc": "對指定我方單體造成少量冰屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800102007": {
+		"Id": "800102007",
+		"Name": "霜晶造物",
+		"Introduction": "遊蕩在裂界中的晶體元素，只有最簡單的智慧。其形態猶如帶來低溫、凍結周遭環境的鳥類生命。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "擾亂",
+				"SkillDesc": "對指定我方單體造成少量冰屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800201001": {
 		"Id": "800201001",
 		"Name": "虛數織葉者",
@@ -10873,6 +12580,132 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"800204001": {
+		"Id": "800204001",
+		"Name": "次元撲滿",
+		"Introduction": "迷失在群星中的跨維度生物，性溫、味甘、不可食用。一生中大部分時間花在進食和逃跑上。偶遇它的旅行者視之為吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "害……害怕",
+				"SkillDesc": "撲滿被驚動了，即將在2個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800204002,
+				"Name": "跑……跑啊",
+				"SkillDesc": "撲滿陷入恐慌，即將在1個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800204003,
+				"Name": "呼……逃走了",
+				"SkillDesc": "撲滿拔腿就跑，瞬間失去了蹤影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800204002": {
+		"Id": "800204002",
+		"Name": "次元撲滿",
+		"Introduction": "迷失在群星中的跨維度生物，性溫、味甘、不可食用。一生中大部分時間花在進食和逃跑上。偶遇它的旅行者視之為吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "害……害怕",
+				"SkillDesc": "撲滿被驚動了，即將在2個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800204002,
+				"Name": "跑……跑啊",
+				"SkillDesc": "撲滿陷入恐慌，即將在1個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800204003,
+				"Name": "呼……逃走了",
+				"SkillDesc": "撲滿拔腿就跑，瞬間失去了蹤影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800208101": {
+		"Id": "800208101",
+		"Name": "存護撲滿",
+		"Introduction": "迷失在群星中的跨維度生物，性溫、味甘、不可食用。一生中大部分時間花在進食和逃跑上。偶遇它的旅行者視之為吉兆。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "害……害怕",
+				"SkillDesc": "撲滿被驚動了，即將在2個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800208102,
+				"Name": "跑……跑啊",
+				"SkillDesc": "撲滿陷入恐慌，即將在1個回合後逃離。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800208103,
+				"Name": "呼……逃走了",
+				"SkillDesc": "撲滿拔腿就跑，瞬間失去了蹤影。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800208104,
+				"Name": "保……保護你",
+				"SkillDesc": "進入戰鬥時，為敵方全體提供【保……保護你】，每層【保……保護你】可抵抗1次除持續傷害以外的所有傷害。敵方全體共用【保……保護你】層數。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"800301001": {
 		"Id": "800301001",
@@ -11314,6 +13147,102 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"800302005": {
+		"Id": "800302005",
+		"Name": "外宇宙之炎",
+		"Introduction": "不屬此世的怪異生命，自星核帶來的裂界中成長，寄生在世界的根基結構中汲取能量，其甲胄外殼上燃燒著星辰內核的烈焰。\n在戰鬥中，外宇宙之炎能輕易將敵人焚為灰燼。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "咆哮之火",
+				"SkillDesc": "對指定我方單體造成少量火屬性傷害，並有高機率使受到攻擊的我方目標陷入【焚燒】狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "汲取炎華",
+				"SkillDesc": "使自身進入【自燃】狀態，之後的攻擊可以施放【淨炎之雨】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800302003,
+				"Name": "淨炎之雨",
+				"SkillDesc": "連續對我方隨機單體造成少量火屬性傷害，並有高機率使受到攻擊的我方目標陷入【焚燒】狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "熔聚",
+				"SkillDesc": "使自身攻擊力提高，被弱點擊破時該狀態解除。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800302006": {
+		"Id": "800302006",
+		"Name": "外宇宙之炎",
+		"Introduction": "不屬此世的怪異生命，自星核帶來的裂界中成長，寄生在世界的根基結構中汲取能量，其甲胄外殼上燃燒著星辰內核的烈焰。\n在戰鬥中，外宇宙之炎能輕易將敵人焚為灰燼。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "咆哮之火",
+				"SkillDesc": "對指定我方單體造成少量火屬性傷害，並有高機率使受到攻擊的我方目標陷入【焚燒】狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "汲取炎華",
+				"SkillDesc": "使自身進入【自燃】狀態，之後的攻擊可以施放【淨炎之雨】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800302003,
+				"Name": "淨炎之雨",
+				"SkillDesc": "連續對我方隨機單體造成少量火屬性傷害，並有高機率使受到攻擊的我方目標陷入【焚燒】狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "熔聚",
+				"SkillDesc": "使自身攻擊力提高，被弱點擊破時該狀態解除。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -11772,7 +13701,7 @@
 			{
 				"Id": 800304006,
 				"Name": "流年盾紗",
-				"SkillDesc": "自身承受自普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
+				"SkillDesc": "自身受到的普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -11785,8 +13714,7 @@
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
-			"Wind",
-			"Imaginary"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -11794,7 +13722,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -11828,7 +13756,7 @@
 			{
 				"Id": 800304006,
 				"Name": "流年盾紗",
-				"SkillDesc": "自身承受自普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
+				"SkillDesc": "自身受到的普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -11883,7 +13811,7 @@
 			{
 				"Id": 800304006,
 				"Name": "流年盾紗",
-				"SkillDesc": "自身承受自普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
+				"SkillDesc": "自身受到的普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -11938,7 +13866,7 @@
 			{
 				"Id": 800304006,
 				"Name": "流年盾紗",
-				"SkillDesc": "自身承受自普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
+				"SkillDesc": "自身受到的普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -11993,7 +13921,7 @@
 			{
 				"Id": 800304006,
 				"Name": "流年盾紗",
-				"SkillDesc": "自身承受自普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
+				"SkillDesc": "自身受到的普通攻擊、戰技、終結技、追加攻擊的傷害小幅降低，並有低機率使受到蠶食者之影攻擊的我方目標陷入禁錮狀態。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -12073,7 +14001,7 @@
 			"Physical": 0.2,
 			"Fire": 0,
 			"Ice": 0,
-			"Wind": 0.3,
+			"Wind": 0.4,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -12149,6 +14077,90 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"801101002": {
+		"Id": "801101002",
+		"Name": "重子",
+		"Introduction": "「反物質軍團」為防止反粒子逸散發生湮滅，製造了兩種用於運輸的小型離子阱，統稱「重子」與「反重子」。\n「重子」具備基本的智慧，能在戰場上回應「虛卒」的意志與召喚，為其開闢道路。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "湮滅",
+				"SkillDesc": "對指定我方單體造成少量量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101003": {
+		"Id": "801101003",
+		"Name": "重子",
+		"Introduction": "「反物質軍團」為防止反粒子逸散發生湮滅，製造了兩種用於運輸的小型離子阱，統稱「重子」與「反重子」。\n「重子」具備基本的智慧，能在戰場上回應「虛卒」的意志與召喚，為其開闢道路。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "湮滅",
+				"SkillDesc": "對指定我方單體造成少量量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101004": {
+		"Id": "801101004",
+		"Name": "重子",
+		"Introduction": "「反物質軍團」為防止反粒子逸散發生湮滅，製造了兩種用於運輸的小型離子阱，統稱「重子」與「反重子」。\n「重子」具備基本的智慧，能在戰場上回應「虛卒」的意志與召喚，為其開闢道路。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "湮滅",
+				"SkillDesc": "對指定我方單體造成少量量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"801102001": {
 		"Id": "801102001",
 		"Name": "反重子",
@@ -12176,6 +14188,90 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801102002": {
+		"Id": "801102002",
+		"Name": "反重子",
+		"Introduction": "「反物質軍團」為防止反粒子逸散發生湮滅，製造了兩種用於運輸的小型離子阱，統稱「重子」與「反重子」。\n「反重子」具備基本的智慧，能在戰場上回應「虛卒」的意志與召喚，為其開闢道路。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "湮滅",
+				"SkillDesc": "對指定我方單體造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102003": {
+		"Id": "801102003",
+		"Name": "反重子",
+		"Introduction": "「反物質軍團」為防止反粒子逸散發生湮滅，製造了兩種用於運輸的小型離子阱，統稱「重子」與「反重子」。\n「反重子」具備基本的智慧，能在戰場上回應「虛卒」的意志與召喚，為其開闢道路。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "湮滅",
+				"SkillDesc": "對指定我方單體造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102004": {
+		"Id": "801102004",
+		"Name": "反重子",
+		"Introduction": "「反物質軍團」為防止反粒子逸散發生湮滅，製造了兩種用於運輸的小型離子阱，統稱「重子」與「反重子」。\n「反重子」具備基本的智慧，能在戰場上回應「虛卒」的意志與召喚，為其開闢道路。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "湮滅",
+				"SkillDesc": "對指定我方單體造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801201001": {
 		"Id": "801201001",
@@ -12463,13 +14559,12 @@
 		"Introduction": "尚未死滅的戰士經「戰爭熔爐」的重鑄獲得了名為「毀滅」的力量。反物質補足了它們的殘軀，反粒子在其軀體中震盪。\n「反物質軍團」的基本作戰單位、「毀滅」意志的實體化身，遵從破壞本能行事，具有強烈的攻擊性。",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Thunder",
-			"Ice"
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0.2,
-			"Ice": 0,
+			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
@@ -12527,6 +14622,111 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801201011": {
+		"Id": "801201011",
+		"Name": "虛卒•掠奪者",
+		"Introduction": "尚未死滅的戰士經「戰爭熔爐」的重鑄獲得了名為「毀滅」的力量。反物質補足了它們的殘軀，反粒子在其軀體中震盪。\n「反物質軍團」的基本作戰單位、「毀滅」意志的實體化身，遵從破壞本能行事，具有強烈的攻擊性。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩獵之刃",
+				"SkillDesc": "對指定我方單體造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "渦旋躍襲",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201012": {
+		"Id": "801201012",
+		"Name": "虛卒•掠奪者",
+		"Introduction": "尚未死滅的戰士經「戰爭熔爐」的重鑄獲得了名為「毀滅」的力量。反物質補足了它們的殘軀，反粒子在其軀體中震盪。\n「反物質軍團」的基本作戰單位、「毀滅」意志的實體化身，遵從破壞本能行事，具有強烈的攻擊性。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩獵之刃",
+				"SkillDesc": "對指定我方單體造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "渦旋躍襲",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201013": {
+		"Id": "801201013",
+		"Name": "虛卒•掠奪者",
+		"Introduction": "尚未死滅的戰士經「戰爭熔爐」的重鑄獲得了名為「毀滅」的力量。反物質補足了它們的殘軀，反粒子在其軀體中震盪。\n「反物質軍團」的基本作戰單位、「毀滅」意志的實體化身，遵從破壞本能行事，具有強烈的攻擊性。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩獵之刃",
+				"SkillDesc": "對指定我方單體造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "渦旋躍襲",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成少量虛數屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801202001": {
 		"Id": "801202001",
@@ -12633,6 +14833,41 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"801202004": {
+		"Id": "801202004",
+		"Name": "虛卒•篡改者",
+		"Introduction": "成功撐過湮滅效應的「虛卒」，正反粒子以詭異的形態在其身上達成了短暫的平衡，比「掠奪者」擁有更加特殊的力量。\n「反物質軍團」的基本作戰單位，擁有智慧，能夠在小範圍內控制「掠奪者」的行動。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "虛無命意",
+				"SkillDesc": "鎖定我方隨機單體，使其成為敵方全體的攻擊目標。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "無影虛擊",
+				"SkillDesc": "對指定我方單體造成量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"801202101": {
 		"Id": "801202101",
 		"Name": "虛卒•篡改者",
@@ -12671,7 +14906,7 @@
 	"801203001": {
 		"Id": "801203001",
 		"Name": "虛卒•抹消者",
-		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在遭到攻擊時承受額外傷害。",
+		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在攻擊中受到額外的傷害。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Ice",
@@ -12706,7 +14941,7 @@
 	"801203002": {
 		"Id": "801203002",
 		"Name": "虛卒•抹消者",
-		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在遭到攻擊時承受額外傷害。",
+		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在攻擊中受到額外的傷害。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Ice",
@@ -12741,7 +14976,7 @@
 	"801203003": {
 		"Id": "801203003",
 		"Name": "虛卒•抹消者",
-		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在遭到攻擊時承受額外傷害。",
+		"Introduction": "死亡之後遭遇裂界侵蝕的軀殼殘骸，其生命體徵雖發生改變，但依然在執行抹消的指令。\n虛卒•抹消者會對命中的敵人附加標記，使其在攻擊中受到額外的傷害。",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Ice",
@@ -13057,5 +15292,119 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801301006": {
+		"Id": "801301006",
+		"Name": "虛卒•踐踏者",
+		"Introduction": "「反物質軍團」利用「戰爭熔爐」將戰士與古獸的殘片融合重鑄後的產物。\n雖數量相對稀少，但兼具戰士的智慧與古獸的力量與機動性，其嘶鳴能夠將大量虛卒召喚而來。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虛實的投影",
+				"SkillDesc": "對指定我方單體造成量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略的鐵蹄",
+				"SkillDesc": "對指定我方單體造成量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "戰爭的踐踏",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成少量量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋的弓矢",
+				"SkillDesc": "鎖定我方單體，下次行動對該目標施放【強弩的終結】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "強弩的終結",
+				"SkillDesc": "對指定我方單體造成大量量子屬性傷害，並有高機率使受到攻擊的我方目標陷入糾纏狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801301007": {
+		"Id": "801301007",
+		"Name": "虛卒•踐踏者",
+		"Introduction": "「反物質軍團」利用「戰爭熔爐」將戰士與古獸的殘片融合重鑄後的產物。\n雖數量相對稀少，但兼具戰士的智慧與古獸的力量與機動性，其嘶鳴能夠將大量虛卒召喚而來。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虛實的投影",
+				"SkillDesc": "對指定我方單體造成量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略的鐵蹄",
+				"SkillDesc": "對指定我方單體造成量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "戰爭的踐踏",
+				"SkillDesc": "對指定我方單體及其相鄰目標造成少量量子屬性傷害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋的弓矢",
+				"SkillDesc": "鎖定我方單體，下次行動對該目標施放【強弩的終結】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "強弩的終結",
+				"SkillDesc": "對指定我方單體造成大量量子屬性傷害，並有高機率使受到攻擊的我方目標陷入糾纏狀態。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
 	}
 }

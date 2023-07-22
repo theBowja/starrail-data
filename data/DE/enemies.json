@@ -692,7 +692,7 @@
 			{
 				"Id": 100402003,
 				"Name": "Aurafeld der Garnison",
-				"SkillDesc": "Gewährt einer anderen verbündeten Einheit eine Barriere. Ziel mit einer Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel angegriffen wird.",
+				"SkillDesc": "Gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit"
 			},
 			{
@@ -747,7 +747,7 @@
 			{
 				"Id": 100402103,
 				"Name": "Aurafeld der Garnison",
-				"SkillDesc": "Gewährt einer anderen verbündeten Einheit eine Barriere. Ziel mit einer Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel angegriffen wird.",
+				"SkillDesc": "Gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit"
 			},
 			{
@@ -829,7 +829,7 @@
 				"Id": 100402209,
 				"Name": "Unterstützung",
 				"SkillDesc": "Beschwört zu Beginn der Phase sofort Silbermähnen-Soldat oder Silbermähnen-Kanonier.",
-				"SkillTypeDesc": "Fähigkeit"
+				"SkillTypeDesc": "Talent"
 			},
 			{
 				"Id": 100402210,
@@ -1378,7 +1378,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
@@ -2303,7 +2303,7 @@
 	"1023020": {
 		"Id": "1023020",
 		"Name": "Eisiger Streuner",
-		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und der Eis-WDS ihrer Gegner.",
+		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und den Eis-WDS ihrer Gegner.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -2364,7 +2364,7 @@
 	"1023021": {
 		"Id": "1023021",
 		"Name": "Eisiger Streuner (Fehler)",
-		"Introduction": "Eine durch kompromittierte Codes erzeugte vollständige Projektion. Sie basiert auf einer Maschineneinheit, die das Fragmentum durchstreift. Zweifelsohne ist diese Monstrosität keine menschliche Schöpfung, sondern wurde aus der Abartigkeit des Fragmentums geboren.\nDer Eisiger Streuner (Fehler) zieht Immerwinter-Schattenwandler an und reduziert die GES und Eis-WDS seiner Gegner.",
+		"Introduction": "Eine durch kompromittierte Codes erzeugte vollständige Projektion. Sie basiert auf einer Maschineneinheit, die das Fragmentum durchstreift. Zweifelsohne ist diese Monstrosität keine menschliche Schöpfung, sondern wurde aus der Abartigkeit des Fragmentums geboren.\nDer Eisiger Streuner (Fehler) zieht Immerwinter-Schattenwandler an und reduziert die GES und den Eis-WDS seiner Gegner.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -2687,7 +2687,7 @@
 				"Id": 201201002,
 				"Name": "Kerzenflamme",
 				"SkillDesc": "Fügt beim Erleiden eines Todesstoßes allen Zielen Feuer-SCH zu und reduziert mit hoher Wahrscheinlichkeit deren VTD.",
-				"SkillTypeDesc": "Fähigkeit",
+				"SkillTypeDesc": "Talent",
 				"ElementType": "Fire"
 			}
 		],
@@ -3623,11 +3623,97 @@
 			{
 				"Id": 800208004,
 				"Name": "Sch... Schutz für andere",
-				"SkillDesc": "Wendet bei Kampfeintritt „Sch... Schutz für andere“ auf alle verbündeten Einheiten an. Jede Stapelung von „Sch... Schutz für andere“ kann allem SCH außer DoT widerstehen. Die Stapelungen werden unter allen verbündeten Einheiten aufgeteilt.",
+				"SkillDesc": "Wendet bei Kampfeintritt „Sch... Schutz für andere“ auf alle verbündeten Einheiten an. Jede Stapelung von „Sch... Schutz für andere“ kann 1-mal allem SCH außer DoT widerstehen. Die Stapelungen werden unter allen verbündeten Einheiten aufgeteilt.",
 				"SkillTypeDesc": "Talent"
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"8002081": {
+		"Id": "8002081",
+		"Name": "Sparschwein der Bewahrung",
+		"Introduction": "Eine interdimensionale Kreatur, die in den Sternen verloren ging. Sanftmütig, süßlich im Geschmack, aber ungenießbar. Diese Spezies verbringt den Großteil ihres Lebens mit Fressen und Flüchten. Unter Reisenden erzählt man sich, es sei ein gutes Zeichen, ihr zu begegnen.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "A... Angst",
+				"SkillDesc": "Das Sparschwein hat sich erschreckt und wird in 2 Rd. fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800208102,
+				"Name": "Lauf ... Lauf!",
+				"SkillDesc": "Das Sparschwein ist in Panik geraten und wird in 1 Rd. fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800208103,
+				"Name": "Puh ... Entkommen",
+				"SkillDesc": "Das Sparschwein flieht blitzschnell.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800208104,
+				"Name": "Sch... Schutz für dich",
+				"SkillDesc": "Wendet bei Kampfeintritt „Sch... Schutz für dich“ auf alle verbündeten Einheiten an. Jede Stapelung „Sch... Schutz für dich“ kann 1-mal allen SCH außer DoT von 1 eingehenden Treffer absorbieren. „Sch... Schutz für dich“ wird vom gesamten Team geteilt.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"8002090": {
+		"Id": "8002090",
+		"Name": "Sequenz-Sparschwein",
+		"Introduction": "Eine interdimensionale Kreatur, die in den Sternen verloren ging. Sanftmütig, süßlich im Geschmack, aber ungenießbar. Diese Spezies verbringt den Großteil ihres Lebens mit Fressen und Flüchten. Unter Reisenden erzählt man sich, es sei ein gutes Zeichen, ihr zu begegnen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800209001,
+				"Name": "A... Angst",
+				"SkillDesc": "Das Sparschwein hat sich erschreckt und wird in 2 Rd. fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800209002,
+				"Name": "Lauf ... Lauf!",
+				"SkillDesc": "Das Sparschwein ist in Panik geraten und wird in 1 Rd. fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800209003,
+				"Name": "Puh ... Entkommen",
+				"SkillDesc": "Das Sparschwein flieht blitzschnell.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"8003010": {
 		"Id": "8003010",
@@ -5238,6 +5324,146 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100202009": {
+		"Id": "100202009",
+		"Name": "Vagabund",
+		"Introduction": "Die Unterweltler kämpfen verzweifelt ums Überleben – einige von ihnen wagen sich sogar ins Fragmentum, um dort nach Nützlichem zu suchen. Dabei sind sie auf uralte Maschinen gestoßen, die sich als äußerst hilfreich erwiesen haben.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Schaufelangriff",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspirieren",
+				"SkillDesc": "Erhöht den ANG einer verbündeten Einheit und lässt sie sofort handeln.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202010": {
+		"Id": "100202010",
+		"Name": "Vagabund",
+		"Introduction": "Die Unterweltler kämpfen verzweifelt ums Überleben – einige von ihnen wagen sich sogar ins Fragmentum, um dort nach Nützlichem zu suchen. Dabei sind sie auf uralte Maschinen gestoßen, die sich als äußerst hilfreich erwiesen haben.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Schaufelangriff",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspirieren",
+				"SkillDesc": "Erhöht den ANG einer verbündeten Einheit und lässt sie sofort handeln.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202012": {
+		"Id": "100202012",
+		"Name": "Vagabund",
+		"Introduction": "Die Unterweltler kämpfen verzweifelt ums Überleben – einige von ihnen wagen sich sogar ins Fragmentum, um dort nach Nützlichem zu suchen. Dabei sind sie auf uralte Maschinen gestoßen, die sich als äußerst hilfreich erwiesen haben.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Schaufelangriff",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspirieren",
+				"SkillDesc": "Erhöht den ANG einer verbündeten Einheit und lässt sie sofort handeln.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202013": {
+		"Id": "100202013",
+		"Name": "Vagabund",
+		"Introduction": "Die Unterweltler kämpfen verzweifelt ums Überleben – einige von ihnen wagen sich sogar ins Fragmentum, um dort nach Nützlichem zu suchen. Dabei sind sie auf uralte Maschinen gestoßen, die sich als äußerst hilfreich erwiesen haben.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Schaufelangriff",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspirieren",
+				"SkillDesc": "Erhöht den ANG einer verbündeten Einheit und lässt sie sofort handeln.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100203001": {
 		"Id": "100203001",
 		"Name": "Silbermähnen-Kanonier",
@@ -5484,6 +5710,88 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100203007": {
+		"Id": "100203007",
+		"Name": "Silbermähnen-Kanonier",
+		"Introduction": "Ein Kanonier der Silbermähnen-Wachen, der mit einem tragbaren Handrohr in den Kampf zieht.\nIm Kampf setzt der Silbermähnen-Kanonier zusammen mit seinen Verbündeten brutale Kettenangriffe ein.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Sperrfeuer",
+				"SkillDesc": "Fügt einem anvisierten Ziel und angrenzenden Einheiten geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Deckungsunterstützung",
+				"SkillDesc": "Bietet einer anvisierten verbündeten Einheit Unterstützung. Wenn diese Einheit angreift, führt sie einen Folgeangriff aus, der einem Ziel und angrenzenden Einheiten geringen physischen SCH zufügt.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Deckungsunterstützung",
+				"SkillDesc": "Bietet einer anvisierten verbündeten Einheit Unterstützung. Wenn diese Einheit angreift, führt sie einen Folgeangriff aus, der einem Ziel und angrenzenden Einheiten geringen physischen SCH zufügt.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100203008": {
+		"Id": "100203008",
+		"Name": "Silbermähnen-Kanonier",
+		"Introduction": "Ein Kanonier der Silbermähnen-Wachen, der mit einem tragbaren Handrohr in den Kampf zieht.\nIm Kampf setzt der Silbermähnen-Kanonier zusammen mit seinen Verbündeten brutale Kettenangriffe ein.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Sperrfeuer",
+				"SkillDesc": "Fügt einem anvisierten Ziel und angrenzenden Einheiten geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Deckungsunterstützung",
+				"SkillDesc": "Bietet einer anvisierten verbündeten Einheit Unterstützung. Wenn diese Einheit angreift, führt sie einen Folgeangriff aus, der einem Ziel und angrenzenden Einheiten geringen physischen SCH zufügt.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Deckungsunterstützung",
+				"SkillDesc": "Bietet einer anvisierten verbündeten Einheit Unterstützung. Wenn diese Einheit angreift, führt sie einen Folgeangriff aus, der einem Ziel und angrenzenden Einheiten geringen physischen SCH zufügt.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100204001": {
 		"Id": "100204001",
 		"Name": "Silbermähnen-Soldat",
@@ -5694,13 +6002,13 @@
 			"Ice"
 		],
 		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
 			"Wind": 0,
-			"Thunder": 0,
+			"Thunder": 0.2,
 			"Quantum": 0,
-			"Imaginary": 0
+			"Imaginary": 0.2
 		},
 		"SkillList": [
 			{
@@ -5853,6 +6161,91 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100204015": {
+		"Id": "100204015",
+		"Name": "Silbermähnen-Soldat",
+		"Introduction": "Ein Mitglied von Belobogs Silbermähnen-Wachen, dessen Aufgabe es ist, die gegnerischen Linien zu durchbrechen.\nIm Kampf verringern die Angriffe von Silbermähnen-Soldaten die Verteidigung ihrer Gegner.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum",
+			"Fire"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Unermüdlicher Ansturm",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu und verringert mit hoher Wahrscheinlichkeit die VTD des Ziels.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204016": {
+		"Id": "100204016",
+		"Name": "Silbermähnen-Soldat",
+		"Introduction": "Ein Mitglied von Belobogs Silbermähnen-Wachen, dessen Aufgabe es ist, die gegnerischen Linien zu durchbrechen.\nIm Kampf verringern die Angriffe von Silbermähnen-Soldaten die Verteidigung ihrer Gegner.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Unermüdlicher Ansturm",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu und verringert mit hoher Wahrscheinlichkeit die VTD des Ziels.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204019": {
+		"Id": "100204019",
+		"Name": "Silbermähnen-Soldat",
+		"Introduction": "Ein Mitglied von Belobogs Silbermähnen-Wachen, dessen Aufgabe es ist, die gegnerischen Linien zu durchbrechen.\nIm Kampf verringern die Angriffe von Silbermähnen-Soldaten die Verteidigung ihrer Gegner.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Unermüdlicher Ansturm",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu und verringert mit hoher Wahrscheinlichkeit die VTD des Ziels.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100204101": {
 		"Id": "100204101",
@@ -6194,6 +6587,96 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100205012": {
+		"Id": "100205012",
+		"Name": "Silbermähnen-Schütze",
+		"Introduction": "Ein Bogenschütze von Belobogs Silbermähnen-Wachen, dessen Aufgabe es ist, aus dem Hinterhalt auf Gegner zu schießen.\nIm Kampf bewirkt der Schuss eines Silbermähnen-Schützen bei Gegnern Bluten.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Durchdringende Granate",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu und bewirkt mit hoher Wahrscheinlichkeit Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205013": {
+		"Id": "100205013",
+		"Name": "Silbermähnen-Schütze",
+		"Introduction": "Ein Bogenschütze von Belobogs Silbermähnen-Wachen, dessen Aufgabe es ist, aus dem Hinterhalt auf Gegner zu schießen.\nIm Kampf bewirkt der Schuss eines Silbermähnen-Schützen bei Gegnern Bluten.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Physical",
+			"Fire",
+			"Ice",
+			"Imaginary",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Durchdringende Granate",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu und bewirkt mit hoher Wahrscheinlichkeit Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205015": {
+		"Id": "100205015",
+		"Name": "Silbermähnen-Schütze",
+		"Introduction": "Ein Bogenschütze von Belobogs Silbermähnen-Wachen, dessen Aufgabe es ist, aus dem Hinterhalt auf Gegner zu schießen.\nIm Kampf bewirkt der Schuss eines Silbermähnen-Schützen bei Gegnern Bluten.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Durchdringende Granate",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu und bewirkt mit hoher Wahrscheinlichkeit Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100301001": {
 		"Id": "100301001",
@@ -6579,6 +7062,54 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100301009": {
+		"Id": "100301009",
+		"Name": "Silbermähnen-Leutnant",
+		"Introduction": "Der Anführer eines Trupps von Belobogs Silbermähnen-Wachen.\nSilbermähnen-Leutnants können im Kampf einen riesigen Schild aufstellen und sich selbst verbessern. Wenn du einen Silbermähnen-Leutnant mit erhobenem Schild angreifst, führt das sofort zu einem heftigen Gegenangriff.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Sturmangriff",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Durchbohren",
+				"SkillDesc": "Fügt einem einzelnen Ziel massiven physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Schildreflexion",
+				"SkillDesc": "Bewirkt den Status Konter. Bei einem Angriff durch eine einzelne Figur wirkt er sofort und setzt „Durchbohren“ gegen den Angreifer ein.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Verstärkung",
+				"SkillDesc": "Beschwört Silbermähnen-Soldat oder Silbermähnen-Schütze",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100301201": {
 		"Id": "100301201",
 		"Name": "Silbermähnen-Leutnant (komplett)",
@@ -6773,7 +7304,7 @@
 			{
 				"Id": 100402003,
 				"Name": "Aurafeld der Garnison",
-				"SkillDesc": "Gewährt einer anderen verbündeten Einheit eine Barriere. Ziel mit einer Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel angegriffen wird.",
+				"SkillDesc": "Gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit"
 			},
 			{
@@ -6828,7 +7359,7 @@
 			{
 				"Id": 100402003,
 				"Name": "Aurafeld der Garnison",
-				"SkillDesc": "Gewährt einer anderen verbündeten Einheit eine Barriere. Ziel mit einer Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel angegriffen wird.",
+				"SkillDesc": "Gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit"
 			},
 			{
@@ -6887,7 +7418,7 @@
 			{
 				"Id": 100402003,
 				"Name": "Aurafeld der Garnison",
-				"SkillDesc": "Gewährt einer anderen verbündeten Einheit eine Barriere. Ziel mit einer Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel angegriffen wird.",
+				"SkillDesc": "Gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit"
 			},
 			{
@@ -7127,6 +7658,108 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101201006": {
+		"Id": "101201006",
+		"Name": "Automaton-Hund",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er sieht wie ein Transportfahrzeug aus, an dessen ursprünglichen Zweck sich jedoch niemand mehr erinnern kann.\nIm Kampf kann der Automaton „Hund“ als Unterstützung dienen und die LP Verbündeter wiederherstellen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertikalschlag",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Selbstheilungsmodul",
+				"SkillDesc": "Stellt sofort die LP aller verbündeten Einheiten wieder her.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201007": {
+		"Id": "101201007",
+		"Name": "Automaton-Hund",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er sieht wie ein Transportfahrzeug aus, an dessen ursprünglichen Zweck sich jedoch niemand mehr erinnern kann.\nIm Kampf kann der Automaton „Hund“ als Unterstützung dienen und die LP Verbündeter wiederherstellen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertikalschlag",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Selbstheilungsmodul",
+				"SkillDesc": "Stellt sofort die LP aller verbündeten Einheiten wieder her.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201009": {
+		"Id": "101201009",
+		"Name": "Automaton-Hund",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er sieht wie ein Transportfahrzeug aus, an dessen ursprünglichen Zweck sich jedoch niemand mehr erinnern kann.\nIm Kampf kann der Automaton „Hund“ als Unterstützung dienen und die LP Verbündeter wiederherstellen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertikalschlag",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Selbstheilungsmodul",
+				"SkillDesc": "Stellt sofort die LP aller verbündeten Einheiten wieder her.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -7422,8 +8055,7 @@
 		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er führt einfache Aufgaben für die Menschen aus.\nIm Kampf ist der Automaton „Spinne“ recht labil und kann explodieren, wenn sie beschädigt wurde.",
 		"ElementalWeaknesses": [
 			"Thunder",
-			"Wind",
-			"Quantum"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -7431,7 +8063,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -7561,6 +8193,198 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101202107": {
+		"Id": "101202107",
+		"Name": "Automaton-Spinne",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er führt einfache Aufgaben für die Menschen aus.\nIm Kampf ist der Automaton „Spinne“ recht labil und kann explodieren, wenn er beschädigt wurde.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Rammen",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Zeitmodul",
+				"SkillDesc": "Die nächste Aktion nutzt Selbstsprengendes Modul.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Selbstsprengendes Modul",
+				"SkillDesc": "Zerstört sich selbst und fügt einem einzelnen Ziel und benachbarten Einheiten Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Ketten der Zerstörung",
+				"SkillDesc": "Fügt angrenzenden Einheiten nach dem Erleiden eines Todesstoßes Feuer-SCH zu.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202108": {
+		"Id": "101202108",
+		"Name": "Automaton-Spinne",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er führt einfache Aufgaben für die Menschen aus.\nIm Kampf ist der Automaton „Spinne“ recht labil und kann explodieren, wenn er beschädigt wurde.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Rammen",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Zeitmodul",
+				"SkillDesc": "Die nächste Aktion nutzt Selbstsprengendes Modul.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Selbstsprengendes Modul",
+				"SkillDesc": "Zerstört sich selbst und fügt einem einzelnen Ziel und benachbarten Einheiten Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Ketten der Zerstörung",
+				"SkillDesc": "Fügt angrenzenden Einheiten nach dem Erleiden eines Todesstoßes Feuer-SCH zu.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202109": {
+		"Id": "101202109",
+		"Name": "Automaton-Spinne",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er führt einfache Aufgaben für die Menschen aus.\nIm Kampf ist der Automaton „Spinne“ recht labil und kann explodieren, wenn er beschädigt wurde.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Rammen",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Zeitmodul",
+				"SkillDesc": "Die nächste Aktion nutzt Selbstsprengendes Modul.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Selbstsprengendes Modul",
+				"SkillDesc": "Zerstört sich selbst und fügt einem einzelnen Ziel und benachbarten Einheiten Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Ketten der Zerstörung",
+				"SkillDesc": "Fügt angrenzenden Einheiten nach dem Erleiden eines Todesstoßes Feuer-SCH zu.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202110": {
+		"Id": "101202110",
+		"Name": "Automaton-Spinne",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er führt einfache Aufgaben für die Menschen aus.\nIm Kampf ist der Automaton „Spinne“ recht labil und kann explodieren, wenn er beschädigt wurde.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Rammen",
+				"SkillDesc": "Fügt einem einzelnen Ziel geringen physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Zeitmodul",
+				"SkillDesc": "Die nächste Aktion nutzt Selbstsprengendes Modul.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Selbstsprengendes Modul",
+				"SkillDesc": "Zerstört sich selbst und fügt einem einzelnen Ziel und benachbarten Einheiten Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Ketten der Zerstörung",
+				"SkillDesc": "Fügt angrenzenden Einheiten nach dem Erleiden eines Todesstoßes Feuer-SCH zu.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101203001": {
 		"Id": "101203001",
 		"Name": "Automaton-Käfer",
@@ -7587,7 +8411,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
@@ -7620,7 +8444,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
@@ -7649,7 +8473,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
@@ -7678,7 +8502,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
@@ -7707,7 +8531,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
@@ -7736,7 +8560,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
@@ -7765,12 +8589,157 @@
 			{
 				"Id": 101203001,
 				"Name": "Instabiles Kraftfeld",
-				"SkillDesc": "Fügt einem anvisierten Ziel physischen SCH und gewährt sich selbst eine Barriere. Die Barriere kann allem SCH außer DoT widerstehen. Dieser Effekt wird entfernt, wenn das Ziel mit der Barriere angegriffen wird.",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
 				"SkillTypeDesc": "Fähigkeit",
 				"ElementType": "Physical"
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101203008": {
+		"Id": "101203008",
+		"Name": "Automaton-Käfer",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Seine Beine wurden mit Signalleuchten ausgestattet – vermutlich wurde er im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf kann der Automaton „Käfer“ Kraftfelder erzeugen, um sich zu schützen.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Instabiles Kraftfeld",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203009": {
+		"Id": "101203009",
+		"Name": "Automaton-Käfer",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Seine Beine wurden mit Signalleuchten ausgestattet – vermutlich wurde er im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf kann der Automaton „Käfer“ Kraftfelder erzeugen, um sich zu schützen.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Instabiles Kraftfeld",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203010": {
+		"Id": "101203010",
+		"Name": "Automaton-Käfer",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Seine Beine wurden mit Signalleuchten ausgestattet – vermutlich wurde er im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf kann der Automaton „Käfer“ Kraftfelder erzeugen, um sich zu schützen.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Instabiles Kraftfeld",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203011": {
+		"Id": "101203011",
+		"Name": "Automaton-Käfer",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Seine Beine wurden mit Signalleuchten ausgestattet – vermutlich wurde er im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf kann der Automaton „Käfer“ Kraftfelder erzeugen, um sich zu schützen.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Instabiles Kraftfeld",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203013": {
+		"Id": "101203013",
+		"Name": "Automaton-Käfer",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Seine Beine wurden mit Signalleuchten ausgestattet – vermutlich wurde er im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf kann der Automaton „Käfer“ Kraftfelder erzeugen, um sich zu schützen.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Instabiles Kraftfeld",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCHD zu und gewährt einer verbündeten Einheit eine Barriere. Die Barriere hebt den kompletten SCH außer DoT auf, bis die verbündete Einheit angegriffen wird.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -8374,6 +9343,60 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101301012": {
+		"Id": "101301012",
+		"Name": "Automaton-Grizzly",
+		"Introduction": "Ein Automat, der mit Technologie aus der Alten Welt zusammengebaut wurde. Er wurde mit einer robusten Rüstung verstärkt, um vorzustürmen und die Silbermähnen-Wachen zu beschützen.\nIm Kampf beschwört ein Automaton „Grizzly“ die „Spinne“ und entfesselt einen mächtigen, geladenen Angriff.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Sprengbefehl",
+				"SkillDesc": "Beschwört die Automaton-Spinne.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Wutbefehl",
+				"SkillDesc": "Hat eine Chance, alle Verbündeten zu verspotten.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Überlastbefehl",
+				"SkillDesc": "Bewirkt den Status Aufladen. Der nächste Angriff setzt „Vernichtungsbefehl“ gegen sämtliche Ziele ein.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Vernichtungsbefehl",
+				"SkillDesc": "Fügt sämtlichen Zielen massiven physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Zerstörungsbefehl",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101301013": {
 		"Id": "101301013",
 		"Name": "Automaton-Grizzly",
@@ -8427,6 +9450,60 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101301014": {
+		"Id": "101301014",
+		"Name": "Automaton-Grizzly",
+		"Introduction": "Ein Automat, der mit Technologie aus der Alten Welt zusammengebaut wurde. Er wurde mit einer robusten Rüstung verstärkt, um vorzustürmen und die Silbermähnen-Wachen zu beschützen.\nIm Kampf beschwört ein Automaton „Grizzly“ die „Spinne“ und entfesselt einen mächtigen, geladenen Angriff.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Sprengbefehl",
+				"SkillDesc": "Beschwört die Automaton-Spinne.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Wutbefehl",
+				"SkillDesc": "Hat eine Chance, alle Verbündeten zu verspotten.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Überlastbefehl",
+				"SkillDesc": "Bewirkt den Status Aufladen. Der nächste Angriff setzt „Vernichtungsbefehl“ gegen sämtliche Ziele ein.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Vernichtungsbefehl",
+				"SkillDesc": "Fügt sämtlichen Zielen massiven physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Zerstörungsbefehl",
+				"SkillDesc": "Fügt einem einzelnen Ziel physischen SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101302001": {
 		"Id": "101302001",
@@ -8778,14 +9855,13 @@
 		"ElementalWeaknesses": [
 			"Ice",
 			"Thunder",
-			"Imaginary",
-			"Wind"
+			"Imaginary"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0.2,
 			"Ice": 0,
-			"Wind": 0,
+			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -8971,6 +10047,153 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101302012": {
+		"Id": "101302012",
+		"Name": "Automaton-Düsterwolf",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Diese seltene Art von humanoidem Automaton wurde am rechten Arm mit einer Kettensäge ausgestattet – vermutlich wurde sie im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf setzt der Automaton „Düsterwolf“ seine Kettensäge ein, um Bluten bei Gegnern zu bewirken und DoT zu verursachen.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Fällbefehl",
+				"SkillDesc": "Fügt einem einzelnen Ziel massiven physischen SCH zu, mit der Chance Bluten für das getroffene Ziel. Wenn das getroffene Ziel kein Schild hat, erleidet ein zufälliger Verbündeter des Ziels 1 Mal „Demontage“.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Ziel anvisieren",
+				"SkillDesc": "Visiert ein einzelnes Ziel an. Die nächste Aktion auf das Ziel wirkt den Fällbefehl.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Auflösungsbefehl",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-mal Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Demontage",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-mal Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302013": {
+		"Id": "101302013",
+		"Name": "Automaton-Düsterwolf",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Diese seltene Art von humanoidem Automaton wurde am rechten Arm mit einer Kettensäge ausgestattet – vermutlich wurde sie im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf setzt der Automaton „Düsterwolf“ seine Kettensäge ein, um Bluten bei Gegnern zu bewirken und DoT zu verursachen.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Fällbefehl",
+				"SkillDesc": "Fügt einem einzelnen Ziel massiven physischen SCH zu, mit der Chance Bluten für das getroffene Ziel. Wenn das getroffene Ziel kein Schild hat, erleidet ein zufälliger Verbündeter des Ziels 1 Mal „Demontage“.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Ziel anvisieren",
+				"SkillDesc": "Visiert ein einzelnes Ziel an. Die nächste Aktion auf das Ziel wirkt den Fällbefehl.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Auflösungsbefehl",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-mal Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Demontage",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-mal Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302014": {
+		"Id": "101302014",
+		"Name": "Automaton-Düsterwolf",
+		"Introduction": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Diese seltene Art von humanoidem Automaton wurde am rechten Arm mit einer Kettensäge ausgestattet – vermutlich wurde sie im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf setzt der Automaton „Düsterwolf“ seine Kettensäge ein, um Bluten bei Gegnern zu bewirken und DoT zu verursachen.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Fällbefehl",
+				"SkillDesc": "Fügt einem einzelnen Ziel massiven physischen SCH zu, mit der Chance Bluten für das getroffene Ziel. Wenn das getroffene Ziel kein Schild hat, erleidet ein zufälliger Verbündeter des Ziels 1 Mal „Demontage“.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Ziel anvisieren",
+				"SkillDesc": "Visiert ein einzelnes Ziel an. Die nächste Aktion auf das Ziel wirkt den Fällbefehl.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Auflösungsbefehl",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-mal Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Demontage",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-mal Bluten.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101401001": {
 		"Id": "101401001",
@@ -9398,7 +10621,7 @@
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0,
@@ -9443,6 +10666,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102201005": {
+		"Id": "102201005",
+		"Name": "Immerwinter-Schattenwandler",
+		"Introduction": "Schatten, die seit Beginn des Ewigen Frostes im Fragmentum umherwandern. Geben sich als Silbermähnen-Wachen aus. Dabei tragen sie zwar dieselben Rüstungen wie die Krieger von Belobog, doch wo ihr Gesicht sein sollte, befindet sich nichts als eine Schicht glatten Eises.\nImmerwinter-Schattenwandler schwingen Eisäxte und verlangsamen ihre Gegner.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Froststoß",
+				"SkillDesc": "Fügt einem einzelnen Ziel Eis-SCH zu und verzögert seine Aktion.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102202001": {
 		"Id": "102202001",
@@ -9514,7 +10766,7 @@
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0,
 			"Thunder": 0,
@@ -9589,6 +10841,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102202006": {
+		"Id": "102202006",
+		"Name": "Sengender Schattenwandler",
+		"Introduction": "Schatten, die seit Beginn des Ewigen Frostes im Fragmentum umherwandern. Geben sich als Silbermähnen-Wachen aus und tragen sie dieselben Rüstungen wie die Krieger von Belobog. Dort, wo eigentlich ihr Gesicht sein sollte, befindet sich nichts als ein Haufen glühender Kohlen.\nSengende Schattenwandler schwingen Feueräxte und verbrennen ihre Gegner.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Sengender Stoß",
+				"SkillDesc": "Fügt einem anvisierten Ziel Feuer-SCH zu und hat eine hohe Wahrscheinlichkeit, Brennen zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -9811,10 +11092,120 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"102301005": {
+		"Id": "102301005",
+		"Name": "Glühender Streuner",
+		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Zweifelsohne wurde dieses Monster nicht von Menschenhand erschaffen, sondern entstand aus der Perversion des Fragmentums.\nDie Angriffe eines Glühenden Streuners fügen verbrannten Gegnern Bonusschaden zu.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Karminrote Klinge",
+				"SkillDesc": "Fügt einem anvisierten Ziel Feuer-SCH zu und hat eine hohe Wahrscheinlichkeit, Brennen zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Verbrennungshieb",
+				"SkillDesc": "Fügt einem einzelnen Ziel und Einheiten in der Nähe des Ziels Feuerschaden zu. Dieser Angriff trifft mit höherer Wahrscheinlichkeit Einheiten, denen schon Verbrennung zugefügt wurde.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Schmelzen",
+				"SkillDesc": "Nach dem Angriff erleidet das verbrannte Ziel erhöhten SCH.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 102301004,
+				"Name": "Hochtemperatur-Operation",
+				"SkillDesc": "Erhöht geringen ANG und massive GES. Dieser Buff wird bei Schwächebruch entfernt.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Tanzende Asche",
+				"SkillDesc": "Fügt allen Zielen Feuer-SCH zu. Ziele, die unter Verbrennung leiden, erleiden zusätzlichen Feuer-SCH und Brennen wird entfernt.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"102301006": {
+		"Id": "102301006",
+		"Name": "Glühender Streuner",
+		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Zweifelsohne wurde dieses Monster nicht von Menschenhand erschaffen, sondern entstand aus der Perversion des Fragmentums.\nDie Angriffe eines Glühenden Streuners fügen verbrannten Gegnern Bonusschaden zu.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Karminrote Klinge",
+				"SkillDesc": "Fügt einem anvisierten Ziel Feuer-SCH zu und hat eine hohe Wahrscheinlichkeit, Brennen zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Verbrennungshieb",
+				"SkillDesc": "Fügt einem einzelnen Ziel und Einheiten in der Nähe des Ziels Feuerschaden zu. Dieser Angriff trifft mit höherer Wahrscheinlichkeit Einheiten, denen schon Verbrennung zugefügt wurde.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Schmelzen",
+				"SkillDesc": "Nach dem Angriff erleidet das verbrannte Ziel erhöhten SCH.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 102301004,
+				"Name": "Hochtemperatur-Operation",
+				"SkillDesc": "Erhöht geringen ANG und massive GES. Dieser Buff wird bei Schwächebruch entfernt.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Tanzende Asche",
+				"SkillDesc": "Fügt allen Zielen Feuer-SCH zu. Ziele, die unter Verbrennung leiden, erleiden zusätzlichen Feuer-SCH und Brennen wird entfernt.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"102302001": {
 		"Id": "102302001",
 		"Name": "Eisiger Streuner",
-		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und der Eis-WDS ihrer Gegner.",
+		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und den Eis-WDS ihrer Gegner.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -9875,7 +11266,7 @@
 	"102302002": {
 		"Id": "102302002",
 		"Name": "Eisiger Streuner",
-		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und der Eis-WDS ihrer Gegner.",
+		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und den Eis-WDS ihrer Gegner.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
@@ -9932,6 +11323,67 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102302003": {
+		"Id": "102302003",
+		"Name": "Eisiger Streuner",
+		"Introduction": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und den Eis-WDS ihrer Gegner.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102302001,
+				"Name": "Eisrad-Faust",
+				"SkillDesc": "Fügt einem einzelnen Ziel Eis-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302005,
+				"Name": "Anderling beschwören",
+				"SkillDesc": "Beschwört Immerwinter-Schattenwandler.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 102302006,
+				"Name": "Gefrorener Sturm",
+				"SkillDesc": "Fügt allen Zielen Eis-SCH zu und hat eine hohe Chance, bei ihnen Tiefgefroren zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302007,
+				"Name": "Anderling verschlingen",
+				"SkillDesc": "Verschlingt 1 Immerwinter-Schattenwandler, um den ANG zu erhöhen und ein einzelnes Ziel anzuvisieren. Wenn sich keine Immerwinter-Schattenwandler auf dem Feld befinden, wird die VER verringert.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 102302008,
+				"Name": "Anderling verschlingen",
+				"SkillDesc": "Verschlingt 1 Immerwinter-Schattenwandler, um den ANG zu erhöhen und ein einzelnes Ziel anzuvisieren. Wenn sich keine Immerwinter-Schattenwandler auf dem Feld befinden, wird die VER verringert.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 102302009,
+				"Name": "Eisrad-Brecher",
+				"SkillDesc": "Fügt einem anvisierten Ziel Eis-SCH zu und hat eine hohe Chance, bei ihm Tiefgefroren zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"200401001": {
 		"Id": "200401001",
@@ -10305,6 +11757,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"202301004": {
+		"Id": "202301004",
+		"Name": "Jünger des Sanctus Medicus: Gestaltenwandler",
+		"Introduction": "Ein Anbauer, der die Geheimen Künste des Überflusses wiederbeleben und die Xianzhou wieder auf den Pfad der Heiligen führen wollte.\nUnd jetzt wird sein Wunsch erfüllt. Dank der Macht der alten Wunder, die als Waffen und Rüstung verwendet werden, konnte er die Geheimnisse der Unsterblichkeit ergründen.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Donnerschock",
+				"SkillDesc": "Fügt einem einzelnen Ziel Blitz-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Strafende Blitze",
+				"SkillDesc": "Verursacht imaginären SCH bei einem einzelnen Ziel und bei Einheiten in der Nähe des Ziels.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Dröhnendes Unheil",
+				"SkillDesc": "Einem einzelnen Ziel wird massiver Blitz-SCH zugefügt.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Mara-Beschwörung",
+				"SkillDesc": "LP wird verbraucht, um von Mara befallenen Soldaten zu beschwören",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Vitalitätsentzug",
+				"SkillDesc": "Wenn andere verbündete Einheiten mit Wiedergeburt auf dem Feld sind, haben sie einen Absorptionsschlag. Wenn sie ein Ziel treffen, werden sie LP wiederherstellen.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"202301005": {
 		"Id": "202301005",
 		"Name": "Yutie",
@@ -10607,14 +12114,15 @@
 		"Introduction": "Kristallisierte Elemente, die nur über wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die eine starke Hitzestrahlung abgeben und alles verbrennen, was ihnen in die Quere kommt, durch das Fragmentum.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Ice"
+			"Ice",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0.2,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10685,6 +12193,147 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800101005": {
+		"Id": "800101005",
+		"Name": "Flammenspross",
+		"Introduction": "Kristallisierte Elemente, die über nur wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die eine starke Hitzestrahlung abgeben und alles verbrennen, was ihnen in die Quere kommt, durch das Fragmentum.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Ablenkung",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101006": {
+		"Id": "800101006",
+		"Name": "Flammenspross",
+		"Introduction": "Kristallisierte Elemente, die über nur wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die eine starke Hitzestrahlung abgeben und alles verbrennen, was ihnen in die Quere kommt, durch das Fragmentum.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Ablenkung",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101007": {
+		"Id": "800101007",
+		"Name": "Flammenspross",
+		"Introduction": "Kristallisierte Elemente, die über nur wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die eine starke Hitzestrahlung abgeben und alles verbrennen, was ihnen in die Quere kommt, durch das Fragmentum.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Ablenkung",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101008": {
+		"Id": "800101008",
+		"Name": "Flammenspross",
+		"Introduction": "Kristallisierte Elemente, die über nur wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die eine starke Hitzestrahlung abgeben und alles verbrennen, was ihnen in die Quere kommt, durch das Fragmentum.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Ablenkung",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101009": {
+		"Id": "800101009",
+		"Name": "Flammenspross",
+		"Introduction": "Kristallisierte Elemente, die über nur wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die eine starke Hitzestrahlung abgeben und alles verbrennen, was ihnen in die Quere kommt, durch das Fragmentum.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Ablenkung",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Feuer-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "Frostspross",
@@ -10747,14 +12396,15 @@
 		"Introduction": "Kristallisierte Elemente, die nur über wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die für schaurig niedrige Temperaturen sorgen und alles in ihrer Nähe einfrieren lassen, durch das Fragmentum.",
 		"ElementalWeaknesses": [
 			"Fire",
-			"Wind"
+			"Wind",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10825,6 +12475,63 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800102006": {
+		"Id": "800102006",
+		"Name": "Frostspross",
+		"Introduction": "Kristallisierte Elemente, die über nur wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die für schaurig niedrige Temperaturen sorgen und alles in ihrer Nähe einfrieren lassen, durch das Fragmentum.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Ablenkung",
+				"SkillDesc": "Fügt einem anvisierten Ziel Eis-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800102007": {
+		"Id": "800102007",
+		"Name": "Frostspross",
+		"Introduction": "Kristallisierte Elemente, die über nur wenig Intelligenz verfügen. Sie ziehen in Gestalt von Vögeln, die für schaurig niedrige Temperaturen sorgen und alles in ihrer Nähe einfrieren lassen, durch das Fragmentum.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Ablenkung",
+				"SkillDesc": "Fügt einem anvisierten Ziel Eis-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800201001": {
 		"Id": "800201001",
 		"Name": "Imaginärer Weber",
@@ -10873,6 +12580,132 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"800204001": {
+		"Id": "800204001",
+		"Name": "Warp-Sparschwein",
+		"Introduction": "Eine interdimensionale Kreatur, die in den Sternen verloren ging. Sanftmütig, süßlich im Geschmack, aber ungenießbar. Diese Spezies verbringt den Großteil ihres Lebens mit Fressen und Flüchten. Unter Reisenden erzählt man sich, es sei ein gutes Zeichen, ihr zu begegnen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "A... Angst",
+				"SkillDesc": "Das Sparschwein hat sich erschreckt und wird in 2 Runden fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800204002,
+				"Name": "Lauf ... Lauf!",
+				"SkillDesc": "Das Sparschwein ist in Panik geraten und wird in 1 Runde fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800204003,
+				"Name": "Puh ... Entkommen",
+				"SkillDesc": "Das Sparschwein flieht blitzschnell.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800204002": {
+		"Id": "800204002",
+		"Name": "Warp-Sparschwein",
+		"Introduction": "Eine interdimensionale Kreatur, die in den Sternen verloren ging. Sanftmütig, süßlich im Geschmack, aber ungenießbar. Diese Spezies verbringt den Großteil ihres Lebens mit Fressen und Flüchten. Unter Reisenden erzählt man sich, es sei ein gutes Zeichen, ihr zu begegnen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "A... Angst",
+				"SkillDesc": "Das Sparschwein hat sich erschreckt und wird in 2 Runden fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800204002,
+				"Name": "Lauf ... Lauf!",
+				"SkillDesc": "Das Sparschwein ist in Panik geraten und wird in 1 Runde fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800204003,
+				"Name": "Puh ... Entkommen",
+				"SkillDesc": "Das Sparschwein flieht blitzschnell.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800208101": {
+		"Id": "800208101",
+		"Name": "Sparschwein der Bewahrung",
+		"Introduction": "Eine interdimensionale Kreatur, die in den Sternen verloren ging. Sanftmütig, süßlich im Geschmack, aber ungenießbar. Diese Spezies verbringt den Großteil ihres Lebens mit Fressen und Flüchten. Unter Reisenden erzählt man sich, es sei ein gutes Zeichen, ihr zu begegnen.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "A... Angst",
+				"SkillDesc": "Das Sparschwein hat sich erschreckt und wird in 2 Rd. fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800208102,
+				"Name": "Lauf ... Lauf!",
+				"SkillDesc": "Das Sparschwein ist in Panik geraten und wird in 1 Rd. fliehen.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800208103,
+				"Name": "Puh ... Entkommen",
+				"SkillDesc": "Das Sparschwein flieht blitzschnell.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800208104,
+				"Name": "Sch... Schutz für dich",
+				"SkillDesc": "Wendet bei Kampfeintritt „Sch... Schutz für dich“ auf alle verbündeten Einheiten an. Jede Stapelung „Sch... Schutz für dich“ kann 1-mal allen SCH außer DoT von 1 eingehenden Treffer absorbieren. „Sch... Schutz für dich“ wird vom gesamten Team geteilt.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"800301001": {
 		"Id": "800301001",
@@ -11314,6 +13147,102 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"800302005": {
+		"Id": "800302005",
+		"Name": "Lodern aus dem All",
+		"Introduction": "Diese außerirdische Lebensform, die aus dem Fragmentum geboren und durch das Stellaron erschaffen wurde, ernährt sich von der Energie dieser Welt. Auf ihrer Rüstung lodern die sengenden Flammen aus dem Innern eines Sterns.\nIm Kampf äschert das Lodern aus dem All alles ein, mit dem es in Berührung kommt.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Brüllendes Inferno",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Feuer-SCH zu und hat eine hohe Wahrscheinlichkeit, Anfachen zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Flammende Absorption",
+				"SkillDesc": "Wechselt in den Selbstentzündungs-Zustand. Regen der reinigenden Flammen kann mehrmals hintereinander eingesetzt werden.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Regen der reinigenden Flammen",
+				"SkillDesc": "Fügt einem zufälligen einzelnen Ziel fortlaufend geringen Feuer-SCH zu und hat eine hohe Wahrscheinlichkeit, Anfachen zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Geschmolzene Fusion",
+				"SkillDesc": "Erhöht ANG. Dieser Buff wird bei Schwächebruch entfernt.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800302006": {
+		"Id": "800302006",
+		"Name": "Lodern aus dem All",
+		"Introduction": "Diese außerirdische Lebensform, die aus dem Fragmentum geboren und durch das Stellaron erschaffen wurde, ernährt sich von der Energie dieser Welt. Auf ihrer Rüstung lodern die sengenden Flammen aus dem Innern eines Sterns.\nIm Kampf äschert das Lodern aus dem All alles ein, mit dem es in Berührung kommt.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Brüllendes Inferno",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Feuer-SCH zu und hat eine hohe Wahrscheinlichkeit, Anfachen zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Flammende Absorption",
+				"SkillDesc": "Wechselt in den Selbstentzündungs-Zustand. Regen der reinigenden Flammen kann mehrmals hintereinander eingesetzt werden.",
+				"SkillTypeDesc": "Fähigkeit"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Regen der reinigenden Flammen",
+				"SkillDesc": "Fügt einem zufälligen einzelnen Ziel fortlaufend geringen Feuer-SCH zu und hat eine hohe Wahrscheinlichkeit, Anfachen zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Geschmolzene Fusion",
+				"SkillDesc": "Erhöht ANG. Dieser Buff wird bei Schwächebruch entfernt.",
+				"SkillTypeDesc": "Fähigkeit"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -11785,8 +13714,7 @@
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
-			"Wind",
-			"Imaginary"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -11794,7 +13722,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -12073,7 +14001,7 @@
 			"Physical": 0.2,
 			"Fire": 0,
 			"Ice": 0,
-			"Wind": 0.3,
+			"Wind": 0.4,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -12149,6 +14077,90 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"801101002": {
+		"Id": "801101002",
+		"Name": "Baryon",
+		"Introduction": "Um die Kollision und Vernichtung der Antiteilchen zu verhindern, hat die Antimaterie-Legion zwei Arten von Ionenfallen für den Transport gebaut, die als Baryonen und Antibaryonen bezeichnet werden.\nBaryonen verfügen über eine gewisse Grundintelligenz. Sie können beschworen werden und befolgen auf dem Schlachtfeld die Anweisungen der Leeren-Rangers, um ihnen den Weg freizuräumen.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Auslöschen",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Quantum-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101003": {
+		"Id": "801101003",
+		"Name": "Baryon",
+		"Introduction": "Um die Kollision und Vernichtung der Antiteilchen zu verhindern, hat die Antimaterie-Legion zwei Arten von Ionenfallen für den Transport gebaut, die als Baryonen und Antibaryonen bezeichnet werden.\nBaryonen verfügen über eine gewisse Grundintelligenz. Sie können beschworen werden und befolgen auf dem Schlachtfeld die Anweisungen der Leeren-Rangers, um ihnen den Weg freizuräumen.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Auslöschen",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Quantum-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101004": {
+		"Id": "801101004",
+		"Name": "Baryon",
+		"Introduction": "Um die Kollision und Vernichtung der Antiteilchen zu verhindern, hat die Antimaterie-Legion zwei Arten von Ionenfallen für den Transport gebaut, die als Baryonen und Antibaryonen bezeichnet werden.\nBaryonen verfügen über eine gewisse Grundintelligenz. Sie können beschworen werden und befolgen auf dem Schlachtfeld die Anweisungen der Leeren-Rangers, um ihnen den Weg freizuräumen.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Auslöschen",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen Quantum-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"801102001": {
 		"Id": "801102001",
 		"Name": "Antibaryon",
@@ -12176,6 +14188,90 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801102002": {
+		"Id": "801102002",
+		"Name": "Antibaryon",
+		"Introduction": "Um die Kollision und Vernichtung der Antiteilchen zu verhindern, hat die Antimaterie-Legion zwei Arten von Ionenfallen für den Transport gebaut, die als Baryonen und Antibaryonen bezeichnet werden.\nAntibaryonen verfügen über eine gewisse Grundintelligenz. Sie können beschworen werden und befolgen auf dem Schlachtfeld die Anweisungen der Leeren-Rangers, um ihnen den Weg freizuräumen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Auslöschen",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102003": {
+		"Id": "801102003",
+		"Name": "Antibaryon",
+		"Introduction": "Um die Kollision und Vernichtung der Antiteilchen zu verhindern, hat die Antimaterie-Legion zwei Arten von Ionenfallen für den Transport gebaut, die als Baryonen und Antibaryonen bezeichnet werden.\nAntibaryonen verfügen über eine gewisse Grundintelligenz. Sie können beschworen werden und befolgen auf dem Schlachtfeld die Anweisungen der Leeren-Rangers, um ihnen den Weg freizuräumen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Auslöschen",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102004": {
+		"Id": "801102004",
+		"Name": "Antibaryon",
+		"Introduction": "Um die Kollision und Vernichtung der Antiteilchen zu verhindern, hat die Antimaterie-Legion zwei Arten von Ionenfallen für den Transport gebaut, die als Baryonen und Antibaryonen bezeichnet werden.\nAntibaryonen verfügen über eine gewisse Grundintelligenz. Sie können beschworen werden und befolgen auf dem Schlachtfeld die Anweisungen der Leeren-Rangers, um ihnen den Weg freizuräumen.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Auslöschen",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801201001": {
 		"Id": "801201001",
@@ -12463,13 +14559,12 @@
 		"Introduction": "Überlebende Krieger wurden in der Kriegsschmiede neu gegossen und wurden mit der Macht der Zerstörung ausgestattet. Ihre Körper werden durch Antimaterie abgerundet und negative Teilchen schwingen durch ihre Formen.\nSie sind gewalttätig und aggressiv, verkörpern den Willen der Zerstörung und sind einfache Kampfeinheiten der Antimaterie-Legion. Sie handeln ausschließlich nach ihren zerstörerischen Instinkten.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Thunder",
-			"Ice"
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0.2,
-			"Ice": 0,
+			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
@@ -12527,6 +14622,111 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801201011": {
+		"Id": "801201011",
+		"Name": "Leeren-Ranger: Plünderer",
+		"Introduction": "Überlebende Krieger wurden in der Kriegsschmiede neu gegossen und mit der Macht der Zerstörung ausgestattet. Ihre Körper werden durch Antimaterie abgerundet und negative Teilchen schwingen durch ihre Formen.\nSie sind gewalttätig und aggressiv, verkörpern den Willen der Zerstörung und sind einfache Kampfeinheiten der Antimaterie-Legion. Sie handeln ausschließlich nach ihren zerstörerischen Instinkten.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Jagdklinge",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex-Sprung",
+				"SkillDesc": "Fügt einem anvisierten Ziel und angrenzenden Einheiten geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201012": {
+		"Id": "801201012",
+		"Name": "Leeren-Ranger: Plünderer",
+		"Introduction": "Überlebende Krieger wurden in der Kriegsschmiede neu gegossen und mit der Macht der Zerstörung ausgestattet. Ihre Körper werden durch Antimaterie abgerundet und negative Teilchen schwingen durch ihre Formen.\nSie sind gewalttätig und aggressiv, verkörpern den Willen der Zerstörung und sind einfache Kampfeinheiten der Antimaterie-Legion. Sie handeln ausschließlich nach ihren zerstörerischen Instinkten.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Jagdklinge",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex-Sprung",
+				"SkillDesc": "Fügt einem anvisierten Ziel und angrenzenden Einheiten geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201013": {
+		"Id": "801201013",
+		"Name": "Leeren-Ranger: Plünderer",
+		"Introduction": "Überlebende Krieger wurden in der Kriegsschmiede neu gegossen und mit der Macht der Zerstörung ausgestattet. Ihre Körper werden durch Antimaterie abgerundet und negative Teilchen schwingen durch ihre Formen.\nSie sind gewalttätig und aggressiv, verkörpern den Willen der Zerstörung und sind einfache Kampfeinheiten der Antimaterie-Legion. Sie handeln ausschließlich nach ihren zerstörerischen Instinkten.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Jagdklinge",
+				"SkillDesc": "Fügt einem anvisierten Ziel geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex-Sprung",
+				"SkillDesc": "Fügt einem anvisierten Ziel und angrenzenden Einheiten geringen imaginären SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801202001": {
 		"Id": "801202001",
@@ -12632,6 +14832,41 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801202004": {
+		"Id": "801202004",
+		"Name": "Leeren-Ranger: Verzerrer",
+		"Introduction": "Ein Leeren-Ranger, der die Effekte der Vernichtung überlebt hat. Die positiven und negativen Teilchen in seinem Körper sind vorübergehend in ein seltsames Gleichgewicht geraten, weshalb er mächtiger ist als ein normaler Plünderer.\nEinfache Kampfeinheiten der Antimaterie-Legion. Sie verfügen über eine gewisse Intelligenz und können Plünderer in der näheren Umgebung kontrollieren.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Das Kommando der Nichtigkeit",
+				"SkillDesc": "Visiert eine zufällige Einheit in deinem Team an und macht diese zum Ziel der Angriffe aller Feinde.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Schattenloser Leerenschlag",
+				"SkillDesc": "Verursacht bei einem einzelnen Ziel Quantum-SCH.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -13057,5 +15292,119 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801301006": {
+		"Id": "801301006",
+		"Name": "Leeren-Ranger: Trampler",
+		"Introduction": "Als die Antimaterie-Legion in der Kriegsschmiede die Überreste gefallener Krieger mit denen der Leviathane verschmolz, war dies das Ergebnis.\nMan trifft sie nur recht selten an, doch sie verfügen über die Intelligenz eines Kriegers und die Macht und Beweglichkeit eines Leviathans. Ihr Schrei kann jede Menge Leeren-Ranger beschwören.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unwirkliche Projektion",
+				"SkillDesc": "Verursacht bei einem einzelnen Ziel Quantum-SCH.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Herrschaft der Macht",
+				"SkillDesc": "Verursacht bei einem einzelnen Ziel Quantum-SCH.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Kriegstrampler",
+				"SkillDesc": "Fügt einem einzelnen Ziel und angrenzenden Einheiten geringen Quantum-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiralpfeil",
+				"SkillDesc": "Visiert ein einzelnes Ziel an. Wirkt bei der nächsten Aktion „Ende des Bogens“ gegen dieses Ziel.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Ende des Bogens",
+				"SkillDesc": "Fügt einem anvisierten Ziel Quantum-SCH zu und hat eine hohe Wahrscheinlichkeit, Verschränkung zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801301007": {
+		"Id": "801301007",
+		"Name": "Leeren-Ranger: Trampler",
+		"Introduction": "Als die Antimaterie-Legion in der Kriegsschmiede die Überreste gefallener Krieger mit denen der Leviathane verschmolz, war dies das Ergebnis.\nMan trifft sie nur recht selten an, doch sie verfügen über die Intelligenz eines Kriegers und die Macht und Beweglichkeit eines Leviathans. Ihr Schrei kann jede Menge Leeren-Ranger beschwören.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unwirkliche Projektion",
+				"SkillDesc": "Verursacht bei einem einzelnen Ziel Quantum-SCH.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Herrschaft der Macht",
+				"SkillDesc": "Verursacht bei einem einzelnen Ziel Quantum-SCH.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Kriegstrampler",
+				"SkillDesc": "Fügt einem einzelnen Ziel und angrenzenden Einheiten geringen Quantum-SCH zu.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiralpfeil",
+				"SkillDesc": "Visiert ein einzelnes Ziel an. Wirkt bei der nächsten Aktion „Ende des Bogens“ gegen dieses Ziel.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Ende des Bogens",
+				"SkillDesc": "Fügt einem anvisierten Ziel Quantum-SCH zu und hat eine hohe Wahrscheinlichkeit, Verschränkung zu verursachen.",
+				"SkillTypeDesc": "Fähigkeit",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
 	}
 }

@@ -829,7 +829,7 @@
 				"Id": 100402209,
 				"Name": "Suporte",
 				"SkillDesc": "Quando a fase começar, invoca imediatamente Soldado Crinalva ou Canhoneiro Crinalva.",
-				"SkillTypeDesc": "Habilidade"
+				"SkillTypeDesc": "Talento"
 			},
 			{
 				"Id": 100402210,
@@ -1378,7 +1378,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
@@ -2432,7 +2432,7 @@
 	"2002010": {
 		"Id": "2002010",
 		"Name": "Patrulheiro dos Cavaleiros das Nuvens",
-		"Introduction": "Membros da divisão de patrulha local dos Cavaleiros das Nuvens do Luofu do Xianzhou. Usando um conjunto leve de armadura prateada e um Gládio Devastador nas mãos, fica a cargo deles manter a ordem de todos os domínios.",
+		"Introduction": "Membros da divisão de patrulha local dos Cavaleiros das Nuvens do Luofu do Xianzhou. Usando um conjunto leve de armadura prateada e uma Alabarda Devastadora nas mãos, fica a cargo deles manter a ordem de todos os domínios.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -2687,7 +2687,7 @@
 				"Id": 201201002,
 				"Name": "Chama da Vela",
 				"SkillDesc": "Ao receber um Golpe Fatal, causa Dano de Fogo a todas as unidades aliadas, com altas chances de reduzir a DEF delas.",
-				"SkillTypeDesc": "Habilidade",
+				"SkillTypeDesc": "Talento",
 				"ElementType": "Fire"
 			}
 		],
@@ -3623,16 +3623,102 @@
 			{
 				"Id": 800208004,
 				"Name": "P-Proteção Reforçada",
-				"SkillDesc": "Ao entrar em batalha, aplica Proteção Reforçada em todas as unidades aliadas. Cada acúmulo de Proteção Reforçada é capaz de anular todo o Dano recebido de um 1 golpe, exceto por fontes de Dano Contínuo. Os acúmulos de P-Proteção Reforçada são compartilhados por toda a equipe.",
+				"SkillDesc": "Ao entrar em batalha, aplica \"P-Proteção Reforçada\" em todas as unidades aliadas. Cada acúmulo de \"P-Proteção Reforçada\" é capaz de anular todo o Dano recebido de um 1 golpe, exceto por fontes de Dano Contínuo. Os acúmulos de \"P-Proteção Reforçada\" são compartilhados por toda a equipe.",
 				"SkillTypeDesc": "Talento"
 			}
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002081": {
+		"Id": "8002081",
+		"Name": "Cofrinho da Preservação",
+		"Introduction": "Criatura interdimensional perdida nas estrelas. É de natureza dócil, tem o sabor doce, mas não é comestível. Essa espécie passa a maior parte da vida se alimentando e fugindo. Viajantes que o encontram, o veem como um sinal de boa sorte.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "M-M-M-Medo",
+				"SkillDesc": "O Cofrinho de Tesouro se assustou e fugirá em 2 rodadas.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800208102,
+				"Name": "Corra... Corra!",
+				"SkillDesc": "O Cofrinho de Tesouro está em pânico e fugirá em 1 rodada.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800208103,
+				"Name": "Ufa... Escapei",
+				"SkillDesc": "O Cofrinho fugirá em um instante.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800208104,
+				"Name": "P-Proteção Reforçada",
+				"SkillDesc": "Ao entrar em batalha, aplica \"P-Proteção Reforçada\" em todas as unidades aliadas. Cada acúmulo de \"P-Proteção Reforçada\" é capaz de anular todo o Dano recebido de um 1 golpe, exceto por fontes de Dano Contínuo. Os acúmulos de \"Proteção Reforçada\" são compartilhados por toda a equipe.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"8002090": {
+		"Id": "8002090",
+		"Name": "Cofrinho de Sequência",
+		"Introduction": "Criatura interdimensional perdida nas estrelas. É de natureza dócil, tem o sabor doce, mas não é comestível. Essa espécie passa a maior parte da vida se alimentando e fugindo. Viajantes que o encontram, o veem como um sinal de boa sorte.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800209001,
+				"Name": "M-M-M-Medo",
+				"SkillDesc": "O Cofrinho se assustou e fugirá em 2 rodadas.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800209002,
+				"Name": "Corra... Corra!",
+				"SkillDesc": "O Cofrinho está em pânico e fugirá em 1 rodada.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800209003,
+				"Name": "Ufa... Escapei",
+				"SkillDesc": "O Cofrinho fugirá em um instante.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"8003010": {
 		"Id": "8003010",
 		"Name": "Gelo do Espaço Sideral",
-		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum e criado pelo Stellaron, ele parasita as estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
+		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum trazido pelo Stellaron, ele se alimenta das estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -3874,7 +3960,7 @@
 			{
 				"Id": 800303002,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -3942,7 +4028,7 @@
 			{
 				"Id": 800303102,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -4286,7 +4372,7 @@
 	"8012010": {
 		"Id": "8012010",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Thunder"
@@ -5238,6 +5324,146 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100202009": {
+		"Id": "100202009",
+		"Name": "Indigente",
+		"Introduction": "Para sobreviver, alguns habitantes do Mundo de Baixo se desesperam, a ponto de se aventurarem no Fragmentum, em busca de qualquer coisa que possa ser salva. O maquinário antigo que eles cavaram se tornou o melhor ajudante deles.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Ataque de Pá",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspiração",
+				"SkillDesc": "Aumenta o ATQ de uma unidade aliada e a faz agir imediatamente.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202010": {
+		"Id": "100202010",
+		"Name": "Indigente",
+		"Introduction": "Para sobreviver, alguns habitantes do Mundo de Baixo se desesperam, a ponto de se aventurarem no Fragmentum, em busca de qualquer coisa que possa ser salva. O maquinário antigo que eles cavaram se tornou o melhor ajudante deles.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Ataque de Pá",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspiração",
+				"SkillDesc": "Aumenta o ATQ de uma unidade aliada e a faz agir imediatamente.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202012": {
+		"Id": "100202012",
+		"Name": "Indigente",
+		"Introduction": "Para sobreviver, alguns habitantes do Mundo de Baixo se desesperam a ponto de se aventurarem no Fragmentum em busca de qualquer coisa que possam usar. O maquinário antigo que eles cavaram se tornou o melhor ajudante deles.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Ataque de Pá",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspiração",
+				"SkillDesc": "Aumenta o ATQ de uma unidade aliada e a faz agir imediatamente.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100202013": {
+		"Id": "100202013",
+		"Name": "Indigente",
+		"Introduction": "Para sobreviver, alguns habitantes do Mundo de Baixo se desesperam, a ponto de se aventurarem no Fragmentum em busca de qualquer coisa que possa ser salva. O maquinário antigo que eles cavaram se tornou o melhor ajudante deles.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Ataque de Pá",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspiração",
+				"SkillDesc": "Aumenta o ATQ de uma unidade aliada e a faz agir imediatamente.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100203001": {
 		"Id": "100203001",
 		"Name": "Canhoneiro Crinalva",
@@ -5484,6 +5710,88 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"100203007": {
+		"Id": "100203007",
+		"Name": "Canhoneiro Crinalva",
+		"Introduction": "Um canhoneiro dos Guardas Crinalva que usa um canhão de mão portátil em batalha.\nDurante o combate, um Canhoneiro Crinalva desferirá ataques brutais em cadeia com seus outros aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Barragem",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Suporte de Cobertura",
+				"SkillDesc": "Fornece suporte a uma unidade aliada. Quando esta unidade ataca, ela executa um Ataque Extra que causa Dano Físico leve ao alvo atacado e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Suporte de Cobertura",
+				"SkillDesc": "Fornece suporte a uma unidade aliada. Quando esta unidade ataca, ela executa um Ataque Extra que causa Dano Físico leve ao alvo atacado e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100203008": {
+		"Id": "100203008",
+		"Name": "Canhoneiro Crinalva",
+		"Introduction": "Um canhoneiro dos Guardas Crinalva que usa um canhão de mão portátil em batalha.\nDurante o combate, um Canhoneiro Crinalva desferirá ataques brutais em cadeia com seus outros aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Barragem",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Suporte de Cobertura",
+				"SkillDesc": "Fornece suporte a uma unidade aliada. Quando esta unidade ataca, ela executa um Ataque Extra que causa Dano Físico leve ao alvo atacado e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Suporte de Cobertura",
+				"SkillDesc": "Fornece suporte a uma unidade aliada. Quando esta unidade ataca, ela executa um Ataque Extra que causa Dano Físico leve ao alvo atacado e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"100204001": {
 		"Id": "100204001",
 		"Name": "Soldado Crinalva",
@@ -5694,13 +6002,13 @@
 			"Ice"
 		],
 		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
 			"Wind": 0,
-			"Thunder": 0,
+			"Thunder": 0.2,
 			"Quantum": 0,
-			"Imaginary": 0
+			"Imaginary": 0.2
 		},
 		"SkillList": [
 			{
@@ -5853,6 +6161,91 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100204015": {
+		"Id": "100204015",
+		"Name": "Soldado Crinalva",
+		"Introduction": "Membro dos Guardas Crinalva de Belobog encarregado de liderar o ataque contra as linhas inimigas.\nAtaques de Soldados Crinalva reduzirão as defesas dos inimigos deles durante o combate.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum",
+			"Fire"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Investida Incansável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, com altas chances de reduzir a DEF dele.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204016": {
+		"Id": "100204016",
+		"Name": "Soldado Crinalva",
+		"Introduction": "Membro dos Guardas Crinalva de Belobog encarregado de liderar o ataque contra as linhas inimigas.\nAtaques de Soldados Crinalva reduzirão as defesas dos inimigos deles durante o combate.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Investida Incansável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, com altas chances de reduzir a DEF dele.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100204019": {
+		"Id": "100204019",
+		"Name": "Soldado Crinalva",
+		"Introduction": "Membro dos Guardas Crinalva de Belobog encarregado de liderar o ataque contra as linhas inimigas.\nAtaques de Soldados Crinalva reduzirão a DEF dos inimigos deles durante o combate.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Investida Incansável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, com altas chances de reduzir a DEF dele.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100204101": {
 		"Id": "100204101",
@@ -6194,6 +6587,96 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100205012": {
+		"Id": "100205012",
+		"Name": "Artilheiro Crinalva",
+		"Introduction": "Arqueiro dos Guardas Crinalva de Belobog encarregado de atirar com precisão contra inimigos.\nOs disparos dos Arqueiros Crinalva infligem Sangramento nos seus inimigos durante o combate.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Granada Perfurante",
+				"SkillDesc": "Causa Dano Físico a um único alvo, com altas chances de infligir Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205013": {
+		"Id": "100205013",
+		"Name": "Artilheiro Crinalva",
+		"Introduction": "Um artilheiro dos Guardas Crinalva de Belobog encarregado de atirar com precisão contra inimigos.\nOs disparos dos Artilheiros Crinalva infligem Sangramento nos seus inimigos durante o combate.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Physical",
+			"Fire",
+			"Ice",
+			"Imaginary",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Granada Perfurante",
+				"SkillDesc": "Causa Dano Físico a um único alvo, com altas chances de infligir Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"100205015": {
+		"Id": "100205015",
+		"Name": "Artilheiro Crinalva",
+		"Introduction": "Arqueiro dos Guardas Crinalva de Belobog encarregado de atirar com precisão contra inimigos.\nOs disparos dos Arqueiros Crinalva infligem Sangramento nos seus inimigos durante o combate.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "Granada Perfurante",
+				"SkillDesc": "Causa Dano Físico a um único alvo, com altas chances de infligir Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100301001": {
 		"Id": "100301001",
@@ -6578,6 +7061,54 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"100301009": {
+		"Id": "100301009",
+		"Name": "Tenente Crinalva",
+		"Introduction": "Líder de um esquadrão dos Guardas Crinalva de Belobog.\nTenentes Crinalva podem erguer um escudo gigante durante o combate e se aprimorarem. Atacar um Tenente Crinalva com escudo erguido resultará imediatamente em um contra-ataque poderoso.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Investida",
+				"SkillDesc": "Causa Dano Físico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Perfuração",
+				"SkillDesc": "Causa Dano Físico massivo a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Reflexo de Escudo",
+				"SkillDesc": "Entra no estado de Contra-Ataque. Quando atacado por um único personagem, age imediatamente e conjura \"Perfuração\" no atacante.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Reforço",
+				"SkillDesc": "Invoca Soldado Crinalva ou Artilheiro Crinalva",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"100301201": {
 		"Id": "100301201",
@@ -7128,6 +7659,108 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101201006": {
+		"Id": "101201006",
+		"Name": "Autômato Canino",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Ele parece um veículo de transporte cujo propósito foi esquecido há muito tempo.\nEm combate, o Autômato Canino pode dar suporte e restaurar os PV de seus aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Golpe Vertical",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Módulo de Autocura",
+				"SkillDesc": "Recupera os PV das unidades aliadas imediatamente.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201007": {
+		"Id": "101201007",
+		"Name": "Autômato Canino",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Ele parece um veículo de transporte cujo propósito foi esquecido há muito tempo.\nEm combate, o Autômato Canino pode dar suporte e restaurar os PV de seus aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Golpe Vertical",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Módulo de Autocura",
+				"SkillDesc": "Recupera os PV das unidades aliadas imediatamente.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101201009": {
+		"Id": "101201009",
+		"Name": "Autômato Canino",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Ele parece um veículo de transporte cujo propósito foi esquecido há muito tempo.\nEm combate, os Autômatos Caninos podem dar suporte e restaurar os PV de seus aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Golpe Vertical",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Módulo de Autocura",
+				"SkillDesc": "Recupera os PV das unidades aliadas imediatamente.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101202001": {
 		"Id": "101202001",
 		"Name": "Destruidor de Novatos: Silo",
@@ -7422,8 +8055,7 @@
 		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Os humanos o encarregaram de realizar os serviços manuais mais básicos.\nEm combate, os Autômatos Aracnídeos são altamente instáveis e capazes de explodir quando danificados.",
 		"ElementalWeaknesses": [
 			"Thunder",
-			"Wind",
-			"Quantum"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -7431,7 +8063,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -7561,6 +8193,198 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101202107": {
+		"Id": "101202107",
+		"Name": "Autômato Aracnídeo",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. É encarregado de realizar serviços básicos para humanos.\nEm combate, o Autômato Aracnídeo é altamente instável e capaz de explodir quando danificado.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Aríete",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Módulo Temporizado",
+				"SkillDesc": "A próxima ação usa Módulo Autoexplosivo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Módulo Autoexplosivo",
+				"SkillDesc": "Se autodestrói, causando Dano de Fogo a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Correntes da Destruição",
+				"SkillDesc": "Causa Dano de Fogo a unidades adjacentes quando sofre um Golpe Fatal.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202108": {
+		"Id": "101202108",
+		"Name": "Autômato Aracnídeo",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. É encarregado de realizar serviços básicos para humanos.\nEm combate, o Autômato Aracnídeo é altamente instável e capaz de explodir quando danificado.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Aríete",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Módulo Temporizado",
+				"SkillDesc": "A próxima ação usa Módulo Autoexplosivo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Módulo Autoexplosivo",
+				"SkillDesc": "Se autodestrói, causando Dano de Fogo a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Correntes da Destruição",
+				"SkillDesc": "Causa Dano de Fogo a unidades adjacentes quando sofre um Golpe Fatal.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202109": {
+		"Id": "101202109",
+		"Name": "Autômato Aracnídeo",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. É encarregado de realizar serviços básicos para humanos.\nEm combate, o Autômato Aracnídeo é altamente instável e capaz de explodir quando danificado.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Aríete",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Módulo Temporizado",
+				"SkillDesc": "A próxima ação usa Módulo Autoexplosivo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Módulo Autoexplosivo",
+				"SkillDesc": "Se autodestrói, causando Dano de Fogo a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Correntes da Destruição",
+				"SkillDesc": "Causa Dano de Fogo a unidades adjacentes quando sofre um Golpe Fatal.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101202110": {
+		"Id": "101202110",
+		"Name": "Autômato Aracnídeo",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. É encarregado de realizar serviços básicos para humanos.\nEm combate, o Autômato Aracnídeo é altamente instável e capaz de explodir quando danificado.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "Aríete",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "Módulo Temporizado",
+				"SkillDesc": "A próxima ação usa Módulo Autoexplosivo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101202103,
+				"Name": "Módulo Autoexplosivo",
+				"SkillDesc": "Se autodestrói, causando Dano de Fogo a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "Correntes da Destruição",
+				"SkillDesc": "Causa Dano de Fogo a unidades adjacentes quando sofre um Golpe Fatal.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101203001": {
 		"Id": "101203001",
 		"Name": "Autômato Insectoide",
@@ -7587,7 +8411,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
@@ -7620,7 +8444,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
@@ -7649,7 +8473,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
@@ -7678,7 +8502,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
@@ -7707,7 +8531,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
@@ -7736,7 +8560,7 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
@@ -7765,12 +8589,157 @@
 			{
 				"Id": 101203001,
 				"Name": "Campo de Força Instável",
-				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira anula todo o Dano recebido, exceto Dano Contínuo. Esse efeito desaparece após receber um ataque.",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Physical"
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101203008": {
+		"Id": "101203008",
+		"Name": "Autômato Insectoide",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Uma luz de sinalização fica em suas pernas, e a unidade provavelmente era utilizada em operações de mineração ou de construção.\nEm combate, os Autômatos Insectoides podem criar campos de força para se protegerem.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Campo de Força Instável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203009": {
+		"Id": "101203009",
+		"Name": "Autômato Insectoide",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Uma luz de sinalização fica em suas pernas, e a unidade provavelmente era utilizada em operações de mineração ou de construção.\nEm combate, os Autômatos Insectoides podem criar campos de força para se protegerem.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Campo de Força Instável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203010": {
+		"Id": "101203010",
+		"Name": "Autômato Insectoide",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Uma luz de sinalização fica em suas pernas, e a unidade provavelmente era utilizada em operações de mineração ou de construção.\nEm combate, os Autômatos Insectoides podem criar campos de força para se protegerem.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Campo de Força Instável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203011": {
+		"Id": "101203011",
+		"Name": "Autômato Insectoide",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Uma luz de sinalização fica em suas pernas, e a unidade provavelmente era utilizada em operações de mineração ou de construção.\nEm combate, os Autômatos Insectoides podem criar campos de força para se protegerem.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Campo de Força Instável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101203013": {
+		"Id": "101203013",
+		"Name": "Autômato Insectoide",
+		"Introduction": "Autômato montado com tecnologia do Velho Mundo. Uma luz de sinalização fica em suas pernas, e a unidade provavelmente era utilizada em operações de mineração ou de construção.\nEm combate, os Autômatos Insectoides podem criar campos de força para se protegerem.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Campo de Força Instável",
+				"SkillDesc": "Causa Dano Físico a um único alvo, e concede uma Barreira a si mesmo. A Barreira resiste a todos os tipos de Dano recebido, exceto por fontes de Dano Contínuo, até o inimigo ser atacado.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -8374,6 +9343,60 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"101301012": {
+		"Id": "101301012",
+		"Name": "Autômato Ursino",
+		"Introduction": "Um autômato montado com tecnologia do Velho Mundo. Ele foi reforçado com uma armadura resistente para avançar nos inimigos e proteger os Guardas Crinalva.\nEm combate, um Autômato Ursino invocará Autômatos Aracnídeos e desferirá um poderoso ataque carregado.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Ordem de Detonação",
+				"SkillDesc": "Invoca Autômato Aracnídeo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Ordem de Fúria",
+				"SkillDesc": "Chance de Provocar todos os alvos.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Ordem de Combustão",
+				"SkillDesc": "Entra no estado de Carga. O próximo ataque usa \"Ordem de Expurgo\" em todos os alvos.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Ordem de Expurgo",
+				"SkillDesc": "Causa Dano Físico massivo a todos os alvos.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Ordem de Destruição",
+				"SkillDesc": "Causa Dano Físico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"101301013": {
 		"Id": "101301013",
 		"Name": "Autômato Ursino",
@@ -8427,6 +9450,60 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101301014": {
+		"Id": "101301014",
+		"Name": "Autômato Ursino",
+		"Introduction": "Um autômato montado com tecnologia do Velho Mundo. Ele foi reforçado com uma armadura resistente para avançar nos inimigos e proteger os Guardas Crinalva.\nEm combate, os Autômatos Ursinos invocarão Autômatos Aracnídeos e desferirão um ataque carregado poderoso.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Ordem de Detonação",
+				"SkillDesc": "Invoca Autômato Aracnídeo.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Ordem de Fúria",
+				"SkillDesc": "Chance de Provocar todos os alvos.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Ordem de Combustão",
+				"SkillDesc": "Entra no estado de Carga. O próximo ataque usa \"Ordem de Expurgo\" em todos os alvos.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Ordem de Expurgo",
+				"SkillDesc": "Causa Dano Físico massivo a todos os alvos.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Ordem de Destruição",
+				"SkillDesc": "Causa Dano Físico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101302001": {
 		"Id": "101302001",
@@ -8778,14 +9855,13 @@
 		"ElementalWeaknesses": [
 			"Ice",
 			"Thunder",
-			"Imaginary",
-			"Wind"
+			"Imaginary"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0.2,
 			"Ice": 0,
-			"Wind": 0,
+			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -8971,6 +10047,153 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"101302012": {
+		"Id": "101302012",
+		"Name": "Autômato Lupino",
+		"Introduction": "Um autômato montado com tecnologia do Velho Mundo. Esse tipo raro de autômato humanoide é equipado com uma serra elétrica no braço direito, provavelmente utilizada para operações de mineração e construção.\nEm combate, os Autômatos Lupinos usarão a serra elétrica para infligir Sangramento e causar Dano Contínuo nos inimigos.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Ordem de Abate",
+				"SkillDesc": "Causa Dano Físico massivo em um único alvo, com uma chance de causar Sangramento no alvo atingido. Se o alvo não estiver com Escudo, um aliado aleatório dele sofrerá \"Desconstrução\" por 1 vez.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Alvo Adquirido",
+				"SkillDesc": "Trava a Mira em um único alvo. A próxima ação no alvo irá usar \"Ordem de Abate\".",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Ordem de Desintegração",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo, com altas chances de infligir 1 acúmulo de Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Desconstrução",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo, com altas chances de infligir 1 acúmulo de Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302013": {
+		"Id": "101302013",
+		"Name": "Autômato Lupino",
+		"Introduction": "Um autômato montado com tecnologia do Velho Mundo. Esse tipo raro de autômato humanoide é equipado com uma serra elétrica no braço direito, provavelmente utilizada para operações de mineração e construção.\nEm combate, os Autômatos Lupinos usarão a serra elétrica para infligir Sangramento e causar Dano Contínuo nos inimigos.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Ordem de Abate",
+				"SkillDesc": "Causa Dano Físico massivo em um único alvo, com uma chance de causar Sangramento no alvo atingido. Se o alvo não estiver com Escudo, um aliado aleatório dele sofrerá \"Desconstrução\" por 1 vez.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Alvo Adquirido",
+				"SkillDesc": "Trava a Mira em um único alvo. A próxima ação no alvo irá usar \"Ordem de Abate\".",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Ordem de Desintegração",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo, com altas chances de infligir 1 acúmulo de Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Desconstrução",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo, com altas chances de infligir 1 acúmulo de Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"101302014": {
+		"Id": "101302014",
+		"Name": "Autômato Lupino",
+		"Introduction": "Um autômato montado com tecnologia do Velho Mundo. Esse tipo raro de autômato humanoide é equipado com uma serra elétrica no braço direito, provavelmente utilizada para operações de mineração e construção.\nEm combate, os Autômatos Lupinos usarão a serra elétrica para infligir Sangramento e causar Dano Contínuo nos inimigos.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Ordem de Abate",
+				"SkillDesc": "Causa Dano Físico massivo em um único alvo, com uma chance de causar Sangramento no alvo atingido. Se o alvo não estiver com Escudo, um aliado aleatório dele sofrerá \"Desconstrução\" por 1 vez.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Alvo Adquirido",
+				"SkillDesc": "Trava a Mira em um único alvo. A próxima ação no alvo irá usar \"Ordem de Abate\".",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Ordem de Desintegração",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo, com altas chances de infligir 1 acúmulo de Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Desconstrução",
+				"SkillDesc": "Causa Dano Físico leve a um único alvo, com altas chances de infligir 1 acúmulo de Sangramento.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"101401001": {
 		"Id": "101401001",
@@ -9398,7 +10621,7 @@
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0,
@@ -9443,6 +10666,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102201005": {
+		"Id": "102201005",
+		"Name": "Habitante da Sombra do Inverno Eterno",
+		"Introduction": "Sombras que vagam pelo Fragmentum desde a chegada do Congelamento Eterno. Imitam a forma dos Guardas Crinalva de modo distorcido e são equipados com as mesmas armaduras uniformizadas dos guerreiros de Belobog, mas no lugar de seu rosto se encontra apenas gelo.\nSombrios do Inverno Eterno atacarão com seu machado de gelo e diminuirão a velocidade dos inimigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Esmagamento Congelante",
+				"SkillDesc": "Causa Dano de Gelo a um único alvo e atrasa a ação dele.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102202001": {
 		"Id": "102202001",
@@ -9514,7 +10766,7 @@
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0,
 			"Thunder": 0,
@@ -9589,6 +10841,35 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102202006": {
+		"Id": "102202006",
+		"Name": "Habitante da Sombra de Incineração",
+		"Introduction": "Sombras que vagam pelo Fragmentum desde a chegada do Congelamento Eterno. Imitam a forma dos Guardas Crinalva de modo distorcido e são equipadas com as mesmas armaduras uniformes dos guerreiros de Belobog, mas no lugar de seu crânio se encontram apenas brasas sem rosto.\nHabitantes da Sombra de Incineração atacarão com seu machado de fogo e aplicarão Queimadura em inimigos em batalha.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Esmagamento Escaldante",
+				"SkillDesc": "Causa Dano de Fogo a um único alvo, com altas chances de infligir Queimadura.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -9811,6 +11092,116 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"102301005": {
+		"Id": "102301005",
+		"Name": "Gatuno Flamejante",
+		"Introduction": "Uma máquina vagando pelo Fragmentum. Sem dúvidas, é um monstro criado pelos poderes distorcidos do Fragmentum, sem nenhum traço de tecnologia humana.\nOs ataques do Gatuno Flamejante causam dano bônus contra inimigos afetados por Queimadura.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Lâmina Carmesim",
+				"SkillDesc": "Causa Dano de Fogo a um único alvo, com altas chances de infligir Queimadura.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Lâmina de Combustão",
+				"SkillDesc": "Causa Dano de Fogo a um único alvo e a unidades adjacentes ao alvo. Este ataque prioriza alvos sofrendo com Queimadura.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Derretimento",
+				"SkillDesc": "Após atacar um alvo Queimado, recebe um aumento de Dano.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 102301004,
+				"Name": "Operação de Alta Temperatura",
+				"SkillDesc": "Aumenta um pouco o ATQ e aumenta muito a VEL. Esta melhoria é removida com Quebra de Fraqueza.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Cinzas Dançantes",
+				"SkillDesc": "Causa Dano de Fogo a todos os alvos. Alvos que estiverem sofrendo Queimadura recebem Dano de Fogo extra e têm a Queimadura removida.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"102301006": {
+		"Id": "102301006",
+		"Name": "Gatuno Flamejante",
+		"Introduction": "Uma máquina vagando pelo Fragmentum. Sem dúvidas, esta monstruosidade não foi criada por humanos, mas sim uma imitação criada pelos poderes perversos do Fragmentum.\nOs ataques do Gatuno Flamejante causam dano extra contra inimigos afligidos por Queimadura.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Lâmina Carmesim",
+				"SkillDesc": "Causa Dano de Fogo a um único alvo, com altas chances de infligir Queimadura.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Lâmina de Combustão",
+				"SkillDesc": "Causa Dano de Fogo a um único alvo e a unidades adjacentes ao alvo. Este ataque prioriza alvos sofrendo com Queimadura.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Derretimento",
+				"SkillDesc": "Após atacar um alvo Queimado, recebe um aumento de Dano.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 102301004,
+				"Name": "Operação de Alta Temperatura",
+				"SkillDesc": "Aumenta um pouco o ATQ e aumenta muito a VEL. Esta melhoria é removida com Quebra de Fraqueza.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Cinzas Dançantes",
+				"SkillDesc": "Causa Dano de Fogo a todos os alvos. Alvos que estiverem sofrendo Queimadura recebem Dano de Fogo extra e têm a Queimadura removida.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"102302001": {
 		"Id": "102302001",
 		"Name": "Gatuno Glacial",
@@ -9932,6 +11323,67 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"102302003": {
+		"Id": "102302003",
+		"Name": "Gatuno Glacial",
+		"Introduction": "Uma máquina vagando pelo Fragmentum. Sem dúvidas, esta monstruosidade não foi criada por humanos, mas sim uma imitação criada pelos poderes perversos do Fragmentum.\nOs ataques do Gatuno Glacial atraem o Habitante da Sombra do Inverno Eterno e reduzem a VEL e a RES a Gelo do seu inimigo.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102302001,
+				"Name": "Punho de Roda de Gelo",
+				"SkillDesc": "Causa Dano de Gelo a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302005,
+				"Name": "Invocação de Outros",
+				"SkillDesc": "Invoca Habitante da Sombra do Inverno Eterno.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 102302006,
+				"Name": "Tempestade Congelada",
+				"SkillDesc": "Causa Dano de Gelo a todos os alvos, com altas chances de infligir Congelamento Profundo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302007,
+				"Name": "Devoração de Outros",
+				"SkillDesc": "Devora 1 Habitante da Sombra do Inverno Eterno para aumentar o ATQ e Trava a Mira em um único alvo. Se não houver nenhum Habitante da Sombra do Inverno Eterno em campo, a DEF é reduzida.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 102302008,
+				"Name": "Devoração de Outros",
+				"SkillDesc": "Devora 1 Habitante da Sombra do Inverno Eterno para aumentar o ATQ e Trava a Mira em um único alvo. Se não houver nenhum Habitante da Sombra do Inverno Eterno em campo, a DEF é reduzida.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 102302009,
+				"Name": "Triturador de Roda de Gelo",
+				"SkillDesc": "Causa Dano de Gelo a um único alvo, com altas chances de infligir Congelamento Profundo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"200401001": {
 		"Id": "200401001",
@@ -10305,6 +11757,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"202301004": {
+		"Id": "202301004",
+		"Name": "Discípulos do Sanctus Medicus: Transformador",
+		"Introduction": "Um cultivador que ansiava reviver as Artes Secretas da Abundância e guiar Xianzhou de volta ao Caminho dos Santos.\nHoje, seu desejo foi realizado. Com o poder dos milagres antigos, que foram usados como armas e armaduras, alguém conseguiu encontrar os segredos da imortalidade.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Choque de Trovão",
+				"SkillDesc": "Causa Dano de Raio a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Raios da Punição",
+				"SkillDesc": "Causa Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Calamidade Retumbante",
+				"SkillDesc": "Causa Dano de Raio massivo a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Invoca-Mara",
+				"SkillDesc": "Consome PV para invocar o Soldado Marafílico.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Drenagem de Vigor",
+				"SkillDesc": "Quando houver outras unidades aliadas com Renascimento no campo, eles realizam um Acerto de Drenagem e, ao acertar um alvo, restauram PV.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"202301005": {
 		"Id": "202301005",
 		"Name": "Yutie",
@@ -10607,14 +12114,15 @@
 		"Introduction": "Elementos cristalizados com inteligência rudimentar. Vagam pelo Fragmentum na forma de um pássaro que emite um calor intenso, queimando tudo em seu caminho.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Ice"
+			"Ice",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
-			"Fire": 0.3,
+			"Fire": 0.4,
 			"Ice": 0,
 			"Wind": 0.2,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10685,6 +12193,147 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800101005": {
+		"Id": "800101005",
+		"Name": "Prole da Chama",
+		"Introduction": "Elemento cristalizado com inteligência rudimentar. Vaga pelo Fragmentum na forma de um pássaro que emite radiação intensa de calor, queimando tudo em seu caminho.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distração",
+				"SkillDesc": "Causa Dano de Fogo leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101006": {
+		"Id": "800101006",
+		"Name": "Prole da Chama",
+		"Introduction": "Elementos cristalizados com inteligência rudimentar. Vagam pelo Fragmentum na forma de um pássaro que emite um calor intenso, queimando tudo em seu caminho.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distração",
+				"SkillDesc": "Causa Dano de Fogo leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101007": {
+		"Id": "800101007",
+		"Name": "Prole da Chama",
+		"Introduction": "Elementos cristalizados com inteligência rudimentar. Vagam pelo Fragmentum na forma de um pássaro que emite um calor intenso, queimando tudo em seu caminho.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distração",
+				"SkillDesc": "Causa Dano de Fogo leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101008": {
+		"Id": "800101008",
+		"Name": "Prole da Chama",
+		"Introduction": "Elementos cristalizados com inteligência rudimentar. Vagam pelo Fragmentum na forma de um pássaro que emite um calor intenso, queimando tudo em seu caminho.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distração",
+				"SkillDesc": "Causa Dano de Fogo leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800101009": {
+		"Id": "800101009",
+		"Name": "Prole da Chama",
+		"Introduction": "Elementos cristalizados com inteligência rudimentar. Vagam pelo Fragmentum na forma de um pássaro que emite um calor intenso, queimando tudo em seu caminho.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distração",
+				"SkillDesc": "Causa Dano de Fogo leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "Prole do Gelo",
@@ -10747,14 +12396,15 @@
 		"Introduction": "Elemento cristalizado com inteligência rudimentar. Vaga pelo Fragmentum na forma de um pássaro que emite temperaturas absurdamente baixas, congelando tudo à sua volta.",
 		"ElementalWeaknesses": [
 			"Fire",
-			"Wind"
+			"Wind",
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0,
-			"Ice": 0.3,
+			"Ice": 0.4,
 			"Wind": 0,
-			"Thunder": 0.2,
+			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
@@ -10825,6 +12475,63 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800102006": {
+		"Id": "800102006",
+		"Name": "Prole do Gelo",
+		"Introduction": "Elemento cristalizado com inteligência rudimentar. Vaga pelo Fragmentum na forma de um pássaro que emite temperaturas absurdamente baixas, congelando tudo à sua volta.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distração",
+				"SkillDesc": "Causa Dano de Gelo a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800102007": {
+		"Id": "800102007",
+		"Name": "Prole do Gelo",
+		"Introduction": "Elemento cristalizado com inteligência rudimentar. Vaga pelo Fragmentum na forma de um pássaro que emite temperaturas absurdamente baixas, congelando tudo à sua volta.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distração",
+				"SkillDesc": "Causa Dano de Gelo a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800201001": {
 		"Id": "800201001",
 		"Name": "Tecelão Imaginário",
@@ -10874,10 +12581,136 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800204001": {
+		"Id": "800204001",
+		"Name": "Cofrinho Dimensional",
+		"Introduction": "Criatura interdimensional perdida nas estrelas. É de natureza dócil, tem o sabor doce, mas não é comestível. Essa espécie passa a maior parte da vida se alimentando e fugindo. Viajantes que o encontram, o veem como um sinal de boa sorte.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "M-M-M-Medo",
+				"SkillDesc": "O Cofrinho de Tesouro se assustou e fugirá em 2 rodadas.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800204002,
+				"Name": "Fugir... Fugir!",
+				"SkillDesc": "O Cofrinho de Tesouro se assustou e fugirá em 1 rodada.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800204003,
+				"Name": "Ufa... Escapei",
+				"SkillDesc": "O Cofrinho fugirá em um instante.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800204002": {
+		"Id": "800204002",
+		"Name": "Cofrinho Dimensional",
+		"Introduction": "Criatura interdimensional perdida nas estrelas. É de natureza dócil, tem o sabor doce, mas não é comestível. Essa espécie passa a maior parte da vida se alimentando e fugindo. Viajantes que o encontram, o veem como um sinal de boa sorte.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800204001,
+				"Name": "M-M-M-Medo",
+				"SkillDesc": "O Cofrinho de Tesouro se assustou e fugirá em 2 rodadas.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800204002,
+				"Name": "Fugir... Fugir!",
+				"SkillDesc": "O Cofrinho de Tesouro se assustou e fugirá em 1 rodada.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800204003,
+				"Name": "Ufa... Escapei",
+				"SkillDesc": "O Cofrinho fugirá em um instante.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800208101": {
+		"Id": "800208101",
+		"Name": "Cofrinho da Preservação",
+		"Introduction": "Criatura interdimensional perdida nas estrelas. É de natureza dócil, tem o sabor doce, mas não é comestível. Essa espécie passa a maior parte da vida se alimentando e fugindo. Viajantes que o encontram, o veem como um sinal de boa sorte.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208101,
+				"Name": "M-M-M-Medo",
+				"SkillDesc": "O Cofrinho de Tesouro se assustou e fugirá em 2 rodadas.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800208102,
+				"Name": "Corra... Corra!",
+				"SkillDesc": "O Cofrinho de Tesouro está em pânico e fugirá em 1 rodada.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800208103,
+				"Name": "Ufa... Escapei",
+				"SkillDesc": "O Cofrinho fugirá em um instante.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800208104,
+				"Name": "P-Proteção Reforçada",
+				"SkillDesc": "Ao entrar em batalha, aplica \"P-Proteção Reforçada\" em todas as unidades aliadas. Cada acúmulo de \"P-Proteção Reforçada\" é capaz de anular todo o Dano recebido de um 1 golpe, exceto por fontes de Dano Contínuo. Os acúmulos de \"Proteção Reforçada\" são compartilhados por toda a equipe.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800301001": {
 		"Id": "800301001",
 		"Name": "Gelo do Espaço Sideral",
-		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum e criado pelo Stellaron, ele parasita as estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
+		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum trazido pelo Stellaron, ele se alimenta das estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -10927,7 +12760,7 @@
 	"800301002": {
 		"Id": "800301002",
 		"Name": "Gelo do Espaço Sideral",
-		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum e criado pelo Stellaron, ele parasita as estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
+		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum trazido pelo Stellaron, ele se alimenta das estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Physical"
@@ -10976,7 +12809,7 @@
 	"800301003": {
 		"Id": "800301003",
 		"Name": "Gelo do Espaço Sideral",
-		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum e criado pelo Stellaron, ele parasita as estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
+		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum trazido pelo Stellaron, ele se alimenta das estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -11026,7 +12859,7 @@
 	"800301004": {
 		"Id": "800301004",
 		"Name": "Gelo do Espaço Sideral",
-		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum e criado pelo Stellaron, ele parasita as estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
+		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum trazido pelo Stellaron, ele se alimenta das estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -11076,7 +12909,7 @@
 	"800301005": {
 		"Id": "800301005",
 		"Name": "Gelo do Espaço Sideral",
-		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum e criado pelo Stellaron, ele parasita as estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
+		"Introduction": "Um ser estranho que não pertence a este mundo. Nascido no Fragmentum trazido pelo Stellaron, ele se alimenta das estruturas básicas deste mundo para obter energia. Sua armadura reflete o triste, mas profundo céu estrelado.\nEm combate, o Gelo do Espaço Sideral congelará os alvos nos quais tocar.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -11315,6 +13148,102 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"800302005": {
+		"Id": "800302005",
+		"Name": "Chama do Espaço Sideral",
+		"Introduction": "Nascida no Fragmentum e criada pelo Stellaron, essa forma de vida alienígena se alimenta da energia deste mundo. O fogo abrasador do núcleo de uma estrela queima em sua armadura.\nEm combate, a Chama do Espaço Sideral incinerará qualquer coisa que tocar.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Inferno Retumbante",
+				"SkillDesc": "Causa Dano de Fogo leve a um único alvo, com altas chances de infligir Abrasador.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorção de Fogo",
+				"SkillDesc": "Entra no estado Combustão Espontânea. Chuva de Chama Purificadora pode ser usada em ataques subsequentes.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Chuva de Chama Purificadora",
+				"SkillDesc": "Causa Dano de Fogo leve sucessivo a um único alvo aleatório, com chance de infligir Abrasador.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusão Derretida",
+				"SkillDesc": "Ganha ATQ. Esta melhoria é removida quando há Quebra de Fraqueza.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"800302006": {
+		"Id": "800302006",
+		"Name": "Chama do Espaço Sideral",
+		"Introduction": "Nascida no Fragmentum e criada pelo Stellaron, essa forma de vida alienígena se alimenta da energia deste mundo. O fogo abrasador do núcleo de uma estrela queima em sua armadura.\nEm combate, a Chama do Espaço Sideral incinerará qualquer coisa que tocar.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Inferno Retumbante",
+				"SkillDesc": "Causa Dano de Fogo leve a um único alvo, com altas chances de infligir Abrasador.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorção de Fogo",
+				"SkillDesc": "Entra no estado Combustão Espontânea. Chuva de Chama Purificadora pode ser usada em ataques subsequentes.",
+				"SkillTypeDesc": "Habilidade"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Chuva de Chama Purificadora",
+				"SkillDesc": "Causa Dano de Fogo leve sucessivo a um único alvo aleatório, com chance de infligir Abrasador.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusão Derretida",
+				"SkillDesc": "Ganha ATQ. Esta melhoria é removida quando há Quebra de Fraqueza.",
+				"SkillTypeDesc": "Habilidade"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"800303001": {
 		"Id": "800303001",
 		"Name": "Sombra Guardiã",
@@ -11344,7 +13273,7 @@
 			{
 				"Id": 800303002,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -11412,7 +13341,7 @@
 			{
 				"Id": 800303002,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -11480,7 +13409,7 @@
 			{
 				"Id": 800303002,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -11548,7 +13477,7 @@
 			{
 				"Id": 800303002,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -11616,7 +13545,7 @@
 			{
 				"Id": 800303002,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -11684,7 +13613,7 @@
 			{
 				"Id": 800303002,
 				"Name": "Condenação de Raio",
-				"SkillDesc": "Causa pouco Dano de Raio a um único alvo e unidades adjacentes ao alvo.",
+				"SkillDesc": "Causa Dano de Raio leve a um único alvo e unidades adjacentes ao alvo.",
 				"SkillTypeDesc": "Habilidade",
 				"ElementType": "Thunder"
 			},
@@ -11785,8 +13714,7 @@
 		"ElementalWeaknesses": [
 			"Fire",
 			"Thunder",
-			"Wind",
-			"Imaginary"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
@@ -11794,7 +13722,7 @@
 			"Ice": 0.2,
 			"Wind": 0,
 			"Thunder": 0,
-			"Quantum": 0,
+			"Quantum": 0.2,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -12073,7 +14001,7 @@
 			"Physical": 0.2,
 			"Fire": 0,
 			"Ice": 0,
-			"Wind": 0.3,
+			"Wind": 0.4,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -12149,6 +14077,90 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"801101002": {
+		"Id": "801101002",
+		"Name": "Baryon",
+		"Introduction": "Para prevenir a colisão e aniquilação de partículas e antipartículas, a Legião Antimatéria criou dois tipos de armadilhas de íons em miniatura para transporte, que juntas são chamadas de Baryons e Antibaryons. \nBaryons apresentam uma inteligência simples, e podem abrir o caminho de acordo com os comandos dos Guarda-Vazios no campo de batalha.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliteração",
+				"SkillDesc": "Causa Dano Quântico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101003": {
+		"Id": "801101003",
+		"Name": "Baryon",
+		"Introduction": "Para prevenir a colisão e aniquilação de partículas e antipartículas, a Legião Antimatéria criou dois tipos de armadilhas de íons em miniatura para transporte, que juntas são chamadas de Baryons e Antibaryons. \nBaryons apresentam uma inteligência simples, e podem abrir o caminho de acordo com os comandos dos Guarda-Vazios no campo de batalha.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliteração",
+				"SkillDesc": "Causa Dano Quântico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801101004": {
+		"Id": "801101004",
+		"Name": "Baryon",
+		"Introduction": "Para prevenir a colisão e aniquilação de partículas e antipartículas, a Legião Antimatéria criou dois tipos de armadilhas de íons em miniatura para transporte, que juntas são chamadas de Baryons e Antibaryons. \nBaryons apresentam uma inteligência simples, e podem abrir o caminho de acordo com os comandos dos Guarda-Vazios no campo de batalha.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliteração",
+				"SkillDesc": "Causa Dano Quântico leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"801102001": {
 		"Id": "801102001",
 		"Name": "Antibaryon",
@@ -12177,10 +14189,94 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"801102002": {
+		"Id": "801102002",
+		"Name": "Antibaryon",
+		"Introduction": "Para prevenir a colisão e aniquilação das antipartículas, a Legião Antimatéria criou dois tipos de armadilhas de íons em miniatura para transporte, que juntas são chamadas de Baryons e Antibaryons.\nAntibaryons apresentam inteligência simples e podem ser invocados e respondem à vontade dos Guarda-Vazios no campo de batalha para liberar o caminho.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Obliteração",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102003": {
+		"Id": "801102003",
+		"Name": "Antibaryon",
+		"Introduction": "Para prevenir a colisão e aniquilação de partículas e antipartículas, a Legião Antimatéria criou dois tipos de armadilhas de íons em miniatura para transporte, que juntas são chamadas de Baryons e Antibaryons. \nAntibaryons apresentam uma inteligência simples, e podem abrir o caminho de acordo com os comandos dos Guarda-Vazios no campo de batalha.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Obliteração",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801102004": {
+		"Id": "801102004",
+		"Name": "Antibaryon",
+		"Introduction": "Para prevenir a colisão e aniquilação de partículas e antipartículas, a Legião Antimatéria criou dois tipos de armadilhas de íons em miniatura para transporte, que juntas são chamadas de Baryons e Antibaryons. \nAntibaryons apresentam uma inteligência simples, e podem abrir o caminho de acordo com os comandos dos Guarda-Vazios no campo de batalha.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Obliteração",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
 	"801201001": {
 		"Id": "801201001",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Thunder"
@@ -12215,7 +14311,7 @@
 	"801201002": {
 		"Id": "801201002",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Thunder"
@@ -12250,7 +14346,7 @@
 	"801201003": {
 		"Id": "801201003",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Thunder"
@@ -12285,7 +14381,7 @@
 	"801201004": {
 		"Id": "801201004",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Thunder"
@@ -12320,7 +14416,7 @@
 	"801201005": {
 		"Id": "801201005",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Thunder"
@@ -12355,7 +14451,7 @@
 	"801201006": {
 		"Id": "801201006",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Ice"
@@ -12390,7 +14486,7 @@
 	"801201007": {
 		"Id": "801201007",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Ice"
@@ -12425,7 +14521,7 @@
 	"801201008": {
 		"Id": "801201008",
 		"Name": "Guarda-Vazio: Furtador",
-		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra que ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Ice"
@@ -12463,13 +14559,12 @@
 		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Thunder",
-			"Ice"
+			"Thunder"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0.2,
-			"Ice": 0,
+			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
@@ -12527,6 +14622,111 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801201011": {
+		"Id": "801201011",
+		"Name": "Guarda-Vazio: Furtador",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Lâmina de Caça",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Salto no Vórtice",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo e a unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201012": {
+		"Id": "801201012",
+		"Name": "Guarda-Vazio: Furtador",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Lâmina de Caça",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Salto no Vórtice",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo e a unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801201013": {
+		"Id": "801201013",
+		"Name": "Guarda-Vazio: Furtador",
+		"Introduction": "Guerreiros próximos da morte foram reformulados na Forja da Guerra e ganharam o poder da Destruição. A antimatéria completa seus corpos, e as partículas negativas reverberam por suas formas.\nViolentos e agressivos, eles personificam a vontade da Destruição, tornando-se unidades de combate da Legião Antimatéria e agindo de acordo com seus instintos destrutivos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Lâmina de Caça",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Salto no Vórtice",
+				"SkillDesc": "Causa Dano Imaginário leve a um único alvo e a unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801202001": {
 		"Id": "801202001",
@@ -12632,6 +14832,41 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801202004": {
+		"Id": "801202004",
+		"Name": "Guarda-Vazio: Alterador",
+		"Introduction": "Um Guarda-Vazio que sobreviveu ao efeito da aniquilação e tem as partículas positivas e negativas de seu corpo estranhamente equilibradas, garantindo mais poder que furtadores comuns.\nUnidade de combate básica da Legião Antimatéria. Apresenta um pouco de inteligência e é capaz de controlar furtadores em uma área circundante próxima.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Comando de Inexistência",
+				"SkillDesc": "Trava a Mira em uma unidade aleatória da sua equipe, tornando-a alvo de ataques de todos os seus inimigos.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Acerto do Vazio Sem Sombra",
+				"SkillDesc": "Causa Dano Quântico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -13057,5 +15292,119 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801301006": {
+		"Id": "801301006",
+		"Name": "Guarda-Vazio: Pisoteador",
+		"Introduction": "Produto da Legião Antimatéria que utiliza a Forja da Guerra para reformar e fundir remanescentes de Leviatãs e guerreiros mortos.\nApesar de relativamente raro, apresenta a inteligência de um guerreiro e poder e mobilidade de um Leviatã. Seu grito pode invocar um grande número de Guarda-Vazios.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Projeção Irreal",
+				"SkillDesc": "Causa Dano Quântico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Regra da Força",
+				"SkillDesc": "Causa Dano Quântico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Esmagador de Guerra",
+				"SkillDesc": "Causa Dano Quântico leve a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Flecha Espiral",
+				"SkillDesc": "Mira em um único alvo. Conjura Fim do Arco a este alvo na próxima ação.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Fim do Arco",
+				"SkillDesc": "Causa Dano Quântico massivo a um único alvo, com muita chance de infligir Embaraço.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
+	},
+	"801301007": {
+		"Id": "801301007",
+		"Name": "Guarda-Vazio: Pisoteador",
+		"Introduction": "Produto da Legião Antimatéria que utiliza a Forja da Guerra para reformar e fundir remanescentes de Leviatãs e guerreiros mortos.\nApesar de relativamente raro, apresenta a inteligência de um guerreiro e poder e mobilidade de um Leviatã. Seu grito pode invocar um grande número de Guarda-Vazios.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Projeção Irreal",
+				"SkillDesc": "Causa Dano Quântico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Regra da Força",
+				"SkillDesc": "Causa Dano Quântico a um único alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Esmagador de Guerra",
+				"SkillDesc": "Causa Dano Quântico leve a um único alvo e unidades adjacentes ao alvo.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Flecha Espiral",
+				"SkillDesc": "Mira em um único alvo. Conjura Fim do Arco a este alvo na próxima ação.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Fim do Arco",
+				"SkillDesc": "Causa Dano Quântico massivo a um único alvo, com muita chance de infligir Embaraço.",
+				"SkillTypeDesc": "Habilidade",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.1"
 	}
 }

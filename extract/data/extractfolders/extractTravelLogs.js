@@ -16,7 +16,7 @@ function collate(langCode) {
 
 		data.Description = textmap[obj.PanelDesc.Hash]?.replaceAll('\\n', '\n');
 		data.Tag = textmap[obj.TagDesc.Hash];
-		data.Introduction = textmap[obj.IntroDesc.Hash].replaceAll('\\n', '\n');
+		data.Introduction = textmap[obj.IntroDesc.Hash]?.replaceAll('\\n', '\n');
 
 		data.ImageIconTab = obj.TabIcon;
 

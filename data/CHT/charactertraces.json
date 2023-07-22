@@ -144,7 +144,7 @@
 				"Name": "可愛即是正義",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "為指定我方單體提供能夠抵消等同於三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>傷害的護盾，持續<unbreak>#2[i]</unbreak>回合。\n若該目標生命值百分比大於等於<unbreak>#3[i]%</unbreak>，則遭到敵方攻擊的機率大幅提高。",
+				"EffectRaw": "為指定我方單體提供能夠抵消等同於三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>傷害的護盾，持續<unbreak>#2[i]</unbreak>回合。\n若該目標現有生命值百分比大於等於<unbreak>#3[i]%</unbreak>，則遭到敵方攻擊的機率大幅提高。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100102"
@@ -2082,7 +2082,7 @@
 				"Name": "寸長寸強",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "當丹恆成為我方技能的目標時，下一次攻擊的風<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。該效果在<unbreak>#2[i]</unbreak>回合後可再次觸發。",
+				"EffectRaw": "當丹恆成為我方技能的目標時，下一次攻擊的風屬性<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。該效果在<unbreak>#2[i]</unbreak>回合後可再次觸發。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100204"
@@ -2347,7 +2347,7 @@
 				"Name": "潛龍",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "若生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則被敵方目標攻擊的機率降低。",
+				"EffectRaw": "若現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則被敵方目標攻擊的機率降低。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_SkillTree1.png",
@@ -3724,7 +3724,7 @@
 				"Name": "不完全燃燒",
 				"NodeType": 2,
 				"NodeTypeText": "秘技",
-				"EffectRaw": "使用秘技後，製造1片持續<unbreak>#4[i]</unbreak>秒的特殊領域。與處於特殊領域內的敵人進入戰鬥後，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方目標的火屬性傷害承受提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。由我方製造的領域效果同時最多只能存在1個。",
+				"EffectRaw": "使用秘技後，製造1片持續<unbreak>#4[i]</unbreak>秒的特殊領域。與處於特殊領域內的敵人進入戰鬥後，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方目標受到的火屬性傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。由我方製造的領域效果同時最多只能存在1個。",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"100307"
@@ -3825,7 +3825,7 @@
 				"Name": "道標",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "若生命值百分比大於等於<unbreak>#1[i]%</unbreak>，則暴擊率提高<unbreak>#2[i]%</unbreak>。",
+				"EffectRaw": "若現有生命值百分比大於等於<unbreak>#1[i]%</unbreak>，則暴擊率提高<unbreak>#2[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_SkillTree3.png",
@@ -5181,7 +5181,7 @@
 				"Name": "懲戒",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "施放終結技時，有<unbreak>#1[i]%</unbreak>基礎機率使目標的傷害承受提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
+				"EffectRaw": "施放終結技時，有<unbreak>#1[i]%</unbreak>基礎機率使目標受到的傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_SkillTree1.png",
@@ -5826,7 +5826,7 @@
 					"1": {
 						"EffectValues": [
 							0.8,
-							0.8,
+							0.6,
 							0.3
 						],
 						"Costs": []
@@ -5834,7 +5834,7 @@
 					"2": {
 						"EffectValues": [
 							0.88,
-							0.82,
+							0.615,
 							0.33
 						],
 						"AscensionRequired": 1,
@@ -5854,7 +5854,7 @@
 					"3": {
 						"EffectValues": [
 							0.96,
-							0.84,
+							0.63,
 							0.36
 						],
 						"AscensionRequired": 2,
@@ -5879,7 +5879,7 @@
 					"4": {
 						"EffectValues": [
 							1.04,
-							0.86,
+							0.645,
 							0.39
 						],
 						"AscensionRequired": 3,
@@ -5904,7 +5904,7 @@
 					"5": {
 						"EffectValues": [
 							1.12,
-							0.88,
+							0.66,
 							0.42
 						],
 						"AscensionRequired": 4,
@@ -5929,7 +5929,7 @@
 					"6": {
 						"EffectValues": [
 							1.2,
-							0.9,
+							0.675,
 							0.45
 						],
 						"AscensionRequired": 4,
@@ -5954,7 +5954,7 @@
 					"7": {
 						"EffectValues": [
 							1.3,
-							0.925,
+							0.6938,
 							0.4875
 						],
 						"AscensionRequired": 5,
@@ -5979,7 +5979,7 @@
 					"8": {
 						"EffectValues": [
 							1.4,
-							0.95,
+							0.7125,
 							0.525
 						],
 						"AscensionRequired": 5,
@@ -5995,8 +5995,7 @@
 								"Count": 5
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							},
 							{
@@ -6009,7 +6008,7 @@
 					"9": {
 						"EffectValues": [
 							1.5,
-							0.975,
+							0.7313,
 							0.5625
 						],
 						"AscensionRequired": 6,
@@ -6030,8 +6029,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6039,7 +6037,7 @@
 					"10": {
 						"EffectValues": [
 							1.6,
-							1,
+							0.75,
 							0.6
 						],
 						"AscensionRequired": 6,
@@ -6060,8 +6058,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6086,8 +6083,8 @@
 							0.48,
 							1,
 							2,
-							0.75,
-							0.8
+							0.95,
+							0.72
 						],
 						"Costs": []
 					},
@@ -6096,8 +6093,8 @@
 							0.512,
 							1,
 							2,
-							0.8256,
-							0.82
+							1.045,
+							0.738
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -6118,8 +6115,8 @@
 							0.544,
 							1,
 							2,
-							0.9013,
-							0.84
+							1.14,
+							0.756
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -6145,8 +6142,8 @@
 							0.576,
 							1,
 							2,
-							0.9769,
-							0.86
+							1.235,
+							0.774
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -6172,8 +6169,8 @@
 							0.608,
 							1,
 							2,
-							1.0525,
-							0.88
+							1.33,
+							0.792
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -6199,8 +6196,8 @@
 							0.64,
 							1,
 							2,
-							1.1659,
-							0.9
+							1.4725,
+							0.81
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -6226,8 +6223,8 @@
 							0.68,
 							1,
 							2,
-							1.3172,
-							0.925
+							1.6625,
+							0.8325
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -6253,8 +6250,8 @@
 							0.72,
 							1,
 							2,
-							1.5063,
-							0.95
+							1.9,
+							0.855
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -6269,8 +6266,7 @@
 								"Count": 5
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							},
 							{
@@ -6285,8 +6281,8 @@
 							0.76,
 							1,
 							2,
-							1.7331,
-							0.975
+							2.185,
+							0.8775
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -6306,8 +6302,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6317,8 +6312,8 @@
 							0.8,
 							1,
 							2,
-							1.96,
-							1
+							2.47,
+							0.9
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -6338,8 +6333,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6351,7 +6345,7 @@
 				"Name": "溫柔亦同殘酷",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "當卡芙卡的隊友對敵方目標發動普通攻擊後，卡芙卡立即發動<u>追加攻擊</u>，對該目標造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，並有<unbreak>#4[i]%</unbreak>的基礎機率使目標受到的持續傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。該效果每回合只能觸發1次。",
+				"EffectRaw": "當卡芙卡的隊友對敵方目標發動普通攻擊後，卡芙卡立即發動<u>追加攻擊</u>，對該目標造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，並有<unbreak>#4[i]%</unbreak>的<u>基礎機率</u>使目標受到的持續傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。該效果每回合只能觸發1次。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100504"
@@ -6539,8 +6533,7 @@
 								"Count": 5
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							},
 							{
@@ -6575,8 +6568,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6606,8 +6598,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6619,7 +6610,7 @@
 				"Name": "寬恕無關慈悲",
 				"NodeType": 2,
 				"NodeTypeText": "秘技",
-				"EffectRaw": "立即攻擊敵人，進入戰鬥後對敵方隨機單體造成等同於卡芙卡<unbreak>#4[i]%</unbreak>攻擊力的雷屬性傷害，同時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使每個敵方目標陷入觸電狀態，持續<unbreak>#3[i]</unbreak>回合。\n觸電狀態下，敵方目標每回合開始時受到等同於卡芙卡<unbreak>#2[i]%</unbreak>攻擊力的雷屬性持續傷害。",
+				"EffectRaw": "立即攻擊敵人，進入戰鬥後對敵方全體造成等同於卡芙卡<unbreak>#4[i]%</unbreak>攻擊力的雷屬性傷害，同時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入觸電狀態，持續<unbreak>#3[i]</unbreak>回合。\n觸電狀態下，敵方目標每回合開始時受到等同於卡芙卡<unbreak>#2[i]%</unbreak>攻擊力的雷屬性持續傷害。",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"100507"
@@ -6643,15 +6634,15 @@
 				"Name": "折磨",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "施放戰技和終結技使處於持續傷害類負面狀態的敵方目標立即承受持續傷害時，傷害倍率按比例提高，提高的比例等同於卡芙卡擊破特攻的<unbreak>#1[i]%</unbreak>，最高不超過<unbreak>#2[i]%</unbreak>。",
+				"EffectRaw": "施放戰技和終結技使處於持續傷害類負面狀態的敵方目標立即產生持續傷害時，傷害倍率按比例提高，提高的比例等同於卡芙卡擊破特攻的<unbreak>#1[i]%</unbreak>，最高不超過<unbreak>#2[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point06",
-				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_SkillTree1.png",
+				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Normal.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.15,
-							0.3
+							0.24,
+							0.24
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -6666,8 +6657,7 @@
 								"Count": 3
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6682,7 +6672,7 @@
 				"EffectRaw": "觸電狀態下的敵方目標被消滅時，卡芙卡額外回復<unbreak>#1[i]</unbreak>點能量。",
 				"MaxLevel": 1,
 				"Location": "Point07",
-				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_SkillTree2.png",
+				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_BP.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
@@ -6706,8 +6696,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6722,7 +6711,7 @@
 				"EffectRaw": "天賦使敵方目標受到的持續傷害提高的基礎機率提高<unbreak>#1[i]%</unbreak>，終結技使敵方目標陷入觸電狀態的基礎機率提高<unbreak>#2[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point08",
-				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_SkillTree3.png",
+				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Ultra.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
@@ -6747,8 +6736,7 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110503",
 								"Count": 1
 							}
 						]
@@ -6765,7 +6753,7 @@
 				"StatBonusType": "AttackAddedRatio",
 				"StatBonusValue": 0.04,
 				"Location": "Point09",
-				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Normal.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
@@ -7277,7 +7265,7 @@
 				"Name": "是否允許更改？",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "對指定敵方單體造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害，同時有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>向目標施加1個場上我方目標持有屬性的弱點，持續<unbreak>#3[i]</unbreak>回合，並使該弱點對應屬性的抗性降低<unbreak>#4[i]%</unbreak>。\n有<unbreak>#5[i]%</unbreak>的<u>基礎機率</u>額外使目標的傷害抗性降低<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>，持續<unbreak>#7[i]</unbreak>回合。",
+				"EffectRaw": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>向指定敵方單體目標附加1個場上我方目標持有屬性的弱點，且該弱點對應屬性的抗性降低<unbreak>#4[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。若附加的是敵方目標原有屬性的弱點，則不會觸發對應屬性的抗性降低效果。\n同一敵方目標僅能被銀狼附加1個弱點，當銀狼對其再次附加弱點時，僅保留最新附加的弱點。\n有<unbreak>#5[i]%</unbreak>的<u>基礎機率</u>額外使該目標的全屬性抗性降低<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>，持續<unbreak>#7[i]</unbreak>回合。\n對該目標造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100602"
@@ -7287,25 +7275,25 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.7,
+							0.98,
 							0.75,
-							3,
+							2,
 							0.2,
 							1,
-							0.12,
-							3
+							0.075,
+							2
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							0.77,
+							1.078,
 							0.76,
-							3,
+							2,
 							0.2,
 							1,
-							0.124,
-							3
+							0.0775,
+							2
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -7323,13 +7311,13 @@
 					},
 					"3": {
 						"EffectValues": [
-							0.84,
+							1.176,
 							0.77,
-							3,
+							2,
 							0.2,
 							1,
-							0.128,
-							3
+							0.08,
+							2
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -7352,13 +7340,13 @@
 					},
 					"4": {
 						"EffectValues": [
-							0.91,
+							1.274,
 							0.78,
-							3,
+							2,
 							0.2,
 							1,
-							0.132,
-							3
+							0.0825,
+							2
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -7381,13 +7369,13 @@
 					},
 					"5": {
 						"EffectValues": [
-							0.98,
+							1.372,
 							0.79,
-							3,
+							2,
 							0.2,
 							1,
-							0.136,
-							3
+							0.085,
+							2
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -7410,13 +7398,13 @@
 					},
 					"6": {
 						"EffectValues": [
-							1.05,
+							1.47,
 							0.8,
-							3,
+							2,
 							0.2,
 							1,
-							0.14,
-							3
+							0.0875,
+							2
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -7439,13 +7427,13 @@
 					},
 					"7": {
 						"EffectValues": [
-							1.1375,
+							1.5925,
 							0.8125,
-							3,
+							2,
 							0.2,
 							1,
-							0.145,
-							3
+							0.0906,
+							2
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -7468,13 +7456,13 @@
 					},
 					"8": {
 						"EffectValues": [
-							1.225,
+							1.715,
 							0.825,
-							3,
+							2,
 							0.2,
 							1,
-							0.15,
-							3
+							0.0938,
+							2
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -7502,13 +7490,13 @@
 					},
 					"9": {
 						"EffectValues": [
-							1.3125,
+							1.8375,
 							0.8375,
-							3,
+							2,
 							0.2,
 							1,
-							0.155,
-							3
+							0.0969,
+							2
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -7536,13 +7524,13 @@
 					},
 					"10": {
 						"EffectValues": [
-							1.4,
+							1.96,
 							0.85,
-							3,
+							2,
 							0.2,
 							1,
-							0.16,
-							3
+							0.1,
+							2
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -7575,7 +7563,7 @@
 				"Name": "|帳號封鎖|",
 				"NodeType": 2,
 				"NodeTypeText": "終結技",
-				"EffectRaw": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>使受到攻擊的敵方目標防禦力降低<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>，持續<unbreak>#4[i]</unbreak>回合，同時對指定敵方單體造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
+				"EffectRaw": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>使指定敵方單體防禦力降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持續<unbreak>#4[i]</unbreak>回合，同時對該目標造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100603"
@@ -7585,18 +7573,18 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							2.1,
+							2.28,
 							0.85,
-							0.4,
+							0.36,
 							3
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							2.24,
+							2.432,
 							0.865,
-							0.41,
+							0.369,
 							3
 						],
 						"AscensionRequired": 1,
@@ -7615,9 +7603,9 @@
 					},
 					"3": {
 						"EffectValues": [
-							2.38,
+							2.584,
 							0.88,
-							0.42,
+							0.378,
 							3
 						],
 						"AscensionRequired": 2,
@@ -7641,9 +7629,9 @@
 					},
 					"4": {
 						"EffectValues": [
-							2.52,
+							2.736,
 							0.895,
-							0.43,
+							0.387,
 							3
 						],
 						"AscensionRequired": 3,
@@ -7667,9 +7655,9 @@
 					},
 					"5": {
 						"EffectValues": [
-							2.66,
+							2.888,
 							0.91,
-							0.44,
+							0.396,
 							3
 						],
 						"AscensionRequired": 4,
@@ -7693,9 +7681,9 @@
 					},
 					"6": {
 						"EffectValues": [
-							2.8,
+							3.04,
 							0.925,
-							0.45,
+							0.405,
 							3
 						],
 						"AscensionRequired": 4,
@@ -7719,9 +7707,9 @@
 					},
 					"7": {
 						"EffectValues": [
-							2.975,
+							3.23,
 							0.9438,
-							0.4625,
+							0.4163,
 							3
 						],
 						"AscensionRequired": 5,
@@ -7745,9 +7733,9 @@
 					},
 					"8": {
 						"EffectValues": [
-							3.15,
+							3.42,
 							0.9625,
-							0.475,
+							0.4275,
 							3
 						],
 						"AscensionRequired": 5,
@@ -7776,9 +7764,9 @@
 					},
 					"9": {
 						"EffectValues": [
-							3.325,
+							3.61,
 							0.9813,
-							0.4875,
+							0.4388,
 							3
 						],
 						"AscensionRequired": 6,
@@ -7807,9 +7795,9 @@
 					},
 					"10": {
 						"EffectValues": [
-							3.5,
+							3.8,
 							1,
-							0.5,
+							0.45,
 							3
 						],
 						"AscensionRequired": 6,
@@ -7853,21 +7841,21 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.075,
-							0.075,
 							0.05,
+							0.04,
+							0.03,
 							0.6,
-							2
+							3
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							0.0825,
-							0.0825,
 							0.055,
+							0.044,
+							0.033,
 							0.612,
-							2
+							3
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -7885,11 +7873,11 @@
 					},
 					"3": {
 						"EffectValues": [
-							0.09,
-							0.09,
 							0.06,
+							0.048,
+							0.036,
 							0.624,
-							2
+							3
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -7912,11 +7900,11 @@
 					},
 					"4": {
 						"EffectValues": [
-							0.0975,
-							0.0975,
 							0.065,
+							0.052,
+							0.039,
 							0.636,
-							2
+							3
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -7939,11 +7927,11 @@
 					},
 					"5": {
 						"EffectValues": [
-							0.105,
-							0.105,
 							0.07,
+							0.056,
+							0.042,
 							0.648,
-							2
+							3
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -7966,11 +7954,11 @@
 					},
 					"6": {
 						"EffectValues": [
-							0.1125,
-							0.1125,
 							0.075,
+							0.06,
+							0.045,
 							0.66,
-							2
+							3
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -7993,11 +7981,11 @@
 					},
 					"7": {
 						"EffectValues": [
-							0.1219,
-							0.1219,
 							0.0813,
+							0.065,
+							0.0488,
 							0.675,
-							2
+							3
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -8020,11 +8008,11 @@
 					},
 					"8": {
 						"EffectValues": [
-							0.1313,
-							0.1313,
 							0.0875,
+							0.07,
+							0.0525,
 							0.69,
-							2
+							3
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -8052,11 +8040,11 @@
 					},
 					"9": {
 						"EffectValues": [
-							0.1406,
-							0.1406,
 							0.0938,
+							0.075,
+							0.0563,
 							0.705,
-							2
+							3
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -8084,11 +8072,11 @@
 					},
 					"10": {
 						"EffectValues": [
-							0.15,
-							0.15,
 							0.1,
+							0.08,
+							0.06,
 							0.72,
-							2
+							3
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -8121,7 +8109,7 @@
 				"Name": "|強制結束程式|",
 				"NodeType": 2,
 				"NodeTypeText": "秘技",
-				"EffectRaw": "立即攻擊敵人，進入戰鬥後無視弱點屬性削減敵方全體的韌性。擊破弱點時，觸發量子屬性的弱點擊破效果。",
+				"EffectRaw": "立即攻擊敵人，進入戰鬥後對敵方全體造成等同於銀狼<unbreak>#1[i]%</unbreak>攻擊力的量子屬性傷害，並無視弱點屬性削減敵方全體的韌性，擊破弱點時，觸發量子屬性的弱點擊破效果。",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"100607"
@@ -8130,7 +8118,9 @@
 				"ImageIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Maze.png",
 				"Levels": {
 					"1": {
-						"EffectValues": [],
+						"EffectValues": [
+							0.8
+						],
 						"Costs": []
 					}
 				}
@@ -8143,7 +8133,7 @@
 				"EffectRaw": "【缺陷】的持續時間增加<unbreak>#1[i]</unbreak>回合。每當有敵方目標的弱點被擊破時，銀狼有<unbreak>#2[i]%</unbreak>的基礎機率對該目標植入1個隨機【缺陷】。",
 				"MaxLevel": 1,
 				"Location": "Point06",
-				"ImageIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_SkillTree3.png",
+				"ImageIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_SkillTree1.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
@@ -8176,7 +8166,7 @@
 				"Name": "注入",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "施放戰技時，為敵方目標植入的弱點持續時間增加<unbreak>#1[i]</unbreak>回合。",
+				"EffectRaw": "施放戰技時，為敵方目標附加的弱點持續時間增加<unbreak>#1[i]</unbreak>回合。",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_SkillTree2.png",
@@ -8213,18 +8203,18 @@
 			},
 			"1006103": {
 				"Id": "1006103",
-				"Name": "旁註",
+				"Name": "註解",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "施放戰技時，若敵方目標的負面效果數量大於等於<unbreak>#1[i]</unbreak>個，則目標的傷害抗性額外降低<unbreak>#2[i]%</unbreak>。",
+				"EffectRaw": "施放戰技時，若敵方目標的負面效果數量大於等於<unbreak>#1[i]</unbreak>個，則戰技使目標全屬性抗性降低的效果額外降低<unbreak>#2[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point08",
-				"ImageIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_SkillTree1.png",
+				"ImageIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_SkillTree3.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
 							3,
-							0.05
+							0.03
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -8774,7 +8764,7 @@
 				"Name": "禁錮解除",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "消耗等同於阿蘭生命上限<unbreak>#1[i]%</unbreak>的生命值對指定敵方單體造成等同於阿蘭<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的雷屬性傷害。若生命值不足，則施放戰技時阿蘭的生命值降至1點。",
+				"EffectRaw": "消耗等同於阿蘭生命上限<unbreak>#1[i]%</unbreak>的生命值對指定敵方單體造成等同於阿蘭<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的雷屬性傷害。若現有生命值不足，則施放戰技時阿蘭的現有生命值降至1點。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100802"
@@ -9514,7 +9504,7 @@
 				"Name": "甦生",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "消滅敵方目標時，若生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則立即回復等同於自身生命上限<unbreak>#2[i]%</unbreak>的生命值。",
+				"EffectRaw": "消滅敵方目標時，若現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則立即回復等同於自身生命上限<unbreak>#2[i]%</unbreak>的生命值。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_SkillTree1.png",
@@ -11531,7 +11521,7 @@
 				"Name": "一錘子買賣",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。若敵方目標生命值百分比大於等於<unbreak>#2[i]%</unbreak>，則對該目標造成的傷害提高<unbreak>#3[i]%</unbreak>。",
+				"EffectRaw": "對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。若敵方目標現有生命值百分比大於等於<unbreak>#2[i]%</unbreak>，則對該目標造成的傷害提高<unbreak>#3[i]%</unbreak>。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"101302"
@@ -12017,7 +12007,7 @@
 				"Name": "還是我來吧",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "當任意我方目標的攻擊使敵方目標的生命值百分比小於等於<unbreak>#1[i]%</unbreak>時，黑塔發動<u>追加攻擊</u>，對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的冰屬性傷害。",
+				"EffectRaw": "當任意我方目標的攻擊使敵方目標的現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>時，黑塔發動<u>追加攻擊</u>，對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"101304"
@@ -15105,7 +15095,7 @@
 				"Name": "夜行",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "若生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則被敵方目標攻擊的機率降低。",
+				"EffectRaw": "若現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則被敵方目標攻擊的機率降低。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_SkillTree1.png",
@@ -15141,7 +15131,7 @@
 				"Name": "割裂",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "增幅狀態下希兒的量子抗性穿透提高<unbreak>#1[i]%</unbreak>。",
+				"EffectRaw": "增幅狀態下希兒的量子屬性抗性穿透提高<unbreak>#1[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_SkillTree2.png",
@@ -19074,7 +19064,7 @@
 				"Name": "生機煥發",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "為生命值百分比小於等於<unbreak>#1[i]%</unbreak>的我方目標提供治療時，娜塔莎的治療量提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。該效果對持續治療效果也會生效。",
+				"EffectRaw": "為現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>的我方目標提供治療時，娜塔莎的治療量提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。該效果對持續治療效果也會生效。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110504"
@@ -20478,7 +20468,7 @@
 				"Name": "資料收集",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "發動攻擊後若敵方目標處於<u>負面效果</u>，則佩拉額外恢復<color=#f29e38ff><unbreak>#1[f1]</unbreak></color>點能量。該效果每次攻擊只能觸發1次。",
+				"EffectRaw": "發動攻擊後若敵方目標處於<u>負面效果</u>狀態，則佩拉額外恢復<color=#f29e38ff><unbreak>#1[f1]</unbreak></color>點能量。該效果每次攻擊只能觸發1次。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110604"
@@ -20735,7 +20725,7 @@
 				"Name": "痛擊",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "對處於負面效果的敵方目標造成的傷害提高<unbreak>#1[i]%</unbreak>。",
+				"EffectRaw": "對帶有負面效果的敵方目標造成的傷害提高<unbreak>#1[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_SkillTree1.png",
@@ -21615,7 +21605,7 @@
 				"Name": "是約定不是命令",
 				"NodeType": 2,
 				"NodeTypeText": "終結技",
-				"EffectRaw": "施放終結技後克拉拉的傷害承受額外降低<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>且被敵方攻擊的機率大幅提高，持續<unbreak>#3[i]</unbreak>回合。\n同時史瓦羅的<u>反擊</u>得到強化，當任意我方目標受到攻擊後，史瓦羅會立即發動<u>反擊</u>，對敵方目標造成的傷害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，並對其相鄰目標造成相當於主目標<unbreak>50%</unbreak>的傷害。強化效果可生效<unbreak>#5[i]</unbreak>次。",
+				"EffectRaw": "施放終結技後克拉拉受到的傷害額外降低<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>且被敵方攻擊的機率大幅提高，持續<unbreak>#3[i]</unbreak>回合。\n同時史瓦羅的<u>反擊</u>得到強化，當任意我方目標受到攻擊後，史瓦羅會立即發動<u>反擊</u>，對敵方目標造成的傷害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，並對其相鄰目標造成相當於主目標<unbreak>50%</unbreak>的傷害。強化效果可生效<unbreak>#5[i]</unbreak>次。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110703"
@@ -21893,7 +21883,7 @@
 				"Name": "因為我們是家人",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "克拉拉在史瓦羅的保護下，承受自敵方目標攻擊的傷害降低<unbreak>#3[i]%</unbreak>。攻擊克拉拉的敵方目標會被史瓦羅標上【反擊標記】，並遭到史瓦羅的<u>反擊</u>，對其造成等同於克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性傷害。",
+				"EffectRaw": "克拉拉在史瓦羅的保護下，受到敵方目標攻擊的傷害降低<unbreak>#3[i]%</unbreak>。攻擊克拉拉的敵方目標會被史瓦羅標上【反擊標記】，並遭到史瓦羅的<u>反擊</u>，對其造成等同於克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110704"
@@ -28398,7 +28388,7 @@
 				"Name": "白花的祈望",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "施放戰技後立即為指定我方單體回復等同於羅剎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，並使羅剎獲得1層【白花之刻】。\n當我方任意單體生命值百分比小於等於<unbreak>#3[i]%</unbreak>時，羅剎會立即對其施放1次戰技，此次施放不消耗戰技點。該效果在羅剎<unbreak>#4[i]</unbreak>次行動後滿足觸發條件時可再次觸發。",
+				"EffectRaw": "施放戰技後立即為指定我方單體回復等同於羅剎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，並使羅剎獲得1層【白花之刻】。\n當我方任意單體現有生命值百分比小於等於<unbreak>#3[i]%</unbreak>時，羅剎會立即對其觸發1次等同於戰技的效果，此次觸發不消耗戰技點。該效果在<unbreak>#4[i]</unbreak>回合後可再次觸發。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120302"
@@ -28586,8 +28576,8 @@
 								"Count": 5
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							},
 							{
@@ -28622,8 +28612,8 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -28653,8 +28643,8 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -28666,7 +28656,7 @@
 				"Name": "歸葬的遂願",
 				"NodeType": 2,
 				"NodeTypeText": "終結技",
-				"EffectRaw": "解除敵方目標<unbreak>#2[i]</unbreak>個<u>增益效果</u>，並對敵方全體造成等同於羅剎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，同時使羅剎獲得1層【白花之刻】。",
+				"EffectRaw": "解除敵方全體<unbreak>#2[i]</unbreak>個<u>增益效果</u>，並對敵方全體造成等同於羅剎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，同時使羅剎獲得1層【白花之刻】。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120303"
@@ -28676,14 +28666,14 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.8,
+							1.2,
 							1
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							0.88,
+							1.28,
 							1
 						],
 						"AscensionRequired": 1,
@@ -28702,7 +28692,7 @@
 					},
 					"3": {
 						"EffectValues": [
-							0.96,
+							1.36,
 							1
 						],
 						"AscensionRequired": 2,
@@ -28726,7 +28716,7 @@
 					},
 					"4": {
 						"EffectValues": [
-							1.04,
+							1.44,
 							1
 						],
 						"AscensionRequired": 3,
@@ -28750,7 +28740,7 @@
 					},
 					"5": {
 						"EffectValues": [
-							1.12,
+							1.52,
 							1
 						],
 						"AscensionRequired": 4,
@@ -28774,7 +28764,7 @@
 					},
 					"6": {
 						"EffectValues": [
-							1.2,
+							1.6,
 							1
 						],
 						"AscensionRequired": 4,
@@ -28798,7 +28788,7 @@
 					},
 					"7": {
 						"EffectValues": [
-							1.3,
+							1.7,
 							1
 						],
 						"AscensionRequired": 5,
@@ -28822,7 +28812,7 @@
 					},
 					"8": {
 						"EffectValues": [
-							1.4,
+							1.8,
 							1
 						],
 						"AscensionRequired": 5,
@@ -28838,8 +28828,8 @@
 								"Count": 5
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							},
 							{
@@ -28851,7 +28841,7 @@
 					},
 					"9": {
 						"EffectValues": [
-							1.5,
+							1.9,
 							1
 						],
 						"AscensionRequired": 6,
@@ -28872,15 +28862,15 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
 					},
 					"10": {
 						"EffectValues": [
-							1.6,
+							2,
 							1
 						],
 						"AscensionRequired": 6,
@@ -28901,8 +28891,8 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -28914,7 +28904,7 @@
 				"Name": "生息的輪轉",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "當【白花之刻】達到<unbreak>#1[i]</unbreak>層時，羅剎會消耗全部【白花之刻】對敵方展開結界。\n處於結界中的任意敵方目標受到攻擊後，發動攻擊的我方目標立即回復等同於羅剎<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\n結界效果持續<unbreak>#3[i]</unbreak>回合。",
+				"EffectRaw": "當【白花之刻】達到<unbreak>#1[i]</unbreak>層時，羅剎會消耗全部【白花之刻】展開結界。\n處於結界中的任意敵方目標受到攻擊後，發動攻擊的我方目標立即回復等同於羅剎<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\n結界效果持續<unbreak>#3[i]</unbreak>回合。當羅剎陷入無法戰鬥狀態時，結界也會解除。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120304"
@@ -28925,18 +28915,18 @@
 					"1": {
 						"EffectValues": [
 							2,
-							0.14,
+							0.12,
 							2,
-							70
+							60
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
 							2,
-							0.1488,
+							0.1275,
 							2,
-							112
+							96
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -28955,9 +28945,9 @@
 					"3": {
 						"EffectValues": [
 							2,
-							0.1575,
+							0.135,
 							2,
-							143.5
+							123
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -28981,9 +28971,9 @@
 					"4": {
 						"EffectValues": [
 							2,
-							0.1663,
+							0.1425,
 							2,
-							175
+							150
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -29007,9 +28997,9 @@
 					"5": {
 						"EffectValues": [
 							2,
-							0.175,
+							0.15,
 							2,
-							196
+							168
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -29033,9 +29023,9 @@
 					"6": {
 						"EffectValues": [
 							2,
-							0.182,
+							0.156,
 							2,
-							217
+							186
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -29059,9 +29049,9 @@
 					"7": {
 						"EffectValues": [
 							2,
-							0.189,
+							0.162,
 							2,
-							232.75
+							199.5
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -29085,9 +29075,9 @@
 					"8": {
 						"EffectValues": [
 							2,
-							0.196,
+							0.168,
 							2,
-							248.5
+							213
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -29102,8 +29092,8 @@
 								"Count": 5
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							},
 							{
@@ -29116,9 +29106,9 @@
 					"9": {
 						"EffectValues": [
 							2,
-							0.203,
+							0.174,
 							2,
-							264.25
+							226.5
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -29138,8 +29128,8 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -29147,9 +29137,9 @@
 					"10": {
 						"EffectValues": [
 							2,
-							0.21,
+							0.18,
 							2,
-							280
+							240
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -29169,8 +29159,8 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -29201,7 +29191,7 @@
 				"Name": "浸池甦生",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "施放戰技時，解除指定我方單體的<unbreak>#1[i]</unbreak>個負面效果。",
+				"EffectRaw": "觸發戰技效果時，解除指定我方單體的<unbreak>#1[i]</unbreak>個負面效果。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_SkillTree1.png",
@@ -29223,8 +29213,8 @@
 								"Count": 3
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -29236,14 +29226,15 @@
 				"Name": "澆灌塵身",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "抵抗控制類負面狀態的機率提高<unbreak>#1[i]%</unbreak>。",
+				"EffectRaw": "處於結界中的任意敵方目標受到我方攻擊後，攻擊者以外的我方目標也會回復等同於羅剎<unbreak>#1[f1]%</unbreak>攻擊力+<unbreak>#2[i]</unbreak>的生命值。",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_SkillTree2.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.7
+							0.07,
+							93
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -29263,8 +29254,8 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -29276,7 +29267,7 @@
 				"Name": "行過幽谷",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "羅剎在單次攻擊中承受的傷害不超過自身生命上限的<unbreak>#1[i]%</unbreak>。",
+				"EffectRaw": "抵抗控制類負面狀態的機率提高<unbreak>#1[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_SkillTree3.png",
@@ -29303,8 +29294,8 @@
 								"Count": 1
 							},
 							{
-								"Id": "110501",
-								"Name": "毀滅者的末路",
+								"Id": "110502",
+								"Name": "守護者的悲願",
 								"Count": 1
 							}
 						]
@@ -31523,7 +31514,7 @@
 				"Name": "太虛形蘊•燭夜",
 				"NodeType": 2,
 				"NodeTypeText": "終結技",
-				"EffectRaw": "對指定敵方單體造成等同於素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害，並使素裳的下一次行動立即提前<unbreak>100%</unbreak>，同時使其攻擊力提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，且施放戰技時額外增加2次【劍勢】的發動判定，持續<unbreak>#2[i]</unbreak>回合。\n透過額外判定發動的【劍勢】傷害為原傷害的<unbreak>#3[i]%</unbreak>。",
+				"EffectRaw": "對指定敵方單體造成等同於素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害，並使素裳立即行動。同時使其攻擊力提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，且施放戰技時額外增加2次【劍勢】的發動判定，持續<unbreak>#2[i]</unbreak>回合。\n通過額外判定發動的【劍勢】傷害為原傷害的<unbreak>#3[i]%</unbreak>。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120603"
@@ -32050,7 +32041,7 @@
 				"Name": "赤子",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "若生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則被敵方目標攻擊的機率降低。",
+				"EffectRaw": "若現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>，則被敵方目標攻擊的機率降低。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_SkillTree1.png",
@@ -32536,6 +32527,1410 @@
 			}
 		},
 		"VersionAdded": "1.0"
+	},
+	"1207": {
+		"Id": "1207",
+		"Name": "馭空",
+		"Nodes": {
+			"1207001": {
+				"Id": "1207001",
+				"Name": "流鏑",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"120701"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110161",
+								"Name": "諧樂小調",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1207002": {
+				"Id": "1207002",
+				"Name": "天闕鳴弦",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "獲得<unbreak>#1[i]</unbreak>層【鳴弦號令】，最多持有不超過2層。當馭空持有【鳴弦號令】時，我方全體攻擊力提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且每次我方目標回合結束時，移除馭空1層【鳴弦號令】。\n馭空施放戰技獲得【鳴弦號令】的回合，不會移除【鳴弦號令】。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120702"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.44
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.48
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110161",
+								"Name": "諧樂小調",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.52
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.56
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.65
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.7
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 64000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 4
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.75
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.8
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 240000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1207003": {
+				"Id": "1207003",
+				"Name": "貫雲飲羽",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "施放終結技時，若馭空持有【鳴弦號令】，則額外使我方全體暴擊率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，暴擊傷害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。同時對指定敵方單體造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120703"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2.28,
+							0.21,
+							0.39
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2.432,
+							0.217,
+							0.416
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2.584,
+							0.224,
+							0.442
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110161",
+								"Name": "諧樂小調",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2.736,
+							0.231,
+							0.468
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2.888,
+							0.238,
+							0.494
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							3.04,
+							0.245,
+							0.52
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							3.23,
+							0.2538,
+							0.5525
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							3.42,
+							0.2625,
+							0.585
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 64000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 4
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							3.61,
+							0.2713,
+							0.6175
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3.8,
+							0.28,
+							0.65
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 240000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1207004": {
+				"Id": "1207004",
+				"Name": "箭徹七札",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "發動普通攻擊可額外造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，並使本次攻擊的削韌傷害提高<unbreak>#2[i]%</unbreak>，該效果在<unbreak>#3[i]</unbreak>回合後可再次觸發。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120704"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.4,
+							1,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.44,
+							1,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.48,
+							1,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110161",
+								"Name": "諧樂小調",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.52,
+							1,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.56,
+							1,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.6,
+							1,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.65,
+							1,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7,
+							1,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 64000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 4
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.75,
+							1,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.8,
+							1,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 240000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1207007": {
+				"Id": "1207007",
+				"Name": "雲鳶逐風",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技後進入持續<unbreak>#1[i]</unbreak>秒的衝刺狀態。衝刺狀態下自身移動速度提高<unbreak>#2[i]%</unbreak>，且主動攻擊敵人進入戰鬥時，馭空獲得<unbreak>#3[i]</unbreak>層【鳴弦號令】。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"120707"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							0.35,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1207101": {
+				"Id": "1207101",
+				"Name": "襄尺",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "馭空被施加負面效果時可抵抗1次負面效果，該效果在<unbreak>#1[i]</unbreak>回合後可再次觸發。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110161",
+								"Name": "諧樂小調",
+								"Count": 2
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1207102": {
+				"Id": "1207102",
+				"Name": "遲彝",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "馭空在場時，我方全體造成的虛數屬性傷害提高<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1207103": {
+				"Id": "1207103",
+				"Name": "氣壯",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "持有【鳴弦號令】時，每當我方目標行動後，馭空將額外恢復<unbreak>#1[i]</unbreak>點能量。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110501",
+								"Name": "毀滅者的末路",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1207201": {
+				"Id": "1207201",
+				"Name": "傷害強化•虛數",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "虛數屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ImaginaryAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconImaginaryAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1207202": {
+				"Id": "1207202",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1207101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110161",
+								"Name": "諧樂小調",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1207203": {
+				"Id": "1207203",
+				"Name": "傷害強化•虛數",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "虛數屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ImaginaryAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconImaginaryAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1207202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1207204": {
+				"Id": "1207204",
+				"Name": "攻擊強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "攻擊力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1207201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1207205": {
+				"Id": "1207205",
+				"Name": "傷害強化•虛數",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "虛數屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ImaginaryAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconImaginaryAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1207102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110162",
+								"Name": "家族頌歌",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1207206": {
+				"Id": "1207206",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1207205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1207207": {
+				"Id": "1207207",
+				"Name": "傷害強化•虛數",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "虛數屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ImaginaryAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconImaginaryAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1207201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1207208": {
+				"Id": "1207208",
+				"Name": "攻擊強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "攻擊力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1207103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1207209": {
+				"Id": "1207209",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1207208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1207210": {
+				"Id": "1207210",
+				"Name": "傷害強化•虛數",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "虛數屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ImaginaryAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconImaginaryAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1207208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星樂章",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.1"
 	},
 	"1209": {
 		"Id": "1209",
@@ -33466,7 +34861,7 @@
 				"Name": "御劍真訣",
 				"NodeType": 2,
 				"NodeTypeText": "秘技",
-				"EffectRaw": "使用秘技後，下一次戰鬥開始時彥卿對生命值百分比大於等於<unbreak>#1[i]%</unbreak>的敵方目標造成的傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
+				"EffectRaw": "使用秘技後，下一次戰鬥開始時彥卿對目前生命值百分比大於等於<unbreak>#1[i]%</unbreak>的敵方目標造成的傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"120907"
@@ -35021,7 +36416,7 @@
 				"Name": "鱗淵福澤",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "擁有【生息】的角色傷害承受降低<unbreak>#1[i]%</unbreak>。",
+				"EffectRaw": "擁有【生息】的角色受到的傷害降低<unbreak>#1[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_SkillTree3.png",
@@ -38346,7 +39741,7 @@
 				"Name": "熾燃不滅的琥珀",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "施放戰技後，開拓者的傷害承受降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>並疊加1層【灼熱意志】，此外有<unbreak>#2[i]%</unbreak><u>基礎機率</u>使敵方全體陷入嘲諷狀態，持續<unbreak>#3[i]</unbreak>回合。",
+				"EffectRaw": "施放戰技後，開拓者受到的傷害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>並疊加1層【灼熱意志】，此外有<unbreak>#2[i]%</unbreak><u>基礎機率</u>使敵方全體陷入嘲諷狀態，持續<unbreak>#3[i]</unbreak>回合。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"800302"
@@ -39128,7 +40523,7 @@
 				"Name": "強援弱",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "施放戰技後，我方全體傷害承受降低<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
+				"EffectRaw": "施放戰技後，我方全體受到的傷害降低<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_SkillTree1.png",
@@ -39764,7 +41159,7 @@
 				"Name": "熾燃不滅的琥珀",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "施放戰技後，開拓者的傷害承受降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>並疊加1層【灼熱意志】，此外有<unbreak>#2[i]%</unbreak><u>基礎機率</u>使敵方全體陷入嘲諷狀態，持續<unbreak>#3[i]</unbreak>回合。",
+				"EffectRaw": "施放戰技後，開拓者受到的傷害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>並疊加1層【灼熱意志】，此外有<unbreak>#2[i]%</unbreak><u>基礎機率</u>使敵方全體陷入嘲諷狀態，持續<unbreak>#3[i]</unbreak>回合。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"800402"
@@ -40546,7 +41941,7 @@
 				"Name": "強援弱",
 				"NodeType": 3,
 				"NodeTypeText": "額外能力",
-				"EffectRaw": "施放戰技後，我方全體傷害承受降低<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
+				"EffectRaw": "施放戰技後，我方全體受到的傷害降低<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_SkillTree1.png",
