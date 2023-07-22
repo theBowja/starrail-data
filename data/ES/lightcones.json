@@ -1657,10 +1657,10 @@
 		"PathType": "Knight",
 		"PathTypeText": "Conservación",
 		"EffectName": "Nueva partida",
-		"EffectTemplate": "La DEF del portador aumenta en un <color=#f29e38ff>#1[i]%</color>. Cuando recibe un ataque, hay un <color=#f29e38ff>#2[i]%</color> de probabilidad base de quemar al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>#3[i]%</color> de la DEF del portador en cada turno durante #4[i] turnos.",
+		"EffectTemplate": "La DEF del portador aumenta en un <color=#f29e38ff>#1[i]%</color>. Cuando recibe un ataque, tiene una probabilidad base del <color=#f29e38ff>#2[i]%</color> de afectar con Quemadura al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>#3[i]%</color> de la DEF del portador en cada turno durante #4[i] turnos.",
 		"Superimpositions": [
 			{
-				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>16%</color>. Cuando recibe un ataque, hay un <color=#f29e38ff>100%</color> de probabilidad base de quemar al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>40%</color> de la DEF del portador en cada turno durante 2 turnos.",
+				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>16%</color>. Cuando recibe un ataque, tiene una probabilidad base del <color=#f29e38ff>100%</color> de afectar con Quemadura al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>40%</color> de la DEF del portador en cada turno durante 2 turnos.",
 				"Params": [
 					0.16,
 					1,
@@ -1669,7 +1669,7 @@
 				]
 			},
 			{
-				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>20%</color>. Cuando recibe un ataque, hay un <color=#f29e38ff>105%</color> de probabilidad base de quemar al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>50%</color> de la DEF del portador en cada turno durante 2 turnos.",
+				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>20%</color>. Cuando recibe un ataque, tiene una probabilidad base del <color=#f29e38ff>105%</color> de afectar con Quemadura al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>50%</color> de la DEF del portador en cada turno durante 2 turnos.",
 				"Params": [
 					0.2,
 					1.05,
@@ -1678,7 +1678,7 @@
 				]
 			},
 			{
-				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>24%</color>. Cuando recibe un ataque, hay un <color=#f29e38ff>110%</color> de probabilidad base de quemar al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>60%</color> de la DEF del portador en cada turno durante 2 turnos.",
+				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>24%</color>. Cuando recibe un ataque, tiene una probabilidad base del <color=#f29e38ff>110%</color> de afectar con Quemadura al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>60%</color> de la DEF del portador en cada turno durante 2 turnos.",
 				"Params": [
 					0.24,
 					1.1,
@@ -1687,7 +1687,7 @@
 				]
 			},
 			{
-				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>28%</color>. Cuando recibe un ataque, hay un <color=#f29e38ff>115%</color> de probabilidad base de quemar al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>70%</color> de la DEF del portador en cada turno durante 2 turnos.",
+				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>28%</color>. Cuando recibe un ataque, tiene una probabilidad base del <color=#f29e38ff>115%</color> de afectar con Quemadura al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>70%</color> de la DEF del portador en cada turno durante 2 turnos.",
 				"Params": [
 					0.28,
 					1.15,
@@ -1696,7 +1696,7 @@
 				]
 			},
 			{
-				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>32%</color>. Cuando recibe un ataque, hay un <color=#f29e38ff>120%</color> de probabilidad base de quemar al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>80%</color> de la DEF del portador en cada turno durante 2 turnos.",
+				"Effect": "La DEF del portador aumenta en un <color=#f29e38ff>32%</color>. Cuando recibe un ataque, tiene una probabilidad base del <color=#f29e38ff>120%</color> de afectar con Quemadura al enemigo e infligir un Daño con el tiempo equivalente al <color=#f29e38ff>80%</color> de la DEF del portador en cada turno durante 2 turnos.",
 				"Params": [
 					0.32,
 					1.2,
@@ -2912,16 +2912,77 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"23006": {
+		"Id": "23006",
+		"Name": "Solo hay que esperar",
+		"PathType": "Warlock",
+		"PathTypeText": "Nihilidad",
+		"EffectName": "Telaraña",
+		"EffectTemplate": "El daño que inflige el portador aumenta en un <color=#f29e38ff>#2[i]%</color>. Después de cada ataque del portador, su VEL aumenta en un <color=#f29e38ff>#3[f1]%</color>. Este efecto se puede acumular hasta #4[i] veces.\\nCuando el portador golpea a un objetivo, si este no está afectado por Erosión, hay un 100% de probabilidad base de afectarlo con Erosión. Cuando el objetivo está afectado por Erosión, se considera que también está afectado por Electrocución. En el estado de Erosión, al comienzo de cada turno el objetivo recibe un Daño de Rayo con el tiempo equivalente al <color=#f29e38ff>#1[i]%</color> del ATQ del portador durante #5[i] turno.",
+		"Superimpositions": [
+			{
+				"Effect": "El daño que inflige el portador aumenta en un <color=#f29e38ff>24%</color>. Después de cada ataque del portador, su VEL aumenta en un <color=#f29e38ff>4.8%</color>. Este efecto se puede acumular hasta 3 veces.\nCuando el portador golpea a un objetivo, si este no está afectado por Erosión, hay un 100% de probabilidad base de afectarlo con Erosión. Cuando el objetivo está afectado por Erosión, se considera que también está afectado por Electrocución. En el estado de Erosión, al comienzo de cada turno el objetivo recibe un Daño de Rayo con el tiempo equivalente al <color=#f29e38ff>60%</color> del ATQ del portador durante 1 turno.",
+				"Params": [
+					0.6,
+					0.24,
+					0.048,
+					3,
+					1
+				]
+			},
+			{
+				"Effect": "El daño que inflige el portador aumenta en un <color=#f29e38ff>28%</color>. Después de cada ataque del portador, su VEL aumenta en un <color=#f29e38ff>5.6%</color>. Este efecto se puede acumular hasta 3 veces.\nCuando el portador golpea a un objetivo, si este no está afectado por Erosión, hay un 100% de probabilidad base de afectarlo con Erosión. Cuando el objetivo está afectado por Erosión, se considera que también está afectado por Electrocución. En el estado de Erosión, al comienzo de cada turno el objetivo recibe un Daño de Rayo con el tiempo equivalente al <color=#f29e38ff>70%</color> del ATQ del portador durante 1 turno.",
+				"Params": [
+					0.7,
+					0.28,
+					0.056,
+					3,
+					1
+				]
+			},
+			{
+				"Effect": "El daño que inflige el portador aumenta en un <color=#f29e38ff>32%</color>. Después de cada ataque del portador, su VEL aumenta en un <color=#f29e38ff>6.4%</color>. Este efecto se puede acumular hasta 3 veces.\nCuando el portador golpea a un objetivo, si este no está afectado por Erosión, hay un 100% de probabilidad base de afectarlo con Erosión. Cuando el objetivo está afectado por Erosión, se considera que también está afectado por Electrocución. En el estado de Erosión, al comienzo de cada turno el objetivo recibe un Daño de Rayo con el tiempo equivalente al <color=#f29e38ff>80%</color> del ATQ del portador durante 1 turno.",
+				"Params": [
+					0.8,
+					0.32,
+					0.064,
+					3,
+					1
+				]
+			},
+			{
+				"Effect": "El daño que inflige el portador aumenta en un <color=#f29e38ff>36%</color>. Después de cada ataque del portador, su VEL aumenta en un <color=#f29e38ff>7.2%</color>. Este efecto se puede acumular hasta 3 veces.\nCuando el portador golpea a un objetivo, si este no está afectado por Erosión, hay un 100% de probabilidad base de afectarlo con Erosión. Cuando el objetivo está afectado por Erosión, se considera que también está afectado por Electrocución. En el estado de Erosión, al comienzo de cada turno el objetivo recibe un Daño de Rayo con el tiempo equivalente al <color=#f29e38ff>90%</color> del ATQ del portador durante 1 turno.",
+				"Params": [
+					0.9,
+					0.36,
+					0.072,
+					3,
+					1
+				]
+			},
+			{
+				"Effect": "El daño que inflige el portador aumenta en un <color=#f29e38ff>40%</color>. Después de cada ataque del portador, su VEL aumenta en un <color=#f29e38ff>8.0%</color>. Este efecto se puede acumular hasta 3 veces.\nCuando el portador golpea a un objetivo, si este no está afectado por Erosión, hay un 100% de probabilidad base de afectarlo con Erosión. Cuando el objetivo está afectado por Erosión, se considera que también está afectado por Electrocución. En el estado de Erosión, al comienzo de cada turno el objetivo recibe un Daño de Rayo con el tiempo equivalente al <color=#f29e38ff>100%</color> del ATQ del portador durante 1 turno.",
+				"Params": [
+					1,
+					0.4,
+					0.08,
+					3,
+					1
+				]
+			}
+		],
+		"VersionAdded": "1.2"
+	},
 	"23007": {
 		"Id": "23007",
 		"Name": "Lluvia incesante",
 		"PathType": "Warlock",
 		"PathTypeText": "Nihilidad",
 		"EffectName": "Espejismo de la realidad",
-		"EffectTemplate": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>#1[i]%</color>. Cuando el portador inflige daño a un enemigo que tenga #4[i] o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>#5[i]%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un #2[i]% de probabilidad base de implantar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya implantado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>#3[i]%</color> durante 1 turno.",
+		"EffectTemplate": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>#1[i]%</color>. Cuando el portador inflige daño a un enemigo que tenga #4[i] o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>#5[i]%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un #2[i]% de probabilidad base de aplicar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya aplicado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>#3[i]%</color> durante 1 turno.",
 		"Superimpositions": [
 			{
-				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>24%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>12%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de implantar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya implantado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>12%</color> durante 1 turno.",
+				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>24%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>12%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de aplicar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya aplicado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>12%</color> durante 1 turno.",
 				"Params": [
 					0.24,
 					1,
@@ -2931,7 +2992,7 @@
 				]
 			},
 			{
-				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>28%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>14%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de implantar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya implantado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>14%</color> durante 1 turno.",
+				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>28%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>14%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de aplicar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya aplicado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>14%</color> durante 1 turno.",
 				"Params": [
 					0.28,
 					1,
@@ -2941,7 +3002,7 @@
 				]
 			},
 			{
-				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>32%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>16%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de implantar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya implantado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>16%</color> durante 1 turno.",
+				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>32%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>16%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de aplicar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya aplicado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>16%</color> durante 1 turno.",
 				"Params": [
 					0.32,
 					1,
@@ -2951,7 +3012,7 @@
 				]
 			},
 			{
-				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>36%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>18%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de implantar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya implantado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>18%</color> durante 1 turno.",
+				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>36%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>18%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de aplicar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya aplicado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>18%</color> durante 1 turno.",
 				"Params": [
 					0.36,
 					1,
@@ -2961,7 +3022,7 @@
 				]
 			},
 			{
-				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>40%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>20%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de implantar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya implantado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>20%</color> durante 1 turno.",
+				"Effect": "El acierto de efecto del portador aumenta en un <color=#f29e38ff>40%</color>. Cuando el portador inflige daño a un enemigo que tenga 3 o más estados negativos, su Prob. CRIT aumenta en un <color=#f29e38ff>20%</color>. Después de usar el ATQ básico, la habilidad básica o la habilidad definitiva, el portador tiene un 100% de probabilidad base de aplicar Código de éter a 1 objetivo al azar de los golpeados que no lo tenga ya aplicado. El daño que reciben los enemigos con Código de éter aumenta en un <color=#f29e38ff>20%</color> durante 1 turno.",
 				"Params": [
 					0.4,
 					1,
@@ -3028,6 +3089,57 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"23009": {
+		"Id": "23009",
+		"Name": "Orilla inalcanzable",
+		"PathType": "Warrior",
+		"PathTypeText": "Destrucción",
+		"EffectName": "Anhelo insatisfecho",
+		"EffectTemplate": "La Prob. CRIT del portador aumenta en un <color=#f29e38ff>#1[i]%</color> y sus PV máx. aumentan en un <color=#f29e38ff>#2[i]%</color>. Cuando el portador recibe un ataque o consume sus propios PV, el daño que inflige aumenta en un <color=#f29e38ff>#3[i]%</color>. Este último efecto se elimina después de que el portador lance un ataque.",
+		"Superimpositions": [
+			{
+				"Effect": "La Prob. CRIT del portador aumenta en un <color=#f29e38ff>18%</color> y sus PV máx. aumentan en un <color=#f29e38ff>18%</color>. Cuando el portador recibe un ataque o consume sus propios PV, el daño que inflige aumenta en un <color=#f29e38ff>24%</color>. Este último efecto se elimina después de que el portador lance un ataque.",
+				"Params": [
+					0.18,
+					0.18,
+					0.24
+				]
+			},
+			{
+				"Effect": "La Prob. CRIT del portador aumenta en un <color=#f29e38ff>21%</color> y sus PV máx. aumentan en un <color=#f29e38ff>21%</color>. Cuando el portador recibe un ataque o consume sus propios PV, el daño que inflige aumenta en un <color=#f29e38ff>28%</color>. Este último efecto se elimina después de que el portador lance un ataque.",
+				"Params": [
+					0.21,
+					0.21,
+					0.28
+				]
+			},
+			{
+				"Effect": "La Prob. CRIT del portador aumenta en un <color=#f29e38ff>24%</color> y sus PV máx. aumentan en un <color=#f29e38ff>24%</color>. Cuando el portador recibe un ataque o consume sus propios PV, el daño que inflige aumenta en un <color=#f29e38ff>32%</color>. Este último efecto se elimina después de que el portador lance un ataque.",
+				"Params": [
+					0.24,
+					0.24,
+					0.32
+				]
+			},
+			{
+				"Effect": "La Prob. CRIT del portador aumenta en un <color=#f29e38ff>27%</color> y sus PV máx. aumentan en un <color=#f29e38ff>27%</color>. Cuando el portador recibe un ataque o consume sus propios PV, el daño que inflige aumenta en un <color=#f29e38ff>36%</color>. Este último efecto se elimina después de que el portador lance un ataque.",
+				"Params": [
+					0.27,
+					0.27,
+					0.36
+				]
+			},
+			{
+				"Effect": "La Prob. CRIT del portador aumenta en un <color=#f29e38ff>30%</color> y sus PV máx. aumentan en un <color=#f29e38ff>30%</color>. Cuando el portador recibe un ataque o consume sus propios PV, el daño que inflige aumenta en un <color=#f29e38ff>40%</color>. Este último efecto se elimina después de que el portador lance un ataque.",
+				"Params": [
+					0.3,
+					0.3,
+					0.4
+				]
+			}
+		],
+		"VersionAdded": "1.2"
 	},
 	"23010": {
 		"Id": "23010",

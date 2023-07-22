@@ -1183,6 +1183,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "적의 약점이 격파될 경우 히메코는 충전을 획득한다. 최대 <unbreak>#2[i]</unbreak>pt까지 충전된다.\n아군이 공격 발동 후 히메코의 충전이 최대치가 될 경우 바로 <u>추가 공격</u>을 1회 발동하고, 모든 적에게 히메코 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 화염 속성 피해를 주고 충전을 모두 소모한다.\n전투 시작 시 충전을 1pt 획득한다",
+			"AbridgedEffect": "적의 약점이 격파될 경우 충전을 획득한다.\n아군이 공격 후 충전이 최대치가 될 경우 <u>추가 공격</u>을 1회 발동하고, 모든 적에게 화염 속성의 피해를 주고 충전을 모두 소모한다.\n전투 시작 시 충전을 1pt 획득한다",
 			"ElementType": "Fire",
 			"Levels": {
 				"1": {
@@ -1287,6 +1288,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "비술 사용 후 <unbreak>#4[i]</unbreak>초 동안 지속되는 특수영역을 하나 만든다. 특수 영역 안에 있는 적은 전투 진입 후 <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 받는 화염 속성 피해가 <unbreak>#2[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴. 아군이 만든 영역 효과는 최대 1개만 존재할 수 있다",
+			"AbridgedEffect": "특수영역을 만든다. 영역 안에 있는 적과 전투 진입 후 높은 확률로 적이 받는 화염 속성 피해가 증가한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -1643,6 +1645,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "감속 상태의 적을 공격 시 추가로 웰트 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 허수 속성 <u>추가 피해</u>를 1회 준다",
+			"AbridgedEffect": "감속 상태인 적을 공격하면 소량의 허수 속성 <u>추가 피해</u>를 더 가한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -1731,6 +1734,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "비술 사용 후 <unbreak>#4[i]</unbreak>초 동안 지속되는 특수 영역을 하나 만든다. 특수 영역 안에 있는 적은 이동 속도가 <unbreak>#5[i]%</unbreak> 감소한다. 특수 영역 안에 있는 적은 전투 진입 후 <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 속박 상태에 빠진다. 지속 시간: 1턴.\n속박 상태의 적은 <u>행동 게이지가 <unbreak>#2[i]%</unbreak> 감소</u>하고, 속도가 <unbreak>#3[i]%</unbreak> 감소한다. 아군이 만든 영역 효과는 최대 1개만 존재할 수 있다",
+			"AbridgedEffect": "특수영역을 만든다. 영역 내의 적은 이동 속도가 감소한다. 영역 안에 있는 적과 전투 진입 후 높은 확률로 적을 속박 상태에 빠트린다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -1818,7 +1822,7 @@
 			"SkillTypeText": "전투 스킬",
 			"MaxLevel": 15,
 			"EffectRaw": "지정된 단일 적에게 카프카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 피해를 주고, 인접한 목표에게 카프카 공격력 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>만큼의 번개 속성 피해를 준다.\n지정된 단일 적이 지속 피해 상태인 경우 현재 보유한 모든 지속 피해는 즉시 기존 피해 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 피해를 준다",
-			"AbridgedEffect": "단일 적에게 번개 속성 피해를 가하고, 해당 적은 지속 피해류 디버프 상태의 피해를 추가로 받으며 인접한 목표에게 소량의 번개 속성 피해를 가한다",
+			"AbridgedEffect": "단일 적에게 번개 속성 피해를 가하고, 인접한 목표에게 소량의 번개 속성 피해를 가한다\n주목표가 지속 피해류 디버프 상태이면 지속 피해류 디버프 상태가 피해를 1회 추가로 생성한다",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1938,7 +1942,7 @@
 			"SkillTypeText": "필살기",
 			"MaxLevel": 15,
 			"EffectRaw": "모든 적에게 카프카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 피해를 주고, 피격된 적을 <unbreak>#2[i]%</unbreak>의 <u>기본 확률</u>로 감전 상태에 빠트리며, 현재의 감전 상태는 즉시 기존 피해 <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>만큼의 피해를 생성한다. 감전 상태 지속 시간: <unbreak>#3[i]</unbreak>턴.\n감전 상태의 적은 새로운 턴이 시작될 때마다 카프카 공격력 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>만큼의 번개 속성 지속 피해를 받는다",
-			"AbridgedEffect": "모든 적에게 소량의 번개 속성 피해를 가하고, 높은 확률로 감전 상태를 부여해 감전 상태의 피해를 추가로 가한다",
+			"AbridgedEffect": "모든 적에게 소량의 번개 속성 피해를 가하고, 높은 확률로 감전 상태를 부여한다\n적이 감전 상태이면 감전 상태가 피해를 1회 추가로 생성한다",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1946,8 +1950,8 @@
 						0.48,
 						1,
 						2,
-						0.95,
-						0.72
+						1.16,
+						0.8
 					]
 				},
 				"2": {
@@ -1955,8 +1959,8 @@
 						0.512,
 						1,
 						2,
-						1.045,
-						0.738
+						1.2688,
+						0.82
 					]
 				},
 				"3": {
@@ -1964,8 +1968,8 @@
 						0.544,
 						1,
 						2,
-						1.14,
-						0.756
+						1.3775,
+						0.84
 					]
 				},
 				"4": {
@@ -1973,8 +1977,8 @@
 						0.576,
 						1,
 						2,
-						1.235,
-						0.774
+						1.4863,
+						0.86
 					]
 				},
 				"5": {
@@ -1982,8 +1986,8 @@
 						0.608,
 						1,
 						2,
-						1.33,
-						0.792
+						1.595,
+						0.88
 					]
 				},
 				"6": {
@@ -1991,8 +1995,8 @@
 						0.64,
 						1,
 						2,
-						1.4725,
-						0.81
+						1.7581,
+						0.9
 					]
 				},
 				"7": {
@@ -2000,8 +2004,8 @@
 						0.68,
 						1,
 						2,
-						1.6625,
-						0.8325
+						1.9756,
+						0.925
 					]
 				},
 				"8": {
@@ -2009,8 +2013,8 @@
 						0.72,
 						1,
 						2,
-						1.9,
-						0.855
+						2.2475,
+						0.95
 					]
 				},
 				"9": {
@@ -2018,8 +2022,8 @@
 						0.76,
 						1,
 						2,
-						2.185,
-						0.8775
+						2.5738,
+						0.975
 					]
 				},
 				"10": {
@@ -2027,8 +2031,8 @@
 						0.8,
 						1,
 						2,
-						2.47,
-						0.9
+						2.9,
+						1
 					]
 				},
 				"11": {
@@ -2036,8 +2040,8 @@
 						0.832,
 						1,
 						2,
-						2.5935,
-						0.918
+						3.0414,
+						1.02
 					]
 				},
 				"12": {
@@ -2045,8 +2049,8 @@
 						0.864,
 						1,
 						2,
-						2.717,
-						0.936
+						3.1828,
+						1.04
 					]
 				},
 				"13": {
@@ -2054,8 +2058,8 @@
 						0.896,
 						1,
 						2,
-						2.8405,
-						0.954
+						3.3241,
+						1.06
 					]
 				},
 				"14": {
@@ -2063,8 +2067,8 @@
 						0.928,
 						1,
 						2,
-						2.964,
-						0.972
+						3.4655,
+						1.08
 					]
 				},
 				"15": {
@@ -2072,8 +2076,8 @@
 						0.96,
 						1,
 						2,
-						3.0875,
-						0.99
+						3.6069,
+						1.1
 					]
 				}
 			},
@@ -2087,127 +2091,113 @@
 			"TagTypeText": "단일 공격",
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
-			"EffectRaw": "카프카의 동료가 적에게 일반 공격 발동 후 카프카는 즉시 <u>추가 공격</u>을 발동해 해당 적에게 카프카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 피해를 가하고 <unbreak>#4[i]%</unbreak>의 <u>기본 확률</u>로 대상이 받는 지속 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴. 해당 효과는 턴마다 1회만 발동한다",
+			"EffectRaw": "카프카의 동료가 적에게 일반 공격 발동하면 카프카는 즉시 <u>추가 공격</u>을 발동하고 해당 목표에게 카프카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 피해를 가하며, <unbreak>#2[i]%</unbreak>의 기본 확률로 피격된 적을 필살기와 동등한 감전 상태에 빠트린다. 지속 시간: <unbreak>#3[i]</unbreak>턴. 해당 효과는 턴마다 1회만 발동한다",
+			"AbridgedEffect": "동료가 적에게 일반 공격 발동 후 카프카는 즉시 <u>추가 공격</u>을 발동하고, 해당 목표에게 소량의 번개 속성 피해를 가하고 높은 확률로 감전 상태를 부여한다. 해당 효과는 턴마다 1회만 발동한다",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
 					"EffectValues": [
-						0.6,
-						0.15,
-						2,
-						1
+						0.42,
+						1,
+						2
 					]
 				},
 				"2": {
 					"EffectValues": [
-						0.66,
-						0.155,
-						2,
-						1
+						0.518,
+						1,
+						2
 					]
 				},
 				"3": {
 					"EffectValues": [
-						0.72,
-						0.16,
-						2,
-						1
+						0.616,
+						1,
+						2
 					]
 				},
 				"4": {
 					"EffectValues": [
-						0.78,
-						0.165,
-						2,
-						1
+						0.714,
+						1,
+						2
 					]
 				},
 				"5": {
 					"EffectValues": [
-						0.84,
-						0.17,
-						2,
-						1
+						0.812,
+						1,
+						2
 					]
 				},
 				"6": {
 					"EffectValues": [
-						0.9,
-						0.175,
-						2,
-						1
+						0.91,
+						1,
+						2
 					]
 				},
 				"7": {
 					"EffectValues": [
-						0.975,
-						0.1813,
-						2,
-						1
+						1.0325,
+						1,
+						2
 					]
 				},
 				"8": {
 					"EffectValues": [
-						1.05,
-						0.1875,
-						2,
-						1
+						1.155,
+						1,
+						2
 					]
 				},
 				"9": {
 					"EffectValues": [
-						1.125,
-						0.1938,
-						2,
-						1
+						1.2775,
+						1,
+						2
 					]
 				},
 				"10": {
 					"EffectValues": [
-						1.2,
-						0.2,
-						2,
-						1
+						1.4,
+						1,
+						2
 					]
 				},
 				"11": {
 					"EffectValues": [
-						1.26,
-						0.205,
-						2,
-						1
+						1.498,
+						1,
+						2
 					]
 				},
 				"12": {
 					"EffectValues": [
-						1.32,
-						0.21,
-						2,
-						1
+						1.596,
+						1,
+						2
 					]
 				},
 				"13": {
 					"EffectValues": [
-						1.38,
-						0.215,
-						2,
-						1
+						1.694,
+						1,
+						2
 					]
 				},
 				"14": {
 					"EffectValues": [
-						1.44,
-						0.22,
-						2,
-						1
+						1.792,
+						1,
+						2
 					]
 				},
 				"15": {
 					"EffectValues": [
-						1.5,
-						0.225,
-						2,
-						1
+						1.89,
+						1,
+						2
 					]
 				}
 			},
@@ -2220,14 +2210,14 @@
 			"TagType": "MazeAttack",
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
-			"EffectRaw": "적을 바로 공격하며, 전투 진입 후 모든 적에게 카프카 공격력 <unbreak>#4[i]%</unbreak>만큼의 번개 속성 피해를 주고, <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 모든 적을 감전 상태에 빠트린다. 지속 시간: <unbreak>#3[i]</unbreak>턴.\n감전 상태의 적은 새로운 턴이 시작될 때마다 카프카 공격력 <unbreak>#2[i]%</unbreak>만큼의 번개 속성 지속 피해를 받는다",
+			"EffectRaw": "일정 범위 내 모든 적을 바로 공격하며, 전투 진입 후 모든 적에게 카프카 공격력 <unbreak>#3[i]%</unbreak>만큼의 번개 속성 피해를 가하고, <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 모든 적을 필살기와 동등한 감전 상태에 빠트린다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
+			"AbridgedEffect": "범위 내 모든 적을 공격하며, 전투 진입 후 모든 적에게 소량의 번개 속성 피해를 가하고 높은 확률로 감전 상태를 부여한다",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
 					"EffectValues": [
 						1,
-						0.5,
-						3,
+						2,
 						0.5
 					]
 				}
@@ -2247,7 +2237,7 @@
 			"TagTypeText": "단일 공격",
 			"SkillTypeText": "일반 공격",
 			"MaxLevel": 9,
-			"EffectRaw": "지정된 단일 적에게 은랑 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 양자 속성 피해를 준다",
+			"EffectRaw": "지정된 단일 적에게 은랑 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 양자 속성 피해를 가한다",
 			"AbridgedEffect": "단일 적에게 소량의 양자 속성 피해를 가한다",
 			"ElementType": "Quantum",
 			"Levels": {
@@ -3066,6 +3056,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "아를란이 현재 잃은 HP 백분율에 따라 피해 보너스를 획득하며, 아를란이 가하는 피해가 최대 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다",
+			"AbridgedEffect": "현재 자신이 잃은 HP의 백분율에 따라 피해가 증가한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -3153,6 +3144,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "적을 바로 공격하며, 전투 진입 후 모든 적에게 아를란 공격력 <unbreak>#1[i]%</unbreak>만큼의 번개 속성 피해를 가한다",
+			"AbridgedEffect": "적을 공격하며, 전투 진입 후 모든 적에게 소량의 번개 속성 피해를 가한다",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -4300,6 +4292,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "일반 공격 발동 후 브로냐의 다음번 <u>행동 게이지</u>가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다",
+			"AbridgedEffect": "일반 공격 발동 후 자신의 다음 <u>행동 게이지</u>가 증가한다",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -4389,6 +4382,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "비술 발동 후 다음 전투 시작 시 모든 아군의 공격력이 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
+			"AbridgedEffect": "비술을 발동하고 다음 전투 시작 시 모든 아군의 공격력이 증가한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5555,6 +5549,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "게파드는 치명적인 공격을 받아도 <u>전투 불능 상태</u>에 빠지지 않으며 자신의 HP 최대치 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 HP를 즉시 회복한다. 해당 효과는 단일 전투에서 1회만 발동한다",
+			"AbridgedEffect": "치명적인 공격을 받아도 <u>전투 불능 상태</u>에 빠지지 않으며 즉시 자신의 HP를 회복한다. 단일 전투 중에서 1회만 발동한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5643,6 +5638,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "비술 사용 후 다음 전투 시작 시 모든 아군에게 게파드 방어력 <unbreak>#1[i]%</unbreak>+<unbreak>#3[i]</unbreak>만큼의 피해를 상쇄할 수 있는 실드를 제공한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
+			"AbridgedEffect": "비술을 발동하고 다음 전투 시작 시 모든 아군이 실드를 획득한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5668,7 +5664,7 @@
 			"SkillTypeText": "일반 공격",
 			"MaxLevel": 9,
 			"EffectRaw": "지정된 단일 적에게 나타샤 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 준다",
-			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 준다",
+			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -5981,6 +5977,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "현재 HP 백분율이 <unbreak>#1[i]%</unbreak> 이하인 아군에게 치유 제공 시 나타샤의 치유량이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 해당 효과는 지속 치유 효과에도 적용된다",
+			"AbridgedEffect": "현재 HP 백분율이 낮은 아군에게 치유 제공 시 치유량이 증가한다. 해당 효과는 지속 치유 효과에도 적용된다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -6083,6 +6080,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "적을 바로 공격하며, 전투 진입 후 임의의 단일 적에게 나타샤 공격력 <unbreak>#4[i]%</unbreak>만큼의 물리 속성 피해를 준다. 동시에 <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 모든 단일 적을 허약 상태에 빠트린다.\n허약 상태의 적은 아군에게 가하는 피해가 <unbreak>#2[i]%</unbreak> 감소한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
+			"AbridgedEffect": "적을 공격하며, 전투 진입 후 임의의 단일 적에게 소량의 물리 속성 피해를 가하고, 높은 확률로 모든 적을 허약 상태에 빠트린다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -6526,7 +6524,7 @@
 			"SkillTypeText": "일반 공격",
 			"MaxLevel": 9,
 			"EffectRaw": "지정된 단일 적에게 클라라 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 준다",
-			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 준다",
+			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -6840,6 +6838,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "스바로그의 가호하에 클라라가 적에게 받는 피해가 <unbreak>#3[i]%</unbreak> 감소한다. 스바로그는 클라라를 공격한 적에게 [반격 표식]을 남기고 스바로그의 <u>반격</u>을 받아 클라라 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 물리 속성 피해를 가한다",
+			"AbridgedEffect": "자신이 적에게 받는 피해가 감소한다. 공격한 적에게 [반격 표식]을 남기고, 스바로그의 <u>반격</u>을 받아 물리 속성 피해를 가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -6958,6 +6957,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "적을 바로 공격하며, 전투 진입 후 클라라가 적에게 피격될 확률이 증가한다. 지속 시간: <unbreak>#1[i]</unbreak>턴",
+			"AbridgedEffect": "적을 공격하면 전투 진입 후 적에게 피격될 확률이 증가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -7283,6 +7283,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "삼포는 적 공격 후 <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 적을 풍화 상태에 빠트린다. 지속 시간: <unbreak>#3[i]</unbreak>턴.\n풍화 상태의 적은 새로운 턴이 시작될 때마다 삼포 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 바람 속성 지속 피해를 받는다. 풍화 상태 최대 중첩수: <unbreak>#4[i]</unbreak>스택",
+			"AbridgedEffect": "자신이 적을 명중하면 일정 확률로 적을 풍화 상태에 빠트린다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -7416,6 +7417,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "비술 사용 후 일정 영역 내의 적을 <unbreak>#1[i]</unbreak>초 동안 실명 상태에 빠트린다. 실명 상태에 진입한 적은 아군을 발견할 수 없다.\n실명 상태의 적을 공격하여 전투 진입 시 <unbreak>#2[i]%</unbreak>의 <u>고정 확률</u>로 단일 적의 행동 게이지가 <unbreak>#3[i]%</unbreak> 감소한다",
+			"AbridgedEffect": "일정 구역 내의 적을 실명 상태에 빠트린다. 실명 상태에 빠진 적을 공격하면 전투 진입 후 높은 확률로 모든 적의 <u>행동 게이지가 감소</u>한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -7994,6 +7996,564 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1111": {
+		"Id": "1111",
+		"Name": "루카",
+		"BasicATK": {
+			"Id": "111101",
+			"Name": "돌격 펀치",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "단일 공격",
+			"SkillTypeText": "일반 공격",
+			"MaxLevel": 9,
+			"EffectRaw": "지정된 단일 적에게 루카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 가한다",
+			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 가한다",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "111108",
+			"Name": "무차별 돌격 펀치",
+			"TriggerKey": "Skill11",
+			"TagType": "SingleAttack",
+			"TagTypeText": "단일 공격",
+			"SkillTypeText": "일반 공격",
+			"MaxLevel": 9,
+			"EffectRaw": "[투지] 2스택을 소모하여 먼저 [돌격 펀치]를 사용해 3단 공격을 발동한다. 1단 공격마다 지정된 단일 적에게 루카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 가한다\n그리고 [무차별 펀치]를 사용하여 1단 공격을 발동하고, 지정된 단일 적에게 루카 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 물리 속성 피해를 가한다",
+			"AbridgedEffect": "[투지]를 2스택 소모하고, 단일 적에게 물리 속성 피해를 가한다",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1,
+						0.4
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.12,
+						0.48
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.14,
+						0.56
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.16,
+						0.64
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.18,
+						0.72
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.2,
+						0.8
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.22,
+						0.88
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.24,
+						0.96
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.26,
+						1.04
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Normal02.png"
+		},
+		"Skill": {
+			"Id": "111102",
+			"Name": "파열 펀치",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "단일 공격",
+			"SkillTypeText": "전투 스킬",
+			"MaxLevel": 15,
+			"EffectRaw": "지정된 단일 적에게 루카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 가하고, <unbreak>#2[i]%</unbreak>의 <u>기본 확률</u>로 목표를 열상 상태에 빠트린다. 지속 시간: <unbreak>#5[i]</unbreak>턴\n열상 상태인 적은 턴이 시작될 때마다 자신의 HP 최대치 <unbreak>#3[f1]%</unbreak>만큼의 물리 속성 지속 피해를 받으며, 최대 루카 공격력의 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>를 초과하지 않는다",
+			"AbridgedEffect": "단일 적에게 물리 속성 피해를 가하고, 높은 확률로 목표에게 열상 상태를 부여한다",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						1,
+						0.24,
+						1.3,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.66,
+						1,
+						0.24,
+						1.43,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.72,
+						1,
+						0.24,
+						1.56,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.78,
+						1,
+						0.24,
+						1.69,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.84,
+						1,
+						0.24,
+						1.82,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.9,
+						1,
+						0.24,
+						2.015,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.975,
+						1,
+						0.24,
+						2.275,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.05,
+						1,
+						0.24,
+						2.6,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.125,
+						1,
+						0.24,
+						2.99,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.2,
+						1,
+						0.24,
+						3.38,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.26,
+						1,
+						0.24,
+						3.549,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.32,
+						1,
+						0.24,
+						3.718,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.38,
+						1,
+						0.24,
+						3.887,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.44,
+						1,
+						0.24,
+						4.056,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.5,
+						1,
+						0.24,
+						4.225,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_BP.png"
+		},
+		"Ultimate": {
+			"Id": "111103",
+			"Name": "승리의 일격",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "단일 공격",
+			"SkillTypeText": "필살기",
+			"MaxLevel": 15,
+			"EffectRaw": "[투지]를 <unbreak>#5[i]</unbreak>스택 획득하고 <unbreak>#2[i]%</unbreak>의 <u>기본 확률</u>로 지정된 단일 적이 받는 피해가 <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#4[i]</unbreak>턴. 그 후 해당 목표에게 루카 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 가한다",
+			"AbridgedEffect": "[투지]를 <color=#f29e38ff><unbreak>#5[i]</unbreak></color>스택 획득한다. 높은 확률로 단일 적이 받는 피해가 증가하고 적에게 대량의 물리 속성 피해를 가한다",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.98,
+						1,
+						0.12,
+						3,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2.112,
+						1,
+						0.128,
+						3,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2.244,
+						1,
+						0.136,
+						3,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2.376,
+						1,
+						0.144,
+						3,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.508,
+						1,
+						0.152,
+						3,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.64,
+						1,
+						0.16,
+						3,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.805,
+						1,
+						0.17,
+						3,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.97,
+						1,
+						0.18,
+						3,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3.135,
+						1,
+						0.19,
+						3,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3.3,
+						1,
+						0.2,
+						3,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3.432,
+						1,
+						0.208,
+						3,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3.564,
+						1,
+						0.216,
+						3,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.696,
+						1,
+						0.224,
+						3,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.828,
+						1,
+						0.232,
+						3,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.96,
+						1,
+						0.24,
+						3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Ultra.png"
+		},
+		"Talent": {
+			"Id": "111104",
+			"Name": "흩날리는 불꽃",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "강화",
+			"SkillTypeText": "특성",
+			"MaxLevel": 15,
+			"EffectRaw": "루카는 일반 공격 [돌격 펀치]와 전투 스킬 [파열 펀치]를 발동하면 [투지]를 <unbreak>#1[i]</unbreak>스택 획득하며 [투지]를 최대 4스택 보유할 수 있다. 보유한 [투지]가 2스택 이상일 시 일반 공격 [돌격 펀치]는 [무차별 돌격 펀치]로 강화된다. 일반 공격 강화 [무차별 펀치]로 열상 상태에 빠진 적을 명중하면 현재 받는 열상 상태는 기존 피해 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 피해를 즉시 1회 생성한다. 전투 시작 시 루카는 [투지] 1스택을 보유한다",
+			"AbridgedEffect": "일반 공격 [돌격 펀치]와 전투 스킬 [파열 펀치]를 발동하면 [투지]를 1스택 획득한다. 보유한 [투지]가 2스택 이상일 시 일반 공격 강화를 획득한다\n적이 열상 상태이면 일반 공격 강화로 열상 상태는 피해를 1회 추가로 생성한다",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.68
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						0.697
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						0.714
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						0.731
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						0.748
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.765
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						0.7863
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						0.8075
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						0.8288
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						0.85
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						0.867
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						0.884
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						0.901
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						0.918
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.935
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Passive.png"
+		},
+		"Technique": {
+			"Id": "111107",
+			"Name": "앞서는 자",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "비술",
+			"MaxLevel": 1,
+			"EffectRaw": "적을 바로 공격하며, 전투 진입 후 임의의 단일 적에게 루카 공격력 <unbreak>#1[i]%</unbreak>만큼의 물리 속성 피해를 가하고, <unbreak>#2[i]%</unbreak>의 <u>기본 확률</u>로 목표를 전투 스킬과 동일한 열상 상태에 빠트린다. 그 후 루카는 [투지]를 1스택 추가로 획득한다",
+			"AbridgedEffect": "적을 공격하며, 전투 진입 후 임의의 단일 적에게 소량의 물리 속성 피해를 가하고, 높은 확률로 목표를 열상 상태에 빠트린다. 그 후 [투지]를 1스택 추가로 획득한다",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Maze.png"
+		},
+		"VersionAdded": "1.2"
+	},
 	"1201": {
 		"Id": "1201",
 		"Name": "청작",
@@ -8134,8 +8694,8 @@
 			"TagTypeText": "강화",
 			"SkillTypeText": "전투 스킬",
 			"MaxLevel": 15,
-			"EffectRaw": "즉시 경옥패를 <unbreak>#1[i]</unbreak>장 뽑는다. 자신이 가하는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가하며, 이번 턴이 끝날 때까지 지속된다. 최대 중첩수: <unbreak>#3[i]</unbreak>스택. 해당 전투 스킬 발동 후 이번 턴은 종료되지 않는다",
-			"AbridgedEffect": "패를 뽑는다. 이때 자신이 가하는 피해가 증가하고 이번 턴은 종료되지 않는다",
+			"EffectRaw": "즉시 경옥패를 <unbreak>#1[i]</unbreak>장 뽑는다. 자신이 가하는 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가하며, 이번 턴이 끝날 때까지 지속된다. 최대 중첩수: <unbreak>#3[i]</unbreak>스택. 해당 전투 스킬 발동 후 그 턴은 종료되지 않는다",
+			"AbridgedEffect": "패를 뽑는다. 이때 자신이 가하는 피해가 증가하고 그 턴도 종료되지 않는다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -9781,6 +10341,637 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1205": {
+		"Id": "1205",
+		"Name": "블레이드",
+		"BasicATK": {
+			"Id": "120501",
+			"Name": "불완전한 검",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "단일 공격",
+			"SkillTypeText": "일반 공격",
+			"MaxLevel": 9,
+			"EffectRaw": "지정된 단일 적에게 블레이드 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 바람 속성 피해를 가한다",
+			"AbridgedEffect": "단일 적에게 소량의 바람 속성 피해를 가한다",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "120508",
+			"Name": "무간검수(無間劍樹)",
+			"TriggerKey": "Skill11",
+			"TagType": "Blast",
+			"TagTypeText": "확산",
+			"SkillTypeText": "일반 공격",
+			"MaxLevel": 9,
+			"EffectRaw": "블레이드 HP 최대치 <unbreak>#1[i]%</unbreak>만큼의 HP를 소모해 지정된 단일 적에게 블레이드 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>+HP 최대치 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>만큼의 바람 속성 피해를 가한다. 동시에 인접한 목표에게 블레이드 공격력 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>+HP 최대치 <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>만큼의 바람 속성 피해를 가한다\n현재 HP가 부족할 때 [무간검수]를 발동하면 블레이드의 현재 HP가 1pt까지 감소한다\n[무간검수]는 전투 스킬 포인트를 회복할 수 없다",
+			"AbridgedEffect": "자신의 HP를 소모해 단일 적에게 바람 속성 피해를 주고, 인접한 적에게 소량의 바람 속성 피해를 준다",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1,
+						0.2,
+						0.08,
+						0.5,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.1,
+						0.24,
+						0.096,
+						0.6,
+						0.24
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.1,
+						0.28,
+						0.112,
+						0.7,
+						0.28
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.1,
+						0.32,
+						0.128,
+						0.8,
+						0.32
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.1,
+						0.36,
+						0.144,
+						0.9,
+						0.36
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.1,
+						0.4,
+						0.16,
+						1,
+						0.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.1,
+						0.44,
+						0.176,
+						1.1,
+						0.44
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.1,
+						0.48,
+						0.192,
+						1.2,
+						0.48
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1,
+						0.52,
+						0.208,
+						1.3,
+						0.52
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Normal02.png"
+		},
+		"Skill": {
+			"Id": "120502",
+			"Name": "지옥의 변화",
+			"TriggerKey": "Skill02",
+			"TagType": "Enhance",
+			"TagTypeText": "강화",
+			"SkillTypeText": "전투 스킬",
+			"MaxLevel": 15,
+			"EffectRaw": "블레이드 HP 최대치 <unbreak>#1[i]%</unbreak>만큼의 HP를 소모해 [지옥의 변화] 상태에 진입한다\n[지옥의 변화] 상태일 경우 전투 스킬을 발동할 수 없으며 동시에 자신이 가하는 피해가 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가하고, 일반 공격 [불완전한 검]이 [무간검수]로 강화된다. 지속 시간: <unbreak>#2[i]</unbreak>턴\n현재 HP가 부족하면 전투 스킬 발동 시 블레이드의 현재 HP가 1pt까지 감소한다\n해당 전투 스킬은 에너지를 회복할 수 없다. 해당 전투 스킬 발동 후 그 턴은 종료되지 않는다",
+			"AbridgedEffect": "자신의 HP를 소모하여 일반 공격 강화를 획득하고 그 턴도 종료되지 않는다",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.148
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.176
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.204
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.232
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.26
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.295
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.33
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.365
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.4
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.428
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.456
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.484
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.512
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.54
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_BP.png"
+		},
+		"Ultimate": {
+			"Id": "120503",
+			"Name": "사형선고",
+			"TriggerKey": "Skill03",
+			"TagType": "Blast",
+			"TagTypeText": "확산",
+			"SkillTypeText": "필살기",
+			"MaxLevel": 15,
+			"EffectRaw": "블레이드의 현재 HP를 HP 최대치의 <unbreak>50%</unbreak>로 전환하고 단일 적에게 블레이드 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>+HP 최대치 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>+이번 전투에서 누적 손실한 HP <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>만큼의 바람 속성 피해를 가한다. 동시에 인접한 목표에게 블레이드 공격력 <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>+HP 최대치 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>+이번 전투에서 누적 손실한 HP <color=#f29e38ff><unbreak>#6[i]%</unbreak></color>만큼의 바람 속성 피해를 가한다\n이번 전투에서 누적 손실한 HP는 블레이드 HP 최대치의 <unbreak>#7[i]%</unbreak>를 넘지 않고, 필살기 발동 후 리셋 및 다시 누적된다",
+			"AbridgedEffect": "현재 HP가 HP 최대치의 <unbreak>50%</unbreak>로 전환되고, 단일 적에게 대량의 바람 속성 피해를 가하며, 인접한 목표에게 바람 속성 피해를 가한다",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.24,
+						0.6,
+						0.096,
+						0.24,
+						0.6,
+						0.24,
+						0.9
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.256,
+						0.64,
+						0.1024,
+						0.256,
+						0.64,
+						0.256,
+						0.9
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.272,
+						0.68,
+						0.1088,
+						0.272,
+						0.68,
+						0.272,
+						0.9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.288,
+						0.72,
+						0.1152,
+						0.288,
+						0.72,
+						0.288,
+						0.9
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.304,
+						0.76,
+						0.1216,
+						0.304,
+						0.76,
+						0.304,
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.32,
+						0.8,
+						0.128,
+						0.32,
+						0.8,
+						0.32,
+						0.9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.34,
+						0.85,
+						0.136,
+						0.34,
+						0.85,
+						0.34,
+						0.9
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.36,
+						0.9,
+						0.144,
+						0.36,
+						0.9,
+						0.36,
+						0.9
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.38,
+						0.95,
+						0.152,
+						0.38,
+						0.95,
+						0.38,
+						0.9
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.4,
+						1,
+						0.16,
+						0.4,
+						1,
+						0.4,
+						0.9
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.416,
+						1.04,
+						0.1664,
+						0.416,
+						1.04,
+						0.416,
+						0.9
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.432,
+						1.08,
+						0.1728,
+						0.432,
+						1.08,
+						0.432,
+						0.9
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.448,
+						1.12,
+						0.1792,
+						0.448,
+						1.12,
+						0.448,
+						0.9
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.464,
+						1.16,
+						0.1856,
+						0.464,
+						1.16,
+						0.464,
+						0.9
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.48,
+						1.2,
+						0.192,
+						0.48,
+						1.2,
+						0.48,
+						0.9
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Ultra.png"
+		},
+		"Talent": {
+			"Id": "120504",
+			"Name": "찰나의 선물",
+			"TriggerKey": "SkillP01",
+			"TagType": "AoEAttack",
+			"TagTypeText": "범위 공격",
+			"SkillTypeText": "특성",
+			"MaxLevel": 15,
+			"EffectRaw": "블레이드가 피해를 받거나 HP를 소모하면 충전 1스택을 획득한다. 최대 중첩수: 5스택. 해당 효과는 피격될 때마다 최대 1스택 중첩된다\n충전이 최대치까지 중첩되면 즉시 모든 적에게 <u>추가 공격</u>을 1회 발동한다. 블레이드 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>+HP 최대치 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>만큼의 바람 속성 피해를 가하고 블레이드 HP 최대치 <unbreak>#3[i]%</unbreak>만큼의 HP를 회복한다. 추가 공격 발동 후 모든 충전을 소모한다",
+			"AbridgedEffect": "블레이드의 HP가 감소하면 충전 1스택을 획득한다. 충전이 최대 중첩수에 도달하면 즉시 모든 적에게 바람 속성 피해를 가하고 HP를 회복한다. 그 후, 모든 충전을 소모한다",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						3,
+						0.22,
+						0.25,
+						0.55
+					]
+				},
+				"2": {
+					"EffectValues": [
+						3,
+						0.242,
+						0.25,
+						0.605
+					]
+				},
+				"3": {
+					"EffectValues": [
+						3,
+						0.264,
+						0.25,
+						0.66
+					]
+				},
+				"4": {
+					"EffectValues": [
+						3,
+						0.286,
+						0.25,
+						0.715
+					]
+				},
+				"5": {
+					"EffectValues": [
+						3,
+						0.308,
+						0.25,
+						0.77
+					]
+				},
+				"6": {
+					"EffectValues": [
+						3,
+						0.33,
+						0.25,
+						0.825
+					]
+				},
+				"7": {
+					"EffectValues": [
+						3,
+						0.3575,
+						0.25,
+						0.8938
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.385,
+						0.25,
+						0.9625
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3,
+						0.4125,
+						0.25,
+						1.0313
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						0.44,
+						0.25,
+						1.1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3,
+						0.462,
+						0.25,
+						1.155
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3,
+						0.484,
+						0.25,
+						1.21
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3,
+						0.506,
+						0.25,
+						1.265
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3,
+						0.528,
+						0.25,
+						1.32
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.55,
+						0.25,
+						1.375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Passive.png"
+		},
+		"Technique": {
+			"Id": "120507",
+			"Name": "업계 관례",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "비술",
+			"MaxLevel": 1,
+			"EffectRaw": "적을 바로 공격하며, 전투 진입 후 블레이드 HP 최대치 <unbreak>#2[i]%</unbreak>만큼의 HP를 소모하고, 모든 적에게 블레이드 HP 최대치 <unbreak>#1[i]%</unbreak>만큼의 바람 속성 피해를 가한다\n현재 HP가 부족할 때 비술을 발동하면 블레이드의 현재 HP가 1pt까지 감소한다",
+			"AbridgedEffect": "적을 공격하며, 전투 진입 후 자신의 HP를 소모하고 모든 적에게 바람 속성 피해를 가한다",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.4,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Maze.png"
+		},
+		"VersionAdded": "1.2"
+	},
 	"1206": {
 		"Id": "1206",
 		"Name": "소상",
@@ -9793,7 +10984,7 @@
 			"SkillTypeText": "일반 공격",
 			"MaxLevel": 9,
 			"EffectRaw": "지정된 단일 적에게 소상 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 준다",
-			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 준다",
+			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -10108,6 +11299,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "약점이 격파된 적이 필드에 있을 시 소상의 속도가 <color=#f29e38ff><unbreak>#1[f2]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
+			"AbridgedEffect": "필드 위 적의 약점이 격파되면 자신의 속도가 증가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -10211,6 +11403,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "적을 바로 공격하며, 전투 진입 후 모든 적에게 소상 공격력 <unbreak>#1[i]%</unbreak>만큼의 물리 속성 피해를 준다",
+			"AbridgedEffect": "적을 공격하며, 전투 진입 후 모든 적에게 소량의 물리 속성 피해를 가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -10288,7 +11481,7 @@
 		},
 		"Skill": {
 			"Id": "120702",
-			"Name": "울부짖는 활",
+			"Name": "천궁에 울리는 활",
 			"TriggerKey": "Skill02",
 			"TagType": "Support",
 			"TagTypeText": "서포트",
@@ -10518,7 +11711,7 @@
 			"TagTypeText": "강화",
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
-			"EffectRaw": "일반 공격 발동은 어공 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 허수 속성 피해를 추가로 가하며, 이번 공격의 강인성 감소 피해가 <unbreak>#2[i]%</unbreak> 증가한다. 해당 효과는 <unbreak>#3[i]</unbreak>턴 후 다시 발동할 수 있다",
+			"EffectRaw": "일반 공격 발동이 어공 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 허수 속성 피해를 추가로 가한다. 이번 공격의 강인성 감소 피해가 <unbreak>#2[i]%</unbreak> 증가한다. 해당 효과는 <unbreak>#3[i]</unbreak>턴 후 다시 발동할 수 있다",
 			"AbridgedEffect": "일반 공격으로 소량의 추가 피해를 가하고 이번 일반 공격의 강인성 감소 피해가 증가한다. 해당 효과는 1턴 후에 다시 발동할 수 있다",
 			"ElementType": "Imaginary",
 			"Levels": {
@@ -10935,6 +12128,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "연경이 [신검합일] 상태일 경우 피격될 확률이 감소하고 자신의 치명타 확률이 <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, 치명타 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 적에게 공격을 발동한 후, <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>의 <u>고정 확률</u>로 <u>추가 공격</u>을 발동해 연경 공격력 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>만큼의 얼음 속성 피해를 주고 <unbreak>#6[i]%</unbreak>의 <u>기본 확률</u>로 1턴 동안 대상을 빙결 상태에 빠트린다.\n빙결 상태인 적은 행동할 수 없으며, 턴이 시작될 때마다 연경 공격력 <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>만큼의 얼음 속성 <u>추가 피해</u>를 받는다.\n연경이 피해를 받으면 [신검합일] 효과는 소멸된다",
+			"AbridgedEffect": "[신검합일] 상태일 경우 피격될 확률이 감소하고 자신의 치명타 확률과 치명타 피해가 증가한다. 적에게 공격을 발동한 후, 일정 확률로 <u>추가 공격</u>을 발동해 얼음 속성 피해를 가하고 일정 확률로 빙결 상태에 빠트린다\n자신이 피해를 받으면 [신검합일] 효과는 소멸된다",
 			"ElementType": "Ice",
 			"Levels": {
 				"1": {
@@ -11099,6 +12293,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "비술 발동 후 다음 전투 시작 시 연경은 현재 HP 백분율이 <unbreak>#1[i]%</unbreak> 이상인 적에게 가하는 피해가 <unbreak>#2[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
+			"AbridgedEffect": "비술을 사용하면 다음 전투 시작 시 자신의 HP 백분율이 <unbreak>50%</unbreak> 이상인 적에게 가하는 피해가 증가한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -11437,6 +12632,7 @@
 			"SkillTypeText": "특성",
 			"MaxLevel": 15,
 			"EffectRaw": "[생명] 효과를 보유한 아군은 피격 후 백로 HP 최대치의 <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>만큼 회복한다. 해당 효과는 <unbreak>#5[i]</unbreak>회 발동할 수 있다.\n백로의 동료는 치명적인 공격을 받아도 <u>전투 불능 상태</u>에 빠지지 않고, 백로가 즉시 대상에게 치유를 제공해 HP를 백로 HP 최대치의 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>만큼 회복한다. 해당 효과는 단일 전투에서 1회 발동할 수 있다",
+			"AbridgedEffect": "[생명]을 보유한 아군이 공격을 받으면 HP를 회복한다\n동료가 치명적인 공격을 받으면 백로가 즉시 해당 동료의 HP를 회복시킨다. 해당 효과는 단일 전투에서 1회 발동할 수 있다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -11585,6 +12781,7 @@
 			"SkillTypeText": "비술",
 			"MaxLevel": 1,
 			"EffectRaw": "비술 발동 후 다음 전투 시작 시 모든 아군에게 [생명] 효과를 부여한다. 지속 시간: <unbreak>#1[i]</unbreak>턴",
+			"AbridgedEffect": "비술을 사용하면 다음 전투 시작 시 모든 아군에게 [생명]을 부여한다",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -11608,7 +12805,7 @@
 			"SkillTypeText": "일반 공격",
 			"MaxLevel": 9,
 			"EffectRaw": "지정된 단일 적에게 개척자 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 준다",
-			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 준다",
+			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -12199,7 +13396,7 @@
 			"SkillTypeText": "일반 공격",
 			"MaxLevel": 9,
 			"EffectRaw": "지정된 단일 적에게 개척자 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 물리 속성 피해를 준다",
-			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 준다",
+			"AbridgedEffect": "단일 적에게 소량의 물리 속성 피해를 가한다",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {

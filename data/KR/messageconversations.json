@@ -7890,7 +7890,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "49",
-						"Text": "그럼 현지인을 찾아주실 있을까요? 그렇다면 매우 감사하겠습니다!",
+						"Text": "그럼 현지인을 찾아주실 수 있을까요? 부탁드릴게요!",
 						"NextMessageId": "111270014"
 					},
 					"111270012": {
@@ -9331,6 +9331,214 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"11136": {
+		"Id": "11136",
+		"ContactId": "69",
+		"ParticpatingContactIds": [
+			"69",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1113600",
+				"StartingMessageId": "111360000",
+				"Messages": {
+					"111360000": {
+						"Id": "111360000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "이봐, 상황은 어때? 이상 현상은 없나?",
+						"NextMessageId": "choice1"
+					},
+					"111360001": {
+						"Id": "111360001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "지정된 위치 근처에서 기괴한 자판기를 발견했는데, 저금통으로 변했어요……",
+						"NextMessageId": "111360003"
+					},
+					"111360002": {
+						"Id": "111360002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "지정된 위치 근처에서 자판기로 위장한 저금통을 발견했어요",
+						"NextMessageId": "111360003"
+					},
+					"111360003": {
+						"Id": "111360003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "뭐? 변신? 저금통? 너 같은 문외한이 하는 말은 옛날 사람 이야기보다 더 이해가 안 돼",
+						"NextMessageId": "111360004"
+					},
+					"111360004": {
+						"Id": "111360004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "됐으니까 일단 돌아와. 만나서 이야기하자!",
+						"NextMessageId": "111360005"
+					},
+					"111360005": {
+						"Id": "111360005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "보수는 먼저 보냈어. 믿을 만하지?"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "기괴한 자판기가 있어요…",
+								"NextMessageId": "111360001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "기괴한 저금통이 있어요…",
+								"NextMessageId": "111360002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"11137": {
+		"Id": "11137",
+		"ContactId": "69",
+		"ParticpatingContactIds": [
+			"69",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1113700",
+				"StartingMessageId": "111370000",
+				"Messages": {
+					"111370000": {
+						"Id": "111370000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "너 괜찮아? 손가락에 동상 걸리지 않았지? 이상한 일은 없었지?",
+						"NextMessageId": "choice1"
+					},
+					"111370001": {
+						"Id": "111370001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "눈 천지라서 몸이 굳을 것 같아요! 이번에 보수는 더 많이 주실 거죠?",
+						"NextMessageId": "111370003"
+					},
+					"111370002": {
+						"Id": "111370002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "모든 게 무사히 순조롭게 완료됐어요. 근데 난관이 많았으니 보수를 더 주셔야 해요",
+						"NextMessageId": "111370003"
+					},
+					"111370003": {
+						"Id": "111370003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "보수를 흥정할 여유도 있는 걸 보니 마음이 놓이네. 조사는 어떻게 됐어?",
+						"NextMessageId": "111370009"
+					},
+					"111370004": {
+						"Id": "111370004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이번에 그건 눈더미에 숨었고, 별다른 건 없었어요",
+						"NextMessageId": "111370005"
+					},
+					"111370005": {
+						"Id": "111370005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "엇? 그게 다야? 휴… 난 뭔가 특별한 사건이 있는 줄 알았는데!",
+						"NextMessageId": "111370008"
+					},
+					"111370006": {
+						"Id": "111370006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "그게 추위와 얼음 속에 숨었어요… 어떤 숙명과 징조를 예고하는 것처럼요!",
+						"NextMessageId": "111370007"
+					},
+					"111370007": {
+						"Id": "111370007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "아, 눈더미 속에 숨었다고? 추위에 강한가 보네……",
+						"NextMessageId": "111370008"
+					},
+					"111370008": {
+						"Id": "111370008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "병나지 않게 빨리 돌아와! 앞으로의 이상 상황도 너한테 조사를 부탁해야 되거든"
+					},
+					"111370009": {
+						"Id": "111370009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "마침 저번에 네가 말했던 그 저금통에 대한 단서를 찾았어. 네가 이번에 발견한 내용을 더하면 더 심도 있는 결론을 낼 수 있을 거야",
+						"NextMessageId": "choice8"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "손가락이 얼었어요!",
+								"NextMessageId": "111370001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "모든 게 순조로웠어요",
+								"NextMessageId": "111370002"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "이번에는 눈더미에 숨었어요",
+								"NextMessageId": "111370004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "그게 추위와 얼음 속에 숨었어요…",
+								"NextMessageId": "111370006"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
 	"11138": {
 		"Id": "11138",
 		"ContactId": "70",
@@ -9436,6 +9644,478 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"11139": {
+		"Id": "11139",
+		"ContactId": "69",
+		"ParticpatingContactIds": [
+			"69",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1113900",
+				"StartingMessageId": "111390000",
+				"Messages": {
+					"111390000": {
+						"Id": "111390000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "이번 상황은 어때? 감지기에 가짜 정보가 걸렸어?",
+						"NextMessageId": "choice1"
+					},
+					"111390001": {
+						"Id": "111390001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이 광고 그림이 확실히 이상해요. 그 녀석이 이렇게 숨는데 도가 텄는지 몰랐어요",
+						"NextMessageId": "111390003"
+					},
+					"111390002": {
+						"Id": "111390002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "가짜 정보까지는 아니지만 특별한 소식은 없어요. 그냥 다른 걸로 변신해서 숨은 거죠. 이번에는 광고 그림으로 변신했을 뿐이에요",
+						"NextMessageId": "111390003"
+					},
+					"111390003": {
+						"Id": "111390003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "광고 그림? 그렇다면 미적 감각이 있다는 소리잖아? 이건 아주 중요하다고!",
+						"NextMessageId": "111390004"
+					},
+					"111390004": {
+						"Id": "111390004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "별일 없으면 어서 쉬어. 감지기가 얼마 후에 반응을 보일지 모르니 힘을 비축해야 해!"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "확실히 이상해요",
+								"NextMessageId": "111390001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "가짜 정보는 아니에요",
+								"NextMessageId": "111390002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"11140": {
+		"Id": "11140",
+		"ContactId": "69",
+		"ParticpatingContactIds": [
+			"69",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1114000",
+				"StartingMessageId": "111400000",
+				"Messages": {
+					"111400000": {
+						"Id": "111400000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "이번에 나타난 곳은 이상한데. 나도 가본 적 없는 곳이야. 일은 잘 돼가?",
+						"NextMessageId": "choice1"
+					},
+					"111400001": {
+						"Id": "111400001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이쪽에 잡동사니가 너무 많아서 찾는 데 한참 걸렸어요. 옷이 먼지로 더러워졌으니까 세탁비를 추가해주셔야 해요",
+						"NextMessageId": "111400003"
+					},
+					"111400002": {
+						"Id": "111400002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "제가 직접 나섰는데 일이 안 될리 있겠어요? 다만 우여곡절이 너무 많아서 보수를 좀 더 받아야될 것 같아요……",
+						"NextMessageId": "111400003"
+					},
+					"111400003": {
+						"Id": "111400003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "시덥지 않은 이유로 돈 뜯어낼 생각하지 마! 연구 경비가 빠듯하단 말이야. 이번에 이상이 발생한 곳은 어디야?",
+						"NextMessageId": "choice6"
+					},
+					"111400004": {
+						"Id": "111400004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "옷장이요. 숨바꼭질이라고 한다면 너무 식상한 장소죠",
+						"NextMessageId": "111400006"
+					},
+					"111400005": {
+						"Id": "111400005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "아주 깊고 어두운 곳 끝에… 빛 한 점 들지 않는 곳이요!",
+						"NextMessageId": "111400006"
+					},
+					"111400006": {
+						"Id": "111400006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "아… 옷장이구나, 거기라면 식상하긴 하지",
+						"NextMessageId": "111400007"
+					},
+					"111400007": {
+						"Id": "111400007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "감지기가 또 반응을 보일지 모르니 너도 빨리 돌아와. 그때 바로 출격해야 한다고!"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "찾는 데 한참 걸렸어요",
+								"NextMessageId": "111400001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "일이 안 될리 있겠어요!",
+								"NextMessageId": "111400002"
+							}
+						]
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "옷장이요",
+								"NextMessageId": "111400004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "아주 깊고 어두운 곳…",
+								"NextMessageId": "111400005"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"11141": {
+		"Id": "11141",
+		"ContactId": "69",
+		"ParticpatingContactIds": [
+			"69",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1114100",
+				"StartingMessageId": "111410000",
+				"Messages": {
+					"111410000": {
+						"Id": "111410000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "응답하라!! 이번에는 별일 없나? 나 좀 급하다고!!",
+						"NextMessageId": "choice1"
+					},
+					"111410001": {
+						"Id": "111410001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "그 마음 알지만 조급해하지 마세요. 이번에는 영화 촬영기의 영상 안에 이상이 발생했어요. 이번엔 식상하지 않네요",
+						"NextMessageId": "111410004"
+					},
+					"111410002": {
+						"Id": "111410002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이번에 그게 영화 촬영기 속에 숨었어요! 영상을 보고 나서야 알아차렸네요!! 너무 신기해요!!! 이게 이번 상황이에요!!",
+						"NextMessageId": "111410003"
+					},
+					"111410003": {
+						"Id": "111410003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "그렇게 서두르지 마…. 깜짝 놀랐잖아!",
+						"NextMessageId": "111410004"
+					},
+					"111410004": {
+						"Id": "111410004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "이번 상황은 꽤 흥미롭군. 포장해서 내 금쪽 같은 감지기에 써도 될 것 같아",
+						"NextMessageId": "111410005"
+					},
+					"111410005": {
+						"Id": "111410005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "너도 빨리 돌아와서 내 연구 아이디어를 살펴봐줘. 감지기가 반응하면 바로 조사 나가기도 좋잖아"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "조급해하지 마세요",
+								"NextMessageId": "111410001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "새로운 상황이 생겼어요!",
+								"NextMessageId": "111410002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"11142": {
+		"Id": "11142",
+		"ContactId": "69",
+		"ParticpatingContactIds": [
+			"69",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1114200",
+				"StartingMessageId": "111420000",
+				"Messages": {
+					"111420000": {
+						"Id": "111420000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "조사는 잘 돼가? 정 못 찾겠으면 됐어…. 과학에는 실패가 허용되거든!",
+						"NextMessageId": "choice1"
+					},
+					"111420001": {
+						"Id": "111420001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "죄송하지만 실패하지 않았어요. 이상 상황이 텐트에 발생했어요. 녀석의 숨기 능력이 여전히 어설프네요",
+						"NextMessageId": "111420003"
+					},
+					"111420002": {
+						"Id": "111420002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "벌써 찾았어요. 이번에는 텐트에 이상이 있었어요. 찾는 데 애 좀 먹었죠",
+						"NextMessageId": "111420003"
+					},
+					"111420003": {
+						"Id": "111420003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "다행이야! 솔직히 이렇게 여러 번 성공했으니 감지기도 한두 번 실패할 법도 한데……",
+						"NextMessageId": "111420004"
+					},
+					"111420004": {
+						"Id": "111420004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "하지만 내 감지기가 너무 뛰어난 걸 어쩌겠어! 실패 한번 하기 힘드네!",
+						"NextMessageId": "111420005"
+					},
+					"111420005": {
+						"Id": "111420005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "앞으로 반응을 보이면 바로 알려줄게. 너도 서둘러 성과를 가져와야 해!"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "근데 전 성공했어요",
+								"NextMessageId": "111420001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "벌써 찾았어요",
+								"NextMessageId": "111420002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"11143": {
+		"Id": "11143",
+		"ContactId": "69",
+		"ParticpatingContactIds": [
+			"69",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1114300",
+				"StartingMessageId": "111430000",
+				"Messages": {
+					"111430000": {
+						"Id": "111430000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "방금 네게 문자 메시지를 여러 번 보냈는데 다 실패했어. 그쪽 신호에 문제 있는 거 아냐?",
+						"NextMessageId": "choice1"
+					},
+					"111430001": {
+						"Id": "111430001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "당신 정말 레긴 씨예요? 당신의 정체가 의심스럽네요. 문자 메시지로는 얼굴을 확인할 수 없으니까요!",
+						"NextMessageId": "111430002"
+					},
+					"111430002": {
+						"Id": "111430002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "엥? 무슨 소리야? 이 세상에 가짜 레긴도 있단 말인가? 너 머리가 어떻게 된 건 아니지?",
+						"NextMessageId": "111430005"
+					},
+					"111430003": {
+						"Id": "111430003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "당신이 우리가 설정한 암호를 대기 전까지 어떤 정보도 줄 수 없어요",
+						"NextMessageId": "111430004"
+					},
+					"111430004": {
+						"Id": "111430004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "암호? 무슨 암호? 수호자님 만세? 나도 실버메인 철위대가 돼야 하나? 아니지, 암호 같은 걸 설정한 적이 없는데!",
+						"NextMessageId": "111430005"
+					},
+					"111430005": {
+						"Id": "111430005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "무슨 일 있어? 사고가 난 건 아니지? 지금 돈 부쳐줄 테니 꼼짝 말고 있어!",
+						"NextMessageId": "choice8"
+					},
+					"111430006": {
+						"Id": "111430006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "당신이 이렇게 의리 있을 줄은 몰랐어요. 감동했어요…. 당신은 분명 진짜 레긴 씨예요!",
+						"NextMessageId": "111430008"
+					},
+					"111430007": {
+						"Id": "111430007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "사고가 나면 웃돈을 줘야 해요. 진짜가 맞나 보네요, 확인 완료",
+						"NextMessageId": "111430008"
+					},
+					"111430008": {
+						"Id": "111430008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "너 괜찮은 거지? 됐다, 지금 당장 이번 상황을 묻지 않을게. 빨리 쉬어!",
+						"NextMessageId": "111430009"
+					},
+					"111430009": {
+						"Id": "111430009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "69",
+						"Text": "푹 쉬고 나서 시간 나면 돌아와서 직접 보고 이야기하는 게 어때?"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "당신 정말 레긴 씨예요?",
+								"NextMessageId": "111430001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "일단 암호부터 대시죠!",
+								"NextMessageId": "111430003"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "감동했어요…",
+								"NextMessageId": "111430006"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "당신은 진짜군요",
+								"NextMessageId": "111430007"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
 	"11144": {
 		"Id": "11144",
 		"ContactId": "1101",
@@ -9502,7 +10182,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1101",
-						"Text": "페라한테 보고 받았어, 박물관 경영과 소중한 전시품을 되찾아준 것, 모두 네 덕에 진전이 있었어",
+						"Text": "페라한테 보고 받았어, 박물관 운영과 소중한 전시품을 되찾아준 것, 모두 네 덕에 진전이 있었어",
 						"NextMessageId": "111440007"
 					},
 					"111440007": {
@@ -12832,6 +13512,87 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"12012": {
+		"Id": "12012",
+		"ContactId": "8000",
+		"ParticpatingContactIds": [
+			"8000",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1201200",
+				"StartingMessageId": "120120000",
+				"Messages": {
+					"120120000": {
+						"Id": "120120000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "8000",
+						"Text": "운기군에서 우리에게 같이 움직여 달라고 요청했어",
+						"NextMessageId": "120120001"
+					},
+					"120120001": {
+						"Id": "120120001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "8000",
+						"Text": "네 고향 연단로 진짜 엄청 크다",
+						"NextMessageId": "120120002"
+					},
+					"120120002": {
+						"Id": "120120002",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "8000",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10013.png",
+						"Text": "[이미지]",
+						"NextMessageId": "choice3"
+					},
+					"120120003": {
+						"Id": "120120003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "너희 운기군이랑 뭘 하고 있었어?",
+						"NextMessageId": "120120005"
+					},
+					"120120004": {
+						"Id": "120120004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "너희 [태진 연단실]에서 뭐 해?",
+						"NextMessageId": "120120005"
+					},
+					"120120005": {
+						"Id": "120120005",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "메시지 전송에 실패했습니다"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "운기군?",
+								"NextMessageId": "120120003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "태진 연단실?",
+								"NextMessageId": "120120004"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
 	"12055": {
 		"Id": "12055",
 		"ContactId": "1202",
@@ -13241,7 +14002,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "먹고 나면 못 떠날 걸…",
+								"Text": "먹고 나면 못 떠날걸…",
 								"NextMessageId": "120560013"
 							},
 							{
@@ -14183,7 +14944,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "42",
-						"Text": "아래 내용은 비밀로 해줘.\n사건 이후 장군과 태복께서 리스트를 만들어 우리 보고 전박사와 이 리스트에 적힌 시간과 장소에 따라 출입한 사람을 조사해달래. 선주에 「위험물」을 반입한 사람이 있을 거라 의심하더라",
+						"Text": "아래 내용은 비밀로 해줘.\n사건 이후 장군과 태복께서 리스트를 만들어 우리 보고 천박사와 이 리스트에 적힌 시간과 장소에 따라 출입한 사람을 조사해달래. 선주에 「위험물」을 반입한 사람이 있을 거라 의심하더라",
 						"NextMessageId": "121050009"
 					},
 					"121050009": {
@@ -14643,6 +15404,230 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"12115": {
+		"Id": "12115",
+		"ContactId": "38",
+		"ParticpatingContactIds": [
+			"38",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1211500",
+				"StartingMessageId": "121150001",
+				"Messages": {
+					"121150001": {
+						"Id": "121150001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "{NICKNAME}? 지금 회성항에 있어?",
+						"NextMessageId": "choice1"
+					},
+					"121150002": {
+						"Id": "121150002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "네, 지금 회성항이에요. 볼일이 좀 있어서요",
+						"NextMessageId": "121150003"
+					},
+					"121150003": {
+						"Id": "121150003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "다행이다",
+						"NextMessageId": "121150006"
+					},
+					"121150004": {
+						"Id": "121150004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "어떻게 알았어요? 설마 저 미행하는 거 아니죠?",
+						"NextMessageId": "121150005"
+					},
+					"121150005": {
+						"Id": "121150005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "미안, 지금 농담할 상황이 아니라 본론부터 말할게",
+						"NextMessageId": "121150006"
+					},
+					"121150006": {
+						"Id": "121150006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "네가 근처에 있단 건 기계새 시스템을 통해 알았어",
+						"NextMessageId": "121150007"
+					},
+					"121150007": {
+						"Id": "121150007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "급하게 도와줬으면 하는 일 있거든",
+						"NextMessageId": "121150008"
+					},
+					"121150008": {
+						"Id": "121150008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "1시간 전에 장낙천 상공의 천궁에 문제가 생겼어. 아마 불멸의 거목의 성장 탓에 음양 반응이 나서 그럴 거야",
+						"NextMessageId": "121150009"
+					},
+					"121150009": {
+						"Id": "121150009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "자세한 설명은 복잡하니 생략할게. 어쨌든 지금 한 구역에 심각한 문제가 생겼는데 금방이라도 폭발할 것 같아",
+						"NextMessageId": "121150010"
+					},
+					"121150010": {
+						"Id": "121150010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "하지만 아직 나부는 혼란에서 빠져나오지 못했고 비상사태에 투입할 수 있는 인력은 부족해. 다행히 천박사의 한 사무원이 별뗏목을 몰고 천궁으로 날아가 긴급 구조를 진행했지만",
+						"NextMessageId": "121150011"
+					},
+					"121150011": {
+						"Id": "121150011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "작업 중에 문제가 생겼어(아마 음양 반응의 영향일 거야). 회성항 상공에서 연락이 끊겼는데 불시착이나 추락이 아닐까 싶어",
+						"NextMessageId": "121150012"
+					},
+					"121150012": {
+						"Id": "121150012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "문제를 발견하자마자 운기군에 증원을 요청했지만",
+						"NextMessageId": "121150013"
+					},
+					"121150013": {
+						"Id": "121150013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "이런 문제는 1분 1초가 생존에 직결돼. 그러니 너희가 먼저 가서 수색해줘",
+						"NextMessageId": "choice22"
+					},
+					"121150014": {
+						"Id": "121150014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "「너희」라뇨? 회성항에 저 말고 누가 또 있나요?",
+						"NextMessageId": "121150015"
+					},
+					"121150015": {
+						"Id": "121150015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "웰트 씨도 있어",
+						"NextMessageId": "121150016"
+					},
+					"121150016": {
+						"Id": "121150016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "그 사람한테도 연락을 넣었지",
+						"NextMessageId": "121150020"
+					},
+					"121150017": {
+						"Id": "121150017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "별뗏목은 어디서 추락했나요?",
+						"NextMessageId": "121150018"
+					},
+					"121150018": {
+						"Id": "121150018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "아직 수색 중이야",
+						"NextMessageId": "121150019"
+					},
+					"121150019": {
+						"Id": "121150019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "네 동료인 웰트 씨도 주위에 있길래 내가 연락을 넣었어",
+						"NextMessageId": "121150020"
+					},
+					"121150020": {
+						"Id": "121150020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "회성항의 높은 곳에서 기계새를 이용해 찾아봐",
+						"NextMessageId": "121150021"
+					},
+					"121150021": {
+						"Id": "121150021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "아, 그리고… 사무원이 좀 특수한 신분이니",
+						"NextMessageId": "121150022"
+					},
+					"121150022": {
+						"Id": "121150022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "구조에 최선을 다해줘. 부탁할게"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "네, 지금 회성항이에요",
+								"NextMessageId": "121150002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "어떻게 알았어요?",
+								"NextMessageId": "121150004"
+							}
+						]
+					},
+					"choice22": {
+						"Id": "choice22",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "「너희」?",
+								"NextMessageId": "121150014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "추락 지점은 어디죠?",
+								"NextMessageId": "121150017"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
 	"12116": {
 		"Id": "12116",
 		"ContactId": "1201",
@@ -15058,6 +16043,384 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"12118": {
+		"Id": "12118",
+		"ContactId": "53",
+		"ParticpatingContactIds": [
+			"53",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1211800",
+				"StartingMessageId": "121180000",
+				"Messages": {
+					"121180000": {
+						"Id": "121180000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "{NICKNAME}, 혼자서 태복사로 와, 좌표는 나중에 보낼게",
+						"NextMessageId": "121180001"
+					},
+					"121180001": {
+						"Id": "121180001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "누구에게도 알리지 마",
+						"NextMessageId": "121180002"
+					},
+					"121180002": {
+						"Id": "121180002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "——당신의 충실한 카프카가",
+						"NextMessageId": "choice3"
+					},
+					"121180003": {
+						"Id": "121180003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "카프카 씨… 왜 아직도 나부에 있는 거죠?",
+						"NextMessageId": "121180004"
+					},
+					"121180004": {
+						"Id": "121180004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "당분간은 떠날 수가 없어, 네 도움이 필요해",
+						"NextMessageId": "121180010"
+					},
+					"121180005": {
+						"Id": "121180005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "정말 카프카 씨인가요? 증거는요?",
+						"NextMessageId": "121180006"
+					},
+					"121180006": {
+						"Id": "121180006",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10202.png",
+						"Text": "[이미지]",
+						"NextMessageId": "121180007"
+					},
+					"121180007": {
+						"Id": "121180007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "증거로 충분하지?",
+						"NextMessageId": "121180010"
+					},
+					"121180008": {
+						"Id": "121180008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "헛수고예요, 전 이제 휘둘리지 않아요",
+						"NextMessageId": "121180009"
+					},
+					"121180009": {
+						"Id": "121180009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "그래? 하지만 난 네 도움이 필요한데",
+						"NextMessageId": "121180010"
+					},
+					"121180010": {
+						"Id": "121180010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "블레이드의 마각의 몸이 너무 심해서 그가 회복하기 전에 떠날 수 없어",
+						"NextMessageId": "121180011"
+					},
+					"121180011": {
+						"Id": "121180011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "너도 알다시피 선주에서 블레이드의 지명수배를 철회하지 않아서, 여전히 최고 레벨의 수배자야",
+						"NextMessageId": "121180012"
+					},
+					"121180012": {
+						"Id": "121180012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "네가 필요해, {NICKNAME}, 날 찾아와 줘",
+						"NextMessageId": "choice19"
+					},
+					"121180013": {
+						"Id": "121180013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "지금 어딘가요? 좌표 보내주세요",
+						"NextMessageId": "121180016"
+					},
+					"121180014": {
+						"Id": "121180014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "포기하세요 카프카 씨, 전 안 가요",
+						"NextMessageId": "121180016"
+					},
+					"121180015": {
+						"Id": "121180015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "저 계속 이 번호 쓰고 싶거든요, 연락하지 마세요",
+						"NextMessageId": "121180016"
+					},
+					"121180016": {
+						"Id": "121180016",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "익명이 보낸 위치 정보를 받았습니다",
+						"NextMessageId": "121180017"
+					},
+					"121180017": {
+						"Id": "121180017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "53",
+						"Text": "넌 반드시 올 거야, 기다릴게",
+						"NextMessageId": "choice30"
+					},
+					"121180018": {
+						"Id": "121180018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "알겠어요",
+						"NextMessageId": "121180020"
+					},
+					"121180019": {
+						"Id": "121180019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "마음대로 하세요",
+						"NextMessageId": "121180020"
+					},
+					"121180020": {
+						"Id": "121180020",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "발신 오류: 대상이 존재하지 않습니다"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "아직도 나부에 있나요?",
+								"NextMessageId": "121180003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "당신이 카프카 씨인 걸 어떻게 믿죠?",
+								"NextMessageId": "121180005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "당신의 요청을 들어주지 않을 거예요",
+								"NextMessageId": "121180008"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "좌표를 주세요",
+								"NextMessageId": "121180013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "안 갈 거예요",
+								"NextMessageId": "121180014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "다시는 절 찾지 마세요",
+								"NextMessageId": "121180015"
+							}
+						]
+					},
+					"choice30": {
+						"Id": "choice30",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "알겠어요",
+								"NextMessageId": "121180018"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "마음대로 하세요",
+								"NextMessageId": "121180019"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12119": {
+		"Id": "12119",
+		"ContactId": "51",
+		"ParticpatingContactIds": [
+			"51",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1211501",
+				"StartingMessageId": "121151001",
+				"Messages": {
+					"121151001": {
+						"Id": "121151001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "51",
+						"Text": "{NICKNAME}, 경원 장군님한테서 무슨 수확이 있었어?",
+						"NextMessageId": "121151002"
+					},
+					"121151002": {
+						"Id": "121151002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "51",
+						"Text": "난 서유가 일 때문에 엄마가 자리를 비웠다고 해서 지금 천박사야",
+						"NextMessageId": "121151003"
+					},
+					"121151003": {
+						"Id": "121151003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "51",
+						"Text": "뭔가 얻은 게 있다면 이쪽으로 와줄래?",
+						"NextMessageId": "121151004"
+					},
+					"121151004": {
+						"Id": "121151004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "51",
+						"Text": "천박사 동료들한테 물어보고 싶은데… 어떻게 말문을 열면 좋을지 모르겠어……",
+						"NextMessageId": "choice4"
+					},
+					"121151005": {
+						"Id": "121151005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "채이라는 분 알아? 예전에 어공 씨랑 가장 친한 친구 사이였다던데",
+						"NextMessageId": "121151007"
+					},
+					"121151006": {
+						"Id": "121151006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "경원 씨한테서 「채이」란 이름을 들었어. 너랑 꽤 친하다면서?",
+						"NextMessageId": "121151007"
+					},
+					"121151007": {
+						"Id": "121151007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "51",
+						"Text": "……",
+						"NextMessageId": "121151008"
+					},
+					"121151008": {
+						"Id": "121151008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "51",
+						"Text": "은연중에 뭔가 관련이 있을 거라곤 생각했지만",
+						"NextMessageId": "121151009"
+					},
+					"121151009": {
+						"Id": "121151009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "51",
+						"Text": "문자 메시지론 자세히 설명하기 힘드니 만나서 얘기하자",
+						"NextMessageId": "choice13"
+					},
+					"121151010": {
+						"Id": "121151010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이따 봐"
+					},
+					"121151011": {
+						"Id": "121151011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "나중에 봐"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "채이라는 분 알아?",
+								"NextMessageId": "121151005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "경원 씨가 채이란 이름을 말하던데…",
+								"NextMessageId": "121151006"
+							}
+						]
+					},
+					"choice13": {
+						"Id": "choice13",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "이따 봐",
+								"NextMessageId": "121151010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "나중에 봐",
+								"NextMessageId": "121151011"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
 	},
 	"12120": {
 		"Id": "12120",
@@ -16574,7 +17937,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "66",
-						"Text": "시간 나면 약목정으로 와서 이야기해요",
+						"Text": "근데… 당신은 지금 선주의 문제를 처리하고 있어야 하지 않나요?",
 						"NextMessageId": "choice2"
 					},
 					"121290103": {
@@ -16582,7 +17945,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "바로 갈게요",
+						"Text": "하필 지금이요?",
 						"NextMessageId": "121290106"
 					},
 					"121290105": {
@@ -16590,15 +17953,31 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "지금 일이 있어서 갈 수 없어요",
-						"NextMessageId": "121290106"
+						"Text": "이전에 공조사에서 문제가 생겼어요",
+						"NextMessageId": "121290108"
 					},
 					"121290106": {
 						"Id": "121290106",
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "66",
-						"Text": "급할 거 없어요. 전 별일 없으니 약목정에서 기다리죠"
+						"Text": "급할 거 없으니까 시간 나면 오세요",
+						"NextMessageId": "121290107"
+					},
+					"121290107": {
+						"Id": "121290107",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "66",
+						"Text": "약목정에서 기다리고 있을게요"
+					},
+					"121290108": {
+						"Id": "121290108",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "불멸의 거목이 사방에서 자라고 있네. 게다가 사슴 한 마리까지 나왔어…",
+						"NextMessageId": "121290106"
 					},
 					"choice2": {
 						"Id": "choice2",
@@ -16606,12 +17985,12 @@
 						"Choices": [
 							{
 								"ChoiceType": "Text",
-								"Text": "바로 갈게요",
+								"Text": "지금이요?",
 								"NextMessageId": "121290103"
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "지금 일이 있어서요",
+								"Text": "지금 바빠요",
 								"NextMessageId": "121290105"
 							}
 						]
@@ -17271,6 +18650,2014 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"12149": {
+		"Id": "12149",
+		"ContactId": "75",
+		"ParticpatingContactIds": [
+			"75",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1211801",
+				"StartingMessageId": "121180101",
+				"Messages": {
+					"121180101": {
+						"Id": "121180101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "75",
+						"Text": "{NICKNAME}, 난 카프카야",
+						"NextMessageId": "121180102"
+					},
+					"121180102": {
+						"Id": "121180102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "75",
+						"Text": "우여곡절이 있었지만, 난 괜찮아. 이 말만 전하려고",
+						"NextMessageId": "121180103"
+					},
+					"121180103": {
+						"Id": "121180103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "75",
+						"Text": "자유 의지는 존재할까? 말하긴 어렵지만, 너는 자신의 선택으로 미약한 가능성을 현실로 만들었어",
+						"NextMessageId": "121180104"
+					},
+					"121180104": {
+						"Id": "121180104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "75",
+						"Text": "운명의 노예인 너나 나에겐 아주 멋진 일이지",
+						"NextMessageId": "choice4"
+					},
+					"121180105": {
+						"Id": "121180105",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "몸조심해요, 카프카 씨",
+						"NextMessageId": "121180108"
+					},
+					"121180106": {
+						"Id": "121180106",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "고마워요. 더 연락하지 말고요",
+						"NextMessageId": "121180108"
+					},
+					"121180107": {
+						"Id": "121180107",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "또 발신 오류가 나겠죠?",
+						"NextMessageId": "121180108"
+					},
+					"121180108": {
+						"Id": "121180108",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "발신 오류: 대상이 존재하지 않습니다"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "몸조심해요",
+								"NextMessageId": "121180105"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "더 연락하지 말아요",
+								"NextMessageId": "121180106"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "또 발신 오류가 나겠죠?",
+								"NextMessageId": "121180107"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12151": {
+		"Id": "12151",
+		"ContactId": "1204",
+		"ParticpatingContactIds": [
+			"1204",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1215101",
+				"StartingMessageId": "121510101",
+				"Messages": {
+					"121510101": {
+						"Id": "121510101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "{NICKNAME}, 실례 좀 할게.\n신책부에서 최근 시왕사와 함께 악성 사건을 조사 중인데 네 도움이 필요해.\n요새 정체불명의 택배를 받은 적 있나?",
+						"NextMessageId": "choice1"
+					},
+					"121510102": {
+						"Id": "121510102",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "지금 가지고 있어요",
+						"NextMessageId": "121510103"
+					},
+					"121510103": {
+						"Id": "121510103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "하하, 잘됐군",
+						"NextMessageId": "121510108"
+					},
+					"121510104": {
+						"Id": "121510104",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "받은 적 없는데요",
+						"NextMessageId": "121510105"
+					},
+					"121510105": {
+						"Id": "121510105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "그럴 리 없는데. 청추가 올린 보고에 오류가 있나?",
+						"NextMessageId": "121510108"
+					},
+					"121510106": {
+						"Id": "121510106",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "무슨 택배요?",
+						"NextMessageId": "121510107"
+					},
+					"121510107": {
+						"Id": "121510107",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "이럴 리 없는데. 정말 이 일을 몰랐어?",
+						"NextMessageId": "121510108"
+					},
+					"121510108": {
+						"Id": "121510108",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "사실 그 택배는 소멸 재앙신을 따르는 「소멸파」라는 폭도들이 선주를 뒤엎으려는 위험한 물건이야",
+						"NextMessageId": "121510109"
+					},
+					"121510109": {
+						"Id": "121510109",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "그런 택배를 받은 게 확실하면 바로 신책부로 가서 청주에게 줘. 청주가 그걸 시왕사의 담당자에게 넘겨 처리할 테니",
+						"NextMessageId": "121510110"
+					},
+					"121510110": {
+						"Id": "121510110",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "물론 위험하지 않게 그것을 없앨 방법이 있다면 알아서 처리해도 돼. 처리한 후에 청주에게 알려주고",
+						"NextMessageId": "121510111"
+					},
+					"121510111": {
+						"Id": "121510111",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1204",
+						"Text": "난 중요한 일이 있어서 이제 회신은 못 할 거야"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "지금 가지고 있어요",
+								"NextMessageId": "121510102"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "받은 적 없는데요",
+								"NextMessageId": "121510104"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "무슨 택배요?",
+								"NextMessageId": "121510106"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12152": {
+		"Id": "12152",
+		"ContactId": "76",
+		"ParticpatingContactIds": [
+			"76"
+		],
+		"Sections": [
+			{
+				"Id": "1215201",
+				"StartingMessageId": "121520101",
+				"Messages": {
+					"121520101": {
+						"Id": "121520101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "76",
+						"Text": "[「나부」 지형사 응급 관리소]에서 드리는 말씀: 지형사 조례에 따르면 몸싸움은 위법 행위이며, 타인에게 물리적 피해를 입히고 심각한 상황을 초래할 수 있습니다. 근거 없는 소문 때문에 여행객들과 경솔하게 싸움을 벌이지 말고 이성적으로 대처하시길 바랍니다. 교통 혼잡이나 항로 정체 상황이 발생하면, 이동 계획을 세워 질서 있게 통행하고, 응급 항로로 빠져 2차 사고를 방지해야 합니다. 모두 함께 질서 있는 「나부」를 만들어갑시다!"
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12153": {
+		"Id": "12153",
+		"ContactId": "47",
+		"ParticpatingContactIds": [
+			"47",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1215301",
+				"StartingMessageId": "121530101",
+				"Messages": {
+					"121530101": {
+						"Id": "121530101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "{NICKNAME}, 양을 찾았나요?",
+						"NextMessageId": "121530102"
+					},
+					"121530102": {
+						"Id": "121530102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "{F#언니}{M#오빠}, 괜찮은 거죠?",
+						"NextMessageId": "121530103"
+					},
+					"121530103": {
+						"Id": "121530103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "메시지 보면 답장 부탁해요",
+						"NextMessageId": "121530104"
+					},
+					"121530104": {
+						"Id": "121530104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "아직 살아있죠?",
+						"NextMessageId": "choice4"
+					},
+					"121530105": {
+						"Id": "121530105",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "미안, 이제야 짬이 났어",
+						"NextMessageId": "121530107"
+					},
+					"121530106": {
+						"Id": "121530106",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "상황 보고를 깜빡했네, 미안",
+						"NextMessageId": "121530107"
+					},
+					"121530107": {
+						"Id": "121530107",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "양을 찾긴 찾았는데, 전부 늑대한테 먹혔어. 늑대는 성에 안 차는지 나까지 잡아먹으려 해서 내가 처치했어",
+						"NextMessageId": "121530108"
+					},
+					"121530108": {
+						"Id": "121530108",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "그러다 자칭 「방생파」 일원이라는 사람들을 만났는데, 나보고 꼭 가입해야 된대",
+						"NextMessageId": "121530109"
+					},
+					"121530109": {
+						"Id": "121530109",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "그럼 가입하세요!",
+						"NextMessageId": "choice13"
+					},
+					"121530110": {
+						"Id": "121530110",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "왜? 네가 가입하라고 하니 덜컥 겁이 나네……",
+						"NextMessageId": "121530111"
+					},
+					"121530111": {
+						"Id": "121530111",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "연맹은 역병 재앙신을 믿는 행상들이 선주에 와서 무역하는 걸 금지하지 않아요, 이건 알고 있죠?",
+						"NextMessageId": "121530112"
+					},
+					"121530112": {
+						"Id": "121530112",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "이렇게 개방적이고 포용적인 정책 때문에 지형사는 선주의 질서 유지에 애를 먹고 있어요",
+						"NextMessageId": "121530113"
+					},
+					"121530113": {
+						"Id": "121530113",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "「방생파」도 지형사의 골칫거리 중 하나예요",
+						"NextMessageId": "121530114"
+					},
+					"121530114": {
+						"Id": "121530114",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "분명 거기에도 범죄와 무관한 선량한 사람들이 있어요",
+						"NextMessageId": "121530115"
+					},
+					"121530115": {
+						"Id": "121530115",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "하지만 그들은 「풍요」의 가르침을 따르고, 자신들의 방생으로 「공덕」을 쌓아 복을 받을 수 있다고 믿고 있어요",
+						"NextMessageId": "121530116"
+					},
+					"121530116": {
+						"Id": "121530116",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "방생 규모가 커질수록 침입종이 많아져서 정말 골치 아파요",
+						"NextMessageId": "121530117"
+					},
+					"121530117": {
+						"Id": "121530117",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "그러니까 「방생파」에 가입해서 그들을 내부에서 무너뜨리면 좋겠어요! 그렇게만 된다면 지형사에서 후하게 사례할 거예요",
+						"NextMessageId": "choice22"
+					},
+					"121530118": {
+						"Id": "121530118",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "왜 또 나야? 지형사에는 사람이 없어? 돕고 싶지만 난 능력이 안 돼",
+						"NextMessageId": "121530120"
+					},
+					"121530119": {
+						"Id": "121530119",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "내부를 어떻게 무너뜨리는데? 돕고 싶지만, 난 능력이 안 돼",
+						"NextMessageId": "121530120"
+					},
+					"121530120": {
+						"Id": "121530120",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "너무 겸손하시네요! 지금 6부서에는 당신이 「적후에 잠투해 약왕의 비전을 처치했다」는 소문이 파다하다고요",
+						"NextMessageId": "121530121"
+					},
+					"121530121": {
+						"Id": "121530121",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "이런 조직을 소탕하는 전문가잖아요",
+						"NextMessageId": "121530122"
+					},
+					"121530122": {
+						"Id": "121530122",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "물론 저희도 강요하는 건 아니에요",
+						"NextMessageId": "121530123"
+					},
+					"121530123": {
+						"Id": "121530123",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "무너뜨리는 게 힘들다면, 놈들이 엉뚱한 짓을 벌이지 못하게 새로운 정보를 알아내는 것도 괜찮아요",
+						"NextMessageId": "121530124"
+					},
+					"121530124": {
+						"Id": "121530124",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "아무튼 부탁해요. 지형사에서 섭섭지 않게 사례할 거예요!"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "살아있어!",
+								"NextMessageId": "121530105"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "상황을 보고했어야 하는데…",
+								"NextMessageId": "121530106"
+							}
+						]
+					},
+					"choice13": {
+						"Id": "choice13",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "왜?",
+								"NextMessageId": "121530110"
+							}
+						]
+					},
+					"choice22": {
+						"Id": "choice22",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "또 나야?",
+								"NextMessageId": "121530118"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "어떻게 무너뜨리는데?",
+								"NextMessageId": "121530119"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12154": {
+		"Id": "12154",
+		"ContactId": "1103",
+		"ParticpatingContactIds": [
+			"8001",
+			"1103"
+		],
+		"Sections": [
+			{
+				"Id": "1215401",
+				"StartingMessageId": "121540101",
+				"Messages": {
+					"121540101": {
+						"Id": "121540101",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "계세요? 뭐 좀 물어봐도 돼요?",
+						"NextMessageId": "choice1"
+					},
+					"121540102": {
+						"Id": "121540102",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "서벌 씨, 자동 기갑병에 대해 알고 싶은데…",
+						"NextMessageId": "121540103"
+					},
+					"121540103": {
+						"Id": "121540103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "자동 기갑병?",
+						"NextMessageId": "121540104"
+					},
+					"121540104": {
+						"Id": "121540104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "알겠다, 알겠어. {F#씩씩한 여자라면 기갑병을 조종하고 싶은 로망이 있잖아?}{M#로봇은 남자들이 평생 놓지 못하는 로망이잖아?}",
+						"NextMessageId": "121540105"
+					},
+					"121540105": {
+						"Id": "121540105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "이야기를 나누기 전에 먼저 밝혀둘 게 있어",
+						"NextMessageId": "121540106"
+					},
+					"121540106": {
+						"Id": "121540106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "1. 이건 조종실이 없어서 탈 수 없어",
+						"NextMessageId": "121540107"
+					},
+					"121540107": {
+						"Id": "121540107",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "2. 이건 철위대 무기라서 비매품이야",
+						"NextMessageId": "choice8"
+					},
+					"121540108": {
+						"Id": "121540108",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "어떻게 방법이 없을까요?",
+						"NextMessageId": "121540109"
+					},
+					"121540109": {
+						"Id": "121540109",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "벨로보그에 있을 때 버려진 기갑병을 많이 봤잖아요. 수리할 수 있다면…",
+						"NextMessageId": "121540112"
+					},
+					"121540110": {
+						"Id": "121540110",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "알아요. 철위대에서 멀쩡한 기갑명을 팔 리가 없죠",
+						"NextMessageId": "121540111"
+					},
+					"121540111": {
+						"Id": "121540111",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "근데 그들이 버린 고철 덩이를 수리할 수 있다면…",
+						"NextMessageId": "121540112"
+					},
+					"121540112": {
+						"Id": "121540112",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "머리가 잘 돌아가네",
+						"NextMessageId": "121540113"
+					},
+					"121540113": {
+						"Id": "121540113",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "사용이 끝난 무기를 외부에 팔진 않지만, 완전히 망가진 고철을 수리하는 건 군령 위반이 아니지",
+						"NextMessageId": "121540114"
+					},
+					"121540114": {
+						"Id": "121540114",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1103",
+						"Text": "좋아, 위치를 보내줄게. 벨로보그에 도착하면 바로 이곳으로 와~"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "자동 기갑병에 대해…",
+								"NextMessageId": "121540102"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "이런, 다른 방법은 없을까요?",
+								"NextMessageId": "121540108"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "살 수 없다면 고치는 건…?",
+								"NextMessageId": "121540110"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12162": {
+		"Id": "12162",
+		"ContactId": "47",
+		"ParticpatingContactIds": [
+			"47",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1216201",
+				"StartingMessageId": "121620101",
+				"Messages": {
+					"121620101": {
+						"Id": "121620101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "저기, 아주 잘했네요!",
+						"NextMessageId": "121620102"
+					},
+					"121620102": {
+						"Id": "121620102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "외근 나갔다가 부서의 공문을 받았는데, 그 방생파 세 사람한테 문제가 생겼어요",
+						"NextMessageId": "choice2"
+					},
+					"121620103": {
+						"Id": "121620103",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "무슨 일인데?",
+						"NextMessageId": "121620104"
+					},
+					"121620104": {
+						"Id": "121620104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "47",
+						"Text": "장낙천에 가보면 알아요"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "그 사람들이 뭘 어쨌는데?",
+								"NextMessageId": "121620103"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12163": {
+		"Id": "12163",
+		"ContactId": "82",
+		"ParticpatingContactIds": [
+			"82",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1216301",
+				"StartingMessageId": "121630101",
+				"Messages": {
+					"121630101": {
+						"Id": "121630101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "82",
+						"Text": "{NICKNAME}, 안녕",
+						"NextMessageId": "121630102"
+					},
+					"121630102": {
+						"Id": "121630102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "82",
+						"Text": "선주에서의 일은 일단락됐어. 이제 나 같은 방랑자는 다음 모험을 떠나야지",
+						"NextMessageId": "121630103"
+					},
+					"121630103": {
+						"Id": "121630103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "82",
+						"Text": "요 며칠 동안 재미있었어",
+						"NextMessageId": "121630104"
+					},
+					"121630104": {
+						"Id": "121630104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "82",
+						"Text": "그래서 떠나기 전에 네게 작은 선물과 편지를 남겼거든",
+						"NextMessageId": "121630105"
+					},
+					"121630105": {
+						"Id": "121630105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "82",
+						"Text": "잊지 말고 장낙천 두루미 물류로 가봐~",
+						"NextMessageId": "choice5"
+					},
+					"121630106": {
+						"Id": "121630106",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이렇게 떠난다고요? 이제 어디로 갈 건데요?",
+						"NextMessageId": "121630107"
+					},
+					"121630107": {
+						"Id": "121630107",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "메시지 전송에 실패했습니다",
+						"NextMessageId": "121630108"
+					},
+					"121630108": {
+						"Id": "121630108",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "종산 씨?",
+						"NextMessageId": "121630109"
+					},
+					"121630109": {
+						"Id": "121630109",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "메시지 전송에 실패했습니다"
+					},
+					"choice5": {
+						"Id": "choice5",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "떠나려고요?",
+								"NextMessageId": "121630106"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12165": {
+		"Id": "12165",
+		"ContactId": "83",
+		"ParticpatingContactIds": [
+			"83",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1216500",
+				"StartingMessageId": "121650001",
+				"Messages": {
+					"121650001": {
+						"Id": "121650001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "시인들의 영감 옥조 회수는 잘돼 가?",
+						"NextMessageId": "choice1"
+					},
+					"121650002": {
+						"Id": "121650002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "방금 하나 회수했어요",
+						"NextMessageId": "121650003"
+					},
+					"121650003": {
+						"Id": "121650003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "그래? 순조롭군",
+						"NextMessageId": "121650007"
+					},
+					"121650004": {
+						"Id": "121650004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "재촉하지 마세요. 또 재촉하면 관둘 거예요",
+						"NextMessageId": "121650005"
+					},
+					"121650005": {
+						"Id": "121650005",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20003.png",
+						"Text": "[이미지]",
+						"NextMessageId": "121650006"
+					},
+					"121650006": {
+						"Id": "121650006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "재촉 좀 한 걸 가지고 너무 민감하게 굴지 마",
+						"NextMessageId": "121650007"
+					},
+					"121650007": {
+						"Id": "121650007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "…사실 난 친구가 얼마 없어. 너한테 감정 문제를 물어보고 싶은데, 괜찮아?",
+						"NextMessageId": "choice8"
+					},
+					"121650008": {
+						"Id": "121650008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "연애 문제는 제 전공이죠. 마음껏 물어보세요",
+						"NextMessageId": "121650010"
+					},
+					"121650009": {
+						"Id": "121650009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "연애 문제는 잘 몰라서요. 다른 사람한테 물어보시죠?",
+						"NextMessageId": "121650010"
+					},
+					"121650010": {
+						"Id": "121650010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "휴, 여자들은 기념할 의미가 있는 비싼 선물을 좋아하잖아?",
+						"NextMessageId": "121650011"
+					},
+					"121650011": {
+						"Id": "121650011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "근데 정채 씨는 왜 안 그렇지? 나한테 선물을 버리라네",
+						"NextMessageId": "choice16"
+					},
+					"121650012": {
+						"Id": "121650012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "뭘 선물했는데요?",
+						"NextMessageId": "121650013"
+					},
+					"121650013": {
+						"Id": "121650013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "사랑의 자물쇠!",
+						"NextMessageId": "121650016"
+					},
+					"121650014": {
+						"Id": "121650014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "정채 씨가 당신의 그 비싼 선물이 마음에 안 드나봐요",
+						"NextMessageId": "121650015"
+					},
+					"121650015": {
+						"Id": "121650015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "별건 아니고 사랑의 자물쇠. 너무 옛날 감성이지?",
+						"NextMessageId": "121650016"
+					},
+					"121650016": {
+						"Id": "121650016",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10014.png",
+						"Text": "[이미지]",
+						"NextMessageId": "121650017"
+					},
+					"121650017": {
+						"Id": "121650017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "휴, 알겠어. 그건 확실이 구식이야. 게다가 「상대의 마음을 잠근다」 라는 뜻도 요즘 시대 연애관이랑 안 맞고",
+						"NextMessageId": "121650018"
+					},
+					"121650018": {
+						"Id": "121650018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "근데 그 자물쇠는 보석으로 장식한 거라 값이 꽤 나간다고. 여자들은 그게 그렇게 별로인가?",
+						"NextMessageId": "choice27"
+					},
+					"121650019": {
+						"Id": "121650019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "그거 어디에서 샀어요…?",
+						"NextMessageId": "121650021"
+					},
+					"121650020": {
+						"Id": "121650020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "안목이 안타까울 정도로 별로네요",
+						"NextMessageId": "121650021"
+					},
+					"121650021": {
+						"Id": "121650021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "산 거 아니야. 그건… 전생에서 전해내려오는 보물이라고! 넌 그 가치를 전혀 몰라",
+						"NextMessageId": "121650022"
+					},
+					"121650022": {
+						"Id": "121650022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "내가 환생할 때 손에 그걸 쥐고 있었어. 장로님들이 그건 「금과 옥의 인연」이라고 하셨지. 난 그걸 연구하려고 공조사에 보냈어",
+						"NextMessageId": "121650023"
+					},
+					"121650023": {
+						"Id": "121650023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "난 여자들이 그걸 좋아할 줄 알았어. 휴, 근데 정채 씨가 보석에는 눈길도 안 주는 보기 드문 여자일 줄 누가 알았겠냐고",
+						"NextMessageId": "121650024"
+					},
+					"121650024": {
+						"Id": "121650024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "됐어. 그녀가 어떤 선물을 좋아할지 다시 생각해봐야겠어"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "이미 하나 찾았어요",
+								"NextMessageId": "121650002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "재촉하지 마세요",
+								"NextMessageId": "121650004"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "제 전공이죠, 물어보세요",
+								"NextMessageId": "121650008"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "저도 잘 몰라요. 다른 사람을 찾아보세요",
+								"NextMessageId": "121650009"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "뭘 선물했는데요?",
+								"NextMessageId": "121650012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "거절의 뜻을 표현한 거겠죠…",
+								"NextMessageId": "121650014"
+							}
+						]
+					},
+					"choice27": {
+						"Id": "choice27",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "어디에서 샀어요…?",
+								"NextMessageId": "121650019"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "안목이 안타깝네요",
+								"NextMessageId": "121650020"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12166": {
+		"Id": "12166",
+		"ContactId": "83",
+		"ParticpatingContactIds": [
+			"83",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1216600",
+				"StartingMessageId": "121660001",
+				"Messages": {
+					"121660001": {
+						"Id": "121660001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "임시 방송, 임시 방송!",
+						"NextMessageId": "121660002"
+					},
+					"121660002": {
+						"Id": "121660002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "내가 만든 시인 로봇이「삼여책방」에 있대. 녀석이 도망치지 못하게 막아야 해!",
+						"NextMessageId": "121660003"
+					},
+					"121660003": {
+						"Id": "121660003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "그건 어리바리한 금붕어 모양이야. 한눈에 알아볼 수 있어",
+						"NextMessageId": "choice3"
+					},
+					"121660004": {
+						"Id": "121660004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "알겠어요, 당장 가서 막을게요",
+						"NextMessageId": "121660009"
+					},
+					"121660005": {
+						"Id": "121660005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "추가 근무 수당은 주셔야 해요",
+						"NextMessageId": "121660006"
+					},
+					"121660006": {
+						"Id": "121660006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "무슨 소리야?",
+						"NextMessageId": "121660007"
+					},
+					"121660007": {
+						"Id": "121660007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "당신이 만든 것들은 하나 같이 괴상해요. 시 몇 수 얻으려면 죽도록 고생해야 한다고요",
+						"NextMessageId": "121660008"
+					},
+					"121660008": {
+						"Id": "121660008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "됐어, 너 같은 단명종에겐 시간이 금이지. 수당은 챙겨줄게",
+						"NextMessageId": "121660009"
+					},
+					"121660009": {
+						"Id": "121660009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "말이 나와서 말인데, 참 대단한 녀석이야. 민요를 수집하러 곧장 책방으로 가다니",
+						"NextMessageId": "121660010"
+					},
+					"121660010": {
+						"Id": "121660010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "헤헤, 제보해준 친구가 그러더군. 그 녀석이 자신만만하게 ≪유운집≫을 비평하고 있었다고!",
+						"NextMessageId": "121660011"
+					},
+					"121660011": {
+						"Id": "121660011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "이거 너무 기막힌 우연이잖아. 정채 씨의 전임이 바로 ≪유운집≫을 쓴 작가 고서야",
+						"NextMessageId": "121660012"
+					},
+					"121660012": {
+						"Id": "121660012",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10015.png",
+						"Text": "[이미지]",
+						"NextMessageId": "121660013"
+					},
+					"121660013": {
+						"Id": "121660013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "그 녀석은 문학계에서 지위가 제법 높은 편이지. 녀석보다 훌륭한 작품을 써낸다면 정채 씨의 마음을 얻을 수 있을 거야",
+						"NextMessageId": "choice16"
+					},
+					"121660014": {
+						"Id": "121660014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "그 정도라면 단번에 성공하긴 어렵겠네요",
+						"NextMessageId": "121660015"
+					},
+					"121660015": {
+						"Id": "121660015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "얕보지 마! 난 기계가 있으니 승산이 있다고!",
+						"NextMessageId": "121660018"
+					},
+					"121660016": {
+						"Id": "121660016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "지금이 어떤 시댄데 아직도 구닥다리 방식으로 시를 쓰나요? 당신은 산업화 창작을 이뤄냈어요. 기술로 그를 박살낼 수 있다고요",
+						"NextMessageId": "121660017"
+					},
+					"121660017": {
+						"Id": "121660017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "격려해줘서 고마워, {NICKNAME}!",
+						"NextMessageId": "121660018"
+					},
+					"121660018": {
+						"Id": "121660018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "참, 거기 가면 ≪유운집≫을 한 권 사다줘. 연구해보고 싶거든",
+						"NextMessageId": "121660019"
+					},
+					"121660019": {
+						"Id": "121660019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "예전에는 연적이 쓴 시가 너무 오글거려서 보기 싫었어",
+						"NextMessageId": "121660020"
+					},
+					"121660020": {
+						"Id": "121660020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "근데 지피지기라고 하잖아. 적을 압도해야지…. 정채 씨를 위해서라면 할 수 있어!",
+						"NextMessageId": "choice30"
+					},
+					"121660021": {
+						"Id": "121660021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "선주의 물류가 이렇게 편리한데 직접 주문하면 안 되나요?",
+						"NextMessageId": "121660022"
+					},
+					"121660022": {
+						"Id": "121660022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "너한테 폐를 많이 끼쳤네. 가는 김에 좀 사다줘"
+					},
+					"121660023": {
+						"Id": "121660023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "네~ 네~ 심부름은 이제 익숙하네요~",
+						"NextMessageId": "121660024"
+					},
+					"121660024": {
+						"Id": "121660024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "83",
+						"Text": "고마워"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "당장 갈게요",
+								"NextMessageId": "121660004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "수고비를 더 주세요",
+								"NextMessageId": "121660005"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "꿈도 야무지시네요…",
+								"NextMessageId": "121660014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "분명 이길 수 있어요!",
+								"NextMessageId": "121660016"
+							}
+						]
+					},
+					"choice30": {
+						"Id": "choice30",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "직접 주문하세요",
+								"NextMessageId": "121660021"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "전 심부름에 이골이 났으니까요",
+								"NextMessageId": "121660023"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12167": {
+		"Id": "12167",
+		"ContactId": "38",
+		"ParticpatingContactIds": [
+			"38",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1216700",
+				"StartingMessageId": "121670000",
+				"Messages": {
+					"121670000": {
+						"Id": "121670000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "거기 있니? 네게 부탁할 일이 있어",
+						"NextMessageId": "choice1"
+					},
+					"121670001": {
+						"Id": "121670001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "말씀하십시오",
+						"NextMessageId": "121670002"
+					},
+					"121670002": {
+						"Id": "121670002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "「말씀하십시오」 라니, 왜 이렇게 예의를 차리는 거지? 어색하게",
+						"NextMessageId": "121670008"
+					},
+					"121670003": {
+						"Id": "121670003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "서유 님의 분부라면 지옥도 마다하지 않을게요",
+						"NextMessageId": "121670004"
+					},
+					"121670004": {
+						"Id": "121670004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "그렇게 심각한 임무는 아니거든",
+						"NextMessageId": "121670008"
+					},
+					"121670005": {
+						"Id": "121670005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "당연히 도와드릴 수 있죠. 보수만 두둑하면요",
+						"NextMessageId": "121670006"
+					},
+					"121670006": {
+						"Id": "121670006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "난 이렇게 직설적인 게 좋아",
+						"NextMessageId": "121670007"
+					},
+					"121670007": {
+						"Id": "121670007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "걱정 마, 두둑히 챙겨줄 테니! 어공 님 눈에 든 널 섭섭하게 할 순 없지",
+						"NextMessageId": "121670008"
+					},
+					"121670008": {
+						"Id": "121670008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "불멸의 거목이 일으킨 음양 반응 현상으로 두루미 물류의 기계새와 화물용 별뗏목이 사고가 많이 났어. 그 바람에 화물이 많이 분실됐지",
+						"NextMessageId": "121670009"
+					},
+					"121670009": {
+						"Id": "121670009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "그쪽에서는 담당자를 보내 화물을 회수하겠다고 했지만, 알다시피… 그 지역은 위험해",
+						"NextMessageId": "121670010"
+					},
+					"121670010": {
+						"Id": "121670010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "천박사에서는 「기계새 조종에 능숙하고 믿음직하면서 군사 훈련을 받은 적이 있는」 사람을 보낼 생각이야",
+						"NextMessageId": "choice17"
+					},
+					"121670011": {
+						"Id": "121670011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "전 기계새 조종에 능숙하지 않은데요……",
+						"NextMessageId": "121670012"
+					},
+					"121670012": {
+						"Id": "121670012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "웬 겸손이야. 네가 기계새를 조종해 어공 님의 딸을 구했잖아. 그때 네 능력을 알아봤다고",
+						"NextMessageId": "121670017"
+					},
+					"121670013": {
+						"Id": "121670013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "저와 안 지 얼마나 됐다고 이렇게 덥석 믿는 거죠? 불안한데……",
+						"NextMessageId": "121670014"
+					},
+					"121670014": {
+						"Id": "121670014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "넌 어공 님의 금쪽 같은 딸을 구한 영웅이잖아! 장군은 안 믿어도 넌 믿어",
+						"NextMessageId": "121670017"
+					},
+					"121670015": {
+						"Id": "121670015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "전 군사 훈련을 받은 적이 없는데요",
+						"NextMessageId": "121670016"
+					},
+					"121670016": {
+						"Id": "121670016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "넌 군사 훈련을 받은 적이 없어도 어공 님의 금쪽 같은 딸을 구출할 때 뛰어난 모습을 보였잖아. 네 능력이 출중하다는 거지",
+						"NextMessageId": "121670017"
+					},
+					"121670017": {
+						"Id": "121670017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "거절하지 마. 네가 적임자야",
+						"NextMessageId": "121670018"
+					},
+					"121670018": {
+						"Id": "121670018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "두루미 물류에서 담당자를 보냈어. 지금 천박사 문앞에서 널 기다리고 있어",
+						"NextMessageId": "121670019"
+					},
+					"121670019": {
+						"Id": "121670019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "38",
+						"Text": "늦지 않게 빨리 가 봐"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "말씀하십시오",
+								"NextMessageId": "121670001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "저한테 맡겨주세요",
+								"NextMessageId": "121670003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "얼마 줄 건데요?",
+								"NextMessageId": "121670005"
+							}
+						]
+					},
+					"choice17": {
+						"Id": "choice17",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "전 조종에 능숙하지 않은데요…",
+								"NextMessageId": "121670011"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "제가 믿음직하나요?",
+								"NextMessageId": "121670013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "전 훈련을 받은 적이 없는데요…",
+								"NextMessageId": "121670015"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12168": {
+		"Id": "12168",
+		"ContactId": "84",
+		"ParticpatingContactIds": [
+			"84"
+		],
+		"Sections": [
+			{
+				"Id": "1216800",
+				"StartingMessageId": "121680001",
+				"Messages": {
+					"121680001": {
+						"Id": "121680001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "{NICKNAME}, 잘 지냈나",
+						"NextMessageId": "121680002"
+					},
+					"121680002": {
+						"Id": "121680002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "선주에 대한 조사와 연구가 끝났네",
+						"NextMessageId": "121680003"
+					},
+					"121680003": {
+						"Id": "121680003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "아니지, 새로운 과제가 생겼다고 말해야겠군",
+						"NextMessageId": "121680004"
+					},
+					"121680004": {
+						"Id": "121680004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "그동안 함께해 줘서 고마웠네. 자넨 내가 선주에서 만난 그 누구보다 믿을 수 있는 사람이었어",
+						"NextMessageId": "121680005"
+					},
+					"121680005": {
+						"Id": "121680005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "그러니 자네에겐 무슨 일이 있어도 숨기거나 속이는 일을 만들지 않을 걸세",
+						"NextMessageId": "121680006"
+					},
+					"121680006": {
+						"Id": "121680006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "기쁜 소식을 나누고 싶으니 늘 보던 곳에서 보세나"
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12169": {
+		"Id": "12169",
+		"ContactId": "84",
+		"ParticpatingContactIds": [
+			"84",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1216900",
+				"StartingMessageId": "121690001",
+				"Messages": {
+					"121690001": {
+						"Id": "121690001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "실례하지, {NICKNAME}",
+						"NextMessageId": "121690002"
+					},
+					"121690002": {
+						"Id": "121690002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "잠깐 얼굴 볼 시간 있나?",
+						"NextMessageId": "choice2"
+					},
+					"121690003": {
+						"Id": "121690003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "시왕사는 뭐든 다 아는 것처럼 굴더니 썩 그렇지도 않나 봐요",
+						"NextMessageId": "121690004"
+					},
+					"121690004": {
+						"Id": "121690004",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "이렇게 버젓이 저한테 연락하신 걸 보면요",
+						"NextMessageId": "121690005"
+					},
+					"121690005": {
+						"Id": "121690005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "하하, 내가 한 짓을 선주 사람한테 말했나 보구나",
+						"NextMessageId": "121690006"
+					},
+					"121690006": {
+						"Id": "121690006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "너라면 신념을 지키는 선택을 할 줄 알았어. 그러니 널 탓하지 않을 거야",
+						"NextMessageId": "121690010"
+					},
+					"121690007": {
+						"Id": "121690007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "저희 사이에 더 할 얘긴 없을 텐데요",
+						"NextMessageId": "121690008"
+					},
+					"121690008": {
+						"Id": "121690008",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "전 분명히 거절했어요",
+						"NextMessageId": "121690009"
+					},
+					"121690009": {
+						"Id": "121690009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "지금 하려는 얘긴 다른 거야, {NICKNAME}",
+						"NextMessageId": "121690010"
+					},
+					"121690010": {
+						"Id": "121690010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "인연경의 해변으로 와주게나. 장수의 옳고 그름이나 어리석은 부, 명성에 대한 얘긴 안 할 걸세",
+						"NextMessageId": "121690011"
+					},
+					"121690011": {
+						"Id": "121690011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "오랜 친구의 막무가내를 들어준다고 생각하고. 아님 임종을 맞은 환자의 마지막 부탁이나, 어때?"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "시왕사가 아직도 안 잡아갔네요?",
+								"NextMessageId": "121690003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "이미 거절했을 텐데요",
+								"NextMessageId": "121690007"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12170": {
+		"Id": "12170",
+		"ContactId": "84",
+		"ParticpatingContactIds": [
+			"84",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1217000",
+				"StartingMessageId": "121700001",
+				"Messages": {
+					"121700001": {
+						"Id": "121700001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "실례하지, {NICKNAME}",
+						"NextMessageId": "121700002"
+					},
+					"121700002": {
+						"Id": "121700002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "잠깐 얼굴 볼 시간 있나?",
+						"NextMessageId": "choice2"
+					},
+					"121700003": {
+						"Id": "121700003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "정말 대담하네요",
+						"NextMessageId": "121700004"
+					},
+					"121700004": {
+						"Id": "121700004",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "그 대화를 끝으로 선주를 떠났을 줄 알았어요",
+						"NextMessageId": "121700005"
+					},
+					"121700005": {
+						"Id": "121700005",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "신고는 안 했지만 당신이 한 행동을 누구한테 들키기라도 하면 일이 커질 거예요",
+						"NextMessageId": "121700006"
+					},
+					"121700006": {
+						"Id": "121700006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "……",
+						"NextMessageId": "121700007"
+					},
+					"121700007": {
+						"Id": "121700007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "아마 한동안은 떠나기 힘들 거야",
+						"NextMessageId": "121700011"
+					},
+					"121700008": {
+						"Id": "121700008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "전에 분명히 말한 것 같은데요",
+						"NextMessageId": "121700009"
+					},
+					"121700009": {
+						"Id": "121700009",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "제 몸에 좀 문제가 있어서… 불로장생이나 부, 명성 같은 덴 관심 없다고요",
+						"NextMessageId": "121700010"
+					},
+					"121700010": {
+						"Id": "121700010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "지금 하려는 얘긴 다른 거야, {NICKNAME}",
+						"NextMessageId": "121700011"
+					},
+					"121700011": {
+						"Id": "121700011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "늘 보던 곳에서 보자. 장수의 옳고 그름이나 어리석은 부, 명성에 대한 얘긴 안 할 거야",
+						"NextMessageId": "121700012"
+					},
+					"121700012": {
+						"Id": "121700012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "84",
+						"Text": "오랜 친구의 막무가내를 들어준다고 생각하고. 아님 임종을 맞은 환자의 마지막 부탁이나, 어때?"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "아직도 선주를 안 떠났어요?",
+								"NextMessageId": "121700003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "학회에 들어갈 생각은 없어요",
+								"NextMessageId": "121700008"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"12174": {
+		"Id": "12174",
+		"ContactId": "87",
+		"ParticpatingContactIds": [
+			"87",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1217400",
+				"StartingMessageId": "121740001",
+				"Messages": {
+					"121740001": {
+						"Id": "121740001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "87",
+						"Text": "저기, 이게 {NICKNAME} 씨의 혼인가요?",
+						"NextMessageId": "choice1"
+					},
+					"121740002": {
+						"Id": "121740002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "제 혼을 가져가겠다고요?",
+						"NextMessageId": "121740004"
+					},
+					"121740003": {
+						"Id": "121740003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "혼이라니, 무시무시하네요……",
+						"NextMessageId": "121740004"
+					},
+					"121740004": {
+						"Id": "121740004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "87",
+						"Text": "미안해요, 농담이었어요. 혼이 아니라 「폰」이요",
+						"NextMessageId": "121740005"
+					},
+					"121740005": {
+						"Id": "121740005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "87",
+						"Text": "당신은 선주의 영웅입니다. 수소문 끝에 당신의 연락처를 입수했어요",
+						"NextMessageId": "121740006"
+					},
+					"121740006": {
+						"Id": "121740006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "87",
+						"Text": "사실 개인적인 일로 도움을 청하고 싶은데 괜찮으실지요?",
+						"NextMessageId": "choice10"
+					},
+					"121740007": {
+						"Id": "121740007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "평소에 선생이 공연하시는 걸 자주 봤는데, 제게 도움을 청하시다니 영광이에요",
+						"NextMessageId": "121740008"
+					},
+					"121740008": {
+						"Id": "121740008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "87",
+						"Text": "허, 이거 쑥스럽군요",
+						"NextMessageId": "121740011"
+					},
+					"121740009": {
+						"Id": "121740009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "잘 아시겠지만 시간은 금이잖아요",
+						"NextMessageId": "121740010"
+					},
+					"121740010": {
+						"Id": "121740010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "87",
+						"Text": "보수라면 두둑히 드릴 테니 걱정 마십시오",
+						"NextMessageId": "121740011"
+					},
+					"121740011": {
+						"Id": "121740011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "87",
+						"Text": "저는 평소에 늘 「불야후」 입구의 무대에서 공연합니다. 만나서 이야기하게 그리로 오시죠"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "제 혼을 가져가겠다고요?",
+								"NextMessageId": "121740002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "무시무시하다…",
+								"NextMessageId": "121740003"
+							}
+						]
+					},
+					"choice10": {
+						"Id": "choice10",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "물론이죠",
+								"NextMessageId": "121740007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "그건 보수에 달렸죠",
+								"NextMessageId": "121740009"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
 	"12176": {
 		"Id": "12176",
 		"ContactId": "1013",
@@ -17502,6 +20889,331 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"12178": {
+		"Id": "12178",
+		"ContactId": "1013",
+		"ParticpatingContactIds": [
+			"1013",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1217800",
+				"StartingMessageId": "121780000",
+				"Messages": {
+					"121780000": {
+						"Id": "121780000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "건너와",
+						"NextMessageId": "121780001"
+					},
+					"121780001": {
+						"Id": "121780001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "와서 테스트 좀 해",
+						"NextMessageId": "choice2"
+					},
+					"121780002": {
+						"Id": "121780002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "또 시뮬레이션 우주인가요?",
+						"NextMessageId": "121780008"
+					},
+					"121780003": {
+						"Id": "121780003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "시뮬레이션 우주가 업데이트됐나요?",
+						"NextMessageId": "121780008"
+					},
+					"121780004": {
+						"Id": "121780004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "아니면 저번의 그 기능인가요?",
+						"NextMessageId": "121780005"
+					},
+					"121780005": {
+						"Id": "121780005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "맞아, 커스터마이징 매개변수, 매 세계에서 드랍하는 차원 장신구 데이터가 「2배」로 조정되지",
+						"NextMessageId": "121780006"
+					},
+					"121780006": {
+						"Id": "121780006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "스티븐은 데이터 비교해야 한다는 입장이야. 그는 아주 성실히 임하고 있어. 그만큼 프로젝트가 힘들다는 뜻이야",
+						"NextMessageId": "121780007"
+					},
+					"121780007": {
+						"Id": "121780007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "잊지 말고 테스트하러 와, 부탁해"
+					},
+					"121780008": {
+						"Id": "121780008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "시뮬레이션 우주의 시간을 분해, 절취할 수 있는 기능을 업데이트했어",
+						"NextMessageId": "choice9"
+					},
+					"121780009": {
+						"Id": "121780009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "분해, 절취요?",
+						"NextMessageId": "121780015"
+					},
+					"121780010": {
+						"Id": "121780010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "설명 좀 더 해주실 수 있나요?",
+						"NextMessageId": "121780015"
+					},
+					"121780011": {
+						"Id": "121780011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이 대화 익숙하네요. 전에도 한 적 있나요?",
+						"NextMessageId": "121780012"
+					},
+					"121780012": {
+						"Id": "121780012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "그래? 아마 그럴 거야",
+						"NextMessageId": "121780013"
+					},
+					"121780013": {
+						"Id": "121780013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "스티븐은 데이터 비교해야 한다는 입장이야. 그는 아주 성실히 임하고 있어. 그만큼 프로젝트가 힘들다는 뜻이야",
+						"NextMessageId": "121780014"
+					},
+					"121780014": {
+						"Id": "121780014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "잊지 말고 테스트하러 와, 부탁해"
+					},
+					"121780015": {
+						"Id": "121780015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "시스템 매개변수를 더 많이 커스터마이즈할 수 있다는 뜻이야",
+						"NextMessageId": "121780016"
+					},
+					"121780016": {
+						"Id": "121780016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "각 세계가 드랍하는 차원 장신구 데이터를 「2배」로 조정한다던가 그런 거",
+						"NextMessageId": "choice21"
+					},
+					"121780017": {
+						"Id": "121780017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "데이터를 2배로요?",
+						"NextMessageId": "121780018"
+					},
+					"121780018": {
+						"Id": "121780018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "그래",
+						"NextMessageId": "121780021"
+					},
+					"121780019": {
+						"Id": "121780019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "드랍이 2배요?",
+						"NextMessageId": "121780020"
+					},
+					"121780020": {
+						"Id": "121780020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "이게 게임인 줄 알아?",
+						"NextMessageId": "121780021"
+					},
+					"121780021": {
+						"Id": "121780021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "스티븐의 아이디어야",
+						"NextMessageId": "121780022"
+					},
+					"121780022": {
+						"Id": "121780022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "테스트 활성화, 주기 저장, 시뮬레이션 시간 같은 이상한 데이터를 늘려놨어. 난 봐도 모르겠지만, 스티븐은 엄청 중요하다 하더라고",
+						"NextMessageId": "121780023"
+					},
+					"121780023": {
+						"Id": "121780023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "아무튼 난 전했어. 기능은 며칠이면 없어지니까 테스트하러 와봐",
+						"NextMessageId": "choice33"
+					},
+					"121780024": {
+						"Id": "121780024",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "그 기능은 계속 유지하면 안 되나요?",
+						"NextMessageId": "121780028"
+					},
+					"121780025": {
+						"Id": "121780025",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "3배로 조정할 수 있나요? 10배도 괜찮고요",
+						"NextMessageId": "121780028"
+					},
+					"121780026": {
+						"Id": "121780026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "한번에 10배로 주는 건 어때요?",
+						"NextMessageId": "121780027"
+					},
+					"121780027": {
+						"Id": "121780027",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "시뮬레이션 우주에 대해 긍정적인 평가를 남길게요",
+						"NextMessageId": "121780028"
+					},
+					"121780028": {
+						"Id": "121780028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1013",
+						"Text": "스티븐한테 물어봐"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "시뮬레이션 우주?",
+								"NextMessageId": "121780002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "업데이트됐나요?",
+								"NextMessageId": "121780003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "또요?",
+								"NextMessageId": "121780004"
+							}
+						]
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "뭐라고요?",
+								"NextMessageId": "121780009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "알아듣게 좀 부탁해요",
+								"NextMessageId": "121780010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "대화가 되게 익숙한데…",
+								"NextMessageId": "121780011"
+							}
+						]
+					},
+					"choice21": {
+						"Id": "choice21",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "데이터를 2배로요?",
+								"NextMessageId": "121780017"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "드랍이 2배요?",
+								"NextMessageId": "121780019"
+							}
+						]
+					},
+					"choice33": {
+						"Id": "choice33",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "상시인가요?",
+								"NextMessageId": "121780024"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "3배도 되나요?",
+								"NextMessageId": "121780025"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "10배는 진짜 고려하지 않으시는 거예요?",
+								"NextMessageId": "121780026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
 	},
 	"12700": {
 		"Id": "12700",
@@ -26748,7 +30460,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "≪설국 모험 기담≫이요?",
+						"Text": "≪설국 모험 기담≫은 어때??",
 						"NextMessageId": "200320009"
 					},
 					"200320009": {
@@ -28085,7 +31797,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1106",
-						"Text": "{NICKNAME} {F#언니}{M#오빠}?",
+						"Text": "{NICKNAME}",
 						"NextMessageId": "200370002"
 					},
 					"200370002": {
@@ -28109,7 +31821,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1106",
-						"Text": "집중이 안 되서요……",
+						"Text": "집중이 안 돼서요……",
 						"NextMessageId": "200370005"
 					},
 					"200370005": {
@@ -33223,7 +36935,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1201",
-						"Text": "새로 나온 그 환경 사전예약하셨어요?",
+						"Text": "새로 나온 그 환상극 사전예약하셨어요?",
 						"NextMessageId": "200580001"
 					},
 					"200580001": {
@@ -33255,7 +36967,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1201",
-						"Text": "근데 제가 말한 건 여우족이 만든 환경 ≪옥혼≫이에요, 여기서도 칭구라고 해요",
+						"Text": "근데 제가 말한 건 여우족이 만든 교감 환상극 ≪옥혼≫이에요, 여기서도 칭구라고 해요",
 						"NextMessageId": "200580008"
 					},
 					"200580005": {
@@ -33263,7 +36975,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "환경?",
+						"Text": "환상극?",
 						"NextMessageId": "200580006"
 					},
 					"200580006": {
@@ -33271,7 +36983,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1201",
-						"Text": "여우족이 만든 환경이요. ≪옥혼≫이라나",
+						"Text": "여우족이 만든 교감 환상극이요. ≪옥혼≫이라나",
 						"NextMessageId": "200580007"
 					},
 					"200580007": {
@@ -33463,7 +37175,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "환경?",
+								"Text": "환상극?",
 								"NextMessageId": "200580005"
 							}
 						]
@@ -34010,7 +37722,7 @@
 						"MessageType": "Text",
 						"SenderType": "PlayerAuto",
 						"SenderContactId": "8001",
-						"Text": "농땡이에는 위험이 따르죠",
+						"Text": "농땡이에는 위험이 따르지",
 						"NextMessageId": "200600019"
 					},
 					"200600019": {
@@ -34306,7 +38018,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1206",
-						"Text": "너무 스릴 넘치는 데요",
+						"Text": "너무 스릴 넘치는데요",
 						"NextMessageId": "200610018"
 					},
 					"200610018": {
@@ -34314,7 +38026,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1206",
-						"Text": "저도 무명객이될래요",
+						"Text": "저도 무명객이 될래요",
 						"NextMessageId": "200610019"
 					},
 					"200610019": {
@@ -35251,7 +38963,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1204",
-						"Text": "쨌든, 업무가 있어서 이만, 안녕!"
+						"Text": "아무튼 난 공무가 있어서 먼저 가겠네. 그럼 이만!"
 					},
 					"choice3": {
 						"Id": "choice3",
@@ -36409,7 +40121,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1207",
-						"Text": "{NICKNAME}, 별뗏목을 소재로 한 판타지 게임 해본 적 있어?",
+						"Text": "{NICKNAME}, 별뗏목을 소재로 한 환상극 본 적 있어?",
 						"NextMessageId": "200690001"
 					},
 					"200690001": {
@@ -36553,7 +40265,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1207",
-						"Text": "사실 이 게임은 레이싱 종류라고 볼 수 있지만, 튜닝 시스템이 무척 자유로워. 다들 별뗏목 외관을 마음껏 즐기지……",
+						"Text": "사실 이 환상극은 레이싱 종류라고 볼 수 있지만, 튜닝 시스템이 무척 자유로워. 다들 별뗏목 외관을 마음껏 즐기지……",
 						"NextMessageId": "200690019"
 					},
 					"200690019": {
@@ -38292,6 +42004,2686 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"20076": {
+		"Id": "20076",
+		"ContactId": "1005",
+		"ParticpatingContactIds": [
+			"1005",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2007600",
+				"StartingMessageId": "200760000",
+				"Messages": {
+					"200760000": {
+						"Id": "200760000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "안녕, {NICKNAME}",
+						"NextMessageId": "200760001"
+					},
+					"200760001": {
+						"Id": "200760001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "나야",
+						"NextMessageId": "200760002"
+					},
+					"200760002": {
+						"Id": "200760002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "곁에 있진 않지만, 요즘 임무를 많이 해냈다고 들었어",
+						"NextMessageId": "200760003"
+					},
+					"200760003": {
+						"Id": "200760003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "소감이 궁금한데",
+						"NextMessageId": "200760004"
+					},
+					"200760004": {
+						"Id": "200760004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "임무를 해낸 기분은 어때?",
+						"NextMessageId": "choice5"
+					},
+					"200760005": {
+						"Id": "200760005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "굉장히 만족해요",
+						"NextMessageId": "200760006"
+					},
+					"200760006": {
+						"Id": "200760006",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "아직 부족해요",
+						"NextMessageId": "200760007"
+					},
+					"200760007": {
+						"Id": "200760007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "그렇구나",
+						"NextMessageId": "200760008"
+					},
+					"200760008": {
+						"Id": "200760008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "다행이야",
+						"NextMessageId": "200760009"
+					},
+					"200760009": {
+						"Id": "200760009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "도움이 필요하면 찾으러 갈게",
+						"NextMessageId": "200760015"
+					},
+					"200760010": {
+						"Id": "200760010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "한가해요",
+						"NextMessageId": "200760011"
+					},
+					"200760011": {
+						"Id": "200760011",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "아무 생각이 없어요",
+						"NextMessageId": "200760012"
+					},
+					"200760012": {
+						"Id": "200760012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "그렇구나",
+						"NextMessageId": "200760013"
+					},
+					"200760013": {
+						"Id": "200760013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "안타깝지만",
+						"NextMessageId": "200760014"
+					},
+					"200760014": {
+						"Id": "200760014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "나도 도와줄 수가 없네",
+						"NextMessageId": "200760015"
+					},
+					"200760015": {
+						"Id": "200760015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "나도 여전하니까",
+						"NextMessageId": "choice18"
+					},
+					"200760016": {
+						"Id": "200760016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "알고 있어요",
+						"NextMessageId": "200760017"
+					},
+					"200760017": {
+						"Id": "200760017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "응, 잘 알지",
+						"NextMessageId": "200760018"
+					},
+					"200760018": {
+						"Id": "200760018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "변한 게 아무것도 없어",
+						"NextMessageId": "200760021"
+					},
+					"200760019": {
+						"Id": "200760019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "그런 말을 해도, 생각나는 게 없어요",
+						"NextMessageId": "200760020"
+					},
+					"200760020": {
+						"Id": "200760020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "알고 있어요",
+						"NextMessageId": "200760021"
+					},
+					"200760021": {
+						"Id": "200760021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "어머, 어느새 외투가 더러워졌네",
+						"NextMessageId": "200760022"
+					},
+					"200760022": {
+						"Id": "200760022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "약간의 두통",
+						"NextMessageId": "200760023"
+					},
+					"200760023": {
+						"Id": "200760023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "임무는 이미 끝났으니, 가서 정리 좀 할게",
+						"NextMessageId": "200760024"
+					},
+					"200760024": {
+						"Id": "200760024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "시간 나면 또 얘기하자",
+						"NextMessageId": "choice32"
+					},
+					"200760025": {
+						"Id": "200760025",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "네 좋아요",
+						"NextMessageId": "200760027"
+					},
+					"200760026": {
+						"Id": "200760026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "그럴 필요 없어요",
+						"NextMessageId": "200760027"
+					},
+					"200760027": {
+						"Id": "200760027",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "발신 오류: 대상이 존재하지 않습니다"
+					},
+					"choice5": {
+						"Id": "choice5",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "굉장히 만족해요",
+								"NextMessageId": "200760005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "한가해요",
+								"NextMessageId": "200760010"
+							}
+						]
+					},
+					"choice18": {
+						"Id": "choice18",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "알고 있어요",
+								"NextMessageId": "200760016"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "생각나는 게 없어요",
+								"NextMessageId": "200760019"
+							}
+						]
+					},
+					"choice32": {
+						"Id": "choice32",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "네 좋아요",
+								"NextMessageId": "200760025"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "그럴 필요 없어요",
+								"NextMessageId": "200760026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20077": {
+		"Id": "20077",
+		"ContactId": "1005",
+		"ParticpatingContactIds": [
+			"1005",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2007700",
+				"StartingMessageId": "200770000",
+				"Messages": {
+					"200770000": {
+						"Id": "200770000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "안녕, {NICKNAME}",
+						"NextMessageId": "choice1"
+					},
+					"200770001": {
+						"Id": "200770001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "카프카 씨",
+						"NextMessageId": "200770002"
+					},
+					"200770002": {
+						"Id": "200770002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "응, 나야",
+						"NextMessageId": "200770003"
+					},
+					"200770003": {
+						"Id": "200770003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "바로 나를 알아챘네",
+						"NextMessageId": "200770007"
+					},
+					"200770004": {
+						"Id": "200770004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "누구세요?",
+						"NextMessageId": "200770005"
+					},
+					"200770005": {
+						"Id": "200770005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "벌써 나를 잊었다니",
+						"NextMessageId": "200770006"
+					},
+					"200770006": {
+						"Id": "200770006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "괜찮아, 어쩔 수 없지",
+						"NextMessageId": "200770007"
+					},
+					"200770007": {
+						"Id": "200770007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "열차에서 지내는 건 좀 어때?",
+						"NextMessageId": "choice10"
+					},
+					"200770008": {
+						"Id": "200770008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "카프카 씨가 조금 그리워요",
+						"NextMessageId": "200770009"
+					},
+					"200770009": {
+						"Id": "200770009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "어머, 정말?",
+						"NextMessageId": "choice15"
+					},
+					"200770010": {
+						"Id": "200770010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "정말이에요",
+						"NextMessageId": "200770011"
+					},
+					"200770011": {
+						"Id": "200770011",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "못 믿겠나요?",
+						"NextMessageId": "200770012"
+					},
+					"200770012": {
+						"Id": "200770012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "당연히 믿지",
+						"NextMessageId": "200770013"
+					},
+					"200770013": {
+						"Id": "200770013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "내가 보이지 않겠지만, 나 지금 매우 기뻐",
+						"NextMessageId": "200770014"
+					},
+					"200770014": {
+						"Id": "200770014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "그렇구나",
+						"NextMessageId": "200770019"
+					},
+					"200770015": {
+						"Id": "200770015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "거짓말이죠",
+						"NextMessageId": "200770016"
+					},
+					"200770016": {
+						"Id": "200770016",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "눈치챌 줄 몰랐어요",
+						"NextMessageId": "200770017"
+					},
+					"200770017": {
+						"Id": "200770017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "내 감은 늘 정확하지",
+						"NextMessageId": "200770018"
+					},
+					"200770018": {
+						"Id": "200770018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "하지만",
+						"NextMessageId": "200770019"
+					},
+					"200770019": {
+						"Id": "200770019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "그들과 함께 있는 거라면, 내가 걱정할 것도 없지",
+						"NextMessageId": "200770020"
+					},
+					"200770020": {
+						"Id": "200770020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "이 점도 잘 기억해둬",
+						"NextMessageId": "200770021"
+					},
+					"200770021": {
+						"Id": "200770021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "알았지?",
+						"NextMessageId": "200770022"
+					},
+					"200770022": {
+						"Id": "200770022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "choice31"
+					},
+					"200770023": {
+						"Id": "200770023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "아주 좋아요",
+						"NextMessageId": "200770024"
+					},
+					"200770024": {
+						"Id": "200770024",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "현재의 생활이 마음에 들어요",
+						"NextMessageId": "200770025"
+					},
+					"200770025": {
+						"Id": "200770025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "음, 그렇다면 다행이야",
+						"NextMessageId": "200770026"
+					},
+					"200770026": {
+						"Id": "200770026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "그들과 함께라면 내가 걱정할 것도 없지",
+						"NextMessageId": "200770027"
+					},
+					"200770027": {
+						"Id": "200770027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "이 점도 잘 기억해둬",
+						"NextMessageId": "200770028"
+					},
+					"200770028": {
+						"Id": "200770028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "알았지?",
+						"NextMessageId": "200770029"
+					},
+					"200770029": {
+						"Id": "200770029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "choice31"
+					},
+					"200770030": {
+						"Id": "200770030",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "알겠어요",
+						"NextMessageId": "200770032"
+					},
+					"200770031": {
+						"Id": "200770031",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "신경 쓰지 마세요",
+						"NextMessageId": "200770032"
+					},
+					"200770032": {
+						"Id": "200770032",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "발신 오류: 대상이 존재하지 않습니다"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "카프카 씨",
+								"NextMessageId": "200770001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "누구세요?",
+								"NextMessageId": "200770004"
+							}
+						]
+					},
+					"choice10": {
+						"Id": "choice10",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "카프카 씨가 조금 그리워요",
+								"NextMessageId": "200770008"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "아주 좋아요",
+								"NextMessageId": "200770023"
+							}
+						]
+					},
+					"choice15": {
+						"Id": "choice15",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "정말이에요",
+								"NextMessageId": "200770010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "거짓말이죠",
+								"NextMessageId": "200770015"
+							}
+						]
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "알겠어요",
+								"NextMessageId": "200770030"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "신경 쓰지 마세요",
+								"NextMessageId": "200770031"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20078": {
+		"Id": "20078",
+		"ContactId": "1005",
+		"ParticpatingContactIds": [
+			"1005",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2007800",
+				"StartingMessageId": "200780000",
+				"Messages": {
+					"200780000": {
+						"Id": "200780000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "안녕, {NICKNAME}",
+						"NextMessageId": "choice1"
+					},
+					"200780001": {
+						"Id": "200780001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "왜 그래요? 무슨 일이 생겼나요?",
+						"NextMessageId": "200780002"
+					},
+					"200780002": {
+						"Id": "200780002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "아니야, 갑자기 네가 생각나서",
+						"NextMessageId": "200780005"
+					},
+					"200780003": {
+						"Id": "200780003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "또 문자를 보내셨네요",
+						"NextMessageId": "200780004"
+					},
+					"200780004": {
+						"Id": "200780004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "맞아, 날 반겨주지 않는 거야?",
+						"NextMessageId": "200780005"
+					},
+					"200780005": {
+						"Id": "200780005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "설마 영화관에 나밖에 없을 줄은 몰랐어",
+						"NextMessageId": "200780006"
+					},
+					"200780006": {
+						"Id": "200780006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "난 영화를 좋아하는 사람이 많은 줄 알았는데",
+						"NextMessageId": "200780007"
+					},
+					"200780007": {
+						"Id": "200780007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "≪과거로부터≫",
+						"NextMessageId": "choice12"
+					},
+					"200780008": {
+						"Id": "200780008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "혼자 봤어요?",
+						"NextMessageId": "200780009"
+					},
+					"200780009": {
+						"Id": "200780009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "스텔라론 헌터의 사람을 말하는 거라면…",
+						"NextMessageId": "200780010"
+					},
+					"200780010": {
+						"Id": "200780010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "다들 취향이 달라서, 강요할 것도 아니고",
+						"NextMessageId": "200780013"
+					},
+					"200780011": {
+						"Id": "200780011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "나중에 기회가 되면 이 영화 같이 보러 가요",
+						"NextMessageId": "200780012"
+					},
+					"200780012": {
+						"Id": "200780012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "좋아, 이번엔 잊지 마",
+						"NextMessageId": "200780013"
+					},
+					"200780013": {
+						"Id": "200780013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "{NICKNAME} 너는 어떤 영화 좋아해?",
+						"NextMessageId": "200780014"
+					},
+					"200780014": {
+						"Id": "200780014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "지금 좋아하는 거 말이야",
+						"NextMessageId": "choice22"
+					},
+					"200780015": {
+						"Id": "200780015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "전기 영화요",
+						"NextMessageId": "200780016"
+					},
+					"200780016": {
+						"Id": "200780016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "나도 누군가의 삶을 지켜보는 듯한 느낌을 좋아해",
+						"NextMessageId": "200780017"
+					},
+					"200780017": {
+						"Id": "200780017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "하지만, 나를 주제로 한 영화는 만들지 않았으면 해",
+						"NextMessageId": "200780018"
+					},
+					"200780018": {
+						"Id": "200780018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "감독의 시선으로 바라본 내 모습을 다른 사람에게 보이고 싶지 않아",
+						"NextMessageId": "200780025"
+					},
+					"200780019": {
+						"Id": "200780019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "액션 영화요",
+						"NextMessageId": "200780020"
+					},
+					"200780020": {
+						"Id": "200780020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "액션 영화 속의 장면이라면 내가 자주 보는 장면들인걸",
+						"NextMessageId": "200780021"
+					},
+					"200780021": {
+						"Id": "200780021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "다른 관객에겐 자극적인 장면일 수 있지만, 난 몰입감이 떨어지더라",
+						"NextMessageId": "200780025"
+					},
+					"200780022": {
+						"Id": "200780022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "SF 영화요",
+						"NextMessageId": "200780023"
+					},
+					"200780023": {
+						"Id": "200780023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "미래 이야기라는 설정이지만",
+						"NextMessageId": "200780024"
+					},
+					"200780024": {
+						"Id": "200780024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "하지만 지나간 일은 종종 미래에서 일어나기 마련이지",
+						"NextMessageId": "200780025"
+					},
+					"200780025": {
+						"Id": "200780025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "영화 곧 시작한다",
+						"NextMessageId": "200780026"
+					},
+					"200780026": {
+						"Id": "200780026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1005",
+						"Text": "오늘은 이만, 안녕",
+						"NextMessageId": "choice39"
+					},
+					"200780027": {
+						"Id": "200780027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "영화 재밌게 봐요",
+						"NextMessageId": "200780029"
+					},
+					"200780028": {
+						"Id": "200780028",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "또 만나요",
+						"NextMessageId": "200780029"
+					},
+					"200780029": {
+						"Id": "200780029",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "발신 오류: 대상이 존재하지 않습니다"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "왜 그래요?",
+								"NextMessageId": "200780001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "또 시작이군요",
+								"NextMessageId": "200780003"
+							}
+						]
+					},
+					"choice12": {
+						"Id": "choice12",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "같이 볼 사람이 없나요?",
+								"NextMessageId": "200780008"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "다음에 같이 보러 가요",
+								"NextMessageId": "200780011"
+							}
+						]
+					},
+					"choice22": {
+						"Id": "choice22",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "전기 영화요",
+								"NextMessageId": "200780015"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "액션 영화요",
+								"NextMessageId": "200780019"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "SF 영화요",
+								"NextMessageId": "200780022"
+							}
+						]
+					},
+					"choice39": {
+						"Id": "choice39",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "영화 재밌게 봐요",
+								"NextMessageId": "200780027"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "또 만나요",
+								"NextMessageId": "200780028"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20079": {
+		"Id": "20079",
+		"ContactId": "1205",
+		"ParticpatingContactIds": [
+			"1205",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2007900",
+				"StartingMessageId": "200790000",
+				"Messages": {
+					"200790000": {
+						"Id": "200790000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": ",",
+						"NextMessageId": "200790001"
+					},
+					"200790001": {
+						"Id": "200790001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "≪Ver1.2045129836≫ 첨부 파일을 발송했습니다",
+						"NextMessageId": "200790002"
+					},
+					"200790002": {
+						"Id": "200790002",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "상대방이 ≪Ver1.2045129836≫ 첨부 파일을 수락했습니다",
+						"NextMessageId": "choice3"
+					},
+					"200790003": {
+						"Id": "200790003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "잘못 보냈어요?",
+						"NextMessageId": "200790006"
+					},
+					"200790004": {
+						"Id": "200790004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "안 열려요!",
+						"NextMessageId": "200790006"
+					},
+					"200790005": {
+						"Id": "200790005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "대체 이게 무슨 상황인지…",
+						"NextMessageId": "200790006"
+					},
+					"200790006": {
+						"Id": "200790006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/20005.png",
+						"Text": "[엉엉]",
+						"NextMessageId": "choice10"
+					},
+					"200790007": {
+						"Id": "200790007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이모티콘도 쓸 줄 알아요?",
+						"NextMessageId": "200790008"
+					},
+					"200790008": {
+						"Id": "200790008",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[충격]",
+						"NextMessageId": "200790009"
+					},
+					"200790009": {
+						"Id": "200790009",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/20006.png",
+						"Text": "[좋아요]",
+						"NextMessageId": "choice14"
+					},
+					"200790010": {
+						"Id": "200790010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "블레이드에요?",
+						"NextMessageId": "200790011"
+					},
+					"200790011": {
+						"Id": "200790011",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "진짜로?",
+						"NextMessageId": "200790012"
+					},
+					"200790012": {
+						"Id": "200790012",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[충격]",
+						"NextMessageId": "200790013"
+					},
+					"200790013": {
+						"Id": "200790013",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/20004.png",
+						"Text": "[알았어]",
+						"NextMessageId": "choice27"
+					},
+					"200790014": {
+						"Id": "200790014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "이모티콘 남발하지 마요!",
+						"NextMessageId": "200790015"
+					},
+					"200790015": {
+						"Id": "200790015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "혹시 은랑?",
+						"NextMessageId": "200790016"
+					},
+					"200790016": {
+						"Id": "200790016",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[충격]",
+						"NextMessageId": "200790017"
+					},
+					"200790017": {
+						"Id": "200790017",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/20003.png",
+						"Text": "[거절]",
+						"NextMessageId": "choice27"
+					},
+					"200790018": {
+						"Id": "200790018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "인지부조화 오니까 그만해주세요",
+						"NextMessageId": "200790019"
+					},
+					"200790019": {
+						"Id": "200790019",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "무슨 말을 하면 좋을지 모르겠어요",
+						"NextMessageId": "200790020"
+					},
+					"200790020": {
+						"Id": "200790020",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[충격]",
+						"NextMessageId": "200790021"
+					},
+					"200790021": {
+						"Id": "200790021",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[충격]",
+						"NextMessageId": "choice27"
+					},
+					"200790022": {
+						"Id": "200790022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "제발…",
+						"NextMessageId": "200790023"
+					},
+					"200790023": {
+						"Id": "200790023",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "폼폼 이모티콘 좀 그만 보내라고요!",
+						"NextMessageId": "200790024"
+					},
+					"200790024": {
+						"Id": "200790024",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/30201.png",
+						"Text": "[왔구나]",
+						"NextMessageId": "choice31"
+					},
+					"200790025": {
+						"Id": "200790025",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "……",
+						"NextMessageId": "200790026"
+					},
+					"200790026": {
+						"Id": "200790026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "「각본」을 확인하는 중이었어",
+						"NextMessageId": "200790027"
+					},
+					"200790027": {
+						"Id": "200790027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "아까는 폼폼이 보낸 거고",
+						"NextMessageId": "200790028"
+					},
+					"200790028": {
+						"Id": "200790028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "블레이드 파트는 너한테 잘못 보낸 거야",
+						"NextMessageId": "200790029"
+					},
+					"200790029": {
+						"Id": "200790029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "어차피 열진 못했을 테니",
+						"NextMessageId": "200790030"
+					},
+					"200790030": {
+						"Id": "200790030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "신경 쓰지 마",
+						"NextMessageId": "200790031"
+					},
+					"200790031": {
+						"Id": "200790031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "아 그리고",
+						"NextMessageId": "200790032"
+					},
+					"200790032": {
+						"Id": "200790032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "지금은 보내고 있는 사람은 나야, 은랑",
+						"NextMessageId": "200790033"
+					},
+					"200790033": {
+						"Id": "200790033",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/30007.png",
+						"Text": "[비눗방울]"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "잘못 보냈어요?",
+								"NextMessageId": "200790003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "안 열려요!",
+								"NextMessageId": "200790004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "대체 이게 무슨 상황인지…",
+								"NextMessageId": "200790005"
+							}
+						]
+					},
+					"choice10": {
+						"Id": "choice10",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "이모티콘도 쓸 줄 알아요?",
+								"NextMessageId": "200790007"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "블레이드에요?",
+								"NextMessageId": "200790010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "이모티콘 남발하지 마요!",
+								"NextMessageId": "200790014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "인지부조화 오니까 그만해주세요",
+								"NextMessageId": "200790018"
+							}
+						]
+					},
+					"choice27": {
+						"Id": "choice27",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "제발…",
+								"NextMessageId": "200790022"
+							}
+						]
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "……",
+								"NextMessageId": "200790025"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20080": {
+		"Id": "20080",
+		"ContactId": "1205",
+		"ParticpatingContactIds": [
+			"1205",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2008000",
+				"StartingMessageId": "200800000",
+				"Messages": {
+					"200800000": {
+						"Id": "200800000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "<u>한방만 더! 네 힘이 필요해……</u>",
+						"NextMessageId": "200800001"
+					},
+					"200800001": {
+						"Id": "200800001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "도와줘, 얼른",
+						"NextMessageId": "200800002"
+					},
+					"200800002": {
+						"Id": "200800002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "마지막 한방이라잖아",
+						"NextMessageId": "200800003"
+					},
+					"200800003": {
+						"Id": "200800003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "HP 고정 때문에 쪽수로 밀어붙여야 돼",
+						"NextMessageId": "200800004"
+					},
+					"200800004": {
+						"Id": "200800004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "아아, 이 이벤트 시간제한 있다고",
+						"NextMessageId": "200800005"
+					},
+					"200800005": {
+						"Id": "200800005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "빨리",
+						"NextMessageId": "200800006"
+					},
+					"200800006": {
+						"Id": "200800006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "빨리빨리빨링ㄹ빨리",
+						"NextMessageId": "choice7"
+					},
+					"200800007": {
+						"Id": "200800007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "혹시 은랑이야?",
+						"NextMessageId": "200800008"
+					},
+					"200800008": {
+						"Id": "200800008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "응",
+						"NextMessageId": "200800009"
+					},
+					"200800009": {
+						"Id": "200800009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "뭘 당연한 걸 묻고 그래",
+						"NextMessageId": "200800012"
+					},
+					"200800010": {
+						"Id": "200800010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "설마 블레이드?",
+						"NextMessageId": "200800011"
+					},
+					"200800011": {
+						"Id": "200800011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "은랑이야",
+						"NextMessageId": "200800012"
+					},
+					"200800012": {
+						"Id": "200800012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "얼른 도와줘",
+						"NextMessageId": "200800013"
+					},
+					"200800013": {
+						"Id": "200800013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "아싸, 깼다",
+						"NextMessageId": "200800014"
+					},
+					"200800014": {
+						"Id": "200800014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "고마워! {NICKNAME}!",
+						"NextMessageId": "choice19"
+					},
+					"200800015": {
+						"Id": "200800015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "고맙다는 말은 블레이드한테 해",
+						"NextMessageId": "200800016"
+					},
+					"200800016": {
+						"Id": "200800016",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "블레이드가 폰 빌려준 거잖아",
+						"NextMessageId": "200800017"
+					},
+					"200800017": {
+						"Id": "200800017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "그건 기본이고~",
+						"NextMessageId": "200800018"
+					},
+					"200800018": {
+						"Id": "200800018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "블레이드는 임무 연락 아니면 휴대폰 거의 안 써",
+						"NextMessageId": "choice28"
+					},
+					"200800019": {
+						"Id": "200800019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "다른 사람들은?",
+						"NextMessageId": "200800022"
+					},
+					"200800020": {
+						"Id": "200800020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "나중에 다른 사람 폰으로 또 도와달라고 하는 건 아니지?",
+						"NextMessageId": "200800021"
+					},
+					"200800021": {
+						"Id": "200800021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "안 그래",
+						"NextMessageId": "200800022"
+					},
+					"200800022": {
+						"Id": "200800022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "샘은 내가 말 안 해도 도와줄 거고",
+						"NextMessageId": "200800023"
+					},
+					"200800023": {
+						"Id": "200800023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "카프카는",
+						"NextMessageId": "200800024"
+					},
+					"200800024": {
+						"Id": "200800024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "비밀이 너무 많아. 난 거기에 관심 없고",
+						"NextMessageId": "200800025"
+					},
+					"200800025": {
+						"Id": "200800025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "이제 폰 돌려줘야겠다",
+						"NextMessageId": "200800026"
+					},
+					"200800026": {
+						"Id": "200800026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "잘 있어"
+					},
+					"choice7": {
+						"Id": "choice7",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "혹시 은랑이야?",
+								"NextMessageId": "200800007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "설마 블레이드?",
+								"NextMessageId": "200800010"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "고맙다는 말은 블레이드한테 해",
+								"NextMessageId": "200800015"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "또 다른 사람 폰으로 연락하는 건 아니지?",
+								"NextMessageId": "200800020"
+							}
+						]
+					},
+					"choice28": {
+						"Id": "choice28",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "다른 사람들은?",
+								"NextMessageId": "200800019"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20081": {
+		"Id": "20081",
+		"ContactId": "1205",
+		"ParticpatingContactIds": [
+			"1205",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2008100",
+				"StartingMessageId": "200810000",
+				"Messages": {
+					"200810000": {
+						"Id": "200810000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "안녕, {NICKNAME}",
+						"NextMessageId": "choice1"
+					},
+					"200810001": {
+						"Id": "200810001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "안녕하세요, 카프카 씨",
+						"NextMessageId": "200810002"
+					},
+					"200810002": {
+						"Id": "200810002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "어머, 들켰네",
+						"NextMessageId": "200810005"
+					},
+					"200810003": {
+						"Id": "200810003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "안녕하세요, 블레이드",
+						"NextMessageId": "200810004"
+					},
+					"200810004": {
+						"Id": "200810004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "어라, 나 누군지 모르겠어?",
+						"NextMessageId": "200810005"
+					},
+					"200810005": {
+						"Id": "200810005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "나 폰 망가졌어",
+						"NextMessageId": "200810006"
+					},
+					"200810006": {
+						"Id": "200810006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "임무 때문에",
+						"NextMessageId": "200810007"
+					},
+					"200810007": {
+						"Id": "200810007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "그래서 블레이드 폰을 쓰는 중이야",
+						"NextMessageId": "200810008"
+					},
+					"200810008": {
+						"Id": "200810008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "네 근황도 물어볼 겸",
+						"NextMessageId": "choice14"
+					},
+					"200810009": {
+						"Id": "200810009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "괜찮은 거죠?",
+						"NextMessageId": "200810010"
+					},
+					"200810010": {
+						"Id": "200810010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "괜찮아, 블레이드는 못 막았지만",
+						"NextMessageId": "200810011"
+					},
+					"200810011": {
+						"Id": "200810011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "다시 움직일 수 있을 정도로 회복하려면 시간이 필요할 것 같아",
+						"NextMessageId": "200810017"
+					},
+					"200810012": {
+						"Id": "200810012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "블레이드는 괜찮나요?",
+						"NextMessageId": "200810013"
+					},
+					"200810013": {
+						"Id": "200810013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "내가 한발 늦게 도착해서",
+						"NextMessageId": "200810014"
+					},
+					"200810014": {
+						"Id": "200810014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "블레이드가 다시 움직일 수 있을 정도로 회복하려면 시간이 필요할 것 같아",
+						"NextMessageId": "200810017"
+					},
+					"200810015": {
+						"Id": "200810015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "별일 없는 것 같네요",
+						"NextMessageId": "200810016"
+					},
+					"200810016": {
+						"Id": "200810016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "응, 임무는 무사히 끝냈지",
+						"NextMessageId": "200810017"
+					},
+					"200810017": {
+						"Id": "200810017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "블레이드가 저기압인 것만 빼면. 내가 힘을 못 쓰게 막았거든",
+						"NextMessageId": "200810018"
+					},
+					"200810018": {
+						"Id": "200810018",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Image": "SpriteOutput/Emoji/30201.png",
+						"Text": "[왔구나]",
+						"NextMessageId": "200810019"
+					},
+					"200810019": {
+						"Id": "200810019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "카프카! 발검하는데 옆에서 알짱거리지 마! 라고 한소리 얻어들었지",
+						"NextMessageId": "choice32"
+					},
+					"200810020": {
+						"Id": "200810020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "블레이드 계정으로 이런 문자 보내지 마세요. 순간 착각했잖아요",
+						"NextMessageId": "200810021"
+					},
+					"200810021": {
+						"Id": "200810021",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "제가 좀만 덜 착했어도 캡처하고 난리 났어요",
+						"NextMessageId": "200810022"
+					},
+					"200810022": {
+						"Id": "200810022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "아, 미안",
+						"NextMessageId": "200810027"
+					},
+					"200810023": {
+						"Id": "200810023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "너무 웃겨서 배 터질 것 같아요, 하하",
+						"NextMessageId": "200810024"
+					},
+					"200810024": {
+						"Id": "200810024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "…그렇게 웃겨?",
+						"NextMessageId": "200810027"
+					},
+					"200810025": {
+						"Id": "200810025",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "더 할 말 있어요? 저 씻어야 돼요",
+						"NextMessageId": "200810026"
+					},
+					"200810026": {
+						"Id": "200810026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "음, 없어",
+						"NextMessageId": "200810027"
+					},
+					"200810027": {
+						"Id": "200810027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "폰도 고쳐졌고",
+						"NextMessageId": "200810028"
+					},
+					"200810028": {
+						"Id": "200810028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "다음엔 은랑 폰으로 연락할게",
+						"NextMessageId": "200810029"
+					},
+					"200810029": {
+						"Id": "200810029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1205",
+						"Text": "또 만나요"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "안녕하세요, 카프카 씨",
+								"NextMessageId": "200810001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "안녕하세요, 블레이드",
+								"NextMessageId": "200810003"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "괜찮은 거죠?",
+								"NextMessageId": "200810009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "블레이드는 괜찮나요?",
+								"NextMessageId": "200810012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "별일 없는 것 같네요",
+								"NextMessageId": "200810015"
+							}
+						]
+					},
+					"choice32": {
+						"Id": "choice32",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "블레이드 계정 쓰지 마세요…",
+								"NextMessageId": "200810020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "너무 웃겨요",
+								"NextMessageId": "200810023"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "더 할 말 있어요?",
+								"NextMessageId": "200810025"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20082": {
+		"Id": "20082",
+		"ContactId": "1111",
+		"ParticpatingContactIds": [
+			"1111",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2008200",
+				"StartingMessageId": "200820000",
+				"Messages": {
+					"200820000": {
+						"Id": "200820000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "안녕!",
+						"NextMessageId": "200820001"
+					},
+					"200820001": {
+						"Id": "200820001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "{NICKNAME}!",
+						"NextMessageId": "200820002"
+					},
+					"200820002": {
+						"Id": "200820002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "나 루카야!",
+						"NextMessageId": "200820003"
+					},
+					"200820003": {
+						"Id": "200820003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "사부님한테 들었어. 너도 격투 클럽에 나갔다며?",
+						"NextMessageId": "200820004"
+					},
+					"200820004": {
+						"Id": "200820004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "저녁에 시간 되면 내 경기 보러 와",
+						"NextMessageId": "choice5"
+					},
+					"200820005": {
+						"Id": "200820005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "좋아, 갈게",
+						"NextMessageId": "200820006"
+					},
+					"200820006": {
+						"Id": "200820006",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20004.png",
+						"Text": "[알았어]",
+						"NextMessageId": "200820012"
+					},
+					"200820007": {
+						"Id": "200820007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "바빠서 못 갈 것 같아",
+						"NextMessageId": "200820008"
+					},
+					"200820008": {
+						"Id": "200820008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "그럼 내일은?",
+						"NextMessageId": "200820009"
+					},
+					"200820009": {
+						"Id": "200820009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "모레도 괜찮고!",
+						"NextMessageId": "200820010"
+					},
+					"200820010": {
+						"Id": "200820010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "어차피 내 경기는 맨날 있으니 언제든 괜찮아!",
+						"NextMessageId": "200820011"
+					},
+					"200820011": {
+						"Id": "200820011",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "…시간 날 때 갈게",
+						"NextMessageId": "200820012"
+					},
+					"200820012": {
+						"Id": "200820012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "좋아, 약속한 거다!",
+						"NextMessageId": "200820013"
+					},
+					"200820013": {
+						"Id": "200820013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "그나저나… 요즘은 경기가 좀 이상해",
+						"NextMessageId": "200820014"
+					},
+					"200820014": {
+						"Id": "200820014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "맨날 완전 무장한 방랑자나 기갑병이 상대로 나와",
+						"NextMessageId": "200820015"
+					},
+					"200820015": {
+						"Id": "200820015",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[충격]",
+						"NextMessageId": "200820016"
+					},
+					"200820016": {
+						"Id": "200820016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "병기나 미사일을 장착하고 나온 녀석을 격투 선수라고 할 수 있나?!",
+						"NextMessageId": "choice20"
+					},
+					"200820017": {
+						"Id": "200820017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "시대가 변해서 격투계에도 새로운 바람이 부나 보네",
+						"NextMessageId": "200820018"
+					},
+					"200820018": {
+						"Id": "200820018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "음, 그럴지도!",
+						"NextMessageId": "200820019"
+					},
+					"200820019": {
+						"Id": "200820019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "사실 나도 기계팔로 미사일을 쏴보고 싶긴 했어",
+						"NextMessageId": "200820020"
+					},
+					"200820020": {
+						"Id": "200820020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "근데 그럼 격투의 본질을 흐리는 것 같아서 생각만 하고 말았지……",
+						"NextMessageId": "200820025"
+					},
+					"200820021": {
+						"Id": "200820021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "무기를 사용한 격투는 순수하지 않아",
+						"NextMessageId": "200820022"
+					},
+					"200820022": {
+						"Id": "200820022",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "격투는 맨몸으로 싸워야 제맛이지!",
+						"NextMessageId": "200820023"
+					},
+					"200820023": {
+						"Id": "200820023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "역시 그렇지?!!",
+						"NextMessageId": "200820024"
+					},
+					"200820024": {
+						"Id": "200820024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "아, 근데 내 기계팔 쇠로 만든 건데……",
+						"NextMessageId": "200820025"
+					},
+					"200820025": {
+						"Id": "200820025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "에라, 모르겠다",
+						"NextMessageId": "200820026"
+					},
+					"200820026": {
+						"Id": "200820026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "상대가 어떤 전술로 나오든 다 이기면 그만이지 뭐!",
+						"NextMessageId": "choice36"
+					},
+					"200820027": {
+						"Id": "200820027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "파이팅!",
+						"NextMessageId": "200820028"
+					},
+					"200820028": {
+						"Id": "200820028",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20006.png",
+						"Text": "[좋아요]",
+						"NextMessageId": "200820029"
+					},
+					"200820029": {
+						"Id": "200820029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "넌 마음 푹 놓고 박수 칠 준비만 해!"
+					},
+					"choice5": {
+						"Id": "choice5",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "좋아",
+								"NextMessageId": "200820005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "갈 시간이 없어",
+								"NextMessageId": "200820007"
+							}
+						]
+					},
+					"choice20": {
+						"Id": "choice20",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "시대는 변하는 거야",
+								"NextMessageId": "200820017"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "순수하지 않아",
+								"NextMessageId": "200820021"
+							}
+						]
+					},
+					"choice36": {
+						"Id": "choice36",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "힘내!",
+								"NextMessageId": "200820027"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20083": {
+		"Id": "20083",
+		"ContactId": "1111",
+		"ParticpatingContactIds": [
+			"1111",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2008300",
+				"StartingMessageId": "200830000",
+				"Messages": {
+					"200830000": {
+						"Id": "200830000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "나 지금까지 순찰 돌았어",
+						"NextMessageId": "200830001"
+					},
+					"200830001": {
+						"Id": "200830001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "배고파!",
+						"NextMessageId": "200830002"
+					},
+					"200830002": {
+						"Id": "200830002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "{NICKNAME}, 나중에 우리 야식 먹으러 가볼래?",
+						"NextMessageId": "200830003"
+					},
+					"200830003": {
+						"Id": "200830003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "먹고 싶은 거 있어?",
+						"NextMessageId": "choice4"
+					},
+					"200830004": {
+						"Id": "200830004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "「동굴 도롱뇽 꼬치」",
+						"NextMessageId": "200830005"
+					},
+					"200830005": {
+						"Id": "200830005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "오, 먹을 줄 아는데!",
+						"NextMessageId": "200830006"
+					},
+					"200830006": {
+						"Id": "200830006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20006.png",
+						"Text": "[좋아요]",
+						"NextMessageId": "200830007"
+					},
+					"200830007": {
+						"Id": "200830007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "오늘부터 널 내 밥 친구로 임명해 주지!",
+						"NextMessageId": "200830014"
+					},
+					"200830008": {
+						"Id": "200830008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "「야채 샐러드」",
+						"NextMessageId": "200830009"
+					},
+					"200830009": {
+						"Id": "200830009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "???",
+						"NextMessageId": "200830010"
+					},
+					"200830010": {
+						"Id": "200830010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "???",
+						"NextMessageId": "200830011"
+					},
+					"200830011": {
+						"Id": "200830011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "진심이야?",
+						"NextMessageId": "200830012"
+					},
+					"200830012": {
+						"Id": "200830012",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20003.png",
+						"Text": "[거절]",
+						"NextMessageId": "200830013"
+					},
+					"200830013": {
+						"Id": "200830013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "풀때기를 먹을 바엔 링 위에서 10분간 맞고 만다!",
+						"NextMessageId": "200830014"
+					},
+					"200830014": {
+						"Id": "200830014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "아, 내가 괜찮은 포장마차 하나 아는데",
+						"NextMessageId": "200830015"
+					},
+					"200830015": {
+						"Id": "200830015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "나중에 너 오면 우리 거기서 배 터지게 먹자!"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "「동굴 도롱뇽 꼬치」",
+								"NextMessageId": "200830004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "「야채 샐러드」",
+								"NextMessageId": "200830008"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
+	},
+	"20084": {
+		"Id": "20084",
+		"ContactId": "1111",
+		"ParticpatingContactIds": [
+			"1111",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2008400",
+				"StartingMessageId": "200840000",
+				"Messages": {
+					"200840000": {
+						"Id": "200840000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "{NICKNAME}!",
+						"NextMessageId": "200840001"
+					},
+					"200840001": {
+						"Id": "200840001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "살려줘!",
+						"NextMessageId": "200840002"
+					},
+					"200840002": {
+						"Id": "200840002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "모든 걸……",
+						"NextMessageId": "200840003"
+					},
+					"200840003": {
+						"Id": "200840003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "하얗게 불태웠다고……",
+						"NextMessageId": "choice4"
+					},
+					"200840004": {
+						"Id": "200840004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "경기에서 졌어?",
+						"NextMessageId": "200840005"
+					},
+					"200840005": {
+						"Id": "200840005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "차라리 그런 거면 다행이게",
+						"NextMessageId": "200840006"
+					},
+					"200840006": {
+						"Id": "200840006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "물론 그런 일은 하늘이 두 쪽 나도 없겠지만",
+						"NextMessageId": "200840010"
+					},
+					"200840007": {
+						"Id": "200840007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "밥 못 먹었어?",
+						"NextMessageId": "200840008"
+					},
+					"200840008": {
+						"Id": "200840008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "배불리 못 먹긴 했는데",
+						"NextMessageId": "200840009"
+					},
+					"200840009": {
+						"Id": "200840009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "그런 문제가 아냐!",
+						"NextMessageId": "200840010"
+					},
+					"200840010": {
+						"Id": "200840010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "나 두더지파를 만났어",
+						"NextMessageId": "200840011"
+					},
+					"200840011": {
+						"Id": "200840011",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20001.png",
+						"Text": "[인사]",
+						"NextMessageId": "200840012"
+					},
+					"200840012": {
+						"Id": "200840012",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20001.png",
+						"Text": "[인사]",
+						"NextMessageId": "200840013"
+					},
+					"200840013": {
+						"Id": "200840013",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20001.png",
+						"Text": "[인사]",
+						"NextMessageId": "choice19"
+					},
+					"200840014": {
+						"Id": "200840014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "?",
+						"NextMessageId": "200840015"
+					},
+					"200840015": {
+						"Id": "200840015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "미안, 방금 애들한테 폰 뺏겼어",
+						"NextMessageId": "200840016"
+					},
+					"200840016": {
+						"Id": "200840016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Text": "잠깐만",
+						"NextMessageId": "200840017"
+					},
+					"200840017": {
+						"Id": "200840017",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "친구 루카가 오프라인 상태입니다",
+						"NextMessageId": "choice24"
+					},
+					"200840018": {
+						"Id": "200840018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "……",
+						"NextMessageId": "200840019"
+					},
+					"200840019": {
+						"Id": "200840019",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "친구 루카가 온라인 상태입니다",
+						"NextMessageId": "choice27"
+					},
+					"200840020": {
+						"Id": "200840020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "괜찮아? 내가 가서 도와줄까?",
+						"NextMessageId": "200840022"
+					},
+					"200840021": {
+						"Id": "200840021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "애들은 괜찮아? 재밌어하고?",
+						"NextMessageId": "200840022"
+					},
+					"200840022": {
+						"Id": "200840022",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20001.png",
+						"Text": "[인사]",
+						"NextMessageId": "200840023"
+					},
+					"200840023": {
+						"Id": "200840023",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20001.png",
+						"Text": "[인사]",
+						"NextMessageId": "200840024"
+					},
+					"200840024": {
+						"Id": "200840024",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1111",
+						"Image": "SpriteOutput/Emoji/20001.png",
+						"Text": "[인사]",
+						"NextMessageId": "choice36"
+					},
+					"200840025": {
+						"Id": "200840025",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "루카… 명복을 빌어줄게……"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "경기에서 졌어?",
+								"NextMessageId": "200840004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "밥 못 먹었어?",
+								"NextMessageId": "200840007"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "?",
+								"NextMessageId": "200840014"
+							}
+						]
+					},
+					"choice24": {
+						"Id": "choice24",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "……",
+								"NextMessageId": "200840018"
+							}
+						]
+					},
+					"choice27": {
+						"Id": "choice27",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "괜찮아?",
+								"NextMessageId": "200840020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "애들은 괜찮아?",
+								"NextMessageId": "200840021"
+							}
+						]
+					},
+					"choice36": {
+						"Id": "choice36",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "힘내……",
+								"NextMessageId": "200840025"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "1.2"
 	},
 	"50001": {
 		"Id": "50001",

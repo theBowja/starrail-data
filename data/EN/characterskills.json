@@ -1183,6 +1183,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "When an enemy is inflicted with Weakness Break, Himeko gains 1 point of Charge (max <unbreak>#2[i]</unbreak> points).\nIf Himeko is fully Charged when an ally performs an attack, Himeko immediately performs 1 <u>follow-up attack</u> and deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to all enemies, consuming all Charge points.\nAt the start of the battle, Himeko gains 1 point of Charge.",
+			"AbridgedEffect": "Gains Charge stack when an enemy's Weakness is Broken.\nAfter an ally performs an attack, if fully Charged, immediately performs a <u>follow-up attack</u> and deal Fire DMG to all enemies, consuming all Charge stacks.\nGains 1 Charge stack at the start of each battle.",
 			"ElementType": "Fire",
 			"Levels": {
 				"1": {
@@ -1287,6 +1288,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "After using Technique, creates a dimension that lasts for <unbreak>#4[i]</unbreak> second(s). After entering battle with enemies in the dimension, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> to increase Fire DMG taken by enemies by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). Only 1 dimension created by allies can exist at the same time.",
+			"AbridgedEffect": "Creates a dimension. After entering combat with enemies in the dimension, there is a high chance to increase Fire DMG taken by enemies.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -1643,6 +1645,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "When hitting an enemy that is already Slowed, Welt deals <u>Additional</u> Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of his ATK to the enemy.",
+			"AbridgedEffect": "When hitting a Slowed enemy, additionally deals minor Imaginary <u>Additional DMG</u>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -1731,6 +1734,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "After using Welt's Technique, create a dimension that lasts for <unbreak>#4[i]</unbreak> second(s). Enemies in this dimension have their Movement SPD reduced by <unbreak>#5[i]%</unbreak>. After entering battle with enemies in the dimension, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> to Imprison the enemies for 1 turn.\nImprisoned enemies have their <u>actions delayed</u> by <unbreak>#2[i]%</unbreak> and SPD reduced by <unbreak>#3[i]%</unbreak>. Only 1 dimension created by allies can exist at the same time.",
+			"AbridgedEffect": "Creates a dimension. Enemies in this dimension have their Movement SPD reduced. After entering combat with enemies in the dimension, there is a high chance for the enemies to become Imprisoned.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -1818,7 +1822,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Kafka's ATK to a target enemy and Lightning DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Kafka's ATK to enemies adjacent to it.\nIf the target enemy is currently receiving DoT, all DoTs currently placed on that enemy immediately produce DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of their original DMG.",
-			"AbridgedEffect": "Deals Lightning DMG to an enemy, and causes the target enemy to receive extra DoT. In addition, deals minor Lightning DMG to enemies adjacent to it.",
+			"AbridgedEffect": "Deals Lightning DMG to a single enemy and minor Lightning DMG to adjacent targets.\nIf the main target currently has a DoT effect inflicted on it, the DoT deals DMG 1 extra time.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1937,8 +1941,8 @@
 			"TagTypeText": "AoE",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
-			"EffectRaw": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Kafka's ATK to all enemies, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> for enemies hit to become Shocked and immediately take DMG equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of the DoT. Shock lasts for <unbreak>#3[i]</unbreak> turn(s).\nWhile Shocked, enemies receive Lightning DoT equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Kafka's ATK at the beginning of each turn.",
-			"AbridgedEffect": "Deals minor Lightning DMG to all enemies with a high chance of Shocking them, causing enemies to take Additional DMG.",
+			"EffectRaw": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Kafka's ATK to all enemies, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> for enemies hit to become Shocked and immediately take DMG from their current Shock state, equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of its original DMG. Shock lasts for <unbreak>#3[i]</unbreak> turn(s).\nWhile Shocked, enemies receive Lightning DoT equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Kafka's ATK at the beginning of each turn.",
+			"AbridgedEffect": "Deals minor Lightning DMG to all enemies, with a high chance of Shocking them.\nIf the enemies are currently Shocked, the Shock status deals DMG 1 extra time.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1946,8 +1950,8 @@
 						0.48,
 						1,
 						2,
-						0.95,
-						0.72
+						1.16,
+						0.8
 					]
 				},
 				"2": {
@@ -1955,8 +1959,8 @@
 						0.512,
 						1,
 						2,
-						1.045,
-						0.738
+						1.2688,
+						0.82
 					]
 				},
 				"3": {
@@ -1964,8 +1968,8 @@
 						0.544,
 						1,
 						2,
-						1.14,
-						0.756
+						1.3775,
+						0.84
 					]
 				},
 				"4": {
@@ -1973,8 +1977,8 @@
 						0.576,
 						1,
 						2,
-						1.235,
-						0.774
+						1.4863,
+						0.86
 					]
 				},
 				"5": {
@@ -1982,8 +1986,8 @@
 						0.608,
 						1,
 						2,
-						1.33,
-						0.792
+						1.595,
+						0.88
 					]
 				},
 				"6": {
@@ -1991,8 +1995,8 @@
 						0.64,
 						1,
 						2,
-						1.4725,
-						0.81
+						1.7581,
+						0.9
 					]
 				},
 				"7": {
@@ -2000,8 +2004,8 @@
 						0.68,
 						1,
 						2,
-						1.6625,
-						0.8325
+						1.9756,
+						0.925
 					]
 				},
 				"8": {
@@ -2009,8 +2013,8 @@
 						0.72,
 						1,
 						2,
-						1.9,
-						0.855
+						2.2475,
+						0.95
 					]
 				},
 				"9": {
@@ -2018,8 +2022,8 @@
 						0.76,
 						1,
 						2,
-						2.185,
-						0.8775
+						2.5738,
+						0.975
 					]
 				},
 				"10": {
@@ -2027,8 +2031,8 @@
 						0.8,
 						1,
 						2,
-						2.47,
-						0.9
+						2.9,
+						1
 					]
 				},
 				"11": {
@@ -2036,8 +2040,8 @@
 						0.832,
 						1,
 						2,
-						2.5935,
-						0.918
+						3.0414,
+						1.02
 					]
 				},
 				"12": {
@@ -2045,8 +2049,8 @@
 						0.864,
 						1,
 						2,
-						2.717,
-						0.936
+						3.1828,
+						1.04
 					]
 				},
 				"13": {
@@ -2054,8 +2058,8 @@
 						0.896,
 						1,
 						2,
-						2.8405,
-						0.954
+						3.3241,
+						1.06
 					]
 				},
 				"14": {
@@ -2063,8 +2067,8 @@
 						0.928,
 						1,
 						2,
-						2.964,
-						0.972
+						3.4655,
+						1.08
 					]
 				},
 				"15": {
@@ -2072,8 +2076,8 @@
 						0.96,
 						1,
 						2,
-						3.0875,
-						0.99
+						3.6069,
+						1.1
 					]
 				}
 			},
@@ -2087,127 +2091,113 @@
 			"TagTypeText": "Single Target",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "After an ally of Kafka's uses Basic ATK on an enemy, Kafka immediately launches 1 <u>follow-up attack</u> and deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to that enemy, with a <unbreak>#4[i]%</unbreak> <u>base chance</u> of increasing the DoT DMG received by the enemy by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turns. This effect can only be triggered 1 time per turn.",
+			"EffectRaw": "After an ally of Kafka's uses Basic ATK on an enemy target, Kafka immediately launches 1 <u>follow-up attack</u> and deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to that target, with a <unbreak>#2[i]%</unbreak> base chance to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target for <unbreak>#3[i]</unbreak> turns. This effect can only be triggered 1 time per turn.",
+			"AbridgedEffect": "After an ally uses Basic ATK on an enemy, Kafka immediately launches a <u>follow-up attack</u> and deals minor Lightning DMG with a high chance of inflicting Shock to that target. This effect can only be triggered 1 time per turn.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
 					"EffectValues": [
-						0.6,
-						0.15,
-						2,
-						1
+						0.42,
+						1,
+						2
 					]
 				},
 				"2": {
 					"EffectValues": [
-						0.66,
-						0.155,
-						2,
-						1
+						0.518,
+						1,
+						2
 					]
 				},
 				"3": {
 					"EffectValues": [
-						0.72,
-						0.16,
-						2,
-						1
+						0.616,
+						1,
+						2
 					]
 				},
 				"4": {
 					"EffectValues": [
-						0.78,
-						0.165,
-						2,
-						1
+						0.714,
+						1,
+						2
 					]
 				},
 				"5": {
 					"EffectValues": [
-						0.84,
-						0.17,
-						2,
-						1
+						0.812,
+						1,
+						2
 					]
 				},
 				"6": {
 					"EffectValues": [
-						0.9,
-						0.175,
-						2,
-						1
+						0.91,
+						1,
+						2
 					]
 				},
 				"7": {
 					"EffectValues": [
-						0.975,
-						0.1813,
-						2,
-						1
+						1.0325,
+						1,
+						2
 					]
 				},
 				"8": {
 					"EffectValues": [
-						1.05,
-						0.1875,
-						2,
-						1
+						1.155,
+						1,
+						2
 					]
 				},
 				"9": {
 					"EffectValues": [
-						1.125,
-						0.1938,
-						2,
-						1
+						1.2775,
+						1,
+						2
 					]
 				},
 				"10": {
 					"EffectValues": [
-						1.2,
-						0.2,
-						2,
-						1
+						1.4,
+						1,
+						2
 					]
 				},
 				"11": {
 					"EffectValues": [
-						1.26,
-						0.205,
-						2,
-						1
+						1.498,
+						1,
+						2
 					]
 				},
 				"12": {
 					"EffectValues": [
-						1.32,
-						0.21,
-						2,
-						1
+						1.596,
+						1,
+						2
 					]
 				},
 				"13": {
 					"EffectValues": [
-						1.38,
-						0.215,
-						2,
-						1
+						1.694,
+						1,
+						2
 					]
 				},
 				"14": {
 					"EffectValues": [
-						1.44,
-						0.22,
-						2,
-						1
+						1.792,
+						1,
+						2
 					]
 				},
 				"15": {
 					"EffectValues": [
-						1.5,
-						0.225,
-						2,
-						1
+						1.89,
+						1,
+						2
 					]
 				}
 			},
@@ -2220,14 +2210,14 @@
 			"TagType": "MazeAttack",
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
-			"EffectRaw": "Immediately attacks the enemy. After entering battle, deal Lightning DMG equal to <unbreak>#4[i]%</unbreak> of Kafka's ATK to all enemies. In addition, each enemy has a <unbreak>#1[i]%</unbreak> <u>base chance</u> to become Shocked for <unbreak>#3[i]</unbreak> turn(s).\nWhile Shocked, enemies receive Lightning DoT equal to <unbreak>#2[i]%</unbreak> of Kafka's ATK at the beginning of each turn.",
+			"EffectRaw": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to <unbreak>#3[i]%</unbreak> of Kafka's ATK to all enemies, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Shock equivalent to that applied by her Ultimate on every enemy target for <unbreak>#2[i]</unbreak> turn(s).",
+			"AbridgedEffect": "Attacks all enemies within range. After entering battle, deals minor Lightning DMG to all enemies with a high chance of Shocking them.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
 					"EffectValues": [
 						1,
-						0.5,
-						3,
+						2,
 						0.5
 					]
 				}
@@ -2307,7 +2297,7 @@
 			"TagTypeText": "Impair",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
-			"EffectRaw": "There is a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>base chance</u> to add 1 Weakness of an on-field ally's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by <unbreak>#4[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\nIn addition, there is a <unbreak>#5[i]%</unbreak> <u>base chance</u> to reduce the All-Type RES of the enemy further by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).\nDeals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Silver Wolf's ATK to this enemy.",
+			"EffectRaw": "There is a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>base chance</u> to add 1 Weakness of an on-field character's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by <unbreak>#4[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\nIn addition, there is a <unbreak>#5[i]%</unbreak> <u>base chance</u> to further reduce the All-Type RES of the enemy by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).\nDeals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Silver Wolf's ATK to this enemy.",
 			"AbridgedEffect": "There is a high chance to apply additional Type Weaknesses to a single enemy and deals Quantum DMG to this target enemy.",
 			"ElementType": "Quantum",
 			"Levels": {
@@ -2622,7 +2612,7 @@
 			"TagTypeText": "Impair",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "Silver Wolf can create three types of Bugs: reduce ATK by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, reduce DEF by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, and reduce SPD by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.\nEvery time Silver Wolf attacks, she has a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> <u>base chance</u> to implant a random Bug that lasts for <unbreak>#5[i]</unbreak> turn(s) in the enemy target.",
+			"EffectRaw": "Silver Wolf can create three types of Bugs: reduce ATK by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, reduce DEF by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, and reduce SPD by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.\nEvery time Silver Wolf attacks, she has a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> <u>base chance</u> to implant a random Bug that lasts for <unbreak>#5[i]</unbreak> turn(s) in an enemy target.",
 			"AbridgedEffect": "After each attack, there is a chance of inflicting the attacked enemy with 1 random Bug.",
 			"Levels": {
 				"1": {
@@ -3066,6 +3056,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Increases Arlan's DMG for every percent of HP below his Max HP, up to a max of <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> more DMG.",
+			"AbridgedEffect": "Increases DMG based on the current percentage of own HP lost.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -3153,6 +3144,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to <unbreak>#1[i]%</unbreak> of Arlan's ATK to all enemies.",
+			"AbridgedEffect": "Attacks the enemy. After entering battle, deals minor Lightning DMG to all enemies.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -4300,6 +4292,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "After using her Basic ATK, Bronya's next action will be <u>Advanced Forward</u> by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+			"AbridgedEffect": "After this character uses Basic ATK, their next action will be <u>Advanced Forward</u>.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -4389,6 +4382,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
+			"AbridgedEffect": "After this character uses Technique, increases all allies' ATK at the start of the next battle.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5555,6 +5549,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "When struck with a killing blow, instead of becoming <u>knocked down</u>, Gepard's HP immediately restores to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of his Max HP. This effect can only trigger once per battle.",
+			"AbridgedEffect": "When struck by a killing blow, instead of being <u>knocked down</u>, immediately restores HP. This effect can only trigger 1 time per battle.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5643,6 +5638,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to <unbreak>#1[i]%</unbreak> of Gepard's DEF plus <unbreak>#3[i]</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
+			"AbridgedEffect": "After this character uses Technique, all allies gain a Shield at the start of the next battle.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5981,6 +5977,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "When healing allies with HP percentage at <unbreak>#1[i]%</unbreak> or lower, increases Natasha's Outgoing Healing by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. This effect also works on continuous healing.",
+			"AbridgedEffect": "When healing allies with low HP, increases Outgoing Healing. This effect also works on continuous healing.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -6083,6 +6080,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "Immediately attacks the enemy. After entering battle, deals Physical DMG equal to <unbreak>#4[i]%</unbreak> of Natasha's ATK to a random enemy, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> to Weaken all enemies.\nWhile Weakened, enemies deal <unbreak>#2[i]%</unbreak> less DMG to allies for <unbreak>#3[i]</unbreak> turn(s).",
+			"AbridgedEffect": "Attacks the enemy. After entering battle, deals minor Physical DMG to a random single enemy, with a high chance to inflict Weaken to all enemy targets.",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -6840,6 +6838,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Under the protection of Svarog, DMG taken by Clara when hit by enemy attacks is reduced by <unbreak>#3[i]%</unbreak>. Svarog will mark enemies who attack Clara with his Mark of Counter and retaliate with a <u>Counter</u>, dealing Physical DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Clara's ATK.",
+			"AbridgedEffect": "DMG received from enemy attacks is reduced. Enemies who attack Clara will be marked with Mark of Counter, and be met with Svarog's <u>Counter</u>, dealing Physical DMG.",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -6958,6 +6957,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "Immediately attacks the enemy. Upon entering battle, the chance Clara will be attacked by enemies increases for <unbreak>#1[i]</unbreak> turn(s).",
+			"AbridgedEffect": "Attacks the enemy. After entering battle, this character's chance of being attacked by enemies increases.",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -7283,6 +7283,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Sampo's attacks have a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Wind Shear for <unbreak>#3[i]</unbreak> turn(s).\nEnemies inflicted with Wind Shear will take Wind DoT equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Sampo's ATK at the beginning of each turn. Wind Shear can stack up to <unbreak>#4[i]</unbreak> time(s).",
+			"AbridgedEffect": "After this character hits an enemy, there is a chance of inflicting Wind Shear on the target.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -7416,6 +7417,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "After Sampo uses his Technique, enemies in a set area are inflicted with Blind for <unbreak>#1[i]</unbreak> second(s). Blinded enemies cannot detect your team.\nWhen initiating combat against a Blinded enemy, there is a <unbreak>#2[i]%</unbreak> <u>fixed chance</u> to delay all enemies' action by <unbreak>#3[i]%</unbreak>.",
+			"AbridgedEffect": "Enemies in a set area are Blinded. When initiating battle against a Blinded enemy, there is a high chance to <u>delay</u> all enemies' actions.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -7993,6 +7995,564 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Maze.png"
 		},
 		"VersionAdded": "1.0"
+	},
+	"1111": {
+		"Id": "1111",
+		"Name": "Luka",
+		"BasicATK": {
+			"Id": "111101",
+			"Name": "Direct Punch",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luka's ATK to a single enemy.",
+			"AbridgedEffect": "Deals minor Physical DMG to a single enemy.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "111108",
+			"Name": "Sky-Shatter Fist",
+			"TriggerKey": "Skill11",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Consumes 2 stacks of Fighting Will. First, uses Direct Punch to deal 3 hits, with each hit dealing Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luka's ATK to a single enemy target.\nThen, uses Rising Uppercut to deal 1 hit, dealing Physical DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Luka's ATK to the single enemy target.",
+			"AbridgedEffect": "Consumes 2 stacks of Fighting Will to deal Physical DMG to a single enemy.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1,
+						0.4
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.12,
+						0.48
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.14,
+						0.56
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.16,
+						0.64
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.18,
+						0.72
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.2,
+						0.8
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.22,
+						0.88
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.24,
+						0.96
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.26,
+						1.04
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Normal02.png"
+		},
+		"Skill": {
+			"Id": "111102",
+			"Name": "Lacerating Fist",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luka's ATK to a single enemy target. In addition, there is a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict Bleed on them, lasting for <unbreak>#5[i]</unbreak> turn(s).\nWhile Bleeding, the enemy will take <unbreak>#3[f1]%</unbreak> of their Max HP as Physical DoT at the start of each turn. This DMG will not exceed more than <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Luka's ATK.",
+			"AbridgedEffect": "Deals Physical DMG to a single enemy, with a high chance of causing the enemy to Bleed.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						1,
+						0.24,
+						1.3,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.66,
+						1,
+						0.24,
+						1.43,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.72,
+						1,
+						0.24,
+						1.56,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.78,
+						1,
+						0.24,
+						1.69,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.84,
+						1,
+						0.24,
+						1.82,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.9,
+						1,
+						0.24,
+						2.015,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.975,
+						1,
+						0.24,
+						2.275,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.05,
+						1,
+						0.24,
+						2.6,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.125,
+						1,
+						0.24,
+						2.99,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.2,
+						1,
+						0.24,
+						3.38,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.26,
+						1,
+						0.24,
+						3.549,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.32,
+						1,
+						0.24,
+						3.718,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.38,
+						1,
+						0.24,
+						3.887,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.44,
+						1,
+						0.24,
+						4.056,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.5,
+						1,
+						0.24,
+						4.225,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_BP.png"
+		},
+		"Ultimate": {
+			"Id": "111103",
+			"Name": "Coup de Grâce",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Receives <unbreak>#5[i]</unbreak> stack(s) of Fighting Will, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to increase a single enemy target's DMG received by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). Then, deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luka's ATK to the target.",
+			"AbridgedEffect": "Receives <color=#f29e38ff><unbreak>#5[i]</unbreak></color> stack(s) of Fighting Will, with a high chance of increasing the target's DMG received, and deals massive Physical DMG to the target.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.98,
+						1,
+						0.12,
+						3,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2.112,
+						1,
+						0.128,
+						3,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2.244,
+						1,
+						0.136,
+						3,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2.376,
+						1,
+						0.144,
+						3,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.508,
+						1,
+						0.152,
+						3,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.64,
+						1,
+						0.16,
+						3,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.805,
+						1,
+						0.17,
+						3,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.97,
+						1,
+						0.18,
+						3,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3.135,
+						1,
+						0.19,
+						3,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3.3,
+						1,
+						0.2,
+						3,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3.432,
+						1,
+						0.208,
+						3,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3.564,
+						1,
+						0.216,
+						3,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.696,
+						1,
+						0.224,
+						3,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.828,
+						1,
+						0.232,
+						3,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.96,
+						1,
+						0.24,
+						3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Ultra.png"
+		},
+		"Talent": {
+			"Id": "111104",
+			"Name": "Flying Sparks",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Enhance",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "After Luka uses his Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" he receives <unbreak>#1[i]</unbreak> stack(s) of Fighting Will, up to 4 stacks. When he has 2 or more stacks of Fighting Will, his Basic ATK \"Direct Punch\" is enhanced to \"Sky-Shatter Fist.\" After his Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG for 1 time equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original DMG to the target. At the start of battle, Luka will possess 1 stack of Fighting Will.",
+			"AbridgedEffect": "After using Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" receives 1 stack of Fighting Will. When 2 or more stacks of Fighting Will are present, Basic Attack becomes Enhanced.\nIf the enemy is Bleeding, the Enhanced Basic ATK will cause Bleed to deal extra DMG for 1 time.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.68
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						0.697
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						0.714
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						0.731
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						0.748
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.765
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						0.7863
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						0.8075
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						0.8288
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						0.85
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						0.867
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						0.884
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						0.901
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						0.918
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.935
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Passive.png"
+		},
+		"Technique": {
+			"Id": "111107",
+			"Name": "Anticipator",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Immediately attacks the enemy. Upon entering battle, Luka deals Physical DMG equal to <unbreak>#1[i]%</unbreak> of his ATK to a random single enemy with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict his Skill's Bleed effect on the target. Then, Luka gains 1 additional stack of Fighting Will.",
+			"AbridgedEffect": "Attacks the enemy. After entering battle, deals minor Physical DMG to a random single enemy, with a high chance to inflict Bleed to the target. Luka then gains 1 stack of Fighting Will.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Maze.png"
+		},
+		"VersionAdded": "1.2"
 	},
 	"1201": {
 		"Id": "1201",
@@ -9074,7 +9634,7 @@
 			"TagTypeText": "AoE",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
-			"EffectRaw": "Removes <unbreak>#2[i]</unbreak> <u>buff(s)</u> from all enemies and deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luocha's ATK to all enemies. Luocha gains 1 stack of Abyss Flower.",
+			"EffectRaw": "Removes <unbreak>#2[i]</unbreak> <u>buff(s)</u> from all enemies and deals all enemies Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luocha's ATK. At the same time, Luocha gains 1 stack of Abyss Flower.",
 			"AbridgedEffect": "Removes 1 <u>buff</u> from all enemies, deals Imaginary DMG to all enemies, and gains 1 stack of Abyss Flower.",
 			"ElementType": "Imaginary",
 			"Levels": {
@@ -9781,6 +10341,637 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1205": {
+		"Id": "1205",
+		"Name": "Blade",
+		"BasicATK": {
+			"Id": "120501",
+			"Name": "Shard Sword",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Deals <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Blade's ATK as Wind DMG to a target enemy.",
+			"AbridgedEffect": "Deals minor Wind DMG to an enemy.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "120508",
+			"Name": "Forest of Swords",
+			"TriggerKey": "Skill11",
+			"TagType": "Blast",
+			"TagTypeText": "Blast",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Consumes HP equal to <unbreak>#1[i]%</unbreak> of Blade's Max HP and deals Wind DMG equal to the sum of <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of his ATK and <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of his Max HP to a single enemy. In addition, deals Wind DMG equal to the sum of <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Blade's ATK and <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of his Max HP to adjacent targets.\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when using Forest of Swords.\nForest of Swords cannot regenerate Skill Points.",
+			"AbridgedEffect": "Consumes HP and deals Wind DMG to an enemy, as well as minor Wind DMG to adjacent targets.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1,
+						0.2,
+						0.08,
+						0.5,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.1,
+						0.24,
+						0.096,
+						0.6,
+						0.24
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.1,
+						0.28,
+						0.112,
+						0.7,
+						0.28
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.1,
+						0.32,
+						0.128,
+						0.8,
+						0.32
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.1,
+						0.36,
+						0.144,
+						0.9,
+						0.36
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.1,
+						0.4,
+						0.16,
+						1,
+						0.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.1,
+						0.44,
+						0.176,
+						1.1,
+						0.44
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.1,
+						0.48,
+						0.192,
+						1.2,
+						0.48
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1,
+						0.52,
+						0.208,
+						1.3,
+						0.52
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Normal02.png"
+		},
+		"Skill": {
+			"Id": "120502",
+			"Name": "Hellscape",
+			"TriggerKey": "Skill02",
+			"TagType": "Enhance",
+			"TagTypeText": "Enhance",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Consumes HP equal to <unbreak>#1[i]%</unbreak> of Blade's Max HP to enter the Hellscape state.\nWhen Hellscape is active, his Skill cannot be used, his DMG dealt increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, and his Basic ATK Shard Sword is enhanced to Forest of Swords for <unbreak>#2[i]</unbreak> turn(s).\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill.\nThis Skill does not regenerate Energy. Using this Skill does not end the current turn.",
+			"AbridgedEffect": "Consumes HP to Enhance Basic ATK, and this turn does not end after this Skill is used.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.148
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.176
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.204
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.232
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.26
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.295
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.33
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.365
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.4
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.428
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.456
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.484
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.512
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						3,
+						1,
+						0.54
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_BP.png"
+		},
+		"Ultimate": {
+			"Id": "120503",
+			"Name": "Death Sentence",
+			"TriggerKey": "Skill03",
+			"TagType": "Blast",
+			"TagTypeText": "Blast",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Sets Blade's current HP to <unbreak>50%</unbreak> of his Max HP and deals Wind DMG to a single enemy equal to the sum of <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of his ATK, <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of his Max HP, and <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of the tally of Blade's HP loss in the current battle. At the same time, deals Wind DMG to adjacent targets equal to the sum of <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of his ATK, <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of his Max HP, and <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> of the tally of his HP loss in the current battle.\nThe tally of Blade's HP loss in the current battle is capped at <unbreak>#7[i]%</unbreak> of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
+			"AbridgedEffect": "Sets current HP to <unbreak>50%</unbreak> of Max HP, and deals massive Wind DMG to a single enemy and Wind DMG to adjacent targets.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.24,
+						0.6,
+						0.096,
+						0.24,
+						0.6,
+						0.24,
+						0.9
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.256,
+						0.64,
+						0.1024,
+						0.256,
+						0.64,
+						0.256,
+						0.9
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.272,
+						0.68,
+						0.1088,
+						0.272,
+						0.68,
+						0.272,
+						0.9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.288,
+						0.72,
+						0.1152,
+						0.288,
+						0.72,
+						0.288,
+						0.9
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.304,
+						0.76,
+						0.1216,
+						0.304,
+						0.76,
+						0.304,
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.32,
+						0.8,
+						0.128,
+						0.32,
+						0.8,
+						0.32,
+						0.9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.34,
+						0.85,
+						0.136,
+						0.34,
+						0.85,
+						0.34,
+						0.9
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.36,
+						0.9,
+						0.144,
+						0.36,
+						0.9,
+						0.36,
+						0.9
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.38,
+						0.95,
+						0.152,
+						0.38,
+						0.95,
+						0.38,
+						0.9
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.4,
+						1,
+						0.16,
+						0.4,
+						1,
+						0.4,
+						0.9
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.416,
+						1.04,
+						0.1664,
+						0.416,
+						1.04,
+						0.416,
+						0.9
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.432,
+						1.08,
+						0.1728,
+						0.432,
+						1.08,
+						0.432,
+						0.9
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.448,
+						1.12,
+						0.1792,
+						0.448,
+						1.12,
+						0.448,
+						0.9
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.464,
+						1.16,
+						0.1856,
+						0.464,
+						1.16,
+						0.464,
+						0.9
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.48,
+						1.2,
+						0.192,
+						0.48,
+						1.2,
+						0.48,
+						0.9
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Ultra.png"
+		},
+		"Talent": {
+			"Id": "120504",
+			"Name": "Shuhu's Gift",
+			"TriggerKey": "SkillP01",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked.\nWhen Charge stack reaches maximum, immediately launches a <u>follow-up attack</u> on all enemies, dealing Wind DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Blade's ATK plus <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of his Max HP. At the same time, restores Blade's HP by <unbreak>#3[i]%</unbreak> of his Max HP. After the follow-up attack, all Charges are consumed.",
+			"AbridgedEffect": "When Blade's HP is lowered, he gains 1 stack of Charge. When maximum Charge stack is reached, Blade immediately deals Wind DMG to all enemies and restores HP. Then, all Charges are consumed.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						3,
+						0.22,
+						0.25,
+						0.55
+					]
+				},
+				"2": {
+					"EffectValues": [
+						3,
+						0.242,
+						0.25,
+						0.605
+					]
+				},
+				"3": {
+					"EffectValues": [
+						3,
+						0.264,
+						0.25,
+						0.66
+					]
+				},
+				"4": {
+					"EffectValues": [
+						3,
+						0.286,
+						0.25,
+						0.715
+					]
+				},
+				"5": {
+					"EffectValues": [
+						3,
+						0.308,
+						0.25,
+						0.77
+					]
+				},
+				"6": {
+					"EffectValues": [
+						3,
+						0.33,
+						0.25,
+						0.825
+					]
+				},
+				"7": {
+					"EffectValues": [
+						3,
+						0.3575,
+						0.25,
+						0.8938
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.385,
+						0.25,
+						0.9625
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3,
+						0.4125,
+						0.25,
+						1.0313
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						0.44,
+						0.25,
+						1.1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3,
+						0.462,
+						0.25,
+						1.155
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3,
+						0.484,
+						0.25,
+						1.21
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3,
+						0.506,
+						0.25,
+						1.265
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3,
+						0.528,
+						0.25,
+						1.32
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.55,
+						0.25,
+						1.375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Passive.png"
+		},
+		"Technique": {
+			"Id": "120507",
+			"Name": "Karma Wind",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Immediately attacks the enemy. After entering combat, consumes <unbreak>#2[i]%</unbreak> of Blade's Max HP while dealing Wind DMG equal to <unbreak>#1[i]%</unbreak> of his Max HP to all enemies.\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used.",
+			"AbridgedEffect": "Attacks the enemy. After entering combat, consumes own HP and deals Wind DMG to all enemies.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.4,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Maze.png"
+		},
+		"VersionAdded": "1.2"
+	},
 	"1206": {
 		"Id": "1206",
 		"Name": "Sushang",
@@ -10108,6 +11299,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "When an enemy has their Weakness Broken on the field, Sushang's SPD increases by <color=#f29e38ff><unbreak>#1[f2]%</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+			"AbridgedEffect": "When an enemy on the field has its Weakness Broken, this character's SPD increases.",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -10211,6 +11403,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "Immediately attacks the enemy. Upon entering battle, Sushang deals Physical DMG equal to <unbreak>#1[i]%</unbreak> of her ATK to all enemies.",
+			"AbridgedEffect": "Attacks the enemy. After entering battle, deals minor Physical DMG to all enemies.",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -10294,7 +11487,7 @@
 			"TagTypeText": "Support",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
-			"EffectRaw": "Obtains <unbreak>#1[i]</unbreak> stack(s) of \"Roaring Bowstrings\" (to a maximum of 2 stacks). When \"Roaring Bowstrings\" is active, the ATK of all allies increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and every time an ally's turn ends, Yukong loses 1 stack of \"Roaring Bowstrings.\"\nWhen it's the turn where Yukong gains \"Roaring Bowstrings\" by using Skill, \"Roaring Bowstrings\" will not be removed.",
+			"EffectRaw": "Obtains <unbreak>#1[i]</unbreak> stack(s) of \"Roaring Bowstrings\" (to a maximum of 2 stacks). When \"Roaring Bowstrings\" is active, the ATK of all allies increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and every time an ally's turn (including Yukong's) ends, Yukong loses 1 stack of \"Roaring Bowstrings.\"\nWhen it's the turn where Yukong gains \"Roaring Bowstrings\" by using Skill, \"Roaring Bowstrings\" will not be removed.",
 			"AbridgedEffect": "Obtains 2 stacks of \"Roaring Bowstrings\". ATK of all allies increases when \"Roaring Bowstrings\" is active.",
 			"Levels": {
 				"1": {
@@ -10935,6 +12128,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "When Soulsteel Sync is active, Yanqing is less likely to be attacked by enemies. Yanqing's CRIT Rate increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and his CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After Yanqing attacks an enemy, there is a <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> <u>fixed chance</u> to perform a <u>follow-up attack</u>, dealing Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Yanqing's ATK to the enemy, which has a <unbreak>#6[i]%</unbreak> <u>base chance</u> to Freeze the enemy for 1 turn.\nThe Frozen target cannot take action and receives <u>Additional</u> Ice DMG equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of Yanqing's ATK at the beginning of each turn.\nWhen Yanqing receives DMG, the Soulsteel Sync effect will disappear.",
+			"AbridgedEffect": "During Soulsteel Sync, reduces the chance of this character being attacked and increases their own CRIT Rate and CRIT DMG. After attacking an enemy, there is a chance of launching a <u>follow-up attack</u>, dealing Ice DMG with a chance to Freeze the target.\nSoulsteel Sync will be removed after this character receives DMG.",
 			"ElementType": "Ice",
 			"Levels": {
 				"1": {
@@ -11099,6 +12293,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "After using his Technique, at the start of the next battle, Yanqing deals <unbreak>#2[i]%</unbreak> more DMG for <unbreak>#3[i]</unbreak> turn(s) to enemies whose current HP is <unbreak>#1[i]%</unbreak> or higher.",
+			"AbridgedEffect": "After this character uses Technique, at the start of the next battle, increases the DMG dealt by this character to enemy targets whose HP is <unbreak>50%</unbreak> or higher.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -11437,6 +12632,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "After an ally with Invigoration is hit, restores the ally's HP for <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Bailu's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. This effect can trigger <unbreak>#5[i]</unbreak> time(s).\nWhen an ally receives a killing blow, they will not be <u>knocked down</u>. Bailu immediately heals the ally for <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Bailu's Max HP plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color> HP. This effect can be triggered 1 time per battle.",
+			"AbridgedEffect": "Allies with Invigoration restore HP after they are attacked.\nWhen an ally suffers a killing blow, Bailu immediately restores their HP. This effect can only trigger 1 time per battle.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -11585,6 +12781,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "After Technique is used, at the start of the next battle, all allies are granted Invigoration for <unbreak>#1[i]</unbreak> turn(s).",
+			"AbridgedEffect": "After this character uses Technique, at the start of the next battle, all allies are granted Invigoration.",
 			"Levels": {
 				"1": {
 					"EffectValues": [

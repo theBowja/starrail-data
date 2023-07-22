@@ -56,8 +56,8 @@ function collateSkills(textmap, skillId) {
 	data.EffectRaw = textmap[obj['1'].SkillDesc.Hash].replaceAll('\\n', '\n');
 	if (textmap[obj['1'].SimpleSkillDesc.Hash]) {
 		data.AbridgedEffect = textmap[obj['1'].SimpleSkillDesc.Hash].replaceAll('\\n', '\n');
-		if (data.AbridgedEffect.includes('[i') || data.AbridgedEffect.includes['[f'])
-			console.log(`Error: skill ${skillId} AbridgedEffect includes a replaceable parameter`);
+		// if (data.AbridgedEffect.includes('[i') || data.AbridgedEffect.includes['[f'])
+		// 	console.log(`Error: skill ${skillId} AbridgedEffect includes a replaceable parameter`);
 	}
 
 	data.ElementType = obj['1'].StanceDamageType;

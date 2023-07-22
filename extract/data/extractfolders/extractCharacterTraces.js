@@ -38,7 +38,7 @@ function collate(langCode) {
 			nodeData.Name = textmap[skillObj.SkillName.Hash];
 			nodeData.NodeTypeText = textmap[skillObj.SkillTypeDesc.Hash];
 
-			nodeData.EffectRaw = textmap[skillObj.SkillDesc.Hash].replaceAll('\\n', '\n');
+			nodeData.EffectRaw = textmap[skillObj.SkillDesc.Hash]?.replaceAll('\\n', '\n');
 			nodeData.MaxLevel = levelone.MaxLevel;
 
 			// some traces level more than one skills. corresponding to enhanced versions of skills
@@ -48,7 +48,7 @@ function collate(langCode) {
 			nodeData.Name = textmap[global.GetStableHash(levelone.PointName)];
 			nodeData.NodeTypeText = textmap[bonusAbilityHash];
 
-			nodeData.EffectRaw = textmap[global.GetStableHash(levelone.PointDesc)].replaceAll('\\n', '\n');
+			nodeData.EffectRaw = textmap[global.GetStableHash(levelone.PointDesc)]?.replaceAll('\\n', '\n');
 			nodeData.MaxLevel = levelone.MaxLevel;
 
 		} else {

@@ -5,7 +5,8 @@ const config = require('../config.json');
 global.getExcel = function(file) { return require(`${config.StarRailData_folder}/ExcelOutput/${file}.json`); }
 global.getTextMap = function(langcode) { return require(`${config.StarRailData_folder}/TextMap/TextMap${langcode}.json`); }
 
-const langcodes = ['CHT', 'CN', 'DE', 'EN', 'ES', 'FR', 'ID', 'JP', 'KR', 'PT', 'RU', 'TH', 'VI'];
+const langcodes = ['CHT', 'CHS', 'DE', 'EN', 'ES', 'FR', 'ID', 'JP', 'KR', 'PT', 'RU', 'TH', 'VI'];
+// const langcodes = ['EN']; // for debug purposes
 
 global.getLanguage = function(abbriev) { return getTextMap(abbriev.toUpperCase()); }
 
