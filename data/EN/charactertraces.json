@@ -6351,7 +6351,7 @@
 				"Name": "Gentle but Cruel",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "After an ally of Kafka's uses Basic ATK on an enemy target, Kafka immediately launches 1 <u>follow-up attack</u> and deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to that target, with a <unbreak>#2[i]%</unbreak> base chance to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target for <unbreak>#3[i]</unbreak> turns. This effect can only be triggered 1 time per turn.",
+				"EffectRaw": "After an ally of Kafka's uses Basic ATK on an enemy target, Kafka immediately launches 1 <u>follow-up attack</u> and deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to that target, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target, lasting for <unbreak>#3[i]</unbreak> turns. This effect can only be triggered 1 time per turn.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100504"
@@ -6705,7 +6705,7 @@
 				"Name": "Thorns",
 				"NodeType": 3,
 				"NodeTypeText": "Bonus Ability",
-				"EffectRaw": "The base chance for Ultimate, Technique, or the follow-up attack triggered by the Talent to inflict Shock increases by <unbreak>#1[i]%</unbreak>.",
+				"EffectRaw": "The base chance for target enemies to get Shocked by the Ultimate, the Technique, or the Talent-triggered follow-up attack increases by <unbreak>#1[i]%</unbreak>.",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_SkillTree3.png",
@@ -25468,6 +25468,1467 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1110": {
+		"Id": "1110",
+		"Name": "Lynx",
+		"Nodes": {
+			"1110001": {
+				"Id": "1110001",
+				"Name": "Ice Crampon Technique",
+				"NodeType": 2,
+				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of this character's Max HP to a single enemy.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"111001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110002": {
+				"Id": "1110002",
+				"Name": "Salted Camping Cans",
+				"NodeType": 2,
+				"NodeTypeText": "Skill",
+				"EffectRaw": "Applies \"Survival Response\" to a single target ally and increases their Max HP by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. If the target ally is a character on the Path of Destruction or Preservation, the chance of them being attacked by enemies will greatly increase. \"Survival Response\" lasts for <unbreak>#3[i]</unbreak> turn(s).\nRestores the target's HP by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							50,
+							2,
+							0.08,
+							80,
+							5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.0525,
+							80,
+							2,
+							0.085,
+							128,
+							5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.055,
+							102.5,
+							2,
+							0.09,
+							164,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.0575,
+							125,
+							2,
+							0.095,
+							200,
+							5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.06,
+							140,
+							2,
+							0.1,
+							224,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.0625,
+							155,
+							2,
+							0.104,
+							248,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.0656,
+							166.25,
+							2,
+							0.108,
+							266,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.0688,
+							177.5,
+							2,
+							0.112,
+							284,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.0719,
+							188.75,
+							2,
+							0.116,
+							302,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.075,
+							200,
+							2,
+							0.12,
+							320,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110003": {
+				"Id": "1110003",
+				"Name": "Snowfield First Aid",
+				"NodeType": 2,
+				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Dispels <unbreak>#1[i]</unbreak> <u>debuff(s)</u> from all allies and immediately restores their respective HP by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.09,
+							90
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0.0956,
+							144
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0.1013,
+							184.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0.1069,
+							225
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0.1125,
+							252
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0.117,
+							279
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0.1215,
+							299.25
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0.126,
+							319.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0.1305,
+							339.75
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0.135,
+							360
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110004": {
+				"Id": "1110004",
+				"Name": "Outdoor Survival Experience",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "When using Lynx's Skill or Ultimate, applies continuous healing to the target ally for <unbreak>#1[i]</unbreak> turn(s), restoring the target ally's HP by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color> at the start of each their turn. If the target has \"Survival Response\", the continuous healing effect additionally restores HP by an amount equal to <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.024,
+							24,
+							0.03,
+							30
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.0255,
+							38.4,
+							0.0319,
+							48
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.027,
+							49.2,
+							0.0338,
+							61.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.0285,
+							60,
+							0.0356,
+							75
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.03,
+							67.2,
+							0.0375,
+							84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.0312,
+							74.4,
+							0.039,
+							93
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0324,
+							79.8,
+							0.0405,
+							99.75
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.0336,
+							85.2,
+							0.042,
+							106.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0348,
+							90.6,
+							0.0435,
+							113.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.036,
+							96,
+							0.045,
+							120
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110007": {
+				"Id": "1110007",
+				"Name": "Chocolate Energy Bar",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "After Lynx uses her Technique, at the start of the next battle, all allies are granted her Talent's continuous healing effect, lasting for <unbreak>#1[i]</unbreak> turn(s).",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"111007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1110101": {
+				"Id": "1110101",
+				"Name": "Advance Surveying",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "After a target with \"Survival Response\" is hit, Lynx regenerates <unbreak>#1[i]</unbreak> Energy immediately.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110102": {
+				"Id": "1110102",
+				"Name": "Exploration Techniques",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "Increases the chance to resist Crowd Control debuffs by <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110103": {
+				"Id": "1110103",
+				"Name": "Survival in the Extreme",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "Extends the duration of the continuous healing effect granted by Talent for <unbreak>#1[i]</unbreak> turn(s).",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110201": {
+				"Id": "1110201",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110202": {
+				"Id": "1110202",
+				"Name": "DEF Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1110101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1110203": {
+				"Id": "1110203",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110204": {
+				"Id": "1110204",
+				"Name": "Effect RES Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110205": {
+				"Id": "1110205",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1110102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110206": {
+				"Id": "1110206",
+				"Name": "DEF Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110207": {
+				"Id": "1110207",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110208": {
+				"Id": "1110208",
+				"Name": "Effect RES Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110209": {
+				"Id": "1110209",
+				"Name": "DEF Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "DEF increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110210": {
+				"Id": "1110210",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
+	},
 	"1111": {
 		"Id": "1111",
 		"Name": "Luka",
@@ -26160,7 +27621,7 @@
 				"Name": "Flying Sparks",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "After Luka uses his Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" he receives <unbreak>#1[i]</unbreak> stack(s) of Fighting Will, up to 4 stacks. When he has 2 or more stacks of Fighting Will, his Basic ATK \"Direct Punch\" is enhanced to \"Sky-Shatter Fist.\" After his Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG for 1 time equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original DMG to the target. At the start of battle, Luka will possess 1 stack of Fighting Will.",
+				"EffectRaw": "After Luka uses his Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" he receives <unbreak>#1[i]</unbreak> stack of Fighting Will, up to 4 stacks. When he has 2 or more stacks of Fighting Will, his Basic ATK \"Direct Punch\" is enhanced to \"Sky-Shatter Fist.\" After his Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG for 1 time equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original DMG to the target. At the start of battle, Luka will possess 1 stack of Fighting Will.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"111104"
@@ -26645,7 +28106,7 @@
 			},
 			"1111204": {
 				"Id": "1111204",
-				"Name": "ATK Boost",
+				"Name": "DEF Boost",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "DEF increases by <unbreak>#1[f1]%</unbreak>",
@@ -26797,7 +28258,7 @@
 			},
 			"1111208": {
 				"Id": "1111208",
-				"Name": "ATK Boost",
+				"Name": "DEF Boost",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "DEF increases by <unbreak>#1[f1]%</unbreak>",
@@ -30345,7 +31806,7 @@
 				"Name": "Cycle of Life",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "When Abyss Flower reaches <unbreak>#1[i]</unbreak> stacks, Luocha consumes all stacks of Abyss Flower to deploy a Field against the enemy.\nWhen any enemy in the Field is attacked by an ally, the attacking ally's HP is immediately restored by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Luocha's ATK plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nThe Field's effect lasts for <unbreak>#3[i]</unbreak> turns. When Luocha is knocked down, the Field will be dispelled.",
+				"EffectRaw": "When Abyss Flower reaches <unbreak>#1[i]</unbreak> stacks, Luocha consumes all stacks of Abyss Flower to deploy a Field against the enemy.\nWhen any enemy in the Field is attacked by an ally, the attacking ally's HP is immediately restored by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Luocha's ATK plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nThe Field's effect lasts for <unbreak>#3[i]</unbreak> turns. When Luocha is <u>knocked down</u>, the Field will be dispelled.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120304"
@@ -36100,7 +37561,7 @@
 				"Name": "Seven Layers, One Arrow",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "Basic ATK additionally deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Yukong's ATK, and increases the Toughness-Reducing DMG of this attack by <unbreak>#2[i]%</unbreak>. This effect can be triggered again in <unbreak>#3[i]</unbreak> turn(s).",
+				"EffectRaw": "Basic ATK additionally deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Yukong's ATK, and increases the Toughness-Reducing DMG of this attack by <unbreak>#2[i]%</unbreak>. This effect can be triggered again after <unbreak>#3[i]</unbreak> turn(s).",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120704"
@@ -36376,7 +37837,7 @@
 				"Name": "Archerion",
 				"NodeType": 3,
 				"NodeTypeText": "Bonus Ability",
-				"EffectRaw": "Yukong can resist 1 debuff application for 1 time. This effect can be triggered again in <unbreak>#1[i]</unbreak> turn(s).",
+				"EffectRaw": "Yukong can resist 1 debuff application for 1 time. This effect can be triggered again after <unbreak>#1[i]</unbreak> turn(s).",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_SkillTree1.png",
@@ -36862,6 +38323,1433 @@
 			}
 		},
 		"VersionAdded": "1.1"
+	},
+	"1208": {
+		"Id": "1208",
+		"Name": "Fu Xuan",
+		"Nodes": {
+			"1208001": {
+				"Id": "1208001",
+				"Name": "Novaburst",
+				"NodeType": 2,
+				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Fu Xuan's Max HP to a single enemy.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"120801"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208002": {
+				"Id": "1208002",
+				"Name": "Known by Stars, Shown by Hearts",
+				"NodeType": 2,
+				"NodeTypeText": "Skill",
+				"EffectRaw": "Activates Matrix of Prescience, via which other team members will <u>Distribute</u> <unbreak>#1[i]%</unbreak> of the DMG they receive (before this DMG is mitigated by any Shields) to Fu Xuan for <unbreak>#3[i]</unbreak> turn(s).\nWhile affected by Matrix of Prescience, all team members gain the Knowledge effect, which increases their respective Max HP by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Fu Xuan's Max HP, and increases CRIT Rate by <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>.\nWhen Fu Xuan is <u>knocked down</u>, the Matrix of Prescience will be dispelled.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120802"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.03,
+							0.06
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.033,
+							0.066
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.036,
+							0.072
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.039,
+							0.078
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.042,
+							0.084
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.045,
+							0.09
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0488,
+							0.0975
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0525,
+							0.105
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0563,
+							0.1125
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.06,
+							0.12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208003": {
+				"Id": "1208003",
+				"Name": "Woes of Many Morphed to One",
+				"NodeType": 2,
+				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Fu Xuan's Max HP to all enemies and obtains 1 trigger count for the HP Restore effect granted by Fu Xuan's Talent.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120803"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.64
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.68
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.76
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.85
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.95
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208004": {
+				"Id": "1208004",
+				"Name": "Bleak Breeds Bliss",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "While Fu Xuan is still active in battle, Misfortune Avoidance is applied to the entire team. With Misfortune Avoidance, allies take <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> less DMG.\nWhen Fu Xuan's current HP falls to <unbreak>#2[i]%</unbreak> of her Max HP or less, HP Restore will be triggered for Fu Xuan, restoring her HP by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of the amount of HP she is currently missing. This effect cannot be triggered if she receives a killing blow. This effect possesses 1 trigger count by default and can have a maximum of 2 trigger counts.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120804"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.5,
+							0.8
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.108,
+							0.5,
+							0.81
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.116,
+							0.5,
+							0.82
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.124,
+							0.5,
+							0.83
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.132,
+							0.5,
+							0.84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.14,
+							0.5,
+							0.85
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.15,
+							0.5,
+							0.8625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.16,
+							0.5,
+							0.875
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.17,
+							0.5,
+							0.8875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.18,
+							0.5,
+							0.9
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208007": {
+				"Id": "1208007",
+				"Name": "Of Fortune Comes Fate",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "After the Technique is used, all team members receive a Barrier, lasting for <unbreak>#1[i]</unbreak> seconds. This Barrier can block all enemy attacks, and the team will not enter battle when attacked. Entering battle while the Barrier is active will have Fu Xuan automatically activate Matrix of Prescience at the start of the battle, lasting for <unbreak>#2[i]</unbreak> turn(s).",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"120807"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1208101": {
+				"Id": "1208101",
+				"Name": "Taiyi, the Macrocosmic",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "When Matrix of Prescience is active, Fu Xuan will regenerate <unbreak>#1[i]</unbreak> extra Energy when she uses her Skill.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208102": {
+				"Id": "1208102",
+				"Name": "Dunjia, the Metamystic",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "When Fu Xuan's Ultimate is used, heals all other allies by an amount equal to <unbreak>#1[i]%</unbreak> of Fu Xuan's Max HP plus <unbreak>#2[i]</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							133
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208103": {
+				"Id": "1208103",
+				"Name": "Liuren, the Sexagenary",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "If a target enemy applies Crowd Control debuffs to allies while the Matrix of Prescience is active, all allies will resist all Crowd Control debuffs applied by the enemy target during the current action. This effect can only be triggered once. When Matrix of Prescience is activated again, the number of times this effect can be triggered will reset.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208201": {
+				"Id": "1208201",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1208202": {
+				"Id": "1208202",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1208203": {
+				"Id": "1208203",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1208202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208204": {
+				"Id": "1208204",
+				"Name": "Effect RES Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208205": {
+				"Id": "1208205",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208206": {
+				"Id": "1208206",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1208205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208207": {
+				"Id": "1208207",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208208": {
+				"Id": "1208208",
+				"Name": "Effect RES Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Effect RES increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1208103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208209": {
+				"Id": "1208209",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208210": {
+				"Id": "1208210",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
 	},
 	"1209": {
 		"Id": "1209",
@@ -39760,15 +42648,20 @@
 	},
 	"1213": {
 		"Id": "1213",
-		"Name": "Dan Heng • Imbibitor Lunae",
+		"Name": "Dan Heng • Imbibitor Lunae",
 		"Nodes": {
 			"1213001": {
 				"Id": "1213001",
+				"Name": "Beneficent Lotus",
 				"NodeType": 2,
 				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Uses a 2-hit attack and deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dan Heng • Imbibitor Lunae's ATK to a single enemy target.",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
-					"121301"
+					"121301",
+					"121308",
+					"121310",
+					"121312"
 				],
 				"Location": "Point01",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Normal.png",
@@ -39898,39 +42791,28 @@
 			},
 			"1213002": {
 				"Id": "1213002",
+				"Name": "Dracore Libre",
 				"NodeType": 2,
 				"NodeTypeText": "Skill",
+				"EffectRaw": "Enhances Basic ATK. Enhancements may be applied up to 3 times consecutively. Using this ability does not consume Skill Points and is not considered as using a Skill.\nEnhanced once, Beneficent Lotus becomes Transcendence.\nEnhanced twice, Beneficent Lotus becomes Divine Spear.\nEnhanced thrice, Beneficent Lotus becomes Fulgurant Leap.\nWhen using Divine Spear or Fulgurant Leap, starting from the fourth hit, 1 stack of Outroar is gained before every hit. Each stack of Outroar increases Dan Heng • Imbibitor Lunae's CRIT DMG by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, for a max of <unbreak>#2[i]</unbreak> stacks. These stacks last until the end of his turn.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
-					"121302",
-					"121308",
-					"121310",
-					"121312"
+					"121302"
 				],
 				"Location": "Point02",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_BP.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1.3,
-							0.6,
-							0.3,
 							0.06,
-							4,
-							0.6,
-							0.6
+							4
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							1.43,
-							0.66,
-							0.33,
 							0.066,
-							4,
-							0.66,
-							0.66
+							4
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -39948,13 +42830,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							1.56,
-							0.72,
-							0.36,
 							0.072,
-							4,
-							0.72,
-							0.72
+							4
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -39977,13 +42854,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							1.69,
-							0.78,
-							0.39,
 							0.078,
-							4,
-							0.78,
-							0.78
+							4
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40006,13 +42878,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							1.82,
-							0.84,
-							0.42,
 							0.084,
-							4,
-							0.84,
-							0.84
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40035,13 +42902,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							1.95,
-							0.9,
-							0.45,
 							0.09,
-							4,
-							0.9,
-							0.9
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40064,13 +42926,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							2.1125,
-							0.975,
-							0.4875,
 							0.0975,
-							4,
-							0.975,
-							0.975
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40093,13 +42950,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							2.275,
-							1.05,
-							0.525,
 							0.105,
-							4,
-							1.05,
-							1.05
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40127,13 +42979,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							2.4375,
-							1.125,
-							0.5625,
 							0.1125,
-							4,
-							1.125,
-							1.125
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40161,13 +43008,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							2.6,
-							1.2,
-							0.6,
 							0.12,
-							4,
-							1.2,
-							1.2
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40197,8 +43039,10 @@
 			},
 			"1213003": {
 				"Id": "1213003",
+				"Name": "Azure's Aqua Ablutes All",
 				"NodeType": 2,
 				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Uses a 3-hit attack and deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dan Heng • Imbibitor Lunae's ATK to a single enemy target. At the same time, deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Dan Heng • Imbibitor Lunae's ATK to adjacent targets. Then, obtains <unbreak>#3[i]</unbreak> Squama Sacrosancta.\nIt's possible to hold up to <unbreak>#4[i]</unbreak> Squama Sacrosancta, which can be used to offset Dan Heng • Imbibitor Lunae's consumption of skill points. Consuming Squama Sacrosancta is considered equivalent to consuming skill points.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121303"
@@ -40463,8 +43307,10 @@
 			},
 			"1213004": {
 				"Id": "1213004",
+				"Name": "Righteous Heart",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
+				"EffectRaw": "After each hit dealt during an attack, Dan Heng • Imbibitor Lunae gains 1 stack of Righteous Heart, increasing his DMG by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. This effect can stack up to <unbreak>#2[i]</unbreak> time(s), lasting until the end of his turn.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121304"
@@ -40474,15 +43320,15 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.09,
-							5
+							0.05,
+							6
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							0.095,
-							5
+							0.055,
+							6
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -40500,8 +43346,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							0.1,
-							5
+							0.06,
+							6
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40524,8 +43370,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							0.105,
-							5
+							0.065,
+							6
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40548,8 +43394,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							0.11,
-							5
+							0.07,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40572,8 +43418,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							0.115,
-							5
+							0.075,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40596,8 +43442,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							0.1213,
-							5
+							0.0813,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40620,8 +43466,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							0.1275,
-							5
+							0.0875,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40649,8 +43495,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							0.1338,
-							5
+							0.0938,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40678,8 +43524,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							0.14,
-							5
+							0.1,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40709,8 +43555,10 @@
 			},
 			"1213007": {
 				"Id": "1213007",
+				"Name": "Heaven-Quelling Prismadrakon",
 				"NodeType": 2,
 				"NodeTypeText": "Technique",
+				"EffectRaw": "After using his Technique, Dan Heng • Imbibitor Lunae enters the Leaping Dragon state for <unbreak>#2[i]</unbreak> seconds. While in the Leaping Dragon state, using his attack enables him to move forward rapidly for a set distance, attacking all enemies he touches and blocking all incoming attacks. After entering combat via attacking enemies in the Leaping Dragon state, Dan Heng • Imbibitor Lunae deals Imaginary DMG equal to <unbreak>#3[i]%</unbreak> of his ATK to all enemies, and gains <unbreak>#1[i]</unbreak> Squama Sacrosancta.",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"121307"
@@ -40721,7 +43569,8 @@
 					"1": {
 						"EffectValues": [
 							1,
-							20
+							20,
+							1.2
 						],
 						"Costs": []
 					}
@@ -40729,15 +43578,17 @@
 			},
 			"1213101": {
 				"Id": "1213101",
+				"Name": "Star Veil",
 				"NodeType": 3,
 				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "At the start of the battle, immediately regenerates <unbreak>#1[i]</unbreak> Energy.",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree1.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1
+							15
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40762,8 +43613,10 @@
 			},
 			"1213102": {
 				"Id": "1213102",
+				"Name": "Aqua Reign",
 				"NodeType": 3,
 				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "Increases the chance to resist Crowd Control debuffs by <unbreak>#1[i]%</unbreak>.",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree2.png",
@@ -40800,15 +43653,17 @@
 			},
 			"1213103": {
 				"Id": "1213103",
+				"Name": "Jolt Anew",
 				"NodeType": 3,
 				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "This character's CRIT DMG increases by <unbreak>#1[i]%</unbreak> when dealing DMG to enemy targets with Imaginary Weakness.",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree3.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.12
+							0.24
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40838,7 +43693,7 @@
 			},
 			"1213201": {
 				"Id": "1213201",
-				"Name": "Enhance Attack",
+				"Name": "DMG Boost: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",
@@ -40870,7 +43725,7 @@
 			},
 			"1213202": {
 				"Id": "1213202",
-				"Name": "DMG Boost: Imaginary",
+				"Name": "CRIT Rate Boost",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
@@ -40908,7 +43763,7 @@
 			},
 			"1213203": {
 				"Id": "1213203",
-				"Name": "Enhance Attack",
+				"Name": "DMG Boost: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",
@@ -40984,7 +43839,7 @@
 			},
 			"1213205": {
 				"Id": "1213205",
-				"Name": "Enhance Attack",
+				"Name": "DMG Boost: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",
@@ -41022,7 +43877,7 @@
 			},
 			"1213206": {
 				"Id": "1213206",
-				"Name": "DMG Boost: Imaginary",
+				"Name": "CRIT Rate Boost",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
@@ -41060,7 +43915,7 @@
 			},
 			"1213207": {
 				"Id": "1213207",
-				"Name": "Enhance Attack",
+				"Name": "DMG Boost: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",
@@ -41136,7 +43991,7 @@
 			},
 			"1213209": {
 				"Id": "1213209",
-				"Name": "DMG Boost: Imaginary",
+				"Name": "CRIT Rate Boost",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
@@ -41174,7 +44029,7 @@
 			},
 			"1213210": {
 				"Id": "1213210",
-				"Name": "ATK Boost",
+				"Name": "DMG Boost: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Stat Bonus",
 				"EffectRaw": "Imaginary DMG increases by <unbreak>#1[f1]%</unbreak>",

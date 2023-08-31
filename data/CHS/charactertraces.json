@@ -6351,7 +6351,7 @@
 				"Name": "温柔亦同残酷",
 				"NodeType": 2,
 				"NodeTypeText": "天赋",
-				"EffectRaw": "当卡芙卡的队友对敌方目标施放普攻后，卡芙卡立即发动<u>追加攻击</u>，对该目标造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，并有<unbreak>#2[i]%</unbreak>的基础概率使受到攻击的敌方目标陷入与终结技相同的触电状态，持续<unbreak>#3[i]</unbreak>回合，该效果每回合只能触发1次。",
+				"EffectRaw": "当卡芙卡的队友对敌方目标施放普攻后，卡芙卡立即发动<u>追加攻击</u>，对该目标造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入与终结技相同的触电状态，持续<unbreak>#3[i]</unbreak>回合，该效果每回合只能触发1次。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100504"
@@ -25468,6 +25468,1467 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1110": {
+		"Id": "1110",
+		"Name": "玲可",
+		"Nodes": {
+			"1110001": {
+				"Id": "1110001",
+				"Name": "冰攀前齿技术",
+				"NodeType": 2,
+				"NodeTypeText": "普攻",
+				"EffectRaw": "对指定敌方单体造成等同于自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"111001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "丰饶之种",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110002": {
+				"Id": "1110002",
+				"Name": "盐渍野营罐头",
+				"NodeType": 2,
+				"NodeTypeText": "战技",
+				"EffectRaw": "为指定我方单体附上【求生反应】，提高等同于玲可<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命上限，若该目标为「毁灭」或「存护」命途，被敌方攻击的概率大幅提高，【求生反应】持续<unbreak>#3[i]</unbreak>回合。\n使该目标回复等同于玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							50,
+							2,
+							0.08,
+							80,
+							5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.0525,
+							80,
+							2,
+							0.085,
+							128,
+							5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.055,
+							102.5,
+							2,
+							0.09,
+							164,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "丰饶之种",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.0575,
+							125,
+							2,
+							0.095,
+							200,
+							5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.06,
+							140,
+							2,
+							0.1,
+							224,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.0625,
+							155,
+							2,
+							0.104,
+							248,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.0656,
+							166.25,
+							2,
+							0.108,
+							266,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.0688,
+							177.5,
+							2,
+							0.112,
+							284,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.0719,
+							188.75,
+							2,
+							0.116,
+							302,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.075,
+							200,
+							2,
+							0.12,
+							320,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110003": {
+				"Id": "1110003",
+				"Name": "雪原急救方案",
+				"NodeType": 2,
+				"NodeTypeText": "终结技",
+				"EffectRaw": "解除我方全体的<unbreak>#1[i]</unbreak>个<u>负面效果</u>，立即为我方全体回复等同于玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.09,
+							90
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0.0956,
+							144
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0.1013,
+							184.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "丰饶之种",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0.1069,
+							225
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0.1125,
+							252
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0.117,
+							279
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0.1215,
+							299.25
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0.126,
+							319.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0.1305,
+							339.75
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0.135,
+							360
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110004": {
+				"Id": "1110004",
+				"Name": "户外生存经验",
+				"NodeType": 2,
+				"NodeTypeText": "天赋",
+				"EffectRaw": "施放战技或终结技时，使我方目标获得<unbreak>#1[i]</unbreak>回合的持续治疗效果，目标每回合开始时回复等同于玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。若该目标持有【求生反应】，则持续治疗效果额外回复等同于玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.024,
+							24,
+							0.03,
+							30
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.0255,
+							38.4,
+							0.0319,
+							48
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.027,
+							49.2,
+							0.0338,
+							61.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "丰饶之种",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.0285,
+							60,
+							0.0356,
+							75
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.03,
+							67.2,
+							0.0375,
+							84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.0312,
+							74.4,
+							0.039,
+							93
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0324,
+							79.8,
+							0.0405,
+							99.75
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.0336,
+							85.2,
+							0.042,
+							106.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0348,
+							90.6,
+							0.0435,
+							113.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.036,
+							96,
+							0.045,
+							120
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110007": {
+				"Id": "1110007",
+				"Name": "巧克力能量棒",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技后，下一次战斗开始时为我方全体附加玲可天赋的持续治疗效果，持续<unbreak>#1[i]</unbreak>回合。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"111007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1110101": {
+				"Id": "1110101",
+				"Name": "提前勘测",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "当持有【求生反应】的目标受到攻击后，玲可立即恢复<unbreak>#1[i]</unbreak>点能量。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "丰饶之种",
+								"Count": 2
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110102": {
+				"Id": "1110102",
+				"Name": "探险技术",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "抵抗控制类负面状态的概率提高<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110103": {
+				"Id": "1110103",
+				"Name": "极境求生",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "天赋产生的持续回复效果延长<unbreak>#1[i]</unbreak>回合。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110201": {
+				"Id": "1110201",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110202": {
+				"Id": "1110202",
+				"Name": "防御强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "防御力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1110101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "丰饶之种",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "熄灭原核",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1110203": {
+				"Id": "1110203",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110204": {
+				"Id": "1110204",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110205": {
+				"Id": "1110205",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1110102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "生命之芽",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110206": {
+				"Id": "1110206",
+				"Name": "防御强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "防御力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110207": {
+				"Id": "1110207",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110208": {
+				"Id": "1110208",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110209": {
+				"Id": "1110209",
+				"Name": "防御强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "防御力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110210": {
+				"Id": "1110210",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "永恒之花",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢动原核",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
+	},
 	"1111": {
 		"Id": "1111",
 		"Name": "卢卡",
@@ -30345,7 +31806,7 @@
 				"Name": "生息的轮转",
 				"NodeType": 2,
 				"NodeTypeText": "天赋",
-				"EffectRaw": "当【白花之刻】达到<unbreak>#1[i]</unbreak>层时，罗刹会消耗全部【白花之刻】展开结界。\n处于结界中的任意敌方目标受到攻击后，施放攻击的我方目标立即回复等同于罗刹<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\n结界效果持续<unbreak>#3[i]</unbreak>回合。当罗刹陷入无法战斗状态时，结界也会被解除。",
+				"EffectRaw": "当【白花之刻】达到<unbreak>#1[i]</unbreak>层时，罗刹会消耗全部【白花之刻】展开结界。\n处于结界中的任意敌方目标受到攻击后，施放攻击的我方目标立即回复等同于罗刹<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\n结界效果持续<unbreak>#3[i]</unbreak>回合。当罗刹陷入<u>无法战斗状态</u>时，结界也会被解除。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120304"
@@ -36863,6 +38324,1433 @@
 		},
 		"VersionAdded": "1.1"
 	},
+	"1208": {
+		"Id": "1208",
+		"Name": "符玄",
+		"Nodes": {
+			"1208001": {
+				"Id": "1208001",
+				"Name": "始击岁星",
+				"NodeType": 2,
+				"NodeTypeText": "普攻",
+				"EffectRaw": "对指定敌方单体造成等同于符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"120801"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "青铜的执着",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208002": {
+				"Id": "1208002",
+				"Name": "太微行棋，灵台示影",
+				"NodeType": 2,
+				"NodeTypeText": "战技",
+				"EffectRaw": "开启【穷观阵】，使符玄队友所承受的未受护盾抵挡之前的伤害的<unbreak>#1[i]%</unbreak><u>分摊</u>给符玄，持续<unbreak>#3[i]</unbreak>回合。\n处于【穷观阵】的我方全体获得【鉴知】。【鉴知】状态下的我方目标生命上限提高，提高数值等同于符玄生命上限的<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，暴击率提高<color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>。\n当符玄陷入<u>无法战斗状态</u>时，【穷观阵】也会被解除。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120802"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.03,
+							0.06
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.033,
+							0.066
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.036,
+							0.072
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "青铜的执着",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.039,
+							0.078
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.042,
+							0.084
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.045,
+							0.09
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0488,
+							0.0975
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0525,
+							0.105
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0563,
+							0.1125
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.06,
+							0.12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208003": {
+				"Id": "1208003",
+				"Name": "天律大衍，历劫归一",
+				"NodeType": 2,
+				"NodeTypeText": "终结技",
+				"EffectRaw": "对敌方全体造成等同于符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害，并获得1次符玄天赋生命回复的触发次数。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120803"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.64
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.68
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "青铜的执着",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.76
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.85
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.95
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208004": {
+				"Id": "1208004",
+				"Name": "乾清坤夷，否极泰来",
+				"NodeType": 2,
+				"NodeTypeText": "天赋",
+				"EffectRaw": "当符玄处于可战斗状态时，为我方全体附加【避厄】。【避厄】状态下的我方目标受到的伤害降低<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。\n当符玄当前生命值百分比小于等于<unbreak>#2[i]%</unbreak>时触发生命回复，使自身回复等同于已损失生命值<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的生命值，受到致命攻击时无法触发该效果。该效果初始拥有1次触发次数，最多可拥有2次触发次数。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120804"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.5,
+							0.8
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.108,
+							0.5,
+							0.81
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.116,
+							0.5,
+							0.82
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "青铜的执着",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.124,
+							0.5,
+							0.83
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.132,
+							0.5,
+							0.84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.14,
+							0.5,
+							0.85
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.15,
+							0.5,
+							0.8625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.16,
+							0.5,
+							0.875
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.17,
+							0.5,
+							0.8875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.18,
+							0.5,
+							0.9
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208007": {
+				"Id": "1208007",
+				"Name": "岁记否泰，固守四郭",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技后，我方全体获得持续<unbreak>#1[i]</unbreak>秒的屏障。该屏障可抵挡敌人的所有攻击，不会进入战斗。屏障持续期间进入战斗时符玄自动开启【穷观阵】，持续<unbreak>#2[i]</unbreak>回合。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"120807"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1208101": {
+				"Id": "1208101",
+				"Name": "太乙式盘",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "【穷观阵】开启时，符玄施放战技将额外恢复<unbreak>#1[i]</unbreak>点能量。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "青铜的执着",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208102": {
+				"Id": "1208102",
+				"Name": "遁甲星舆",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "施放终结技时为我方其他目标回复等同于符玄<unbreak>#1[i]%</unbreak>生命上限+<unbreak>#2[i]</unbreak>的生命值。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							133
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208103": {
+				"Id": "1208103",
+				"Name": "六壬兆堪",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "【穷观阵】开启时，若敌方目标对我方施加了控制类负面状态，则我方全体抵抗本次行动中敌方目标施加的所有控制类负面状态。该效果可以触发1次。再次开启【穷观阵】后将刷新效果可触发次数。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "无穷假身的遗恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208201": {
+				"Id": "1208201",
+				"Name": "暴击率强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1208202": {
+				"Id": "1208202",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "青铜的执着",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "工造机杼",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1208203": {
+				"Id": "1208203",
+				"Name": "暴击率强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1208202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208204": {
+				"Id": "1208204",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208205": {
+				"Id": "1208205",
+				"Name": "暴击率强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "寒铁的誓言",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴轮",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208206": {
+				"Id": "1208206",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1208205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208207": {
+				"Id": "1208207",
+				"Name": "暴击率强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208208": {
+				"Id": "1208208",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1208103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208209": {
+				"Id": "1208209",
+				"Name": "生命强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208210": {
+				"Id": "1208210",
+				"Name": "暴击率强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "琥珀的坚守",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "工造浑心",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
+	},
 	"1209": {
 		"Id": "1209",
 		"Name": "彦卿",
@@ -39764,13 +42652,16 @@
 		"Nodes": {
 			"1213001": {
 				"Id": "1213001",
-				"Name": "test_泽芝",
+				"Name": "泽芝",
 				"NodeType": 2,
 				"NodeTypeText": "普攻",
-				"EffectRaw": "test_……",
+				"EffectRaw": "施放2段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
-					"121301"
+					"121301",
+					"121308",
+					"121310",
+					"121312"
 				],
 				"Location": "Point01",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Normal.png",
@@ -39900,41 +42791,28 @@
 			},
 			"1213002": {
 				"Id": "1213002",
-				"Name": "test_龙力自在",
+				"Name": "龙力自在",
 				"NodeType": 2,
 				"NodeTypeText": "战技",
-				"EffectRaw": "test_……",
+				"EffectRaw": "使普攻的效果得到强化，最多可连续强化3次，施放本技能不消耗战技点且不视为使用战技。\n强化1次，【泽芝】变为【瞬华】。\n强化2次，【泽芝】变为【天矢阴】。\n强化3次，【泽芝】变为【盘拏耀跃】。\n施放【天矢阴】或【盘拏耀跃】时，从第4段攻击开始每段攻击前获得1层【叱咤】，使丹恒•饮月的暴击伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层，持续至自身回合结束。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
-					"121302",
-					"121308",
-					"121310",
-					"121312"
+					"121302"
 				],
 				"Location": "Point02",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_BP.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1.3,
-							0.6,
-							0.3,
 							0.06,
-							4,
-							0.6,
-							0.6
+							4
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							1.43,
-							0.66,
-							0.33,
 							0.066,
-							4,
-							0.66,
-							0.66
+							4
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -39952,13 +42830,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							1.56,
-							0.72,
-							0.36,
 							0.072,
-							4,
-							0.72,
-							0.72
+							4
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -39981,13 +42854,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							1.69,
-							0.78,
-							0.39,
 							0.078,
-							4,
-							0.78,
-							0.78
+							4
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40010,13 +42878,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							1.82,
-							0.84,
-							0.42,
 							0.084,
-							4,
-							0.84,
-							0.84
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40039,13 +42902,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							1.95,
-							0.9,
-							0.45,
 							0.09,
-							4,
-							0.9,
-							0.9
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40068,13 +42926,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							2.1125,
-							0.975,
-							0.4875,
 							0.0975,
-							4,
-							0.975,
-							0.975
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40097,13 +42950,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							2.275,
-							1.05,
-							0.525,
 							0.105,
-							4,
-							1.05,
-							1.05
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40131,13 +42979,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							2.4375,
-							1.125,
-							0.5625,
 							0.1125,
-							4,
-							1.125,
-							1.125
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40165,13 +43008,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							2.6,
-							1.2,
-							0.6,
 							0.12,
-							4,
-							1.2,
-							1.2
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40201,10 +43039,10 @@
 			},
 			"1213003": {
 				"Id": "1213003",
-				"Name": "test_苍龙傲睨，劫水濯世",
+				"Name": "苍龙傲睨，劫水濯世",
 				"NodeType": 2,
 				"NodeTypeText": "终结技",
-				"EffectRaw": "test_……",
+				"EffectRaw": "施放3段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，同时对其相邻目标造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的虚数属性伤害。并使自身获得<unbreak>#3[i]</unbreak>个【逆鳞】。\n【逆鳞】最多持有<unbreak>#4[i]</unbreak>个，可用来抵扣丹恒•饮月的战技点消耗。消耗【逆鳞】视为消耗战技点。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121303"
@@ -40469,10 +43307,10 @@
 			},
 			"1213004": {
 				"Id": "1213004",
-				"Name": "test_亢心",
+				"Name": "亢心",
 				"NodeType": 2,
 				"NodeTypeText": "天赋",
-				"EffectRaw": "test_……",
+				"EffectRaw": "丹恒•饮月施放每段攻击后获得1层【亢心】，使自身造成的伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果可以叠加<unbreak>#2[i]</unbreak>层，持续至自身回合结束。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121304"
@@ -40482,15 +43320,15 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.09,
-							5
+							0.05,
+							6
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							0.095,
-							5
+							0.055,
+							6
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -40508,8 +43346,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							0.1,
-							5
+							0.06,
+							6
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40532,8 +43370,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							0.105,
-							5
+							0.065,
+							6
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40556,8 +43394,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							0.11,
-							5
+							0.07,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40580,8 +43418,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							0.115,
-							5
+							0.075,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40604,8 +43442,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							0.1213,
-							5
+							0.0813,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40628,8 +43466,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							0.1275,
-							5
+							0.0875,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40657,8 +43495,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							0.1338,
-							5
+							0.0938,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40686,8 +43524,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							0.14,
-							5
+							0.1,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40717,10 +43555,10 @@
 			},
 			"1213007": {
 				"Id": "1213007",
-				"Name": "test_掣空如虹",
+				"Name": "掣空如虹",
 				"NodeType": 2,
 				"NodeTypeText": "秘技",
-				"EffectRaw": "test_……",
+				"EffectRaw": "使用秘技后进入持续<unbreak>#2[i]</unbreak>秒的【蟠跃】状态。【蟠跃】状态下使用攻击会快速向前移动一段距离并攻击接触到的敌人，在快速移动的过程中可抵挡敌人的所有攻击。【蟠跃】状态下主动攻击敌人进入战斗后，对敌方全体造成等同于丹恒•饮月<unbreak>#3[i]%</unbreak>攻击力的虚数属性伤害，并使自身获得<unbreak>#1[i]</unbreak>个【逆鳞】。",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"121307"
@@ -40731,7 +43569,8 @@
 					"1": {
 						"EffectValues": [
 							1,
-							20
+							20,
+							1.2
 						],
 						"Costs": []
 					}
@@ -40739,17 +43578,17 @@
 			},
 			"1213101": {
 				"Id": "1213101",
-				"Name": "test_伏辰",
+				"Name": "伏辰",
 				"NodeType": 3,
 				"NodeTypeText": "额外能力",
-				"EffectRaw": "test_……",
+				"EffectRaw": "战斗开始时，立即恢复<unbreak>#1[i]</unbreak>点能量。",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree1.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1
+							15
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40774,10 +43613,10 @@
 			},
 			"1213102": {
 				"Id": "1213102",
-				"Name": "test_修禹",
+				"Name": "修禹",
 				"NodeType": 3,
 				"NodeTypeText": "额外能力",
-				"EffectRaw": "test_……",
+				"EffectRaw": "抵抗控制类负面状态的概率提高<unbreak>#1[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree2.png",
@@ -40814,17 +43653,17 @@
 			},
 			"1213103": {
 				"Id": "1213103",
-				"Name": "test_起蛰",
+				"Name": "起蛰",
 				"NodeType": 3,
 				"NodeTypeText": "额外能力",
-				"EffectRaw": "test_……",
+				"EffectRaw": "对拥有虚数属性弱点的敌方目标造成伤害时，暴击伤害提高<unbreak>#1[i]%</unbreak>。",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree3.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.12
+							0.24
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40854,7 +43693,7 @@
 			},
 			"1213201": {
 				"Id": "1213201",
-				"Name": "test_伤害强化•虚数",
+				"Name": "伤害强化•虚数",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "虚数属性伤害提高<unbreak>#1[f1]%</unbreak>",
@@ -40886,7 +43725,7 @@
 			},
 			"1213202": {
 				"Id": "1213202",
-				"Name": "test_暴击率强化",
+				"Name": "暴击率强化",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
@@ -40924,7 +43763,7 @@
 			},
 			"1213203": {
 				"Id": "1213203",
-				"Name": "test_伤害强化•虚数",
+				"Name": "伤害强化•虚数",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "虚数属性伤害提高<unbreak>#1[f1]%</unbreak>",
@@ -40962,7 +43801,7 @@
 			},
 			"1213204": {
 				"Id": "1213204",
-				"Name": "test_生命强化",
+				"Name": "生命强化",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
@@ -41000,7 +43839,7 @@
 			},
 			"1213205": {
 				"Id": "1213205",
-				"Name": "test_伤害强化•虚数",
+				"Name": "伤害强化•虚数",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "虚数属性伤害提高<unbreak>#1[f1]%</unbreak>",
@@ -41038,7 +43877,7 @@
 			},
 			"1213206": {
 				"Id": "1213206",
-				"Name": "test_暴击率强化",
+				"Name": "暴击率强化",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
@@ -41076,7 +43915,7 @@
 			},
 			"1213207": {
 				"Id": "1213207",
-				"Name": "test_伤害强化•虚数",
+				"Name": "伤害强化•虚数",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "虚数属性伤害提高<unbreak>#1[f1]%</unbreak>",
@@ -41114,7 +43953,7 @@
 			},
 			"1213208": {
 				"Id": "1213208",
-				"Name": "test_生命强化",
+				"Name": "生命强化",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "生命值上限提高<unbreak>#1[f1]%</unbreak>",
@@ -41152,7 +43991,7 @@
 			},
 			"1213209": {
 				"Id": "1213209",
-				"Name": "test_暴击率强化",
+				"Name": "暴击率强化",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "暴击率提高<unbreak>#1[f1]%</unbreak>",
@@ -41190,7 +44029,7 @@
 			},
 			"1213210": {
 				"Id": "1213210",
-				"Name": "test_伤害强化•虚数",
+				"Name": "伤害强化•虚数",
 				"NodeType": 1,
 				"NodeTypeText": "属性加成",
 				"EffectRaw": "虚数属性伤害提高<unbreak>#1[f1]%</unbreak>",

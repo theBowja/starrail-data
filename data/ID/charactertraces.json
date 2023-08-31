@@ -6351,7 +6351,7 @@
 				"Name": "Gentle but Cruel",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "Setelah rekan Kafka melancarkan Basic ATK pada target musuh, Kafka akan segera memicu <u>Serangan Lanjutan</u> yang mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Kafka pada target tersebut, serta memiliki <unbreak>#2[i]%</unbreak> peluang dasar untuk membuat target musuh yang terkena serangan ini memasuki status Shock yang sama dengan status Shock dari Ultimate Kafka, berlangsung selama <unbreak>#3[i]</unbreak> giliran. Efek ini hanya dapat dipicu 1 kali setiap giliran.",
+				"EffectRaw": "Setelah rekan Kafka melancarkan Basic ATK pada target musuh, Kafka akan segera memicu <u>Serangan Lanjutan</u> yang mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Kafka pada target tersebut, serta memiliki <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk membuat target musuh yang terkena serangan ini memasuki status Shock yang sama dengan status Shock dari Ultimate Kafka, berlangsung selama <unbreak>#3[i]</unbreak> giliran. Efek ini hanya dapat dipicu 1 kali setiap giliran.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100504"
@@ -25468,6 +25468,1467 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1110": {
+		"Id": "1110",
+		"Name": "Lynx",
+		"Nodes": {
+			"1110001": {
+				"Id": "1110001",
+				"Name": "Ice Crampon Technique",
+				"NodeType": 2,
+				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Max HP diri sendiri pada 1 musuh yang ditarget.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"111001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110002": {
+				"Id": "1110002",
+				"Name": "Salted Camping Cans",
+				"NodeType": 2,
+				"NodeTypeText": "Skill",
+				"EffectRaw": "Memberikan \"Survival Response\" pada 1 rekan tim yang ditargetkan dan meningkatkan Max HP-nya sebesar <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> Max HP Lynx + <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. Jika rekan tersebut adalah karakter dengan Path \"Destruction\" atau \"Preservation\", maka peluang rekan tersebut untuk diserang musuh akan meningkat pesat. \"Survival Response\" berlangsung selama <unbreak>#3[i]</unbreak> giliran.\nMemulihkan HP rekan tersebut sebesar <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> Max HP Lynx + <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							50,
+							2,
+							0.08,
+							80,
+							5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.0525,
+							80,
+							2,
+							0.085,
+							128,
+							5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.055,
+							102.5,
+							2,
+							0.09,
+							164,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.0575,
+							125,
+							2,
+							0.095,
+							200,
+							5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.06,
+							140,
+							2,
+							0.1,
+							224,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.0625,
+							155,
+							2,
+							0.104,
+							248,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.0656,
+							166.25,
+							2,
+							0.108,
+							266,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.0688,
+							177.5,
+							2,
+							0.112,
+							284,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.0719,
+							188.75,
+							2,
+							0.116,
+							302,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.075,
+							200,
+							2,
+							0.12,
+							320,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110003": {
+				"Id": "1110003",
+				"Name": "Snowfield First Aid",
+				"NodeType": 2,
+				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Menghapus masing-masing <unbreak>#1[i]</unbreak> efek <u>Debuff</u> dari seluruh rekan tim, serta segera memulihkan HP seluruh rekan tim sebesar <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> Max HP Lynx + <color=#f29e38ff><unbreak>#3[i]</unbreak></color>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.09,
+							90
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0.0956,
+							144
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0.1013,
+							184.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0.1069,
+							225
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0.1125,
+							252
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0.117,
+							279
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0.1215,
+							299.25
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0.126,
+							319.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0.1305,
+							339.75
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0.135,
+							360
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110004": {
+				"Id": "1110004",
+				"Name": "Outdoor Survival Experience",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Saat Lynx melancarkan Skill atau Ultimate, rekan tim yang dijadikan target Skill atau Ultimate Lynx akan mendapatkan efek pemulihan berkelanjutan selama <unbreak>#1[i]</unbreak> giliran. Saat setiap giliran target dimulai, HP-nya akan pulih sebesar <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> Max HP Lynx + <color=#f29e38ff><unbreak>#3[i]</unbreak></color>. Jika target memiliki \"Survival Response\", maka efek pemulihan berkelanjutan akan meningkat sebesar <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> Max HP Lynx + <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.024,
+							24,
+							0.03,
+							30
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.0255,
+							38.4,
+							0.0319,
+							48
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.027,
+							49.2,
+							0.0338,
+							61.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.0285,
+							60,
+							0.0356,
+							75
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.03,
+							67.2,
+							0.0375,
+							84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.0312,
+							74.4,
+							0.039,
+							93
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0324,
+							79.8,
+							0.0405,
+							99.75
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.0336,
+							85.2,
+							0.042,
+							106.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0348,
+							90.6,
+							0.0435,
+							113.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.036,
+							96,
+							0.045,
+							120
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110007": {
+				"Id": "1110007",
+				"Name": "Chocolate Energy Bar",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Setelah menggunakan Technique, seluruh rekan tim akan mendapatkan efek pemulihan berkelanjutan dari Talent Lynx saat pertempuran berikutnya dimulai, berlangsung selama <unbreak>#1[i]</unbreak> giliran.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"111007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1110101": {
+				"Id": "1110101",
+				"Name": "Advance Surveying",
+				"NodeType": 3,
+				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Saat target berstatus \"Survival Response\" terkena serangan, Lynx akan segera memulihkan <unbreak>#1[i]</unbreak> Energy.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110102": {
+				"Id": "1110102",
+				"Name": "Exploration Techniques",
+				"NodeType": 3,
+				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Meningkatkan <unbreak>#1[i]%</unbreak> peluang untuk menahan Crowd Control Debuff.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110103": {
+				"Id": "1110103",
+				"Name": "Survival in the Extreme",
+				"NodeType": 3,
+				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Efek pemulihan berkelanjutan dari Talent diperpanjang <unbreak>#1[i]</unbreak> giliran.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110201": {
+				"Id": "1110201",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110202": {
+				"Id": "1110202",
+				"Name": "Peningkatan DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "DEF +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1110101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Seed of Abundance",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Extinguished Core",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1110203": {
+				"Id": "1110203",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110204": {
+				"Id": "1110204",
+				"Name": "Peningkatan Effect RES",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Effect RES +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110205": {
+				"Id": "1110205",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1110102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Sprout of Life",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Glimmering Core",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110206": {
+				"Id": "1110206",
+				"Name": "Peningkatan DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "DEF +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110207": {
+				"Id": "1110207",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110208": {
+				"Id": "1110208",
+				"Name": "Peningkatan Effect RES",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Effect RES +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110209": {
+				"Id": "1110209",
+				"Name": "Peningkatan DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "DEF +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110210": {
+				"Id": "1110210",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Flower of Eternity",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Squirming Core",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
+	},
 	"1111": {
 		"Id": "1111",
 		"Name": "Luka",
@@ -30345,7 +31806,7 @@
 				"Name": "Cycle of Life",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "Saat tumpukan \"Abyss Flower\" mencapai <unbreak>#1[i]</unbreak> lapis, Luocha akan mengonsumsi semua \"Abyss Flower\" dan membuat sebuah Field pada musuh.\nSetelah musuh dalam Field diserang rekan tim, rekan tim yang menyerang akan segera memulihkan HP sebesar <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> ATK Luocha +<color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nEfek Field berlangsung selama <unbreak>#3[i]</unbreak> giliran. Saat Luocha gugur, efek Field akan menghilang.",
+				"EffectRaw": "Saat tumpukan \"Abyss Flower\" mencapai <unbreak>#1[i]</unbreak> lapis, Luocha akan mengonsumsi semua \"Abyss Flower\" dan membuat sebuah Field pada musuh.\nSetelah musuh dalam Field diserang rekan tim, rekan tim yang menyerang akan segera memulihkan HP sebesar <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> ATK Luocha +<color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nEfek Field berlangsung selama <unbreak>#3[i]</unbreak> giliran. Saat Luocha <u>gugur</u>, efek Field akan menghilang.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120304"
@@ -36863,6 +38324,1433 @@
 		},
 		"VersionAdded": "1.1"
 	},
+	"1208": {
+		"Id": "1208",
+		"Name": "Fu Xuan",
+		"Nodes": {
+			"1208001": {
+				"Id": "1208001",
+				"Name": "Novaburst",
+				"NodeType": 2,
+				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Max HP Fu Xuan pada 1 musuh yang ditarget.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"120801"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208002": {
+				"Id": "1208002",
+				"Name": "Known by Stars, Shown by Hearts",
+				"NodeType": 2,
+				"NodeTypeText": "Skill",
+				"EffectRaw": "Mengaktifkan \"Matrix of Prescience\". Seluruh rekan tim Fu Xuan akan <u>membagikan</u> <unbreak>#1[i]%</unbreak> dari semua DMG yang diterima mereka pada Fu Xuan (sebelum DMG ini ditahan oleh efek Shield apa pun) selama <unbreak>#3[i]</unbreak> giliran.\nRekan tim yang terkena pengaruh \"Matrix of Prescience\" akan memperoleh status \"Knowledge\". Rekan tim berstatus \"Knowledge\" akan mendapat peningkatan Max HP sebesar <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> Max HP Fu Xuan, dan peningkatan CRIT Rate sebesar <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>.\nSaat Fu Xuan <u>gugur</u>, \"Matrix of Prescience\" juga akan dihapus.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120802"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.03,
+							0.06
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.033,
+							0.066
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.036,
+							0.072
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.039,
+							0.078
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.042,
+							0.084
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.045,
+							0.09
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0488,
+							0.0975
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0525,
+							0.105
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0563,
+							0.1125
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.06,
+							0.12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208003": {
+				"Id": "1208003",
+				"Name": "Woes of Many Morphed to One",
+				"NodeType": 2,
+				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Max HP Fu Xuan pada seluruh musuh, serta memperoleh 1 kali jumlah kesempatan terpicunya pemulihan HP dari Talent Fu Xuan.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120803"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.64
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.68
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.76
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.85
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.95
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208004": {
+				"Id": "1208004",
+				"Name": "Bleak Breeds Bliss",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Saat Fu Xuan berada dalam kondisi siap bertempur (tidak gugur), seluruh rekan tim akan memperoleh \"Misfortune Avoidance\". DMG yang diterima rekan tim berstatus \"Misfortune Avoidance\" akan berkurang <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.\nSaat persentase HP Fu Xuan kurang dari atau sama dengan <unbreak>#2[i]%</unbreak>, pemulihan HP akan terpicu. Efek pemulihan HP ini akan memulihkan HP dirinya sebesar <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> jumlah HP dirinya yang sudah berkurang. Efek ini tidak akan terpicu saat menerima serangan mematikan. Efek ini secara default dapat dipicu 1 kali dalam setiap pertempuran, maksimal dapat menyimpan 2 kali jumlah kesempatan terpicu.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120804"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.5,
+							0.8
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.108,
+							0.5,
+							0.81
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.116,
+							0.5,
+							0.82
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.124,
+							0.5,
+							0.83
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.132,
+							0.5,
+							0.84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.14,
+							0.5,
+							0.85
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.15,
+							0.5,
+							0.8625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.16,
+							0.5,
+							0.875
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.17,
+							0.5,
+							0.8875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.18,
+							0.5,
+							0.9
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208007": {
+				"Id": "1208007",
+				"Name": "Of Fortune Comes Fate",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Setelah menggunakan Technique, seluruh rekan tim akan memperoleh Barrier selama <unbreak>#1[i]</unbreak> detik. Barrier dapat menahan semua serangan musuh dan mencegah rekan tim memasuki pertempuran. Jika memasuki pertempuran saat Barrier aktif, akan mengakibatkan Fu Xuan langsung mengaktifkan \"Matrix of Prescience\" setelah memasuki pertempuran, berlangsung selama <unbreak>#2[i]</unbreak> giliran.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"120807"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1208101": {
+				"Id": "1208101",
+				"Name": "Taiyi, the Macrocosmic",
+				"NodeType": 3,
+				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Saat \"Matrix of Prescience\" aktif, Fu Xuan akan memulihkan <unbreak>#1[i]</unbreak> Energy tambahan saat dirinya melancarkan Skill.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208102": {
+				"Id": "1208102",
+				"Name": "Dunjia, the Metamystic",
+				"NodeType": 3,
+				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Saat Fu Xuan melancarkan Ultimate, seluruh rekan tim selain dirinya akan memulihkan HP sebesar <unbreak>#1[i]%</unbreak> Max HP Fu Xuan + <unbreak>#2[i]</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							133
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208103": {
+				"Id": "1208103",
+				"Name": "Liuren, the Sexagenary",
+				"NodeType": 3,
+				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Saat \"Matrix of Prescience\" aktif, jika target musuh menambahkan status Crowd Control Debuff pada rekan tim, maka seluruh rekan tim akan menahan semua status Crowd Control Debuff yang diberikan oleh target musuh pada aksi kali ini. Efek ini dapat dipicu 1 kali. Jumlah batas terpicu akan di-reset setelah \"Matrix of Prescience\" diaktifkan ulang.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208201": {
+				"Id": "1208201",
+				"Name": "Peningkatan CRIT Rate",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1208202": {
+				"Id": "1208202",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Endurance of Bronze",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1208203": {
+				"Id": "1208203",
+				"Name": "Peningkatan CRIT Rate",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1208202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208204": {
+				"Id": "1208204",
+				"Name": "Peningkatan Effect RES",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Effect RES +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208205": {
+				"Id": "1208205",
+				"Name": "Peningkatan CRIT Rate",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Oath of Steel",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208206": {
+				"Id": "1208206",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1208205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208207": {
+				"Id": "1208207",
+				"Name": "Peningkatan CRIT Rate",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208208": {
+				"Id": "1208208",
+				"Name": "Peningkatan Effect RES",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Effect RES +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1208103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208209": {
+				"Id": "1208209",
+				"Name": "Peningkatan HP",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "Max HP +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208210": {
+				"Id": "1208210",
+				"Name": "Peningkatan CRIT Rate",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus Stats",
+				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Safeguard of Amber",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
+	},
 	"1209": {
 		"Id": "1209",
 		"Name": "Yanqing",
@@ -39764,11 +42652,16 @@
 		"Nodes": {
 			"1213001": {
 				"Id": "1213001",
+				"Name": "Beneficent Lotus",
 				"NodeType": 2,
 				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Melancarkan 2 Hit serangan untuk mengakibatkan Imaginary DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Dan Heng · Imbibitor Lunae pada 1 target musuh.",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
-					"121301"
+					"121301",
+					"121308",
+					"121310",
+					"121312"
 				],
 				"Location": "Point01",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Normal.png",
@@ -39898,39 +42791,28 @@
 			},
 			"1213002": {
 				"Id": "1213002",
+				"Name": "Dracore Libre",
 				"NodeType": 2,
 				"NodeTypeText": "Skill",
+				"EffectRaw": "Memperkuat Basic ATK. Penguatan dapat dilakukan maksimal 3 kali berturut-turut. Melancarkan kemampuan ini tidak mengonsumsi Poin Skill dan tidak dianggap sebagai pelancaran Skill.\nPerkuat sebanyak 1 kali untuk mengubah Basic ATK \"Beneficent Lotus\" menjadi \"Transcendence\".\nPerkuat sebanyak 2 kali untuk mengubah Basic ATK \"Beneficent Lotus\" menjadi \"Divine Spear\".\nPerkuat sebanyak 3 kali untuk mengubah Basic ATK \"Beneficent Lotus\" menjadi \"Fulgurant Leap\".\nSaat melancarkan \"Divine Spear\" atau \"Fulgurant Leap\", akan memperoleh 1 lapis \"Outroar\" sebelum pelancaran setiap Hit serangan (dimulai dari Hit ke-4). Setiap lapis \"Outroar\" meningkatkan <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> CRIT DMG Dan Heng · Imbibitor Lunae. Efek ini dapat ditumpuk hingga <unbreak>#2[i]</unbreak> lapis, dan berlangsung hingga giliran dirinya berakhir.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
-					"121302",
-					"121308",
-					"121310",
-					"121312"
+					"121302"
 				],
 				"Location": "Point02",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_BP.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1.3,
-							0.6,
-							0.3,
 							0.06,
-							4,
-							0.6,
-							0.6
+							4
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							1.43,
-							0.66,
-							0.33,
 							0.066,
-							4,
-							0.66,
-							0.66
+							4
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -39948,13 +42830,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							1.56,
-							0.72,
-							0.36,
 							0.072,
-							4,
-							0.72,
-							0.72
+							4
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -39977,13 +42854,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							1.69,
-							0.78,
-							0.39,
 							0.078,
-							4,
-							0.78,
-							0.78
+							4
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40006,13 +42878,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							1.82,
-							0.84,
-							0.42,
 							0.084,
-							4,
-							0.84,
-							0.84
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40035,13 +42902,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							1.95,
-							0.9,
-							0.45,
 							0.09,
-							4,
-							0.9,
-							0.9
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40064,13 +42926,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							2.1125,
-							0.975,
-							0.4875,
 							0.0975,
-							4,
-							0.975,
-							0.975
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40093,13 +42950,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							2.275,
-							1.05,
-							0.525,
 							0.105,
-							4,
-							1.05,
-							1.05
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40127,13 +42979,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							2.4375,
-							1.125,
-							0.5625,
 							0.1125,
-							4,
-							1.125,
-							1.125
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40161,13 +43008,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							2.6,
-							1.2,
-							0.6,
 							0.12,
-							4,
-							1.2,
-							1.2
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40197,8 +43039,10 @@
 			},
 			"1213003": {
 				"Id": "1213003",
+				"Name": "Azure's Aqua Ablutes All",
 				"NodeType": 2,
 				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Melancarkan 3 Hit serangan untuk mengakibatkan Imaginary DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Dan Heng · Imbibitor Lunae pada 1 target musuh, serta mengakibatkan Imaginary DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> ATK Dan Heng · Imbibitor Lunae pada musuh di sekitar target. Selain itu, dirinya akan memperoleh <unbreak>#3[i]</unbreak> \"Squama Sacrosancta\".\nMaksimal jumlah \"Squama Sacrosancta\" yang dapat dimiliki adalah <unbreak>#4[i]</unbreak>. Dan Heng · Imbibitor Lunae dapat mengonsumsi \"Squama Sacrosancta\" untuk menggantikan konsumsi Poin Skill. Mengonsumsi \"Squama Sacrosancta\" akan dianggap sama dengan mengonsumsi Poin Skill.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121303"
@@ -40463,8 +43307,10 @@
 			},
 			"1213004": {
 				"Id": "1213004",
+				"Name": "Righteous Heart",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
+				"EffectRaw": "Dan Heng · Imbibitor Lunae akan memperoleh 1 lapis \"Righteous Heart\" setelah setiap Hit serangan yang dilancarkannya. \"Righteous Heart\" meningkatkan <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> DMG yang diakibatkan dirinya, efek ini dapat ditumpuk hingga <unbreak>#2[i]</unbreak> lapis dan berlangsung hingga giliran dirinya berakhir.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121304"
@@ -40474,15 +43320,15 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.09,
-							5
+							0.05,
+							6
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							0.095,
-							5
+							0.055,
+							6
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -40500,8 +43346,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							0.1,
-							5
+							0.06,
+							6
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40524,8 +43370,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							0.105,
-							5
+							0.065,
+							6
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40548,8 +43394,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							0.11,
-							5
+							0.07,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40572,8 +43418,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							0.115,
-							5
+							0.075,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40596,8 +43442,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							0.1213,
-							5
+							0.0813,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40620,8 +43466,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							0.1275,
-							5
+							0.0875,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40649,8 +43495,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							0.1338,
-							5
+							0.0938,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40678,8 +43524,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							0.14,
-							5
+							0.1,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40709,8 +43555,10 @@
 			},
 			"1213007": {
 				"Id": "1213007",
+				"Name": "Heaven-Quelling Prismadrakon",
 				"NodeType": 2,
 				"NodeTypeText": "Technique",
+				"EffectRaw": "Setelah menggunakan Technique, Dan Heng · Imbibitor Lunae akan memasuki status \"Leaping Dragon\" selama <unbreak>#2[i]</unbreak> detik. Melancarkan serangan saat dalam status \"Leaping Dragon\" akan membuat dirinya meluncur maju dengan cepat dan menyerang musuh yang tersentuh olehnya. Saat sedang meluncur dengan cepat, dirinya akan menahan semua serangan musuh. Setelah memasuki pertempuran dengan cara menyerang musuh saat dalam status \"Leaping Dragon\", akan mengakibatkan Imaginary DMG pada seluruh musuh sebesar <unbreak>#3[i]%</unbreak> ATK Dan Heng · Imbibitor Lunae, serta memperoleh <unbreak>#1[i]</unbreak> \"Squama Sacrosancta\".",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"121307"
@@ -40721,7 +43569,8 @@
 					"1": {
 						"EffectValues": [
 							1,
-							20
+							20,
+							1.2
 						],
 						"Costs": []
 					}
@@ -40729,15 +43578,17 @@
 			},
 			"1213101": {
 				"Id": "1213101",
+				"Name": "Star Veil",
 				"NodeType": 3,
 				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Segera memulihkan <unbreak>#1[i]</unbreak> Energy saat pertempuran dimulai.",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree1.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1
+							15
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40762,8 +43613,10 @@
 			},
 			"1213102": {
 				"Id": "1213102",
+				"Name": "Aqua Reign",
 				"NodeType": 3,
 				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Meningkatkan <unbreak>#1[i]%</unbreak> peluang untuk menahan Crowd Control Debuff.",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree2.png",
@@ -40800,15 +43653,17 @@
 			},
 			"1213103": {
 				"Id": "1213103",
+				"Name": "Jolt Anew",
 				"NodeType": 3,
 				"NodeTypeText": "Kemampuan Tambahan",
+				"EffectRaw": "Meningkatkan <unbreak>#1[i]%</unbreak> CRIT DMG saat mengakibatkan DMG pada target musuh yang memiliki Imaginary Weakness.",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree3.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.12
+							0.24
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40838,7 +43693,7 @@
 			},
 			"1213201": {
 				"Id": "1213201",
-				"Name": "Peningkatan Serangan",
+				"Name": "Peningkatan DMG: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "Imaginary DMG +<unbreak>#1[f1]%</unbreak>",
@@ -40870,7 +43725,7 @@
 			},
 			"1213202": {
 				"Id": "1213202",
-				"Name": "Peningkatan DMG: Imaginary",
+				"Name": "Peningkatan CRIT Rate",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
@@ -40908,7 +43763,7 @@
 			},
 			"1213203": {
 				"Id": "1213203",
-				"Name": "Peningkatan Serangan",
+				"Name": "Peningkatan DMG: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "Imaginary DMG +<unbreak>#1[f1]%</unbreak>",
@@ -40984,7 +43839,7 @@
 			},
 			"1213205": {
 				"Id": "1213205",
-				"Name": "Peningkatan Serangan",
+				"Name": "Peningkatan DMG: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "Imaginary DMG +<unbreak>#1[f1]%</unbreak>",
@@ -41022,7 +43877,7 @@
 			},
 			"1213206": {
 				"Id": "1213206",
-				"Name": "Peningkatan DMG: Imaginary",
+				"Name": "Peningkatan CRIT Rate",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
@@ -41060,7 +43915,7 @@
 			},
 			"1213207": {
 				"Id": "1213207",
-				"Name": "Peningkatan Serangan",
+				"Name": "Peningkatan DMG: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "Imaginary DMG +<unbreak>#1[f1]%</unbreak>",
@@ -41136,7 +43991,7 @@
 			},
 			"1213209": {
 				"Id": "1213209",
-				"Name": "Peningkatan DMG: Imaginary",
+				"Name": "Peningkatan CRIT Rate",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "CRIT Rate +<unbreak>#1[f1]%</unbreak>",
@@ -41174,7 +44029,7 @@
 			},
 			"1213210": {
 				"Id": "1213210",
-				"Name": "Peningkatan Serangan",
+				"Name": "Peningkatan DMG: Imaginary",
 				"NodeType": 1,
 				"NodeTypeText": "Bonus Stats",
 				"EffectRaw": "Imaginary DMG +<unbreak>#1[f1]%</unbreak>",

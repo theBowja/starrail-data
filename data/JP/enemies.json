@@ -3351,7 +3351,7 @@
 			{
 				"Id": 202201002,
 				"Name": "復起",
-				"SkillDesc": "戦闘不能になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
 				"SkillTypeDesc": "天賦"
 			},
 			{
@@ -3398,7 +3398,7 @@
 			{
 				"Id": 202202003,
 				"Name": "丹壊",
-				"SkillDesc": "戦闘不能になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
 				"SkillTypeDesc": "天賦",
 				"ElementType": "Thunder"
 			}
@@ -3434,7 +3434,7 @@
 			{
 				"Id": 202204002,
 				"Name": "遠吠え",
-				"SkillDesc": "戦闘不能状態になる攻撃を受けると、自身に隣接する敵の行動順を早める。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身に隣接する敵の行動順を早める。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -3951,6 +3951,48 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"2023021": {
+		"Id": "2023021",
+		"Name": "豊穣の霊獣・長右（バグ）",
+		"Introduction": "コードが影響を受けた後、バグってしまった投影。凄まじい破壊力を持ち、岩のように大きな蒼猿を参照している。\n前回「建木」が佇立した時、仙舟人は奇術で数多の珍獣を育種した。その中で、長右は従軍する戦獣の1つである。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302101,
+				"Name": "獣撃",
+				"SkillDesc": "味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302102,
+				"Name": "怒哮",
+				"SkillDesc": "ランダムな味方単体をロックオンする。味方が戦闘スキルを発動した時、ロックオン対象が最後に戦闘スキルを発動した味方に変わり、「元気」を1層獲得する。次に「獣撃」を発動した時、すべての「元気」を消費し、消費した「元気」の数に応じて攻撃力をアップする。弱点撃破された時、すべての「元気」を失う。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202302104,
+				"Name": "猿鳴",
+				"SkillDesc": "味方全体に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"2023030": {
 		"Id": "2023030",
 		"Name": "承露天人",
@@ -4007,6 +4049,63 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"2023031": {
+		"Id": "2023031",
+		"Name": "承露天人（バグ）",
+		"Introduction": "コードが影響を受けた後、バグってしまった投影。「薬王秘伝」の信徒が渇望する形態、人間性の重荷を捨て、仙道で再構築した真体を参照している。\n太古の時代、求道者たちは建木を通して玄旨を悟り、「仙人」を自称した。彼らは自在に振舞い、血肉と衆生を泥土のように塑形する。数え切れないほどの変化を経て、彼らは自身の本来の姿を忘れてしまった。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202303101,
+				"Name": "若木化生儀祷",
+				"SkillDesc": "ランダムな味方単体に連続で風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303102,
+				"Name": "引導の風",
+				"SkillDesc": "指定した味方単体及び隣接する味方に風属性ダメージを与え、高確率で攻撃された味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303103,
+				"Name": "若木の棘",
+				"SkillDesc": "指定した味方単体に風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303104,
+				"Name": "玄気噬身",
+				"SkillDesc": "高確率で味方全体を「噬命」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303105,
+				"Name": "生気虚弱",
+				"SkillDesc": "「噬命」がある味方を攻撃する時、今回の攻撃によるダメージを「噬命」にし、「噬命」の継続時間をリセットする。「噬命」の量には上限が存在する。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"2024010": {
 		"Id": "2024010",
@@ -4286,7 +4385,7 @@
 			{
 				"Id": 800103003,
 				"Name": "エネルギー湧泄",
-				"SkillDesc": "戦闘不能状態になる攻撃を受けた後、味方全体のEPを回復する。",
+				"SkillDesc": "HPが0になる攻撃を受けた後、味方全体のEPを回復する。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -4597,6 +4696,246 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002054": {
+		"Id": "8002054",
+		"Name": "序列プーマン",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205401,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205402,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205403,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002055": {
+		"Id": "8002055",
+		"Name": "プー一郎",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205501,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205502,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205503,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002056": {
+		"Id": "8002056",
+		"Name": "プー次郎",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205601,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205602,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205603,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002057": {
+		"Id": "8002057",
+		"Name": "プー三郎",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205701,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205702,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205703,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002058": {
+		"Id": "8002058",
+		"Name": "序列プーマン",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205601,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205602,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205603,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002059": {
+		"Id": "8002059",
+		"Name": "序列プーマン（レア）",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205701,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205702,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205703,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002060": {
 		"Id": "8002060",
 		"Name": "壊滅プーマン",
@@ -4644,6 +4983,53 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002061": {
+		"Id": "8002061",
+		"Name": "壊滅プーマン",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800206101,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800206102,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800206103,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800206104,
+				"Name": "ふ…復讐してやる",
+				"SkillDesc": "味方が敵を攻撃した後、味方全体に攻撃を行う、攻撃回数は味方の攻撃が命中した敵の数に相当する。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002070": {
 		"Id": "8002070",
 		"Name": "豊穣プーマン",
@@ -4689,6 +5075,52 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"8002071": {
+		"Id": "8002071",
+		"Name": "豊穣プーマン",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800207101,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800207102,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800207103,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800207104,
+				"Name": "な…治してあげる",
+				"SkillDesc": "豊穣プーマン以外の敵が味方の攻撃を受けると、自身のHPを消費して、攻撃を受けた敵のHPを回復する。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8002080": {
 		"Id": "8002080",
@@ -4782,6 +5214,52 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"8002082": {
+		"Id": "8002082",
+		"Name": "存護プーマン",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208201,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800208202,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800208203,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800208204,
+				"Name": "ま…守ってあげる",
+				"SkillDesc": "戦闘に入る時、敵全体に「ま…守ってあげる」を発動する。「ま…守ってあげる」1層につき、持続ダメージ以外のすべてのダメージを1回防げる。「ま…守ってあげる」の層数は敵全体で共有される。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002090": {
 		"Id": "8002090",
 		"Name": "序列プーマン",
@@ -4821,6 +5299,166 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"8002091": {
+		"Id": "8002091",
+		"Name": "序列プーマン",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800209101,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800209102,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800209103,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002100": {
+		"Id": "8002100",
+		"Name": "プー一郎",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800210001,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800210002,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800210003,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002101": {
+		"Id": "8002101",
+		"Name": "プー次郎",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800210101,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800210102,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800210103,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002102": {
+		"Id": "8002102",
+		"Name": "プー三郎",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800210201,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800210202,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800210203,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8003010": {
 		"Id": "8003010",
@@ -5420,6 +6058,68 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8003052": {
+		"Id": "8003052",
+		"Name": "ストーム",
+		"Introduction": "裂界拡大の途中で侵蝕されたモンスター、力の源が変異した後、より柔軟な戦闘スタイルを得た。\nストームは風の力を利用して戦いを有利に進め、追い風に乗った迅速な矢を放つ。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305201,
+				"Name": "風を巡る光隕",
+				"SkillDesc": "指定した味方単体に風属性ダメージを与え、高確率で風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305202,
+				"Name": "踏風の行軍",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の風属性ダメージを与え、確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305203,
+				"Name": "風を掴む",
+				"SkillDesc": "チャージ状態に入り、風化状態にあるすべての味方をロックオンし、次の行動で「暴風の矢」を発動する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800305204,
+				"Name": "暴風の矢",
+				"SkillDesc": "風化状態の味方に風属性ダメージを与える。フィールド上に風化状態の味方が存在しない場合、このスキルの発動は失敗する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305205,
+				"Name": "急旋する風",
+				"SkillDesc": "風化状態の味方を攻撃した後、攻撃力が小幅アップする。弱点撃破されると効果が解除される。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 800305206,
+				"Name": "暴風の矢",
+				"SkillDesc": "風化状態の味方に風属性ダメージを与える。フィールド上に風化状態の味方が存在しない場合、このスキルの発動は失敗する。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8011010": {
 		"Id": "8011010",
 		"Name": "バリオン",
@@ -5975,7 +6675,7 @@
 			{
 				"Id": 801221004,
 				"Name": "開花",
-				"SkillDesc": "「開花」状態で、次の行動で「破滅」を発動する。「破滅の玄蓮」が「開花」状態で弱点撃破されたり、倒されたり、「開花」状態が解除されたりすると、「不死の神実・幻朧」の被ダメージがアップし、行動が遅延する",
+				"SkillDesc": "「開花」状態で、次の行動で「破滅」を発動する。「破滅の玄蓮」が「開花」状態で弱点撃破されたり、倒されたり、「開花」状態が解除されたりすると、「不死の神実・幻朧」の被ダメージがアップし、行動が遅延する。",
 				"SkillTypeDesc": "天賦"
 			},
 			{
@@ -6022,7 +6722,7 @@
 			{
 				"Id": 801221104,
 				"Name": "開花",
-				"SkillDesc": "「開花」状態で、次の行動で「破滅」を発動する。「破滅の玄蓮」が「開花」状態で弱点撃破されたり、倒されたり、「開花」状態が解除されたりすると、「不死の神実・幻朧」の被ダメージがアップし、行動が遅延する",
+				"SkillDesc": "「開花」状態で、次の行動で「破滅」を発動する。「破滅の玄蓮」が「開花」状態で弱点撃破されたり、倒されたり、「開花」状態が解除されたりすると、「不死の神実・幻朧」の被ダメージがアップし、行動が遅延する。",
 				"SkillTypeDesc": "天賦"
 			},
 			{
@@ -6298,6 +6998,64 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"8013013": {
+		"Id": "8013013",
+		"Name": "ヴォイドレンジャー・蹂躙",
+		"Introduction": "「反物質レギオン」が「戦争洪炉」で戦士と古獣の残片を鋳造して融合させた産物。\n 数は比較的少ないが、戦士の知性と古獣の強さと機動力を併せ持ち、そのいななきは大量のヴォイドレンジャーを呼び寄せることができる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301301,
+				"Name": "虚実の投影",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301302,
+				"Name": "侵略の鉄蹄",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301303,
+				"Name": "戦争の蹂躙",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301304,
+				"Name": "螺旋の弓矢",
+				"SkillDesc": "指定した味方単体をロックオンし、次の行動でターゲットに「強弓の終末」を発動する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301305,
+				"Name": "強弓の終末",
+				"SkillDesc": "指定した味方単体に大量の量子ダメージを与え、高確率で攻撃を受けた味方をもつれ状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8013141": {
 		"Id": "8013141",
@@ -6696,6 +7454,176 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"8022010": {
+		"Id": "8022010",
+		"Name": "幼蟄虫",
+		"Introduction": "真蟄虫の幼体。「真蟄虫」の幼体は成長の程度によって「幼蟄虫」と「次蟄虫」に分けられる。",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802201001,
+				"Name": "震える翅",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802201002,
+				"Name": "次分裂",
+				"SkillDesc": "自身の繁衍体を1体生み出す。この効果は2ターン後に再発動できる。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 802201004,
+				"Name": "虫の断末魔",
+				"SkillDesc": "HPが0になる攻撃を受けた時、敵全体に風属性ダメージを与え、高い確率で攻撃を受けた敵の被ダメージを少しアップさせる。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8022020": {
+		"Id": "8022020",
+		"Name": "次蟄虫",
+		"Introduction": "真蟄虫の幼体。「真蟄虫」の幼体は成長の程度によって「幼蟄虫」と「次蟄虫」に分けられる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802202001,
+				"Name": "蟲爆襲来",
+				"SkillDesc": "チャージ状態に入り、次の行動で「蟲爆」を発動。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 802202002,
+				"Name": "蟲爆",
+				"SkillDesc": "自身を爆発させ、指定した味方単体及び隣接する味方に風属性ダメージを与え、高確率で攻撃された味方を「怒噪」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802202004,
+				"Name": "虫の断末魔",
+				"SkillDesc": "HPが0になる攻撃を受けた時、敵全体に風属性ダメージを与え、高い確率で攻撃を受けた敵の被ダメージを少しアップさせる。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8024010": {
+		"Id": "8024010",
+		"Name": "スウォーム・真蟄虫（スペック）",
+		"Introduction": "博識学会のデュロワ士爵は星海を漫遊し、<unbreak>30</unbreak>巻からなる『諸界異虫記』を書いた。これまで確認された十数種類の物を食い荒らす虫の種類および星系間に存在する数えきれないほどの亜種が記されている。",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802401001,
+				"Name": "蟲のブレス",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を2層の風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401002,
+				"Name": "戦争兵器",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与える。攻撃を受けたターゲットが風化状態であった場合、風化ダメージを1回与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401003,
+				"Name": "ハリケーン",
+				"SkillDesc": "味方全体に風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401004,
+				"Name": "増殖",
+				"SkillDesc": "真蟄虫の群れを増やす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 802401005,
+				"Name": "強襲準備",
+				"SkillDesc": "チャージ状態に入り、次の行動で「スウォーム強襲」を発動する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 802401006,
+				"Name": "スウォーム強襲",
+				"SkillDesc": "フィールド上のすべての真蟄虫の群れの行動制限系デバフと弱点撃破状態を解除し、味方に風属性ダメージを与え、攻撃を受けるたびに1層の風化状態に陥るようにする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401007,
+				"Name": "スウォーム強襲",
+				"SkillDesc": "フィールド上のすべての真蟄虫の群れの行動制限系デバフと弱点撃破状態を解除し、味方に風属性ダメージを与え、攻撃を受けるたびに1層の風化状態に陥るようにする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401008,
+				"Name": "継承フェロモン",
+				"SkillDesc": "フィールド上に真蟄虫の群れが1つ増えるごとに、すべての真蟄虫の群れがダメージアップを1層獲得する。フィールド上では1つの「継承フェロモン」のみが効果を発揮する。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 802401009,
+				"Name": "虫の断末魔",
+				"SkillDesc": "HPが0になる攻撃を受けた時、敵全体に風属性ダメージを与え、高い確率で攻撃を受けた敵の被ダメージを少しアップさせる。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401011,
+				"Name": "増殖",
+				"SkillDesc": "真蟄虫の群れを増やす。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"100202001": {
 		"Id": "100202001",
@@ -7188,6 +8116,41 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"100202015": {
+		"Id": "100202015",
+		"Name": "流浪者",
+		"Introduction": "下層部に閉じ込められた人々は、生計のために危険な裂界で使えそうな物資を探すことが多い。その途中で掘り出した古代機械は彼らの良き「助っ人」となっている。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "スライド攻撃",
+				"SkillDesc": "指定した味方単体に少量の物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "鼓舞",
+				"SkillDesc": "指定した敵単体の攻撃力をアップし、即座に行動させる。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"100203001": {
 		"Id": "100203001",
@@ -9010,6 +9973,54 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"100301011": {
+		"Id": "100301011",
+		"Name": "シルバーメイン・尉官",
+		"Introduction": "ベロブルグの戍衛部隊である「シルバーメイン」の分隊指揮官。\n戦闘中、シルバーメイン・尉官は巨大なシールドを立て自分を強化する。シールド状態のシルバーメイン・尉官を攻撃すると、強力なカウンターを受ける。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "突撃",
+				"SkillDesc": "指定した味方単体に物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "刺突",
+				"SkillDesc": "指定した味方単体に大量の物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "ジャストガード",
+				"SkillDesc": "カウンター状態に入り、味方単体の攻撃を受けると行動順が早まり、攻撃した味方に「刺突」を発動する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 100301004,
+				"Name": "増援",
+				"SkillDesc": "「シルバーメイン・近衛」または「シルバーメイン・狙撃手」を召喚する。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"100401001": {
 		"Id": "100401001",
 		"Name": "カカリア",
@@ -9579,6 +10590,40 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101201008": {
+		"Id": "101201008",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "垂直打撃",
+				"SkillDesc": "指定した味方単体に少量の物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "自癒モジュール",
+				"SkillDesc": "敵全体のHPを回復。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101201009": {
 		"Id": "101201009",
 		"Name": "自動機兵・サバーカ",
@@ -9646,6 +10691,40 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"101201011": {
+		"Id": "101201011",
+		"Name": "自動機兵・サバーカ",
+		"Introduction": "旧世界が残した技術で作られた機械ユニット、乗り物の形をしているが、人たちはとっくにこの用途を忘れているだろう。\n戦闘中、自動機兵「サバーカ」は味方のHPを回復できる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "垂直打撃",
+				"SkillDesc": "指定した味方単体に少量の物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "自癒モジュール",
+				"SkillDesc": "敵全体のHPを回復。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -10598,6 +11677,35 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101203012": {
+		"Id": "101203012",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "不安定力場",
+				"SkillDesc": "指定した味方単体に物理ダメージを与え、自身にバリアを付与する。バリアは持続ダメージ以外のすべてのダメージを防ぐ。この効果は攻撃を受けた後に解除される。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101203013": {
 		"Id": "101203013",
 		"Name": "自動機兵・ジューク",
@@ -10626,6 +11734,35 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"101203014": {
+		"Id": "101203014",
+		"Name": "自動機兵・ジューク",
+		"Introduction": "旧世界が残した技術で作られた機械ユニット、移動用の手足に何かしらの信号灯が付いている、採集や建造の作業を担っていたらしい。\n戦闘中、自動機兵「ジューク」は力場バリアを創り自身を保護する。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "不安定力場",
+				"SkillDesc": "指定した味方単体に物理ダメージを与え、自身にバリアを付与する。バリアは持続ダメージ以外のすべてのダメージを防ぐ。この効果は攻撃を受けた後に解除される。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -11391,6 +12528,60 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101301015": {
+		"Id": "101301015",
+		"Name": "自動機兵・グリズリー",
+		"Introduction": "旧世界が残した技術で作られた機械ユニット、分厚い鎧を着せられ、敵陣を陥れシルバーメインを保護する役割を果たす。\n戦闘中、自動機兵「グリズリー」は「パウーク」を召喚し共同作戦を行う、同時に、エネルギーをチャージし強力な一撃を繰り出す。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "爆裂指示",
+				"SkillDesc": "「自動機兵・パウーク」を召喚する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 101301002,
+				"Name": "憤怒指示",
+				"SkillDesc": "確率で味方全体を挑発状態にする。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 101301003,
+				"Name": "過負荷指示",
+				"SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 101301004,
+				"Name": "殲滅指示",
+				"SkillDesc": "味方全体に大量の物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "破壊指示",
+				"SkillDesc": "指定した味方単体に物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101302001": {
 		"Id": "101302001",
 		"Name": "自動機兵・ヴォルク",
@@ -12081,6 +13272,55 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101302015": {
+		"Id": "101302015",
+		"Name": "自動機兵・ヴォルク",
+		"Introduction": "旧世界が残した技術で作られた機械ユニット、あまり見れない人型の機械、右腕の一部にチェーンソーが付いていて、採集や建造の作業を担っていたらしい。\n戦闘中、自動機兵「ヴォルク」のチェーンソーは裂創を与え、相手のHPを継続的に減らす。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "伐採指令",
+				"SkillDesc": "指定した味方単体に大量の物理ダメージを与える、攻撃が命中するたびに、確率で味方を裂創にする。このスキルを発動する時、ターゲットがバリアを持ってない場合、ランダムな味方単体に「解体撤去」を発動する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目標ロックオン",
+				"SkillDesc": "指定した味方単体をロックオンし、次の行動でターゲットに「伐採指令」を発動する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解体指示",
+				"SkillDesc": "指定した味方単体に少量の物理ダメージを与え、高確率で裂創状態を1層与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "取り壊す",
+				"SkillDesc": "指定した味方単体に少量の物理ダメージを与え、高確率で裂創状態を1層与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101401001": {
 		"Id": "101401001",
 		"Name": "スヴァローグ",
@@ -12507,6 +13747,77 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"101401007": {
+		"Id": "101401007",
+		"Name": "スヴァローグ",
+		"Introduction": "旧世界の古い遺物、地髄開拓団の時代に残した自動コントロールユニット、知能を持たない大半のロボットと違って、スヴァローグは複雑な思考能力を持っている。\n戦闘中、スヴァローグはマニピュレーターを呼び出して敵を制御し、重い一撃を与える。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101401001,
+				"Name": "追放の拳",
+				"SkillDesc": "指定した味方単体に物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401002,
+				"Name": "バーニングビーム",
+				"SkillDesc": "指定した味方単体に物理ダメージを与え、攻撃を受けた味方の行動順を遅延させる。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401003,
+				"Name": "巨大なる掌",
+				"SkillDesc": "指定した味方単体を「束縛」状態にする、「束縛」状態では行動できず、攻撃のターゲットにもされない。マニピュレーターユニットが弱点撃破されると、味方の束縛状態が解除される。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401004,
+				"Name": "効率的爆撃",
+				"SkillDesc": "味方全体に大量の物理ダメージを与え、高確率で攻撃を受けた味方の防御力をダウンする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401005,
+				"Name": "制御起爆",
+				"SkillDesc": "マニピュレーターユニットが爆発し、指定した味方単体に大量の物理ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401006,
+				"Name": "過負荷警告",
+				"SkillDesc": "マニピュレーターユニットが「過負荷時間制限」状態になる。この状態に入ると次の行動で「制御起爆」を発動する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401007,
+				"Name": "有効配置",
+				"SkillDesc": "「マニピュレーターユニット」を召喚する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"102201001": {
 		"Id": "102201001",
 		"Name": "永冬の災影",
@@ -12710,6 +14021,35 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102201008": {
+		"Id": "102201008",
+		"Name": "永冬の災影",
+		"Introduction": "寒波が訪れた後、裂界を彷徨う影。それは歪んだ形でシルバーメインの外見を模倣し、甲冑はベロブルグの戦士と変わりないが、頭は目鼻立ちのない氷でできている。\n戦闘中、永冬の災影は氷を斧を振る舞い敵の行動を緩める。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "霜枯れの一撃",
+				"SkillDesc": "指定した味方単体に氷属性ダメージを与える、攻撃を受けた味方の行動順を遅らす。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"102202001": {
 		"Id": "102202001",
@@ -13030,6 +14370,35 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102202012": {
+		"Id": "102202012",
+		"Name": "焚火の災影",
+		"Introduction": "寒波が訪れた後、裂界を彷徨う影。それは歪んだ形でシルバーメインの外見を模倣し、甲冑はベロブルグの戦士と変わりないが、頭は目鼻立ちのない炎でできている。\n戦闘中、焚火の災影は炎を斧を振る舞い敵を燃やす。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "灼炎の一撃",
+				"SkillDesc": "指定した味方単体に炎属性ダメージを与え、高確率で攻撃を受けた味方を燃焼状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -13765,6 +15134,35 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"200201001": {
+		"Id": "200201001",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200201001,
+				"Name": "雲刃",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で味方の被ダメージをアップさせる。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"200201002": {
 		"Id": "200201002",
 		"Name": "雲騎軍・見廻兵士",
@@ -13793,6 +15191,64 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"200202002": {
+		"Id": "200202002",
+		"Name": "飛剣",
+		"Introduction": "真気で操る浮遊攻撃ユニット、「飛剣」とも呼ばれる武器。御剣の者と心が繋がっていて、己が腕の如く操ることができる。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200202001,
+				"Name": "琢玉撃",
+				"SkillDesc": "指定した味方単体に氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"200202102": {
+		"Id": "200202102",
+		"Name": "飛剣",
+		"Introduction": "真気で操る浮遊攻撃ユニット、「飛剣」とも呼ばれる武器。御剣の者と心が繋がっていて、己が腕の如く操ることができる。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200202101,
+				"Name": "琢玉撃",
+				"SkillDesc": "指定した味方単体に氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"200401001": {
 		"Id": "200401001",
@@ -14042,6 +15498,68 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"200402002": {
+		"Id": "200402002",
+		"Name": "雲騎驍衛・彦卿",
+		"Introduction": "景元将軍の護衛であり、まだ総角の歳に過ぎない剣の天才。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200402001,
+				"Name": "快哉風",
+				"SkillDesc": "指定した味方単体に氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402002,
+				"Name": "帰燕",
+				"SkillDesc": "「飛剣」を4本召喚して、「剣陣」効果を獲得し、自身の速度がアップする。「飛剣」に「陣眼」を付与する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 200402003,
+				"Name": "三尺水",
+				"SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃された味方を凍結状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402004,
+				"Name": "破陣歌",
+				"SkillDesc": "指定した味方単体及び隣接する味方に氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402005,
+				"Name": "剣気迫近",
+				"SkillDesc": "チャージ状態に入る。次の行動で味方全体に「天河瀉り」を発動する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 200402006,
+				"Name": "天河瀉り",
+				"SkillDesc": "味方全体に大量の氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"201101001": {
 		"Id": "201101001",
 		"Name": "入魔機巧・統率狻猊",
@@ -14264,6 +15782,42 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"201201005": {
+		"Id": "201201005",
+		"Name": "入魔機巧・灯火龍魚",
+		"Introduction": "工造司の匠が片手間に作り上げた発明品。元は知能を持たない暗闇を照らすただの灯具だったが、とある異変により短い「命」を付与された。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201201001,
+				"Name": "夜の光",
+				"SkillDesc": "味方全体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方の防御力をダウンさせる。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 201201002,
+				"Name": "燭花",
+				"SkillDesc": "HPが0になる攻撃を受けた後、敵全体に炎属性ダメージを与え、高確率で攻撃を受けた敵の防御力をダウンさせる。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"201301001": {
 		"Id": "201301001",
 		"Name": "辺塞詩人",
@@ -14411,6 +15965,55 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"201301005": {
+		"Id": "201301005",
+		"Name": "金人門番",
+		"Introduction": "古い機巧術で鋳造された金人。\n太古の昔、金人は仙舟と共に仙方を求める旅に出た。当時の金人は人間を監視し、戦いを補助する立場であったが、反乱を経て最終的に仙舟人に降伏した。\n今日に至っては、すべての金人は呪符によって厳重に牽制されており、要地を守るために使われている。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.4
+		},
+		"SkillList": [
+			{
+				"Id": 201301001,
+				"Name": "命ニ奉ジテ制裁ヲ",
+				"SkillDesc": "味方が戦闘スキルまたは必殺技を発動して攻撃する時、「懲戒度」が溜まる。「懲戒度」は最高レベルに到達すると、直ちに「懲罰モード」に入り、「入魔機巧・灯火龍魚」を召喚する。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 201301002,
+				"Name": "戒惧",
+				"SkillDesc": "「懲戒度」のレベルを上げ、味方全体に少量の虚数属性ダメージを与え、高確率で味方を虚弱状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 201301003,
+				"Name": "戒退",
+				"SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 201301004,
+				"Name": "首枷",
+				"SkillDesc": "指定した味方単体に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202201001": {
 		"Id": "202201001",
 		"Name": "魔陰の身・兵卒",
@@ -14440,7 +16043,7 @@
 			{
 				"Id": 202201002,
 				"Name": "復起",
-				"SkillDesc": "戦闘不能になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
 				"SkillTypeDesc": "天賦"
 			},
 			{
@@ -14482,7 +16085,7 @@
 			{
 				"Id": 202201002,
 				"Name": "復起",
-				"SkillDesc": "戦闘不能になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
 				"SkillTypeDesc": "天賦"
 			},
 			{
@@ -14494,6 +16097,174 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202201003": {
+		"Id": "202201003",
+		"Name": "隠密な刺客",
+		"Introduction": "雲吟の術で姿を隠した刺客。誰が差し向けたのか不明である。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "復起",
+				"SkillDesc": "HPが0になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 202201003,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201004": {
+		"Id": "202201004",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "復起",
+				"SkillDesc": "HPが0になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 202201003,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201005": {
+		"Id": "202201005",
+		"Name": "隠密な刺客",
+		"Introduction": "雲吟の術で姿を隠した刺客。誰が差し向けたのか不明である。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "復起",
+				"SkillDesc": "HPが0になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 202201003,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201007": {
+		"Id": "202201007",
+		"Name": "魔陰の身・兵卒",
+		"Introduction": "何らかの理由により狂乱に陥った仙舟の兵士。もう人としての原形を保てておらず、増殖と変異を無限に繰り返すだけとなっている。無尽の命の中、仙舟人は「魔陰の身」と呼ばれる状態に堕ちると言われている。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "復起",
+				"SkillDesc": "HPが0になる攻撃を受けた時、HPを一定値回復する。この効果に時間制限はないが、解除されることがある。効果は一度の戦闘で1回まで発動できる。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 202201003,
+				"Name": "梢殺",
+				"SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202202001": {
 		"Id": "202202001",
@@ -14529,12 +16300,53 @@
 			{
 				"Id": 202202003,
 				"Name": "丹壊",
-				"SkillDesc": "戦闘不能になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
 				"SkillTypeDesc": "天賦",
 				"ElementType": "Thunder"
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"202202002": {
+		"Id": "202202002",
+		"Name": "隠密な刺客",
+		"Introduction": "雲吟の術で姿を隠した刺客。誰が差し向けたのか不明である。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "植丹",
+				"SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202202002,
+				"Name": "役雷",
+				"SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "丹壊",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202202003": {
 		"Id": "202202003",
@@ -14570,7 +16382,7 @@
 			{
 				"Id": 202202003,
 				"Name": "丹壊",
-				"SkillDesc": "戦闘不能になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
 				"SkillTypeDesc": "天賦",
 				"ElementType": "Thunder"
 			}
@@ -14611,12 +16423,158 @@
 			{
 				"Id": 202202003,
 				"Name": "丹壊",
-				"SkillDesc": "戦闘不能になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
 				"SkillTypeDesc": "天賦",
 				"ElementType": "Thunder"
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202202005": {
+		"Id": "202202005",
+		"Name": "闖入者",
+		"Introduction": "悪意を抱いている来者。丹楓の生まれ変わりを排除するという名目で、丹恒を殺しに来た。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "植丹",
+				"SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202202002,
+				"Name": "役雷",
+				"SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "丹壊",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202202006": {
+		"Id": "202202006",
+		"Name": "隠密な刺客",
+		"Introduction": "雲吟の術で姿を隠した刺客。誰が差し向けたのか不明である。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "植丹",
+				"SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202202002,
+				"Name": "役雷",
+				"SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "丹壊",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+				"SkillTypeDesc": "天賦",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202204001": {
+		"Id": "202204001",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202204001,
+				"Name": "角抵",
+				"SkillDesc": "指定した味方単体に風属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202204002,
+				"Name": "遠吠え",
+				"SkillDesc": "HPが0になる攻撃を受けた時、自身に隣接する敵の行動順を早める。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202206001": {
+		"Id": "202206001",
+		"Name": "隠密な刺客",
+		"Introduction": "雲吟の術で姿を隠した刺客。誰が差し向けたのか不明である。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202206001,
+				"Name": "犀弩",
+				"SkillDesc": "連続でランダムな味方単体に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202301001": {
 		"Id": "202301001",
@@ -14948,6 +16906,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"202301007": {
+		"Id": "202301007",
+		"Name": "隠密な刺客",
+		"Introduction": "雲吟の術で姿を隠した刺客。誰が差し向けたのか不明である。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "震撃",
+				"SkillDesc": "指定した味方単体に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "霆罰",
+				"SkillDesc": "指定した味方単体および隣接する味方に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "劫雷",
+				"SkillDesc": "指定した味方単体に大量の雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "召遣",
+				"SkillDesc": "自身のHPを消費し、「魔陰の身・兵卒」を召喚する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202301005,
+				"Name": "采気",
+				"SkillDesc": "フィールド上の他の敵に「復活」が付与されている場合、自身は「命中回復」を獲得する。味方に攻撃が命中した後、HPを回復する。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202301008": {
 		"Id": "202301008",
 		"Name": "薬王秘伝・鍛錬者",
@@ -15002,6 +17015,116 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202301010": {
+		"Id": "202301010",
+		"Name": "薬王秘伝・鍛錬者",
+		"Introduction": "古の豊穣の秘儀を復活させ、仙舟人が再び解脱登仙の道へと入るのを渇望する鍛錬者。\nそして今、彼らの願いは成就した。古の神跡の力を授かり、それを甲冑や武具とし、彼らは長生不死の秘密に触れた。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "震撃",
+				"SkillDesc": "指定した味方単体に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "霆罰",
+				"SkillDesc": "指定した味方単体および隣接する味方に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "劫雷",
+				"SkillDesc": "指定した味方単体に大量の雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "召遣",
+				"SkillDesc": "自身のHPを消費し、「魔陰の身・兵卒」を召喚する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202301005,
+				"Name": "采気",
+				"SkillDesc": "フィールド上の他の敵に「復活」が付与されている場合、自身は「命中回復」を獲得する。味方に攻撃が命中した後、HPを回復する。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202301011": {
+		"Id": "202301011",
+		"Name": "薬王秘伝・鍛錬者",
+		"Introduction": "古の豊穣の秘儀を復活させ、仙舟人が再び解脱登仙の道へと入るのを渇望する鍛錬者。\nそして今、彼らの願いは成就した。古の神跡の力を授かり、それを甲冑や武具とし、彼らは長生不死の秘密に触れた。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "震撃",
+				"SkillDesc": "指定した味方単体に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "霆罰",
+				"SkillDesc": "指定した味方単体および隣接する味方に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "劫雷",
+				"SkillDesc": "指定した味方単体に大量の雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "召遣",
+				"SkillDesc": "自身のHPを消費し、「魔陰の身・兵卒」を召喚する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202301005,
+				"Name": "采気",
+				"SkillDesc": "フィールド上の他の敵に「復活」が付与されている場合、自身は「命中回復」を獲得する。味方に攻撃が命中した後、HPを回復する。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202302001": {
 		"Id": "202302001",
@@ -15098,6 +17221,54 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202302004": {
+		"Id": "202302004",
+		"Name": "豊穣の霊獣・長右",
+		"Introduction": "岩のように大きな蒼猿、凄まじい破壊力を持つ。\n前回「建木」が佇立した時、仙舟人は奇術で数多の珍獣を育種した。その中で、長右は従軍する戦獣の1つである。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302001,
+				"Name": "獣撃",
+				"SkillDesc": "「元気」を1層消費し、警戒ターゲットとしてマークした味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302002,
+				"Name": "獣撃",
+				"SkillDesc": "「元気」を1層消費し、警戒ターゲットとしてマークした味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302003,
+				"Name": "奮威",
+				"SkillDesc": "自身の与ダメージをアップする、与ダメージアップ効果は累積できる。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 202302004,
+				"Name": "怒哮",
+				"SkillDesc": "「元気」を3層獲得し、ランダムな味方単体を警戒ターゲットとしてマークする。味方が戦闘スキルを発動した時、マークする対象が最後に戦闘スキルを発動した味方に変わる。味方へのマークは、「元気」が尽きるまで継続する。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202303001": {
 		"Id": "202303001",
@@ -15767,6 +17938,62 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800101011": {
+		"Id": "800101011",
+		"Name": "炎の造物",
+		"Introduction": "裂界を彷徨う結晶体の元素、簡単な知能しか持っていない。その形はまるで高い熱量を発散する、激しく燃え盛る鳥のようだ。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "かく乱",
+				"SkillDesc": "指定した味方単体に少量の炎属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800101012": {
+		"Id": "800101012",
+		"Name": "炎の造物",
+		"Introduction": "裂界を彷徨う結晶体の元素、簡単な知能しか持っていない。その形はまるで高い熱量を発散する、激しく燃え盛る鳥のようだ。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "かく乱",
+				"SkillDesc": "指定した味方単体に少量の炎属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "霜の造物",
@@ -16049,6 +18276,62 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800102011": {
+		"Id": "800102011",
+		"Name": "霜の造物",
+		"Introduction": "裂界を彷徨う結晶体の元素、簡単な知能しか持っていない。その形はまるで低温を発散する、すべてを凍らせる鳥のようだ。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "かく乱",
+				"SkillDesc": "指定した味方単体に少量の氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800102012": {
+		"Id": "800102012",
+		"Name": "霜の造物",
+		"Introduction": "裂界を彷徨う結晶体の元素、簡単な知能しか持っていない。その形はまるで低温を発散する、すべてを凍らせる鳥のようだ。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "かく乱",
+				"SkillDesc": "指定した味方単体に少量の氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800103001": {
 		"Id": "800103001",
 		"Name": "無想仮面",
@@ -16083,7 +18366,7 @@
 			{
 				"Id": 800103003,
 				"Name": "エネルギー湧泄",
-				"SkillDesc": "戦闘不能状態になる攻撃を受けた後、味方全体のEPを回復する。",
+				"SkillDesc": "HPが0になる攻撃を受けた後、味方全体のEPを回復する。",
 				"SkillTypeDesc": "天賦"
 			}
 		],
@@ -16144,6 +18427,34 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800104003": {
+		"Id": "800104003",
+		"Name": "雷の造物",
+		"Introduction": "裂界を彷徨う結晶体の元素、簡単な知能しか持っていない。その形はまるで電気を纏い、稲妻を噴き出す鳥のようだ。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800104001,
+				"Name": "雷騰",
+				"SkillDesc": "指定した味方単体に少量の雷属性ダメージを与え、高確率で攻撃を受けた味方を感電状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800105001": {
 		"Id": "800105001",
@@ -16298,6 +18609,55 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800201005": {
+		"Id": "800201005",
+		"Name": "虚数の葉を織る者",
+		"Introduction": "この世に属さない怪異な生命体、黯淡な星空の彼方より、幾重もの帷幕を超えてやって来た。その身体はまるで病に患った枝葉が現実に突き出したように、虚数の力で現実を意のままに書き換える。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800201001,
+				"Name": "賛歌の光",
+				"SkillDesc": "指定した味方単体に少量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201002,
+				"Name": "賛歌爆発",
+				"SkillDesc": "指定した味方単体に大量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201003,
+				"Name": "賛歌激震",
+				"SkillDesc": "指定した味方単体および隣接する味方に虚数属性ダメージを与え、「後手」状態に入る。次の行動で「賛歌爆発」を発動し、自身の与ダメージが大幅にアップする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201004,
+				"Name": "虚数アーマー",
+				"SkillDesc": "非弱点属性に対する被ダメージがダウンする。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800204001": {
 		"Id": "800204001",
@@ -16458,6 +18818,46 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800205002": {
+		"Id": "800205002",
+		"Name": "序列プーマン",
+		"Introduction": "群星に迷い込んだ異空間の生物。温かく、甘い、食べられない。生命の大半を、食べることと逃げることに費やす。出会うことは旅人の間で吉兆とされている。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "こ…こわい",
+				"SkillDesc": "プーマンはびっくりした、2ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205002,
+				"Name": "に…にげろ",
+				"SkillDesc": "プーマンは恐怖に満ちている、1ターン後に戦闘から逃げだす。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800205003,
+				"Name": "ふぅ…逃げ切った",
+				"SkillDesc": "プーマンは逃げ出し、瞬く間に姿を消した。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800208101": {
 		"Id": "800208101",
@@ -16804,6 +19204,56 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800301007": {
+		"Id": "800301007",
+		"Name": "宇宙からの氷",
+		"Introduction": "この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には暗き星空が映っている。\n戦闘中、宇宙からの氷は容易に敵を凍結できる。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "凍える哀",
+				"SkillDesc": "指定した味方単体に少量の氷属性ダメージを与える。自身が「氷点」状態の場合、凍結状態の味方単体に攻撃を行った後、さらに氷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "霜摂取",
+				"SkillDesc": "自身が「氷点」状態になり、その後の攻撃で「永冬の雨」を発動できる。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "永冬の雨",
+				"SkillDesc": "「氷点」状態の時のみこのスキルを発動できる。味方全体に少量の氷属性ダメージを与え、確率で攻撃を受けた味方を凍結状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "凍える哀",
+				"SkillDesc": "指定した味方単体に氷属性ダメージを与える。自身が「氷点」状態の場合、確率で攻撃を受けた味方を凍結状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800302001": {
 		"Id": "800302001",
 		"Name": "宇宙からの炎",
@@ -17139,6 +19589,198 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800302008": {
+		"Id": "800302008",
+		"Name": "宇宙からの炎",
+		"Introduction": "この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には星のコアが燃える様が映っている。\n戦闘中、宇宙からの炎は容易に敵を灰に燃やせる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "怒号の火",
+				"SkillDesc": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "炎摂取",
+				"SkillDesc": "自身を「自然発火」状態にし、その後の攻撃で「浄炎の雨」を発動できる。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800302003,
+				"Name": "浄炎の雨",
+				"SkillDesc": "連続でランダムな味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "溶融",
+				"SkillDesc": "攻撃力をアップする、弱点撃破されると効果が解除される。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302009": {
+		"Id": "800302009",
+		"Name": "宇宙からの炎",
+		"Introduction": "この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には星のコアが燃える様が映っている。\n戦闘中、宇宙からの炎は容易に敵を灰に燃やせる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "怒号の火",
+				"SkillDesc": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "炎摂取",
+				"SkillDesc": "自身を「自然発火」状態にし、その後の攻撃で「浄炎の雨」を発動できる。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800302003,
+				"Name": "浄炎の雨",
+				"SkillDesc": "連続でランダムな味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "溶融",
+				"SkillDesc": "攻撃力をアップする、弱点撃破されると効果が解除される。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302010": {
+		"Id": "800302010",
+		"Name": "宇宙からの炎",
+		"Introduction": "この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には星のコアが燃える様が映っている。\n戦闘中、宇宙からの炎は容易に敵を灰に燃やせる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "怒号の火",
+				"SkillDesc": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "炎摂取",
+				"SkillDesc": "自身を「自然発火」状態にし、その後の攻撃で「浄炎の雨」を発動できる。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800302003,
+				"Name": "浄炎の雨",
+				"SkillDesc": "連続でランダムな味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "溶融",
+				"SkillDesc": "攻撃力をアップする、弱点撃破されると効果が解除される。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302011": {
+		"Id": "800302011",
+		"Name": "宇宙からの炎",
+		"Introduction": "この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には星のコアが燃える様が映っている。\n戦闘中、宇宙からの炎は容易に敵を灰に燃やせる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "怒号の火",
+				"SkillDesc": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "炎摂取",
+				"SkillDesc": "自身を「自然発火」状態にし、その後の攻撃で「浄炎の雨」を発動できる。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800302003,
+				"Name": "浄炎の雨",
+				"SkillDesc": "連続でランダムな味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "溶融",
+				"SkillDesc": "攻撃力をアップする、弱点撃破されると効果が解除される。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -17684,6 +20326,74 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800303009": {
+		"Id": "800303009",
+		"Name": "守護者の影",
+		"Introduction": "星核の力によって生み出された虚影、裂界の絶えず拡張する意思を執行している。\n知的生命の欲求が裂界の中に投影され形成された生命エネルギー。まるで1粒の沙が貝の中で真珠となったようである。この力は、当てもなく辺りを彷徨い、主の意志を感じた時にやっとそれに従い行動する。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800303001,
+				"Name": "追憶の稲妻",
+				"SkillDesc": "指定した味方単体に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303002,
+				"Name": "遣罰の稲妻",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303003,
+				"Name": "静謐の禁令",
+				"SkillDesc": "味方全体に「禁令」を下し、守護者の影への攻撃を禁じる、守護者の影を攻撃した味方は攻撃を1回受ける。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800303004,
+				"Name": "休戦の禁令",
+				"SkillDesc": "味方全体に「禁令」を下し、通常攻撃を禁じる、通常攻撃を行った味方は攻撃を1回受ける。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800303005,
+				"Name": "沈黙の禁令",
+				"SkillDesc": "味方全体に「禁令」を下し、戦闘スキルの使用を禁じる、戦闘スキルを使用した味方は攻撃を1回受ける。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800303006,
+				"Name": "譴罰の暴雷",
+				"SkillDesc": "連続でランダムな味方単体に少量の雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303007,
+				"Name": "逆らえぬ責罰",
+				"SkillDesc": "「禁令」を破った味方単体に雷属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800304001": {
 		"Id": "800304001",
 		"Name": "蚕食者の影",
@@ -18014,6 +20724,61 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800304007": {
+		"Id": "800304007",
+		"Name": "蚕食者の影",
+		"Introduction": "星核の力によって生み出された虚影、裂界の絶えず拡張する意思を執行している。\n知的生命の欲求が裂界の中に投影され形成された生命エネルギー。まるで1粒の沙が貝の中で真珠となったようである。それの原動力となる欲望はとっくに、歪み、ぼやけている。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800304002,
+				"Name": "流年の金棘",
+				"SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304003,
+				"Name": "流年の譴罰",
+				"SkillDesc": "指定した味方単体に大量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304004,
+				"Name": "黄金時代の纏綿",
+				"SkillDesc": "チャージ状態に入り、「追憶のスケール」を9層獲得し、次の行動で「黄金時代の解放」を発動する。攻撃を受けるたびに「追憶のスケール」を1層失う。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800304005,
+				"Name": "黄金時代の解放",
+				"SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える、ヒット数は自身が所持する「追憶のスケール」層数と同じ。「追憶のスケール」がない場合は発動に失敗する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304006,
+				"Name": "流年の盾",
+				"SkillDesc": "自身が受ける通常攻撃、戦闘スキル、必殺技、追加攻撃の与ダメージが小幅ダウンし、低確率で蚕食者の影に攻撃された味方を禁錮状態にする。",
+				"SkillTypeDesc": "天賦"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800305001": {
 		"Id": "800305001",
 		"Name": "ストーム",
@@ -18197,6 +20962,67 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800305006": {
+		"Id": "800305006",
+		"Name": "ストーム",
+		"Introduction": "裂界拡大の途中で侵蝕されたモンスター、力の源が変異した後、より柔軟な戦闘スタイルを得た。\nストームは風の力を利用して戦いを有利に進め、追い風に乗った迅速な矢を放つ。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305001,
+				"Name": "風を巡る光隕",
+				"SkillDesc": "指定した味方単体に風属性ダメージを与え、高確率で風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305002,
+				"Name": "踏風の行軍",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の風属性ダメージを与え、確率で攻撃を受けた味方を風化状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305003,
+				"Name": "風を掴む",
+				"SkillDesc": "チャージ状態に入り、風化状態にあるすべての味方をロックオンし、次の行動で「暴風の矢」を発動する。",
+				"SkillTypeDesc": "スキル"
+			},
+			{
+				"Id": 800305004,
+				"Name": "暴風の矢",
+				"SkillDesc": "風化状態の味方に風属性ダメージを与える。フィールド上に風化状態の味方が存在しない場合、このスキルの発動は失敗する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305005,
+				"Name": "急旋する風",
+				"SkillDesc": "風化状態の味方を攻撃した後、攻撃力が小幅アップする。弱点撃破されると効果が解除される。",
+				"SkillTypeDesc": "天賦"
+			},
+			{
+				"Id": 800305006,
+				"Name": "暴風の矢",
+				"SkillDesc": "風化状態の味方に風属性ダメージを与える。フィールド上に風化状態の味方が存在しない場合、このスキルの発動は失敗する。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801101001": {
 		"Id": "801101001",
 		"Name": "バリオン",
@@ -18336,6 +21162,62 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801101006": {
+		"Id": "801101006",
+		"Name": "バリオン",
+		"Introduction": "「反物質レギオン」が反粒子消散による対消滅を防ぐために、作った「バリオン」と「反バリオン」と呼ばれる持ち運び型の小型イオントラップ。\n「バリオン」は基本的な知能を有し、戦場では「ヴォイドレンジャー」の意志と召喚に反応でき、道を切り開く。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "消滅",
+				"SkillDesc": "指定した味方単体に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801101007": {
+		"Id": "801101007",
+		"Name": "バリオン",
+		"Introduction": "「反物質レギオン」が反粒子消散による対消滅を防ぐために、作った「バリオン」と「反バリオン」と呼ばれる持ち運び型の小型イオントラップ。\n「バリオン」は基本的な知能を有し、戦場では「ヴォイドレンジャー」の意志と召喚に反応でき、道を切り開く。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "消滅",
+				"SkillDesc": "指定した味方単体に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801102001": {
 		"Id": "801102001",
@@ -19107,6 +21989,111 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"801201019": {
+		"Id": "801201019",
+		"Name": "ヴォイドレンジャー・略奪",
+		"Introduction": "未だ死に絶えていない戦士が「戦争洪炉」の再鋳造によって「壊滅」という名の力を獲得した姿。反物質は彼らの残躯を満たし、負粒子がその体内で震えている。\n「反物質レギオン」の基本作戦ユニット、「壊滅」の意志の具現化。破壊的な本能のままに行動し、強烈な攻撃性を持つ。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩猟の刃",
+				"SkillDesc": "指定した味方単体に少量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "旋渦の躍撃",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801201020": {
+		"Id": "801201020",
+		"Name": "ヴォイドレンジャー・略奪",
+		"Introduction": "未だ死に絶えていない戦士が「戦争洪炉」の再鋳造によって「壊滅」という名の力を獲得した姿。反物質は彼らの残躯を満たし、負粒子がその体内で震えている。\n「反物質レギオン」の基本作戦ユニット、「壊滅」の意志の具現化。破壊的な本能のままに行動し、強烈な攻撃性を持つ。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩猟の刃",
+				"SkillDesc": "指定した味方単体に少量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "旋渦の躍撃",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801201021": {
+		"Id": "801201021",
+		"Name": "ヴォイドレンジャー・略奪",
+		"Introduction": "未だ死に絶えていない戦士が「戦争洪炉」の再鋳造によって「壊滅」という名の力を獲得した姿。反物質は彼らの残躯を満たし、負粒子がその体内で震えている。\n「反物質レギオン」の基本作戦ユニット、「壊滅」の意志の具現化。破壊的な本能のままに行動し、強烈な攻撃性を持つ。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩猟の刃",
+				"SkillDesc": "指定した味方単体に少量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "旋渦の躍撃",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の虚数属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801202001": {
 		"Id": "801202001",
 		"Name": "ヴォイドレンジャー・改ざん",
@@ -19247,6 +22234,41 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"801202005": {
+		"Id": "801202005",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "虚無の命意",
+				"SkillDesc": "ランダムな味方単体をロックオンし、敵全体の攻撃ターゲットにする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "影なき虚撃",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801202006": {
 		"Id": "801202006",
 		"Name": "ヴォイドレンジャー・改ざん",
@@ -19386,6 +22408,41 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801202010": {
+		"Id": "801202010",
+		"Name": "ヴォイドレンジャー・改ざん",
+		"Introduction": "対消滅の反応を耐え抜いた「ヴォイドレンジャー」、プラスとマイナスの粒子が奇妙な形態で体内にて短時間の均衡を保ち、「略奪者」以上の特殊な力を持つ。\n「反物質レギオン」の基本作戦ユニット、知性を有し、狭い範囲で「略奪者」の行動を制御できる。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "虚無の命意",
+				"SkillDesc": "ランダムな味方単体をロックオンし、敵全体の攻撃ターゲットにする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "影なき虚撃",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -19561,6 +22618,41 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801203004": {
+		"Id": "801203004",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801203001,
+				"Name": "虚灼砲",
+				"SkillDesc": "指定した味方単体に虚数属性ダメージを与え、自身を「オーバーヒート」状態にする。攻撃を受けた味方は確率で「起爆」状態になる。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801203002,
+				"Name": "熱障阻塞",
+				"SkillDesc": "自身の「オーバーヒート」状態を解除する。",
+				"SkillTypeDesc": "スキル"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801203005": {
 		"Id": "801203005",
@@ -20031,6 +23123,63 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"801301008": {
+		"Id": "801301008",
+		"Name": "歪み",
+		"Introduction": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虚実の投影",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略の鉄蹄",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "戦争の蹂躙",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋の弓矢",
+				"SkillDesc": "指定した味方単体をロックオンし、次の行動でターゲットに「強弓の終末」を発動する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "強弓の終末",
+				"SkillDesc": "指定した味方単体に大量の量子ダメージを与え、高確率で攻撃を受けた味方をもつれ状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801301009": {
 		"Id": "801301009",
 		"Name": "ヴォイドレンジャー・蹂躙",
@@ -20087,5 +23236,176 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801301010": {
+		"Id": "801301010",
+		"Name": "ヴォイドレンジャー・蹂躙",
+		"Introduction": "「反物質レギオン」が「戦争洪炉」で戦士と古獣の残片を鋳造して融合させた産物。\n 数は比較的少ないが、戦士の知性と古獣の強さと機動力を併せ持ち、そのいななきは大量のヴォイドレンジャーを呼び寄せることができる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虚実の投影",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略の鉄蹄",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "戦争の蹂躙",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋の弓矢",
+				"SkillDesc": "指定した味方単体をロックオンし、次の行動でターゲットに「強弓の終末」を発動する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "強弓の終末",
+				"SkillDesc": "指定した味方単体に大量の量子ダメージを与え、高確率で攻撃を受けた味方をもつれ状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801301011": {
+		"Id": "801301011",
+		"Name": "ヴォイドレンジャー・蹂躙",
+		"Introduction": "「反物質レギオン」が「戦争洪炉」で戦士と古獣の残片を鋳造して融合させた産物。\n 数は比較的少ないが、戦士の知性と古獣の強さと機動力を併せ持ち、そのいななきは大量のヴォイドレンジャーを呼び寄せることができる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虚実の投影",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略の鉄蹄",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "戦争の蹂躙",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋の弓矢",
+				"SkillDesc": "指定した味方単体をロックオンし、次の行動でターゲットに「強弓の終末」を発動する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "強弓の終末",
+				"SkillDesc": "指定した味方単体に大量の量子ダメージを与え、高確率で攻撃を受けた味方をもつれ状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801301012": {
+		"Id": "801301012",
+		"Name": "ヴォイドレンジャー・蹂躙",
+		"Introduction": "「反物質レギオン」が「戦争洪炉」で戦士と古獣の残片を鋳造して融合させた産物。\n 数は比較的少ないが、戦士の知性と古獣の強さと機動力を併せ持ち、そのいななきは大量のヴォイドレンジャーを呼び寄せることができる。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虚実の投影",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略の鉄蹄",
+				"SkillDesc": "指定した味方単体に量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "戦争の蹂躙",
+				"SkillDesc": "指定した味方単体および隣接する味方に少量の量子属性ダメージを与える。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋の弓矢",
+				"SkillDesc": "指定した味方単体をロックオンし、次の行動でターゲットに「強弓の終末」を発動する。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "強弓の終末",
+				"SkillDesc": "指定した味方単体に大量の量子ダメージを与え、高確率で攻撃を受けた味方をもつれ状態にする。",
+				"SkillTypeDesc": "スキル",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	}
 }

@@ -22,8 +22,14 @@ function collate(langCode) {
 		if (obj.SkillList.filter(e => (e+'').endsWith('9')).length > 0)
 			data.EnhancedSkill = collateSkills(textmap, obj.SkillList.filter(e => (e+'').endsWith('9'))[0]);
 		data.Ultimate = collateSkills(textmap, obj.SkillList[2]);
-		if (obj.SkillList.filter(e => (e+'').endsWith('10')).length > 0)
-			console.log(`Error: char ${id} skill has enhanced ultimate or something`);
+		if (obj.SkillList.filter(e => (e+'').endsWith('10')).length > 0) {
+			data.EnhancedBasicATK2 = collateSkills(textmap, obj.SkillList.filter(e => (e+'').endsWith('10'))[0]);
+			if (id !== "1213") console.log(`Error: char ${data.Name} ${id} skill has enhanced ultimate or something`);
+		}
+		if (obj.SkillList.filter(e => (e+'').endsWith('11')).length > 0) {
+			data.EnhancedBasicATK3 = collateSkills(textmap, obj.SkillList.filter(e => (e+'').endsWith('11'))[0]);
+			if (id !== "1213") console.log(`Error: char ${data.Name} ${id} skill has enhanced ultimate or something`);
+		}
 		data.Talent = collateSkills(textmap, obj.SkillList[3]);
 		data.Technique = collateSkills(textmap, obj.SkillList[5]);
 

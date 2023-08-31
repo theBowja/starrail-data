@@ -3408,7 +3408,7 @@
 	"2022040": {
 		"Id": "2022040",
 		"Name": "Abundance Sprite: Golden Hound",
-		"Introduction": "Anjing dengan ornamen emas yang anggun dan gesit.\nSaat terakhir kali \"Ambrosial Arbor\" berdiri, orang Xianzhou pernah menggunakan sihir untuk membiakkan banyak hewan asing dan langka. Golden Hound adalah salah satu hewan perang yang berbaris dengan formasi militer.",
+		"Introduction": "Anjing dengan ornamen emas yang anggun dan gesit.\nSaat terakhir kali \"Ambrosial Arbor\" berdiri, orang Xianzhou pernah menggunakan teknik sihir untuk membiakkan banyak hewan asing dan langka. Golden Hound adalah salah satu hewan perang yang berbaris dengan formasi militer.",
 		"ElementalWeaknesses": [
 			"Ice",
 			"Thunder",
@@ -3443,7 +3443,7 @@
 	"2022050": {
 		"Id": "2022050",
 		"Name": "Abundance Sprite: Wooden Lupus",
-		"Introduction": "Serigala yang diselimuti asap kabut, aksinya lincah dan tak terduga.\nSaat terakhir kali \"Ambrosial Arbor\" berdiri, orang Xianzhou pernah menggunakan sihir untuk membiakkan banyak hewan asing dan langka. Wooden Lupus adalah salah satu hewan perang yang berbaris dengan formasi militer.",
+		"Introduction": "Serigala yang diselimuti asap kabut, aksinya lincah dan tak terduga.\nSaat terakhir kali \"Ambrosial Arbor\" berdiri, orang Xianzhou pernah menggunakan teknik sihir untuk membiakkan banyak hewan asing dan langka. Wooden Lupus adalah salah satu hewan perang yang berbaris dengan formasi militer.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Wind",
@@ -3906,7 +3906,7 @@
 	"2023020": {
 		"Id": "2023020",
 		"Name": "Abundance Sprite: Malefic Ape",
-		"Introduction": "Gorila setinggi gunung batu dengan kekuatan yang menakutkan.\nSaat \"Ambrosial Arbor\" berdiri di sana terakhir kali, orang-orang Xianzhou mengembangbiakkan banyak makhluk fantastis dengan teknik kuno mereka. Malefic Ape adalah salah satu binatang perang yang menyertai formasi tentara.",
+		"Introduction": "Gorila setinggi gunung batu dengan kekuatan yang menakutkan.\nSaat \"Ambrosial Arbor\" berdiri di sana terakhir kali, orang-orang Xianzhou mengembangbiakkan banyak makhluk fantastis dengan teknik sihir mereka. Malefic Ape adalah salah satu hewan perang yang menyertai formasi tentara.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Ice",
@@ -3950,6 +3950,48 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"2023021": {
+		"Id": "2023021",
+		"Name": "Abundance Sprite: Malefic Ape (Bug)",
+		"Introduction": "Proyeksi palsu yang dihasilkan oleh kode yang terkena pengaruh, wujud referensi aslinya adalah gorila setinggi gunung batu dengan kekuatan yang menakutkan.\nSaat \"Ambrosial Arbor\" berdiri di sana terakhir kali, orang-orang Xianzhou mengembangbiakkan banyak makhluk fantastis dengan teknik kuno mereka. Malefic Ape adalah salah satu binatang perang yang menyertai formasi tentara.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302101,
+				"Name": "Simian Strike",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302102,
+				"Name": "Wrathful Roar",
+				"SkillDesc": "Mengunci 1 rekan tim secara acak. Setiap kali ada rekan tim yang melancarkan Skill, maka rekan tersebut akan dikunci sebagai target serangan yang baru, serta memperoleh 1 lapis \"Gusto\". Saat monster ini melancarkan \"Simian Strike\" yang berikutnya, akan mengonsumsi semua lapis \"Gusto\" dan meningkatkan ATK dirinya berdasarkan jumlah \"Gusto\". Jumlah \"Gusto\" yang diakumulasi akan hilang saat monster ini terkena Weakness Break.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202302104,
+				"Name": "Simian Howl",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada seluruh rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"2023030": {
 		"Id": "2023030",
@@ -4007,6 +4049,63 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"2023031": {
+		"Id": "2023031",
+		"Name": "The Ascended (Bug)",
+		"Introduction": "Proyeksi palsu yang dihasilkan oleh kode yang terkena pengaruh, wujud referensi aslinya adalah wujud yang diinginkan para pengikut \"Disciples of Sanctus Medicus\". Wujud sejati yang menghilangkan beban umat manusia dan telah ditempa ulang menggunakan jalur keabadian.\nDi zaman kuno, mereka yang mencari keabadian menerima kebijaksanaan dari Ambrosial Arbor dan menyebut diri mereka Bangsa Dewa. Mereka hidup tanpa batasan, membentuk daging mereka seperti sedang membentuk tanah liat. Di dalam pengubahan yang tak terhitung jumlahnya, mereka justru sudah melupakan wujud asli mereka.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202303101,
+				"Name": "Rite of Great Arbor Metamorphosis",
+				"SkillDesc": "Terus menerus mengakibatkan Wind DMG pada satu rekan tim secara acak, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303102,
+				"Name": "Guiding Vulturnus",
+				"SkillDesc": "Mengakibatkan Wind DMG pada 1 rekan tim dan target di sekitarnya, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303103,
+				"Name": "Arboreal Thorns",
+				"SkillDesc": "Mengakibatkan Wind DMG pada 1 rekan tim, serta berpeluang besar untuk membuat target yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303104,
+				"Name": "Black Prana's Snare",
+				"SkillDesc": "Berpeluang besar membuat seluruh rekan tim memasuki status \"Prana-Siphon\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303105,
+				"Name": "Vitals Drained",
+				"SkillDesc": "Saat menyerang target berstatus \"Prana-Siphon\", DMG yang diakibatkan pada serangan kali ini akan diubah menjadi \"Prana-Siphon\" dan durasi \"Prana-Siphon\" akan di-refresh. Besarnya \"Prana-Siphon\" memiliki batasan.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"2024010": {
 		"Id": "2024010",
@@ -4597,6 +4696,246 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002054": {
+		"Id": "8002054",
+		"Name": "Sequence Trotter",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205401,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205402,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205403,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002055": {
+		"Id": "8002055",
+		"Name": "Trot Prime",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205501,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205502,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205503,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002056": {
+		"Id": "8002056",
+		"Name": "Trot Deuce",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205601,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205602,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205603,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002057": {
+		"Id": "8002057",
+		"Name": "Trot Tri",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205701,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205702,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205703,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002058": {
+		"Id": "8002058",
+		"Name": "Sequence Trotter",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205601,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205602,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205603,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002059": {
+		"Id": "8002059",
+		"Name": "Sequence Trotter (Rare)",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205701,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205702,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205703,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002060": {
 		"Id": "8002060",
 		"Name": "Trotter of Destruction",
@@ -4644,6 +4983,53 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002061": {
+		"Id": "8002061",
+		"Name": "Trotter of Destruction",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800206101,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800206102,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800206103,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800206104,
+				"Name": "T—Taking Revenge",
+				"SkillDesc": "Setelah rekan tim menyerang musuh, monster ini akan menyerang seluruh rekan tim. Jumlah serangan yang dilancarkan sama dengan jumlah musuh yang terkena serangan sebelumnya.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002070": {
 		"Id": "8002070",
 		"Name": "Trotter of Abundance",
@@ -4689,6 +5075,52 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"8002071": {
+		"Id": "8002071",
+		"Name": "Trotter of Abundance",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800207101,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800207102,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800207103,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800207104,
+				"Name": "C—Cure You",
+				"SkillDesc": "Setelah target musuh selain Trotter of Abundance menerima serangan dari rekan tim, mengonsumsi HP dirinya untuk memulihkan HP rekan yang terkena serangan.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8002080": {
 		"Id": "8002080",
@@ -4782,6 +5214,52 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"8002082": {
+		"Id": "8002082",
+		"Name": "Trotter of Preservation",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208201,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800208202,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800208203,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800208204,
+				"Name": "P—Protect You",
+				"SkillDesc": "Saat memasuki pertempuran, memberikan \"P—Protect You\" pada seluruh musuh. \"P—Protect You\" dapat menahan 1 kali semua DMG dari serangan selain DoT. Seluruh musuh berbagi lapisan \"P—Protect You\" bersama.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002090": {
 		"Id": "8002090",
 		"Name": "Sequence Trotter",
@@ -4821,6 +5299,166 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"8002091": {
+		"Id": "8002091",
+		"Name": "Sequence Trotter",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800209101,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800209102,
+				"Name": "Run... Run!",
+				"SkillDesc": "Trotter panik dan akan melarikan diri setelah 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800209103,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002100": {
+		"Id": "8002100",
+		"Name": "Trot Prime",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800210001,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800210002,
+				"Name": "Run... Run!",
+				"SkillDesc": "Trotter panik dan akan melarikan diri setelah 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800210003,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002101": {
+		"Id": "8002101",
+		"Name": "Trot Deuce",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800210101,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800210102,
+				"Name": "Run... Run!",
+				"SkillDesc": "Trotter panik dan akan melarikan diri setelah 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800210103,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002102": {
+		"Id": "8002102",
+		"Name": "Trot Tri",
+		"Introduction": "Makhluk lintas dimensi yang tersesat di antara bintang-bintang, lembut sifatnya, manis rasanya, dan tidak dapat dimakan. Sebagian besar hidupnya dihabiskan untuk makan dan melarikan diri. Para petualang yang bertemu dengannya menganggapnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800210201,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800210202,
+				"Name": "Run... Run!",
+				"SkillDesc": "Trotter panik dan akan melarikan diri setelah 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800210203,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8003010": {
 		"Id": "8003010",
@@ -5419,6 +6057,68 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"8003052": {
+		"Id": "8003052",
+		"Name": "Stormbringer",
+		"Introduction": "Monster yang terkena korosi di perpanjangan Fragmentum. Setelah mengalami mutasi sumber kekuatan, makhluk ini menjadi memiliki metode bertarung yang lebih fleksibel.\nStormbringer akan memanfaatkan kekuatan Wind untuk membantu pertempuran diri, menggunakan arah angin untuk menembak panah yang lebih cepat.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305201,
+				"Name": "Watchful Meteor",
+				"SkillDesc": "Mengakibatkan Wind DMG pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuatnya memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305202,
+				"Name": "Wind Walker",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan target di sekitarnya, serta berpeluang untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305203,
+				"Name": "Wind-Twisting Crossbow",
+				"SkillDesc": "Memasuki status Charge dan mengunci seluruh rekan tim yang memasuki status Wind Shear. Aksi berikutnya akan melancarkan \"Windfall Storm\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800305204,
+				"Name": "Windfall Storm",
+				"SkillDesc": "Mengakibatkan Wind DMG pada rekan tim yang berstatus Wind Shear. Pelancaran Skill ini akan gagal bila tidak ada rekan tim yang berstatus Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305205,
+				"Name": "Storm Cyclone",
+				"SkillDesc": "Meningkatkan sedikit ATK dirinya setelah menyerang rekan tim dengan status Wind Shear. Saat terkena Weakness Break, efek ini akan terhapus.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 800305206,
+				"Name": "Windfall Storm",
+				"SkillDesc": "Mengakibatkan Wind DMG pada rekan tim yang berstatus Wind Shear. Pelancaran Skill ini akan gagal bila tidak ada rekan tim yang berstatus Wind Shear.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8011010": {
 		"Id": "8011010",
@@ -6299,6 +6999,64 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8013013": {
+		"Id": "8013013",
+		"Name": "Voidranger: Trampler",
+		"Introduction": "Produk \"Antimatter Legion\" yang memanfaatkan \"Warforge\" untuk menyusun kembali dan menggabungkan sisa-sisa tentara yang gugur dan Leviathan.\nMeskipun jumlahnya relatif jarang, mereka memiliki kecerdasan seorang tentara dengan kekuatan dan memiliki mobilitas Leviathan. Jeritannya dapat memanggil Voidranger dalam jumlah besar.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301301,
+				"Name": "Unreal Projection",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301302,
+				"Name": "Rule of Force",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301303,
+				"Name": "War Trample",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301304,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "Mengunci 1 rekan tim dan melancarkan \"End of Bow\" pada target tersebut di aksi berikutnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301305,
+				"Name": "End of Bow",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah besar pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat target yang terkena serangan memasuki status Entanglement.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8013141": {
 		"Id": "8013141",
 		"Name": "Antimatter Engine",
@@ -6696,6 +7454,176 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"8022010": {
+		"Id": "8022010",
+		"Name": "Juvenile Sting",
+		"Introduction": "Jentik dari True Sting. Berdasarkan tahap pertumbuhannya, jentik True Sting dapat dibagi lebih lanjut menjadi Juvenile Sting (Jentik True Sting Muda) dan Lesser Sting (Jentik True Sting yang Lebih Kecil).",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802201001,
+				"Name": "Wingflap",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802201002,
+				"Name": "Meiotic Division",
+				"SkillDesc": "Mereproduksi 1 entitas reproduksi dari dirinya sendiri, efek ini dapat diaktifkan kembali setelah 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 802201004,
+				"Name": "Entomon Eulogy",
+				"SkillDesc": "Saat terkena serangan mematikan akan mengakibatkan Wind DMG pada seluruh musuh, dan berpeluang besar meningkatkan sedikit DMG yang diterima target musuh.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8022020": {
+		"Id": "8022020",
+		"Name": "Lesser Sting",
+		"Introduction": "Jentik dari True Sting. Berdasarkan tahap pertumbuhannya, jentik True Sting dapat dibagi lebih lanjut menjadi Juvenile Sting (Jentik True Sting Muda) dan Lesser Sting (Jentik True Sting yang Lebih Kecil).",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802202001,
+				"Name": "Prepare to Fight",
+				"SkillDesc": "Memasuki status Charge. Melancarkan \"Bursting Detonation\" di aksi selanjutnya.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 802202002,
+				"Name": "Bursting Detonation",
+				"SkillDesc": "Meledakkan diri sendiri, mengakibatkan Wind DMG pada 1 rekan tim yang ditargetkan dan target di sekitarnya, dan berpeluang besar mengakibatkan rekan yang terkena serangan memasuki status \"Outrage\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802202004,
+				"Name": "Entomon Eulogy",
+				"SkillDesc": "Saat terkena serangan mematikan akan mengakibatkan Wind DMG pada seluruh musuh, dan berpeluang besar meningkatkan sedikit DMG yang diterima target musuh.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8024010": {
+		"Id": "8024010",
+		"Name": "Swarm: True Sting (Complete)",
+		"Introduction": "Sir Duroy dari Intelligentsia Guild menjelajah luas di lautan bintang, dan pernah menulis tiga puluh volume \"Catatan tentang Serangga Asing di Berbagai Semesta\". Di dalam buku tersebut tercatat dengan rinci lebih dari selusin jenis kutu kayu yang telah dikonfirmasi, serta subspesies yang tak terhitung jumlahnya yang tersebar di antara bintang-bintang.",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802401001,
+				"Name": "Time to Battle",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar membuat rekan yang terkena serangan memasuki 2 lapis status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401002,
+				"Name": "War Gear",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan. Jika target yang terkena serangan berada dalam status Wind Shear, maka Wind Shear tersebut akan mengakibatkan 1 kali DMG.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401003,
+				"Name": "Cyclonic Swarm",
+				"SkillDesc": "Mengakibatkan Wind DMG pada seluruh rekan tim dan berpeluang besar membuat rekan yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401004,
+				"Name": "Propagation",
+				"SkillDesc": "Mereproduksi koloni True Sting.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 802401005,
+				"Name": "Ready Order",
+				"SkillDesc": "Memasuki status Charge. Melancarkan \"Swarm Onslaught\" di aksi selanjutnya.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 802401006,
+				"Name": "Swarm Onslaught",
+				"SkillDesc": "Menghapus semua Crowd Control Debuff dan Weakness Break milik True Sting dan mengakibatkan Wind DMG pada rekan yang ditargetkan. Selain itu, setiap kali rekan yang ditargetkan terkena serangan, dia berpeluang besar untuk memasuki 1 lapis status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401007,
+				"Name": "Swarm Onslaught",
+				"SkillDesc": "Menghapus semua Crowd Control Debuff dan Weakness Break milik True Sting dan mengakibatkan Wind DMG pada rekan yang ditargetkan. Selain itu, setiap kali rekan yang ditargetkan terkena serangan, dia berpeluang besar untuk memasuki 1 lapis status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401008,
+				"Name": "Transmission Pheromone",
+				"SkillDesc": "Setiap kali mereproduksi satu koloni True Sting di lapangan, semua koloni True Sting akan memperoleh 1 lapis peningkatan DMG. Hanya 1 efek \"Transmission Pheromone\" yang dapat berlaku di medan tempur.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 802401009,
+				"Name": "Entomon Eulogy",
+				"SkillDesc": "Saat terkena serangan mematikan akan mengakibatkan Wind DMG pada seluruh musuh, dan berpeluang besar meningkatkan sedikit DMG yang diterima target musuh.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401011,
+				"Name": "Propagation",
+				"SkillDesc": "Mereproduksi koloni True Sting.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"100202001": {
 		"Id": "100202001",
@@ -7188,6 +8116,41 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"100202015": {
+		"Id": "100202015",
+		"Name": "Vagrant",
+		"Introduction": "Demi bertahan hidup, orang-orang Underworld cukup putus asa untuk pergi menjelajah ke Fragmentum, mencari persediaan apa pun yang ada. Mesin kuno yang mereka gali telah menjadi penolong terbaik mereka.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Shovel Attack",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspire",
+				"SkillDesc": "Meningkatkan ATK dari 1 musuh dan membuatnya segera beraksi.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"100203001": {
 		"Id": "100203001",
@@ -9010,6 +9973,54 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"100301011": {
+		"Id": "100301011",
+		"Name": "Silvermane Lieutenant",
+		"Introduction": "Pemimpin tim \"Silvermane Guard\" Garnisun Belobog.\nSilvermane Lieutenant akan mengangkat perisai raksasa untuk memperkuat diri selama pertempuran. Menyerang Silvermane Lieutenant dengan perisai akan segera memicu Serangan Balasan yang kuat.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Assault",
+				"SkillDesc": "Mengakibatkan Physical DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Pierce",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah besar pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Shield Reflect",
+				"SkillDesc": "Memasuki status Serangan Balasan. Saat terkena serangan rekan tim, akan langsung segera melancarkan Skill \"Pierce\" pada penyerang.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Reinforcement",
+				"SkillDesc": "Memanggil \"Silvermane Soldier\" atau \"Silvermane Gunner\".",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"100401001": {
 		"Id": "100401001",
 		"Name": "Cocolia",
@@ -9579,6 +10590,40 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101201008": {
+		"Id": "101201008",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "Segera memulihkan HP seluruh tim musuh.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101201009": {
 		"Id": "101201009",
 		"Name": "Automaton Hound",
@@ -9646,6 +10691,40 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"101201011": {
+		"Id": "101201011",
+		"Name": "Automaton Hound",
+		"Introduction": "Sebuah unit mesin otomatis yang dibuat dengan teknologi Old World. Terlihat seperti kendaraan transportasi yang tujuannya telah lama terlupakan.\nDalam pertempuran, Automaton Hound dapat memberikan dukungan dan memulihkan HP sesama rekan.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "Segera memulihkan HP seluruh tim musuh.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -10598,6 +11677,35 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101203012": {
+		"Id": "101203012",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Unstable Forcefield",
+				"SkillDesc": "Mengakibatkan Physical DMG pada 1 rekan tim, serta memperoleh Barrier yang dapat menahan semua DMG selain DoT, efek Barrier akan hilang setelah terkena serangan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101203013": {
 		"Id": "101203013",
 		"Name": "Automaton Beetle",
@@ -10626,6 +11734,35 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"101203014": {
+		"Id": "101203014",
+		"Name": "Automaton Beetle",
+		"Introduction": "Sebuah unit mesin otomatis yang dibuat dengan teknologi Old World. Kakinya dilengkapi dengan lampu sinyal, mungkin digunakan untuk operasi penambangan atau konstruksi.\nDalam pertempuran, Automaton Beetle dapat menciptakan medan gaya untuk melindungi dirinya sendiri.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Unstable Forcefield",
+				"SkillDesc": "Mengakibatkan Physical DMG pada 1 rekan tim, serta memperoleh Barrier yang dapat menahan semua DMG selain DoT, efek Barrier akan hilang setelah terkena serangan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -11391,6 +12528,60 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101301015": {
+		"Id": "101301015",
+		"Name": "Automaton Grizzly",
+		"Introduction": "Sebuah unit mesin otomatis yang dibuat dengan teknologi Old World. Robot ini sudah diperkuat dengan armor yang berat untuk maju dan melindungi Silvermane Guard.\nSelama pertempuran, Automaton Grizzly akan memanggil Automaton Spider ke dalam pertempuran dan melancarkan serangan Charge yang kuat.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Detonation Order",
+				"SkillDesc": "Memanggil \"Automaton Spider\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Enrage Order",
+				"SkillDesc": "Berpeluang untuk membuat seluruh rekan tim memasuki status Taunt.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Overcombust Order",
+				"SkillDesc": "Memasuki status Charge. Aksi berikutnya akan melancarkan \"Purge Order\" pada seluruh rekan tim.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Purge Order",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah besar pada seluruh rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Destruction Order",
+				"SkillDesc": "Mengakibatkan Physical DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101302001": {
 		"Id": "101302001",
 		"Name": "Automaton Direwolf",
@@ -12081,6 +13272,55 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101302015": {
+		"Id": "101302015",
+		"Name": "Automaton Direwolf",
+		"Introduction": "Sebuah unit mesin otomatis yang dibuat dengan teknologi Old World. Tipe robot humanoid yang langka ini dilengkapi dengan gergaji di lengan kanannya, mungkin digunakan untuk operasi penambangan atau konstruksi.\nSelama pertempuran, \"Automaton Direwolf\" akan menggunakan gergaji mesinnya untuk menyebabkan Bleed pada lawan dan terus kehilangan HP.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Felling Order",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah besar pada 1 rekan tim, memiliki peluang untuk memberikan status Bleed pada target yang diserang. Jika target yang diserang tidak dilindungi oleh Shield, maka satu rekan dari target tersebut secara acak akan terkena \"Dismantle\" sebanyak 1 kali.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Lock On Target",
+				"SkillDesc": "Mengunci 1 rekan tim. Aksi berikutnya akan melancarkan \"Felling Order\" pada target.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Disintegration Order",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk menambahkan 1 lapis status Bleed padanya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Dismantle",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk menambahkan 1 lapis status Bleed padanya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101401001": {
 		"Id": "101401001",
 		"Name": "Svarog",
@@ -12507,6 +13747,77 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"101401007": {
+		"Id": "101401007",
+		"Name": "Svarog",
+		"Introduction": "Relik kuno dari Old World ini adalah unit kontrol otomatis yang ditinggalkan oleh Grup Pengembang Geomarrow. Tidak seperti mesin tanpa pikiran lainnya yang hanya dapat menerima instruksi, Svarog memiliki kemampuan berpikir yang kompleks.\nDalam pertempuran, Svarog akan memanggil lengan mekanik untuk meraih dan mengontrol musuh sambil memberikan pukulan yang berat pada musuh.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101401001,
+				"Name": "Banishing Punch",
+				"SkillDesc": "Mengakibatkan Physical DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401002,
+				"Name": "Burning Beam",
+				"SkillDesc": "Mengakibatkan Physical DMG pada 1 rekan tim yang ditargetkan dan menunda aksi rekan tim yang terkena serangan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401003,
+				"Name": "Oppressive Embrace",
+				"SkillDesc": "Membuat 1 rekan tim memasuki status \"Imprisoned\" dan membuatnya tidak dapat beraksi ataupun dijadikan target. Saat Auxiliary Robot Arm Unit mengalami Weakness Break, status \"Imprisoned\" pada target tersebut akan segera dihapus.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401004,
+				"Name": "Shrewd Bombing",
+				"SkillDesc": "Mengakibatkan Physical DMG dalam jumlah besar pada seluruh rekan tim, serta berpeluang besar untuk mengurangi DEF target yang terkena serangan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401005,
+				"Name": "Controlled Blasting",
+				"SkillDesc": "Auxiliary Robot Arm Unit meledak dan mengakibatkan Physical DMG dalam jumlah besar pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401006,
+				"Name": "Overload Warning",
+				"SkillDesc": "Auxiliary Robot Arm Unit memasuki status \"Overload Countdown\". Setelah memasuki status ini, aksi berikutnya akan melancarkan \"Controlled Blasting\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401007,
+				"Name": "Boost Deployment",
+				"SkillDesc": "Memanggil \"Auxiliary Robot Arm Unit\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"102201001": {
 		"Id": "102201001",
 		"Name": "Everwinter Shadewalker",
@@ -12710,6 +14021,35 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102201008": {
+		"Id": "102201008",
+		"Name": "Everwinter Shadewalker",
+		"Introduction": "Bayangan yang berkeliaran di Fragmentum setelah kedatangan Kebekuan Abadi. Bayangan itu meniru sosok Silvermane Guard dengan cara nyeleneh. Badannya dilengkapi armor seragam yang sama dengan para tentara Belobog, tapi kepalanya digantikan oleh hamparan es tanpa fitur wajah.\nEverwinter Shadewalker akan mengayunkan kapak es mereka untuk memperlambat aksi musuh.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Frost Crush",
+				"SkillDesc": "Mengakibatkan Ice DMG pada 1 rekan tim dan menunda aksi target yang terkena serangan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"102202001": {
 		"Id": "102202001",
@@ -13030,6 +14370,35 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102202012": {
+		"Id": "102202012",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "Bayangan yang berkeliaran di Fragmentum setelah kedatangan Kebekuan Abadi. Bayangan itu meniru sosok Silvermane Guard dengan cara yang aneh. Badannya dilengkapi armor seragam yang sama dengan para tentara Belobog, tapi kepalanya digantikan oleh bara api tanpa fitur wajah.\nIncineration Shadewalker akan mengayunkan kapaknya yang berapi-api dan membakar musuhnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "Mengakibatkan Fire DMG pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Burn.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -13765,6 +15134,35 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"200201001": {
+		"Id": "200201001",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200201001,
+				"Name": "Cloud Edge",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk meningkatkan sedikit DMG yang diterima target.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"200201002": {
 		"Id": "200201002",
 		"Name": "Cloud Knights Patroller",
@@ -13793,6 +15191,64 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"200202002": {
+		"Id": "200202002",
+		"Name": "Flying Sword",
+		"Introduction": "Unit serangan melayang yang dioperasikan oleh Chi, senjata yang dikenal sebagai \"Flying Sword\". Terhubung erat dengan hati dan pikiran pendekar pedang, bagai tangan dan jari.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200202001,
+				"Name": "Jadecarve Strike",
+				"SkillDesc": "Mengakibatkan Ice DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"200202102": {
+		"Id": "200202102",
+		"Name": "Flying Sword",
+		"Introduction": "Unit serangan melayang yang dioperasikan oleh Chi, senjata yang dikenal sebagai \"Flying Sword\". Terhubung erat dengan hati dan pikiran pendekar pedang, bagai tangan dan jari.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200202101,
+				"Name": "Jadecarve Strike",
+				"SkillDesc": "Mengakibatkan Ice DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"200401001": {
 		"Id": "200401001",
@@ -14042,6 +15498,68 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"200402002": {
+		"Id": "200402002",
+		"Name": "Cloud Knight Lieutenant: Yanqing",
+		"Introduction": "Pengawal Jenderal Jing Yuan, jenius ilmu pedang yang bahkan masih belum dewasa.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200402001,
+				"Name": "Rapturous Wind",
+				"SkillDesc": "Mengakibatkan Ice DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402002,
+				"Name": "Swallow Return",
+				"SkillDesc": "Memanggil 4 \"Flying Sword\", dapatkan efek \"Sword Formation\" untuk meningkatkan SPD diri, membuat \"Flying Sword\" mendapatkan \"Formation Core\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 200402003,
+				"Name": "Ironthorn",
+				"SkillDesc": "Mengakibatkan Ice DMG pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat target yang terkena serangan memasuki status Frozen.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402004,
+				"Name": "Ballad of Formation Breaker",
+				"SkillDesc": "Mengakibatkan Ice DMG pada 1 rekan tim yang ditargetkan dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402005,
+				"Name": "Verging Sword Ki",
+				"SkillDesc": "Memasuki status Charge. Aksi berikutnya melancarkan \"Cascading Galaxy\" pada seluruh rekan tim.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 200402006,
+				"Name": "Cascading Galaxy",
+				"SkillDesc": "Mengakibatkan Ice DMG dalam jumlah besar pada seluruh rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"201101001": {
 		"Id": "201101001",
 		"Name": "Entranced Ingenium: Obedient Dracolion",
@@ -14264,6 +15782,42 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"201201005": {
+		"Id": "201201005",
+		"Name": "Entranced Ingenium: Illumination Dragonfish",
+		"Introduction": "Sebuah penemuan cerdik yang dibuat oleh pengrajin Artisanship Commission. Awalnya adalah lampu penerangan mati yang digunakan untuk menerangi kegelapan, tapi kini telah diberikan suatu \"hidup\" singkat karena modifikasi tertentu.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201201001,
+				"Name": "Nightly Luminosity",
+				"SkillDesc": "Mengakibatkan Fire DMG dalam jumlah kecil pada seluruh rekan tim, serta berpeluang besar mengurangi DEF rekan tim yang terkena serangan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 201201002,
+				"Name": "Candle Flame",
+				"SkillDesc": "Saat terkena serangan mematikan akan mengakibatkan Fire DMG ke seluruh musuh, serta berpeluang besar mengurangi DEF target musuh yang terkena serangan.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"201301001": {
 		"Id": "201301001",
 		"Name": "Borderland Poet",
@@ -14411,6 +15965,55 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"201301005": {
+		"Id": "201301005",
+		"Name": "Aurumaton Gatekeeper",
+		"Introduction": "Garnisun Aurumaton yang diciptakan dengan teknologi kecerdasan kuno.\nBertahun-tahun yang lalu, Aurumaton berlayar bersama Xianzhou pergi mencari resep ilahi keabadian. Selama perjalanan, mereka memantau dan membantu umat manusia dalam banyak perang, tapi dikalahkan oleh orang-orang Xianzhou setelah pemberontakan.\nSekarang semua Aurumaton dikendalikan dengan menggunakan jimat dan digunakan untuk menjaga tempat-tempat penting.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.4
+		},
+		"SkillList": [
+			{
+				"Id": 201301001,
+				"Name": "Farewell Etiquette",
+				"SkillDesc": "Level \"Sanction Rate\" meningkat ketika rekan tim melancarkan Skill atau Ultimate mereka. Saat \"Sanction Rate\" mencapai level maksimumnya, akan segera memasuki \"Mode Sanction\" dan memanggil \"Entranced Ingenium: Illumination Dragonfish\".",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 201301002,
+				"Name": "Dread",
+				"SkillDesc": "Meningkatkan level \"Sanction Rate\" dan mengakibatkan Imaginary DMG dalam jumlah kecil pada seluruh rekan tim, di saat bersamaan juga berpeluang besar untuk membuat rekan tim memasuki status Weaken.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 201301003,
+				"Name": "Restraint",
+				"SkillDesc": "Mengakibatkan Imaginary DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 201301004,
+				"Name": "Enchainment",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah besar pada 1 rekan tim dan di saat yang sama berpeluang besar untuk membuat target yang terkena serangan memasuki status Imprisonment.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202201001": {
 		"Id": "202201001",
 		"Name": "Mara-Struck Soldier",
@@ -14495,6 +16098,174 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"202201003": {
+		"Id": "202201003",
+		"Name": "Furtive Assassin",
+		"Introduction": "Seorang pembunuh yang menggunakan teknik Cloudhymn untuk menghilangkan dirinya, tidak diketahui siapa yang mengutusnya.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenate",
+				"SkillDesc": "Memulihkan HP dalam jumlah tertentu saat menerima serangan mematikan. Efek ini tidak memiliki batas waktu tapi dapat dihapus. Efek ini hanya dapat dipicu 1 kali per 1 pertempuran.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201004": {
+		"Id": "202201004",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenate",
+				"SkillDesc": "Memulihkan HP dalam jumlah tertentu saat menerima serangan mematikan. Efek ini tidak memiliki batas waktu tapi dapat dihapus. Efek ini hanya dapat dipicu 1 kali per 1 pertempuran.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201005": {
+		"Id": "202201005",
+		"Name": "Furtive Assassin",
+		"Introduction": "Seorang pembunuh yang menggunakan teknik Cloudhymn untuk menghilangkan dirinya, tidak diketahui siapa yang mengutusnya.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenate",
+				"SkillDesc": "Memulihkan HP dalam jumlah tertentu saat menerima serangan mematikan. Efek ini tidak memiliki batas waktu tapi dapat dihapus. Efek ini hanya dapat dipicu 1 kali per 1 pertempuran.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201007": {
+		"Id": "202201007",
+		"Name": "Mara-Struck Soldier",
+		"Introduction": "Tentara Xianzhou yang entah kenapa menjadi gila. Cangkang tubuhnya sudah tidak seperti manusia dan terus bermutasi. Dikatakan bahwa orang-orang Xianzhou yang berumur panjang akan terserang \"Mara\".",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenate",
+				"SkillDesc": "Memulihkan HP dalam jumlah tertentu saat menerima serangan mematikan. Efek ini tidak memiliki batas waktu tapi dapat dihapus. Efek ini hanya dapat dipicu 1 kali per 1 pertempuran.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202202001": {
 		"Id": "202202001",
 		"Name": "Seat of Divine Foresight Guard",
@@ -14535,6 +16306,47 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"202202002": {
+		"Id": "202202002",
+		"Name": "Furtive Assassin",
+		"Introduction": "Seorang pembunuh yang menggunakan teknik Cloudhymn untuk menghilangkan dirinya, tidak diketahui siapa yang mengutusnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "Seeding Core",
+				"SkillDesc": "Membuat 1 rekan tim memasuki status \"Spur of Thunderwoe\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202202002,
+				"Name": "Thundering Reign",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "Core Rupture",
+				"SkillDesc": "Saat menerima serangan mematikan, mengakibatkan Lightning DMG pada rekan tim yang mendapat status \"Spur of Thunderwoe\" dari dirinya, lalu menghapus status \"Spur of Thunderwoe\" pada mereka.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202202003": {
 		"Id": "202202003",
@@ -14617,6 +16429,152 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202202005": {
+		"Id": "202202005",
+		"Name": "Unsought Guest",
+		"Introduction": "Seorang pendatang yang datang dengan niat jahat, menyamar untuk membasmi wujud reinkarnasi Dan Feng, datang untuk menghabisi Dan Heng.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "Seeding Core",
+				"SkillDesc": "Membuat 1 rekan tim memasuki status \"Spur of Thunderwoe\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202202002,
+				"Name": "Thundering Reign",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "Core Rupture",
+				"SkillDesc": "Saat menerima serangan mematikan, mengakibatkan Lightning DMG pada rekan tim yang mendapat status \"Spur of Thunderwoe\" dari dirinya, lalu menghapus status \"Spur of Thunderwoe\" pada mereka.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202202006": {
+		"Id": "202202006",
+		"Name": "Furtive Assassin",
+		"Introduction": "Seorang pembunuh yang menggunakan teknik Cloudhymn untuk menghilangkan dirinya, tidak diketahui siapa yang mengutusnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "Seeding Core",
+				"SkillDesc": "Membuat 1 rekan tim memasuki status \"Spur of Thunderwoe\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202202002,
+				"Name": "Thundering Reign",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "Core Rupture",
+				"SkillDesc": "Saat menerima serangan mematikan, mengakibatkan Lightning DMG pada rekan tim yang mendapat status \"Spur of Thunderwoe\" dari dirinya, lalu menghapus status \"Spur of Thunderwoe\" pada mereka.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202204001": {
+		"Id": "202204001",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202204001,
+				"Name": "Horn Gore",
+				"SkillDesc": "Mengakibatkan Wind DMG pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202204002,
+				"Name": "Rebound Roar",
+				"SkillDesc": "Setelah menerima serangan mematikan, aksi target musuh yang berdekatan akan dipercepat.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202206001": {
+		"Id": "202206001",
+		"Name": "Furtive Assassin",
+		"Introduction": "Seorang pembunuh yang menggunakan teknik Cloudhymn untuk menghilangkan dirinya, tidak diketahui siapa yang mengutusnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202206001,
+				"Name": "Mounted Crossbow",
+				"SkillDesc": "Terus-menerus mengakibatkan Lightning DMG pada satu rekan tim secara acak.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202301001": {
 		"Id": "202301001",
@@ -14948,6 +16906,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"202301007": {
+		"Id": "202301007",
+		"Name": "Furtive Assassin",
+		"Introduction": "Seorang pembunuh yang menggunakan teknik Cloudhymn untuk menghilangkan dirinya, tidak diketahui siapa yang mengutusnya.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Thunder-Shock",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Punishing Bolts",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Thudding Calamity",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah besar pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Mara-Summon",
+				"SkillDesc": "Mengonsumsi HP dirinya dan memanggil \"Mara-Struck Soldier\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Vigor Draining",
+				"SkillDesc": "Saat ada target musuh lain yang memiliki \"Rebirth\" di pertempuran, monster ini akan memiliki \"Draning Hit\". Setelah serangan mengenai rekan tim, HP monster ini akan pulih.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202301008": {
 		"Id": "202301008",
 		"Name": "Disciples of Sanctus Medicus: Shape Shifter",
@@ -15003,10 +17016,120 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"202301010": {
+		"Id": "202301010",
+		"Name": "Disciples of Sanctus Medicus: Shape Shifter",
+		"Introduction": "Praktisi yang mendambakan untuk menghidupkan kembali Rahasia Kelimpahan dan membimbing Xianzhou kembali ke Jalan Suci.\nKini keinginan mereka telah terpenuhi. Mereka diberkahi dengan kekuatan relik kuno, yang kemudian dijadikan sebagai senjata dan pelindung, serta berhasil menyentuh rahasia keabadian.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Thunder-Shock",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Punishing Bolts",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Thudding Calamity",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah besar pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Mara-Summon",
+				"SkillDesc": "Mengonsumsi HP dirinya dan memanggil \"Mara-Struck Soldier\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Vigor Draining",
+				"SkillDesc": "Saat ada target musuh lain yang memiliki \"Rebirth\" di pertempuran, monster ini akan memiliki \"Draning Hit\". Setelah serangan mengenai rekan tim, HP monster ini akan pulih.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202301011": {
+		"Id": "202301011",
+		"Name": "Disciples of Sanctus Medicus: Shape Shifter",
+		"Introduction": "Praktisi yang mendambakan untuk menghidupkan kembali Rahasia Kelimpahan dan membimbing Xianzhou kembali ke Jalan Suci.\nKini keinginan mereka telah terpenuhi. Mereka diberkahi dengan kekuatan relik kuno, yang kemudian dijadikan sebagai senjata dan pelindung, serta berhasil menyentuh rahasia keabadian.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Thunder-Shock",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Punishing Bolts",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Thudding Calamity",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah besar pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Mara-Summon",
+				"SkillDesc": "Mengonsumsi HP dirinya dan memanggil \"Mara-Struck Soldier\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Vigor Draining",
+				"SkillDesc": "Saat ada target musuh lain yang memiliki \"Rebirth\" di pertempuran, monster ini akan memiliki \"Draning Hit\". Setelah serangan mengenai rekan tim, HP monster ini akan pulih.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202302001": {
 		"Id": "202302001",
 		"Name": "Abundance Sprite: Malefic Ape",
-		"Introduction": "Gorila setinggi gunung batu dengan kekuatan yang menakutkan.\nSaat \"Ambrosial Arbor\" berdiri di sana terakhir kali, orang-orang Xianzhou mengembangbiakkan banyak makhluk fantastis dengan teknik kuno mereka. Malefic Ape adalah salah satu binatang perang yang menyertai formasi tentara.",
+		"Introduction": "Gorila setinggi gunung batu dengan kekuatan yang menakutkan.\nSaat \"Ambrosial Arbor\" berdiri di sana terakhir kali, orang-orang Xianzhou mengembangbiakkan banyak makhluk fantastis dengan teknik sihir mereka. Malefic Ape adalah salah satu hewan perang yang menyertai formasi tentara.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Ice",
@@ -15098,6 +17221,54 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202302004": {
+		"Id": "202302004",
+		"Name": "Abundance Sprite: Malefic Ape",
+		"Introduction": "Gorila setinggi gunung batu dengan kekuatan yang menakutkan.\nSaat \"Ambrosial Arbor\" berdiri di sana terakhir kali, orang-orang Xianzhou mengembangbiakkan banyak makhluk fantastis dengan teknik sihir mereka. Malefic Ape adalah salah satu hewan perang yang menyertai formasi tentara.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302001,
+				"Name": "Simian Strike",
+				"SkillDesc": "Mengonsumsi 1 lapis \"Gusto\" dan mengakibatkan Quantum DMG pada 1 rekan tim yang ditandai sebagai target pengawasan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302002,
+				"Name": "Simian Strike",
+				"SkillDesc": "Mengonsumsi 1 lapis \"Gusto\" dan mengakibatkan Quantum DMG pada 1 rekan tim yang ditandai sebagai target pengawasan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302003,
+				"Name": "Fiery Majestiy",
+				"SkillDesc": "Meningkatkan DMG yang diakibatkan diri. Efek peningkatan DMG dapat ditumpuk.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 202302004,
+				"Name": "Wrathful Roar",
+				"SkillDesc": "Memperoleh 3 lapis \"Gusto\" dan menandai 1 rekan tim secara acak sebagai target pengawasan. Setiap kali rekan tim melancarkan Skill, rekan tersebut akan ditandai sebagai target pelancaran Skill yang baru hingga \"Gusto\" habis digunakan.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202303001": {
 		"Id": "202303001",
@@ -15767,6 +17938,62 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800101011": {
+		"Id": "800101011",
+		"Name": "Flamespawn",
+		"Introduction": "Elemen kristal yang berkeliaran dan hanya memiliki kecerdasan paling sederhana. Ia melayang di Fragmentum dalam bentuk seperti burung yang memancarkan radiasi luar biasa panas, membakar habis semua yang dilaluinya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "Mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800101012": {
+		"Id": "800101012",
+		"Name": "Flamespawn",
+		"Introduction": "Elemen kristal yang berkeliaran dan hanya memiliki kecerdasan paling sederhana. Ia melayang di Fragmentum dalam bentuk seperti burung yang memancarkan radiasi luar biasa panas, membakar habis semua yang dilaluinya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "Mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "Frostspawn",
@@ -16049,6 +18276,62 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800102011": {
+		"Id": "800102011",
+		"Name": "Frostspawn",
+		"Introduction": "Elemen kristal yang berkeliaran dan hanya memiliki kecerdasan paling sederhana. Ia melayang di Fragmentum dalam bentuk seperti burung yang melepaskan suhu luar biasa dingin, membekukan segala sesuatu di sekitarnya.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distract",
+				"SkillDesc": "Mengakibatkan Ice DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800102012": {
+		"Id": "800102012",
+		"Name": "Frostspawn",
+		"Introduction": "Elemen kristal yang berkeliaran dan hanya memiliki kecerdasan paling sederhana. Ia melayang di Fragmentum dalam bentuk seperti burung yang melepaskan suhu luar biasa dingin, membekukan segala sesuatu di sekitarnya.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distract",
+				"SkillDesc": "Mengakibatkan Ice DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800103001": {
 		"Id": "800103001",
 		"Name": "Mask of No Thought",
@@ -16144,6 +18427,34 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800104003": {
+		"Id": "800104003",
+		"Name": "Thunderspawn",
+		"Introduction": "Elemen kristal yang berkeliaran di Fragmentum dan hanya memiliki kecerdasan paling sederhana. Bentuknya seperti jenis burung yang memuat listrik dan menyemprot guntur tipis.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800104001,
+				"Name": "Thunderflash",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan, serta berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status Shock.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800105001": {
 		"Id": "800105001",
@@ -16298,6 +18609,55 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800201005": {
+		"Id": "800201005",
+		"Name": "Imaginary Weaver",
+		"Introduction": "Makhluk hidup aneh yang bukan berasal dari dunia ini. Mereka datang dari sisi langit gelap berbintang melalui tirai tebal. Tubuhnya seperti dahan-dahan mengerikan yang menusuk kenyataan, dan menggunakan kekuatan Imaginary untuk mengubah realitas.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800201001,
+				"Name": "Carolbeam",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201002,
+				"Name": "Carolburst",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah besar pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201003,
+				"Name": "Reverberating Carol",
+				"SkillDesc": "Mengakibatkan Imaginary DMG pada 1 rekan tim dan target di sekitarnya, lalu memasuki status \"Defensive Position\". Pada aksi berikutnya akan melancarkan \"Carolburst\" dan membuat DMG yang diakibatkan dirinya meningkat pesat.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201004,
+				"Name": "Imaginary Armor",
+				"SkillDesc": "Mengurangi DMG serangan non Tipe Weakness pada dirinya.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800204001": {
 		"Id": "800204001",
@@ -16458,6 +18818,46 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800205002": {
+		"Id": "800205002",
+		"Name": "Sequence Trotter",
+		"Introduction": "Makhluk antar dimensi yang tersesat di bintang-bintang, hangat di alam, manis rasanya, tidak bisa dimakan. Sebagian besar hidup mereka dihabiskan untuk makan dan melarikan diri. Petualang yang menemukannya melihatnya sebagai pertanda baik.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "S—S—S—Scared",
+				"SkillDesc": "Treasure Trotter kaget dan akan kabur dalam 2 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205002,
+				"Name": "Run... Run!",
+				"SkillDesc": "Treasure Trotter panik dan akan kabur dalam 1 giliran.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800205003,
+				"Name": "Phew... Escaped",
+				"SkillDesc": "Trotter kabur dan menghilang dalam sekejap.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800208101": {
 		"Id": "800208101",
@@ -16804,6 +19204,56 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800301007": {
+		"Id": "800301007",
+		"Name": "Ice Out of Space",
+		"Introduction": "Makhluk hidup aneh yang bukan berasal dari dunia ini. Tumbuh di Fragmentum yang dibuat oleh Stellaron, bentuk kehidupan parasit ini menyerap energi dunia ini. Armornya mencerminkan langit berbintang yang suram dan redup.\nDalam pertempuran, Ice Out of Space dapat membekukan musuh dengan mudah.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Chilling Lament",
+				"SkillDesc": "Mengakibatkan Ice DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan. Jika dirinya sedang dalam status \"Freezing Point\", maka akan mengakibatkan Ice DMG tambahan pada target tersebut",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Frosty Absorption",
+				"SkillDesc": "Memasuki status \"Freezing Point\", serangan selanjutnya dapat melancarkan \"Everwinter Rain\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Everwinter Rain",
+				"SkillDesc": "Skill ini hanya akan dilancarkan di bawah status \"Freezing Point\". Mengakibatkan Ice DMG dalam jumlah kecil pada seluruh rekan tim, dan rekan tim yang terkena serangan berpeluang untuk memasuki status Frozen.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Chilling Lament",
+				"SkillDesc": "Mengakibatkan Ice DMG pada 1 rekan tim. Jika dirinya sedang dalam status \"Freezing Point\", akan berpeluang untuk membuat rekan tim yang terserang memasuki status Frozen.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800302001": {
 		"Id": "800302001",
 		"Name": "Blaze Out of Space",
@@ -17139,6 +19589,198 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800302008": {
+		"Id": "800302008",
+		"Name": "Blaze Out of Space",
+		"Introduction": "Makhluk aneh yang bukan berasal dari dunia ini tumbuh di Fragmentum yang dibuat oleh Stellaron, bentuk kehidupan parasit ini menyerap energi dunia ini. Api dari inti bintang berkobar di kulit terluar dari armornya.\nDalam pertempuran, Blaze Out of Space akan membakar apa pun yang disentuhnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "Mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "Memasuki status \"Spontaneous Combustion\", serangan selanjutnya dapat melancarkan \"Rain of Purifying Flames\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "Terus-menerus mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim secara acak, dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "Meningkatkan ATK. Status ini akan terhapus saat terkena Weakness Break.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302009": {
+		"Id": "800302009",
+		"Name": "Blaze Out of Space",
+		"Introduction": "Makhluk aneh yang bukan berasal dari dunia ini tumbuh di Fragmentum yang dibuat oleh Stellaron, bentuk kehidupan parasit ini menyerap energi dunia ini. Api dari inti bintang berkobar di kulit terluar dari armornya.\nDalam pertempuran, Blaze Out of Space akan membakar apa pun yang disentuhnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "Mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "Memasuki status \"Spontaneous Combustion\", serangan selanjutnya dapat melancarkan \"Rain of Purifying Flames\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "Terus-menerus mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim secara acak, dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "Meningkatkan ATK. Status ini akan terhapus saat terkena Weakness Break.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302010": {
+		"Id": "800302010",
+		"Name": "Blaze Out of Space",
+		"Introduction": "Makhluk aneh yang bukan berasal dari dunia ini tumbuh di Fragmentum yang dibuat oleh Stellaron, bentuk kehidupan parasit ini menyerap energi dunia ini. Api dari inti bintang berkobar di kulit terluar dari armornya.\nDalam pertempuran, Blaze Out of Space akan membakar apa pun yang disentuhnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "Mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "Memasuki status \"Spontaneous Combustion\", serangan selanjutnya dapat melancarkan \"Rain of Purifying Flames\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "Terus-menerus mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim secara acak, dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "Meningkatkan ATK. Status ini akan terhapus saat terkena Weakness Break.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302011": {
+		"Id": "800302011",
+		"Name": "Blaze Out of Space",
+		"Introduction": "Makhluk aneh yang bukan berasal dari dunia ini tumbuh di Fragmentum yang dibuat oleh Stellaron, bentuk kehidupan parasit ini menyerap energi dunia ini. Api dari inti bintang berkobar di kulit terluar dari armornya.\nDalam pertempuran, Blaze Out of Space akan membakar apa pun yang disentuhnya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "Mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "Memasuki status \"Spontaneous Combustion\", serangan selanjutnya dapat melancarkan \"Rain of Purifying Flames\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "Terus-menerus mengakibatkan Fire DMG dalam jumlah kecil pada 1 rekan tim secara acak, dan berpeluang besar untuk membuat rekan tim yang terkena serangan memasuki status \"Enkindle\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "Meningkatkan ATK. Status ini akan terhapus saat terkena Weakness Break.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -17684,6 +20326,74 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800303009": {
+		"Id": "800303009",
+		"Name": "Guardian Shadow",
+		"Introduction": "Bayangan yang dimanifestasikan oleh kekuatan Stellaron, melaksanakan keinginan Fragmentum yang terus berkembang.\nPerwujudan fisik dari keinginan kehidupan cerdas di Fragmentum, seperti mutiara yang dibuat dari sebutir pasir. Kekuatan ini berkeliaran tanpa tujuan, bertindak hanya ketika menjalankan kehendak tuannya.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800303001,
+				"Name": "Lightning Recollection",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303002,
+				"Name": "Lightning Condemnation",
+				"SkillDesc": "Mengakibatkan Lightning DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303003,
+				"Name": "Tranquil Ban",
+				"SkillDesc": "Memberikan \"larangan\" pada seluruh rekan tim agar tidak menyerang Guardian Shadow. Rekan tim yang menyerang Guardian Shadow akan segera menerima 1 serangan.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800303004,
+				"Name": "Disarm Ban",
+				"SkillDesc": "Memberikan \"larangan\" pada seluruh rekan tim untuk tidak melancarkan Basic Attack. Rekan tim yang melancarkan Basic Attack akan segera menerima 1 serangan.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800303005,
+				"Name": "Silent Ban",
+				"SkillDesc": "Memberikan \"larangan\" pada seluruh rekan tim untuk tidak melancarkan Skill. Rekan tim yang melancarkan Skill akan segera menerima 1 serangan.",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800303006,
+				"Name": "Condemned Thunderstorm",
+				"SkillDesc": "Terus-menerus mengakibatkan Lightning DMG dalam jumlah kecil pada 1 rekan tim secara acak, dan berpeluang untuk membuat rekan tim yang terkena serangan memasuki status Shock.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303007,
+				"Name": "Inevitable Punishment",
+				"SkillDesc": "Mengakibatkan Lightning DMG pada seluruh rekan tim yang melanggar \"larangan\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800304001": {
 		"Id": "800304001",
 		"Name": "Decaying Shadow",
@@ -18014,6 +20724,61 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800304007": {
+		"Id": "800304007",
+		"Name": "Decaying Shadow",
+		"Introduction": "Bayangan yang dimanifestasikan oleh kekuatan Stellaron, melaksanakan keinginan Fragmentum yang terus berkembang.\nPerwujudan fisik dari energi hidup nan cerdas di Fragmentum, seperti mutiara yang terbentuk dari butiran pasir. Namun keinginan yang mendorongnya telah lama menjadi kabur dan terdistorsi.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800304002,
+				"Name": "Fleeting Gilded Spikes",
+				"SkillDesc": "Mengakibatkan Imaginary DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304003,
+				"Name": "Fleeting Punishment",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah besar pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304004,
+				"Name": "Binding of the Golden Age",
+				"SkillDesc": "Membuat dirinya memasuki status Charge dan memperoleh 9 lapis \"Gauge Recollection\". Aksi berikutnya melancarkan \"Liberation of the Golden Age\". Setiap kali terkena serangan akan menghapus 1 lapis \"Gauge Recollection\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800304005,
+				"Name": "Liberation of the Golden Age",
+				"SkillDesc": "Terus-menerus mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim secara acak. Jumlah serangan yang diakibatkan sama dengan jumlah lapisan \"Gauge Recollection\" yang tersisa. Jika tidak ada \"Gauge Recollection\", maka skill ini akan gagal.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304006,
+				"Name": "Fleeting Veil",
+				"SkillDesc": "Mengurangi sedikit DMG dari Basic Attack, Skill, Ultimate, dan Serangan Lanjutan yang diterima dirinya, serta memiliki peluang kecil untuk membuat rekan tim yang terkena Decaying Shadow memasuki status Imprisonment.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800305001": {
 		"Id": "800305001",
 		"Name": "Stormbringer",
@@ -18197,6 +20962,67 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800305006": {
+		"Id": "800305006",
+		"Name": "Stormbringer",
+		"Introduction": "Monster yang terkena korosi di perpanjangan Fragmentum. Setelah mengalami mutasi sumber kekuatan, makhluk ini menjadi memiliki metode bertarung yang lebih fleksibel.\nStormbringer akan memanfaatkan kekuatan Wind untuk membantu pertempuran diri, menggunakan arah angin untuk menembak panah yang lebih cepat.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305001,
+				"Name": "Watchful Meteor",
+				"SkillDesc": "Mengakibatkan Wind DMG pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuatnya memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305002,
+				"Name": "Wind Walker",
+				"SkillDesc": "Mengakibatkan Wind DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya, serta berpeluang untuk membuat rekan tim yang terkena serangan memasuki status Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305003,
+				"Name": "Wind-Twisting Crossbow",
+				"SkillDesc": "Memasuki status Charge dan mengunci seluruh rekan tim yang memasuki status Wind Shear. Aksi berikutnya melancarkan \"Windfall Storm\".",
+				"SkillTypeDesc": "Skill"
+			},
+			{
+				"Id": 800305004,
+				"Name": "Windfall Storm",
+				"SkillDesc": "Mengakibatkan Wind DMG pada rekan tim yang berstatus Wind Shear. Pelancaran Skill ini akan gagal bila tidak ada target yang berstatus Wind Shear.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305005,
+				"Name": "Storm Cyclone",
+				"SkillDesc": "Meningkatkan sedikit ATK dirinya setelah menyerang rekan tim dengan status Wind Shear. Saat terkena Weakness Break, efek ini akan terhapus.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 800305006,
+				"Name": "Windfall Storm",
+				"SkillDesc": "Mengakibatkan Wind DMG pada rekan tim yang berstatus Wind Shear. Pelancaran Skill ini akan gagal bila tidak ada target yang berstatus Wind Shear.",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801101001": {
 		"Id": "801101001",
 		"Name": "Baryon",
@@ -18336,6 +21162,62 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801101006": {
+		"Id": "801101006",
+		"Name": "Baryon",
+		"Introduction": "Untuk mencegah pertemuan dan pemusnahan antipartikel, \"Antimatter Legion\" telah menciptakan dua tipe perangkap jebakan ion mini untuk transportasi, yang secara kolektif disebut sebagai \"Baryon\" dan \"Antibaryon\".\n\"Baryon\" memiliki kecerdasan dasar, dapat dipanggil dan merespons keinginan \"Voidranger\" di medan pertempuran untuk membersihkan jalan mereka.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliterate",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 rekan yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801101007": {
+		"Id": "801101007",
+		"Name": "Baryon",
+		"Introduction": "Untuk mencegah pertemuan dan pemusnahan antipartikel, \"Antimatter Legion\" telah menciptakan dua tipe perangkap jebakan ion mini untuk transportasi, yang secara kolektif disebut sebagai \"Baryon\" dan \"Antibaryon\".\n\"Baryon\" memiliki kecerdasan dasar, dapat dipanggil dan merespons keinginan \"Voidranger\" di medan pertempuran untuk membersihkan jalan mereka.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliterate",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 rekan yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801102001": {
 		"Id": "801102001",
@@ -19107,6 +21989,111 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"801201019": {
+		"Id": "801201019",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "Seorang petarung yang belum binasa, dibentuk kembali di \"Warforge\" dan memperoleh kekuatan \"Destruction\". Antimatter melengkapi sisa-sisa tubuhnya, dan partikel negatif bergema di tubuhnya.\nMerupakan unit tempur dasar dari \"Antimatter Legion\". Mereka sangat agresif, mewujudkan dan bertindak sesuai dengan kehendak \"Destruction\".",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801201020": {
+		"Id": "801201020",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "Seorang petarung yang belum binasa, dibentuk kembali di \"Warforge\" dan memperoleh kekuatan \"Destruction\". Antimatter melengkapi sisa-sisa tubuhnya, dan partikel negatif bergema di tubuhnya.\nMerupakan unit tempur dasar dari \"Antimatter Legion\". Mereka sangat agresif, mewujudkan dan bertindak sesuai dengan kehendak \"Destruction\".",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801201021": {
+		"Id": "801201021",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "Seorang petarung yang belum binasa, dibentuk kembali di \"Warforge\" dan memperoleh kekuatan \"Destruction\". Antimatter melengkapi sisa-sisa tubuhnya, dan partikel negatif bergema di tubuhnya.\nMerupakan unit tempur dasar dari \"Antimatter Legion\". Mereka sangat agresif, mewujudkan dan bertindak sesuai dengan kehendak \"Destruction\".",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim yang ditargetkan.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801202001": {
 		"Id": "801202001",
 		"Name": "Voidranger: Distorter",
@@ -19247,6 +22234,41 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"801202005": {
+		"Id": "801202005",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Nihility's Command",
+				"SkillDesc": "Mengunci 1 rekan tim secara acak dan membuatnya menjadi target serangan seluruh musuh.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Shadowless Void Strike",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801202006": {
 		"Id": "801202006",
 		"Name": "Voidranger: Distorter",
@@ -19386,6 +22408,41 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801202010": {
+		"Id": "801202010",
+		"Name": "Voidranger: Distorter",
+		"Introduction": "\"Voidranger\" yang berhasil selamat dari efek pemusnahan, partikel positif dan negatif dalam tubuhnya telah mencapai keseimbangan yang aneh, memberi mereka lebih banyak kekuatan daripada yang \"Reaver\".\nUnit tempur dasar \"Antimatter Legion\", mereka memiliki beberapa kecerdasan dan mampu untuk mengontrol aksi \"Reaver\" dalam area kecil di sekitarnya.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Nihility's Command",
+				"SkillDesc": "Mengunci 1 rekan tim secara acak dan membuatnya menjadi target serangan seluruh musuh.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Shadowless Void Strike",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -19561,6 +22618,41 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"801203004": {
+		"Id": "801203004",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801203001,
+				"Name": "Void Cannon",
+				"SkillDesc": "Mengakibatkan Imaginary DMG pada 1 rekan tim. Di saat yang bersamaan, dirinya akan memasuki status \"Overloaded\". Rekan tim yang terkena serangan berpeluang untuk memasuki status \"Detonated\".",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801203002,
+				"Name": "Thermal Barrier",
+				"SkillDesc": "Menghapus status \"Overloaded\" dirinya",
+				"SkillTypeDesc": "Skill"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801203005": {
 		"Id": "801203005",
@@ -20031,6 +23123,63 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"801301008": {
+		"Id": "801301008",
+		"Name": "Distortion",
+		"Introduction": "\"Ingatan\" sangat mirip dengan \"foto\". Seolah merekam \"kebenaran\", tapi sebenarnya menyerang \"kebenaran\", mengasingkan \"kebenaran\" dan merusak \"kebenaran\". Mungkin menghilangkan \"distorsi\" di dalamnya akan membuatnya bisa diandalkan, tapi mungkin juga tidak.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unreal Projection",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Rule of Force",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "War Trample",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "Mengunci 1 rekan tim dan melancarkan \"End of Bow\" pada target tersebut di aksi berikutnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "End of Bow",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah besar pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat target yang terkena serangan memasuki status Entanglement.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801301009": {
 		"Id": "801301009",
 		"Name": "Voidranger: Trampler",
@@ -20087,5 +23236,176 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801301010": {
+		"Id": "801301010",
+		"Name": "Voidranger: Trampler",
+		"Introduction": "Produk \"Antimatter Legion\" yang memanfaatkan \"Warforge\" untuk menyusun kembali dan menggabungkan sisa-sisa tentara yang gugur dan Leviathan.\nMeskipun jumlahnya relatif jarang, mereka memiliki kecerdasan seorang tentara dengan kekuatan dan memiliki mobilitas Leviathan. Jeritannya dapat memanggil Voidranger dalam jumlah besar.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unreal Projection",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Rule of Force",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "War Trample",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "Mengunci 1 rekan tim dan melancarkan \"End of Bow\" pada target tersebut di aksi berikutnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "End of Bow",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah besar pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat target yang terkena serangan memasuki status Entanglement.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801301011": {
+		"Id": "801301011",
+		"Name": "Voidranger: Trampler",
+		"Introduction": "Produk \"Antimatter Legion\" yang memanfaatkan \"Warforge\" untuk menyusun kembali dan menggabungkan sisa-sisa tentara yang gugur dan Leviathan.\nMeskipun jumlahnya relatif jarang, mereka memiliki kecerdasan seorang tentara dengan kekuatan dan memiliki mobilitas Leviathan. Jeritannya dapat memanggil Voidranger dalam jumlah besar.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unreal Projection",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Rule of Force",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "War Trample",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "Mengunci 1 rekan tim dan melancarkan \"End of Bow\" pada target tersebut di aksi berikutnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "End of Bow",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah besar pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat target yang terkena serangan memasuki status Entanglement.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801301012": {
+		"Id": "801301012",
+		"Name": "Voidranger: Trampler",
+		"Introduction": "Produk \"Antimatter Legion\" yang memanfaatkan \"Warforge\" untuk menyusun kembali dan menggabungkan sisa-sisa tentara yang gugur dan Leviathan.\nMeskipun jumlahnya relatif jarang, mereka memiliki kecerdasan seorang tentara dengan kekuatan dan memiliki mobilitas Leviathan. Jeritannya dapat memanggil Voidranger dalam jumlah besar.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Unreal Projection",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Rule of Force",
+				"SkillDesc": "Mengakibatkan Quantum DMG pada 1 rekan tim.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "War Trample",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 rekan tim dan target di sekitarnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "Mengunci 1 rekan tim dan melancarkan \"End of Bow\" pada target tersebut di aksi berikutnya.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "End of Bow",
+				"SkillDesc": "Mengakibatkan Quantum DMG dalam jumlah besar pada 1 rekan tim yang ditargetkan dan berpeluang besar untuk membuat target yang terkena serangan memasuki status Entanglement.",
+				"SkillTypeDesc": "Skill",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	}
 }

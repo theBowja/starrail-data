@@ -3282,7 +3282,7 @@
 	},
 	"2013011": {
 		"Id": "2013011",
-		"Name": "Gardien aurumaton (Erreur)",
+		"Name": "Gardien aurumaton (Bug)",
 		"Introduction": "Une fausse projection produite par des codes compromis. L'entité de référence originale est un aurumaton de garnison créé grâce à l'ancienne technologie des ingéniosités.\nIl y a de nombreuses années, les aurumatons sont partis avec Xianzhou à la recherche des recettes divines de l'immortalité, et ont été chargés de superviser l'humanité et de l'aider pendant les guerres. Cependant, après d'innombrables rébellions, ils ont finalement été renversés par le peuple de Xianzhou.\nAujourd'hui, tous les aurumatons sont strictement contrôlés à l'aide de talismans et sont utilisés pour garder les lieux importants.",
 		"ElementalWeaknesses": [
 			"Thunder",
@@ -3407,7 +3407,7 @@
 	},
 	"2022040": {
 		"Id": "2022040",
-		"Name": "Sylphe de l'Abondance : Limier doré",
+		"Name": "Limier doré de l'Abondance",
 		"Introduction": "Un chien de chasse doré qui se déplace avec grâce et rapidité.\nLorsque l'Arbre d'ambroisie existait encore, les habitants de Xianzhou élevaient de nombreuses créatures fantastiques à l'aide de ses techniques ésotériques. Les Limiers dorés faisaient partie des bêtes qui accompagnaient l'armée.",
 		"ElementalWeaknesses": [
 			"Ice",
@@ -3442,7 +3442,7 @@
 	},
 	"2022050": {
 		"Id": "2022050",
-		"Name": "Sylphe de l'Abondance : Loup sylvestre",
+		"Name": "Loup sylvestre de l'Abondance",
 		"Introduction": "Un loup enveloppé de brume, ses mouvements sont furtifs et imprévisibles.\nLorsque l'Arbre d'ambroisie existait encore, les habitants de Xianzhou élevaient de nombreuses créatures fantastiques à l'aide de ses techniques ésotériques. Les Loups sylvestres faisaient partie des bêtes qui accompagnaient l'armée.",
 		"ElementalWeaknesses": [
 			"Fire",
@@ -3850,7 +3850,7 @@
 	},
 	"2023011": {
 		"Id": "2023011",
-		"Name": "Métamorphe des Disciples du Sanctus Medicus (Erreur)",
+		"Name": "Disciples de Sanctus Medicus : Métamorphe (Bug)",
 		"Introduction": "Une fausse projection produite par des codes compromis. L'entité de référence originale est disciple qui aspire à faire revivre les anciens mystères de l'Abondance et à guider les natifs de Xianzhou sur le chemin libérateur de l'immortalité.\nLeur vœu est désormais exaucé. Dotés du pouvoir de l'ancien miracle et l'utilisant à la fois comme arme et protection, ils ont réussi à accéder aux secrets de l'immortalité.",
 		"ElementalWeaknesses": [
 			"Ice",
@@ -3905,7 +3905,7 @@
 	},
 	"2023020": {
 		"Id": "2023020",
-		"Name": "Sylphe de l'Abondance : Singe maléfique",
+		"Name": "Singe maléfique de l'Abondance",
 		"Introduction": "Un singe d'une puissance terrifiante, aussi grand qu'une montagne.\nLorsque l'Arbre d'ambroisie existait encore, le peuple de Xianzhou élevait de nombreuses créatures fantastiques à l'aide de ses techniques ésotériques. Les Singes maléfiques faisaient partie des bêtes qui accompagnaient l'armée.",
 		"ElementalWeaknesses": [
 			"Fire",
@@ -3950,6 +3950,48 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"2023021": {
+		"Id": "2023021",
+		"Name": "Singe maléfique de l'Abondance (bug)",
+		"Introduction": "Une fausse projection produite par des codes compromis. L'entité de référence originale est un singe d'une puissance terrifiante, aussi grand qu'une montagne.\nLorsque l'Arbre d'ambroisie existait encore, le peuple de Xianzhou élevait de nombreuses créatures fantastiques à l'aide de ses techniques ésotériques. Les Singes maléfiques faisaient partie des bêtes qui accompagnaient l'armée.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302101,
+				"Name": "Frappe simienne",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302102,
+				"Name": "Rugissement féroce",
+				"SkillDesc": "Verrouille une cible aléatoire. À chaque fois qu'une cible utilise sa compétence, elle devient la nouvelle cible verrouillée, et l'unité obtient 1 cumul de Vitalité. Lors de la prochaine utilisation de Frappe simienne, l'unité consomme tous ses cumuls de Vitalité pour augmenter son ATQ en fonction du nombre de cumuls consommés. Cette unité perd tous ses cumuls de Vitalité lorsqu'elle subit une Rupture de faiblesse.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202302104,
+				"Name": "Hurlement simien",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à toutes les cibles.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"2023030": {
 		"Id": "2023030",
@@ -4007,6 +4049,63 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"2023031": {
+		"Id": "2023031",
+		"Name": "Entité transcendantale (bug)",
+		"Introduction": "Une fausse projection produite par des codes compromis. L'entité de référence originale est la forme que les Disciples du Sanctus Medicus convoitent, libérée des fardeaux de l'humanité et reforgée en utilisant la voie de l'immortalité.\nDans les temps anciens, ceux qui recherchaient l'immortalité recevaient la sagesse de l'Arbre d'ambroisie et se faisaient appeler Célestes. Ils vivaient sans contraintes, et pouvaient modifier à volonté leur propre chair et celle des autres. Après leurs multiples métamorphoses, ils ont depuis longtemps oublié leur apparence d'origine.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202303101,
+				"Name": "Rite de la métamorphose",
+				"SkillDesc": "Inflige des DGT de vent en continu à une cible aléatoire, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303102,
+				"Name": "Guidée par Vulturnus",
+				"SkillDesc": "Inflige des DGT de vent à une cible et aux cibles adjacentes, avec de fortes chances de causer Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303103,
+				"Name": "Épines arborescentes",
+				"SkillDesc": "Inflige des DGT de vent à une cible unique, avec de fortes chances de causer Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303104,
+				"Name": "Piège de prana noir",
+				"SkillDesc": "Fortes chances que toutes les cibles soient affectées par Siphon du prana.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303105,
+				"Name": "Drainage des points vitaux",
+				"SkillDesc": "Les DGT infligés aux cibles affectées par l'état Siphon du prana sont convertis en Siphon du prana et réinitialisent la durée de l'état. Il y a une limite de PV max pour le Siphon du prana.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"2024010": {
 		"Id": "2024010",
@@ -4400,7 +4499,7 @@
 	"8002040": {
 		"Id": "8002040",
 		"Name": "Magoret téléporteur",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Quantum",
@@ -4440,7 +4539,7 @@
 	"8002050": {
 		"Id": "8002050",
 		"Name": "Magoret séquenceur",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Quantum",
@@ -4479,8 +4578,8 @@
 	},
 	"8002051": {
 		"Id": "8002051",
-		"Name": "Magor prime",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Name": "Magoret alpha",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Ice",
 			"Quantum",
@@ -4519,8 +4618,8 @@
 	},
 	"8002052": {
 		"Id": "8002052",
-		"Name": "Magor deuce",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Name": "Magoret bêta",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Thunder",
 			"Wind",
@@ -4559,8 +4658,8 @@
 	},
 	"8002053": {
 		"Id": "8002053",
-		"Name": "Magor tri",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Name": "Magoret gamma",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Fire",
@@ -4597,10 +4696,250 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002054": {
+		"Id": "8002054",
+		"Name": "Magoret séquenceur",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205401,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205402,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205403,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002055": {
+		"Id": "8002055",
+		"Name": "Magoret alpha",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205501,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205502,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205503,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002056": {
+		"Id": "8002056",
+		"Name": "Magoret bêta",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205601,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205602,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205603,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002057": {
+		"Id": "8002057",
+		"Name": "Magoret gamma",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205701,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205702,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205703,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002058": {
+		"Id": "8002058",
+		"Name": "Magoret séquenceur",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205601,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205602,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205603,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002059": {
+		"Id": "8002059",
+		"Name": "Magoret séquenceur (rare)",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205701,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205702,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205703,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002060": {
 		"Id": "8002060",
 		"Name": "Magoret de la Destruction",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Ice",
 			"Wind",
@@ -4644,10 +4983,57 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002061": {
+		"Id": "8002061",
+		"Name": "Magoret de la Destruction",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800206101,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800206102,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800206103,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800206104,
+				"Name": "J—Je venge",
+				"SkillDesc": "Lorsqu'une unité de son équipe est attaquée, cette unité attaque toutes les cibles. Le nombre d'attaques est égal au nombre d'unités de son équipe attaquées.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002070": {
 		"Id": "8002070",
 		"Name": "Magoret de l'Abondance",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Thunder",
@@ -4690,10 +5076,56 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8002071": {
+		"Id": "8002071",
+		"Name": "Magoret de l'Abondance",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800207101,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800207102,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800207103,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800207104,
+				"Name": "J—Je soigne",
+				"SkillDesc": "Lorsqu'une unité de son équipe autre que le Magoret de l'Abondance est attaquée, il consomme ses propres PV pour soigner l'unité attaquée.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002080": {
 		"Id": "8002080",
 		"Name": "Magoret de la Préservation",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Fire",
 			"Ice",
@@ -4782,6 +5214,52 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"8002082": {
+		"Id": "8002082",
+		"Name": "Magoret de la Préservation",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800208201,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800208202,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800208203,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800208204,
+				"Name": "J—Je protège",
+				"SkillDesc": "Applique « J—Je protège » à toutes les unités de son équipe en entrant en combat. Chaque cumul de « J—Je protège » peut annuler tous les DGT infligés par 1 attaque, à l'exception des dégâts sur la durée. Les cumuls de « J—Je protège » sont partagés au sein de l'équipe.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"8002090": {
 		"Id": "8002090",
 		"Name": "Magoret séquenceur",
@@ -4821,6 +5299,166 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"8002091": {
+		"Id": "8002091",
+		"Name": "Magoret séquenceur",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800209101,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800209102,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800209103,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002100": {
+		"Id": "8002100",
+		"Name": "Magoret alpha",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800210001,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800210002,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800210003,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002101": {
+		"Id": "8002101",
+		"Name": "Magoret bêta",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800210101,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800210102,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800210103,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8002102": {
+		"Id": "8002102",
+		"Name": "Magoret gamma",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800210201,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800210202,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800210203,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8003010": {
 		"Id": "8003010",
@@ -5059,7 +5697,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -5127,7 +5765,7 @@
 		"SkillList": [
 			{
 				"Id": 800303101,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -5210,13 +5848,13 @@
 			{
 				"Id": 800304004,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304005,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -5265,13 +5903,13 @@
 			{
 				"Id": 800304104,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304105,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs à une cible aléatoire. En l'absence de cumul de Récupération de la jauge, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs à une cible aléatoire. En l'absence de cumul de Jauge de Réminiscence, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -5284,7 +5922,7 @@
 			{
 				"Id": 800304108,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			}
@@ -5326,14 +5964,14 @@
 			},
 			{
 				"Id": 800305003,
-				"Name": "Arbalète Tord-le-vent",
-				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles subissant actuellement Faille du vent. Lance Ouragan opportuniste lors de la prochaine action.",
+				"Name": "Arc courbe-vent",
+				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles qui subissent actuellement Faille du vent. Lance Tempête de vent lors de la prochaine action.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800305004,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Wind"
 			},
@@ -5345,8 +5983,8 @@
 			},
 			{
 				"Id": 800305006,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité"
 			}
 		],
@@ -5387,14 +6025,14 @@
 			},
 			{
 				"Id": 800305103,
-				"Name": "Arbalète Tord-le-vent",
-				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles subissant actuellement Faille du vent. Lance Ouragan opportuniste lors de la prochaine action.",
+				"Name": "Arc courbe-vent",
+				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles qui subissent actuellement Faille du vent. Lance Tempête de vent lors de la prochaine action.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800305104,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent, avec une chance de leur faire subir à nouveau Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent, avec une chance de leur faire subir à nouveau Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Wind"
 			},
@@ -5406,8 +6044,8 @@
 			},
 			{
 				"Id": 800305106,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
@@ -5419,6 +6057,68 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"8003052": {
+		"Id": "8003052",
+		"Name": "Portefoudre",
+		"Introduction": "Monstres qui ont subi la corrosion du Fragmentum au fur et à mesure de son expansion. Ils sont désormais plus habiles au combat maintenant que la source de leur pouvoir a muté.\nLes Portefoudres utilisent le pouvoir du vent pour les aider au combat, leur permettant de tirer des flèches plus rapidement.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305201,
+				"Name": "Météore vigilant",
+				"SkillDesc": "Inflige des DGT de vent à une cible unique, et a de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305202,
+				"Name": "Marcheur du vent",
+				"SkillDesc": "Inflige des DGT de vent mineurs à la cible et aux unités adjacentes, avec une chance d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305203,
+				"Name": "Arc courbe-vent",
+				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles qui subissent actuellement Faille du vent. Lance Tempête de vent lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800305204,
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305205,
+				"Name": "Tempête cyclonique",
+				"SkillDesc": "Augmente légèrement l'ATQ après avoir attaqué une cible qui subit Faille du vent. Ce bonus est dissipé en cas de Rupture de faiblesse.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 800305206,
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8011010": {
 		"Id": "8011010",
@@ -6156,7 +6856,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -6213,7 +6913,7 @@
 			},
 			{
 				"Id": 801301102,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -6270,7 +6970,7 @@
 			},
 			{
 				"Id": 801301202,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -6298,6 +6998,64 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"8013013": {
+		"Id": "8013013",
+		"Name": "Piétineur des Rangers du néant",
+		"Introduction": "Un produit de la Légion d'antimatière qui utilise la Forge de la guerre pour refondre et fusionner les restes de guerriers et de Léviathans tombés au combat.\nBien que relativement rares, ils possèdent à la fois l'intelligence d'un guerrier et la puissance et la mobilité d'un Léviathan. Leur cri peut invoquer un grand nombre de Rangers du néant.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301301,
+				"Name": "Projection irréelle",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301302,
+				"Name": "Règne de la force",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301303,
+				"Name": "Piétinement de guerre",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301304,
+				"Name": "Flèche en spirale",
+				"SkillDesc": "Verrouille une cible unique. Lance Fin de l'arc sur cette cible lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301305,
+				"Name": "Fin de l'arc",
+				"SkillDesc": "Inflige des DGT quantiques massifs à une cible unique, avec de fortes chances de lui infliger Enchevêtrement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"8013141": {
 		"Id": "8013141",
@@ -6568,7 +7326,7 @@
 			},
 			{
 				"Id": 801502010,
-				"Name": "Apothéose de l'Arbe",
+				"Name": "Apothéose de l'Arbre",
 				"SkillDesc": "Inflige des DGT imaginaires à toutes les cibles.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
@@ -6670,7 +7428,7 @@
 			},
 			{
 				"Id": 801502110,
-				"Name": "Apothéose de l'Arbe",
+				"Name": "Apothéose de l'Arbre",
 				"SkillDesc": "Inflige des DGT imaginaires à toutes les cibles.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
@@ -6696,6 +7454,176 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"8022010": {
+		"Id": "8022010",
+		"Name": "Aiguillon juvénile",
+		"Introduction": "Larve d'Aiguillon cinglant. En fonction de leur stade de croissance, les jeunes Aiguillons cinglants peuvent être divisés entre Aiguillons juvéniles et Aiguillons inférieurs.",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802201001,
+				"Name": "Battement d'ailes",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802201002,
+				"Name": "Division méiotique",
+				"SkillDesc": "L'unité crée 1 réplique d'elle-même. Cet effet peut se déclencher à nouveau après 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 802201004,
+				"Name": "Élégie de l'entomon",
+				"SkillDesc": "En cas de coup fatal, inflige des DGT de vent à toutes les unités de son équipe, avec de fortes chances d'augmenter légèrement les DGT qu'elles subissent.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8022020": {
+		"Id": "8022020",
+		"Name": "Aiguillon inférieur",
+		"Introduction": "Larve d'Aiguillon cinglant. En fonction de leur stade de croissance, les jeunes Aiguillons cinglants peuvent être divisés entre Aiguillons juvéniles et Aiguillons inférieurs.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802202001,
+				"Name": "Paré au combat",
+				"SkillDesc": "Entre en état de charge. Déclenche Explosion détonante lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 802202002,
+				"Name": "Explosion détonante",
+				"SkillDesc": "Se fait exploser, infligeant des DGT de vent à une cible et aux cibles adjacentes, avec de fortes chances de provoquer Indignation à la cible.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802202004,
+				"Name": "Élégie de l'entomon",
+				"SkillDesc": "En cas de coup fatal, inflige des DGT de vent à toutes les unités de son équipe, avec de fortes chances d'augmenter légèrement les DGT qu'elles subissent.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"8024010": {
+		"Id": "8024010",
+		"Name": "Aiguillon cinglant de l'Essaim (complet)",
+		"Introduction": "Sir Duroy, un membre de la Guilde de l'intelligentsia, a parcouru les mers étoilées et rédigé les <i>Chroniques des insectes interdimensionnels</i> en trente volumes. Cet ouvrage fournit des informations détaillées sur plus d'une douzaine d'espèces confirmées de vers à bois et d'innombrables sous-espèces à travers les étoiles.",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802401001,
+				"Name": "L'heure est au combat",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger 2 cumuls de Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401002,
+				"Name": "Équipement de guerre",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique. Si la cible souffre de Faille du vent, Faille du vent inflige immédiatement ses DGT en 1 fois.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401003,
+				"Name": "Tempête de l'Essaim",
+				"SkillDesc": "Inflige des DGT de vent à toutes les cibles, avec de fortes chances de provoquer Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401004,
+				"Name": "Propagation",
+				"SkillDesc": "Invoque des Aiguillons cinglants.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 802401005,
+				"Name": "Ordre de préparation",
+				"SkillDesc": "Entre en état de charge. Déclenche Assaut de l'Essaim lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 802401006,
+				"Name": "Assaut de l'Essaim",
+				"SkillDesc": "Dissipe tous les malus de contrôle et les Ruptures de faiblesse qui affectent les Aiguillons cinglants. Inflige des DGT de vent à la cible, et fait en sorte qu'elle ait de fortes chances de subir 1 cumul de Faille du vent à chaque fois qu'elle subit des DGT.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401007,
+				"Name": "Assaut de l'Essaim",
+				"SkillDesc": "Dissipe tous les malus de contrôle et les Ruptures de faiblesse qui affectent les Aiguillons cinglants. Inflige des DGT de vent à la cible, et fait en sorte qu'elle ait de fortes chances de subir 1 cumul de Faille du vent à chaque fois qu'elle subit des DGT.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401008,
+				"Name": "Transmission de phéromone",
+				"SkillDesc": "Chaque fois qu'un Aiguillon cinglant apparaît, les DGT de tous les Aiguillons cinglants augmentent d'1 cumul. Il ne peut y avoir qu'un seul effet de Transmission de phéromone en combat à la fois.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 802401009,
+				"Name": "Élégie de l'entomon",
+				"SkillDesc": "En cas de coup fatal, inflige des DGT de vent à toutes les unités de son équipe, avec de fortes chances d'augmenter légèrement les DGT qu'elles subissent.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401011,
+				"Name": "Propagation",
+				"SkillDesc": "Invoque des Aiguillons cinglants.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"100202001": {
 		"Id": "100202001",
@@ -7188,6 +8116,41 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"100202015": {
+		"Id": "100202015",
+		"Name": "Vagabond",
+		"Introduction": "Pour survivre, certains habitants du Souterrain sont si désespérés qu'ils osent s'aventurer dans le Fragmentum en quête d'objets utiles. Ils ont déterré d'anciens engins qui leur apportent une aide considérable.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Attaque à la pelle",
+				"SkillDesc": "Inflige des DGT physiques mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspiration",
+				"SkillDesc": "Augmente l'ATQ d'une unité de son équipe et lui permet d'agir immédiatement.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"100203001": {
 		"Id": "100203001",
@@ -9010,6 +9973,54 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"100301011": {
+		"Id": "100301011",
+		"Name": "Lieutenant de la crinière d'argent",
+		"Introduction": "Chef d'une escouade de Gardes de la crinière d'argent de Belobog.\nLes Lieutenants de la crinière d'argent peuvent lever un bouclier géant qui les renforce pendant le combat. Attaquer un Lieutenant de la crinière d'argent avec son bouclier levé provoque immédiatement un puissant contre.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Assaut",
+				"SkillDesc": "Inflige des DGT physiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Transperçage",
+				"SkillDesc": "Inflige des DGT physiques massifs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Bouclier réfléchissant",
+				"SkillDesc": "Entre en état de contre. Lorsqu'il est attaqué par un personnage unique, agit immédiatement et lance Transperçage sur l'assaillant.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Renforts",
+				"SkillDesc": "Invoque un Soldat de la crinière d'argent ou un Tireur de la crinière d'argent.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"100401001": {
 		"Id": "100401001",
 		"Name": "Cocolia",
@@ -9579,6 +10590,40 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101201008": {
+		"Id": "101201008",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Frappe verticale",
+				"SkillDesc": "Inflige des DGT physiques mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Module d'auto-guérison",
+				"SkillDesc": "Restaure immédiatement des PV à toutes les unités de son équipe.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101201009": {
 		"Id": "101201009",
 		"Name": "Automate chien",
@@ -9646,6 +10691,40 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"101201011": {
+		"Id": "101201011",
+		"Name": "Automate chien",
+		"Introduction": "Un automate assemblé à partir d'une technologie de l'Ancien monde. Il ressemble à un véhicule de transport dont la finalité a depuis longtemps été oubliée.\nEn combat, les Automates chiens peuvent apporter leur soutien et restaurer les PV de leurs alliés.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Frappe verticale",
+				"SkillDesc": "Inflige des DGT physiques mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Module d'auto-guérison",
+				"SkillDesc": "Restaure immédiatement des PV à toutes les unités de son équipe.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -10598,6 +11677,35 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101203012": {
+		"Id": "101203012",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Champ de force instable",
+				"SkillDesc": "Inflige des DGT physiques à une cible unique, et accorde une Barrière à l'unité. La Barrière annule tous les DGT subis à l'exception des dégâts sur la durée jusqu'à ce que l'unité soit attaquée (les DGT de l'attaque étant annulés).",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101203013": {
 		"Id": "101203013",
 		"Name": "Automate scarabée",
@@ -10626,6 +11734,35 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"101203014": {
+		"Id": "101203014",
+		"Name": "Automate scarabée",
+		"Introduction": "Un automate assemblé à partir d'une technologie de l'Ancien monde. Des feux de signalisation ont été placés au-dessus de ses pattes, laissant supposer que cette unité a été utilisée pour les opérations minières ou de construction.\nEn combat, les Automates scarabées peuvent générer des champs de force pour se protéger.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "Champ de force instable",
+				"SkillDesc": "Inflige des DGT physiques à une cible unique, et accorde une Barrière à l'unité. La Barrière annule tous les DGT subis à l'exception des dégâts sur la durée jusqu'à ce que l'unité soit attaquée (les DGT de l'attaque étant annulés).",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -11391,6 +12528,60 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101301015": {
+		"Id": "101301015",
+		"Name": "Automate grizzly",
+		"Introduction": "Un automate assemblé à partir d'une technologie de l'Ancien monde. Il a été renforcé avec une armure résistante pour pouvoir charger et protéger les Gardes de la crinière d'argent.\nEn combat, les Automates grizzlys invoquent des Automates araignées et déclenchent une puissante attaque chargée.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Ordre de détonation",
+				"SkillDesc": "Invoque un Automate araignée.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Ordre d'enragement",
+				"SkillDesc": "A une chance d'infliger Provocation à toutes les cibles.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Ordre de surcombustion",
+				"SkillDesc": "Entre en état de charge. La prochaine action utilise « Ordre d'extermination » sur toutes les cibles.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Ordre d'extermination",
+				"SkillDesc": "Inflige des DGT physiques massifs à toutes les cibles.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Ordre de destruction",
+				"SkillDesc": "Inflige des DGT physiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101302001": {
 		"Id": "101302001",
 		"Name": "Automate loup",
@@ -12081,6 +13272,55 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101302015": {
+		"Id": "101302015",
+		"Name": "Automate loup",
+		"Introduction": "Un automate assemblé à partir d'une technologie de l'Ancien monde. Il s'agit d'un automate rare de type humanoïde qui est équipé d'une tronçonneuse sur le bras droit, vraisemblablement utilisée pour les opérations minières ou de construction.\nEn combat, les Automates loups utilisent leur tronçonneuse pour infliger Saignement aux ennemis, infligeant des dégâts sur la durée.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Ordre d'abattage",
+				"SkillDesc": "Inflige des DGT physiques massifs à une cible unique, avec une chance de lui infliger Saignement. Si la cible touchée n'est pas protégée par un bouclier, un de ses alliés aléatoires subit « Démantèlement » 1 fois.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Verrouillage de la cible",
+				"SkillDesc": "Verrouille une cible unique et lance « Ordre d'abattage » sur cette cible lors de sa prochaine action.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Ordre de désintégration",
+				"SkillDesc": "Inflige des DGT physiques mineurs à une cible unique, avec de fortes chances d'infliger 1 cumul de l'effet Saignement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Démantèlement",
+				"SkillDesc": "Inflige des DGT physiques mineurs à une cible unique, avec de fortes chances d'infliger 1 cumul de l'effet Saignement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"101401001": {
 		"Id": "101401001",
 		"Name": "Svarog",
@@ -12507,6 +13747,77 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"101401007": {
+		"Id": "101401007",
+		"Name": "Svarog",
+		"Introduction": "Cette ancienne relique de l'Ancien monde est une unité de contrôle automatisée laissée à l'époque du Groupe de développement de la géomoelle. Contrairement aux autres machines qui ne font qu'obéir aux ordres, Svarog est capable de pensées complexes.\nEn combat, Svarog invoque des bras mécaniques pour saisir et contrôler ses ennemis, infligeant des frappes dévastatrices.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101401001,
+				"Name": "Coup de poing bannisseur",
+				"SkillDesc": "Inflige des DGT physiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401002,
+				"Name": "Faisceau brûlant",
+				"SkillDesc": "Inflige des DGT physiques à une cible unique et retarde son action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401003,
+				"Name": "Étreinte oppressive",
+				"SkillDesc": "Emprisonne une cible unique, l'empêchant d'agir ou d'être ciblée. L'Emprisonnement est dissipé si l'Unité de bras robotique auxiliaire subit une Rupture de faiblesse.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401004,
+				"Name": "Bombardement efficace",
+				"SkillDesc": "Inflige des DGT physiques massifs à toutes les cibles, avec de fortes chances de réduire leur DÉF.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401005,
+				"Name": "Explosion contrôlée",
+				"SkillDesc": "L'Unité de bras robotique auxiliaire explose, infligeant des DGT physiques massifs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401006,
+				"Name": "Avertissement de surcharge",
+				"SkillDesc": "Le compte à rebours de Surcharge de l'Unité de bras robotique auxiliaire s'enclenche, provoquant Explosion contrôlée lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401007,
+				"Name": "Déploiement d'amélioration",
+				"SkillDesc": "Invoque une Unité auxiliaire de bras robotique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"102201001": {
 		"Id": "102201001",
 		"Name": "Marcheur de l'ombre de l'Hiver éternel",
@@ -12710,6 +14021,35 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102201008": {
+		"Id": "102201008",
+		"Name": "Marcheur de l'ombre de l'Hiver éternel",
+		"Introduction": "Ombres qui errent dans le Fragmentum depuis l'arrivée du Gel éternel. Elles imitent la forme des Gardes de la crinière d'argent. Dotées de la même armure que les guerriers de Belobog, leur visage est toutefois remplacé par un prisme de glace sans expression.\nEn combat, les Marcheurs de l'ombre de l'Hiver éternel brandissent leur hache de glace et ralentissent leurs ennemis.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Écrasement givrant",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique et retarde son action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"102202001": {
 		"Id": "102202001",
@@ -13030,6 +14370,35 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102202012": {
+		"Id": "102202012",
+		"Name": "Marcheur de l'ombre de l'Incinération",
+		"Introduction": "Ombres qui errent dans le Fragmentum depuis l'arrivée du Gel éternel. Elles imitent la forme des Gardes de la crinière d'argent. Dotées de la même armure que les guerriers de Belobog, leur visage est toutefois remplacé par des braises sans expression.\nEn combat, les Marcheurs de l'ombre de l'Incinération brandissent leur hache enflammée et brûlent leurs ennemis.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Écrasement brûlant",
+				"SkillDesc": "Inflige des DGT de feu à une cible unique, avec de fortes chances de lui infliger l'effet Brûlure.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -13765,6 +15134,35 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"200201001": {
+		"Id": "200201001",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200201001,
+				"Name": "Bordure nuageuse",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique avec de fortes chances d'augmenter légèrement les DGT qu'elle subit.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"200201002": {
 		"Id": "200201002",
 		"Name": "Patrouilleur des Chevaliers des nuages",
@@ -13793,6 +15191,64 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"200202002": {
+		"Id": "200202002",
+		"Name": "Épée volante",
+		"Introduction": "Unité d'attaque aérienne contrôlée par le qi, aussi appelée Épée volante. Elle est connectée à la psyché du porteur et répond à sa volonté.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200202001,
+				"Name": "Frappe de jade",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"200202102": {
+		"Id": "200202102",
+		"Name": "Épée volante",
+		"Introduction": "Unité d'attaque aérienne contrôlée par le qi, aussi appelée Épée volante. Elle est connectée à la psyché du porteur et répond à sa volonté.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200202101,
+				"Name": "Frappe de jade",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"200401001": {
 		"Id": "200401001",
@@ -14042,6 +15498,68 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"200402002": {
+		"Id": "200402002",
+		"Name": "Lieutenant des Chevaliers des nuages : Yanqing",
+		"Introduction": "Serviteur du général Jing Yuan. Un épéiste talentueux qui n'a même pas atteint la majorité.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200402001,
+				"Name": "Vent euphorique",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402002,
+				"Name": "Retour de l'hirondelle",
+				"SkillDesc": "Invoque 4 Épées volantes et obtient l'effet Formation d'épée : augmente la VIT de Yanqing et confère Noyau de formation aux Épées volantes.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 200402003,
+				"Name": "Épine de fer",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique, avec de fortes chances de lui infliger l'effet Gelé.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402004,
+				"Name": "Ballade du briseur de formation",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402005,
+				"Name": "Sur le fil",
+				"SkillDesc": "Entre en état de charge. Lance Lacération en cascade sur toutes les cibles lors de l'action suivante.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 200402006,
+				"Name": "Lacération en cascade",
+				"SkillDesc": "Inflige des DGT de glace massifs à toutes les cibles.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"201101001": {
 		"Id": "201101001",
 		"Name": "Ingéniosité envoûtée : dracolion obéissant",
@@ -14264,6 +15782,42 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"201201005": {
+		"Id": "201201005",
+		"Name": "Ingéniosité envoûtée : poisson-dragon illuminé",
+		"Introduction": "Une ingéniosité imaginée par des artisans de la Commission de l'artisanat. Il s'agissait à l'origine d'une source lumineuse inanimée. Elle est désormais dotée d'une « vie » relativement courte suite à certaines mutations.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201201001,
+				"Name": "Luminosité nocturne",
+				"SkillDesc": "Inflige des DGT de feu mineurs à toutes les cibles, avec de fortes chances de réduire leur DÉF.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 201201002,
+				"Name": "Flamme de bougie",
+				"SkillDesc": "En cas de coup fatal, inflige des DGT de feu à toutes les unités de son équipe, avec de fortes chances de réduire leur DÉF.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"201301001": {
 		"Id": "201301001",
 		"Name": "Poète guerrier",
@@ -14411,6 +15965,55 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"201301005": {
+		"Id": "201301005",
+		"Name": "Gardien aurumaton",
+		"Introduction": "Aurumaton de garnison créé grâce à l'ancienne technologie des ingéniosités.\nIl y a de nombreuses années, les aurumatons sont partis avec Xianzhou à la recherche des recettes divines de l'immortalité, et ont été chargés de superviser l'humanité et de l'aider pendant les guerres. Cependant, après d'innombrables rébellions, ils ont finalement été renversés par le peuple de Xianzhou.\nAujourd'hui, tous les aurumatons sont strictement contrôlés à l'aide de talismans et sont utilisés pour garder les lieux importants.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.4
+		},
+		"SkillList": [
+			{
+				"Id": 201301001,
+				"Name": "Protocole de sanction",
+				"SkillDesc": "Le niveau du taux de sanction augmente lorsque votre équipe utilise des compétences ou des ultimes. Quand le taux de sanction atteint son seuil maximal, entre en mode de sanction et invoque des Ingéniosités envoûtées : Poissons-dragons illuminés.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 201301002,
+				"Name": "Redouté",
+				"SkillDesc": "Augmente le niveau du taux de sanction et inflige des DGT imaginaires mineurs à toutes les cibles. A de fortes chances d'appliquer Affaiblissement aux cibles.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 201301003,
+				"Name": "Restriction",
+				"SkillDesc": "Inflige des DGT imaginaires à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 201301004,
+				"Name": "Enchaînement",
+				"SkillDesc": "Inflige des DGT imaginaires massifs à une cible unique, avec de fortes chances d'infliger Emprisonnement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202201001": {
 		"Id": "202201001",
 		"Name": "Soldat frappé par le mara",
@@ -14495,6 +16098,174 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"202201003": {
+		"Id": "202201003",
+		"Name": "Assassin furtif",
+		"Introduction": "Un assassin qui dissimule sa présence en utilisant la technique de l'hymnuage. On ignore qui est son commanditaire.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Réjuvénation",
+				"SkillDesc": "Restaure un certain montant de PV après avoir subi un coup fatal. Cet effet n'a pas de limite de durée mais peut être dissipé. Cet effet ne peut se déclencher qu'1 fois par combat.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201004": {
+		"Id": "202201004",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Réjuvénation",
+				"SkillDesc": "Restaure un certain montant de PV après avoir subi un coup fatal. Cet effet n'a pas de limite de durée mais peut être dissipé. Cet effet ne peut se déclencher qu'1 fois par combat.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201005": {
+		"Id": "202201005",
+		"Name": "Assassin furtif",
+		"Introduction": "Un assassin qui dissimule sa présence en utilisant la technique de l'hymnuage. On ignore qui est son commanditaire.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Réjuvénation",
+				"SkillDesc": "Restaure un certain montant de PV après avoir subi un coup fatal. Cet effet n'a pas de limite de durée mais peut être dissipé. Cet effet ne peut se déclencher qu'1 fois par combat.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202201007": {
+		"Id": "202201007",
+		"Name": "Soldat frappé par le mara",
+		"Introduction": "Soldats de Xianzhou ayant sombré dans la folie. Leur corps a depuis longtemps perdu forme humaine et continue de se développer et de muter. On raconte que la longévité des natifs de Xianzhou leur vaudrait d'être inévitablement frappés par le mara.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Réjuvénation",
+				"SkillDesc": "Restaure un certain montant de PV après avoir subi un coup fatal. Cet effet n'a pas de limite de durée mais peut être dissipé. Cet effet ne peut se déclencher qu'1 fois par combat.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Vent impitoyable",
+				"SkillDesc": "Inflige des DGT de vent mineurs à une cible unique, avec de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202202001": {
 		"Id": "202202001",
 		"Name": "Garde du Siège de la clairvoyance divine",
@@ -14535,6 +16306,47 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"202202002": {
+		"Id": "202202002",
+		"Name": "Assassin furtif",
+		"Introduction": "Un assassin qui dissimule sa présence en utilisant la technique de l'hymnuage. On ignore qui est son commanditaire.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "Noyau d'ensemencement",
+				"SkillDesc": "Inflige à une cible unique Éperon du tonnerre.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202202002,
+				"Name": "Règne du tonnerre",
+				"SkillDesc": "Inflige des DGT de foudre mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "Rupture de noyau",
+				"SkillDesc": "Lorsqu'elle reçoit un coup fatal, cette unité inflige des DGT de foudre à toutes les cibles auxquelles elle a infligé Éperon du tonnerre, ce qui supprime Éperon du tonnerre de ces cibles.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202202003": {
 		"Id": "202202003",
@@ -14617,6 +16429,152 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202202005": {
+		"Id": "202202005",
+		"Name": "Invité inattendu",
+		"Introduction": "Un intrus malveillant. Cherche à assassiner Dan Heng dans le but d'éliminer la réincarnation de Dan Feng.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "Noyau d'ensemencement",
+				"SkillDesc": "Inflige à une cible unique Éperon du tonnerre.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202202002,
+				"Name": "Règne du tonnerre",
+				"SkillDesc": "Inflige des DGT de foudre mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "Rupture de noyau",
+				"SkillDesc": "Lorsqu'elle reçoit un coup fatal, cette unité inflige des DGT de foudre à toutes les cibles auxquelles elle a infligé Éperon du tonnerre, ce qui supprime Éperon du tonnerre de ces cibles.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202202006": {
+		"Id": "202202006",
+		"Name": "Assassin furtif",
+		"Introduction": "Un assassin qui dissimule sa présence en utilisant la technique de l'hymnuage. On ignore qui est son commanditaire.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202202001,
+				"Name": "Noyau d'ensemencement",
+				"SkillDesc": "Inflige à une cible unique Éperon du tonnerre.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202202002,
+				"Name": "Règne du tonnerre",
+				"SkillDesc": "Inflige des DGT de foudre mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202202003,
+				"Name": "Rupture de noyau",
+				"SkillDesc": "Lorsqu'elle reçoit un coup fatal, cette unité inflige des DGT de foudre à toutes les cibles auxquelles elle a infligé Éperon du tonnerre, ce qui supprime Éperon du tonnerre de ces cibles.",
+				"SkillTypeDesc": "Talent",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202204001": {
+		"Id": "202204001",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202204001,
+				"Name": "Coup de corne",
+				"SkillDesc": "Inflige des DGT de vent à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202204002,
+				"Name": "Hallali",
+				"SkillDesc": "En cas de coup fatal, avance l'action des unités alliées adjacentes.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202206001": {
+		"Id": "202206001",
+		"Name": "Assassin furtif",
+		"Introduction": "Un assassin qui dissimule sa présence en utilisant la technique de l'hymnuage. On ignore qui est son commanditaire.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202206001,
+				"Name": "Arbalète acérée",
+				"SkillDesc": "Inflige des DGT de foudre successifs à plusieurs cibles aléatoires.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202301001": {
 		"Id": "202301001",
@@ -14948,6 +16906,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"202301007": {
+		"Id": "202301007",
+		"Name": "Assassin furtif",
+		"Introduction": "Un assassin qui dissimule sa présence en utilisant la technique de l'hymnuage. On ignore qui est son commanditaire.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Coup de tonnerre",
+				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Éclairs punitifs",
+				"SkillDesc": "Inflige des DGT de foudre à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Calamité assourdissante",
+				"SkillDesc": "Inflige des DGT de foudre massifs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Invocation mara",
+				"SkillDesc": "Consomme des PV pour invoquer des Soldats frappés par le mara.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Drainage de vitalité",
+				"SkillDesc": "Lorsque d'autres unités de son équipe avec Renaissance sont sur le champ de bataille, bénéficie de Frappe drainante, ce qui régénère des PV lorsqu'une cible est touchée.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202301008": {
 		"Id": "202301008",
 		"Name": "Métamorphe des Disciples du Sanctus Medicus",
@@ -15003,9 +17016,119 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"202301010": {
+		"Id": "202301010",
+		"Name": "Métamorphe des Disciples du Sanctus Medicus",
+		"Introduction": "Un disciple qui aspire à faire revivre les anciens mystères de l'Abondance et à guider les natifs de Xianzhou sur le chemin libérateur de l'immortalité.\nLeur vœu est désormais exaucé. Dotés du pouvoir de l'ancien miracle et l'utilisant à la fois comme arme et protection, ils ont réussi à accéder aux secrets de l'immortalité.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Coup de tonnerre",
+				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Éclairs punitifs",
+				"SkillDesc": "Inflige des DGT de foudre à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Calamité assourdissante",
+				"SkillDesc": "Inflige des DGT de foudre massifs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Invocation mara",
+				"SkillDesc": "Consomme des PV pour invoquer des Soldats frappés par le mara.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Drainage de vitalité",
+				"SkillDesc": "Lorsque d'autres unités de son équipe avec Renaissance sont sur le champ de bataille, bénéficie de Frappe drainante, ce qui régénère des PV lorsqu'une cible est touchée.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"202301011": {
+		"Id": "202301011",
+		"Name": "Métamorphe des Disciples du Sanctus Medicus",
+		"Introduction": "Un disciple qui aspire à faire revivre les anciens mystères de l'Abondance et à guider les natifs de Xianzhou sur le chemin libérateur de l'immortalité.\nLeur vœu est désormais exaucé. Dotés du pouvoir de l'ancien miracle et l'utilisant à la fois comme arme et protection, ils ont réussi à accéder aux secrets de l'immortalité.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301001,
+				"Name": "Coup de tonnerre",
+				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301002,
+				"Name": "Éclairs punitifs",
+				"SkillDesc": "Inflige des DGT de foudre à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301003,
+				"Name": "Calamité assourdissante",
+				"SkillDesc": "Inflige des DGT de foudre massifs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301004,
+				"Name": "Invocation mara",
+				"SkillDesc": "Consomme des PV pour invoquer des Soldats frappés par le mara.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202301005,
+				"Name": "Drainage de vitalité",
+				"SkillDesc": "Lorsque d'autres unités de son équipe avec Renaissance sont sur le champ de bataille, bénéficie de Frappe drainante, ce qui régénère des PV lorsqu'une cible est touchée.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"202302001": {
 		"Id": "202302001",
-		"Name": "Sylphe de l'Abondance : Singe maléfique",
+		"Name": "Singe maléfique de l'Abondance",
 		"Introduction": "Un singe d'une puissance terrifiante, aussi grand qu'une montagne.\nLorsque l'Arbre d'ambroisie existait encore, le peuple de Xianzhou élevait de nombreuses créatures fantastiques à l'aide de ses techniques ésotériques. Les Singes maléfiques faisaient partie des bêtes qui accompagnaient l'armée.",
 		"ElementalWeaknesses": [
 			"Fire",
@@ -15098,6 +17221,54 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"202302004": {
+		"Id": "202302004",
+		"Name": "Singe maléfique de l'Abondance",
+		"Introduction": "Un singe d'une puissance terrifiante, aussi grand qu'une montagne.\nLorsque l'Arbre d'ambroisie existait encore, le peuple de Xianzhou élevait de nombreuses créatures fantastiques à l'aide de ses techniques ésotériques. Les Singes maléfiques faisaient partie des bêtes qui accompagnaient l'armée.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302001,
+				"Name": "Frappe simienne",
+				"SkillDesc": "Utilise 1 cumul de Vitalité et inflige des DGT quantiques massifs à une cible surveillée.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302002,
+				"Name": "Frappe simienne",
+				"SkillDesc": "Utilise 1 cumul de Vitalité et inflige des DGT quantiques massifs à une cible surveillée.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302003,
+				"Name": "Majesté flamboyante",
+				"SkillDesc": "Augmente les DGT infligés. Effet cumulable.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 202302004,
+				"Name": "Rugissement féroce",
+				"SkillDesc": "Gagne 3 cumuls de Vitalité et désigne une cible aléatoire pour la Surveillance. Tant que la Vitalité n'est pas épuisée, toute cible qui utilise sa compétence devient la nouvelle cible surveillée.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"202303001": {
 		"Id": "202303001",
@@ -15767,6 +17938,62 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800101011": {
+		"Id": "800101011",
+		"Name": "Engeance de flammes",
+		"Introduction": "Éléments cristallisés dotés de l'intelligence la plus primitive. Ils dérivent dans le Fragmentum sous la forme d'un oiseau émettant une chaleur intense, brûlant tout sur son passage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Diversion",
+				"SkillDesc": "Inflige des DGT de feu mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800101012": {
+		"Id": "800101012",
+		"Name": "Engeance de flammes",
+		"Introduction": "Éléments cristallisés dotés de l'intelligence la plus primitive. Ils dérivent dans le Fragmentum sous la forme d'un oiseau émettant une chaleur intense, brûlant tout sur son passage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Diversion",
+				"SkillDesc": "Inflige des DGT de feu mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "Engeance de givre",
@@ -16049,6 +18276,62 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800102011": {
+		"Id": "800102011",
+		"Name": "Engeance de givre",
+		"Introduction": "Éléments cristallisés dotés de l'intelligence la plus primitive. Ils dérivent dans le Fragmentum sous la forme d'un oiseau émettant des températures effroyablement basses, gelant tout ce qui l'entoure.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Diversion",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800102012": {
+		"Id": "800102012",
+		"Name": "Engeance de givre",
+		"Introduction": "Éléments cristallisés dotés de l'intelligence la plus primitive. Ils dérivent dans le Fragmentum sous la forme d'un oiseau émettant des températures effroyablement basses, gelant tout ce qui l'entoure.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Diversion",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800103001": {
 		"Id": "800103001",
 		"Name": "Masque de l'absence de pensée",
@@ -16144,6 +18427,34 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800104003": {
+		"Id": "800104003",
+		"Name": "Engeance du tonnerre",
+		"Introduction": "Éléments cristallisés dotés de l'intelligence la plus primitive. Ils dérivent dans le Fragmentum sous la forme d'un oiseau gorgé d'électricité, libérant des coups de tonnerre dans toutes les directions.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800104001,
+				"Name": "Tonnerre éblouissant",
+				"SkillDesc": "Inflige des DGT de foudre mineurs à une cible unique, avec de fortes chances de lui infliger l'effet Stupéfaction.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800105001": {
 		"Id": "800105001",
@@ -16299,10 +18610,59 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800201005": {
+		"Id": "800201005",
+		"Name": "Tisseuse imaginaire",
+		"Introduction": "Êtres étranges qui n'appartiennent pas à ce monde et ont traversé d'innombrables barrières pour arriver de l'autre côté du vaste ciel sombre et étoilé. Leurs corps sont comme des branches malades qui s'enfoncent dans la réalité, utilisant le pouvoir imaginaire pour la modifier à volonté.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800201001,
+				"Name": "Faisceau lyrique",
+				"SkillDesc": "Inflige des DGT imaginaires mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201002,
+				"Name": "Explosion enchanteresse",
+				"SkillDesc": "Inflige des DGT imaginaires massifs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201003,
+				"Name": "Chant réverbérant",
+				"SkillDesc": "Inflige des DGT imaginaires à une cible unique et aux unités adjacentes, et entre en Position défensive. Lors du prochain tour, utilise Explosion enchanteresse et augmente massivement les DGT infligés.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201004,
+				"Name": "Armure imaginaire",
+				"SkillDesc": "Subit des DGT réduits pour les attaques autres que celles du type de faiblesse.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800204001": {
 		"Id": "800204001",
 		"Name": "Magoret téléporteur",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Quantum",
@@ -16342,7 +18702,7 @@
 	"800204002": {
 		"Id": "800204002",
 		"Name": "Magoret téléporteur",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Quantum",
@@ -16382,7 +18742,7 @@
 	"800204003": {
 		"Id": "800204003",
 		"Name": "Magoret téléporteur",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Quantum",
@@ -16422,7 +18782,7 @@
 	"800205001": {
 		"Id": "800205001",
 		"Name": "Magoret séquenceur",
-		"Introduction": "Une créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
 		"ElementalWeaknesses": [
 			"Physical",
 			"Quantum",
@@ -16458,6 +18818,46 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800205002": {
+		"Id": "800205002",
+		"Name": "Magoret séquenceur",
+		"Introduction": "Créature interdimensionnelle perdue dans les étoiles, de nature docile, au goût sucré, mais non comestible. Passe la majeure partie de sa vie à se nourrir et à fuir. Les voyageurs qui rencontrent ces créatures y voient un bon présage.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "Ç—Ç—Ça fait t—trop peur",
+				"SkillDesc": "Le Magoret a été effrayé et s'enfuira dans 2 tours.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205002,
+				"Name": "À l'aide... À l'aide !",
+				"SkillDesc": "Le Magoret panique et s'enfuira dans 1 tour.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800205003,
+				"Name": "Pfiou... Sauvé",
+				"SkillDesc": "Le Magoret s'enfuit en un instant.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800208101": {
 		"Id": "800208101",
@@ -16804,6 +19204,56 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800301007": {
+		"Id": "800301007",
+		"Name": "Glace tombée du ciel",
+		"Introduction": "Une étrange créature qui n'appartient pas à ce monde. Nourrie par le Fragmentum généré par le Stellaron, elle parasite les racines de ce monde pour obtenir de l'énergie. Son armure reflète la couleur lugubre et profonde du ciel étoilé.\nEn combat, la Glace tombée du ciel gèle toutes les cibles qu'elle touche.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Lamentation glaciale",
+				"SkillDesc": "Inflige des DGT de glace mineurs à une cible unique. Lorsque la cible est déjà gelée et que cette unité est dans l'état Point de congélation, inflige des DGT de glace supplémentaires.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Absorption du givre",
+				"SkillDesc": "Entre dans l'état Point de congélation. Pluie de l'Hiver éternel peut être utilisée lors des attaques suivantes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Pluie de l'Hiver éternel",
+				"SkillDesc": "Cette capacité n'est disponible que lorsque l'état Point de congélation est actif. Inflige des DGT de glace mineurs à toutes les cibles, avec une chance de les geler.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Lamentation glaciale",
+				"SkillDesc": "Inflige des DGT de glace à une cible unique. Il y a une chance de lui infliger l'effet Gelé si l'utilisateur est dans l'état Point de congélation.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800302001": {
 		"Id": "800302001",
 		"Name": "Brasier tombé du ciel",
@@ -17140,6 +19590,198 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800302008": {
+		"Id": "800302008",
+		"Name": "Brasier tombé du ciel",
+		"Introduction": "Une étrange créature qui n'appartient pas à ce monde. Nourrie par le Fragmentum et créée par le Stellaron, elle parasite les racines de ce monde pour obtenir de l'énergie. Son armure brûle de l'intensité des flammes du cœur des étoiles.\nEn combat, le Brasier tombé du ciel incinère toutes les cibles qu'il touche.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Mugissement infernal",
+				"SkillDesc": "Inflige des DGT de feu mineurs à une cible unique, et a de fortes chances de lui infliger Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorption flamboyante",
+				"SkillDesc": "Entre dans l'état Combustion spontanée. Pluie de flammes purificatrices peut être utilisée lors des attaques suivantes.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Pluie de flammes purificatrices",
+				"SkillDesc": "Inflige des DGT de feu successifs mineurs à une cible unique aléatoire, avec de fortes chances de lui infliger l'effet Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusion liquide",
+				"SkillDesc": "Augmente l'ATQ. Ce bonus est dissipé en cas de Rupture de faiblesse.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302009": {
+		"Id": "800302009",
+		"Name": "Brasier tombé du ciel",
+		"Introduction": "Une étrange créature qui n'appartient pas à ce monde. Nourrie par le Fragmentum et créée par le Stellaron, elle parasite les racines de ce monde pour obtenir de l'énergie. Son armure brûle de l'intensité des flammes du cœur des étoiles.\nEn combat, le Brasier tombé du ciel incinère toutes les cibles qu'il touche.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Mugissement infernal",
+				"SkillDesc": "Inflige des DGT de feu mineurs à une cible unique, et a de fortes chances de lui infliger Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorption flamboyante",
+				"SkillDesc": "Entre dans l'état Combustion spontanée. Pluie de flammes purificatrices peut être utilisée lors des attaques suivantes.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Pluie de flammes purificatrices",
+				"SkillDesc": "Inflige des DGT de feu successifs mineurs à une cible unique aléatoire, avec de fortes chances de lui infliger l'effet Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusion liquide",
+				"SkillDesc": "Augmente l'ATQ. Ce bonus est dissipé en cas de Rupture de faiblesse.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302010": {
+		"Id": "800302010",
+		"Name": "Brasier tombé du ciel",
+		"Introduction": "Une étrange créature qui n'appartient pas à ce monde. Nourrie par le Fragmentum et créée par le Stellaron, elle parasite les racines de ce monde pour obtenir de l'énergie. Son armure brûle de l'intensité des flammes du cœur des étoiles.\nEn combat, le Brasier tombé du ciel incinère toutes les cibles qu'il touche.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Mugissement infernal",
+				"SkillDesc": "Inflige des DGT de feu mineurs à une cible unique, et a de fortes chances de lui infliger Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorption flamboyante",
+				"SkillDesc": "Entre dans l'état Combustion spontanée. Pluie de flammes purificatrices peut être utilisée lors des attaques suivantes.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Pluie de flammes purificatrices",
+				"SkillDesc": "Inflige des DGT de feu successifs mineurs à une cible unique aléatoire, avec de fortes chances de lui infliger l'effet Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusion liquide",
+				"SkillDesc": "Augmente l'ATQ. Ce bonus est dissipé en cas de Rupture de faiblesse.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"800302011": {
+		"Id": "800302011",
+		"Name": "Brasier tombé du ciel",
+		"Introduction": "Une étrange créature qui n'appartient pas à ce monde. Nourrie par le Fragmentum et créée par le Stellaron, elle parasite les racines de ce monde pour obtenir de l'énergie. Son armure brûle de l'intensité des flammes du cœur des étoiles.\nEn combat, le Brasier tombé du ciel incinère toutes les cibles qu'il touche.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Mugissement infernal",
+				"SkillDesc": "Inflige des DGT de feu mineurs à une cible unique, et a de fortes chances de lui infliger Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorption flamboyante",
+				"SkillDesc": "Entre dans l'état Combustion spontanée. Pluie de flammes purificatrices peut être utilisée lors des attaques suivantes.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Pluie de flammes purificatrices",
+				"SkillDesc": "Inflige des DGT de feu successifs mineurs à une cible unique aléatoire, avec de fortes chances de lui infliger l'effet Embrasement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusion liquide",
+				"SkillDesc": "Augmente l'ATQ. Ce bonus est dissipé en cas de Rupture de faiblesse.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800303001": {
 		"Id": "800303001",
 		"Name": "Ombre gardienne",
@@ -17161,7 +19803,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17229,7 +19871,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17297,7 +19939,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17365,7 +20007,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17433,7 +20075,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17501,7 +20143,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17569,7 +20211,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17637,7 +20279,7 @@
 		"SkillList": [
 			{
 				"Id": 800303001,
-				"Name": "Souvenir de la foudre",
+				"Name": "Réminiscence de la foudre",
 				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Thunder"
@@ -17684,6 +20326,74 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"800303009": {
+		"Id": "800303009",
+		"Name": "Ombre gardienne",
+		"Introduction": "Une ombre révélée par le pouvoir d'un Stellaron, qui exécute la volonté incessante d'expansion du Fragmentum.\nUn être vivant constitué d'énergie qui est né de la projection des désirs des formes de vie conscientes du Fragmentum, à la manière d'une perle créée à partir d'un grain de sable. Cette énergie erre sans but, n'agissant que lorsqu'elle exécute la volonté de son maître.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800303001,
+				"Name": "Réminiscence de la foudre",
+				"SkillDesc": "Inflige des DGT de foudre à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303002,
+				"Name": "Condamnation de la foudre",
+				"SkillDesc": "Inflige des DGT de foudre mineurs à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303003,
+				"Name": "Bannissement de tranquillité",
+				"SkillDesc": "Votre équipe se voit imposer une interdiction d'attaquer l'Ombre gardienne. Si un personnage brave cette interdiction, il subit immédiatement 1 attaque.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800303004,
+				"Name": "Bannissement de désarmement",
+				"SkillDesc": "Votre équipe se voit imposer une interdiction d'utiliser l'ATQ normale. Si un personnage brave cette interdiction, il subit immédiatement 1 attaque.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800303005,
+				"Name": "Bannissement de silence",
+				"SkillDesc": "Votre équipe se voit imposer une interdiction d'utiliser la compétence. Si un personnage brave cette interdiction, il subit immédiatement 1 attaque.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800303006,
+				"Name": "Sentence de l'orage",
+				"SkillDesc": "Inflige des DGT de foudre successifs mineurs à une cible aléatoire, avec une chance de lui infliger Stupéfaction.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303007,
+				"Name": "Châtiment inéluctable",
+				"SkillDesc": "Inflige des DGT de foudre aux personnages qui transgressent le bannissement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"800304001": {
 		"Id": "800304001",
 		"Name": "Ombre en décomposition",
@@ -17720,13 +20430,13 @@
 			{
 				"Id": 800304004,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304005,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -17775,13 +20485,13 @@
 			{
 				"Id": 800304004,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304005,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -17830,13 +20540,13 @@
 			{
 				"Id": 800304004,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304005,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -17885,13 +20595,13 @@
 			{
 				"Id": 800304004,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304005,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -17940,13 +20650,13 @@
 			{
 				"Id": 800304004,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304005,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -17995,13 +20705,13 @@
 			{
 				"Id": 800304004,
 				"Name": "Reliure de l'âge d'or",
-				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Récupération de la jauge. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Récupération de la jauge.",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800304005,
 				"Name": "Libération de l'âge d'or",
-				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Récupération de la jauge ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Imaginary"
 			},
@@ -18013,6 +20723,61 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800304007": {
+		"Id": "800304007",
+		"Name": "Ombre en décomposition",
+		"Introduction": "Une ombre révélée par le pouvoir d'un Stellaron, qui exécute la volonté incessante d'expansion du Fragmentum.\nUn être vivant constitué d'énergie qui est né de la projection des désirs des formes de vie conscientes du Fragmentum, à la manière d'une perle créée à partir d'un grain de sable. Cependant, le désir qui l'animait a depuis longtemps été corrompu et déformé.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800304002,
+				"Name": "Pointes dorées éphémères",
+				"SkillDesc": "Inflige des DGT imaginaires à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304003,
+				"Name": "Châtiment éphémère",
+				"SkillDesc": "Inflige des DGT imaginaires massifs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304004,
+				"Name": "Reliure de l'âge d'or",
+				"SkillDesc": "Entre en état de charge et bénéficie de 9 cumuls de Jauge de Réminiscence. Lance Libération de l'âge d'or lors de la prochaine action. Chaque fois que cette unité est attaquée, elle perd 1 cumul de Jauge de Réminiscence.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800304005,
+				"Name": "Libération de l'âge d'or",
+				"SkillDesc": "Inflige des DGT imaginaires successifs mineurs à une cible aléatoire. Le nombre d'attaques est égal au nombre de cumuls restants de « Jauge de Réminiscence ». S'il n'en reste plus, cette capacité échoue.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304006,
+				"Name": "Voile éphémère",
+				"SkillDesc": "Réduit légèrement les DGT subis de la part des ATQ normales, compétences, ultimes et attaques de suivi, et a une faible chance d'infliger l'effet Emprisonnement à la cible attaquée par l'Ombre en décomposition.",
+				"SkillTypeDesc": "Talent"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"800305001": {
 		"Id": "800305001",
@@ -18049,14 +20814,14 @@
 			},
 			{
 				"Id": 800305003,
-				"Name": "Arbalète Tord-le-vent",
-				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles subissant actuellement Faille du vent. Lance Ouragan opportuniste lors de la prochaine action.",
+				"Name": "Arc courbe-vent",
+				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles qui subissent actuellement Faille du vent. Lance Tempête de vent lors de la prochaine action.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800305004,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Wind"
 			},
@@ -18068,8 +20833,8 @@
 			},
 			{
 				"Id": 800305006,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité"
 			}
 		],
@@ -18110,14 +20875,14 @@
 			},
 			{
 				"Id": 800305003,
-				"Name": "Arbalète Tord-le-vent",
-				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles subissant actuellement Faille du vent. Lance Ouragan opportuniste lors de la prochaine action.",
+				"Name": "Arc courbe-vent",
+				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles qui subissent actuellement Faille du vent. Lance Tempête de vent lors de la prochaine action.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800305004,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Wind"
 			},
@@ -18129,8 +20894,8 @@
 			},
 			{
 				"Id": 800305006,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité"
 			}
 		],
@@ -18171,14 +20936,14 @@
 			},
 			{
 				"Id": 800305003,
-				"Name": "Arbalète Tord-le-vent",
-				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles subissant actuellement Faille du vent. Lance Ouragan opportuniste lors de la prochaine action.",
+				"Name": "Arc courbe-vent",
+				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles qui subissent actuellement Faille du vent. Lance Tempête de vent lors de la prochaine action.",
 				"SkillTypeDesc": "Capacité"
 			},
 			{
 				"Id": 800305004,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Wind"
 			},
@@ -18190,12 +20955,73 @@
 			},
 			{
 				"Id": 800305006,
-				"Name": "Ouragan opportuniste",
-				"SkillDesc": "Inflige des DGT de vent aux cibles subissant Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
 				"SkillTypeDesc": "Capacité"
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800305006": {
+		"Id": "800305006",
+		"Name": "Portefoudre",
+		"Introduction": "Monstres qui ont subi la corrosion au fur et à mesure de l'expansion du Fragmentum. Ils sont désormais plus habiles au combat maintenant que la source de leur pouvoir a muté.\nLes Portefoudres utilisent le pouvoir du vent pour les aider au combat, leur permettant de tirer des flèches plus rapidement.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305001,
+				"Name": "Météore vigilant",
+				"SkillDesc": "Inflige des DGT de vent à une cible unique, et a de fortes chances d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305002,
+				"Name": "Marcheur du vent",
+				"SkillDesc": "Inflige des DGT de vent mineurs à la cible et aux unités adjacentes, avec une chance d'infliger Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305003,
+				"Name": "Arc courbe-vent",
+				"SkillDesc": "Entre en état de charge et verrouille toutes les cibles qui subissent actuellement Faille du vent. Lance Tempête de vent lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité"
+			},
+			{
+				"Id": 800305004,
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305005,
+				"Name": "Tempête cyclonique",
+				"SkillDesc": "Augmente légèrement l'ATQ après avoir attaqué une cible qui subit Faille du vent. Ce bonus est dissipé en cas de Rupture de faiblesse.",
+				"SkillTypeDesc": "Talent"
+			},
+			{
+				"Id": 800305006,
+				"Name": "Tempête de vent",
+				"SkillDesc": "Inflige des DGT de vent aux cibles qui subissent Faille du vent. Cette capacité échoue si aucun membre de l'équipe de la cible ne subit Faille du vent.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801101001": {
 		"Id": "801101001",
@@ -18336,6 +21162,62 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801101006": {
+		"Id": "801101006",
+		"Name": "Baryon",
+		"Introduction": "Afin d'empêcher les antiparticules de se dissiper et d'annihiler la matière normale, la Légion d'antimatière a créé deux types de piège à ions miniatures pour le transport, regroupés sous les appellations Baryons et Antibaryons.\nLes Baryons sont dotés d'une intelligence élémentaire, et peuvent dégager la voie en fonction des ordres et des invocations des Rangers du néant sur le champ de bataille.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Oblitération",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801101007": {
+		"Id": "801101007",
+		"Name": "Baryon",
+		"Introduction": "Afin d'empêcher les antiparticules de se dissiper et d'annihiler la matière normale, la Légion d'antimatière a créé deux types de piège à ions miniatures pour le transport, regroupés sous les appellations Baryons et Antibaryons.\nLes Baryons sont dotés d'une intelligence élémentaire, et peuvent dégager la voie en fonction des ordres et des invocations des Rangers du néant sur le champ de bataille.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Oblitération",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801102001": {
 		"Id": "801102001",
@@ -19107,6 +21989,111 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"801201019": {
+		"Id": "801201019",
+		"Name": "Reaver des Rangers du néant",
+		"Introduction": "Des guerriers qui étaient censés mourir, mais qui ont été remaniés dans la Forge de la guerre et ont acquis le pouvoir de la Destruction. L'antimatière complète leur corps et des particules négatives émanent de leur constitution corporelle.\nExtrêmement agressifs, ils incarnent la volonté de la Destruction et constituent les unités de combat de base de la Légion d'antimatière, guidés par leur seul instinct destructeur.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Lame de chasse",
+				"SkillDesc": "Inflige des DGT imaginaires mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Saut vortex",
+				"SkillDesc": "Inflige des DGT imaginaires mineurs à une cible unique et aux unités adjacentes à la cible.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801201020": {
+		"Id": "801201020",
+		"Name": "Reaver des Rangers du néant",
+		"Introduction": "Des guerriers qui étaient censés mourir, mais qui ont été remaniés dans la Forge de la guerre et ont acquis le pouvoir de la Destruction. L'antimatière complète leur corps et des particules négatives émanent de leur constitution corporelle.\nExtrêmement agressifs, ils incarnent la volonté de la Destruction et constituent les unités de combat de base de la Légion d'antimatière, guidés par leur seul instinct destructeur.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Lame de chasse",
+				"SkillDesc": "Inflige des DGT imaginaires mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Saut vortex",
+				"SkillDesc": "Inflige des DGT imaginaires mineurs à une cible unique et aux unités adjacentes à la cible.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801201021": {
+		"Id": "801201021",
+		"Name": "Reaver des Rangers du néant",
+		"Introduction": "Des guerriers qui étaient censés mourir, mais qui ont été remaniés dans la Forge de la guerre et ont acquis le pouvoir de la Destruction. L'antimatière complète leur corps et des particules négatives émanent de leur constitution corporelle.\nExtrêmement agressifs, ils incarnent la volonté de la Destruction et constituent les unités de combat de base de la Légion d'antimatière, guidés par leur seul instinct destructeur.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Lame de chasse",
+				"SkillDesc": "Inflige des DGT imaginaires mineurs à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Saut vortex",
+				"SkillDesc": "Inflige des DGT imaginaires mineurs à une cible unique et aux unités adjacentes à la cible.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801202001": {
 		"Id": "801202001",
 		"Name": "Distorseur des Rangers du néant",
@@ -19247,6 +22234,41 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"801202005": {
+		"Id": "801202005",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Commandement de la Nihilité",
+				"SkillDesc": "Verrouille une unité aléatoire de votre équipe, faisant d'elle la cible des prochaines attaques de tous les ennemis.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Frappe du néant sans ombre",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801202006": {
 		"Id": "801202006",
 		"Name": "Distorseur des Rangers du néant",
@@ -19386,6 +22408,41 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801202010": {
+		"Id": "801202010",
+		"Name": "Distorseur des Rangers du néant",
+		"Introduction": "Un Ranger du néant qui a survécu à l'annihilation de particules. Les particules positives et négatives de son corps ont temporairement atteint un étrange équilibre, lui conférant plus de pouvoir que les reavers ordinaires.\nEn tant qu'unités de combat de base de la Légion d'antimatière, ils sont dotés d'une certaine intelligence et sont capables de contrôler les reavers dans un périmètre restreint.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Commandement de la Nihilité",
+				"SkillDesc": "Verrouille une unité aléatoire de votre équipe, faisant d'elle la cible des prochaines attaques de tous les ennemis.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Frappe du néant sans ombre",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -19562,6 +22619,41 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"801203004": {
+		"Id": "801203004",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801203001,
+				"Name": "Canon du néant",
+				"SkillDesc": "Inflige des DGT imaginaires à une cible unique, avec une chance de lui infliger l'effet Détonateur. Cette unité subit alors l'effet Surchargé.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801203002,
+				"Name": "Barrière thermique",
+				"SkillDesc": "Dissipe l'effet Surchargé de cette unité.",
+				"SkillTypeDesc": "Capacité"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
 	"801203005": {
 		"Id": "801203005",
 		"Name": "Éliminateur des Rangers du néant",
@@ -19660,7 +22752,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -19717,7 +22809,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -19774,7 +22866,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -19831,7 +22923,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -19888,7 +22980,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -19945,7 +23037,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -20002,7 +23094,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -20030,6 +23122,63 @@
 			}
 		],
 		"VersionAdded": "1.1"
+	},
+	"801301008": {
+		"Id": "801301008",
+		"Name": "Distorsion",
+		"Introduction": "« Souvenirs » et « photographies » sont similaires. Tous deux semblent transcrire la « réalité » alors qu'ils l'aliènent, la profanent et l'altèrent. Éliminer la « distorsion » pourrait faire de cette reproduction un souvenir fidèle, ou peut-être pas.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Projection irréelle",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Règne de la force",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Piétinement de guerre",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Flèche en spirale",
+				"SkillDesc": "Verrouille une cible unique. Lance Fin de l'arc sur cette cible lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Fin de l'arc",
+				"SkillDesc": "Inflige des DGT quantiques massifs à une cible unique, avec de fortes chances de lui infliger Enchevêtrement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	},
 	"801301009": {
 		"Id": "801301009",
@@ -20059,7 +23208,7 @@
 			},
 			{
 				"Id": 801301002,
-				"Name": "Règle de la force",
+				"Name": "Règne de la force",
 				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
 				"SkillTypeDesc": "Capacité",
 				"ElementType": "Quantum"
@@ -20087,5 +23236,176 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801301010": {
+		"Id": "801301010",
+		"Name": "Piétineur des Rangers du néant",
+		"Introduction": "Produit de la Forge de la guerre résultant de la fusion de restes de guerriers tombés au combat et de Léviathans réalisée par la Légion d'antimatière.\nBien que relativement rares, ils possèdent à la fois l'intelligence d'un guerrier et la puissance et la mobilité d'un Léviathan. Leur cri peut invoquer un grand nombre de Rangers du néant.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Projection irréelle",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Règne de la force",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Piétinement de guerre",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Flèche en spirale",
+				"SkillDesc": "Verrouille une cible unique. Lance Fin de l'arc sur cette cible lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Fin de l'arc",
+				"SkillDesc": "Inflige des DGT quantiques massifs à une cible unique, avec de fortes chances de lui infliger Enchevêtrement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801301011": {
+		"Id": "801301011",
+		"Name": "Piétineur des Rangers du néant",
+		"Introduction": "Produit de la Forge de la guerre résultant de la fusion de restes de guerriers tombés au combat et de Léviathans réalisée par la Légion d'antimatière.\nBien que relativement rares, ils possèdent à la fois l'intelligence d'un guerrier et la puissance et la mobilité d'un Léviathan. Leur cri peut invoquer un grand nombre de Rangers du néant.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Projection irréelle",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Règne de la force",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Piétinement de guerre",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Flèche en spirale",
+				"SkillDesc": "Verrouille une cible unique. Lance Fin de l'arc sur cette cible lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Fin de l'arc",
+				"SkillDesc": "Inflige des DGT quantiques massifs à une cible unique, avec de fortes chances de lui infliger Enchevêtrement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"801301012": {
+		"Id": "801301012",
+		"Name": "Piétineur des Rangers du néant",
+		"Introduction": "Produit de la Forge de la guerre résultant de la fusion de restes de guerriers tombés au combat et de Léviathans réalisée par la Légion d'antimatière.\nBien que relativement rares, ils possèdent à la fois l'intelligence d'un guerrier et la puissance et la mobilité d'un Léviathan. Leur cri peut invoquer un grand nombre de Rangers du néant.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "Projection irréelle",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "Règne de la force",
+				"SkillDesc": "Inflige des DGT quantiques à une cible unique.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "Piétinement de guerre",
+				"SkillDesc": "Inflige des DGT quantiques mineurs à une cible unique et aux unités adjacentes.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "Flèche en spirale",
+				"SkillDesc": "Verrouille une cible unique. Lance Fin de l'arc sur cette cible lors de la prochaine action.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "Fin de l'arc",
+				"SkillDesc": "Inflige des DGT quantiques massifs à une cible unique, avec de fortes chances de lui infliger Enchevêtrement.",
+				"SkillTypeDesc": "Capacité",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.3"
 	}
 }

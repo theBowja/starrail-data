@@ -1,6 +1,7 @@
 require('../global.js');
 
 const xrogue = getExcel('RogueMiracle');
+const xrdisp = getExcel('RogueMiracleDisplay');
 
 
 function collate(langCode) {
@@ -12,11 +13,13 @@ function collate(langCode) {
 		data.Id = id;
 		let filename = id;
 
-		data.Name = language[obj.MiracleName.Hash];
+		let disp = xrdisp[obj.MiracleDisplayID];
 
-		// if (!language[obj.MiracleDesc.Hash]) return accum; // for !IsShow
-		data.Effect = global.replaceParams(language[obj.MiracleDesc.Hash], obj.DescParamList);
-		data.Story = language[obj.MiracleBGDesc.Hash].replace('\\n', '\n');
+		data.Name = language[disp.MiracleName.Hash];
+
+		// if (!language[disp.MiracleDesc.Hash]) return accum; // for !IsShow
+		data.Effect = global.replaceParams(language[disp.MiracleDesc.Hash], disp.DescParamList);
+		data.Story = language[disp.MiracleBGDesc.Hash].replace('\\n', '\n');
 
 		// data.IsShow = obj.IsShow;
 

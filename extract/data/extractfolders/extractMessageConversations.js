@@ -5,6 +5,7 @@ const xmgroup = getExcel('MessageGroupConfig');
 const xmsection = getExcel('MessageSectionConfig');
 const xmitem = getExcel('MessageItemConfig');
 const xmimage = getExcel('MessageItemImage');
+const xemoji = getExcel('EmojiConfig');
 
 function collate(langCode) {
 	const textmap = getLanguage(langCode);
@@ -43,10 +44,19 @@ function collate(langCode) {
 					message.Choices = messageItemIds.map(itemId => {
 						const choiceData = {};
 						choiceData.ChoiceType = xmitem[itemId].ItemType;
-						if (xmitem[itemId].ItemType === 'Sticker' || xmitem[itemId].ItemType === 'Image') {
-							choiceData.Image = xmimage[xmitem[itemId].ItemImageID].ImagePath;
+						if (xmitem[itemId].ItemType === 'Sticker') {
+							choiceData.Image = xemoji[xmitem[itemId].ItemContentID].ImagePath;
+						} else if (xmitem[itemId].ItemType === 'Image') {
+							choiceData.Image = xmimage[xmitem[itemId].ItemContentID].ImagePath;
 						}
 						choiceData.Text = textmap[xmitem[itemId].OptionText.Hash].replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
+						if (choiceData.Text === undefined && xmitem[itemId].ItemType === 'Sticker') {
+							choiceData.Text = `[${textmap[xmimage[xmitem[itemId].ItemContentID].KeyWords.Hash]}]`;
+						}
+						if (choiceData.Text === undefined) {
+							console.log(`choiceData has no text`)
+							console.log(choiceData);
+						}
 						choiceData.NextMessageId = itemId+'';
 						return choiceData;
 					});
@@ -69,11 +79,20 @@ function collate(langCode) {
 						data.ParticpatingContactIds.add('8001');
 					}
 
-					if (messageObj.ItemType === 'Sticker' || messageObj.ItemType === 'Image') {
-						message.Image = xmimage[messageObj.ItemImageID].ImagePath;
+					if (messageObj.ItemType === 'Sticker') {
+						message.Image = xemoji[messageObj.ItemContentID].EmojiPath;
+					} else if (messageObj.ItemType === 'Image') {
+						message.Image = xmimage[messageObj.ItemContentID].ImagePath;
 					}
 
-					message.Text = textmap[messageObj.MainText.Hash].replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
+					message.Text = textmap[messageObj.MainText.Hash]?.replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
+					if (message.Text === undefined && messageObj.ItemType === 'Sticker') {
+						message.Text = `[${textmap[xemoji[messageObj.ItemContentID].KeyWords.Hash]}]`;
+					}
+					if (message.Text === undefined) {
+						console.log(`message has no text`)
+						console.log(message);
+					}
 
 					if (messageObj.NextItemIDList.length === 0) {
 						// do nothing

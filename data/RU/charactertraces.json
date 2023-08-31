@@ -5815,7 +5815,7 @@
 				"Name": "Ласковый лунный свет",
 				"NodeType": 2,
 				"NodeTypeText": "Навык",
-				"EffectRaw": "Наносит выбранному противнику электрический урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Кафки, и электрический урон соседним целям, равный <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> от силы атаки Кафки.\nЕсли выбранный противник уже получает периодический урон, то навык немедленно наносит урон, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от всех текущих эффектов периодического урона, имеющихся у противника.",
+				"EffectRaw": "Наносит выбранному противнику электрический урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Кафки, и электрический урон соседним целям, равный <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> от силы атаки Кафки.\nЕсли выбранный противник уже имеет статус с периодическим уроном, то навык немедленно наносит урон, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от всех имеющихся у противника статусов с периодическим уроном.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100502"
@@ -6351,7 +6351,7 @@
 				"Name": "Жестокая нежность",
 				"NodeType": 2,
 				"NodeTypeText": "Талант",
-				"EffectRaw": "После того, как союзник использует базовую атаку, Кафка немедленно выполняет <u>бонус-атаку</u>, которая наносит поражённому противнику электрический урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Кафки, а также имеет базовый шанс <unbreak>#2[i]%</unbreak> наложить на цель сходный со сверхспособностью статус Шок на <unbreak>#3[i]</unbreak> хода. Этот эффект может сработать только 1 раз за ход.",
+				"EffectRaw": "После того, как союзник использует базовую атаку, Кафка немедленно выполняет <u>бонус-атаку</u>, которая наносит поражённому противнику электрический урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Кафки, а также имеет <u>базовый шанс</u> <unbreak>#2[i]%</unbreak> наложить на цель сходный со сверхспособностью статус Шок на <unbreak>#3[i]</unbreak> хода. Этот эффект может сработать только 1 раз за ход.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100504"
@@ -12900,7 +12900,7 @@
 				"Name": "Боевая передислокация",
 				"NodeType": 2,
 				"NodeTypeText": "Навык",
-				"EffectRaw": "Снимает 1 <u>ослабление</u> с союзника, заставляет его немедленно выполнить действие и повышает его урон на <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> на <unbreak>#3[i]</unbreak> ход.\nКогда этот навык используется на самой Броне, она не может совершить действие повторно.",
+				"EffectRaw": "Снимает 1 <u>ослабление</u> с союзника и позволяет ему выполнить действие немедленно, а также повышает его урон на <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> на <unbreak>#3[i]</unbreak> ход.\nКогда этот навык используется на самой Броне, она не может совершить действие повторно.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110102"
@@ -17396,7 +17396,7 @@
 				"Name": "Прочный бастион",
 				"NodeType": 2,
 				"NodeTypeText": "Сверхспособность",
-				"EffectRaw": "Накладывает на всех союзников Щит, который поглощает урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от защиты Гепарда плюс <color=#f29e38ff><unbreak>#3[i]</unbreak></color> ед., в течение <unbreak>#2[i]</unbreak> ходов.",
+				"EffectRaw": "Накладывает на всех союзников Щит, который может поглотить урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от защиты Гепарда плюс <color=#f29e38ff><unbreak>#3[i]</unbreak></color> ед., на <unbreak>#2[i]</unbreak> хода.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110403"
@@ -18818,7 +18818,7 @@
 				"Name": "Дар возрождения",
 				"NodeType": 2,
 				"NodeTypeText": "Сверхспособность",
-				"EffectRaw": "Восстанавливает HP всех союзников, равное <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> от макс. HP Наташи плюс <color=#f29e38ff><unbreak>#2[i]</unbreak></color> HP.",
+				"EffectRaw": "Восстанавливает всем союзникам HP, равное <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> от макс. HP Наташи плюс <color=#f29e38ff><unbreak>#2[i]</unbreak></color> HP.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110503"
@@ -19403,7 +19403,7 @@
 				"Name": "Восстановление",
 				"NodeType": 3,
 				"NodeTypeText": "Доп. способность",
-				"EffectRaw": "Увеличивает длительность вызванного навыком периодического исцеления на <unbreak>#1[i]</unbreak> ход.",
+				"EffectRaw": "Длительность вызванного навыком эффекта периодического исцеления увеличивается на <unbreak>#1[i]</unbreak> ход.",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_SkillTree3.png",
@@ -20465,7 +20465,7 @@
 				"Name": "Сбор данных",
 				"NodeType": 2,
 				"NodeTypeText": "Талант",
-				"EffectRaw": "Если противник получает <u>ослабление</u> после атаки Пелы, она дополнительно восстанавливает <color=#f29e38ff><unbreak>#1[f1]</unbreak></color> ед. энергии. Этот эффект может сработать только 1 раз за атаку.",
+				"EffectRaw": "Если после атаки Пелы противник имеет <u>ослабление</u>, то она дополнительно восстанавливает <color=#f29e38ff><unbreak>#1[f1]</unbreak></color> ед. энергии. Этот эффект может сработать только 1 раз за атаку.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110604"
@@ -25468,6 +25468,1467 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1110": {
+		"Id": "1110",
+		"Name": "Рысь",
+		"Nodes": {
+			"1110001": {
+				"Id": "1110001",
+				"Name": "Техника ледоруба",
+				"NodeType": 2,
+				"NodeTypeText": "Базовая атака",
+				"EffectRaw": "Наносит выбранному противнику квантовый урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от макс. HP Рыси.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"111001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Семя изобилия",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110002": {
+				"Id": "1110002",
+				"Name": "Пора открывать консервы",
+				"NodeType": 2,
+				"NodeTypeText": "Навык",
+				"EffectRaw": "Накладывает на выбранного союзника статус Реакция выживания, который повышает его макс. HP на <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> от макс. HP Рыси плюс <color=#f29e38ff><unbreak>#2[i]</unbreak></color> ед. Если цель имеет Путь Разрушение или Сохранение, то Рысь также значительно повышает шанс этого союзника быть атакованным противником. Статус Реакция выживания длится <unbreak>#3[i]</unbreak> хода.\nНавык также восстанавливает цели HP, равное <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> от макс. HP Рыси плюс <color=#f29e38ff><unbreak>#5[i]</unbreak></color> ед.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							50,
+							2,
+							0.08,
+							80,
+							5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.0525,
+							80,
+							2,
+							0.085,
+							128,
+							5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.055,
+							102.5,
+							2,
+							0.09,
+							164,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Семя изобилия",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.0575,
+							125,
+							2,
+							0.095,
+							200,
+							5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.06,
+							140,
+							2,
+							0.1,
+							224,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.0625,
+							155,
+							2,
+							0.104,
+							248,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.0656,
+							166.25,
+							2,
+							0.108,
+							266,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.0688,
+							177.5,
+							2,
+							0.112,
+							284,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.0719,
+							188.75,
+							2,
+							0.116,
+							302,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.075,
+							200,
+							2,
+							0.12,
+							320,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110003": {
+				"Id": "1110003",
+				"Name": "Первая помощь на снежных полях",
+				"NodeType": 2,
+				"NodeTypeText": "Сверхспособность",
+				"EffectRaw": "Снимает со всех союзников по <unbreak>#1[i]</unbreak> <u>ослаблению</u> и немедленно восстанавливает им HP, равное <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> от макс. HP Рыси плюс <color=#f29e38ff><unbreak>#3[i]</unbreak></color> ед.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.09,
+							90
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0.0956,
+							144
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0.1013,
+							184.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Семя изобилия",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0.1069,
+							225
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0.1125,
+							252
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0.117,
+							279
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0.1215,
+							299.25
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0.126,
+							319.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0.1305,
+							339.75
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0.135,
+							360
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110004": {
+				"Id": "1110004",
+				"Name": "Опыт выживания в дикой местности",
+				"NodeType": 2,
+				"NodeTypeText": "Талант",
+				"EffectRaw": "Использование навыка или сверхспособности накладывает на союзников эффект периодического исцеления на <unbreak>#1[i]</unbreak> хода. Цель восстанавливает HP, равное <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> от макс. HP Рыси плюс <color=#f29e38ff><unbreak>#3[i]</unbreak></color> ед., в начале каждого хода. Если цель имеет статус Реакция выживания, то наложенный эффект периодического исцеления дополнительно восстанавливает этому союзнику HP, равное <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> от макс. HP Рыси плюс <color=#f29e38ff><unbreak>#5[i]</unbreak></color> ед.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.024,
+							24,
+							0.03,
+							30
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.0255,
+							38.4,
+							0.0319,
+							48
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.027,
+							49.2,
+							0.0338,
+							61.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Семя изобилия",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.0285,
+							60,
+							0.0356,
+							75
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.03,
+							67.2,
+							0.0375,
+							84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.0312,
+							74.4,
+							0.039,
+							93
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 24000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0324,
+							79.8,
+							0.0405,
+							99.75
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.0336,
+							85.2,
+							0.042,
+							106.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 64000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0348,
+							90.6,
+							0.0435,
+							113.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.036,
+							96,
+							0.045,
+							120
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110007": {
+				"Id": "1110007",
+				"Name": "Шоколадный энергетический батончик",
+				"NodeType": 2,
+				"NodeTypeText": "Техника",
+				"EffectRaw": "Использование техники накладывает эффект периодического исцеления на всех союзников в начале следующего боя на <unbreak>#1[i]</unbreak> хода.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"111007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1110101": {
+				"Id": "1110101",
+				"Name": "Предварительная разведка",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Когда цель со статусом Реакция выживания получает атаку, Рысь немедленно восстанавливает <unbreak>#1[i]</unbreak> ед. энергии.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Семя изобилия",
+								"Count": 2
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110102": {
+				"Id": "1110102",
+				"Name": "Техники исследования",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Шанс избежать эффектов контроля повышается на <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110103": {
+				"Id": "1110103",
+				"Name": "Выживание в экстремальных условиях",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Длительность вызванного талантом эффекта периодического исцеления увеличивается на <unbreak>#1[i]</unbreak> ход.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1110201": {
+				"Id": "1110201",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110202": {
+				"Id": "1110202",
+				"Name": "Усиление защиты",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Защита повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1110101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110171",
+								"Name": "Семя изобилия",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1110203": {
+				"Id": "1110203",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110204": {
+				"Id": "1110204",
+				"Name": "Усиление сопротивления эффектам",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сопротивление эффектам повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1110203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110205": {
+				"Id": "1110205",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1110102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110172",
+								"Name": "Росток жизни",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1110206": {
+				"Id": "1110206",
+				"Name": "Усиление защиты",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Защита повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110207": {
+				"Id": "1110207",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1110206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1110208": {
+				"Id": "1110208",
+				"Name": "Усиление сопротивления эффектам",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сопротивление эффектам повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110209": {
+				"Id": "1110209",
+				"Name": "Усиление защиты",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Защита повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1110103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1110210": {
+				"Id": "1110210",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110173",
+								"Name": "Цветок вечности",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
+	},
 	"1111": {
 		"Id": "1111",
 		"Name": "Лука",
@@ -28943,7 +30404,7 @@
 				"Name": "Вознесение небесного сияния",
 				"NodeType": 2,
 				"NodeTypeText": "Талант",
-				"EffectRaw": "После того, как Тинъюнь атакует противника, союзник со статусом Благословение немедленно наносит этому же противнику <u>дополнительный электрический урон</u>, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки этого союзника.",
+				"EffectRaw": "После того, как Тинъюнь атакует противника, она немедленно наносит ему <u>дополнительный электрический урон</u>, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки союзника со статусом Благословение.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120204"
@@ -29176,7 +30637,7 @@
 				"Name": "Нежный бриз",
 				"NodeType": 2,
 				"NodeTypeText": "Техника",
-				"EffectRaw": "Использование техники восстанавливает <unbreak>#1[i]</unbreak> ед. энергии персонажа.",
+				"EffectRaw": "Использование техники восстанавливает <unbreak>#1[i]</unbreak> ед. энергии Тинъюнь.",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"120207"
@@ -29829,7 +31290,7 @@
 				"Name": "Молитва цветка бездны",
 				"NodeType": 2,
 				"NodeTypeText": "Навык",
-				"EffectRaw": "Использование навыка восстанавливает выбранному союзнику HP, равное <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Лочи плюс <color=#f29e38ff><unbreak>#2[i]</unbreak></color> ед. Лоча также получает 1 ур. Цветка Бездны.\nКогда HP любого союзника опускается ниже или равно <unbreak>#3[i]%</unbreak>, Лоча немедленно использует свой навык на этом союзнике, не расходуя очки навыков. Этот эффект может сработать повторно только через <unbreak>#4[i]</unbreak> хода.",
+				"EffectRaw": "Использование навыка восстанавливает выбранному союзнику HP, равное <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Лочи плюс <color=#f29e38ff><unbreak>#2[i]</unbreak></color> ед. Лоча также получает 1 ур. Цветка Бездны.\nКогда HP любого союзника опускается ниже или равно <unbreak>#3[i]%</unbreak>, Лоча немедленно применяет к нему сходный с навыком эффект и не расходует очки навыков. Этот эффект может сработать повторно только через <unbreak>#4[i]</unbreak> хода.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120302"
@@ -30345,7 +31806,7 @@
 				"Name": "Круговорот жизни",
 				"NodeType": 2,
 				"NodeTypeText": "Талант",
-				"EffectRaw": "Когда Цветок Бездны складывается до ур. <unbreak>#1[i]</unbreak>, Лоча расходует все уровни Цветка Бездны и создаёт на поле боя Магический круг.\nКогда союзник атакует противника, находящегося в Магическом круге, этот союзник немедленно восстанавливает HP, равное <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> от силы атаки Лочи плюс <color=#f29e38ff><unbreak>#4[i]</unbreak></color> ед.\nЭффект Магического круга длится <unbreak>#3[i]</unbreak> хода. Если Лоча становится неспособен сражаться, Магический круг исчезает.",
+				"EffectRaw": "Когда Цветок Бездны складывается до ур. <unbreak>#1[i]</unbreak>, Лоча расходует все уровни Цветка Бездны и создаёт на поле боя Магический круг.\nКогда союзник атакует противника, находящегося в Магическом круге, этот союзник немедленно восстанавливает HP, равное <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> от силы атаки Лочи плюс <color=#f29e38ff><unbreak>#4[i]</unbreak></color> ед.\nЭффект Магического круга длится <unbreak>#3[i]</unbreak> хода. Если Лоча становится <u>неспособен сражаться</u>, Магический круг исчезает.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120304"
@@ -33269,7 +34730,7 @@
 				"Name": "Дар Шуху",
 				"NodeType": 2,
 				"NodeTypeText": "Талант",
-				"EffectRaw": "Каждый раз, когда Блэйд получает атаку или расходует HP, он получает 1 ур. статуса Заряд до макс. 5 ур. За каждую атаку можно получить только 1 ур. статуса Заряд.\nПри достижении макс. уровня статуса Заряд немедленно выполняет <u>бонус-атаку</u>, которая наносит всем противникам ветряной урон, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от силы атаки Блэйда плюс <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> от его макс. HP, затем восстанавливает HP Блэйда, равное <unbreak>#3[i]%</unbreak> от его макс. HP. Выполнение бонус-атаки расходует все имеющиеся уровни статуса Заряд.",
+				"EffectRaw": "Каждый раз, когда Блэйд получает урон или расходует HP, он получает 1 ур. статуса Заряд до макс. 5 ур. За каждую атаку можно получить только 1 ур. статуса Заряд.\nПри достижении макс. уровня статуса Заряд немедленно выполняет <u>бонус-атаку</u>, которая наносит всем противникам ветряной урон, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от силы атаки Блэйда плюс <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> от его макс. HP, затем восстанавливает HP Блэйда, равное <unbreak>#3[i]%</unbreak> от его макс. HP. Выполнение бонус-атаки расходует все имеющиеся уровни статуса Заряд.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120504"
@@ -34445,7 +35906,7 @@
 				"Name": "Форма Тайсюй: Вестник рассвета",
 				"NodeType": 2,
 				"NodeTypeText": "Сверхспособность",
-				"EffectRaw": "Наносит выбранному противнику физический урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Сушан, и позволяет Сушан совершить действие немедленно. Также повышает силу атаки Сушан на <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, а использование её навыка даёт 2 дополнительных удара Стойки меча. Эти эффекты длятся <unbreak>#2[i]</unbreak> хода.\nДополнительные удары Стойки меча наносят урон, равный <unbreak>#3[i]%</unbreak> от исходного урона.",
+				"EffectRaw": "Наносит выбранному противнику физический урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Сушан, и позволяет ей выполнить действие немедленно. Также повышает силу атаки Сушан на <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, а использование её навыка даёт 2 дополнительных удара Стойки меча. Эти эффекты длятся <unbreak>#2[i]</unbreak> хода.\nДополнительные удары Стойки меча наносят урон, равный <unbreak>#3[i]%</unbreak> от исходного урона.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120603"
@@ -35604,7 +37065,7 @@
 				"Name": "Воодушевляющий залп",
 				"NodeType": 2,
 				"NodeTypeText": "Навык",
-				"EffectRaw": "Получает <unbreak>#1[i]</unbreak> ур. статуса Ревущая тетива (до 2 ур.). Когда активен статус Ревущая тетива, сила атаки всех союзников повышается на <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.\n1 ур. статуса Ревущая тетива снимается после каждого хода союзника, за исключением хода, в котором Юйкун получает статус Ревущая тетива.",
+				"EffectRaw": "Получает <unbreak>#1[i]</unbreak> ур. статуса Ревущая тетива до макс. 2 ур. Когда активен статус Ревущая тетива, сила атаки всех союзников повышается на <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.\n1 ур. статуса Ревущая тетива снимается после каждого хода союзника, за исключением хода, в котором Юйкун получает статус Ревущая тетива.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120702"
@@ -36863,6 +38324,1433 @@
 		},
 		"VersionAdded": "1.1"
 	},
+	"1208": {
+		"Id": "1208",
+		"Name": "Фу Сюань",
+		"Nodes": {
+			"1208001": {
+				"Id": "1208001",
+				"Name": "Взрыв сверхновой",
+				"NodeType": 2,
+				"NodeTypeText": "Базовая атака",
+				"EffectRaw": "Наносит выбранному противнику квантовый урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от макс. HP Фу Сюань.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"120801"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Выносливость бронзы",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208002": {
+				"Id": "1208002",
+				"Name": "Ведомо звёздам, указано сердцем",
+				"NodeType": 2,
+				"NodeTypeText": "Навык",
+				"EffectRaw": "Активирует Матрицу предвидения, которая <u>передаёт</u> Фу Сюань <unbreak>#1[i]%</unbreak> всего урона, получаемого её союзниками (до того, как этот урон будет снижен имеющимися Щитами), в течение <unbreak>#3[i]</unbreak> ходов.\nВсе союзники, затронутые Матрицей предвидения, получают статус Знание. Макс. HP союзника со статусом Знание повышается на <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> от макс. HP Фу Сюань, а его крит. шанс - на <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>.\nЕсли Фу Сюань становится <u>неспособна сражаться</u>, эффект Матрицы предвидения снимается.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120802"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.03,
+							0.06
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.033,
+							0.066
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.036,
+							0.072
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Выносливость бронзы",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.039,
+							0.078
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.042,
+							0.084
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.045,
+							0.09
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0488,
+							0.0975
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0525,
+							0.105
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.0563,
+							0.1125
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.65,
+							0,
+							3,
+							0.06,
+							0.12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208003": {
+				"Id": "1208003",
+				"Name": "Единение скорби нации",
+				"NodeType": 2,
+				"NodeTypeText": "Сверхспособность",
+				"EffectRaw": "Наносит всем противникам квантовый урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от макс. HP Фу Сюань, а также увеличивает количество срабатываний эффекта восстановления HP от её таланта.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120803"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.64
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.68
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Выносливость бронзы",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.76
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.85
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.95
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208004": {
+				"Id": "1208004",
+				"Name": "Невзгоды порождают благодать",
+				"NodeType": 2,
+				"NodeTypeText": "Талант",
+				"EffectRaw": "Пока Фу Сюань способна сражаться, на всех союзников накладывается статус Уклонение от неудач. Получаемый союзником со статусом Уклонение от неудач урон понижается на <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.\nКогда текущее HP Фу Сюань опускается до <unbreak>#2[i]%</unbreak> или ниже, её HP восстанавливается на <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> от потерянного ею HP. Этот эффект не срабатывает, если Фу Сюань получает добивающий удар. Этот эффект может сработать только 1 раз за бой по умолчанию, а также может обладать до 2 срабатываний.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"120804"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.5,
+							0.8
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.108,
+							0.5,
+							0.81
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.116,
+							0.5,
+							0.82
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Выносливость бронзы",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.124,
+							0.5,
+							0.83
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.132,
+							0.5,
+							0.84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.14,
+							0.5,
+							0.85
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.15,
+							0.5,
+							0.8625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.16,
+							0.5,
+							0.875
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.17,
+							0.5,
+							0.8875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.18,
+							0.5,
+							0.9
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208007": {
+				"Id": "1208007",
+				"Name": "Пророчеству сопутствует вера",
+				"NodeType": 2,
+				"NodeTypeText": "Техника",
+				"EffectRaw": "После использования техники все члены отряда получают Барьер на <unbreak>#1[i]</unbreak> сек. Противники не могут начать бой, атакуя этот Барьер. После начала боя во время действия Барьера Фу Сюань автоматически активирует Матрицу предвидения на <unbreak>#2[i]</unbreak> хода.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"120807"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1208101": {
+				"Id": "1208101",
+				"Name": "Прорицание Тайи, макрокосм",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Пока активна Матрица предвидения, использование навыка Фу Сюань дополнительно восстанавливает <unbreak>#1[i]</unbreak> ед. энергии.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Выносливость бронзы",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208102": {
+				"Id": "1208102",
+				"Name": "Прорицание Дуньцзя, метамистика",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Использование сверхспособности восстанавливает остальным союзникам HP, равное <unbreak>#1[i]%</unbreak> от макс. HP Фу Сюань плюс <unbreak>#2[i]</unbreak> ед.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							133
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208103": {
+				"Id": "1208103",
+				"Name": "Прорицание Люжэнь, гексаграмма воды",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Если противник накладывает на союзника эффект контроля пока активна Матрица предвидения, то она позволяет всем союзникам избежать любых накладываемых противниками эффектов контроля в текущем ходе. Этот эффект может сработать только 1 раз. Следующая активация Матрицы предвидения сбрасывает количество срабатываний этого эффекта.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Покаяние вечного ложного тела",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1208201": {
+				"Id": "1208201",
+				"Name": "Усиление крит. шанса",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1208202": {
+				"Id": "1208202",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1208101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110141",
+								"Name": "Выносливость бронзы",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Искусственный механический компонент",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1208203": {
+				"Id": "1208203",
+				"Name": "Усиление крит. шанса",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1208202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208204": {
+				"Id": "1208204",
+				"Name": "Усиление сопротивления эффектам",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сопротивление эффектам повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208205": {
+				"Id": "1208205",
+				"Name": "Усиление крит. шанса",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1208102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110142",
+								"Name": "Клятва мёрзлой стали",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Механическое цилиндрическое колесо",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1208206": {
+				"Id": "1208206",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1208205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208207": {
+				"Id": "1208207",
+				"Name": "Усиление крит. шанса",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1208208": {
+				"Id": "1208208",
+				"Name": "Усиление сопротивления эффектам",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сопротивление эффектам повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1208103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208209": {
+				"Id": "1208209",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1208210": {
+				"Id": "1208210",
+				"Name": "Усиление крит. шанса",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1208208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110143",
+								"Name": "Страж янтаря",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Механическое сердце хаоса",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.3"
+	},
 	"1209": {
 		"Id": "1209",
 		"Name": "Яньцин",
@@ -37246,7 +40134,7 @@
 				"Name": "Погоня за ласточкой дождя",
 				"NodeType": 2,
 				"NodeTypeText": "Сверхспособность",
-				"EffectRaw": "Повышает крит. шанс Яньцина на <unbreak>#1[i]%</unbreak>. Когда активна Эмпатическая связь, крит. урон Яньцина повышается на доп. <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Эти <u>усиления</u> длятся 1 ход, после чего Яньцин наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> от своей силы атаки.",
+				"EffectRaw": "Повышает крит. шанс Яньцина на <unbreak>#1[i]%</unbreak>. Когда активна Эмпатическая связь, крит. урон Яньцина повышается на доп. <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Эти <u>усиления</u> длятся 1 ход. После этого Яньцин наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> от своей силы атаки.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120903"
@@ -39764,11 +42652,16 @@
 		"Nodes": {
 			"1213001": {
 				"Id": "1213001",
+				"Name": "Лотос покровительства",
 				"NodeType": 2,
 				"NodeTypeText": "Базовая атака",
+				"EffectRaw": "Выполняет 2 удара, которые наносят выбранному противнику мнимый урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Дань Хэна: Пожирателя Луны.",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
-					"121301"
+					"121301",
+					"121308",
+					"121310",
+					"121312"
 				],
 				"Location": "Point01",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Normal.png",
@@ -39898,39 +42791,28 @@
 			},
 			"1213002": {
 				"Id": "1213002",
+				"Name": "Освобождение драконьей силы",
 				"NodeType": 2,
 				"NodeTypeText": "Навык",
+				"EffectRaw": "Усиливает эффект базовой атаки до 3 раз. Использование этого умения не расходует очки навыков и не считается за использование навыка.\n1 усиление меняет атаку Лотос покровительства на атаку Превосходство.\n2 усиления меняют атаку Лотос покровительства на атаку Божественное копьё.\n3 усиления меняют атаку Лотос покровительства на атаку Стремительный прыжок.\nВо время использования атаки Божественное копьё или Стремительный прыжок, начиная с 4 удара, перед каждым ударом Дань Хэн: Пожиратель Луны получает 1 ур. статуса Громкий рёв, который повышает его крит. урон на <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Этот эффект может складываться до <unbreak>#2[i]</unbreak> раз и длится до конца хода персонажа.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
-					"121302",
-					"121308",
-					"121310",
-					"121312"
+					"121302"
 				],
 				"Location": "Point02",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_BP.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1.3,
-							0.6,
-							0.3,
 							0.06,
-							4,
-							0.6,
-							0.6
+							4
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							1.43,
-							0.66,
-							0.33,
 							0.066,
-							4,
-							0.66,
-							0.66
+							4
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -39948,13 +42830,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							1.56,
-							0.72,
-							0.36,
 							0.072,
-							4,
-							0.72,
-							0.72
+							4
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -39977,13 +42854,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							1.69,
-							0.78,
-							0.39,
 							0.078,
-							4,
-							0.78,
-							0.78
+							4
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40006,13 +42878,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							1.82,
-							0.84,
-							0.42,
 							0.084,
-							4,
-							0.84,
-							0.84
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40035,13 +42902,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							1.95,
-							0.9,
-							0.45,
 							0.09,
-							4,
-							0.9,
-							0.9
+							4
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40064,13 +42926,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							2.1125,
-							0.975,
-							0.4875,
 							0.0975,
-							4,
-							0.975,
-							0.975
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40093,13 +42950,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							2.275,
-							1.05,
-							0.525,
 							0.105,
-							4,
-							1.05,
-							1.05
+							4
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40127,13 +42979,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							2.4375,
-							1.125,
-							0.5625,
 							0.1125,
-							4,
-							1.125,
-							1.125
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40161,13 +43008,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							2.6,
-							1.2,
-							0.6,
 							0.12,
-							4,
-							1.2,
-							1.2
+							4
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40197,8 +43039,10 @@
 			},
 			"1213003": {
 				"Id": "1213003",
+				"Name": "Уносящие лазурные воды",
 				"NodeType": 2,
 				"NodeTypeText": "Сверхспособность",
+				"EffectRaw": "Выполняет 3 удара, которые наносят выбранному противнику мнимый урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Дань Хэна: Пожирателя Луны, и мнимый урон соседним целям, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от его силы атаки. Дань Хэн: Пожиратель Луны также получает <unbreak>#3[i]</unbreak> Чешуи дракона.\nПерсонаж может иметь до <unbreak>#4[i]</unbreak> Чешуй дракона и использовать их в эквивалентном количестве вместо очков навыков. Использование Чешуи дракона считается за использование очка навыков.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121303"
@@ -40463,8 +43307,10 @@
 			},
 			"1213004": {
 				"Id": "1213004",
+				"Name": "Праведное сердце",
 				"NodeType": 2,
 				"NodeTypeText": "Талант",
+				"EffectRaw": "После выполнения каждого удара Дань Хэн: Пожиратель Луны получает 1 ур. статуса Праведное сердце, который повышает наносимый персонажем урон на <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Этот эффект может складываться до <unbreak>#2[i]</unbreak> раз и он длится до конца хода персонажа.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121304"
@@ -40474,15 +43320,15 @@
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.09,
-							5
+							0.05,
+							6
 						],
 						"Costs": []
 					},
 					"2": {
 						"EffectValues": [
-							0.095,
-							5
+							0.055,
+							6
 						],
 						"AscensionRequired": 1,
 						"Costs": [
@@ -40500,8 +43346,8 @@
 					},
 					"3": {
 						"EffectValues": [
-							0.1,
-							5
+							0.06,
+							6
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40524,8 +43370,8 @@
 					},
 					"4": {
 						"EffectValues": [
-							0.105,
-							5
+							0.065,
+							6
 						],
 						"AscensionRequired": 3,
 						"Costs": [
@@ -40548,8 +43394,8 @@
 					},
 					"5": {
 						"EffectValues": [
-							0.11,
-							5
+							0.07,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40572,8 +43418,8 @@
 					},
 					"6": {
 						"EffectValues": [
-							0.115,
-							5
+							0.075,
+							6
 						],
 						"AscensionRequired": 4,
 						"Costs": [
@@ -40596,8 +43442,8 @@
 					},
 					"7": {
 						"EffectValues": [
-							0.1213,
-							5
+							0.0813,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40620,8 +43466,8 @@
 					},
 					"8": {
 						"EffectValues": [
-							0.1275,
-							5
+							0.0875,
+							6
 						],
 						"AscensionRequired": 5,
 						"Costs": [
@@ -40649,8 +43495,8 @@
 					},
 					"9": {
 						"EffectValues": [
-							0.1338,
-							5
+							0.0938,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40678,8 +43524,8 @@
 					},
 					"10": {
 						"EffectValues": [
-							0.14,
-							5
+							0.1,
+							6
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40709,8 +43555,10 @@
 			},
 			"1213007": {
 				"Id": "1213007",
+				"Name": "Усмиряющий небеса призматический дракон",
 				"NodeType": 2,
 				"NodeTypeText": "Техника",
+				"EffectRaw": "Использование техники даёт статус Прыгающий дракон на <unbreak>#2[i]</unbreak> сек. Использование атаки при имеющемся статусе Прыгающий дракон заставляет персонажа стремительно двигаться вперёд на определённое расстояние и атаковать всех затронутых противников, во время быстрого передвижения персонаж игнорирует все атаки противников. При имеющемся статусе Прыгающий дракон в начале боя, вызванного атакующим действием, наносит всем противникам мнимый урон, равный <unbreak>#3[i]%</unbreak> от силы атаки Дань Хэна: Пожирателя Луны. Он также получает <unbreak>#1[i]</unbreak> Чешую дракона.",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"121307"
@@ -40721,7 +43569,8 @@
 					"1": {
 						"EffectValues": [
 							1,
-							20
+							20,
+							1.2
 						],
 						"Costs": []
 					}
@@ -40729,15 +43578,17 @@
 			},
 			"1213101": {
 				"Id": "1213101",
+				"Name": "Скрытая звезда",
 				"NodeType": 3,
 				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Немедленно восстанавливает <unbreak>#1[i]</unbreak> ед. энергии в начале боя.",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree1.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							1
+							15
 						],
 						"AscensionRequired": 2,
 						"Costs": [
@@ -40762,8 +43613,10 @@
 			},
 			"1213102": {
 				"Id": "1213102",
+				"Name": "Обуздание паводка",
 				"NodeType": 3,
 				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Шанс избежать эффектов контроля повышается на <unbreak>#1[i]%</unbreak>.",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree2.png",
@@ -40800,15 +43653,17 @@
 			},
 			"1213103": {
 				"Id": "1213103",
+				"Name": "Пробудившаяся легенда",
 				"NodeType": 3,
 				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Крит. урон персонажа повышается на <unbreak>#1[i]%</unbreak>, когда он наносит урон противнику с мнимой уязвимостью.",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree3.png",
 				"Levels": {
 					"1": {
 						"EffectValues": [
-							0.12
+							0.24
 						],
 						"AscensionRequired": 6,
 						"Costs": [
@@ -40838,7 +43693,7 @@
 			},
 			"1213201": {
 				"Id": "1213201",
-				"Name": "Усиление атаки",
+				"Name": "Усиление мнимого урона",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Мнимый урон повышается на <unbreak>#1[f1]%</unbreak>.",
@@ -40870,7 +43725,7 @@
 			},
 			"1213202": {
 				"Id": "1213202",
-				"Name": "Усиление урона: Мнимый",
+				"Name": "Усиление крит. шанса",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
@@ -40908,7 +43763,7 @@
 			},
 			"1213203": {
 				"Id": "1213203",
-				"Name": "Усиление атаки",
+				"Name": "Усиление мнимого урона",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Мнимый урон повышается на <unbreak>#1[f1]%</unbreak>.",
@@ -40984,7 +43839,7 @@
 			},
 			"1213205": {
 				"Id": "1213205",
-				"Name": "Усиление атаки",
+				"Name": "Усиление мнимого урона",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Мнимый урон повышается на <unbreak>#1[f1]%</unbreak>.",
@@ -41022,7 +43877,7 @@
 			},
 			"1213206": {
 				"Id": "1213206",
-				"Name": "Усиление урона: Мнимый",
+				"Name": "Усиление крит. шанса",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
@@ -41060,7 +43915,7 @@
 			},
 			"1213207": {
 				"Id": "1213207",
-				"Name": "Усиление атаки",
+				"Name": "Усиление мнимого урона",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Мнимый урон повышается на <unbreak>#1[f1]%</unbreak>.",
@@ -41136,7 +43991,7 @@
 			},
 			"1213209": {
 				"Id": "1213209",
-				"Name": "Усиление урона: Мнимый",
+				"Name": "Усиление крит. шанса",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
@@ -41174,7 +44029,7 @@
 			},
 			"1213210": {
 				"Id": "1213210",
-				"Name": "Усиление атаки",
+				"Name": "Усиление мнимого урона",
 				"NodeType": 1,
 				"NodeTypeText": "Бонус хар-ки",
 				"EffectRaw": "Мнимый урон повышается на <unbreak>#1[f1]%</unbreak>.",
