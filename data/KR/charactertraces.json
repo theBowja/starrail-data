@@ -15723,7 +15723,7 @@
 				"Name": "전광석화의 순간",
 				"NodeType": 2,
 				"NodeTypeText": "전투 스킬",
-				"EffectRaw": "지정된 단일 적에게 서벌 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 피해를 주며, 인접한 목표에게 서벌 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 번개 속성 피해를 준다. 또한, 피격된 적은 <unbreak>#3[i]%</unbreak>의 <u>기본 확률</u>로 감전 상태에 빠진다. 지속 시간: <unbreak>#4[i]</unbreak>턴.\n감전 상태의 적은 새로운 턴이 시작될 때마다 서벌 공격력 <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>만큼의 번개 속성 지속 피해를 받는다",
+				"EffectRaw": "지정된 단일 적에게 서벌 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 피해를 가하고, 인접한 목표에게 서벌 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 번개 속성 피해를 가한다. 또한, 피격된 적은 <unbreak>#3[i]%</unbreak>의 <u>기본 확률</u>로 감전 상태에 빠진다. 지속 시간: <unbreak>#4[i]</unbreak>턴.\n감전 상태의 적은 턴이 시작될 때마다 서벌 공격력 <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>만큼의 번개 속성 지속 피해를 받는다",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110302"
@@ -16239,7 +16239,7 @@
 				"Name": "타오르는 화음",
 				"NodeType": 2,
 				"NodeTypeText": "특성",
-				"EffectRaw": "공격 발동 후 모든 감전 상태의 적에게 서벌 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 <u>추가 피해</u>를 준다",
+				"EffectRaw": "공격 발동 후 모든 감전 상태의 적에게 서벌 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 번개 속성 <u>추가 피해</u>를 가한다",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"110304"
@@ -16472,7 +16472,7 @@
 				"Name": "굿나잇, 벨로보그",
 				"NodeType": 2,
 				"NodeTypeText": "비술",
-				"EffectRaw": "적을 바로 공격하며, 전투 진입 후 임의의 단일 적에게 서벌 공격력 <unbreak>#4[i]%</unbreak>만큼의 번개 속성 피해를 주고, <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 모든 단일 적을 감전 상태에 빠트린다. 지속 시간: <unbreak>#3[i]</unbreak>턴.\n감전 상태의 적은 새로운 턴이 시작될 때마다 서벌 공격력 <unbreak>#2[i]%</unbreak>만큼의 번개 속성 지속 피해를 받는다",
+				"EffectRaw": "적을 바로 공격하며, 전투 진입 후 임의의 단일 적에게 서벌 공격력 <unbreak>#4[i]%</unbreak>만큼의 번개 속성 피해를 가하고, <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 모든 단일 적을 감전 상태에 빠트린다. 지속 시간: <unbreak>#3[i]</unbreak>턴.\n감전 상태의 적은 새로운 턴이 시작될 때마다 서벌 공격력 <unbreak>#2[i]%</unbreak>만큼의 번개 속성 지속 피해를 받는다",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"110307"
@@ -28373,6 +28373,1430 @@
 		},
 		"VersionAdded": "1.2"
 	},
+	"1112": {
+		"Id": "1112",
+		"Name": "토파즈&복순이",
+		"Nodes": {
+			"1112001": {
+				"Id": "1112001",
+				"Name": "적자…",
+				"NodeType": 2,
+				"NodeTypeText": "일반 공격",
+				"EffectRaw": "지정된 단일 적에게 토파즈 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 화염 속성 피해를 준다",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"111201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "짐승 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1112002": {
+				"Id": "1112002",
+				"Name": "결제 불가?",
+				"NodeType": 2,
+				"NodeTypeText": "전투 스킬",
+				"EffectRaw": "지정된 단일 적을 [부채 증명] 상태에 빠트려 적이 받는 <u>추가 공격</u> 피해를 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가시킨다. [부채 증명]은 가장 최근에 부여한 목표에게만 적용된다. 아군 턴 시작 또는 행동 시 필드 위에 [부채 증명] 상태에 빠진 적이 없으면 토파즈가 임의의 적을 [부채 증명] 상태에 빠트린다.\n복순이는 해당 목표에게 토파즈 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 화염 속성 피해를 준다. 해당 전투 스킬 발동으로 피해를 가할 시 <u>추가 공격</u>을 발동한 것으로 간주한다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111202"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75,
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825,
+							0.275
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "짐승 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975,
+							0.325
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05,
+							0.35
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125,
+							0.375
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188,
+							0.4063
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125,
+							0.4375
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063,
+							0.4688
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112003": {
+				"Id": "1112003",
+				"Name": "흑자 전환!",
+				"NodeType": 2,
+				"NodeTypeText": "필살기",
+				"EffectRaw": "복순이가 [폭증!] 상태에 진입하고 복순이의 피해 배율이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, 치명타 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. [부채 증명] 상태에 빠진 적이 아군의 일반 공격, 전투 스킬 혹은 필살기로 공격을 받을 시 복순이의 행동 게이지가 <unbreak>#3[i]%</unbreak> 증가한다. 복순이가 <unbreak>#4[i]</unbreak>회 공격 후 [폭증!] 상태가 해제된다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75,
+							0.125,
+							0.5,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825,
+							0.1375,
+							0.5,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9,
+							0.15,
+							0.5,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "짐승 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975,
+							0.1625,
+							0.5,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05,
+							0.175,
+							0.5,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125,
+							0.1875,
+							0.5,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188,
+							0.2031,
+							0.5,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125,
+							0.2188,
+							0.5,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063,
+							0.2344,
+							0.5,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							0.25,
+							0.5,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112004": {
+				"Id": "1112004",
+				"Name": "피그 마켓?!",
+				"NodeType": 2,
+				"NodeTypeText": "특성",
+				"EffectRaw": "전투 시작 시 복순이를 소환한다. 복순이의 기본 속도는 <unbreak>#1[i]</unbreak>pt이며, 행동 시 <u>추가 공격</u>을 발동한다. [부채 증명] 상태에 빠진 단일 적에게 토파즈 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 화염 속성 피해를 준다.\n[부채 증명] 상태에 빠진 적이 아군의 추가 공격을 받으면 복순이의 행동 게이지가 <unbreak>#3[i]%</unbreak> 증가한다. 복순이 자신의 턴에는 행동 게이지 증가 효과가 발동하지 않는다.\n토파즈가 <u>전투 불능 상태</u>에 빠지면 복순이도 사라진다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							80,
+							0.75,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							80,
+							0.825,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							80,
+							0.9,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "짐승 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							80,
+							0.975,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							80,
+							1.05,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							80,
+							1.125,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							80,
+							1.2188,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							80,
+							1.3125,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							80,
+							1.4063,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							80,
+							1.5,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112007": {
+				"Id": "1112007",
+				"Name": "공적 지원금",
+				"NodeType": 2,
+				"NodeTypeText": "비술",
+				"EffectRaw": "토파즈는 필드 입장 시 복순이를 소환하고, 복순이는 일정 범위 내의 일반 전리품과 저금통을 자동으로 탐색한다.\n비술을 직접 발동하면 다음 전투에서 복순이가 첫 공격 발동 후 토파즈가 에너지를 <unbreak>#1[i]</unbreak>pt 회복한다.\n비술을 발동하고 맵에서 적과 전투하여 승리한 후, 토파즈가 여전히 파티에 있으면 신용 포인트 획득 단계에서 추가로 소량의 신용 포인트를 획득한다. 신용 포인트는 하루에 최대 추가로 <unbreak>#2[i]</unbreak> 획득할 수 있다.\n비술을 발동하고 시뮬레이션 우주에서 적과 전투하여 승리하면 추가로 소량의 우주 조각을 획득하고 낮은 확률로 랜덤 기물을 1개 획득한다",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"111207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							60,
+							10000
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1112101": {
+				"Id": "1112101",
+				"Name": "당좌 대월",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "토파즈가 일반 공격으로 피해를 가할 시 추가 공격을 발동한 것으로 간주한다",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "짐승 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112102": {
+				"Id": "1112102",
+				"Name": "금융 불안",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "토파즈와 복순이가 화염 속성 약점을 보유한 적에게 가하는 피해가 <unbreak>#1[i]%</unbreak> 증가한다",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112103": {
+				"Id": "1112103",
+				"Name": "기술적 조정",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "복순이가 [폭증!] 상태일 때 적에게 공격을 발동하면 토파즈는 에너지를 추가로 <unbreak>#1[i]</unbreak>pt 회복한다",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112201": {
+				"Id": "1112201",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1112202": {
+				"Id": "1112202",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1112101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "짐승 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "철위대 배지",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1112203": {
+				"Id": "1112203",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1112202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112204": {
+				"Id": "1112204",
+				"Name": "HP 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "HP 최대치 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112205": {
+				"Id": "1112205",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1112102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "악마 사냥용 화살",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "철위대 표식",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1112206": {
+				"Id": "1112206",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1112205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112207": {
+				"Id": "1112207",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112208": {
+				"Id": "1112208",
+				"Name": "HP 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "HP 최대치 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1112103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1112209": {
+				"Id": "1112209",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1112208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1112210": {
+				"Id": "1112210",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1112208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "별 쫓는 화살",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "철위대 훈장",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
+	},
 	"1201": {
 		"Id": "1201",
 		"Name": "청작",
@@ -38469,7 +39893,7 @@
 				"Name": "별의 움직임, 미래의 그림자",
 				"NodeType": 2,
 				"NodeTypeText": "전투 스킬",
-				"EffectRaw": "[궁관진]을 활성화하여, 부현의 동료가 실드로 상쇄되기 이전에 받은 피해의 <unbreak>#1[i]%</unbreak>를 부현이 <u>분담</u>한다. 지속 시간: <unbreak>#3[i]</unbreak>턴.\n[궁관진] 상태의 모든 아군이 [감식] 효과를 획득한다. [감식]: 아군 HP 최대치가 부현 HP 최대치의 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>만큼 증가하고, 치명타 확률이 <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color> 증가한다.\n부현이 <u>전투 불능 상태</u>가 되면 [궁관진]도 해제된다",
+				"EffectRaw": "[궁관진]을 활성화하여, 부현의 동료가 실드로 막기 전에 받은 피해의 <unbreak>#1[i]%</unbreak>를 부현이 <u>분담</u>한다. 지속 시간: <unbreak>#3[i]</unbreak>턴.\n[궁관진] 상태의 모든 아군이 [감식] 효과를 획득한다. [감식]: 아군 HP 최대치가 부현 HP 최대치의 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>만큼 증가하고, 치명타 확률이 <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color> 증가한다.\n부현이 <u>전투 불능 상태</u>가 되면 [궁관진]도 해제된다",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120802"
@@ -41189,6 +42613,1460 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1210": {
+		"Id": "1210",
+		"Name": "계네빈",
+		"Nodes": {
+			"1210001": {
+				"Id": "1210001",
+				"Name": "박수갈채",
+				"NodeType": 2,
+				"NodeTypeText": "일반 공격",
+				"EffectRaw": "지정된 단일 적에게 계네빈 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 화염 속성 피해를 준다",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "어두운 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1210002": {
+				"Id": "1210002",
+				"Name": "좋은 출발",
+				"NodeType": 2,
+				"NodeTypeText": "전투 스킬",
+				"EffectRaw": "지정된 단일 적에게 계네빈 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 화염 속성 피해를 주고, 인접한 목표에게 계네빈 공격력 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 화염 속성 피해를 주며, <unbreak>#3[i]%</unbreak>의 <u>기본 확률</u>로 목표 및 인접한 목표를 연소 상태에 빠트린다. 연소 상태의 적은 턴이 시작될 때마다 계네빈 공격력 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>만큼의 화염 속성 지속 피해를 받는다. 지속 시간: <unbreak>#5[i]</unbreak>턴",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.2,
+							1,
+							0.839,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.66,
+							0.22,
+							1,
+							0.923,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.72,
+							0.24,
+							1,
+							1.0069,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "어두운 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.78,
+							0.26,
+							1,
+							1.0909,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.84,
+							0.28,
+							1,
+							1.1748,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3,
+							1,
+							1.3007,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.975,
+							0.325,
+							1,
+							1.4686,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.05,
+							0.35,
+							1,
+							1.6784,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.125,
+							0.375,
+							1,
+							1.9303,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							0.4,
+							1,
+							2.1821,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210003": {
+				"Id": "1210003",
+				"Name": "주특기 나갑니다!",
+				"NodeType": 2,
+				"NodeTypeText": "필살기",
+				"EffectRaw": "모든 적에게 계네빈 공격력 <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>만큼의 화염 속성 피해를 주고, 목표가 연소 상태인 경우 해당 연소 상태는 즉시 기존 피해 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼의 피해를 생성한다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							0.72
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							0.74
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							0.76
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "어두운 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							0.78
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							0.82
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							0.845
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							0.87
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							0.895
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							0.92
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210004": {
+				"Id": "1210004",
+				"Name": "관중 없이는 예술가도 없는 법",
+				"NodeType": 2,
+				"NodeTypeText": "특성",
+				"EffectRaw": "계네빈이 필드에 있을 때 적에게 부여된 연소 상태가 피해를 발동하면 <unbreak>#1[i]%</unbreak>의 <u>기본 확률</u>로 적을 [불쇼] 상태에 빠트리고 [불쇼] 상태의 적이 받는 피해가 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#5[i]</unbreak>턴. 최대 중첩수: <unbreak>#6[i]</unbreak>스택",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.04,
+							3,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.043,
+							3,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.046,
+							3,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "어두운 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.049,
+							3,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.052,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.055,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0588,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0625,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0663,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.07,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210007": {
+				"Id": "1210007",
+				"Name": "길거리 공연",
+				"NodeType": 2,
+				"NodeTypeText": "비술",
+				"EffectRaw": "적을 바로 공격하며, 전투 진입 후 피해를 <unbreak>#2[i]</unbreak>회 준다. 피해를 가할 때마다 임의의 단일 적에게 계네빈 공격력 <unbreak>#1[i]%</unbreak>만큼의 화염 속성 피해를 주고 <unbreak>#3[i]%</unbreak>의 <u>기본 확률</u>로 목표를 [불쇼] 상태에 빠트린다",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5,
+							4,
+							1
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1210101": {
+				"Id": "1210101",
+				"Name": "장대 타기",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "일반 공격이 <unbreak>#1[i]%</unbreak>의 기본 확률로 적을 전투 스킬과 동일한 연소 상태에 빠트린다",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "어두운 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210102": {
+				"Id": "1210102",
+				"Name": "장애물 통과",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "전투 시작 시 계네빈의 행동 게이지가 <unbreak>#1[i]%</unbreak> 증가한다",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210103": {
+				"Id": "1210103",
+				"Name": "칼날 위 걷기",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "연소 상태에 빠진 적에게 가하는 피해가 <unbreak>#1[i]%</unbreak> 증가한다",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210201": {
+				"Id": "1210201",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210202": {
+				"Id": "1210202",
+				"Name": "격파 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "격파 특수효과 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1210101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "어두운 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "공조 기계 부품",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1210203": {
+				"Id": "1210203",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1210202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210204": {
+				"Id": "1210204",
+				"Name": "효과 명중 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "효과 명중 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1210203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210205": {
+				"Id": "1210205",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1210102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "허공의 흑요",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "공조 톱니바퀴",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1210206": {
+				"Id": "1210206",
+				"Name": "격파 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "격파 특수효과 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1210205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210207": {
+				"Id": "1210207",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1210206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210208": {
+				"Id": "1210208",
+				"Name": "효과 명중 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "효과 명중 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1210103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1210209": {
+				"Id": "1210209",
+				"Name": "격파 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "격파 특수효과 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1210103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1210210": {
+				"Id": "1210210",
+				"Name": "피해 강화•화염",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "화염 속성 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1210201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "타락의 흑요",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "공조 환류 심장",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
+	},
 	"1211": {
 		"Id": "1211",
 		"Name": "백로",
@@ -42645,6 +45523,1479 @@
 			}
 		},
 		"VersionAdded": "1.0"
+	},
+	"1212": {
+		"Id": "1212",
+		"Name": "경류",
+		"Nodes": {
+			"1212001": {
+				"Id": "1212001",
+				"Name": "빛나는 달빛",
+				"NodeType": 2,
+				"NodeTypeText": "일반 공격",
+				"EffectRaw": "지정된 단일 적에게 경류 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 얼음 속성 피해를 준다",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "부서진 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1212002": {
+				"Id": "1212002",
+				"Name": "무결의 섬광",
+				"NodeType": 2,
+				"NodeTypeText": "전투 스킬",
+				"EffectRaw": "지정된 단일 적에게 경류 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 얼음 속성 피해를 주고 [삭망]을 <unbreak>#2[i]</unbreak>스택 획득한다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121202",
+					"121209"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "부서진 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212003": {
+				"Id": "1212003",
+				"Name": "담화생멸, 범람하는 은하",
+				"NodeType": 2,
+				"NodeTypeText": "필살기",
+				"EffectRaw": "지정된 단일 적에게 경류 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 얼음 속성 피해를 주고 인접한 목표에게 경류 공격력의 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>만큼 얼음 속성 피해를 준다. 공격 종료 후 [삭망]을 <unbreak>#2[i]</unbreak>스택 획득한다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.8,
+							1,
+							0.9,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.92,
+							1,
+							0.96,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2.04,
+							1,
+							1.02,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "부서진 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2.16,
+							1,
+							1.08,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2.28,
+							1,
+							1.14,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2.4,
+							1,
+							1.2,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.55,
+							1,
+							1.275,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.7,
+							1,
+							1.35,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.85,
+							1,
+							1.425,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							1,
+							1.5,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212004": {
+				"Id": "1212004",
+				"Name": "담월전백",
+				"NodeType": 2,
+				"NodeTypeText": "특성",
+				"EffectRaw": "[삭망] <unbreak>#5[i]</unbreak>스택 보유 시, 경류가 [전백(轉魄)] 상태에 진입하고 행동 게이지가 <unbreak>#6[i]%</unbreak> 증가, 치명타 확률이 <color=#f29e38ff><unbreak>#7[i]%</unbreak></color> 증가한다. 이후 전투 스킬 [무결의 섬광]이 [한천(寒川)에 비친 달]로 강화되며 해당 전투 스킬만 사용할 수 있다. [전백] 상태일 때 공격을 발동하면 동료 HP를 각각 HP 최대치의 <unbreak>#2[i]%</unbreak>만큼 소모한다(최대 모든 동료의 HP가 1이 될 때까지 소모). 이번에 모든 아군이 소모한 HP 총량의 <unbreak>#3[i]%</unbreak>만큼 경류의 공격력이 증가하고 최대 경류 기초 공격력의 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>를 넘지 않는다. 해당 효과는 이번 공격이 종료될 때까지 지속된다. [전백] 상태가 종료되기 전에는 다시 [전백] 상태에 진입할 수 없다. [삭망]은 최대 3스택까지 중첩된다. [삭망] 스택이 0이 되면, [전백] 상태가 종료된다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							0.9,
+							2,
+							1,
+							0.4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							0.99,
+							2,
+							1,
+							0.41
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.08,
+							2,
+							1,
+							0.42
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "부서진 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.17,
+							2,
+							1,
+							0.43
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.26,
+							2,
+							1,
+							0.44
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.35,
+							2,
+							1,
+							0.45
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.4625,
+							2,
+							1,
+							0.4625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.575,
+							2,
+							1,
+							0.475
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.6875,
+							2,
+							1,
+							0.4875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.8,
+							2,
+							1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212007": {
+				"Id": "1212007",
+				"Name": "참나를 비추는 거울",
+				"NodeType": 2,
+				"NodeTypeText": "비술",
+				"EffectRaw": "비술 사용 후 자신의 주위에 <unbreak>#3[i]</unbreak>초 동안 지속되는 특수 영역을 1개 만든다. 특수 영역 내의 적은 빙결 상태에 빠진다. 특수 영역 내의 적과 전투에 진입하면 즉시 자신의 에너지가 <unbreak>#6[i]</unbreak>pt 회복되고, 삭망을 <unbreak>#1[i]</unbreak>스택 획득하며, <unbreak>#2[i]%</unbreak>의 <u>기본 확률</u>로 적이 빙결 상태에 빠진다. 지속 시간: <unbreak>#4[i]</unbreak>턴. 빙결 상태일 때 적은 행동할 수 없고, 턴이 시작될 때마다 경류 공격력의 <unbreak>#5[i]%</unbreak>만큼 얼음 속성 <u>추가 피해</u>를 받는다. 아군이 만든 영역 효과는 최대 1개만 존재할 수 있다",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1,
+							20,
+							1,
+							0.8,
+							15
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1212101": {
+				"Id": "1212101",
+				"Name": "사경",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "[전백(轉魄)] 상태일 때 효과 저항이 <unbreak>#1[i]%</unbreak> 증가한다",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "부서진 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212102": {
+				"Id": "1212102",
+				"Name": "검술의 일인자",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "[무결의 섬광] 발동 후 다음 행동 게이지가 <unbreak>#1[i]%</unbreak> 증가한다",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212103": {
+				"Id": "1212103",
+				"Name": "서리 혼",
+				"NodeType": 3,
+				"NodeTypeText": "추가 능력",
+				"EffectRaw": "[전백(轉魄)] 상태일 때 필살기가 가하는 피해가 <unbreak>#1[i]%</unbreak> 증가한다",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "무한한 가짜의 여한",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212201": {
+				"Id": "1212201",
+				"Name": "치명타 피해 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1212202": {
+				"Id": "1212202",
+				"Name": "속도 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "속도 <unbreak>#1[i]</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1212101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "부서진 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "영생의 새싹",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1212203": {
+				"Id": "1212203",
+				"Name": "치명타 피해 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1212202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212204": {
+				"Id": "1212204",
+				"Name": "HP 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "HP 최대치 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1212203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212205": {
+				"Id": "1212205",
+				"Name": "치명타 피해 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1212102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "무생의 칼날",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "영생의 꽃",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1212206": {
+				"Id": "1212206",
+				"Name": "속도 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "속도 <unbreak>#1[i]</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1212205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212207": {
+				"Id": "1212207",
+				"Name": "치명타 피해 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1212206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212208": {
+				"Id": "1212208",
+				"Name": "HP 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "HP 최대치 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1212103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1212209": {
+				"Id": "1212209",
+				"Name": "속도 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "속도 <unbreak>#1[i]</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1212208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1212210": {
+				"Id": "1212210",
+				"Name": "치명타 피해 강화",
+				"NodeType": 1,
+				"NodeTypeText": "속성 보너스",
+				"EffectRaw": "치명타 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1212208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "정화의 칼날",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "영생의 가지",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
 	},
 	"1213": {
 		"Id": "1213",

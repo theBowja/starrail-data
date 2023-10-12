@@ -2082,7 +2082,7 @@
 				"Name": "Superiority of Reach",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "When Dan Heng is the target of an ally's Ability, his next attack's Wind <u>RES PEN</u> increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can be triggered again after <unbreak>#2[i]</unbreak> turn(s).",
+				"EffectRaw": "When Dan Heng is the target of an ally's ability, his next attack's Wind <u>RES PEN</u> increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can be triggered again after <unbreak>#2[i]</unbreak> turn(s).",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100204"
@@ -26149,7 +26149,7 @@
 				"Name": "Outdoor Survival Experience",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "When using Lynx's Skill or Ultimate, applies continuous healing to the target ally for <unbreak>#1[i]</unbreak> turn(s), restoring the target ally's HP by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color> at the start of each their turn. If the target has \"Survival Response\", the continuous healing effect additionally restores HP by an amount equal to <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
+				"EffectRaw": "When using Lynx's Skill or Ultimate, applies continuous healing to the target ally for <unbreak>#1[i]</unbreak> turn(s), restoring the target ally's HP by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color> at the start of each turn. If the target has \"Survival Response\", the continuous healing effect additionally restores HP by an amount equal to <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"111004"
@@ -28372,6 +28372,1430 @@
 			}
 		},
 		"VersionAdded": "1.2"
+	},
+	"1112": {
+		"Id": "1112",
+		"Name": "Topaz and Numby",
+		"Nodes": {
+			"1112001": {
+				"Id": "1112001",
+				"Name": "Deficit...",
+				"NodeType": 2,
+				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Topaz's ATK to a single enemy.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"111201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Arrow of the Beast Hunter",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1112002": {
+				"Id": "1112002",
+				"Name": "Difficulty Paying?",
+				"NodeType": 2,
+				"NodeTypeText": "Skill",
+				"EffectRaw": "Inflicts a single target enemy with a Proof of Debt status, increasing the DMG it takes from <u>follow-up attacks</u> by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Proof of Debt only takes effect on the most recent target it is applied to. If there are no enemies inflicted with Proof of Debt on the field when an ally's turn starts or when an ally takes action, Topaz will inflict a random enemy with Proof of Debt.\nNumby deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Topaz's ATK to this target. Using this Skill to deal DMG is considered as launching a <u>follow-up attack</u>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111202"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75,
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825,
+							0.275
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Arrow of the Beast Hunter",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975,
+							0.325
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05,
+							0.35
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125,
+							0.375
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188,
+							0.4063
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125,
+							0.4375
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063,
+							0.4688
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112003": {
+				"Id": "1112003",
+				"Name": "Turn a Profit!",
+				"NodeType": 2,
+				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Numby enters the Windfall Bonanza! state and its DMG multiplier increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Also, when enemies with Proof of Debt are hit by an ally's Basic ATK, Skill, or Ultimate, Numby's action is Advanced Forward by <unbreak>#3[i]%</unbreak>. Numby exits the Windfall Bonanza! state after using <unbreak>#4[i]</unbreak> attacks.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75,
+							0.125,
+							0.5,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825,
+							0.1375,
+							0.5,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9,
+							0.15,
+							0.5,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Arrow of the Beast Hunter",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975,
+							0.1625,
+							0.5,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05,
+							0.175,
+							0.5,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125,
+							0.1875,
+							0.5,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188,
+							0.2031,
+							0.5,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125,
+							0.2188,
+							0.5,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063,
+							0.2344,
+							0.5,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							0.25,
+							0.5,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112004": {
+				"Id": "1112004",
+				"Name": "Trotter Market!?",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Summons Numby at the start of battle. Numby has <unbreak>#1[i]</unbreak> SPD by default. When taking action, Numby launches <u>follow-up attacks</u> on a single enemy target afflicted with Proof of Debt, dealing Fire DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Topaz's ATK.\nWhen enemies afflicted with Proof of Debt receive an ally's follow-up attacks, Numby's action is Advanced Forward by <unbreak>#3[i]%</unbreak>. The action Advance Forward effect cannot be triggered during Numby's own turn.\nWhen Topaz is <u>downed</u>, Numby disappears.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							80,
+							0.75,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							80,
+							0.825,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							80,
+							0.9,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Arrow of the Beast Hunter",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							80,
+							0.975,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							80,
+							1.05,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							80,
+							1.125,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							80,
+							1.2188,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							80,
+							1.3125,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							80,
+							1.4063,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							80,
+							1.5,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112007": {
+				"Id": "1112007",
+				"Name": "Explicit Subsidy",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Summons Numby when Topaz enters the overworld. Numby will automatically search for Basic Treasures and Trotters within a set radius.\nUsing her Technique will regenerate <unbreak>#1[i]</unbreak> Energy for Topaz after Numby's first attack in the next battle.\nIf Topaz is still in the team after using her Technique and defeating overworld enemies, a small bonus amount of credits will be added to the earned credits. A maximum of <unbreak>#2[i]</unbreak> bonus credits can be received per calendar day.\nAfter using her Technique and defeating enemies in Simulated Universe, additionally receive a small amount of Cosmic Fragments with a small chance to obtain 1 random Curio.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"111207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							60,
+							10000
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1112101": {
+				"Id": "1112101",
+				"Name": "Overdraft",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "When Topaz uses Basic ATK to deal DMG, it will be considered as a follow-up attack.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Arrow of the Beast Hunter",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112102": {
+				"Id": "1112102",
+				"Name": "Financial Turmoil",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "Increases Topaz and Numby's DMG dealt to enemy targets with Fire Weakness by <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112103": {
+				"Id": "1112103",
+				"Name": "Stonks Market",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "After Numby uses an attack while in the Windfall Bonanza! state, Topaz additionally regenerates <unbreak>#1[i]</unbreak> Energy.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112201": {
+				"Id": "1112201",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1112202": {
+				"Id": "1112202",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1112101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Arrow of the Beast Hunter",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "Silvermane Badge",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1112203": {
+				"Id": "1112203",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1112202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112204": {
+				"Id": "1112204",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112205": {
+				"Id": "1112205",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1112102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Arrow of the Demon Slayer",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "Silvermane Insignia",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1112206": {
+				"Id": "1112206",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1112205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112207": {
+				"Id": "1112207",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112208": {
+				"Id": "1112208",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1112103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1112209": {
+				"Id": "1112209",
+				"Name": "CRIT Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1112208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1112210": {
+				"Id": "1112210",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1112208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Arrow of the Starchaser",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "Silvermane Medal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
 	},
 	"1201": {
 		"Id": "1201",
@@ -41189,6 +42613,1460 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1210": {
+		"Id": "1210",
+		"Name": "Guinaifen",
+		"Nodes": {
+			"1210001": {
+				"Id": "1210001",
+				"Name": "Standing Ovation",
+				"NodeType": 2,
+				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Guinaifen's ATK to a single enemy.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "Obsidian of Dread",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1210002": {
+				"Id": "1210002",
+				"Name": "Blazing Welcome",
+				"NodeType": 2,
+				"NodeTypeText": "Skill",
+				"EffectRaw": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Guinaifen's ATK to a single enemy and deals Fire DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Guinaifen's ATK to any adjacent enemies with a <unbreak>#3[i]%</unbreak> <u>base chance</u> to Burn the target and adjacent targets. When Burned, enemies will take a Fire DoT equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Guinaifen's ATK at the beginning of each turn, lasting for <unbreak>#5[i]</unbreak> turn(s).",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.2,
+							1,
+							0.839,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.66,
+							0.22,
+							1,
+							0.923,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.72,
+							0.24,
+							1,
+							1.0069,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "Obsidian of Dread",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.78,
+							0.26,
+							1,
+							1.0909,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.84,
+							0.28,
+							1,
+							1.1748,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3,
+							1,
+							1.3007,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.975,
+							0.325,
+							1,
+							1.4686,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.05,
+							0.35,
+							1,
+							1.6784,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.125,
+							0.375,
+							1,
+							1.9303,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							0.4,
+							1,
+							2.1821,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210003": {
+				"Id": "1210003",
+				"Name": "Watch This Showstopper",
+				"NodeType": 2,
+				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Deals Fire DMG equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Guinaifen's ATK to all enemies. If the target enemy is currently inflicted with Burn, then their Burn status immediately produce DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of their original DMG.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							0.72
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							0.74
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							0.76
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "Obsidian of Dread",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							0.78
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							0.82
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							0.845
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							0.87
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							0.895
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							0.92
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210004": {
+				"Id": "1210004",
+				"Name": "PatrAeon Benefits",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "When Guinaifen is on the field, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> to apply Firekiss to an enemy after their Burn status causes DMG. While inflicted with Firekiss, the enemy receives <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> increased DMG, which lasts for <unbreak>#5[i]</unbreak> turn(s) and can stack up to <unbreak>#6[i]</unbreak> time(s).",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.04,
+							3,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.043,
+							3,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.046,
+							3,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "Obsidian of Dread",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.049,
+							3,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.052,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.055,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0588,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0625,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0663,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.07,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210007": {
+				"Id": "1210007",
+				"Name": "Skill Showcase",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Immediately attacks the enemy. After entering battle, deals DMG for <unbreak>#2[i]</unbreak> time(s), dealing Fire DMG equal to <unbreak>#1[i]%</unbreak> of Guinaifen's ATK to a random single enemy target each time, with a <unbreak>#3[i]%</unbreak> <u>base chance</u> of inflicting Firekiss on them.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5,
+							4,
+							1
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1210101": {
+				"Id": "1210101",
+				"Name": "High Poles",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "Basic ATK has a <unbreak>#1[i]%</unbreak> base chance of inflicting an enemy with a Burn, equivalent to that of Skill.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "Obsidian of Dread",
+								"Count": 2
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210102": {
+				"Id": "1210102",
+				"Name": "Bladed Hoop",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "When the battle begins, Guinaifen's action is advanced forward by <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210103": {
+				"Id": "1210103",
+				"Name": "Walking on Knives",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "Deals <unbreak>#1[i]%</unbreak> more DMG to Burned enemies.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210201": {
+				"Id": "1210201",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210202": {
+				"Id": "1210202",
+				"Name": "Break Enhance",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Break Effect increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1210101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "Obsidian of Dread",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Artifex's Module",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1210203": {
+				"Id": "1210203",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1210202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210204": {
+				"Id": "1210204",
+				"Name": "Effect Hit Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1210203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210205": {
+				"Id": "1210205",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1210102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "Obsidian of Desolation",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Artifex's Cogwheel",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1210206": {
+				"Id": "1210206",
+				"Name": "Break Enhance",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Break Effect increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1210205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210207": {
+				"Id": "1210207",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1210206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210208": {
+				"Id": "1210208",
+				"Name": "Effect Hit Rate Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Effect Hit Rate increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1210103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1210209": {
+				"Id": "1210209",
+				"Name": "Break Enhance",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Break Effect increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1210103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1210210": {
+				"Id": "1210210",
+				"Name": "DMG Boost: Fire",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Fire DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1210201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "Obsidian of Obsession",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Artifex's Gyreheart",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
+	},
 	"1211": {
 		"Id": "1211",
 		"Name": "Bailu",
@@ -42646,6 +45524,1479 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1212": {
+		"Id": "1212",
+		"Name": "Jingliu",
+		"Nodes": {
+			"1212001": {
+				"Id": "1212001",
+				"Name": "Lucent Moonglow",
+				"NodeType": 2,
+				"NodeTypeText": "Basic ATK",
+				"EffectRaw": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Jingliu's ATK to a single enemy.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "Shattered Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1212002": {
+				"Id": "1212002",
+				"Name": "Transcendent Flash",
+				"NodeType": 2,
+				"NodeTypeText": "Skill",
+				"EffectRaw": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Jingliu's ATK to a single enemy and obtains <unbreak>#2[i]</unbreak> stack(s) of Syzygy.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121202",
+					"121209"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "Shattered Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212003": {
+				"Id": "1212003",
+				"Name": "Florephemeral Dreamflux",
+				"NodeType": 2,
+				"NodeTypeText": "Ultimate",
+				"EffectRaw": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Jingliu's ATK to a single enemy, and deals Ice DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Jingliu's ATK to any adjacent enemies. Gains <unbreak>#2[i]</unbreak> stack(s) of Syzygy after attack ends.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.8,
+							1,
+							0.9,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.92,
+							1,
+							0.96,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2.04,
+							1,
+							1.02,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "Shattered Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2.16,
+							1,
+							1.08,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2.28,
+							1,
+							1.14,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2.4,
+							1,
+							1.2,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.55,
+							1,
+							1.275,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.7,
+							1,
+							1.35,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.85,
+							1,
+							1.425,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							1,
+							1.5,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212004": {
+				"Id": "1212004",
+				"Name": "Crescent Transmigration",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "When Jingliu has <unbreak>#5[i]</unbreak> stack(s) of Syzygy, she enters the Spectral Transmigration state with her Action Advanced by <unbreak>#6[i]%</unbreak> and her CRIT Rate increases by <color=#f29e38ff><unbreak>#7[i]%</unbreak></color>. Then, Jingliu's Skill \"Transcendent Flash\" becomes enhanced and turns into \"Moon On Glacial River,\" and becomes the only ability she can use in battle. When Jingliu uses an attack in the Spectral Transmigration state, she consumes HP from all other allies equal to <unbreak>#2[i]%</unbreak> of their respective Max HP (this cannot reduce allies' HP to lower than 1). Jingliu's ATK increases by <unbreak>#3[i]%</unbreak> of the total HP consumed from all allies in this attack, capped at <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of her base ATK, lasting until the current attack ends. Jingliu cannot enter the Spectral Transmigration state again until the current Spectral Transmigration state ends. Syzygy can stack up to 3 times. When Syzygy stacks become 0, Jingliu will exit the Spectral Transmigration state.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							0.9,
+							2,
+							1,
+							0.4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							0.99,
+							2,
+							1,
+							0.41
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.08,
+							2,
+							1,
+							0.42
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "Shattered Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.17,
+							2,
+							1,
+							0.43
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.26,
+							2,
+							1,
+							0.44
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.35,
+							2,
+							1,
+							0.45
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.4625,
+							2,
+							1,
+							0.4625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.575,
+							2,
+							1,
+							0.475
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.6875,
+							2,
+							1,
+							0.4875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.8,
+							2,
+							1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212007": {
+				"Id": "1212007",
+				"Name": "Shine of Truth",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "After using this Technique, creates a dimension around Jingliu that lasts for <unbreak>#3[i]</unbreak> seconds, and all enemies in this dimension will become Frozen. After entering combat with enemies in the dimension, Jingliu immediately regenerates <unbreak>#6[i]</unbreak> Energy and obtains <unbreak>#1[i]</unbreak> stack(s) of Syzygy, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> of Freezing enemy targets for <unbreak>#4[i]</unbreak> turn(s). While Frozen, enemy targets cannot take action, and receive Ice <u>Additional DMG</u> equal to <unbreak>#5[i]%</unbreak> of Jingliu's ATK at the start of every turn. Only 1 dimension created by allies can exist at the same time.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1,
+							20,
+							1,
+							0.8,
+							15
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1212101": {
+				"Id": "1212101",
+				"Name": "Deathrealm",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "While in the Spectral Transmigration state, increases Effect RES by <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "Shattered Blade",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212102": {
+				"Id": "1212102",
+				"Name": "Sword Champion",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "After using Transcendent Flash, the next action will be Advanced Forward by <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212103": {
+				"Id": "1212103",
+				"Name": "Frost Wraith",
+				"NodeType": 3,
+				"NodeTypeText": "Bonus Ability",
+				"EffectRaw": "While in the Spectral Transmigration state, increases Ultimate DMG by <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Tracks of Destiny",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret of Infinite Ochema",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212201": {
+				"Id": "1212201",
+				"Name": "CRIT DMG Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1212202": {
+				"Id": "1212202",
+				"Name": "SPD Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "SPD increases by <unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1212101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "Shattered Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Immortal Scionette",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1212203": {
+				"Id": "1212203",
+				"Name": "CRIT DMG Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1212202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212204": {
+				"Id": "1212204",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1212203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212205": {
+				"Id": "1212205",
+				"Name": "CRIT DMG Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1212102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lifeless Blade",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Immortal Aeroblossom",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1212206": {
+				"Id": "1212206",
+				"Name": "SPD Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "SPD increases by <unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1212205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212207": {
+				"Id": "1212207",
+				"Name": "CRIT DMG Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1212206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212208": {
+				"Id": "1212208",
+				"Name": "HP Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "Max HP increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1212103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1212209": {
+				"Id": "1212209",
+				"Name": "SPD Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "SPD increases by <unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1212208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1212210": {
+				"Id": "1212210",
+				"Name": "CRIT DMG Boost",
+				"NodeType": 1,
+				"NodeTypeText": "Stat Bonus",
+				"EffectRaw": "CRIT DMG increases by <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1212208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Credit",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "Worldbreaker Blade",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Immortal Lumintwig",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
+	},
 	"1213": {
 		"Id": "1213",
 		"Name": "Dan Heng • Imbibitor Lunae",
@@ -43656,7 +48007,7 @@
 				"Name": "Jolt Anew",
 				"NodeType": 3,
 				"NodeTypeText": "Bonus Ability",
-				"EffectRaw": "This character's CRIT DMG increases by <unbreak>#1[i]%</unbreak> when dealing DMG to enemy targets with Imaginary Weakness.",
+				"EffectRaw": "When dealing DMG to enemy targets with Imaginary Weakness, CRIT DMG increases by <unbreak>#1[i]%</unbreak>.",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree3.png",

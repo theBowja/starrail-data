@@ -479,7 +479,7 @@
 			{
 				"Id": 100301105,
 				"Name": "Rallying",
-				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์เพิ่มขึ้นและแอ็กชันทันที",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์ทั้งหมดเพิ่มขึ้น ยกเว้น Silvermane Lieutenant (Bug) และจะแอ็กชันทันที",
 				"SkillTypeDesc": "สกิล"
 			}
 		],
@@ -3469,7 +3469,7 @@
 			{
 				"Id": 202205002,
 				"Name": "Rallying Howl",
-				"SkillDesc": "เรียก \"Shadow Jackhyena\" 1 ตัวที่มี HP ในขณะนั้นเท่ากับ HP ของตัวมอนสเตอร์",
+				"SkillDesc": "เรียก \"Shadow Jackhyena\" 1 ตัวที่มี HP ปัจจุบันเท่ากับ HP ของตัวมอนสเตอร์",
 				"SkillTypeDesc": "สกิล"
 			}
 		],
@@ -4100,7 +4100,7 @@
 			{
 				"Id": 202303105,
 				"Name": "Vitals Drained",
-				"SkillDesc": "เมื่อโจมตีเป้าหมายที่มี \"Prana-Siphon\" DMG ที่สร้างโดยการโจมตีนี้จะถูกแปลงเป็น \"Prana-Siphon\" และรีเฟรชระยะเวลาของ \"Prana-Siphon\" ทั้งนี้ \"Prana-Siphon\" นั้นมีค่าจำกัดสูงสุดอยู่",
+				"SkillDesc": "เมื่อโจมตีเป้าหมายที่ติดสถานะ \"Prana-Siphon\" DMG ที่สร้างโดยการโจมตีนี้จะถูกแปลงเป็น HP สูงสุดที่ลดลงโดย \"Prana-Siphon\" และรีเฟรชระยะเวลาของ \"Prana-Siphon\" ทั้งนี้ \"Prana-Siphon\" สามารถลด HP สูงสุดที่ฟื้นฟูได้มากสุด <unbreak>50%</unbreak>",
 				"SkillTypeDesc": "พรสวรรค์",
 				"ElementType": "Wind"
 			}
@@ -4294,6 +4294,1419 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"2024012": {
+		"Id": "2024012",
+		"Name": "Abundant Ebon Deer (Complete)",
+		"Introduction": "การฉายภาพที่สมบูรณ์เพราะรหัสได้รับผลกระทบ ร่างอ้างอิงดั้งเดิมคือ สัตว์แห่งจิตวิญญาณที่เกิดจาก \"Ambrosial Arbor\" ซึ่งคอยคุ้มกันระบบรากอยู่ เมื่อผ่านไปที่ไหน กิ่งก้านก็จะงอกขึ้นจนแน่นขนัด\nหลังจากถูกทำลายในสงครามสมัยโบราณ ในที่สุด \"Ambrosial Arbor\" ก็เติบโตขึ้นมาอีกครั้งโดยอาศัยการซ่อมแซมจาก Stellaron บรรดาสัตว์ป่าหายากที่ผู้เป็นอมตะสร้างขึ้นในสมัยนั้น ต่างพากันเพิ่มจำนวนขึ้นมาอย่างไม่ขาดสาย ราวกับความฝันเก่าๆ ได้มาเยือนอีกครั้ง",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202401201,
+				"Name": "Pedicel: Wintry Wind",
+				"SkillDesc": "อัญเชิญ \"Twig of Wintry Wind\" กิ่งก้านของ Ambrosial Arbor",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401202,
+				"Name": "Pedicel: Marple Leaf",
+				"SkillDesc": "อัญเชิญ \"Twig of Marple Leaf\" กิ่งก้านของ Ambrosial Arbor",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401203,
+				"Name": "Pedicel: Glorious Blooms",
+				"SkillDesc": "อัญเชิญ \"Twig of Glorious Blooms\" กิ่งก้านของ Ambrosial Arbor",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401204,
+				"Name": "Pedicel: Lavish Fruits",
+				"SkillDesc": "อัญเชิญ \"Twig of Lavish Fruits\" กิ่งก้านของ Ambrosial Arbor",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401205,
+				"Name": "Wavering Bleat",
+				"SkillDesc": "สร้าง DMG สายฟ้าแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202401206,
+				"Name": "Caress of Wind",
+				"SkillDesc": "สร้าง DMG ลมแก่เป้าหมายทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202401207,
+				"Name": "Hardy Leaf Sheath",
+				"SkillDesc": "เพิ่ม DEF และทำให้ความทนทานของตัวเองไม่ได้รับ DMG",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401208,
+				"Name": "Flamboyant Gore",
+				"SkillDesc": "ปล่อยสกิลนี้ทันทีเมื่อมี \"Lavish Fruit\" 2 อันอยู่ในการต่อสู้ เพื่อสร้าง DMG สายฟ้าอย่างรุนแรงแก่เป้าหมายทั้งหมด ยิ่งจำนวน \"กิ่งก้าน Ambrosial Arbor\" ที่อยู่ในการต่อสู้มีมากเท่าไหร่ ก็ยิ่งสร้าง DMG ได้มากเท่านั้น และหลังจากปล่อยสกิลนี้ \"Twig of Lavish Fruits\" ทั้งหมดที่อยู่ในการต่อสู้จะหายไป",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202401209,
+				"Name": "Everlife",
+				"SkillDesc": "ฟื้นฟู HP ทันทีและได้รับ \"Synwood Renewal\" 1 ชั้น",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401210,
+				"Name": "Pedicel: Ivy Allure",
+				"SkillDesc": "อัญเชิญ \"Twig of Wintry Wind\" กิ่งก้านของ Ambrosial Arbor 2 กิ่ง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401211,
+				"Name": "Pedicel: Willow Sprig",
+				"SkillDesc": "อัญเชิญ \"Twig of Marple Leaf\" กิ่งก้านของ Ambrosial Arbor 2 กิ่ง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401212,
+				"Name": "Pedicel: Hazel Lush",
+				"SkillDesc": "อัญเชิญ \"Twig of Marple Leaf\" กิ่งก้านของ Ambrosial Arbor 2 กิ่ง, \"Twig of Wintry Wind\" กิ่งก้านของ Ambrosial Arbor 1 กิ่ง, \"Twig of Glorious Blooms\" กิ่งก้านของ Ambrosial Arbor 1 กิ่ง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401213,
+				"Name": "Pedicel: Entwined Vines",
+				"SkillDesc": "อัญเชิญ \"Twig of Lavish Fruits\" กิ่งก้านของ Ambrosial Arbor 2 กิ่ง, \"Twig of Marple Leaf\" กิ่งก้านของ Ambrosial Arbor 1 กิ่ง, \"Twig of Wintry Wind\" กิ่งก้านของ Ambrosial Arbor 1 กิ่ง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 202401214,
+				"Name": "Vigor Overflow",
+				"SkillDesc": "ทุกครั้งที่ Abundant Ebon Deer ได้รับเอฟเฟกต์ Buff ทั้ง Abundant Ebon Deer และกิ่งก้านของ Ambrosial Arbor ทั้งหมด จะสร้าง DMG เพิ่มขึ้นเล็กน้อย",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001010": {
+		"Id": "7001010",
+		"Name": "Entranced Ingenium: Obedient Dracolion",
+		"Introduction": "สิ่งประดิษฐ์อันชาญฉลาดที่ช่างของ Artisanship Commission สร้างขึ้น เดิมทีมันเป็นกระดิ่งเตือนภัยที่ไม่มีชีวิต ซึ่งใช้สำหรับเตือนภัยผู้คน แต่ทุกวันนี้มันได้รับ \"ชีวิต\" เป็นช่วงเวลาสั้นๆ อันเนื่องมาจากการปรับเปลี่ยนบางอย่าง\nในการต่อสู้ Obedient Dracolion สามารถต้านทาน DMG ที่รุนแรงถึงตายได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101001,
+				"Name": "Lion's Roar",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะอ่อนแอ",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700101002,
+				"Name": "Emergency Mode",
+				"SkillDesc": "เมื่อได้รับ DMG รุนแรงถึงตายจะไม่หมดสติ และจะฟื้นฟู HP จำนวนหนึ่ง พร้อมทั้งขจัดเอฟเฟกต์ Debuff",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700101003,
+				"Name": "Self-Reconstruction",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และรีเซ็ตจำนวนครั้งที่สามารถปล่อย \"Emergency Mode\" ได้",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001011": {
+		"Id": "7001011",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "นักรบผู้รอดตายซึ่งได้ผ่านการหล่อหลอมขึ้นมาใหม่ใน \"Warforge\" และได้รับพลังที่เรียกว่าการ \"ทำลายล้าง\" Antimatter ได้เติมเต็มร่างกายของพวกเขา และอนุภาคเชิงลบก็ได้สั่นสะเทือนอยู่ในร่างกายนั้น",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101101,
+				"Name": "Hunting Blade",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700101102,
+				"Name": "Vortex Leap",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย หากสกิลนี้กำจัดเป้าหมายได้ จะฟื้นฟูพลังงานทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001012": {
+		"Id": "7001012",
+		"Name": "Voidranger: Eliminator",
+		"Introduction": "ร่างที่ถูก Fragmentum กัดกร่อนหลังจากเผชิญหน้ากับความตาย แม้สัญญาณชีพจะเปลี่ยนไป แต่มันยังคงปฏิบัติตามคำสั่งของการกวาดล้างอยู่\nในระหว่างการต่อสู้ Voidranger: Eliminator สามารถปล่อยการโจมตีอย่างรวดเร็วได้หลายครั้ง แต่หากไม่สามารถกำจัดศัตรูเป้าหมายได้ จะได้รับ DMG อย่างรุนแรง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101201,
+				"Name": "Void Cannon",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700101202,
+				"Name": "Antimatter Speed Boost",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และความเร็วของมอนสเตอร์เพิ่มขึ้นเป็นอย่างมาก",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700101203,
+				"Name": "Antimatter Bombardment",
+				"SkillDesc": "หลังจากทำการโจมตี จะซ้อนทับ \"Overheat\" 1 ชั้น เมื่อมี \"Overheat\" ถึง <unbreak>#1[i]</unbreak> ชั้น จะใช้ HP ของตัวเองจำนวนมากและลบ \"Overheat\" ออก เมื่อกำจัดเป้าหมายได้ ก็จะลบ \"Overheat\" เช่นกัน",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001013": {
+		"Id": "7001013",
+		"Name": "Commerce Trotter",
+		"Introduction": "สิ่งมีชีวิตต่างมิติที่หลงทางอยู่ในหมู่ดาว นิสัยอบอุ่นอ่อนโยน รสชาติหวาน กินไม่ได้ ใช้เวลาส่วนใหญ่ของชีวิตไปกับการกินและวิ่งหนี นักเดินทางที่พบมันเข้าจะถือว่าเป็นลางดี\nCommerce Trotter สามารถมอบคะแนนปฏิบัติการ ให้กับเจ้าหน้าที่องค์กรคนอื่นได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101301,
+				"Name": "Motivation",
+				"SkillDesc": "มอบ \"คะแนนปฏิบัติการ\" 1 คะแนนให้กับมอนสเตอร์ตัวอื่น ยกเว้นตัวเอง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700101302,
+				"Name": "Entreprenuerial Spirit",
+				"SkillDesc": "ทุกครั้งที่โดนโจมตี จะเพิ่มความเร็วของมอนสเตอร์ตัวอื่น ยกเว้นตัวเอง",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002010": {
+		"Id": "7002010",
+		"Name": "Abundance Sprite: Wooden Lupus",
+		"Introduction": "หมาป่าที่ล้อมรอบด้วยหมอกควัน การเคลื่อนไหวของมันเอาแน่เอานอนไม่ได้\nเมื่อครั้งที่ \"Ambrosial Arbor\" ยังตั้งตระหง่าน ชาว Xianzhou เคยใช้เทคนิคลึกลับเพาะพันธุ์สัตว์แปลกๆ และหายากมากมาย ซึ่ง Wooden Lupus ก็คือหนึ่งในสัตว์สงครามที่ย่ำเดินมาพร้อมกับกองทัพ",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700201001,
+				"Name": "Wolf Predation",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะช็อตไฟฟ้า",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 700201002,
+				"Name": "Wolf Consumption",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว หากเป้าหมายติดสถานะ DMG ต่อเนื่อง DMG ต่อเนื่องทั้งหมดที่เป้าหมายได้รับในปัจจุบัน จะสร้าง DMG 1 ครั้งทันที จากนั้น เป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะช็อตไฟฟ้า",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 700201003,
+				"Name": "Rallying Howl",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และเรียก \"Shadow Jackhyena\" 1 ตัวที่มี HP ปัจจุบันเท่ากับ HP ของตัวเอง",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002011": {
+		"Id": "7002011",
+		"Name": "Shadow Jackhyena",
+		"Introduction": "ภาพลวงตาที่ก่อตัวขึ้นจาก Wooden Lupus",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700201101,
+				"Name": "Wolf Predation",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะช็อตไฟฟ้า",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002020": {
+		"Id": "7002020",
+		"Name": "คนพเนจร",
+		"Introduction": "เพราะต้องดิ้นรนเพื่อความอยู่รอด ผู้คนที่อาศัยอยู่ใน Underworld จึงมักจะเสี่ยงอันตรายเข้าไปใน Fragmentum เพื่อเสาะหาสิ่งต่างๆ ที่สามารถนำมาใช้ประโยชน์ได้ และเครื่องจักรกลโบราณที่พวกเขาขุดขึ้นมา ก็ได้กลายมาเป็นผู้ช่วยที่ดีที่สุดของพวกเขา",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700202001,
+				"Name": "Shovel Attack",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700202002,
+				"Name": "Great Inspiration",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และเพิ่ม ATK ของมอนสเตอร์ที่กำหนดหนึ่งตัว รวมถึงเพิ่มความเร็วเช่นกัน ถ้าหากมอนสเตอร์เป้าหมายไม่ใช่ตัวเอง จะทำให้มอนสเตอร์แอ็กชันทันที เมื่อเข้าสู่การต่อสู้ การชาร์จสกิลนี้จะเต็ม",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002030": {
+		"Id": "7002030",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700203001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700203002,
+				"Name": "Scorching Blast",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002050": {
+		"Id": "7002050",
+		"Name": "Entranced Ingenium: Illumination Dragonfish",
+		"Introduction": "สิ่งประดิษฐ์อันชาญฉลาดที่ช่างของ Artisanship Commission สร้างขึ้น เดิมทีมันเป็นตะเกียงที่ไม่มีชีวิต ซึ่งใช้สำหรับให้แสงสว่างในความมืด แต่ทุกวันนี้มันได้รับ \"ชีวิต\" เป็นช่วงเวลาสั้นๆ อันเนื่องมาจากการปรับเปลี่ยนบางอย่าง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700205001,
+				"Name": "Nightly Luminosity",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายทั้งหมด และมีโอกาสอย่างมาก ที่จะทำให้เป้าหมายที่ถูกโจมตี สุ่มติดสถานะ DMG ต่อเนื่อง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205002,
+				"Name": "Display Fireworks",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด แล้วปล่อยดอกไม้ไฟสุดตระการตาออกมา โดยไม่เกิดอะไรขึ้นทั้งสิ้น แต่สวยงามมากทีเดียว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205003,
+				"Name": "Candle Flame",
+				"SkillDesc": "เมื่อหมดสติ จะสร้าง DMG แก่มอนสเตอร์ทั้งหมด และมอนสเตอร์เป้าหมายที่ถูกโจมตี มีโอกาสอย่างมากที่จะได้รับ DMG เพิ่มขึ้น",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002060": {
+		"Id": "7002060",
+		"Name": "Silvermane Cannoneer",
+		"Introduction": "ทหารปืนใหญ่ของกองกำลัง Silvermane ที่ใช้ปืนใหญ่แบบพกพาในการต่อสู้\nในระหว่างการต่อสู้ Silvermane Cannoneer จะโจมตีเป้าหมายหลายตัวอย่างต่อเนื่องและรุนแรง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700206001,
+				"Name": "Barrage",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700206002,
+				"Name": "Lock and Load",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สนับสนุนมอนสเตอร์ที่กำหนดหนึ่งตัว พร้อมทั้งเพิ่ม ATK ของตัวเองและมอนสเตอร์ทุกตัวที่ถูกสนับสนุน",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700206003,
+				"Name": "Covering Support",
+				"SkillDesc": "เมื่อเข้าสู่การต่อสู้ จะสนับสนุนมอนสเตอร์ที่กำหนดหนึ่งตัว โดยหลังจากมอนสเตอร์ที่ถูกสนับสนุนโจมตีใส่เป้าหมายแล้ว จะปล่อยการโจมตีต่อเนื่อง 1 ครั้ง และสร้าง DMG เล็กน้อยให้กับเป้าหมายที่ถูกโจมตี รวมถึงตัวที่อยู่ใกล้เคียงด้วย",
+				"SkillTypeDesc": "พรสวรรค์",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002070": {
+		"Id": "7002070",
+		"Name": "Imaginary Weaver",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันทะลุผ่านม่านผืนหนาเข้ามาจากอีกฟากหนึ่งของท้องฟ้า ที่เต็มไปด้วยดวงดารามืดสลัว ร่างกายที่คล้ายกับกิ่งก้านใบไม้แปลกประหลาด ได้โผล่เข้ามาในความเป็นจริง และใช้พลังงานจินตภาพเปลี่ยนแปลงความเป็นจริง โดยไม่สนใจสิ่งใด",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700207001,
+				"Name": "Reverberating Carol",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย หลังจาก หลังจากใช้ครั้งแรก จะเร่งแอ็กชันของตัวเองเป็นจำนวนมาก",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700207002,
+				"Name": "Carolburst",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002080": {
+		"Id": "7002080",
+		"Name": "Silvermane Gunner",
+		"Introduction": "มือปืนของกองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\" รับหน้าที่ลอบโจมตีศัตรู\nในระหว่างการต่อสู้ Silvermane Gunner จะทำเครื่องหมายใส่ศัตรูเป้าหมาย และสั่งให้ฝ่ายตัวเองพุ่งเป้าไปโจมตี",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700208001,
+				"Name": "Cannon Strike",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว หลังจากใช้แล้ว จะเร่งแอ็กชันของตัวเองเป็นอัตราส่วนจำนวนหนึ่ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700208002,
+				"Name": "Piercing Grenade",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และทำให้เป้าหมายนั้นได้รับ DMG เพิ่มในทุกครั้งที่โดนโจมตี อีกทั้งทำให้ตัวดังกล่าวกลายเป็นเป้าหมายการโจมตีของมอนสเตอร์ทั้งหมด เมื่อเข้าสู่การต่อสู้ สกิลนี้จะชาร์จจนเต็ม",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002090": {
+		"Id": "7002090",
+		"Name": "Silvermane Soldier",
+		"Introduction": "กองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\" รับหน้าที่จู่โจมวงล้อมของศัตรู\nในระหว่างการต่อสู้ Silvermane Soldier จะมอบเอฟเฟกต์ Buff ต่อเนื่องให้กับฝ่ายตัวเอง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700209001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700209002,
+				"Name": "Morale Booster",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด มอนสเตอร์ทั้งหมดได้รับ \"Morale\" 5 ชั้น",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700209003,
+				"Name": "Silvermane Armor",
+				"SkillDesc": "หลังจากมอนสเตอร์หนึ่งตัวทำการโจมตี มอนสเตอร์ทั้งหมดจะได้รับ \"Morale\" 1 ชั้น โดย Morale แต่ละชั้น จะเพิ่ม DMG และความเร็ว พร้อมได้รับ DMG ลดลง",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002100": {
+		"Id": "7002100",
+		"Name": "Automaton Spider",
+		"Introduction": "หุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า โดยถูกมอบหมายให้เข้ามาทำงานพื้นฐานที่ต้องใช้แรงกายแทนที่มนุษย์",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700210001,
+				"Name": "Ram",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700210002,
+				"Name": "Timed Module",
+				"SkillDesc": "จะปล่อย \"Self-Exploding Module\" ในแอ็กชันครั้งต่อไป",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700210003,
+				"Name": "Self-Exploding Module",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด ระเบิดตัวเอง และสร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002110": {
+		"Id": "7002110",
+		"Name": "Automaton Spider",
+		"Introduction": "หุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า โดยถูกมอบหมายให้เข้ามาทำงานพื้นฐานที่ต้องใช้แรงกายแทนที่มนุษย์",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700211001,
+				"Name": "Ram",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700211002,
+				"Name": "Timed Module",
+				"SkillDesc": "จะปล่อย \"Self-Exploding Module\" ในแอ็กชันครั้งต่อไป",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700211003,
+				"Name": "Self-Exploding Module",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด ระเบิดตัวเอง และสร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002120": {
+		"Id": "7002120",
+		"Name": "เจ้าหน้าที่ชั้นผู้น้อย: ปฏิบัติงานนอกสถานที่",
+		"Introduction": "เจ้าหน้าที่ชั้นผู้น้อยขององค์กรสันติภาพแห่งดวงดาว งานหลักคือการจัดการกับ \"ความประมาททางธุรกิจ\" ที่เอามาพูดโจ่งแจ้งไม่ได้ และด้วยเงินเดือนอันน้อยนิด จึงจ่ายได้แค่ห้องเช่ารวมบนเรือขององค์กรเท่านั้น",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700212001,
+				"Name": "Clock In",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700212002,
+				"Name": "Annual Accounting",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว หากมี \"คะแนนปฏิบัติการ\" อยู่ จะทำให้ได้รับ DMG เพิ่มขึ้น และใช้ \"คะแนนปฏิบัติการ\" ทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700212003,
+				"Name": "IPC Employee",
+				"SkillDesc": "เพิ่ม DMG จำนวนมากตามจำนวนของ \"คะแนนปฏิบัติการ\" เมื่อได้รับ \"คะแนนปฏิบัติการ\" จะได้รับโล่ที่สามารถซ้อนทับได้ หากไม่มี \"คะแนนปฏิบัติการ\" จะลบโล่นี้ และเมื่อโล่ถูกทำลายหรือหมดสติ \"คะแนนปฏิบัติการ\" จะถูกยึดไป",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002130": {
+		"Id": "7002130",
+		"Name": "เจ้าหน้าที่ชั้นผู้น้อย: รักษาความปลอดภัย",
+		"Introduction": "เจ้าหน้าที่ชั้นผู้น้อยขององค์กรสันติภาพแห่งดวงดาว งานหลักคือการรักษาความสงบเรียบร้อยของสถานที่ ที่อยู่ภายใต้การปกครองขององค์กร และด้วยเงินเดือนอันน้อยนิด จึงจ่ายได้แค่ห้องเช่ารวมบนเรือขององค์กรเท่านั้น",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700213001,
+				"Name": "Appeal",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงเป้าหมายที่อยู่ใกล้เคียง และได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700213002,
+				"Name": "Performance Review",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงเป้าหมายที่อยู่ใกล้เคียง หากมี \"คะแนนปฏิบัติการ\" อยู่ จะเร่งแอ็กชันของตัวเองเป็นอัตราส่วนจำนวนหนึ่ง และใช้ \"คะแนนปฏิบัติการ\" ทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700213003,
+				"Name": "IPC Employee",
+				"SkillDesc": "เพิ่ม DMG จำนวนมากตามจำนวนของ \"คะแนนปฏิบัติการ\" เมื่อได้รับ \"คะแนนปฏิบัติการ\" จะได้รับโล่ที่สามารถซ้อนทับได้ หากไม่มี \"คะแนนปฏิบัติการ\" จะลบโล่นี้ และเมื่อโล่ถูกทำลายหรือหมดสติ \"คะแนนปฏิบัติการ\" จะถูกยึดไป",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002140": {
+		"Id": "7002140",
+		"Name": "Everwinter Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยแผ่นน้ำแข็งไร้ใบหน้า\nในระหว่างการต่อสู้ Everwinter Shadewalker จะเหวี่ยงขวานน้ำแข็งเพื่อทำให้การเคลื่อนไหวของศัตรูช้าลง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700214001,
+				"Name": "Frost Crush",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และหน่วงแอ็กชันของเป้าหมายที่ถูกโจมตี",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700214002,
+				"Name": "Frost Supercrush",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003010": {
+		"Id": "7003010",
+		"Name": "Blaze Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ที่เกิดขึ้นจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน ไฟที่ลุกโชนจากแกนของดวงดาวทำให้เกราะของมันลุกไหม้\nในระหว่างการต่อสู้ Blaze Out of Space จะสามารถแผดเผาศัตรูให้เป็นเถ้าถ่านได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700301002,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700301003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "สุ่มสร้าง DMG เล็กน้อยแก่เป้าหมายหนึ่งตัวอย่างต่อเนื่อง และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700301004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์เพิ่มขึ้น",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700301005,
+				"Name": "Bomb Warning",
+				"SkillDesc": "เริ่มชาร์จและปล่อย \"Bomb en Masse\" ในแอ็กชันครั้งถัดไป",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700301006,
+				"Name": "Bomb en Masse",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003020": {
+		"Id": "7003020",
+		"Name": "Aurumaton Gatekeeper",
+		"Introduction": "Aurumaton ผู้พิทักษ์ที่ถูกหลอมขึ้นด้วยศิลปะเครื่องยนต์กลไกโบราณ\nในอดีตอันแสนเนิ่นนาน Aurumaton ได้ล่องเรือเพื่อตามหายาแห่งความอมตะไปตาม Xianzhou พร้อมกับควบคุมดูแล และช่วยเหลือมนุษย์ในการทำสงคราม... แต่หลังจากการจลาจล ในที่สุด Aurumaton ก็ยอมจำนนต่อ Xianzhou\nปัจจุบัน Aurumaton ทั้งหมดล้วนถูกควบคุมโดยเครื่องรางอย่างเข้มงวด และถูกใช้เป็นจักรกลพิทักษ์สถานที่สำคัญ",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700302001,
+				"Name": "Farewell Etiquette",
+				"SkillDesc": "เมื่อเป้าหมายโจมตีด้วยสกิลต่อสู้หรือท่าไม้ตาย จะสะสม \"Sanction Rate\" และเมื่อ \"Sanction Rate\" เต็มแล้ว จะปล่อย \"โหมดลงโทษ\"",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 700302002,
+				"Name": "Dread",
+				"SkillDesc": "เพิ่ม \"Sanction Rate\" และสร้าง DMG เล็กน้อยแก่เป้าหมายทั้งหมด ขณะเดียวกัน ก็มีโอกาสอย่างมากที่จะทำให้เป้าหมายติดสถานะอ่อนแอ",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700302003,
+				"Name": "Restraint",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700302004,
+				"Name": "Enchainment",
+				"SkillDesc": "สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว ขณะเดียวกัน เป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะกักขัง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700302005,
+				"Name": "Sanction Mode",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และเพิ่มความเร็ว เมื่อทำการแอ็กชัน จะปล่อยสกิลโจมตีอันทรงพลัง เป็นเวลา 2 เทิร์น พร้อมกับอัญเชิญ \"Illumination Dragonfish\"",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003030": {
+		"Id": "7003030",
+		"Name": "Silvermane Lieutenant",
+		"Introduction": "หัวหน้าหน่วยของกองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\"\nSilvermane Lieutenant จะมอบโล่ให้กับฝ่ายตัวเอง และโจมตีโต้กลับใส่ศัตรู ที่โจมตีฝ่ายตัวเองที่มีโล่ป้องกันอยู่",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700303001,
+				"Name": "Assault",
+				"SkillDesc": "สร้าง DMG เดี่ยว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700303002,
+				"Name": "Defense Line",
+				"SkillDesc": "มอบโล่ให้กับมอนสเตอร์ทั้งหมด",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700303003,
+				"Name": "Total Preparation",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด มีโอกาสอย่างมากที่จะทำให้เป้าหมายทั้งหมดติดสถานะยั่วยุ และมอบโล่จำนวนมากให้กับตัวเอง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700303004,
+				"Name": "Silvermane Command",
+				"SkillDesc": "หลังจากเป้าหมายฝ่ายมอนสเตอร์ที่มีโล่ถูกโจมตี จะทำการโจมตีโต้กลับโดยอัตโนมัติ",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003040": {
+		"Id": "7003040",
+		"Name": "Voidranger: Trampler",
+		"Introduction": "ผลผลิตของกองทัพ Antimatter ที่ได้ใช้ \"Warforge\" หลอมรวมเอาชิ้นส่วนของนักรบและ Leviathan เข้าด้วยกัน\nถึงแม้ปริมาณจะค่อนข้างน้อยและหายาก แต่ก็ได้เอาสติปัญญาของนักรบ รวมเข้ากับพลังและความคล่องตัวของ Leviathan ในระหว่างการต่อสู้ หลังจากกำจัดศัตรู จะทำการแอ็กชันอีกครั้งทันที",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700304001,
+				"Name": "Unreal Projection",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304002,
+				"Name": "Rule of Force",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304003,
+				"Name": "War Trample",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และสร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304004,
+				"Name": "Spiral Arrow",
+				"SkillDesc": "ล็อกเป้าหมายหนึ่งตัว และปล่อย \"End of Bow\" ใส่เป้าหมายดังกล่าวในแอ็กชันครั้งถัดไป",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304005,
+				"Name": "End of Bow",
+				"SkillDesc": "สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304006,
+				"Name": "Anti-Matter Oppression",
+				"SkillDesc": "เมื่อมอนสเตอร์หรือเป้าหมายถูกกำจัด จะแอ็กชันทันที",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003060": {
+		"Id": "7003060",
+		"Name": "Frigid Prowler",
+		"Introduction": "จักรกลที่เดินวนเวียนอยู่ใน Fragmentum ซึ่งแน่นอนว่ามันไม่ใช่สิ่งที่เกิดขึ้นมาจากเทคโนโลยีของมนุษย์ แต่เป็นมอนสเตอร์ที่จำลองขึ้นมาจากพลังที่บิดเบี้ยวของ Fragmentum\nFrigid Prowler จะดูดซับ HP ของฝ่ายตัวเองเพื่อเสริมพลังให้กับตัวเองเป็นอย่างมาก",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700306001,
+				"Name": "Ice Wheel Crusher",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700306002,
+				"Name": "Cryo-Extraction",
+				"SkillDesc": "เมื่อมีฝ่ายมอนสเตอร์อยู่หนึ่งตัว จะใช้ HP ของมอนสเตอร์หนึ่งตัวที่อยู่ใกล้เคียง และเพิ่ม ATK พร้อมทั้งแอ็กชันอีกครั้งทันที",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700306003,
+				"Name": "Frozen Storm",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG แก่เป้าหมายทั้งหมด และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เย็นสุดขั้ว\"",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003070": {
+		"Id": "7003070",
+		"Name": "Automaton Direwolf",
+		"Introduction": "หน่วยหุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า หุ่นยนต์รูปทรงมนุษย์สุดหายาก ที่มีเลื่อยยนต์อยู่ที่แขนขวา ดูเหมือนจะใช้สำหรับการเก็บรวบรวมและการก่อสร้าง\nในระหว่างการต่อสู้ Automaton Direwolf จะซ้อนทับความเร็วและ Buff DMG อย่างต่อเนื่อง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700307001,
+				"Name": "Felling Order",
+				"SkillDesc": "สร้าง DMG ซึ่งในการโจมตีแต่ละครั้ง จะมีโอกาสค่อนข้างต่ำที่จะทำให้เกิดสถานะเสียเลือด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700307002,
+				"Name": "Combat Speed-Up",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และได้รับ \"Pressure\" 3 ชั้น โดยแต่ละชั้นจะเพิ่ม ATK และความเร็วของตัวเอง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700307003,
+				"Name": "Lock On Target",
+				"SkillDesc": "เมื่อเริ่มการต่อสู้ หรือเป้าหมายที่ถูกล็อกหมดสติ จะทำการล็อกเป้าหมายหนึ่งตัว และได้รับ \"Pressure\" 3 ชั้น",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 700307004,
+				"Name": "Dismantle",
+				"SkillDesc": "หลังจากใช้ \"Felling Order\" จะมีโอกาสโจมตีต่อเนื่อง และได้รับ \"Pressure\" 1 ชั้น ยิ่งเป้าหมายเสีย HP มากเท่าไหร่ โอกาสโจมตีต่อเนื่องก็จะยิ่งสูงเท่านั้น",
+				"SkillTypeDesc": "พรสวรรค์",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003080": {
+		"Id": "7003080",
+		"Name": "Searing Prowler",
+		"Introduction": "จักรกลที่เดินวนเวียนอยู่ใน Fragmentum ซึ่งแน่นอนว่ามันไม่ใช่สิ่งที่เกิดขึ้นมาจากเทคโนโลยีของมนุษย์ แต่เป็นมอนสเตอร์ที่จำลองขึ้นมาจากพลังที่บิดเบี้ยวของ Fragmentum\nการโจมตีของ Searing Prowler จะสร้างเอฟเฟกต์เพิ่มเติมแก่ศัตรูที่ติดสถานะเผาไหม้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700308001,
+				"Name": "Crimson Blade",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308002,
+				"Name": "Combustion Slash",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308003,
+				"Name": "Melt",
+				"SkillDesc": "หลังจากโจมตีใส่เป้าหมายหนึ่งตัวที่ติดสถานะเผาไหม้แล้ว มอนสเตอร์จะสร้าง DMG เพิ่มขึ้น",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 700308004,
+				"Name": "High-Temperature Operation",
+				"SkillDesc": "ทำให้ ATK ของตัวเองเพิ่มขึ้นเล็กน้อย และความเร็วเพิ่มขึ้นเป็นอย่างมาก",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700308005,
+				"Name": "Dancing Cinders",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายทั้งหมด ทำให้เป้าหมายที่ติดสถานะเผาไหม้ได้รับ DMG เพิ่มเติม พร้อมทั้งลบสถานะเผาไหม้ของเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308006,
+				"Name": "Scorching Burst",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด และสร้าง DMG แก่เป้าหมายทั้งหมด ทำให้เป้าหมายที่ติดสถานะเผาไหม้เกิดการระเบิด พร้อมทั้งสร้าง DMG เพิ่มเติม แก่ตัวเองและเป้าหมายที่อยู่ใกล้เคียง อีกทั้งลบล้างสถานะเผาไหม้ของเป้าหมายดังกล่าว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308007,
+				"Name": "Augury of Fireburst",
+				"SkillDesc": "จะปล่อย \"Scorching Burst\" ในแอ็กชันครั้งต่อไป",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003090": {
+		"Id": "7003090",
+		"Name": "Automaton Grizzly",
+		"Introduction": "หน่วยหุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า โดยหุ่นยนต์นี้จะเพิ่มเกราะหนัก เพื่อป้องกันการบุกโจมตีกองกำลัง Silvermane\nในระหว่างการต่อสู้ Automaton Grizzly จะเรียก Automaton Spider เข้าสู่การต่อสู้และสะสมพลังงานเพื่อปล่อยการโจมตีอันทรงพลัง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700309001,
+				"Name": "Detonation Order",
+				"SkillDesc": "อัญเชิญ \"Automaton Spider\"",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700309002,
+				"Name": "Enrage Order",
+				"SkillDesc": "ทำให้เป้าหมายทั้งหมดมีโอกาสติดสถานะยั่วยุ",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700309003,
+				"Name": "Overcombust Order",
+				"SkillDesc": "เข้าสู่สถานะชาร์จ และในแอ็กชันครั้งต่อไปจะปล่อย \"Purge Order\" ใส่เป้าหมายทั้งหมด",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700309004,
+				"Name": "Purge Order",
+				"SkillDesc": "สร้าง DMG อย่างรุนแรงแก่เป้าหมายทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700309005,
+				"Name": "Destruction Order",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003100": {
+		"Id": "7003100",
+		"Name": "เจ้าหน้าที่อาวุโส - หัวหน้าทีม",
+		"Introduction": "เจ้าหน้าที่อาวุโสขององค์กรสันติภาพแห่งดวงดาว ที่อยู่ในตำแหน่งหัวหน้าทีมประจำโครงการเป็นอย่างน้อย เครื่องจักรกลที่พวกเขาขับเป็นขององค์กร หากได้รับความเสียหายจะต้องรับผิดชอบค่าซ่อมเอง และด้วยเงินเดือนที่พอถูไถ จึงสามารถเช่าห้องพักแบบหนึ่งห้องนอนบนเรือขององค์กรได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700310001,
+				"Name": "Disciplined",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว หากปัจจุบันไม่มี \"คะแนนปฏิบัติการ\" จะได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน ไม่อย่างนั้นก็จะใช้ \"คะแนนปฏิบัติการ\" ทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700310002,
+				"Name": "Cost Reduction",
+				"SkillDesc": "สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว และได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700310003,
+				"Name": "In Training...",
+				"SkillDesc": "ตัวเองเข้าสู่สถานะชาร์จ และจะปล่อย \"Work Culture Shock\" ในแอ็กชันครั้งต่อไป",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700310004,
+				"Name": "Work Culture Shock",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายทั้งหมด และใช้ \"คะแนนปฏิบัติการ\" ทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700310005,
+				"Name": "<unbreak>720</unbreak>-Degree Review",
+				"SkillDesc": "ยึด \"คะแนนปฏิบัติการ\" 1 คะแนนจากมอนสเตอร์ตัวอื่น ยกเว้นตัวเอง",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700310006,
+				"Name": "Team Building",
+				"SkillDesc": "อัญเชิญเจ้าหน้าที่องค์กรสันติภาพแห่งดวงดาว และทำให้ได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700310007,
+				"Name": "IPC Employee",
+				"SkillDesc": "เพิ่ม DMG จำนวนมากตามจำนวนของ \"คะแนนปฏิบัติการ\" เมื่อได้รับ \"คะแนนปฏิบัติการ\" จะได้รับโล่ที่สามารถซ้อนทับได้ หากไม่มี \"คะแนนปฏิบัติการ\" จะลบโล่นี้ และเมื่อโล่ถูกทำลายหรือหมดสติ \"คะแนนปฏิบัติการ\" จะถูกยึดไป",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"8001010": {
 		"Id": "8001010",
@@ -4861,34 +6274,34 @@
 		"Name": "Sequence Trotter",
 		"Introduction": "สิ่งมีชีวิตต่างมิติที่หลงทางอยู่ในหมู่ดาว นิสัยอบอุ่นอ่อนโยน รสชาติหวาน กินไม่ได้ ใช้เวลาส่วนใหญ่ของชีวิตไปกับการกินและวิ่งหนี นักเดินทางที่พบมันเข้าจะถือว่าเป็นลางดี",
 		"ElementalWeaknesses": [
-			"Thunder",
-			"Wind",
-			"Quantum"
+			"Physical",
+			"Quantum",
+			"Imaginary"
 		],
 		"ElementalResistance": {
-			"Physical": 0.2,
+			"Physical": 0,
 			"Fire": 0.2,
 			"Ice": 0.2,
-			"Wind": 0,
-			"Thunder": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
 			"Quantum": 0,
-			"Imaginary": 0.2
+			"Imaginary": 0
 		},
 		"SkillList": [
 			{
-				"Id": 800205601,
+				"Id": 800205801,
 				"Name": "S—S—S—Scared",
 				"SkillDesc": "Trotter ตื่นตกใจ และจะหนีไปหลังจากผ่านไป 2 เทิร์น",
 				"SkillTypeDesc": "สกิล"
 			},
 			{
-				"Id": 800205602,
+				"Id": 800205802,
 				"Name": "Run... Run!",
 				"SkillDesc": "Trotter หวาดกลัว และจะหนีไปหลังจากผ่านไป 1 เทิร์น",
 				"SkillTypeDesc": "สกิล"
 			},
 			{
-				"Id": 800205603,
+				"Id": 800205803,
 				"Name": "Phew... Escaped",
 				"SkillDesc": "Trotter วิ่งหนีไปในชั่วพริบตาจนไม่เห็นวี่แวว",
 				"SkillTypeDesc": "สกิล"
@@ -4902,33 +6315,33 @@
 		"Introduction": "สิ่งมีชีวิตต่างมิติที่หลงทางอยู่ในหมู่ดาว นิสัยอบอุ่นอ่อนโยน รสชาติหวาน กินไม่ได้ ใช้เวลาส่วนใหญ่ของชีวิตไปกับการกินและวิ่งหนี นักเดินทางที่พบมันเข้าจะถือว่าเป็นลางดี",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Fire",
-			"Ice"
+			"Quantum",
+			"Imaginary"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0.2,
-			"Quantum": 0.2,
-			"Imaginary": 0.2
+			"Quantum": 0,
+			"Imaginary": 0
 		},
 		"SkillList": [
 			{
-				"Id": 800205701,
+				"Id": 800205901,
 				"Name": "S—S—S—Scared",
 				"SkillDesc": "Trotter ตื่นตกใจ และจะหนีไปหลังจากผ่านไป 2 เทิร์น",
 				"SkillTypeDesc": "สกิล"
 			},
 			{
-				"Id": 800205702,
+				"Id": 800205902,
 				"Name": "Run... Run!",
 				"SkillDesc": "Trotter หวาดกลัว และจะหนีไปหลังจากผ่านไป 1 เทิร์น",
 				"SkillTypeDesc": "สกิล"
 			},
 			{
-				"Id": 800205703,
+				"Id": 800205903,
 				"Name": "Phew... Escaped",
 				"SkillDesc": "Trotter วิ่งหนีไปในชั่วพริบตาจนไม่เห็นวี่แวว",
 				"SkillTypeDesc": "สกิล"
@@ -5929,6 +7342,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8003042": {
+		"Id": "8003042",
+		"Name": "Decaying Shadow",
+		"Introduction": "เงาที่สร้างขึ้นโดยพลังของ Stellaron และขยายตัวไปอย่างไม่หยุดยั้งตามเจตจำนงของ Fragmentum\nความปรารถนาของสิ่งมีชีวิตชาญฉลาดใน Fragmentum ได้ก่อตัวเป็นพลังที่มีชีวิต ราวกับเม็ดทรายที่ก่อตัวเป็นไข่มุกภายใต้เปลือกหอย แต่ความปรารถนาที่ขับเคลื่อนมัน กลับบิดเบี้ยวและเลือนรางไปนานแล้ว",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800304202,
+				"Name": "Fleeting Gilded Spikes",
+				"SkillDesc": "สร้าง DMG จินตภาพแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304203,
+				"Name": "Fleeting Punishment",
+				"SkillDesc": "สร้าง DMG จินตภาพอย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304204,
+				"Name": "Binding of the Golden Age",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะชาร์จ พร้อมทั้งได้รับ \"Gauge Recollection\" 9 ชั้น และจะปล่อย \"Liberation of the Golden Age\" ในแอ็กชันครั้งถัดไป โดยทุกครั้งที่ถูกโจมตี จะสูญเสีย \"Gauge Recollection\" 1 ชั้น",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 800304205,
+				"Name": "Liberation of the Golden Age",
+				"SkillDesc": "สุ่มสร้าง DMG จินตภาพเล็กน้อยใส่เป้าหมายหนึ่งตัวอย่างต่อเนื่อง และจำนวนครั้งที่สร้าง DMG จะเท่ากับจำนวนชั้นของ \"Gauge Recollection\" ที่เหลืออยู่ของมอนสเตอร์ หากไม่มี \"Gauge Recollection\" การใช้สกิลนี้จะล้มเหลว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304206,
+				"Name": "Fleeting Veil",
+				"SkillDesc": "DMG ที่มอนสเตอร์ได้รับจากการโจมตีปกติ สกิลต่อสู้ ท่าไม้ตาย และการโจมตีต่อเนื่องจะลดลงเล็กน้อย และมีโอกาสเล็กน้อยที่จะทำให้เป้าหมายที่ถูก Decaying Shadow โจมตีติดสถานะกักขัง",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"8003050": {
 		"Id": "8003050",
 		"Name": "Stormbringer",
@@ -6065,8 +7533,7 @@
 		"ElementalWeaknesses": [
 			"Physical",
 			"Fire",
-			"Ice",
-			"Imaginary"
+			"Ice"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
@@ -6075,7 +7542,7 @@
 			"Wind": 0.4,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
-			"Imaginary": 0
+			"Imaginary": 0.2
 		},
 		"SkillList": [
 			{
@@ -7005,7 +8472,6 @@
 		"Introduction": "ผลผลิตของกองทัพ Antimatter ที่ได้ใช้ \"Warforge\" หลอมรวมเอาชิ้นส่วนของนักรบและ Leviathan เข้าด้วยกัน\nถึงแม้ปริมาณจะค่อนข้างน้อยและหายาก แต่ก็ได้เอาสติปัญญาของนักรบ รวมเข้ากับพลังและความคล่องตัวของ Leviathan เสียงร้องของมันสามารถเรียก Voidranger จำนวนมากออกมาได้",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Fire",
 			"Wind",
 			"Imaginary"
 		],
@@ -7541,7 +9007,7 @@
 	"8024010": {
 		"Id": "8024010",
 		"Name": "Swarm: True Sting (Complete)",
-		"Introduction": "Sir Duroy จากสถาบันแห่งปัญญาได้ท่องไปในทะเลดวงดาว และเคยเขียน \"บันทึกแมลงต่างโลก\" จำนวนสามสิบเล่ม ซึ่งได้บันทึกรายละเอียดของแมลงสิบกว่าชนิด ที่ได้รับการยืนยันในปัจจุบันแล้ว รวมไปถึงสปีชีส์ย่อยอีกมากมายนับไม่ถ้วน ที่มีอยู่ทั่วทั้งกาแล็กซี",
+		"Introduction": "การฉายภาพที่สมบูรณ์เพราะรหัสได้รับผลกระทบ ร่างอ้างอิงดั้งเดิมคือ True Sting ที่โตเต็มวัย Sir Duroy จากสถาบันแห่งปัญญาได้ท่องไปในทะเลดวงดาว และเคยเขียน \"บันทึกแมลงต่างโลก\" จำนวนสามสิบเล่ม ซึ่งได้บันทึกรายละเอียดของแมลงสิบกว่าชนิด ที่ได้รับการยืนยันในปัจจุบันแล้ว รวมไปถึงสปีชีส์ย่อยอีกมากมายนับไม่ถ้วน ที่มีอยู่ทั่วทั้งกาแล็กซี",
 		"ElementalWeaknesses": [
 			"Quantum",
 			"Imaginary"
@@ -7624,6 +9090,230 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"8024011": {
+		"Id": "8024011",
+		"Name": "Swarm: True Sting",
+		"Introduction": "True Sting ที่โตเต็มวัย Sir Duroy จากสถาบันแห่งปัญญาได้ท่องไปในทะเลดวงดาว และเคยเขียน \"บันทึกแมลงต่างโลก\" จำนวนสามสิบเล่ม ซึ่งได้บันทึกรายละเอียดของแมลงสิบกว่าชนิด ที่ได้รับการยืนยันในปัจจุบันแล้ว รวมไปถึงสปีชีส์ย่อยอีกมากมายนับไม่ถ้วน ที่มีอยู่ทั่วทั้งกาแล็กซี",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802401101,
+				"Name": "Time to Battle",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมาก ที่จะทำให้เป้าหมายที่ถูกโจมตี ติดสถานะลมเฉือน 2 ชั้น",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401102,
+				"Name": "War Gear",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว หากเป้าหมายที่ถูกโจมตีติดสถานะลมเฉือนอยู่ จะสร้าง DMG ลมเฉือน 1 ครั้งทันที",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401103,
+				"Name": "Cyclonic Swarm",
+				"SkillDesc": "สร้าง DMG ลมแก่เป้าหมายทั้งหมด และมีโอกาสอย่างมาก ที่จะทำให้เป้าหมายที่ถูกโจมตี ติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401104,
+				"Name": "Propagation",
+				"SkillDesc": "ขยายพันธุ์ฝูง True Sting",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 802401105,
+				"Name": "Ready Order",
+				"SkillDesc": "เข้าสู่สถานะชาร์จ และในแอ็กชันครั้งต่อไปจะปล่อย \"Swarm Onslaught\"",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 802401106,
+				"Name": "Swarm Onslaught",
+				"SkillDesc": "ลบสถานะ Debuff ประเภทควบคุม และสถานะทำลายจุดอ่อนของฝูง True Sting ทั้งหมดในการต่อสู้ และสร้าง DMG ลมแก่เป้าหมาย ทำให้ทุกครั้งที่เป้าหมายโดนโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน 1 ชั้น",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401107,
+				"Name": "Swarm Onslaught",
+				"SkillDesc": "ลบสถานะ Debuff ประเภทควบคุม และสถานะทำลายจุดอ่อนของฝูง True Sting ทั้งหมดในการต่อสู้ และสร้าง DMG ลมแก่เป้าหมาย ทำให้ทุกครั้งที่เป้าหมายโดนโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน 1 ชั้น",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401108,
+				"Name": "Transmission Pheromone",
+				"SkillDesc": "ทุกครั้งที่ขยายพันธุ์ True Sting ออกมาในการต่อสู้ 1 ฝูง True Sting ทั้งหมดจะได้รับ DMG เพิ่มขึ้น 1 ชั้น โดยในการต่อสู้ เอฟเฟกต์ Transmission Pheromone จะมีผลได้แค่ 1 เอฟเฟกต์เท่านั้น",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 802401109,
+				"Name": "Entomon Eulogy",
+				"SkillDesc": "เมื่อถูกโจมตีถึงตาย จะสร้าง DMG ลมแก่มอนสเตอร์ทั้งหมด และมีโอกาสอย่างมาก ที่จะทำให้มอนสเตอร์เป้าหมายที่ถูกโจมตี ได้รับ DMG เพิ่มขึ้นเล็กน้อย",
+				"SkillTypeDesc": "พรสวรรค์",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401111,
+				"Name": "Propagation",
+				"SkillDesc": "ขยายพันธุ์ฝูง True Sting",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"8032010": {
+		"Id": "8032010",
+		"Name": "เจ้าหน้าที่ชั้นผู้น้อย - ปฏิบัติงานนอกสถานที่",
+		"Introduction": "เจ้าหน้าที่ชั้นผู้น้อยขององค์กรสันติภาพแห่งดวงดาว งานหลักคือการจัดการกับ \"ความประมาททางธุรกิจ\" ที่เอามาพูดโจ่งแจ้งไม่ได้ และด้วยเงินเดือนอันน้อยนิด จึงจ่ายได้แค่ห้องเช่ารวมบนเรือขององค์กรเท่านั้น",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803201001,
+				"Name": "Clock In",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803201002,
+				"Name": "Performance Boost",
+				"SkillDesc": "ทุกครั้งหลังจากที่ทำการโจมตี จะได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน โดย \"คะแนนปฏิบัติการ\" สามารถถูกผู้โจมตียึดไปได้ เมื่อจุดอ่อนของตัวเองถูกทำลาย หรือเมื่อตัวเองถูกกำจัด",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"8032020": {
+		"Id": "8032020",
+		"Name": "เจ้าหน้าที่ชั้นผู้น้อย - รักษาความปลอดภัย",
+		"Introduction": "เจ้าหน้าที่ชั้นผู้น้อยขององค์กรสันติภาพแห่งดวงดาว งานหลักคือการรักษาความสงบเรียบร้อยของสถานที่ ที่อยู่ภายใต้การปกครองขององค์กร และด้วยเงินเดือนอันน้อยนิด จึงจ่ายได้แค่ห้องเช่ารวมบนเรือขององค์กรเท่านั้น",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803202001,
+				"Name": "Appeal",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และตัวที่อยู่ใกล้เคียงกับเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803202002,
+				"Name": "Performance Boost",
+				"SkillDesc": "ทุกครั้งหลังจากที่ทำการโจมตี จะได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน โดย \"คะแนนปฏิบัติการ\" สามารถถูกผู้โจมตียึดไปได้ เมื่อจุดอ่อนของตัวเองถูกทำลาย หรือเมื่อตัวเองถูกกำจัด",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"8033010": {
+		"Id": "8033010",
+		"Name": "เจ้าหน้าที่อาวุโส - หัวหน้าทีม",
+		"Introduction": "เจ้าหน้าที่อาวุโสขององค์กรสันติภาพแห่งดวงดาว ที่อยู่ในตำแหน่งหัวหน้าทีมประจำโครงการเป็นอย่างน้อย เครื่องจักรกลที่พวกเขาขับเป็นขององค์กร หากได้รับความเสียหายจะต้องรับผิดชอบค่าซ่อมเอง และด้วยเงินเดือนที่พอถูไถ จึงสามารถเช่าห้องพักแบบหนึ่งห้องนอนบนเรือขององค์กรได้",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 803301001,
+				"Name": "Disciplined",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301002,
+				"Name": "Cost Reduction",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301003,
+				"Name": "In Training...",
+				"SkillDesc": "เข้าสู่สถานะชาร์จ และจะปล่อย \"Work Culture Shock\" ในแอ็กชันครั้งต่อไป",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 803301004,
+				"Name": "Work Culture Shock",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301005,
+				"Name": "<unbreak>720</unbreak>-Degree Review",
+				"SkillDesc": "ยึด \"คะแนนปฏิบัติการ\" ทั้งหมดของ \"เจ้าหน้าที่ชั้นผู้น้อย - ปฏิบัติงานนอกสถานที่\" และ \"เจ้าหน้าที่ชั้นผู้น้อย - รักษาความปลอดภัย\"",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 803301006,
+				"Name": "Team Building",
+				"SkillDesc": "อัญเชิญ \"เจ้าหน้าที่ชั้นผู้น้อย - ปฏิบัติงานนอกสถานที่\" หรือ \"เจ้าหน้าที่ชั้นผู้น้อย - รักษาความปลอดภัย\" และทำให้ \"เจ้าหน้าที่ชั้นผู้น้อย - ปฏิบัติงานนอกสถานที่\" และ \"เจ้าหน้าที่ชั้นผู้น้อย - รักษาความปลอดภัย\" ทั้งหมดได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 803301007,
+				"Name": "Performance Boost",
+				"SkillDesc": "ทุกครั้งหลังจากที่ทำการโจมตี จะได้รับ \"คะแนนปฏิบัติการ\" 1 คะแนน โดย \"คะแนนปฏิบัติการ\" สามารถถูกผู้โจมตียึดไปได้ เมื่อจุดอ่อนของตัวเองถูกทำลาย หรือเมื่อตัวเองถูกกำจัด",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"100202001": {
 		"Id": "100202001",
@@ -8152,6 +9842,75 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"100202016": {
+		"Id": "100202016",
+		"Name": "คนพเนจร",
+		"Introduction": "เพราะต้องดิ้นรนเพื่อความอยู่รอด ผู้คนที่อาศัยอยู่ใน Underworld จึงมักจะเสี่ยงอันตรายเข้าไปใน Fragmentum เพื่อเสาะหาสิ่งต่างๆ ที่สามารถนำมาใช้ประโยชน์ได้ และเครื่องจักรกลโบราณที่พวกเขาขุดขึ้นมา ก็ได้กลายมาเป็นผู้ช่วยที่ดีที่สุดของพวกเขา",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Shovel Attack",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Inspire",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์ที่กำหนดหนึ่งตัวเพิ่มขึ้นและแอ็กชันทันที",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100202101": {
+		"Id": "100202101",
+		"Name": "คนพเนจร",
+		"Introduction": "เพราะต้องดิ้นรนเพื่อความอยู่รอด ผู้คนที่อาศัยอยู่ใน Underworld จึงมักจะเสี่ยงอันตรายเข้าไปใน Fragmentum เพื่อเสาะหาสิ่งต่างๆ ที่สามารถนำมาใช้ประโยชน์ได้ และเครื่องจักรกลโบราณที่พวกเขาขุดขึ้นมา ก็ได้กลายมาเป็นผู้ช่วยที่ดีที่สุดของพวกเขา",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202101,
+				"Name": "Shovel Attack",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202102,
+				"Name": "Inspire",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์ที่กำหนดหนึ่งตัวเพิ่มขึ้นและแอ็กชันทันที",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"100203001": {
 		"Id": "100203001",
 		"Name": "Silvermane Cannoneer",
@@ -8520,6 +10279,88 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"100203010": {
+		"Id": "100203010",
+		"Name": "Silvermane Cannoneer",
+		"Introduction": "ทหารปืนใหญ่ของกองกำลัง Silvermane ที่ใช้ปืนใหญ่แบบพกพาในการต่อสู้\nในระหว่างการต่อสู้ Silvermane Cannoneer จะโจมตีเป้าหมายหลายตัวอย่างต่อเนื่องและรุนแรง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Barrage",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Covering Support",
+				"SkillDesc": "สนับสนุนมอนสเตอร์ที่กำหนดหนึ่งตัว โดยหลังจากมอนสเตอร์ที่ถูกสนับสนุนโจมตีใส่เป้าหมายแล้ว จะปล่อยการโจมตีต่อเนื่อง 1 ครั้ง และสร้าง DMG กายภาพให้กับเป้าหมายที่ถูกโจมตี รวมถึงตัวที่อยู่ใกล้เคียงด้วย",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Covering Support",
+				"SkillDesc": "สนับสนุนมอนสเตอร์ที่กำหนดหนึ่งตัว โดยหลังจากมอนสเตอร์ที่ถูกสนับสนุนโจมตีใส่เป้าหมายแล้ว จะปล่อยการโจมตีต่อเนื่อง 1 ครั้ง และสร้าง DMG กายภาพให้กับเป้าหมายที่ถูกโจมตี รวมถึงตัวที่อยู่ใกล้เคียงด้วย",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100203011": {
+		"Id": "100203011",
+		"Name": "Silvermane Cannoneer",
+		"Introduction": "ทหารปืนใหญ่ของกองกำลัง Silvermane ที่ใช้ปืนใหญ่แบบพกพาในการต่อสู้\nในระหว่างการต่อสู้ Silvermane Cannoneer จะโจมตีเป้าหมายหลายตัวอย่างต่อเนื่องและรุนแรง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Barrage",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Covering Support",
+				"SkillDesc": "สนับสนุนมอนสเตอร์ที่กำหนดหนึ่งตัว โดยหลังจากมอนสเตอร์ที่ถูกสนับสนุนโจมตีใส่เป้าหมายแล้ว จะปล่อยการโจมตีต่อเนื่อง 1 ครั้ง และสร้าง DMG กายภาพให้กับเป้าหมายที่ถูกโจมตี รวมถึงตัวที่อยู่ใกล้เคียงด้วย",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Covering Support",
+				"SkillDesc": "สนับสนุนมอนสเตอร์ที่กำหนดหนึ่งตัว โดยหลังจากมอนสเตอร์ที่ถูกสนับสนุนโจมตีใส่เป้าหมายแล้ว จะปล่อยการโจมตีต่อเนื่อง 1 ครั้ง และสร้าง DMG กายภาพให้กับเป้าหมายที่ถูกโจมตี รวมถึงตัวที่อยู่ใกล้เคียงด้วย",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"100204001": {
 		"Id": "100204001",
@@ -9032,6 +10873,90 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"100204021": {
+		"Id": "100204021",
+		"Name": "Silvermane Soldier",
+		"Introduction": "กองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\" รับหน้าที่จู่โจมวงล้อมของศัตรู\nในระหว่างการต่อสู้ การโจมตีของ Silvermane Soldier จะทำให้ DEF ของเป้าหมายลดลง",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้ DEF ของเป้าหมายที่ถูกโจมตีลดลง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100204022": {
+		"Id": "100204022",
+		"Name": "Silvermane Soldier",
+		"Introduction": "กองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\" รับหน้าที่จู่โจมวงล้อมของศัตรู\nในระหว่างการต่อสู้ การโจมตีของ Silvermane Soldier จะทำให้ DEF ของเป้าหมายลดลง",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้ DEF ของเป้าหมายที่ถูกโจมตีลดลง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100204023": {
+		"Id": "100204023",
+		"Name": "Silvermane Soldier",
+		"Introduction": "กองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\" รับหน้าที่จู่โจมวงล้อมของศัตรู\nในระหว่างการต่อสู้ การโจมตีของ Silvermane Soldier จะทำให้ DEF ของเป้าหมายลดลง",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้ DEF ของเป้าหมายที่ถูกโจมตีลดลง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"100204101": {
 		"Id": "100204101",
@@ -10021,6 +11946,102 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"100301012": {
+		"Id": "100301012",
+		"Name": "Silvermane Lieutenant",
+		"Introduction": "หัวหน้าหน่วยของกองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\"\nในระหว่างการต่อสู้ Silvermane Lieutenant จะยกโล่ยักษ์ขึ้น และเสริมพลังให้กับตัวมอนสเตอร์เอง การโจมตี Silvermane Lieutenant ที่อยู่ภายใต้สถานะยกโล่ จะทำให้ได้รับการโต้กลับอย่างรุนแรงทันที",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Assault",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Pierce",
+				"SkillDesc": "สร้าง DMG กายภาพอย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Shield Reflect",
+				"SkillDesc": "เข้าสู่สถานะโต้กลับ หลังจากโดนเป้าหมายหนึ่งตัวโจมตีใส่ จะเร่งแอ็กชันของมอนสเตอร์ขึ้น และใช้สกิล \"Pierce\" โจมตีใส่เป้าหมายทันที",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Reinforcement",
+				"SkillDesc": "อัญเชิญ Silvermane Soldier หรือ Silvermane Gunner",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100301013": {
+		"Id": "100301013",
+		"Name": "Silvermane Lieutenant",
+		"Introduction": "หัวหน้าหน่วยของกองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\"\nในระหว่างการต่อสู้ Silvermane Lieutenant จะยกโล่ยักษ์ขึ้น และเสริมพลังให้กับตัวมอนสเตอร์เอง การโจมตี Silvermane Lieutenant ที่อยู่ภายใต้สถานะยกโล่ จะทำให้ได้รับการโต้กลับอย่างรุนแรงทันที",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Assault",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Pierce",
+				"SkillDesc": "สร้าง DMG กายภาพอย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Shield Reflect",
+				"SkillDesc": "เข้าสู่สถานะโต้กลับ หลังจากโดนเป้าหมายหนึ่งตัวโจมตีใส่ จะเร่งแอ็กชันของมอนสเตอร์ขึ้น และใช้สกิล \"Pierce\" โจมตีใส่เป้าหมายทันที",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Reinforcement",
+				"SkillDesc": "อัญเชิญ Silvermane Soldier หรือ Silvermane Gunner",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"100401001": {
 		"Id": "100401001",
 		"Name": "Cocolia",
@@ -10725,6 +12746,144 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"101201012": {
+		"Id": "101201012",
+		"Name": "Automaton Hound",
+		"Introduction": "หุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า รูปร่างคล้ายกับพาหนะขนส่ง แต่ดูเหมือนผู้คนจะลืมประโยชน์ในการใช้สอยของมันไปเสียแล้ว\nในระหว่างการต่อสู้ Automaton Hound สามารถให้การสนับสนุนและฟื้นฟู HP ให้กับสมาชิกได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "ฟื้นฟู HP ของมอนสเตอร์ทั้งหมดทันที",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"101201013": {
+		"Id": "101201013",
+		"Name": "Automaton Hound",
+		"Introduction": "หุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า รูปร่างคล้ายกับพาหนะขนส่ง แต่ดูเหมือนผู้คนจะลืมประโยชน์ในการใช้สอยของมันไปเสียแล้ว\nในระหว่างการต่อสู้ Automaton Hound สามารถให้การสนับสนุนและฟื้นฟู HP ให้กับสมาชิกได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "ฟื้นฟู HP ของมอนสเตอร์ทั้งหมดทันที",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"101201014": {
+		"Id": "101201014",
+		"Name": "Automaton Hound",
+		"Introduction": "หุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า รูปร่างคล้ายกับพาหนะขนส่ง แต่ดูเหมือนผู้คนจะลืมประโยชน์ในการใช้สอยของมันไปเสียแล้ว\nในระหว่างการต่อสู้ Automaton Hound สามารถให้การสนับสนุนและฟื้นฟู HP ให้กับสมาชิกได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "ฟื้นฟู HP ของมอนสเตอร์ทั้งหมดทันที",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"101201015": {
+		"Id": "101201015",
+		"Name": "Automaton Hound",
+		"Introduction": "หุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า รูปร่างคล้ายกับพาหนะขนส่ง แต่ดูเหมือนผู้คนจะลืมประโยชน์ในการใช้สอยของมันไปเสียแล้ว\nในระหว่างการต่อสู้ Automaton Hound สามารถให้การสนับสนุนและฟื้นฟู HP ให้กับสมาชิกได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Vertical Strike",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Self-Healing Module",
+				"SkillDesc": "ฟื้นฟู HP ของมอนสเตอร์ทั้งหมดทันที",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -12582,6 +14741,60 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"101301016": {
+		"Id": "101301016",
+		"Name": "Automaton Grizzly",
+		"Introduction": "หน่วยหุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า โดยหุ่นยนต์นี้จะเพิ่มเกราะหนัก เพื่อป้องกันการบุกโจมตีกองกำลัง Silvermane\nในระหว่างการต่อสู้ Automaton Grizzly จะเรียก Automaton Spider เข้าสู่การต่อสู้และสะสมพลังงานเพื่อปล่อยการโจมตีอันทรงพลัง",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Detonation Order",
+				"SkillDesc": "อัญเชิญ \"Automaton Spider\"",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Enrage Order",
+				"SkillDesc": "ทำให้เป้าหมายทั้งหมดมีโอกาสติดสถานะยั่วยุ",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Overcombust Order",
+				"SkillDesc": "เข้าสู่สถานะชาร์จ และในแอ็กชันครั้งต่อไปจะปล่อย \"Purge Order\" ใส่เป้าหมายทั้งหมด",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Purge Order",
+				"SkillDesc": "สร้าง DMG กายภาพอย่างรุนแรงแก่เป้าหมายทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Destruction Order",
+				"SkillDesc": "สร้าง DMG กายภาพแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"101302001": {
 		"Id": "101302001",
 		"Name": "Automaton Direwolf",
@@ -13321,6 +15534,55 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"101302020": {
+		"Id": "101302020",
+		"Name": "Automaton Direwolf",
+		"Introduction": "หน่วยหุ่นยนต์อัตโนมัติที่สร้างขึ้นจากเทคโนโลยีที่หลงเหลือจากโลกเก่า หุ่นยนต์รูปทรงมนุษย์สุดหายาก ที่มีเลื่อยยนต์อยู่ที่แขนขวา ดูเหมือนจะใช้สำหรับการเก็บรวบรวมและการก่อสร้าง\nในระหว่างการต่อสู้ เลื่อยยนต์ของ Automaton Direwolf จะทำให้เกิดการเสียเลือด และทำให้คู่ต่อสู้สูญเสีย HP อย่างต่อเนื่อง",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Felling Order",
+				"SkillDesc": "สร้าง DMG กายภาพอย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว ทุกครั้งที่เป้าหมายดังกล่าวโดนโจมตี จะมีโอกาสติดสถานะเสียเลือด หากใช้สกิลนี้กับเป้าหมายที่ไม่มีโล่ป้องกัน จะสุ่มปล่อย \"Dismantle\" 1 ครั้งใส่เป้าหมายหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Lock On Target",
+				"SkillDesc": "ล็อกเป้าหมายที่กำหนดหนึ่งตัว และในการโจมตีครั้งถัดไปจะปล่อย \"Felling Order\" ใส่เป้าหมายดังกล่าว",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Disintegration Order",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะเพิ่มสถานะเสียเลือดของเป้าหมาย 1 ชั้น",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Dismantle",
+				"SkillDesc": "สร้าง DMG กายภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะเพิ่มสถานะเสียเลือดของเป้าหมาย 1 ชั้น",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"101401001": {
 		"Id": "101401001",
 		"Name": "Svarog",
@@ -14051,6 +16313,93 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"102201009": {
+		"Id": "102201009",
+		"Name": "Everwinter Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยแผ่นน้ำแข็งไร้ใบหน้า\nในระหว่างการต่อสู้ Everwinter Shadewalker จะเหวี่ยงขวานน้ำแข็งเพื่อทำให้การเคลื่อนไหวของศัตรูช้าลง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Frost Crush",
+				"SkillDesc": "สร้าง DMG น้ำแข็งแก่เป้าหมายที่กำหนดหนึ่งตัว และหน่วงแอ็กชันของเป้าหมายที่ถูกโจมตี",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102201010": {
+		"Id": "102201010",
+		"Name": "Everwinter Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยแผ่นน้ำแข็งไร้ใบหน้า\nในระหว่างการต่อสู้ Everwinter Shadewalker จะเหวี่ยงขวานน้ำแข็งเพื่อทำให้การเคลื่อนไหวของศัตรูช้าลง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Frost Crush",
+				"SkillDesc": "สร้าง DMG น้ำแข็งแก่เป้าหมายที่กำหนดหนึ่งตัว และหน่วงแอ็กชันของเป้าหมายที่ถูกโจมตี",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102201011": {
+		"Id": "102201011",
+		"Name": "Everwinter Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยแผ่นน้ำแข็งไร้ใบหน้า\nในระหว่างการต่อสู้ Everwinter Shadewalker จะเหวี่ยงขวานน้ำแข็งเพื่อทำให้การเคลื่อนไหวของศัตรูช้าลง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Frost Crush",
+				"SkillDesc": "สร้าง DMG น้ำแข็งแก่เป้าหมายที่กำหนดหนึ่งตัว และหน่วงแอ็กชันของเป้าหมายที่ถูกโจมตี",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"102202001": {
 		"Id": "102202001",
 		"Name": "Incineration Shadewalker",
@@ -14378,13 +16727,42 @@
 		"ElementalWeaknesses": [
 			"Physical",
 			"Ice",
-			"Imaginary"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0.4,
 			"Ice": 0,
-			"Wind": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"102202013": {
+		"Id": "102202013",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -14398,7 +16776,152 @@
 				"ElementType": "Fire"
 			}
 		],
-		"VersionAdded": "1.3"
+		"VersionAdded": "1.4"
+	},
+	"102202014": {
+		"Id": "102202014",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202015": {
+		"Id": "102202015",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202016": {
+		"Id": "102202016",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202017": {
+		"Id": "102202017",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202018": {
+		"Id": "102202018",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -14950,6 +17473,61 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102301011": {
+		"Id": "102301011",
+		"Name": "Searing Prowler",
+		"Introduction": "จักรกลที่เดินวนเวียนอยู่ใน Fragmentum ซึ่งแน่นอนว่ามันไม่ใช่สิ่งที่เกิดขึ้นมาจากเทคโนโลยีของมนุษย์ แต่เป็นมอนสเตอร์ที่จำลองขึ้นมาจากพลังที่บิดเบี้ยวของ Fragmentum\nการโจมตีของ Searing Prowler จะสร้างเอฟเฟกต์เพิ่มเติมแก่ศัตรูที่ติดสถานะเผาไหม้",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Crimson Blade",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Combustion Slash",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย โดยสกิลนี้ จะเลือกโจมตีเป้าหมายที่ติดสถานะเผาไหม้ก่อนเป็นอันดับแรก",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Melt",
+				"SkillDesc": "หลังจากโจมตีใส่เป้าหมายหนึ่งตัวที่ติดสถานะเผาไหม้แล้ว มอนสเตอร์จะสร้าง DMG เพิ่มขึ้น",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 102301004,
+				"Name": "High-Temperature Operation",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์เพิ่มขึ้นเล็กน้อย และความเร็วเพิ่มขึ้น หลังจากจุดอ่อนถูกทำลายแล้ว เอฟเฟกต์ Buff ข้างต้นจะถูกลบออก",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Dancing Cinders",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายทั้งหมด ทำให้เป้าหมายที่ติดสถานะเผาไหม้ได้รับ DMG ไฟเพิ่มเติม และลบสถานะเผาไหม้ของเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"102302001": {
 		"Id": "102302001",
@@ -15818,6 +18396,42 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"201201006": {
+		"Id": "201201006",
+		"Name": "Entranced Ingenium: Illumination Dragonfish",
+		"Introduction": "สิ่งประดิษฐ์อันชาญฉลาดที่ช่างของ Artisanship Commission สร้างขึ้น เดิมทีมันเป็นตะเกียงที่ไม่มีชีวิต ซึ่งใช้สำหรับให้แสงสว่างในความมืด แต่ทุกวันนี้มันได้รับ \"ชีวิต\" เป็นช่วงเวลาสั้นๆ อันเนื่องมาจากการปรับเปลี่ยนบางอย่าง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201201001,
+				"Name": "Nightly Luminosity",
+				"SkillDesc": "สร้าง DMG ไฟแก่เป้าหมายทั้งหมดเล็กน้อย และมีโอกาสอย่างมากที่จะทำให้ DEF ของเป้าหมายที่ถูกโจมตีลดลง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 201201002,
+				"Name": "Candle Flame",
+				"SkillDesc": "เมื่อถูกโจมตีถึงตาย จะสร้าง DMG ไฟแก่มอนสเตอร์ทั้งหมด และมีโอกาสอย่างมากที่จะทำให้ DEF ของมอนสเตอร์เป้าหมายที่ถูกโจมตีลดลง",
+				"SkillTypeDesc": "พรสวรรค์",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"201301001": {
 		"Id": "201301001",
 		"Name": "กวีชายแดน",
@@ -16265,6 +18879,90 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"202201008": {
+		"Id": "202201008",
+		"Name": "Mara-Struck Soldier",
+		"Introduction": "ทหารของ Xianzhou ที่ตกสู่ความบ้าคลั่งอย่างไร้สาเหตุ และไม่มีความเป็นมนุษย์หลงเหลืออยู่ในร่างกาย มีเพียงแต่การกลายพันธุ์ที่ไม่สิ้นสุดเท่านั้น ในความเป็นอมตะที่สืบต่อกันมารุ่นสู่รุ่น ว่ากันว่าชาว Xianzhou จะเข้าสู่สภาวะที่เรียกว่า Mara-Struck",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenate",
+				"SkillDesc": "จะฟื้นฟู HP จำนวนหนึ่งเมื่อถูกโจมตีจนถึงตาย เอฟเฟกต์นี้ไม่จำกัดเวลาและสามารถลบออกได้ โดยจะสามารถใช้ได้เพียงครั้งเดียวต่อหนึ่งการต่อสู้",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"202201009": {
+		"Id": "202201009",
+		"Name": "Mara-Struck Soldier",
+		"Introduction": "ทหารของ Xianzhou ที่ตกสู่ความบ้าคลั่งอย่างไร้สาเหตุ และไม่มีความเป็นมนุษย์หลงเหลืออยู่ในร่างกาย มีเพียงแต่การกลายพันธุ์ที่ไม่สิ้นสุดเท่านั้น ในความเป็นอมตะที่สืบต่อกันมารุ่นสู่รุ่น ว่ากันว่าชาว Xianzhou จะเข้าสู่สภาวะที่เรียกว่า Mara-Struck",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenate",
+				"SkillDesc": "จะฟื้นฟู HP จำนวนหนึ่งเมื่อถูกโจมตีจนถึงตาย เอฟเฟกต์นี้ไม่จำกัดเวลาและสามารถลบออกได้ โดยจะสามารถใช้ได้เพียงครั้งเดียวต่อหนึ่งการต่อสู้",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Callous Tailwind",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"202202001": {
 		"Id": "202202001",
@@ -17656,6 +20354,258 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"700203001": {
+		"Id": "700203001",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700203001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700203002,
+				"Name": "Scorching Blast",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700203002": {
+		"Id": "700203002",
+		"Name": "Incineration Shadewalker",
+		"Introduction": "เงาที่ล่องลอยอยู่ใน Fragmentum หลังจากลมหนาวนิรันดร์มาเยือน มันเลียนแบบรูปร่างของกองกำลัง Silvermane ในลักษณะที่พิลึกกึกกือ และสวมใส่ชุดเกราะแบบเดียวกับทหารของ Belobog แต่ส่วนหัวกลับถูกแทนที่ด้วยเถ้าถ่านไร้ใบหน้า\nในระหว่างการต่อสู้ Incineration Shadewalker จะเหวี่ยงขวานที่ลุกเป็นไฟเพื่อแผดเผาศัตรู",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700203001,
+				"Name": "Scorching Crush",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700203002,
+				"Name": "Scorching Blast",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตี จะมีโอกาสอย่างมากที่จะติดสถานะเผาไหม้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700205001": {
+		"Id": "700205001",
+		"Name": "Entranced Ingenium: Illumination Dragonfish",
+		"Introduction": "สิ่งประดิษฐ์อันชาญฉลาดที่ช่างของ Artisanship Commission สร้างขึ้น เดิมทีมันเป็นตะเกียงที่ไม่มีชีวิต ซึ่งใช้สำหรับให้แสงสว่างในความมืด แต่ทุกวันนี้มันได้รับ \"ชีวิต\" เป็นช่วงเวลาสั้นๆ อันเนื่องมาจากการปรับเปลี่ยนบางอย่าง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700205001,
+				"Name": "Nightly Luminosity",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายทั้งหมด และมีโอกาสอย่างมาก ที่จะทำให้เป้าหมายที่ถูกโจมตี สุ่มติดสถานะ DMG ต่อเนื่อง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205002,
+				"Name": "Display Fireworks",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด แล้วปล่อยดอกไม้ไฟสุดตระการตาออกมา โดยไม่เกิดอะไรขึ้นทั้งสิ้น แต่สวยงามมากทีเดียว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205003,
+				"Name": "Candle Flame",
+				"SkillDesc": "เมื่อหมดสติ จะสร้าง DMG แก่มอนสเตอร์ทั้งหมด และมอนสเตอร์เป้าหมายที่ถูกโจมตี มีโอกาสอย่างมากที่จะได้รับ DMG เพิ่มขึ้น",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700207001": {
+		"Id": "700207001",
+		"Name": "Imaginary Weaver",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันทะลุผ่านม่านผืนหนาเข้ามาจากอีกฟากหนึ่งของท้องฟ้า ที่เต็มไปด้วยดวงดารามืดสลัว ร่างกายที่คล้ายกับกิ่งก้านใบไม้แปลกประหลาด ได้โผล่เข้ามาในความเป็นจริง และใช้พลังงานจินตภาพเปลี่ยนแปลงความเป็นจริง โดยไม่สนใจสิ่งใด",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700207001,
+				"Name": "Reverberating Carol",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย หลังจาก หลังจากใช้ครั้งแรก จะเร่งแอ็กชันของตัวเองเป็นจำนวนมาก",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700207002,
+				"Name": "Carolburst",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700207002": {
+		"Id": "700207002",
+		"Name": "Imaginary Weaver",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันทะลุผ่านม่านผืนหนาเข้ามาจากอีกฟากหนึ่งของท้องฟ้า ที่เต็มไปด้วยดวงดารามืดสลัว ร่างกายที่คล้ายกับกิ่งก้านใบไม้แปลกประหลาด ได้โผล่เข้ามาในความเป็นจริง และใช้พลังงานจินตภาพเปลี่ยนแปลงความเป็นจริง โดยไม่สนใจสิ่งใด",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700207001,
+				"Name": "Reverberating Carol",
+				"SkillDesc": "สร้าง DMG แก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมายด้วย หลังจาก หลังจากใช้ครั้งแรก จะเร่งแอ็กชันของตัวเองเป็นจำนวนมาก",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700207002,
+				"Name": "Carolburst",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด สร้าง DMG อย่างรุนแรงแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700209001": {
+		"Id": "700209001",
+		"Name": "Silvermane Soldier",
+		"Introduction": "กองทหารรักษาการณ์ Belobog แห่ง \"กองกำลัง Silvermane\" รับหน้าที่จู่โจมวงล้อมของศัตรู\nในระหว่างการต่อสู้ Silvermane Soldier จะมอบเอฟเฟกต์ Buff ต่อเนื่องให้กับฝ่ายตัวเอง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700209001,
+				"Name": "Tireless Charge",
+				"SkillDesc": "สร้าง DMG เล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700209002,
+				"Name": "Morale Booster",
+				"SkillDesc": "ใช้การชาร์จทั้งหมด มอนสเตอร์ทั้งหมดได้รับ \"Morale\" 5 ชั้น",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 700209003,
+				"Name": "Silvermane Armor",
+				"SkillDesc": "หลังจากมอนสเตอร์หนึ่งตัวทำการโจมตี มอนสเตอร์ทั้งหมดจะได้รับ \"Morale\" 1 ชั้น โดย Morale แต่ละชั้น จะเพิ่ม DMG และความเร็ว พร้อมได้รับ DMG ลดลง",
+				"SkillTypeDesc": "พรสวรรค์"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"800101001": {
 		"Id": "800101001",
 		"Name": "Flamespawn",
@@ -17993,6 +20943,62 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"800101013": {
+		"Id": "800101013",
+		"Name": "Flamespawn",
+		"Introduction": "ผลึกธาตุคริสตัลที่เตร็ดเตร่อยู่ใน Fragmentum มันมีสติปัญญาที่ตื้นเขินที่สุด มีรูปร่างคล้ายกับนกที่ปล่อยความร้อนออกมาและเผาไหม้ทุกสิ่งที่ขวางหน้า",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "สร้าง DMG ไฟเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800101014": {
+		"Id": "800101014",
+		"Name": "Flamespawn",
+		"Introduction": "ผลึกธาตุคริสตัลที่เตร็ดเตร่อยู่ใน Fragmentum มันมีสติปัญญาที่ตื้นเขินที่สุด มีรูปร่างคล้ายกับนกที่ปล่อยความร้อนออกมาและเผาไหม้ทุกสิ่งที่ขวางหน้า",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Distract",
+				"SkillDesc": "สร้าง DMG ไฟเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"800102001": {
 		"Id": "800102001",
@@ -18332,6 +21338,63 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"800102013": {
+		"Id": "800102013",
+		"Name": "Frostspawn",
+		"Introduction": "ผลึกธาตุคริสตัลที่เตร็ดเตร่อยู่ใน Fragmentum มันมีสติปัญญาที่ตื้นเขินที่สุด มีรูปร่างคล้ายกับนกที่ทำให้อุณหภูมิต่ำลง และแช่แข็งทุกสิ่งที่อยู่รอบตัว",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distract",
+				"SkillDesc": "สร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800102014": {
+		"Id": "800102014",
+		"Name": "Frostspawn",
+		"Introduction": "ผลึกธาตุคริสตัลที่เตร็ดเตร่อยู่ใน Fragmentum มันมีสติปัญญาที่ตื้นเขินที่สุด มีรูปร่างคล้ายกับนกที่ทำให้อุณหภูมิต่ำลง และแช่แข็งทุกสิ่งที่อยู่รอบตัว",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Distract",
+				"SkillDesc": "สร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"800103001": {
 		"Id": "800103001",
 		"Name": "Mask of No Thought",
@@ -18511,6 +21574,34 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800105003": {
+		"Id": "800105003",
+		"Name": "Windspawn",
+		"Introduction": "ผลึกธาตุคริสตัลที่เตร็ดเตร่อยู่ใน Fragmentum มันมีสติปัญญาที่ตื้นเขินที่สุด มีรูปร่างคล้ายกับนกที่มีสายลมโอบล้อม และสยายปีกถลาไปตามแรงลม",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800105001,
+				"Name": "WindpathWindpath",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และเป้าหมายที่ถูกโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"800201001": {
 		"Id": "800201001",
@@ -19254,6 +22345,156 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"800301008": {
+		"Id": "800301008",
+		"Name": "Ice Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ซึ่งมาจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน เกราะของมันสามารถสะท้อนไปยังท้องฟ้าที่เต็มไปด้วยดวงดาว ที่ทั้งลึกและมืดมน\nในระหว่างการต่อสู้ Ice Out of Space จะสามารถแช่แข็งศัตรูได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Chilling Lament",
+				"SkillDesc": "สร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว หากมอนสเตอร์ติดสถานะ \"Freezing Point\" ก็จะสร้าง DMG น้ำแข็งเพิ่มเติม หลังจากโจมตีเป้าหมายหนึ่งตัวที่ติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Frosty Absorption",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะ \"Freezing Point\" และการโจมตีหลังจากนั้นจะสามารถใช้ Everwinter Rain ได้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Everwinter Rain",
+				"SkillDesc": "สามารถใช้สกิลนี้ได้ในขณะที่ติดสถานะ \"Freezing Point\" อยู่เท่านั้น โดยจะสร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายทั้งหมด และมีโอกาสทำให้เป้าหมายที่ถูกโจมตีติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Chilling Lament",
+				"SkillDesc": "สร้าง DMG น้ำแข็งแก่เป้าหมายที่กำหนดหนึ่งตัว หากตัวเองติดสถานะ \"จุดเยือกแข็ง\" เป้าหมายที่ถูกโจมตีจะมีโอกาสติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800301009": {
+		"Id": "800301009",
+		"Name": "Ice Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ซึ่งมาจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน เกราะของมันสามารถสะท้อนไปยังท้องฟ้าที่เต็มไปด้วยดวงดาว ที่ทั้งลึกและมืดมน\nในระหว่างการต่อสู้ Ice Out of Space จะสามารถแช่แข็งศัตรูได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Chilling Lament",
+				"SkillDesc": "สร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว หากมอนสเตอร์ติดสถานะ \"Freezing Point\" ก็จะสร้าง DMG น้ำแข็งเพิ่มเติม หลังจากโจมตีเป้าหมายหนึ่งตัวที่ติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Frosty Absorption",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะ \"Freezing Point\" และการโจมตีหลังจากนั้นจะสามารถใช้ Everwinter Rain ได้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Everwinter Rain",
+				"SkillDesc": "สามารถใช้สกิลนี้ได้ในขณะที่ติดสถานะ \"Freezing Point\" อยู่เท่านั้น โดยจะสร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายทั้งหมด และมีโอกาสทำให้เป้าหมายที่ถูกโจมตีติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Chilling Lament",
+				"SkillDesc": "สร้าง DMG น้ำแข็งแก่เป้าหมายที่กำหนดหนึ่งตัว หากตัวเองติดสถานะ \"จุดเยือกแข็ง\" เป้าหมายที่ถูกโจมตีจะมีโอกาสติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800301010": {
+		"Id": "800301010",
+		"Name": "Ice Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ซึ่งมาจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน เกราะของมันสามารถสะท้อนไปยังท้องฟ้าที่เต็มไปด้วยดวงดาว ที่ทั้งลึกและมืดมน\nในระหว่างการต่อสู้ Ice Out of Space จะสามารถแช่แข็งศัตรูได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Chilling Lament",
+				"SkillDesc": "สร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว หากมอนสเตอร์ติดสถานะ \"Freezing Point\" ก็จะสร้าง DMG น้ำแข็งเพิ่มเติม หลังจากโจมตีเป้าหมายหนึ่งตัวที่ติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Frosty Absorption",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะ \"Freezing Point\" และการโจมตีหลังจากนั้นจะสามารถใช้ Everwinter Rain ได้",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Everwinter Rain",
+				"SkillDesc": "สามารถใช้สกิลนี้ได้ในขณะที่ติดสถานะ \"Freezing Point\" อยู่เท่านั้น โดยจะสร้าง DMG น้ำแข็งเล็กน้อยแก่เป้าหมายทั้งหมด และมีโอกาสทำให้เป้าหมายที่ถูกโจมตีติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Chilling Lament",
+				"SkillDesc": "สร้าง DMG น้ำแข็งแก่เป้าหมายที่กำหนดหนึ่งตัว หากตัวเองติดสถานะ \"จุดเยือกแข็ง\" เป้าหมายที่ถูกโจมตีจะมีโอกาสติดสถานะแช่แข็ง",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"800302001": {
 		"Id": "800302001",
 		"Name": "Blaze Out of Space",
@@ -19781,6 +23022,198 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"800302012": {
+		"Id": "800302012",
+		"Name": "Blaze Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ที่เกิดขึ้นจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน ไฟที่ลุกโชนจากแกนของดวงดาวทำให้เกราะของมันลุกไหม้\nในระหว่างการต่อสู้ Blaze Out of Space จะสามารถแผดเผาศัตรูให้เป็นเถ้าถ่านได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "สร้าง DMG ไฟเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะ \"Spontaneous Combustion\" และการโจมตีหลังจากนั้นจะสามารถใช้ \"Rain of Purifying Flames\" ได้",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "สุ่มสร้าง DMG ไฟเล็กน้อยแก่เป้าหมายหนึ่งตัวอย่างต่อเนื่อง และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์เพิ่มขึ้น หากจุดอ่อนถูกทำลาย สถานะนี้จะถูกลบออก",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800302013": {
+		"Id": "800302013",
+		"Name": "Blaze Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ที่เกิดขึ้นจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน ไฟที่ลุกโชนจากแกนของดวงดาวทำให้เกราะของมันลุกไหม้\nในระหว่างการต่อสู้ Blaze Out of Space จะสามารถแผดเผาศัตรูให้เป็นเถ้าถ่านได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "สร้าง DMG ไฟเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะ \"Spontaneous Combustion\" และการโจมตีหลังจากนั้นจะสามารถใช้ \"Rain of Purifying Flames\" ได้",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "สุ่มสร้าง DMG ไฟเล็กน้อยแก่เป้าหมายหนึ่งตัวอย่างต่อเนื่อง และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์เพิ่มขึ้น หากจุดอ่อนถูกทำลาย สถานะนี้จะถูกลบออก",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800302014": {
+		"Id": "800302014",
+		"Name": "Blaze Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ที่เกิดขึ้นจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน ไฟที่ลุกโชนจากแกนของดวงดาวทำให้เกราะของมันลุกไหม้\nในระหว่างการต่อสู้ Blaze Out of Space จะสามารถแผดเผาศัตรูให้เป็นเถ้าถ่านได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "สร้าง DMG ไฟเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะ \"Spontaneous Combustion\" และการโจมตีหลังจากนั้นจะสามารถใช้ \"Rain of Purifying Flames\" ได้",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "สุ่มสร้าง DMG ไฟเล็กน้อยแก่เป้าหมายหนึ่งตัวอย่างต่อเนื่อง และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์เพิ่มขึ้น หากจุดอ่อนถูกทำลาย สถานะนี้จะถูกลบออก",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800302015": {
+		"Id": "800302015",
+		"Name": "Blaze Out of Space",
+		"Introduction": "สิ่งมีชีวิตแปลกประหลาดจากต่างโลก มันเติบโตอยู่ใน Fragmentum ที่เกิดขึ้นจาก Stellaron และเกาะตัวอยู่ในโครงสร้างพื้นฐานของโลกเพื่อดูดซับพลังงาน ไฟที่ลุกโชนจากแกนของดวงดาวทำให้เกราะของมันลุกไหม้\nในระหว่างการต่อสู้ Blaze Out of Space จะสามารถแผดเผาศัตรูให้เป็นเถ้าถ่านได้อย่างง่ายดาย",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Bellowing Inferno",
+				"SkillDesc": "สร้าง DMG ไฟเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Blazing Absorption",
+				"SkillDesc": "ทำให้มอนสเตอร์ติดสถานะ \"Spontaneous Combustion\" และการโจมตีหลังจากนั้นจะสามารถใช้ \"Rain of Purifying Flames\" ได้",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Rain of Purifying Flames",
+				"SkillDesc": "สุ่มสร้าง DMG ไฟเล็กน้อยแก่เป้าหมายหนึ่งตัวอย่างต่อเนื่อง และมีโอกาสอย่างมากที่จะทำให้เป้าหมายที่ถูกโจมตีติดสถานะ \"เพลิงปะทุ\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Molten Fusion",
+				"SkillDesc": "ทำให้ ATK ของมอนสเตอร์เพิ่มขึ้น หากจุดอ่อนถูกทำลาย สถานะนี้จะถูกลบออก",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -21023,6 +24456,67 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"800305007": {
+		"Id": "800305007",
+		"Name": "Stormbringer",
+		"Introduction": "มอนสเตอร์ที่ถูกกัดกร่อนซึ่งถูกค้นพบในขณะที่ Fragmentum กำลังแพร่ขยาย หลังจากมีสิ่งผิดปกติเกิดขึ้นที่แหล่งพลังงาน พวกมันก็มีรูปแบบและวิธีการต่อสู้ที่ยืดหยุ่นมากยิ่งขึ้น\nStormbringer จะใช้พลังงานลมเพื่อเสริมการต่อสู้ให้กับตัวเอง โดยอาศัยทิศทางลมในการยิงธนูให้รวดเร็วและรุนแรงยิ่งขึ้น",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305001,
+				"Name": "Watchful Meteor",
+				"SkillDesc": "สร้าง DMG ลมแก่เป้าหมายที่กำหนดหนึ่งตัว และมีโอกาสอย่างมากที่จะทำให้เป้าหมายติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305002,
+				"Name": "Wind Walker",
+				"SkillDesc": "สร้าง DMG ลมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ติดกับเป้าหมายด้วย และเป้าหมายที่ได้รับการโจมตีจะมีโอกาสอย่างมากที่จะติดสถานะลมเฉือน",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305003,
+				"Name": "Wind-Twisting Crossbow",
+				"SkillDesc": "ติดสถานะชาร์จ พร้อมกับล็อกเป้าหมายทั้งหมดที่ติดสถานะลมเฉือน และปล่อย \"Windfall Storm\" ในแอ็กชันครั้งถัดไป",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 800305004,
+				"Name": "Windfall Storm",
+				"SkillDesc": "สร้าง DMG ลมแก่เป้าหมายที่ติดสถานะลมเฉือน หากไม่มีเป้าหมายที่ติดสถานะลมเฉือน การใช้สกิลนี้จะล้มเหลว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305005,
+				"Name": "Storm Cyclone",
+				"SkillDesc": "หลังจากโจมตีเป้าหมายที่ติดสถานะลมเฉือนแล้ว จะทำให้ ATK ของมอนสเตอร์เพิ่มขึ้นเล็กน้อย และเอฟเฟกต์นี้จะถูกลบออกเมื่อจุดอ่อนถูกทำลาย",
+				"SkillTypeDesc": "พรสวรรค์"
+			},
+			{
+				"Id": 800305006,
+				"Name": "Windfall Storm",
+				"SkillDesc": "สร้าง DMG ลมแก่เป้าหมายที่ติดสถานะลมเฉือน หากไม่มีเป้าหมายที่ติดสถานะลมเฉือน การใช้สกิลนี้จะล้มเหลว",
+				"SkillTypeDesc": "สกิล"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"801101001": {
 		"Id": "801101001",
 		"Name": "Baryon",
@@ -21219,6 +24713,34 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"801101008": {
+		"Id": "801101008",
+		"Name": "Baryon",
+		"Introduction": "เพื่อป้องกันการระเหยและกระจายตัว \"กองทัพ Antimatter\" จึงได้สร้างกับดักอนุภาคขนาดเล็กสองประเภทสำหรับการขนส่ง ซึ่งเรียกโดยรวมว่า \"Baryon\" และ \"Antibaryon\"\n\"Baryon\" มีสติปัญญาขั้นพื้นฐาน เมื่ออยู่ในสนามต่อสู้ จะสามารถตอบรับการเรียกและตอบสนองต่อเจตจำนงของ \"Voidranger\" เพื่อเปิดทางให้กับพวกเขาได้",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Obliterate",
+				"SkillDesc": "สร้าง DMG ควอนตัมเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"801102001": {
 		"Id": "801102001",
 		"Name": "Antibaryon",
@@ -21358,6 +24880,34 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801102007": {
+		"Id": "801102007",
+		"Name": "Antibaryon",
+		"Introduction": "เพื่อป้องกันการระเหยและกระจายตัว \"กองทัพ Antimatter\" จึงได้สร้างกับดักอนุภาคขนาดเล็กสองประเภทสำหรับการขนส่ง ซึ่งเรียกโดยรวมว่า \"Baryon\" และ \"Antibaryon\"\n\"Antibaryon\" มีสติปัญญาขั้นพื้นฐาน เมื่ออยู่ในสนามต่อสู้ จะสามารถตอบรับการเรียกและตอบสนองต่อเจตจำนงของ \"Voidranger\" เพื่อเปิดทางให้กับพวกเขาได้",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Obliterate",
+				"SkillDesc": "สร้าง DMG จินตภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"801201001": {
 		"Id": "801201001",
@@ -22094,6 +25644,111 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"801201023": {
+		"Id": "801201023",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "นักรบผู้รอดตายซึ่งได้ผ่านการหล่อหลอมขึ้นมาใหม่ใน \"Warforge\" และได้รับพลังที่เรียกว่าการ \"ทำลายล้าง\" Antimatter ได้เติมเต็มร่างกายของพวกเขา และอนุภาคเชิงลบก็ได้สั่นสะเทือนอยู่ในร่างกายนั้น\nหน่วยรบพื้นฐานของ \"กองทัพ Antimatter\" เป็นการบรรลุเจตจำนงของการ \"ทำลายล้าง\" และเป็นไปตามสัญชาตญาณของการทำลาย ที่มีความก้าวร้าวรุนแรง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "สร้าง DMG จินตภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "สร้าง DMG จินตภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"801201024": {
+		"Id": "801201024",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "นักรบผู้รอดตายซึ่งได้ผ่านการหล่อหลอมขึ้นมาใหม่ใน \"Warforge\" และได้รับพลังที่เรียกว่าการ \"ทำลายล้าง\" Antimatter ได้เติมเต็มร่างกายของพวกเขา และอนุภาคเชิงลบก็ได้สั่นสะเทือนอยู่ในร่างกายนั้น\nหน่วยรบพื้นฐานของ \"กองทัพ Antimatter\" เป็นการบรรลุเจตจำนงของการ \"ทำลายล้าง\" และเป็นไปตามสัญชาตญาณของการทำลาย ที่มีความก้าวร้าวรุนแรง",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "สร้าง DMG จินตภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "สร้าง DMG จินตภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"801201025": {
+		"Id": "801201025",
+		"Name": "Voidranger: Reaver",
+		"Introduction": "นักรบผู้รอดตายซึ่งได้ผ่านการหล่อหลอมขึ้นมาใหม่ใน \"Warforge\" และได้รับพลังที่เรียกว่าการ \"ทำลายล้าง\" Antimatter ได้เติมเต็มร่างกายของพวกเขา และอนุภาคเชิงลบก็ได้สั่นสะเทือนอยู่ในร่างกายนั้น\nหน่วยรบพื้นฐานของ \"กองทัพ Antimatter\" เป็นการบรรลุเจตจำนงของการ \"ทำลายล้าง\" และเป็นไปตามสัญชาตญาณของการทำลาย ที่มีความก้าวร้าวรุนแรง",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Hunting Blade",
+				"SkillDesc": "สร้าง DMG จินตภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Vortex Leap",
+				"SkillDesc": "สร้าง DMG จินตภาพเล็กน้อยแก่เป้าหมายที่กำหนดหนึ่งตัว รวมถึงตัวที่อยู่ใกล้เคียงกับเป้าหมาย",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"801202001": {
 		"Id": "801202001",
 		"Name": "Voidranger: Distorter",
@@ -22443,6 +26098,41 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"801202011": {
+		"Id": "801202011",
+		"Name": "Voidranger: Distorter",
+		"Introduction": "\"Voidranger\" ที่รอดมาจากผลของการทำลายล้างได้สำเร็จ อนุภาคบวกและลบในร่างกายของพวกเขา สมดุลอยู่ชั่วคราวอย่างน่าประหลาด จึงทำให้พวกเขามีพลังที่มากกว่า \"Reaver\"\nหน่วยรบพื้นฐานของ \"กองทัพ Antimatter\" ที่มีสติปัญญาและสามารถควบคุมการเคลื่อนไหวของ \"Reaver\" ในพื้นที่เล็กๆ ได้",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Nihility's Command",
+				"SkillDesc": "สุ่มล็อกเป้าหมายหนึ่งตัว และทำให้เป้าหมายดังกล่าวกลายเป็นเป้าหมายโจมตีของศัตรูทั้งหมด",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Shadowless Void Strike",
+				"SkillDesc": "สร้าง DMG ควอนตัมแก่เป้าหมายที่กำหนดหนึ่งตัว",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -23407,5 +27097,47 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"802202002": {
+		"Id": "802202002",
+		"Name": "Lesser Sting",
+		"Introduction": "ตัวอ่อนแมลงของ True Sting ซึ่งตัวอ่อนของ \"True Sting\" สามารถแบ่งออกเป็น \"Juvenile Sting\" และ \"Lesser Sting\" ตามช่วงการเจริญเติบโต",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802202001,
+				"Name": "Prepare to Fight",
+				"SkillDesc": "เข้าสู่สถานะชาร์จ และในแอ็กชันครั้งต่อไปจะปล่อย \"Bursting Detonation\"",
+				"SkillTypeDesc": "สกิล"
+			},
+			{
+				"Id": 802202002,
+				"Name": "Bursting Detonation",
+				"SkillDesc": "ระเบิดตัวเอง และสร้าง DMG ลมให้กับเป้าหมายที่กำหนดหนึ่งตัว รวมถึงเป้าหมายที่อยู่ใกล้เคียงด้วย อีกทั้งเป้าหมายที่ถูกโจมตี มีโอกาสอย่างมากที่จะติดสถานะ \"ก้าวร้าว\"",
+				"SkillTypeDesc": "สกิล",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802202004,
+				"Name": "Entomon Eulogy",
+				"SkillDesc": "เมื่อถูกโจมตีถึงตาย จะสร้าง DMG ลมแก่มอนสเตอร์ทั้งหมด และมีโอกาสอย่างมาก ที่จะทำให้มอนสเตอร์เป้าหมายที่ถูกโจมตี ได้รับ DMG เพิ่มขึ้นเล็กน้อย",
+				"SkillTypeDesc": "พรสวรรค์",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
 	}
 }

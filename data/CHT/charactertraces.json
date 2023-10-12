@@ -2082,7 +2082,7 @@
 				"Name": "寸長寸強",
 				"NodeType": 2,
 				"NodeTypeText": "天賦",
-				"EffectRaw": "當丹恆成為我方技能的目標時，下一次攻擊的風屬性<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。該效果在<unbreak>#2[i]</unbreak>回合後可再次觸發。",
+				"EffectRaw": "當丹恆成為我方技能的施放目標時，下一次攻擊的風屬性<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。該效果在<unbreak>#2[i]</unbreak>回合後可再次觸發。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100204"
@@ -28373,6 +28373,1430 @@
 		},
 		"VersionAdded": "1.2"
 	},
+	"1112": {
+		"Id": "1112",
+		"Name": "托帕&帳帳",
+		"Nodes": {
+			"1112001": {
+				"Id": "1112001",
+				"Name": "赤字……",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"111201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "獵獸之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1112002": {
+				"Id": "1112002",
+				"Name": "支付困難？",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "使指定敵方單體陷入【負債證明】狀態，使其受到的<u>追加攻擊</u>傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。【負債證明】僅對最新被施加的目標生效，我方目標回合開始或行動時，若場上沒有陷入【負債證明】狀態的敵方目標，則托帕使隨機敵方目標陷入【負債證明】狀態。\n使帳帳對該目標造成等同於托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。施放此戰技造成傷害時，被視為發動了<u>追加攻擊</u>。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111202"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75,
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825,
+							0.275
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "獵獸之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975,
+							0.325
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05,
+							0.35
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125,
+							0.375
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188,
+							0.4063
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125,
+							0.4375
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063,
+							0.4688
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112003": {
+				"Id": "1112003",
+				"Name": "轉虧為盈！",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "使帳帳進入【漲幅驚人！】狀態，傷害倍率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，暴擊傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且當陷入【負債證明】狀態下的敵方目標受到我方的普通攻擊、戰技或終結技的攻擊時，帳帳行動提前<unbreak>#3[i]%</unbreak>。帳帳發動<unbreak>#4[i]</unbreak>次攻擊後退出【漲幅驚人！】狀態。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75,
+							0.125,
+							0.5,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825,
+							0.1375,
+							0.5,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9,
+							0.15,
+							0.5,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "獵獸之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975,
+							0.1625,
+							0.5,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05,
+							0.175,
+							0.5,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125,
+							0.1875,
+							0.5,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188,
+							0.2031,
+							0.5,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125,
+							0.2188,
+							0.5,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063,
+							0.2344,
+							0.5,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							0.25,
+							0.5,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112004": {
+				"Id": "1112004",
+				"Name": "豬市？！",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "戰鬥開始時召喚帳帳。帳帳初始擁有<unbreak>#1[i]</unbreak>點速度，行動時發動<u>追加攻擊</u>，對陷入【負債證明】狀態下的敵方單體造成等同於托帕<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的火屬性傷害。\n陷入【負債證明】狀態下的敵方目標受到我方的追加攻擊時，帳帳行動提前<unbreak>#3[i]%</unbreak>。在帳帳自身回合內，無法觸發行動提前效果。\n當托帕陷入<u>無法戰鬥狀態</u>時，帳帳便會消失。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"111204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							80,
+							0.75,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							80,
+							0.825,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							80,
+							0.9,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "獵獸之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							80,
+							0.975,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							80,
+							1.05,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							80,
+							1.125,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 7
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							80,
+							1.2188,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							80,
+							1.3125,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							80,
+							1.4063,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							80,
+							1.5,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112007": {
+				"Id": "1112007",
+				"Name": "明補",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "托帕入場時召喚帳帳，帳帳會自動搜尋一定範圍內的普通戰利品與撲滿。\n主動施放秘技的下一場戰鬥中，帳帳發動首次攻擊後，托帕恢復<unbreak>#1[i]</unbreak>點能量。\n主動施放秘技與大地圖內的敵人戰鬥勝利後，若托帕仍在隊伍中，則在獲得信用點時額外獲得少量信用點，每個地球日內最多額外獲得<unbreak>#2[i]</unbreak>點。\n主動施放秘技與模擬宇宙內的敵人戰鬥勝利後，額外獲得少量宇宙碎片，並有低機率獲得1個隨機奇物。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"111207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							60,
+							10000
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1112101": {
+				"Id": "1112101",
+				"Name": "透支",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "托帕發動普通攻擊造成傷害時，視為發動了追加攻擊。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "獵獸之矢",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112102": {
+				"Id": "1112102",
+				"Name": "金融動盪",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "托帕和帳帳對擁有火屬性弱點的敵方目標造成的傷害提高<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112103": {
+				"Id": "1112103",
+				"Name": "技術性調整",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "當帳帳處於【漲幅驚人！】狀態發動攻擊後，額外使托帕恢復<unbreak>#1[i]</unbreak>點能量。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1112201": {
+				"Id": "1112201",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1112202": {
+				"Id": "1112202",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1112101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "獵獸之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112001",
+								"Name": "鐵衛扣飾",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1112203": {
+				"Id": "1112203",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1112202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112204": {
+				"Id": "1112204",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112205": {
+				"Id": "1112205",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1112102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔之矢",
+								"Count": 5
+							},
+							{
+								"Id": "112002",
+								"Name": "鐵衛軍徽",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1112206": {
+				"Id": "1112206",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1112205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112207": {
+				"Id": "1112207",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 3
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1112208": {
+				"Id": "1112208",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1112103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1112209": {
+				"Id": "1112209",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1112208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1112210": {
+				"Id": "1112210",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1112208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星之矢",
+								"Count": 8
+							},
+							{
+								"Id": "112003",
+								"Name": "鐵衛勳章",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
+	},
 	"1201": {
 		"Id": "1201",
 		"Name": "青雀",
@@ -37308,7 +38732,7 @@
 				"Name": "貫雲飲羽",
 				"NodeType": 2,
 				"NodeTypeText": "終結技",
-				"EffectRaw": "施放終結技時，若馭空持有【鳴弦號令】，則額外使我方全體暴擊率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，暴擊傷害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。同時對指定敵方單體造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
+				"EffectRaw": "施放終結技時，若馭空持有【鳴弦號令】，則額外使我方全體暴擊率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、暴擊傷害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>，同時對指定敵方單體造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120703"
@@ -41189,6 +42613,1460 @@
 		},
 		"VersionAdded": "1.0"
 	},
+	"1210": {
+		"Id": "1210",
+		"Name": "桂乃芬",
+		"Nodes": {
+			"1210001": {
+				"Id": "1210001",
+				"Name": "劈頭滿堂彩",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "黯淡黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1210002": {
+				"Id": "1210002",
+				"Name": "迎面開門紅",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "對指定敵方單體造成等同於桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，並對相鄰目標造成等同於桂乃芬<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的火屬性傷害，有<unbreak>#3[i]%</unbreak>的<u>基礎機率</u>使目標與相鄰目標陷入灼燒狀態。灼燒狀態下，敵方目標每回合開始時受到等同於桂乃芬<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的火屬性持續傷害，持續<unbreak>#5[i]</unbreak>回合。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.2,
+							1,
+							0.839,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.66,
+							0.22,
+							1,
+							0.923,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.72,
+							0.24,
+							1,
+							1.0069,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "黯淡黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.78,
+							0.26,
+							1,
+							1.0909,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.84,
+							0.28,
+							1,
+							1.1748,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3,
+							1,
+							1.3007,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.975,
+							0.325,
+							1,
+							1.4686,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.05,
+							0.35,
+							1,
+							1.6784,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.125,
+							0.375,
+							1,
+							1.9303,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							0.4,
+							1,
+							2.1821,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210003": {
+				"Id": "1210003",
+				"Name": "給您來段看家戲",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "對敵方全體造成等同於桂乃芬<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>攻擊力的火屬性傷害，若目標處於灼燒狀態，使其當下承受的灼燒狀態立即產生相當於原傷害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的傷害。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							0.72
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							0.74
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							0.76
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "黯淡黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							0.78
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							0.82
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							0.845
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							0.87
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							0.895
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							0.92
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210004": {
+				"Id": "1210004",
+				"Name": "古來君子養藝人",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "桂乃芬在場時，敵方受到的灼燒狀態觸發傷害後，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>陷入【吞火】狀態，【吞火】狀態下敵方目標受到的傷害提高<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，持續<unbreak>#5[i]</unbreak>回合，最多疊加<unbreak>#6[i]</unbreak>層。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.04,
+							3,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.043,
+							3,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.046,
+							3,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "黯淡黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.049,
+							3,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.052,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.055,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0588,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0625,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 64000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.0663,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0,
+							0,
+							0.07,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 240000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210007": {
+				"Id": "1210007",
+				"Name": "耍耍把式賣賣藝",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "立即攻擊敵人，進入戰鬥後造成<unbreak>#2[i]</unbreak>次傷害，每次傷害對敵方隨機單體造成等同於桂乃芬<unbreak>#1[i]%</unbreak>攻擊力的火屬性傷害並有<unbreak>#3[i]%</unbreak>的<u>基礎機率</u>使目標陷入【吞火】狀態。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5,
+							4,
+							1
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1210101": {
+				"Id": "1210101",
+				"Name": "緣竿",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "普通攻擊有<unbreak>#1[i]%</unbreak>的基礎機率使敵方目標陷入與戰技相同的灼燒狀態。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "黯淡黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210102": {
+				"Id": "1210102",
+				"Name": "投狹",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "戰鬥開始時，桂乃芬的行動提前<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210103": {
+				"Id": "1210103",
+				"Name": "逾鋒",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "對陷入灼燒狀態的敵方目標造成的傷害提高<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1210201": {
+				"Id": "1210201",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210202": {
+				"Id": "1210202",
+				"Name": "擊破強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "擊破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1210101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110151",
+								"Name": "黯淡黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "工造機杼",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1210203": {
+				"Id": "1210203",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1210202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210204": {
+				"Id": "1210204",
+				"Name": "效果命中強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "效果命中提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1210203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210205": {
+				"Id": "1210205",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1210102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110152",
+								"Name": "虛空黑曜",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "工造迴輪",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1210206": {
+				"Id": "1210206",
+				"Name": "擊破強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "擊破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1210205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210207": {
+				"Id": "1210207",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1210206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 36000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1210208": {
+				"Id": "1210208",
+				"Name": "效果命中強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "效果命中提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1210103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1210209": {
+				"Id": "1210209",
+				"Name": "擊破強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "擊破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1210103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1210210": {
+				"Id": "1210210",
+				"Name": "傷害強化•火",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "火屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "FireAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconFireAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1210201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 128000
+							},
+							{
+								"Id": "110153",
+								"Name": "沉淪黑曜",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "工造渾心",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
+	},
 	"1211": {
 		"Id": "1211",
 		"Name": "白露",
@@ -42645,6 +45523,1479 @@
 			}
 		},
 		"VersionAdded": "1.0"
+	},
+	"1212": {
+		"Id": "1212",
+		"Name": "鏡流",
+		"Nodes": {
+			"1212001": {
+				"Id": "1212001",
+				"Name": "流影方暉",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於鏡流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "破碎殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1212002": {
+				"Id": "1212002",
+				"Name": "無罅飛光",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "對指定敵方單體造成等同於鏡流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害，並獲得<unbreak>#2[i]</unbreak>層【朔望】。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121202",
+					"121209"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "破碎殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212003": {
+				"Id": "1212003",
+				"Name": "曇華生滅，天河瀉夢",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "對指定敵方單體造成等同於鏡流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害，並對其相鄰目標造成等同於鏡流<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻擊力的冰屬性傷害。攻擊結束後獲得<unbreak>#2[i]</unbreak>層【朔望】。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.8,
+							1,
+							0.9,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.92,
+							1,
+							0.96,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2.04,
+							1,
+							1.02,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "破碎殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2.16,
+							1,
+							1.08,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2.28,
+							1,
+							1.14,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2.4,
+							1,
+							1.2,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.55,
+							1,
+							1.275,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.7,
+							1,
+							1.35,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.85,
+							1,
+							1.425,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							1,
+							1.5,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212004": {
+				"Id": "1212004",
+				"Name": "澹月轉魄",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "當擁有<unbreak>#5[i]</unbreak>層【朔望】時，鏡流將進入【轉魄】狀態，並使行動提前<unbreak>#6[i]%</unbreak>、暴擊率提高<color=#f29e38ff><unbreak>#7[i]%</unbreak></color>，隨後戰技【無罅飛光】強化為【寒川映月】且僅能使用該戰技。【轉魄】狀態下發動攻擊時，消耗隊友<unbreak>#2[i]%</unbreak>生命上限的生命值（最多消耗到每位隊友生命值等於1）。根據本次我方全體生命值消耗總量的<unbreak>#3[i]%</unbreak>提高鏡流攻擊力，最高不超過鏡流基礎攻擊力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，持續至本次攻擊結束。【轉魄】狀態結束前無法再次進入【轉魄】狀態。【朔望】最多可累積3層，當【朔望】層數為0時，退出【轉魄】狀態。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							0.9,
+							2,
+							1,
+							0.4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							0.99,
+							2,
+							1,
+							0.41
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.08,
+							2,
+							1,
+							0.42
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "破碎殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.17,
+							2,
+							1,
+							0.43
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.26,
+							2,
+							1,
+							0.44
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.35,
+							2,
+							1,
+							0.45
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.4625,
+							2,
+							1,
+							0.4625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.575,
+							2,
+							1,
+							0.475
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.6875,
+							2,
+							1,
+							0.4875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.3,
+							0.04,
+							5.4,
+							1.8,
+							2,
+							1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212007": {
+				"Id": "1212007",
+				"Name": "古鏡照神",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技後，在自身周圍製造1片持續<unbreak>#3[i]</unbreak>秒的特殊領域，處於特殊領域內的敵人陷入凍結狀態。與處於特殊領域內的敵人進入戰鬥後，立即為自身恢復<unbreak>#6[i]</unbreak>點能量、獲得<unbreak>#1[i]</unbreak>層【朔望】並有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使敵方目標陷入凍結狀態，持續<unbreak>#4[i]</unbreak>回合。凍結狀態下，敵方目標無法行動，且每回合開始時受到等同於鏡流<unbreak>#5[i]%</unbreak>攻擊力的冰屬性<u>附加傷害</u>。我方製造的領域效果最多存在1個。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1,
+							20,
+							1,
+							0.8,
+							15
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1212101": {
+				"Id": "1212101",
+				"Name": "死境",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "【轉魄】狀態下，效果抗性提高<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "破碎殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212102": {
+				"Id": "1212102",
+				"Name": "劍首",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "施放【無罅飛光】後，下次行動提前<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212103": {
+				"Id": "1212103",
+				"Name": "霜魄",
+				"NodeType": 3,
+				"NodeTypeText": "額外能力",
+				"EffectRaw": "【轉魄】狀態下，終結技造成的傷害提高<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "無窮假身的遺恨",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1212201": {
+				"Id": "1212201",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1212202": {
+				"Id": "1212202",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1212101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110111",
+								"Name": "破碎殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永壽幼芽",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1212203": {
+				"Id": "1212203",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1212202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212204": {
+				"Id": "1212204",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1212203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212205": {
+				"Id": "1212205",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1212102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生殘刃",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永壽天華",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1212206": {
+				"Id": "1212206",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1212205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212207": {
+				"Id": "1212207",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1212206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1212208": {
+				"Id": "1212208",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1212103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1212209": {
+				"Id": "1212209",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1212208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1212210": {
+				"Id": "1212210",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"NodeTypeText": "屬性加成",
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1212208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110113",
+								"Name": "淨世殘刃",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永壽榮枝",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.4"
 	},
 	"1213": {
 		"Id": "1213",

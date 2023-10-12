@@ -479,7 +479,7 @@
 			{
 				"Id": 100301105,
 				"Name": "Arenga",
-				"SkillDesc": "Aumenta el ATQ de todos los enemigos y adelanta sus acciones.",
+				"SkillDesc": "Aumenta el ATQ de todos los enemigos, excepto Teniente Crinargenta (error), y hace que realicen una acción inmediatamente.",
 				"SkillTypeDesc": "Habilidad"
 			}
 		],
@@ -4100,7 +4100,7 @@
 			{
 				"Id": 202303105,
 				"Name": "Drenavitalidad",
-				"SkillDesc": "Cuando ataca a objetivos afectados por Extractor de prana, el daño infligido por este ataque se convierte en Extractor de prana y reinicia la duración del estado. Existe un límite de PV máx. que puede absorber el estado Extractor de prana.",
+				"SkillDesc": "Al atacar a objetivos afectados por Extractor de prana, el daño de ese ataque se convierte en los PV máx. reducidos por Extractor de prana y actualiza la duración de Extractor de prana. Extractor de prana puede reducir como máximo un <unbreak>50%</unbreak> los PV máx. que se pueden regenerar.",
 				"SkillTypeDesc": "Talento",
 				"ElementType": "Wind"
 			}
@@ -4294,6 +4294,1419 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"2024012": {
+		"Id": "2024012",
+		"Name": "Cérvido Azabache de la Abundancia (intacto)",
+		"Introduction": "Una proyección falsa creada por un código alterado. La referencia original es una bestia espiritual creada por el Árbol de la Ambrosía para proteger sus raíces. Su llegada produce ramas exuberantes y la promesa de buena suerte.\nEl Árbol de la Ambrosía fue destruido en una antigua guerra, pero el Estelaron lo devolvió a la vida. Las especies exóticas y las bestias legendarias volvieron a reunirse alrededor del árbol, como un sueño olvidado que se hace realidad.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202401201,
+				"Name": "Pedúnculo: Viento solemne",
+				"SkillDesc": "Invoca rama del Árbol de la Ambrosía (Rama del viento solemne).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401202,
+				"Name": "Pedúnculo: Hojas gualdas",
+				"SkillDesc": "Invoca rama del Árbol de la Ambrosía (Rama de hojas gualdas).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401203,
+				"Name": "Pedúnculo: Floración",
+				"SkillDesc": "Invoca rama del Árbol de la Ambrosía (Rama de la floración).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401204,
+				"Name": "Pedúnculo: Fruto abundante",
+				"SkillDesc": "Invoca rama del Árbol de la Ambrosía (Rama del fruto abundante).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401205,
+				"Name": "Alarido",
+				"SkillDesc": "Inflige Daño de Rayo a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202401206,
+				"Name": "Caricia del viento",
+				"SkillDesc": "Inflige Daño de Viento a todos los aliados.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202401207,
+				"Name": "Refugio de hojas",
+				"SkillDesc": "Aumenta la DEF y hace que su Firmeza no reciba daño.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401208,
+				"Name": "Contacto recargado",
+				"SkillDesc": "Cuando haya 2 Frutos abundantes en el campo de batalla, esta habilidad se activa inmediatamente e inflige una gran cantidad de Daño de Rayo a todos los aliados. Inflige más daño cuantas más ramas del Árbol de la Ambrosía haya en el campo de batalla. Tras lanzar la habilidad, se eliminan todas las Ramas del fruto abundante que haya.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202401209,
+				"Name": "Vida eterna",
+				"SkillDesc": "Regenera PV inmediatamente y obtiene una acumulación de Renovación similigna.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401210,
+				"Name": "Pedúnculo: Hiedra encantadora",
+				"SkillDesc": "Invoca 2 ramas del Árbol de la Ambrosía (Rama del viento solemne).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401211,
+				"Name": "Pedúnculo: Rama de sauce",
+				"SkillDesc": "Invoca 2 ramas del Árbol de la Ambrosía (Rama de hojas gualdas).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401212,
+				"Name": "Pedúnculo: Vegetación frondosa",
+				"SkillDesc": "Invoca 2 ramas del Árbol de la Ambrosía (Rama de hojas gualdas), 1 rama del Árbol de la Ambrosía (Rama del viento solemne) y 1 rama del Árbol de la Ambrosía (Rama de la floración).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401213,
+				"Name": "Pedúnculo: Lianas entrelazadas",
+				"SkillDesc": "Invoca 2 ramas del Árbol de la Ambrosía (Rama del fruto abundante), 1 rama del Árbol de la Ambrosía (Rama de hojas gualdas) y 1 rama del Árbol de la Ambrosía (Rama del viento solemne).",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 202401214,
+				"Name": "Exceso de vitalidad",
+				"SkillDesc": "Cada vez que el Cérvido Azabache de la Abundancia obtiene un efecto positivo, aumenta ligeramente el daño que inflige el Cérvido Azabache de la Abundancia y todas las ramas del Árbol de la Ambrosía.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001010": {
+		"Id": "7001010",
+		"Name": "Ingenio Encantado: Dracoleón",
+		"Introduction": "Un ingenioso invento de un trabajador de la Comisión de Artesanía. Originalmente, era una campana de alarma inanimada que se usaba para alertar, pero ahora, gracias a ciertas modificaciones, tiene una \"vida\" breve.\nEn batalla, el Dracoleón puede resistir daño letal.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101001,
+				"Name": "Rugido de león",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado y tiene cierta probabilidad de causarle Debilitación.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700101002,
+				"Name": "Modo de emergencia",
+				"SkillDesc": "Al recibir daño letal, no es derrotado, sino que regenera cierta cantidad de PV y disipa estados negativos.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700101003,
+				"Name": "Autorreconstrucción",
+				"SkillDesc": "Consume todas las cargas. Reinicia el contador de activación de Modo de emergencia.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001011": {
+		"Id": "7001011",
+		"Name": "Saqueador del Vacío",
+		"Introduction": "Los guerreros que aún no habían muerto fueron reforjados en la Fragua Bélica y obtuvieron el poder de la destrucción. La antimateria llenó sus cuerpos, y las partículas negativas vibraron en su interior.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101101,
+				"Name": "Cuchillo de caza",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700101102,
+				"Name": "Salto de remolino",
+				"SkillDesc": "Inflige daño a un aliado y a los aliados adyacentes, y recupera toda la energía si la habilidad básica elimina al aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001012": {
+		"Id": "7001012",
+		"Name": "Eliminador del Vacío",
+		"Introduction": "Restos de un cuerpo que sufrió la corrosión del Fragmentum después de su muerte. Aunque sus signos vitales experimentaron un cambio, sigue llevando a cabo sus órdenes de eliminación.\nEl Eliminador del Vacío puede lanzar rápidamente varios ataques, pero si no elimina a sus enemigos, recibe una gran cantidad de daño.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101201,
+				"Name": "Cañón del vacío",
+				"SkillDesc": "Inflige daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700101202,
+				"Name": "Aceleración antimateria",
+				"SkillDesc": "Consume todas las cargas. Aumenta en gran medida su VEL.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700101203,
+				"Name": "Bombardeo antimateria",
+				"SkillDesc": "Tras atacar, obtiene 1 acumulación de Sobrecalentamiento. Cuando tiene <unbreak>#1[i]</unbreak> acumulaciones. consume una gran cantidad de sus PV y elimina Sobrecalentamiento. Al eliminar a un aliado, también elimina Sobrecalentamiento.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7001013": {
+		"Id": "7001013",
+		"Name": "Chanchito Comercial",
+		"Introduction": "Criatura interdimensional perdida entre las estrellas. Tiene buen carácter y un sabor dulce, pero no se puede comer. Pasa la mayor parte de su vida alimentándose y huyendo. Los viajeros que se lo encuentran lo consideran un presagio de buena suerte.\nEl Chanchito Comercial otorga puntos de rendimiento a otros trabajadores de la Corporación.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700101301,
+				"Name": "Estímulo",
+				"SkillDesc": "Otorga 1 punto de rendimiento a otro enemigo.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700101302,
+				"Name": "Espíritu emprendedor",
+				"SkillDesc": "Cada vez que recibe un ataque, aumenta la VEL de otro enemigo.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002010": {
+		"Id": "7002010",
+		"Name": "Espíritu de la Abundancia: Lupo Silvano",
+		"Introduction": "Un lobo envuelto en neblina que siempre está en movimiento.\nCuando el Árbol de la Ambrosía se erguía orgulloso, los habitantes de Xianzhou criaban una gran variedad de criaturas fantásticas usando técnicas esotéricas. Los Lupos Silvanos eran una de las bestias de guerra que acompañaban al ejército.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700201001,
+				"Name": "Festín de lobos",
+				"SkillDesc": "Inflige daño a un aliado y tiene una gran probabilidad de causarle Electrocución.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 700201002,
+				"Name": "Mordisco lupino",
+				"SkillDesc": "Inflige daño a un aliado. Si el aliado está afectado por un estado de Daño con el tiempo, todos los efectos de Daño con el tiempo aplicados al objetivo le infligen daño 1 vez. Después, tiene una gran probabilidad de causar Electrocución al objetivo.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 700201003,
+				"Name": "Siseo agrupador",
+				"SkillDesc": "Consume todas las cargas e invoca a una Lobohiena Sombría con su misma cantidad de PV.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002011": {
+		"Id": "7002011",
+		"Name": "Lobohiena Sombría",
+		"Introduction": "Ilusión creada por un Lupo Silvano.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700201101,
+				"Name": "Festín de lobos",
+				"SkillDesc": "Inflige daño a un aliado y tiene una gran probabilidad de causarle Electrocución.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002020": {
+		"Id": "7002020",
+		"Name": "Vagabundo",
+		"Introduction": "Algunos habitantes del Bajomundo desesperados por sobrevivir se adentran en el Fragmentum para buscar cualquier cosa de utilidad. Las antiguas máquinas que desentierran se han convertido en sus mejores aliadas.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700202001,
+				"Name": "Palazo",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700202002,
+				"Name": "Gran motivación",
+				"SkillDesc": "Consume todas las cargas. Aumenta el ATQ y la VEL de un enemigo. Si el enemigo que recibe el efecto no es él mismo, realiza una acción inmediatamente. Al entrar en combate, esta habilidad tiene todas las cargas.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002030": {
+		"Id": "7002030",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700203001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige daño a un aliado y tiene una gran probabilidad de causarle Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700203002,
+				"Name": "Ráfaga ardiente",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a un aliado y tiene una gran probabilidad de causarle Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002050": {
+		"Id": "7002050",
+		"Name": "Ingenio Encantado: Pezdragón Iluminador",
+		"Introduction": "Un ingenioso invento de un trabajador de la Comisión de Artesanía. Originalmente, era un iluminador inanimado que se usaba para dar luz en la oscuridad, pero ahora, gracias a ciertas modificaciones, tiene una \"vida\" breve.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700205001,
+				"Name": "Luminosidad nocturna",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a todos los aliados y tiene una gran probabilidad de causarles un estado de Daño con el tiempo al azar.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205002,
+				"Name": "Fuegos artificiales",
+				"SkillDesc": "Consume todas las cargas. Lanza unos fuegos artificiales espectaculares que en realidad no hacen nada, pero son bonitos de ver.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205003,
+				"Name": "Luz de vela",
+				"SkillDesc": "Al ser derrotado, inflige daño a todos los enemigos y tiene una gran probabilidad de aumentar el daño que reciben.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002060": {
+		"Id": "7002060",
+		"Name": "Artillero Crinargenta",
+		"Introduction": "Artillero de la Guardia Crinargenta que lleva un cañón portátil a la batalla.\nDurante el combate, el Artillero Crinargenta lanza un feroz ataque en cadena a varios objetivos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700206001,
+				"Name": "Cortina de fuego",
+				"SkillDesc": "Inflige daño a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700206002,
+				"Name": "Bloqueado y cargado",
+				"SkillDesc": "Consume todas las cargas. Da apoyo a los enemigos y aumenta su ATQ y el de los enemigos a los que apoya.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700206003,
+				"Name": "Yo te cubro",
+				"SkillDesc": "Al entrar en combate, proporciona refuerzos a un enemigo determinado y lanza un ataque adicional cuando ese enemigo ataca a los aliados. Inflige una pequeña cantidad de daño al aliado atacado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002070": {
+		"Id": "7002070",
+		"Name": "Tejedora Imaginaria",
+		"Introduction": "Ser extraño que no es de este mundo. Llegó hasta aquí después de atravesar el velo desde el otro lado del oscuro cielo estrellado. Su cuerpo es como una rama enfermiza que se asoma a la realidad y la transforma según su voluntad utilizando un poder imaginario.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700207001,
+				"Name": "Himno reverberante",
+				"SkillDesc": "Inflige daño a un aliado y a los aliados adyacentes. Al usarla por primera vez, la acción de este enemigo se adelanta en gran medida.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700207002,
+				"Name": "Himno explosivo",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002080": {
+		"Id": "7002080",
+		"Name": "Tirador Crinargenta",
+		"Introduction": "Tirador de la Guardia Crinargenta de Belobog. Se encarga de disparar a los enemigos.\nEl Tirador Crinargenta pueden marcar objetivos enemigos en el combate e indicar a sus aliados que concentren allí los ataques.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700208001,
+				"Name": "Golpe de cañón",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado. Tras usarla, su acción se adelanta cierto porcentaje.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700208002,
+				"Name": "Granada perforadora",
+				"SkillDesc": "Consume todas las cargas. Inflige daño a un aliado, hace que sufra daño adicional cada vez que recibe un ataque, y lo convierte en el objetivo de los ataques de todos los enemigos. Al entrar en combate, esta habilidad tiene todas las cargas.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002090": {
+		"Id": "7002090",
+		"Name": "Soldado Crinargenta",
+		"Introduction": "Soldado de la Guardia Crinargenta de Belobog. Su misión es estar en la primera línea cuando se carga contra el enemigo.\nLos Soldados Crinargenta otorgan efectos positivos continuos a sus aliados en combate.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700209001,
+				"Name": "Carga infatigable",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700209002,
+				"Name": "Aumento de moral",
+				"SkillDesc": "Consume todas las cargas. Todos los enemigos obtienen 5 acumulaciones de Moral.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700209003,
+				"Name": "Armadura Crinargenta",
+				"SkillDesc": "Tras un ataque enemigo, todos los enemigos obtienen una acumulación de Moral. Cada acumulación de Moral aumenta el daño infligido y la VEL, y reduce el daño recibido.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002100": {
+		"Id": "7002100",
+		"Name": "Araña Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Sustituye a las personas en los trabajos físicos más básicos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700210001,
+				"Name": "Colisión",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700210002,
+				"Name": "Módulo temporizado",
+				"SkillDesc": "Lanza Módulo autodestructivo en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700210003,
+				"Name": "Módulo autodestructivo",
+				"SkillDesc": "Consume todas las cargas. Explota e inflige una gran cantidad de daño a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002110": {
+		"Id": "7002110",
+		"Name": "Araña Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Sustituye a las personas en los trabajos físicos más básicos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700211001,
+				"Name": "Colisión",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700211002,
+				"Name": "Módulo temporizado",
+				"SkillDesc": "Lanza Módulo autodestructivo en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700211003,
+				"Name": "Módulo autodestructivo",
+				"SkillDesc": "Consume todas las cargas. Explota e inflige una gran cantidad de daño a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002120": {
+		"Id": "7002120",
+		"Name": "Personal subalterno: Trabajador",
+		"Introduction": "Empleado subalterno de la Corporación para la Paz Interastral. Se encarga de solucionar las \"chapuzas empresariales\" y evitar que asciendan a niveles superiores. Su salario es una miseria, y el único alojamiento que puede permitirse es una habitación compartida a bordo de una de las naves de la Corporación.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700212001,
+				"Name": "Hora de fichar",
+				"SkillDesc": "Inflige daño a un aliado y obtiene 1 punto de rendimiento.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700212002,
+				"Name": "Cuentas anuales",
+				"SkillDesc": "Consume todas las cargas. Inflige daño a un aliado. Si tiene puntos de rendimiento, aumenta el daño. Se consumen todos los puntos de rendimiento.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700212003,
+				"Name": "Empleado de la Corporación",
+				"SkillDesc": "Aumenta el daño en gran medida según la cantidad de puntos de rendimiento. Al conseguir puntos de rendimiento, obtiene un escudo que se puede acumular. El escudo desaparecerá cuando no tenga puntos de rendimiento. Cuando el escudo se rompe o el personaje es derrotado, pierde los puntos de rendimiento.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002130": {
+		"Id": "7002130",
+		"Name": "Personal subalterno: Vigilante de seguridad",
+		"Introduction": "Empleado subalterno de la Corporación para la Paz Interastral. Se encarga principalmente de mantener el orden en los dominios de la corporación. Su salario es una miseria, y el único alojamiento que puede permitirse es una habitación compartida a bordo de una de las naves de la Corporación.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700213001,
+				"Name": "Apelación",
+				"SkillDesc": "Inflige daño a un aliado y a los aliados adyacentes. Obtiene un punto de rendimiento.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700213002,
+				"Name": "Evaluación de rendimiento",
+				"SkillDesc": "Consume todas las cargas. Inflige daño a un aliado y a los aliados adyacentes. Si tiene puntos de rendimiento, su acción se adelanta en cierta proporción. Se consumen todos los puntos de rendimiento.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700213003,
+				"Name": "Empleado de la Corporación",
+				"SkillDesc": "Aumenta el daño en gran medida según la cantidad de puntos de rendimiento. Al conseguir puntos de rendimiento, obtiene un escudo que se puede acumular. El escudo desaparecerá cuando no tenga puntos de rendimiento. Cuando el escudo se rompe o el personaje es derrotado, pierde los puntos de rendimiento.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7002140": {
+		"Id": "7002140",
+		"Name": "Sombra del Siempreinvierno",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de hielo sin rostro.\nLas Sombras del Siempreinvierno blanden su hacha gélida y ralentizan a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700214001,
+				"Name": "Impacto helado",
+				"SkillDesc": "Inflige daño a un aliado y retrasa la acción de ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700214002,
+				"Name": "Superimpacto helado",
+				"SkillDesc": "Consume todas las cargas. Inflige daño a un aliado y tiene una gran probabilidad de congelarlo.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003010": {
+		"Id": "7003010",
+		"Name": "Fuego del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. El Fuego del Espacio Exterior del núcleo de una estrella incendia su armadura.\nDurante el combate, el fuego del espacio exterior incinera todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700301002,
+				"Name": "Llamas rugientes",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado y tiene una gran probabilidad de causarle Incendio.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700301003,
+				"Name": "Lluvia de fuego purificador",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado al azar varias veces seguidas y tiene una gran probabilidad de causar Incendio a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700301004,
+				"Name": "Fusión líquida",
+				"SkillDesc": "Aumenta su ATQ.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700301005,
+				"Name": "Aviso de bomba",
+				"SkillDesc": "Recarga su fuerza y lanza Bomba incendiaria en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700301006,
+				"Name": "Bomba incendiaria",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a todos los aliados.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003020": {
+		"Id": "7003020",
+		"Name": "Guarda Aurúmata",
+		"Introduction": "Aurúmata guardián creado con una antigua tecnología.\nHace muchos años, los aurúmatas partieron con Xianzhou para buscar la receta divina de la inmortalidad. Durante el viaje, supervisaron y ayudaron a las personas en muchas guerras, pero terminaron rebelándose contra Xianzhou y perdieron.\nAhora todos los aurúmatas se controlan con talismanes y se usan para proteger lugares importantes.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700302001,
+				"Name": "Protocolo de despedida",
+				"SkillDesc": "Cuando los aliados usan la habilidad básica o la habilidad definitiva para atacar, se obtiene Sanción. Cuando Sanción llega al máximo, se libera el modo de castigo.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 700302002,
+				"Name": "Miedo",
+				"SkillDesc": "Aumenta la cantidad de Sanción e inflige a todos los aliados una pequeña cantidad de daño. Gran probabilidad de afectarlos con Debilitación.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700302003,
+				"Name": "Limitación",
+				"SkillDesc": "Inflige daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700302004,
+				"Name": "Encadenamiento",
+				"SkillDesc": "Inflige una gran cantidad de daño a un aliado y tiene una gran probabilidad de aprisionarlo.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700302005,
+				"Name": "Modo de castigo",
+				"SkillDesc": "Consume todas las cargas. Aumenta la VEL y, al actuar, puede usar durante 2 turnos un poderoso ataque. Además, se invoca a Ingenio Encantado: Pezdragón Iluminador.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003030": {
+		"Id": "7003030",
+		"Name": "Teniente Crinargenta",
+		"Introduction": "Líder de un escuadrón de la Guardia Crinargenta de Belobog.\nEl Teniente Crinargenta proporciona escudos a sus liados y lanza contraataques a los enemigos que atacan a sus aliados protegidos por escudos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700303001,
+				"Name": "Asalto",
+				"SkillDesc": "Inflige daño a un objetivo.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700303002,
+				"Name": "Línea de defensa",
+				"SkillDesc": "Otorga escudos a todos los enemigos.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700303003,
+				"Name": "Preparación total",
+				"SkillDesc": "Consume todas las cargas. Tiene una gran probabilidad de afectar con Provocación a todos los aliados y se otorga a sí mismo un poderoso escudo.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700303004,
+				"Name": "Orden Crinargenta",
+				"SkillDesc": "Realiza un contraataque automático cuando un objetivo enemigo con escudo es atacado.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003040": {
+		"Id": "7003040",
+		"Name": "Aplastador del Vacío",
+		"Introduction": "La Legión Antimateria aprovechó la Fragua Bélica para fusionar los restos de guerreros con los del Leviatán.\nNo son muy numerosos, pero combinan la inteligencia de los guerreros con la fuerza y la agilidad de las bestias. En combate, pueden actuar de inmediato tras destruir a un enemigo.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700304001,
+				"Name": "Proyección irreal",
+				"SkillDesc": "Inflige daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304002,
+				"Name": "El dominio de la fuerza",
+				"SkillDesc": "Inflige daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304003,
+				"Name": "Destrucción bélica",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304004,
+				"Name": "Flecha en espiral",
+				"SkillDesc": "Fija como objetivo a un aliado y utiliza Fin del arco contra ese objetivo en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304005,
+				"Name": "Fin del arco",
+				"SkillDesc": "Inflige una gran cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 700304006,
+				"Name": "Opresión antimateria",
+				"SkillDesc": "Actúa de inmediato cuando un enemigo o un aliado es eliminado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003060": {
+		"Id": "7003060",
+		"Name": "Merodeador Glacial",
+		"Introduction": "Máquina que merodea por el Fragmentum. No cabe duda de que es un monstruo creado por los poderes retorcidos del Fragmentum, y no por tecnología humana.\nLos Merodeadores Glaciales absorben PV de los aliados para potenciarse a sí mismos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700306001,
+				"Name": "Aplastamiento de la rueda helada",
+				"SkillDesc": "Inflige daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700306002,
+				"Name": "Crioextracción",
+				"SkillDesc": "Si hay otros enemigos, consume los PV de los enemigos adyacentes para aumentar su ATQ y realizar una acción adicional de inmediato.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 700306003,
+				"Name": "Tormenta congelante",
+				"SkillDesc": "Consume todas las cargas. Inflige daño a todos los aliados y tiene una gran probabilidad de causar Entumecimiento.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003070": {
+		"Id": "7003070",
+		"Name": "Huargo Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Este autómata humanoide no es muy común y tiene una sierra mecánica en el brazo derecho. Probablemente se utilizaba en operaciones de minería o construcción.\nEn el combate, el Huargo Autómata acumula continuamente bonificaciones de VEL y daño.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700307001,
+				"Name": "Orden de talado",
+				"SkillDesc": "Inflige daño. Cada golpe tiene una probabilidad baja de causar Sangrado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700307002,
+				"Name": "Aceleración del combate",
+				"SkillDesc": "Consume todas las cargas. Obtiene 3 acumulaciones de Presión y cada acumulación aumenta el ATQ y la VEL.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700307003,
+				"Name": "Fijación de blanco",
+				"SkillDesc": "Al comenzar el combate o al derrotar al objetivo fijado, fija como objetivo a un nuevo aliado y obtiene 3 acumulaciones de Presión.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 700307004,
+				"Name": "Desmontaje y demolición",
+				"SkillDesc": "Tras usar Orden de talado, tiene una probabilidad de lanzar un ataque adicional y obtener 1 acumulación de Presión. Cuantos más PV haya perdido el objetivo, mayor será la probabilidad de lanzar un ataque adicional.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003080": {
+		"Id": "7003080",
+		"Name": "Merodeador Ardiente",
+		"Introduction": "Máquina que merodea por el Fragmentum. No cabe duda de que es un monstruo creado por los poderes retorcidos del Fragmentum, y no por tecnología humana.\nLos ataques de los Merodeadores Ardientes infligen daño extra a los enemigos afectados por Quemadura.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700308001,
+				"Name": "Filo escarlata",
+				"SkillDesc": "Inflige daño a un aliado y tiene una gran probabilidad de causarle Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308002,
+				"Name": "Tajo calcinante",
+				"SkillDesc": "Inflige daño a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308003,
+				"Name": "Fusión",
+				"SkillDesc": "El daño que inflige aumenta después de atacar a un aliado afectado por Quemadura.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 700308004,
+				"Name": "Operación a alta temperatura",
+				"SkillDesc": "El ATQ aumenta ligeramente y la VEL aumenta en gran medida.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700308005,
+				"Name": "Cenizas danzantes",
+				"SkillDesc": "Inflige daño a todos los aliados. Los aliados afectados por Quemadura reciben daño adicional y se disipa su estado de Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308006,
+				"Name": "Estallido ardiente",
+				"SkillDesc": "Consume todas las cargas. Inflige daño a todos los aliados. Los aliados afectados por Quemadura sufren una explosión e infligen daño a sí mismos y a los aliados adyacentes. Además, se disipa su estado de Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700308007,
+				"Name": "Augurio de la explosión",
+				"SkillDesc": "Lanza Estallido ardiente en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003090": {
+		"Id": "7003090",
+		"Name": "Oso Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Está reforzado con una armadura resistente para poder cargar hacia delante y proteger a los Guardias Crinargenta.\nEn el combate, el Oso Autómata puede invocar a la Araña Autómata para lanzar un poderoso ataque cargado.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700309001,
+				"Name": "Orden de detonación",
+				"SkillDesc": "Invoca a la Araña Autómata.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700309002,
+				"Name": "Orden de enfurecimiento",
+				"SkillDesc": "Probabilidad de que todos los aliados se vean afectados por Provocación.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700309003,
+				"Name": "Orden de sobrecarga",
+				"SkillDesc": "Entra en el estado de Recarga. En su siguiente acción, utiliza Orden de exterminación contra todos los aliados.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700309004,
+				"Name": "Orden de exterminación",
+				"SkillDesc": "Inflige una gran cantidad de daño a todos los aliados.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700309005,
+				"Name": "Orden de destrucción",
+				"SkillDesc": "Inflige daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"7003100": {
+		"Id": "7003100",
+		"Name": "Personal veterano: Jefe de equipo",
+		"Introduction": "Un empleado veterano de la Corporación para la Paz Interastral, cuyo rango mínimo es el de jefe de equipo. El mecha que conduce pertenece a la Corporación, y debe pagar cualquier daño que sufra de su propio bolsillo. Tiene un salario más o menos decente, y puede permitirse alquilar un apartamento de una habitación en una de las naves de la Corporación.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700310001,
+				"Name": "Disciplina",
+				"SkillDesc": "Inflige daño a un aliado y, si no posee puntos de rendimiento, obtiene 1 punto de rendimiento. Si no, consume todos los puntos de rendimiento.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700310002,
+				"Name": "Reducción de costes",
+				"SkillDesc": "Inflige una gran cantidad de daño a un aliado y obtiene 1 punto de rendimiento.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700310003,
+				"Name": "En formación...",
+				"SkillDesc": "Entra en estado de recarga. Lanza Choque cultural empresarial en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700310004,
+				"Name": "Choque cultural empresarial",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a todos los aliados. Se consumen todos los puntos de rendimiento.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700310005,
+				"Name": "Evaluación de <unbreak>720</unbreak>°",
+				"SkillDesc": "Roba 1 punto de rendimiento de los demás enemigos.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700310006,
+				"Name": "Fomento del trabajo en equipo",
+				"SkillDesc": "Invoca a un Empleado de la Corporación para la Paz Interastral y obtiene 1 punto de rendimiento.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700310007,
+				"Name": "Empleado de la Corporación",
+				"SkillDesc": "Aumenta el daño en gran medida según la cantidad de puntos de rendimiento. Al conseguir puntos de rendimiento, obtiene un escudo que se puede acumular. El escudo desaparecerá cuando no tenga puntos de rendimiento. Cuando el escudo se rompe o el personaje es derrotado, pierde los puntos de rendimiento.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"8001010": {
 		"Id": "8001010",
@@ -4861,34 +6274,34 @@
 		"Name": "Chanchito Secuencial",
 		"Introduction": "Criatura interdimensional perdida entre las estrellas. Tiene buen carácter y un sabor dulce, pero no se puede comer. Pasa la mayor parte de su vida alimentándose y huyendo. Los viajeros que se lo encuentran lo consideran un presagio de buena suerte.",
 		"ElementalWeaknesses": [
-			"Thunder",
-			"Wind",
-			"Quantum"
+			"Physical",
+			"Quantum",
+			"Imaginary"
 		],
 		"ElementalResistance": {
-			"Physical": 0.2,
+			"Physical": 0,
 			"Fire": 0.2,
 			"Ice": 0.2,
-			"Wind": 0,
-			"Thunder": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
 			"Quantum": 0,
-			"Imaginary": 0.2
+			"Imaginary": 0
 		},
 		"SkillList": [
 			{
-				"Id": 800205601,
+				"Id": 800205801,
 				"Name": "Qué... ¡qué miedo!",
 				"SkillDesc": "El Chanchito se asustó y huirá dentro de 2 turnos.",
 				"SkillTypeDesc": "Habilidad"
 			},
 			{
-				"Id": 800205602,
+				"Id": 800205802,
 				"Name": "¡Corre, Chanchito, corre!",
 				"SkillDesc": "El Chanchito está aterrorizado y huirá dentro de 1 turno.",
 				"SkillTypeDesc": "Habilidad"
 			},
 			{
-				"Id": 800205603,
+				"Id": 800205803,
 				"Name": "¡Uf, salvado!",
 				"SkillDesc": "El Chanchito huyó y desapareció sin dejar rastro.",
 				"SkillTypeDesc": "Habilidad"
@@ -4902,33 +6315,33 @@
 		"Introduction": "Criatura interdimensional perdida entre las estrellas. Tiene buen carácter y un sabor dulce, pero no se puede comer. Pasa la mayor parte de su vida alimentándose y huyendo. Los viajeros que se lo encuentran lo consideran un presagio de buena suerte.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Fire",
-			"Ice"
+			"Quantum",
+			"Imaginary"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0.2,
-			"Quantum": 0.2,
-			"Imaginary": 0.2
+			"Quantum": 0,
+			"Imaginary": 0
 		},
 		"SkillList": [
 			{
-				"Id": 800205701,
+				"Id": 800205901,
 				"Name": "Qué... ¡qué miedo!",
 				"SkillDesc": "El Chanchito se asustó y huirá dentro de 2 turnos.",
 				"SkillTypeDesc": "Habilidad"
 			},
 			{
-				"Id": 800205702,
+				"Id": 800205902,
 				"Name": "¡Corre, Chanchito, corre!",
 				"SkillDesc": "El Chanchito está aterrorizado y huirá dentro de 1 turno.",
 				"SkillTypeDesc": "Habilidad"
 			},
 			{
-				"Id": 800205703,
+				"Id": 800205903,
 				"Name": "¡Uf, salvado!",
 				"SkillDesc": "El Chanchito huyó y desapareció sin dejar rastro.",
 				"SkillTypeDesc": "Habilidad"
@@ -5929,6 +7342,61 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"8003042": {
+		"Id": "8003042",
+		"Name": "Sombra de la Podredumbre",
+		"Introduction": "Sombra creada por el poder del Estelaron y que ejecuta la voluntad de expansión incesante del Fragmentum.\nLa materialización física de los deseos de la vida inteligente del Fragmentum, como una perla creada a partir de un único grano de arena. Pero su propósito se retorció y distorsionó hace mucho tiempo...",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800304202,
+				"Name": "Espinas doradas huidizas",
+				"SkillDesc": "Inflige Daño Imaginario a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304203,
+				"Name": "Castigo huidizo",
+				"SkillDesc": "Inflige una gran cantidad de Daño Imaginario a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304204,
+				"Name": "Afecto de la edad dorada",
+				"SkillDesc": "Entra en el estado de Recarga y obtiene 9 acumulaciones de Recuerdo de escala. En la siguiente acción, lanza Liberación de la edad dorada. Cada vez que recibe un ataque, pierde 1 acumulación de Recuerdo de escala.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 800304205,
+				"Name": "Liberación de la edad dorada",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado al azar varias veces seguidas (el mismo número de veces que acumulaciones de Recuerdo de escala tenga). Si no tiene Recuerdo de escala, la habilidad fracasa.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304206,
+				"Name": "Velo huidizo",
+				"SkillDesc": "Se reduce ligeramente el daño que recibe de ATQ básicos, habilidades básicas, habilidades definitivas y ataques adicionales. Tiene una pequeña probabilidad de afectar con Prisión al aliado que reciba el golpe de Sombra de la Podredumbre.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"8003050": {
 		"Id": "8003050",
 		"Name": "Creavendavales",
@@ -6065,8 +7533,7 @@
 		"ElementalWeaknesses": [
 			"Physical",
 			"Fire",
-			"Ice",
-			"Imaginary"
+			"Ice"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
@@ -6075,7 +7542,7 @@
 			"Wind": 0.4,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
-			"Imaginary": 0
+			"Imaginary": 0.2
 		},
 		"SkillList": [
 			{
@@ -7005,7 +8472,6 @@
 		"Introduction": "La Legión Antimateria aprovechó la Fragua Bélica para fusionar los restos de guerreros con los del Leviatán.\nNo son muy numerosos, pero combinan la inteligencia de los guerreros con la fuerza y la agilidad de las bestias. Su siseo es capaz de invocar a un gran número de Exploradores del Vacío.",
 		"ElementalWeaknesses": [
 			"Physical",
-			"Fire",
 			"Wind",
 			"Imaginary"
 		],
@@ -7314,7 +8780,7 @@
 			{
 				"Id": 801502007,
 				"Name": "Descenso del kalpa",
-				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
+				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra Debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
 				"SkillTypeDesc": "Habilidad"
 			},
 			{
@@ -7347,7 +8813,7 @@
 			{
 				"Id": 801502013,
 				"Name": "Descenso del kalpa",
-				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
+				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra Debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
 				"SkillTypeDesc": "Habilidad"
 			}
 		],
@@ -7416,7 +8882,7 @@
 			{
 				"Id": 801502107,
 				"Name": "Descenso del kalpa",
-				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
+				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra Debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
 				"SkillTypeDesc": "Habilidad"
 			},
 			{
@@ -7449,7 +8915,7 @@
 			{
 				"Id": 801502113,
 				"Name": "Descenso del kalpa",
-				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
+				"SkillDesc": "Fija como objetivo a uno de los aliados y hace que Loto de la Destrucción florezca. Además, elimina el efecto de Protección contra Debilidad de Loto de la Destrucción. Loto de la Destrucción usa Hecatombe en la siguiente acción.",
 				"SkillTypeDesc": "Habilidad"
 			}
 		],
@@ -7541,7 +9007,7 @@
 	"8024010": {
 		"Id": "8024010",
 		"Name": "Gran Insecto Aguijoneador del Enjambre (intacto)",
-		"Introduction": "Sir Duroy, miembro de la Sociedad del Conocimiento, ha atravesado el mar de estrellas y ha escrito los treinta volúmenes de «Crónicas de los insectos interdimensionales». Este libro contiene registros detallados de más de una docena de especies de polillas identificadas hasta la fecha, e innumerables subespecies que se encuentran a través del espacio.",
+		"Introduction": "Una proyección falsa creada por un código alterado. La referencia original es un Gran Insecto Aguijoneador maduro. Sir Duroy, miembro de la Sociedad del Conocimiento, ha atravesado el mar de estrellas y ha escrito los treinta volúmenes de «Crónicas de los insectos interdimensionales». Este libro contiene registros detallados de más de una docena de especies de polillas identificadas hasta la fecha, e innumerables subespecies que se encuentran a través del espacio.",
 		"ElementalWeaknesses": [
 			"Quantum",
 			"Imaginary"
@@ -7624,6 +9090,230 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"8024011": {
+		"Id": "8024011",
+		"Name": "Gran Insecto Aguijoneador del Enjambre",
+		"Introduction": "Gran Insecto Aguijoneador maduro. Sir Duroy, miembro de la Sociedad del Conocimiento, ha atravesado el mar de estrellas y ha escrito los treinta volúmenes de «Crónicas de los insectos interdimensionales». Este libro contiene registros detallados de más de una docena de especies de polillas identificadas hasta la fecha, e innumerables subespecies que se encuentran a través del espacio.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802401101,
+				"Name": "Hora de luchar",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado y tiene una gran probabilidad de aplicarle 2 acumulaciones de Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401102,
+				"Name": "Arma de guerra",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado. Si el objetivo está bajo el efecto de Intemperie, Intemperie inflige daño de 1 vez inmediatamente.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401103,
+				"Name": "Huracán",
+				"SkillDesc": "Inflige Daño de Viento a todos los aliados y tiene una gran probabilidad de causar Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401104,
+				"Name": "Propagación",
+				"SkillDesc": "Propaga Insectos Aguijoneadores.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 802401105,
+				"Name": "Orden de preparativos",
+				"SkillDesc": "Entra en estado de recarga. Lanza Ataque de enjambre en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 802401106,
+				"Name": "Ataque de enjambre",
+				"SkillDesc": "Disipa todos los estados negativos de Control y la Ruptura de Debilidad de los Insectos Aguijoneadores. Inflige Daño de Viento a un aliado y hace que tenga una gran probabilidad de obtener 1 acumulación de Intemperie cada vez que recibe daño.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401107,
+				"Name": "Ataque de enjambre",
+				"SkillDesc": "Disipa todos los estados negativos de Control y la Ruptura de Debilidad de los Insectos Aguijoneadores. Inflige Daño de Viento a un aliado y hace que tenga una gran probabilidad de obtener 1 acumulación de Intemperie cada vez que recibe daño.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401108,
+				"Name": "Feromona de transmisión",
+				"SkillDesc": "Cada vez que aparece 1 Insecto Aguijoneador, todos los Insectos Aguijoneadores obtienen 1 acumulación de aumento de daño. Solo puede haber 1 efecto de Feromona de transmisión activo durante el combate.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 802401109,
+				"Name": "Elegía entomológica",
+				"SkillDesc": "Tras recibir un golpe letal, inflige Daño de Viento a todos los enemigos y tiene una gran probabilidad de aumentar ligeramente el daño que reciben.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401111,
+				"Name": "Propagación",
+				"SkillDesc": "Propaga Insectos Aguijoneadores.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"8032010": {
+		"Id": "8032010",
+		"Name": "Personal subalterno: Trabajador",
+		"Introduction": "Empleado subalterno de la Corporación para la Paz Interastral. Se encarga de solucionar las \"chapuzas empresariales\" y evitar que asciendan a niveles superiores. Su salario es una miseria, y el único alojamiento que puede permitirse es una habitación compartida a bordo de una de las naves de la Corporación.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803201001,
+				"Name": "Hora de fichar",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803201002,
+				"Name": "Resultados mejorados",
+				"SkillDesc": "Después de lanzar un ataque, obtiene 1 punto de rendimiento. El atacante puede robar los puntos de rendimiento cuando rompe la Debilidad o derrota a esta unidad.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"8032020": {
+		"Id": "8032020",
+		"Name": "Personal subalterno: Vigilante de seguridad",
+		"Introduction": "Empleado subalterno de la Corporación para la Paz Interastral. Se encarga principalmente de mantener el orden en los dominios de la corporación. Su salario es una miseria, y el único alojamiento que puede permitirse es una habitación compartida a bordo de una de las naves de la Corporación.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803202001,
+				"Name": "Demanda judicial",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803202002,
+				"Name": "Resultados mejorados",
+				"SkillDesc": "Después de lanzar un ataque, obtiene 1 punto de rendimiento. El atacante puede robar los puntos de rendimiento cuando rompe la Debilidad o derrota a esta unidad.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"8033010": {
+		"Id": "8033010",
+		"Name": "Personal veterano: Jefe de equipo",
+		"Introduction": "Un empleado veterano de la Corporación para la Paz Interastral, cuyo rango mínimo es el de jefe de equipo. El mecha que conduce pertenece a la Corporación, y debe pagar cualquier daño que sufra de su propio bolsillo. Tiene un salario más o menos decente, y puede permitirse alquilar un apartamento de una habitación en una de las naves de la Corporación.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 803301001,
+				"Name": "Penalización",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301002,
+				"Name": "Reducción de costes",
+				"SkillDesc": "Inflige Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301003,
+				"Name": "En formación...",
+				"SkillDesc": "Entra en estado de recarga. Lanza Choque cultural empresarial en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 803301004,
+				"Name": "Choque cultural empresarial",
+				"SkillDesc": "Inflige Daño Físico a todos los aliados.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301005,
+				"Name": "Evaluación de <unbreak>720</unbreak>°",
+				"SkillDesc": "Roba los puntos de rendimiento de Personal subalterno: Trabajador y Personal subalterno: Vigilante de seguridad.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 803301006,
+				"Name": "Fomento del trabajo en equipo",
+				"SkillDesc": "Invoca a Personal subalterno: Trabajador o Personal subalterno: Vigilante de seguridad y otorga 1 punto de rendimiento a Personal subalterno: Trabajador y Personal subalterno: Vigilante de seguridad.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 803301007,
+				"Name": "Resultados mejorados",
+				"SkillDesc": "Después de lanzar un ataque, obtiene 1 punto de rendimiento. El atacante puede robar los puntos de rendimiento cuando rompe la Debilidad o derrota a esta unidad.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"100202001": {
 		"Id": "100202001",
@@ -8152,6 +9842,75 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"100202016": {
+		"Id": "100202016",
+		"Name": "Vagabundo",
+		"Introduction": "Algunos habitantes del Bajomundo desesperados por sobrevivir se adentran en el Fragmentum para buscar cualquier cosa de utilidad. Las antiguas máquinas que desentierran se han convertido en sus mejores aliadas.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "Palazo",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "Motivación",
+				"SkillDesc": "Aumenta el ATQ de un enemigo determinado, que también realiza una acción inmediatamente.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100202101": {
+		"Id": "100202101",
+		"Name": "Vagabundo",
+		"Introduction": "Algunos habitantes del Bajomundo desesperados por sobrevivir se adentran en el Fragmentum para buscar cualquier cosa de utilidad. Las antiguas máquinas que desentierran se han convertido en sus mejores aliadas.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202101,
+				"Name": "Palazo",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202102,
+				"Name": "Motivación",
+				"SkillDesc": "Aumenta el ATQ de un enemigo determinado, que también realiza una acción inmediatamente.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"100203001": {
 		"Id": "100203001",
 		"Name": "Artillero Crinargenta",
@@ -8520,6 +10279,88 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"100203010": {
+		"Id": "100203010",
+		"Name": "Artillero Crinargenta",
+		"Introduction": "Artillero de la Guardia Crinargenta que lleva un cañón portátil a la batalla.\nDurante el combate, el Artillero Crinargenta lanza un feroz ataque en cadena a varios objetivos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Cortina de fuego",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Yo te cubro",
+				"SkillDesc": "Proporciona refuerzos a un enemigo determinado y lanza un ataque adicional cuando ese enemigo ataca a los aliados. Inflige una pequeña cantidad de Daño Físico a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Yo te cubro",
+				"SkillDesc": "Proporciona refuerzos a un enemigo determinado y lanza un ataque adicional cuando ese enemigo ataca a los aliados. Inflige una pequeña cantidad de Daño Físico a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100203011": {
+		"Id": "100203011",
+		"Name": "Artillero Crinargenta",
+		"Introduction": "Artillero de la Guardia Crinargenta que lleva un cañón portátil a la batalla.\nDurante el combate, el Artillero Crinargenta lanza un feroz ataque en cadena a varios objetivos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "Cortina de fuego",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "Yo te cubro",
+				"SkillDesc": "Proporciona refuerzos a un enemigo determinado y lanza un ataque adicional cuando ese enemigo ataca a los aliados. Inflige una pequeña cantidad de Daño Físico a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 100203003,
+				"Name": "Yo te cubro",
+				"SkillDesc": "Proporciona refuerzos a un enemigo determinado y lanza un ataque adicional cuando ese enemigo ataca a los aliados. Inflige una pequeña cantidad de Daño Físico a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"100204001": {
 		"Id": "100204001",
@@ -9032,6 +10873,90 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"100204021": {
+		"Id": "100204021",
+		"Name": "Soldado Crinargenta",
+		"Introduction": "Soldado de la Guardia Crinargenta de Belobog. Su misión es estar en la primera línea cuando se carga contra el enemigo.\nDurante la batalla, los ataques de los Soldados Crinargenta reducen la DEF de tu equipo.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Carga infatigable",
+				"SkillDesc": "Inflige Daño Físico a un aliado y tiene una gran probabilidad de reducir la DEF de ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100204022": {
+		"Id": "100204022",
+		"Name": "Soldado Crinargenta",
+		"Introduction": "Soldado de la Guardia Crinargenta de Belobog. Su misión es estar en la primera línea cuando se carga contra el enemigo.\nDurante la batalla, los ataques de los Soldados Crinargenta reducen la DEF de tu equipo.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Carga infatigable",
+				"SkillDesc": "Inflige Daño Físico a un aliado y tiene una gran probabilidad de reducir la DEF de ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100204023": {
+		"Id": "100204023",
+		"Name": "Soldado Crinargenta",
+		"Introduction": "Soldado de la Guardia Crinargenta de Belobog. Su misión es estar en la primera línea cuando se carga contra el enemigo.\nDurante la batalla, los ataques de los Soldados Crinargenta reducen la DEF de tu equipo.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "Carga infatigable",
+				"SkillDesc": "Inflige Daño Físico a un aliado y tiene una gran probabilidad de reducir la DEF de ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"100204101": {
 		"Id": "100204101",
@@ -10021,6 +11946,102 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"100301012": {
+		"Id": "100301012",
+		"Name": "Teniente Crinargenta",
+		"Introduction": "Líder de un escuadrón de la Guardia Crinargenta de Belobog.\nEl Teniente Crinargenta levanta un escudo enorme durante el combate y se refuerza. Atacar a un Teniente Crinargenta que tenga su escudo elevado provocará un contraataque agresivo.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Asalto",
+				"SkillDesc": "Inflige Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Perforación",
+				"SkillDesc": "Inflige una gran cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Reflejo de escudo",
+				"SkillDesc": "Entra en modo contraataque. Tras recibir un ataque de un aliado, su acción se adelanta y usa la habilidad Perforación contra ese objetivo.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Refuerzos",
+				"SkillDesc": "Invoca al Soldado Crinargenta o al Tirador Crinargenta.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"100301013": {
+		"Id": "100301013",
+		"Name": "Teniente Crinargenta",
+		"Introduction": "Líder de un escuadrón de la Guardia Crinargenta de Belobog.\nEl Teniente Crinargenta levanta un escudo enorme durante el combate y se refuerza. Atacar a un Teniente Crinargenta que tenga su escudo elevado provocará un contraataque agresivo.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "Asalto",
+				"SkillDesc": "Inflige Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "Perforación",
+				"SkillDesc": "Inflige una gran cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "Reflejo de escudo",
+				"SkillDesc": "Entra en modo contraataque. Tras recibir un ataque de un aliado, su acción se adelanta y usa la habilidad Perforación contra ese objetivo.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 100301004,
+				"Name": "Refuerzos",
+				"SkillDesc": "Invoca al Soldado Crinargenta o al Tirador Crinargenta.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"100401001": {
 		"Id": "100401001",
 		"Name": "Cocolia",
@@ -10725,6 +12746,144 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"101201012": {
+		"Id": "101201012",
+		"Name": "Sabueso Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Parece un vehículo de transporte cuyo propósito ya nadie recuerda.\nDurante el combate, el Sabueso Autómata proporciona apoyo y regenera PV a los aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Golpe vertical",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Módulo de autocuración",
+				"SkillDesc": "Regenera inmediatamente los PV de todos los enemigos.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"101201013": {
+		"Id": "101201013",
+		"Name": "Sabueso Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Parece un vehículo de transporte cuyo propósito ya nadie recuerda.\nDurante el combate, el Sabueso Autómata proporciona apoyo y regenera PV a los aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Golpe vertical",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Módulo de autocuración",
+				"SkillDesc": "Regenera inmediatamente los PV de todos los enemigos.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"101201014": {
+		"Id": "101201014",
+		"Name": "Sabueso Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Parece un vehículo de transporte cuyo propósito ya nadie recuerda.\nDurante el combate, el Sabueso Autómata proporciona apoyo y regenera PV a los aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Golpe vertical",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Módulo de autocuración",
+				"SkillDesc": "Regenera inmediatamente los PV de todos los enemigos.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"101201015": {
+		"Id": "101201015",
+		"Name": "Sabueso Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Parece un vehículo de transporte cuyo propósito ya nadie recuerda.\nDurante el combate, el Sabueso Autómata proporciona apoyo y regenera PV a los aliados.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "Golpe vertical",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "Módulo de autocuración",
+				"SkillDesc": "Regenera inmediatamente los PV de todos los enemigos.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -12582,6 +14741,60 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"101301016": {
+		"Id": "101301016",
+		"Name": "Oso Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Está reforzado con una armadura resistente para poder cargar hacia delante y proteger a los Guardias Crinargenta.\nEn el combate, el Oso Autómata puede invocar a la Araña Autómata para lanzar un poderoso ataque cargado.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "Orden de detonación",
+				"SkillDesc": "Invoca a la Araña Autómata.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 101301002,
+				"Name": "Orden de enfurecimiento",
+				"SkillDesc": "Probabilidad de que todos los aliados se vean afectados por Provocación.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 101301003,
+				"Name": "Orden de sobrecarga",
+				"SkillDesc": "Entra en el estado de Recarga. En su siguiente acción, utiliza Orden de exterminación contra todos los aliados.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 101301004,
+				"Name": "Orden de exterminación",
+				"SkillDesc": "Inflige una gran cantidad de Daño Físico a todos los aliados.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "Orden de destrucción",
+				"SkillDesc": "Inflige Daño Físico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"101302001": {
 		"Id": "101302001",
 		"Name": "Huargo Autómata",
@@ -13321,6 +15534,55 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"101302020": {
+		"Id": "101302020",
+		"Name": "Huargo Autómata",
+		"Introduction": "Autómata formado a partir de la tecnología que se conserva del viejo mundo. Este autómata humanoide no es muy común y tiene una sierra mecánica en el brazo derecho. Probablemente se utilizaba en operaciones de minería o construcción.\nEn el combate, el Huargo Autómata usa su sierra mecánica para infligir Sangrado a sus oponentes y hacerles perder PV con el tiempo.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "Orden de talado",
+				"SkillDesc": "Inflige una gran cantidad de Daño Físico a un aliado. Cada vez que golpea a ese objetivo, hay una probabilidad de causar Sangrado. Si al usar esta habilidad el objetivo no tiene un escudo, lanza otra vez Desmontaje y demolición contra un aliado al azar.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "Fijación de blanco",
+				"SkillDesc": "Fija como objetivo a un aliado determinado y utiliza Orden de talado contra ese objetivo en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 101302003,
+				"Name": "Orden de desintegración",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado y tiene una gran probabilidad de afectarlo con 1 acumulación de Sangrado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "Desmontaje y demolición",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Físico a un aliado y tiene una gran probabilidad de afectarlo con 1 acumulación de Sangrado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"101401001": {
 		"Id": "101401001",
 		"Name": "Svarog",
@@ -14051,6 +16313,93 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"102201009": {
+		"Id": "102201009",
+		"Name": "Sombra del Siempreinvierno",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de hielo sin rostro.\nLas Sombras del Siempreinvierno blanden su hacha gélida y ralentizan a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Impacto helado",
+				"SkillDesc": "Inflige Daño de Hielo a un aliado y retrasa la acción de ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102201010": {
+		"Id": "102201010",
+		"Name": "Sombra del Siempreinvierno",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de hielo sin rostro.\nLas Sombras del Siempreinvierno blanden su hacha gélida y ralentizan a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Impacto helado",
+				"SkillDesc": "Inflige Daño de Hielo a un aliado y retrasa la acción de ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102201011": {
+		"Id": "102201011",
+		"Name": "Sombra del Siempreinvierno",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de hielo sin rostro.\nLas Sombras del Siempreinvierno blanden su hacha gélida y ralentizan a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "Impacto helado",
+				"SkillDesc": "Inflige Daño de Hielo a un aliado y retrasa la acción de ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"102202001": {
 		"Id": "102202001",
 		"Name": "Sombra de la Incineración",
@@ -14378,13 +16727,42 @@
 		"ElementalWeaknesses": [
 			"Physical",
 			"Ice",
-			"Imaginary"
+			"Wind"
 		],
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0.4,
 			"Ice": 0,
-			"Wind": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y tiene una gran probabilidad de causar Quemadura a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.3"
+	},
+	"102202013": {
+		"Id": "102202013",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
 			"Thunder": 0.2,
 			"Quantum": 0.2,
 			"Imaginary": 0
@@ -14398,7 +16776,152 @@
 				"ElementType": "Fire"
 			}
 		],
-		"VersionAdded": "1.3"
+		"VersionAdded": "1.4"
+	},
+	"102202014": {
+		"Id": "102202014",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y tiene una gran probabilidad de causar Quemadura a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202015": {
+		"Id": "102202015",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y tiene una gran probabilidad de causar Quemadura a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202016": {
+		"Id": "102202016",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y tiene una gran probabilidad de causar Quemadura a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202017": {
+		"Id": "102202017",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y tiene una gran probabilidad de causar Quemadura a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"102202018": {
+		"Id": "102202018",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y tiene una gran probabilidad de causar Quemadura a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -14950,6 +17473,61 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"102301011": {
+		"Id": "102301011",
+		"Name": "Merodeador Ardiente",
+		"Introduction": "Máquina que merodea por el Fragmentum. No cabe duda de que es un monstruo creado por los poderes retorcidos del Fragmentum, y no por tecnología humana.\nLos ataques de los Merodeadores Ardientes infligen daño extra a los enemigos afectados por Quemadura.",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "Filo escarlata",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y tiene una gran probabilidad de causar Quemadura a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "Tajo calcinante",
+				"SkillDesc": "Inflige Daño de Fuego a un aliado y a los aliados adyacentes. Esta habilidad prioriza a los aliados afectados por Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "Fusión",
+				"SkillDesc": "El daño que inflige aumenta después de atacar a un aliado afectado por Quemadura.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 102301004,
+				"Name": "Operación a alta temperatura",
+				"SkillDesc": "Aumenta su ATQ ligeramente y su VEL en gran medida. Este efecto positivo desaparece cuando se rompe su Debilidad.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 102301005,
+				"Name": "Cenizas danzantes",
+				"SkillDesc": "Inflige Daño de Fuego a todos los aliados. Los aliados afectados por Quemadura reciben Daño de Fuego adicional y se disipa su estado de Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"102302001": {
 		"Id": "102302001",
@@ -15818,6 +18396,42 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"201201006": {
+		"Id": "201201006",
+		"Name": "Ingenio Encantado: Pezdragón Iluminador",
+		"Introduction": "Un ingenioso invento de un trabajador de la Comisión de Artesanía. Originalmente, era un iluminador inanimado que se usaba para dar luz en la oscuridad, pero ahora, gracias a ciertas modificaciones, tiene una \"vida\" breve.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201201001,
+				"Name": "Luminosidad nocturna",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a todos los aliados y tiene una gran probabilidad de reducir la DEF de los objetivos atacados.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 201201002,
+				"Name": "Luz de vela",
+				"SkillDesc": "Tras recibir un golpe letal, inflige Daño de Fuego a todos los enemigos y tiene una gran probabilidad de reducir la DEF de los objetivos atacados.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"201301001": {
 		"Id": "201301001",
 		"Name": "Poeta fronterizo",
@@ -16265,6 +18879,90 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"202201008": {
+		"Id": "202201008",
+		"Name": "Soldado poseído por Mara",
+		"Introduction": "Soldado de Xianzhou que por algún motivo desconocido cayó presa de la locura. Su cuerpo sigue creciendo y mutando, pero hace tiempo que perdió la forma humana. De estas personas afectadas por la vida sin fin se dice que están poseídas por Mara.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Viento desalmado",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado y tiene una gran probabilidad de causarle Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenecimiento",
+				"SkillDesc": "Al recibir un golpe letal, regenera una cantidad de PV. Este efecto no tiene límite de tiempo, pero se puede eliminar y solo se puede activar 1 vez por batalla.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Viento desalmado",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado y tiene una gran probabilidad de causarle Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"202201009": {
+		"Id": "202201009",
+		"Name": "Soldado poseído por Mara",
+		"Introduction": "Soldado de Xianzhou que por algún motivo desconocido cayó presa de la locura. Su cuerpo sigue creciendo y mutando, pero hace tiempo que perdió la forma humana. De estas personas afectadas por la vida sin fin se dice que están poseídas por Mara.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "Viento desalmado",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado y tiene una gran probabilidad de causarle Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "Rejuvenecimiento",
+				"SkillDesc": "Al recibir un golpe letal, regenera una cantidad de PV. Este efecto no tiene límite de tiempo, pero se puede eliminar y solo se puede activar 1 vez por batalla.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 202201003,
+				"Name": "Viento desalmado",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado y tiene una gran probabilidad de causarle Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"202202001": {
 		"Id": "202202001",
@@ -17656,6 +20354,258 @@
 		],
 		"VersionAdded": "1.0"
 	},
+	"700203001": {
+		"Id": "700203001",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700203001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige daño a un aliado y tiene una gran probabilidad de causarle Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700203002,
+				"Name": "Ráfaga ardiente",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a un aliado y tiene una gran probabilidad de causarle Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700203002": {
+		"Id": "700203002",
+		"Name": "Sombra de la Incineración",
+		"Introduction": "Sombras que vagan por el Fragmentum tras la llegada del Hielo Eterno y que imitan la silueta de Guardias Crinargenta de una forma retorcida. Llevan las mismas armaduras uniformadas que los guardias de Belobog, pero su cara es una lámina de ascuas sin rostro.\nLas Sombras de la Incineración blanden su hacha ardiente y queman a sus enemigos.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700203001,
+				"Name": "Impacto ardiente",
+				"SkillDesc": "Inflige daño a un aliado y tiene una gran probabilidad de causarle Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700203002,
+				"Name": "Ráfaga ardiente",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a un aliado y tiene una gran probabilidad de causarle Quemadura.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700205001": {
+		"Id": "700205001",
+		"Name": "Ingenio Encantado: Pezdragón Iluminador",
+		"Introduction": "Un ingenioso invento de un trabajador de la Comisión de Artesanía. Originalmente, era un iluminador inanimado que se usaba para dar luz en la oscuridad, pero ahora, gracias a ciertas modificaciones, tiene una \"vida\" breve.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700205001,
+				"Name": "Luminosidad nocturna",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a todos los aliados y tiene una gran probabilidad de causarles un estado de Daño con el tiempo al azar.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205002,
+				"Name": "Fuegos artificiales",
+				"SkillDesc": "Consume todas las cargas. Lanza unos fuegos artificiales espectaculares que en realidad no hacen nada, pero son bonitos de ver.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 700205003,
+				"Name": "Luz de vela",
+				"SkillDesc": "Al ser derrotado, inflige daño a todos los enemigos y tiene una gran probabilidad de aumentar el daño que reciben.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700207001": {
+		"Id": "700207001",
+		"Name": "Tejedora Imaginaria",
+		"Introduction": "Ser extraño que no es de este mundo. Llegó hasta aquí después de atravesar el velo desde el otro lado del oscuro cielo estrellado. Su cuerpo es como una rama enfermiza que se asoma a la realidad y la transforma según su voluntad utilizando un poder imaginario.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700207001,
+				"Name": "Himno reverberante",
+				"SkillDesc": "Inflige daño a un aliado y a los aliados adyacentes. Al usarla por primera vez, la acción de este enemigo se adelanta en gran medida.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700207002,
+				"Name": "Himno explosivo",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700207002": {
+		"Id": "700207002",
+		"Name": "Tejedora Imaginaria",
+		"Introduction": "Ser extraño que no es de este mundo. Llegó hasta aquí después de atravesar el velo desde el otro lado del oscuro cielo estrellado. Su cuerpo es como una rama enfermiza que se asoma a la realidad y la transforma según su voluntad utilizando un poder imaginario.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700207001,
+				"Name": "Himno reverberante",
+				"SkillDesc": "Inflige daño a un aliado y a los aliados adyacentes. Al usarla por primera vez, la acción de este enemigo se adelanta en gran medida.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 700207002,
+				"Name": "Himno explosivo",
+				"SkillDesc": "Consume todas las cargas. Inflige una gran cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"700209001": {
+		"Id": "700209001",
+		"Name": "Soldado Crinargenta",
+		"Introduction": "Soldado de la Guardia Crinargenta de Belobog. Su misión es estar en la primera línea cuando se carga contra el enemigo.\nLos Soldados Crinargenta otorgan efectos positivos continuos a sus aliados en combate.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice",
+			"Thunder",
+			"Wind",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 700209001,
+				"Name": "Carga infatigable",
+				"SkillDesc": "Inflige una pequeña cantidad de daño a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 700209002,
+				"Name": "Aumento de moral",
+				"SkillDesc": "Consume todas las cargas. Todos los enemigos obtienen 5 acumulaciones de Moral.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 700209003,
+				"Name": "Armadura Crinargenta",
+				"SkillDesc": "Tras un ataque enemigo, todos los enemigos obtienen una acumulación de Moral. Cada acumulación de Moral aumenta el daño infligido y la VEL, y reduce el daño recibido.",
+				"SkillTypeDesc": "Talento"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"800101001": {
 		"Id": "800101001",
 		"Name": "Engendro Ígneo",
@@ -17993,6 +20943,62 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"800101013": {
+		"Id": "800101013",
+		"Name": "Engendro Ígneo",
+		"Introduction": "Elemento cristalizado con una inteligencia muy simple. Flota en el Fragmentum en forma de pájaro que emite una intensa radiación y que quema todo lo que le rodea.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Perturbación",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800101014": {
+		"Id": "800101014",
+		"Name": "Engendro Ígneo",
+		"Introduction": "Elemento cristalizado con una inteligencia muy simple. Flota en el Fragmentum en forma de pájaro que emite una intensa radiación y que quema todo lo que le rodea.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "Perturbación",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"800102001": {
 		"Id": "800102001",
@@ -18332,6 +21338,63 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"800102013": {
+		"Id": "800102013",
+		"Name": "Engendro Escarchado",
+		"Introduction": "Elemento cristalizado con una inteligencia muy simple. Flota en el Fragmentum en forma de pájaro que emite un frío intenso y que congela todo lo que le rodea.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Perturbación",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Hielo a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800102014": {
+		"Id": "800102014",
+		"Name": "Engendro Escarchado",
+		"Introduction": "Elemento cristalizado con una inteligencia muy simple. Flota en el Fragmentum en forma de pájaro que emite un frío intenso y que congela todo lo que le rodea.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800102001,
+				"Name": "Perturbación",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Hielo a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"800103001": {
 		"Id": "800103001",
 		"Name": "Máscara Impensativa",
@@ -18511,6 +21574,34 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"800105003": {
+		"Id": "800105003",
+		"Name": "Engendro Huracanado",
+		"Introduction": "Elemento cristalizado con una inteligencia muy simple. Flota en el Fragmentum en forma de pájaro envuelto por corrientes de aire que avanza como un tornado.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800105001,
+				"Name": "Colores en el viento",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado y tiene una gran probabilidad de causarle Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"800201001": {
 		"Id": "800201001",
@@ -19254,6 +22345,156 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"800301008": {
+		"Id": "800301008",
+		"Name": "Hielo del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. Su armadura refleja el cielo estrellado, profundo y sombrío a la vez.\nDurante el combate, el Hielo del Espacio Exterior congela todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Lamento glacial",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Hielo a un aliado. Si está afectado por Punto de congelación, cuando ataca a un aliado congelado le inflige Daño de Hielo adicional.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Absorción helada",
+				"SkillDesc": "Entra en el estado de Punto de congelación. Lluvia del Siempreinvierno puede usarse en ataques posteriores.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Lluvia del Siempreinvierno",
+				"SkillDesc": "Esta habilidad solo se puede usar durante el estado de Punto de congelación. Inflige una pequeña cantidad de daño de Hielo a todos los objetivos y tiene una posibilidad de congelarlos.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Lamento glacial",
+				"SkillDesc": "Inflige Daño de Hielo a un aliado. Si está afectado por Punto de congelación, tiene una probabilidad de congelar a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800301009": {
+		"Id": "800301009",
+		"Name": "Hielo del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. Su armadura refleja el cielo estrellado, profundo y sombrío a la vez.\nDurante el combate, el Hielo del Espacio Exterior congela todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Lamento glacial",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Hielo a un aliado. Si está afectado por Punto de congelación, cuando ataca a un aliado congelado le inflige Daño de Hielo adicional.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Absorción helada",
+				"SkillDesc": "Entra en el estado de Punto de congelación. Lluvia del Siempreinvierno puede usarse en ataques posteriores.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Lluvia del Siempreinvierno",
+				"SkillDesc": "Esta habilidad solo se puede usar durante el estado de Punto de congelación. Inflige una pequeña cantidad de daño de Hielo a todos los objetivos y tiene una posibilidad de congelarlos.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Lamento glacial",
+				"SkillDesc": "Inflige Daño de Hielo a un aliado. Si está afectado por Punto de congelación, tiene una probabilidad de congelar a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800301010": {
+		"Id": "800301010",
+		"Name": "Hielo del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. Su armadura refleja el cielo estrellado, profundo y sombrío a la vez.\nDurante el combate, el Hielo del Espacio Exterior congela todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "Lamento glacial",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Hielo a un aliado. Si está afectado por Punto de congelación, cuando ataca a un aliado congelado le inflige Daño de Hielo adicional.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "Absorción helada",
+				"SkillDesc": "Entra en el estado de Punto de congelación. Lluvia del Siempreinvierno puede usarse en ataques posteriores.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "Lluvia del Siempreinvierno",
+				"SkillDesc": "Esta habilidad solo se puede usar durante el estado de Punto de congelación. Inflige una pequeña cantidad de daño de Hielo a todos los objetivos y tiene una posibilidad de congelarlos.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "Lamento glacial",
+				"SkillDesc": "Inflige Daño de Hielo a un aliado. Si está afectado por Punto de congelación, tiene una probabilidad de congelar a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"800302001": {
 		"Id": "800302001",
 		"Name": "Fuego del Espacio Exterior",
@@ -19781,6 +23022,198 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"800302012": {
+		"Id": "800302012",
+		"Name": "Fuego del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. El fuego incandescente del núcleo de una estrella incendia su armadura.\nDurante el combate, el fuego del espacio exterior incinera todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Llamas rugientes",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado y tiene una gran probabilidad de causarle Incendio.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorción hirviente",
+				"SkillDesc": "Entra en el estado de Combustión espontánea. Lluvia de fuego purificador puede usarse en ataques posteriores.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Lluvia de fuego purificador",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado al azar varias veces seguidas y tiene una gran probabilidad de causar Incendio a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusión líquida",
+				"SkillDesc": "Aumenta su ATQ. Esta bonificación desaparece cuando se rompe su Debilidad.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800302013": {
+		"Id": "800302013",
+		"Name": "Fuego del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. El fuego incandescente del núcleo de una estrella incendia su armadura.\nDurante el combate, el fuego del espacio exterior incinera todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Llamas rugientes",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado y tiene una gran probabilidad de causarle Incendio.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorción hirviente",
+				"SkillDesc": "Entra en el estado de Combustión espontánea. Lluvia de fuego purificador puede usarse en ataques posteriores.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Lluvia de fuego purificador",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado al azar varias veces seguidas y tiene una gran probabilidad de causar Incendio a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusión líquida",
+				"SkillDesc": "Aumenta su ATQ. Esta bonificación desaparece cuando se rompe su Debilidad.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800302014": {
+		"Id": "800302014",
+		"Name": "Fuego del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. El fuego incandescente del núcleo de una estrella incendia su armadura.\nDurante el combate, el fuego del espacio exterior incinera todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Llamas rugientes",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado y tiene una gran probabilidad de causarle Incendio.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorción hirviente",
+				"SkillDesc": "Entra en el estado de Combustión espontánea. Lluvia de fuego purificador puede usarse en ataques posteriores.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Lluvia de fuego purificador",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado al azar varias veces seguidas y tiene una gran probabilidad de causar Incendio a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusión líquida",
+				"SkillDesc": "Aumenta su ATQ. Esta bonificación desaparece cuando se rompe su Debilidad.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"800302015": {
+		"Id": "800302015",
+		"Name": "Fuego del Espacio Exterior",
+		"Introduction": "Esta forma de vida extraterrestre que crece en el Fragmentum creado por el Estelaron se alimenta de la energía del mundo. El fuego incandescente del núcleo de una estrella incendia su armadura.\nDurante el combate, el fuego del espacio exterior incinera todo lo que toca.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "Llamas rugientes",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado y tiene una gran probabilidad de causarle Incendio.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "Absorción hirviente",
+				"SkillDesc": "Entra en el estado de Combustión espontánea. Lluvia de fuego purificador puede usarse en ataques posteriores.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 800302003,
+				"Name": "Lluvia de fuego purificador",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Fuego a un aliado al azar varias veces seguidas y tiene una gran probabilidad de causar Incendio a ese aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "Fusión líquida",
+				"SkillDesc": "Aumenta su ATQ. Esta bonificación desaparece cuando se rompe su Debilidad.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -21023,6 +24456,67 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"800305007": {
+		"Id": "800305007",
+		"Name": "Creavendavales",
+		"Introduction": "Monstruo que se encontró con la corrosión del Fragmentum en expansión y que obtuvo un estilo de lucha más flexible después de que el origen del poder sufriera una distorsión.\nEl Creavendavales aprovecha el poder del viento para luchar y disparar flechas más rápidas.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305001,
+				"Name": "Meteoro patrullero",
+				"SkillDesc": "Inflige Daño de Viento a un aliado y tiene una gran probabilidad de causarle Intemperie.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305002,
+				"Name": "Caminante del viento",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño de Viento a un aliado y a los aliados adyacentes y tiene una probabilidad de causar Intemperie a los objetivos.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305003,
+				"Name": "Arco cortaviento",
+				"SkillDesc": "Entra en el estado de Recarga y fija su objetivo en todos los aliados afectados por Intemperie. En la siguiente acción, utiliza Tormenta de viento.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 800305004,
+				"Name": "Tormenta de viento",
+				"SkillDesc": "Inflige Daño de Viento a los aliados afectados por Intemperie. Si no hay ninguno en el campo de batalla, la habilidad fracasa.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305005,
+				"Name": "Ciclón tormentoso",
+				"SkillDesc": "Su ATQ aumenta ligeramente tras atacar a los aliados afectados por Intemperie. Este efecto desaparece cuando se rompe su Debilidad.",
+				"SkillTypeDesc": "Talento"
+			},
+			{
+				"Id": 800305006,
+				"Name": "Tormenta de viento",
+				"SkillDesc": "Inflige Daño de Viento a los aliados afectados por Intemperie. Si no hay ninguno en el campo de batalla, la habilidad fracasa.",
+				"SkillTypeDesc": "Habilidad"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"801101001": {
 		"Id": "801101001",
 		"Name": "Barión",
@@ -21219,6 +24713,34 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"801101008": {
+		"Id": "801101008",
+		"Name": "Barión",
+		"Introduction": "Para evitar que las antipartículas se diseminaran y se aniquilaran, la Legión Antimateria creó dos tipos de trampas de iones en miniatura para transportarlas y las llamó bariones y antibariones.\nLos bariones poseen una inteligencia básica y los Exploradores del Vacío pueden invocarlos para que despejen su camino en el campo de batalla.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "Aniquilación",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Cuántico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"801102001": {
 		"Id": "801102001",
 		"Name": "Antibarión",
@@ -21358,6 +24880,34 @@
 			}
 		],
 		"VersionAdded": "1.2"
+	},
+	"801102007": {
+		"Id": "801102007",
+		"Name": "Antibarión",
+		"Introduction": "Para evitar que las antipartículas se diseminaran y se aniquilaran, la Legión Antimateria creó dos tipos de trampas de iones en miniatura para transportarlas y las llamó bariones y antibariones.\nLos antibariones poseen una inteligencia básica y los Exploradores del Vacío pueden invocarlos para que despejen su camino en el campo de batalla.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801102001,
+				"Name": "Aniquilación",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"801201001": {
 		"Id": "801201001",
@@ -22094,6 +25644,111 @@
 		],
 		"VersionAdded": "1.3"
 	},
+	"801201023": {
+		"Id": "801201023",
+		"Name": "Saqueador del Vacío",
+		"Introduction": "Los guerreros que aún no habían muerto fueron reforjados en la Fragua Bélica y obtuvieron el poder de la destrucción. La antimateria llenó sus cuerpos y las partículas negativas vibraron en su interior.\nUnidad básica de combate de la Legión Antimateria y la manifestación de la voluntad de destruir. Sigue sus instintos destructivos y posee un ataque muy agresivo.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Cuchillo de caza",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Salto de remolino",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"801201024": {
+		"Id": "801201024",
+		"Name": "Saqueador del Vacío",
+		"Introduction": "Los guerreros que aún no habían muerto fueron reforjados en la Fragua Bélica y obtuvieron el poder de la destrucción. La antimateria llenó sus cuerpos y las partículas negativas vibraron en su interior.\nUnidad básica de combate de la Legión Antimateria y la manifestación de la voluntad de destruir. Sigue sus instintos destructivos y posee un ataque muy agresivo.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Cuchillo de caza",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Salto de remolino",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
+	"801201025": {
+		"Id": "801201025",
+		"Name": "Saqueador del Vacío",
+		"Introduction": "Los guerreros que aún no habían muerto fueron reforjados en la Fragua Bélica y obtuvieron el poder de la destrucción. La antimateria llenó sus cuerpos y las partículas negativas vibraron en su interior.\nUnidad básica de combate de la Legión Antimateria y la manifestación de la voluntad de destruir. Sigue sus instintos destructivos y posee un ataque muy agresivo.",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "Cuchillo de caza",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "Salto de remolino",
+				"SkillDesc": "Inflige una pequeña cantidad de Daño Imaginario a un aliado y a los aliados adyacentes.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Imaginary"
+			}
+		],
+		"VersionAdded": "1.4"
+	},
 	"801202001": {
 		"Id": "801202001",
 		"Name": "Distorsionador del Vacío",
@@ -22443,6 +26098,41 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"801202011": {
+		"Id": "801202011",
+		"Name": "Distorsionador del Vacío",
+		"Introduction": "Explorador del Vacío que sobrevivió a los efectos de la aniquilación. Tiene un extraño equilibrio de partículas positivas y negativas en su cuerpo y posee un poder más especial que el del Saqueador del Vacío.\nSon las unidades básicas de la Legión Antimateria. Poseen cierta inteligencia y pueden controlar a los Saqueadores de una pequeña área adyacente.",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801202001,
+				"Name": "Orden de la Nihilidad",
+				"SkillDesc": "Fija como objetivo a un aliado para que todos los enemigos lo ataquen.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801202002,
+				"Name": "Ataque del vacío sin sombra",
+				"SkillDesc": "Inflige Daño Cuántico a un aliado.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "1.4"
 	},
 	"801202101": {
 		"Id": "801202101",
@@ -23407,5 +27097,47 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"802202002": {
+		"Id": "802202002",
+		"Name": "Insecto Aguijoneador Menor",
+		"Introduction": "Cría del Gran Insecto Aguijoneador. Las crías del Gran Insecto Aguijoneador se clasifican según su crecimiento en Insecto Aguijoneador Inmaduro e Insecto Aguijoneador Menor.",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 802202001,
+				"Name": "Preparación para el combate",
+				"SkillDesc": "Entra en estado de recarga. Lanza Detonación explosiva en la siguiente acción.",
+				"SkillTypeDesc": "Habilidad"
+			},
+			{
+				"Id": 802202002,
+				"Name": "Detonación explosiva",
+				"SkillDesc": "Explota e inflige Daño de Viento a un aliado determinado y a los aliados adyacentes y tiene una gran probabilidad de causar Cólera a los objetivos.",
+				"SkillTypeDesc": "Habilidad",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802202004,
+				"Name": "Elegía entomológica",
+				"SkillDesc": "Tras recibir un golpe letal, inflige Daño de Viento a todos los enemigos y tiene una gran probabilidad de aumentar ligeramente el daño que reciben.",
+				"SkillTypeDesc": "Talento",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "1.4"
 	}
 }

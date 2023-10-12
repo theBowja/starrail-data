@@ -3,7 +3,7 @@ exportStarRailData();
 function exportStarRailData() {
 	const { setVersion, exportCurve, exportData } = require('./global.js');
 
-	setVersion('1.3');
+	setVersion('1.4');
 
 	// exportData('characters', require('./extractfolders/extractCharacters'));
 	// exportData('characterskills', require('./extractfolders/extractCharacterSkills'));
@@ -27,7 +27,7 @@ function exportStarRailData() {
 	// exportData('messagecontacts', require('./extractfolders/extractMessageContacts'));
 	// exportData('messageconversations', require('./extractfolders/extractMessageConversations'));
 
-	// Simulated Universe
+	// // Simulated Universe
 	// exportData('sucurios', require('./extractfolders/extractSUCurios'));
 	// exportData('sublessings', require('./extractfolders/extractSUBlessings'));
 	// exportData('suabilities', require('./extractfolders/extractSUAbilities'));
