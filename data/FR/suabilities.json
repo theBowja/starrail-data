@@ -131,7 +131,7 @@
 		"Id": "7",
 		"Name": "Réanimateur",
 		"IsBigNode": true,
-		"Effect": "Ajoute un Réanimateur à la Zone de repos. Il consomme des fragments cosmiques pour ranimer les alliés à terre et restaure leur PV à hauteur de 100% de leur PV max.",
+		"Effect": "Ajoute un Réanimateur à la zone de repos. Il consomme des fragments cosmiques pour ranimer les alliés à terre et restaure leur PV à hauteur de 100% de leur PV max.",
 		"EffectTag": "Amélioration de mécanisme supplémentaire",
 		"Costs": [
 			{
@@ -666,7 +666,7 @@
 		"Id": "32",
 		"Name": "Bonus de charge",
 		"IsBigNode": true,
-		"Effect": "Fait passer l'énergie initiale de tous les personnages à 100% dans l'Univers simulé. L'énergie de tous les personnages est entièrement régénérée en entrant dans les zones élite et de boss.",
+		"Effect": "Fait passer l'énergie initiale de tous les personnages à 100% dans l'Univers simulé. L'énergie de tous les personnages est entièrement régénérée en entrant dans les Zones élite et de boss.",
 		"EffectTag": "Amélioration de capacité de combat",
 		"Costs": [
 			{
@@ -824,7 +824,9 @@
 				"Count": 2100
 			}
 		],
-		"Unlocks": [],
+		"Unlocks": [
+			"42"
+		],
 		"Images": {
 			"Icon": "SpriteOutput/Rogue/Talent/1003.png"
 		},
@@ -843,7 +845,9 @@
 				"Count": 2100
 			}
 		],
-		"Unlocks": [],
+		"Unlocks": [
+			"42"
+		],
 		"Images": {
 			"Icon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png"
 		},
@@ -862,10 +866,31 @@
 				"Count": 2100
 			}
 		],
-		"Unlocks": [],
+		"Unlocks": [
+			"42"
+		],
 		"Images": {
 			"Icon": "SpriteOutput/Rogue/Talent/1003.png"
 		},
 		"VersionAdded": "1.0"
+	},
+	"42": {
+		"Id": "42",
+		"Name": "Utiliser des consommables",
+		"IsBigNode": true,
+		"Effect": "Les consommables sont utilisables dans l'Univers simulé",
+		"EffectTag": "Mécanisme supplémentaire",
+		"Costs": [
+			{
+				"Id": 32,
+				"Name": "Point de capacité",
+				"Count": 700
+			}
+		],
+		"Unlocks": [],
+		"Images": {
+			"Icon": "SpriteOutput/Rogue/Talent/1002.png"
+		},
+		"VersionAdded": "1.5"
 	}
 }

@@ -1238,38 +1238,38 @@
 		"PathType": "Priest",
 		"PathTypeText": "丰饶",
 		"EffectName": "救治与维修",
-		"EffectTemplate": "使装备者的治疗量提高<color=#f29e38ff>#1[i]%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>#2[i]</color>点能量。",
+		"EffectTemplate": "使装备者的治疗量提高<color=#f29e38ff>#1[i]%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>#2[f1]</color>点能量。",
 		"Superimpositions": [
 			{
-				"Effect": "使装备者的治疗量提高<color=#f29e38ff>10%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>2</color>点能量。",
+				"Effect": "使装备者的治疗量提高<color=#f29e38ff>10%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>2.0</color>点能量。",
 				"Params": [
 					0.1,
 					2
 				]
 			},
 			{
-				"Effect": "使装备者的治疗量提高<color=#f29e38ff>12%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>2</color>点能量。",
+				"Effect": "使装备者的治疗量提高<color=#f29e38ff>12%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>2.5</color>点能量。",
 				"Params": [
 					0.125,
 					2.5
 				]
 			},
 			{
-				"Effect": "使装备者的治疗量提高<color=#f29e38ff>15%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>3</color>点能量。",
+				"Effect": "使装备者的治疗量提高<color=#f29e38ff>15%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>3.0</color>点能量。",
 				"Params": [
 					0.15,
 					3
 				]
 			},
 			{
-				"Effect": "使装备者的治疗量提高<color=#f29e38ff>17%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>3</color>点能量。",
+				"Effect": "使装备者的治疗量提高<color=#f29e38ff>17%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>3.5</color>点能量。",
 				"Params": [
 					0.175,
 					3.5
 				]
 			},
 			{
-				"Effect": "使装备者的治疗量提高<color=#f29e38ff>20%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>4</color>点能量。",
+				"Effect": "使装备者的治疗量提高<color=#f29e38ff>20%</color>，并在施放战技时为我方全体恢复<color=#f29e38ff>4.0</color>点能量。",
 				"Params": [
 					0.2,
 					4
@@ -2596,6 +2596,57 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"22001": {
+		"Id": "22001",
+		"Name": "嘿，我在这儿",
+		"PathType": "Priest",
+		"PathTypeText": "丰饶",
+		"EffectName": "不怕不怕啦",
+		"EffectTemplate": "使装备者的生命上限提高<color=#f29e38ff>#1[i]%</color>。当装备者施放战技时，治疗量提高<color=#f29e38ff>#2[i]%</color>，持续#3[i]回合。",
+		"Superimpositions": [
+			{
+				"Effect": "使装备者的生命上限提高<color=#f29e38ff>8%</color>。当装备者施放战技时，治疗量提高<color=#f29e38ff>16%</color>，持续2回合。",
+				"Params": [
+					0.08,
+					0.16,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的生命上限提高<color=#f29e38ff>9%</color>。当装备者施放战技时，治疗量提高<color=#f29e38ff>19%</color>，持续2回合。",
+				"Params": [
+					0.09,
+					0.19,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的生命上限提高<color=#f29e38ff>10%</color>。当装备者施放战技时，治疗量提高<color=#f29e38ff>22%</color>，持续2回合。",
+				"Params": [
+					0.1,
+					0.22,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的生命上限提高<color=#f29e38ff>11%</color>。当装备者施放战技时，治疗量提高<color=#f29e38ff>25%</color>，持续2回合。",
+				"Params": [
+					0.11,
+					0.25,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的生命上限提高<color=#f29e38ff>12%</color>。当装备者施放战技时，治疗量提高<color=#f29e38ff>28%</color>，持续2回合。",
+				"Params": [
+					0.12,
+					0.28,
+					2
+				]
+			}
+		],
+		"VersionAdded": "1.5"
+	},
 	"23000": {
 		"Id": "23000",
 		"Name": "银河铁道之夜",
@@ -3532,6 +3583,118 @@
 			}
 		],
 		"VersionAdded": "1.4"
+	},
+	"23017": {
+		"Id": "23017",
+		"Name": "惊魂夜",
+		"PathType": "Priest",
+		"PathTypeText": "丰饶",
+		"EffectName": "深度深呼吸",
+		"EffectTemplate": "使装备者的能量恢复效率提高<color=#f29e38ff>#1[i]%</color>。我方目标施放终结技时，装备者为当前生命值百分比最低的我方目标回复等同于其<color=#f29e38ff>#2[i]%</color>生命上限的生命值。当装备者为我方目标提供治疗时，使该目标的攻击力提高<color=#f29e38ff>#3[f1]%</color>，该效果最多叠加#4[i]层，持续#5[i]回合。",
+		"Superimpositions": [
+			{
+				"Effect": "使装备者的能量恢复效率提高<color=#f29e38ff>12%</color>。我方目标施放终结技时，装备者为当前生命值百分比最低的我方目标回复等同于其<color=#f29e38ff>10%</color>生命上限的生命值。当装备者为我方目标提供治疗时，使该目标的攻击力提高<color=#f29e38ff>2.4%</color>，该效果最多叠加5层，持续2回合。",
+				"Params": [
+					0.12,
+					0.1,
+					0.024,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的能量恢复效率提高<color=#f29e38ff>14%</color>。我方目标施放终结技时，装备者为当前生命值百分比最低的我方目标回复等同于其<color=#f29e38ff>11%</color>生命上限的生命值。当装备者为我方目标提供治疗时，使该目标的攻击力提高<color=#f29e38ff>2.8%</color>，该效果最多叠加5层，持续2回合。",
+				"Params": [
+					0.14,
+					0.11,
+					0.028,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的能量恢复效率提高<color=#f29e38ff>16%</color>。我方目标施放终结技时，装备者为当前生命值百分比最低的我方目标回复等同于其<color=#f29e38ff>12%</color>生命上限的生命值。当装备者为我方目标提供治疗时，使该目标的攻击力提高<color=#f29e38ff>3.2%</color>，该效果最多叠加5层，持续2回合。",
+				"Params": [
+					0.16,
+					0.12,
+					0.032,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的能量恢复效率提高<color=#f29e38ff>18%</color>。我方目标施放终结技时，装备者为当前生命值百分比最低的我方目标回复等同于其<color=#f29e38ff>13%</color>生命上限的生命值。当装备者为我方目标提供治疗时，使该目标的攻击力提高<color=#f29e38ff>3.6%</color>，该效果最多叠加5层，持续2回合。",
+				"Params": [
+					0.18,
+					0.13,
+					0.036,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "使装备者的能量恢复效率提高<color=#f29e38ff>20%</color>。我方目标施放终结技时，装备者为当前生命值百分比最低的我方目标回复等同于其<color=#f29e38ff>14%</color>生命上限的生命值。当装备者为我方目标提供治疗时，使该目标的攻击力提高<color=#f29e38ff>4.0%</color>，该效果最多叠加5层，持续2回合。",
+				"Params": [
+					0.2,
+					0.14,
+					0.04,
+					5,
+					2
+				]
+			}
+		],
+		"VersionAdded": "1.5"
+	},
+	"23018": {
+		"Id": "23018",
+		"Name": "片刻，留在眼底",
+		"PathType": "Mage",
+		"PathTypeText": "智识",
+		"EffectName": "骑士巡礼",
+		"EffectTemplate": "使装备者的暴击伤害提高<color=#f29e38ff>#1[i]%</color>。当装备者施放终结技时，根据装备者的能量上限，提高装备者终结技造成的伤害：每点能量提高<color=#f29e38ff>#2[f2]%</color>，最多计入#3[i]点。",
+		"Superimpositions": [
+			{
+				"Effect": "使装备者的暴击伤害提高<color=#f29e38ff>36%</color>。当装备者施放终结技时，根据装备者的能量上限，提高装备者终结技造成的伤害：每点能量提高<color=#f29e38ff>0.36%</color>，最多计入180点。",
+				"Params": [
+					0.36,
+					0.0036,
+					180
+				]
+			},
+			{
+				"Effect": "使装备者的暴击伤害提高<color=#f29e38ff>42%</color>。当装备者施放终结技时，根据装备者的能量上限，提高装备者终结技造成的伤害：每点能量提高<color=#f29e38ff>0.42%</color>，最多计入180点。",
+				"Params": [
+					0.42,
+					0.0042,
+					180
+				]
+			},
+			{
+				"Effect": "使装备者的暴击伤害提高<color=#f29e38ff>48%</color>。当装备者施放终结技时，根据装备者的能量上限，提高装备者终结技造成的伤害：每点能量提高<color=#f29e38ff>0.48%</color>，最多计入180点。",
+				"Params": [
+					0.48,
+					0.0048,
+					180
+				]
+			},
+			{
+				"Effect": "使装备者的暴击伤害提高<color=#f29e38ff>54%</color>。当装备者施放终结技时，根据装备者的能量上限，提高装备者终结技造成的伤害：每点能量提高<color=#f29e38ff>0.54%</color>，最多计入180点。",
+				"Params": [
+					0.54,
+					0.0054,
+					180
+				]
+			},
+			{
+				"Effect": "使装备者的暴击伤害提高<color=#f29e38ff>60%</color>。当装备者施放终结技时，根据装备者的能量上限，提高装备者终结技造成的伤害：每点能量提高<color=#f29e38ff>0.60%</color>，最多计入180点。",
+				"Params": [
+					0.6,
+					0.006,
+					180
+				]
+			}
+		],
+		"VersionAdded": "1.5"
 	},
 	"24000": {
 		"Id": "24000",

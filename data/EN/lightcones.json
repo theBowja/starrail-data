@@ -1238,38 +1238,38 @@
 		"PathType": "Priest",
 		"PathTypeText": "Abundance",
 		"EffectName": "Cure and Repair",
-		"EffectTemplate": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>#1[i]%</color>. When using Skill, regenerates <color=#f29e38ff>#2[i]</color> Energy for all allies.",
+		"EffectTemplate": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>#1[i]%</color>. When using Skill, regenerates <color=#f29e38ff>#2[f1]</color> Energy for all allies.",
 		"Superimpositions": [
 			{
-				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>10%</color>. When using Skill, regenerates <color=#f29e38ff>2</color> Energy for all allies.",
+				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>10%</color>. When using Skill, regenerates <color=#f29e38ff>2.0</color> Energy for all allies.",
 				"Params": [
 					0.1,
 					2
 				]
 			},
 			{
-				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>12%</color>. When using Skill, regenerates <color=#f29e38ff>2</color> Energy for all allies.",
+				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>12%</color>. When using Skill, regenerates <color=#f29e38ff>2.5</color> Energy for all allies.",
 				"Params": [
 					0.125,
 					2.5
 				]
 			},
 			{
-				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>15%</color>. When using Skill, regenerates <color=#f29e38ff>3</color> Energy for all allies.",
+				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>15%</color>. When using Skill, regenerates <color=#f29e38ff>3.0</color> Energy for all allies.",
 				"Params": [
 					0.15,
 					3
 				]
 			},
 			{
-				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>17%</color>. When using Skill, regenerates <color=#f29e38ff>3</color> Energy for all allies.",
+				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>17%</color>. When using Skill, regenerates <color=#f29e38ff>3.5</color> Energy for all allies.",
 				"Params": [
 					0.175,
 					3.5
 				]
 			},
 			{
-				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>20%</color>. When using Skill, regenerates <color=#f29e38ff>4</color> Energy for all allies.",
+				"Effect": "Increases the wearer's Outgoing Healing by <color=#f29e38ff>20%</color>. When using Skill, regenerates <color=#f29e38ff>4.0</color> Energy for all allies.",
 				"Params": [
 					0.2,
 					4
@@ -2596,6 +2596,57 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"22001": {
+		"Id": "22001",
+		"Name": "Hey, Over Here",
+		"PathType": "Priest",
+		"PathTypeText": "Abundance",
+		"EffectName": "I'm Not Afraid!",
+		"EffectTemplate": "Increases the wearer's Max HP by <color=#f29e38ff>#1[i]%</color>. When the wearer uses Skill, increases Outgoing Healing by <color=#f29e38ff>#2[i]%</color>, lasting for #3[i] turn(s).",
+		"Superimpositions": [
+			{
+				"Effect": "Increases the wearer's Max HP by <color=#f29e38ff>8%</color>. When the wearer uses Skill, increases Outgoing Healing by <color=#f29e38ff>16%</color>, lasting for 2 turn(s).",
+				"Params": [
+					0.08,
+					0.16,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Max HP by <color=#f29e38ff>9%</color>. When the wearer uses Skill, increases Outgoing Healing by <color=#f29e38ff>19%</color>, lasting for 2 turn(s).",
+				"Params": [
+					0.09,
+					0.19,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Max HP by <color=#f29e38ff>10%</color>. When the wearer uses Skill, increases Outgoing Healing by <color=#f29e38ff>22%</color>, lasting for 2 turn(s).",
+				"Params": [
+					0.1,
+					0.22,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Max HP by <color=#f29e38ff>11%</color>. When the wearer uses Skill, increases Outgoing Healing by <color=#f29e38ff>25%</color>, lasting for 2 turn(s).",
+				"Params": [
+					0.11,
+					0.25,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Max HP by <color=#f29e38ff>12%</color>. When the wearer uses Skill, increases Outgoing Healing by <color=#f29e38ff>28%</color>, lasting for 2 turn(s).",
+				"Params": [
+					0.12,
+					0.28,
+					2
+				]
+			}
+		],
+		"VersionAdded": "1.5"
+	},
 	"23000": {
 		"Id": "23000",
 		"Name": "Night on the Milky Way",
@@ -3366,10 +3417,10 @@
 		"PathType": "Warrior",
 		"PathTypeText": "Destruction",
 		"EffectName": "With This Evening Jade",
-		"EffectTemplate": "Increases the wearer's CRIT DMG by <color=#f29e38ff>#1[i]%</color>. When an ally gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of #2[i] stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>#3[f1]%</color>. When #2[i] stack(s) are reached, additionally enables the attack to ignore <color=#f29e38ff>#4[i]%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+		"EffectTemplate": "Increases the wearer's CRIT DMG by <color=#f29e38ff>#1[i]%</color>. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of #2[i] stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>#3[f1]%</color>. When #2[i] stack(s) are reached, additionally enables that attack to ignore <color=#f29e38ff>#4[i]%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
 		"Superimpositions": [
 			{
-				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>20%</color>. When an ally gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>14.0%</color>. When 3 stack(s) are reached, additionally enables the attack to ignore <color=#f29e38ff>12%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>20%</color>. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>14.0%</color>. When 3 stack(s) are reached, additionally enables that attack to ignore <color=#f29e38ff>12%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
 				"Params": [
 					0.2,
 					3,
@@ -3378,7 +3429,7 @@
 				]
 			},
 			{
-				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>23%</color>. When an ally gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>16.5%</color>. When 3 stack(s) are reached, additionally enables the attack to ignore <color=#f29e38ff>14%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>23%</color>. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>16.5%</color>. When 3 stack(s) are reached, additionally enables that attack to ignore <color=#f29e38ff>14%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
 				"Params": [
 					0.23,
 					3,
@@ -3387,7 +3438,7 @@
 				]
 			},
 			{
-				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>26%</color>. When an ally gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>19.0%</color>. When 3 stack(s) are reached, additionally enables the attack to ignore <color=#f29e38ff>16%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>26%</color>. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>19.0%</color>. When 3 stack(s) are reached, additionally enables that attack to ignore <color=#f29e38ff>16%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
 				"Params": [
 					0.26,
 					3,
@@ -3396,7 +3447,7 @@
 				]
 			},
 			{
-				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>29%</color>. When an ally gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>21.5%</color>. When 3 stack(s) are reached, additionally enables the attack to ignore <color=#f29e38ff>18%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>29%</color>. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>21.5%</color>. When 3 stack(s) are reached, additionally enables that attack to ignore <color=#f29e38ff>18%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
 				"Params": [
 					0.29,
 					3,
@@ -3405,7 +3456,7 @@
 				]
 			},
 			{
-				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>32%</color>. When an ally gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>24.0%</color>. When 3 stack(s) are reached, additionally enables the attack to ignore <color=#f29e38ff>20%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>32%</color>. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff>24.0%</color>. When 3 stack(s) are reached, additionally enables that attack to ignore <color=#f29e38ff>20%</color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
 				"Params": [
 					0.32,
 					3,
@@ -3483,10 +3534,10 @@
 		"PathType": "Rogue",
 		"PathTypeText": "The Hunt",
 		"EffectName": "One At A Time",
-		"EffectTemplate": "Increase the wearer's CRIT Rate by <color=#f29e38ff>#1[i]%</color> and their follow-up attacks' DMG by <color=#f29e38ff>#2[i]%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to #4[i] stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>#3[i]%</color>.",
+		"EffectTemplate": "Increases the wearer's CRIT Rate by <color=#f29e38ff>#1[i]%</color> and their follow-up attacks' DMG by <color=#f29e38ff>#2[i]%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to #4[i] stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>#3[i]%</color>.",
 		"Superimpositions": [
 			{
-				"Effect": "Increase the wearer's CRIT Rate by <color=#f29e38ff>18%</color> and their follow-up attacks' DMG by <color=#f29e38ff>30%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>12%</color>.",
+				"Effect": "Increases the wearer's CRIT Rate by <color=#f29e38ff>18%</color> and their follow-up attacks' DMG by <color=#f29e38ff>30%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>12%</color>.",
 				"Params": [
 					0.18,
 					0.3,
@@ -3495,7 +3546,7 @@
 				]
 			},
 			{
-				"Effect": "Increase the wearer's CRIT Rate by <color=#f29e38ff>21%</color> and their follow-up attacks' DMG by <color=#f29e38ff>35%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>14%</color>.",
+				"Effect": "Increases the wearer's CRIT Rate by <color=#f29e38ff>21%</color> and their follow-up attacks' DMG by <color=#f29e38ff>35%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>14%</color>.",
 				"Params": [
 					0.21,
 					0.35,
@@ -3504,7 +3555,7 @@
 				]
 			},
 			{
-				"Effect": "Increase the wearer's CRIT Rate by <color=#f29e38ff>24%</color> and their follow-up attacks' DMG by <color=#f29e38ff>40%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>16%</color>.",
+				"Effect": "Increases the wearer's CRIT Rate by <color=#f29e38ff>24%</color> and their follow-up attacks' DMG by <color=#f29e38ff>40%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>16%</color>.",
 				"Params": [
 					0.24,
 					0.4,
@@ -3513,7 +3564,7 @@
 				]
 			},
 			{
-				"Effect": "Increase the wearer's CRIT Rate by <color=#f29e38ff>27%</color> and their follow-up attacks' DMG by <color=#f29e38ff>45%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>18%</color>.",
+				"Effect": "Increases the wearer's CRIT Rate by <color=#f29e38ff>27%</color> and their follow-up attacks' DMG by <color=#f29e38ff>45%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>18%</color>.",
 				"Params": [
 					0.27,
 					0.45,
@@ -3522,7 +3573,7 @@
 				]
 			},
 			{
-				"Effect": "Increase the wearer's CRIT Rate by <color=#f29e38ff>30%</color> and their follow-up attacks' DMG by <color=#f29e38ff>50%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>20%</color>.",
+				"Effect": "Increases the wearer's CRIT Rate by <color=#f29e38ff>30%</color> and their follow-up attacks' DMG by <color=#f29e38ff>50%</color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff>20%</color>.",
 				"Params": [
 					0.3,
 					0.5,
@@ -3532,6 +3583,118 @@
 			}
 		],
 		"VersionAdded": "1.4"
+	},
+	"23017": {
+		"Id": "23017",
+		"Name": "Night of Fright",
+		"PathType": "Priest",
+		"PathTypeText": "Abundance",
+		"EffectName": "Deep, Deep Breaths",
+		"EffectTemplate": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff>#1[i]%</color>. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to <color=#f29e38ff>#2[i]%</color> of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by <color=#f29e38ff>#3[f1]%</color>. This effect can stack up to #4[i] times and lasts for #5[i] turn(s).",
+		"Superimpositions": [
+			{
+				"Effect": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff>12%</color>. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to <color=#f29e38ff>10%</color> of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by <color=#f29e38ff>2.4%</color>. This effect can stack up to 5 times and lasts for 2 turn(s).",
+				"Params": [
+					0.12,
+					0.1,
+					0.024,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff>14%</color>. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to <color=#f29e38ff>11%</color> of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by <color=#f29e38ff>2.8%</color>. This effect can stack up to 5 times and lasts for 2 turn(s).",
+				"Params": [
+					0.14,
+					0.11,
+					0.028,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff>16%</color>. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to <color=#f29e38ff>12%</color> of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by <color=#f29e38ff>3.2%</color>. This effect can stack up to 5 times and lasts for 2 turn(s).",
+				"Params": [
+					0.16,
+					0.12,
+					0.032,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff>18%</color>. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to <color=#f29e38ff>13%</color> of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by <color=#f29e38ff>3.6%</color>. This effect can stack up to 5 times and lasts for 2 turn(s).",
+				"Params": [
+					0.18,
+					0.13,
+					0.036,
+					5,
+					2
+				]
+			},
+			{
+				"Effect": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff>20%</color>. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to <color=#f29e38ff>14%</color> of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by <color=#f29e38ff>4.0%</color>. This effect can stack up to 5 times and lasts for 2 turn(s).",
+				"Params": [
+					0.2,
+					0.14,
+					0.04,
+					5,
+					2
+				]
+			}
+		],
+		"VersionAdded": "1.5"
+	},
+	"23018": {
+		"Id": "23018",
+		"Name": "An Instant Before A Gaze",
+		"PathType": "Mage",
+		"PathTypeText": "Erudition",
+		"EffectName": "A Knight's Pilgrimage",
+		"EffectTemplate": "Increases the wearer's CRIT DMG by <color=#f29e38ff>#1[i]%</color>. When the wearer uses Ultimate, increases the wearer's Ultimate DMG based on their Max Energy. Each point of Energy increases the Ultimate DMG by <color=#f29e38ff>#2[f2]%</color>, up to #3[i] points of Energy.",
+		"Superimpositions": [
+			{
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>36%</color>. When the wearer uses Ultimate, increases the wearer's Ultimate DMG based on their Max Energy. Each point of Energy increases the Ultimate DMG by <color=#f29e38ff>0.36%</color>, up to 180 points of Energy.",
+				"Params": [
+					0.36,
+					0.0036,
+					180
+				]
+			},
+			{
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>42%</color>. When the wearer uses Ultimate, increases the wearer's Ultimate DMG based on their Max Energy. Each point of Energy increases the Ultimate DMG by <color=#f29e38ff>0.42%</color>, up to 180 points of Energy.",
+				"Params": [
+					0.42,
+					0.0042,
+					180
+				]
+			},
+			{
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>48%</color>. When the wearer uses Ultimate, increases the wearer's Ultimate DMG based on their Max Energy. Each point of Energy increases the Ultimate DMG by <color=#f29e38ff>0.48%</color>, up to 180 points of Energy.",
+				"Params": [
+					0.48,
+					0.0048,
+					180
+				]
+			},
+			{
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>54%</color>. When the wearer uses Ultimate, increases the wearer's Ultimate DMG based on their Max Energy. Each point of Energy increases the Ultimate DMG by <color=#f29e38ff>0.54%</color>, up to 180 points of Energy.",
+				"Params": [
+					0.54,
+					0.0054,
+					180
+				]
+			},
+			{
+				"Effect": "Increases the wearer's CRIT DMG by <color=#f29e38ff>60%</color>. When the wearer uses Ultimate, increases the wearer's Ultimate DMG based on their Max Energy. Each point of Energy increases the Ultimate DMG by <color=#f29e38ff>0.60%</color>, up to 180 points of Energy.",
+				"Params": [
+					0.6,
+					0.006,
+					180
+				]
+			}
+		],
+		"VersionAdded": "1.5"
 	},
 	"24000": {
 		"Id": "24000",
