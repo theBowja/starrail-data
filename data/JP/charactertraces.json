@@ -5815,7 +5815,7 @@
 				"Name": "月明かりが撫でる連綿",
 				"NodeType": 2,
 				"NodeTypeText": "戦闘スキル",
-				"EffectRaw": "指定した敵単体にカフカの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の雷属性ダメージを与え、隣接する敵にカフカの攻撃力<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>分の雷属性ダメージを与える。\n指定した敵が持続ダメージ状態である場合、付与された全持続ダメージ状態が、本来のダメージ<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分のダメージを発生する。",
+				"EffectRaw": "指定した敵単体にカフカの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の雷属性ダメージを与え、隣接する敵にカフカの攻撃力<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>分の雷属性ダメージを与える。\n指定した敵が持続ダメージ系デバフである場合、付与された全持続ダメージ系デバフが、本来のダメージ<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分のダメージを発生する。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100502"
@@ -48419,6 +48419,1410 @@
 		},
 		"VersionAdded": "1.2"
 	},
+	"1214": {
+		"Id": "1214",
+		"Name": "雪衣",
+		"Nodes": {
+			"1214001": {
+				"Id": "1214001",
+				"Name": "破魔錐",
+				"NodeType": 2,
+				"NodeTypeText": "通常攻撃",
+				"EffectRaw": "指定した敵単体に雪衣の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の量子属性ダメージを与える。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121401"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "破砕の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1214002": {
+				"Id": "1214002",
+				"Name": "諸悪摂伏",
+				"NodeType": 2,
+				"NodeTypeText": "戦闘スキル",
+				"EffectRaw": "指定した敵単体に雪衣の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の量子属性ダメージを与え、隣接する敵に雪衣の攻撃力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の量子属性ダメージを与える。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121402"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.7,
+							0.35
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.77,
+							0.385
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.84,
+							0.42
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "破砕の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.91,
+							0.455
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.98,
+							0.49
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.05,
+							0.525
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 24000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.1375,
+							0.5688
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.225,
+							0.6125
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 64000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.3125,
+							0.6563
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.4,
+							0.7
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 240000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214003": {
+				"Id": "1214003",
+				"Name": "身を貫く天罰",
+				"NodeType": 2,
+				"NodeTypeText": "必殺技",
+				"EffectRaw": "指定した敵単体に雪衣の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の量子属性ダメージを与え、弱点属性を無視して敵の靭性を削る。敵を弱点撃破した時、量子属性の弱点撃破効果を触発する。\n削った靭性が多いほど、その回の攻撃の与ダメージがアップする、最大で与ダメージ+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121403"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.09,
+							0.36
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.6,
+							0.096,
+							0.384
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.7,
+							0.102,
+							0.408
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "破砕の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.8,
+							0.108,
+							0.432
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.9,
+							0.114,
+							0.456
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.12,
+							0.48
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 24000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.125,
+							0.1275,
+							0.51
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.25,
+							0.135,
+							0.54
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 64000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.375,
+							0.1425,
+							0.57
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.5,
+							0.15,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 240000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214004": {
+				"Id": "1214004",
+				"Name": "十王の聖裁、業報は常に在り",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "雪衣が攻撃を行って敵の靭性を削った時、「悪業」を獲得する。削った靭性が多いほど、獲得する「悪業」層数がアップする、最大で<unbreak>#1[i]</unbreak>層獲得できる。\n雪衣以外の味方が攻撃を行って敵の靭性を削った後、雪衣は「悪業」を<unbreak>#3[i]</unbreak>層獲得する。\n「悪業」が上限に達した時、すべての「悪業」を消費して敵に<u>追加攻撃</u>を行い、3ヒットする。1ヒットごとにランダムな敵単体に雪衣の攻撃力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の量子属性ダメージを与える。この追加攻撃で「悪業」を獲得することはできない。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121404"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							8,
+							0.45,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							8,
+							0.495,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							8,
+							0.54,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "破砕の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							8,
+							0.585,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							8,
+							0.63,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							8,
+							0.675,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 24000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							8,
+							0.7313,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							8,
+							0.7875,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 64000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							8,
+							0.8438,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							8,
+							0.9,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 240000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214007": {
+				"Id": "1214007",
+				"Name": "斬、即決",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "敵を攻撃。戦闘開始後、敵全体に雪衣の攻撃力<unbreak>#1[i]%</unbreak>分の量子属性ダメージを与える。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121407"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.8
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1214101": {
+				"Id": "1214101",
+				"Name": "予兆の絡繰り",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "自身の与ダメージを、撃破特効の<unbreak>#1[i]%</unbreak>分アップする、最大で与ダメージ+<unbreak>#2[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							2.4
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "破砕の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214102": {
+				"Id": "1214102",
+				"Name": "砕鋒の軸受",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "必殺技を発動した時、残り靭性が最大靭性<unbreak>#1[i]%</unbreak>以上の敵への与ダメージ+<unbreak>#2[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5,
+							0.1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214103": {
+				"Id": "1214103",
+				"Name": "機会を伺う中枢",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "雪衣は累積上限を超えた「悪業」層数をカウントする、最大で<unbreak>#1[i]</unbreak>層カウントできる。雪衣が天賦を発動した後、超過分の「悪業」層数を獲得する。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214201": {
+				"Id": "1214201",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214202": {
+				"Id": "1214202",
+				"Name": "HP強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "最大HP+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1214101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "破砕の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "消滅した原核",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1214203": {
+				"Id": "1214203",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1214202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214204": {
+				"Id": "1214204",
+				"Name": "ダメージ強化・量子",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "量子属性ダメージ+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1214203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214205": {
+				"Id": "1214205",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1214102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "無生の刃切",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "微かに光る原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1214206": {
+				"Id": "1214206",
+				"Name": "HP強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "最大HP+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1214205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214207": {
+				"Id": "1214207",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1214206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214208": {
+				"Id": "1214208",
+				"Name": "ダメージ強化・量子",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "量子属性ダメージ+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1214103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1214209": {
+				"Id": "1214209",
+				"Name": "HP強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "最大HP+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1214208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1214210": {
+				"Id": "1214210",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1214208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "浄世の刃切",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "脈動する原核",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.6"
+	},
 	"1215": {
 		"Id": "1215",
 		"Name": "寒鴉",
@@ -48564,7 +49968,7 @@
 				"Name": "生滅捕縛",
 				"NodeType": 2,
 				"NodeTypeText": "戦闘スキル",
-				"EffectRaw": "敵単体に「承負」状態を付与して、寒鴉の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の物理ダメージを与える。\n味方が「承負」状態の敵に通常攻撃、戦闘スキル、または必殺技のうち任意のスキルを合わせて2回発動するたびに、SPを1回復する。「承負」は最後に付与されたターゲットにのみ効果を発揮し、SP回復効果は<unbreak>#2[i]</unbreak>回発動した後に自動で解除される。",
+				"EffectRaw": "敵単体に「承負」状態を付与して、寒鴉の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の物理ダメージを与える。\n味方が「承負」状態の敵に通常攻撃、戦闘スキル、または必殺技のうち任意のスキルを合わせて2回発動するたびに、SPを1回復する。「承負」は最後に付与されたターゲットにのみ効果を発揮し、SP回復効果が<unbreak>#2[i]</unbreak>回発動した後に自動で解除される。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121502"
@@ -52699,6 +54103,2853 @@
 			}
 		},
 		"VersionAdded": "1.5"
+	},
+	"1303": {
+		"Id": "1303",
+		"Name": "ルアン・メェイ",
+		"Nodes": {
+			"1303001": {
+				"Id": "1303001",
+				"Name": "幽蘭の調べ",
+				"NodeType": 2,
+				"NodeTypeText": "通常攻撃",
+				"EffectRaw": "指定した敵単体にルアン・メェイの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の氷属性ダメージを与える。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"130301"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "調和のハーモニー",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1303002": {
+				"Id": "1303002",
+				"Name": "緩く捻りて",
+				"NodeType": 2,
+				"NodeTypeText": "戦闘スキル",
+				"EffectRaw": "戦闘スキルを発動した後、ルアン・メェイは<unbreak>#3[i]</unbreak>ターン継続する「弦外の音」を獲得する。ルアン・メェイのターンが回ってくるたびに、「弦外の音」の継続時間-1ターン。ルアン・メェイに「弦外の音」がある時、味方全体の与ダメージ+<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>、弱点撃破効率+<unbreak>#2[i]%</unbreak>。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130302"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.16,
+							0.5,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.176,
+							0.5,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.192,
+							0.5,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "調和のハーモニー",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.208,
+							0.5,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.224,
+							0.5,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.24,
+							0.5,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 30000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.26,
+							0.5,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.28,
+							0.5,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 80000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.3,
+							0.5,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.32,
+							0.5,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 300000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303003": {
+				"Id": "1303003",
+				"Name": "花に濡れても雫は払わず",
+				"NodeType": 2,
+				"NodeTypeText": "必殺技",
+				"EffectRaw": "ルアン・メェイが結界を展開する、<unbreak>#2[i]</unbreak>ターン継続。ルアン・メェイのターンが回ってくるたびに結界の継続時間-1ターン。\n結界が存在する時、味方全体の全耐性貫通+<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>、かつ味方が攻撃を行った後、敵に「残梅」を付与する。\n敵が弱点撃破状態から回復しようとする時に「残梅」が発動する。敵の弱点撃破状態を延長し、行動順をルアン・メェイの撃破特効<unbreak>#3[i]%</unbreak>+<unbreak>#4[i]%</unbreak>遅延させ、ルアン・メェイの氷属性弱点撃破ダメージ<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>分の弱点撃破ダメージを与える。\n敵が弱点撃破状態から回復するまで、再度「残梅」を付与することはできない。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130303"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.15,
+							2,
+							0.2,
+							0.1,
+							0.3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.16,
+							2,
+							0.2,
+							0.1,
+							0.32
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.17,
+							2,
+							0.2,
+							0.1,
+							0.34
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "調和のハーモニー",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.18,
+							2,
+							0.2,
+							0.1,
+							0.36
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.19,
+							2,
+							0.2,
+							0.1,
+							0.38
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.2,
+							2,
+							0.2,
+							0.1,
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 30000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.2125,
+							2,
+							0.2,
+							0.1,
+							0.425
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.225,
+							2,
+							0.2,
+							0.1,
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 80000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.2375,
+							2,
+							0.2,
+							0.1,
+							0.475
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.25,
+							2,
+							0.2,
+							0.1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 300000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303004": {
+				"Id": "1303004",
+				"Name": "フラクタルの螺旋",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "自身を除く味方全体の速度<color=#f29e38ff>+<unbreak>#1[f1]%</unbreak></color>。敵を弱点撃破した後、その敵にルアン・メェイの氷属性弱点撃破ダメージ<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>分の氷属性撃破ダメージを与える。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130304"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08,
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.082,
+							0.66
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.084,
+							0.72
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "調和のハーモニー",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.086,
+							0.78
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.088,
+							0.84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.09,
+							0.9
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 30000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.0925,
+							0.975
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.095,
+							1.05
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 80000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.0975,
+							1.125
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.1,
+							1.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 300000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303007": {
+				"Id": "1303007",
+				"Name": "琴拭い、霓裳撫でる",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "秘技を使用した後、「琴拭い、霓裳撫でる」を獲得する。「琴拭い、霓裳撫でる」がある時、次の戦闘開始時に自動で戦闘スキルを<unbreak>#1[i]</unbreak>回発動する。この効果発動はSPを消費しない。\n模擬宇宙の中で、ルアン・メェイに「琴拭い、霓裳撫でる」がある場合、味方が敵を先制攻撃して戦闘に入る時、弱点属性を攻撃して戦闘に入ったと見なされる。また、その回の攻撃は弱点属性を無視して敵全体の靭性を削る。敵を弱点撃破した場合、攻撃者の属性に対応する弱点撃破効果を発動する。所持する祝福1つにつき、さらにその回の攻撃の削靭ダメージ+<unbreak>#2[i]%</unbreak>、敵を弱点撃破した後、さらにルアン・メェイの氷属性弱点撃破ダメージ<unbreak>#3[i]%</unbreak>分の弱点撃破ダメージを与える。祝福は最大で<unbreak>#4[i]</unbreak>つまでカウントされる。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"130307"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1,
+							1,
+							20
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1303101": {
+				"Id": "1303101",
+				"Name": "呼吸の中",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "味方全体の撃破特効+<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "調和のハーモニー",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303102": {
+				"Id": "1303102",
+				"Name": "広がる想像",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "ルアン・メェイのターンが回ってきた時、自身のEPを<unbreak>#1[i]</unbreak>回復する。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303103": {
+				"Id": "1303103",
+				"Name": "水面を照らす燭火",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "戦闘中、ルアン・メェイの撃破特効が<unbreak>#1[i]%</unbreak>を超えた時、<unbreak>#2[i]%</unbreak>超過するにつき、戦闘スキルによる味方全体の与ダメージアップ効果+<unbreak>#3[i]%</unbreak>、最大で+<unbreak>#4[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.2,
+							0.1,
+							0.06,
+							0.36
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303201": {
+				"Id": "1303201",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1303202": {
+				"Id": "1303202",
+				"Name": "防御強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "防御力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1303101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "調和のハーモニー",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "永寿の萌芽",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1303203": {
+				"Id": "1303203",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1303202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303204": {
+				"Id": "1303204",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "速度+<unbreak>#1[i]</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1303201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303205": {
+				"Id": "1303205",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1303102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "ファミリー賛歌",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "永寿の天華",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1303206": {
+				"Id": "1303206",
+				"Name": "防御強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "防御力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1303205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303207": {
+				"Id": "1303207",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1303201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303208": {
+				"Id": "1303208",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "速度+<unbreak>#1[i]</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1303103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1303209": {
+				"Id": "1303209",
+				"Name": "防御強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "防御力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1303208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1303210": {
+				"Id": "1303210",
+				"Name": "撃破強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "撃破特効+<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1303208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "群星の楽章",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "永寿の栄枝",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.6"
+	},
+	"1305": {
+		"Id": "1305",
+		"Name": "Dr.レイシオ",
+		"Nodes": {
+			"1305001": {
+				"Id": "1305001",
+				"Name": "知識は力なり",
+				"NodeType": 2,
+				"NodeTypeText": "通常攻撃",
+				"EffectRaw": "指定した敵単体にDr.レイシオの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の虚数属性ダメージを与える。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"130501"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "狩獣の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1305002": {
+				"Id": "1305002",
+				"Name": "産婆術",
+				"NodeType": 2,
+				"NodeTypeText": "戦闘スキル",
+				"EffectRaw": "指定した敵単体にDr.レイシオの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の虚数属性ダメージを与える。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130502"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "狩獣の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 7
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305003": {
+				"Id": "1305003",
+				"Name": "三段階のパラドックス",
+				"NodeType": 2,
+				"NodeTypeText": "必殺技",
+				"EffectRaw": "指定した敵単体にDr.レイシオの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の虚数属性ダメージを与え、「智者の短慮」を付与する。Dr.レイシオ以外の味方が「智者の短慮」を持つ敵に攻撃を行う時、Dr.レイシオはその敵に天賦の<u>追加攻撃</u>を1回行う。\n「智者の短慮」の効果は<unbreak>#2[i]</unbreak>回まで発動でき、Dr.レイシオの必殺技の最後のターゲットにのみ効果を発揮する。必殺技を発動した後にこの効果の発動可能回数がリセットされる。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130503"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.44,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.536,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.632,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "狩獣の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.728,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.824,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.92,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 7
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.04,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.16,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.28,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.4,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305004": {
+				"Id": "1305004",
+				"Name": "我思う、故に我あり",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "戦闘スキルを発動する時、<unbreak>#2[i]%</unbreak>の<u>固定確率</u>でターゲットに<u>追加攻撃</u>を1回行い、Dr.レイシオの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の虚数属性ダメージを与える。敵にあるデバフ1つにつき、<u>追加攻撃</u>を行う<u>固定確率</u>+<unbreak>#3[i]%</unbreak>。<u>追加攻撃</u>を行う前にターゲットが倒された場合、ランダムな敵単体に<u>追加攻撃</u>を行う。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130504"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.35,
+							0.4,
+							0.2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.485,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.62,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "狩獣の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.755,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.89,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2.025,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 7
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.1938,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.3625,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.5313,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.7,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305007": {
+				"Id": "1305007",
+				"Name": "偶像の誕生",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "秘技を使用した後、<unbreak>#1[i]</unbreak>秒間継続する敵を挑発できる特殊領域を作り出す。特殊領域内の敵と戦闘に入った後、<unbreak>#2[i]%</unbreak>の<u>基礎確率</u>で敵それぞれの速度-<unbreak>#3[i]%</unbreak>、<unbreak>#4[i]</unbreak>ターン継続。味方が作り出した領域は1つまで存在できる。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"130507"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							1,
+							0.15,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1305101": {
+				"Id": "1305101",
+				"Name": "帰納",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "戦闘スキルを発動する時、ターゲットにあるデバフ1つにつき、Dr.レイシオの会心率+<unbreak>#1[f1]%</unbreak>、会心ダメージ+<unbreak>#2[i]%</unbreak>、最大で<unbreak>#3[i]</unbreak>層累積できる。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.025,
+							0.05,
+							6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "狩獣の矢",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305102": {
+				"Id": "1305102",
+				"Name": "演繹",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "戦闘スキルを発動した後、<unbreak>#1[i]%</unbreak>の基礎確率で攻撃を受けた敵の効果抵抗-<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.1,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305103": {
+				"Id": "1305103",
+				"Name": "推論",
+				"NodeType": 3,
+				"NodeTypeText": "追加能力",
+				"EffectRaw": "ダメージを与える時、敵にあるデバフが<unbreak>#1[i]</unbreak>つ以上の場合、デバフ1つにつき、その敵に対するDr.レイシオの与ダメージ+<unbreak>#2[i]%</unbreak>、最大で+<unbreak>#3[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							0.1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "運命の足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "星を蝕む古の悪",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305201": {
+				"Id": "1305201",
+				"Name": "攻撃強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "攻撃力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1305202": {
+				"Id": "1305202",
+				"Name": "会心率強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "会心率+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1305101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "狩獣の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "略奪の本能",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1305203": {
+				"Id": "1305203",
+				"Name": "攻撃強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "攻撃力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1305202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305204": {
+				"Id": "1305204",
+				"Name": "防御強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "防御力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305205": {
+				"Id": "1305205",
+				"Name": "攻撃強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "攻撃力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1305102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "屠魔の矢",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "改ざんの野心",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1305206": {
+				"Id": "1305206",
+				"Name": "会心率強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "会心率+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1305205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305207": {
+				"Id": "1305207",
+				"Name": "攻撃強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "攻撃力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305208": {
+				"Id": "1305208",
+				"Name": "防御強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "防御力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1305103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1305209": {
+				"Id": "1305209",
+				"Name": "会心率強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "会心率+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1305208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1305210": {
+				"Id": "1305210",
+				"Name": "攻撃強化",
+				"NodeType": 1,
+				"NodeTypeText": "ステータスボーナス",
+				"EffectRaw": "攻撃力+<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1305208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用ポイント",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "逐星の矢",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "踏みにじる意志",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.6"
 	},
 	"8001": {
 		"Id": "8001",

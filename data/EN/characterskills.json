@@ -1824,7 +1824,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Kafka's ATK to a target enemy and Lightning DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Kafka's ATK to enemies adjacent to it.\nIf the target enemy is currently receiving DoT, all DoTs currently placed on that enemy immediately produce DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of their original DMG.",
-			"AbridgedEffect": "Deals Lightning DMG to a single enemy and minor Lightning DMG to adjacent targets.\nIf the main target currently has a DoT effect inflicted on it, the DoT deals DMG 1 extra time.",
+			"AbridgedEffect": "Deals Lightning DMG to a single enemy and minor Lightning DMG to adjacent targets.\nIf the main target is currently afflicted with a DoT effect, the DoT <color=#f29e38ff>deals DMG 1 extra time</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1944,7 +1944,7 @@
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Kafka's ATK to all enemies, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> for enemies hit to become Shocked and immediately take DMG from their current Shock state, equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of its original DMG. Shock lasts for <unbreak>#3[i]</unbreak> turn(s).\nWhile Shocked, enemies receive Lightning DoT equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Kafka's ATK at the beginning of each turn.",
-			"AbridgedEffect": "Deals minor Lightning DMG to all enemies, with a high chance of Shocking them.\nIf the enemies are currently Shocked, the Shock status deals DMG 1 extra time.",
+			"AbridgedEffect": "Deals minor Lightning DMG to all enemies, with a high chance of <color=#f29e38ff>Shocking them</color>.\nIf the enemies are currently Shocked, the Shock status <color=#f29e38ff>deals DMG 1 extra time</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2094,7 +2094,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "After an ally of Kafka's uses Basic ATK on an enemy target, Kafka immediately launches 1 <u>follow-up attack</u> and deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to that target, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target, lasting for <unbreak>#3[i]</unbreak> turns. This effect can only be triggered 1 time per turn.",
-			"AbridgedEffect": "After an ally uses Basic ATK on an enemy, Kafka immediately launches a <u>follow-up attack</u> and deals Lightning DMG with a high chance of inflicting Shock to that target. This effect can only be triggered 1 time per turn.",
+			"AbridgedEffect": "After an ally uses Basic ATK on an enemy, Kafka immediately launches a <u>follow-up attack</u> and deals Lightning DMG with a high chance of <color=#f29e38ff>inflicting Shock</color> to that target. This effect can only be triggered 1 time per turn.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2213,7 +2213,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to <unbreak>#3[i]%</unbreak> of Kafka's ATK to all enemies, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Shock equivalent to that applied by her Ultimate on every enemy target for <unbreak>#2[i]</unbreak> turn(s).",
-			"AbridgedEffect": "Attacks all enemies within range. After entering battle, deals minor Lightning DMG to all enemies with a high chance of Shocking them.",
+			"AbridgedEffect": "Attacks all enemies within range. After entering battle, deals minor Lightning DMG to all enemies, with a high chance to <color=#f29e38ff>Shock</color> them.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2295,8 +2295,8 @@
 			"Id": "100602",
 			"Name": "Allow Changes?",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "There is a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>base chance</u> to add 1 Weakness of an on-field character's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by <unbreak>#4[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\nIn addition, there is a <unbreak>#5[i]%</unbreak> <u>base chance</u> to further reduce the All-Type RES of the enemy by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).\nDeals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Silver Wolf's ATK to this enemy.",
@@ -2475,8 +2475,8 @@
 			"Id": "100603",
 			"Name": "User Banned",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "There's a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>base chance</u> to decrease the target enemy's DEF by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). And at the same time, deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Silver Wolf's ATK to the target enemy.",
@@ -5294,8 +5294,8 @@
 			"Id": "110402",
 			"Name": "Daunting Smite",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Gepard's ATK to a single enemy, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to Freeze the enemy for <unbreak>#3[i]</unbreak> turn(s).\nWhile Frozen, the enemy cannot take action and will take <u>Additional</u> Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Gepard's ATK at the beginning of each turn.",
@@ -5728,7 +5728,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Restores a single ally for <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Natasha's Max HP plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color>. Restores the ally for another <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Natasha's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color> at the beginning of each turn for <unbreak>#3[i]</unbreak> turn(s).",
-			"AbridgedEffect": "Restores a single ally's HP and continuously heals them.",
+			"AbridgedEffect": "<color=#f29e38ff>Restores HP</color> for a single ally and provides <color=#f29e38ff>Healing Over Time</color> to them.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5877,7 +5877,7 @@
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Heals all allies for <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Natasha's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>.",
-			"AbridgedEffect": "Restores all allies' HP.",
+			"AbridgedEffect": "<color=#f29e38ff>Restores HP</color> for all allies.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -6167,8 +6167,8 @@
 			"Id": "110602",
 			"Name": "Frostbite",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Removes <unbreak>#2[i]</unbreak> <u>buff(s)</u> and deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Pela's ATK to a single target enemy.",
@@ -6272,8 +6272,8 @@
 			"Id": "110603",
 			"Name": "Zone Suppression",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Pela's ATK to all enemies, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Exposed on all enemies.\nWhen Exposed, enemies' DEF is reduced by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).",
@@ -7147,8 +7147,8 @@
 			"Id": "110803",
 			"Name": "Surprise Present",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Sampo's ATK to all enemies, with a <unbreak>#4[i]%</unbreak> <u>base chance</u> to increase the targets' DoT taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).",
@@ -11477,7 +11477,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Consumes HP equal to <unbreak>#1[i]%</unbreak> of Blade's Max HP to enter the Hellscape state.\nWhen Hellscape is active, his Skill cannot be used, his DMG dealt increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, and his Basic ATK Shard Sword is enhanced to Forest of Swords for <unbreak>#2[i]</unbreak> turn(s).\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill.\nThis Skill does not regenerate Energy. Using this Skill does not end the current turn.",
-			"AbridgedEffect": "Consumes HP to Enhance Basic ATK, and this turn does not end after this Skill is used.",
+			"AbridgedEffect": "Consumes HP to <color=#f29e38ff>Enhance Basic ATK</color>, and this turn does not end after this Skill is used.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -11792,7 +11792,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked.\nWhen Charge stack reaches maximum, immediately launches a <u>follow-up attack</u> on all enemies, dealing Wind DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Blade's ATK plus <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of his Max HP. At the same time, restores Blade's HP by <unbreak>#3[i]%</unbreak> of his Max HP. After the follow-up attack, all Charges are consumed.",
-			"AbridgedEffect": "When Blade's HP is lowered, he gains 1 stack of Charge. When maximum Charge stack is reached, Blade immediately deals Wind DMG to all enemies and restores HP. Then, all Charges are consumed.",
+			"AbridgedEffect": "When Blade's HP is lowered, he gains 1 stack of Charge. When maximum Charge stack is reached, Blade <color=#f29e38ff>immediately deals Wind DMG to all enemies</color> and restores HP. Then, all Charges are consumed.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -15913,6 +15913,435 @@
 		},
 		"VersionAdded": "1.3"
 	},
+	"1214": {
+		"Id": "1214",
+		"Name": "Xueyi",
+		"BasicATK": {
+			"Id": "121401",
+			"Name": "Mara-Sunder Awl",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Deals <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Xueyi's ATK as Quantum DMG to a single target enemy.",
+			"AbridgedEffect": "Deals minor Quantum DMG to a single enemy.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png"
+		},
+		"Skill": {
+			"Id": "121402",
+			"Name": "Iniquity Obliteration",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Blast",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Xueyi's ATK to a single enemy, and Quantum DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Xueyi's ATK to any adjacent enemies.",
+			"AbridgedEffect": "Deals Quantum DMG to a single enemy and minor Quantum DMG to enemies adjacent to it.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.77,
+						0.385
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.42
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.91,
+						0.455
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.98,
+						0.49
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.05,
+						0.525
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1375,
+						0.5688
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.225,
+						0.6125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3125,
+						0.6563
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.47,
+						0.735
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.54,
+						0.77
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.61,
+						0.805
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.68,
+						0.84
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.75,
+						0.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png"
+		},
+		"Ultimate": {
+			"Id": "121403",
+			"Name": "Divine Castigation",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Xueyi's ATK to a single target enemy. This attack ignores Weakness Types and reduces the enemy's Toughness. When the enemy's Weakness is Broken, the Quantum Weakness Break effect is triggered.\nIn this attack, the more Toughness is reduced, the higher the DMG will be dealt, up to a max of <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> increase.",
+			"AbridgedEffect": "Deals massive Quantum DMG to a single enemy. This attack <color=#f29e38ff>ignores Weakness Types</color> and reduces the target's Toughness. The more Toughness is reduced, the higher the DMG will be dealt.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.09,
+						0.36
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.6,
+						0.096,
+						0.384
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.7,
+						0.102,
+						0.408
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.8,
+						0.108,
+						0.432
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.9,
+						0.114,
+						0.456
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.12,
+						0.48
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.125,
+						0.1275,
+						0.51
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.25,
+						0.135,
+						0.54
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.375,
+						0.1425,
+						0.57
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.5,
+						0.15,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.6,
+						0.156,
+						0.624
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.7,
+						0.162,
+						0.648
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.8,
+						0.168,
+						0.672
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.9,
+						0.174,
+						0.696
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.18,
+						0.72
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png"
+		},
+		"Talent": {
+			"Id": "121404",
+			"Name": "Karmic Perpetuation",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "Bounce",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "When Xueyi reduces enemy Toughness with attacks, Karma will be stacked. The more Toughness is reduced, the more stacks of Karma are added, up to <unbreak>#1[i]</unbreak> stacks.\nWhen Xueyi's allies reduce enemy Toughness with attacks, Xueyi gains <unbreak>#3[i]</unbreak> stacks of Karma.\nWhen Karma reaches the max number of stacks, consumes all current Karma stacks and immediately launches a <u>follow-up attack</u> against an enemy target, dealing DMG for 3 times, with each time dealing Quantum DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Xueyi's ATK to a single random enemy. This follow-up attack will not add Karma stacks.",
+			"AbridgedEffect": "When Xueyi or her allies reduce enemy Toughness with attacks, she gains stacks of Karma. When Karma reaches the max number of stacks, <color=#f29e38ff>immediately launches a <u>follow-up attack</u></color>, dealing minor Quantum DMG to a single enemy target, bouncing for 3 times and consuming all Karma.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						8,
+						0.45,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						8,
+						0.495,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						8,
+						0.54,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						8,
+						0.585,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						8,
+						0.63,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						8,
+						0.675,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						8,
+						0.7313,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						8,
+						0.7875,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						8,
+						0.8438,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						8,
+						0.9,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						8,
+						0.945,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						8,
+						0.99,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						8,
+						1.035,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						8,
+						1.08,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						8,
+						1.125,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png"
+		},
+		"Technique": {
+			"Id": "121407",
+			"Name": "Summary Execution",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Immediately attacks the enemy. After entering combat, deals <unbreak>#1[i]%</unbreak> of Xueyi's ATK as Quantum DMG to all enemies.",
+			"AbridgedEffect": "Attacks the enemy. After entering battle, deals minor Quantum DMG to all enemies.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
 	"1215": {
 		"Id": "1215",
 		"Name": "Hanya",
@@ -15984,7 +16413,7 @@
 			"TagTypeText": "Single Target",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
-			"EffectRaw": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hanya's ATK to a single enemy, then applies Burden to them.\nFor every 2 Basic ATKs, Skills, or Ultimates allies use on an enemy with Burden, allies will immediately recover 1 Skill Point. Burden is only active on the latest target it is applied to, and will be dispelled automatically after the Skill Point recovery effect has been triggered <unbreak>#2[i]</unbreak> times.",
+			"EffectRaw": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hanya's ATK to a single target enemy, then applies Burden to them.\nFor every 2 Basic ATKs, Skills, or Ultimates allies use on an enemy with Burden, allies will immediately recover 1 Skill Point. Burden is only active on the latest target it is applied to, and will be dispelled automatically after the Skill Point recovery effect has been triggered <unbreak>#2[i]</unbreak> times.",
 			"AbridgedEffect": "Deals Physical DMG to a single enemy and applies Burden to them. For every 2 Basic ATKs, Skills, or Ultimates allies use on an enemy with Burden, allies <color=#f29e38ff>recover 1 Skill Point</color>.",
 			"ElementType": "Physical",
 			"Levels": {
@@ -16208,7 +16637,7 @@
 			"TagTypeText": "Support",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "When an ally uses a Basic ATK, Skill, or Ultimate on an enemy inflicted with Burden, the DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <unbreak>#2[i]</unbreak> turn(s).",
+			"EffectRaw": "When an ally uses a Basic ATK, Skill, or Ultimate on an enemy inflicted with Burden, the DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, lasting for <unbreak>#2[i]</unbreak> turn(s).",
 			"AbridgedEffect": "Ally deals more DMG when attacking enemies inflicted with Burden.",
 			"Levels": {
 				"1": {
@@ -17012,7 +17441,7 @@
 		},
 		"Ultimate": {
 			"Id": "130203",
-			"Name": "For In This Garden Supreme Beauty Bestows",
+			"Name": "For In This Garden, Supreme Beauty Bestows",
 			"TriggerKey": "Skill03",
 			"TagType": "AoEAttack",
 			"TagTypeText": "AoE",
@@ -17123,7 +17552,7 @@
 			"TagTypeText": "Enhance",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "For every enemy hit when Argenti uses his Basic Attack, Skill, or Ultimate, regenerates Argenti's Energy by <unbreak>#1[i]</unbreak>, and grants him a stack of Ascend, increasing his CRIT Rate by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. This effect can stack up to <unbreak>#3[i]</unbreak> time(s).",
+			"EffectRaw": "For every enemy hit when Argenti uses his Basic Attack, Skill, or Ultimate, regenerates Argenti's Energy by <unbreak>#1[i]</unbreak>, and grants him a stack of Apotheosis, increasing his CRIT Rate by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. This effect can stack up to <unbreak>#3[i]</unbreak> time(s).",
 			"AbridgedEffect": "When Argenti uses his Basic ATK, Skill, or Ultimate, he <color=#f29e38ff>regenerates Energy</color> and increases his <color=#f29e38ff>CRIT Rate</color> for every enemy target hit.",
 			"ElementType": "Physical",
 			"Levels": {
@@ -17257,6 +17686,867 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Maze.png"
 		},
 		"VersionAdded": "1.5"
+	},
+	"1303": {
+		"Id": "1303",
+		"Name": "Ruan Mei",
+		"BasicATK": {
+			"Id": "130301",
+			"Name": "Threading Fragrance",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Ruan Mei's ATK to a single target enemy.",
+			"AbridgedEffect": "Deals minor Ice DMG to a single enemy.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png"
+		},
+		"Skill": {
+			"Id": "130302",
+			"Name": "String Sings Slow Swirls",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "After using her Skill, Ruan Mei gains Overtone, lasting for <unbreak>#3[i]</unbreak> turn(s). This duration decreases by 1 at the start of Ruan Mei's turn. When Ruan Mei has Overtone, all allies' DMG increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and Weakness Break Efficiency increases by <unbreak>#2[i]%</unbreak>.",
+			"AbridgedEffect": "After using her Skill, Ruan Mei gains Overtone. When Ruan Mei has Overtone, increase all allies' <color=#f29e38ff>DMG</color> and <color=#f29e38ff>Weakness Break efficiency</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.16,
+						0.5,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.176,
+						0.5,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.192,
+						0.5,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.208,
+						0.5,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.224,
+						0.5,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.24,
+						0.5,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.26,
+						0.5,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.28,
+						0.5,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.3,
+						0.5,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.32,
+						0.5,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.336,
+						0.5,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.352,
+						0.5,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.368,
+						0.5,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.384,
+						0.5,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.4,
+						0.5,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130303",
+			"Name": "Petals to Stream, Repose in Dream",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Ruan Mei deploys a field that lasts for <unbreak>#2[i]</unbreak> turns. The field's duration decreases by 1 at the start of her turn.\nWhile inside the field, all allies' All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and their attacks apply Thanatoplum Rebloom to the enemies hit.\nWhen these enemies attempt to recover from Weakness Break, Thanatoplum Rebloom is triggered, extending the duration of their Weakness Break, delaying their action by an amount equal to <unbreak>#3[i]%</unbreak> of Ruan Mei's Break Effect plus <unbreak>#4[i]%</unbreak>, and dealing Break DMG equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of Ruan Mei's Ice Break DMG.\nEnemy targets cannot have Thanatoplum Rebloom re-applied to them until they recover from Weakness Break.",
+			"AbridgedEffect": "Increases <color=#f29e38ff>All-Type RES PEN</color> for all allies, and their attacks apply Thanatoplum Rebloom to enemies hit.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						2,
+						0.2,
+						0.1,
+						0.3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.16,
+						2,
+						0.2,
+						0.1,
+						0.32
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.17,
+						2,
+						0.2,
+						0.1,
+						0.34
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.18,
+						2,
+						0.2,
+						0.1,
+						0.36
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.19,
+						2,
+						0.2,
+						0.1,
+						0.38
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.2,
+						2,
+						0.2,
+						0.1,
+						0.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2125,
+						2,
+						0.2,
+						0.1,
+						0.425
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.225,
+						2,
+						0.2,
+						0.1,
+						0.45
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2375,
+						2,
+						0.2,
+						0.1,
+						0.475
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.25,
+						2,
+						0.2,
+						0.1,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.26,
+						2,
+						0.2,
+						0.1,
+						0.52
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.27,
+						2,
+						0.2,
+						0.1,
+						0.54
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.28,
+						2,
+						0.2,
+						0.1,
+						0.56
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.29,
+						2,
+						0.2,
+						0.1,
+						0.58
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						0.2,
+						0.1,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130304",
+			"Name": "Somatotypical Helix",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Increases SPD by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> for the team (excluding this character). When allies Break an enemy target's Weakness, Ruan Mei deals to this enemy target Break DMG equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of her Ice Break DMG.",
+			"AbridgedEffect": "Increases <color=#f29e38ff>SPD</color> for all allies (excluding this character). Breaking an enemy target's Weakness will <color=#f29e38ff>additionally deal Ice Break DMG</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.08,
+						0.6
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.082,
+						0.66
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.084,
+						0.72
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.086,
+						0.78
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.088,
+						0.84
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.09,
+						0.9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.0925,
+						0.975
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.095,
+						1.05
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.0975,
+						1.125
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.1,
+						1.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.102,
+						1.26
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.104,
+						1.32
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.106,
+						1.38
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.108,
+						1.44
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.11,
+						1.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png"
+		},
+		"Technique": {
+			"Id": "130307",
+			"Name": "Silken Serenade",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "Enhance",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "After using the Technique, gains Silken Serenade. At the start of the next battle, automatically triggers the Skill for <unbreak>#1[i]</unbreak> time(s) without consuming Skill Points.\nIn Simulated Universe, when Ruan Mei has Silken Serenade, the team actively attacking enemies will always be regarded as attacking their Weakness to enter battle, and this attack can reduce all enemies' Toughness regardless of Weakness types. When breaking Weakness, triggers Weakness Break Effect corresponding to the attacker's Type. For every Blessing in possession up to <unbreak>#4[i]</unbreak> Blessing(s), additionally increases the Toughness-Reducing DMG of this attack by <unbreak>#2[i]%</unbreak>. After breaking an enemy target's Weakness, additionally deals to the enemy target Break DMG equal to <unbreak>#3[i]%</unbreak> of Ruan Mei's Ice Break DMG.",
+			"AbridgedEffect": "The next time entering battle, automatically triggers the Skill for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s). After using the Technique, allies attacking enemies in Simulated Universe will always be regarded as attacking their Weakness to enter battle, and their Toughness is reduced <color=#f29e38ff>regardless of Weakness types</color>. For every Blessing in possession, increases Toughness-Reducing DMG and additionally deals Break DMG when breaking Weakness.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						1,
+						1,
+						20
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
+	"1305": {
+		"Id": "1305",
+		"Name": "Dr. Ratio",
+		"BasicATK": {
+			"Id": "130501",
+			"Name": "Mind is Might",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dr. Ratio's ATK to a single target enemy.",
+			"AbridgedEffect": "Deals minor Imaginary DMG to a single target enemy.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png"
+		},
+		"Skill": {
+			"Id": "130502",
+			"Name": "Intellectual Midwifery",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dr. Ratio's ATK to a single target enemy.",
+			"AbridgedEffect": "Deals Imaginary DMG to a single enemy.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130503",
+			"Name": "Syllogistic Paradox",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dr. Ratio's ATK to a single target enemy and applies Wiseman's Folly. When Dr. Ratio's allies attack a target afflicted with Wiseman's Folly, Dr. Ratio launches his Talent's <u>follow-up attack</u> for 1 time against this target.\nWiseman's Folly can be triggered for up to <unbreak>#2[i]</unbreak> times and only affects the most recent target of Dr. Ratio's Ultimate. This trigger count resets after Dr. Ratio's Ultimate is used.",
+			"AbridgedEffect": "Deals Imaginary DMG to a single target enemy and applies Wiseman's Folly. When Dr. Ratio's allies attack a target afflicted with Wiseman's Folly, Dr. Ratio launches 1 <color=#f29e38ff><u>follow-up attack</u></color> on this target.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.44,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.536,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.632,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.728,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.824,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.92,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.04,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.16,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.28,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.4,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.496,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.592,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.688,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.784,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.88,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130504",
+			"Name": "Cogito, Ergo Sum",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "When using his Skill, Dr. Ratio has a <unbreak>#2[i]%</unbreak> <u>fixed chance</u> of launching a <u>follow-up attack</u> against his target for 1 time, dealing Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dr. Ratio's ATK. For each debuff the target enemy has, the <u>fixed chance</u> of launching <u>follow-up attack</u> increases by <unbreak>#3[i]%</unbreak>. If the target enemy is defeated before the <u>follow-up attack</u> triggers, the <u>follow-up attack</u> will be directed at a single random enemy instead.",
+			"AbridgedEffect": "When using the Skill, there is a chance of launching a <color=#f29e38ff><u>follow-up attack</u></color> against the target for 1 time.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.35,
+						0.4,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.485,
+						0.4,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.62,
+						0.4,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.755,
+						0.4,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.89,
+						0.4,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.025,
+						0.4,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.1938,
+						0.4,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.3625,
+						0.4,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.5313,
+						0.4,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.7,
+						0.4,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.835,
+						0.4,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.97,
+						0.4,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.105,
+						0.4,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.24,
+						0.4,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.375,
+						0.4,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png"
+		},
+		"Technique": {
+			"Id": "130507",
+			"Name": "Mold of Idolatry",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Impair",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "After using Technique, creates a special dimension that Taunts nearby enemies, lasting for <unbreak>#1[i]</unbreak> second(s). After entering battle with enemies in this special dimension, there is a <unbreak>#2[i]%</unbreak> <u>base chance</u> to reduce each single enemy target's SPD by <unbreak>#3[i]%</unbreak> for <unbreak>#4[i]</unbreak> turn(s). Only 1 dimension created by allies can exist at the same time.",
+			"AbridgedEffect": "Creates a special dimension. Enemies within the dimension are Taunted. After entering battle with enemies in this dimension, there is a high chance to <color=#f29e38ff>reduce SPD</color> of enemy targets.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						10,
+						1,
+						0.15,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png"
+		},
+		"VersionAdded": "1.6"
 	},
 	"8001": {
 		"Id": "8001",

@@ -8106,7 +8106,7 @@
 				"Name": "Fechar o Programa",
 				"NodeType": 2,
 				"NodeTypeText": "Técnica",
-				"EffectRaw": "Ataca o inimigo imediatamente. Após entrar na batalha, causa Dano Quântico igual a <unbreak>#1[i]%</unbreak> do ATQ da Loba Prateada a todos os inimigos, ignora os Tipos de Fraqueza e reduz a Tenacidade de todos os inimigos. Inimigos com suas Fraquezas Quebradas desta forma ativarão o efeito de Quebra de Fraqueza contra Dano Quântico.",
+				"EffectRaw": "Ataca o inimigo imediatamente. Após entrar na batalha, causa Dano Quântico igual a <unbreak>#1[i]%</unbreak> do ATQ da Loba Prateada a todos os inimigos, ignora os Tipos de Fraqueza e reduz a Tenacidade de todos os inimigos. Inimigos com suas Fraquezas Quebradas desta forma ativarão o efeito de Quebra de Fraqueza contra Quântico.",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"100607"
@@ -10610,7 +10610,7 @@
 				"Name": "Astrometria",
 				"NodeType": 2,
 				"NodeTypeText": "Talento",
-				"EffectRaw": "Ganha 1 acúmulo de Carga para cada inimigo diferente que Asta atingir, além de um acúmulo extra se o inimigo atingido tiver Fraqueza de Fogo.\nPara cada acúmulo de Carga que Asta tiver, aumenta em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> o ATQ de todos os aliados, até <unbreak>#2[i]</unbreak> vez(es).\nA partir da segunda rodada, reduz em <unbreak>#3[i]</unbreak> a contagem de acúmulos de Carga de Asta no início de cada rodada.",
+				"EffectRaw": "Ganha 1 acúmulo de Carga para cada inimigo diferente que Asta atingir, além de um acúmulo extra se o inimigo atingido tiver Fraqueza contra Fogo.\nPara cada acúmulo de Carga que Asta tiver, aumenta em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> o ATQ de todos os aliados, até <unbreak>#2[i]</unbreak> vez(es).\nA partir da segunda rodada, reduz em <unbreak>#3[i]</unbreak> a contagem de acúmulos de Carga de Asta no início de cada rodada.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100904"
@@ -29347,7 +29347,7 @@
 				"Name": "Turbulência Financeira",
 				"NodeType": 3,
 				"NodeTypeText": "Habilidade Bônus",
-				"EffectRaw": "Aumenta em <unbreak>#1[i]%</unbreak> o Dano causado por Topaz e Dinheirinho aos inimigos-alvo com Fraqueza de Fogo.",
+				"EffectRaw": "Aumenta em <unbreak>#1[i]%</unbreak> o Dano causado por Topaz e Dinheirinho aos inimigos-alvo com Fraqueza contra Fogo.",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_SkillTree2.png",
@@ -48007,7 +48007,7 @@
 				"Name": "Nova Descarga",
 				"NodeType": 3,
 				"NodeTypeText": "Habilidade Bônus",
-				"EffectRaw": "Ao causar Dano a inimigos com Fraqueza a Imaginário, aumenta o Dano CRIT em <unbreak>#1[i]%</unbreak>.",
+				"EffectRaw": "Ao causar Dano a inimigos com Fraqueza contra Imaginário, aumenta o Dano CRIT em <unbreak>#1[i]%</unbreak>.",
 				"MaxLevel": 1,
 				"Location": "Point08",
 				"ImageIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_SkillTree3.png",
@@ -48419,6 +48419,1410 @@
 		},
 		"VersionAdded": "1.2"
 	},
+	"1214": {
+		"Id": "1214",
+		"Name": "Xueyi",
+		"Nodes": {
+			"1214001": {
+				"Id": "1214001",
+				"Name": "Sovela Quebra-mara",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ Básico",
+				"EffectRaw": "Causa <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Xueyi como Dano Quântico a um único inimigo-alvo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"121401"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "Lâmina Despedaçada",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1214002": {
+				"Id": "1214002",
+				"Name": "Obliteração de Iniquidade",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia",
+				"EffectRaw": "Causa Dano Quântico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Xueyi a um único inimigo e <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Xueyi como Dano Quântico aos inimigos adjacentes.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121402"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.7,
+							0.35
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.77,
+							0.385
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.84,
+							0.42
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "Lâmina Despedaçada",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.91,
+							0.455
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.98,
+							0.49
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.05,
+							0.525
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.1375,
+							0.5688
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.225,
+							0.6125
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 64000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.3125,
+							0.6563
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.4,
+							0.7
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 240000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214003": {
+				"Id": "1214003",
+				"Name": "Castigo Divino",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia Suprema",
+				"EffectRaw": "Causa Dano Quântico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Xueyi a um único inimigo-alvo. Este ataque ignora os Tipos de Fraqueza e reduz a Tenacidade do inimigo. Quando o inimigo sofrer a Quebra de Fraqueza, o efeito Quebra de Fraqueza contra Quântico é ativado.\nNeste ataque, quanto mais Tenacidade for reduzida, maior será o Dano causado, até um máximo de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> de aumento.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121403"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.09,
+							0.36
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.6,
+							0.096,
+							0.384
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.7,
+							0.102,
+							0.408
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "Lâmina Despedaçada",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.8,
+							0.108,
+							0.432
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.9,
+							0.114,
+							0.456
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.12,
+							0.48
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.125,
+							0.1275,
+							0.51
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.25,
+							0.135,
+							0.54
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 64000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.375,
+							0.1425,
+							0.57
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.5,
+							0.15,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 240000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214004": {
+				"Id": "1214004",
+				"Name": "Perpetuação Cármica",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Quando Xueyi reduz a Tenacidade do inimigo com seus ataques, ela acumula Karma. Quando mais a Tenacidade é reduzida, mais acúmulos de Karma são adicionados, até <unbreak>#1[i]</unbreak> acúmulos.\nQuando os aliados de Xueyi reduzem a Tenacidade do inimigo com seus ataques, Xueyi ganha <unbreak>#3[i]</unbreak> acúmulos de Karma.\nQuando o Karma atingir o número máximo de acúmulos e consumir todos os acúmulos de Karma atuais, imediatamente lança um <u>Ataque Extra</u> contra um inimigo-alvo, causando Dano por 3 vezes, com cada vez causando Dano Quântico igual a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Xueyi a um único inimigo aleatório. Este Ataque Extra não pode adicionar acúmulos de Karma.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"121404"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							8,
+							0.45,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							8,
+							0.495,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							8,
+							0.54,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "Lâmina Despedaçada",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							8,
+							0.585,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							8,
+							0.63,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							8,
+							0.675,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 6
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							8,
+							0.7313,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							8,
+							0.7875,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 64000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							8,
+							0.8438,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							8,
+							0.9,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 240000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214007": {
+				"Id": "1214007",
+				"Name": "Execução Sumária",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Ataca o inimigo imediatamente. Depois de entrar no combate, causa <unbreak>#1[i]%</unbreak> do ATQ de Xueyi como Dano Quântico a todos os inimigos.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"121407"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.8
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1214101": {
+				"Id": "1214101",
+				"Name": "Tear Clarividente",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Aumenta o Dano causado por esta unidade em uma quantidade igual a <unbreak>#1[i]%</unbreak> do Efeito de Quebra, até um máximo de <unbreak>#2[i]%</unbreak> de aumento de Dano.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							2.4
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "Lâmina Despedaçada",
+								"Count": 2
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214102": {
+				"Id": "1214102",
+				"Name": "Rolamentos Intrépidos",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Se a Tenacidade do inimigo-alvo for igual ou maior que <unbreak>#1[i]%</unbreak> da sua Tenacidade máxima, causa <unbreak>#2[i]%</unbreak> a mais de Dano ao usar a Perícia Suprema.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5,
+							0.1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214103": {
+				"Id": "1214103",
+				"Name": "Mainframe Perspicaz",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Xueyi irá manter os registros do número de acúmulos de Carma que excederem o limite máximo de acúmulos, até <unbreak>#1[i]</unbreak> acúmulos na contagem. Após o Talento de Xueyi ser acionado, ela ganhará um número de acúmulos de Carma correspondente ao número de acúmulos registrados.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1214201": {
+				"Id": "1214201",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214202": {
+				"Id": "1214202",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1214101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110111",
+								"Name": "Lâmina Despedaçada",
+								"Count": 2
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1214203": {
+				"Id": "1214203",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1214202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214204": {
+				"Id": "1214204",
+				"Name": "Bônus de Dano: Quântico",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta o Dano Quântico em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1214203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 2
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214205": {
+				"Id": "1214205",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1214102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110112",
+								"Name": "Lâmina Inerte",
+								"Count": 4
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1214206": {
+				"Id": "1214206",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1214205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214207": {
+				"Id": "1214207",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1214206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 36000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 2
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1214208": {
+				"Id": "1214208",
+				"Name": "Bônus de Dano: Quântico",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta o Dano Quântico em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1214103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1214209": {
+				"Id": "1214209",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1214208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1214210": {
+				"Id": "1214210",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1214208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 128000
+							},
+							{
+								"Id": "110113",
+								"Name": "Lâmina Destruidora de Mundos",
+								"Count": 6
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.6"
+	},
 	"1215": {
 		"Id": "1215",
 		"Name": "Hanya",
@@ -48564,7 +49968,7 @@
 				"Name": "Samsara, Bloqueada",
 				"NodeType": 2,
 				"NodeTypeText": "Perícia",
-				"EffectRaw": "Causa Dano Físico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Hanya a um único inimigo, então aplica Fardo a ele.\nA cada 2 ATQs Básicos, Perícias ou Perícias Supremas utilizados por aliados em um inimigo com Fardo, aliados recuperam imediatamente 1 Ponto de Perícia. Fardo só fica ativo no último alvo em que foi aplicado, e será removido automaticamente depois que o efeito de recuperação de Ponto de Perícia for ativado <unbreak>#2[i]</unbreak> vezes.",
+				"EffectRaw": "Causa Dano Físico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Hanya a um único inimigo-alvo, então aplica Fardo a ele.\nA cada 2 ATQs Básicos, Perícias ou Perícias Supremas utilizados por aliados em um inimigo com Fardo, aliados recuperam imediatamente 1 Ponto de Perícia. Fardo só fica ativo no último alvo em que foi aplicado, e será removido automaticamente depois que o efeito de recuperação de Ponto de Perícia for ativado <unbreak>#2[i]</unbreak> vezes.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121502"
@@ -49060,7 +50464,7 @@
 				"Name": "Sanção",
 				"NodeType": 2,
 				"NodeTypeText": "Talento",
-				"EffectRaw": "Quando um aliado usa um ATQ Básico, uma Perícia ou uma Perícia Suprema em um inimigo afligido com Fardo, o Dano causado aumenta em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> por <unbreak>#2[i]</unbreak> rodada(s).",
+				"EffectRaw": "Quando um aliado usa um ATQ Básico, uma Perícia ou uma Perícia Suprema em um inimigo afligido com Fardo, o Dano causado aumenta em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> durando por <unbreak>#2[i]</unbreak> rodada(s).",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121504"
@@ -49322,7 +50726,7 @@
 				"Name": "Consignação",
 				"NodeType": 3,
 				"NodeTypeText": "Habilidade Bônus",
-				"EffectRaw": "Aliados que ativarem o efeito de recuperação de Pontos de Perícia de Fardo têm o ATQ aumentado em <unbreak>#1[i]%</unbreak> por <unbreak>#2[i]</unbreak> rodadas.",
+				"EffectRaw": "Aliados que ativarem o efeito de recuperação de Pontos de Perícia de Fardo têm o ATQ aumentado em <unbreak>#1[i]%</unbreak> por <unbreak>#2[i]</unbreak> rodada(s).",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_SkillTree1.png",
@@ -49358,7 +50762,7 @@
 				"Name": "Submundo",
 				"NodeType": 3,
 				"NodeTypeText": "Habilidade Bônus",
-				"EffectRaw": "Quando inimigos com Fardo são derrotados, se o contador de recuperação de Pontos de Perícia de Fardo for <unbreak>#1[i]</unbreak> ou inferior, recupera mais <unbreak>#2[i]</unbreak> Ponto(s) de Perícia.",
+				"EffectRaw": "Se a contagem de ativação do efeito de recuperação de Pontos de Perícia de Fardo for <unbreak>#1[i]</unbreak> ou inferior quando um inimigo com Fardo for derrotado, recupera adicionalmente <unbreak>#2[i]</unbreak> Ponto(s) de Perícia.",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_SkillTree2.png",
@@ -51680,7 +53084,7 @@
 			},
 			"1302003": {
 				"Id": "1302003",
-				"Name": "Pois Neste Jardim a Beleza Suprema Concede",
+				"Name": "Pois Neste Jardim, a Beleza Suprema Concede",
 				"NodeType": 2,
 				"NodeTypeText": "Perícia Suprema",
 				"EffectRaw": "Consome <unbreak>#2[i]</unbreak> de Energia e causa Dano Físico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Argenti a todos os inimigos.",
@@ -51932,7 +53336,7 @@
 				"Name": "Objeto Sublime",
 				"NodeType": 2,
 				"NodeTypeText": "Talento",
-				"EffectRaw": "Para cada inimigo atingido quando Argenti usa seu ATQ Básico, Perícia ou Perícia Suprema, regenera a Energia de Argenti em <unbreak>#1[i]</unbreak>, e concede a ele um acúmulo de Ascender, além de aumentar sua Chance de CRIT em <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. Este efeito pode acumular até <unbreak>#3[i]</unbreak> vez(es).",
+				"EffectRaw": "Para cada inimigo atingido quando Argenti usa seu ATQ Básico, Perícia ou Perícia Suprema, regenera a Energia de Argenti em <unbreak>#1[i]</unbreak>, e concede a ele um acúmulo de Apoteose, além de aumentar sua Chance de CRIT em <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. Este efeito pode acumular até <unbreak>#3[i]</unbreak> vez(es).",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"130204"
@@ -52213,7 +53617,7 @@
 				"Name": "Piedade",
 				"NodeType": 3,
 				"NodeTypeText": "Habilidade Bônus",
-				"EffectRaw": "No início de uma rodada, ganha imediatamente <unbreak>#1[i]</unbreak> acúmulo(s) de Ascender.",
+				"EffectRaw": "No início de uma rodada, ganha imediatamente <unbreak>#1[i]</unbreak> acúmulo(s) de Apoteose.",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_SkillTree1.png",
@@ -52699,6 +54103,2853 @@
 			}
 		},
 		"VersionAdded": "1.5"
+	},
+	"1303": {
+		"Id": "1303",
+		"Name": "Ruan Mei",
+		"Nodes": {
+			"1303001": {
+				"Id": "1303001",
+				"Name": "Fios de Perfume",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ Básico",
+				"EffectRaw": "Causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Ruan Mei a um único inimigo-alvo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"130301"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "Melodia Harmônica",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1303002": {
+				"Id": "1303002",
+				"Name": "Cordas Cantam Lentos Sons",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia",
+				"EffectRaw": "Após usar sua Perícia, Ruan Mei ganha Tom Acima, durando por <unbreak>#3[i]</unbreak> rodada(s). Essa duração diminui em 1 no início da rodada de Ruan Mei. Quando Ruan Mei possui Tom Acima, o Dano de todos os aliados é aumentado em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> e a Eficiência de Quebra de Fraqueza deles aumenta em <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130302"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.16,
+							0.5,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.176,
+							0.5,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.192,
+							0.5,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "Melodia Harmônica",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.208,
+							0.5,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.224,
+							0.5,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.24,
+							0.5,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.26,
+							0.5,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.28,
+							0.5,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.3,
+							0.5,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.32,
+							0.5,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303003": {
+				"Id": "1303003",
+				"Name": "Pétalas na Corrente, Repouso Indolente",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia Suprema",
+				"EffectRaw": "Ruan Mei implanta um campo que dura por <unbreak>#2[i]</unbreak> rodadas. A duração do campo diminui em 1 no início da rodada dela.\nEnquanto estiver dentro do campo, a PEN de RES a Todos os Tipos de todos os aliados aumenta em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> e os ataques deles aplicam Reflorescer da Ameixa aos inimigos atingidos.\nQuando esses inimigos tentam se recuperar da Quebra de Fraqueza, Reflorescer da Ameixa é ativado, estendendo a duração da sua Quebra de Fraqueza, atrasando sua ação em uma quantidade igual a <unbreak>#3[i]%</unbreak> do Efeito de Quebra de Ruan Mei + <unbreak>#4[i]%</unbreak>, e causando Dano de Quebra igual a <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> do Dano de Quebra de Gelo de Ruan Mei.\nReflorescer da Ameixa não pode ser aplicado novamente aos inimigos-alvo até eles se recuperarem da Quebra de Fraqueza.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130303"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.15,
+							2,
+							0.2,
+							0.1,
+							0.3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.16,
+							2,
+							0.2,
+							0.1,
+							0.32
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.17,
+							2,
+							0.2,
+							0.1,
+							0.34
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "Melodia Harmônica",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.18,
+							2,
+							0.2,
+							0.1,
+							0.36
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.19,
+							2,
+							0.2,
+							0.1,
+							0.38
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.2,
+							2,
+							0.2,
+							0.1,
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.2125,
+							2,
+							0.2,
+							0.1,
+							0.425
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.225,
+							2,
+							0.2,
+							0.1,
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.2375,
+							2,
+							0.2,
+							0.1,
+							0.475
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.25,
+							2,
+							0.2,
+							0.1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303004": {
+				"Id": "1303004",
+				"Name": "Hélice Somatotípica",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Aumenta a VEL em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> para a equipe (excluindo este personagem). Quando os aliados aplicam Quebra de Fraqueza a um inimigo-alvo, Ruan Mei causa Dano de Quebra a esse inimigo igual a <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de seu Dano de Quebra de Gelo.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130304"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08,
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.082,
+							0.66
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.084,
+							0.72
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "Melodia Harmônica",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.086,
+							0.78
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.088,
+							0.84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.09,
+							0.9
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.0925,
+							0.975
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.095,
+							1.05
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.0975,
+							1.125
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.1,
+							1.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303007": {
+				"Id": "1303007",
+				"Name": "Serenata de Seda",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Depois de usar a Técnica, ganha Serenata de Seda. No início da próxima batalha, ativa automaticamente a Perícia <unbreak>#1[i]</unbreak> vez(es) sem consumir Pontos de Perícia.\nNo Universo Simulado, quando Ruan Mei possuir Serenata de Seda, a equipe atacando inimigos será considerada como se sempre estivesse atacando sua Fraqueza para entrar em batalha, e este ataque pode reduzir a Tenacidade de todos os inimigos independente dos Tipos de Fraqueza. Ao aplicar Quebra de Fraqueza, ativa o Efeito de Quebra de Fraqueza correspondente ao Tipo do atacante. Para cada Bênção em posse (até <unbreak>#4[i]</unbreak> Bênçãos), adicionalmente aumenta o Dano de Redução de Tenacidade deste ataque em <unbreak>#2[i]%</unbreak>. Após aplicar a Quebra de Fraqueza a um inimigo-alvo, causa adicionalmente Dano de Quebra igual a <unbreak>#3[i]%</unbreak> do Dano de Quebra de Gelo de Ruan Mei ao inimigo-alvo.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"130307"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1,
+							1,
+							20
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1303101": {
+				"Id": "1303101",
+				"Name": "Respiração Inerte",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Aumenta o Efeito de Quebra em <unbreak>#1[i]%</unbreak> para todos os aliados.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "Melodia Harmônica",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303102": {
+				"Id": "1303102",
+				"Name": "Dias Mínguam, Pensamentos Crescem",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Ruan Mei regenera <unbreak>#1[i]</unbreak> de Energia ao início da sua rodada.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303103": {
+				"Id": "1303103",
+				"Name": "Luz de Velas em Águas Tranquilas",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Em batalha, para cada <unbreak>#2[i]%</unbreak> do Efeito de Quebra de Ruan Mei que exceda <unbreak>#1[i]%</unbreak>, sua Perícia aumenta adicionalmente o Dano dos aliados em <unbreak>#3[i]%</unbreak>, até um máximo de <unbreak>#4[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.2,
+							0.1,
+							0.06,
+							0.36
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1303201": {
+				"Id": "1303201",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1303202": {
+				"Id": "1303202",
+				"Name": "Bônus de DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a DEF em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1303101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110161",
+								"Name": "Melodia Harmônica",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Scionette Imortal",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1303203": {
+				"Id": "1303203",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1303202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303204": {
+				"Id": "1303204",
+				"Name": "Bônus de VEL",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a VEL em <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1303201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303205": {
+				"Id": "1303205",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1303102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110162",
+								"Name": "Hino Ancestral",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Floresciaéreo Imortal",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1303206": {
+				"Id": "1303206",
+				"Name": "Bônus de DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a DEF em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1303205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303207": {
+				"Id": "1303207",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1303201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1303208": {
+				"Id": "1303208",
+				"Name": "Bônus de VEL",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a VEL em <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1303103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1303209": {
+				"Id": "1303209",
+				"Name": "Bônus de DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a DEF em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1303208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1303210": {
+				"Id": "1303210",
+				"Name": "Aprimoramento de Quebra",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta em <unbreak>#1[f1]%</unbreak> o Efeito de Quebra",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1303208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110163",
+								"Name": "Sinfonia Stellaris",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Luminivinha Imortal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.6"
+	},
+	"1305": {
+		"Id": "1305",
+		"Name": "Dr. Ratio",
+		"Nodes": {
+			"1305001": {
+				"Id": "1305001",
+				"Name": "A Mente É Poderosa",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ Básico",
+				"EffectRaw": "Causa Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio a um único inimigo-alvo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"130501"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Flecha de Caça-Feras",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1305002": {
+				"Id": "1305002",
+				"Name": "Obstetrícia Intelectual",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia",
+				"EffectRaw": "Causa Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio a um único inimigo.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130502"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Flecha de Caça-Feras",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 7
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305003": {
+				"Id": "1305003",
+				"Name": "Paradoxo Silogístico",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia Suprema",
+				"EffectRaw": "Causa Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio a um único inimigo-alvo e aplica a Tolice do Sábio. Quando os aliados do Dr. Ratio atacam um alvo afligido com Tolice do Sábio, o Dr. Ratio realiza o <u>Ataque Extra</u> do seu Talento 1 vez contra o alvo.\nA Tolice do Sábio pode ser ativada até <unbreak>#2[i]</unbreak> vezes e só afeta o alvo mais recente da Perícia Suprema do Dr. Ratio. Essa contagem de ativação reinicia depois que a Perícia Suprema do Dr. Ratio é utilizada.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130503"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.44,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.536,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.632,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Flecha de Caça-Feras",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.728,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.824,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.92,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 7
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.04,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.16,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.28,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.4,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305004": {
+				"Id": "1305004",
+				"Name": "Cogito, Ergo Sum",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Ao usar a sua Perícia, o Dr. Ratio tem uma <u>chance fixa</u> de <unbreak>#2[i]%</unbreak> de realizar um <u>Ataque Extra</u> contra o alvo 1 vez, causando Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio. Para cada penalidade que o inimigo possui, a <u>chance fixa</u> de realizar o <u>Ataque Extra</u> aumenta em <unbreak>#3[i]%</unbreak>. Se o inimigo-alvo for derrotado antes da ativação do <u>Ataque Extra</u>, o <u>Ataque Extra</u> será direcionado a um único inimigo aleatório ao invés disso.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130504"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.35,
+							0.4,
+							0.2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.485,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.62,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Flecha de Caça-Feras",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.755,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.89,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2.025,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 7
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.1938,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.3625,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.5313,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.7,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305007": {
+				"Id": "1305007",
+				"Name": "Molde da Idolatria",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Após usar a Técnica, cria uma dimensão especial que causa Provocação nos inimigos próximos, durando por <unbreak>#1[i]</unbreak> segundo(s). Após entrar em combate com inimigos nesta dimensão especial, há uma <u>chance-base</u> de <unbreak>#2[i]%</unbreak> de reduzir a VEL de cada inimigo-alvo em <unbreak>#3[i]%</unbreak> por <unbreak>#4[i]</unbreak> rodada(s). Apenas 1 dimensão criada pelos aliados pode existir ao mesmo tempo.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"130507"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							1,
+							0.15,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1305101": {
+				"Id": "1305101",
+				"Name": "Soma",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Quando o Dr. Ratio usa sua Perícia, para cada penalidade no alvo, aumenta sua Chance de CRIT em <unbreak>#1[f1]%</unbreak> e seu Dano CRIT em <unbreak>#2[i]%</unbreak>. Esse efeito pode acumular até <unbreak>#3[i]</unbreak> vez(es).",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.025,
+							0.05,
+							6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Flecha de Caça-Feras",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305102": {
+				"Id": "1305102",
+				"Name": "Inferência",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Quando a Perícia é utilizada para atacar um inimigo-alvo, há uma chance-base de <unbreak>#1[i]%</unbreak> de reduzir a RES a Efeito do alvo atacado em <unbreak>#2[i]%</unbreak> por <unbreak>#3[i]</unbreak> rodada(s).",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.1,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305103": {
+				"Id": "1305103",
+				"Name": "Dedução",
+				"NodeType": 3,
+				"NodeTypeText": "Habilidade Bônus",
+				"EffectRaw": "Ao causar Dano a um alvo que possua <unbreak>#1[i]</unbreak> ou mais penalidades, para cada penalidade que o alvo possua, o Dano causado pelo Dr. Ratio a este alvo aumenta em <unbreak>#2[i]%</unbreak>, até um aumento máximo de <unbreak>#3[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							0.1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1305201": {
+				"Id": "1305201",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1305202": {
+				"Id": "1305202",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1305101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110121",
+								"Name": "Flecha de Caça-Feras",
+								"Count": 3
+							},
+							{
+								"Id": "111011",
+								"Name": "Instinto de Ladrão",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1305203": {
+				"Id": "1305203",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1305202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305204": {
+				"Id": "1305204",
+				"Name": "Bônus de DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a DEF em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 3
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305205": {
+				"Id": "1305205",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1305102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110122",
+								"Name": "Flecha de Caça-Demônio",
+								"Count": 5
+							},
+							{
+								"Id": "111012",
+								"Name": "Esquema do Usurpador",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1305206": {
+				"Id": "1305206",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1305205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305207": {
+				"Id": "1305207",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 3
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1305208": {
+				"Id": "1305208",
+				"Name": "Bônus de DEF",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a DEF em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1305103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1305209": {
+				"Id": "1305209",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1305208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1305210": {
+				"Id": "1305210",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bônus de Atributo",
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1305208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110123",
+								"Name": "Flecha de Caça-Estrela",
+								"Count": 8
+							},
+							{
+								"Id": "111013",
+								"Name": "Vontade de Conquistador",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "1.6"
 	},
 	"8001": {
 		"Id": "8001",

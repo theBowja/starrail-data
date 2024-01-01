@@ -55,7 +55,7 @@ global.replaceParams = function(str, params, applyFormat=true) {
 			const digits = parseInt(format.substring(1));
 			value = value.toFixed(digits);
 		} else {
-			console.log(`Error: unknown format in replaceParams ${toreplace}`);
+			console.log(`Error: unknown format in replaceParams ${toreplace} for ${str}`);
 		}
 
 		str = str.replaceAll(toreplace, value+match[3]);

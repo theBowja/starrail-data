@@ -1824,7 +1824,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Kafka pada 1 target musuh, serta mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> ATK Kafka pada musuh di sekitar target.\nJika target musuh sedang terkena DoT, seluruh DoT yang diterimanya akan segera mengakibatkan DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> DMG awal DoT Debuff-nya.",
-			"AbridgedEffect": "Mengakibatkan Lightning DMG pada 1 musuh dan mengakibatkan Lightning DMG dalam jumlah kecil pada target di sekitarnya.\nJika target utama berada dalam DoT Debuff, maka DoT Debuff yang dimilikinya akan mengakibatkan 1 kali DMG tambahan.",
+			"AbridgedEffect": "Mengakibatkan Lightning DMG pada 1 musuh dan mengakibatkan Lightning DMG dalam jumlah kecil pada target di sekitarnya.\nJika target utama berada dalam status DoT Debuff, maka DoT Debuff yang dimilikinya akan <color=#f29e38ff>mengakibatkan 1 kali DMG tambahan</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1944,7 +1944,7 @@
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Kafka pada seluruh musuh. Musuh yang terkena serangan memiliki <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk memasuki status Shock, dan membuat semua status Shock yang saat ini dimiliki oleh target segera mengakibatkan DMG sebesar <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> DMG awal DoT-nya.\nSaat dalam status Shock, target musuh akan menerima Lightning DoT sebesar <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> ATK Kafka saat setiap gilirannya dimulai.",
-			"AbridgedEffect": "Mengakibatkan Lightning DMG dalam jumlah kecil pada seluruh musuh, berpeluang besar menambahkan status Shock pada musuh.\nJika target musuh berstatus Shock, maka status Shock tersebut akan mengakibatkan 1 kali DMG tambahan.",
+			"AbridgedEffect": "Mengakibatkan Lightning DMG dalam jumlah kecil pada seluruh musuh, berpeluang besar <color=#f29e38ff>menambahkan status Shock</color> pada musuh.\nJika target musuh berstatus Shock, maka status Shock tersebut akan <color=#f29e38ff>mengakibatkan 1 kali DMG tambahan</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2094,7 +2094,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Setelah rekan Kafka melancarkan Basic ATK pada target musuh, Kafka akan segera memicu <u>Serangan Lanjutan</u> yang mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Kafka pada target tersebut, serta memiliki <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk membuat target musuh yang terkena serangan ini memasuki status Shock yang sama dengan status Shock dari Ultimate Kafka, berlangsung selama <unbreak>#3[i]</unbreak> giliran. Efek ini hanya dapat dipicu 1 kali setiap giliran.",
-			"AbridgedEffect": "Setelah rekan Kafka melancarkan Basic ATK pada target musuh, Kafka akan segera memicu <u>Serangan Lanjutan</u> yang mengakibatkan Lightning DMG pada target, serta berpeluang besar untuk menambahkan status Shock padanya. Efek ini hanya dapat dipicu 1 kali setiap giliran.",
+			"AbridgedEffect": "Setelah rekan Kafka melancarkan Basic ATK pada target musuh, Kafka akan segera memicu <u>Serangan Lanjutan</u> yang mengakibatkan Lightning DMG pada target, serta berpeluang besar untuk <color=#f29e38ff>menambahkan status Shock</color> padanya. Efek ini hanya dapat dipicu 1 kali setiap giliran.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2213,7 +2213,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "Segera menyerang musuh dalam cakupan area tertentu. Setelah memasuki pertempuran, mengakibatkan Lightning DMG sebesar <unbreak>#3[i]%</unbreak> ATK Kafka pada seluruh musuh, dan di saat bersamaan memiliki <unbreak>#1[i]%</unbreak> <u>peluang dasar</u> untuk membuat setiap target musuh memasuki status Shock yang sama dengan status Shock dari Ultimate Kafka selama <unbreak>#2[i]</unbreak> giliran.",
-			"AbridgedEffect": "Menyerang seluruh musuh dalam cakupan area tertentu. Setelah memasuki pertempuran, mengakibatkan Lightning DMG dalam jumlah kecil pada seluruh musuh, dan berpeluang besar menambahkan status Shock pada mereka.",
+			"AbridgedEffect": "Menyerang seluruh musuh dalam cakupan area, setelah memasuki pertempuran, mengakibatkan Lightning DMG dalam jumlah kecil pada seluruh musuh, serta berpeluang besar <color=#f29e38ff>menambahkan status Shock</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2295,11 +2295,11 @@
 			"Id": "100602",
 			"Name": "Allow Changes?",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
-			"EffectRaw": "Memiliki <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>peluang dasar</u> untuk memberikan 1 Weakness tambahan dengan Tipe yang sama dengan salah 1 rekan tim secara acak pada 1 target musuh dan mengurangi <unbreak>#4[i]%</unbreak> DMG RES target musuh terhadap Tipe serangan tersebut selama <unbreak>#3[i]</unbreak> giliran. Jika Weakness yang ditambahkan adalah Weakness yang sudah dimiliki oleh target musuh, maka tidak akan memicu pengurangan DMG RES terhadap Tipe serangan tersebut.\nSatu target musuh hanya dapat menerima 1 Weakness dari Silver Wolf. Saat Silver Wolf menambah Weakness lagi pada target musuh yang sama, maka hanya Weakness terbaru yang akan dipertahankan.\nMemiliki <unbreak>#5[i]%</unbreak> <u>peluang dasar</u> untuk memberi tambahan pengurangan DMG RES seluruh tipe pada target sebesar <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> selama <unbreak>#7[i]</unbreak> giliran.\nMengakibatkan Quantum DMG pada target tersebut sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Silver Wolf.",
+			"EffectRaw": "Memiliki <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>peluang dasar</u> untuk memberikan 1 Weakness tambahan dengan Tipe yang sama dengan salah satu rekan tim secara acak pada 1 target musuh dan mengurangi <unbreak>#4[i]%</unbreak> DMG RES target musuh terhadap Tipe serangan tersebut selama <unbreak>#3[i]</unbreak> giliran. Jika Weakness yang ditambahkan adalah Weakness yang sudah dimiliki oleh target musuh, maka tidak akan memicu pengurangan DMG RES terhadap Tipe serangan tersebut.\nSatu target musuh hanya dapat menerima 1 Weakness dari Silver Wolf. Saat Silver Wolf menambah Weakness lagi pada target musuh yang sama, maka hanya Weakness terbaru yang akan dipertahankan.\nMemiliki <unbreak>#5[i]%</unbreak> <u>peluang dasar</u> untuk memberi tambahan pengurangan DMG RES seluruh tipe pada target sebesar <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> selama <unbreak>#7[i]</unbreak> giliran.\nMengakibatkan Quantum DMG pada target tersebut sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Silver Wolf.",
 			"AbridgedEffect": "Berpeluang besar untuk <color=#f29e38ff>memberikan Weakness tambahan</color> pada 1 musuh dan mengakibatkan Quantum DMG pada musuh tersebut.",
 			"ElementType": "Quantum",
 			"Levels": {
@@ -2475,8 +2475,8 @@
 			"Id": "100603",
 			"Name": "User Banned",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Memiliki <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>peluang dasar</u> untuk mengurangi <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> DEF target musuh selama <unbreak>#4[i]</unbreak> giliran. Di saat yang bersamaan, mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Silver Wolf pada target tersebut.",
@@ -5294,8 +5294,8 @@
 			"Id": "110402",
 			"Name": "Daunting Smite",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Mengakibatkan Ice DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Gepard pada 1 target musuh. Di saat bersamaan, target musuh yang terkena serangan memiliki <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk memasuki status Frozen selama <unbreak>#3[i]</unbreak> giliran.\nSelama dalam status Frozen, target musuh tidak dapat beraksi dan di saat bersamaan akan menerima <u>Ice DMG tambahan</u> sebesar <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> ATK Gepard setiap gilirannya dimulai.",
@@ -5728,7 +5728,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Segera memulihkan HP sebesar <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> Max HP Natasha +<color=#f29e38ff><unbreak>#4[i]</unbreak></color> pada 1 rekan tim yang ditargetkan, dan di saat bersamaan memulihkan HP sebesar <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> Max HP Natasha +<color=#f29e38ff><unbreak>#5[i]</unbreak></color> pada target setiap gilirannya dimulai, berlangsung selama <unbreak>#3[i]</unbreak> giliran.",
-			"AbridgedEffect": "Memulihkan HP 1 rekan tim dan memberikan pemulihan berkelanjutan pada target.",
+			"AbridgedEffect": "<color=#f29e38ff>Memulihkan HP</color> 1 rekan tim, dan memberikan target <color=#f29e38ff>Pemulihan Berkelanjutan</color>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5877,7 +5877,7 @@
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Segera memulihkan HP sebesar <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> Max HP Natasha +<color=#f29e38ff><unbreak>#2[i]</unbreak></color> pada seluruh rekan tim.",
-			"AbridgedEffect": "Memulihkan HP seluruh rekan tim.",
+			"AbridgedEffect": "<color=#f29e38ff>Memulihkan HP</color> seluruh rekan tim.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -6167,8 +6167,8 @@
 			"Id": "110602",
 			"Name": "Frostbite",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Menghilangkan <unbreak>#2[i]</unbreak> <u>Buff</u> dan mengakibatkan Ice DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Pela pada 1 target musuh.",
@@ -6272,8 +6272,8 @@
 			"Id": "110603",
 			"Name": "Zone Suppression",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Memiliki <unbreak>#1[i]%</unbreak> <u>peluang dasar</u> membuat setiap target musuh memasuki status \"Exposed\", di saat yang bersamaan juga mengakibatkan Ice DMG sebesar <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> ATK Pela pada seluruh musuh.\nTarget musuh yang berstatus \"Exposed\" akan mengalami <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> pengurangan DEF selama <unbreak>#3[i]</unbreak> giliran.",
@@ -7147,8 +7147,8 @@
 			"Id": "110803",
 			"Name": "Surprise Present",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Impair",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Mengakibatkan Wind DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Sampo pada seluruh musuh, di saat bersamaan memiliki <unbreak>#4[i]%</unbreak> <u>peluang dasar</u> untuk meningkatkan <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> DoT yang diterima musuh yang terkena serangan selama <unbreak>#3[i]</unbreak> giliran.",
@@ -11477,7 +11477,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Mengonsumsi HP sebesar <unbreak>#1[i]%</unbreak> Max HP Blade dan memasuki status \"Hellscape\".\nSaat berstatus \"Hellscape\", Blade tidak dapat melancarkan Skill dan DMG yang diakibatkannya akan meningkat <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. Basic Attack \"Shard Sword\" akan meningkat menjadi \"Forest of Swords\" selama <unbreak>#2[i]</unbreak> giliran.\nJika HP-nya tidak mencukupi, saat melancarkan Skill, HP Blade akan berkurang hingga 1.\nSkill ini tidak dapat memulihkan Energy. Setelah melancarkan Skill ini, giliran saat ini tidak akan berakhir.",
-			"AbridgedEffect": "Mengonsumsi HP diri sendiri, memperoleh Enhanced Basic Attack dan giliran tidak akan berakhir.",
+			"AbridgedEffect": "Mengonsumsi HP diri, <color=#f29e38ff>memperoleh penguatan Basic Attack</color>, dan giliran kali ini tidak akan berakhir.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -11792,7 +11792,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Saat Blade terkena serangan atau mengonsumsi HP-nya, dia akan mendapatkan 1 lapis Charge, maksimal 5 lapis. Setiap kali Blade terkena serangan, Blade hanya bisa mendapatkan 1 lapis Charge efek ini.\nSetelah jumlah Charge mencapai batas maksimal, Blade akan segera melancarkan 1 kali <u>Serangan Lanjutan</u> yang mengakibatkan Wind DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> ATK Blade + <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> Max HP Blade pada seluruh musuh. Di saat yang bersamaan, akan memulihkan HP Blade sebesar <unbreak>#3[i]%</unbreak> Max HP-nya. Setelah Serangan Lanjutan ini dilancarkan, semua lapisan Charge akan dihapus.",
-			"AbridgedEffect": "Saat HP Blade berkurang, Blade akan memperoleh 1 lapis Charge. Saat Charge ditumpuk hingga batas maksimum, Blade akan segera mengakibatkan Wind DMG pada seluruh musuh dan memulihkan HP, kemudian mengonsumsi seluruh Charge.",
+			"AbridgedEffect": "Saat HP Blade berkurang, Blade akan memperoleh 1 lapis Charge. Saat Charge ditumpuk hingga batas maksimum, Blade akan <color=#f29e38ff>segera mengakibatkan Wind DMG pada seluruh musuh</color> dan memulihkan HP, kemudian mengonsumsi seluruh Charge.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -15913,6 +15913,435 @@
 		},
 		"VersionAdded": "1.3"
 	},
+	"1214": {
+		"Id": "1214",
+		"Name": "Xueyi",
+		"BasicATK": {
+			"Id": "121401",
+			"Name": "Mara-Sunder Awl",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Xueyi pada 1 target musuh.",
+			"AbridgedEffect": "Mengakibatkan Quantum DMG dalam jumlah kecil pada 1 musuh.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png"
+		},
+		"Skill": {
+			"Id": "121402",
+			"Name": "Iniquity Obliteration",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Blast",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Xueyi pada satu musuh yang ditarget, serta mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> ATK Xueyi pada musuh di sekitar target.",
+			"AbridgedEffect": "Mengakibatkan Quantum DMG pada 1 musuh, dan Quantum DMG dalam jumlah kecil pada target di sekitarnya.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.77,
+						0.385
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.42
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.91,
+						0.455
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.98,
+						0.49
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.05,
+						0.525
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1375,
+						0.5688
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.225,
+						0.6125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3125,
+						0.6563
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.47,
+						0.735
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.54,
+						0.77
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.61,
+						0.805
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.68,
+						0.84
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.75,
+						0.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png"
+		},
+		"Ultimate": {
+			"Id": "121403",
+			"Name": "Divine Castigation",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Xueyi pada 1 target musuh. Serangan ini mengabaikan Tipe Weakness dan mengurangi Toughness musuh tersebut. Jika mengakibatkan Weakness Break dengan cara ini, maka akan memicu efek Quantum Weakness Break.\nDalam serangan kali ini, semakin banyak Toughness yang berkurang, semakin tinggi DMG yang diakibatkan, maksimal hingga <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.",
+			"AbridgedEffect": "Mengakibatkan Quantum DMG dalam jumlah besar pada satu musuh. Serangan ini <color=#f29e38ff>mengabaikan Tipe Weakness</color> dan mengurangi Toughness musuh tersebut. Semakin banyak Toughness yang berkurang, semakin tinggi DMG yang diakibatkan.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.09,
+						0.36
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.6,
+						0.096,
+						0.384
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.7,
+						0.102,
+						0.408
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.8,
+						0.108,
+						0.432
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.9,
+						0.114,
+						0.456
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.12,
+						0.48
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.125,
+						0.1275,
+						0.51
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.25,
+						0.135,
+						0.54
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.375,
+						0.1425,
+						0.57
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.5,
+						0.15,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.6,
+						0.156,
+						0.624
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.7,
+						0.162,
+						0.648
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.8,
+						0.168,
+						0.672
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.9,
+						0.174,
+						0.696
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.18,
+						0.72
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png"
+		},
+		"Talent": {
+			"Id": "121404",
+			"Name": "Karmic Perpetuation",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "Bounce",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Saat serangan yang dilancarkan Xueyi mengurangi Toughness musuh, Xueyi akan menumpuk lapisan \"Karma\". Semakin banyak Toughness yang berkurang, semakin banyak lapisan \"Karma\" yang diperoleh, dapat ditumpuk hingga <unbreak>#1[i]</unbreak> lapis.\nSetelah serangan yang dilancarkan rekan tim Xueyi mengurangi Toughness musuh, Xueyi akan memperoleh <unbreak>#3[i]</unbreak> lapis \"Karma\".\nSaat tumpukan lapisan \"Karma\" mencapai batas maksimum, semua lapisan \"Karma\" saat ini akan dikonsumsi, dan Xueyi akan segera melancarkan <u>Serangan Lanjutan</u> pada target musuh, mengakibatkan DMG sebanyak 3 kali, yang masing-masing mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> ATK Xueyi pada musuh secara acak. Serangan Lanjutan ini tidak akan menambah lapisan \"Karma\".",
+			"AbridgedEffect": "Saat serangan yang dilancarkan Xueyi atau setelah serangan yang dilancarkan rekan tim Xueyi mengurangi Toughness musuh, Xueyi akan memperoleh lapisan \"Karma\". Saat tumpukan \"Karma\" mencapai batas maksimum, Xueyi akan <color=#f29e38ff>segera melancarkan <u>Serangan Lanjutan</u></color> yang mengakibatkan Quantum DMG dalam jumlah kecil pada 1 musuh, total Bounce 3 kali dan mengonsumsi semua \"Karma.\"",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						8,
+						0.45,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						8,
+						0.495,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						8,
+						0.54,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						8,
+						0.585,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						8,
+						0.63,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						8,
+						0.675,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						8,
+						0.7313,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						8,
+						0.7875,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						8,
+						0.8438,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						8,
+						0.9,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						8,
+						0.945,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						8,
+						0.99,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						8,
+						1.035,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						8,
+						1.08,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						8,
+						1.125,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png"
+		},
+		"Technique": {
+			"Id": "121407",
+			"Name": "Summary Execution",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Segera menyerang musuh, dan setelah memasuki pertempuran, mengakibatkan Quantum DMG sebesar <unbreak>#1[i]%</unbreak> ATK Xueyi pada seluruh musuh.",
+			"AbridgedEffect": "Menyerang musuh dan mengakibatkan Quantum DMG dalam jumlah kecil pada seluruh musuh setelah memasuki pertempuran.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
 	"1215": {
 		"Id": "1215",
 		"Name": "Hanya",
@@ -15985,7 +16414,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "Mengakibatkan Physical DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Hanya pada 1 musuh yang ditarget, serta membuat target tersebut memasuki status \"Burden\".\nSaat setelah rekan tim melancarkan 2 kali serangan (Basic ATK, Skill, atau Ultimate) pada target musuh yang berstatus \"Burden\", akan segera memulihkan 1 Poin Skill untuk rekan tim. \"Burden\" cuma akan efektif pada target terbaru yang memperolehnya, serta akan dihapus secara otomatis setelah memicu <unbreak>#2[i]</unbreak> kali efek pemulihan Poin Skill.",
-			"AbridgedEffect": "Mengakibatkan Physical DMG pada 1 musuh, serta membuat target tersebut memasuki status \"Burden\". Saat setelah rekan tim melancarkan 2 kali Basic ATK, Skill, atau Ultimate pada target musuh yang berstatus \"Burden\", akan segera memulihkan <color=#f29e38ff>1 Poin Skill</color> untuk rekan tim.",
+			"AbridgedEffect": "Mengakibatkan Physical DMG pada 1 musuh, serta membuat target tersebut memasuki status \"Burden\". Saat setelah rekan tim melancarkan 2 kali serangan (Basic ATK, Skill, atau Ultimate) pada target musuh yang berstatus \"Burden\", akan segera memulihkan <color=#f29e38ff>1 Poin Skill</color> untuk rekan tim.",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -16311,7 +16740,7 @@
 			"TagType": "MazeAttack",
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
-			"EffectRaw": "Segera menyerang musuh. Setelah memasuki pertempuran, memberikan \"Burden\" sebesar efek Skill pada 1 musuh secara acak.",
+			"EffectRaw": "Segera menyerang musuh. Setelah memasuki pertempuran, akan memberikan \"Burden\" yang sama dengan efek Skill pada 1 musuh secara acak.",
 			"AbridgedEffect": "Menyerang musuh. Setelah memasuki pertempuran, akan menambahkan efek \"Burden\" yang sama dengan Skill pada musuh secara acak.",
 			"ElementType": "Physical",
 			"Levels": {
@@ -16656,7 +17085,7 @@
 		},
 		"Talent": {
 			"Id": "121704",
-			"Name": "Possessed: Ethereal Metaflow",
+			"Name": "Possession: Ethereal Metaflow",
 			"TriggerKey": "SkillP01",
 			"TagType": "Restore",
 			"TagTypeText": "Restore",
@@ -17012,7 +17441,7 @@
 		},
 		"Ultimate": {
 			"Id": "130203",
-			"Name": "For In This Garden Supreme Beauty Bestows",
+			"Name": "For In This Garden, Supreme Beauty Bestows",
 			"TriggerKey": "Skill03",
 			"TagType": "AoEAttack",
 			"TagTypeText": "AoE",
@@ -17123,7 +17552,7 @@
 			"TagTypeText": "Enhance",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "Saat melancarkan Basic Attack, Skill, atau Ultimate, setiap 1 target musuh yang terkena serangan akan memulihkan <unbreak>#1[i]</unbreak> Energy Argenti dan memberikan 1 lapis \"Ascend\", yang akan meningkatkan <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> CRIT Rate Argenti. Efek ini dapat ditumpuk hingga <unbreak>#3[i]</unbreak> lapis.",
+			"EffectRaw": "Saat melancarkan Basic Attack, Skill, atau Ultimate, setiap 1 target musuh yang terkena serangan akan memulihkan <unbreak>#1[i]</unbreak> Energy Argenti dan memberikan 1 lapis \"Apotheosis\", yang akan meningkatkan <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> CRIT Rate Argenti. Efek ini dapat ditumpuk hingga <unbreak>#3[i]</unbreak> lapis.",
 			"AbridgedEffect": "Saat melancarkan Basic Attack, Skill, atau Ultimate, setiap mengenai 1 target musuh akan <color=#f29e38ff>memulihkan Energy</color> Argenti dan meningkatkan <color=#f29e38ff>CRIT Rate</color> dirinya.",
 			"ElementType": "Physical",
 			"Levels": {
@@ -17257,6 +17686,867 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Maze.png"
 		},
 		"VersionAdded": "1.5"
+	},
+	"1303": {
+		"Id": "1303",
+		"Name": "Ruan Mei",
+		"BasicATK": {
+			"Id": "130301",
+			"Name": "Threading Fragrance",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Mengakibatkan Ice DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Ruan Mei pada 1 target musuh.",
+			"AbridgedEffect": "Mengakibatkan Ice DMG dalam jumlah kecil pada 1 musuh.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png"
+		},
+		"Skill": {
+			"Id": "130302",
+			"Name": "String Sings Slow Swirls",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Setelah Ruan Mei melancarkan Skill, Ruan Mei akan memperoleh \"Overtone\" yang berlangsung selama <unbreak>#3[i]</unbreak> giliran. Setiap giliran Ruan Mei dimulai, durasi giliran akan berkurang 1. Saat Ruan Mei memiliki \"Overtone\", seluruh rekan tim akan mendapat peningkatan <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> DMG dan <unbreak>#2[i]%</unbreak> Weakness Break Efficiency.",
+			"AbridgedEffect": "Setelah melancarkan Skill-nya, Ruan Mei akan memperoleh \"Overtone\". Saat Ruan Mei memiliki \"Overtone\", <color=#f29e38ff>DMG</color> dan <color=#f29e38ff>Weakness Break Efficiency</color> seluruh rekan tim meningkat.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.16,
+						0.5,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.176,
+						0.5,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.192,
+						0.5,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.208,
+						0.5,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.224,
+						0.5,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.24,
+						0.5,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.26,
+						0.5,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.28,
+						0.5,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.3,
+						0.5,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.32,
+						0.5,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.336,
+						0.5,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.352,
+						0.5,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.368,
+						0.5,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.384,
+						0.5,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.4,
+						0.5,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130303",
+			"Name": "Petals to Stream, Repose in Dream",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Ruan Mei membuka sebuah Field yang berlangsung selama <unbreak>#2[i]</unbreak> giliran. Durasi giliran Field akan berkurang 1 setiap kali giliran Ruan Mei dimulai.\nSeluruh rekan tim yang berada dalam Field akan mendapat peningkatan <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> RES PEN Seluruh Tipe, dan setelah menyerang, akan menambahkan \"Thanatoplum Rebloom\" pada target musuh.\n\"Thanatoplum Rebloom\" akan terpicu saat target musuh mencoba pulih dari status Weakness Break, memperpanjang status Weakness Break yang dimilikinya dan menunda aksinya. Penundaan aksinya adalah sebesar <unbreak>#3[i]%</unbreak> Break Effect Ruan Mei + <unbreak>#4[i]%</unbreak>, serta mengakibatkan Break DMG pada target tersebut sebesar <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> Ice Break DMG Ruan Mei.\nTarget musuh yang belum pulih dari status Weakness Break tidak dapat terkena \"Thanatoplum Rebloom\" lagi.",
+			"AbridgedEffect": "Meningkatkan <color=#f29e38ff>RES PEN Seluruh Tipe</color> dari seluruh rekan tim. Setelah menyerang, akan menambahkan \"Thanatoplum Rebloom\" pada target musuh.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						2,
+						0.2,
+						0.1,
+						0.3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.16,
+						2,
+						0.2,
+						0.1,
+						0.32
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.17,
+						2,
+						0.2,
+						0.1,
+						0.34
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.18,
+						2,
+						0.2,
+						0.1,
+						0.36
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.19,
+						2,
+						0.2,
+						0.1,
+						0.38
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.2,
+						2,
+						0.2,
+						0.1,
+						0.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2125,
+						2,
+						0.2,
+						0.1,
+						0.425
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.225,
+						2,
+						0.2,
+						0.1,
+						0.45
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2375,
+						2,
+						0.2,
+						0.1,
+						0.475
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.25,
+						2,
+						0.2,
+						0.1,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.26,
+						2,
+						0.2,
+						0.1,
+						0.52
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.27,
+						2,
+						0.2,
+						0.1,
+						0.54
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.28,
+						2,
+						0.2,
+						0.1,
+						0.56
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.29,
+						2,
+						0.2,
+						0.1,
+						0.58
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						0.2,
+						0.1,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130304",
+			"Name": "Somatotypical Helix",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Meningkatkan <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> SPD seluruh rekan tim selain diri sendiri. Saat mengakibatkan Weakness Break pada target musuh (berlaku untuk seluruh rekan tim), Ruan Mei akan mengakibatkan Break DMG sebesar <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> Ice Break DMG Ruan Mei pada musuh tersebut.",
+			"AbridgedEffect": "Meningkatkan <color=#f29e38ff>SPD</color> seluruh rekan tim selain diri sendiri. Saat mengakibatkan Weakness Break pada target musuh, akan mengakibatkan <color=#f29e38ff>Ice Break DMG tambahan</color> pada musuh tersebut.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.08,
+						0.6
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.082,
+						0.66
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.084,
+						0.72
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.086,
+						0.78
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.088,
+						0.84
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.09,
+						0.9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.0925,
+						0.975
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.095,
+						1.05
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.0975,
+						1.125
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.1,
+						1.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.102,
+						1.26
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.104,
+						1.32
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.106,
+						1.38
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.108,
+						1.44
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.11,
+						1.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png"
+		},
+		"Technique": {
+			"Id": "130307",
+			"Name": "Silken Serenade",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "Enhance",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Setelah menggunakan Technique, akan memperoleh \"Silken Serenade\". Saat pertempuran berikutnya dimulai, akan otomatis memicu Skill dirinya sebanyak <unbreak>#1[i]</unbreak> kali, dan pemicuan kali ini tidak akan mengonsumsi Poin Skill.\nSaat Ruan Mei memiliki \"Silken Serenade\" di Simulated Universe, saat rekan tim menyerang musuh secara aktif, akan selalu dianggap menyerang Weakness saat memasuki pertempuran, dan serangan kali ini akan mengurangi Toughness seluruh musuh tanpa memedulikan Tipe Weakness-nya. Saat mengakibatkan Weakness Break, akan memicu efek Weakness Break yang sesuai dengan Tipe Serangan penyerang. Untuk setiap 1 Blessing yang dimiliki, Toughness-Reducing DMG (DMG terhadap Toughness) yang diakibatkan serangan kali ini akan meningkat ekstra <unbreak>#2[i]%</unbreak>. Jika serangan ini mengakibatkan Weakness Break, maka akan mengakibatkan Break DMG sebesar <unbreak>#3[i]%</unbreak> Ice Break DMG Ruan Mei pada target musuh tersebut. Berlaku untuk maksimal <unbreak>#4[i]</unbreak> Blessing.",
+			"AbridgedEffect": "Saat memasuki pertempuran berikutnya, akan otomatis memicu Skill sebanyak <color=#f29e38ff><unbreak>#1[i]</unbreak></color> kali. Setelah melancarkan Technique, saat menyerang musuh di Simulated Universe, akan selalu dianggap menyerang Weakness saat memasuki pertempuran, dan serangan kali ini akan mengurangi Toughness musuh <color=#f29e38ff>tanpa memedulikan Tipe Weakness-nya</color>. Untuk setiap 1 Blessing yang dimiliki, Toughness-Reducing DMG (DMG terhadap Toughness) akan meningkat dan jika serangan ini mengakibatkan Weakness Break, maka akan mengakibatkan Break DMG tambahan.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						1,
+						1,
+						20
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
+	"1305": {
+		"Id": "1305",
+		"Name": "Dr. Ratio",
+		"BasicATK": {
+			"Id": "130501",
+			"Name": "Mind is Might",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 9,
+			"EffectRaw": "Mengakibatkan Imaginary DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Dr. Ratio pada 1 musuh yang ditarget.",
+			"AbridgedEffect": "Mengakibatkan Imaginary DMG dalam jumlah kecil pada 1 musuh yang ditargetkan.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png"
+		},
+		"Skill": {
+			"Id": "130502",
+			"Name": "Intellectual Midwifery",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Mengakibatkan Imaginary DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Dr. Ratio pada 1 musuh yang ditarget.",
+			"AbridgedEffect": "Mengakibatkan Imaginary DMG pada 1 musuh yang ditargetkan.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130503",
+			"Name": "Syllogistic Paradox",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Mengakibatkan Imaginary DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Dr. Ratio pada satu musuh yang ditarget, dan menambahkan \"Wiseman's Folly\". Saat rekan tim Dr. Ratio menyerang target yang memiliki \"Wiseman's Folly\", Dr. Ratio akan melancarkan 1 kali <u>Serangan Lanjutan</u> dari Talent kepada target tersebut.\nEfek \"Wiseman's Folly\" dapat dipicu paling banyak <unbreak>#2[i]</unbreak> kali dan hanya berlaku pada target Ultimate Dr. Ratio yang terbaru. Setelah melancarkan Ultimate, jumlah pemicuan efek ini akan direset.",
+			"AbridgedEffect": "Mengakibatkan Imaginary DMG pada satu musuh yang ditarget dan menambahkan status \"Wiseman's Folly\" pada target. Saat rekan tim Dr. Ratio menyerang target berstatus \"Wiseman's Folly\", Dr. Ratio akan memicu 1 kali <color=#f29e38ff><u>Serangan Lanjutan</u></color> pada target tersebut.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.44,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.536,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.632,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.728,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.824,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.92,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.04,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.16,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.28,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.4,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.496,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.592,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.688,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.784,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.88,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130504",
+			"Name": "Cogito, Ergo Sum",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Saat melancarkan Skill, ada <unbreak>#2[i]%</unbreak> <u>peluang tetap</u> untuk melancarkan 1 kali <u>Serangan Lanjutan</u> pada target tersebut, yang mengakibatkan Imaginary DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Dr. Ratio. Untuk setiap 1 efek Debuff yang dimiliki target, akan meningkatkan <unbreak>#3[i]%</unbreak> <u>peluang tetap</u> pelancaran <u>Serangan Lanjutan</u>. Jika target dikalahkan sebelum <u>Serangan Lanjutan</u> dilancarkan, maka akan melancarkan <u>Serangan Lanjutan</u> pada satu musuh secara acak.",
+			"AbridgedEffect": "Saat melancarkan Skill, ada peluang untuk melancarkan 1 kali <color=#f29e38ff><u>Serangan Lanjutan</u></color> pada target tersebut.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.35,
+						0.4,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.485,
+						0.4,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.62,
+						0.4,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.755,
+						0.4,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.89,
+						0.4,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.025,
+						0.4,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.1938,
+						0.4,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.3625,
+						0.4,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.5313,
+						0.4,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.7,
+						0.4,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.835,
+						0.4,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.97,
+						0.4,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.105,
+						0.4,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.24,
+						0.4,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.375,
+						0.4,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png"
+		},
+		"Technique": {
+			"Id": "130507",
+			"Name": "Mold of Idolatry",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Impair",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Setelah menggunakan Technique, akan menciptakan sebuah Dimension yang akan memancing (Taunt) musuh di sekitar, berlangsung selama <unbreak>#1[i]</unbreak> detik. Setelah memasuki pertempuran dengan musuh di dalam Dimension, ada <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk membuat SPD setiap target musuh berkurang <unbreak>#3[i]%</unbreak>, berlangsung selama <unbreak>#4[i]</unbreak> giliran. Hanya boleh ada 1 efek Dimension ciptaan rekan tim dalam satu waktu.",
+			"AbridgedEffect": "Menciptakan sebuah Dimension. Musuh di dalam Dimension akan terpancing (terkena Taunt). Setelah memasuki pertempuran dengan musuh di dalam Dimension, berpeluang besar untuk <color=#f29e38ff>mengurangi SPD</color> target musuh.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						10,
+						1,
+						0.15,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png"
+		},
+		"VersionAdded": "1.6"
 	},
 	"8001": {
 		"Id": "8001",

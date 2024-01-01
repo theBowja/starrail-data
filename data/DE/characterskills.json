@@ -1824,7 +1824,7 @@
 			"SkillTypeText": "Fertigkeit",
 			"MaxLevel": 15,
 			"EffectRaw": "Fügt einem anvisierten Gegner Blitz-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Kafkas ANG zu und fügt angrenzenden Einheiten Blitz-SCH in Höhe von <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> von Kafkas ANG zu.\nBefindet der anvisierte Gegner sich momentan unter Einfluss von DoT, so erleidet er sofort zusätzlich SCH in Höhe von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> des aktuell insgesamt erlittenen DoT.",
-			"AbridgedEffect": "Verursacht Blitz-SCH bei einem Gegner und geringen Blitz-SCH bei angrenzenden Einheiten.\nBefindet das Hauptziel sich momentan unter Einfluss von DoT, so erleidet es sofort 1-mal zusätzlichen SCH.",
+			"AbridgedEffect": "Verursacht Blitz-SCH bei einem Gegner und geringen Blitz-SCH bei angrenzenden Einheiten.\nBefindet das Hauptziel sich momentan unter Einfluss von DoT, so erleidet es sofort <color=#f29e38ff>1-mal zusätzlichen SCH</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1944,7 +1944,7 @@
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Fügt allen Gegnern Blitz-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Kafkas ANG zu und hat eine <u>Grundchance</u> von <unbreak>#2[i]%</unbreak>, bei betroffenen Gegnern Schock zu verursachen und ihnen unmittelbar SCH in Höhe von <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> des ursprünglichen SCH durch den Status Schock zuzufügen. Der Schock hält <unbreak>#3[i]</unbreak> Rd. an.\nGeschockte Gegner erleiden zu Beginn jeder Runde Blitz-DoT in Höhe von <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> von Kafkas ANG.",
-			"AbridgedEffect": "Fügt allen Gegnern geringen Blitz-SCH zu. Hat eine hohe Chance, die Ziele zu schocken.\nBereits geschockte Gegner nehmen einmal zusätzlichen SCH durch Schock.",
+			"AbridgedEffect": "Fügt allen Gegnern <color=#f29e38ff>geringen Blitz-SCH</color> zu mit einer hohen Chance, bei ihnen Schock zu verursachen.\nWenn die Gegner gerade geschockt sind, fügt der Schock <color=#f29e38ff>1-mal zusätzlichen SCH</color> zu.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2094,7 +2094,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Nach dem Einsatz des Standardangriffs von einem Verbündeten führt Kafka sofort einen <u>Folgeangriff</u> aus und fügt dem Ziel Blitz-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Kafkas ANG zu. Es besteht eine <u>Grundchance</u> von <unbreak>#2[i]%</unbreak>, dem angegriffenen Gegner für <unbreak>#3[i]</unbreak> Rd. Schock zuzufügen, der dem Status Schock des Ultimates entspricht. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
-			"AbridgedEffect": "Nach dem Einsatz des Standardangriffs von einem Verbündeten führt Kafka sofort einen <u>Folgeangriff</u> aus und fügt diesem Ziel Blitz-SCH zu. Es besteht eine hohe Chance, den Status Schock zuzufügen. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+			"AbridgedEffect": "Nach dem Einsatz des Standardangriffs von einem Verbündeten führt Kafka sofort einen <u>Folgeangriff</u> aus und fügt diesem Ziel Blitz-SCH zu. Es besteht eine hohe Chance, den <color=#f29e38ff>Status Schock zuzufügen</color>. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2213,7 +2213,7 @@
 			"SkillTypeText": "Technik",
 			"MaxLevel": 1,
 			"EffectRaw": "Greift alle Gegner innerhalb einer gewissen Reichweite unmittelbar an und fügt nach Kampfeintritt allen Gegnern Blitz-SCH in Höhe von <unbreak>#3[i]%</unbreak> von Kafkas ANG zu. Es besteht eine <u>Grundchance</u> von <unbreak>#1[i]%</unbreak>, jedem einzelnen Gegner für <unbreak>#2[i]</unbreak> Rd. den Status Schock zuzufügen, der dem Status Schock des Ultimates entspricht.",
-			"AbridgedEffect": "Greift alle Gegner in Reichweite an und fügt nach Kampfeintritt allen Gegnern geringen Blitz-SCH zu. Es besteht eine hohe Chance, die Ziele zu schocken.",
+			"AbridgedEffect": "Greift alle Gegner in Reichweite an. Fügt nach Kampfeintritt allen Gegnern geringen Blitz-SCH zu und hat eine hohe Chance, ihnen <color=#f29e38ff>Schock zuzufügen</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2295,8 +2295,8 @@
 			"Id": "100602",
 			"Name": "Änderungen zulassen?",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Beeinträchtigung",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
 			"SkillTypeText": "Fertigkeit",
 			"MaxLevel": 15,
 			"EffectRaw": "Es besteht eine <u>Grundchance</u> von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, einem anvisierten Gegner 1 Schwäche des Typs eines Verbündeten hinzuzufügen. Damit wird auch der SCH-WDS des Gegners gegenüber diesem Schwächetyp für <unbreak>#3[i]</unbreak> Rd. um <unbreak>#4[i]%</unbreak> reduziert. Wenn der Gegner bereits eine Schwäche dieses Typs hat, wird der Effekt der SCH-WDS-Reduzierung für diesen Schwächetyp nicht ausgelöst.\nJedem Gegner kann nur 1 Schwäche von Silberwolf hinzugefügt werden. Wenn Silberwolf dem Ziel eine weitere Schwäche hinzufügt, wird nur die letzte Schwäche beibehalten.\nAußerdem gibt es eine <u>Grundchance</u> von <unbreak>#5[i]%</unbreak>, den WDS aller Typen des Ziels zusätzlich um <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> für <unbreak>#7[i]</unbreak> Rd. zu reduzieren.\nFügt diesem Gegner Quanten-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Silberwolfs ANG zu.",
@@ -2475,8 +2475,8 @@
 			"Id": "100603",
 			"Name": "Benutzer gebannt",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Beeinträchtigung",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Es besteht eine <u>Grundchance</u> von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, die VTD eines anvisierten Gegners für <unbreak>#4[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> zu reduzieren und dem Ziel Quanten-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Silberwolfs ANG zuzufügen.",
@@ -4159,7 +4159,7 @@
 			"TagTypeText": "Unterstützung",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
-			"EffectRaw": "Erhöht den ANG aller Verbündeten um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> und ihren KRIT-SCH um <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> von Bronyas KRIT-SCH plus <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> für <unbreak>#4[i]</unbreak> Rd.",
+			"EffectRaw": "Erhöht den ANG aller Verbündeten um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> und ihren KRIT-SCH um <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> von Bronyas KRIT-SCH plus <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> für <unbreak>#4[i]</unbreak> Rd.",
 			"AbridgedEffect": "Erhöht den <color=#f29e38ff>ANG</color> und <color=#f29e38ff>KRIT-SCH</color> aller Verbündeten.",
 			"Levels": {
 				"1": {
@@ -5294,8 +5294,8 @@
 			"Id": "110402",
 			"Name": "Einschüchternder Schlag",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Beeinträchtigung",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
 			"SkillTypeText": "Fertigkeit",
 			"MaxLevel": 15,
 			"EffectRaw": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Gepards ANG zu und verursacht beim Ziel mit einer <u>Grundchance</u> von <unbreak>#2[i]%</unbreak> für <unbreak>#3[i]</unbreak> Rd. Gefroren.\nEin gefrorener Gegner kann keine Aktionen ausführen und erleidet zu Beginn jeder Runde <u>zusätzlichen</u> Eis-SCH in Höhe von <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> von Gepards ANG.",
@@ -5728,7 +5728,7 @@
 			"SkillTypeText": "Fertigkeit",
 			"MaxLevel": 15,
 			"EffectRaw": "Stellt LP eines anvisierten Verbündeten sofort um <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> von Natashas max. LP plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color> wieder her. Stellt außerdem LP des Verbündeten zu Beginn jeder Runde um <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> von Natashas max. LP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color> für <unbreak>#3[i]</unbreak> Rd. wieder her.",
-			"AbridgedEffect": "Stellt LP eines Verbündeten wieder her und gewährt dem Ziel kontinuierliche Heilung.",
+			"AbridgedEffect": "Stellt LP <color=#f29e38ff>eines einzelnen Verbündeten</color> wieder her und <color=#f29e38ff>heilt ihn kontinuierlich</color>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5877,7 +5877,7 @@
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Stellt LP aller Verbündeten sofort um <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> von Natashas max. LP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color> wieder her.",
-			"AbridgedEffect": "Stellt LP aller Verbündeten wieder her.",
+			"AbridgedEffect": "<color=#f29e38ff>Stellt die LP aller Verbündeten wieder her</color>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -6167,8 +6167,8 @@
 			"Id": "110602",
 			"Name": "Frostbeule",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Beeinträchtigung",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
 			"SkillTypeText": "Fertigkeit",
 			"MaxLevel": 15,
 			"EffectRaw": "Entfernt <unbreak>#2[i]</unbreak> <u>Buff</u> des anvisierten Gegners und fügt dem Ziel Eis-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Pelas ANG zu.",
@@ -6272,8 +6272,8 @@
 			"Id": "110603",
 			"Name": "Zonenunterdrückung",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Beeinträchtigung",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Flächenangriff",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Fügt allen Gegnern Eis-SCH in Höhe von <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> von Pelas ANG zu und hat eine <u>Grundchance</u> von <unbreak>#1[i]%</unbreak>, bei jedem Gegner „Universelle Beherrschung“ zu verursachen.\nDie VTD der Gegner im Status „Universelle Beherrschung“ wird für <unbreak>#3[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> reduziert.",
@@ -6692,7 +6692,7 @@
 			"TagTypeText": "Verstärkung",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
-			"EffectRaw": "Reduziert nach dem Einsatz des Ultimates den von Clara erlittenen SCH zusätzlich um <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> und erhöht stark für <unbreak>#3[i]</unbreak> Rd. die Chance, von Gegnern angegriffen zu werden.\nAußerdem wird Svarogs <u>Konter</u> verstärkt. Wird ein Verbündeter angegriffen, führt Svarog sofort einen <u>Konter</u> aus. Dieser Konter erhöht den SCH-Multiplikator gegen den Gegner um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> und fügt angrenzenden Zielen <unbreak>50</unbreak> % des vom anvisierten Gegner erlittenen SCH zu. Der verstärkte <u>Konter</u> kann <unbreak>#5[i]</unbreak>-mal ausgelöst werden.",
+			"EffectRaw": "Reduziert nach dem Einsatz des Ultimates den von Clara erlittenen SCH zusätzlich um <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> und erhöht stark für <unbreak>#3[i]</unbreak> Rd. die Chance, von Gegnern angegriffen zu werden.\nAußerdem wird Svarogs <u>Konter</u> verstärkt. Wird ein Verbündeter angegriffen, führt Svarog sofort einen <u>Konter</u> aus. Dieser Konter erhöht den SCH-Multiplikator gegen den Gegner um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> und fügt angrenzenden Zielen <unbreak>50</unbreak> % des vom anvisierten Gegner erlittenen SCH zu. Der verstärkte <u>Konter</u> kann <unbreak>#5[i]</unbreak>-mal ausgelöst werden.",
 			"AbridgedEffect": "<color=#f29e38ff>Reduziert den selbst erlittenen SCH</color> und erhöht die Chance, angegriffen zu werden. Der Effekt von <u>Konter</u> wird verstärkt.",
 			"Levels": {
 				"1": {
@@ -7147,8 +7147,8 @@
 			"Id": "110803",
 			"Name": "Überraschungsgeschenk",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Beeinträchtigung",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Flächenangriff",
 			"SkillTypeText": "Ultimate",
 			"MaxLevel": 15,
 			"EffectRaw": "Fügt allen Gegnern Wind-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Sampos ANG zu und hat eine <u>Grundchance</u> von <unbreak>#4[i]%</unbreak>, den erlittenen DoT des Ziels für <unbreak>#3[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> zu erhöhen.",
@@ -11133,7 +11133,7 @@
 			"TagTypeText": "Abprallung",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "Beschwört den Blitz-Lord beim Kampfeintritt. Er hat eine GES von <unbreak>#1[i]</unbreak> und eine Trefferzahl von <unbreak>#4[i]</unbreak>. Seine Angriffe werden als <u>Folgeangriffe</u> gewertet. Jeder Treffer des Blitz-Lords fügt einem zufälligen Gegner Blitz-SCH in Höhe von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> von Jing Yuans ANG zu und fügt angrenzenden Zielen Blitz-SCH in Höhe von <unbreak>#5[i]%</unbreak> des am anvisierten Ziel verursachten SCH zu.\nDie Trefferzahl des Blitz-Lords ist bis zu max. <unbreak>#6[i]</unbreak> stapelbar und die GES des Blitz-Lords erhöht sich um <unbreak>#3[i]</unbreak> für jeden zusätzlichen Treffer. Nach dem Ende der Aktion werden die GES und die Trefferzahl des Blitz-Lords zurückgesetzt.\nIst Jing Yuan <u>handlungsunfähig</u>, verschwindet der Blitz-Lord.\nSteht Jing Yuan unter dem Einfluss von <u>Mengenkontrolle-Debuffs</u>, kann der Blitz-Lord auch keine Aktion ausführen.",
+			"EffectRaw": "Beschwört den Blitz-Lord beim Kampfeintritt. Er hat eine GES von <unbreak>#1[i]</unbreak> und eine Trefferzahl von <unbreak>#4[i]</unbreak>. Seine Angriffe werden als <u>Folgeangriffe</u> gewertet. Jeder Treffer des Blitz-Lords fügt einem zufälligen Gegner Blitz-SCH in Höhe von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> von Jing Yuans ANG zu und fügt angrenzenden Zielen Blitz-SCH in Höhe von <unbreak>#5[i]%</unbreak> des am anvisierten Ziel verursachten SCH zu.\nDie Trefferzahl des Blitz-Lords ist bis zu max. <unbreak>#6[i]</unbreak>-fach stapelbar und die GES des Blitz-Lords erhöht sich um <unbreak>#3[i]</unbreak> für jeden zusätzlichen Treffer. Nach dem Ende der Aktion werden die GES und die Trefferzahl des Blitz-Lords zurückgesetzt.\nIst Jing Yuan <u>handlungsunfähig</u>, verschwindet der Blitz-Lord.\nSteht Jing Yuan unter dem Einfluss von <u>Mengenkontrolle-Debuffs</u>, kann der Blitz-Lord auch keine Aktion ausführen.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -11477,7 +11477,7 @@
 			"SkillTypeText": "Fertigkeit",
 			"MaxLevel": 15,
 			"EffectRaw": "Verbraucht <unbreak>#1[i]%</unbreak> von Blades max. LP, um „Höllenqual“ zu aktivieren.\nWenn „Höllenqual“ aktiv ist, kann seine Fertigkeit nicht eingesetzt werden. Erhöht Blades verursachten SCH um <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> und verstärkt seinen Standardangriff „Scherbenschwert“ für <unbreak>#2[i]</unbreak> Rd. zu „Schwerterwald“\nWenn Blades aktuelle LP nicht ausreichen, fallen seine aktuellen LP bei Einsatz seiner Fertigkeit auf 1.\nDiese Fertigkeit stellt keine Energie wieder her. Der Einsatz dieser Fertigkeit beendet nicht die aktuelle Runde.",
-			"AbridgedEffect": "Verbraucht LP, um den Standardangriff zu verstärken. Nach dem Einsatz der Fertigkeit wird die aktuelle Runde nicht beendet.",
+			"AbridgedEffect": "Verbraucht LP, um den <color=#f29e38ff>Standardangriff zu verstärken</color>. Nach dem Einsatz der Fertigkeit wird die aktuelle Runde nicht beendet.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -11792,7 +11792,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Wenn Blade SCH erleidet oder LP verbraucht, erhält er 1 Aufladung, bis zu 5-fach stapelbar. Pro erlittenem Angriff erhält Blade max. 1 Aufladung.\nWenn die max. Aufladungsanzahl erreicht wird, führt er sofort einen <u>Folgeangriff</u> gegen alle Gegner aus. Dieser verursacht Wind-SCH in Höhe von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> von Blades ANG plus <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> seiner max. LP und stellt gleichzeitig LP in Höhe von <unbreak>#3[i]%</unbreak> von Blades max. LP wieder her. Alle Aufladungen werden beim Auslösen des Folgeangriffs verbraucht.",
-			"AbridgedEffect": "Wenn Blades LP sinken, erhält er 1 Aufladung. Wenn die maximale Aufladungsanzahl erreicht wird, fügt er sofort allen Gegnern Wind-SCH zu und stellt seine LP wieder her. Dadurch werden alle Aufladungen verbraucht.",
+			"AbridgedEffect": "Wenn Blades LP sinken, erhält er 1 Aufladung. Wenn die maximale Aufladungsanzahl erreicht wird, fügt er sofort <color=#f29e38ff>allen Gegnern Wind-SCH zu</color> und stellt seine LP wieder her. Dadurch werden alle Aufladungen verbraucht.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -15913,6 +15913,435 @@
 		},
 		"VersionAdded": "1.3"
 	},
+	"1214": {
+		"Id": "1214",
+		"Name": "Xueyi",
+		"BasicATK": {
+			"Id": "121401",
+			"Name": "Marabrecher-Ahle",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
+			"SkillTypeText": "Standardangriff",
+			"MaxLevel": 9,
+			"EffectRaw": "Fügt einem anvisierten Gegner Quanten-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Xueyis ANG zu.",
+			"AbridgedEffect": "Fügt einem Gegner geringen Quanten-SCH zu.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png"
+		},
+		"Skill": {
+			"Id": "121402",
+			"Name": "Vernichtung des Frevels",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Ausdehnung",
+			"SkillTypeText": "Fertigkeit",
+			"MaxLevel": 15,
+			"EffectRaw": "Fügt einem anvisierten Gegner Quanten-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Xueyis ANG zu und fügt angrenzenden Zielen Quanten-SCH in Höhe von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> von Xueyis ANG zu.",
+			"AbridgedEffect": "Fügt einem Gegner Quanten-SCH zu und fügt angrenzenden Einheiten geringen Quanten-SCH zu.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.77,
+						0.385
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.42
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.91,
+						0.455
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.98,
+						0.49
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.05,
+						0.525
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1375,
+						0.5688
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.225,
+						0.6125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3125,
+						0.6563
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.47,
+						0.735
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.54,
+						0.77
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.61,
+						0.805
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.68,
+						0.84
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.75,
+						0.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png"
+		},
+		"Ultimate": {
+			"Id": "121403",
+			"Name": "Göttliche Geißelung",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Fügt einem anvisierten Gegner Quanten-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Xueyis ANG zu. Dieser Angriff ignoriert die Schwächen des Gegners und reduziert den WDS des Ziels. Wenn die Schwäche eines Gegners gebrochen wird, wird der Effekt „Schwächebruch: Quanten“ ausgelöst.\nJe mehr WDS reduziert wird, desto höher ist der Schaden, der mit diesem Angriff zugefügt wird, bis maximal <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.",
+			"AbridgedEffect": "Fügt einem Gegner massiven Quanten-SCH zu. Dieser Angriff verringert den WDS des Gegners <color=#f29e38ff>unabhängig vom Schwächetyp</color>. Je mehr WDS verbraucht wird, desto höher ist der zugefügte SCH.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.09,
+						0.36
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.6,
+						0.096,
+						0.384
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.7,
+						0.102,
+						0.408
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.8,
+						0.108,
+						0.432
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.9,
+						0.114,
+						0.456
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.12,
+						0.48
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.125,
+						0.1275,
+						0.51
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.25,
+						0.135,
+						0.54
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.375,
+						0.1425,
+						0.57
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.5,
+						0.15,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.6,
+						0.156,
+						0.624
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.7,
+						0.162,
+						0.648
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.8,
+						0.168,
+						0.672
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.9,
+						0.174,
+						0.696
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.18,
+						0.72
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png"
+		},
+		"Talent": {
+			"Id": "121404",
+			"Name": "Karmischer Kreislauf",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "Abprallung",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Fügt Stapelung von „Karma“ hinzu, wenn Xueyis Angriffe den WDS eines Ziels verringern, wobei mehr Stapelungen im Verhältnis zur Menge des verringerten WDS hinzugefügt werden, bis zu <unbreak>#1[i]</unbreak>-fach stapelbar.\nWenn Xueyis Verbündete den WDS eines Ziels mit einem Angriff verringern, erhält sie <unbreak>#3[i]</unbreak> Stapelungen von „Karma“.\nWenn „Karma“ maximal gestapelt wurde, werden alle Stapelungen verbraucht und es wird ein <u>Folgeangriff</u> auf ein Ziel ausgeführt, der 3-mal SCH verursacht, wobei einem zufälligen Gegner Quanten-SCH in Höhe von <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> von Xueyis ANG entspricht. Dieser Folgeangriff fügt keine „Karma“-Stapelung hinzu.",
+			"AbridgedEffect": "Wenn Xueyi einen Angriff ausführt oder ihre Verbündeten den WDS des Ziels aufbrauchen, fügt sie ihm Stapelungen von „Karma“ zu. Wenn „Karma“ maximal gestapelt wurde, <color=#f29e38ff>führt sie sofort einen <u>Folgeangriff</u> aus</color>, der einem anvisierten Gegner geringen Quanten-DMG zufügt, 3-mal abprallt und das gesamte „Karma“ verbraucht.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						8,
+						0.45,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						8,
+						0.495,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						8,
+						0.54,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						8,
+						0.585,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						8,
+						0.63,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						8,
+						0.675,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						8,
+						0.7313,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						8,
+						0.7875,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						8,
+						0.8438,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						8,
+						0.9,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						8,
+						0.945,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						8,
+						0.99,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						8,
+						1.035,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						8,
+						1.08,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						8,
+						1.125,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png"
+		},
+		"Technique": {
+			"Id": "121407",
+			"Name": "Kurzschluss-Exekution",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Technik",
+			"MaxLevel": 1,
+			"EffectRaw": "Greift den Gegner unmittelbar an. Fügt nach Kampfeintritt allen Gegnern Quanten-SCH in Höhe von <unbreak>#1[i]%</unbreak> von Xueyis ANG zu.",
+			"AbridgedEffect": "Greift den Gegner an. Fügt nach Kampfeintritt allen Gegnern geringen Quanten-SCH zu.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
 	"1215": {
 		"Id": "1215",
 		"Name": "Hanya",
@@ -15984,7 +16413,7 @@
 			"TagTypeText": "Einzelangriff",
 			"SkillTypeText": "Fertigkeit",
 			"MaxLevel": 15,
-			"EffectRaw": "Fügt einem anvisierten Gegner physischen SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Hanyas ANG zu und belegt ihn mit „Aufbürden“.\nJedes Mal, wenn Verbündete 2 Standardangriffe, Fertigkeiten oder Ultimates gegen einen mit Aufbürden belegten Gegner einsetzen, erhält das Team 1 Fertigkeitspunkt zurück. Aufbürden wirkt sich nur auf den letzten Gegner aus, der damit belegt wurde, und wird automatisch entfernt, sobald die Fertigkeitspunkte <unbreak>#2[i]</unbreak>-mal wiederhergestellt werden.",
+			"EffectRaw": "Fügt einem anvisierten Gegner physischen SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Hanyas ANG zu und belegt ihn mit „Aufbürden“.\nJedes Mal, wenn Verbündete 2 Standardangriffe, Fertigkeiten oder Ultimates gegen einen mit Aufbürden belegten Gegner einsetzen, erhält das Team 1 Fertigkeitspunkt zurück. Aufbürden wirkt sich nur auf den letzten Gegner aus, der damit belegt wurde, und wird automatisch entfernt, sobald die Fertigkeitspunkte <unbreak>#2[i]</unbreak>-mal wiederhergestellt wurden.",
 			"AbridgedEffect": "Fügt einem Gegner physischen SCH zu und belegt ihn mit „Aufbürden“. Jedes Mal, wenn Verbündete 2 Standardangriffe, Fertigkeiten oder Ultimates gegen einen mit Aufbürden belegten Gegner einsetzen, erhält das Team <color=#f29e38ff>1 Fertigkeitspunkt zurück</color>.",
 			"ElementType": "Physical",
 			"Levels": {
@@ -16208,8 +16637,8 @@
 			"TagTypeText": "Unterstützung",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "Wenn ein Verbündeter einen Standardangriff, eine Fertigkeit oder einen Ultimate gegen einen Gegner einsetzt, der mit „Aufbürden“ belegt ist, wird der zugefügte SCH um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> für <unbreak>#2[i]</unbreak> Rd. erhöht.",
-			"AbridgedEffect": "Verbündete fügen mehr SCH bei Gegnern zu, die mit „Aufbürden“ belegt wurden.",
+			"EffectRaw": "Wenn ein Verbündeter einen Standardangriff, eine Fertigkeit oder einen Ultimate gegen einen Gegner einsetzt, der mit „Aufbürden“ belegt ist, wird der zugefügte SCH für <unbreak>#2[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> erhöht.",
+			"AbridgedEffect": "Verbündete fügen Gegnern, die mit „Aufbürden“ belegt wurden, mehr SCH zu.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -16662,8 +17091,8 @@
 			"TagTypeText": "Wiederherstellung",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "Nach dem Einsatz der Fertigkeit erhält Huohuo für <unbreak>#1[i]</unbreak> Rd. „Geopfertes Leben“. Diese Dauer verringert sich zu Beginn jeder Runde von Huohuo um 1. Besitzt Huohuo Geopfertes Leben, wird zu Beginn jeder Runde eines Verbündeten oder beim Einsatz eines Ultimates seine LP um <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> von Huohuos max. LP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color> wiederhergestellt. Gleichzeitig werden alle Verbündeten, deren LP-Prozentsatz zu diesem Zeitpunkt bei <unbreak>#6[i]%</unbreak> oder niedriger liegt, einmal geheilt.\nWird ein Verbündeter durch den Einsatz von Geopfertes Leben geheilt, werden <unbreak>#2[i]</unbreak> <u>Debuff(s)</u> von ihm entfernt. Dieser Effekt kann <unbreak>#7[i]</unbreak>-mal ausgelöst werden. Bei erneutem Einsatz der Fertigkeit wird die Anzahl der Auslösungen zurückgesetzt.",
-			"AbridgedEffect": "Nach dem Einsatz der Fertigkeit erhält Huohuo „Geopfertes Leben“. Besitzt Huohuo Geopfertes Leben, wird zu Beginn jeder Runde eines Verbündeten oder beim Einsatz eines Ultimates <color=#f29e38ff>seine LP wiederhergestellt</color> und gleichzeitig <color=#f29e38ff>alle Verbündeten</color> mit niedrigen LP <color=#f29e38ff>1-mal geheilt</color>.Wird ein Verbündeter durch den Einsatz von Geopfertes Leben geheilt, <color=#f29e38ff>wird 1 <u>Debuff</u> von ihm entfernt</color>.",
+			"EffectRaw": "Nach dem Einsatz der Fertigkeit erhält Huohuo für <unbreak>#1[i]</unbreak> Rd. „Gesegnete Heilung“. Diese Dauer verringert sich zu Beginn jeder Runde von Huohuo um 1. Besitzt Huohuo Gesegnete Heilung, wird zu Beginn jeder Runde eines Verbündeten oder beim Einsatz eines Ultimates seine LP um <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> von Huohuos max. LP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color> wiederhergestellt. Gleichzeitig werden alle Verbündeten, deren LP-Prozentsatz zu diesem Zeitpunkt bei <unbreak>#6[i]%</unbreak> oder niedriger liegt, einmal geheilt.\nWird ein Verbündeter durch den Einsatz von Gesegnete Heilung geheilt, werden <unbreak>#2[i]</unbreak> <u>Debuff(s)</u> von ihm entfernt. Dieser Effekt kann <unbreak>#7[i]</unbreak>-mal ausgelöst werden. Bei erneutem Einsatz der Fertigkeit wird die Anzahl der Auslösungen zurückgesetzt.",
+			"AbridgedEffect": "Nach dem Einsatz der Fertigkeit erhält Huohuo „Gesegnete Heilung“. Besitzt Huohuo Gesegnete Heilung, wird zu Beginn jeder Runde eines Verbündeten oder beim Einsatz eines Ultimates <color=#f29e38ff>seine LP wiederhergestellt</color> und gleichzeitig <color=#f29e38ff>alle Verbündeten</color> mit niedrigen LP <color=#f29e38ff>1-mal geheilt</color>.Wird ein Verbündeter durch den Einsatz von Gesegnete Heilung geheilt, <color=#f29e38ff>wird 1 <u>Debuff</u> von ihm entfernt</color>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -17123,8 +17552,8 @@
 			"TagTypeText": "Verstärkung",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "Nach dem Einsatz des Standardangriffs, der Fertigkeit oder des Ultimates stellt Argenti für jeden getroffenen Gegner <unbreak>#1[i]</unbreak> Pkt. Energie wieder her und erhält 1 Stapelung „Aufsteigend“, wodurch seine KRIT-Rate um <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> erhöht wird. Dieser Effekt ist bis zu <unbreak>#3[i]</unbreak>-fach stapelbar.",
-			"AbridgedEffect": "Beim Einsatz des Standardangriffs, der Fertigkeit oder des Ultimates <color=#f29e38ff>stellt</color> Argenti für jeden getroffenen Gegner <color=#f29e38ff>Energie wieder her</color> und erhöht seine <color=#f29e38ff>KRIT-Rate</color>.",
+			"EffectRaw": "Nach dem Einsatz des Standardangriffs, der Fertigkeit oder des Ultimates stellt Argenti für jeden getroffenen Gegner <unbreak>#1[i]</unbreak> Pkt. Energie wieder her und erhält 1 Stapelung „Apotheose“, wodurch seine KRIT-Rate um <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> erhöht wird. Dieser Effekt ist bis zu <unbreak>#3[i]</unbreak>-fach stapelbar.",
+			"AbridgedEffect": "Beim Einsatz des Standardangriffs, der Fertigkeit oder des Ultimates wird Argenti für jeden getroffenen Gegner <color=#f29e38ff>Energie wiederhergestellt</color> und seine <color=#f29e38ff>KRIT-Rate</color> erhöht.",
 			"ElementType": "Physical",
 			"Levels": {
 				"1": {
@@ -17244,7 +17673,7 @@
 			"SkillTypeText": "Technik",
 			"MaxLevel": 1,
 			"EffectRaw": "Nach dem Einsatz der Technik werden Gegner in einem bestimmten Bereich <unbreak>#1[i]</unbreak> s lang von Schwindel betroffen und können nicht angreifen.\nGreift man aktiv einen von Schwindel betroffenen Gegner an, verursacht Argenti nach Kampfeintritt bei allen Gegnern physischen SCH in Höhe von <unbreak>#2[i]%</unbreak> seines ANG und stellt <unbreak>#3[i]</unbreak> Pkt. Energie wieder her.",
-			"AbridgedEffect": "Verursacht bei Gegnern in einem bestimmten Bereich Schwindel. Beim Angriff eines von Schwindel betroffenen Gegners verursacht Argenti nach Kampfeintritt bei allen Gegnern geringen physischen SCH und stellt seine Energie wieder her.",
+			"AbridgedEffect": "Verursacht bei Gegnern in einem bestimmten Bereich Schwindel. Beim Angriff eines von Schwindel betroffenen Gegners verursacht Argenti nach Kampfeintritt bei allen Gegnern geringen physischen SCH und stellt Energie wieder her.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -17257,6 +17686,867 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Maze.png"
 		},
 		"VersionAdded": "1.5"
+	},
+	"1303": {
+		"Id": "1303",
+		"Name": "Ruan Mei",
+		"BasicATK": {
+			"Id": "130301",
+			"Name": "Orchideennadel",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
+			"SkillTypeText": "Standardangriff",
+			"MaxLevel": 9,
+			"EffectRaw": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Ruan Meis ANG zu.",
+			"AbridgedEffect": "Fügt einem Gegner geringen Eis-SCH zu.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png"
+		},
+		"Skill": {
+			"Id": "130302",
+			"Name": "Wiederholungsschleife",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Unterstützung",
+			"SkillTypeText": "Fertigkeit",
+			"MaxLevel": 15,
+			"EffectRaw": "Nachdem Ruan Mei ihre Fertigkeit einsetzt, erhält sie für <unbreak>#3[i]</unbreak> Rd. „Oberton“. Die Dauer dieses Status verringert sich zu Beginn jeder ihrer Rd. um 1. Wenn Ruan Mei Oberton besitzt, wird der SCH aller Verbündeten um <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> und die Schwächebruch-Effizienz aller Verbündeten um <unbreak>#2[i]%</unbreak> erhöht.",
+			"AbridgedEffect": "Nachdem Ruan Mei ihre Fertigkeit einsetzt, erhält sie „Oberton“, was <color=#f29e38ff>SCH</color> und <color=#f29e38ff>Schwächebruch-Effizienz</color> aller Verbündeten erhöht.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.16,
+						0.5,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.176,
+						0.5,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.192,
+						0.5,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.208,
+						0.5,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.224,
+						0.5,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.24,
+						0.5,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.26,
+						0.5,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.28,
+						0.5,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.3,
+						0.5,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.32,
+						0.5,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.336,
+						0.5,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.352,
+						0.5,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.368,
+						0.5,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.384,
+						0.5,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.4,
+						0.5,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130303",
+			"Name": "Blütenblätter im Wasserwirbel",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "Unterstützung",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Ruan Mei erzeugt ein Feld, das für <unbreak>#2[i]</unbreak> Rd. anhält. Die Dauer dieses Felds verringert sich jeweils zu Beginn ihrer Rd. um 1.\nWährend das Feld aktiv ist, wird die WDS-DUR aller Typen für alle Verbündeten um <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> erhöht. Weiterhin wird nach einem Angriff eines Verbündeten dem Ziel „Überreife“ zugefügt.\nÜberreife wird ausgelöst, wenn der Gegner versucht, sich von einem Schwächebruch zu erholen. Sein Schwächebruch wird verlängert und seine Aktion um <unbreak>#3[i]%</unbreak> von Ruan Meis Brucheffekt plus <unbreak>#4[i]%</unbreak> verzögert. Weiterhin erleidet der Gegner Bruch-SCH in Höhe von <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> von Ruan Meis Eis-Bruch-SCH.\nGegner, die sich noch nicht von ihrem Schwächebruch erholt haben, können nicht erneut mit Überreife belegt werden.",
+			"AbridgedEffect": "Erhöht die <color=#f29e38ff>WDS-DUR aller Typen</color> und fügt nach einem Angriff auf ein Ziel diesem „Überreife“ zu.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						2,
+						0.2,
+						0.1,
+						0.3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.16,
+						2,
+						0.2,
+						0.1,
+						0.32
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.17,
+						2,
+						0.2,
+						0.1,
+						0.34
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.18,
+						2,
+						0.2,
+						0.1,
+						0.36
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.19,
+						2,
+						0.2,
+						0.1,
+						0.38
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.2,
+						2,
+						0.2,
+						0.1,
+						0.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2125,
+						2,
+						0.2,
+						0.1,
+						0.425
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.225,
+						2,
+						0.2,
+						0.1,
+						0.45
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2375,
+						2,
+						0.2,
+						0.1,
+						0.475
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.25,
+						2,
+						0.2,
+						0.1,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.26,
+						2,
+						0.2,
+						0.1,
+						0.52
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.27,
+						2,
+						0.2,
+						0.1,
+						0.54
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.28,
+						2,
+						0.2,
+						0.1,
+						0.56
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.29,
+						2,
+						0.2,
+						0.1,
+						0.58
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						0.2,
+						0.1,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130304",
+			"Name": "Gespaltene Spirale",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "Unterstützung",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Erhöht die GES aller Verbündeten außer der eigenen um <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Wenn Verbündete bei einem Gegner Schwächebruch verursachen, fügt Ruan Mei diesem Gegner Bruch-SCH in Höhe von <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> ihres Eis-Bruch-SCH zu.",
+			"AbridgedEffect": "Erhöht die <color=#f29e38ff>GES</color> aller Verbündeten (außer der Figur selbst). Wird bei einem Gegner Schwächebruch ausgelöst, erleidet er <color=#f29e38ff>zusätzlich Eis-Bruch-SCH</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.08,
+						0.6
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.082,
+						0.66
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.084,
+						0.72
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.086,
+						0.78
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.088,
+						0.84
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.09,
+						0.9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.0925,
+						0.975
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.095,
+						1.05
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.0975,
+						1.125
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.1,
+						1.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.102,
+						1.26
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.104,
+						1.32
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.106,
+						1.38
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.108,
+						1.44
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.11,
+						1.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png"
+		},
+		"Technique": {
+			"Id": "130307",
+			"Name": "Wisch die Zither, streich die Ärmel",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "Verstärkung",
+			"SkillTypeText": "Technik",
+			"MaxLevel": 1,
+			"EffectRaw": "Nach dem Einsatz der Technik wird „Wisch die Zither, streich die Ärmel“ erhalten. Beim nächsten Kampfbeginn wird automatisch <unbreak>#1[i]</unbreak>-mal Ruan Meis Fertigkeit ausgelöst. Dieser Effekt verbraucht keine Fertigkeitspunkte.\nWenn Ruan Mei in der Universum-Simulation Wisch die Zither, streich die Ärmel besitzt und Verbündete Gegner angreifen, um einen Kampf zu beginnen, wird dies als Angriff auf die Schwäche der Gegner betrachtet und ungeachtet ihres Schwächetyps der Widerstand aller Gegner reduziert. Wenn so Schwächebruch verursacht wird, entspricht der Effekt dem jeweiligen Typ des Angreifers. Mit jedem Segen im Besitz (bis zu max. <unbreak>#4[i]</unbreak> Segen) wird der SCH der WDS-Reduzierung dieses Angriffs um <unbreak>#2[i]%</unbreak> erhöht. Wenn der Angriff beim Gegner Schwächebruch verursacht, erleidet er zusätzlich Bruch-SCH in Höhe von <unbreak>#3[i]%</unbreak> von Ruan Meis Eis-Bruch-SCH.",
+			"AbridgedEffect": "Beim nächsten Kampfeintritt wird die Fertigkeit <color=#f29e38ff><unbreak>#1[i]</unbreak></color>-mal automatisch ausgelöst. Wenn Verbündete Gegner in der Universum-Simulation angreifen, nachdem die Technik angewendet wurde, wird dies als Angriff auf die Schwäche der Gegner betrachtet und <color=#f29e38ff>ungeachtet ihres Schwächetyps</color> ihr Widerstand reduziert. Mit jedem Segen im Besitz wird der SCH der WDS-Reduzierung erhöht und beim Verursachen von Schwächebruch zusätzlich Bruch-SCH zugefügt.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						1,
+						1,
+						20
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
+	"1305": {
+		"Id": "1305",
+		"Name": "Dr. Wahrheit",
+		"BasicATK": {
+			"Id": "130501",
+			"Name": "Wissen ist Macht",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
+			"SkillTypeText": "Standardangriff",
+			"MaxLevel": 9,
+			"EffectRaw": "Fügt einem anvisierten Gegner imaginären SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Dr. Wahrheits ANG zu.",
+			"AbridgedEffect": "Fügt einem anvisierten Verbündeten geringen imaginären SCH zu.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png"
+		},
+		"Skill": {
+			"Id": "130502",
+			"Name": "Geistige Geburtshilfe",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
+			"SkillTypeText": "Fertigkeit",
+			"MaxLevel": 15,
+			"EffectRaw": "Fügt einem anvisierten Gegner imaginären SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Dr. Wahrheits ANG zu.",
+			"AbridgedEffect": "Fügt einem anvisierten Gegner imaginären SCH zu.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130503",
+			"Name": "Dreiteiliges Paradoxon",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Fügt einem anvisierten Gegner imaginären SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Dr. Wahrheits ANG zu und verursacht „Torheit der Weisen“. Wenn Dr. Wahrheits Verbündete mit Torheit der Weisen belegte Gegner angreifen, wird 1-mal ein <u>Folgeangriff</u> von Dr. Wahrheits Talent auf sie ausgelöst.\nTorheit der Weisen kann max. <unbreak>#2[i]</unbreak>-mal ausgelöst werden und wirkt nur auf das letzte Ziel von Dr. Wahrheits Ultimate. Nach Einsatz von Dr. Wahrheits Ultimate wird die Auslösungsanzahl zurückgesetzt.",
+			"AbridgedEffect": "Fügt einem anvisierten Gegner imaginären SCH zu und verursacht „Torheit der Weisen“. Wenn Dr. Wahrheits Verbündete mit Torheit der Weisen belegte Gegner angreifen, wird 1-mal ein <color=#f29e38ff><u>Folgeangriff</u></color> auf sie ausgelöst.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.44,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.536,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.632,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.728,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.824,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.92,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.04,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.16,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.28,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.4,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.496,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.592,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.688,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.784,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.88,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130504",
+			"Name": "Ich denke, also bin ich",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Einzelangriff",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Beim Einsatz der Fertigkeit besteht eine <u>feste Chance</u> von <unbreak>#2[i]%</unbreak>, dass 1-mal ein <u>Folgeangriff</u> auf das Ziel ausgelöst wird, was ihm imaginären SCH in Höhe von <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> von Dr. Wahrheits ANG zufügt. Für jeden Debuff des Ziels wird die <u>feste Chance</u> auf die Auslösung des <u>Folgeangriffs</u> um <unbreak>#3[i]%</unbreak> erhöht. Wenn das Ziel vor der Auslösung besiegt wird, wird der <u>Folgeangriff</u> auf einen zufälligen Gegner ausgeübt.",
+			"AbridgedEffect": "Beim Einsatz der Fertigkeit besteht eine Chance, dass 1-mal ein <color=#f29e38ff><u>Folgeangriff</u></color> auf das Ziel ausgelöst wird.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.35,
+						0.4,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.485,
+						0.4,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.62,
+						0.4,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.755,
+						0.4,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.89,
+						0.4,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.025,
+						0.4,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.1938,
+						0.4,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.3625,
+						0.4,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.5313,
+						0.4,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.7,
+						0.4,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.835,
+						0.4,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.97,
+						0.4,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.105,
+						0.4,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.24,
+						0.4,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.375,
+						0.4,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png"
+		},
+		"Technique": {
+			"Id": "130507",
+			"Name": "Muster eines Idols",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Beeinträchtigung",
+			"SkillTypeText": "Technik",
+			"MaxLevel": 1,
+			"EffectRaw": "Nach dem Einsatz der Technik wird für <unbreak>#1[i]</unbreak> Sek. eine spezielle Dimension erzeugt, die Gegner in der Nähe verspottet. Nach Kampfeintritt mit Gegnern in der Dimension besteht eine <u>Grundchance</u> von <unbreak>#2[i]%</unbreak>, dass den Gegnern für <unbreak>#4[i]</unbreak> Rd. eine GES-Reduktion von <unbreak>#3[i]%</unbreak> zugefügt wird. Es kann nur 1 von Verbündeten erschaffene Dimension zur gleichen Zeit existieren.",
+			"AbridgedEffect": "Erschafft eine Dimension. Gegner in dieser Dimension werden mit Verspotten belegt. Nach Kampfeintritt mit Gegnern in der Dimension besteht eine hohe Chance, dass den Gegnern <color=#f29e38ff>GES-Reduktion</color> zugefügt wird.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						10,
+						1,
+						0.15,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png"
+		},
+		"VersionAdded": "1.6"
 	},
 	"8001": {
 		"Id": "8001",

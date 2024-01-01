@@ -1824,7 +1824,7 @@
 			"SkillTypeText": "Perícia",
 			"MaxLevel": 15,
 			"EffectRaw": "Causa <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Kafka como Dano de Raio a um inimigo-alvo e <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> do ATQ de Kafka como Dano de Raio aos inimigos adjacentes a ele.\nSe o inimigo-alvo estiver recebendo Dano Contínuo, todos os Danos Contínuos sobre aquele inimigo causarão imediatamente Dano de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do seu Dano original.",
-			"AbridgedEffect": "Causa Dano de Raio a um único inimigo e Dano de Raio leve a alvos adjacentes.\nSe o inimigo-alvo principal estiver atualmente infligido com efeito de Dano Contínuo, este efeito causa Dano mais 1 vez.",
+			"AbridgedEffect": "Causa Dano de Raio a um único inimigo e Dano de Raio leve a alvos adjacentes.\nSe o inimigo-alvo principal estiver atualmente infligido com efeito de Dano Contínuo, este efeito <color=#f29e38ff>causa Dano mais 1 vez</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1944,7 +1944,7 @@
 			"SkillTypeText": "Perícia Suprema",
 			"MaxLevel": 15,
 			"EffectRaw": "Causa <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Kafka como Dano de Raio a todos os inimigos. Há <unbreak>#2[i]%</unbreak> de <u>chance-base</u> de os inimigos atingidos serem afligidos com Choque e imediatamente receberem Dano do estado de Choque atual igual a <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> do Dano original. Choque dura <unbreak>#3[i]</unbreak> rodada(s).\nEnquanto em Choque, inimigos recebem <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> do ATQ de Kafka como Dano de Raio Contínuo no início de cada rodada.",
-			"AbridgedEffect": "Causa Dano de Raio leve a todos os inimigos, com altas chances de causar Choque.\nSe os inimigos já estiverem com Choque, o estado de Choque causa Dano mais 1 vez.",
+			"AbridgedEffect": "Causa Dano de Raio leve a todos os inimigos, com altas chances de causar <color=#f29e38ff>Choque</color>.\nSe os inimigos já estiverem com Choque, o estado de Choque <color=#f29e38ff>causa Dano mais 1 vez</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2094,7 +2094,7 @@
 			"SkillTypeText": "Talento",
 			"MaxLevel": 15,
 			"EffectRaw": "Após um aliado de Kafka usar um ATQ Básico em um inimigo-alvo, Kafka imediatamente realiza 1 <u>Ataque Extra</u> e causa Dano de Raio igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do seu ATQ ao alvo, com <unbreak>#2[i]%</unbreak> de <u>chance-base</u> de infligir Choque equivalente àquele aplicado pela Perícia Suprema dela ao inimigo-alvo atacado, durando por <unbreak>#3[i]</unbreak> rodadas. Este efeito só pode ser ativado 1 vez por rodada.",
-			"AbridgedEffect": "Após um aliado usar um ATQ Básico em um inimigo, Kafka realiza imediatamente um <u>Ataque Extra</u> e causa Dano de Raio, com altas chances de infligir Choque a este alvo. Este efeito só pode ser ativado 1 vez por rodada.",
+			"AbridgedEffect": "Após um aliado usar um ATQ Básico em um inimigo, Kafka realiza imediatamente um <u>Ataque Extra</u> e causa Dano de Raio, com altas chances de <color=#f29e38ff>infligir Choque</color> a este alvo. Este efeito só pode ser ativado 1 vez por rodada.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2213,7 +2213,7 @@
 			"SkillTypeText": "Técnica",
 			"MaxLevel": 1,
 			"EffectRaw": "Ataca imediatamente todos os inimigos dentro de um alcance específico. Depois de entrar em batalha, causa Dano de Raio igual a <unbreak>#3[i]%</unbreak> do ATQ de Kafka a todos os inimigos, com uma <u>chance-base</u> de <unbreak>#1[i]%</unbreak> de infligir Choque equivalente àquele aplicado pela Perícia Suprema dela a todos os inimigos-alvo por <unbreak>#2[i]</unbreak> rodada(s).",
-			"AbridgedEffect": "Ataca todos os inimigos num certo alcance. Depois de entrar em batalha, causa Dano de Raio leve a todos os inimigos com alta chance de infligir Choque a eles.",
+			"AbridgedEffect": "Ataca todos os inimigos num certo alcance. Depois de entrar em batalha, causa Dano de Raio leve a todos os inimigos com alta chance de <color=#f29e38ff>infligir Choque</color> neles.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2295,8 +2295,8 @@
 			"Id": "100602",
 			"Name": "Permitir Mudanças?",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Incapacitação",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
 			"SkillTypeText": "Perícia",
 			"MaxLevel": 15,
 			"EffectRaw": "Tem <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de <u>chance-base</u> de adicionar 1 Fraqueza do Tipo de um personagem em campo ao inimigo-alvo. Isso também reduz a RES a Dano do inimigo a este Tipo de Fraqueza em <unbreak>#4[i]%</unbreak> por <unbreak>#3[i]</unbreak> rodada(s). Se o inimigo já possui Fraqueza a este Tipo, o efeito de redução da RES a Dano a este Tipo de Fraqueza não será ativado.\nCada inimigo pode ter apenas 1 Fraqueza implantada pela Loba Prateada. Quando Loba Prateada implanta outra Fraqueza ao alvo, apenas a última Fraqueza implantada será mantida. Adicionalmente, existe <unbreak>#5[i]%</unbreak> de <u>chance-base</u> de reduzir mais ainda a RES a Todos os Tipos do inimigo em <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> por <unbreak>#7[i]</unbreak> rodada(s).\nCausa Dano Quântico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ da Loba Prateada a um único inimigo-alvo.",
@@ -2475,8 +2475,8 @@
 			"Id": "100603",
 			"Name": "Usuário Banido",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Incapacitação",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
 			"SkillTypeText": "Perícia Suprema",
 			"MaxLevel": 15,
 			"EffectRaw": "Tem uma <u>chance-base</u> de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de diminuir a DEF do inimigo-alvo em <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> por <unbreak>#4[i]</unbreak> rodada(s). E, ao mesmo tempo, causa <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ da Loba Prateada como Dano Quântico ao inimigo-alvo.",
@@ -2762,7 +2762,7 @@
 			"TagType": "MazeAttack",
 			"SkillTypeText": "Técnica",
 			"MaxLevel": 1,
-			"EffectRaw": "Ataca o inimigo imediatamente. Após entrar na batalha, causa Dano Quântico igual a <unbreak>#1[i]%</unbreak> do ATQ da Loba Prateada a todos os inimigos, ignora os Tipos de Fraqueza e reduz a Tenacidade de todos os inimigos. Inimigos com suas Fraquezas Quebradas desta forma ativarão o efeito de Quebra de Fraqueza contra Dano Quântico.",
+			"EffectRaw": "Ataca o inimigo imediatamente. Após entrar na batalha, causa Dano Quântico igual a <unbreak>#1[i]%</unbreak> do ATQ da Loba Prateada a todos os inimigos, ignora os Tipos de Fraqueza e reduz a Tenacidade de todos os inimigos. Inimigos com suas Fraquezas Quebradas desta forma ativarão o efeito de Quebra de Fraqueza contra Quântico.",
 			"AbridgedEffect": "Ataca o inimigo. Após entrar na batalha, causa uma pequena quantidade de Dano a todos os inimigos e reduz a Tenacidade deles independentemente de seus Tipos de Fraquezas.",
 			"ElementType": "Quantum",
 			"Levels": {
@@ -3424,7 +3424,7 @@
 			"TagTypeText": "Suporte",
 			"SkillTypeText": "Talento",
 			"MaxLevel": 15,
-			"EffectRaw": "Ganha 1 acúmulo de Carga para cada inimigo diferente que Asta atingir, além de um acúmulo extra se o inimigo atingido tiver Fraqueza de Fogo.\nPara cada acúmulo de Carga que Asta tiver, aumenta em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> o ATQ de todos os aliados, até <unbreak>#2[i]</unbreak> vez(es).\nA partir da segunda rodada, reduz em <unbreak>#3[i]</unbreak> a contagem de acúmulos de Carga de Asta no início de cada rodada.",
+			"EffectRaw": "Ganha 1 acúmulo de Carga para cada inimigo diferente que Asta atingir, além de um acúmulo extra se o inimigo atingido tiver Fraqueza contra Fogo.\nPara cada acúmulo de Carga que Asta tiver, aumenta em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> o ATQ de todos os aliados, até <unbreak>#2[i]</unbreak> vez(es).\nA partir da segunda rodada, reduz em <unbreak>#3[i]</unbreak> a contagem de acúmulos de Carga de Asta no início de cada rodada.",
 			"AbridgedEffect": "O personagem receberá 1 acúmulo de Carga para cada inimigo diferente que atacar, com um máximo de 5 acúmulos. Cada acúmulo de Carga aumenta o ATQ de todos os aliados. Os acúmulos de Carga são reduzidos no início de cada rodada.",
 			"Levels": {
 				"1": {
@@ -5294,8 +5294,8 @@
 			"Id": "110402",
 			"Name": "Golpe Intimidador",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Incapacitação",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
 			"SkillTypeText": "Perícia",
 			"MaxLevel": 15,
 			"EffectRaw": "Causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Gepard a um único inimigo, com <unbreak>#2[i]%</unbreak> de <u>chance-base</u> de o inimigo sofrer Congelamento por <unbreak>#3[i]</unbreak> rodada(s).\nDurante o Congelamento, o inimigo não pode agir e sofre Dano <u>Adicional</u> de Gelo igual a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> do ATQ de Gepard no início de cada rodada.",
@@ -5728,7 +5728,7 @@
 			"SkillTypeText": "Perícia",
 			"MaxLevel": 15,
 			"EffectRaw": "Cura um único alvo em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> dos PV máximos de Natasha + <color=#f29e38ff><unbreak>#4[i]</unbreak></color>. Cura o aliado em mais <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> dos PV máximos de Natasha mais <color=#f29e38ff><unbreak>#5[i]</unbreak></color> no início de cada rodada por <unbreak>#3[i]</unbreak> rodada(s).",
-			"AbridgedEffect": "Restaura PV de um único aliado e cura esse aliado continuamente.",
+			"AbridgedEffect": "<color=#f29e38ff>Restaura PV </color>de um único aliado e concede a <color=#f29e38ff>Cura Periódica</color> a ele.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5877,7 +5877,7 @@
 			"SkillTypeText": "Perícia Suprema",
 			"MaxLevel": 15,
 			"EffectRaw": "Cura todos os aliados em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> dos PV máximos de Natasha + <color=#f29e38ff><unbreak>#2[i]</unbreak></color>.",
-			"AbridgedEffect": "Restaura PV de todos os aliados.",
+			"AbridgedEffect": "<color=#f29e38ff>Restaura PV</color> de todos os aliados.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -6167,8 +6167,8 @@
 			"Id": "110602",
 			"Name": "Geladura",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "Incapacitação",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
 			"SkillTypeText": "Perícia",
 			"MaxLevel": 15,
 			"EffectRaw": "Remove <unbreak>#2[i]</unbreak> <u>melhoria(s)</u> e causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Pela a um único inimigo-alvo.",
@@ -6272,8 +6272,8 @@
 			"Id": "110603",
 			"Name": "Supressão de Zona",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Incapacitação",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Área",
 			"SkillTypeText": "Perícia Suprema",
 			"MaxLevel": 15,
 			"EffectRaw": "Causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> do ATQ de Pela a todos os inimigos, com uma <u>chance-base</u> de <unbreak>#1[i]%</unbreak> de infligir a condição Exposto em todos os inimigos.\nInimigos Expostos têm a DEF reduzida em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> por <unbreak>#3[i]</unbreak> rodada(s).",
@@ -7147,8 +7147,8 @@
 			"Id": "110803",
 			"Name": "Presente Surpresa",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "Incapacitação",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Área",
 			"SkillTypeText": "Perícia Suprema",
 			"MaxLevel": 15,
 			"EffectRaw": "Causa Dano de Vento igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Sampo a todos os inimigos, com <unbreak>#4[i]%</unbreak> de <u>chance-base</u> de aumentar o Dano Contínuo recebido pelo alvo em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> por <unbreak>#3[i]</unbreak> rodada(s).",
@@ -11477,7 +11477,7 @@
 			"SkillTypeText": "Perícia",
 			"MaxLevel": 15,
 			"EffectRaw": "Consome PV igual a <unbreak>#1[i]%</unbreak> dos PV máximos de Blade para entrar no estado de Paisagem Infernal.\nEnquanto a Paisagem Infernal estiver ativa, a Perícia dele não pode ser usada, seu Dano causado aumenta em <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> e aprimora o seu ATQ Básico Espada Fragmentada para Floresta de Espadas por <unbreak>#2[i]</unbreak> rodada(s).\nSe os PV atuais de Blade não forem suficientes, seus PV serão reduzidos para 1 quando usar esta Perícia.\nEsta Perícia não regenera Energia. Usar esta Perícia não encerra a rodada atual.",
-			"AbridgedEffect": "Consome PV para aprimorar o ATQ Básico, e a rodada atual não termina ao usar essa Perícia.",
+			"AbridgedEffect": "Consome PV para <color=#f29e38ff>aprimorar o ATQ Básico</color>, e a rodada atual não termina ao usar essa Perícia.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -11792,7 +11792,7 @@
 			"SkillTypeText": "Talento",
 			"MaxLevel": 15,
 			"EffectRaw": "Quando Blade toma Dano ou consome seus próprios PV, ele ganha 1 acúmulo de Carga, acumulando até 5 vezes. Um máximo de 1 Carga pode ser ganho cada vez que ele for atacado.\nQuando os acúmulos de Carga chegarem ao máximo, desfere imediatamente um <u>Ataque Extra</u> contra todos os inimigos, causando Dano de Vento igual a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Blade + <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> dos seus PV máximos, enquanto também restaura os PV de Blade em <unbreak>#3[i]%</unbreak> de seus PV máximos. Todas as Cargas são consumidas após realizar o Ataque Extra.",
-			"AbridgedEffect": "Quando os PV de Blade são diminuídos, ele ganha 1 acúmulo de Carga. Quando o máximo de acúmulos de Carga é atingido, Blade imediatamente causa Dano de Vento a todos os inimigos e restaura PV. Então, todas as Cargas são consumidas.",
+			"AbridgedEffect": "Quando os PV de Blade são diminuídos, ele ganha 1 acúmulo de Carga. Quando o máximo de acúmulos de Carga é atingido, Blade <color=#f29e38ff>imediatamente causa Dano de Vento a todos os inimigos </color>e restaura PV. Então, todas as Cargas são consumidas.",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -15913,6 +15913,435 @@
 		},
 		"VersionAdded": "1.3"
 	},
+	"1214": {
+		"Id": "1214",
+		"Name": "Xueyi",
+		"BasicATK": {
+			"Id": "121401",
+			"Name": "Sovela Quebra-mara",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "ATQ Básico",
+			"MaxLevel": 9,
+			"EffectRaw": "Causa <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Xueyi como Dano Quântico a um único inimigo-alvo.",
+			"AbridgedEffect": "Causa Dano Quântico leve a um único inimigo.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png"
+		},
+		"Skill": {
+			"Id": "121402",
+			"Name": "Obliteração de Iniquidade",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Explosão",
+			"SkillTypeText": "Perícia",
+			"MaxLevel": 15,
+			"EffectRaw": "Causa Dano Quântico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Xueyi a um único inimigo e <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Xueyi como Dano Quântico aos inimigos adjacentes.",
+			"AbridgedEffect": "Causa Dano Quântico a um único inimigo e Dano Quântico leve a inimigos adjacentes a ele.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.77,
+						0.385
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.42
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.91,
+						0.455
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.98,
+						0.49
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.05,
+						0.525
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1375,
+						0.5688
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.225,
+						0.6125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3125,
+						0.6563
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.47,
+						0.735
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.54,
+						0.77
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.61,
+						0.805
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.68,
+						0.84
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.75,
+						0.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png"
+		},
+		"Ultimate": {
+			"Id": "121403",
+			"Name": "Castigo Divino",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "Perícia Suprema",
+			"MaxLevel": 15,
+			"EffectRaw": "Causa Dano Quântico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Xueyi a um único inimigo-alvo. Este ataque ignora os Tipos de Fraqueza e reduz a Tenacidade do inimigo. Quando o inimigo sofrer a Quebra de Fraqueza, o efeito Quebra de Fraqueza contra Quântico é ativado.\nNeste ataque, quanto mais Tenacidade for reduzida, maior será o Dano causado, até um máximo de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> de aumento.",
+			"AbridgedEffect": "Causa Dano Quântico massivo a um único inimigo. Este ataque <color=#f29e38ff>ignora Tipos de Fraqueza</color> e reduz a Tenacidade do alvo. Quanto mais Tenacidade é reduzida, mais alto é o Dano causado.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.09,
+						0.36
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.6,
+						0.096,
+						0.384
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.7,
+						0.102,
+						0.408
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.8,
+						0.108,
+						0.432
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.9,
+						0.114,
+						0.456
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.12,
+						0.48
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.125,
+						0.1275,
+						0.51
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.25,
+						0.135,
+						0.54
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.375,
+						0.1425,
+						0.57
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.5,
+						0.15,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.6,
+						0.156,
+						0.624
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.7,
+						0.162,
+						0.648
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.8,
+						0.168,
+						0.672
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.9,
+						0.174,
+						0.696
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.18,
+						0.72
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png"
+		},
+		"Talent": {
+			"Id": "121404",
+			"Name": "Perpetuação Cármica",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "Rebote",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "Quando Xueyi reduz a Tenacidade do inimigo com seus ataques, ela acumula Karma. Quando mais a Tenacidade é reduzida, mais acúmulos de Karma são adicionados, até <unbreak>#1[i]</unbreak> acúmulos.\nQuando os aliados de Xueyi reduzem a Tenacidade do inimigo com seus ataques, Xueyi ganha <unbreak>#3[i]</unbreak> acúmulos de Karma.\nQuando o Karma atingir o número máximo de acúmulos e consumir todos os acúmulos de Karma atuais, imediatamente lança um <u>Ataque Extra</u> contra um inimigo-alvo, causando Dano por 3 vezes, com cada vez causando Dano Quântico igual a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Xueyi a um único inimigo aleatório. Este Ataque Extra não pode adicionar acúmulos de Karma.",
+			"AbridgedEffect": "Quando Xueyi ou seus aliados reduzem a Tenacidade do inimigo, ela ganha acúmulos de Carma. Quando Carma atingir o número máximo de acúmulos, <color=#f29e38ff>ativa imediatamente um <u>Ataque Extra</u></color> causando Dano Quântico leve a um único inimigo-alvo, saltando por 3 vezes e consumindo todo o Carma.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						8,
+						0.45,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						8,
+						0.495,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						8,
+						0.54,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						8,
+						0.585,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						8,
+						0.63,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						8,
+						0.675,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						8,
+						0.7313,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						8,
+						0.7875,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						8,
+						0.8438,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						8,
+						0.9,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						8,
+						0.945,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						8,
+						0.99,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						8,
+						1.035,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						8,
+						1.08,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						8,
+						1.125,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png"
+		},
+		"Technique": {
+			"Id": "121407",
+			"Name": "Execução Sumária",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Ataca o inimigo imediatamente. Depois de entrar no combate, causa <unbreak>#1[i]%</unbreak> do ATQ de Xueyi como Dano Quântico a todos os inimigos.",
+			"AbridgedEffect": "Ataca o inimigo. Depois de entrar em batalha, causa Dano Quântico leve a todos os inimigos.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
 	"1215": {
 		"Id": "1215",
 		"Name": "Hanya",
@@ -15984,7 +16413,7 @@
 			"TagTypeText": "Alvo Único",
 			"SkillTypeText": "Perícia",
 			"MaxLevel": 15,
-			"EffectRaw": "Causa Dano Físico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Hanya a um único inimigo, então aplica Fardo a ele.\nA cada 2 ATQs Básicos, Perícias ou Perícias Supremas utilizados por aliados em um inimigo com Fardo, aliados recuperam imediatamente 1 Ponto de Perícia. Fardo só fica ativo no último alvo em que foi aplicado, e será removido automaticamente depois que o efeito de recuperação de Ponto de Perícia for ativado <unbreak>#2[i]</unbreak> vezes.",
+			"EffectRaw": "Causa Dano Físico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Hanya a um único inimigo-alvo, então aplica Fardo a ele.\nA cada 2 ATQs Básicos, Perícias ou Perícias Supremas utilizados por aliados em um inimigo com Fardo, aliados recuperam imediatamente 1 Ponto de Perícia. Fardo só fica ativo no último alvo em que foi aplicado, e será removido automaticamente depois que o efeito de recuperação de Ponto de Perícia for ativado <unbreak>#2[i]</unbreak> vezes.",
 			"AbridgedEffect": "Causa Dano Físico a um único inimigo e aplica Fardo a ele. Para cada 2 ATQs Básicos, Perícias ou Perícias Supremas que aliados utilizarem contra um inimigo com Fardo, os aliados <color=#f29e38ff>recuperarão 1 Ponto de Perícia</color>.",
 			"ElementType": "Physical",
 			"Levels": {
@@ -16208,7 +16637,7 @@
 			"TagTypeText": "Suporte",
 			"SkillTypeText": "Talento",
 			"MaxLevel": 15,
-			"EffectRaw": "Quando um aliado usa um ATQ Básico, uma Perícia ou uma Perícia Suprema em um inimigo afligido com Fardo, o Dano causado aumenta em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> por <unbreak>#2[i]</unbreak> rodada(s).",
+			"EffectRaw": "Quando um aliado usa um ATQ Básico, uma Perícia ou uma Perícia Suprema em um inimigo afligido com Fardo, o Dano causado aumenta em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> durando por <unbreak>#2[i]</unbreak> rodada(s).",
 			"AbridgedEffect": "Aliados causam mais Dano ao atacar inimigos infligidos com Fardo.",
 			"Levels": {
 				"1": {
@@ -17012,7 +17441,7 @@
 		},
 		"Ultimate": {
 			"Id": "130203",
-			"Name": "Pois Neste Jardim a Beleza Suprema Concede",
+			"Name": "Pois Neste Jardim, a Beleza Suprema Concede",
 			"TriggerKey": "Skill03",
 			"TagType": "AoEAttack",
 			"TagTypeText": "Área",
@@ -17123,7 +17552,7 @@
 			"TagTypeText": "Aprimoramento",
 			"SkillTypeText": "Talento",
 			"MaxLevel": 15,
-			"EffectRaw": "Para cada inimigo atingido quando Argenti usa seu ATQ Básico, Perícia ou Perícia Suprema, regenera a Energia de Argenti em <unbreak>#1[i]</unbreak>, e concede a ele um acúmulo de Ascender, além de aumentar sua Chance de CRIT em <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. Este efeito pode acumular até <unbreak>#3[i]</unbreak> vez(es).",
+			"EffectRaw": "Para cada inimigo atingido quando Argenti usa seu ATQ Básico, Perícia ou Perícia Suprema, regenera a Energia de Argenti em <unbreak>#1[i]</unbreak>, e concede a ele um acúmulo de Apoteose, além de aumentar sua Chance de CRIT em <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. Este efeito pode acumular até <unbreak>#3[i]</unbreak> vez(es).",
 			"AbridgedEffect": "Quando Argenti usa seu ATQ Básico, Perícia ou Perícia Suprema, ele <color=#f29e38ff>regenera Energia</color> e aumenta sua <color=#f29e38ff>Chance de CRIT</color> para cada inimigo-alvo atingido.",
 			"ElementType": "Physical",
 			"Levels": {
@@ -17257,6 +17686,867 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Maze.png"
 		},
 		"VersionAdded": "1.5"
+	},
+	"1303": {
+		"Id": "1303",
+		"Name": "Ruan Mei",
+		"BasicATK": {
+			"Id": "130301",
+			"Name": "Fios de Perfume",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "ATQ Básico",
+			"MaxLevel": 9,
+			"EffectRaw": "Causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Ruan Mei a um único inimigo-alvo.",
+			"AbridgedEffect": "Causa Dano de Gelo leve a um único inimigo.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png"
+		},
+		"Skill": {
+			"Id": "130302",
+			"Name": "Cordas Cantam Lentos Sons",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Suporte",
+			"SkillTypeText": "Perícia",
+			"MaxLevel": 15,
+			"EffectRaw": "Após usar sua Perícia, Ruan Mei ganha Tom Acima, durando por <unbreak>#3[i]</unbreak> rodada(s). Essa duração diminui em 1 no início da rodada de Ruan Mei. Quando Ruan Mei possui Tom Acima, o Dano de todos os aliados é aumentado em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> e a Eficiência de Quebra de Fraqueza deles aumenta em <unbreak>#2[i]%</unbreak>.",
+			"AbridgedEffect": "Após usar sua Perícia, Ruan Mei ganha Tom Acima. Quando Ruan Mei possuir Tom Acima, a <color=#f29e38ff>Dano</color> e a <color=#f29e38ff>Eficiência de Quebra de Fraqueza</color> de todos os aliados é aumentada.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.16,
+						0.5,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.176,
+						0.5,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.192,
+						0.5,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.208,
+						0.5,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.224,
+						0.5,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.24,
+						0.5,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.26,
+						0.5,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.28,
+						0.5,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.3,
+						0.5,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.32,
+						0.5,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.336,
+						0.5,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.352,
+						0.5,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.368,
+						0.5,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.384,
+						0.5,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.4,
+						0.5,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130303",
+			"Name": "Pétalas na Corrente, Repouso Indolente",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "Suporte",
+			"SkillTypeText": "Perícia Suprema",
+			"MaxLevel": 15,
+			"EffectRaw": "Ruan Mei implanta um campo que dura por <unbreak>#2[i]</unbreak> rodadas. A duração do campo diminui em 1 no início da rodada dela.\nEnquanto estiver dentro do campo, a PEN de RES a Todos os Tipos de todos os aliados aumenta em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> e os ataques deles aplicam Reflorescer da Ameixa aos inimigos atingidos.\nQuando esses inimigos tentam se recuperar da Quebra de Fraqueza, Reflorescer da Ameixa é ativado, estendendo a duração da sua Quebra de Fraqueza, atrasando sua ação em uma quantidade igual a <unbreak>#3[i]%</unbreak> do Efeito de Quebra de Ruan Mei + <unbreak>#4[i]%</unbreak>, e causando Dano de Quebra igual a <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> do Dano de Quebra de Gelo de Ruan Mei.\nReflorescer da Ameixa não pode ser aplicado novamente aos inimigos-alvo até eles se recuperarem da Quebra de Fraqueza.",
+			"AbridgedEffect": "Aumenta a <color=#f29e38ff>PEN de RES a Todos os Tipos</color> para todos os aliados, e seus ataques aplicam Reflorescer da Ameixa aos inimigos atingidos.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						2,
+						0.2,
+						0.1,
+						0.3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.16,
+						2,
+						0.2,
+						0.1,
+						0.32
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.17,
+						2,
+						0.2,
+						0.1,
+						0.34
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.18,
+						2,
+						0.2,
+						0.1,
+						0.36
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.19,
+						2,
+						0.2,
+						0.1,
+						0.38
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.2,
+						2,
+						0.2,
+						0.1,
+						0.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2125,
+						2,
+						0.2,
+						0.1,
+						0.425
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.225,
+						2,
+						0.2,
+						0.1,
+						0.45
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2375,
+						2,
+						0.2,
+						0.1,
+						0.475
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.25,
+						2,
+						0.2,
+						0.1,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.26,
+						2,
+						0.2,
+						0.1,
+						0.52
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.27,
+						2,
+						0.2,
+						0.1,
+						0.54
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.28,
+						2,
+						0.2,
+						0.1,
+						0.56
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.29,
+						2,
+						0.2,
+						0.1,
+						0.58
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						0.2,
+						0.1,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130304",
+			"Name": "Hélice Somatotípica",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "Suporte",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "Aumenta a VEL em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> para a equipe (excluindo este personagem). Quando os aliados aplicam Quebra de Fraqueza a um inimigo-alvo, Ruan Mei causa Dano de Quebra a esse inimigo igual a <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de seu Dano de Quebra de Gelo.",
+			"AbridgedEffect": "Aumenta a <color=#f29e38ff>VEL</color> para todos os aliados (com exceção deste personagem). Quebrar a Fraqueza de um inimigo-alvo <color=#f29e38ff>causará adicionalmente Dano de Quebra de Gelo</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.08,
+						0.6
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.082,
+						0.66
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.084,
+						0.72
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.086,
+						0.78
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.088,
+						0.84
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.09,
+						0.9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.0925,
+						0.975
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.095,
+						1.05
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.0975,
+						1.125
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.1,
+						1.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.102,
+						1.26
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.104,
+						1.32
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.106,
+						1.38
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.108,
+						1.44
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.11,
+						1.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png"
+		},
+		"Technique": {
+			"Id": "130307",
+			"Name": "Serenata de Seda",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "Aprimoramento",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Depois de usar a Técnica, ganha Serenata de Seda. No início da próxima batalha, ativa automaticamente a Perícia <unbreak>#1[i]</unbreak> vez(es) sem consumir Pontos de Perícia.\nNo Universo Simulado, quando Ruan Mei possuir Serenata de Seda, a equipe atacando inimigos será considerada como se sempre estivesse atacando sua Fraqueza para entrar em batalha, e este ataque pode reduzir a Tenacidade de todos os inimigos independente dos Tipos de Fraqueza. Ao aplicar Quebra de Fraqueza, ativa o Efeito de Quebra de Fraqueza correspondente ao Tipo do atacante. Para cada Bênção em posse (até <unbreak>#4[i]</unbreak> Bênçãos), adicionalmente aumenta o Dano de Redução de Tenacidade deste ataque em <unbreak>#2[i]%</unbreak>. Após aplicar a Quebra de Fraqueza a um inimigo-alvo, causa adicionalmente Dano de Quebra igual a <unbreak>#3[i]%</unbreak> do Dano de Quebra de Gelo de Ruan Mei ao inimigo-alvo.",
+			"AbridgedEffect": "Da próxima vez que entrar em batalha, ativa automaticamente a Perícia por <color=#f29e38ff><unbreak>#1[i]</unbreak></color> vez(es). Depois de usar a Técnica, aliados atacando inimigos no Universo Simulado sempre serão considerados como se estivessem atacando a Fraqueza para entrar em batalha, e sua Tenacidade é reduzida <color=#f29e38ff>independente dos Tipos de Fraqueza</color>. Para cada Bênção em posse, aumenta o Dano Redutor de Tenacidade e causa adicionalmente Dano de Quebra ao infligir Quebra de Fraqueza.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						1,
+						1,
+						20
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
+	"1305": {
+		"Id": "1305",
+		"Name": "Dr. Ratio",
+		"BasicATK": {
+			"Id": "130501",
+			"Name": "A Mente É Poderosa",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "ATQ Básico",
+			"MaxLevel": 9,
+			"EffectRaw": "Causa Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio a um único inimigo-alvo.",
+			"AbridgedEffect": "Causa Dano Imaginário leve a um único inimigo-alvo.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png"
+		},
+		"Skill": {
+			"Id": "130502",
+			"Name": "Obstetrícia Intelectual",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "Perícia",
+			"MaxLevel": 15,
+			"EffectRaw": "Causa Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio a um único inimigo.",
+			"AbridgedEffect": "Causa Dano Imaginário a um único inimigo.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130503",
+			"Name": "Paradoxo Silogístico",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "Perícia Suprema",
+			"MaxLevel": 15,
+			"EffectRaw": "Causa Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio a um único inimigo-alvo e aplica a Tolice do Sábio. Quando os aliados do Dr. Ratio atacam um alvo afligido com Tolice do Sábio, o Dr. Ratio realiza o <u>Ataque Extra</u> do seu Talento 1 vez contra o alvo.\nA Tolice do Sábio pode ser ativada até <unbreak>#2[i]</unbreak> vezes e só afeta o alvo mais recente da Perícia Suprema do Dr. Ratio. Essa contagem de ativação reinicia depois que a Perícia Suprema do Dr. Ratio é utilizada.",
+			"AbridgedEffect": "Causa Dano Imaginário a um único inimigo-alvo e aplica Tolice dos Sábios. Quando os aliados do Dr. Ratio atacam um alvo afligido com Tolice do Sábio, o Dr. Ratio realiza 1 <color=#f29e38ff><u>Ataque Extra</u></color> contra este alvo.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.44,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.536,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.632,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.728,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.824,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.92,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.04,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.16,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.28,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.4,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.496,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.592,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.688,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.784,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.88,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130504",
+			"Name": "Cogito, Ergo Sum",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "Ao usar a sua Perícia, o Dr. Ratio tem uma <u>chance fixa</u> de <unbreak>#2[i]%</unbreak> de realizar um <u>Ataque Extra</u> contra o alvo 1 vez, causando Dano Imaginário igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ do Dr. Ratio. Para cada penalidade que o inimigo possui, a <u>chance fixa</u> de realizar o <u>Ataque Extra</u> aumenta em <unbreak>#3[i]%</unbreak>. Se o inimigo-alvo for derrotado antes da ativação do <u>Ataque Extra</u>, o <u>Ataque Extra</u> será direcionado a um único inimigo aleatório ao invés disso.",
+			"AbridgedEffect": "Ao usar a Perícia, há uma chance de realizar 1 <color=#f29e38ff><u>Ataque Extra</u></color> contra o alvo 1 vez.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.35,
+						0.4,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.485,
+						0.4,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.62,
+						0.4,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.755,
+						0.4,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.89,
+						0.4,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.025,
+						0.4,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.1938,
+						0.4,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.3625,
+						0.4,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.5313,
+						0.4,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.7,
+						0.4,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.835,
+						0.4,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.97,
+						0.4,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.105,
+						0.4,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.24,
+						0.4,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.375,
+						0.4,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png"
+		},
+		"Technique": {
+			"Id": "130507",
+			"Name": "Molde da Idolatria",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Incapacitação",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Após usar a Técnica, cria uma dimensão especial que causa Provocação nos inimigos próximos, durando por <unbreak>#1[i]</unbreak> segundo(s). Após entrar em combate com inimigos nesta dimensão especial, há uma <u>chance-base</u> de <unbreak>#2[i]%</unbreak> de reduzir a VEL de cada inimigo-alvo em <unbreak>#3[i]%</unbreak> por <unbreak>#4[i]</unbreak> rodada(s). Apenas 1 dimensão criada pelos aliados pode existir ao mesmo tempo.",
+			"AbridgedEffect": "Cria uma dimensão especial. Inimigos dentro dessa dimensão sofrem Provocação. Após entrar em combate com inimigos nesta dimensão, há uma alta chance de reduzir a <color=#f29e38ff>VEL</color> dos inimigos-alvo.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						10,
+						1,
+						0.15,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png"
+		},
+		"VersionAdded": "1.6"
 	},
 	"8001": {
 		"Id": "8001",

@@ -1824,7 +1824,7 @@
 			"SkillTypeText": "戰技",
 			"MaxLevel": 15,
 			"EffectRaw": "對指定敵方單體造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，同時對其相鄰目標造成等同於卡芙卡<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻擊力的雷屬性傷害。\n若指定敵方單體處於持續傷害狀態，其當下承受的所有持續傷害立即產生相當於原傷害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的傷害。",
-			"AbridgedEffect": "對敵方單體造成雷屬性傷害，對相鄰目標造成少量雷屬性傷害。\n若主目標處於持續傷害類負面狀態，則使持續傷害類負面狀態額外產生1次傷害。",
+			"AbridgedEffect": "對敵方單體造成雷屬性傷害，對相鄰目標造成少量雷屬性傷害。\n若主目標處於持續傷害類負面狀態，則使持續傷害類負面狀態<color=#f29e38ff>額外產生1次傷害</color>。",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -1944,7 +1944,7 @@
 			"SkillTypeText": "終結技",
 			"MaxLevel": 15,
 			"EffectRaw": "對敵方全體造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入觸電狀態，並使其當下承受的觸電狀態立即產生相當於原傷害<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>的傷害。觸電狀態持續<unbreak>#3[i]</unbreak>回合。\n觸電狀態下，敵方目標每回合開始時受到等同於卡芙卡<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的雷屬性持續傷害。",
-			"AbridgedEffect": "對敵方全體造成少量雷屬性傷害，有高機率施加觸電狀態。\n若敵方目標處於觸電狀態，則使觸電狀態額外產生1次傷害。",
+			"AbridgedEffect": "對敵方全體造成少量雷屬性傷害，有高機率<color=#f29e38ff>施加觸電狀態</color>。\n若敵方目標處於觸電狀態，則使觸電狀態<color=#f29e38ff>額外產生1次傷害</color>。",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2094,7 +2094,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "當卡芙卡的隊友對敵方目標發動普通攻擊後，卡芙卡立即發動<u>追加攻擊</u>，對該目標造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，並有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入與終結技相同的觸電狀態，持續<unbreak>#3[i]</unbreak>回合，該效果每回合只能觸發1次。",
-			"AbridgedEffect": "當隊友對敵方目標發動普通攻擊後，卡芙卡立即發動<u>追加攻擊</u>，對該目標造成雷屬性傷害，並有高機率施加觸電狀態。該效果每回合只能觸發1次。",
+			"AbridgedEffect": "當隊友對敵方目標發動普通攻擊後，卡芙卡立即發動<u>追加攻擊</u>，對該目標造成雷屬性傷害，並有高機率<color=#f29e38ff>施加觸電狀態</color>。該效果每回合只能觸發1次。",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2213,7 +2213,7 @@
 			"SkillTypeText": "秘技",
 			"MaxLevel": 1,
 			"EffectRaw": "立即攻擊一定範圍內的所有敵人，進入戰鬥後對敵方全體造成等同於卡芙卡<unbreak>#3[i]%</unbreak>攻擊力的雷屬性傷害，同時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入與終結技相同的觸電狀態，持續<unbreak>#2[i]</unbreak>回合。",
-			"AbridgedEffect": "攻擊範圍內的所有敵人，進入戰鬥後對敵方全體造成少量雷屬性傷害，有高機率施加觸電狀態。",
+			"AbridgedEffect": "攻擊範圍內的所有敵人，進入戰鬥後對敵方全體造成少量雷屬性傷害，有高機率<color=#f29e38ff>施加觸電狀態</color>。",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -2295,8 +2295,8 @@
 			"Id": "100602",
 			"Name": "是否允許更改？",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "妨害",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
 			"SkillTypeText": "戰技",
 			"MaxLevel": 15,
 			"EffectRaw": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>向指定敵方單體目標附加1個場上我方目標持有屬性的弱點，且該弱點對應屬性的抗性降低<unbreak>#4[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。若附加的是敵方目標原有屬性的弱點，則不會觸發對應屬性的抗性降低效果。\n同一敵方目標僅能被銀狼附加1個弱點，當銀狼對其再次附加弱點時，僅保留最新附加的弱點。\n有<unbreak>#5[i]%</unbreak>的<u>基礎機率</u>額外使該目標的全屬性抗性降低<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>，持續<unbreak>#7[i]</unbreak>回合。\n對該目標造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
@@ -2475,8 +2475,8 @@
 			"Id": "100603",
 			"Name": "|帳號封鎖|",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "妨害",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
 			"SkillTypeText": "終結技",
 			"MaxLevel": 15,
 			"EffectRaw": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>使指定敵方單體防禦力降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持續<unbreak>#4[i]</unbreak>回合，同時對該目標造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
@@ -5294,8 +5294,8 @@
 			"Id": "110402",
 			"Name": "震懾之擊",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "妨害",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
 			"SkillTypeText": "戰技",
 			"MaxLevel": 15,
 			"EffectRaw": "對指定敵方單體造成等同於傑帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害，同時有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入凍結狀態，持續<unbreak>#3[i]</unbreak>回合。\n凍結狀態下，敵方目標不能行動同時每回合開始時受到等同於傑帕德<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的冰屬性<u>附加傷害</u>。",
@@ -5728,7 +5728,7 @@
 			"SkillTypeText": "戰技",
 			"MaxLevel": 15,
 			"EffectRaw": "立即為指定我方單體回復等同於娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值，同時目標每回合開始時為其回復等同於娜塔莎<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值，持續<unbreak>#3[i]</unbreak>回合。",
-			"AbridgedEffect": "為我方單體回復生命值，並使目標持續回復生命值。",
+			"AbridgedEffect": "為我方單體<color=#f29e38ff>回復生命值</color>，並使目標<color=#f29e38ff>持續回復生命值</color>。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -5877,7 +5877,7 @@
 			"SkillTypeText": "終結技",
 			"MaxLevel": 15,
 			"EffectRaw": "立即為我方全體回復等同於娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值。",
-			"AbridgedEffect": "為我方全體回復生命值。",
+			"AbridgedEffect": "為我方全體<color=#f29e38ff>回復生命值</color>。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -6167,8 +6167,8 @@
 			"Id": "110602",
 			"Name": "低溫妨害",
 			"TriggerKey": "Skill02",
-			"TagType": "Impair",
-			"TagTypeText": "妨害",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
 			"SkillTypeText": "戰技",
 			"MaxLevel": 15,
 			"EffectRaw": "解除指定敵方單體的<unbreak>#2[i]</unbreak>個<u>增益效果</u>，同時造成等同於佩拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
@@ -6272,8 +6272,8 @@
 			"Id": "110603",
 			"Name": "領域壓制",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "妨害",
+			"TagType": "AoEAttack",
+			"TagTypeText": "群體攻擊",
 			"SkillTypeText": "終結技",
 			"MaxLevel": 15,
 			"EffectRaw": "有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入【通解】狀態，同時對敵方全體造成等同於佩拉<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的冰屬性傷害。\n【通解】狀態下，敵方目標防禦力降低<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。",
@@ -7147,8 +7147,8 @@
 			"Id": "110803",
 			"Name": "驚喜禮盒",
 			"TriggerKey": "Skill03",
-			"TagType": "Impair",
-			"TagTypeText": "妨害",
+			"TagType": "AoEAttack",
+			"TagTypeText": "群體攻擊",
 			"SkillTypeText": "終結技",
 			"MaxLevel": 15,
 			"EffectRaw": "對敵方全體造成等同於桑博<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害，同時有<unbreak>#4[i]%</unbreak>的<u>基礎機率</u>使被攻擊的敵方目標受到的持續傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。",
@@ -7287,7 +7287,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "桑博命中敵方目標後有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使目標陷入風化狀態，持續<unbreak>#3[i]</unbreak>回合。\n風化狀態下，敵方目標每回合開始時受到等同於桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的風屬性持續傷害。風化狀態最多疊加<unbreak>#4[i]</unbreak>層。",
-			"AbridgedEffect": "自身命中敵方目標後有機率使目標<color=#f29e38ff>陷入風化狀態</color>。",
+			"AbridgedEffect": "自身命中敵方目標後，有機率使目標<color=#f29e38ff>陷入風化狀態</color>。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -11477,7 +11477,7 @@
 			"SkillTypeText": "戰技",
 			"MaxLevel": 15,
 			"EffectRaw": "消耗等同於刃生命上限<unbreak>#1[i]%</unbreak>的生命值，進入【地獄變】狀態。\n處於【地獄變】狀態時無法施放戰技，同時使自身造成的傷害提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，普通攻擊【支離劍】強化為【無間劍樹】，持續<unbreak>#2[i]</unbreak>回合。\n若現有生命值不足，則施放戰技時刃的現有生命值降低至1點。\n該戰技無法恢復能量。施放該戰技後，本回合不會結束。",
-			"AbridgedEffect": "消耗自身生命值，獲得強化普通攻擊，且本回合不會結束。",
+			"AbridgedEffect": "消耗自身生命值，<color=#f29e38ff>獲得強化普通攻擊</color>，且本回合不會結束。",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -11792,7 +11792,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "刃受到傷害或消耗生命值時，獲得1層充能，最多疊加5層。該效果每次受到攻擊時最多疊加1層。\n當充能疊加至上限時，立即對敵方全體發動1次<u>追加攻擊</u>，造成等同於刃<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限的風屬性傷害並回復等同於刃生命上限<unbreak>#3[i]%</unbreak>的生命值。發動追加攻擊後，消耗所有充能。",
-			"AbridgedEffect": "刃的生命值降低時，獲得1層充能。當充能疊加至上限時，立即對敵方全體造成風屬性傷害並回復生命值，隨後消耗所有充能。",
+			"AbridgedEffect": "刃的生命值降低時，獲得1層充能。當充能疊加至上限時，<color=#f29e38ff>立即對敵方全體造成風屬性傷害</color>並回復生命值，隨後消耗所有充能。",
 			"ElementType": "Wind",
 			"Levels": {
 				"1": {
@@ -15913,6 +15913,435 @@
 		},
 		"VersionAdded": "1.3"
 	},
+	"1214": {
+		"Id": "1214",
+		"Name": "雪衣",
+		"BasicATK": {
+			"Id": "121401",
+			"Name": "破魔錐",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "普通攻擊",
+			"MaxLevel": 9,
+			"EffectRaw": "對指定敵方單體造成等同於雪衣<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
+			"AbridgedEffect": "對敵方單體造成少量量子屬性傷害。",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png"
+		},
+		"Skill": {
+			"Id": "121402",
+			"Name": "攝伏諸惡",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "擴散",
+			"SkillTypeText": "戰技",
+			"MaxLevel": 15,
+			"EffectRaw": "對指定敵方單體造成等同於雪衣<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害，同時對其相鄰目標造成等同於雪衣<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的量子屬性傷害。",
+			"AbridgedEffect": "對敵方單體造成量子屬性傷害，對相鄰目標造成少量量子屬性傷害。",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.77,
+						0.385
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.42
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.91,
+						0.455
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.98,
+						0.49
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.05,
+						0.525
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1375,
+						0.5688
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.225,
+						0.6125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3125,
+						0.6563
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.47,
+						0.735
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.54,
+						0.77
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.61,
+						0.805
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.68,
+						0.84
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.75,
+						0.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png"
+		},
+		"Ultimate": {
+			"Id": "121403",
+			"Name": "天罰貫身",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "對指定敵方單體造成等同於雪衣<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害，本次攻擊無視弱點屬性削減敵方單體的韌性。擊破弱點時，觸發量子屬性的弱點擊破效果。\n在本次攻擊中，削減的韌性越多，造成的傷害越高，最多提高<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>。",
+			"AbridgedEffect": "對敵方單體造成大量量子屬性傷害，本次攻擊<color=#f29e38ff>無視弱點屬性</color>削減敵方單體的韌性，削減的韌性越多，造成的傷害越高。",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.09,
+						0.36
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.6,
+						0.096,
+						0.384
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.7,
+						0.102,
+						0.408
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.8,
+						0.108,
+						0.432
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.9,
+						0.114,
+						0.456
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.12,
+						0.48
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.125,
+						0.1275,
+						0.51
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.25,
+						0.135,
+						0.54
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.375,
+						0.1425,
+						0.57
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.5,
+						0.15,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.6,
+						0.156,
+						0.624
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.7,
+						0.162,
+						0.648
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.8,
+						0.168,
+						0.672
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.9,
+						0.174,
+						0.696
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.18,
+						0.72
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png"
+		},
+		"Talent": {
+			"Id": "121404",
+			"Name": "十王聖斷，業報恆常",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "彈射",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "雪衣發動攻擊削減敵方韌性時，會疊加【惡報】層數，削減的韌性越多疊加【惡報】層數越多，可以疊加<unbreak>#1[i]</unbreak>層。\n當雪衣的隊友發動攻擊削減敵方韌性後，雪衣疊加<unbreak>#3[i]</unbreak>層【惡報】。\n當【惡報】疊加至上限時消耗當下所有【惡報】，立即對敵方目標發動<u>追加攻擊</u>，造成3次傷害，每次傷害對敵方隨機單體造成等同於雪衣<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的量子屬性傷害。本次追加攻擊無法疊加【惡報】。",
+			"AbridgedEffect": "雪衣發動攻擊時或雪衣的隊友發動攻擊後削減敵方韌性，雪衣會疊加【惡報】。當【惡報】疊加至上限時，<color=#f29e38ff>立即發動<u>追加攻擊</u></color>，對敵方單體造成少量量子屬性傷害，共彈射3次，並消耗全部【惡報】。",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						8,
+						0.45,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						8,
+						0.495,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						8,
+						0.54,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						8,
+						0.585,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						8,
+						0.63,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						8,
+						0.675,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						8,
+						0.7313,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						8,
+						0.7875,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						8,
+						0.8438,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						8,
+						0.9,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						8,
+						0.945,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						8,
+						0.99,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						8,
+						1.035,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						8,
+						1.08,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						8,
+						1.125,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png"
+		},
+		"Technique": {
+			"Id": "121407",
+			"Name": "斬立決",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "立即攻擊敵人，進入戰鬥後對敵方全體造成等同於雪衣<unbreak>#1[i]%</unbreak>攻擊力的量子屬性傷害。",
+			"AbridgedEffect": "攻擊敵人，進入戰鬥後對敵方全體造成少量量子屬性傷害。",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
 	"1215": {
 		"Id": "1215",
 		"Name": "寒鴉",
@@ -17257,6 +17686,867 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Maze.png"
 		},
 		"VersionAdded": "1.5"
+	},
+	"1303": {
+		"Id": "1303",
+		"Name": "阮•梅",
+		"BasicATK": {
+			"Id": "130301",
+			"Name": "一針幽蘭",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "普通攻擊",
+			"MaxLevel": 9,
+			"EffectRaw": "對指定敵方單體造成等同於阮•梅<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
+			"AbridgedEffect": "對敵方單體造成少量冰屬性傷害。",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png"
+		},
+		"Skill": {
+			"Id": "130302",
+			"Name": "慢撚抹復挑",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "輔助",
+			"SkillTypeText": "戰技",
+			"MaxLevel": 15,
+			"EffectRaw": "施放戰技後阮•梅獲得【弦外音】，持續<unbreak>#3[i]</unbreak>回合，阮•梅每回合開始時持續回合數減1。當阮•梅擁有【弦外音】時，我方全體傷害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，弱點擊破效率提高<unbreak>#2[i]%</unbreak>。",
+			"AbridgedEffect": "施放戰技後阮•梅獲得【弦外音】。當阮•梅擁有【弦外音】時，提高我方全體的<color=#f29e38ff>傷害</color>和<color=#f29e38ff>弱點擊破效率</color>。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.16,
+						0.5,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.176,
+						0.5,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.192,
+						0.5,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.208,
+						0.5,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.224,
+						0.5,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.24,
+						0.5,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.26,
+						0.5,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.28,
+						0.5,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.3,
+						0.5,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.32,
+						0.5,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.336,
+						0.5,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.352,
+						0.5,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.368,
+						0.5,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.384,
+						0.5,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.4,
+						0.5,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130303",
+			"Name": "搖花緞水，沾衣不摘",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "輔助",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "阮•梅展開結界，持續<unbreak>#2[i]</unbreak>回合，自身每回合開始時結界持續回合數減1。\n處於結界中時我方全體全屬性抗性穿透提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，且攻擊後會對敵方目標施加【殘梅綻】。\n【殘梅綻】會在敵方目標嘗試從弱點擊破狀態恢復時觸發，延長目標的弱點擊破狀態並使其行動延後，延後數值等同於阮•梅<unbreak>#3[i]%</unbreak>的擊破特攻+<unbreak>#4[i]%</unbreak>，並對其造成等同於阮•梅<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>冰屬性擊破傷害的擊破傷害。\n敵方目標從弱點擊破狀態恢復前不可被再次附加【殘梅綻】。",
+			"AbridgedEffect": "使我方全體<color=#f29e38ff>全屬性抗性穿透</color>提高，且攻擊後對敵方目標施加【殘梅綻】。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						2,
+						0.2,
+						0.1,
+						0.3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.16,
+						2,
+						0.2,
+						0.1,
+						0.32
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.17,
+						2,
+						0.2,
+						0.1,
+						0.34
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.18,
+						2,
+						0.2,
+						0.1,
+						0.36
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.19,
+						2,
+						0.2,
+						0.1,
+						0.38
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.2,
+						2,
+						0.2,
+						0.1,
+						0.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2125,
+						2,
+						0.2,
+						0.1,
+						0.425
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.225,
+						2,
+						0.2,
+						0.1,
+						0.45
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2375,
+						2,
+						0.2,
+						0.1,
+						0.475
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.25,
+						2,
+						0.2,
+						0.1,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.26,
+						2,
+						0.2,
+						0.1,
+						0.52
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.27,
+						2,
+						0.2,
+						0.1,
+						0.54
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.28,
+						2,
+						0.2,
+						0.1,
+						0.56
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.29,
+						2,
+						0.2,
+						0.1,
+						0.58
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						0.2,
+						0.1,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130304",
+			"Name": "分型的螺旋",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "輔助",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "使除自身以外的隊友速度提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。我方全體擊破敵方目標弱點時，阮•梅對其造成等同於自身<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>冰屬性擊破傷害的擊破傷害。",
+			"AbridgedEffect": "使除自身以外的隊友<color=#f29e38ff>速度</color>提高，擊破敵方目標弱點時對其<color=#f29e38ff>額外造成冰屬性擊破傷害</color>。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.08,
+						0.6
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.082,
+						0.66
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.084,
+						0.72
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.086,
+						0.78
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.088,
+						0.84
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.09,
+						0.9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.0925,
+						0.975
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.095,
+						1.05
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.0975,
+						1.125
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.1,
+						1.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.102,
+						1.26
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.104,
+						1.32
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.106,
+						1.38
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.108,
+						1.44
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.11,
+						1.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png"
+		},
+		"Technique": {
+			"Id": "130307",
+			"Name": "拭琴撫羅袂",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "強化",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "使用秘技後，獲得【拭琴撫羅袂】，使下一次戰鬥開始時自動觸發<unbreak>#1[i]</unbreak>次戰技，此次觸發不消耗戰技點。\n在模擬宇宙中，當阮•梅擁有【拭琴撫羅袂】時，我方主動攻擊敵人時永遠視為利用弱點進入戰鬥，且本次攻擊可以無視弱點屬性削減敵方全體的韌性。擊破弱點時，觸發攻擊者自身屬性的弱點擊破效果。每擁有1個祝福，本次攻擊造成的削韌傷害便額外提高<unbreak>#2[i]%</unbreak>，且擊破敵方目標弱點後對其額外造成等同於阮•梅<unbreak>#3[i]%</unbreak>冰屬性擊破傷害的擊破傷害，最多計入<unbreak>#4[i]%</unbreak>個祝福。",
+			"AbridgedEffect": "下一次進入戰鬥後自動觸發<color=#f29e38ff><unbreak>#1[i]</unbreak></color>次戰技。使用秘技後，我方攻擊模擬宇宙的敵人永遠視為利用弱點進入戰鬥，且<color=#f29e38ff>無視弱點屬性</color>削減韌性。每擁有1個祝福，削韌傷害便隨之提高且擊破時額外造成擊破傷害。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						1,
+						1,
+						20
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png"
+		},
+		"VersionAdded": "1.6"
+	},
+	"1305": {
+		"Id": "1305",
+		"Name": "真理醫生",
+		"BasicATK": {
+			"Id": "130501",
+			"Name": "知識就是力量",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "普通攻擊",
+			"MaxLevel": 9,
+			"EffectRaw": "對指定敵方單體造成等同於真理醫生<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
+			"AbridgedEffect": "對指定敵方單體造成少量虛數屬性傷害。",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png"
+		},
+		"Skill": {
+			"Id": "130502",
+			"Name": "精神催生法",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "戰技",
+			"MaxLevel": 15,
+			"EffectRaw": "對指定敵方單體造成等同於真理醫生<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
+			"AbridgedEffect": "對指定敵方單體造成虛數屬性傷害。",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130503",
+			"Name": "三段悖論",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "對指定敵方單體造成等同於真理醫生<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，並附上【智者的短見】。真理醫生的隊友攻擊持有【智者的短見】的目標時，真理醫生對該目標發動1次天賦的<u>追加攻擊</u>。\n【智者的短見】效果最多觸發<unbreak>#2[i]</unbreak>次且僅對真理醫生終結技最新施放的目標生效。施放終結技後重置該效果觸發次數。",
+			"AbridgedEffect": "對指定敵方單體造成虛數屬性傷害，為其附上【智者的短見】。真理醫生的隊友攻擊持有【智者的短見】的目標時，真理醫生對該目標發動1次<color=#f29e38ff><u>追加攻擊</u></color>。",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.44,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.536,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.632,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.728,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.824,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.92,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.04,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.16,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.28,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.4,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.496,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.592,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.688,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.784,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.88,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130504",
+			"Name": "我思故我在",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "施放戰技時，有<unbreak>#2[i]%</unbreak>的<u>固定機率</u>對該目標發動1次<u>追加攻擊</u>，造成等同於真理醫生<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。目標每有1個負面效果，<u>追加攻擊</u>發動的<u>固定機率</u>便提高<unbreak>#3[i]%</unbreak>。若<u>追加攻擊</u>施放前目標被消滅則對敵方隨機單體發動<u>追加攻擊</u>。",
+			"AbridgedEffect": "施放戰技時，有機率對該目標發動1次<color=#f29e38ff><u>追加攻擊</u></color>。",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.35,
+						0.4,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.485,
+						0.4,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.62,
+						0.4,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.755,
+						0.4,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.89,
+						0.4,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.025,
+						0.4,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.1938,
+						0.4,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.3625,
+						0.4,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.5313,
+						0.4,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.7,
+						0.4,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.835,
+						0.4,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.97,
+						0.4,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.105,
+						0.4,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.24,
+						0.4,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.375,
+						0.4,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png"
+		},
+		"Technique": {
+			"Id": "130507",
+			"Name": "偶像塑造",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "妨害",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "使用秘技後，製造一個特殊領域嘲諷附近敵人，持續<unbreak>#1[i]</unbreak>秒。與處於特殊領域內的敵人進入戰鬥後，有<unbreak>#2[i]%</unbreak><u>基礎機率</u>使敵方每個單體目標速度降低<unbreak>#3[i]%</unbreak>，持續<unbreak>#4[i]</unbreak>回合。我方製造的領域效果最多存在1個。",
+			"AbridgedEffect": "製造特殊領域。領域內敵人受到嘲諷。與領域內敵人進入戰鬥後，有高機率使敵方目標<color=#f29e38ff>速度降低</color>。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						10,
+						1,
+						0.15,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png"
+		},
+		"VersionAdded": "1.6"
 	},
 	"8001": {
 		"Id": "8001",
