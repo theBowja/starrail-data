@@ -5899,7 +5899,7 @@
 				},
 				"4": {
 					"EffectValues": [
-						0.1092,
+						0.1093,
 						230
 					]
 				},
@@ -10924,7 +10924,7 @@
 			"SkillTypeText": "Chiến Kỹ",
 			"MaxLevel": 15,
 			"EffectRaw": "Gây cho toàn bộ địch một lượng Sát Thương Lôi bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Jing Yuan, đồng thời tăng <unbreak>#2[i]</unbreak> đòn đánh trong một lượt của Thần Quân ở hiệp sau.",
-			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Lôi cho toàn bộ địch, tăng số đòn đánh trong một lượt hành động của Thần Quân.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Lôi cho toàn bộ địch, <color=#f29e38ff>tăng số đòn đánh trong một lượt của Thần Quân</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -11029,7 +11029,7 @@
 			"SkillTypeText": "Tuyệt Kỹ",
 			"MaxLevel": 15,
 			"EffectRaw": "Gây cho toàn bộ địch một lượng Sát Thương Lôi bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Jing Yuan, đồng thời tăng <unbreak>#2[i]</unbreak> đòn đánh trong một lượt của Thần Quân ở hiệp sau.",
-			"AbridgedEffect": "Gây Sát Thương Lôi cho toàn bộ địch, tăng số đòn đánh trong một lượt của Thần Quân.",
+			"AbridgedEffect": "Gây Sát Thương Lôi cho toàn bộ địch, <color=#f29e38ff>tăng số đòn đánh trong một lượt của Thần Quân</color>.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -11134,6 +11134,7 @@
 			"SkillTypeText": "Thiên Phú",
 			"MaxLevel": 15,
 			"EffectRaw": "Khi bắt đầu chiến đấu sẽ triệu hồi Thần Quân. Thần Quân ban đầu có <unbreak>#1[i]</unbreak> điểm tốc độ và <unbreak>#4[i]</unbreak> đòn đánh trong một lượt. Khi Thần Quân hành động sẽ phát động <u>Đòn Đánh Theo Sau</u>, mỗi đòn đánh sẽ gây Sát Thương Lôi cho 1 kẻ địch ngẫu nhiên bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Jing Yuan, đồng thời gây Sát Thương Lôi cho mục tiêu lân cận kẻ đó bằng <unbreak>#5[i]%</unbreak> của mục tiêu chính.\nThần Quân tối đa tích lũy <unbreak>#6[i]</unbreak> đòn đánh và cứ tăng 1 đòn thì tăng <unbreak>#3[i]</unbreak> điểm tốc độ, sẽ khôi phục lại chỉ số ban đầu sau khi kết thúc hành động.\nKhi Jing Yuan rơi vào <u>trạng thái không thể chiến đấu</u> thì Thần Quân sẽ biến mất.\nKhi Jing Yuan bị <u>Hiệu Ứng Xấu dạng khống chế</u> ảnh hưởng thì Thần Quân cũng không thể hành động.",
+			"AbridgedEffect": "Khi bắt đầu chiến đấu sẽ triệu hồi Thần Quân, Thần Quân <color=#f29e38ff>tự động</color> <color=#f29e38ff>gây lượng nhỏ Sát Thương Lôi</color> lên 1 kẻ địch ngẫu nhiên và mục tiêu ở gần kẻ đó.",
 			"ElementType": "Thunder",
 			"Levels": {
 				"1": {
@@ -11298,6 +11299,7 @@
 			"SkillTypeText": "Bí Kỹ",
 			"MaxLevel": 1,
 			"EffectRaw": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo, số đòn đánh trong một lượt của Thần Quân tăng <unbreak>#1[i]</unbreak> ở hiệp 1.",
+			"AbridgedEffect": "Sử dụng Bí Kỹ, khi vào chiến đấu lần kế tiếp <color=#f29e38ff>sẽ tăng số đòn đánh trong một lượt của Thần Quân</color>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -12608,7 +12610,7 @@
 				"7": {
 					"EffectValues": [
 						3.23,
-						0.2538,
+						0.2537,
 						0.5525
 					]
 				},
@@ -14562,7 +14564,7 @@
 				},
 				"2": {
 					"EffectValues": [
-						0.0382,
+						0.0383,
 						57.6,
 						0.1275,
 						192,
@@ -18547,6 +18549,1534 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png"
 		},
 		"VersionAdded": "1.6"
+	},
+	"1306": {
+		"Id": "1306",
+		"Name": "Sparkle",
+		"BasicATK": {
+			"Id": "130601",
+			"Name": "Hài Độc Thoại",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 9,
+			"EffectRaw": "Gây Sát Thương Lượng Tử cho 1 kẻ địch chỉ định tương đương <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Sparkle.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Lượng Tử cho 1 kẻ địch.",
+			"ElementType": "Quantum",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Normal.png"
+		},
+		"Skill": {
+			"Id": "130602",
+			"Name": "Cá Nhỏ Cõi Mơ",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Hỗ Trợ",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Tăng Sát Thương Bạo Kích của 1 đồng đội chỉ định, mức tăng bằng <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> Sát Thương Bạo Kích của Sparkle +<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, duy trì <unbreak>#3[i]</unbreak> hiệp, đồng thời khiến mục tiêu này ưu tiên hành động <unbreak>#4[i]%</unbreak>.\nKhi Sparkle thi triển kỹ năng này lên bản thân, sẽ không thể kích hoạt hiệu ứng Ưu Tiên Hành Động.",
+			"AbridgedEffect": "Tăng <color=#f29e38ff>Sát Thương Bạo Kích</color> của 1 đồng đội, và khiến mục tiêu này ưu tiên hành động.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.12,
+						0.27,
+						1,
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.132,
+						0.288,
+						1,
+						0.5
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.144,
+						0.306,
+						1,
+						0.5
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.156,
+						0.324,
+						1,
+						0.5
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.168,
+						0.342,
+						1,
+						0.5
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.18,
+						0.36,
+						1,
+						0.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.195,
+						0.3825,
+						1,
+						0.5
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.21,
+						0.405,
+						1,
+						0.5
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.225,
+						0.4275,
+						1,
+						0.5
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						0.45,
+						1,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.252,
+						0.468,
+						1,
+						0.5
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.264,
+						0.486,
+						1,
+						0.5
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.276,
+						0.504,
+						1,
+						0.5
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.288,
+						0.522,
+						1,
+						0.5
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						0.54,
+						1,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130603",
+			"Name": "Cô Gái Nghìn Mặt",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "Hỗ Trợ",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Hồi phục <unbreak>#2[i]</unbreak> Điểm Chiến Kỹ cho phe ta, đồng thời khiến toàn thể phe ta nhận được Câu Đố Kỳ Dị. Khi mục tiêu phe ta có Câu Đố Kỳ Dị kích hoạt hiệu ứng Tăng Sát Thương từ Thiên Phú của Sparkle, mỗi tầng sẽ tăng thêm <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>, duy trì <unbreak>#4[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Hồi phục <color=#f29e38ff>Điểm Chiến Kỹ</color> cho phe ta, tăng thêm hiệu ứng Tăng Sát Thương khi kích hoạt Thiên Phú Sparkle.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						4,
+						0.06,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2,
+						4,
+						0.064,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2,
+						4,
+						0.068,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						4,
+						0.072,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2,
+						4,
+						0.076,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						4,
+						0.08,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2,
+						4,
+						0.085,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2,
+						4,
+						0.09,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2,
+						4,
+						0.095,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						4,
+						0.1,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2,
+						4,
+						0.104,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2,
+						4,
+						0.108,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2,
+						4,
+						0.112,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2,
+						4,
+						0.116,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						4,
+						0.12,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130604",
+			"Name": "Ngụy Biện Cá Trích Đỏ",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "Hỗ Trợ",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Khi Sparkle trong trận, giới hạn Điểm Chiến Kỹ sẽ tăng thêm <unbreak>#3[i]</unbreak> điểm. Mục tiêu phe ta mỗi khi tiêu hao 1 Điểm Chiến Kỹ, sẽ tăng <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> sát thương do toàn bộ phe ta gây ra, hiệu ứng này duy trì <unbreak>#1[i]</unbreak> hiệp, tối đa có thể cộng dồn <unbreak>#4[i]</unbreak> tầng.",
+			"AbridgedEffect": "Tăng <color=#f29e38ff>giới hạn Điểm Chiến Kỹ</color> của phe ta, khi mục tiêu phe ta tiêu hao Điểm Chiến Kỹ, sẽ tăng <color=#f29e38ff>sát thương gây ra</color> của toàn bộ phe ta.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						0.03,
+						2,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2,
+						0.033,
+						2,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2,
+						0.036,
+						2,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						0.039,
+						2,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2,
+						0.042,
+						2,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.045,
+						2,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2,
+						0.0488,
+						2,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2,
+						0.0525,
+						2,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2,
+						0.0563,
+						2,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						0.06,
+						2,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2,
+						0.063,
+						2,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2,
+						0.066,
+						2,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2,
+						0.069,
+						2,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2,
+						0.072,
+						2,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						0.075,
+						2,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Passive.png"
+		},
+		"Technique": {
+			"Id": "130607",
+			"Name": "Kẻ Kể Chuyện Không Đáng Tin",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "Hỗ Trợ",
+			"SkillTypeText": "Bí Kỹ",
+			"MaxLevel": 1,
+			"EffectRaw": "Sau khi dùng Bí Kỹ, toàn thể phe ta sẽ vào trạng thái Lạc Lối trong <unbreak>#2[i]</unbreak> giây liên tục. Ở trạng thái Lạc Lối sẽ không bị kẻ địch phát hiện. Khi vào chiến đấu trong thời gian Lạc Lối sẽ hồi <unbreak>#1[i]</unbreak> Điểm Chiến Kỹ cho phe ta.",
+			"AbridgedEffect": "Sau khi dùng Bí Kỹ, toàn thể phe ta sẽ vào trạng thái Lạc Lối. Ở trạng thái Lạc Lối sẽ không bị kẻ địch phát hiện. Khi vào chiến đấu trong thời gian Lạc Lối sẽ hồi <color=#f29e38ff>Điểm Chiến Kỹ</color> cho phe ta.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						3,
+						20
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Maze.png"
+		},
+		"VersionAdded": "2.0"
+	},
+	"1307": {
+		"Id": "1307",
+		"Name": "Black Swan",
+		"BasicATK": {
+			"Id": "130701",
+			"Name": "Nhìn Thấu, Bình Minh Tĩnh Lặng",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 9,
+			"EffectRaw": "Gây Sát Thương Phong lên 1 kẻ địch chỉ định bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Black Swan, có <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>xác suất cơ bản</u> khiến mục tiêu rơi vào 1 tầng <u>Dấu Tích Bí Ẩn</u>, đồng thời sau khi tấn công mục tiêu ở trạng thái Bào Mòn, Chảy Máu, Thiêu Đốt, Sốc Điện, sẽ lần lượt có <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> <u>xác suất cơ bản</u> khiến mục tiêu rơi thêm vào 1 tầng <u>Dấu Tích Bí Ẩn</u>.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Phong lên 1 kẻ địch, có xác suất thi triển <u>Dấu Tích Bí Ẩn</u> lên mục tiêu. Sau khi tấn công mục tiêu rơi vào trạng thái <color=#f29e38ff>Bào Mòn, Chảy Máu, Thiêu Đốt, Sốc Điện</color>, sẽ lần lượt có xác suất <color=#f29e38ff>thi triển thêm <u></u>Dấu Tích Bí Ẩn</color>.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.3,
+						0.5,
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.36,
+						0.53,
+						0.53
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.42,
+						0.56,
+						0.56
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.48,
+						0.59,
+						0.59
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.54,
+						0.62,
+						0.62
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.6,
+						0.65,
+						0.65
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.66,
+						0.68,
+						0.68
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.72,
+						0.71,
+						0.71
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.78,
+						0.74,
+						0.74
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Normal.png"
+		},
+		"Skill": {
+			"Id": "130702",
+			"Name": "Sụp Đổ, Hoàng Hôn Giả Dối",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Khuếch Tán",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Gây Sát Thương Phong lên kẻ địch chỉ định và mục tiêu bên cạnh bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Black Swan, đồng thời có <unbreak>#2[i]%</unbreak> <u>xác suất cơ bản</u> khiến mục tiêu và mục tiêu bên cạnh rơi vào 1 tầng <u>Dấu Tích Bí Ẩn</u>, ngoài ra có <unbreak>#3[i]%</unbreak> <u>xác suất cơ bản</u> giảm <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> Phòng Thủ của mục tiêu và mục tiêu bên cạnh, duy trì <unbreak>#5[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Phong lên 1 kẻ địch và mục tiêu lân cận kẻ đó, có xác suất lớn thi triển <color=#f29e38ff><u>Dấu Tích Bí Ẩn</u></color> lên mục tiêu, và có xác suất lớn giảm Phòng Thủ của mục tiêu.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.45,
+						1,
+						1,
+						0.148,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.495,
+						1,
+						1,
+						0.154,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.54,
+						1,
+						1,
+						0.16,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.585,
+						1,
+						1,
+						0.166,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.63,
+						1,
+						1,
+						0.172,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.675,
+						1,
+						1,
+						0.178,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.7313,
+						1,
+						1,
+						0.1855,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.7875,
+						1,
+						1,
+						0.193,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.8438,
+						1,
+						1,
+						0.2005,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.9,
+						1,
+						1,
+						0.208,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.945,
+						1,
+						1,
+						0.214,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.99,
+						1,
+						1,
+						0.22,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.035,
+						1,
+						1,
+						0.226,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.08,
+						1,
+						1,
+						0.232,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.125,
+						1,
+						1,
+						0.238,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130703",
+			"Name": "Trầm Luân Trong Vòng Tay",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Khiến toàn bộ kẻ địch rơi vào trạng thái Vạch Trần, duy trì <unbreak>#2[i]</unbreak> hiệp.\nỞ trạng thái Vạch Trần, sát thương phải chịu trong hiệp của chính kẻ địch tăng <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, đồng thời khi kẻ địch ở trạng thái <u>Dấu Tích Bí Ẩn</u>, sẽ xem như cùng lúc rơi vào trạng thái Bào Mòn, Chảy Máu, Thiêu Đốt, Sốc Điện, sau khi <u>Dấu Tích Bí Ẩn</u> gây sát thương khi bắt đầu mỗi hiệp sẽ không làm mới số tầng. Hiệu ứng không làm mới số tầng của <u>Dấu Tích Bí Ẩn</u> tối đa kích hoạt <unbreak>#4[i]</unbreak> lần trong thời gian duy trì trạng thái Vạch Trần, rơi vào trạng thái Vạch Trần một lần nữa sẽ làm mới số lần kích hoạt.\nGây cho toàn bộ kẻ địch Sát Thương Phong bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Black Swan.",
+			"AbridgedEffect": "Thi triển trạng thái Vạch Trần lên toàn bộ phe địch, tăng sát thương mà mục tiêu phải chịu trong hiệp, đồng thời <color=#f29e38ff>xem <u>Dấu Tích Bí Ẩn</u> như là trạng thái Bào Mòn, Chảy Máu, Thiêu Đốt, Sốc Điện</color>. Ngoài ra, sau khi <u>Dấu Tích Bí Ẩn</u> gây sát thương lúc bắt đầu hiệp kế tiếp sẽ không làm mới số tầng. Gây Sát Thương Phong lên toàn phe địch.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.72,
+						2,
+						0.15,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.768,
+						2,
+						0.16,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.816,
+						2,
+						0.17,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.864,
+						2,
+						0.18,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.912,
+						2,
+						0.19,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.96,
+						2,
+						0.2,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.02,
+						2,
+						0.2125,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.08,
+						2,
+						0.225,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.14,
+						2,
+						0.2375,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.2,
+						2,
+						0.25,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.248,
+						2,
+						0.26,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.296,
+						2,
+						0.27,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.344,
+						2,
+						0.28,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.392,
+						2,
+						0.29,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.44,
+						2,
+						0.3,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130704",
+			"Name": "Khung Cửi Vận Mệnh Khó Lường",
+			"TriggerKey": "SkillP01",
+			"TagType": "Impair",
+			"TagTypeText": "Quấy Nhiễu",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Mỗi khi kẻ địch chịu 1 lần Sát Thương Duy Trì vào đầu mỗi hiệp, có <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>xác suất cơ bản</u> rơi vào 1 tầng <u>Dấu Tích Bí Ẩn</u>.\nỞ trạng thái <u>Dấu Tích Bí Ẩn</u>, mỗi khi bắt đầu hiệp kẻ địch sẽ chịu Sát Thương Phong Duy Trì bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Black Swan, mỗi tầng <u>Dấu Tích Bí Ẩn</u> khiến Bội Số Sát Thương này tăng <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>, sau đó làm mới về tầng 1. <u>Dấu Tích Bí Ẩn</u> tối đa cộng dồn <unbreak>#8[i]</unbreak> tầng.\nChỉ khi <u>Dấu Tích Bí Ẩn</u> gây ra sát thương khi kẻ địch bắt đầu hiệp, Black Swan mới kích hoạt hiệu ứng thêm căn cứ theo số tầng <u>Dấu Tích Bí Ẩn</u> mà mục tiêu rơi vào:\nTừ <unbreak>#4[i]</unbreak> tầng trở lên: Gây Sát Thương Phong Duy Trì cho mục tiêu lân cận bằng <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> Tấn Công của Black Swan, và có <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>xác suất cơ bản</u> khiến mục tiêu lân cận rơi vào 1 tầng <u>Dấu Tích Bí Ẩn</u>.\nTừ <unbreak>#6[i]</unbreak> tầng trở lên: Khiến Sát Thương Duy Trì gây ra lần này bỏ qua <unbreak>#7[i]%</unbreak> Phòng Thủ của mục tiêu này và mục tiêu lân cận.",
+			"AbridgedEffect": "Khi kẻ địch chịu Sát Thương Duy Trì lúc bắt đầu mỗi hiệp, sẽ có xác suất rơi vào <u>Dấu Tích Bí Ẩn</u>, khi bắt đầu hiệp sẽ chịu <color=#f29e38ff>Sát Thương Phong Duy Trì</color>, đồng thời Black Swan sẽ kích hoạt <color=#f29e38ff>hiệu ứng thêm</color> căn cứ theo số tầng của <u>Dấu Tích Bí Ẩn</u>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.96,
+						0.5,
+						0.048,
+						3,
+						0.72,
+						7,
+						0.2,
+						50
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.1184,
+						0.515,
+						0.0559,
+						3,
+						0.8388,
+						7,
+						0.2,
+						50
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.2768,
+						0.53,
+						0.0638,
+						3,
+						0.9576,
+						7,
+						0.2,
+						50
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.4352,
+						0.545,
+						0.0718,
+						3,
+						1.0764,
+						7,
+						0.2,
+						50
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.5936,
+						0.56,
+						0.0797,
+						3,
+						1.1952,
+						7,
+						0.2,
+						50
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.752,
+						0.575,
+						0.0876,
+						3,
+						1.314,
+						7,
+						0.2,
+						50
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.896,
+						0.5938,
+						0.0948,
+						3,
+						1.422,
+						7,
+						0.2,
+						50
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.04,
+						0.6125,
+						0.102,
+						3,
+						1.53,
+						7,
+						0.2,
+						50
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.22,
+						0.6313,
+						0.111,
+						3,
+						1.665,
+						7,
+						0.2,
+						50
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.4,
+						0.65,
+						0.12,
+						3,
+						1.8,
+						7,
+						0.2,
+						50
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.52,
+						0.665,
+						0.126,
+						3,
+						1.89,
+						7,
+						0.2,
+						50
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.64,
+						0.68,
+						0.132,
+						3,
+						1.98,
+						7,
+						0.2,
+						50
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.76,
+						0.695,
+						0.138,
+						3,
+						2.07,
+						7,
+						0.2,
+						50
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.88,
+						0.71,
+						0.144,
+						3,
+						2.16,
+						7,
+						0.2,
+						50
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.725,
+						0.15,
+						3,
+						2.25,
+						7,
+						0.2,
+						50
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Passive.png"
+		},
+		"Technique": {
+			"Id": "130707",
+			"Name": "Chân Tướng Ẩn Sau Vỏ Bọc",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "Cường Hóa",
+			"SkillTypeText": "Bí Kỹ",
+			"MaxLevel": 1,
+			"EffectRaw": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu kế tiếp, có <unbreak>#1[i]%</unbreak> <u>xác suất cơ bản</u> khiến từng mục tiêu địch rơi vào 1 tầng <u>Dấu Tích Bí Ẩn</u>. Khiến mỗi mục tiêu thành công rơi vào <u>Dấu Tích Bí Ẩn</u> rơi vào thêm 1 tầng <u>Dấu Tích Bí Ẩn</u> nữa, lặp lại hiệu ứng này cho đến khi không thể khiến mục tiêu này rơi vào <u>Dấu Tích Bí Ẩn</u> nữa. <u>Xác suất cơ bản</u> trong mỗi lần khiến mục tiêu rơi vào <u>Dấu Tích Bí Ẩn</u> bằng <unbreak>#2[i]%</unbreak> <u>xác suất cơ bản</u> khi khiến mục tiêu này rơi vào <u>Dấu Tích Bí Ẩn</u> thành công của lần trước đó.",
+			"AbridgedEffect": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu kế tiếp, có xác suất lớn <color=#f29e38ff>thi triển <u>Dấu Tích Bí Ẩn</u> lên từng mục tiêu địch, lặp lại vài lần cho đến khi thi triển thất bại</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Maze.png"
+		},
+		"VersionAdded": "2.0"
+	},
+	"1312": {
+		"Id": "1312",
+		"Name": "Misha",
+		"BasicATK": {
+			"Id": "131201",
+			"Name": "Xin Nhường Bước, Làm Ơn!",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 9,
+			"EffectRaw": "Gây Sát Thương Băng cho 1 kẻ địch chỉ định tương đương <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Misha.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Băng cho 1 kẻ địch.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Normal.png"
+		},
+		"Skill": {
+			"Id": "131202",
+			"Name": "Phục... Phục Vụ Phòng!",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Khuếch Tán",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Tăng <unbreak>#3[i]</unbreak> đòn đánh trong một lượt của Tuyệt Kỹ lần sau của Misha. Gây Sát Thương Băng lên 1 kẻ địch chỉ định bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Misha, đồng thời gây Sát Thương Băng lên mục tiêu lân cận kẻ đó bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Misha.",
+			"AbridgedEffect": "Gây Sát Thương Băng cho 1 kẻ địch và lượng nhỏ Sát Thương Băng cho mục tiêu lân cận, tăng <color=#f29e38ff>số đòn tấn công trong Tuyệt Kỹ</color> lần sau của Misha.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.4,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.1,
+						0.44,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.2,
+						0.48,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.3,
+						0.52,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.4,
+						0.56,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.5,
+						0.6,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.625,
+						0.65,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.75,
+						0.7,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.875,
+						0.75,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						0.8,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.1,
+						0.84,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.2,
+						0.88,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.3,
+						0.92,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.4,
+						0.96,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.5,
+						1,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_BP.png"
+		},
+		"Ultimate": {
+			"Id": "131203",
+			"Name": "Sắp... Sắp Trễ Rồi!",
+			"TriggerKey": "Skill03",
+			"TagType": "Bounce",
+			"TagTypeText": "Nảy Bật",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Ban đầu mặc định có <unbreak>#1[i]</unbreak> đòn đánh trong một lượt. Đầu tiên thi triển 1 đòn đánh gây Sát Thương Băng lên 1 kẻ địch chỉ định bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Misha, mỗi đòn đánh còn lại gây Sát Thương Băng lên 1 kẻ địch ngẫu nhiên bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Misha. Trước mỗi đòn đánh có <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> <u>xác suất cơ bản</u> khiến mục tiêu rơi vào trạng thái Đóng Băng, duy trì 1 hiệp.\nỞ trạng thái Đóng Băng, kẻ địch không thể hành động, đồng thời khi bắt đầu mỗi hiệp sẽ chịu <u>Sát Thương Băng kèm theo</u> bằng <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> Tấn Công của Misha.\nTuyệt Kỹ tối đa tích lũy <unbreak>#5[i]</unbreak> đòn đánh trong một lượt, sau khi thi triển Tuyệt Kỹ, số đòn đánh trong một lượt sẽ hồi phục về trạng thái ban đầu.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Băng lên 1 kẻ địch, ban đầu tổng cộng Nảy Bật <color=#f29e38ff><unbreak>#1[i]</unbreak></color> lần, tối đa Nảy Bật <color=#f29e38ff><unbreak>#5[i]</unbreak></color> lần. Trước mỗi đòn tấn công có xác suất nhỏ khiến mục tiêu <color=#f29e38ff>Đóng Băng</color>.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						3,
+						0.36,
+						0.12,
+						0.18,
+						10
+					]
+				},
+				"2": {
+					"EffectValues": [
+						3,
+						0.384,
+						0.128,
+						0.192,
+						10
+					]
+				},
+				"3": {
+					"EffectValues": [
+						3,
+						0.408,
+						0.136,
+						0.204,
+						10
+					]
+				},
+				"4": {
+					"EffectValues": [
+						3,
+						0.432,
+						0.144,
+						0.216,
+						10
+					]
+				},
+				"5": {
+					"EffectValues": [
+						3,
+						0.456,
+						0.152,
+						0.228,
+						10
+					]
+				},
+				"6": {
+					"EffectValues": [
+						3,
+						0.48,
+						0.16,
+						0.24,
+						10
+					]
+				},
+				"7": {
+					"EffectValues": [
+						3,
+						0.51,
+						0.17,
+						0.255,
+						10
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.54,
+						0.18,
+						0.27,
+						10
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3,
+						0.57,
+						0.19,
+						0.285,
+						10
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						0.6,
+						0.2,
+						0.3,
+						10
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3,
+						0.624,
+						0.208,
+						0.312,
+						10
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3,
+						0.648,
+						0.216,
+						0.324,
+						10
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3,
+						0.672,
+						0.224,
+						0.336,
+						10
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3,
+						0.696,
+						0.232,
+						0.348,
+						10
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.72,
+						0.24,
+						0.36,
+						10
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Ultra.png"
+		},
+		"Talent": {
+			"Id": "131204",
+			"Name": "Kết Cấu Dẫn Truyền",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Cường Hóa",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Toàn bộ phe ta cứ tiêu hao 1 Điểm Chiến Kỹ sẽ tăng <unbreak>#2[i]</unbreak> đòn đánh trong một lượt của Tuyệt Kỹ lần sau của Misha, đồng thời Misha hồi phục <color=#f29e38ff><unbreak>#1[f1]</unbreak></color> điểm Năng Lượng.",
+			"AbridgedEffect": "Toàn bộ phe ta cứ <color=#f29e38ff>tiêu hao 1 Điểm Chiến Kỹ</color> sẽ tăng <color=#f29e38ff>số đòn đánh trong một lượt của Tuyệt Kỹ</color> lần sau của Misha, đồng thời Misha hồi phục Năng Lượng.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.1,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.2,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.3,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.4,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.5,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.625,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.75,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.875,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.1,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.2,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.3,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.4,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.5,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Passive.png"
+		},
+		"Technique": {
+			"Id": "131207",
+			"Name": "Chờ Đã, Bạn Đẹp Quá!",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Quấy Nhiễu",
+			"SkillTypeText": "Bí Kỹ",
+			"MaxLevel": 1,
+			"EffectRaw": "Sau khi dùng Bí Kỹ, tạo 1 vùng đặc biệt duy trì <unbreak>#1[i]</unbreak> giây. Kẻ địch trong vùng đặc biệt rơi vào trạng thái Nhà Giam Cõi Mộng. Kẻ địch ở trạng thái Nhà Giam Cõi Mộng sẽ dừng tất cả hành động. Sau khi vào chiến đấu với kẻ địch ở trạng thái Nhà Giam Cõi Mộng, sẽ tăng <unbreak>#2[i]</unbreak> đòn đánh trong một lượt của Tuyệt Kỹ lần sau của Misha. Tối đa chỉ tồn tại 1 hiệu ứng vùng do phe ta tạo ra.",
+			"AbridgedEffect": "Tạo một vùng đặc biệt. Kẻ địch trong vùng bị dừng hành động. Sau khi vào chiến đấu với kẻ địch trong vùng, sẽ tăng <color=#f29e38ff>số đòn đánh trong một lượt của Tuyệt Kỹ</color> lần sau của Misha.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						15,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Maze.png"
+		},
+		"VersionAdded": "2.0"
 	},
 	"8001": {
 		"Id": "8001",

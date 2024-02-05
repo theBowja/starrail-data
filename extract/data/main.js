@@ -3,7 +3,7 @@ exportStarRailData();
 function exportStarRailData() {
 	const { setVersion, exportCurve, exportData } = require('./global.js');
 
-	setVersion('1.6');
+	setVersion('2.0');
 
 	// exportData('characters', require('./extractfolders/extractCharacters'));
 	// exportData('characterskills', require('./extractfolders/extractCharacterSkills'));

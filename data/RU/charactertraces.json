@@ -18878,7 +18878,7 @@
 					},
 					"4": {
 						"EffectValues": [
-							0.1092,
+							0.1093,
 							230
 						],
 						"AscensionRequired": 3,
@@ -38871,7 +38871,7 @@
 					"7": {
 						"EffectValues": [
 							3.23,
-							0.2538,
+							0.2537,
 							0.5525
 						],
 						"AscensionRequired": 5,
@@ -44758,7 +44758,7 @@
 					},
 					"2": {
 						"EffectValues": [
-							0.0382,
+							0.0383,
 							57.6,
 							0.1275,
 							192,
@@ -50464,7 +50464,7 @@
 				"Name": "Наказание",
 				"NodeType": 2,
 				"NodeTypeText": "Талант",
-				"EffectRaw": "Повышает урон базовых атак, навыков и сверхспособностей союзников, наносимый противникам со статусом Ноша, на <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> на <unbreak>#2[i]</unbreak> хода.",
+				"EffectRaw": "Когда союзник использует базовую атаку, навык или сверхспособность на противнике со статусом Ноша, наносимый им урон повышается на <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> на <unbreak>#2[i]</unbreak> хода.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"121504"
@@ -56950,6 +56950,4410 @@
 			}
 		},
 		"VersionAdded": "1.6"
+	},
+	"1306": {
+		"Id": "1306",
+		"Name": "Искорка",
+		"Nodes": {
+			"1306001": {
+				"Id": "1306001",
+				"Name": "Театр одной актрисы",
+				"NodeType": 2,
+				"NodeTypeText": "Базовая атака",
+				"EffectRaw": "Наносит выбранному противнику квантовый урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Искорки.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"130601"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Небесная нота",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1306002": {
+				"Id": "1306002",
+				"Name": "Плавающая во снах",
+				"NodeType": 2,
+				"NodeTypeText": "Навык",
+				"EffectRaw": "Повышает крит. урон выбранного союзника на <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> от крит. урона Искорки плюс <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> на <unbreak>#3[i]</unbreak> ход и продвигает его действие вперёд на <unbreak>#4[i]%</unbreak>.\nКогда это умение используется на самой Искорке, её действие не продвигается вперёд.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130602"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12,
+							0.27,
+							1,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.132,
+							0.288,
+							1,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.144,
+							0.306,
+							1,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Небесная нота",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.156,
+							0.324,
+							1,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.168,
+							0.342,
+							1,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.18,
+							0.36,
+							1,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.195,
+							0.3825,
+							1,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.21,
+							0.405,
+							1,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.225,
+							0.4275,
+							1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.24,
+							0.45,
+							1,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1306003": {
+				"Id": "1306003",
+				"Name": "Героиня о тысячи лиц",
+				"NodeType": 2,
+				"NodeTypeText": "Сверхспособность",
+				"EffectRaw": "Восстанавливает <unbreak>#2[i]</unbreak> очка навыков отряда и накладывает на всех союзников статус Шифр. Каждый союзник, имеющий этот статус, повышает наносимый талантом Искорки урон на <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> за каждый уровень статуса на <unbreak>#4[i]</unbreak> хода.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130603"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							4,
+							0.06,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							4,
+							0.064,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							4,
+							0.068,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Небесная нота",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							4,
+							0.072,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							4,
+							0.076,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							4,
+							0.08,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							4,
+							0.085,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							4,
+							0.09,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							4,
+							0.095,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							4,
+							0.1,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1306004": {
+				"Id": "1306004",
+				"Name": "Отвлекающий манёвр",
+				"NodeType": 2,
+				"NodeTypeText": "Талант",
+				"EffectRaw": "Когда Искорка находится на поле боя, макс. количество очков навыков отряда увеличивается на <unbreak>#3[i]</unbreak>. Каждое использованное союзником очко навыков повышает наносимый всеми союзниками урон на <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. Этот эффект длится <unbreak>#1[i]</unbreak> хода и может складываться до <unbreak>#4[i]</unbreak> раз.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130604"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.03,
+							2,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.033,
+							2,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.036,
+							2,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Небесная нота",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.039,
+							2,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.042,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.045,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0488,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.0525,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0563,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.06,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1306007": {
+				"Id": "1306007",
+				"Name": "Ненадёжный рассказчик",
+				"NodeType": 2,
+				"NodeTypeText": "Техника",
+				"EffectRaw": "После использования техники все союзники получают статус Запутывание на <unbreak>#2[i]</unbreak> сек. Персонажи со статусом Запутывание не могут быть обнаружены противниками. Вступление в бой с активным статусом Запутывание восстанавливает <unbreak>#1[i]</unbreak> очка навыков отряда.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"130607"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							20
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1306101": {
+				"Id": "1306101",
+				"Name": "Альманах",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Использование базовой атаки дополнительно восстанавливает <unbreak>#1[i]</unbreak> ед. энергии.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Небесная нота",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1306102": {
+				"Id": "1306102",
+				"Name": "Искусственный цветок",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Длительность эффекта повышения крит. урона, накладываемого навыком персонажа, увеличивается до начала следующего хода цели.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1306103": {
+				"Id": "1306103",
+				"Name": "Ноктюрн",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Сила атаки всех союзников повышается на <unbreak>#4[i]%</unbreak>. Когда в отряде имеется 1/2/3 персонажа квантового типа, сила атаки союзников квантового типа повышается на <unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>/<unbreak>#3[i]%</unbreak> соответственно.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1306/SkillIcon_1306_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							0.15,
+							0.3,
+							0.15
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1306201": {
+				"Id": "1306201",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1306202": {
+				"Id": "1306202",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1306101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Небесная нота",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Кусочки мыслей",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1306203": {
+				"Id": "1306203",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1306202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1306204": {
+				"Id": "1306204",
+				"Name": "Усиление сопротивления эффектам",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сопротивление эффектам повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1306205": {
+				"Id": "1306205",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1306102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Небесная интерлюдия",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Фрагменты впечатлений",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1306206": {
+				"Id": "1306206",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1306205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1306207": {
+				"Id": "1306207",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1306208": {
+				"Id": "1306208",
+				"Name": "Усиление сопротивления эффектам",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сопротивление эффектам повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1306103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1306209": {
+				"Id": "1306209",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1306210": {
+				"Id": "1306210",
+				"Name": "Усиление HP",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Макс. HP повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Небесная мелодия",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Осколки желаний",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.0"
+	},
+	"1307": {
+		"Id": "1307",
+		"Name": "Чёрный Лебедь",
+		"Nodes": {
+			"1307001": {
+				"Id": "1307001",
+				"Name": "Прозрение, рассвет тишины",
+				"NodeType": 2,
+				"NodeTypeText": "Базовая атака",
+				"EffectRaw": "Наносит выбранному противнику ветряной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Чёрного Лебедя, и имеет <u>базовый шанс</u> <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> наложить на цель 1 ур. статуса <u>Аркан</u>. Каждый имеющийся у противника статус Выветривание, Кровотечение, Горение или Шок также имеет <u>базовый шанс</u> <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> наложить на него 1 доп. ур. статуса <u>Аркан</u>.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"130701"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.3,
+							0.5,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.36,
+							0.53,
+							0.53
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Огненный дух",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.42,
+							0.56,
+							0.56
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.48,
+							0.59,
+							0.59
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.54,
+							0.62,
+							0.62
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.6,
+							0.65,
+							0.65
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1307002": {
+				"Id": "1307002",
+				"Name": "Декаданс, закат лжи",
+				"NodeType": 2,
+				"NodeTypeText": "Навык",
+				"EffectRaw": "Наносит выбранному противнику и соседним целям ветряной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Чёрного Лебедя, и имеет <u>базовый шанс</u> <unbreak>#2[i]%</unbreak> наложить на них по 1 ур. статуса <u>Аркан</u>. Также имеет <u>базовый шанс</u> <unbreak>#3[i]%</unbreak> понизить защиту этих целей на <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> на <unbreak>#5[i]</unbreak> хода.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130702"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							1,
+							1,
+							0.148,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.495,
+							1,
+							1,
+							0.154,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.54,
+							1,
+							1,
+							0.16,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Огненный дух",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.585,
+							1,
+							1,
+							0.166,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.63,
+							1,
+							1,
+							0.172,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.675,
+							1,
+							1,
+							0.178,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.7313,
+							1,
+							1,
+							0.1855,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7875,
+							1,
+							1,
+							0.193,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.8438,
+							1,
+							1,
+							0.2005,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.9,
+							1,
+							1,
+							0.208,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1307003": {
+				"Id": "1307003",
+				"Name": "Объятия потустороннего мира",
+				"NodeType": 2,
+				"NodeTypeText": "Сверхспособность",
+				"EffectRaw": "Накладывает статус Прозрение на всех противников на <unbreak>#2[i]</unbreak> хода.\nПолучаемый противником со статусом Прозрение в свой ход урон повышается на <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, а имеющийся у него статус <u>Аркан</u> также считается статусами Выветривание, Кровотечение, Горение и Шок. К тому же, когда статус <u>Аркан</u> в начале каждого хода наносит урон, количество его уровней не сбрасывается. Эффект сохранения количества уровней статуса <u>Аркан</u> может сработать только <unbreak>#4[i]</unbreak> раз за время действия статуса Прозрение. Повторное наложение этого статуса сбрасывает количество срабатываний этого эффекта.\nУмение также наносит всем противникам ветряной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Чёрного Лебедя.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130703"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							2,
+							0.15,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							2,
+							0.16,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							2,
+							0.17,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Огненный дух",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							2,
+							0.18,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							2,
+							0.19,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							2,
+							0.2,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							2,
+							0.2125,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							2,
+							0.225,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							2,
+							0.2375,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							2,
+							0.25,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1307004": {
+				"Id": "1307004",
+				"Name": "Каприс плетения судьбы",
+				"NodeType": 2,
+				"NodeTypeText": "Талант",
+				"EffectRaw": "Каждый раз, когда противник получает периодический урон в начале хода, он имеет <u>базовый шанс</u> <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> получить 1 ур. статуса <u>Аркан</u>.\nПротивник со статусом <u>Аркан</u> получает периодический ветряной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Чёрного Лебедя, в начале каждого хода. Каждый уровень статуса <u>Аркан</u> повышает множитель этого урона на <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>, после чего количество уровней статуса <u>Аркан</u> сбрасывается до 1. Статус <u>Аркан</u> может складываться до <unbreak>#8[i]</unbreak> раз.\nКогда статус <u>Аркан</u> наносит урон в начале хода цели, Чёрный Лебедь активирует дополнительные эффекты в зависимости от количества имеющихся у цели уровней статуса <u>Аркан</u>:\nНаличие <unbreak>#4[i]</unbreak> и более ур. статуса <u>Аркан</u> наносит соседним целям периодический ветряной урон, равный <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> от её силы атаки, и имеет <u>базовый шанс</u> <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> наложить на них по 1 ур. статуса <u>Аркан</u>.\nНаличие <unbreak>#6[i]</unbreak> и более ур. статуса <u>Аркан</u> позволяет нанесённому в этот раз периодическому урону игнорировать <unbreak>#7[i]%</unbreak> защиты атакованной цели и соседних целей.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"130704"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.96,
+							0.5,
+							0.048,
+							3,
+							0.72,
+							7,
+							0.2,
+							50
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1184,
+							0.515,
+							0.0559,
+							3,
+							0.8388,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2768,
+							0.53,
+							0.0638,
+							3,
+							0.9576,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Огненный дух",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.4352,
+							0.545,
+							0.0718,
+							3,
+							1.0764,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.5936,
+							0.56,
+							0.0797,
+							3,
+							1.1952,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.752,
+							0.575,
+							0.0876,
+							3,
+							1.314,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.896,
+							0.5938,
+							0.0948,
+							3,
+							1.422,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.04,
+							0.6125,
+							0.102,
+							3,
+							1.53,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.22,
+							0.6313,
+							0.111,
+							3,
+							1.665,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.4,
+							0.65,
+							0.12,
+							3,
+							1.8,
+							7,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1307007": {
+				"Id": "1307007",
+				"Name": "Принятие истины, отвержение видимости",
+				"NodeType": 2,
+				"NodeTypeText": "Техника",
+				"EffectRaw": "Использование техники имеет <u>базовый шанс</u> <unbreak>#1[i]%</unbreak> наложить на всех противников по 1 ур. статуса <u>Аркан</u> в начале следующего боя. Каждый успешно наложенный на цель статус <u>Аркан</u> накладывает на эту же цель 1 доп. уровень статуса <u>Аркан</u> до тех, пока шанс накладывания этого статуса на цель не исчерпает себя. <u>Базовый шанс</u> каждого последующего наложения статуса <u>Аркан</u> на эту цель равен <unbreak>#2[i]%</unbreak> от <u>базового шанса</u> предыдущего успешно наложенного на неё статуса <u>Аркан</u>.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"130707"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1307101": {
+				"Id": "1307101",
+				"Name": "Беспокойные внутренности",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Когда персонаж использует навык для атаки противника со статусами Выветривание, Кровотечение, Горение или Шок, каждый из них имеет базовый шанс <unbreak>#1[i]%</unbreak> дополнительно наложить на цель 1 ур. статуса Аркан.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Огненный дух",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1307102": {
+				"Id": "1307102",
+				"Name": "Очертания на дне кубка",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Когда противник вступает в бой, он имеет базовый шанс <unbreak>#1[i]%</unbreak> получить 1 ур. статуса Аркан. Каждый раз, когда противник получает периодический урон в течение одной атаки союзника, он имеет базовый шанс <unbreak>#1[i]%</unbreak> получить 1 ур. статуса Аркан. За одну атаку противник может получить до <unbreak>#2[i]</unbreak> ур. этого статуса.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1307103": {
+				"Id": "1307103",
+				"Name": "Знамение в тени свечи",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Наносимый персонажем урон повышается на <unbreak>#1[i]%</unbreak> от его шанса попадания эффектов до макс. <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.72
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1307201": {
+				"Id": "1307201",
+				"Name": "Усиление атаки",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сила атаки повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1307202": {
+				"Id": "1307202",
+				"Name": "Усиление ветряного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ветряной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1307101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Огненный дух",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Угасшее ядро",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1307203": {
+				"Id": "1307203",
+				"Name": "Усиление атаки",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сила атаки повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1307202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1307204": {
+				"Id": "1307204",
+				"Name": "Усиление шанса попадания эффектов",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Шанс попадания эффектов повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1307203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1307205": {
+				"Id": "1307205",
+				"Name": "Усиление атаки",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сила атаки повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1307102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Эссенция звёздного огня",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Мерцающее ядро",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1307206": {
+				"Id": "1307206",
+				"Name": "Усиление ветряного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ветряной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1307205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1307207": {
+				"Id": "1307207",
+				"Name": "Усиление атаки",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сила атаки повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1307206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1307208": {
+				"Id": "1307208",
+				"Name": "Усиление шанса попадания эффектов",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Шанс попадания эффектов повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1307209": {
+				"Id": "1307209",
+				"Name": "Усиление ветряного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ветряной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1307210": {
+				"Id": "1307210",
+				"Name": "Усиление атаки",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Сила атаки повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1307201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Небесный крематор",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Извивающееся ядро",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.0"
+	},
+	"1312": {
+		"Id": "1312",
+		"Name": "Миша",
+		"Nodes": {
+			"1312001": {
+				"Id": "1312001",
+				"Name": "П-прошу прощения!..",
+				"NodeType": 2,
+				"NodeTypeText": "Базовая атака",
+				"EffectRaw": "Наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Миши.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"131201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110181",
+								"Name": "Зубы борисинцев",
+								"Count": 2
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 2
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 4
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 2
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1312002": {
+				"Id": "1312002",
+				"Name": "О-обслуживание номеров",
+				"NodeType": 2,
+				"NodeTypeText": "Навык",
+				"EffectRaw": "Увеличивает количество ударов следующей сверхспособности Миши на <unbreak>#3[i]</unbreak>. Наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Миши, и ледяной урон соседним целям, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от силы атаки Миши.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131202"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.4,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1,
+							0.44,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2,
+							0.48,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110181",
+								"Name": "Зубы борисинцев",
+								"Count": 2
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3,
+							0.52,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 2
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4,
+							0.56,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 4
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5,
+							0.6,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 24000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 6
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625,
+							0.65,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 2
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75,
+							0.7,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 64000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875,
+							0.75,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.8,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1312003": {
+				"Id": "1312003",
+				"Name": "Оп-п-паздываю!",
+				"NodeType": 2,
+				"NodeTypeText": "Сверхспособность",
+				"EffectRaw": "Изначально количество ударов сверхспособности равно <unbreak>#1[i]</unbreak>. Сначала выполняет 1 удар, который наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от силы атаки Миши. Каждый следующий удар наносит случайному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> от силы атаки Миши. Перед каждым попаданием имеется <u>базовый шанс</u> <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> наложить на цель статус Заморозка на 1 ход.\nПротивник со статусом Заморозка не может совершать действий и будет получать <u>дополнительный ледяной урон</u>, равный <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> от силы атаки Миши.\nЭта сверхспособность может иметь до <unbreak>#5[i]</unbreak> ударов за одно действие. После использования сверхспособности количество ударов сбрасывается до изначального значения.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							0.36,
+							0.12,
+							0.18,
+							10
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							3,
+							0.384,
+							0.128,
+							0.192,
+							10
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							3,
+							0.408,
+							0.136,
+							0.204,
+							10
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110181",
+								"Name": "Зубы борисинцев",
+								"Count": 2
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							3,
+							0.432,
+							0.144,
+							0.216,
+							10
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 2
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							3,
+							0.456,
+							0.152,
+							0.228,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 4
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							3,
+							0.48,
+							0.16,
+							0.24,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 24000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 6
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							3,
+							0.51,
+							0.17,
+							0.255,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 2
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							3,
+							0.54,
+							0.18,
+							0.27,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 64000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							3,
+							0.57,
+							0.19,
+							0.285,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							0.6,
+							0.2,
+							0.3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1312004": {
+				"Id": "1312004",
+				"Name": "Часовой спуск",
+				"NodeType": 2,
+				"NodeTypeText": "Талант",
+				"EffectRaw": "Каждый раз, когда союзник использует очко навыков, количество ударов следующей сверхспособности Миши увеличивается на <unbreak>#2[i]</unbreak>, и он также восстанавливает <color=#f29e38ff><unbreak>#1[f1]</unbreak></color> ед. энергии.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110181",
+								"Name": "Зубы борисинцев",
+								"Count": 2
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 2
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 4
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 24000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 6
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 2
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 64000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 4
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1312007": {
+				"Id": "1312007",
+				"Name": "Остановись! Ты прекрасно!",
+				"NodeType": 2,
+				"NodeTypeText": "Техника",
+				"EffectRaw": "Использование техники создаёт пространство, которое существует <unbreak>#1[i]</unbreak> сек. Противники, попавшие в это пространство, получают статус Тюрьма сновидений, который прекращает все их действия. Если бой с противником начинается в этом пространстве, количество ударов следующей сверхспособности Миши увеличивается на <unbreak>#2[i]</unbreak>. Одновременно может существовать только одно пространство, созданное союзниками.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"131207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							15,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1312101": {
+				"Id": "1312101",
+				"Name": "Выброс",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Перед первым ударом сверхспособности базовый шанс наложить на цель статус Заморозка повышается на <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110181",
+								"Name": "Зубы борисинцев",
+								"Count": 2
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1312102": {
+				"Id": "1312102",
+				"Name": "Сцепление",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Использование сверхспособности повышает шанс попадания эффектов на <unbreak>#1[i]%</unbreak> до окончания выполнения текущей сверхспособности.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1312103": {
+				"Id": "1312103",
+				"Name": "Трансмиссия",
+				"NodeType": 3,
+				"NodeTypeText": "Доп. способность",
+				"EffectRaw": "Во время нанесения урона противнику со статусом Заморозка крит. урон повышается на <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1312/SkillIcon_1312_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Прошлые бедствия червоточины",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1312201": {
+				"Id": "1312201",
+				"Name": "Усиление ледяного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ледяной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "IceAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2000
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1312202": {
+				"Id": "1312202",
+				"Name": "Усиление защиты",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Защита повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1312101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110181",
+								"Name": "Зубы борисинцев",
+								"Count": 2
+							},
+							{
+								"Id": "114001",
+								"Name": "Компонент коллекции снов",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1312203": {
+				"Id": "1312203",
+				"Name": "Усиление ледяного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ледяной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "IceAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1312202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 2
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1312204": {
+				"Id": "1312204",
+				"Name": "Усиление крит. шанса",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1312203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 8000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 2
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1312205": {
+				"Id": "1312205",
+				"Name": "Усиление ледяного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ледяной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "IceAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1312102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110182",
+								"Name": "Люпотоксичные клыки",
+								"Count": 4
+							},
+							{
+								"Id": "114002",
+								"Name": "Клапан потока сновидений",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1312206": {
+				"Id": "1312206",
+				"Name": "Усиление защиты",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Защита повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1312205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 2
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1312207": {
+				"Id": "1312207",
+				"Name": "Усиление ледяного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ледяной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "IceAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1312206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 36000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 2
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1312208": {
+				"Id": "1312208",
+				"Name": "Усиление крит. шанса",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Крит. шанс повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1312103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1312209": {
+				"Id": "1312209",
+				"Name": "Усиление защиты",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Защита повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1312208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1312210": {
+				"Id": "1312210",
+				"Name": "Усиление ледяного урона",
+				"NodeType": 1,
+				"NodeTypeText": "Бонус хар-ки",
+				"EffectRaw": "Ледяной урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "IceAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1312208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 128000
+							},
+							{
+								"Id": "110183",
+								"Name": "Клыки лунного озверения",
+								"Count": 6
+							},
+							{
+								"Id": "114003",
+								"Name": "Двигатель снов",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.0"
 	},
 	"8001": {
 		"Id": "8001",

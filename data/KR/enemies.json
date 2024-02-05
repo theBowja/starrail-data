@@ -2283,7 +2283,7 @@
 			{
 				"Id": 101301204,
 				"Name": "분노 지령",
-				"SkillDesc": "일정 확률로 모든 단일 아군을 도발 상태에 빠트린다",
+				"SkillDesc": "일정 확률로 각 단일 아군을 도발 상태에 빠트린다",
 				"SkillTypeDesc": "스킬"
 			},
 			{
@@ -2403,7 +2403,7 @@
 			{
 				"Id": 101301404,
 				"Name": "분노 지령",
-				"SkillDesc": "일정 확률로 모든 단일 아군을 도발 상태에 빠트린다",
+				"SkillDesc": "일정 확률로 각 단일 아군을 도발 상태에 빠트린다",
 				"SkillTypeDesc": "스킬"
 			},
 			{
@@ -5357,7 +5357,7 @@
 			{
 				"Id": 202401102,
 				"Name": "꽃자루 • 담황색 잎",
-				"SkillDesc": "불멸의 거목 우듬지 [담확색 잎의 가지]를 소환한다",
+				"SkillDesc": "불멸의 거목 우듬지 [담황색 잎의 가지]를 소환한다",
 				"SkillTypeDesc": "스킬"
 			},
 			{
@@ -5626,6 +5626,79 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"2024014": {
+		"Id": "2024014",
+		"Name": "풍요 현록",
+		"Introduction": "「불멸의 거목」에서 탄생해 그 뿌리를 지키는 상서로운 동물, 이들은 물에 의존에 생존하고 가지와 잎을 무성하게 한다\n태고 시대의 전쟁에서 자멸한 후 「불멸의 거목」은 마침내 스텔라론의 보수를 받고 다시 자란다. 이때 선인들이 만든 진기한 동물들은 옛꿈을 다시 찾듯 속속들이 찾아온다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.4,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202401401,
+				"Name": "꽃자루 • 소슬바람",
+				"SkillDesc": "불멸의 거목 우듬지 [소슬바람의 가지]를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 202401402,
+				"Name": "꽃자루 • 담황색 잎",
+				"SkillDesc": "불멸의 거목 우듬지 [담황색 잎의 가지]를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 202401403,
+				"Name": "꽃자루 • 무성한 꽃",
+				"SkillDesc": "불멸의 거목 우듬지 [무성한 꽃의 가지]를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 202401404,
+				"Name": "꽃자루 • 탐스러운 과실",
+				"SkillDesc": "불멸의 거목 우듬지 [탐스러운 과실의 가지]를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 202401405,
+				"Name": "울부짖음",
+				"SkillDesc": "지정된 단일 아군에게 번개 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202401406,
+				"Name": "부드러운 바람",
+				"SkillDesc": "모든 아군에게 소량의 바람 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202401407,
+				"Name": "교란",
+				"SkillDesc": "방어력이 증가하고 자신의 강인성이 피해를 받지 않는다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 202401408,
+				"Name": "반룡촉",
+				"SkillDesc": "필드 위에 [탐스러운 과실] 2개가 존재할 시, 즉시 해당 스킬을 발동해 모든 아군에게 번개 속성 피해를 가한다. 필드 위 [불멸의 거목 우듬지]가 많을수록 가하는 피해가 증가한다. 스킬 발동 후, 필드 위 모든 [불멸의 거목 우듬지]가 사라진다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"2024020": {
 		"Id": "2024020",
 		"Name": "부연",
@@ -5662,6 +5735,745 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"3001010": {
+		"Id": "3001010",
+		"Name": "나쁜꿈 극단의 스프링 딜러",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래 테이블 위의 오락 도구였다. 통제를 잃은 후에도 여전히 손에 있는 주사위를 흔들며 거친 방식으로 게임을 진행하고 있다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300101001,
+				"Name": "주사위 투척",
+				"SkillDesc": "지정된 단일 아군에게 소량의 물리 속성 피해를 가하며, 피격된 아군은 일정 확률로 효과 저항이 감소한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3001020": {
+		"Id": "3001020",
+		"Name": "나쁜꿈 극단의 버드 스컬",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계 속 감정 교란으로 인해 통제 불능에 빠졌다.\n원래 극장의 연출 도구였다. 통제를 잃은 후에도 여전히 무대 위에서 촌극을 펼치며 곳곳에 혼란의 춤사위를 선보인다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300102001,
+				"Name": "무도에의 권유",
+				"SkillDesc": "지정된 단일 아군에게 소량의 물리 속성 피해를 가하고, 일정 확률로 피격된 아군을 열상 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3002010": {
+		"Id": "3002010",
+		"Name": "나쁜꿈 극단의 Mr. 라운드 스크린",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 TV 프로그램에 나오는 엔터테이너였다. 통제 불능에 빠진 후에도 여전히 자신의 변화무쌍한 신분을 연기하고 있으며 관객들에게 놀라움과 경악을 선사한다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300201001,
+				"Name": "서프라이즈 예능",
+				"SkillDesc": "지정된 단일 아군의 에너지를 회복시킨다. [서프라이즈 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201002,
+				"Name": "호러 방송",
+				"SkillDesc": "모든 아군에게 소량의 양자 속성 피해를 가하고 모든 아군이 에너지를 잃게 만든다. [호러 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 300201003,
+				"Name": "채널 변경",
+				"SkillDesc": "[서프라이즈 채널] 상태를 [호러 채널] 상태로 변경한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201004,
+				"Name": "혼선",
+				"SkillDesc": "피격 후 [서프라이즈 채널] 상태에서 [호러 채널] 상태로 변경하거나 [호러 채널] 상태에서 [서프라이즈 채널] 상태로 변경된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3002030": {
+		"Id": "3002030",
+		"Name": "나쁜꿈 극단의 버블 도그",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 「솔글래드」 소다수 배달원이었다. 통제 불능에 빠진 후에도 여전히 곳곳에 달콤함을 뿌리면서 모두가 맛있는 음료를 맛볼 수 있게 하고 있다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300203001,
+				"Name": "시음 초대",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300203002,
+				"Name": "달콤함의 해방",
+				"SkillDesc": "치명적인 공격을 받을 시 인접한 적에게 물리 속성 피해를 가하고, 속도를 증가시키며 열상 상태에 빠트린다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 300203003,
+				"Name": "상쾌",
+				"SkillDesc": "피격되거나 지속 피해를 받을 경우 중첩 가능한 [황홀한 솔글래드] 1스택을 획득한다. [황홀한 솔글래드] 스택 수가 높을수록 가하는 피해가 증가한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3002050": {
+		"Id": "3002050",
+		"Name": "왕의 쓰레기통",
+		"Introduction": "허구에서 탄생한 기괴한 존재. 그의 이야기는 이름 없는 역사책에 기록되어 있다——쓰레기의 왕의 사명을 짊어지고 있는 고고하고 용감한 통은 강력한 전사를 찾고, 세상에 해를 끼치는 폐자재를 제거한다",
+		"ElementalWeaknesses": [],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300205001,
+				"Name": "통의 수련",
+				"SkillDesc": "단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300205002,
+				"Name": "통의 연마",
+				"SkillDesc": "자신의 공격력이 증가한다. 해당 효과는 중첩 가능하며, 제거될 수 없다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300205003,
+				"Name": "통의 신조",
+				"SkillDesc": "자신의 약점이 격파되면 전투에서 떠난다. 자신이 아군에 의해 피격될 시 이번 공격에 대응하는 약점 속성이 추가되며, 최대 2개의 약점이 추가된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3002051": {
+		"Id": "3002051",
+		"Name": "왕의 쓰레기통(투영)",
+		"Introduction": "허구에서 탄생한 기괴한 존재. 그의 이야기는 이름 없는 역사책에 기록되어 있다——쓰레기의 왕의 사명을 짊어지고 있는 고고하고 용감한 통은 강력한 전사를 찾고, 세상에 해를 끼치는 폐자재를 제거한다",
+		"ElementalWeaknesses": [],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300205101,
+				"Name": "통의 수련",
+				"SkillDesc": "단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300205102,
+				"Name": "통의 연마",
+				"SkillDesc": "자신의 공격력이 증가한다. 해당 효과는 중첩 가능하며, 제거될 수 없다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300205103,
+				"Name": "통의 신조",
+				"SkillDesc": "자신의 약점이 격파되면 [왕의 쓰레기통(투영)]을 제외한 모든 적의 약점이 격파되고 전투에서 떠난다. 아군에게 피격될 시 이번 공격에 대응하는 속성의 약점이 추가된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3003010": {
+		"Id": "3003010",
+		"Name": "나쁜꿈 극단의 오버쿡",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 음식을 조리하는 요리 기계였다. 통제 불능에 빠진 후에도 여전히 식자재를 가열하기 위한 맹렬한 화염을 내뿜으며, 식객도 함께 재로 만들어 버리려고 한다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300301001,
+				"Name": "강력한 뒤집기",
+				"SkillDesc": "단일 아군에게 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301002,
+				"Name": "토네이도 뒤집기",
+				"SkillDesc": "단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301003,
+				"Name": "화로 점화",
+				"SkillDesc": "차지 상태에 진입한다. 다음 행동 시 [화로 가열] 스택 수가 일정 수준에 달하지 않으면 [맹렬한 볶기]를 발동하고 모든 [화로 가열] 스택 수가 제거된다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301004,
+				"Name": "맹렬한 볶기",
+				"SkillDesc": "모든 아군에게 대량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301005,
+				"Name": "주방 사고",
+				"SkillDesc": "차지 상태 진입 후 [화로 가열]의 스택 수가 일정 수준에 달하면, 즉시 모든 적에게 대량의 화염 속성 피해를 가하고 자신의 방어력을 감소시킨다. 동시에 모든 [화로 가열] 스택 수가 제거된다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301006,
+				"Name": "불에서 탄생한 최상의 요리",
+				"SkillDesc": "[화로 가열] 스택 수가 일정 수준 중첩되면 즉시 행동하고 [화로 점화]를 발동한다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 300301007,
+				"Name": "맹화 화로",
+				"SkillDesc": "자신이 공격할 시 일정 확률로 목표에게 감속 상태를 부여한다. 자신이 피격되거나 지속 피해를 받을 시 [화로 가열]이 1스택 중첩된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3003011": {
+		"Id": "3003011",
+		"Name": "나쁜꿈 극단의 오버쿡(투영)",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 음식을 조리하는 요리 기계였다. 통제 불능에 빠진 후에도 여전히 식자재를 가열하기 위한 맹렬한 화염을 내뿜으며, 식객도 함께 재로 만들어 버리려고 한다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300301101,
+				"Name": "강력한 뒤집기",
+				"SkillDesc": "단일 아군에게 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301102,
+				"Name": "토네이도 뒤집기",
+				"SkillDesc": "단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301103,
+				"Name": "화로 점화",
+				"SkillDesc": "차지 상태에 진입한다. 다음번 행동에 [맹렬한 볶기]를 발동한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301104,
+				"Name": "맹렬한 볶기",
+				"SkillDesc": "모든 아군에게 대량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301105,
+				"Name": "주방 사고",
+				"SkillDesc": "차지 상태 진입 후 [화로 가열]의 스택 수가 일정 수준에 달하면, 즉시 모든 적에게 대량의 화염 속성 피해를 가하고 자신의 방어력을 감소시키며, 모든 아군의 에너지를 회복시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301106,
+				"Name": "불에서 탄생한 최상의 요리",
+				"SkillDesc": "[화로 가열] 스택 수가 일정 수준 중첩되면 즉시 행동하고 [화로 점화]를 발동한다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 300301107,
+				"Name": "맹화 화로",
+				"SkillDesc": "자신이 공격할 시 일정 확률로 목표에게 감속 상태를 부여한다. 자신이 피격되거나 지속 피해를 받을 시 [화로 가열]이 1스택 중첩된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3003020": {
+		"Id": "3003020",
+		"Name": "나쁜꿈 극단의 스위트 고릴라",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 「솔글래드」 소다수 배달원이었다. 통제 불능에 빠진 후에도 여전히 등에 메고 있는 맛있는 음료를 나눠주고 있으며, 지나가는 손님들에게 선물을 던진다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300302001,
+				"Name": "음료 수량 한정 증정",
+				"SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다. 목표가 실드를 보유한 경우 피해를 가한 후 자신에게 얼음 속성 피해를 가하며, 높은 확률로 자신의 방어력을 감소시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302002,
+				"Name": "음료 무한 리필",
+				"SkillDesc": "랜덤 단일 아군에게 얼음 속성 피해를 4회 가한다. 목표가 실드를 보유한 경우 피해를 가한 후 자신에게 얼음 속성 피해를 가하며, 높은 확률로 자신의 방어력을 감소시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302003,
+				"Name": "솔글래드 파티",
+				"SkillDesc": "[버블 도그] 2기를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300302004,
+				"Name": "파티 분수",
+				"SkillDesc": "차지 상태에 진입하고 강인성 보호를 획득한다. 다음번 행동 시 [음료 무한 리필]을 발동한다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3003021": {
+		"Id": "3003021",
+		"Name": "나쁜꿈 극단의 스위트 고릴라(투영)",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 「솔글래드」 소다수 배달원이었다. 통제 불능에 빠진 후에도 여전히 등에 메고 있는 맛있는 음료를 나눠주고 있으며, 지나가는 손님들에게 선물을 던진다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300302101,
+				"Name": "음료 수량 한정 증정",
+				"SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가하고 해당 목표의 행동 게이지를 증가시킨다. 목표가 실드를 보유한 경우 피해를 가한 후 자신에게 얼음 속성 피해를 가하며, 높은 확률로 자신의 방어력을 감소시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302102,
+				"Name": "음료 무한 리필",
+				"SkillDesc": "감시 대상으로 표시된 단일 아군에게 얼음 속성 피해를 4회 가하고 해당 목표의 행동 게이지를 증가시킨다. 목표가 실드를 보유한 경우 피해를 가한 후 랜덤 단일 적에게 얼음 속성 피해를 가하며, 높은 확률로 피격된 적의 방어력을 감소시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302103,
+				"Name": "솔글래드 파티",
+				"SkillDesc": "[버블 도그] 2기를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300302104,
+				"Name": "파티 분수",
+				"SkillDesc": "차지 상태에 진입하고 강인성 보호를 획득하며, 다음번 행동 시 [음료 무한 리필]을 발동한다. 랜덤 단일 아군을 감시 대상으로 표시한다. 아군이 전투 스킬을 발동할 때마다 전투 스킬을 발동한 목표를 새로 표시한다. 해당 상태에서 자신이 피격되면 행동 게이지가 증가한다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3011010": {
+		"Id": "3011010",
+		"Name": "기억의 영역 밈 「어디에나 존재하는 시선」",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n주목, 회고, 관찰… 생명의 생존 행위와 자신의 생존에 대한 깨달음 속에서 「눈으로 본」 기억들은 그림자처럼 따라다니며 결국 생명 그 자체가 된다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 301101001,
+				"Name": "타인의 응시",
+				"SkillDesc": "지정된 단일 아군에게 소량의 양자 속성 피해를 가하고 피격된 아군은 행동 게이지가 감소한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3012020": {
+		"Id": "3012020",
+		"Name": "기억의 영역 밈 「산산조각난 내 마음」",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n견고한 벽이 생명을 감싸고 적을 막는다. 하지만 단단한 육체 속에는 연약하기 그지없는 무명 지대가 있다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 301202001,
+				"Name": "거부",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301202002,
+				"Name": "단단한 방패",
+				"SkillDesc": "[방비] 상태에 진입한다. 약점이 격파되지 않을 시 받는 피해가 감소한다. 약점이 격파될 시 행동 게이지가 추가로 감소하고, 약점이 격파된 후 받는 피해가 증가한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3012030": {
+		"Id": "3012030",
+		"Name": "영면의 묘비",
+		"Introduction": "부서진 생명이 모여 종말의 상징이 되고, 눈에는 망각과 이별의 비문이 비치는 건너편의 영혼은 여전히 이곳을 바라보고 있다.\n무고한 영혼은 영면의 묘비에서 잠들었다. 영면의 묘비를 소멸하면 그들을 깨울 수 있다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301203001,
+				"Name": "고요히 깨어난 영면",
+				"SkillDesc": "영면의 묘비가 치명적인 공격을 받으면 대응하는 아군의 [꿈의 죽음] 상태가 해제되고 HP와 에너지가 회복된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301203002,
+				"Name": "모든 지나간 시간",
+				"SkillDesc": "영면의 묘비는 행동하지 않는다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301203003,
+				"Name": "계속 이어지는 영원",
+				"SkillDesc": "영면의 묘비는 고정 칸의 HP를 보유한다. 공격을 받거나, 약점이 격파되거나, 지속 피해를 받을 때마다 HP가 1칸 차감된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3012031": {
+		"Id": "3012031",
+		"Name": "영면의 묘비",
+		"Introduction": "부서진 생명이 모여 종말의 상징이 되고, 눈에는 망각과 이별의 비문이 비치는 건너편의 영혼은 여전히 이곳을 바라보고 있다.\n무고한 영혼은 영면의 묘비에서 잠들었다. 영면의 묘비를 소멸하면 그들을 깨울 수 있다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301203101,
+				"Name": "고요히 깨어난 영면",
+				"SkillDesc": "영면의 묘비가 치명적인 공격을 받으면 대응하는 아군의 [꿈의 죽음] 상태가 해제되고 HP와 에너지가 회복된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301203102,
+				"Name": "모든 지나간 시간",
+				"SkillDesc": "영면의 묘비는 행동하지 않는다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301203103,
+				"Name": "계속 이어지는 영원",
+				"SkillDesc": "영면의 묘비는 고정 칸의 HP를 보유한다. 공격을 받거나, 약점이 격파되거나, 지속 피해를 받을 때마다 HP가 1칸 차감된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3014020": {
+		"Id": "3014020",
+		"Name": "기억의 영역 밈 「무엇이 죽음으로 향하는가」",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n신비하고 위험한 기억의 영역 밈이며, 꿈에서 존재해선 안 되는 「사망」으로 여겨진다. 그의 사악한 그림자는 열두 순간에서 배회하며, 그가 다다른 곳은 예측 불가한 재앙이 반드시 발생한다. 날카로운 칼날로 흉보를 퍼뜨리고, 죽음의 그림자로 좋은꿈을 뒤덮는다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301402001,
+				"Name": "장례의 입맞춤",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402002,
+				"Name": "죽음의 검은 비",
+				"SkillDesc": "모든 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402003,
+				"Name": "날카로운 추도사",
+				"SkillDesc": "자신이 가하는 피해를 대폭 증가시킨다. 지속 시간: 1턴. 약점 격파 상태에 빠지면 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402004,
+				"Name": "빛의 소멸",
+				"SkillDesc": "[일몰] 상태에 진입한다. 아군이 일반 공격, 전투 스킬, 필살기를 발동할 때마다 1스택 중첩되며, [일몰]이 3스택까지 중첩되면 직전에 행동한 아군에게 즉시 [소실된 황혼의 색채]를 발동한다. [소실된 황혼의 색채]를 1회 발동하거나 약점이 격파되면 해당 효과는 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402005,
+				"Name": "소실된 황혼의 색채",
+				"SkillDesc": "직전에 일반 공격, 전투 스킬, 필살기를 발동한 아군 1명에게 즉시 치명적인 공격을 발동하여 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402006,
+				"Name": "깊은 밤 속으로",
+				"SkillDesc": "[드리워진 밤의 장막] 상태에 진입하며, 상태가 지속되는 동안 가장 먼저 행동한 아군 캐릭터 2명을 고정한다. 다음번 행동 시 [물이 물에 사라지듯]을 사용한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402007,
+				"Name": "물이 물에 사라지듯",
+				"SkillDesc": "고정된 모든 아군에게 치명적인 공격을 즉시 발동하여 [꿈의 죽음] 상태에 빠뜨린다. 고정된 목표가 없을 경우 랜덤 아군 2명에게 치명적인 공격을 발동하고 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402009,
+				"Name": "추모할 수 없는 황량한 땅",
+				"SkillDesc": "아군이 [꿈의 죽음] 상태에 빠질 때마다 대응하는 [영면의 묘비] 1개를 소환한다. 모든 아군이 [꿈의 죽음] 상태에 빠지거나 전투 불능 상태일 경우 전투에 실패한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3014021": {
+		"Id": "3014021",
+		"Name": "기억의 영역 밈 「무엇이 죽음으로 향하는가」(투영)",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n신비하고 위험한 기억의 영역 밈이며, 꿈에서 존재해선 안 되는 「사망」으로 여겨진다. 그의 사악한 그림자는 열두 순간에서 배회하며, 그가 다다른 곳은 예측 불가한 재앙이 반드시 발생한다. 날카로운 칼날로 흉보를 퍼뜨리고, 죽음의 그림자로 좋은꿈을 뒤덮는다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301402101,
+				"Name": "장례의 입맞춤",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402102,
+				"Name": "죽음의 검은 비",
+				"SkillDesc": "모든 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402103,
+				"Name": "날카로운 추도사",
+				"SkillDesc": "자신이 가하는 피해를 대폭 증가시킨다. 지속 시간: 1턴. 약점 격파 상태에 빠지면 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402104,
+				"Name": "빛의 소멸",
+				"SkillDesc": "[일몰] 상태에 진입한다. 아군이 일반 공격, 전투 스킬, 필살기를 발동할 때마다 1스택 중첩되며, [일몰]이 3스택까지 중첩되면 직전에 행동한 아군에게 즉시 [소실된 황혼의 색채]를 발동한다. [소실된 황혼의 색채]를 1회 발동하거나 약점이 격파되면 해당 효과는 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402105,
+				"Name": "소실된 황혼의 색채",
+				"SkillDesc": "직전에 일반 공격, 전투 스킬, 필살기를 발동한 아군 1명에게 즉시 치명적인 공격을 발동하여 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402106,
+				"Name": "깊은 밤 속으로",
+				"SkillDesc": "[드리워진 밤의 장막] 상태에 진입하며, 상태가 지속되는 동안 가장 먼저 행동한 아군 캐릭터 2명을 고정한다. 다음번 행동 시 [물이 물에 사라지듯]을 사용한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402107,
+				"Name": "물이 물에 사라지듯",
+				"SkillDesc": "고정된 모든 아군에게 치명적인 공격을 즉시 발동하여 [꿈의 죽음] 상태에 빠뜨린다. 고정된 목표가 없을 경우 랜덤 아군 2명에게 치명적인 공격을 발동하고 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402109,
+				"Name": "추모할 수 없는 황량한 땅",
+				"SkillDesc": "아군이 [꿈의 죽음] 상태에 빠질 때마다 대응하는 [영면의 묘비] 1개를 소환한다. 모든 아군이 [꿈의 죽음] 상태에 빠지거나 전투 불능 상태일 경우 전투에 실패한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"3021020": {
 		"Id": "3021020",
 		"Name": "「수훈」",
@@ -5683,13 +6495,13 @@
 			{
 				"Id": 302102001,
 				"Name": "핏빛 여왕의 수훈",
-				"SkillDesc": "적 아젠티에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택수가 증가한다",
+				"SkillDesc": "적 아젠티에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택 수가 증가한다",
 				"SkillTypeDesc": "스킬"
 			},
 			{
 				"Id": 302102002,
 				"Name": "꽃과 별의 계단",
-				"SkillDesc": "치명적인 공격을 받으면 공격자에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택수가 증가한다",
+				"SkillDesc": "치명적인 공격을 받으면 공격자에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택 수가 증가한다",
 				"SkillTypeDesc": "특성"
 			}
 		],
@@ -5716,13 +6528,13 @@
 			{
 				"Id": 302102101,
 				"Name": "핏빛 여왕의 수훈",
-				"SkillDesc": "적 아젠티에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택수가 증가한다",
+				"SkillDesc": "적 아젠티에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택 수가 증가한다",
 				"SkillTypeDesc": "스킬"
 			},
 			{
 				"Id": 302102102,
 				"Name": "꽃과 별의 계단",
-				"SkillDesc": "치명적인 공격을 받으면 공격자에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택수가 증가한다",
+				"SkillDesc": "치명적인 공격을 받으면 공격자에게 중첩 가능한 피해 증가 효과를 1스택 부여한다. [영혼 해방] 상태에서 부여하는 피해 증가 효과 스택 수가 증가한다",
 				"SkillTypeDesc": "특성"
 			}
 		],
@@ -5967,7 +6779,7 @@
 			{
 				"Id": 302401104,
 				"Name": "사랑의 영혼이 말하길",
-				"SkillDesc": "조각상 속의 미(美)의 영혼을 1개 발동시킨다. 영혼이 승화된 조각상의 스킬 효과는 강화되고 즉시 행동한다",
+				"SkillDesc": "조각상 속의 미(美)의 영혼을 1개 승화시킨다. 영혼이 승화된 조각상의 스킬 효과는 강화되고 즉시 행동한다",
 				"SkillTypeDesc": "스킬"
 			},
 			{
@@ -5980,7 +6792,7 @@
 			{
 				"Id": 302401106,
 				"Name": "죄와 정화",
-				"SkillDesc": "모든 적 조각상의 미(美)의 영혼을 발동시킨다. 영혼이 승화된 조각상의 스킬 효과가 강화된다",
+				"SkillDesc": "적의 모든 조각상 속의 미(美)의 영혼을 승화시킨다. 영혼이 승화된 조각상의 스킬 효과가 강화된다",
 				"SkillTypeDesc": "스킬"
 			},
 			{
@@ -6058,6 +6870,142 @@
 			}
 		],
 		"VersionAdded": "1.6"
+	},
+	"3024020": {
+		"Id": "3024020",
+		"Name": "「스텔라론 헌터」 샘",
+		"Introduction": "스텔라론 헌터 멤버로, 무거운 장갑을 장착한 신비한 전사다. 그의 철갑은 화염을 내뿜어 전장을 불태우고 열화와 같은 공격을 퍼부을 수 있다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 302402001,
+				"Name": "BHF-굉염 추진",
+				"SkillDesc": "지정된 단일 아군에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402002,
+				"Name": "BHF-천공의 불길",
+				"SkillDesc": "지정된 단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402003,
+				"Name": "BBHF-초토화 작전",
+				"SkillDesc": "모든 아군에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402004,
+				"Name": "DHGDR-2차 연소",
+				"SkillDesc": "자신의 HP를 소모하여 [2차 연소] 상태에 진입하고 [약점 무효] 효과를 해제한다. [2차 연소]에 진입하면 대폭 강화되나 모든 공격은 자신의 HP를 소모한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 302402005,
+				"Name": "DHGDR-초신성 과부하",
+				"SkillDesc": "모든 아군에게 화염 속성 피해를 가하고, 높은 확률로 피격된 아군을 연소 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402006,
+				"Name": "SGE-용암 코어",
+				"SkillDesc": "[2차 연소] 진입 후 필드를 불태우고 아군의 전투 스킬 포인트를 연소한다. 아군이 연소하는 전투 스킬 포인트를 소모하면 HP를 소모하고 기존 피해의 일정 비율만큼 고정 수치의 화염 속성 피해를 추가로 가하며, 다른 캐릭터의 치유를 받을 때 HP 회복량이 대폭 감소한다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 302402007,
+				"Name": "SGE-용암 엔진",
+				"SkillDesc": "샘은 [2차 연소] 상태에서 [용암 에너지]를 보유한다. 피격 시 해당 공격이 전투 스킬 포인트를 소모했을 경우 대응하는 수량의 [용암 에너지]가 차감된다. [용암 에너지]가 전부 차감되거나 약점이 격파되면 [2차 연소]가 해제된다. [2차 연소]가 해제되면 샘이 받는 피해가 증가하고 아군은 모든 전투 스킬 포인트를 회복한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"3024021": {
+		"Id": "3024021",
+		"Name": "「스텔라론 헌터」 샘",
+		"Introduction": "스텔라론 헌터 멤버로, 무거운 장갑을 장착한 신비한 전사다. 그의 철갑은 화염을 내뿜어 전장을 불태우고 열화와 같은 공격을 퍼부을 수 있다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 302402101,
+				"Name": "BHF-굉염 추진",
+				"SkillDesc": "지정된 단일 아군에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402102,
+				"Name": "BHF-천공의 불길",
+				"SkillDesc": "지정된 단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402103,
+				"Name": "BBHF-초토화 작전",
+				"SkillDesc": "모든 아군에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402104,
+				"Name": "DHGDR-2차 연소",
+				"SkillDesc": "자신의 HP를 소모하여 [2차 연소] 상태에 진입하고 [약점 무효] 효과를 해제한다. [2차 연소]에 진입하면 대폭 강화되나 모든 공격은 자신의 HP를 소모한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 302402105,
+				"Name": "DHGDR-초신성 과부하",
+				"SkillDesc": "모든 아군에게 화염 속성 피해를 가하고, 높은 확률로 피격된 아군을 연소 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402106,
+				"Name": "SGE-용암 코어",
+				"SkillDesc": "[2차 연소] 진입 후 필드를 불태우고 아군의 전투 스킬 포인트를 연소한다. 아군이 연소하는 전투 스킬 포인트를 소모하면 HP를 소모하고 기존 피해의 일정 비율만큼 고정 수치의 화염 속성 피해를 추가로 가하며, 다른 캐릭터의 치유를 받을 때 HP 회복량이 대폭 감소한다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 302402107,
+				"Name": "SGE-용암 엔진",
+				"SkillDesc": "샘은 [2차 연소] 상태에서 [용암 에너지]를 보유한다. 피격 시 해당 공격이 전투 스킬 포인트를 소모했을 경우 대응하는 수량의 [용암 에너지]가 차감된다. [용암 에너지]가 전부 차감되거나 약점이 격파되면 [2차 연소]가 해제된다. [2차 연소]가 해제되면 샘이 받는 피해가 증가하고 아군은 모든 전투 스킬 포인트를 회복한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"7001010": {
 		"Id": "7001010",
@@ -8322,7 +9270,7 @@
 			{
 				"Id": 800208204,
 				"Name": "지… 지켜줄게",
-				"SkillDesc": "전투 진입 시 모든 적에게 [지… 지켜줄게]를 제공하며, [지… 지켜줄게] 스택마다 지속 피해를 제외한 모든 피해에 1회 저항할 수 있다. 모든 적은 [지… 지켜줄게] 스택수를 공유한다",
+				"SkillDesc": "전투 진입 시 모든 적에게 [지… 지켜줄게]를 제공하며, [지… 지켜줄게] 스택마다 지속 피해를 제외한 모든 피해에 1회 저항할 수 있다. 모든 적은 [지… 지켜줄게] 스택 수를 공유한다",
 				"SkillTypeDesc": "특성"
 			}
 		],
@@ -8922,7 +9870,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -9039,7 +9987,7 @@
 			{
 				"Id": 800304205,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -10679,7 +11627,7 @@
 		"SkillList": [
 			{
 				"Id": 802203001,
-				"Name": "뿔 찌르기",
+				"Name": "뿔 공격",
 				"SkillDesc": "지정된 단일 아군에게 양자 속성 피해를 가한다. 얽힘 효과를 지닌 목표를 우선 공격하며 얽힘 1회를 추가로 중첩한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Quantum"
@@ -14597,6 +15545,61 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"100401004": {
+		"Id": "100401004",
+		"Name": "쿠쿠리아",
+		"Introduction": "벨로보그의 수호자. 영원의 도시 벨로보그의 권위적인 통치자.\n쿠쿠리아는 역대 수호자의 기적과 권능을 물려받아 전투에서 눈과 얼음의 힘을 호령하며 적을 빙결한다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.4,
+			"Fire": 0,
+			"Ice": 0.6,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100401001,
+				"Name": "뼈에 사무치는 추위",
+				"SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401002,
+				"Name": "기나긴 빙하기의 전조",
+				"SkillDesc": "[얼음 서슬]을 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 100401003,
+				"Name": "끝없는 겨울의 징벌",
+				"SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401004,
+				"Name": "영원히 고립된 서리",
+				"SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401005,
+				"Name": "설국 성도의 격노",
+				"SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"100402001": {
 		"Id": "100402001",
 		"Name": "게파드",
@@ -16194,6 +17197,54 @@
 		],
 		"VersionAdded": "1.1"
 	},
+	"101202111": {
+		"Id": "101202111",
+		"Name": "자동 기갑병•스파이더",
+		"Introduction": "구세계가 남긴 과학 기술을 조각조각 이어 붙여 만든 자동 로봇 유닛. 인간의 가장 기본적인 육체 노동을 대신한다.\n전투 시 자동 기갑병 「스파이더」의 동력은 매우 불안정하며 망가지면 폭발사고가 발생하기 쉽다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101202101,
+				"Name": "대시",
+				"SkillDesc": "지정된 단일 아군에게 소량의 물리 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101202102,
+				"Name": "시간 제한 모듈",
+				"SkillDesc": "다음 행동에 [자폭 모듈]을 발동한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 101202103,
+				"Name": "자폭 모듈",
+				"SkillDesc": "자신을 폭발시키고 지정된 단일 아군 및 인접한 목표에게 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 101202104,
+				"Name": "연쇄 파멸",
+				"SkillDesc": "치명적인 공격을 받은 후 인접한 적에게 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "특성",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"101203001": {
 		"Id": "101203001",
 		"Name": "자동 기갑병•비틀",
@@ -16607,6 +17658,35 @@
 			}
 		],
 		"VersionAdded": "1.3"
+	},
+	"101203015": {
+		"Id": "101203015",
+		"Name": "자동 기갑병•비틀",
+		"Introduction": "구세계가 남긴 과학 기술을 조각조각 이어 붙여 만든 자동 로봇 유닛. 이동을 담당하는 부품에 신호등이 설치돼 있으며 채집이나 건축 작업에 사용되는 것 같다.\n전투 시 자동 기갑병 「비틀」은 역장 실드를 생성해 자신을 보호한다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101203001,
+				"Name": "불안정한 역장",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 주고 자신에게 배리어를 제공한다. 배리어는 지속 피해를 제외한 모든 피해에 저항하며, 피격 후 해제된다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"101301001": {
 		"Id": "101301001",
@@ -17588,6 +18668,60 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"101301019": {
+		"Id": "101301019",
+		"Name": "자동 기갑병•그리즐리",
+		"Introduction": "구세계가 남긴 과학 기술을 조각조각 이어 붙여 만든 자동 로봇 유닛. 두꺼운 갑옷을 장착하고 돌격하며 실버메인 철위대를 보호한다.\n전투 시 자동 기갑병 「그리즐리」는 「스파이더」에게 신호를 보내 함께 싸우며 동력 에너지를 모아 강력한 일격을 발동한다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "폭파 지령",
+				"SkillDesc": "[자동 기갑병•스파이더]를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 101301002,
+				"Name": "분노 지령",
+				"SkillDesc": "일정 확률로 모든 아군이 도발 상태에 빠진다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 101301003,
+				"Name": "과부하 지령",
+				"SkillDesc": "차지 상태에 진입한다. 다음번 행동은 모든 아군에게 [섬멸 지령]을 발동한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 101301004,
+				"Name": "섬멸 지령",
+				"SkillDesc": "모든 아군에게 대량의 물리 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301009,
+				"Name": "파괴 지령",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"101302001": {
 		"Id": "101302001",
 		"Name": "자동 기갑병•다이어울프",
@@ -18523,6 +19657,55 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"101302024": {
+		"Id": "101302024",
+		"Name": "자동 기갑병•다이어울프",
+		"Introduction": "구세계가 남긴 과학 기술을 조각조각 이어 붙여 만든 자동 로봇 유닛. 보기 드문 인간형 기계이며, 오른팔에는 모두 체인톱이 장착되어 있어 채집이나 건축 작업에 사용됐던 것처럼 보인다.\n전투 시 자동 기갑병 「다이어울프」의 체인톱은 적에게 열상을 입혀 적의 HP를 지속해서 감소시킨다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "벌채 지령",
+				"SkillDesc": "지정된 단일 아군에게 대량의 물리 속성 피해를 주며 해당 목표를 공격할 때마다 일정한 확률로 열상 상태에 빠진다. 해당 스킬 발동 시 목표가 실드를 보유하고 있지 않을 경우, 임의의 단일 아군에게 [해체 제거]를 1회 발동한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "목표 고정",
+				"SkillDesc": "지정된 단일 아군을 고정하고 다음번 행동은 대상에게 [벌채 지령]을 발동한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 101302003,
+				"Name": "해체 지령",
+				"SkillDesc": "지정된 단일 아군에게 소량의 물리 속성 피해를 주며 높은 확률로 열상 상태를 1스택 부여한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "해체 제거",
+				"SkillDesc": "지정된 단일 아군에게 소량의 물리 속성 피해를 주며 높은 확률로 열상 상태를 1스택 부여한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"101401001": {
 		"Id": "101401001",
 		"Name": "스바로그",
@@ -19090,6 +20273,77 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"101401009": {
+		"Id": "101401009",
+		"Name": "스바로그",
+		"Introduction": "구세계의 고대 유물. 지오매로우 개척단 시대가 남긴 자동 제어 유닛. 무지하고 명령만 따르는 대부분의 로봇과 달리 스바로그는 복잡한 사고 능력을 갖추고 있다.\n전투 중 스바로그는 기계팔을 소환해 적을 포획하고 제어하며, 목표에 큰 타격을 준다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101401001,
+				"Name": "제거의 주먹",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401002,
+				"Name": "연소 레이저",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401003,
+				"Name": "거대한 손 틈",
+				"SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401004,
+				"Name": "고효율 폭격",
+				"SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401005,
+				"Name": "제어장 폭발",
+				"SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401006,
+				"Name": "과부하 경고",
+				"SkillDesc": "보조 기계팔 유닛은 [과부하 시간제한] 상태에 진입하며 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401007,
+				"Name": "효과적 배치",
+				"SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"102201001": {
 		"Id": "102201001",
@@ -20078,6 +21332,35 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"102202023": {
+		"Id": "102202023",
+		"Name": "불의 재난",
+		"Introduction": "한파 강림 후, 열계를 떠도는 허영. 실버메인 철위대의 모습을 왜곡되게 모방했다. 장착한 갑옷은 벨로보그의 전사와 똑같이 정연하지만, 머리는 이목구비가 없는 재로 대신했다.\n전투에서 불의 재난은 타오르는 도끼를 휘두르며 적을 연소시킨다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "작염 강타",
+				"SkillDesc": "지정된 단일 아군에게 화염 속성 피해를 가하며, 피격된 아군은 높은 확률로 연소 상태에 빠진다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -22173,6 +23456,68 @@
 			}
 		],
 		"VersionAdded": "1.6"
+	},
+	"200402006": {
+		"Id": "200402006",
+		"Name": "운기 효위(驍衛)•연경",
+		"Introduction": "어린 나이임에도 검술의 천재라 불리는 경원 장군의 호위무사",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200402001,
+				"Name": "쾌재풍",
+				"SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402002,
+				"Name": "돌아온 제비",
+				"SkillDesc": "[비검] 4개를 소환한다. [검진] 효과를 획득해 자신의 속도를 올려 [비검]으로 [진안]을 획득한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 200402003,
+				"Name": "삼척수",
+				"SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 주며 피격된 목표는 높은 확률로 빙결 상태에 빠진다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402004,
+				"Name": "파진가(破陣歌)",
+				"SkillDesc": "지정된 단일 아군 및 인접한 목표에게 얼음 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402005,
+				"Name": "검기 임박",
+				"SkillDesc": "차지 상태에 진입한다. 다음번 행동은 모든 아군에게 「은하 폭포」를 발동한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 200402006,
+				"Name": "은하 폭포",
+				"SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"201101001": {
 		"Id": "201101001",
@@ -26244,6 +27589,726 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"202402004": {
+		"Id": "202402004",
+		"Name": "부연",
+		"Introduction": "대세양 「요원」의 조각. 수많은 세양 조각이 모여 「요원」의 기백을 재현하려 한다",
+		"ElementalWeaknesses": [],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202402001,
+				"Name": "영력",
+				"SkillDesc": "자신은 선택되거나 피격될 수 없으며 필드 위 적이 처치될 때 HP를 잃는다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 202402002,
+				"Name": "빠른 한 수",
+				"SkillDesc": "즉시 모든 적이 행동한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 202402003,
+				"Name": "우왕좌왕",
+				"SkillDesc": "스킬을 발동하려 하지만 아무 일도 일어나지 않는다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300101001": {
+		"Id": "300101001",
+		"Name": "코코나의 선량함",
+		"Introduction": "선량한 마음. 한때 모든 사람의 본성이 선하다고 믿었다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300101001,
+				"Name": "주사위 투척",
+				"SkillDesc": "지정된 단일 아군에게 소량의 물리 속성 피해를 가하며, 피격된 아군은 일정 확률로 효과 저항이 감소한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300102001": {
+		"Id": "300102001",
+		"Name": "코코나의 진심",
+		"Introduction": "진실한 마음. 한때 진심으로 타인을 대하면 타인 또한 진심으로 자신을 대할 것이라고 믿었다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300102001,
+				"Name": "무도에의 권유",
+				"SkillDesc": "지정된 단일 아군에게 소량의 물리 속성 피해를 가하고, 일정 확률로 피격된 아군을 열상 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300201001": {
+		"Id": "300201001",
+		"Name": "나쁜꿈 극단의 Mr. 라운드 스크린(투영)",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 TV 프로그램에 나오는 엔터테이너였다. 통제 불능에 빠진 후에도 여전히 자신의 변화무쌍한 신분을 연기하고 있으며 관객들에게 놀라움과 경악을 선사한다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300201001,
+				"Name": "서프라이즈 예능",
+				"SkillDesc": "지정된 단일 아군의 에너지를 회복시킨다. [서프라이즈 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201002,
+				"Name": "호러 방송",
+				"SkillDesc": "모든 아군에게 소량의 양자 속성 피해를 가하고 모든 아군이 에너지를 잃게 만든다. [호러 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 300201003,
+				"Name": "채널 변경",
+				"SkillDesc": "[서프라이즈 채널] 상태를 [호러 채널] 상태로 변경한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201004,
+				"Name": "혼선",
+				"SkillDesc": "피격 후 [서프라이즈 채널] 상태에서 [호러 채널] 상태로 변경하거나 [호러 채널] 상태에서 [서프라이즈 채널] 상태로 변경된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300201002": {
+		"Id": "300201002",
+		"Name": "나쁜꿈 극단의 Mr. 라운드 스크린(투영)",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 TV 프로그램에 나오는 엔터테이너였다. 통제 불능에 빠진 후에도 여전히 자신의 변화무쌍한 신분을 연기하고 있으며 관객들에게 놀라움과 경악을 선사한다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300201001,
+				"Name": "서프라이즈 예능",
+				"SkillDesc": "지정된 단일 아군의 에너지를 회복시킨다. [서프라이즈 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201002,
+				"Name": "호러 방송",
+				"SkillDesc": "모든 아군에게 소량의 양자 속성 피해를 가하고 모든 아군이 에너지를 잃게 만든다. [호러 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 300201003,
+				"Name": "채널 변경",
+				"SkillDesc": "[서프라이즈 채널] 상태를 [호러 채널] 상태로 변경한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201004,
+				"Name": "혼선",
+				"SkillDesc": "피격 후 [서프라이즈 채널] 상태에서 [호러 채널] 상태로 변경하거나 [호러 채널] 상태에서 [서프라이즈 채널] 상태로 변경된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300201003": {
+		"Id": "300201003",
+		"Name": "코코나의 순수함",
+		"Introduction": "순수한 마음. 이 세계에 아무리 많은 고난이 있더라도 결말은 아름다울 것이라고 믿었었다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300201001,
+				"Name": "서프라이즈 예능",
+				"SkillDesc": "지정된 단일 아군의 에너지를 회복시킨다. [서프라이즈 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201002,
+				"Name": "호러 방송",
+				"SkillDesc": "모든 아군에게 소량의 양자 속성 피해를 가하고 모든 아군이 에너지를 잃게 만든다. [호러 채널] 상태에서만 사용할 수 있다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 300201003,
+				"Name": "채널 변경",
+				"SkillDesc": "[서프라이즈 채널] 상태를 [호러 채널] 상태로 변경한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300201004,
+				"Name": "혼선",
+				"SkillDesc": "피격 후 [서프라이즈 채널] 상태에서 [호러 채널] 상태로 변경하거나 [호러 채널] 상태에서 [서프라이즈 채널] 상태로 변경된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300203001": {
+		"Id": "300203001",
+		"Name": "나쁜꿈 극단의 버블 도그",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 「솔글래드」 소다수 배달원이었다. 통제 불능에 빠진 후에도 여전히 곳곳에 달콤함을 뿌리면서 모두가 맛있는 음료를 맛볼 수 있게 하고 있다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300203001,
+				"Name": "시음 초대",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300203002,
+				"Name": "달콤함의 해방",
+				"SkillDesc": "치명적인 공격을 받을 시 인접한 적에게 물리 속성 피해를 가하고, 속도를 증가시키며 열상 상태에 빠트린다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 300203003,
+				"Name": "상쾌",
+				"SkillDesc": "피격되거나 지속 피해를 받을 경우 중첩 가능한 [황홀한 솔글래드] 1스택을 획득한다. [황홀한 솔글래드] 스택 수가 높을수록 가하는 피해가 증가한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300203002": {
+		"Id": "300203002",
+		"Name": "코코나의 원칙",
+		"Introduction": "확고한 마음. 넘어서는 안 되는 선이 있다고 믿었었다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300203001,
+				"Name": "시음 초대",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300203002,
+				"Name": "달콤함의 해방",
+				"SkillDesc": "치명적인 공격을 받을 시 인접한 적에게 물리 속성 피해를 가하고, 속도를 증가시키며 열상 상태에 빠트린다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 300203003,
+				"Name": "상쾌",
+				"SkillDesc": "피격되거나 지속 피해를 받을 경우 중첩 가능한 [황홀한 솔글래드] 1스택을 획득한다. [황홀한 솔글래드] 스택 수가 높을수록 가하는 피해가 증가한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300205002": {
+		"Id": "300205002",
+		"Name": "코코나의 진심",
+		"Introduction": "진실한 마음. 한때 진심으로 타인을 대하면 타인 또한 진심으로 자신을 대할 것이라고 믿었다",
+		"ElementalWeaknesses": [],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300205001,
+				"Name": "통의 수련",
+				"SkillDesc": "단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300205002,
+				"Name": "통의 연마",
+				"SkillDesc": "자신의 공격력이 증가한다. 해당 효과는 중첩 가능하며, 제거될 수 없다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300205003,
+				"Name": "통의 신조",
+				"SkillDesc": "자신의 약점이 격파되면 전투에서 떠난다. 자신이 아군에 의해 피격될 시 이번 공격에 대응하는 약점 속성이 추가되며, 최대 2개의 약점이 추가된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300301101": {
+		"Id": "300301101",
+		"Name": "나쁜꿈 극단의 오버쿡(투영)",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 음식을 조리하는 요리 기계였다. 통제 불능에 빠진 후에도 여전히 식자재를 가열하기 위한 맹렬한 화염을 내뿜으며, 식객도 함께 재로 만들어 버리려고 한다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300301101,
+				"Name": "강력한 뒤집기",
+				"SkillDesc": "단일 아군에게 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301102,
+				"Name": "토네이도 뒤집기",
+				"SkillDesc": "단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301103,
+				"Name": "화로 점화",
+				"SkillDesc": "차지 상태에 진입한다. 다음번 행동에 [맹렬한 볶기]를 발동한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301104,
+				"Name": "맹렬한 볶기",
+				"SkillDesc": "모든 아군에게 대량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301105,
+				"Name": "주방 사고",
+				"SkillDesc": "차지 상태 진입 후 [화로 가열]의 스택 수가 일정 수준에 달하면, 즉시 모든 적에게 대량의 화염 속성 피해를 가하고 자신의 방어력을 감소시키며, 모든 아군의 에너지를 회복시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301106,
+				"Name": "불에서 탄생한 최상의 요리",
+				"SkillDesc": "[화로 가열] 스택 수가 일정 수준 중첩되면 즉시 행동하고 [화로 점화]를 발동한다",
+				"SkillTypeDesc": "특성"
+			},
+			{
+				"Id": 300301107,
+				"Name": "맹화 화로",
+				"SkillDesc": "자신이 공격할 시 일정 확률로 목표에게 감속 상태를 부여한다. 자신이 피격되거나 지속 피해를 받을 시 [화로 가열]이 1스택 중첩된다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"300302001": {
+		"Id": "300302001",
+		"Name": "나쁜꿈 극단의 스위트 고릴라",
+		"Introduction": "페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\n원래는 「솔글래드」 소다수 배달원이었다. 통제 불능에 빠진 후에도 여전히 등에 메고 있는 맛있는 음료를 나눠주고 있으며, 지나가는 손님들에게 선물을 던진다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300302001,
+				"Name": "음료 수량 한정 증정",
+				"SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다. 목표가 실드를 보유한 경우 피해를 가한 후 자신에게 얼음 속성 피해를 가하며, 높은 확률로 자신의 방어력을 감소시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302002,
+				"Name": "음료 무한 리필",
+				"SkillDesc": "랜덤 단일 아군에게 얼음 속성 피해를 4회 가한다. 목표가 실드를 보유한 경우 피해를 가한 후 자신에게 얼음 속성 피해를 가하며, 높은 확률로 자신의 방어력을 감소시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302003,
+				"Name": "솔글래드 파티",
+				"SkillDesc": "[버블 도그] 2기를 소환한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 300302004,
+				"Name": "파티 분수",
+				"SkillDesc": "차지 상태에 진입하고 강인성 보호를 획득한다. 다음번 행동 시 [음료 무한 리필]을 발동한다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"301202001": {
+		"Id": "301202001",
+		"Name": "기억의 영역 밈 「산산조각난 내 마음」",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n견고한 벽이 생명을 감싸고 적을 막는다. 하지만 단단한 육체 속에는 연약하기 그지없는 무명 지대가 있다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 301202001,
+				"Name": "거부",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301202002,
+				"Name": "단단한 방패",
+				"SkillDesc": "[방비] 상태에 진입한다. 약점이 격파되지 않을 시 받는 피해가 감소한다. 약점이 격파될 시 행동 게이지가 추가로 감소하고, 약점이 격파된 후 받는 피해가 증가한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"301402001": {
+		"Id": "301402001",
+		"Name": "기억의 영역 밈 「무엇이 죽음으로 향하는가」",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n신비하고 위험한 기억의 영역 밈이며, 꿈에서 존재해선 안 되는 「사망」으로 여겨진다. 그의 사악한 그림자는 열두 순간에서 배회하며, 그가 다다른 곳은 예측 불가한 재앙이 반드시 발생한다. 날카로운 칼날로 흉보를 퍼뜨리고, 죽음의 그림자로 좋은꿈을 뒤덮는다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301402001,
+				"Name": "장례의 입맞춤",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402002,
+				"Name": "죽음의 검은 비",
+				"SkillDesc": "모든 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402003,
+				"Name": "날카로운 추도사",
+				"SkillDesc": "자신이 가하는 피해를 대폭 증가시킨다. 지속 시간: 1턴. 약점 격파 상태에 빠지면 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402004,
+				"Name": "빛의 소멸",
+				"SkillDesc": "[일몰] 상태에 진입한다. 아군이 일반 공격, 전투 스킬, 필살기를 발동할 때마다 1스택 중첩되며, [일몰]이 3스택까지 중첩되면 직전에 행동한 아군에게 즉시 [소실된 황혼의 색채]를 발동한다. [소실된 황혼의 색채]를 1회 발동하거나 약점이 격파되면 해당 효과는 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402005,
+				"Name": "소실된 황혼의 색채",
+				"SkillDesc": "직전에 일반 공격, 전투 스킬, 필살기를 발동한 아군 1명에게 즉시 치명적인 공격을 발동하여 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402006,
+				"Name": "깊은 밤 속으로",
+				"SkillDesc": "[드리워진 밤의 장막] 상태에 진입하며, 상태가 지속되는 동안 가장 먼저 행동한 아군 캐릭터 2명을 고정한다. 다음번 행동 시 [물이 물에 사라지듯]을 사용한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402007,
+				"Name": "물이 물에 사라지듯",
+				"SkillDesc": "고정된 모든 아군에게 치명적인 공격을 즉시 발동하여 [꿈의 죽음] 상태에 빠뜨린다. 고정된 목표가 없을 경우 랜덤 아군 2명에게 치명적인 공격을 발동하고 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402009,
+				"Name": "추모할 수 없는 황량한 땅",
+				"SkillDesc": "아군이 [꿈의 죽음] 상태에 빠질 때마다 대응하는 [영면의 묘비] 1개를 소환한다. 모든 아군이 [꿈의 죽음] 상태에 빠지거나 전투 불능 상태일 경우 전투에 실패한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"301402002": {
+		"Id": "301402002",
+		"Name": "기억의 영역 밈 「무엇이 죽음으로 향하는가」",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n신비하고 위험한 기억의 영역 밈이며, 꿈에서 존재해선 안 되는 「사망」으로 여겨진다. 그의 사악한 그림자는 열두 순간에서 배회하며, 그가 다다른 곳은 예측 불가한 재앙이 반드시 발생한다. 날카로운 칼날로 흉보를 퍼뜨리고, 죽음의 그림자로 좋은꿈을 뒤덮는다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301402001,
+				"Name": "장례의 입맞춤",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402002,
+				"Name": "죽음의 검은 비",
+				"SkillDesc": "모든 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402003,
+				"Name": "날카로운 추도사",
+				"SkillDesc": "자신이 가하는 피해를 대폭 증가시킨다. 지속 시간: 1턴. 약점 격파 상태에 빠지면 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402004,
+				"Name": "빛의 소멸",
+				"SkillDesc": "[일몰] 상태에 진입한다. 아군이 일반 공격, 전투 스킬, 필살기를 발동할 때마다 1스택 중첩되며, [일몰]이 3스택까지 중첩되면 직전에 행동한 아군에게 즉시 [소실된 황혼의 색채]를 발동한다. [소실된 황혼의 색채]를 1회 발동하거나 약점이 격파되면 해당 효과는 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402005,
+				"Name": "소실된 황혼의 색채",
+				"SkillDesc": "직전에 일반 공격, 전투 스킬, 필살기를 발동한 아군 1명에게 즉시 치명적인 공격을 발동하여 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402006,
+				"Name": "깊은 밤 속으로",
+				"SkillDesc": "[드리워진 밤의 장막] 상태에 진입하며, 상태가 지속되는 동안 가장 먼저 행동한 아군 캐릭터 2명을 고정한다. 다음번 행동 시 [물이 물에 사라지듯]을 사용한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402007,
+				"Name": "물이 물에 사라지듯",
+				"SkillDesc": "고정된 모든 아군에게 치명적인 공격을 즉시 발동하여 [꿈의 죽음] 상태에 빠뜨린다. 고정된 목표가 없을 경우 랜덤 아군 2명에게 치명적인 공격을 발동하고 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402009,
+				"Name": "추모할 수 없는 황량한 땅",
+				"SkillDesc": "아군이 [꿈의 죽음] 상태에 빠질 때마다 대응하는 [영면의 묘비] 1개를 소환한다. 모든 아군이 [꿈의 죽음] 상태에 빠지거나 전투 불능 상태일 경우 전투에 실패한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"301402003": {
+		"Id": "301402003",
+		"Name": "기억의 영역 밈 「무엇이 죽음으로 향하는가」",
+		"Introduction": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\n신비하고 위험한 기억의 영역 밈이며, 꿈에서 존재해선 안 되는 「사망」으로 여겨진다. 그의 사악한 그림자는 열두 순간에서 배회하며, 그가 다다른 곳은 예측 불가한 재앙이 반드시 발생한다. 날카로운 칼날로 흉보를 퍼뜨리고, 죽음의 그림자로 좋은꿈을 뒤덮는다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301402001,
+				"Name": "장례의 입맞춤",
+				"SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402002,
+				"Name": "죽음의 검은 비",
+				"SkillDesc": "모든 아군에게 물리 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402003,
+				"Name": "날카로운 추도사",
+				"SkillDesc": "자신이 가하는 피해를 대폭 증가시킨다. 지속 시간: 1턴. 약점 격파 상태에 빠지면 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402004,
+				"Name": "빛의 소멸",
+				"SkillDesc": "[일몰] 상태에 진입한다. 아군이 일반 공격, 전투 스킬, 필살기를 발동할 때마다 1스택 중첩되며, [일몰]이 3스택까지 중첩되면 직전에 행동한 아군에게 즉시 [소실된 황혼의 색채]를 발동한다. [소실된 황혼의 색채]를 1회 발동하거나 약점이 격파되면 해당 효과는 해제된다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402005,
+				"Name": "소실된 황혼의 색채",
+				"SkillDesc": "직전에 일반 공격, 전투 스킬, 필살기를 발동한 아군 1명에게 즉시 치명적인 공격을 발동하여 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402006,
+				"Name": "깊은 밤 속으로",
+				"SkillDesc": "[드리워진 밤의 장막] 상태에 진입하며, 상태가 지속되는 동안 가장 먼저 행동한 아군 캐릭터 2명을 고정한다. 다음번 행동 시 [물이 물에 사라지듯]을 사용한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402007,
+				"Name": "물이 물에 사라지듯",
+				"SkillDesc": "고정된 모든 아군에게 치명적인 공격을 즉시 발동하여 [꿈의 죽음] 상태에 빠뜨린다. 고정된 목표가 없을 경우 랜덤 아군 2명에게 치명적인 공격을 발동하고 [꿈의 죽음] 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 301402009,
+				"Name": "추모할 수 없는 황량한 땅",
+				"SkillDesc": "아군이 [꿈의 죽음] 상태에 빠질 때마다 대응하는 [영면의 묘비] 1개를 소환한다. 모든 아군이 [꿈의 죽음] 상태에 빠지거나 전투 불능 상태일 경우 전투에 실패한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"302401001": {
 		"Id": "302401001",
 		"Name": "아젠티",
@@ -26426,6 +28491,68 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"302402001": {
+		"Id": "302402001",
+		"Name": "「스텔라론 헌터」 샘",
+		"Introduction": "스텔라론 헌터 멤버로, 무거운 장갑을 장착한 신비한 전사다. 그의 철갑은 화염을 내뿜어 전장을 불태우고 열화와 같은 공격을 퍼부을 수 있다",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 302402001,
+				"Name": "BHF-굉염 추진",
+				"SkillDesc": "지정된 단일 아군에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402002,
+				"Name": "BHF-천공의 불길",
+				"SkillDesc": "지정된 단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402003,
+				"Name": "BBHF-초토화 작전",
+				"SkillDesc": "모든 아군에게 소량의 화염 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402004,
+				"Name": "DHGDR-2차 연소",
+				"SkillDesc": "자신의 HP를 소모하여 [2차 연소] 상태에 진입하고 [약점 무효] 효과를 해제한다. [2차 연소]에 진입하면 대폭 강화되나 모든 공격은 자신의 HP를 소모한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 302402005,
+				"Name": "DHGDR-초신성 과부하",
+				"SkillDesc": "모든 아군에게 화염 속성 피해를 가하고, 높은 확률로 피격된 아군을 연소 상태에 빠뜨린다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402006,
+				"Name": "SGE-용암 코어",
+				"SkillDesc": "[2차 연소] 진입 후 필드를 불태우고 아군의 전투 스킬 포인트를 연소한다. 아군이 연소하는 전투 스킬 포인트를 소모하면 HP를 소모하고 기존 피해의 일정 비율만큼 고정 수치의 화염 속성 피해를 추가로 가하며, 다른 캐릭터의 치유를 받을 때 HP 회복량이 대폭 감소한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"700203001": {
 		"Id": "700203001",
@@ -28379,6 +30506,55 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"800201012": {
+		"Id": "800201012",
+		"Name": "허수 방직꾼",
+		"Introduction": "이 세상에 속하지 않는 괴이한 생명. 어두운 별 하늘 건너 편에서 겹겹의 베일을 통과해왔다. 그들의 몸은 마치 현실을 마음대로 뒤틀기 위해 허수 에너지를 사용하는 병든 나뭇가지와 같다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800201001,
+				"Name": "송가의 빛",
+				"SkillDesc": "지정된 단일 아군에게 소량의 허수 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201002,
+				"Name": "송가의 폭발",
+				"SkillDesc": "지정된 단일 아군에게 대량의 허수 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201003,
+				"Name": "송가의 진동",
+				"SkillDesc": "지정된 단일 아군 및 인접한 목표에게 허수 속성 피해를 가한다. [후공] 상태에 진입해 다음번 행동 시 [송가 폭발]을 발동하고 자신이 가하는 피해가 대폭으로 증가시킨다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201004,
+				"Name": "허수의 아머",
+				"SkillDesc": "약점 속성이 아닌 공격이 자신에게 가하는 피해가 감소한다",
+				"SkillTypeDesc": "특성"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"800204001": {
 		"Id": "800204001",
 		"Name": "차원 저금통",
@@ -29283,6 +31459,318 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"800205020": {
+		"Id": "800205020",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"800205021": {
+		"Id": "800205021",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"800205022": {
+		"Id": "800205022",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"800205023": {
+		"Id": "800205023",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"800205024": {
+		"Id": "800205024",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"800205025": {
+		"Id": "800205025",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"800205026": {
+		"Id": "800205026",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
+	"800205027": {
+		"Id": "800205027",
+		"Name": "서열 저금통",
+		"Introduction": "뭇별 속에서 길을 잃은 다른 차원의 생물. 성격이 온순하고 단맛이 나며, 식용할 수 없다. 일생에서 대부분의 시간을 음식 섭취와 도주에 사용한다. 종종 이를 우연히 만난 여행자들은 길조로 여기곤 한다",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "무… 무서워",
+				"SkillDesc": "저금통이 놀랐다. 2턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205002,
+				"Name": "도… 도망쳐",
+				"SkillDesc": "저금통이 공황에 빠졌다. 1턴 뒤 도주한다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800205003,
+				"Name": "후… 도망쳤다",
+				"SkillDesc": "저금통이 순식간에 흔적도 없이 줄행랑을 친다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
+	},
 	"800208101": {
 		"Id": "800208101",
 		"Name": "보존 저금통",
@@ -29927,6 +32415,56 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"800301013": {
+		"Id": "800301013",
+		"Name": "외우주의 얼음",
+		"Introduction": "이 세계에 속하지 않는 괴이한 생명. 스텔라론이 가져온 열계에서 성장해 세계의 기반으로부터 에너지를 흡수했다. 갑옷 겉면에는 어두운 별하늘이 비춘다.\n전투에서 외우주의 얼음은 적을 쉽게 빙결시킨다",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "탄식의 추위",
+				"SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 빙결 상태의 단일 아군에게 공격 발동 후 추가로 얼음 속성 피해를 가한다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "서리 흡수",
+				"SkillDesc": "자신은 [빙점] 상태에 진입하고 이후의 공격은 [영원한 겨울의 비]를 발동할 수 있다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "영원한 겨울의 비",
+				"SkillDesc": "[빙점] 상태를 보유할 때만 해당 스킬을 발동할 수 있다. 모든 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 일정 확률로 빙결 상태에 빠진다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "탄식의 추위",
+				"SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 일정한 확률로 피격된 아군이 빙결 상태에 빠진다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"800302001": {
 		"Id": "800302001",
@@ -30743,6 +33281,54 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"800302019": {
+		"Id": "800302019",
+		"Name": "외우주의 화염",
+		"Introduction": "이 세계에 속하지 않는 괴이한 생명. 스텔라론이 가져온 열계에서 성장해 세계의 기반으로부터 에너지를 흡수했다. 갑옷 겉면에는 별 내핵의 화염이 타오른다.\n전투에서 외우주의 화염은 적을 쉽게 소각시킨다",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800302001,
+				"Name": "포효의 불꽃",
+				"SkillDesc": "지정된 단일 아군에게 소량의 화염 속성 피해를 가하며, 높은 확률로 피격된 아군은 [소각] 상태에 빠진다.",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302002,
+				"Name": "염화 흡수",
+				"SkillDesc": "자신은 [자연 발화] 상태에 진입하고 이후의 공격은 [정염의 비]를 발동할 수 있다",
+				"SkillTypeDesc": "스킬"
+			},
+			{
+				"Id": 800302003,
+				"Name": "정염의 비",
+				"SkillDesc": "연속으로 임의로 단일 아군에게 소량의 화염 속성 피해를 가하며, 높은 확률로 피격된 아군은 [소각] 상태에 빠진다",
+				"SkillTypeDesc": "스킬",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 800302004,
+				"Name": "융합",
+				"SkillDesc": "자신의 공격력을 증가시키고 약점 격파 시 해당 버프 상태가 제거된다",
+				"SkillTypeDesc": "스킬"
+			}
+		],
+		"VersionAdded": "2.0"
 	},
 	"800303001": {
 		"Id": "800303001",
@@ -31602,7 +34188,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -31657,7 +34243,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -31712,7 +34298,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -31767,7 +34353,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -31822,7 +34408,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -31877,7 +34463,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -31932,7 +34518,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -31987,7 +34573,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
@@ -32042,7 +34628,7 @@
 			{
 				"Id": 800304005,
 				"Name": "황금 시대의 해방",
-				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
+				"SkillDesc": "연속으로 임의의 단일 아군에게 소량의 허수 속성 피해를 가하며, 가하는 피해 횟수는 자신의 남은 [추억의 눈금] 스택 수와 일치한다. [추억의 눈금]이 없을 경우 스킬 발동에 실패한다",
 				"SkillTypeDesc": "스킬",
 				"ElementType": "Imaginary"
 			},
