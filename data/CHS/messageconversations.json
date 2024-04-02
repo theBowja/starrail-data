@@ -36831,125 +36831,7 @@
 						"Id": "130040000",
 						"MessageType": "Text",
 						"SenderType": "Player",
-						"SenderContactId": "8001",
-						"Text": "test_流萤",
-						"NextMessageId": "130040001"
-					},
-					"130040001": {
-						"Id": "130040001",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"Text": "test_你还好吗？",
-						"NextMessageId": "130040004"
-					},
-					"130040004": {
-						"Id": "130040004",
-						"MessageType": "Text",
-						"SenderType": "System",
-						"SenderContactId": "8001",
-						"Text": "test_发送错误：信息未能成功送达",
-						"NextMessageId": "choice3"
-					},
-					"130040005": {
-						"Id": "130040005",
-						"MessageType": "Text",
-						"SenderType": "Player",
-						"SenderContactId": "8001",
-						"Text": "test_？",
-						"NextMessageId": "130040006"
-					},
-					"130040006": {
-						"Id": "130040006",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"Text": "test_未能成功送达是什么情况",
-						"NextMessageId": "130040011"
-					},
-					"130040007": {
-						"Id": "130040007",
-						"MessageType": "Text",
-						"SenderType": "Player",
-						"SenderContactId": "8001",
-						"Text": "test_？",
-						"NextMessageId": "130040008"
-					},
-					"130040008": {
-						"Id": "130040008",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"Text": "test_这难道是空号",
-						"NextMessageId": "130040011"
-					},
-					"130040009": {
-						"Id": "130040009",
-						"MessageType": "Text",
-						"SenderType": "Player",
-						"SenderContactId": "8001",
-						"Text": "test_？",
-						"NextMessageId": "130040010"
-					},
-					"130040010": {
-						"Id": "130040010",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"Text": "test_难道是没信号",
-						"NextMessageId": "130040011"
-					},
-					"130040011": {
-						"Id": "130040011",
-						"MessageType": "Text",
-						"SenderType": "System",
-						"SenderContactId": "8001",
-						"Text": "test_发送错误：信息未能成功送达",
-						"NextMessageId": "130040012"
-					},
-					"130040012": {
-						"Id": "130040012",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"Text": "test_看到的话麻烦你回复一下",
-						"NextMessageId": "130040013"
-					},
-					"130040013": {
-						"Id": "130040013",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"Text": "test_也报个平安",
-						"NextMessageId": "130040014"
-					},
-					"130040014": {
-						"Id": "130040014",
-						"MessageType": "Text",
-						"SenderType": "System",
-						"SenderContactId": "8001",
-						"Text": "test_发送错误：信息未能成功送达"
-					},
-					"choice3": {
-						"Id": "choice3",
-						"MessageType": "Choice",
-						"Choices": [
-							{
-								"ChoiceType": "Text",
-								"Text": "test_未能送达？",
-								"NextMessageId": "130040005"
-							},
-							{
-								"ChoiceType": "Text",
-								"Text": "test_这是空号？",
-								"NextMessageId": "130040007"
-							},
-							{
-								"ChoiceType": "Text",
-								"Text": "test_没有信号？",
-								"NextMessageId": "130040009"
-							}
-						]
+						"SenderContactId": "8001"
 					}
 				}
 			}
@@ -38344,6 +38226,406 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"13021": {
+		"Id": "13021",
+		"ContactId": "13",
+		"ParticpatingContactIds": [
+			"1001",
+			"1004",
+			"1003",
+			"1002",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1302100",
+				"StartingMessageId": "130210000",
+				"Messages": {
+					"130210000": {
+						"Id": "130210000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "130210001"
+					},
+					"130210001": {
+						"Id": "130210001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "你还在梦境酒店吗？",
+						"NextMessageId": "130210002"
+					},
+					"130210002": {
+						"Id": "130210002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "130210003"
+					},
+					"130210003": {
+						"Id": "130210003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "130210004"
+					},
+					"130210004": {
+						"Id": "130210004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "你们遇到什么状况了？",
+						"NextMessageId": "130210005"
+					},
+					"130210005": {
+						"Id": "130210005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "我们在忆域里分散了，不过{NICKNAME}有那位忆者随行",
+						"NextMessageId": "130210006"
+					},
+					"130210006": {
+						"Id": "130210006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "我好急",
+						"NextMessageId": "130210007"
+					},
+					"130210007": {
+						"Id": "130210007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "救命",
+						"NextMessageId": "130210008"
+					},
+					"130210008": {
+						"Id": "130210008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "小三月，稍安勿躁",
+						"NextMessageId": "130210009"
+					},
+					"130210009": {
+						"Id": "130210009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Text": "需要我下车么？",
+						"NextMessageId": "130210010"
+					},
+					"130210010": {
+						"Id": "130210010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "暂时不用",
+						"NextMessageId": "130210011"
+					},
+					"130210011": {
+						"Id": "130210011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Text": "好。如果需要，及时告诉我。",
+						"NextMessageId": "130210012"
+					},
+					"130210012": {
+						"Id": "130210012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "现实中的白日梦酒店很平静，没有任何事发生。",
+						"NextMessageId": "130210013"
+					},
+					"130210013": {
+						"Id": "130210013",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "——以上是历史消息——",
+						"NextMessageId": "choice14"
+					},
+					"130210014": {
+						"Id": "130210014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我这边调查结束了",
+						"NextMessageId": "130210015"
+					},
+					"130210015": {
+						"Id": "130210015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "在哪集合？",
+						"NextMessageId": "130210018"
+					},
+					"130210016": {
+						"Id": "130210016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我这边调查结束了",
+						"NextMessageId": "130210017"
+					},
+					"130210017": {
+						"Id": "130210017",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "去哪里找你们？",
+						"NextMessageId": "130210018"
+					},
+					"130210018": {
+						"Id": "130210018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}！",
+						"NextMessageId": "130210019"
+					},
+					"130210019": {
+						"Id": "130210019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "{NICKNAME}，你安全就好",
+						"NextMessageId": "130210020"
+					},
+					"130210020": {
+						"Id": "130210020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "那女人没干什么坏事吧？",
+						"NextMessageId": "130210021"
+					},
+					"130210021": {
+						"Id": "130210021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "流萤小姐的事…我很遗憾",
+						"NextMessageId": "130210022"
+					},
+					"130210022": {
+						"Id": "130210022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "家族封锁了现场，我们正在和代表交涉，快结束了",
+						"NextMessageId": "130210023"
+					},
+					"130210023": {
+						"Id": "130210023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "稍后在钟表小子雕像附近见面吧"
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "我好了。",
+								"NextMessageId": "130210014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "你们在哪？",
+								"NextMessageId": "130210016"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13022": {
+		"Id": "13022",
+		"ContactId": "1304",
+		"ParticpatingContactIds": [
+			"8001",
+			"1304"
+		],
+		"Sections": [
+			{
+				"Id": "1302200",
+				"StartingMessageId": "130220000",
+				"Messages": {
+					"130220000": {
+						"Id": "130220000",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我们答应你的合作请求",
+						"NextMessageId": "130220001"
+					},
+					"130220001": {
+						"Id": "130220001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "不错不错，回复比预想中快嘛",
+						"NextMessageId": "130220002"
+					},
+					"130220002": {
+						"Id": "130220002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "这下我们就是一根绳上的蚂蚱了",
+						"NextMessageId": "130220003"
+					},
+					"130220003": {
+						"Id": "130220003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "合作愉快，送点小礼讨个好彩头",
+						"NextMessageId": "130220004"
+					},
+					"130220004": {
+						"Id": "130220004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "已收到转账：100000信用点",
+						"NextMessageId": "choice5"
+					},
+					"130220005": {
+						"Id": "130220005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "好好好",
+						"NextMessageId": "130220006"
+					},
+					"130220006": {
+						"Id": "130220006",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "老板大气，谢谢谢谢",
+						"NextMessageId": "130220011"
+					},
+					"130220007": {
+						"Id": "130220007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "哥，理性消费",
+						"NextMessageId": "130220008"
+					},
+					"130220008": {
+						"Id": "130220008",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "这次我就先收下了，下不为例",
+						"NextMessageId": "130220011"
+					},
+					"130220009": {
+						"Id": "130220009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "就这？",
+						"NextMessageId": "130220010"
+					},
+					"130220010": {
+						"Id": "130220010",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "感觉一般，富哥再转我十万看看实力",
+						"NextMessageId": "130220011"
+					},
+					"130220011": {
+						"Id": "130220011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "哟，手快打错了",
+						"NextMessageId": "130220012"
+					},
+					"130220012": {
+						"Id": "130220012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "再给你补上点，开工大吉",
+						"NextMessageId": "130220013"
+					},
+					"130220013": {
+						"Id": "130220013",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "已收到转账：100000信用点",
+						"NextMessageId": "130220014"
+					},
+					"130220014": {
+						"Id": "130220014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "和我想的一样，家族打算把知更鸟的事隐瞒到底，所以这案子，你知我知",
+						"NextMessageId": "130220015"
+					},
+					"130220015": {
+						"Id": "130220015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "但另一起…就要看他们对你们准备采取什么说辞了",
+						"NextMessageId": "130220016"
+					},
+					"130220016": {
+						"Id": "130220016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "先失陪了，期待各位的精彩表现！"
+					},
+					"choice5": {
+						"Id": "choice5",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "多谢老板。",
+								"NextMessageId": "130220005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "理性消费。",
+								"NextMessageId": "130220007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "就这？",
+								"NextMessageId": "130220009"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"13024": {
 		"Id": "13024",
@@ -42573,6 +42855,1459 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"13058": {
+		"Id": "13058",
+		"ContactId": "140",
+		"ParticpatingContactIds": [
+			"136",
+			"138",
+			"137",
+			"133",
+			"8001",
+			"139"
+		],
+		"Sections": [
+			{
+				"Id": "1305800",
+				"StartingMessageId": "130580000",
+				"Messages": {
+					"130580000": {
+						"Id": "130580000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "汪！那个闹钟上钩了！它打算喝那杯饮料了哇！",
+						"NextMessageId": "130580001"
+					},
+					"130580001": {
+						"Id": "130580001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "138",
+						"Text": "得亏人家装得好，刚才你差点说漏嘴了呀。",
+						"NextMessageId": "130580002"
+					},
+					"130580002": {
+						"Id": "130580002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "我是想惹它生气哇！没有做错汪！",
+						"NextMessageId": "130580003"
+					},
+					"130580003": {
+						"Id": "130580003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "137",
+						"Text": "嘿！就是个破烂金属块，头长得大点，就以为比谁都高贵了嘎嘎！",
+						"NextMessageId": "130580004"
+					},
+					"130580004": {
+						"Id": "130580004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "137",
+						"Text": "敲扁！然后大家去玩踢罐子咯！",
+						"NextMessageId": "130580005"
+					},
+					"130580005": {
+						"Id": "130580005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "我去把{NICKNAME}拉进来。",
+						"NextMessageId": "130580006"
+					},
+					"130580006": {
+						"Id": "130580006",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "舒翁邀请你加入了群聊。",
+						"NextMessageId": "130580007"
+					},
+					"130580007": {
+						"Id": "130580007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "帮帮我们哇，新来的调饮师！",
+						"NextMessageId": "130580008"
+					},
+					"130580008": {
+						"Id": "130580008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "137",
+						"Text": "哇嘎嘎！想想后面该怎么修理它！我都…等得手心发痒痒了！",
+						"NextMessageId": "130580009"
+					},
+					"130580009": {
+						"Id": "130580009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "138",
+						"Text": "要把搅拌棒插进它的发条孔，然后使劲地转吗！我…我…我好期待！",
+						"NextMessageId": "choice10"
+					},
+					"130580010": {
+						"Id": "130580010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我以前就想这么做了。",
+						"NextMessageId": "130580012"
+					},
+					"130580011": {
+						"Id": "130580011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我以前就想这么做了。",
+						"NextMessageId": "130580012"
+					},
+					"130580012": {
+						"Id": "130580012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "138",
+						"Text": "呀！要论让人心里头砰砰直跳，还得是您！",
+						"NextMessageId": "130580013"
+					},
+					"130580013": {
+						"Id": "130580013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "139",
+						"Text": "而今复仇之时已至，只等拉开帷幕——",
+						"NextMessageId": "130580014"
+					},
+					"130580014": {
+						"Id": "130580014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "那杯饮品就放在对面的柜台上，我在里面加了些特殊材料，让它醉几个小时不成问题。",
+						"NextMessageId": "130580015"
+					},
+					"130580015": {
+						"Id": "130580015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "是该给不听话的孩子一点教训了。",
+						"NextMessageId": "130580016"
+					},
+					"130580016": {
+						"Id": "130580016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "不过，这里是它幻想中的世界，你的行动可能会受阻碍，见机行事吧。"
+					},
+					"choice10": {
+						"Id": "choice10",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "想到过这个办法。",
+								"NextMessageId": "130580010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "我正有此意。",
+								"NextMessageId": "130580011"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13060": {
+		"Id": "13060",
+		"ContactId": "136",
+		"ParticpatingContactIds": [
+			"136",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306000",
+				"StartingMessageId": "130600000",
+				"Messages": {
+					"130600000": {
+						"Id": "130600000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "汪！现在有空了嘛？",
+						"NextMessageId": "130600001"
+					},
+					"130600001": {
+						"Id": "130600001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "约好的去找舒翁，要出发了哇！",
+						"NextMessageId": "choice2"
+					},
+					"130600002": {
+						"Id": "130600002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我都准备好了。",
+						"NextMessageId": "130600003"
+					},
+					"130600003": {
+						"Id": "130600003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "在酒吧里见汪！"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "走吧。",
+								"NextMessageId": "130600002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13061": {
+		"Id": "13061",
+		"ContactId": "141",
+		"ParticpatingContactIds": [
+			"141",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306100",
+				"StartingMessageId": "130610000",
+				"Messages": {
+					"130610000": {
+						"Id": "130610000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "朋友，案子侦破了。",
+						"NextMessageId": "130610001"
+					},
+					"130610001": {
+						"Id": "130610001",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "细说。",
+						"NextMessageId": "130610002"
+					},
+					"130610002": {
+						"Id": "130610002",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "就爱听这个。",
+						"NextMessageId": "130610003"
+					},
+					"130610003": {
+						"Id": "130610003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "死者不是那盘混混磁带，凶手才是。",
+						"NextMessageId": "130610004"
+					},
+					"130610004": {
+						"Id": "130610004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "他以把罪证交给老板为借口，约他出来并将其杀害。",
+						"NextMessageId": "130610005"
+					},
+					"130610005": {
+						"Id": "130610005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "吵闹的音乐，使所有目击者都先入为主地认为死者是他。",
+						"NextMessageId": "130610006"
+					},
+					"130610006": {
+						"Id": "130610006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "毕竟，除了声音，匹诺康尼的磁带都长得一模一样。",
+						"NextMessageId": "130610007"
+					},
+					"130610007": {
+						"Id": "130610007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "最后，他把老板的磁带装进自己的身体，偷走对方的声音和身份，上车逃离。",
+						"NextMessageId": "130610008"
+					},
+					"130610008": {
+						"Id": "130610008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "关键性的证据，就是他的身体里，有一截修补过的磁带。",
+						"NextMessageId": "choice9"
+					},
+					"130610009": {
+						"Id": "130610009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "直到最后，也不知道他老板有什么把柄。",
+						"NextMessageId": "130610010"
+					},
+					"130610010": {
+						"Id": "130610010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "哎，这种事儿您就别瞎想了。",
+						"NextMessageId": "130610013"
+					},
+					"130610011": {
+						"Id": "130610011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "明明只是盘磁带，手法却这么残忍。",
+						"NextMessageId": "130610012"
+					},
+					"130610012": {
+						"Id": "130610012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "所以才需要我们。",
+						"NextMessageId": "130610013"
+					},
+					"130610013": {
+						"Id": "130610013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "这次多亏有您的帮助，否则真相就要石沉大海了。",
+						"NextMessageId": "130610014"
+					},
+					"130610014": {
+						"Id": "130610014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "期待与您的下次合作。"
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "关于老板的把柄。",
+								"NextMessageId": "130610009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "好恶毒的磁带。",
+								"NextMessageId": "130610011"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13062": {
+		"Id": "13062",
+		"ContactId": "141",
+		"ParticpatingContactIds": [
+			"141",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306200",
+				"StartingMessageId": "130620000",
+				"Messages": {
+					"130620000": {
+						"Id": "130620000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "抱歉，我还是没找到凶手。",
+						"NextMessageId": "130620001"
+					},
+					"130620001": {
+						"Id": "130620001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "现场的线索太少了，我打算沿着受害者死前的行动轨迹进一步深入调查。",
+						"NextMessageId": "choice2"
+					},
+					"130620002": {
+						"Id": "130620002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "等你破了案，庆功宴记得第一个叫我。",
+						"NextMessageId": "130620003"
+					},
+					"130620003": {
+						"Id": "130620003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "好啊，一言为定。"
+					},
+					"130620004": {
+						"Id": "130620004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "凶手手段很毒辣，调查的时候一定要注意安全。",
+						"NextMessageId": "130620005"
+					},
+					"130620005": {
+						"Id": "130620005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "我会的，谢谢您的关心。"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "等你的好消息。",
+								"NextMessageId": "130620002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "注意安全。",
+								"NextMessageId": "130620004"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13063": {
+		"Id": "13063",
+		"ContactId": "141",
+		"ParticpatingContactIds": [
+			"141",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306300",
+				"StartingMessageId": "130630000",
+				"Messages": {
+					"130630000": {
+						"Id": "130630000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "朋友，感谢您的建议。",
+						"NextMessageId": "130630001"
+					},
+					"130630001": {
+						"Id": "130630001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "我此生从未有过这般轻松快活。",
+						"NextMessageId": "130630002"
+					},
+					"130630002": {
+						"Id": "130630002",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "发生了什么？我少看了一集？",
+						"NextMessageId": "130630003"
+					},
+					"130630003": {
+						"Id": "130630003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "在您的劝说后，我意识到，自己确实没有侦探的才能。",
+						"NextMessageId": "choice4"
+					},
+					"130630004": {
+						"Id": "130630004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "你到底想说什么？",
+						"NextMessageId": "130630005"
+					},
+					"130630005": {
+						"Id": "130630005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "我不做侦探了！朋友。",
+						"NextMessageId": "130630006"
+					},
+					"130630006": {
+						"Id": "130630006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "再见，我要去「蓝调的时刻」度假了。",
+						"NextMessageId": "130630007"
+					},
+					"130630007": {
+						"Id": "130630007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "？？？"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "你想说什么？",
+								"NextMessageId": "130630004"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13064": {
+		"Id": "13064",
+		"ContactId": "13",
+		"ParticpatingContactIds": [
+			"1000",
+			"1004",
+			"1001",
+			"1002",
+			"8001",
+			"1003"
+		],
+		"Sections": [
+			{
+				"Id": "1306400",
+				"StartingMessageId": "130640000",
+				"Messages": {
+					"130640000": {
+						"Id": "130640000",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10020.png",
+						"NextMessageId": "130640001"
+					},
+					"130640001": {
+						"Id": "130640001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "收到了寄来列车的包裹",
+						"NextMessageId": "130640002"
+					},
+					"130640002": {
+						"Id": "130640002",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/107002.png",
+						"Text": "[礼物]",
+						"NextMessageId": "130640003"
+					},
+					"130640003": {
+						"Id": "130640003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "记得星穹列车之前也有收到过吧？",
+						"NextMessageId": "130640004"
+					},
+					"130640004": {
+						"Id": "130640004",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Image": "SpriteOutput/Emoji/30003.png",
+						"Text": "[暗中观察]",
+						"NextMessageId": "130640005"
+					},
+					"130640005": {
+						"Id": "130640005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "什么包裹？这么神秘",
+						"NextMessageId": "130640006"
+					},
+					"130640006": {
+						"Id": "130640006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Text": "嗯，列车记录上之前有提到过。",
+						"NextMessageId": "130640007"
+					},
+					"130640007": {
+						"Id": "130640007",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Image": "SpriteOutput/Emoji/102001.png",
+						"Text": "[思考]",
+						"NextMessageId": "130640008"
+					},
+					"130640008": {
+						"Id": "130640008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "啊，是那个，我有印象啦",
+						"NextMessageId": "130640009"
+					},
+					"130640009": {
+						"Id": "130640009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "@{NICKNAME} 是好东西，你最好回来看看哦！",
+						"NextMessageId": "choice10"
+					},
+					"130640010": {
+						"Id": "130640010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "这是专程寄给我的礼物。",
+						"NextMessageId": "130640011"
+					},
+					"130640011": {
+						"Id": "130640011",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/103004.png",
+						"Text": "[吃瓜]",
+						"NextMessageId": "130640016"
+					},
+					"130640013": {
+						"Id": "130640013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "包裹上有写收件人是谁吗？是{NICKNAME}吗？",
+						"NextMessageId": "130640014"
+					},
+					"130640014": {
+						"Id": "130640014",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/103004.png",
+						"Text": "[吃瓜]",
+						"NextMessageId": "130640016"
+					},
+					"130640016": {
+						"Id": "130640016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "这是银河里其他无名客寄到列车的包裹",
+						"NextMessageId": "130640017"
+					},
+					"130640017": {
+						"Id": "130640017",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Image": "SpriteOutput/Emoji/102002.png",
+						"Text": "[笑]",
+						"NextMessageId": "130640018"
+					},
+					"130640018": {
+						"Id": "130640018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "@{NICKNAME} 我就知道你感兴趣",
+						"NextMessageId": "130640019"
+					},
+					"130640019": {
+						"Id": "130640019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "记得回列车看看哦",
+						"NextMessageId": "choice23"
+					},
+					"130640020": {
+						"Id": "130640020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "马上就回去了，已经到界域定锚了",
+						"NextMessageId": "130640021"
+					},
+					"130640021": {
+						"Id": "130640021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "我在列车等你帕～",
+						"NextMessageId": "130640022"
+					},
+					"130640022": {
+						"Id": "130640022",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/107006.png",
+						"Text": "[加班]"
+					},
+					"130640023": {
+						"Id": "130640023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "没问题，要是列车长也不明白呢？",
+						"NextMessageId": "130640024"
+					},
+					"130640024": {
+						"Id": "130640024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "哼哼，帕姆看你才是不明白啊",
+						"NextMessageId": "130640025"
+					},
+					"130640025": {
+						"Id": "130640025",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/20003.png",
+						"Text": "[不可以]"
+					},
+					"130640026": {
+						"Id": "130640026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "其实我早就看到包裹了，列车长的消息不及时啊",
+						"NextMessageId": "130640027"
+					},
+					"130640027": {
+						"Id": "130640027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "明明是{NICKNAME}乘客回复得太晚了",
+						"NextMessageId": "130640028"
+					},
+					"130640028": {
+						"Id": "130640028",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/20003.png",
+						"Text": "[不可以]"
+					},
+					"choice10": {
+						"Id": "choice10",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "我已经有数了",
+								"NextMessageId": "130640010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "收件人是谁？",
+								"NextMessageId": "130640013"
+							}
+						]
+					},
+					"choice23": {
+						"Id": "choice23",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "收到，正在路上了",
+								"NextMessageId": "130640020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "帕姆也不明白呢？",
+								"NextMessageId": "130640023"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "这消息都回晚了",
+								"NextMessageId": "130640026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13072": {
+		"Id": "13072",
+		"ContactId": "145",
+		"ParticpatingContactIds": [
+			"145"
+		],
+		"Sections": [
+			{
+				"Id": "1307200",
+				"StartingMessageId": "130720000",
+				"Messages": {
+					"130720000": {
+						"Id": "130720000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "145",
+						"Text": "您好，有没有兴趣赚点外快？",
+						"NextMessageId": "130720001"
+					},
+					"130720001": {
+						"Id": "130720001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "145",
+						"Text": "近期匹诺康尼事故频发，家族业务繁忙，现面向部分实力强劲的逐梦客招募临时警探，有迷因讨伐相关履历的报名者优先录用。",
+						"NextMessageId": "130720002"
+					},
+					"130720002": {
+						"Id": "130720002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "145",
+						"Text": "如有意向，请立刻联系本人，并前往朝露公馆参加现场面试，先到先得。"
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13073": {
+		"Id": "13073",
+		"ContactId": "135",
+		"ParticpatingContactIds": [
+			"135",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307300",
+				"StartingMessageId": "130730000",
+				"Messages": {
+					"130730000": {
+						"Id": "130730000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "亲爱的宾客，您已经体验了九场《小小哈努行动》的游戏挑战，超越了99.99％的玩家！",
+						"NextMessageId": "choice1"
+					},
+					"130730001": {
+						"Id": "130730001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "哇，不愧是我",
+						"NextMessageId": "130730002"
+					},
+					"130730002": {
+						"Id": "130730002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "哈哈，相信您一定是一位游戏领域大神",
+						"NextMessageId": "130730005"
+					},
+					"130730003": {
+						"Id": "130730003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "玩这么几关就超过99.99％的人了？",
+						"NextMessageId": "130730004"
+					},
+					"130730004": {
+						"Id": "130730004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "是啊，为了给玩家带来惊喜感，我们的游戏入口都安放在隐蔽的位置，用户触达率本身就很低。",
+						"NextMessageId": "130730005"
+					},
+					"130730005": {
+						"Id": "130730005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "对了，近期许多宾客向克劳克影业反应，称《小小哈努行动》故事书中的奇怪内容越来越多了",
+						"NextMessageId": "130730006"
+					},
+					"130730006": {
+						"Id": "130730006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "据影业所知，猎犬家系已经针对此事启动调查，可能会为持有这些书籍的宾客带来不便…如果您在今后发现类似问题，也请及时对故事书进行销毁处理",
+						"NextMessageId": "130730007"
+					},
+					"130730007": {
+						"Id": "130730007",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "检测到信号干扰",
+						"NextMessageId": "130730008"
+					},
+					"130730008": {
+						"Id": "130730008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "<color=#dbc291ff>但如果你足够*酷*，酷到宁愿身陷危险，也不愿放弃真相，就请记住他的故事吧</color>",
+						"NextMessageId": "choice14"
+					},
+					"130730009": {
+						"Id": "130730009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "？",
+						"NextMessageId": "130730010"
+					},
+					"130730010": {
+						"Id": "130730010",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "什么意思？",
+						"NextMessageId": "130730011"
+					},
+					"130730011": {
+						"Id": "130730011",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号已恢复",
+						"NextMessageId": "130730012"
+					},
+					"130730012": {
+						"Id": "130730012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "宾客，您还在吗？",
+						"NextMessageId": "130730013"
+					},
+					"130730013": {
+						"Id": "130730013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "总之，今后的梦中还会有更多《小小哈努行动》关卡等您发掘，请再接再厉，成为最优秀的「哈努兄弟」吧！"
+					},
+					"130730014": {
+						"Id": "130730014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "？",
+						"NextMessageId": "130730010"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "不愧是我",
+								"NextMessageId": "130730001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "这就99.99％了？",
+								"NextMessageId": "130730003"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "啊？",
+								"NextMessageId": "130730009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "什么？",
+								"NextMessageId": "130730014"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13074": {
+		"Id": "13074",
+		"ContactId": "146",
+		"ParticpatingContactIds": [
+			"146",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307400",
+				"StartingMessageId": "130740000",
+				"Messages": {
+					"130740000": {
+						"Id": "130740000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "尊敬的游客，根据猎犬家系的通知，近期克劳克影视乐园需要进行安全检查，大门进入临时封闭状态",
+						"NextMessageId": "130740001"
+					},
+					"130740001": {
+						"Id": "130740001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "但出于对游客服务需求的考虑，我们仍然会继续开放影城内的游艺项目「《钟表小子》外传拍摄体验」，您可以通过游戏的方式体验《仓鼠球骑士》与《哈努兄弟》的动画制作过程",
+						"NextMessageId": "choice2"
+					},
+					"130740002": {
+						"Id": "130740002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "不是说封闭了吗",
+						"NextMessageId": "130740003"
+					},
+					"130740003": {
+						"Id": "130740003",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "怎么还能玩游艺项目？",
+						"NextMessageId": "130740004"
+					},
+					"130740004": {
+						"Id": "130740004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "众所周知，克劳克影业并非家族创建的企业",
+						"NextMessageId": "130740005"
+					},
+					"130740005": {
+						"Id": "130740005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "应「钟表匠」董事长的经营理念，我们并不会因家族的要求就舍弃自己的利益",
+						"NextMessageId": "130740013"
+					},
+					"130740006": {
+						"Id": "130740006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "为什么推荐这个",
+						"NextMessageId": "130740007"
+					},
+					"130740007": {
+						"Id": "130740007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "是其他的不好玩吗？",
+						"NextMessageId": "130740008"
+					},
+					"130740008": {
+						"Id": "130740008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "因为该项目常年来居于克劳克影视乐园项目好评率第一，是我们的招牌项目",
+						"NextMessageId": "130740009"
+					},
+					"130740009": {
+						"Id": "130740009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "当然，也有其他的原因，这就不方便展开说明了",
+						"NextMessageId": "130740013"
+					},
+					"130740010": {
+						"Id": "130740010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "不玩",
+						"NextMessageId": "130740011"
+					},
+					"130740011": {
+						"Id": "130740011",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "我想玩别的",
+						"NextMessageId": "130740012"
+					},
+					"130740012": {
+						"Id": "130740012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "当然可以，但如果您在体验其他游艺项目时发生意外，克劳克影视乐园将不会对您的人身安全事故负责",
+						"NextMessageId": "130740013"
+					},
+					"130740013": {
+						"Id": "130740013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "展开介绍一下：通过游玩体验项目，您可以亲手制作出属于自己的胶片动画。如果您制作的内容足够优秀，甚至可以看到自己制作的作品登上大荧幕！",
+						"NextMessageId": "130740014"
+					},
+					"130740014": {
+						"Id": "130740014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "顺便提醒一下游客：您在使用克劳克影业设备生产的内容所有权和知识产权及相关权益归克劳克影业所有，克劳克影业有权保存、处置相关内容，相关内容取得的收益也将归属克劳克影业",
+						"NextMessageId": "choice20"
+					},
+					"130740015": {
+						"Id": "130740015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "这条款听着怪怪的",
+						"NextMessageId": "130740016"
+					},
+					"130740016": {
+						"Id": "130740016",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "不会有坑吧？",
+						"NextMessageId": "130740017"
+					},
+					"130740017": {
+						"Id": "130740017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "您多虑了，只是简单的知识版权保护措施而已",
+						"NextMessageId": "130740024"
+					},
+					"130740018": {
+						"Id": "130740018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "拍出来的东西都是你们的？",
+						"NextMessageId": "130740019"
+					},
+					"130740019": {
+						"Id": "130740019",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "这真的不是你们动画制作组偷懒的方法吗？",
+						"NextMessageId": "130740020"
+					},
+					"130740020": {
+						"Id": "130740020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "您误会了，我们很愿意与各位游客分享制作动画的成果，但也要保护自己影业的知识版权",
+						"NextMessageId": "130740021"
+					},
+					"130740021": {
+						"Id": "130740021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "如果您的动画上映，将会在结尾字幕得到长达1.5秒的特别鸣谢字幕提示",
+						"NextMessageId": "130740024"
+					},
+					"130740022": {
+						"Id": "130740022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "太长了，没看懂",
+						"NextMessageId": "130740023"
+					},
+					"130740023": {
+						"Id": "130740023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "抱歉，但相比于宇宙其他地方的版权保护条款——比如星际和平娱乐，我们的声明已经十分简要清晰了，他们的这类项目在游玩前都要弹出上万字呢",
+						"NextMessageId": "130740024"
+					},
+					"130740024": {
+						"Id": "130740024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "如果您感兴趣，可以来到克劳克影视乐园门口寻找相关工作人员，他是一位黄发的皮皮西人，会引导您进行项目游玩体验的",
+						"NextMessageId": "130740025"
+					},
+					"130740025": {
+						"Id": "130740025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "请记住打开美梦小镇大门的密码——哼，冲冲冲冲冲。",
+						"NextMessageId": "choice35"
+					},
+					"130740026": {
+						"Id": "130740026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "？",
+						"NextMessageId": "130740027"
+					},
+					"130740027": {
+						"Id": "130740027",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "您的好友 克劳克影业客服 已下线"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "不是说封闭了吗",
+								"NextMessageId": "130740002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "为啥推荐这个项目",
+								"NextMessageId": "130740006"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "我想玩其他的",
+								"NextMessageId": "130740010"
+							}
+						]
+					},
+					"choice20": {
+						"Id": "choice20",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "怎么听起来有点奇怪……",
+								"NextMessageId": "130740015"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "让我打白工？",
+								"NextMessageId": "130740018"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "看不懂",
+								"NextMessageId": "130740022"
+							}
+						]
+					},
+					"choice35": {
+						"Id": "choice35",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "啥？",
+								"NextMessageId": "130740026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13075": {
+		"Id": "13075",
+		"ContactId": "146",
+		"ParticpatingContactIds": [
+			"146"
+		],
+		"Sections": [
+			{
+				"Id": "1307500",
+				"StartingMessageId": "130750000",
+				"Messages": {
+					"130750000": {
+						"Id": "130750000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "尊敬的游客，我们这里得知您已经完成了大量影片的制作体验流程，克劳克影业十分感谢您的支持！",
+						"NextMessageId": "130750001"
+					},
+					"130750001": {
+						"Id": "130750001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "如果您之后还想继续体验动画拍摄，随时都可以在「续集模式」中进行体验",
+						"NextMessageId": "130750002"
+					},
+					"130750002": {
+						"Id": "130750002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "祝您干得开心！",
+						"NextMessageId": "130750003"
+					},
+					"130750003": {
+						"Id": "130750003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "对不起，打错字了，祝您玩得开心！"
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13076": {
+		"Id": "13076",
+		"ContactId": "13",
+		"ParticpatingContactIds": [
+			"8001",
+			"1004",
+			"1001"
+		],
+		"Sections": [
+			{
+				"Id": "1307600",
+				"StartingMessageId": "130760000",
+				"Messages": {
+					"130760000": {
+						"Id": "130760000",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "瓦尔特先生，我们这边调查告一段落",
+						"NextMessageId": "130760001"
+					},
+					"130760001": {
+						"Id": "130760001",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "你那边进展如何？",
+						"NextMessageId": "130760002"
+					},
+					"130760002": {
+						"Id": "130760002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "小有收获。我和巡海游侠一致认为，家族可能隐瞒了极其重要的信息。",
+						"NextMessageId": "130760003"
+					},
+					"130760003": {
+						"Id": "130760003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "我们现在正在前往朝露公馆。",
+						"NextMessageId": "130760004"
+					},
+					"130760004": {
+						"Id": "130760004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "是那个黄泉吗？砂金不是说她很危险……",
+						"NextMessageId": "130760005"
+					},
+					"130760005": {
+						"Id": "130760005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "我确认过了，她站在我们这边。",
+						"NextMessageId": "130760006"
+					},
+					"130760006": {
+						"Id": "130760006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "不必担心。请大家稍作等候，一旦有发现，我会及时同步。"
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"20001": {
 		"Id": "20001",
@@ -76129,7 +77864,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1307",
-						"Text": "这种占卜方法基于生命的一条法则，即我们无时无刻都处在过去的影响之下。",
+						"Text": "这种占卜方法基于生命的一条法则，即我们无时无刻不处在过去的影响之下。",
 						"NextMessageId": "201210007"
 					},
 					"201210007": {
@@ -79214,6 +80949,1250 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"20130": {
+		"Id": "20130",
+		"ContactId": "1301",
+		"ParticpatingContactIds": [
+			"1301",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013000",
+				"StartingMessageId": "201300000",
+				"Messages": {
+					"201300000": {
+						"Id": "201300000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "调饮新品「原地蒸发」，有兴趣来试试么？",
+						"NextMessageId": "choice1"
+					},
+					"201300001": {
+						"Id": "201300001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "试试就原地蒸发？",
+						"NextMessageId": "201300002"
+					},
+					"201300002": {
+						"Id": "201300002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "仅凭一杯调饮就让人原地蒸发，我可做不到这事",
+						"NextMessageId": "201300003"
+					},
+					"201300003": {
+						"Id": "201300003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "不过在味道和口感上保证不会让你失望",
+						"NextMessageId": "201300009"
+					},
+					"201300004": {
+						"Id": "201300004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "「原地蒸发」这个名字…像是不存在的调饮",
+						"NextMessageId": "201300005"
+					},
+					"201300005": {
+						"Id": "201300005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "你的形容和这杯调饮倒是有点适配",
+						"NextMessageId": "201300006"
+					},
+					"201300006": {
+						"Id": "201300006",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[震惊]",
+						"NextMessageId": "201300007"
+					},
+					"201300007": {
+						"Id": "201300007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "所以真是喝空气？？？",
+						"NextMessageId": "201300008"
+					},
+					"201300008": {
+						"Id": "201300008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "欺诈顾客可不是我的作风",
+						"NextMessageId": "201300009"
+					},
+					"201300009": {
+						"Id": "201300009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "匹诺康尼这种地方，能找到的调饮原料千奇百怪，有时候调出来的口味实在很难形容",
+						"NextMessageId": "201300010"
+					},
+					"201300010": {
+						"Id": "201300010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "在这杯「原地蒸发」诞生前，我已经不知道尝过多少口味「独特」的调饮了",
+						"NextMessageId": "choice12"
+					},
+					"201300011": {
+						"Id": "201300011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "请举例说说调饮口味的独特性",
+						"NextMessageId": "201300012"
+					},
+					"201300012": {
+						"Id": "201300012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "例子太多",
+						"NextMessageId": "201300013"
+					},
+					"201300013": {
+						"Id": "201300013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "最近的调饮里，「流亡与欢宴」和「隐匿的才华」这两款的口味算是典型，实在是让我印象深刻",
+						"NextMessageId": "choice18"
+					},
+					"201300014": {
+						"Id": "201300014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "说说「流亡与欢宴」",
+						"NextMessageId": "201300015"
+					},
+					"201300015": {
+						"Id": "201300015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "本想先调制华丽的味道，没想到工业糖浆太甜，其他口感全被甜味盖住了",
+						"NextMessageId": "201300016"
+					},
+					"201300016": {
+						"Id": "201300016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "后来想做些补救，就多加了些「苦涩」",
+						"NextMessageId": "201300017"
+					},
+					"201300017": {
+						"Id": "201300017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "没想到辅料这么猛…一口下去，我这条老狗的灵魂，也苦到流离失所了",
+						"NextMessageId": "201300022"
+					},
+					"201300018": {
+						"Id": "201300018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "说说「隐匿的才华」",
+						"NextMessageId": "201300019"
+					},
+					"201300019": {
+						"Id": "201300019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "这杯调饮最初的目的，是想让客人们在冰渣里找一抹酸甜",
+						"NextMessageId": "201300020"
+					},
+					"201300020": {
+						"Id": "201300020",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "类似玻璃渣里找糖吃？",
+						"NextMessageId": "201300021"
+					},
+					"201300021": {
+						"Id": "201300021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "差不多，但往往一杯下肚，酸味一点没找着，反倒跟喝了一杯冰水一样无趣",
+						"NextMessageId": "201300022"
+					},
+					"201300022": {
+						"Id": "201300022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "相比之下，「原地蒸发」的表现十分亮眼",
+						"NextMessageId": "201300023"
+					},
+					"201300023": {
+						"Id": "201300023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "以苏乐达为基底，加上名为「清甜空气」和「追念」的辅料",
+						"NextMessageId": "201300024"
+					},
+					"201300024": {
+						"Id": "201300024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "那种下口后美好和苦涩交织的错落感，就像在品尝平凡的一生",
+						"NextMessageId": "201300025"
+					},
+					"201300025": {
+						"Id": "201300025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "每当想要回味和抓住些什么的时候，却只剩下稍纵即逝的虚无",
+						"NextMessageId": "choice35"
+					},
+					"201300026": {
+						"Id": "201300026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "好好好，我这就来品味人生！",
+						"NextMessageId": "201300027"
+					},
+					"201300027": {
+						"Id": "201300027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "酒馆见"
+					},
+					"201300028": {
+						"Id": "201300028",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "这不就是我现在的人生！还要得着特地来吗",
+						"NextMessageId": "201300029"
+					},
+					"201300029": {
+						"Id": "201300029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "相信我一次，你不会失望的",
+						"NextMessageId": "201300030"
+					},
+					"201300030": {
+						"Id": "201300030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "酒馆见"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "试试就原地蒸发？",
+								"NextMessageId": "201300001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "像是不存在的调饮",
+								"NextMessageId": "201300004"
+							}
+						]
+					},
+					"choice12": {
+						"Id": "choice12",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "举例说说口味的独特性",
+								"NextMessageId": "201300011"
+							}
+						]
+					},
+					"choice18": {
+						"Id": "choice18",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "说说「流亡与欢宴」",
+								"NextMessageId": "201300014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "说说「隐匿的才华」",
+								"NextMessageId": "201300018"
+							}
+						]
+					},
+					"choice35": {
+						"Id": "choice35",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "好好好，我这就来！",
+								"NextMessageId": "201300026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "这不就是我的人生！",
+								"NextMessageId": "201300028"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"20131": {
+		"Id": "20131",
+		"ContactId": "1301",
+		"ParticpatingContactIds": [
+			"1301",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013100",
+				"StartingMessageId": "201310000",
+				"Messages": {
+					"201310000": {
+						"Id": "201310000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Image": "SpriteOutput/Emoji/20007.png",
+						"Text": "[疑惑]",
+						"NextMessageId": "201310001"
+					},
+					"201310001": {
+						"Id": "201310001",
+						"MessageType": "Sticker",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20007.png",
+						"Text": "[疑惑]",
+						"NextMessageId": "201310002"
+					},
+					"201310002": {
+						"Id": "201310002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "在什嗷嗷",
+						"NextMessageId": "choice3"
+					},
+					"201310003": {
+						"Id": "201310003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "你在说什么…嗷？",
+						"NextMessageId": "201310004"
+					},
+					"201310004": {
+						"Id": "201310004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "真不好意思，刚才手机被宠物乱按了一痛",
+						"NextMessageId": "201310005"
+					},
+					"201310005": {
+						"Id": "201310005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "桶",
+						"NextMessageId": "201310006"
+					},
+					"201310006": {
+						"Id": "201310006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "t",
+						"NextMessageId": "choice8"
+					},
+					"201310007": {
+						"Id": "201310007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "呃…手机还好吗？",
+						"NextMessageId": "201310008"
+					},
+					"201310008": {
+						"Id": "201310008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "少等亿虾",
+						"NextMessageId": "201310009"
+					},
+					"201310009": {
+						"Id": "201310009",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "您的好友 加拉赫 已下线",
+						"NextMessageId": "201310010"
+					},
+					"201310010": {
+						"Id": "201310010",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "您的好友 加拉赫 已上线",
+						"NextMessageId": "201310011"
+					},
+					"201310011": {
+						"Id": "201310011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "好了，现在应该没问题了，这只新宠物实在让我有点头藤",
+						"NextMessageId": "201310012"
+					},
+					"201310012": {
+						"Id": "201310012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "滕",
+						"NextMessageId": "201310013"
+					},
+					"201310013": {
+						"Id": "201310013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "藤",
+						"NextMessageId": "201310014"
+					},
+					"201310014": {
+						"Id": "201310014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "看来还是有问题",
+						"NextMessageId": "choice17"
+					},
+					"201310015": {
+						"Id": "201310015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "确实头藤",
+						"NextMessageId": "201310016"
+					},
+					"201310016": {
+						"Id": "201310016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "就这样吧",
+						"NextMessageId": "201310017"
+					},
+					"201310017": {
+						"Id": "201310017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "手机可以咻，但自己捡回来的宠物，无论如何都要好好对待才行啊",
+						"NextMessageId": "choice21"
+					},
+					"201310018": {
+						"Id": "201310018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "能按坏手机的宠物…想看看它的样子",
+						"NextMessageId": "201310019"
+					},
+					"201310019": {
+						"Id": "201310019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "好啊，等虾",
+						"NextMessageId": "201310020"
+					},
+					"201310020": {
+						"Id": "201310020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "…唉，手机的拍照功能椰损坏了，至于这只宠物…是个体型偏大，四肢发达头脑剪单的家伙，你就当它是个机械狗吧",
+						"NextMessageId": "201310024"
+					},
+					"201310021": {
+						"Id": "201310021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "能搞坏手机，说不定它智商很高",
+						"NextMessageId": "201310022"
+					},
+					"201310022": {
+						"Id": "201310022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "咬坏杀发、打碎新调制的饮品、把领带当成磨牙棒…经过几天磨合，我也算习惯了",
+						"NextMessageId": "201310023"
+					},
+					"201310023": {
+						"Id": "201310023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "它只是个体型偏大，四肢发达头脑剪单的家伙，把它当个机械狗就行",
+						"NextMessageId": "201310024"
+					},
+					"201310024": {
+						"Id": "201310024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "记不清哪天了，我在街头巡逻，在一条旧巷子里发现它在跟几只同类打假",
+						"NextMessageId": "201310025"
+					},
+					"201310025": {
+						"Id": "201310025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "本来也懒得管闲事，打架争地盘遮种事，实在太常见了",
+						"NextMessageId": "201310026"
+					},
+					"201310026": {
+						"Id": "201310026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "后来看到那家伙直愣愣地，只知道一直往前冲，在死亡边缘挣扎了几次，最后满身是伤打赢了，就干脆把它带回酒馆里养养",
+						"NextMessageId": "choice34"
+					},
+					"201310027": {
+						"Id": "201310027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "像是一部是机械狗为主角的电影剧本",
+						"NextMessageId": "201310028"
+					},
+					"201310028": {
+						"Id": "201310028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "如果那些电影公司有兴趣，我捡的这葱明家伙，说不定很快就成宠物明腥了",
+						"NextMessageId": "201310029"
+					},
+					"201310029": {
+						"Id": "201310029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "它除了有点爱捣乱，不管是学扑咬动作，宠物指令训练，可都机灵的很",
+						"NextMessageId": "201310030"
+					},
+					"201310030": {
+						"Id": "201310030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "怼了，我一直狠困扰，该给这家伙取个什么名字，总叫它「这家伙」，偶尔会被它故意无视",
+						"NextMessageId": "choice39"
+					},
+					"201310031": {
+						"Id": "201310031",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "宾果！因为它什么都能学会！不管是该学的还是不该学的",
+						"NextMessageId": "201310032"
+					},
+					"201310032": {
+						"Id": "201310032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "的确，这名字嗐挺适合它的，就用这个吧",
+						"NextMessageId": "201310038"
+					},
+					"201310033": {
+						"Id": "201310033",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "噼咔！取自噼咔白葡萄汽水！一看就是你养的狗",
+						"NextMessageId": "201310034"
+					},
+					"201310034": {
+						"Id": "201310034",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "这名字有创意！我喜欢，就这个吧",
+						"NextMessageId": "201310038"
+					},
+					"201310035": {
+						"Id": "201310035",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "这家伙",
+						"NextMessageId": "201310036"
+					},
+					"201310036": {
+						"Id": "201310036",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "……",
+						"NextMessageId": "201310037"
+					},
+					"201310037": {
+						"Id": "201310037",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "看来没有特别合适的啊…那就暂时先这么叫它吧",
+						"NextMessageId": "201310038"
+					},
+					"201310038": {
+						"Id": "201310038",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "起名的事谢谢你了，等我咻好手机，就给你拍它的照片"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "嗷？",
+								"NextMessageId": "201310003"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "呃…手机还好吗？",
+								"NextMessageId": "201310007"
+							}
+						]
+					},
+					"choice17": {
+						"Id": "choice17",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "确实头藤",
+								"NextMessageId": "201310015"
+							}
+						]
+					},
+					"choice21": {
+						"Id": "choice21",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "想看看它的样子",
+								"NextMessageId": "201310018"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "它说不定智商很高",
+								"NextMessageId": "201310021"
+							}
+						]
+					},
+					"choice34": {
+						"Id": "choice34",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "像是电影剧本",
+								"NextMessageId": "201310027"
+							}
+						]
+					},
+					"choice39": {
+						"Id": "choice39",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "宾果",
+								"NextMessageId": "201310031"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "噼咔",
+								"NextMessageId": "201310033"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "这家伙",
+								"NextMessageId": "201310035"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"20132": {
+		"Id": "20132",
+		"ContactId": "1301",
+		"ParticpatingContactIds": [
+			"1301",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013200",
+				"StartingMessageId": "201320000",
+				"Messages": {
+					"201320000": {
+						"Id": "201320000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "唉……",
+						"NextMessageId": "choice1"
+					},
+					"201320001": {
+						"Id": "201320001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "别叹气，会变老的",
+						"NextMessageId": "201320002"
+					},
+					"201320002": {
+						"Id": "201320002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "那不会，我已经是条老狗了",
+						"NextMessageId": "choice6"
+					},
+					"201320003": {
+						"Id": "201320003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "唉……",
+						"NextMessageId": "201320008"
+					},
+					"201320004": {
+						"Id": "201320004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "唉……",
+						"NextMessageId": "201320005"
+					},
+					"201320005": {
+						"Id": "201320005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "……",
+						"NextMessageId": "201320006"
+					},
+					"201320006": {
+						"Id": "201320006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "怎么？心情不好？",
+						"NextMessageId": "choice9"
+					},
+					"201320007": {
+						"Id": "201320007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我只是担心你心情不好",
+						"NextMessageId": "201320008"
+					},
+					"201320008": {
+						"Id": "201320008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "其实刚才又遇到一位客人，让我有些感慨",
+						"NextMessageId": "201320009"
+					},
+					"201320009": {
+						"Id": "201320009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "一个挂念着现实的人，却决心把自己置于梦境中，直至最后一刻",
+						"NextMessageId": "201320010"
+					},
+					"201320010": {
+						"Id": "201320010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "在匹诺康尼，这样的人太多了",
+						"NextMessageId": "choice16"
+					},
+					"201320011": {
+						"Id": "201320011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "可能现实太苦了，所以宁愿待在梦里",
+						"NextMessageId": "201320012"
+					},
+					"201320012": {
+						"Id": "201320012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "嗯，他患上了一种不明原因的绝症：身体会慢慢不受控制变得僵硬疼痛，直到连根手指也动不了",
+						"NextMessageId": "201320013"
+					},
+					"201320013": {
+						"Id": "201320013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "除非大脑彻底死亡，否则…",
+						"NextMessageId": "201320014"
+					},
+					"201320014": {
+						"Id": "201320014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "在梦里，这些痛苦就会消失吗？",
+						"NextMessageId": "201320015"
+					},
+					"201320015": {
+						"Id": "201320015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "会，不仅如此，还能让他赚够治疗和延长生命的费用",
+						"NextMessageId": "201320019"
+					},
+					"201320016": {
+						"Id": "201320016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "他选择了这样的活法，这也算是另一种人生",
+						"NextMessageId": "201320017"
+					},
+					"201320017": {
+						"Id": "201320017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "嗯，对于患上了原因不明绝症的他，选择梦境也是一种新生",
+						"NextMessageId": "201320018"
+					},
+					"201320018": {
+						"Id": "201320018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "只是梦境虽然能屏蔽现实的感官，让他暂时脱离肉体的痛苦，但对现实中亲人的挂念，和对孤独消亡的不安，却是实实在在的精神折磨",
+						"NextMessageId": "201320019"
+					},
+					"201320019": {
+						"Id": "201320019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "如果把一切归咎于病痛，美梦的存在的确是治愈的良药",
+						"NextMessageId": "201320020"
+					},
+					"201320020": {
+						"Id": "201320020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "但如果有一天，白日梦碎了，那么这些逃离现实困境的人，又该何去何从",
+						"NextMessageId": "choice29"
+					},
+					"201320021": {
+						"Id": "201320021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "是个深奥的话题…我脑子有点痒",
+						"NextMessageId": "201320022"
+					},
+					"201320022": {
+						"Id": "201320022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "呵呵，这就是深夜酒馆的魅力",
+						"NextMessageId": "201320023"
+					},
+					"201320023": {
+						"Id": "201320023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "随便找个角落竖起耳朵，都是耐人寻味的悲欢离合",
+						"NextMessageId": "choice36"
+					},
+					"201320024": {
+						"Id": "201320024",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "条条大路通罗马，船到桥头自然直！",
+						"NextMessageId": "201320025"
+					},
+					"201320025": {
+						"Id": "201320025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "呵呵，也对，生活中有太多可能性，就让该操心的人去操心吧",
+						"NextMessageId": "choice36"
+					},
+					"201320026": {
+						"Id": "201320026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "你今天好像特别健谈",
+						"NextMessageId": "201320027"
+					},
+					"201320027": {
+						"Id": "201320027",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "忍不住想问一句…你今天的饮料里，是不是加了很多苏乐达？",
+						"NextMessageId": "201320028"
+					},
+					"201320028": {
+						"Id": "201320028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "没有，没有",
+						"NextMessageId": "201320029"
+					},
+					"201320029": {
+						"Id": "201320029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "苏乐达那种东西，早就不适合我喽…"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "别叹气，会变老的",
+								"NextMessageId": "201320001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "唉……",
+								"NextMessageId": "201320004"
+							}
+						]
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "唉……",
+								"NextMessageId": "201320003"
+							}
+						]
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "我是担心你",
+								"NextMessageId": "201320007"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "可能现实太苦了",
+								"NextMessageId": "201320011"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "他选择了这样的活法",
+								"NextMessageId": "201320016"
+							}
+						]
+					},
+					"choice29": {
+						"Id": "choice29",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "深奥，想不明白",
+								"NextMessageId": "201320021"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "船到桥头自然直",
+								"NextMessageId": "201320024"
+							}
+						]
+					},
+					"choice36": {
+						"Id": "choice36",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "你今天特别健谈",
+								"NextMessageId": "201320026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"20133": {
+		"Id": "20133",
+		"ContactId": "1304",
+		"ParticpatingContactIds": [
+			"1304",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013300",
+				"StartingMessageId": "201330000",
+				"Messages": {
+					"201330000": {
+						"Id": "201330000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "你好啊，星核{F#小姐}{M#先生}！",
+						"NextMessageId": "choice1"
+					},
+					"201330001": {
+						"Id": "201330001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "怎么是你？！",
+						"NextMessageId": "201330003"
+					},
+					"201330002": {
+						"Id": "201330002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "你还活着？",
+						"NextMessageId": "201330003"
+					},
+					"201330003": {
+						"Id": "201330003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "可惜，我看不到你的回信",
+						"NextMessageId": "201330004"
+					},
+					"201330004": {
+						"Id": "201330004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "这是一条定时短信",
+						"NextMessageId": "201330005"
+					},
+					"201330005": {
+						"Id": "201330005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "在这条消息送达时，我们之间的斗争应该有了答案",
+						"NextMessageId": "201330006"
+					},
+					"201330006": {
+						"Id": "201330006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "如果一切顺利，或许还有见面的机会",
+						"NextMessageId": "201330007"
+					},
+					"201330007": {
+						"Id": "201330007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "但谁知道呢，我也会有不顺利的时候",
+						"NextMessageId": "201330008"
+					},
+					"201330008": {
+						"Id": "201330008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "先说再见吧，朋友，砂金向你表示感谢，并致以最崇高的敬意",
+						"NextMessageId": "201330009"
+					},
+					"201330009": {
+						"Id": "201330009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "祝旅途愉快",
+						"NextMessageId": "choice18"
+					},
+					"201330010": {
+						"Id": "201330010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "后会有期，希望还能再见",
+						"NextMessageId": "201330013"
+					},
+					"201330011": {
+						"Id": "201330011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "等你回来再一起算账",
+						"NextMessageId": "201330013"
+					},
+					"201330012": {
+						"Id": "201330012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "别回来了",
+						"NextMessageId": "201330013"
+					},
+					"201330013": {
+						"Id": "201330013",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "消息发送失败",
+						"NextMessageId": "201330014"
+					},
+					"201330014": {
+						"Id": "201330014",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "用户不在通信服务区内，请稍后再试"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "怎么是你？！",
+								"NextMessageId": "201330001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "你还活着？",
+								"NextMessageId": "201330002"
+							}
+						]
+					},
+					"choice18": {
+						"Id": "choice18",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "后会有期",
+								"NextMessageId": "201330010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "等你回来再算账",
+								"NextMessageId": "201330011"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "别回来了",
+								"NextMessageId": "201330012"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"20999": {
 		"Id": "20999",

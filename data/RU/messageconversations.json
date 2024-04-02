@@ -2543,7 +2543,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "19",
-						"Text": "Лол, ко мне только что подош{F#ла}{M#ёл} как{F#ая}{M#ой}-то сопля{F#чка}{M#к}.",
+						"Text": "Лол, ко мне только что {F#подошла какая-то соплячка}{M#подошёл какой-то сопляк}.",
 						"NextMessageId": "101090301"
 					},
 					"101090301": {
@@ -2591,7 +2591,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "20",
-						"Text": "{F#Та «соплячка»}{M#Тот «сопляк»} сражал{F#ась}{M#ся} со Зверем Судного дня, вообще-то.",
+						"Text": "{F#Та «соплячка»}{M#Тот «сопляк»} {F#сражалась}{M#сражался} со Зверем Судного дня, вообще-то.",
 						"NextMessageId": "101090307"
 					},
 					"101090307": {
@@ -29464,7 +29464,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "18",
-						"Text": "Поддерживаю! Рич Всезнайкин, истину глаголишь!",
+						"Text": "Поддерживаю! Рич Всезнайкин, истину глаголешь!",
 						"NextMessageId": "choice58"
 					},
 					"121900035": {
@@ -36829,62 +36829,6 @@
 						"Id": "130040000",
 						"MessageType": "Text",
 						"SenderType": "Player",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040001"
-					},
-					"130040001": {
-						"Id": "130040001",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040004"
-					},
-					"130040004": {
-						"Id": "130040004",
-						"MessageType": "Text",
-						"SenderType": "System",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040005"
-					},
-					"130040005": {
-						"Id": "130040005",
-						"MessageType": "Text",
-						"SenderType": "Player",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040006"
-					},
-					"130040006": {
-						"Id": "130040006",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040011"
-					},
-					"130040011": {
-						"Id": "130040011",
-						"MessageType": "Text",
-						"SenderType": "System",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040012"
-					},
-					"130040012": {
-						"Id": "130040012",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040013"
-					},
-					"130040013": {
-						"Id": "130040013",
-						"MessageType": "Text",
-						"SenderType": "PlayerAuto",
-						"SenderContactId": "8001",
-						"NextMessageId": "130040014"
-					},
-					"130040014": {
-						"Id": "130040014",
-						"MessageType": "Text",
-						"SenderType": "System",
 						"SenderContactId": "8001"
 					}
 				}
@@ -37252,7 +37196,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1002",
-						"Text": "Ты же не {F#поверила}{M#поверил} и не {F#перевела}{M#перевёл} кредиты?",
+						"Text": "Ты же не поверил{F#а} и не {F#перевела}{M#перевёл} кредиты?",
 						"NextMessageId": "choice16"
 					},
 					"130080010": {
@@ -38280,6 +38224,406 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"13021": {
+		"Id": "13021",
+		"ContactId": "13",
+		"ParticpatingContactIds": [
+			"1001",
+			"1004",
+			"1003",
+			"1002",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1302100",
+				"StartingMessageId": "130210000",
+				"Messages": {
+					"130210000": {
+						"Id": "130210000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "130210001"
+					},
+					"130210001": {
+						"Id": "130210001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "Ты ещё в отеле Мира грёз?",
+						"NextMessageId": "130210002"
+					},
+					"130210002": {
+						"Id": "130210002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "130210003"
+					},
+					"130210003": {
+						"Id": "130210003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}",
+						"NextMessageId": "130210004"
+					},
+					"130210004": {
+						"Id": "130210004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "Что у вас происходит?",
+						"NextMessageId": "130210005"
+					},
+					"130210005": {
+						"Id": "130210005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Мы разделились в зоне воспоминаний, но {NICKNAME} сейчас с той хранительницей памяти.",
+						"NextMessageId": "130210006"
+					},
+					"130210006": {
+						"Id": "130210006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "Я не могу уже.",
+						"NextMessageId": "130210007"
+					},
+					"130210007": {
+						"Id": "130210007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "Спасите.",
+						"NextMessageId": "130210008"
+					},
+					"130210008": {
+						"Id": "130210008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Март, успокойся.",
+						"NextMessageId": "130210009"
+					},
+					"130210009": {
+						"Id": "130210009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Text": "Мне выйти?",
+						"NextMessageId": "130210010"
+					},
+					"130210010": {
+						"Id": "130210010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Пока не надо.",
+						"NextMessageId": "130210011"
+					},
+					"130210011": {
+						"Id": "130210011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Text": "Хорошо. Как понадобится, скажи.",
+						"NextMessageId": "130210012"
+					},
+					"130210012": {
+						"Id": "130210012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "В отеле «Грёзы» в реальности всё спокойно, ничего толком не происходит.",
+						"NextMessageId": "130210013"
+					},
+					"130210013": {
+						"Id": "130210013",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "- История сообщений -",
+						"NextMessageId": "choice14"
+					},
+					"130210014": {
+						"Id": "130210014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Я закончил{F#а} с расследованием.",
+						"NextMessageId": "130210015"
+					},
+					"130210015": {
+						"Id": "130210015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Где собираемся?",
+						"NextMessageId": "130210018"
+					},
+					"130210016": {
+						"Id": "130210016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Я закончил{F#а} с расследованием.",
+						"NextMessageId": "130210017"
+					},
+					"130210017": {
+						"Id": "130210017",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Где вас искать?",
+						"NextMessageId": "130210018"
+					},
+					"130210018": {
+						"Id": "130210018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "{NICKNAME}!",
+						"NextMessageId": "130210019"
+					},
+					"130210019": {
+						"Id": "130210019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "{NICKNAME}, как хорошо, что ты в безопасности.",
+						"NextMessageId": "130210020"
+					},
+					"130210020": {
+						"Id": "130210020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "Она же ничего плохого не сделала, да?",
+						"NextMessageId": "130210021"
+					},
+					"130210021": {
+						"Id": "130210021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Сожалею о госпоже Светлячке...",
+						"NextMessageId": "130210022"
+					},
+					"130210022": {
+						"Id": "130210022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Семья изолировала участок, и сейчас мы на переговорах с представителями. Почти закончили.",
+						"NextMessageId": "130210023"
+					},
+					"130210023": {
+						"Id": "130210023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Давайте у статуи Часика встретимся."
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Я готов{F#а}.",
+								"NextMessageId": "130210014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Вы где?",
+								"NextMessageId": "130210016"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13022": {
+		"Id": "13022",
+		"ContactId": "1304",
+		"ParticpatingContactIds": [
+			"8001",
+			"1304"
+		],
+		"Sections": [
+			{
+				"Id": "1302200",
+				"StartingMessageId": "130220000",
+				"Messages": {
+					"130220000": {
+						"Id": "130220000",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Мы согласны с тобой сотрудничать.",
+						"NextMessageId": "130220001"
+					},
+					"130220001": {
+						"Id": "130220001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "О, как здорово. Не ожидал, что вы так быстро согласитесь.",
+						"NextMessageId": "130220002"
+					},
+					"130220002": {
+						"Id": "130220002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Теперь мы в одной лодке.",
+						"NextMessageId": "130220003"
+					},
+					"130220003": {
+						"Id": "130220003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Вот небольшой подарок! Надеюсь, мы сработаемся.",
+						"NextMessageId": "130220004"
+					},
+					"130220004": {
+						"Id": "130220004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Перевод] 100 000 кредитов",
+						"NextMessageId": "choice5"
+					},
+					"130220005": {
+						"Id": "130220005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Спасибо-спасибо.",
+						"NextMessageId": "130220006"
+					},
+					"130220006": {
+						"Id": "130220006",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Очень щедро, спасибо.",
+						"NextMessageId": "130220011"
+					},
+					"130220007": {
+						"Id": "130220007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Не стоило так тратиться.",
+						"NextMessageId": "130220008"
+					},
+					"130220008": {
+						"Id": "130220008",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "На этот раз я приму подарок, но больше так не делай.",
+						"NextMessageId": "130220011"
+					},
+					"130220009": {
+						"Id": "130220009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "И это всё?",
+						"NextMessageId": "130220010"
+					},
+					"130220010": {
+						"Id": "130220010",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Маловато будет. Давай ещё столько же, богатей. Покажи, на что ты способен!",
+						"NextMessageId": "130220011"
+					},
+					"130220011": {
+						"Id": "130220011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Ой, я промахнулся просто.",
+						"NextMessageId": "130220012"
+					},
+					"130220012": {
+						"Id": "130220012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Вот ещё добавлю, на удачу.",
+						"NextMessageId": "130220013"
+					},
+					"130220013": {
+						"Id": "130220013",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Перевод] 100 000 кредитов",
+						"NextMessageId": "130220014"
+					},
+					"130220014": {
+						"Id": "130220014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Как я и думал, Семья решила скрыть эту историю с Зарянкой. Так что пусть это останется между нами.",
+						"NextMessageId": "130220015"
+					},
+					"130220015": {
+						"Id": "130220015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "А вот насчёт второго убийства... Зависит от того, какие отговорки они для вас подготовили.",
+						"NextMessageId": "130220016"
+					},
+					"130220016": {
+						"Id": "130220016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "До встречи, и надеюсь, что вы достойно покажете себя!"
+					},
+					"choice5": {
+						"Id": "choice5",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Огромное спасибо!",
+								"NextMessageId": "130220005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Не стоило так тратиться.",
+								"NextMessageId": "130220007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "И это всё?",
+								"NextMessageId": "130220009"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"13024": {
 		"Id": "13024",
@@ -42258,7 +42602,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "Не знаю, я её даже не открывал{F#а}.",
+						"Text": "Не знаю, я даже не открывал{F#а}.",
 						"NextMessageId": "130510007"
 					},
 					"130510007": {
@@ -42300,7 +42644,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "Я её даже не читал{F#а}.",
+								"Text": "Я даже не читал{F#а}.",
 								"NextMessageId": "130510006"
 							}
 						]
@@ -42509,6 +42853,1459 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"13058": {
+		"Id": "13058",
+		"ContactId": "140",
+		"ParticpatingContactIds": [
+			"136",
+			"138",
+			"137",
+			"133",
+			"8001",
+			"139"
+		],
+		"Sections": [
+			{
+				"Id": "1305800",
+				"StartingMessageId": "130580000",
+				"Messages": {
+					"130580000": {
+						"Id": "130580000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "Гав! Будильник попался на удочку и решил выпить!",
+						"NextMessageId": "130580001"
+					},
+					"130580001": {
+						"Id": "130580001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "138",
+						"Text": "К счастью, я хорошо притворяюсь. А вы чуть всё не испортили.",
+						"NextMessageId": "130580002"
+					},
+					"130580002": {
+						"Id": "130580002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "Я хочу разозлить его! Я не сделал ничего плохого, гав!",
+						"NextMessageId": "130580003"
+					},
+					"130580003": {
+						"Id": "130580003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "137",
+						"Text": "Вот-вот! Это лишь кусок железа! Он считает, раз башка больше, то он важнее других? Ну-ну!",
+						"NextMessageId": "130580004"
+					},
+					"130580004": {
+						"Id": "130580004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "137",
+						"Text": "В лепёшку его! Раздавим его и будем пинать эту банку!",
+						"NextMessageId": "130580005"
+					},
+					"130580005": {
+						"Id": "130580005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "{NICKNAME} будет с нами.",
+						"NextMessageId": "130580006"
+					},
+					"130580006": {
+						"Id": "130580006",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Шивон добавила вас в групповой чат",
+						"NextMessageId": "130580007"
+					},
+					"130580007": {
+						"Id": "130580007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "Помоги нам, новый бармен!",
+						"NextMessageId": "130580008"
+					},
+					"130580008": {
+						"Id": "130580008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "137",
+						"Text": "Ха-ха! А потом как поступим? А то у меня руки чешутся!",
+						"NextMessageId": "130580009"
+					},
+					"130580009": {
+						"Id": "130580009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "138",
+						"Text": "Можем, вставим палочку для смешивания в отверстие под пружину, а потом хорошенько раскрутим?! Мне аж не терпится!",
+						"NextMessageId": "choice10"
+					},
+					"130580010": {
+						"Id": "130580010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Давно так хотел{F#а} сделать.",
+						"NextMessageId": "130580012"
+					},
+					"130580011": {
+						"Id": "130580011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Давно так хотел{F#а} сделать.",
+						"NextMessageId": "130580012"
+					},
+					"130580012": {
+						"Id": "130580012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "138",
+						"Text": "Ах! Если и позволять кому-то копаться в своей душе, то только вам!",
+						"NextMessageId": "130580013"
+					},
+					"130580013": {
+						"Id": "130580013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "139",
+						"Text": "Настало время мести. Ждём, когда откроется занавес...",
+						"NextMessageId": "130580014"
+					},
+					"130580014": {
+						"Id": "130580014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "Тот напиток на стойке сразу напротив. Я добавила кое-что особенное, поэтому напоить его на несколько часов вообще не проблема.",
+						"NextMessageId": "130580015"
+					},
+					"130580015": {
+						"Id": "130580015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "Надо проучить это непослушное дитя.",
+						"NextMessageId": "130580016"
+					},
+					"130580016": {
+						"Id": "130580016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "133",
+						"Text": "Помни, что ты находишься в мире его фантазий и можешь встретить препятствия. Действуй по обстоятельствам."
+					},
+					"choice10": {
+						"Id": "choice10",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Тоже думал{F#а} об этом.",
+								"NextMessageId": "130580010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Так и поступим.",
+								"NextMessageId": "130580011"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13060": {
+		"Id": "13060",
+		"ContactId": "136",
+		"ParticpatingContactIds": [
+			"136",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306000",
+				"StartingMessageId": "130600000",
+				"Messages": {
+					"130600000": {
+						"Id": "130600000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "Гав! А теперь у тебя есть время?",
+						"NextMessageId": "130600001"
+					},
+					"130600001": {
+						"Id": "130600001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "Ты обещал{F#а} встретиться с Шивон. Пойдём!",
+						"NextMessageId": "choice2"
+					},
+					"130600002": {
+						"Id": "130600002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Я {F#готова}{M#готов}.",
+						"NextMessageId": "130600003"
+					},
+					"130600003": {
+						"Id": "130600003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "136",
+						"Text": "Встретимся в баре!"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Вперёд!",
+								"NextMessageId": "130600002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13061": {
+		"Id": "13061",
+		"ContactId": "141",
+		"ParticpatingContactIds": [
+			"141",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306100",
+				"StartingMessageId": "130610000",
+				"Messages": {
+					"130610000": {
+						"Id": "130610000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Ну всё, дело закрыто.",
+						"NextMessageId": "130610001"
+					},
+					"130610001": {
+						"Id": "130610001",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "И-и-и?",
+						"NextMessageId": "130610002"
+					},
+					"130610002": {
+						"Id": "130610002",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Отрадно слышать.",
+						"NextMessageId": "130610003"
+					},
+					"130610003": {
+						"Id": "130610003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Та плёнка оказалась убийцей, а не жертвой.",
+						"NextMessageId": "130610004"
+					},
+					"130610004": {
+						"Id": "130610004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Он договорился с боссом о встрече под предлогом передачи улик и убил его.",
+						"NextMessageId": "130610005"
+					},
+					"130610005": {
+						"Id": "130610005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Но из-за того, что громко играла музыка, все вдруг подумали, что убийцей был босс.",
+						"NextMessageId": "130610006"
+					},
+					"130610006": {
+						"Id": "130610006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Всё же аудиоплёнки на Пенаконии на вид все одинаковые, только звуком отличаются.",
+						"NextMessageId": "130610007"
+					},
+					"130610007": {
+						"Id": "130610007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Ну вот он и установил в себя плёнку, тем самым похитив чужую личность и звук, а потом скрылся с места преступления.",
+						"NextMessageId": "130610008"
+					},
+					"130610008": {
+						"Id": "130610008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Основной зацепкой стало то, что плёнка в нём была отредактирована.",
+						"NextMessageId": "choice9"
+					},
+					"130610009": {
+						"Id": "130610009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Интересно, что у босса на него было...",
+						"NextMessageId": "130610010"
+					},
+					"130610010": {
+						"Id": "130610010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Ой, даже не думай об этом.",
+						"NextMessageId": "130610013"
+					},
+					"130610011": {
+						"Id": "130610011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Они ведь всего лишь аудиоплёнки! Зачем же так жестоко?..",
+						"NextMessageId": "130610012"
+					},
+					"130610012": {
+						"Id": "130610012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Поэтому и нужны мы.",
+						"NextMessageId": "130610013"
+					},
+					"130610013": {
+						"Id": "130610013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "И всё благодаря тебе, иначе правды нам не видать как своих ушей.",
+						"NextMessageId": "130610014"
+					},
+					"130610014": {
+						"Id": "130610014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Буду рад поработать вместе и в другой раз."
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "А что за улики у босса?",
+								"NextMessageId": "130610009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Какая злая плёнка...",
+								"NextMessageId": "130610011"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13062": {
+		"Id": "13062",
+		"ContactId": "141",
+		"ParticpatingContactIds": [
+			"141",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306200",
+				"StartingMessageId": "130620000",
+				"Messages": {
+					"130620000": {
+						"Id": "130620000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Мне жаль, всё же не вышло найти убийцу.",
+						"NextMessageId": "130620001"
+					},
+					"130620001": {
+						"Id": "130620001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "На месте преступления было слишком мало улик. Я собираюсь расследовать то, чем занималась жертва перед смертью.",
+						"NextMessageId": "choice2"
+					},
+					"130620002": {
+						"Id": "130620002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Дай знать, как разгадаешь загадку, отметим это событие вместе.",
+						"NextMessageId": "130620003"
+					},
+					"130620003": {
+						"Id": "130620003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Ладно, договорились."
+					},
+					"130620004": {
+						"Id": "130620004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Осторожнее с расследованием, этот преступник такой жестокий...",
+						"NextMessageId": "130620005"
+					},
+					"130620005": {
+						"Id": "130620005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Обязательно. Спасибо за заботу."
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Буду ждать хороших новостей.",
+								"NextMessageId": "130620002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Осторожнее там.",
+								"NextMessageId": "130620004"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13063": {
+		"Id": "13063",
+		"ContactId": "141",
+		"ParticpatingContactIds": [
+			"141",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1306300",
+				"StartingMessageId": "130630000",
+				"Messages": {
+					"130630000": {
+						"Id": "130630000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Спасибо за совет, {F#подруга}{M#дружище}.",
+						"NextMessageId": "130630001"
+					},
+					"130630001": {
+						"Id": "130630001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Мне никогда раньше не жилось так легко и свободно.",
+						"NextMessageId": "130630002"
+					},
+					"130630002": {
+						"Id": "130630002",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Чего такое? Я пропустил{F#а} серию?",
+						"NextMessageId": "130630003"
+					},
+					"130630003": {
+						"Id": "130630003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "После того, что ты мне сказал{F#а}, я вдруг понял: а вообще-то у меня нет таланта для расследований.",
+						"NextMessageId": "choice4"
+					},
+					"130630004": {
+						"Id": "130630004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "И что ты хочешь этим сказать?",
+						"NextMessageId": "130630005"
+					},
+					"130630005": {
+						"Id": "130630005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Я завязываю с этой работой, {F#подруга}{M#дружище}.",
+						"NextMessageId": "130630006"
+					},
+					"130630006": {
+						"Id": "130630006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "141",
+						"Text": "Прощай! Я отправляюсь отдыхать в Миг сумерек.",
+						"NextMessageId": "130630007"
+					},
+					"130630007": {
+						"Id": "130630007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "???"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "И что ты хочешь сказать?",
+								"NextMessageId": "130630004"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13064": {
+		"Id": "13064",
+		"ContactId": "13",
+		"ParticpatingContactIds": [
+			"1000",
+			"1004",
+			"1001",
+			"1002",
+			"8001",
+			"1003"
+		],
+		"Sections": [
+			{
+				"Id": "1306400",
+				"StartingMessageId": "130640000",
+				"Messages": {
+					"130640000": {
+						"Id": "130640000",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10020.png",
+						"NextMessageId": "130640001"
+					},
+					"130640001": {
+						"Id": "130640001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "Пришла посылка на экспресс.",
+						"NextMessageId": "130640002"
+					},
+					"130640002": {
+						"Id": "130640002",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/107002.png",
+						"Text": "[Подарок]",
+						"NextMessageId": "130640003"
+					},
+					"130640003": {
+						"Id": "130640003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "Раньше ведь тоже что-то приходило, да?",
+						"NextMessageId": "130640004"
+					},
+					"130640004": {
+						"Id": "130640004",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Image": "SpriteOutput/Emoji/30003.png",
+						"Text": "[Папарацци]",
+						"NextMessageId": "130640005"
+					},
+					"130640005": {
+						"Id": "130640005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "Что за посылка? Как загадочно!",
+						"NextMessageId": "130640006"
+					},
+					"130640006": {
+						"Id": "130640006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Text": "Да, в записях экспресса упоминается подобное.",
+						"NextMessageId": "130640007"
+					},
+					"130640007": {
+						"Id": "130640007",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1002",
+						"Image": "SpriteOutput/Emoji/102001.png",
+						"Text": "[В раздумьях]",
+						"NextMessageId": "130640008"
+					},
+					"130640008": {
+						"Id": "130640008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "А, это! Припоминаю.",
+						"NextMessageId": "130640009"
+					},
+					"130640009": {
+						"Id": "130640009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "@{NICKNAME}, это кое-что классное, возвращайся и посмотри сам{F#а}!",
+						"NextMessageId": "choice10"
+					},
+					"130640010": {
+						"Id": "130640010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Это подарок для меня.",
+						"NextMessageId": "130640011"
+					},
+					"130640011": {
+						"Id": "130640011",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/103004.png",
+						"Text": "[Арбузик]",
+						"NextMessageId": "130640016"
+					},
+					"130640013": {
+						"Id": "130640013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Там написано, кто получатель? {NICKNAME}?",
+						"NextMessageId": "130640014"
+					},
+					"130640014": {
+						"Id": "130640014",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/103004.png",
+						"Text": "[Арбузик]",
+						"NextMessageId": "130640016"
+					},
+					"130640016": {
+						"Id": "130640016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Эта посылка отправлена на экспресс кем-то из Безымянных.",
+						"NextMessageId": "130640017"
+					},
+					"130640017": {
+						"Id": "130640017",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Image": "SpriteOutput/Emoji/102002.png",
+						"Text": "[Улыбка]",
+						"NextMessageId": "130640018"
+					},
+					"130640018": {
+						"Id": "130640018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "@{NICKNAME}, так и знала, что ты заинтересуешься.",
+						"NextMessageId": "130640019"
+					},
+					"130640019": {
+						"Id": "130640019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1003",
+						"Text": "Не забудь посмотреть, что там, как вернёшься.",
+						"NextMessageId": "choice23"
+					},
+					"130640020": {
+						"Id": "130640020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Скоро буду на экспрессе. Я уже у пространственного якоря.",
+						"NextMessageId": "130640021"
+					},
+					"130640021": {
+						"Id": "130640021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "Пом-Пом будет ждать~ Пом!",
+						"NextMessageId": "130640022"
+					},
+					"130640022": {
+						"Id": "130640022",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/107006.png",
+						"Text": "[Опять работа]"
+					},
+					"130640023": {
+						"Id": "130640023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ладно! А проводник тоже не в курсе?",
+						"NextMessageId": "130640024"
+					},
+					"130640024": {
+						"Id": "130640024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "Пф-ф-ф! Пом-Пом думает, что здесь только ты не в курсе.",
+						"NextMessageId": "130640025"
+					},
+					"130640025": {
+						"Id": "130640025",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/20003.png",
+						"Text": "[Нет-нет]"
+					},
+					"130640026": {
+						"Id": "130640026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Да я уже видел{F#а} посылку. Опаздываешь с сообщениями, проводник.",
+						"NextMessageId": "130640027"
+					},
+					"130640027": {
+						"Id": "130640027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Text": "Это ты с ответами опаздываешь, пассажир {NICKNAME}!",
+						"NextMessageId": "130640028"
+					},
+					"130640028": {
+						"Id": "130640028",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1000",
+						"Image": "SpriteOutput/Emoji/20003.png",
+						"Text": "[Нет-нет]"
+					},
+					"choice10": {
+						"Id": "choice10",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Да, я знаю, что там.",
+								"NextMessageId": "130640010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "А получателем кто указан?",
+								"NextMessageId": "130640013"
+							}
+						]
+					},
+					"choice23": {
+						"Id": "choice23",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ок, скоро буду.",
+								"NextMessageId": "130640020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Пом-Пом тоже не в курсе?",
+								"NextMessageId": "130640023"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Опаздываешь с сообщениями.",
+								"NextMessageId": "130640026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13072": {
+		"Id": "13072",
+		"ContactId": "145",
+		"ParticpatingContactIds": [
+			"145"
+		],
+		"Sections": [
+			{
+				"Id": "1307200",
+				"StartingMessageId": "130720000",
+				"Messages": {
+					"130720000": {
+						"Id": "130720000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "145",
+						"Text": "Здравствуйте. Не хотите ли подзаработать?",
+						"NextMessageId": "130720001"
+					},
+					"130720001": {
+						"Id": "130720001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "145",
+						"Text": "В связи с недавними происшествиями на Пенаконии и занятостью Семьи мы сейчас ищем временного детектива среди способных искателей грёз. Предпочтение отдаём кандидатам, имеющим опыт борьбы с мемами.",
+						"NextMessageId": "130720002"
+					},
+					"130720002": {
+						"Id": "130720002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "145",
+						"Text": "Если вас это заинтересовало, свяжитесь со мной и затем отправляйтесь в Резиденцию утренней росы на собеседование. Приём проводится в порядке живой очереди."
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13073": {
+		"Id": "13073",
+		"ContactId": "135",
+		"ParticpatingContactIds": [
+			"135",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307300",
+				"StartingMessageId": "130730000",
+				"Messages": {
+					"130730000": {
+						"Id": "130730000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "{F#Дорогая гостья}{M#Дорогой гость}, вы прошли девять испытаний «Приключений Хану», превзойдя 99,99% игроков!",
+						"NextMessageId": "choice1"
+					},
+					"130730001": {
+						"Id": "130730001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ай да я, ай да молодец.",
+						"NextMessageId": "130730002"
+					},
+					"130730002": {
+						"Id": "130730002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "Ха-ха, вы действительно гуру этой игры.",
+						"NextMessageId": "130730005"
+					},
+					"130730003": {
+						"Id": "130730003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Я {F#прошла}{M#прошёл} всего пару уровней и уже обогнал{F#а} 99,99% игроков?",
+						"NextMessageId": "130730004"
+					},
+					"130730004": {
+						"Id": "130730004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "Ага. Чтобы удивить игроков, мы разместили вход в игру в укромном месте, поэтому мало кто его находит.",
+						"NextMessageId": "130730005"
+					},
+					"130730005": {
+						"Id": "130730005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "Кстати, сейчас многие гости нам сообщают, что в «Приключениях Хану» появляется всё больше и больше странностей.",
+						"NextMessageId": "130730006"
+					},
+					"130730006": {
+						"Id": "130730006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "Насколько нам известно, клан Гончих начал расследование, которое, возможно, доставит неудобства владельцам книг... Если вы столкнётесь с чем-то подобным, будьте добры уничтожить эти книги.",
+						"NextMessageId": "130730007"
+					},
+					"130730007": {
+						"Id": "130730007",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Обнаружены помехи сигнала.",
+						"NextMessageId": "130730008"
+					},
+					"130730008": {
+						"Id": "130730008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "<color=#dbc291ff>Но если вы настолько *суровы*, что опасности вас не пугают, и хотите узнать правду, то запомните его историю.</color>",
+						"NextMessageId": "choice14"
+					},
+					"130730009": {
+						"Id": "130730009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "?",
+						"NextMessageId": "130730010"
+					},
+					"130730010": {
+						"Id": "130730010",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Что это значит?",
+						"NextMessageId": "130730011"
+					},
+					"130730011": {
+						"Id": "130730011",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Сигнал восстановлен.",
+						"NextMessageId": "130730012"
+					},
+					"130730012": {
+						"Id": "130730012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "Гость{F#я}, вы ещё здесь?",
+						"NextMessageId": "130730013"
+					},
+					"130730013": {
+						"Id": "130730013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "135",
+						"Text": "Итак, в дальнейшем вас ждёт ещё больше уровней «Приключений Хану». Продолжайте в том же духе и становитесь лучшим «братцем Хану»!"
+					},
+					"130730014": {
+						"Id": "130730014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "?",
+						"NextMessageId": "130730010"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Вот это я молодец.",
+								"NextMessageId": "130730001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Аж 99,99%?",
+								"NextMessageId": "130730003"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Чего?",
+								"NextMessageId": "130730009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Чего?",
+								"NextMessageId": "130730014"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13074": {
+		"Id": "13074",
+		"ContactId": "146",
+		"ParticpatingContactIds": [
+			"146",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307400",
+				"StartingMessageId": "130740000",
+				"Messages": {
+					"130740000": {
+						"Id": "130740000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "{F#Уважаемая гостья}{M#Уважаемый гость}, клан Гончих уведомляет, что в Тематическом парке Студии «Часы» проводится проверка безопасности. Главный вход временно закрыт.",
+						"NextMessageId": "130740001"
+					},
+					"130740001": {
+						"Id": "130740001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Однако ради обеспечения комфорта посетителей кинотеатр продолжит развлекательную интерактивную программу «Спин-офф истории про Часика \"Съёмка кино\"». Вы можете в игровой форме узнать о процессе создания мультфильмов «Хомяк-рыцарь» и «Братец Хану».",
+						"NextMessageId": "choice2"
+					},
+					"130740002": {
+						"Id": "130740002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "А разве не сказали, что закрыто?",
+						"NextMessageId": "130740003"
+					},
+					"130740003": {
+						"Id": "130740003",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Почему тогда развлекательная программа продолжается?",
+						"NextMessageId": "130740004"
+					},
+					"130740004": {
+						"Id": "130740004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Как вам, наверное, известно, Студия «Часы» создана не Семьёй.",
+						"NextMessageId": "130740005"
+					},
+					"130740005": {
+						"Id": "130740005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Это бизнес-концепция председателя совета директоров Часовщика, и мы не собираемся отказываться от выгоды в интересах Семьи.",
+						"NextMessageId": "130740013"
+					},
+					"130740006": {
+						"Id": "130740006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "А почему именно её?",
+						"NextMessageId": "130740007"
+					},
+					"130740007": {
+						"Id": "130740007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Остальные не интересные, получается?",
+						"NextMessageId": "130740008"
+					},
+					"130740008": {
+						"Id": "130740008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Дело в том, что именно эта программа каждый год получает лучшие оценки. Настоящий хит Тематического парка Студии «Часы».",
+						"NextMessageId": "130740009"
+					},
+					"130740009": {
+						"Id": "130740009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Конечно, есть и другие причины, но о них придётся долго рассказывать.",
+						"NextMessageId": "130740013"
+					},
+					"130740010": {
+						"Id": "130740010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Мне не нравится.",
+						"NextMessageId": "130740011"
+					},
+					"130740011": {
+						"Id": "130740011",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Хочу что-нибудь другое.",
+						"NextMessageId": "130740012"
+					},
+					"130740012": {
+						"Id": "130740012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Конечно, как хотите, но имейте в виду, если в ходе другой программы случится нечто непредвиденное, Тематический парк Студии «Часы» не возьмёт на себя ответственность за вашу личную безопасность.",
+						"NextMessageId": "130740013"
+					},
+					"130740013": {
+						"Id": "130740013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Вот подробности: в ходе игровой программы вы сможете самостоятельно создать анимационный фильм. Если справитесь хорошо, то сможете увидеть его на большом экране!",
+						"NextMessageId": "130740014"
+					},
+					"130740014": {
+						"Id": "130740014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Напоминаем, что права на контент, созданный вами на оборудовании Студии «Часы», а также право интеллектуальной собственности и смежные права полностью принадлежат Студии «Часы». Студия «Часы» имеет право хранить соответствующий контент и распоряжаться им по своему усмотрению. Прибыль, полученная от соответствующего контента, также принадлежит Студии «Часы».",
+						"NextMessageId": "choice20"
+					},
+					"130740015": {
+						"Id": "130740015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Странные условия.",
+						"NextMessageId": "130740016"
+					},
+					"130740016": {
+						"Id": "130740016",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Неужели нет подводных камней?",
+						"NextMessageId": "130740017"
+					},
+					"130740017": {
+						"Id": "130740017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Не беспокойтесь, это всего лишь стандартные меры по защите авторских прав.",
+						"NextMessageId": "130740024"
+					},
+					"130740018": {
+						"Id": "130740018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Всё, что я сниму, будет принадлежать вам?",
+						"NextMessageId": "130740019"
+					},
+					"130740019": {
+						"Id": "130740019",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Ваши аниматоры таким способом отлынивают от работы?",
+						"NextMessageId": "130740020"
+					},
+					"130740020": {
+						"Id": "130740020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Вы всё не так поняли. Мы счастливы разделить плоды работы над созданием мультфильмов с нашими гостями, но нам также нужно защитить своё право интеллектуальной собственности.",
+						"NextMessageId": "130740021"
+					},
+					"130740021": {
+						"Id": "130740021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Если ваш мультфильм выйдет в прокат, то в конечных титрах появится особая благодарность на полторы секунды.",
+						"NextMessageId": "130740024"
+					},
+					"130740022": {
+						"Id": "130740022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Слишком много текста, я ничего не понимаю.",
+						"NextMessageId": "130740023"
+					},
+					"130740023": {
+						"Id": "130740023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Извините, но по сравнению с другими местами во вселенной, положения нашего договора о защите авторских прав изложены коротко и ясно. Видели бы вы, сколько текста предлагают прочитать перед игрой «Развлечения межзвёздного мира»!",
+						"NextMessageId": "130740024"
+					},
+					"130740024": {
+						"Id": "130740024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Если вам интересно, подходите ко входу в Тематический парк Студии «Часы», и наш сотрудник объяснит, как участвовать в интерактивной программе. Он - пепеши со светлыми волосами.",
+						"NextMessageId": "130740025"
+					},
+					"130740025": {
+						"Id": "130740025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Запомните пароль для входа в Грёзавиль: «Хм! Вперё-о-о-од!»",
+						"NextMessageId": "choice35"
+					},
+					"130740026": {
+						"Id": "130740026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "?",
+						"NextMessageId": "130740027"
+					},
+					"130740027": {
+						"Id": "130740027",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Пользователь Служба поддержки Студии «Часы» не в сети."
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "А разве не сказали, что закрыто?",
+								"NextMessageId": "130740002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Почему вы рекомендуете эту программу?",
+								"NextMessageId": "130740006"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Хочу попробовать что-нибудь другое.",
+								"NextMessageId": "130740010"
+							}
+						]
+					},
+					"choice20": {
+						"Id": "choice20",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Как-то подозрительно звучит...",
+								"NextMessageId": "130740015"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Склоняете меня к бесплатной работе?",
+								"NextMessageId": "130740018"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Ничего не понимаю.",
+								"NextMessageId": "130740022"
+							}
+						]
+					},
+					"choice35": {
+						"Id": "choice35",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Чё?",
+								"NextMessageId": "130740026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13075": {
+		"Id": "13075",
+		"ContactId": "146",
+		"ParticpatingContactIds": [
+			"146"
+		],
+		"Sections": [
+			{
+				"Id": "1307500",
+				"StartingMessageId": "130750000",
+				"Messages": {
+					"130750000": {
+						"Id": "130750000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "{F#Уважаемая посетительница}{M#Уважаемый посетитель}, нам стало известно, что вы завершили большую часть фильма. Студия «Часы» горячо благодарит вас за поддержку!",
+						"NextMessageId": "130750001"
+					},
+					"130750001": {
+						"Id": "130750001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Если вы и дальше хотите заниматься производством мультфильмов, то в любое время можете перейти в Режим продолжения.",
+						"NextMessageId": "130750002"
+					},
+					"130750002": {
+						"Id": "130750002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Желаем хорошо пронести бремя!",
+						"NextMessageId": "130750003"
+					},
+					"130750003": {
+						"Id": "130750003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "146",
+						"Text": "Простите, опечатка. Желаем хорошо провести время!"
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"13076": {
+		"Id": "13076",
+		"ContactId": "13",
+		"ParticpatingContactIds": [
+			"8001",
+			"1004",
+			"1001"
+		],
+		"Sections": [
+			{
+				"Id": "1307600",
+				"StartingMessageId": "130760000",
+				"Messages": {
+					"130760000": {
+						"Id": "130760000",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Господин Вельт, наше расследование здесь закончилось.",
+						"NextMessageId": "130760001"
+					},
+					"130760001": {
+						"Id": "130760001",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Как там? Есть новости?",
+						"NextMessageId": "130760002"
+					},
+					"130760002": {
+						"Id": "130760002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "Нормально, мы с Галактическим рейнджером считаем, что Семья скрывает что-то важное.",
+						"NextMessageId": "130760003"
+					},
+					"130760003": {
+						"Id": "130760003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "Сейчас мы направляемся в Резиденцию утренней росы.",
+						"NextMessageId": "130760004"
+					},
+					"130760004": {
+						"Id": "130760004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1001",
+						"Text": "Ахерон, да? Авантюрин предупреждал, что она опасна...",
+						"NextMessageId": "130760005"
+					},
+					"130760005": {
+						"Id": "130760005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "Она на нашей стороне, проверено.",
+						"NextMessageId": "130760006"
+					},
+					"130760006": {
+						"Id": "130760006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1004",
+						"Text": "Не нужно беспокоиться. Потерпите немного. Дам вам знать, если найду что-нибудь."
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"20001": {
 		"Id": "20001",
@@ -66873,7 +68670,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1208",
-						"Text": "Травяной чай с козьим молоком имеет сладкий вкус и приятный запах, отлично подходит для моделирования навигационных маршрутов.",
+						"Text": "Травяной чай с молоком дутой козы имеет сладкий вкус и приятный запах, отлично подходит для моделирования навигационных маршрутов.",
 						"NextMessageId": "200900018"
 					},
 					"200900018": {
@@ -67922,7 +69719,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "Козье молоко на пару!",
+						"Text": "Горячее молоко дутой козы!",
 						"NextMessageId": "200930017"
 					},
 					"200930017": {
@@ -67930,7 +69727,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1002",
-						"Text": "Я сразу догадался, что это козье молоко на пару.",
+						"Text": "Я сразу догадался, что это горячее молоко дутой козы.",
 						"NextMessageId": "200930020"
 					},
 					"200930018": {
@@ -68066,7 +69863,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "Я за козье молоко на пару!",
+						"Text": "Горячее молоко дутой козы!",
 						"NextMessageId": "200930035"
 					},
 					"200930035": {
@@ -68162,7 +69959,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1002",
-						"Text": "Называется «Йогурт-пребиотик из козьего молока».",
+						"Text": "Называется «молочное утешение для живота».",
 						"NextMessageId": "200930047"
 					},
 					"200930047": {
@@ -68226,7 +70023,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "Козье молоко на пару.",
+								"Text": "Горячее молоко дутой козы",
 								"NextMessageId": "200930016"
 							},
 							{
@@ -68269,7 +70066,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "Козье молоко на пару.",
+								"Text": "Горячее молоко дутой козы",
 								"NextMessageId": "200930034"
 							},
 							{
@@ -76733,7 +78530,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1307",
-						"Text": "Что-то навеяло. У меня кончились сосновые благовония, которые я использую для предсказаний, и знакомый парфюмер подарил мне новую коробочку. Когда я зажгла благовония, то поняла, что их запах кажется очень знакомым.",
+						"Text": "Что-то навеяло. У меня кончились сосновые благовония, которые я использую для предсказаний, и знакомый парфюмер подарил мне новую коробочку. Когда я зажгла благовония, то поняла, что запах кажется очень знакомым.",
 						"NextMessageId": "201230005"
 					},
 					"201230005": {
@@ -79150,6 +80947,1250 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"20130": {
+		"Id": "20130",
+		"ContactId": "1301",
+		"ParticpatingContactIds": [
+			"1301",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013000",
+				"StartingMessageId": "201300000",
+				"Messages": {
+					"201300000": {
+						"Id": "201300000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Хочешь попробовать, что я намешал? Я назвал новый напиток «Испарение на месте».",
+						"NextMessageId": "choice1"
+					},
+					"201300001": {
+						"Id": "201300001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Он меня на месте испарит, когда попробую?",
+						"NextMessageId": "201300002"
+					},
+					"201300002": {
+						"Id": "201300002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Эх, как бы мне хотелось, чтобы люди испарялись, лишь отхлебнув моего коктейля.",
+						"NextMessageId": "201300003"
+					},
+					"201300003": {
+						"Id": "201300003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Но уверен, что ни вкус, ни текстура тебя не разочаруют.",
+						"NextMessageId": "201300009"
+					},
+					"201300004": {
+						"Id": "201300004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "«Испарение на месте»... Не похоже на название существующего коктейля.",
+						"NextMessageId": "201300005"
+					},
+					"201300005": {
+						"Id": "201300005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Ну вообще твоё описание очень подходит этому напитку.",
+						"NextMessageId": "201300006"
+					},
+					"201300006": {
+						"Id": "201300006",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20008.png",
+						"Text": "[Шок]",
+						"NextMessageId": "201300007"
+					},
+					"201300007": {
+						"Id": "201300007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Так ты правда предлагаешь воздух пить???",
+						"NextMessageId": "201300008"
+					},
+					"201300008": {
+						"Id": "201300008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Ну нет, своих гостей я не обманываю.",
+						"NextMessageId": "201300009"
+					},
+					"201300009": {
+						"Id": "201300009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "На Пенаконии каких только сочетаний в напитках не найдёшь... И иногда получившийся вкус невероятно сложно описать.",
+						"NextMessageId": "201300010"
+					},
+					"201300010": {
+						"Id": "201300010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Я столько всего «особого» перепробовал перед тем как создать «Испарение на месте».",
+						"NextMessageId": "choice12"
+					},
+					"201300011": {
+						"Id": "201300011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Расскажи мне про это «особое».",
+						"NextMessageId": "201300012"
+					},
+					"201300012": {
+						"Id": "201300012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Да много всего есть.",
+						"NextMessageId": "201300013"
+					},
+					"201300013": {
+						"Id": "201300013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Например, из недавнего, «Побег и пир» и «Скрытый талант» меня очень впечатлили, хоть они и считаются классическими коктейлями.",
+						"NextMessageId": "choice18"
+					},
+					"201300014": {
+						"Id": "201300014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Расскажи о коктейле «Побег и пир».",
+						"NextMessageId": "201300015"
+					},
+					"201300015": {
+						"Id": "201300015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Я хотел, чтобы вышло нечто роскошное, но не ожидал, что промышленный сироп будет настолько сладким и перекроет другие вкусы.",
+						"NextMessageId": "201300016"
+					},
+					"201300016": {
+						"Id": "201300016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Затем я попытался всё исправить, поэтому добавил горчинки.",
+						"NextMessageId": "201300017"
+					},
+					"201300017": {
+						"Id": "201300017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Но дополнительные ингредиенты оказались настолько горькими, что я чуть сам кони не двинул, когда сделал глоток...",
+						"NextMessageId": "201300022"
+					},
+					"201300018": {
+						"Id": "201300018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Расскажи о коктейле «Скрытый талант».",
+						"NextMessageId": "201300019"
+					},
+					"201300019": {
+						"Id": "201300019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Изначальная задумка была в том, чтобы гости смогли ощутить кисло-сладкие ноты в ледяной стружке.",
+						"NextMessageId": "201300020"
+					},
+					"201300020": {
+						"Id": "201300020",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Типа найденной в осколках стекла конфетке?",
+						"NextMessageId": "201300021"
+					},
+					"201300021": {
+						"Id": "201300021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Что-то вроде того. Но только вот никакого кислого вкуса там не оказалось, почти то же самое, что и просто скучный стакан холодной воды выпить.",
+						"NextMessageId": "201300022"
+					},
+					"201300022": {
+						"Id": "201300022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "На контрасте с этим «Испарение на месте» заметно выделяется.",
+						"NextMessageId": "201300023"
+					},
+					"201300023": {
+						"Id": "201300023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Я добавил в «Усладу» «воздушную сладость» и «воспоминания».",
+						"NextMessageId": "201300024"
+					},
+					"201300024": {
+						"Id": "201300024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "И теперь во вкусе переплетается горечь и благодать, словно ты пьёшь обычную жизнь.",
+						"NextMessageId": "201300025"
+					},
+					"201300025": {
+						"Id": "201300025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Каждый раз, когда хочется ухватиться за какие-то воспоминания, ты в итоге всё равно остаёшься ни с чем.",
+						"NextMessageId": "choice35"
+					},
+					"201300026": {
+						"Id": "201300026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ладно, иду пробовать жизнь!",
+						"NextMessageId": "201300027"
+					},
+					"201300027": {
+						"Id": "201300027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Тогда увидимся в баре."
+					},
+					"201300028": {
+						"Id": "201300028",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Я ведь так и живу! Для такого ещё куда-то идти специально надо?",
+						"NextMessageId": "201300029"
+					},
+					"201300029": {
+						"Id": "201300029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Доверься мне, ты не пожалеешь, обещаю.",
+						"NextMessageId": "201300030"
+					},
+					"201300030": {
+						"Id": "201300030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Тогда увидимся в баре."
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Он меня на месте испарит?",
+								"NextMessageId": "201300001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Не похоже на название коктейля.",
+								"NextMessageId": "201300004"
+							}
+						]
+					},
+					"choice12": {
+						"Id": "choice12",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Расскажи про это «особое».",
+								"NextMessageId": "201300011"
+							}
+						]
+					},
+					"choice18": {
+						"Id": "choice18",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Расскажи о коктейле «Побег и пир».",
+								"NextMessageId": "201300014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Расскажи о коктейле «Скрытый талант».",
+								"NextMessageId": "201300018"
+							}
+						]
+					},
+					"choice35": {
+						"Id": "choice35",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ладно, сейчас приду!",
+								"NextMessageId": "201300026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Я ведь так и живу!",
+								"NextMessageId": "201300028"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"20131": {
+		"Id": "20131",
+		"ContactId": "1301",
+		"ParticpatingContactIds": [
+			"1301",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013100",
+				"StartingMessageId": "201310000",
+				"Messages": {
+					"201310000": {
+						"Id": "201310000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Image": "SpriteOutput/Emoji/20007.png",
+						"Text": "[Недоумение]",
+						"NextMessageId": "201310001"
+					},
+					"201310001": {
+						"Id": "201310001",
+						"MessageType": "Sticker",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20007.png",
+						"Text": "[Недоумение]",
+						"NextMessageId": "201310002"
+					},
+					"201310002": {
+						"Id": "201310002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Что ойой",
+						"NextMessageId": "choice3"
+					},
+					"201310003": {
+						"Id": "201310003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Что за «ойой»?",
+						"NextMessageId": "201310004"
+					},
+					"201310004": {
+						"Id": "201310004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Прости, понажимал у меня тут бетонец",
+						"NextMessageId": "201310005"
+					},
+					"201310005": {
+						"Id": "201310005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "питонец",
+						"NextMessageId": "201310006"
+					},
+					"201310006": {
+						"Id": "201310006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "мец",
+						"NextMessageId": "choice8"
+					},
+					"201310007": {
+						"Id": "201310007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ох... Всё нормально со смартфоном?",
+						"NextMessageId": "201310008"
+					},
+					"201310008": {
+						"Id": "201310008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Подожди мишутку",
+						"NextMessageId": "201310009"
+					},
+					"201310009": {
+						"Id": "201310009",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Ваш друг Галлахер не в сети",
+						"NextMessageId": "201310010"
+					},
+					"201310010": {
+						"Id": "201310010",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Ваш друг Галлахер в сети",
+						"NextMessageId": "201310011"
+					},
+					"201310011": {
+						"Id": "201310011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Вот, теперь должно быть нормально. С моим новым питомцем не соскочишь",
+						"NextMessageId": "201310012"
+					},
+					"201310012": {
+						"Id": "201310012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "скучишься",
+						"NextMessageId": "201310013"
+					},
+					"201310013": {
+						"Id": "201310013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "соскочешься",
+						"NextMessageId": "201310014"
+					},
+					"201310014": {
+						"Id": "201310014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Похоже, ещё не нормально.",
+						"NextMessageId": "choice17"
+					},
+					"201310015": {
+						"Id": "201310015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Действительно не соскочишь.",
+						"NextMessageId": "201310016"
+					},
+					"201310016": {
+						"Id": "201310016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "А, ладно.",
+						"NextMessageId": "201310017"
+					},
+					"201310017": {
+						"Id": "201310017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Смартфон можно и почешить, а вот о спасённом с улицы питомце стоит заботиться несмотря ни на что.",
+						"NextMessageId": "choice21"
+					},
+					"201310018": {
+						"Id": "201310018",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Хотелось бы мне взглянуть на питомца, который смог такое сотворить со смартфоном.",
+						"NextMessageId": "201310019"
+					},
+					"201310019": {
+						"Id": "201310019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Ага, подожди утку",
+						"NextMessageId": "201310020"
+					},
+					"201310020": {
+						"Id": "201310020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Аааааа камера туже сломалась. А питомец... Ну он большой, просто душный. Что-то вроде обычного робопса.",
+						"NextMessageId": "201310024"
+					},
+					"201310021": {
+						"Id": "201310021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Наверное, он умный, раз может так сломать смартфон.",
+						"NextMessageId": "201310022"
+					},
+					"201310022": {
+						"Id": "201310022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Грызёт бемель, роняет напитки, стоит только их смешать, зубы о мои галстуки точит... За столько дней я уже как-то попривык.",
+						"NextMessageId": "201310023"
+					},
+					"201310023": {
+						"Id": "201310023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Он большой, просто душный. Что-то вроде обычного робопса.",
+						"NextMessageId": "201310024"
+					},
+					"201310024": {
+						"Id": "201310024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Как-то я патрулировал улицы - не помню, когда именно - и увидел, ккк он берётся с другими собаками.",
+						"NextMessageId": "201310025"
+					},
+					"201310025": {
+						"Id": "201310025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Вообще мне обычно неохота в такое вмешиваться, подобные делёжки территории слишком часто происходят.",
+						"NextMessageId": "201310026"
+					},
+					"201310026": {
+						"Id": "201310026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Но потом я увидел, что он продолжает бросаться в драку, несколько раз чуть не умер, но в итоге победил, хоть и был сильно изранен. И тогда я забрал его себе.",
+						"NextMessageId": "choice34"
+					},
+					"201310027": {
+						"Id": "201310027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Прямо как кино с робопсом в главной роли.",
+						"NextMessageId": "201310028"
+					},
+					"201310028": {
+						"Id": "201310028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Если студия заинтересуется, то пёс, которого я обобрал, может стать большой киноездой.",
+						"NextMessageId": "201310029"
+					},
+					"201310029": {
+						"Id": "201310029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Он хоть и наводит шороху, но соображает хорошо - быстро учится командам.",
+						"NextMessageId": "201310030"
+					},
+					"201310030": {
+						"Id": "201310030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Сктати, я всё никак не могу придумать ему кличку, поэтому до сих пор называю «эй ты», а он иногда меня демонстративно игнорирует.",
+						"NextMessageId": "choice39"
+					},
+					"201310031": {
+						"Id": "201310031",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Назови его «Бинго»! Потому что он может научиться чему угодно! И неважно, стоит ли ему такому учиться или нет.",
+						"NextMessageId": "201310032"
+					},
+					"201310032": {
+						"Id": "201310032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "И правда. Это имя хорошо ему доходит, так и назову.",
+						"NextMessageId": "201310038"
+					},
+					"201310033": {
+						"Id": "201310033",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Назови его «Щекотик»! С отсылкой на щекочущую виноградную содовую. Всем сразу понятно будет, что это твой пёс.",
+						"NextMessageId": "201310034"
+					},
+					"201310034": {
+						"Id": "201310034",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Как оригинально! Мне нравится, так и назову.",
+						"NextMessageId": "201310038"
+					},
+					"201310035": {
+						"Id": "201310035",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Назови его «Эй ты».",
+						"NextMessageId": "201310036"
+					},
+					"201310036": {
+						"Id": "201310036",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "...",
+						"NextMessageId": "201310037"
+					},
+					"201310037": {
+						"Id": "201310037",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Похоже, больше ничего не подходит... Пока так и буду его называть.",
+						"NextMessageId": "201310038"
+					},
+					"201310038": {
+						"Id": "201310038",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Спасибо за помощь с выбором клички. Как почешу смартфон, сфоткаю его для тебя."
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ойой?",
+								"NextMessageId": "201310003"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ох... Всё нормально со смартфоном?",
+								"NextMessageId": "201310007"
+							}
+						]
+					},
+					"choice17": {
+						"Id": "choice17",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Действительно не соскочишь.",
+								"NextMessageId": "201310015"
+							}
+						]
+					},
+					"choice21": {
+						"Id": "choice21",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Хочу взглянуть на твоего питомца.",
+								"NextMessageId": "201310018"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Наверное, он умный.",
+								"NextMessageId": "201310021"
+							}
+						]
+					},
+					"choice34": {
+						"Id": "choice34",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Похоже на сценарий фильма.",
+								"NextMessageId": "201310027"
+							}
+						]
+					},
+					"choice39": {
+						"Id": "choice39",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Назови его «Бинго».",
+								"NextMessageId": "201310031"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Назови его «Щекотик».",
+								"NextMessageId": "201310033"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Назови его «Эй ты».",
+								"NextMessageId": "201310035"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"20132": {
+		"Id": "20132",
+		"ContactId": "1301",
+		"ParticpatingContactIds": [
+			"1301",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013200",
+				"StartingMessageId": "201320000",
+				"Messages": {
+					"201320000": {
+						"Id": "201320000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Ох...",
+						"NextMessageId": "choice1"
+					},
+					"201320001": {
+						"Id": "201320001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Не вздыхай, старичком станешь.",
+						"NextMessageId": "201320002"
+					},
+					"201320002": {
+						"Id": "201320002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Это вряд ли, я уже превратился в старого пса.",
+						"NextMessageId": "choice6"
+					},
+					"201320003": {
+						"Id": "201320003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ох...",
+						"NextMessageId": "201320008"
+					},
+					"201320004": {
+						"Id": "201320004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ох...",
+						"NextMessageId": "201320005"
+					},
+					"201320005": {
+						"Id": "201320005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "...",
+						"NextMessageId": "201320006"
+					},
+					"201320006": {
+						"Id": "201320006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Что такое? Грустишь?",
+						"NextMessageId": "choice9"
+					},
+					"201320007": {
+						"Id": "201320007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Мне показалось, что это ты грустишь.",
+						"NextMessageId": "201320008"
+					},
+					"201320008": {
+						"Id": "201320008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Если честно, то я опять встретил гостя, из-за которого немного расчувствовался.",
+						"NextMessageId": "201320009"
+					},
+					"201320009": {
+						"Id": "201320009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Этот человек всё время думает о реальности, но решил до последнего оставаться в Мире грёз.",
+						"NextMessageId": "201320010"
+					},
+					"201320010": {
+						"Id": "201320010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "На Пенаконии много таких.",
+						"NextMessageId": "choice16"
+					},
+					"201320011": {
+						"Id": "201320011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Наверное, реальность настолько сурова, что он выбирает оставаться в грёзах.",
+						"NextMessageId": "201320012"
+					},
+					"201320012": {
+						"Id": "201320012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Да. У него какая-то непонятная неизлечимая болезнь. Он потеряет контроль над своим телом, начнёт коченеть и будет испытывать постоянную боль, и так пока не сможет пошевелить и пальцем.",
+						"NextMessageId": "201320013"
+					},
+					"201320013": {
+						"Id": "201320013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "И это до тех пор, пока его мозг не умрёт, а то...",
+						"NextMessageId": "201320014"
+					},
+					"201320014": {
+						"Id": "201320014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Во сне эти страдания исчезают?",
+						"NextMessageId": "201320015"
+					},
+					"201320015": {
+						"Id": "201320015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Да, и более того, во сне он может заработать себе на лечение и продление жизни.",
+						"NextMessageId": "201320019"
+					},
+					"201320016": {
+						"Id": "201320016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Такую жизнь он выбрал сам, и так тоже можно.",
+						"NextMessageId": "201320017"
+					},
+					"201320017": {
+						"Id": "201320017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Да. Для человека с непонятной неизлечимой болезнью такая жизнь - тоже жизнь.",
+						"NextMessageId": "201320018"
+					},
+					"201320018": {
+						"Id": "201320018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Только вот пусть Мир грёз и блокирует физические ощущения из реальности, но душевно он очень страдает без своих близких и переживает, что умрёт в одиночестве.",
+						"NextMessageId": "201320019"
+					},
+					"201320019": {
+						"Id": "201320019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Если обвинить во всём болезнь, то тогда грёзы выглядят как прекрасное лекарство.",
+						"NextMessageId": "201320020"
+					},
+					"201320020": {
+						"Id": "201320020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Но все грёзы когда-то рассыпаются. И что таким людям тогда делать? Ведь они бегут от тягот реальности.",
+						"NextMessageId": "choice29"
+					},
+					"201320021": {
+						"Id": "201320021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Очень сложная тема... У меня аж мозги закипели.",
+						"NextMessageId": "201320022"
+					},
+					"201320022": {
+						"Id": "201320022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Ха-ха, вот оно - очарование ночной таверны.",
+						"NextMessageId": "201320023"
+					},
+					"201320023": {
+						"Id": "201320023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Когда найдёшь местечко и сядешь послушать, о чём шепчутся окружающие, то услышишь лишь размышления о горечи разлук и радости встреч.",
+						"NextMessageId": "choice36"
+					},
+					"201320024": {
+						"Id": "201320024",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Все действия ведут к одному результату, и выход всегда найдётся.",
+						"NextMessageId": "201320025"
+					},
+					"201320025": {
+						"Id": "201320025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Ха-ха, всё так. В жизни столько возможностей! Пусть тревожатся те, кого что-то тревожит.",
+						"NextMessageId": "choice36"
+					},
+					"201320026": {
+						"Id": "201320026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "А ты разговорчив сегодня.",
+						"NextMessageId": "201320027"
+					},
+					"201320027": {
+						"Id": "201320027",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Интересно вот... Ты «Услады» перепил, что ли?",
+						"NextMessageId": "201320028"
+					},
+					"201320028": {
+						"Id": "201320028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "Да нет.",
+						"NextMessageId": "201320029"
+					},
+					"201320029": {
+						"Id": "201320029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1301",
+						"Text": "«Услада» уже давно мне не подходит..."
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Не вздыхай, старичком станешь.",
+								"NextMessageId": "201320001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Ох...",
+								"NextMessageId": "201320004"
+							}
+						]
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ох...",
+								"NextMessageId": "201320003"
+							}
+						]
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Я за тебя переживаю.",
+								"NextMessageId": "201320007"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Наверное, реальность слишком сурова.",
+								"NextMessageId": "201320011"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Такую жизнь он выбрал сам.",
+								"NextMessageId": "201320016"
+							}
+						]
+					},
+					"choice29": {
+						"Id": "choice29",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Слишком сложно.",
+								"NextMessageId": "201320021"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Выход всегда найдётся.",
+								"NextMessageId": "201320024"
+							}
+						]
+					},
+					"choice36": {
+						"Id": "choice36",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "А ты разговорчив сегодня.",
+								"NextMessageId": "201320026"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"20133": {
+		"Id": "20133",
+		"ContactId": "1304",
+		"ParticpatingContactIds": [
+			"1304",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2013300",
+				"StartingMessageId": "201330000",
+				"Messages": {
+					"201330000": {
+						"Id": "201330000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Приветик, {F#госпожа}{M#господин} Стелларон!",
+						"NextMessageId": "choice1"
+					},
+					"201330001": {
+						"Id": "201330001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Что-о-о? Как это ты мне пишешь??",
+						"NextMessageId": "201330003"
+					},
+					"201330002": {
+						"Id": "201330002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ты ещё жив?",
+						"NextMessageId": "201330003"
+					},
+					"201330003": {
+						"Id": "201330003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Как жаль, что не смогу прочитать твой ответ.",
+						"NextMessageId": "201330004"
+					},
+					"201330004": {
+						"Id": "201330004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Это отложенные сообщения.",
+						"NextMessageId": "201330005"
+					},
+					"201330005": {
+						"Id": "201330005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Когда ты получишь их, наши разногласия наверняка сгладятся.",
+						"NextMessageId": "201330006"
+					},
+					"201330006": {
+						"Id": "201330006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Если всё будет хорошо, то мы ещё встретимся.",
+						"NextMessageId": "201330007"
+					},
+					"201330007": {
+						"Id": "201330007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Но кто знает... Мне тоже не всегда везёт.",
+						"NextMessageId": "201330008"
+					},
+					"201330008": {
+						"Id": "201330008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Прощай, друг мой. Авантюрин выражает тебе огромную благодарность и высочайшее уважение.",
+						"NextMessageId": "201330009"
+					},
+					"201330009": {
+						"Id": "201330009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1304",
+						"Text": "Приятного тебе путешествия.",
+						"NextMessageId": "choice18"
+					},
+					"201330010": {
+						"Id": "201330010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "До скорой встречи. Надеюсь, увидимся ещё.",
+						"NextMessageId": "201330013"
+					},
+					"201330011": {
+						"Id": "201330011",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Рассчитаемся, когда вернёшься.",
+						"NextMessageId": "201330013"
+					},
+					"201330012": {
+						"Id": "201330012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Даже не думай возвращаться.",
+						"NextMessageId": "201330013"
+					},
+					"201330013": {
+						"Id": "201330013",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Ошибка отправки сообщения.",
+						"NextMessageId": "201330014"
+					},
+					"201330014": {
+						"Id": "201330014",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Пользователь в настоящее время недоступен. Попробуйте позднее."
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Что-о-о? Как это ты мне пишешь??",
+								"NextMessageId": "201330001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Ты ещё жив?",
+								"NextMessageId": "201330002"
+							}
+						]
+					},
+					"choice18": {
+						"Id": "choice18",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "До скорой встречи.",
+								"NextMessageId": "201330010"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Рассчитаемся, когда вернёшься.",
+								"NextMessageId": "201330011"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Даже не думай возвращаться.",
+								"NextMessageId": "201330012"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"20999": {
 		"Id": "20999",

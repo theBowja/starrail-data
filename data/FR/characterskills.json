@@ -981,55 +981,55 @@
 				"1": {
 					"EffectValues": [
 						1,
-						0.4
+						0
 					]
 				},
 				"2": {
 					"EffectValues": [
 						1.1,
-						0.44
+						0.08
 					]
 				},
 				"3": {
 					"EffectValues": [
 						1.2,
-						0.48
+						0.16
 					]
 				},
 				"4": {
 					"EffectValues": [
 						1.3,
-						0.52
+						0.24
 					]
 				},
 				"5": {
 					"EffectValues": [
 						1.4,
-						0.56
+						0.32
 					]
 				},
 				"6": {
 					"EffectValues": [
 						1.5,
-						0.6
+						0.4
 					]
 				},
 				"7": {
 					"EffectValues": [
 						1.625,
-						0.65
+						0.5
 					]
 				},
 				"8": {
 					"EffectValues": [
 						1.75,
-						0.7
+						0.6
 					]
 				},
 				"9": {
 					"EffectValues": [
 						1.875,
-						0.75
+						0.7
 					]
 				},
 				"10": {
@@ -1041,31 +1041,31 @@
 				"11": {
 					"EffectValues": [
 						2.1,
-						0.84
+						0.88
 					]
 				},
 				"12": {
 					"EffectValues": [
 						2.2,
-						0.88
+						0.96
 					]
 				},
 				"13": {
 					"EffectValues": [
 						2.3,
-						0.92
+						1.04
 					]
 				},
 				"14": {
 					"EffectValues": [
 						2.4,
-						0.96
+						1.12
 					]
 				},
 				"15": {
 					"EffectValues": [
 						2.5,
-						1
+						1.2
 					]
 				}
 			},
@@ -7781,7 +7781,7 @@
 					]
 				}
 			},
-			"ImageIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_BP.png"
+			"ImageIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_BP02.png"
 		},
 		"Ultimate": {
 			"Id": "110903",
@@ -10469,7 +10469,7 @@
 			"SkillTypeText": "Compétence",
 			"MaxLevel": 15,
 			"EffectRaw": "Après utilisation de la compétence, restaure immédiatement des PV à une cible alliée à hauteur de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Luocha + <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. D'autre part, Luocha obtient 1 cumul de Fleur de l'abîme.\nLorsque le pourcentage de PV d'un allié devient inférieur ou égal à <unbreak>#3[i]%</unbreak>, un effet équivalent à celui de la compétence est immédiatement déclenché et appliqué une fois à cet allié (sans consommer de points de compétence). Cet effet peut se déclencher à nouveau après <unbreak>#4[i]</unbreak> tours.",
-			"AbridgedEffect": "Restaure les PV d'un allié unique et gagne 1 cumul de Fleur de l'abîme.",
+			"AbridgedEffect": "<color=#f29e38ff>Restaure</color> les PV d'un allié unique et gagne 1 cumul de Fleur de l'abîme.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -10603,7 +10603,7 @@
 			"SkillTypeText": "Ultime",
 			"MaxLevel": 15,
 			"EffectRaw": "Supprime <unbreak>#2[i]</unbreak> <u>bonus</u> chez tous les ennemis et inflige des DGT imaginaires équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Luocha à tous les ennemis. Luocha gagne 1 cumul de Fleur de l'abîme.",
-			"AbridgedEffect": "Supprime 1 <u>bonus</u> chez tous les ennemis, inflige des DGT imaginaires à tous les ennemis, et accorde 1 cumul de Fleur de l'abîme.",
+			"AbridgedEffect": "<color=#f29e38ff>Supprime</color> 1 <color=#f29e38ff><u>bonus</u></color> chez tous les ennemis, inflige des DGT imaginaires à tous les ennemis, et accorde 1 cumul de Fleur de l'abîme.",
 			"ElementType": "Imaginary",
 			"Levels": {
 				"1": {
@@ -10708,7 +10708,7 @@
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
 			"EffectRaw": "Lorsque le nombre de cumuls de Fleur de l'abîme atteint <unbreak>#1[i]</unbreak>, Luocha consomme tous les cumuls de Fleur de l'abîme pour déployer un Champ hostile aux ennemis.\nLorsqu'un ennemi situé dans le Champ est attaqué par un allié, les PV de ce dernier sont immédiatement restaurés à hauteur de <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'ATQ de Luocha + <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nL'effet du Champ dure <unbreak>#3[i]</unbreak> tours. Le Champ se dissipe lorsque Luocha est <u>à terre</u>.",
-			"AbridgedEffect": "Déploie un Champ lorsque Fleur de l'abîme atteint 2 cumuls. Tant que le Champ est actif, les alliés récupèrent des PV après avoir attaqué.",
+			"AbridgedEffect": "Déploie un <color=#f29e38ff>Champ</color> lorsque Fleur de l'abîme atteint 2 cumuls. Tant que le Champ est actif, les alliés <color=#f29e38ff>récupèrent des PV après avoir attaqué</color>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -17288,6 +17288,468 @@
 		},
 		"VersionAdded": "1.5"
 	},
+	"1301": {
+		"Id": "1301",
+		"Name": "Gallagher",
+		"BasicATK": {
+			"Id": "130101",
+			"Name": "Coup de pompe",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Cible unique",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Gallagher à une cible ennemie unique.",
+			"AbridgedEffect": "Inflige des DGT de feu mineurs à un ennemi unique.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "130108",
+			"Name": "Coup de fouet",
+			"TriggerKey": "Skill11",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Cible unique",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Gallagher à une cible ennemie unique et réduit de <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> l'ATQ de la cible pendant <unbreak>#3[i]</unbreak> tours.",
+			"AbridgedEffect": "Inflige des DGT de feu à un ennemi unique et réduit son ATQ.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.25,
+						0.1,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.5,
+						0.11,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.75,
+						0.12,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						0.13,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.25,
+						0.14,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.5,
+						0.15,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.75,
+						0.16,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.17,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3.25,
+						0.18,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Normal02.png"
+		},
+		"Skill": {
+			"Id": "130102",
+			"Name": "Cuvée spéciale",
+			"TriggerKey": "Skill02",
+			"TagType": "Restore",
+			"TagTypeText": "Restauration",
+			"SkillTypeText": "Compétence",
+			"MaxLevel": 15,
+			"EffectRaw": "Soigne immédiatement <color=#f29e38ff><unbreak>#1[i]</unbreak></color> PV à une cible alliée.",
+			"AbridgedEffect": "Restaure immédiatement les PV d'un allié.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						200
+					]
+				},
+				"2": {
+					"EffectValues": [
+						340
+					]
+				},
+				"3": {
+					"EffectValues": [
+						480
+					]
+				},
+				"4": {
+					"EffectValues": [
+						676
+					]
+				},
+				"5": {
+					"EffectValues": [
+						830
+					]
+				},
+				"6": {
+					"EffectValues": [
+						984
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1138
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1292
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1446
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1600
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1684
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1768
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1852
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1936
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2020
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130103",
+			"Name": "C'est ma tournée !",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "ZdE",
+			"SkillTypeText": "Ultime",
+			"MaxLevel": 15,
+			"EffectRaw": "Applique l'effet Ivresse à tous les ennemis pendant <unbreak>#2[i]</unbreak> tours. D'autre part, inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Gallagher à tous les ennemis et la prochaine ATQ normale de Gallagher est renforcée en Coup de fouet.",
+			"AbridgedEffect": "<color=#f29e38ff>Applique l'effet Ivresse</color> à tous les ennemis tout en leur infligeant des DGT de feu. Renforce la prochaine ATQ normale de cette unité en Coup de fouet.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130104",
+			"Name": "Ébriété destructrice",
+			"TriggerKey": "SkillP01",
+			"TagType": "Restore",
+			"TagTypeText": "Restauration",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "L'effet Ivresse augmente de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> les DGT de rupture subis par les cibles. Chaque fois qu'une cible affectée par Ivresse est attaquée par un allié, l'assaillant récupère <color=#f29e38ff><unbreak>#2[i]</unbreak></color> PV.",
+			"AbridgedEffect": "L'effet Ivresse <color=#f29e38ff>augmente les DGT de rupture subis par les cibles</color>. Chaque fois qu'une cible affectée par Ivresse est attaquée par un allié, <color=#f29e38ff>l'assaillant récupère des PV</color>.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.06,
+						80
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.066,
+						136
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.072,
+						192
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.078,
+						270.4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.084,
+						332
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.09,
+						393.6
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.0975,
+						455.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.105,
+						516.8
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1125,
+						578.4
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.12,
+						640
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.126,
+						673.6
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.132,
+						707.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.138,
+						740.8
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.144,
+						774.4
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.15,
+						808
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Passive.png"
+		},
+		"Technique": {
+			"Id": "130107",
+			"Name": "Sans modération",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Engage immédiatement le combat contre les ennemis. Inflige Ivresse à tous les ennemis pour une durée de <unbreak>#1[i]</unbreak> tours en entrant en combat. Et inflige des DGT de feu équivalents à <unbreak>#2[i]%</unbreak> de l'ATQ de Gallagher à tous les ennemis.",
+			"AbridgedEffect": "Engage le combat contre les ennemis. <color=#f29e38ff>Inflige Ivresse</color> ainsi que des DGT de feu mineurs à tous les ennemis après être entré en combat.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Maze.png"
+		},
+		"VersionAdded": "2.1"
+	},
 	"1302": {
 		"Id": "1302",
 		"Name": "Argenti",
@@ -18148,6 +18610,512 @@
 		},
 		"VersionAdded": "1.6"
 	},
+	"1304": {
+		"Id": "1304",
+		"Name": "Aventurine",
+		"BasicATK": {
+			"Id": "130401",
+			"Name": "Pari direct",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Cible unique",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige des DGT imaginaires équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de la DÉF d'Aventurine à une cible ennemie unique.",
+			"AbridgedEffect": "Inflige des DGT imaginaires mineurs à une cible ennemie unique.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Normal.png"
+		},
+		"Skill": {
+			"Id": "130402",
+			"Name": "Pierre angulaire de la prospérité",
+			"TriggerKey": "Skill02",
+			"TagType": "Defence",
+			"TagTypeText": "Défense",
+			"SkillTypeText": "Compétence",
+			"MaxLevel": 15,
+			"EffectRaw": "Accorde à tous les alliés un bouclier de Mise renforcée qui peut bloquer des DGT équivalents à <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de la DÉF d'Aventurine + <color=#f29e38ff><unbreak>#2[i]</unbreak></color>pendant <unbreak>#3[i]</unbreak> tours. Lorsque l'effet Mise renforcée est obtenu à plusieurs reprises, la valeur de bouclier peut se cumuler jusqu'à <unbreak>#4[i]%</unbreak> du bouclier fourni par la compétence actuelle.",
+			"AbridgedEffect": "Accorde à tous les alliés un bouclier de Mise renforcée <color=#f29e38ff>dont la valeur de bouclier est cumulable</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.16,
+						80,
+						3,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.17,
+						128,
+						3,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						164,
+						3,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.19,
+						200,
+						3,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.2,
+						224,
+						3,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.208,
+						248,
+						3,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.216,
+						266,
+						3,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.224,
+						284,
+						3,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.232,
+						302,
+						3,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						320,
+						3,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.248,
+						338,
+						3,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.256,
+						356,
+						3,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.264,
+						374,
+						3,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.272,
+						392,
+						3,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.28,
+						410,
+						3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130403",
+			"Name": "Roi de la roulette",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Cible unique",
+			"SkillTypeText": "Ultime",
+			"MaxLevel": 15,
+			"EffectRaw": "Récupère entre 1 et <unbreak>#1[i]</unbreak> Paris aveugles de manière aléatoire et applique Sur les nerfs à une cible ennemie unique. Dure <unbreak>#4[i]</unbreak> tours. Inflige des DGT imaginaires équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de la DÉF d'Aventurine à la cible ennemie. Lorsqu'un allié touche une cible ennemie qui subit Sur les nerfs, les DGT critiques qu'il inflige augmentent de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.",
+			"AbridgedEffect": "Récupère un nombre aléatoire de Paris aveugles et applique Sur les nerfs à un ennemi unique, tout en infligeant des DGT imaginaires. Lorsqu'un allié touche un ennemi qui subit Sur les nerfs, les <color=#f29e38ff>DGT critiques qu'il inflige augmentent</color>.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						7,
+						1.62,
+						0.09,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						7,
+						1.728,
+						0.096,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						7,
+						1.836,
+						0.102,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						7,
+						1.944,
+						0.108,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						7,
+						2.052,
+						0.114,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						7,
+						2.16,
+						0.12,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						7,
+						2.295,
+						0.1275,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						7,
+						2.43,
+						0.135,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						7,
+						2.565,
+						0.1425,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						7,
+						2.7,
+						0.15,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						7,
+						2.808,
+						0.156,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						7,
+						2.916,
+						0.162,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						7,
+						3.024,
+						0.168,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						7,
+						3.132,
+						0.174,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						7,
+						3.24,
+						0.18,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130404",
+			"Name": "Visé juste",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "Rebond",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Augmente de <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> la RÉS aux effets d'un allié qui bénéficie de Mise renforcée. Aventurine récupère 1 Pari aveugle chaque fois qu'un allié qui bénéficie de Mise renforcée subit une attaque. Lorsqu'Aventurine bénéficie de Mise renforcée, il peut résister aux <u>malus de contrôle</u> 1 fois tous les <unbreak>#5[i]</unbreak> tours et il récupère <unbreak>#1[i]</unbreak> Pari aveugle supplémentaire lorsqu'il est attaqué. À 7 Paris aveugles, Aventurine utilise tous les paris pour lancer une <u>attaque de suivi</u> qui inflige <unbreak>#2[i]</unbreak> frappes. Chacune de ces frappes inflige des DGT imaginaires équivalents à <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> de la DÉF d'Aventurine à un ennemi aléatoire. Aventurine peut cumuler un maximum de <unbreak>10</unbreak> Paris aveugles.",
+			"AbridgedEffect": "Augmente la RÉS aux effets d'un allié qui bénéficie de Mise renforcée. Aventurine récupère des Paris aveugles lorsqu'un allié qui bénéficie de Mise renforcée est attaqué. Lorsqu'Aventurine bénéficie de Mise renforcée, il peut résister aux <u>malus de contrôle</u>. À 7 Paris aveugles, Aventurine utilise tous les paris pour lancer une <color=#f29e38ff><u>attaque de suivi</u></color> qui inflige des DGT imaginaires mineurs à des ennemis aléatoires, rebondissant 7 fois.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						7,
+						0.125,
+						0.25,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						7,
+						0.1375,
+						0.275,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						7,
+						0.15,
+						0.3,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						7,
+						0.1625,
+						0.325,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						7,
+						0.175,
+						0.35,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						7,
+						0.1875,
+						0.375,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						7,
+						0.2031,
+						0.4063,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						7,
+						0.2188,
+						0.4375,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						7,
+						0.2344,
+						0.4688,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						7,
+						0.25,
+						0.5,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						7,
+						0.2625,
+						0.525,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						7,
+						0.275,
+						0.55,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						7,
+						0.2875,
+						0.575,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						7,
+						0.3,
+						0.6,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						7,
+						0.3125,
+						0.625,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Passive.png"
+		},
+		"Technique": {
+			"Id": "130407",
+			"Name": "Rouge ou noir",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Defence",
+			"TagTypeText": "Défense",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "L'utilisation de la technique accorde 1 des effets suivants :\nIl y a une chance que la DÉF augmente de <unbreak>#1[i]%</unbreak>.\nIl y a de fortes chances que la DÉF augmente de <unbreak>#2[i]%</unbreak>.\nIl y a une faible chance que la DÉF augmente de <unbreak>#3[i]%</unbreak>.\n\nEn cas d'utilisation répétée de la technique, c'est l'effet obtenu avec la valeur la plus élevée qui est conservé.\nLa DÉF de tous les alliés augmente de la valeur correspondante pendant <unbreak>#4[i]</unbreak> tours lors du prochain combat.",
+			"AbridgedEffect": "L'utilisation de la technique accorde de manière aléatoire un des trois effets d'augmentation de DÉF avec différentes valeurs. La DÉF de tous les alliés augmente de la valeur correspondante après être entré en combat.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.24,
+						0.36,
+						0.6,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Maze.png"
+		},
+		"VersionAdded": "2.1"
+	},
 	"1305": {
 		"Id": "1305",
 		"Name": "Dr Ratio",
@@ -18755,7 +19723,7 @@
 			"TagTypeText": "Soutien",
 			"SkillTypeText": "Ultime",
 			"MaxLevel": 15,
-			"EffectRaw": "Régénère <unbreak>#2[i]</unbreak> points de compétence pour l'équipe et accorde Énigme à tous les alliés. Chaque cumul de l'effet d'augmentation de DGT accordé par le talent de Sparkle augmente de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> supplémentaires pour les alliés qui bénéficient d'Énigme. Dure<unbreak>#4[i]</unbreak> tours.",
+			"EffectRaw": "Régénère <unbreak>#2[i]</unbreak> points de compétence pour l'équipe et accorde Énigme à tous les alliés. Chaque cumul de l'effet d'augmentation de DGT accordé par le talent de Sparkle augmente de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> supplémentaires pour les alliés qui bénéficient d'Énigme. Dure <unbreak>#4[i]</unbreak> tours.",
 			"AbridgedEffect": "Régénère des <color=#f29e38ff>points de compétence</color> pour l'équipe et permet d'accroître l'augmentation de DGT accordée par son talent.",
 			"Levels": {
 				"1": {
@@ -19619,6 +20587,495 @@
 		},
 		"VersionAdded": "2.0"
 	},
+	"1308": {
+		"Id": "1308",
+		"Name": "Achéron",
+		"BasicATK": {
+			"Id": "130801",
+			"Name": "Flétrissement des trois sagesses",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Cible unique",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ d'Achéron à une cible ennemie unique.",
+			"AbridgedEffect": "Inflige des DGT de foudre mineurs à un ennemi unique.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Normal.png"
+		},
+		"Skill": {
+			"Id": "130802",
+			"Name": "Éclair multiple",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Propagation",
+			"SkillTypeText": "Compétence",
+			"MaxLevel": 15,
+			"EffectRaw": "Gagne <unbreak>#3[i]</unbreak> point de Rêve flétri. Applique <unbreak>#3[i]</unbreak> cumul d'Étreinte écarlate à une cible ennemie unique, lui inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ d'Achéron et des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ d'Achéron aux cibles adjacentes.",
+			"AbridgedEffect": "Gagne <color=#f29e38ff><unbreak>#3[i]</unbreak></color> point de Rêve flétri. Applique <color=#f29e38ff><unbreak>#3[i]</unbreak></color> cumul d'Étreinte écarlate à un ennemi unique, lui inflige des DGT de foudre et inflige des DGT de foudre mineurs aux cibles adjacentes.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8,
+						0.3,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.88,
+						0.33,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.96,
+						0.36,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.04,
+						0.39,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.12,
+						0.42,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						0.45,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.3,
+						0.4875,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.4,
+						0.525,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.5,
+						0.5625,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.6,
+						0.6,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.68,
+						0.63,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.76,
+						0.66,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.84,
+						0.69,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.92,
+						0.72,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						0.75,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130803",
+			"Name": "Rêve flétri écarlate",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "ZdE",
+			"SkillTypeText": "Ultime",
+			"MaxLevel": 15,
+			"EffectRaw": "Déclenche Lame de pluie 3 fois de suite et Vengeance du Styx 1 fois, infligeant des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> de l'ATQ d'Achéron à une cible ennemie unique, et des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#7[i]%</unbreak></color> de l'ATQ d'Achéron aux autres ennemis.\n\nLame de pluie : Inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de l'ATQ d'Achéron à une cible ennemie unique et supprime jusqu'à 3 cumuls d'Étreinte écarlate à la cible. Lorsque l'effet Étreinte écarlate est supprimé, inflige immédiatement des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'ATQ d'Achéron à tous les ennemis. Le multiplicateur de cette instance de DGT augmente pour chaque cumul d'Étreinte écarlate supprimé, jusqu'à un maximum de <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>.\n\nVengeance du Styx : Inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> de l'ATQ d'Achéron à tous les ennemis et supprime tous les effets d'Étreinte écarlate.\nL'effet Étreinte écarlate ne peut pas être appliqué aux ennemis pendant l'ultime.",
+			"AbridgedEffect": "Inflige des DGT de foudre mineurs 3 fois à un ennemi unique. Inflige des DGT de foudre mineurs à tous les ennemis si la cible perd l'effet Étreinte écarlate. Puis, inflige des DGT de foudre 1 fois à tous les ennemis et supprime tous les cumuls d'Étreinte écarlate.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.144,
+						0.09,
+						0.72,
+						9,
+						0.36,
+						2.232,
+						1.8
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.1536,
+						0.096,
+						0.768,
+						9,
+						0.384,
+						2.3808,
+						1.92
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.1632,
+						0.102,
+						0.816,
+						9,
+						0.408,
+						2.5296,
+						2.04
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.1728,
+						0.108,
+						0.864,
+						9,
+						0.432,
+						2.6784,
+						2.16
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.1824,
+						0.114,
+						0.912,
+						9,
+						0.456,
+						2.8272,
+						2.28
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.192,
+						0.12,
+						0.96,
+						9,
+						0.48,
+						2.976,
+						2.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.204,
+						0.1275,
+						1.02,
+						9,
+						0.51,
+						3.162,
+						2.55
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.216,
+						0.135,
+						1.08,
+						9,
+						0.54,
+						3.348,
+						2.7
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.228,
+						0.1425,
+						1.14,
+						9,
+						0.57,
+						3.534,
+						2.85
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						0.15,
+						1.2,
+						9,
+						0.6,
+						3.72,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.2496,
+						0.156,
+						1.248,
+						9,
+						0.624,
+						3.8688,
+						3.12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.2592,
+						0.162,
+						1.296,
+						9,
+						0.648,
+						4.0176,
+						3.24
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.2688,
+						0.168,
+						1.344,
+						9,
+						0.672,
+						4.1664,
+						3.36
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.2784,
+						0.174,
+						1.392,
+						9,
+						0.696,
+						4.3152,
+						3.48
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.288,
+						0.18,
+						1.44,
+						9,
+						0.72,
+						4.464,
+						3.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130804",
+			"Name": "Pluie de feuillages rouges",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Renforcement",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "L'ultime peut être activé quand Rêve flétri atteint <unbreak>#1[i]</unbreak> points. Pendant l'ultime, la robustesse des ennemis est réduite quels que soient leurs types de faiblesse, ainsi que toutes leurs RÉS de type de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> jusqu'à la fin de l'ultime.\nLorsqu'une unité applique un malus à une cible ennemie en utilisant une de ses capacités, Achéron gagne 1 point de Rêve flétri et applique 1 cumul d'Étreinte écarlate à cette cible ennemie. Si des malus sont appliqués à plusieurs ennemis, alors le cumul d'Étreinte écarlate est infligé à l'ennemi ayant le plus de cumuls d'Étreinte écarlate. Cet effet ne peut être déclenché qu'1 fois par utilisation de la capacité.\nLorsqu'Achéron est sur le champ de bataille et après qu'une cible ennemie a quitté le champ de bataille ou a été vaincue, ses cumuls d'Étreinte écarlate sont transférés à la cible ennemie qui a le plus de cumuls d'Étreinte écarlate sur tout le champ de bataille.",
+			"AbridgedEffect": "L'ultime peut être activé quand Rêve flétri atteint la limite maximum. Pendant l'ultime, la robustesse des ennemis est réduite <color=#f29e38ff>quels que soient leurs types de faiblesse</color>, ainsi que <color=#f29e38ff>toutes leurs RÉS de type</color>.\nLorsqu'une unité applique un malus à une cible ennemie en utilisant une de ses capacités, Achéron gagne un point de Rêve flétri et applique Étreinte écarlate à la cible ennemie.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						9,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						9,
+						0.11
+					]
+				},
+				"3": {
+					"EffectValues": [
+						9,
+						0.12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						9,
+						0.13
+					]
+				},
+				"5": {
+					"EffectValues": [
+						9,
+						0.14
+					]
+				},
+				"6": {
+					"EffectValues": [
+						9,
+						0.15
+					]
+				},
+				"7": {
+					"EffectValues": [
+						9,
+						0.1625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						9,
+						0.175
+					]
+				},
+				"9": {
+					"EffectValues": [
+						9,
+						0.1875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						9,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						9,
+						0.21
+					]
+				},
+				"12": {
+					"EffectValues": [
+						9,
+						0.22
+					]
+				},
+				"13": {
+					"EffectValues": [
+						9,
+						0.23
+					]
+				},
+				"14": {
+					"EffectValues": [
+						9,
+						0.24
+					]
+				},
+				"15": {
+					"EffectValues": [
+						9,
+						0.25
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Passive.png"
+		},
+		"Technique": {
+			"Id": "130807",
+			"Name": "Chemin de la réalisation",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Engage immédiatement le combat contre les ennemis et gagne Chemin de la réalisation au début de chaque vague. Inflige des DGT de foudre équivalents à <unbreak>#1[i]%</unbreak> de l'ATQ d'Achéron à tous les ennemis, et réduit leur robustesse quels que soient leurs types de faiblesse. En cas de Rupture de faiblesse, déclenche l'effet de Rupture de faiblesse de foudre.\n\nChemin de la réalisation : après avoir utilisé son ultime, Achéron gagne <unbreak>#2[i]</unbreak> point de Rêve flétri et applique <unbreak>#2[i]</unbreak> cumul d'Étreinte écarlate à un ennemi unique aléatoire.\nEn cas d'attaque sur un ennemi normal, il est immédiatement éliminé sans entrer en combat. Le point de technique n'est pas dépensé si aucun ennemi n'est touché.",
+			"AbridgedEffect": "Engage le combat contre les ennemis et gagne Chemin de la réalisation au début de chaque vague. Inflige des DGT de foudre à tous les ennemis et réduit leur robustesse <color=#f29e38ff>quels que soient leurs types de faiblesse</color>.\nEn cas d'attaque sur un ennemi normal, <color=#f29e38ff>il est immédiatement éliminé</color> sans entrer en combat. Le point de technique n'est pas dépensé si aucun ennemi n'est touché.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Maze.png"
+		},
+		"VersionAdded": "2.1"
+	},
 	"1312": {
 		"Id": "1312",
 		"Name": "Micha",
@@ -19811,7 +21268,7 @@
 			"SkillTypeText": "Ultime",
 			"MaxLevel": 15,
 			"EffectRaw": "L'ultime de Micha inflige <unbreak>#1[i]</unbreak> frappes par action par défaut. La première frappe inflige des DGT de glace équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de Micha à une cible ennemie unique. Puis, le reste des frappes inflige chacune des DGT de glace équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de Micha à un ennemi unique aléatoire. Il y a <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> de <u>chances de base</u> de geler la cible pendant 1 tour avant chaque frappe.\nLes cibles ennemies gelées ne peuvent pas agir et subissent des <u>DGT de glace additionnels</u> équivalents à <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> de l'ATQ de Micha au début de leur tour.\nL'ultime de Micha peut infliger jusqu'à <unbreak>#5[i]</unbreak> frappes par action. Le nombre de frappes par action retourne à sa valeur par défaut après utilisation de l'ultime.",
-			"AbridgedEffect": "Inflige des DGT de glace mineurs à des ennemis uniques. L'attaque rebondit <color=#f29e38ff><unbreak>#1[i]</unbreak></color> fois par défaut sur les ennemis jusqu'à un maximum de <color=#f29e38ff><unbreak>#5[i]</unbreak></color> fois. Il y a une faible chance de <color=#f29e38ff>geler</color> la cible avant chaque frappe.",
+			"AbridgedEffect": "Inflige des DGT de glace mineurs à des ennemis uniques. L'attaque rebondit <color=#f29e38ff><unbreak>#1[i]</unbreak></color> fois par défaut jusqu'à un maximum de <color=#f29e38ff><unbreak>#5[i]</unbreak></color> fois. Il y a une faible chance de <color=#f29e38ff>geler</color> la cible avant chaque frappe.",
 			"ElementType": "Ice",
 			"Levels": {
 				"1": {
@@ -21390,7 +22847,7 @@
 					]
 				}
 			},
-			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png"
+			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal02.png"
 		},
 		"Skill": {
 			"Id": "800302",
@@ -21901,7 +23358,7 @@
 					]
 				}
 			},
-			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png"
+			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal02.png"
 		},
 		"Skill": {
 			"Id": "800402",

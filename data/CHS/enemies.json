@@ -3113,6 +3113,117 @@
 		],
 		"VersionAdded": "1.2"
 	},
+	"1014013": {
+		"Id": "1014013",
+		"Name": "史瓦罗",
+		"Introduction": "代码受到影响后的完整投影。参照本体为旧世界的古老遗物，地髓开拓团的时代遗留下的自动控制单元。与大部分无智、只接受指令的机器不同，史瓦罗具有复杂的思考能力。\n在战斗中，史瓦罗（完整）能召唤各种类型的机械并操控机械臂抓取和控制敌人，对目标进行沉重的打击。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101401101,
+				"Name": "驱逐拳击",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401102,
+				"Name": "延烧光束",
+				"SkillDesc": "对指定我方单体造成物理属性伤害，并使受到攻击的我方目标行动延后。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401103,
+				"Name": "巨掌之间",
+				"SkillDesc": "使指定我方单体陷入【拘束】状态，【拘束】状态下无法行动也无法被指定为目标。当辅助机械臂单元被弱点击破时我方目标的【拘束】状态立即解除。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401104,
+				"Name": "过饱和轰炸",
+				"SkillDesc": "对我方全体造成大量物理伤害，并有大概率使受到攻击的我方目标防御力降低，该负面效果可叠加。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401105,
+				"Name": "控场起爆",
+				"SkillDesc": "辅助机械臂单元发生爆炸，对指定我方单体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101401106,
+				"Name": "过载警告",
+				"SkillDesc": "辅助机械臂单元进入【过载时限】状态，进入该状态后下次行动施放【控场起爆】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101401107,
+				"Name": "增效部署",
+				"SkillDesc": "召唤【辅助机械臂单元】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101401108,
+				"Name": "dev_待机",
+				"SkillDesc": "dev_待机。不显示。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101401109,
+				"Name": "dev_血量触发",
+				"SkillDesc": "dev_当辅助机械臂单元存在于场上时，史瓦罗受到的伤害降低。不显示。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 101401110,
+				"Name": "dev_弱点击破减速",
+				"SkillDesc": "dev_当被弱点击破时，自身速度降低，持续1回合。不显示。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 101401111,
+				"Name": "dev_击飞免疫",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 101401112,
+				"Name": "输出增幅",
+				"SkillDesc": "使敌方全体造成的伤害小幅提高，伤害提高效果可叠加。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101401113,
+				"Name": "应急支援",
+				"SkillDesc": "随机召唤【自动机兵•甲虫】和【自动机兵•战犬】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101401114,
+				"Name": "战术支援",
+				"SkillDesc": "召唤【自动机兵•齿狼】。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"1022010": {
 		"Id": "1022010",
 		"Name": "永冬灾影",
@@ -4255,7 +4366,7 @@
 			{
 				"Id": 201101001,
 				"Name": "狮子吼",
-				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillDesc": "对指定我方单体造成少量火属性伤害，并有概率使受到攻击的我方目标陷入虚弱状态。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Fire"
 			}
@@ -6004,7 +6115,7 @@
 			{
 				"Id": 300201002,
 				"Name": "惊吓播报",
-				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体损失能量。只能在【惊吓频道】状态下使用。",
+				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体能量减少。只能在【惊吓频道】状态下使用。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Quantum"
 			},
@@ -6064,6 +6175,46 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"3002040": {
+		"Id": "3002040",
+		"Name": "惊梦剧团的发条暴徒",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「白日梦」酒店的服务生，失控后仍在履行报时的职责，用最直接的方式将睡梦惊醒。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300204001,
+				"Name": "预定闹钟",
+				"SkillDesc": "进入蓄力状态，下次行动时施放【起床铃声】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300204002,
+				"Name": "起床铃声",
+				"SkillDesc": "使除自身外的敌方全体立即行动。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300204003,
+				"Name": "清醒铁拳",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"3002050": {
 		"Id": "3002050",
 		"Name": "王下一桶",
@@ -6089,7 +6240,7 @@
 			{
 				"Id": 300205002,
 				"Name": "桶的磨砺",
-				"SkillDesc": "提高自身的攻击力。该效果可叠加，且不可被驱散。",
+				"SkillDesc": "提高自身的攻击力。该效果可叠加，且不可被解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -6126,7 +6277,7 @@
 			{
 				"Id": 300205102,
 				"Name": "桶的磨砺",
-				"SkillDesc": "提高自身的攻击力。该效果可叠加，且不可被驱散。",
+				"SkillDesc": "提高自身的攻击力。该效果可叠加，且不可被解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -6195,13 +6346,13 @@
 			{
 				"Id": 300301006,
 				"Name": "火炼佳肴",
-				"SkillDesc": "当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+				"SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
 				"SkillTypeDesc": "天赋"
 			},
 			{
 				"Id": 300301007,
 				"Name": "猛火炉灶",
-				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加一层【炉灶加温】。",
+				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
 				"SkillTypeDesc": "天赋"
 			}
 		],
@@ -6264,17 +6415,86 @@
 			{
 				"Id": 300301106,
 				"Name": "火炼佳肴",
-				"SkillDesc": "当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+				"SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
 				"SkillTypeDesc": "天赋"
 			},
 			{
 				"Id": 300301107,
 				"Name": "猛火炉灶",
-				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加一层【炉灶加温】。",
+				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
 				"SkillTypeDesc": "天赋"
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"3003012": {
+		"Id": "3003012",
+		"Name": "惊梦剧团的十七分熟（错误）",
+		"Introduction": "代码受到影响后的错误投影。参照本体为匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是烹饪食物的料理机器，失控后仍在喷吐炙烤食材的烈焰，企图将食客一同烧成焦炭。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300301201,
+				"Name": "大力颠勺",
+				"SkillDesc": "对我方单体造成火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301202,
+				"Name": "旋风翻锅",
+				"SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301203,
+				"Name": "引爆炉灶",
+				"SkillDesc": "进入蓄力状态，速度提高，在【炉灶加温】叠加至一定层数前，每次行动都会释放【烈焰爆炒】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301204,
+				"Name": "烈焰爆炒",
+				"SkillDesc": "对我方全体造成大量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301205,
+				"Name": "厨房事故",
+				"SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301206,
+				"Name": "火炼佳肴",
+				"SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【引爆炉灶】。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 300301207,
+				"Name": "猛火炉灶",
+				"SkillDesc": "自身在攻击时有大概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"3003020": {
 		"Id": "3003020",
@@ -6372,6 +6592,54 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"3003022": {
+		"Id": "3003022",
+		"Name": "惊梦剧团的甜猿泰山（错误）",
+		"Introduction": "代码受到影响后的错误投影。参照本体为匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的运输工，失控后仍在分享背负的美味，向路过的宾客抛掷它的礼物。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300302201,
+				"Name": "不限量赠饮",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，有小概率使受到攻击且没有护盾的目标陷入冻结状态，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302202,
+				"Name": "疯狂畅饮",
+				"SkillDesc": "对我方随机单体造成4次冰属性伤害，有大概率使受到攻击且没有护盾的目标陷入冻结状态，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302203,
+				"Name": "苏乐达派对",
+				"SkillDesc": "召唤2只【气泡锂犬】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300302204,
+				"Name": "酬宾喷泉",
+				"SkillDesc": "进入蓄力状态，获得韧性保护，下次行动时施放【疯狂畅饮】。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"3011010": {
 		"Id": "3011010",
 		"Name": "忆域迷因「视线无处不在」",
@@ -6399,6 +6667,34 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"3012010": {
+		"Id": "3012010",
+		"Name": "忆域迷因「何物藏于镜中」",
+		"Introduction": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n生命通过镜像认知世界，建构自我的认知。无形的模因在镜中倒映，留下千变万化的迷影。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301201001,
+				"Name": "镜像认同",
+				"SkillDesc": "变身为其他敌方单位，并复制其技能。变身后继承自身的基础属性。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"3012020": {
 		"Id": "3012020",
@@ -6515,6 +6811,116 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"3013010": {
+		"Id": "3013010",
+		"Name": "忆域迷因「狂怒褪去之壳」",
+		"Introduction": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n哀苦的回忆如炽焰灼心，当苦难褪去，怨恨化作的生命便会于灰烬中诞生，积聚无穷的盛怒。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301301001,
+				"Name": "怀恨礼",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。并使自身获得1层【无明火】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301002,
+				"Name": "怒叱如雷轰鸣",
+				"SkillDesc": "自身获得3层【无明火】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301301003,
+				"Name": "宿怨如浪翻涌",
+				"SkillDesc": "对我方全体造成少量量子属性伤害。并使自身获得1层【无明火】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301004,
+				"Name": "痛恶如刺剔骨",
+				"SkillDesc": "连续对我方随机单体造成少量量子属性伤害。每层【无明火】额外造成1段伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301005,
+				"Name": "癔症身壳",
+				"SkillDesc": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"3013011": {
+		"Id": "3013011",
+		"Name": "忆域迷因「狂怒褪去之壳」",
+		"Introduction": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n哀苦的回忆如炽焰灼心，当苦难褪去，怨恨化作的生命便会于灰烬中诞生，积聚无穷的盛怒。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301301101,
+				"Name": "怀恨礼",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。并使自身获得1层【无明火】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301102,
+				"Name": "怒叱如雷轰鸣",
+				"SkillDesc": "自身获得3层【无明火】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301301103,
+				"Name": "宿怨如浪翻涌",
+				"SkillDesc": "对我方全体造成少量量子属性伤害。并使自身获得1层【无明火】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301104,
+				"Name": "痛恶如刺剔骨",
+				"SkillDesc": "连续对我方随机单体造成少量量子属性伤害。每层【无明火】额外造成1段伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301105,
+				"Name": "癔症身壳",
+				"SkillDesc": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"3014020": {
 		"Id": "3014020",
 		"Name": "忆域迷因「何物朝向死亡」",
@@ -6569,7 +6975,7 @@
 			{
 				"Id": 301402006,
 				"Name": "步入良夜",
-				"SkillDesc": "进入【夜幕降临】状态，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
+				"SkillDesc": "进入【夜幕将临】状态，为我方全体恢复能量，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -6641,7 +7047,7 @@
 			{
 				"Id": 301402106,
 				"Name": "步入良夜",
-				"SkillDesc": "进入【夜幕降临】状态，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
+				"SkillDesc": "进入【夜幕将临】状态，为我方全体恢复能量，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -6658,6 +7064,78 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"3014022": {
+		"Id": "3014022",
+		"Name": "忆域迷因「何物朝向死亡」（完整）",
+		"Introduction": "代码受到影响后的完整投影。参照本体为蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n神秘危险的忆域迷因，被视作梦中不应存在的「死亡」。它的邪影游荡于十二时分，所及之处必有不测之祸，以利刃散布噩耗，以死荫笼罩美梦。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301402201,
+				"Name": "葬仪之吻",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402202,
+				"Name": "沦没黑雨",
+				"SkillDesc": "对我方全体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 301402203,
+				"Name": "彻心悼词",
+				"SkillDesc": "提升自身造成的伤害，持续1回合，陷入弱点击破状态后解除。每次释放时获得1层伤害提高，并使后续召唤的【永眠墓碣】生命值增加1格。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301402204,
+				"Name": "光明消歇",
+				"SkillDesc": "进入【白日西沉】状态。每当我方施放普攻、战技、终结技时叠加1层，当【白日西沉】叠加至3层时，立即对上一个行动的我方施放【已在黄昏失色】。施放过一次【已在黄昏失色】或被弱点击破后解除该状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301402205,
+				"Name": "已在黄昏失色",
+				"SkillDesc": "立即对上一名施放普攻、战技、终结技的我方目标发动致命攻击，使其陷入【梦死】状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301402206,
+				"Name": "步入良夜",
+				"SkillDesc": "进入【夜幕将临】状态并获得【弱点无效】效果，为我方全体恢复能量，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301402207,
+				"Name": "如水逝于水中",
+				"SkillDesc": "立即对所有被锁定的我方目标发动致命攻击，使其陷入【梦死】状态。如果没有被锁定的目标，则随机对2名我方目标发动致命攻击并使其陷入【梦死】状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301402209,
+				"Name": "无从凭吊的荒场",
+				"SkillDesc": "每当我方目标陷入【梦死】状态时，召唤一个对应的【永眠墓碣】；当我方全体陷入【梦死】状态或无法战斗状态时，战斗失败。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"3021020": {
 		"Id": "3021020",
@@ -7191,1316 +7669,6 @@
 			}
 		],
 		"VersionAdded": "2.0"
-	},
-	"7001010": {
-		"Id": "7001010",
-		"Name": "入魔机巧 • 率从狻猊",
-		"Introduction": "工造司匠人随手造就的机巧发明。原本是不具灵智，用以示警招众的警铃，如今却因为某些异变被赋予了短暂的「生命」。\n在战斗中，率从狻猊可以抵御致命伤害。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700101001,
-				"Name": "狮子吼",
-				"SkillDesc": "对指定我方单体造成少量伤害，并有概率使受到攻击的我方目标陷入虚弱状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700101002,
-				"Name": "应急模式",
-				"SkillDesc": "受到致命伤害时不会陷入无法战斗状态，而是回复一定生命值并驱散负面效果。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700101003,
-				"Name": "自我重构",
-				"SkillDesc": "消耗所有充能。重置【应急模式】的可触发次数。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7001011": {
-		"Id": "7001011",
-		"Name": "虚卒•掠夺者",
-		"Introduction": "尚未死灭的战士经「战争熔炉」的重铸获得了名为「毁灭」的力量，反物质补足了他们的残躯，负粒子在其躯体中震荡。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700101101,
-				"Name": "狩猎之刃",
-				"SkillDesc": "对指定我方单体造成少量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700101102,
-				"Name": "涡旋跃袭",
-				"SkillDesc": "对指定我方单体及其相邻目标造成伤害，若此技能消灭我方目标则回复所有能量。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7001012": {
-		"Id": "7001012",
-		"Name": "虚卒•抹消者",
-		"Introduction": "死亡之后遭遇裂界侵蚀的躯壳残骸，其生命体征虽发生改变，但依然在执行抹消的指令。\n在战斗中虚卒·抹消者可快速多次发动攻击，但若无法消灭敌方目标会受到大量伤害。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700101201,
-				"Name": "虚灼炮攻",
-				"SkillDesc": "对指定我方单体造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700101202,
-				"Name": "反物质加速",
-				"SkillDesc": "消耗所有充能。自身速度大幅提高。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700101203,
-				"Name": "反物质重炮",
-				"SkillDesc": "自身攻击后叠加1层【过热】，【过热】达到<unbreak>#1[i]</unbreak>层时消耗自身大量生命值并移除【过热】。消灭我方目标时移除【过热】。",
-				"SkillTypeDesc": "技能"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7001013": {
-		"Id": "7001013",
-		"Name": "商务扑满",
-		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。\n商务扑满可为其他公司员工提供绩效点。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700101301,
-				"Name": "激励",
-				"SkillDesc": "为除自身外敌方其他目标提供1个【绩效点】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700101302,
-				"Name": "企业向心力",
-				"SkillDesc": "每次受到攻击，除自身外敌方其他目标速度提高。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002010": {
-		"Id": "7002010",
-		"Name": "丰饶灵兽•奎木",
-		"Introduction": "身披烟雾的奔狼，行动飘忽不定。\n在「建木」上一次伫立时，仙舟人曾以奇术繁育众多异兽珍禽。奎木即为伴随军阵行进的战兽之一。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700201001,
-				"Name": "狼餐",
-				"SkillDesc": "对指定我方单体造成伤害，并大概率使受到攻击的我方目标陷入触电状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Thunder"
-			},
-			{
-				"Id": 700201002,
-				"Name": "狼噬",
-				"SkillDesc": "对指定我方单体造成伤害，若目标处于持续伤害状态，其当前承受的所有持续伤害立即产生1次伤害。之后，大概率使受到攻击的我方目标陷入触电状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Thunder"
-			},
-			{
-				"Id": 700201003,
-				"Name": "啸聚",
-				"SkillDesc": "消耗所有充能。召唤1个当前生命值与自身相同的【狈影】。",
-				"SkillTypeDesc": "技能"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002011": {
-		"Id": "7002011",
-		"Name": "狈影",
-		"Introduction": "奎木凝成的幻影。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700201101,
-				"Name": "狼餐",
-				"SkillDesc": "对指定我方单体造成伤害，并大概率使受到攻击的我方目标陷入触电状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Thunder"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002020": {
-		"Id": "7002020",
-		"Name": "流浪者",
-		"Introduction": "困居于下层区的人们为了生存，往往会不惜铤而走险深入裂界寻找任何可用的物资，其中被他们掘出的古代机器成了他们最好的帮手。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700202001,
-				"Name": "铲击",
-				"SkillDesc": "对指定我方单体造成少量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700202002,
-				"Name": "大幅鼓舞",
-				"SkillDesc": "消耗所有充能。使指定敌方单体攻击力提高，速度提高，如果目标非自身则还会使其立即行动。进入战斗时该技能充能为满。",
-				"SkillTypeDesc": "技能"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002030": {
-		"Id": "7002030",
-		"Name": "火焚灾影",
-		"Introduction": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形。其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的燃烬所取代。\n战斗中火焚灾影会挥舞燃烧的斧刃，灼烧敌人。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700203001,
-				"Name": "灼炎重击",
-				"SkillDesc": "对指定我方单体造成伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700203002,
-				"Name": "灼炎冲击波",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成大量伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002050": {
-		"Id": "7002050",
-		"Name": "入魔机巧 • 灯昼龙鱼",
-		"Introduction": "工造司匠人随手造就的机巧发明。原本是不具灵智，用以烛照黑暗的灯具，如今却因为某些异变被赋予了短暂的「生命」。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700205001,
-				"Name": "宵明",
-				"SkillDesc": "对我方全体造成少量伤害，并大概率使受到攻击的我方目标陷入随机持续伤害状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700205002,
-				"Name": "放个烟花",
-				"SkillDesc": "消耗所有充能。迸发出耀眼的烟花，什么都不会发生，但很好看。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700205003,
-				"Name": "烛花",
-				"SkillDesc": "陷入无法战斗状态时，对敌方全体造成伤害，并大概率使受到攻击的敌方目标受到的伤害提高。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002060": {
-		"Id": "7002060",
-		"Name": "银鬃炮手",
-		"Introduction": "银鬃铁卫中的炮手，使用便携的手炮进行战斗。\n 在战斗中，银鬃炮手会和其它目标发动猛烈的连携攻击。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700206001,
-				"Name": "炮击",
-				"SkillDesc": "对指定我方单体及其相邻目标造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700206002,
-				"Name": "炮火上膛",
-				"SkillDesc": "消耗所有充能。为指定敌方单体提供支援，并使自身和所有被支援的敌方攻击力提高。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700206003,
-				"Name": "掩护支援",
-				"SkillDesc": "进入战斗时，为指定敌方单体提供支援，在被支援的敌方目标攻击我方目标后施放1次追加攻击，对受到攻击的我方目标及其相邻目标造成少量伤害。",
-				"SkillTypeDesc": "天赋",
-				"ElementType": "Physical"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002070": {
-		"Id": "7002070",
-		"Name": "虚数织叶者",
-		"Introduction": "不属此世的怪异生命，自深黯星空的彼端，透过重重帷幕而来。其身躯犹如病态的枝叶探入现实中，使用虚数的力量肆意改造现实。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700207001,
-				"Name": "颂歌震荡",
-				"SkillDesc": "对指定我方单体及其相邻目标造成伤害。首次使用后，使自身行动大幅提前。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700207002,
-				"Name": "颂歌爆发",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002080": {
-		"Id": "7002080",
-		"Name": "银鬃射手",
-		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」中的射手，负责狙击敌人。\n战斗中，银鬃射手会标记敌方目标，指引友方集中攻击。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700208001,
-				"Name": "铳击",
-				"SkillDesc": "对指定我方单体造成少量伤害，使用后使自身行动提前一定比例。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700208002,
-				"Name": "破甲榴弹",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成伤害，使其每次受到攻击后会受到额外伤害，并使其成为敌方全体的攻击目标。进入战斗时该技能充能为满。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002090": {
-		"Id": "7002090",
-		"Name": "银鬃近卫",
-		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」中的近卫战士，负责冲锋陷阵。\n战斗中，银鬃近卫会持续为友方提供加成效果。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700209001,
-				"Name": "奔袭",
-				"SkillDesc": "对指定我方单体造成少量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700209002,
-				"Name": "鼓舞士气",
-				"SkillDesc": "消耗所有充能。敌方全队获得5层【士气】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700209003,
-				"Name": "铁卫铠甲",
-				"SkillDesc": "敌方单位攻击后，敌方全队获得1层【士气】。每层士气提高造成的和伤害和速度，降低受到的伤害。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002100": {
-		"Id": "7002100",
-		"Name": "自动机兵•蜘蛛",
-		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，负责替代人类进行最基础的体力劳动。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700210001,
-				"Name": "冲撞",
-				"SkillDesc": "对指定我方单体造成少量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700210002,
-				"Name": "定时模块",
-				"SkillDesc": "下次行动施放【自爆模块】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700210003,
-				"Name": "自爆模块",
-				"SkillDesc": "消耗所有充能。引爆自身，对指定我方单体及其相邻目标造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002110": {
-		"Id": "7002110",
-		"Name": "自动机兵•蜘蛛",
-		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，负责替代人类进行最基础的体力劳动。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700211001,
-				"Name": "冲撞",
-				"SkillDesc": "对指定我方单体造成少量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700211002,
-				"Name": "定时模块",
-				"SkillDesc": "下次行动施放【自爆模块】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700211003,
-				"Name": "自爆模块",
-				"SkillDesc": "消耗所有充能。引爆自身，对指定我方单体及其相邻目标造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002120": {
-		"Id": "7002120",
-		"Name": "基层员工•外勤",
-		"Introduction": "「星际和平公司」的基层员工，主要负责处理上不得台面的「业务疏漏」。工资不高，只能在公司旗下的企业舰上合租房间。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700212001,
-				"Name": "打卡",
-				"SkillDesc": "对指定我方单体造成伤害，获得1个【绩效点】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700212002,
-				"Name": "年终结算",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成伤害，若已持有【绩效点】则使其受到伤害提高。消耗所有【绩效点】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700212003,
-				"Name": "公司雇员",
-				"SkillDesc": "根据【绩效点】数量大幅提高伤害。获得【绩效点】时，获得可叠加的护盾，无【绩效点】时会移除该护盾。护盾被击破或陷入无法战斗状态时【绩效点】会被夺取。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002130": {
-		"Id": "7002130",
-		"Name": "基层员工•安保",
-		"Introduction": "「星际和平公司」的基层员工，主要负责维持公司管辖地区的治安秩序。工资不高，只能在公司旗下的企业舰上合租房间。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700213001,
-				"Name": "申诉",
-				"SkillDesc": "对指定我方单体及相邻目标造成伤害，获得1个【绩效点】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700213002,
-				"Name": "绩效总结",
-				"SkillDesc": "消耗所有充能。对指定我方单体及相邻目标造成伤害，若已持有【绩效点】则自身行动提前一定比例。消耗所有【绩效点】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700213003,
-				"Name": "公司雇员",
-				"SkillDesc": "根据【绩效点】数量大幅提高伤害。获得【绩效点】时，获得可叠加的护盾，无【绩效点】时会移除该护盾。护盾被击破或陷入无法战斗状态时【绩效点】会被夺取。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7002140": {
-		"Id": "7002140",
-		"Name": "永冬灾影",
-		"Introduction": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形，其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的冰棱所取代。\n战斗中永冬灾影会挥舞冰造的斧刃，延缓敌人的行动。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700214001,
-				"Name": "霜冻重击",
-				"SkillDesc": "对指定我方单体造成伤害，并使受到攻击的我方目标行动延后。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Ice"
-			},
-			{
-				"Id": 700214002,
-				"Name": "霜冻超重击",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成伤害，并大概率使受到攻击的我方目标陷入冻结状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Ice"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003010": {
-		"Id": "7003010",
-		"Name": "外宇宙之炎",
-		"Introduction": "不属此世的怪异生命，自星核带来的裂界中成长，寄生在世界的根基结构中汲取能量，其甲胄外壳上燃烧着星辰内核的烈焰。\n在战斗中，外宇宙之炎能轻易将敌人焚作灰烬。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700301001,
-				"Name": "汲取炎华",
-				"SkillDesc": "dev_不显示。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700301002,
-				"Name": "咆哮之火",
-				"SkillDesc": "对指定我方单体造成少量伤害，并大概率使受到攻击的我方目标陷入【焚烧】状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700301003,
-				"Name": "净炎之雨",
-				"SkillDesc": "连续对我方随机单体造成少量伤害，并大概率使受到攻击的我方目标陷入【焚烧】状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700301004,
-				"Name": "熔聚",
-				"SkillDesc": "使自身攻击力提高。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700301005,
-				"Name": "轰炸前兆",
-				"SkillDesc": "积蓄力量，下次行动施放【火炽轰炸】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700301006,
-				"Name": "火炽轰炸",
-				"SkillDesc": "消耗所有充能。对我方全体造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003020": {
-		"Id": "7003020",
-		"Name": "金人司阍",
-		"Introduction": "以古老机巧术铸造的镇守金人。\n无数岁月前，金人随着仙舟出航求取仙方，监管和辅助人类进行战争——但历尽叛乱后，金人最终为仙舟人所降服。\n而今所有的金人都被符箓严格宰制，用以把守机要重地。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700302001,
-				"Name": "奉辞罚罪",
-				"SkillDesc": "当我方目标施放战技或终结技进行攻击时会积累【惩戒度】等级，当【惩戒度】等级满级时会释放【罚恶模式】。",
-				"SkillTypeDesc": "天赋"
-			},
-			{
-				"Id": 700302002,
-				"Name": "儆惧",
-				"SkillDesc": "提高【惩戒度】等级，并对我方全体造成少量伤害，同时大概率使我方目标陷入虚弱状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700302003,
-				"Name": "戒退",
-				"SkillDesc": "对指定我方单体造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700302004,
-				"Name": "缚束",
-				"SkillDesc": "对指定我方单体造成大量伤害，同时有大概率使受到攻击的我方目标陷入禁锢状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700302005,
-				"Name": "罚恶模式",
-				"SkillDesc": "消耗所有充能。速度提高，行动时会释放强力的攻击技能，持续2回合，同时召唤【入魔机巧 • 灯昼龙鱼】。",
-				"SkillTypeDesc": "技能"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003030": {
-		"Id": "7003030",
-		"Name": "银鬃尉官",
-		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」分队的领导者。\n银鬃尉官会为友方提供护盾，并反击攻击受护盾保护的友方的敌人。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700303001,
-				"Name": "突击",
-				"SkillDesc": "造成单体伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Ice"
-			},
-			{
-				"Id": 700303002,
-				"Name": "盾阵",
-				"SkillDesc": "为敌方全体提供护盾。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700303003,
-				"Name": "全面备战",
-				"SkillDesc": "消耗所有充能。大概率使我方全体进入嘲讽状态，并为自身提供大量护盾。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700303004,
-				"Name": "铁卫号令",
-				"SkillDesc": "敌方有护盾的目标被攻击后，自动进行反击。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003040": {
-		"Id": "7003040",
-		"Name": "虚卒•践踏者",
-		"Introduction": "「反物质军团」利用「战争熔炉」将战士与古兽的残片融合重铸后的产物。\n虽数量相对稀少，但兼具战士的智能与古兽的力量与机动性。在战斗中，消灭敌人后会立即再次行动。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700304001,
-				"Name": "虚实的投影",
-				"SkillDesc": "对指定我方单体造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Quantum"
-			},
-			{
-				"Id": 700304002,
-				"Name": "侵略的铁蹄",
-				"SkillDesc": "对指定我方单体造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Quantum"
-			},
-			{
-				"Id": 700304003,
-				"Name": "战争的践踏",
-				"SkillDesc": "消耗所有充能。对指定我方单体及其相邻目标造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Quantum"
-			},
-			{
-				"Id": 700304004,
-				"Name": "螺旋的弓矢",
-				"SkillDesc": "锁定我方单体，下次行动对该目标施放【强弩的终结】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Quantum"
-			},
-			{
-				"Id": 700304005,
-				"Name": "强弩的终结",
-				"SkillDesc": "对指定我方单体造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Quantum"
-			},
-			{
-				"Id": 700304006,
-				"Name": "反物质铁蹄",
-				"SkillDesc": "敌方或我方目标被消灭时，使自身立即行动。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Quantum"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003060": {
-		"Id": "7003060",
-		"Name": "深寒徘徊者",
-		"Introduction": "徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n深寒徘徊者会吸收友方生命值以大幅强化自身。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700306001,
-				"Name": "冰轮碎碾",
-				"SkillDesc": "对指定我方单体造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Ice"
-			},
-			{
-				"Id": 700306002,
-				"Name": "冻结风暴",
-				"SkillDesc": "消耗所有充能。对我方全体造成伤害，并有大概率使受到攻击的我方目标陷入【深寒】状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Ice"
-			},
-			{
-				"Id": 700306003,
-				"Name": "低温榨取",
-				"SkillDesc": "存在友方单位时，消耗相邻友方单位生命值，攻击力提高，并立即再次行动。",
-				"SkillTypeDesc": "技能"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003070": {
-		"Id": "7003070",
-		"Name": "自动机兵•齿狼",
-		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，少见的人形机械，其右臂部分统一装置着链锯，似乎曾用于采集或建造作业。\n战斗中，自动机兵「齿狼」会持续叠加速度和伤害加成。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700307001,
-				"Name": "砍伐指令",
-				"SkillDesc": "造成伤害，每击有低概率施加裂伤。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700307002,
-				"Name": "作战加速",
-				"SkillDesc": "消耗所有充能。获得3层【加压】，每层可提高自身攻击力和速度。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700307003,
-				"Name": "目标锁定",
-				"SkillDesc": "战斗开始时或锁定目标陷入无法战斗状态时，锁定我方单体并获得3层【加压】。",
-				"SkillTypeDesc": "天赋"
-			},
-			{
-				"Id": 700307004,
-				"Name": "解体拆除",
-				"SkillDesc": "使用【砍伐指令】后，有概率追加攻击并获得1层【加压】，目标已损失生命值越多，追加攻击概率越高。",
-				"SkillTypeDesc": "天赋",
-				"ElementType": "Physical"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003080": {
-		"Id": "7003080",
-		"Name": "炽燃徘徊者",
-		"Introduction": "徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n炽燃徘徊者的攻击会对处于灼烧状态的敌人造成额外效果。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700308001,
-				"Name": "赤红刀锋",
-				"SkillDesc": "对指定我方单体造成伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700308002,
-				"Name": "燃焰斩击",
-				"SkillDesc": "对指定我方单体及其相邻目标造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700308003,
-				"Name": "熔解",
-				"SkillDesc": "对陷入灼烧状态的我方单体施放攻击后自身造成的伤害提高。",
-				"SkillTypeDesc": "天赋"
-			},
-			{
-				"Id": 700308004,
-				"Name": "高温运转",
-				"SkillDesc": "使自身攻击力小幅提高，速度大幅提高。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700308005,
-				"Name": "飞舞烬火",
-				"SkillDesc": "对我方全体造成伤害。使陷入灼烧状态的我方目标受到额外伤害的同时解除该目标的灼烧状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700308006,
-				"Name": "爆裂缭灼",
-				"SkillDesc": "消耗所有充能。对我方全体造成伤害，使陷入灼烧状态的我方目标发生爆炸同时对自身及相邻目标造成伤害，同时解除该目标的灼烧状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700308007,
-				"Name": "爆裂前兆",
-				"SkillDesc": "下次行动施放【爆裂缭灼】。",
-				"SkillTypeDesc": "技能"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003090": {
-		"Id": "7003090",
-		"Name": "自动机兵•灰熊",
-		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，加装了厚重的铠甲，用于冲锋陷阵保护银鬃铁卫。\n战斗中，自动机兵「灰熊」会发出信号召来「蜘蛛」合作战斗，同时会积蓄动能发出强力一击。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700309001,
-				"Name": "爆裂指令",
-				"SkillDesc": "召唤【自动机兵•蜘蛛】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700309002,
-				"Name": "愤怒指令",
-				"SkillDesc": "有概率使我方全体陷入嘲讽状态。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700309003,
-				"Name": "过载指令",
-				"SkillDesc": "进入蓄力状态，下次行动对我方全体施放【剿灭指令】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700309004,
-				"Name": "剿灭指令",
-				"SkillDesc": "对我方全体造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700309005,
-				"Name": "破坏指令",
-				"SkillDesc": "对指定我方单体造成伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"7003100": {
-		"Id": "7003100",
-		"Name": "资深员工•组长",
-		"Introduction": "「星际和平公司」的资深员工，级别至少是项目组的小组长。驾驶的机甲属于公有资产，一旦损坏需要自费赔偿。工资尚可，足够在公司旗下的企业舰上租下一室一厅的单间。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700310001,
-				"Name": "处分",
-				"SkillDesc": "对指定我方单体造成伤害，如当前无【绩效点】，获得1个【绩效点】，否则消耗所有【绩效点】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700310002,
-				"Name": "降本增效",
-				"SkillDesc": "对指定我方单体造成大量伤害，获得1个【绩效点】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700310003,
-				"Name": "培训中…",
-				"SkillDesc": "自身进入蓄力状态。下次行动施放【企业文化冲击】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700310004,
-				"Name": "企业文化冲击",
-				"SkillDesc": "消耗所有充能。对我方全体造成大量伤害，并消耗所有【绩效点】。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700310005,
-				"Name": "<unbreak>720</unbreak>度考核",
-				"SkillDesc": "夺取除自身外敌方其他目标1个【绩效点】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700310006,
-				"Name": "团建",
-				"SkillDesc": "召唤星际和平公司雇员，并使其获得1个【绩效点】。",
-				"SkillTypeDesc": "技能"
-			},
-			{
-				"Id": 700310007,
-				"Name": "公司雇员",
-				"SkillDesc": "根据【绩效点】数量大幅提高伤害。获得【绩效点】时，获得可叠加的护盾，无【绩效点】时会移除该护盾。护盾被击破或陷入无法战斗状态时【绩效点】会被夺取。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.4"
 	},
 	"8001010": {
 		"Id": "8001010",
@@ -12240,6 +11408,30 @@
 		],
 		"VersionAdded": "1.4"
 	},
+	"8032030": {
+		"Id": "8032030",
+		"Name": "「所有或一无所有」",
+		"Introduction": "「诡弈砂金」所化博弈之骰，于赌局中裁断博徒们的命运。",
+		"ElementalWeaknesses": [],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 803203001,
+				"Name": "运数莫测",
+				"SkillDesc": "不会受到伤害，受到进入赌局的目标攻击时使其获得1个随机1到6的点数。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"8033010": {
 		"Id": "8033010",
 		"Name": "资深员工•组长",
@@ -12380,30 +11572,136 @@
 		],
 		"VersionAdded": "1.5"
 	},
-	"9003020": {
-		"Id": "9003020",
-		"Name": "造物引擎",
-		"Introduction": "dev_暴风雪领域",
-		"ElementalWeaknesses": [],
+	"8034010": {
+		"Id": "8034010",
+		"Name": "「石心十人」诡弈砂金",
+		"Introduction": "星际和平公司「战略投资部」的高级干部，「石心十人」之一。借由基石分得「存护」令使的权能，以身作骰，置之死地而后生。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
 		"ElementalResistance": {
 			"Physical": 0,
 			"Fire": 0,
 			"Ice": 0,
-			"Wind": 0,
+			"Wind": 0.2,
 			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
+			"Quantum": 0.2,
+			"Imaginary": 0.4
 		},
 		"SkillList": [
 			{
-				"Id": 900302001,
-				"Name": "dev_【不会显示】滋激光",
-				"SkillDesc": "dev_【不会显示】对敌方全体造成冰伤害，该伤害每次提高",
+				"Id": 803401001,
+				"Name": "押以重注",
+				"SkillDesc": "对指定我方单体造成虚数属性伤害。",
 				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401002,
+				"Name": "分散投资",
+				"SkillDesc": "连续对我方随机单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401003,
+				"Name": "点数喷泉",
+				"SkillDesc": "对我方全体造成少量虚数属性伤害，并减少我方全体的能量。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401004,
+				"Name": "对赌时刻",
+				"SkillDesc": "召唤【「所有或一无所有」】并使我方单体进入赌局，每个【「所有或一无所有」】每次受到进入赌局的我方目标攻击时，会使其获得1个随机1到6的点数。进入赌局的我方单体回合结束时，点数低于诡弈砂金视为输掉赌局并受到攻击；点数高于诡弈砂金视为赢得赌局且终结技被激活。同时使没有进入赌局的我方目标陷入【观局勿语】状态，赌局结束后解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803401005,
+				"Name": "豪赌盛宴",
+				"SkillDesc": "召唤【「所有或一无所有」】并使我方全体进入赌局，每个【「所有或一无所有」】每次受到攻击时会使进行攻击的我方目标获得1个随机1到6的点数。下次诡弈砂金行动时，点数低于诡弈砂金的我方目标视为输掉赌局并受到攻击；点数高于诡弈砂金的我方目标视为赢得赌局且终结技被激活。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803401006,
+				"Name": "败者退席",
+				"SkillDesc": "对输掉赌局的我方单体造成虚数属性伤害，并大概率使受到攻击的我方单体陷入禁锢状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401007,
+				"Name": "胜者通杀",
+				"SkillDesc": "对所有输掉赌局的我方目标造成大量虚数属性伤害，并大概率使受到攻击的我方目标陷入禁锢状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401008,
+				"Name": "诡弈赌约",
+				"SkillDesc": "每次赢得赌局的我方目标获得【鸿运当头】效果，造成的伤害提高；每次输掉赌局的我方目标获得【时运不济】效果，受到的伤害提高。",
+				"SkillTypeDesc": "天赋"
 			}
 		],
-		"VersionAdded": "1.0"
+		"VersionAdded": "2.1"
+	},
+	"100201101": {
+		"Id": "100201101",
+		"Name": "冰锋",
+		"Introduction": "守护者创造的巨大冰矛，能释放出席卷全场的刺骨霜风。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100201101,
+				"Name": "冰风",
+				"SkillDesc": "对我方全体造成少量冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100201201": {
+		"Id": "100201201",
+		"Name": "冰锋",
+		"Introduction": "守护者创造的巨大冰矛，能释放出席卷全场的刺骨霜风。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100201201,
+				"Name": "冰风",
+				"SkillDesc": "对我方全体造成少量冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"100201501": {
 		"Id": "100201501",
@@ -13107,6 +12405,76 @@
 		],
 		"VersionAdded": "1.4"
 	},
+	"100202017": {
+		"Id": "100202017",
+		"Name": "流浪者",
+		"Introduction": "困居于下层区的人们为了生存，往往会不惜铤而走险深入裂界寻找任何可用的物资，其中被他们掘出的古代机器成了他们最好的帮手。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "铲击",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "鼓舞",
+				"SkillDesc": "使指定敌方单体攻击力提高并立即行动。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100202019": {
+		"Id": "100202019",
+		"Name": "流浪者",
+		"Introduction": "困居于下层区的人们为了生存，往往会不惜铤而走险深入裂界寻找任何可用的物资，其中被他们掘出的古代机器成了他们最好的帮手。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100202001,
+				"Name": "铲击",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100202002,
+				"Name": "鼓舞",
+				"SkillDesc": "使指定敌方单体攻击力提高并立即行动。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"100202101": {
 		"Id": "100202101",
 		"Name": "流浪者",
@@ -13632,6 +13000,129 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"100203013": {
+		"Id": "100203013",
+		"Name": "银鬃炮手",
+		"Introduction": "银鬃铁卫中的炮手，使用便携的手炮进行战斗。\n 在战斗中，银鬃炮手会和其它目标发动猛烈的连携攻击。",
+		"ElementalWeaknesses": [
+			"Imaginary",
+			"Fire",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "炮击",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "掩护支援",
+				"SkillDesc": "为指定敌方单体提供支援，在被支援的敌方目标攻击我方目标后施放1次追加攻击，对受到攻击的我方目标及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100203003,
+				"Name": "掩护支援",
+				"SkillDesc": "为指定敌方单体提供支援，在被支援的敌方目标攻击我方目标后施放1次追加攻击，对受到攻击的我方目标及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100203016": {
+		"Id": "100203016",
+		"Name": "银鬃炮手",
+		"Introduction": "银鬃铁卫中的炮手，使用便携的手炮进行战斗。\n 在战斗中，银鬃炮手会和其它目标发动猛烈的连携攻击。",
+		"ElementalWeaknesses": [
+			"Imaginary",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "炮击",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "掩护支援",
+				"SkillDesc": "为指定敌方单体提供支援，在被支援的敌方目标攻击我方目标后施放1次追加攻击，对受到攻击的我方目标及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100203003,
+				"Name": "掩护支援",
+				"SkillDesc": "为指定敌方单体提供支援，在被支援的敌方目标攻击我方目标后施放1次追加攻击，对受到攻击的我方目标及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100203017": {
+		"Id": "100203017",
+		"Name": "银鬃炮手",
+		"Introduction": "银鬃铁卫中的炮手，使用便携的手炮进行战斗。\n 在战斗中，银鬃炮手会和其它目标发动猛烈的连携攻击。",
+		"ElementalWeaknesses": [
+			"Imaginary",
+			"Fire",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100203001,
+				"Name": "炮击",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100203002,
+				"Name": "掩护支援",
+				"SkillDesc": "为指定敌方单体提供支援，在被支援的敌方目标攻击我方目标后施放1次追加攻击，对受到攻击的我方目标及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100203003,
+				"Name": "掩护支援",
+				"SkillDesc": "为指定敌方单体提供支援，在被支援的敌方目标攻击我方目标后施放1次追加攻击，对受到攻击的我方目标及其相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"100204001": {
 		"Id": "100204001",
@@ -14257,6 +13748,34 @@
 		],
 		"VersionAdded": "1.4"
 	},
+	"100204024": {
+		"Id": "100204024",
+		"Name": "银鬃近卫",
+		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」中的近卫战士，负责冲锋陷阵。\n战斗中，银鬃近卫的攻击会降低我方的防御力。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100204001,
+				"Name": "奔袭",
+				"SkillDesc": "对指定我方单体造成物理属性伤害，并大概率使受到攻击的我方目标防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"100204101": {
 		"Id": "100204101",
 		"Name": "银鬃近卫",
@@ -14772,6 +14291,62 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"100205019": {
+		"Id": "100205019",
+		"Name": "银鬃射手",
+		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」中的射手，负责狙击敌人。\n战斗中，银鬃射手的射击会对我方造成裂伤。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "破甲榴弹",
+				"SkillDesc": "对指定我方单体造成物理属性伤害，并大概率使受到攻击的我方目标陷入裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100205020": {
+		"Id": "100205020",
+		"Name": "银鬃射手",
+		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」中的射手，负责狙击敌人。\n战斗中，银鬃射手的射击会对我方造成裂伤。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100205001,
+				"Name": "破甲榴弹",
+				"SkillDesc": "对指定我方单体造成物理属性伤害，并大概率使受到攻击的我方目标陷入裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"100301001": {
 		"Id": "100301001",
@@ -15637,6 +15212,156 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"100301019": {
+		"Id": "100301019",
+		"Name": "银鬃尉官",
+		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」分队的领导者。\n战斗中，银鬃尉官会架起巨盾并强化自身。攻击架盾状态下的银鬃尉官，会立即遭到强力的反击。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "突击",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "穿刺",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "盾反",
+				"SkillDesc": "进入反击状态，在受到我方单体攻击后自身行动提前并立即对该目标施放【穿刺】技能。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100301004,
+				"Name": "增援",
+				"SkillDesc": "召唤【银鬃近卫】或【银鬃射手】。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100301020": {
+		"Id": "100301020",
+		"Name": "银鬃尉官",
+		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」分队的领导者。\n战斗中，银鬃尉官会架起巨盾并强化自身。攻击架盾状态下的银鬃尉官，会立即遭到强力的反击。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301001,
+				"Name": "突击",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301002,
+				"Name": "穿刺",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301003,
+				"Name": "盾反",
+				"SkillDesc": "进入反击状态，在受到我方单体攻击后自身行动提前并立即对该目标施放【穿刺】技能。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100301004,
+				"Name": "增援",
+				"SkillDesc": "召唤【银鬃近卫】或【银鬃射手】。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100301101": {
+		"Id": "100301101",
+		"Name": "银鬃尉官（错误）",
+		"Introduction": "代码受到影响后的错误投影。参照本体为贝洛伯格的戍卫部队「银鬃铁卫」分队的领导者。\n战斗中，只要敌方还有队友存在，银鬃尉官会一直架起巨盾。攻击架盾状态下的银鬃尉官，会立即遭到强力的反击。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100301101,
+				"Name": "突击",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301102,
+				"Name": "穿刺",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 100301103,
+				"Name": "盾反",
+				"SkillDesc": "进入反击状态，在受到我方单体攻击后获得1个额外回合，对该目标造成物理属性伤害。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100301104,
+				"Name": "增援",
+				"SkillDesc": "召唤【银鬃近卫】或【银鬃射手】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100301105,
+				"Name": "鼓劲",
+				"SkillDesc": "使敌方除【银鬃尉官（错误）】外的目标攻击力提高并立即行动。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"100401001": {
 		"Id": "100401001",
 		"Name": "可可利亚",
@@ -15880,6 +15605,128 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"100401005": {
+		"Id": "100401005",
+		"Name": "可可利亚",
+		"Introduction": "贝洛伯格的守护者，永屹之城贝洛伯格无可质疑的统治者。\n可可利亚秉持传承自历代守护者的神迹权能，在战斗中号令冰雪的力量冻结敌人。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.4,
+			"Fire": 0,
+			"Ice": 0.6,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100401001,
+				"Name": "刺骨凝血的寒芒",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401002,
+				"Name": "漫长冰期的预兆",
+				"SkillDesc": "召唤【冰锋】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100401003,
+				"Name": "无尽长冬的绝罚",
+				"SkillDesc": "对我方全体造成大量冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401004,
+				"Name": "永囚于此的白霜",
+				"SkillDesc": "对指定我方单体造成少量冰属性伤害，并有大概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401005,
+				"Name": "雪国圣徒的烈怒",
+				"SkillDesc": "进入蓄力状态，下次行动时对我方全体施放【无尽长冬的绝罚】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100401006,
+				"Name": "dev_从容",
+				"SkillDesc": "dev_待机。不显示。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100401006": {
+		"Id": "100401006",
+		"Name": "可可利亚",
+		"Introduction": "贝洛伯格的守护者，永屹之城贝洛伯格无可质疑的统治者。\n可可利亚秉持传承自历代守护者的神迹权能，在战斗中号令冰雪的力量冻结敌人。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.6,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100401001,
+				"Name": "刺骨凝血的寒芒",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401002,
+				"Name": "漫长冰期的预兆",
+				"SkillDesc": "召唤【冰锋】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100401003,
+				"Name": "无尽长冬的绝罚",
+				"SkillDesc": "对我方全体造成大量冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401004,
+				"Name": "永囚于此的白霜",
+				"SkillDesc": "对指定我方单体造成少量冰属性伤害，并有大概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100401005,
+				"Name": "雪国圣徒的烈怒",
+				"SkillDesc": "进入蓄力状态，下次行动时对我方全体施放【无尽长冬的绝罚】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100401006,
+				"Name": "dev_从容",
+				"SkillDesc": "dev_待机。不显示。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"100402001": {
 		"Id": "100402001",
@@ -16160,6 +16007,116 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"100402006": {
+		"Id": "100402006",
+		"Name": "杰帕德",
+		"Introduction": "银鬃铁卫的戍卫长。\n杰帕德会指挥麾下士兵集中攻击，并且能为士兵提供免疫一次攻击的屏障。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100402001,
+				"Name": "一意之拳",
+				"SkillDesc": "对指定我方单体造成少量冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100402002,
+				"Name": "霜之惩击",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100402003,
+				"Name": "戍卫气场",
+				"SkillDesc": "为自身以外的敌方目标提供屏障，屏障状态下的目标可抵抗除持续伤害外的所有伤害，受到攻击后解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100402004,
+				"Name": "极寒瀑流",
+				"SkillDesc": "对我方全体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100402005,
+				"Name": "围攻打援",
+				"SkillDesc": "召唤【银鬃射手】或【银鬃炮手】，同时锁定我方单体，使敌方全体集中攻击该目标。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100402007": {
+		"Id": "100402007",
+		"Name": "杰帕德",
+		"Introduction": "银鬃铁卫的戍卫长。\n杰帕德会指挥麾下士兵集中攻击，并且能为士兵提供免疫一次攻击的屏障。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 100402001,
+				"Name": "一意之拳",
+				"SkillDesc": "对指定我方单体造成少量冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100402002,
+				"Name": "霜之惩击",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100402003,
+				"Name": "戍卫气场",
+				"SkillDesc": "为自身以外的敌方目标提供屏障，屏障状态下的目标可抵抗除持续伤害外的所有伤害，受到攻击后解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100402004,
+				"Name": "极寒瀑流",
+				"SkillDesc": "对我方全体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 100402005,
+				"Name": "围攻打援",
+				"SkillDesc": "召唤【银鬃射手】或【银鬃炮手】，同时锁定我方单体，使敌方全体集中攻击该目标。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"100403001": {
 		"Id": "100403001",
 		"Name": "布洛妮娅",
@@ -16255,6 +16212,102 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"100403003": {
+		"Id": "100403003",
+		"Name": "布洛妮娅",
+		"Introduction": "贝洛伯格守护者的继任者，银鬃铁卫的统帅。\n布洛妮娅会使用多种战术攻击敌人，并大幅提升友军的作战能力。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100403001,
+				"Name": "驭风的子弹",
+				"SkillDesc": "对指定我方单体造成风属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 100403002,
+				"Name": "作战再部署",
+				"SkillDesc": "解除指定除布洛妮娅外的敌方单体的全部负面效果，并使该目标立即行动。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100403003,
+				"Name": "增援协同",
+				"SkillDesc": "召唤【银鬃近卫】或【银鬃射手】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100403004,
+				"Name": "压制射击",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并使受到攻击的我方目标行动延后。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"100403004": {
+		"Id": "100403004",
+		"Name": "布洛妮娅",
+		"Introduction": "贝洛伯格守护者的继任者，银鬃铁卫的统帅。\n布洛妮娅会使用多种战术攻击敌人，并大幅提升友军的作战能力。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 100403001,
+				"Name": "驭风的子弹",
+				"SkillDesc": "对指定我方单体造成风属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 100403002,
+				"Name": "作战再部署",
+				"SkillDesc": "解除指定除布洛妮娅外的敌方单体的全部负面效果，并使该目标立即行动。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100403003,
+				"Name": "增援协同",
+				"SkillDesc": "召唤【银鬃近卫】或【银鬃射手】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 100403004,
+				"Name": "压制射击",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并使受到攻击的我方目标行动延后。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"100403101": {
 		"Id": "100403101",
@@ -16853,6 +16906,40 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"101201017": {
+		"Id": "101201017",
+		"Name": "自动机兵•战犬",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，形如某种载具，然而人们似乎早就忘却了它载具的用途。\n战斗中自动机兵「战犬」能提供支援，回复战友的生命。",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101201001,
+				"Name": "垂直打击",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101201002,
+				"Name": "自愈模块",
+				"SkillDesc": "立即回复敌方全体的生命值。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"101202001": {
 		"Id": "101202001",
@@ -19135,6 +19222,306 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"101301020": {
+		"Id": "101301020",
+		"Name": "自动机兵•灰熊",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，加装了厚重的铠甲，用于冲锋陷阵保护银鬃铁卫。\n战斗中，自动机兵「灰熊」会发出信号召来「蜘蛛」合作战斗，同时会积蓄动能发出强力一击。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "爆裂指令",
+				"SkillDesc": "召唤【自动机兵•蜘蛛】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301002,
+				"Name": "愤怒指令",
+				"SkillDesc": "有概率使我方全体陷入嘲讽状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301003,
+				"Name": "过载指令",
+				"SkillDesc": "进入蓄力状态，下次行动对我方全体施放【剿灭指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301004,
+				"Name": "剿灭指令",
+				"SkillDesc": "对我方全体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301005,
+				"Name": "dev_指令•强攻模式",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301009,
+				"Name": "破坏指令",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"101301021": {
+		"Id": "101301021",
+		"Name": "自动机兵•灰熊",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，加装了厚重的铠甲，用于冲锋陷阵保护银鬃铁卫。\n战斗中，自动机兵「灰熊」会发出信号召来「蜘蛛」合作战斗，同时会积蓄动能发出强力一击。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "爆裂指令",
+				"SkillDesc": "召唤【自动机兵•蜘蛛】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301002,
+				"Name": "愤怒指令",
+				"SkillDesc": "有概率使我方全体陷入嘲讽状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301003,
+				"Name": "过载指令",
+				"SkillDesc": "进入蓄力状态，下次行动对我方全体施放【剿灭指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301004,
+				"Name": "剿灭指令",
+				"SkillDesc": "对我方全体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301005,
+				"Name": "dev_指令•强攻模式",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301009,
+				"Name": "破坏指令",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"101301022": {
+		"Id": "101301022",
+		"Name": "自动机兵•灰熊",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，加装了厚重的铠甲，用于冲锋陷阵保护银鬃铁卫。\n战斗中，自动机兵「灰熊」会发出信号召来「蜘蛛」合作战斗，同时会积蓄动能发出强力一击。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "爆裂指令",
+				"SkillDesc": "召唤【自动机兵•蜘蛛】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301002,
+				"Name": "愤怒指令",
+				"SkillDesc": "有概率使我方全体陷入嘲讽状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301003,
+				"Name": "过载指令",
+				"SkillDesc": "进入蓄力状态，下次行动对我方全体施放【剿灭指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301004,
+				"Name": "剿灭指令",
+				"SkillDesc": "对我方全体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301005,
+				"Name": "dev_指令•强攻模式",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301009,
+				"Name": "破坏指令",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"101301023": {
+		"Id": "101301023",
+		"Name": "自动机兵•灰熊",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，加装了厚重的铠甲，用于冲锋陷阵保护银鬃铁卫。\n战斗中，自动机兵「灰熊」会发出信号召来「蜘蛛」合作战斗，同时会积蓄动能发出强力一击。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301001,
+				"Name": "爆裂指令",
+				"SkillDesc": "召唤【自动机兵•蜘蛛】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301002,
+				"Name": "愤怒指令",
+				"SkillDesc": "有概率使我方全体陷入嘲讽状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301003,
+				"Name": "过载指令",
+				"SkillDesc": "进入蓄力状态，下次行动对我方全体施放【剿灭指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301004,
+				"Name": "剿灭指令",
+				"SkillDesc": "对我方全体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301005,
+				"Name": "dev_指令•强攻模式",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301009,
+				"Name": "破坏指令",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"101301101": {
+		"Id": "101301101",
+		"Name": "自动机兵•灰熊（错误）",
+		"Introduction": "代码受到影响后的错误投影。参照本体为以旧世界遗留的科技拼凑制造的自动机器单元，加装了厚重的铠甲，用于冲锋陷阵保护银鬃铁卫。\n战斗中，自动机兵「灰熊」（错误）会发出信号召来「蜘蛛」和「甲虫」合作战斗，同时会积蓄动能发出强力攻击。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101301101,
+				"Name": "爆裂指令",
+				"SkillDesc": "召唤【自动机兵•蜘蛛】和【自动机兵•甲虫】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301102,
+				"Name": "愤怒指令",
+				"SkillDesc": "大概率使我方全体陷入嘲讽状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301103,
+				"Name": "过载指令",
+				"SkillDesc": "进入蓄力状态。下次行动对我方全体施放【剿灭指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301104,
+				"Name": "剿灭指令",
+				"SkillDesc": "对我方全体造成大量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101301105,
+				"Name": "dev_指令•强攻模式",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101301109,
+				"Name": "破坏指令",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"101302001": {
 		"Id": "101302001",
 		"Name": "自动机兵•齿狼",
@@ -20118,6 +20505,202 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"101302025": {
+		"Id": "101302025",
+		"Name": "自动机兵•齿狼",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，少见的人形机械，其右臂部分统一装置着链锯，似乎曾用于采集或建造作业。\n战斗中，自动机兵「齿狼」的链锯会造成裂伤，令对手持续损失生命值。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Fire"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "砍伐指令",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，每次击中该目标都有概率使其陷入裂伤状态。若施放本技能时该目标未持有护盾，则再对我方随机单体施放1次【解体拆除】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目标锁定",
+				"SkillDesc": "锁定指定我方单体，下次行动对其施放【砍伐指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解体指令",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "解体拆除",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"101302026": {
+		"Id": "101302026",
+		"Name": "自动机兵•齿狼",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，少见的人形机械，其右臂部分统一装置着链锯，似乎曾用于采集或建造作业。\n战斗中，自动机兵「齿狼」的链锯会造成裂伤，令对手持续损失生命值。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "砍伐指令",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，每次击中该目标都有概率使其陷入裂伤状态。若施放本技能时该目标未持有护盾，则再对我方随机单体施放1次【解体拆除】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目标锁定",
+				"SkillDesc": "锁定指定我方单体，下次行动对其施放【砍伐指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解体指令",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "解体拆除",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"101302027": {
+		"Id": "101302027",
+		"Name": "自动机兵•齿狼",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，少见的人形机械，其右臂部分统一装置着链锯，似乎曾用于采集或建造作业。\n战斗中，自动机兵「齿狼」的链锯会造成裂伤，令对手持续损失生命值。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "砍伐指令",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，每次击中该目标都有概率使其陷入裂伤状态。若施放本技能时该目标未持有护盾，则再对我方随机单体施放1次【解体拆除】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目标锁定",
+				"SkillDesc": "锁定指定我方单体，下次行动对其施放【砍伐指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解体指令",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "解体拆除",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"101302028": {
+		"Id": "101302028",
+		"Name": "自动机兵•齿狼",
+		"Introduction": "以旧世界遗留的科技拼凑制造的自动机器单元，少见的人形机械，其右臂部分统一装置着链锯，似乎曾用于采集或建造作业。\n战斗中，自动机兵「齿狼」的链锯会造成裂伤，令对手持续损失生命值。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 101302001,
+				"Name": "砍伐指令",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，每次击中该目标都有概率使其陷入裂伤状态。若施放本技能时该目标未持有护盾，则再对我方随机单体施放1次【解体拆除】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302002,
+				"Name": "目标锁定",
+				"SkillDesc": "锁定指定我方单体，下次行动对其施放【砍伐指令】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 101302003,
+				"Name": "解体指令",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 101302004,
+				"Name": "解体拆除",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，并大概率对其增加1层裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"101401001": {
 		"Id": "101401001",
@@ -21332,6 +21915,35 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"102201013": {
+		"Id": "102201013",
+		"Name": "永冬灾影",
+		"Introduction": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形，其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的冰棱所取代。\n战斗中永冬灾影会挥舞冰造的斧刃，延缓敌人的行动。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102201001,
+				"Name": "霜冻重击",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，并使受到攻击的我方目标行动延后。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"102202001": {
 		"Id": "102202001",
 		"Name": "火焚灾影",
@@ -21999,6 +22611,64 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"102202024": {
+		"Id": "102202024",
+		"Name": "火焚灾影",
+		"Introduction": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形。其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的燃烬所取代。\n战斗中火焚灾影会挥舞燃烧的斧刃，灼烧敌人。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "灼炎重击",
+				"SkillDesc": "对指定我方单体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"102202025": {
+		"Id": "102202025",
+		"Name": "火焚灾影",
+		"Introduction": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形。其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的燃烬所取代。\n战斗中火焚灾影会挥舞燃烧的斧刃，灼烧敌人。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102202001,
+				"Name": "灼炎重击",
+				"SkillDesc": "对指定我方单体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"102301001": {
 		"Id": "102301001",
@@ -22771,6 +23441,171 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"102301015": {
+		"Id": "102301015",
+		"Name": "炽燃徘徊者",
+		"Introduction": "徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n炽燃徘徊者的攻击会对处于灼烧状态的敌人造成额外效果。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "赤红刀锋",
+				"SkillDesc": "对指定我方单体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "燃焰斩击",
+				"SkillDesc": "对指定我方单体及其相邻目标造成火属性伤害，本技能优先攻击陷入灼烧状态的我方目标。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "熔解",
+				"SkillDesc": "对陷入灼烧状态的我方单体施放攻击后自身造成的伤害提高。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 102301004,
+				"Name": "高温运转",
+				"SkillDesc": "使自身攻击力小幅提高，速度大幅提高，弱点被击破后以上增益效果解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102301005,
+				"Name": "飞舞烬火",
+				"SkillDesc": "对我方全体造成火属性伤害。使陷入灼烧状态的我方目标受到额外火属性伤害的同时解除该目标的灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"102301016": {
+		"Id": "102301016",
+		"Name": "炽燃徘徊者",
+		"Introduction": "徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n炽燃徘徊者的攻击会对处于灼烧状态的敌人造成额外效果。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "赤红刀锋",
+				"SkillDesc": "对指定我方单体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "燃焰斩击",
+				"SkillDesc": "对指定我方单体及其相邻目标造成火属性伤害，本技能优先攻击陷入灼烧状态的我方目标。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "熔解",
+				"SkillDesc": "对陷入灼烧状态的我方单体施放攻击后自身造成的伤害提高。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 102301004,
+				"Name": "高温运转",
+				"SkillDesc": "使自身攻击力小幅提高，速度大幅提高，弱点被击破后以上增益效果解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102301005,
+				"Name": "飞舞烬火",
+				"SkillDesc": "对我方全体造成火属性伤害。使陷入灼烧状态的我方目标受到额外火属性伤害的同时解除该目标的灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"102301017": {
+		"Id": "102301017",
+		"Name": "炽燃徘徊者",
+		"Introduction": "徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n炽燃徘徊者的攻击会对处于灼烧状态的敌人造成额外效果。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 102301001,
+				"Name": "赤红刀锋",
+				"SkillDesc": "对指定我方单体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301002,
+				"Name": "燃焰斩击",
+				"SkillDesc": "对指定我方单体及其相邻目标造成火属性伤害，本技能优先攻击陷入灼烧状态的我方目标。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 102301003,
+				"Name": "熔解",
+				"SkillDesc": "对陷入灼烧状态的我方单体施放攻击后自身造成的伤害提高。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 102301004,
+				"Name": "高温运转",
+				"SkillDesc": "使自身攻击力小幅提高，速度大幅提高，弱点被击破后以上增益效果解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102301005,
+				"Name": "飞舞烬火",
+				"SkillDesc": "对我方全体造成火属性伤害。使陷入灼烧状态的我方目标受到额外火属性伤害的同时解除该目标的灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"102302001": {
 		"Id": "102302001",
 		"Name": "深寒徘徊者",
@@ -23038,6 +23873,153 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"102302005": {
+		"Id": "102302005",
+		"Name": "深寒徘徊者",
+		"Introduction": "徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n深寒徘徊者会吸引永冬灾影，同时能降低我方的速度与冰属性抗性。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102302001,
+				"Name": "冰轮铁拳",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302005,
+				"Name": "召来衍生物",
+				"SkillDesc": "召唤【永冬灾影】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302006,
+				"Name": "冻结风暴",
+				"SkillDesc": "对我方全体造成冰属性伤害，并有大概率使受到攻击的我方目标陷入【深寒】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302007,
+				"Name": "吞噬衍生物",
+				"SkillDesc": "吞噬1个永冬灾影使自身攻击力提高，同时锁定指定我方单体。若场上没有永冬灾影，则自身防御力降低。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302008,
+				"Name": "吞噬衍生物",
+				"SkillDesc": "吞噬1个永冬灾影使自身攻击力提高，同时锁定指定我方单体。若场上没有永冬灾影，则自身防御力降低。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302009,
+				"Name": "冰轮碎碾",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，并有大概率使受到攻击的我方目标陷入【深寒】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302010,
+				"Name": "dev_精英怪被动",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"102302101": {
+		"Id": "102302101",
+		"Name": "深寒徘徊者（错误）",
+		"Introduction": "代码受到影响后的错误投影。参照本体为徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n深寒徘徊者（错误）会吸引永冬灾影，同时能降低我方的速度与冰属性抗性。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 102302101,
+				"Name": "冰轮铁拳",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302105,
+				"Name": "召来衍生物",
+				"SkillDesc": "召唤【永冬灾影】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302106,
+				"Name": "冻结风暴",
+				"SkillDesc": "对我方全体造成冰属性伤害，并有大概率使受到攻击的我方目标陷入【深寒】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302107,
+				"Name": "吞噬衍生物",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，并有大概率使受到攻击的我方目标陷入【深寒】状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302108,
+				"Name": "吞噬衍生物",
+				"SkillDesc": "dev_吞噬永冬灾影使自身攻击力提高，下回合释放强力AOE。若场上没有永冬灾影，则自身防御力降低。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302109,
+				"Name": "冰轮碎碾",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，并有大概率使受到攻击的我方目标陷入深寒状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302110,
+				"Name": "吞噬衍生物",
+				"SkillDesc": "吞噬永冬灾影使自身攻击力提高，下次行动施放【苦寒过境】。吞噬的永冬灾影数量越多，下次行动施放的【苦寒过境】波次越多。若场上没有永冬灾影，则自身防御力降低。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 102302111,
+				"Name": "苦寒过境",
+				"SkillDesc": "对我方全体造成大量冰属性伤害，并有大概率使受到攻击的我方目标陷入【深寒】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 102302112,
+				"Name": "dev_精英怪被动",
+				"SkillDesc": "dev_不显示。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"200201001": {
 		"Id": "200201001",
@@ -23923,6 +24905,68 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"200401005": {
+		"Id": "200401005",
+		"Name": "「星核猎手」卡芙卡",
+		"Introduction": "「星核猎手」的一员，面带莫测笑容的杀手丽人，善用种类纷繁的武器和心控之术。正是她将星穹列车引至此处，以实现某个计划……",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200401001,
+				"Name": "夜间喧嚣不止",
+				"SkillDesc": "对指定我方单体造成少量雷属性伤害，并大概率使受到攻击的我方目标陷入触电状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 200401002,
+				"Name": "月光摩挲连绵",
+				"SkillDesc": "对指定我方单体及其相邻目标造成雷属性伤害，如主目标处于触电状态，则会使副目标也陷入触电状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 200401003,
+				"Name": "缄默厉声嘲笑",
+				"SkillDesc": "对我方全体造成少量雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 200401004,
+				"Name": "言灵",
+				"SkillDesc": "使指定我方单体大概率陷入【支配】状态，并将其行动提前，立即随机攻击1名我方其他目标。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 200401005,
+				"Name": "颤慄",
+				"SkillDesc": "如受到攻击的目标正处于触电状态，则直接造成1次触电伤害。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 200401006,
+				"Name": "残酷",
+				"SkillDesc": "当敌方除卡芙卡外的目标或我方陷入【支配】状态的目标对我方陷入触电状态的主目标进行攻击时，追加1次雷属性攻击。该效果每回合只触发1次。",
+				"SkillTypeDesc": "天赋",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"200402001": {
 		"Id": "200402001",
 		"Name": "云骑骁卫•彦卿",
@@ -24331,6 +25375,81 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"200402201": {
+		"Id": "200402201",
+		"Name": "云骑骁卫•彦卿（完整）",
+		"Introduction": "代码受到影响后的完整投影。参照本体为将军景元的侍卫，不过总角之年的御剑天才。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 200402201,
+				"Name": "快哉风",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，并使彦卿和所有飞剑获得1层【寒芒】，造成的伤害小幅提高。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402202,
+				"Name": "燕归来",
+				"SkillDesc": "召唤4把【飞剑】，获得【剑阵】效果提高自身速度，使【飞剑】获得【阵眼】。第三阶段时使一定数量的【飞剑】额外获得【砥砺】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 200402203,
+				"Name": "三尺水",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，同时有大概率使受到攻击的目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402204,
+				"Name": "破阵歌",
+				"SkillDesc": "对指定我方单体及其相邻目标造成冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402205,
+				"Name": "剑气近",
+				"SkillDesc": "进入蓄力状态。下次行动对我方全体施放【天河泻】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 200402206,
+				"Name": "天河泻",
+				"SkillDesc": "对我方全体造成大量冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 200402207,
+				"Name": "剑气凝",
+				"SkillDesc": "锁定我方单体，两回合后对其施放【风归云动，天河泻梦】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 200402208,
+				"Name": "风归云动，天河泻梦",
+				"SkillDesc": "对指定我方单体连续造成冰属性伤害。施放该技能时，额外造成伤害，伤害次数等同于场上【飞剑】的数量。施放技能后，清除场上所有的【飞剑】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"201101001": {
 		"Id": "201101001",
 		"Name": "入魔机巧 • 率从狻猊",
@@ -24352,7 +25471,7 @@
 			{
 				"Id": 201101001,
 				"Name": "狮子吼",
-				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillDesc": "对指定我方单体造成少量火属性伤害，并有概率使受到攻击的我方目标陷入虚弱状态。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Fire"
 			}
@@ -24381,7 +25500,7 @@
 			{
 				"Id": 201101001,
 				"Name": "狮子吼",
-				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillDesc": "对指定我方单体造成少量火属性伤害，并有概率使受到攻击的我方目标陷入虚弱状态。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Fire"
 			}
@@ -24409,7 +25528,7 @@
 			{
 				"Id": 201101001,
 				"Name": "狮子吼",
-				"SkillDesc": "对指定我方单体造成冰属性伤害。",
+				"SkillDesc": "对指定我方单体造成少量火属性伤害，并有概率使受到攻击的我方目标陷入虚弱状态。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Fire"
 			}
@@ -24752,6 +25871,42 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"201201008": {
+		"Id": "201201008",
+		"Name": "入魔机巧 • 灯昼龙鱼",
+		"Introduction": "工造司匠人随手造就的机巧发明。原本是不具灵智，用以烛照黑暗的灯具，如今却因为某些异变被赋予了短暂的「生命」。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201201001,
+				"Name": "宵明",
+				"SkillDesc": "对我方全体造成少量火属性伤害，并大概率使受到攻击的我方目标防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 201201002,
+				"Name": "烛花",
+				"SkillDesc": "受到致命攻击时对敌方全体造成火属性伤害，并大概率使受到攻击的敌方目标防御力降低。",
+				"SkillTypeDesc": "天赋",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"201301001": {
 		"Id": "201301001",
@@ -25352,6 +26507,134 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"201302006": {
+		"Id": "201302006",
+		"Name": "金人勾魂使",
+		"Introduction": "刻录着《十王武经》，听命于十王司的执法金人。\n血肉易受五阴之苦所执，唯有金铁不动其心，奉行十王敕令不渝。\n这些金人执法者以力降伏脱离生命秩序的邪物，将之带入幽府，接受判罚，其权限有时甚于判官。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201302001,
+				"Name": "剖判",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302002,
+				"Name": "镇魂",
+				"SkillDesc": "对指定我方单体造成物理属性伤害，并大概率使受到攻击的我方目标陷入【震荡】状态。【震荡】状态下的目标受到攻击后，陷入【强烈震荡】状态，然后解除【震荡】状态。【强烈震荡】状态下的目标无法行动。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302003,
+				"Name": "转阴阳",
+				"SkillDesc": "对我方全体造成物理属性伤害，并有概率使受到攻击的我方目标陷入【震荡】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302004,
+				"Name": "天坠",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，如果该目标处于【强烈震荡】状态，则额外对该目标造成物理属性伤害，同时解除该目标的【强烈震荡】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302005,
+				"Name": "拘魂令",
+				"SkillDesc": "场上有我方目标陷入【强烈震荡】状态时，锁定该目标，下次行动对其施放【天坠】。",
+				"SkillTypeDesc": "天赋",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302006,
+				"Name": "天坠",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，如果该目标处于【强烈震荡】状态，则额外对该目标造成物理属性伤害，同时解除该目标的【强烈震荡】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"201302007": {
+		"Id": "201302007",
+		"Name": "金人勾魂使",
+		"Introduction": "刻录着《十王武经》，听命于十王司的执法金人。\n血肉易受五阴之苦所执，唯有金铁不动其心，奉行十王敕令不渝。\n这些金人执法者以力降伏脱离生命秩序的邪物，将之带入幽府，接受判罚，其权限有时甚于判官。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 201302001,
+				"Name": "剖判",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302002,
+				"Name": "镇魂",
+				"SkillDesc": "对指定我方单体造成物理属性伤害，并大概率使受到攻击的我方目标陷入【震荡】状态。【震荡】状态下的目标受到攻击后，陷入【强烈震荡】状态，然后解除【震荡】状态。【强烈震荡】状态下的目标无法行动。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302003,
+				"Name": "转阴阳",
+				"SkillDesc": "对我方全体造成物理属性伤害，并有概率使受到攻击的我方目标陷入【震荡】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302004,
+				"Name": "天坠",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，如果该目标处于【强烈震荡】状态，则额外对该目标造成物理属性伤害，同时解除该目标的【强烈震荡】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302005,
+				"Name": "拘魂令",
+				"SkillDesc": "场上有我方目标陷入【强烈震荡】状态时，锁定该目标，下次行动对其施放【天坠】。",
+				"SkillTypeDesc": "天赋",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 201302006,
+				"Name": "天坠",
+				"SkillDesc": "对指定我方单体造成大量物理属性伤害，如果该目标处于【强烈震荡】状态，则额外对该目标造成物理属性伤害，同时解除该目标的【强烈震荡】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"202201001": {
 		"Id": "202201001",
 		"Name": "魔阴身士卒",
@@ -25772,6 +27055,48 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"202201011": {
+		"Id": "202201011",
+		"Name": "魔阴身士卒",
+		"Introduction": "不知何故陷入狂乱的仙舟士兵，躯壳已不见人形，只余无穷的增生变异。相传无量寿中，仙舟人会堕入名为「魔阴身」的状态。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202201001,
+				"Name": "梢杀",
+				"SkillDesc": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202201002,
+				"Name": "复起",
+				"SkillDesc": "受到致命攻击时回复一定生命值。该效果无时间限制，但可以被解除。该效果在单场战斗中仅能触发1次。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 202201003,
+				"Name": "梢杀",
+				"SkillDesc": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"202202001": {
 		"Id": "202202001",
 		"Name": "神策府护卫",
@@ -26064,17 +27389,17 @@
 		"Name": "「药王秘传」内丹士",
 		"Introduction": "潜伏于罗浮仙舟中的秘密传承「药王秘传」的成员。\n得药炼心，结丹炼己。他们渴求复兴古老的丰饶之秘，令仙舟人跨入下一阶段的进化。",
 		"ElementalWeaknesses": [
-			"Physical",
-			"Imaginary"
+			"Quantum",
+			"Fire"
 		],
 		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0.2,
+			"Physical": 0.2,
+			"Fire": 0,
 			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0.4,
-			"Quantum": 0.2,
-			"Imaginary": 0
+			"Quantum": 0,
+			"Imaginary": 0.2
 		},
 		"SkillList": [
 			{
@@ -26248,41 +27573,6 @@
 	},
 	"202204004": {
 		"Id": "202204004",
-		"Name": "丰饶灵兽•娄金",
-		"Introduction": "金缕错饰的猎犬，行动优雅迅疾。\n在「建木」上一次伫立时，仙舟人曾以奇术繁育众多异兽珍禽。娄金即为伴随军阵行进的战兽之一。",
-		"ElementalWeaknesses": [
-			"Ice",
-			"Thunder",
-			"Wind"
-		],
-		"ElementalResistance": {
-			"Physical": 0.2,
-			"Fire": 0.2,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0.2,
-			"Imaginary": 0.2
-		},
-		"SkillList": [
-			{
-				"Id": 202204001,
-				"Name": "角牴",
-				"SkillDesc": "对指定我方单体造成风属性伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Wind"
-			},
-			{
-				"Id": 202204002,
-				"Name": "嗥吠",
-				"SkillDesc": "受到致命攻击时，使与自身相邻的敌方目标行动提前。",
-				"SkillTypeDesc": "天赋"
-			}
-		],
-		"VersionAdded": "1.5"
-	},
-	"202204005": {
-		"Id": "202204005",
 		"Name": "丰饶灵兽•娄金",
 		"Introduction": "金缕错饰的猎犬，行动优雅迅疾。\n在「建木」上一次伫立时，仙舟人曾以奇术繁育众多异兽珍禽。娄金即为伴随军阵行进的战兽之一。",
 		"ElementalWeaknesses": [
@@ -26543,6 +27833,122 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"202206004": {
+		"Id": "202206004",
+		"Name": "「药王秘传」器元士",
+		"Introduction": "潜伏于罗浮仙舟中的秘密传承「药王秘传」的成员。\n借器修道，与之连同一体。他们渴求复兴古老的丰饶之秘，令仙舟人跨入下一阶段的进化。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202206001,
+				"Name": "犀弩",
+				"SkillDesc": "连续对我方随机单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"202206005": {
+		"Id": "202206005",
+		"Name": "「药王秘传」器元士",
+		"Introduction": "潜伏于罗浮仙舟中的秘密传承「药王秘传」的成员。\n借器修道，与之连同一体。他们渴求复兴古老的丰饶之秘，令仙舟人跨入下一阶段的进化。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202206001,
+				"Name": "犀弩",
+				"SkillDesc": "连续对我方随机单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"202206006": {
+		"Id": "202206006",
+		"Name": "「药王秘传」器元士",
+		"Introduction": "潜伏于罗浮仙舟中的秘密传承「药王秘传」的成员。\n借器修道，与之连同一体。他们渴求复兴古老的丰饶之秘，令仙舟人跨入下一阶段的进化。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202206001,
+				"Name": "犀弩",
+				"SkillDesc": "连续对我方随机单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"202207001": {
+		"Id": "202207001",
+		"Name": "肃风之杪",
+		"Introduction": "随玄鹿足迹而生的建木枝梢。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Quantum",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202207001,
+				"Name": "怒噪",
+				"SkillDesc": "对我方单体造成少量风属性伤害，并大概率使该目标陷入【怒噪】状态。【怒噪】状态下的目标一定回合内无法行动，且会施放普攻随机攻击敌方单体。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"202207101": {
 		"Id": "202207101",
 		"Name": "肃风之杪（幻象）",
@@ -26571,6 +27977,46 @@
 			}
 		],
 		"VersionAdded": "1.6"
+	},
+	"202208001": {
+		"Id": "202208001",
+		"Name": "缃叶之杪",
+		"Introduction": "随玄鹿足迹而生的建木枝梢。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202208001,
+				"Name": "繁生",
+				"SkillDesc": "强化【丰饶玄鹿】，使其攻击力小幅提高。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202208002,
+				"Name": "复还",
+				"SkillDesc": "进入反击状态，在被我方单体击中后立即对该目标施放【折叶】技能。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202208003,
+				"Name": "折叶",
+				"SkillDesc": "对指定我方单体造成少量雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"202208101": {
 		"Id": "202208101",
@@ -26799,6 +28245,48 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"202211004": {
+		"Id": "202211004",
+		"Name": "魔阴武弁",
+		"Introduction": "堕入魔阴身的十王司武卫。\n只要还是血肉凡胎，仙舟人终不能斩断宿命。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202211001,
+				"Name": "锯恶•斫",
+				"SkillDesc": "对指定我方单体造成少量风属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202211002,
+				"Name": "锯恶•斩",
+				"SkillDesc": "对指定我方单体造成风属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202211003,
+				"Name": "嗔恚",
+				"SkillDesc": "战斗开始时处于【嗔恚】状态。处于【嗔恚】状态时，改为施放【锯恶•斩】。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"202301001": {
 		"Id": "202301001",
@@ -27460,6 +28948,67 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"202301101": {
+		"Id": "202301101",
+		"Name": "「药王秘传」炼形者（错误）",
+		"Introduction": "代码受到影响后的错误投影。参照本体为渴求复兴古老的丰饶之秘，并引领仙舟人再度踏上解脱登仙大道的修炼者。\n如今，他们的愿望得遂。受赐于古老神迹的力量，以其为甲胄、为武器，并触及了长生不死的秘密。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 202301101,
+				"Name": "震击",
+				"SkillDesc": "对指定我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301102,
+				"Name": "霆罚",
+				"SkillDesc": "对指定我方单体及其相邻目标造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301103,
+				"Name": "劫雷",
+				"SkillDesc": "对指定我方单体造成大量雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202301104,
+				"Name": "dev_召遣",
+				"SkillDesc": "dev_消耗自身生命值，召唤【魔阴身士卒】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202301105,
+				"Name": "交感",
+				"SkillDesc": "消耗自身生命值，召唤魔阴身士卒与「药王秘传」内丹士。同时锁定我方当前生命值百分比最低的目标，使敌方全体集中攻击该目标。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202301106,
+				"Name": "采气",
+				"SkillDesc": "当场上其它敌方目标带有【重生】时，其自身具有【击中回复】。当击中我方目标后，回复其自身生命值。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"202302001": {
 		"Id": "202302001",
 		"Name": "丰饶灵兽•长右",
@@ -27747,6 +29296,102 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"202302007": {
+		"Id": "202302007",
+		"Name": "丰饶灵兽•长右",
+		"Introduction": "高如山岩的苍猿，破坏力惊人。\n在「建木」上一次伫立时，仙舟人曾以奇术繁育众多异兽珍禽。长右即为伴随军阵行进的战兽之一。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302001,
+				"Name": "猱击",
+				"SkillDesc": "消耗1层【元气】，并对被标记为监视目标的我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302002,
+				"Name": "猱击",
+				"SkillDesc": "消耗1层【元气】，并对被标记为监视目标的我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302003,
+				"Name": "奋威",
+				"SkillDesc": "使自身造成的伤害提高，伤害提高效果可叠加。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202302004,
+				"Name": "怒啸",
+				"SkillDesc": "获得3层【元气】，将随机我方单体标记为监视目标。每当我方目标施放战技时，会转为标记最新施放战技的目标，直到【元气】耗尽。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"202302008": {
+		"Id": "202302008",
+		"Name": "丰饶灵兽•长右",
+		"Introduction": "高如山岩的苍猿，破坏力惊人。\n在「建木」上一次伫立时，仙舟人曾以奇术繁育众多异兽珍禽。长右即为伴随军阵行进的战兽之一。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202302001,
+				"Name": "猱击",
+				"SkillDesc": "消耗1层【元气】，并对被标记为监视目标的我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302002,
+				"Name": "猱击",
+				"SkillDesc": "消耗1层【元气】，并对被标记为监视目标的我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 202302003,
+				"Name": "奋威",
+				"SkillDesc": "使自身造成的伤害提高，伤害提高效果可叠加。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202302004,
+				"Name": "怒啸",
+				"SkillDesc": "获得3层【元气】，将随机我方单体标记为监视目标。每当我方目标施放战技时，会转为标记最新施放战技的目标，直到【元气】耗尽。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"202303001": {
 		"Id": "202303001",
@@ -28103,7 +29748,7 @@
 			"Physical": 0,
 			"Fire": 0.2,
 			"Ice": 0,
-			"Wind": 0.4,
+			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0.2,
 			"Imaginary": 0.2
@@ -28146,6 +29791,234 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"202303008": {
+		"Id": "202303008",
+		"Name": "承露天人",
+		"Introduction": "「药王秘传」信徒渴求的形态，摆脱人性重负，以仙道重塑的真体。\n太古时代，求道者们自建木中参悟玄旨，自诩「仙人」。他们自在无拘，将血肉众生如泥塑形。在无数次变化间，他们忘却了自己的本来面目。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202303001,
+				"Name": "若木化生仪祷",
+				"SkillDesc": "连续对我方随机单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303002,
+				"Name": "导引巽风",
+				"SkillDesc": "对指定我方单体及其相邻目标造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303003,
+				"Name": "若木棘",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303004,
+				"Name": "玄气咒厌法",
+				"SkillDesc": "进入【持咒】状态。下次行动对我方全体施放【玄气噬身】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303005,
+				"Name": "玄气噬身",
+				"SkillDesc": "大概率使我方全体陷入【噬命】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"202303009": {
+		"Id": "202303009",
+		"Name": "承露天人",
+		"Introduction": "「药王秘传」信徒渴求的形态，摆脱人性重负，以仙道重塑的真体。\n太古时代，求道者们自建木中参悟玄旨，自诩「仙人」。他们自在无拘，将血肉众生如泥塑形。在无数次变化间，他们忘却了自己的本来面目。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202303001,
+				"Name": "若木化生仪祷",
+				"SkillDesc": "连续对我方随机单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303002,
+				"Name": "导引巽风",
+				"SkillDesc": "对指定我方单体及其相邻目标造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303003,
+				"Name": "若木棘",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303004,
+				"Name": "玄气咒厌法",
+				"SkillDesc": "进入【持咒】状态。下次行动对我方全体施放【玄气噬身】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303005,
+				"Name": "玄气噬身",
+				"SkillDesc": "大概率使我方全体陷入【噬命】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"202303010": {
+		"Id": "202303010",
+		"Name": "承露天人",
+		"Introduction": "「药王秘传」信徒渴求的形态，摆脱人性重负，以仙道重塑的真体。\n太古时代，求道者们自建木中参悟玄旨，自诩「仙人」。他们自在无拘，将血肉众生如泥塑形。在无数次变化间，他们忘却了自己的本来面目。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202303001,
+				"Name": "若木化生仪祷",
+				"SkillDesc": "连续对我方随机单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303002,
+				"Name": "导引巽风",
+				"SkillDesc": "对指定我方单体及其相邻目标造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303003,
+				"Name": "若木棘",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303004,
+				"Name": "玄气咒厌法",
+				"SkillDesc": "进入【持咒】状态。下次行动对我方全体施放【玄气噬身】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303005,
+				"Name": "玄气噬身",
+				"SkillDesc": "大概率使我方全体陷入【噬命】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"202303011": {
+		"Id": "202303011",
+		"Name": "承露天人",
+		"Introduction": "「药王秘传」信徒渴求的形态，摆脱人性重负，以仙道重塑的真体。\n太古时代，求道者们自建木中参悟玄旨，自诩「仙人」。他们自在无拘，将血肉众生如泥塑形。在无数次变化间，他们忘却了自己的本来面目。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202303001,
+				"Name": "若木化生仪祷",
+				"SkillDesc": "连续对我方随机单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303002,
+				"Name": "导引巽风",
+				"SkillDesc": "对指定我方单体及其相邻目标造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303003,
+				"Name": "若木棘",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303004,
+				"Name": "玄气咒厌法",
+				"SkillDesc": "进入【持咒】状态。下次行动对我方全体施放【玄气噬身】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202303005,
+				"Name": "玄气噬身",
+				"SkillDesc": "大概率使我方全体陷入【噬命】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"202401001": {
 		"Id": "202401001",
@@ -28292,6 +30165,79 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"202401401": {
+		"Id": "202401401",
+		"Name": "丰饶玄鹿",
+		"Introduction": "由「建木」化生，拱卫其根系的灵瑞之兽，履迹所之，和泽滋生，枝杪郁敷。\n自毁于太古时代的战争后，「建木」终于在星核的修补下再度生长。彼时仙人们所造的珍禽奇兽纷至沓来，宛如旧梦重临。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.4,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 202401401,
+				"Name": "衔枝 • 肃风",
+				"SkillDesc": "召唤建木枝梢【肃风之杪】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202401402,
+				"Name": "衔枝 • 缃叶",
+				"SkillDesc": "召唤建木枝梢【缃叶之杪】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202401403,
+				"Name": "衔枝 • 繁花",
+				"SkillDesc": "召唤建木枝梢【繁花之杪】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202401404,
+				"Name": "衔枝 • 嘉实",
+				"SkillDesc": "召唤建木枝梢【嘉实之杪】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202401405,
+				"Name": "呦鸣",
+				"SkillDesc": "对指定我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 202401406,
+				"Name": "绾风",
+				"SkillDesc": "对我方全体造成少量风属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 202401407,
+				"Name": "蕉覆",
+				"SkillDesc": "提高防御力，且使自身韧性无法受到伤害。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 202401408,
+				"Name": "斑龙触",
+				"SkillDesc": "当场上存在2个【嘉实】时立即施放该技能，对我方全体造成雷属性伤害。场上【建木枝梢】数量越多，造成的伤害越高。施放技能后，清除场上所有的【建木枝梢】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"202402001": {
 		"Id": "202402001",
@@ -28465,6 +30411,90 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"300101002": {
+		"Id": "300101002",
+		"Name": "惊梦剧团的弹簧荷官",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n本是牌桌上的娱乐道具，失控后仍在舞动着手中的骰子，用粗鲁的方式进行游戏。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300101001,
+				"Name": "掷点",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，有概率使受到攻击的我方目标效果抵抗降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300101003": {
+		"Id": "300101003",
+		"Name": "惊梦剧团的弹簧荷官",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n本是牌桌上的娱乐道具，失控后仍在舞动着手中的骰子，用粗鲁的方式进行游戏。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300101001,
+				"Name": "掷点",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，有概率使受到攻击的我方目标效果抵抗降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300101004": {
+		"Id": "300101004",
+		"Name": "惊梦剧团的弹簧荷官",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n本是牌桌上的娱乐道具，失控后仍在舞动着手中的骰子，用粗鲁的方式进行游戏。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300101001,
+				"Name": "掷点",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，有概率使受到攻击的我方目标效果抵抗降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"300102001": {
 		"Id": "300102001",
 		"Name": "柯柯娜的诚实",
@@ -28492,6 +30522,90 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"300102002": {
+		"Id": "300102002",
+		"Name": "惊梦剧团的舞鸫假面",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n本是剧场中的演出道具，失控后仍在演绎台上的闹剧，将混乱的舞步带往各处。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300102001,
+				"Name": "邀舞",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，有概率使受到攻击的我方目标陷入裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300102003": {
+		"Id": "300102003",
+		"Name": "惊梦剧团的舞鸫假面",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n本是剧场中的演出道具，失控后仍在演绎台上的闹剧，将混乱的舞步带往各处。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300102001,
+				"Name": "邀舞",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，有概率使受到攻击的我方目标陷入裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300102004": {
+		"Id": "300102004",
+		"Name": "惊梦剧团的舞鸫假面",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n本是剧场中的演出道具，失控后仍在演绎台上的闹剧，将混乱的舞步带往各处。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300102001,
+				"Name": "邀舞",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害，有概率使受到攻击的我方目标陷入裂伤状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"300201001": {
 		"Id": "300201001",
@@ -28521,7 +30635,7 @@
 			{
 				"Id": 300201002,
 				"Name": "惊吓播报",
-				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体损失能量。只能在【惊吓频道】状态下使用。",
+				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体能量减少。只能在【惊吓频道】状态下使用。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Quantum"
 			},
@@ -28568,7 +30682,7 @@
 			{
 				"Id": 300201002,
 				"Name": "惊吓播报",
-				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体损失能量。只能在【惊吓频道】状态下使用。",
+				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体能量减少。只能在【惊吓频道】状态下使用。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Quantum"
 			},
@@ -28615,7 +30729,7 @@
 			{
 				"Id": 300201002,
 				"Name": "惊吓播报",
-				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体损失能量。只能在【惊吓频道】状态下使用。",
+				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体能量减少。只能在【惊吓频道】状态下使用。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Quantum"
 			},
@@ -28633,6 +30747,53 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"300201004": {
+		"Id": "300201004",
+		"Name": "惊梦剧团的圆幕先生",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是电视节目中的娱乐演员，失控后仍在演绎自己多变的身份，为观众带来惊喜或是惊吓。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300201001,
+				"Name": "惊喜综艺",
+				"SkillDesc": "使指定我方单体恢复能量。只能在【惊喜频道】状态下使用。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300201002,
+				"Name": "惊吓播报",
+				"SkillDesc": "对我方全体造成少量量子属性伤害，并使我方全体能量减少。只能在【惊吓频道】状态下使用。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 300201003,
+				"Name": "频道切换",
+				"SkillDesc": "将【惊喜频道】状态转变为【惊吓频道】状态。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300201004,
+				"Name": "串台",
+				"SkillDesc": "在受到攻击后，会从【惊喜频道】状态转变为【惊吓频道】状态，或从【惊吓频道】状态转变为【惊喜频道】状态。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"300203001": {
 		"Id": "300203001",
@@ -28716,6 +30877,210 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"300203003": {
+		"Id": "300203003",
+		"Name": "惊梦剧团的气泡锂犬",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的派送员，失控后仍在挥洒甜蜜，让所有人都来品尝美味的饮品。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300203001,
+				"Name": "邀饮",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300203002,
+				"Name": "泼洒甜蜜",
+				"SkillDesc": "受到致命攻击时，对自身相邻的敌方目标造成物理属性伤害，使其速度提高并陷入裂伤状态。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 300203003,
+				"Name": "酣畅",
+				"SkillDesc": "受到攻击或持续伤害时，获得1层可叠加的【苏乐达陶醉】。【苏乐达陶醉】层数越高，造成的伤害越高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300203004": {
+		"Id": "300203004",
+		"Name": "惊梦剧团的气泡锂犬",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的派送员，失控后仍在挥洒甜蜜，让所有人都来品尝美味的饮品。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300203001,
+				"Name": "邀饮",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300203002,
+				"Name": "泼洒甜蜜",
+				"SkillDesc": "受到致命攻击时，对自身相邻的敌方目标造成物理属性伤害，使其速度提高并陷入裂伤状态。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 300203003,
+				"Name": "酣畅",
+				"SkillDesc": "受到攻击或持续伤害时，获得1层可叠加的【苏乐达陶醉】。【苏乐达陶醉】层数越高，造成的伤害越高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300203005": {
+		"Id": "300203005",
+		"Name": "惊梦剧团的气泡锂犬",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的派送员，失控后仍在挥洒甜蜜，让所有人都来品尝美味的饮品。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300203001,
+				"Name": "邀饮",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300203002,
+				"Name": "泼洒甜蜜",
+				"SkillDesc": "受到致命攻击时，对自身相邻的敌方目标造成物理属性伤害，使其速度提高并陷入裂伤状态。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 300203003,
+				"Name": "酣畅",
+				"SkillDesc": "受到攻击或持续伤害时，获得1层可叠加的【苏乐达陶醉】。【苏乐达陶醉】层数越高，造成的伤害越高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300203006": {
+		"Id": "300203006",
+		"Name": "惊梦剧团的气泡锂犬",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的派送员，失控后仍在挥洒甜蜜，让所有人都来品尝美味的饮品。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300203001,
+				"Name": "邀饮",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 300203002,
+				"Name": "泼洒甜蜜",
+				"SkillDesc": "受到致命攻击时，对自身相邻的敌方目标造成物理属性伤害，使其速度提高并陷入裂伤状态。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 300203003,
+				"Name": "酣畅",
+				"SkillDesc": "受到攻击或持续伤害时，获得1层可叠加的【苏乐达陶醉】。【苏乐达陶醉】层数越高，造成的伤害越高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300204001": {
+		"Id": "300204001",
+		"Name": "惊梦剧团的发条暴徒",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「白日梦」酒店的服务生，失控后仍在履行报时的职责，用最直接的方式将睡梦惊醒。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300204001,
+				"Name": "预定闹钟",
+				"SkillDesc": "进入蓄力状态，下次行动时施放【起床铃声】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300204002,
+				"Name": "起床铃声",
+				"SkillDesc": "使除自身外的敌方全体立即行动。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300204003,
+				"Name": "清醒铁拳",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"300205002": {
 		"Id": "300205002",
 		"Name": "柯柯娜的诚实",
@@ -28741,7 +31106,7 @@
 			{
 				"Id": 300205002,
 				"Name": "桶的磨砺",
-				"SkillDesc": "提高自身的攻击力。该效果可叠加，且不可被驱散。",
+				"SkillDesc": "提高自身的攻击力。该效果可叠加，且不可被解除。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -28752,6 +31117,144 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"300301001": {
+		"Id": "300301001",
+		"Name": "惊梦剧团的十七分熟",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是烹饪食物的料理机器，失控后仍在喷吐炙烤食材的烈焰，企图将食客一同烧成焦炭。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300301001,
+				"Name": "大力颠勺",
+				"SkillDesc": "对我方单体造成火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301002,
+				"Name": "旋风翻锅",
+				"SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301003,
+				"Name": "点燃炉灶",
+				"SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301004,
+				"Name": "烈焰爆炒",
+				"SkillDesc": "对我方全体造成大量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301005,
+				"Name": "厨房事故",
+				"SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301006,
+				"Name": "火炼佳肴",
+				"SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 300301007,
+				"Name": "猛火炉灶",
+				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300301002": {
+		"Id": "300301002",
+		"Name": "惊梦剧团的十七分熟",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是烹饪食物的料理机器，失控后仍在喷吐炙烤食材的烈焰，企图将食客一同烧成焦炭。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 300301001,
+				"Name": "大力颠勺",
+				"SkillDesc": "对我方单体造成火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301002,
+				"Name": "旋风翻锅",
+				"SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301003,
+				"Name": "点燃炉灶",
+				"SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301004,
+				"Name": "烈焰爆炒",
+				"SkillDesc": "对我方全体造成大量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301005,
+				"Name": "厨房事故",
+				"SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 300301006,
+				"Name": "火炼佳肴",
+				"SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 300301007,
+				"Name": "猛火炉灶",
+				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"300301101": {
 		"Id": "300301101",
@@ -28810,13 +31313,13 @@
 			{
 				"Id": 300301106,
 				"Name": "火炼佳肴",
-				"SkillDesc": "当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+				"SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
 				"SkillTypeDesc": "天赋"
 			},
 			{
 				"Id": 300301107,
 				"Name": "猛火炉灶",
-				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加一层【炉灶加温】。",
+				"SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
 				"SkillTypeDesc": "天赋"
 			}
 		],
@@ -28870,6 +31373,130 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"300302002": {
+		"Id": "300302002",
+		"Name": "惊梦剧团的甜猿泰山",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的运输工，失控后仍在分享背负的美味，向路过的宾客抛掷它的礼物。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300302001,
+				"Name": "限量赠饮",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302002,
+				"Name": "无限畅饮",
+				"SkillDesc": "对我方随机单体造成4次冰属性伤害，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302003,
+				"Name": "苏乐达派对",
+				"SkillDesc": "召唤2只【气泡锂犬】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300302004,
+				"Name": "酬宾喷泉",
+				"SkillDesc": "进入蓄力状态，获得韧性保护，下次行动时施放【无限畅饮】。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"300302003": {
+		"Id": "300302003",
+		"Name": "惊梦剧团的甜猿泰山",
+		"Introduction": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的运输工，失控后仍在分享背负的美味，向路过的宾客抛掷它的礼物。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 300302001,
+				"Name": "限量赠饮",
+				"SkillDesc": "对指定我方单体造成冰属性伤害，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302002,
+				"Name": "无限畅饮",
+				"SkillDesc": "对我方随机单体造成4次冰属性伤害，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 300302003,
+				"Name": "苏乐达派对",
+				"SkillDesc": "召唤2只【气泡锂犬】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 300302004,
+				"Name": "酬宾喷泉",
+				"SkillDesc": "进入蓄力状态，获得韧性保护，下次行动时施放【无限畅饮】。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"301201001": {
+		"Id": "301201001",
+		"Name": "忆域迷因「何物藏于镜中」",
+		"Introduction": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n生命通过镜像认知世界，建构自我的认知。无形的模因在镜中倒映，留下千变万化的迷影。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301201001,
+				"Name": "镜像认同",
+				"SkillDesc": "变身为其他敌方单位，并复制其技能。变身后继承自身的基础属性。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"301202001": {
 		"Id": "301202001",
 		"Name": "忆域迷因「我心支离破碎」",
@@ -28904,6 +31531,61 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"301301001": {
+		"Id": "301301001",
+		"Name": "忆域迷因「狂怒褪去之壳」",
+		"Introduction": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n哀苦的回忆如炽焰灼心，当苦难褪去，怨恨化作的生命便会于灰烬中诞生，积聚无穷的盛怒。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 301301001,
+				"Name": "怀恨礼",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。并使自身获得1层【无明火】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301002,
+				"Name": "怒叱如雷轰鸣",
+				"SkillDesc": "自身获得3层【无明火】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 301301003,
+				"Name": "宿怨如浪翻涌",
+				"SkillDesc": "对我方全体造成少量量子属性伤害。并使自身获得1层【无明火】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301004,
+				"Name": "痛恶如刺剔骨",
+				"SkillDesc": "连续对我方随机单体造成少量量子属性伤害。每层【无明火】额外造成1段伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 301301005,
+				"Name": "癔症身壳",
+				"SkillDesc": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"301402001": {
 		"Id": "301402001",
@@ -28959,7 +31641,7 @@
 			{
 				"Id": 301402006,
 				"Name": "步入良夜",
-				"SkillDesc": "进入【夜幕降临】状态，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
+				"SkillDesc": "进入【夜幕将临】状态，为我方全体恢复能量，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -29031,7 +31713,7 @@
 			{
 				"Id": 301402006,
 				"Name": "步入良夜",
-				"SkillDesc": "进入【夜幕降临】状态，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
+				"SkillDesc": "进入【夜幕将临】状态，为我方全体恢复能量，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -29103,7 +31785,7 @@
 			{
 				"Id": 301402006,
 				"Name": "步入良夜",
-				"SkillDesc": "进入【夜幕降临】状态，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
+				"SkillDesc": "进入【夜幕将临】状态，为我方全体恢复能量，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
 				"SkillTypeDesc": "技能"
 			},
 			{
@@ -29304,23 +31986,84 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"302401201": {
+		"Id": "302401201",
+		"Name": "银枝",
+		"Introduction": "「纯美骑士团」的古典骑士，虔诚地仰慕着已失踪的「纯美」星神伊德莉拉。\n为人正直、光明磊落，于宇宙中漫游，宣扬伊德莉拉美名。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 302401201,
+				"Name": "虔诚",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 302401202,
+				"Name": "渐臻虔诚",
+				"SkillDesc": "对指定我方单体及其相邻目标造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 302401203,
+				"Name": "枪与盾",
+				"SkillDesc": "随机召唤【枪尖】、【盾】、【授勋】的雕塑。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 302401204,
+				"Name": "坚韧灵魂",
+				"SkillDesc": "释放一个雕塑中纯美的灵魂，使被灵魂释放的雕塑技能效果增强。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 302401205,
+				"Name": "纯美的勇气赞歌",
+				"SkillDesc": "对我方全体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 302401207,
+				"Name": "枪与盾",
+				"SkillDesc": "随机召唤【枪尖】、【盾】、【授勋】的雕塑。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"302402001": {
 		"Id": "302402001",
 		"Name": "「星核猎手」萨姆",
 		"Introduction": "星核猎手的一员，身着沉重装甲的神秘战士。他的铁甲能够释放炽焰，点燃战场，发动烈火般的攻势。",
 		"ElementalWeaknesses": [
-			"Ice",
 			"Thunder",
-			"Quantum"
+			"Quantum",
+			"Imaginary"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0.2,
-			"Ice": 0,
+			"Ice": 0.2,
 			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0,
-			"Imaginary": 0.2
+			"Imaginary": 0
 		},
 		"SkillList": [
 			{
@@ -29362,261 +32105,83 @@
 				"Name": "SGE-熔火垓心",
 				"SkillDesc": "进入【次级燃烧】后使场地燃烧，同时燃烧我方的战技点；我方消耗燃烧的战技点时会消耗生命值，同时额外造成等同于原伤害一定比例的固定数值火属性伤害，并且接受其他角色的治疗时，生命值回复量大幅降低。",
 				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 302402007,
+				"Name": "SGE-熔火引擎",
+				"SkillDesc": "萨姆在【次级燃烧】下拥有【熔火能量】，被攻击时若此次攻击消耗了战技点则削减对应数量的【熔火能量】，【熔火能量】耗尽或被弱点击破时解除【次级燃烧】。解除【次级燃烧】时，萨姆受到的伤害提高，并恢复我方所有战技点。",
+				"SkillTypeDesc": "天赋"
 			}
 		],
 		"VersionAdded": "2.0"
 	},
-	"700203001": {
-		"Id": "700203001",
-		"Name": "火焚灾影",
-		"Introduction": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形。其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的燃烬所取代。\n战斗中火焚灾影会挥舞燃烧的斧刃，灼烧敌人。",
+	"302402002": {
+		"Id": "302402002",
+		"Name": "「星核猎手」萨姆",
+		"Introduction": "星核猎手的一员，身着沉重装甲的神秘战士。他的铁甲能够释放炽焰，点燃战场，发动烈火般的攻势。",
 		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
 			"Thunder",
-			"Wind",
 			"Quantum",
 			"Imaginary"
 		],
 		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
 			"Thunder": 0,
 			"Quantum": 0,
 			"Imaginary": 0
 		},
 		"SkillList": [
 			{
-				"Id": 700203001,
-				"Name": "灼炎重击",
-				"SkillDesc": "对指定我方单体造成伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"Id": 302402001,
+				"Name": "BHF-轰炎推进",
+				"SkillDesc": "对指定我方单体造成少量火属性伤害。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Fire"
 			},
 			{
-				"Id": 700203002,
-				"Name": "灼炎冲击波",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成大量伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"700203002": {
-		"Id": "700203002",
-		"Name": "火焚灾影",
-		"Introduction": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形。其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的燃烬所取代。\n战斗中火焚灾影会挥舞燃烧的斧刃，灼烧敌人。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700203001,
-				"Name": "灼炎重击",
-				"SkillDesc": "对指定我方单体造成伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"Id": 302402002,
+				"Name": "BHF-天火",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量火属性伤害。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Fire"
 			},
 			{
-				"Id": 700203002,
-				"Name": "灼炎冲击波",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成大量伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"700205001": {
-		"Id": "700205001",
-		"Name": "入魔机巧 • 灯昼龙鱼",
-		"Introduction": "工造司匠人随手造就的机巧发明。原本是不具灵智，用以烛照黑暗的灯具，如今却因为某些异变被赋予了短暂的「生命」。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700205001,
-				"Name": "宵明",
-				"SkillDesc": "对我方全体造成少量伤害，并大概率使受到攻击的我方目标陷入随机持续伤害状态。",
+				"Id": 302402003,
+				"Name": "BBHF-焦土作战",
+				"SkillDesc": "对我方全体造成少量火属性伤害。",
 				"SkillTypeDesc": "技能",
 				"ElementType": "Fire"
 			},
 			{
-				"Id": 700205002,
-				"Name": "放个烟花",
-				"SkillDesc": "消耗所有充能。迸发出耀眼的烟花，什么都不会发生，但很好看。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			},
-			{
-				"Id": 700205003,
-				"Name": "烛花",
-				"SkillDesc": "陷入无法战斗状态时，对敌方全体造成伤害，并大概率使受到攻击的敌方目标受到的伤害提高。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Fire"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"700207001": {
-		"Id": "700207001",
-		"Name": "虚数织叶者",
-		"Introduction": "不属此世的怪异生命，自深黯星空的彼端，透过重重帷幕而来。其身躯犹如病态的枝叶探入现实中，使用虚数的力量肆意改造现实。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700207001,
-				"Name": "颂歌震荡",
-				"SkillDesc": "对指定我方单体及其相邻目标造成伤害。首次使用后，使自身行动大幅提前。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700207002,
-				"Name": "颂歌爆发",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"700207002": {
-		"Id": "700207002",
-		"Name": "虚数织叶者",
-		"Introduction": "不属此世的怪异生命，自深黯星空的彼端，透过重重帷幕而来。其身躯犹如病态的枝叶探入现实中，使用虚数的力量肆意改造现实。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700207001,
-				"Name": "颂歌震荡",
-				"SkillDesc": "对指定我方单体及其相邻目标造成伤害。首次使用后，使自身行动大幅提前。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			},
-			{
-				"Id": 700207002,
-				"Name": "颂歌爆发",
-				"SkillDesc": "消耗所有充能。对指定我方单体造成大量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Imaginary"
-			}
-		],
-		"VersionAdded": "1.4"
-	},
-	"700209001": {
-		"Id": "700209001",
-		"Name": "银鬃近卫",
-		"Introduction": "贝洛伯格的戍卫部队「银鬃铁卫」中的近卫战士，负责冲锋陷阵。\n战斗中，银鬃近卫会持续为友方提供加成效果。",
-		"ElementalWeaknesses": [
-			"Physical",
-			"Fire",
-			"Ice",
-			"Thunder",
-			"Wind",
-			"Quantum",
-			"Imaginary"
-		],
-		"ElementalResistance": {
-			"Physical": 0,
-			"Fire": 0,
-			"Ice": 0,
-			"Wind": 0,
-			"Thunder": 0,
-			"Quantum": 0,
-			"Imaginary": 0
-		},
-		"SkillList": [
-			{
-				"Id": 700209001,
-				"Name": "奔袭",
-				"SkillDesc": "对指定我方单体造成少量伤害。",
-				"SkillTypeDesc": "技能",
-				"ElementType": "Physical"
-			},
-			{
-				"Id": 700209002,
-				"Name": "鼓舞士气",
-				"SkillDesc": "消耗所有充能。敌方全队获得5层【士气】。",
+				"Id": 302402004,
+				"Name": "DHGDR-次级燃烧",
+				"SkillDesc": "消耗自身生命值，进入【次级燃烧】并解除【弱点无效】效果。进入【次级燃烧】后自身大幅增强，但所有攻击会消耗自身生命值。",
 				"SkillTypeDesc": "技能"
 			},
 			{
-				"Id": 700209003,
-				"Name": "铁卫铠甲",
-				"SkillDesc": "敌方单位攻击后，敌方全队获得1层【士气】。每层士气提高造成的和伤害和速度，降低受到的伤害。",
+				"Id": 302402005,
+				"Name": "DHGDR-超新星过载",
+				"SkillDesc": "对我方全体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			},
+			{
+				"Id": 302402006,
+				"Name": "SGE-熔火垓心",
+				"SkillDesc": "进入【次级燃烧】后使场地燃烧，同时燃烧我方的战技点；我方消耗燃烧的战技点时会消耗生命值，同时额外造成等同于原伤害一定比例的固定数值火属性伤害，并且接受其他角色的治疗时，生命值回复量大幅降低。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 302402007,
+				"Name": "SGE-熔火引擎",
+				"SkillDesc": "萨姆在【次级燃烧】下拥有【熔火能量】，被攻击时若此次攻击消耗了战技点则削减对应数量的【熔火能量】，【熔火能量】耗尽或被弱点击破时解除【次级燃烧】。解除【次级燃烧】时，萨姆受到的伤害提高，并恢复我方所有战技点。",
 				"SkillTypeDesc": "天赋"
 			}
 		],
-		"VersionAdded": "1.4"
+		"VersionAdded": "2.1"
 	},
 	"800101001": {
 		"Id": "800101001",
@@ -30068,6 +32633,62 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"800101017": {
+		"Id": "800101017",
+		"Name": "炎华造物",
+		"Introduction": "游荡在裂界中的晶体元素，只有最简单的智能，其形态犹如放射高热，猛烈燃烧的鸟类生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "扰乱",
+				"SkillDesc": "对指定我方单体造成少量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800101018": {
+		"Id": "800101018",
+		"Name": "炎华造物",
+		"Introduction": "游荡在裂界中的晶体元素，只有最简单的智能，其形态犹如放射高热，猛烈燃烧的鸟类生命。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.4,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800101001,
+				"Name": "扰乱",
+				"SkillDesc": "对指定我方单体造成少量火属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Fire"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"800102001": {
 		"Id": "800102001",
 		"Name": "霜晶造物",
@@ -30496,16 +33117,16 @@
 		"Name": "霜晶造物",
 		"Introduction": "游荡在裂界中的晶体元素，只有最简单的智能，其形态犹如带来低温，冻结周遭环境的鸟类生命。",
 		"ElementalWeaknesses": [
-			"Fire",
-			"Wind"
+			"Quantum",
+			"Fire"
 		],
 		"ElementalResistance": {
 			"Physical": 0.2,
 			"Fire": 0,
 			"Ice": 0.4,
-			"Wind": 0,
+			"Wind": 0.2,
 			"Thunder": 0.2,
-			"Quantum": 0.2,
+			"Quantum": 0,
 			"Imaginary": 0.2
 		},
 		"SkillList": [
@@ -30681,6 +33302,166 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"800103005": {
+		"Id": "800103005",
+		"Name": "无想面具",
+		"Introduction": "裂界侵蚀的受害者们拼接成的奇怪造物。麻木的面孔循环罗列，无有思想，无有情绪，曾名之为人的部分已尽数流逝。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800103001,
+				"Name": "虹彩光束",
+				"SkillDesc": "对指定我方单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800103002,
+				"Name": "聚焦充能",
+				"SkillDesc": "使敌方全体攻击力提高。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800103003,
+				"Name": "能量涌泄",
+				"SkillDesc": "受到致命攻击后使我方全体能量恢复。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800103006": {
+		"Id": "800103006",
+		"Name": "无想面具",
+		"Introduction": "裂界侵蚀的受害者们拼接成的奇怪造物。麻木的面孔循环罗列，无有思想，无有情绪，曾名之为人的部分已尽数流逝。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800103001,
+				"Name": "虹彩光束",
+				"SkillDesc": "对指定我方单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800103002,
+				"Name": "聚焦充能",
+				"SkillDesc": "使敌方全体攻击力提高。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800103003,
+				"Name": "能量涌泄",
+				"SkillDesc": "受到致命攻击后使我方全体能量恢复。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800103007": {
+		"Id": "800103007",
+		"Name": "无想面具",
+		"Introduction": "裂界侵蚀的受害者们拼接成的奇怪造物。麻木的面孔循环罗列，无有思想，无有情绪，曾名之为人的部分已尽数流逝。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800103001,
+				"Name": "虹彩光束",
+				"SkillDesc": "对指定我方单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800103002,
+				"Name": "聚焦充能",
+				"SkillDesc": "使敌方全体攻击力提高。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800103003,
+				"Name": "能量涌泄",
+				"SkillDesc": "受到致命攻击后使我方全体能量恢复。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800103008": {
+		"Id": "800103008",
+		"Name": "无想面具",
+		"Introduction": "裂界侵蚀的受害者们拼接成的奇怪造物。麻木的面孔循环罗列，无有思想，无有情绪，曾名之为人的部分已尽数流逝。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800103001,
+				"Name": "虹彩光束",
+				"SkillDesc": "对指定我方单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800103002,
+				"Name": "聚焦充能",
+				"SkillDesc": "使敌方全体攻击力提高。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800103003,
+				"Name": "能量涌泄",
+				"SkillDesc": "受到致命攻击后使我方全体能量恢复。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"800104001": {
 		"Id": "800104001",
 		"Name": "鸣雷造物",
@@ -30854,17 +33635,17 @@
 		"Name": "巽风造物",
 		"Introduction": "游荡在裂界中的晶体元素，只有最简单的智能，其形态犹如气流缠绕，驰翔疾风的鸟类生命。",
 		"ElementalWeaknesses": [
-			"Fire",
-			"Thunder"
+			"Physical",
+			"Imaginary"
 		],
 		"ElementalResistance": {
-			"Physical": 0.2,
-			"Fire": 0,
+			"Physical": 0,
+			"Fire": 0.2,
 			"Ice": 0.2,
 			"Wind": 0.4,
-			"Thunder": 0,
+			"Thunder": 0.2,
 			"Quantum": 0.2,
-			"Imaginary": 0.2
+			"Imaginary": 0
 		},
 		"SkillList": [
 			{
@@ -30876,6 +33657,34 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"800105005": {
+		"Id": "800105005",
+		"Name": "巽风造物",
+		"Introduction": "游荡在裂界中的晶体元素，只有最简单的智能，其形态犹如气流缠绕，驰翔疾风的鸟类生命。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800105001,
+				"Name": "风色",
+				"SkillDesc": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"800201001": {
 		"Id": "800201001",
@@ -31366,6 +34175,55 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"800201016": {
+		"Id": "800201016",
+		"Name": "虚数织叶者",
+		"Introduction": "不属此世的怪异生命，自深黯星空的彼端，透过重重帷幕而来。其身躯犹如病态的枝叶探入现实中，使用虚数的力量肆意改造现实。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800201001,
+				"Name": "颂歌光束",
+				"SkillDesc": "对指定我方单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201002,
+				"Name": "颂歌爆发",
+				"SkillDesc": "对指定我方单体造成大量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201003,
+				"Name": "颂歌震荡",
+				"SkillDesc": "对指定我方单体及其相邻目标造成虚数属性伤害，并进入【后手】状态，下次行动时施放【颂歌爆发】且使自身造成的伤害大幅提高。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800201004,
+				"Name": "虚数护甲",
+				"SkillDesc": "非弱点属性的攻击对自身造成的伤害降低。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"800204001": {
 		"Id": "800204001",
@@ -32583,6 +35441,670 @@
 		],
 		"VersionAdded": "2.0"
 	},
+	"800205028": {
+		"Id": "800205028",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205029": {
+		"Id": "800205029",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205030": {
+		"Id": "800205030",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205031": {
+		"Id": "800205031",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205032": {
+		"Id": "800205032",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205033": {
+		"Id": "800205033",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205034": {
+		"Id": "800205034",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205035": {
+		"Id": "800205035",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205036": {
+		"Id": "800205036",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205037": {
+		"Id": "800205037",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205038": {
+		"Id": "800205038",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205039": {
+		"Id": "800205039",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205040": {
+		"Id": "800205040",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205041": {
+		"Id": "800205041",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205042": {
+		"Id": "800205042",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205043": {
+		"Id": "800205043",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800205044": {
+		"Id": "800205044",
+		"Name": "序列扑满",
+		"Introduction": "迷失在群星中的跨维度生物，性温，味甘，不可食用。一生中大部分时间花在进食和逃跑上。偶遇它的旅行者视之为吉兆。",
+		"ElementalWeaknesses": [
+			"Thunder",
+			"Quantum",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800205001,
+				"Name": "害…害怕",
+				"SkillDesc": "扑满被惊动了，即将在2个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205002,
+				"Name": "跑…跑啊",
+				"SkillDesc": "扑满陷入恐慌，即将在1个回合后逃离。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800205003,
+				"Name": "呼…逃走了",
+				"SkillDesc": "扑满拔腿就跑，瞬间失去了踪影。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"800208101": {
 		"Id": "800208101",
 		"Name": "存护扑满",
@@ -33277,6 +36799,156 @@
 			}
 		],
 		"VersionAdded": "2.0"
+	},
+	"800301014": {
+		"Id": "800301014",
+		"Name": "外宇宙之冰",
+		"Introduction": "不属此世的怪异生命，自星核带来的裂界中成长，寄生在世界的根基结构中汲取能量，其甲胄外壳上倒映着幽深黯淡的星空。\n战斗中，外宇宙之冰能轻易将敌人冻结凝固。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "叹息之寒",
+				"SkillDesc": "对指定我方单体造成少量冰属性伤害。若自身处于【冰点】状态，对冻结状态的我方单体施放攻击后造成额外的冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "汲取霜晶",
+				"SkillDesc": "使自身进入【冰点】状态，之后的攻击可以施放【永冬之雨】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "永冬之雨",
+				"SkillDesc": "只有在【冰点】状态下才会施放该技能。对我方全体造成少量冰属性伤害，并有概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "叹息之寒",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。若自身处于【冰点】状态，则有概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800301015": {
+		"Id": "800301015",
+		"Name": "外宇宙之冰",
+		"Introduction": "不属此世的怪异生命，自星核带来的裂界中成长，寄生在世界的根基结构中汲取能量，其甲胄外壳上倒映着幽深黯淡的星空。\n战斗中，外宇宙之冰能轻易将敌人冻结凝固。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "叹息之寒",
+				"SkillDesc": "对指定我方单体造成少量冰属性伤害。若自身处于【冰点】状态，对冻结状态的我方单体施放攻击后造成额外的冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "汲取霜晶",
+				"SkillDesc": "使自身进入【冰点】状态，之后的攻击可以施放【永冬之雨】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "永冬之雨",
+				"SkillDesc": "只有在【冰点】状态下才会施放该技能。对我方全体造成少量冰属性伤害，并有概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "叹息之寒",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。若自身处于【冰点】状态，则有概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800301016": {
+		"Id": "800301016",
+		"Name": "外宇宙之冰",
+		"Introduction": "不属此世的怪异生命，自星核带来的裂界中成长，寄生在世界的根基结构中汲取能量，其甲胄外壳上倒映着幽深黯淡的星空。\n战斗中，外宇宙之冰能轻易将敌人冻结凝固。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.4,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800301001,
+				"Name": "叹息之寒",
+				"SkillDesc": "对指定我方单体造成少量冰属性伤害。若自身处于【冰点】状态，对冻结状态的我方单体施放攻击后造成额外的冰属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301002,
+				"Name": "汲取霜晶",
+				"SkillDesc": "使自身进入【冰点】状态，之后的攻击可以施放【永冬之雨】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301003,
+				"Name": "永冬之雨",
+				"SkillDesc": "只有在【冰点】状态下才会施放该技能。对我方全体造成少量冰属性伤害，并有概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			},
+			{
+				"Id": 800301004,
+				"Name": "叹息之寒",
+				"SkillDesc": "对指定我方单体造成冰属性伤害。若自身处于【冰点】状态，则有概率使受到攻击的我方目标陷入冻结状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Ice"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"800302001": {
 		"Id": "800302001",
@@ -34958,6 +38630,210 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"800303015": {
+		"Id": "800303015",
+		"Name": "守护者之影",
+		"Introduction": "由星核力量幻造而成的虚影，执行着令裂界不断扩张的意志。\n智慧生命的欲求在裂界中投影形成的活体能量，犹如一颗沙砾在蚌壳中凝成了珠贝。这股力量四处徘徊，漫无目的，直到感受到其主的意志才会听令行事。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800303001,
+				"Name": "追忆闪电",
+				"SkillDesc": "对指定我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303002,
+				"Name": "谴罚闪电",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303003,
+				"Name": "宁静禁令",
+				"SkillDesc": "对我方全体设下不能攻击守护者之影的【禁令】，攻击守护者之影的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303004,
+				"Name": "缴械禁令",
+				"SkillDesc": "对我方全体设下不能施放普攻的【禁令】，施放普攻的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303005,
+				"Name": "缄默禁令",
+				"SkillDesc": "对我方全体设下不能施放战技的【禁令】，施放战技的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303006,
+				"Name": "谴罚雷暴",
+				"SkillDesc": "连续对我方随机单体造成少量雷属性伤害，并有概率使受到攻击的我方目标陷入触电状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303007,
+				"Name": "不可违逆之责罚",
+				"SkillDesc": "对破坏【禁令】的我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800303016": {
+		"Id": "800303016",
+		"Name": "守护者之影",
+		"Introduction": "由星核力量幻造而成的虚影，执行着令裂界不断扩张的意志。\n智慧生命的欲求在裂界中投影形成的活体能量，犹如一颗沙砾在蚌壳中凝成了珠贝。这股力量四处徘徊，漫无目的，直到感受到其主的意志才会听令行事。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800303001,
+				"Name": "追忆闪电",
+				"SkillDesc": "对指定我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303002,
+				"Name": "谴罚闪电",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303003,
+				"Name": "宁静禁令",
+				"SkillDesc": "对我方全体设下不能攻击守护者之影的【禁令】，攻击守护者之影的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303004,
+				"Name": "缴械禁令",
+				"SkillDesc": "对我方全体设下不能施放普攻的【禁令】，施放普攻的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303005,
+				"Name": "缄默禁令",
+				"SkillDesc": "对我方全体设下不能施放战技的【禁令】，施放战技的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303006,
+				"Name": "谴罚雷暴",
+				"SkillDesc": "连续对我方随机单体造成少量雷属性伤害，并有概率使受到攻击的我方目标陷入触电状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303007,
+				"Name": "不可违逆之责罚",
+				"SkillDesc": "对破坏【禁令】的我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800303017": {
+		"Id": "800303017",
+		"Name": "守护者之影",
+		"Introduction": "由星核力量幻造而成的虚影，执行着令裂界不断扩张的意志。\n智慧生命的欲求在裂界中投影形成的活体能量，犹如一颗沙砾在蚌壳中凝成了珠贝。这股力量四处徘徊，漫无目的，直到感受到其主的意志才会听令行事。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800303001,
+				"Name": "追忆闪电",
+				"SkillDesc": "对指定我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303002,
+				"Name": "谴罚闪电",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303003,
+				"Name": "宁静禁令",
+				"SkillDesc": "对我方全体设下不能攻击守护者之影的【禁令】，攻击守护者之影的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303004,
+				"Name": "缴械禁令",
+				"SkillDesc": "对我方全体设下不能施放普攻的【禁令】，施放普攻的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303005,
+				"Name": "缄默禁令",
+				"SkillDesc": "对我方全体设下不能施放战技的【禁令】，施放战技的我方目标将立即受到1次攻击。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800303006,
+				"Name": "谴罚雷暴",
+				"SkillDesc": "连续对我方随机单体造成少量雷属性伤害，并有概率使受到攻击的我方目标陷入触电状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			},
+			{
+				"Id": 800303007,
+				"Name": "不可违逆之责罚",
+				"SkillDesc": "对破坏【禁令】的我方单体造成雷属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Thunder"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"800304001": {
 		"Id": "800304001",
 		"Name": "蚕食者之影",
@@ -35452,6 +39328,116 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"800304010": {
+		"Id": "800304010",
+		"Name": "蚕食者之影",
+		"Introduction": "由星核力量幻造而成的虚影，执行着令裂界不断扩张的意志。\n智慧生命的欲求在裂界中投影形成的活体能量，犹如一颗沙砾在蚌壳中凝成了珠贝。然而驱动它的这股欲望早已扭曲，模糊不清。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800304002,
+				"Name": "流年金刺",
+				"SkillDesc": "对指定我方单体造成虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304003,
+				"Name": "流年谴罚",
+				"SkillDesc": "对指定我方单体造成大量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304004,
+				"Name": "黄金年代的绸缪",
+				"SkillDesc": "使自身进入蓄力状态并获得9层【追忆刻度】，下次行动施放【黄金年代的解放】。每次受到攻击后失去1层【追忆刻度】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800304005,
+				"Name": "黄金年代的解放",
+				"SkillDesc": "连续对我方随机单体造成少量虚数属性伤害，造成伤害的次数与自身剩余【追忆刻度】层数一致。若没有【追忆刻度】则本技能施放失败。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304006,
+				"Name": "流年盾纱",
+				"SkillDesc": "自身受到的普攻、战技、终结技、追加攻击伤害小幅降低，并有小概率使受到蚕食者之影攻击的我方目标陷入禁锢状态。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800304011": {
+		"Id": "800304011",
+		"Name": "蚕食者之影",
+		"Introduction": "由星核力量幻造而成的虚影，执行着令裂界不断扩张的意志。\n智慧生命的欲求在裂界中投影形成的活体能量，犹如一颗沙砾在蚌壳中凝成了珠贝。然而驱动它的这股欲望早已扭曲，模糊不清。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800304002,
+				"Name": "流年金刺",
+				"SkillDesc": "对指定我方单体造成虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304003,
+				"Name": "流年谴罚",
+				"SkillDesc": "对指定我方单体造成大量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304004,
+				"Name": "黄金年代的绸缪",
+				"SkillDesc": "使自身进入蓄力状态并获得9层【追忆刻度】，下次行动施放【黄金年代的解放】。每次受到攻击后失去1层【追忆刻度】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800304005,
+				"Name": "黄金年代的解放",
+				"SkillDesc": "连续对我方随机单体造成少量虚数属性伤害，造成伤害的次数与自身剩余【追忆刻度】层数一致。若没有【追忆刻度】则本技能施放失败。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 800304006,
+				"Name": "流年盾纱",
+				"SkillDesc": "自身受到的普攻、战技、终结技、追加攻击伤害小幅降低，并有小概率使受到蚕食者之影攻击的我方目标陷入禁锢状态。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"800305001": {
 		"Id": "800305001",
@@ -36002,6 +39988,128 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"800305010": {
+		"Id": "800305010",
+		"Name": "兴风者",
+		"Introduction": "在裂界延展中遭遇侵蚀的怪物，在力量的本源发生畸变后拥有了更为灵活的战斗方式。\n兴风者会利用风的力量协助自己战斗，借助风向射出更为迅猛的箭矢。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Imaginary",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 800305001,
+				"Name": "巡风光陨",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并大概率使其陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305002,
+				"Name": "踏风而行",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量风属性伤害，并有概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305003,
+				"Name": "拈风张弩",
+				"SkillDesc": "进入蓄力状态，并锁定陷入风化状态的所有我方目标，下次行动施放【风落暴矢】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800305004,
+				"Name": "风落暴矢",
+				"SkillDesc": "对处于风化状态的我方目标造成风属性伤害。若场上没有处于风化状态的我方目标，则本技能施放失败。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305005,
+				"Name": "风浪急旋",
+				"SkillDesc": "攻击陷入风化状态的我方目标后，自身攻击力小幅提高。当弱点被击破时，该效果解除。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 800305006,
+				"Name": "风落暴矢",
+				"SkillDesc": "对处于风化状态的我方目标造成风属性伤害。若场上没有处于风化状态的我方目标，则本技能施放失败。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"800305012": {
+		"Id": "800305012",
+		"Name": "兴风者",
+		"Introduction": "在裂界延展中遭遇侵蚀的怪物，在力量的本源发生畸变后拥有了更为灵活的战斗方式。\n兴风者会利用风的力量协助自己战斗，借助风向射出更为迅猛的箭矢。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.4,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 800305001,
+				"Name": "巡风光陨",
+				"SkillDesc": "对指定我方单体造成风属性伤害，并大概率使其陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305002,
+				"Name": "踏风而行",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量风属性伤害，并有概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305003,
+				"Name": "拈风张弩",
+				"SkillDesc": "进入蓄力状态，并锁定陷入风化状态的所有我方目标，下次行动施放【风落暴矢】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 800305004,
+				"Name": "风落暴矢",
+				"SkillDesc": "对处于风化状态的我方目标造成风属性伤害。若场上没有处于风化状态的我方目标，则本技能施放失败。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 800305005,
+				"Name": "风浪急旋",
+				"SkillDesc": "攻击陷入风化状态的我方目标后，自身攻击力小幅提高。当弱点被击破时，该效果解除。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 800305006,
+				"Name": "风落暴矢",
+				"SkillDesc": "对处于风化状态的我方目标造成风属性伤害。若场上没有处于风化状态的我方目标，则本技能施放失败。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"801101001": {
 		"Id": "801101001",
 		"Name": "重子",
@@ -36225,6 +40333,34 @@
 			}
 		],
 		"VersionAdded": "1.4"
+	},
+	"801101009": {
+		"Id": "801101009",
+		"Name": "重子",
+		"Introduction": "「反物质军团」为防止反粒子逸散发生湮灭，制造了两种用于运输的小型离子阱，统称「重子」与「反重子」。\n「重子」具备基本的智能，能在战场上回应「虚卒」的意志与召唤，为其开辟道路。",
+		"ElementalWeaknesses": [
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801101001,
+				"Name": "湮灭",
+				"SkillDesc": "对指定我方单体造成少量量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"801102001": {
 		"Id": "801102001",
@@ -37412,6 +41548,47 @@
 		"Introduction": "尚未死灭的战士经「战争熔炉」的重铸获得了名为「毁灭」的力量，反物质补足了他们的残躯，负粒子在其躯体中震荡。\n「反物质军团」的基本作战单元，「毁灭」意志的具现化，遵从破坏本能行事，具有强烈的攻击性。",
 		"ElementalWeaknesses": [
 			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩猎之刃",
+				"SkillDesc": "对指定我方单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "涡旋跃袭",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201003,
+				"Name": "dev_被动",
+				"SkillDesc": "施放攻击后使自身速度提高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "1.5"
+	},
+	"801201028": {
+		"Id": "801201028",
+		"Name": "虚卒•掠夺者",
+		"Introduction": "尚未死灭的战士经「战争熔炉」的重铸获得了名为「毁灭」的力量，反物质补足了他们的残躯，负粒子在其躯体中震荡。\n「反物质军团」的基本作战单元，「毁灭」意志的具现化，遵从破坏本能行事，具有强烈的攻击性。",
+		"ElementalWeaknesses": [
+			"Physical",
 			"Thunder"
 		],
 		"ElementalResistance": {
@@ -37445,7 +41622,49 @@
 				"SkillTypeDesc": "天赋"
 			}
 		],
-		"VersionAdded": "1.5"
+		"VersionAdded": "2.1"
+	},
+	"801201029": {
+		"Id": "801201029",
+		"Name": "虚卒•掠夺者",
+		"Introduction": "尚未死灭的战士经「战争熔炉」的重铸获得了名为「毁灭」的力量，反物质补足了他们的残躯，负粒子在其躯体中震荡。\n「反物质军团」的基本作战单元，「毁灭」意志的具现化，遵从破坏本能行事，具有强烈的攻击性。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Physical",
+			"Quantum"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801201001,
+				"Name": "狩猎之刃",
+				"SkillDesc": "对指定我方单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201002,
+				"Name": "涡旋跃袭",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 801201003,
+				"Name": "dev_被动",
+				"SkillDesc": "施放攻击后使自身速度提高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"801202001": {
 		"Id": "801202001",
@@ -39072,6 +43291,218 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"801301018": {
+		"Id": "801301018",
+		"Name": "虚卒•践踏者",
+		"Introduction": "「反物质军团」利用「战争熔炉」将战士与古兽的残片融合重铸后的产物。\n 虽数量相对稀少，但兼具战士的智能与古兽的力量与机动性，其嘶鸣能够将大量虚卒召唤而来。",
+		"ElementalWeaknesses": [
+			"Wind",
+			"Imaginary",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虚实的投影",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略的铁蹄",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "战争的践踏",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋的弓矢",
+				"SkillDesc": "锁定我方单体，下次行动对该目标施放【强弩的终结】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "强弩的终结",
+				"SkillDesc": "对指定我方单体造成大量量子属性伤害，并大概率使受到攻击的我方目标陷入纠缠状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"801301019": {
+		"Id": "801301019",
+		"Name": "虚卒•践踏者",
+		"Introduction": "「反物质军团」利用「战争熔炉」将战士与古兽的残片融合重铸后的产物。\n 虽数量相对稀少，但兼具战士的智能与古兽的力量与机动性，其嘶鸣能够将大量虚卒召唤而来。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虚实的投影",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略的铁蹄",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "战争的践踏",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋的弓矢",
+				"SkillDesc": "锁定我方单体，下次行动对该目标施放【强弩的终结】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "强弩的终结",
+				"SkillDesc": "对指定我方单体造成大量量子属性伤害，并大概率使受到攻击的我方目标陷入纠缠状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"801301021": {
+		"Id": "801301021",
+		"Name": "虚卒•践踏者",
+		"Introduction": "「反物质军团」利用「战争熔炉」将战士与古兽的残片融合重铸后的产物。\n 虽数量相对稀少，但兼具战士的智能与古兽的力量与机动性，其嘶鸣能够将大量虚卒召唤而来。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 801301001,
+				"Name": "虚实的投影",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301002,
+				"Name": "侵略的铁蹄",
+				"SkillDesc": "对指定我方单体造成量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301003,
+				"Name": "战争的践踏",
+				"SkillDesc": "对指定我方单体及其相邻目标造成少量量子属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301004,
+				"Name": "螺旋的弓矢",
+				"SkillDesc": "锁定我方单体，下次行动对该目标施放【强弩的终结】。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			},
+			{
+				"Id": 801301005,
+				"Name": "强弩的终结",
+				"SkillDesc": "对指定我方单体造成大量量子属性伤害，并大概率使受到攻击的我方目标陷入纠缠状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Quantum"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"802201001": {
+		"Id": "802201001",
+		"Name": "幼蛰虫",
+		"Introduction": "真蛰虫幼体；「真蛰虫」幼体依据生长程度可被划分为「幼蛰虫」与「次蛰虫」。",
+		"ElementalWeaknesses": [
+			"Quantum",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0.2,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 802201001,
+				"Name": "振翅",
+				"SkillDesc": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802201002,
+				"Name": "次分裂",
+				"SkillDesc": "繁殖出1名自身的繁衍体，该效果在2回合后可再次触发。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 802201004,
+				"Name": "蛰亡语",
+				"SkillDesc": "受到致命攻击时，对敌方全体造成风属性伤害，并大概率使受到攻击的敌方目标受到的伤害小幅提高。",
+				"SkillTypeDesc": "天赋",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"802202001": {
 		"Id": "802202001",
 		"Name": "次蛰虫",
@@ -39155,6 +43586,136 @@
 			}
 		],
 		"VersionAdded": "1.4"
+	},
+	"802202003": {
+		"Id": "802202003",
+		"Name": "次蛰虫",
+		"Introduction": "真蛰虫幼体；「真蛰虫」幼体依据生长程度可被划分为「幼蛰虫」与「次蛰虫」。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 802202001,
+				"Name": "预备兵器",
+				"SkillDesc": "进入蓄力状态，下次行动施放【引爆扩散】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 802202002,
+				"Name": "引爆扩散",
+				"SkillDesc": "引爆自身，对指定我方单体及相邻目标造成风属性伤害，并大概率使受到攻击的我方目标陷入【怒噪】状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802202004,
+				"Name": "蛰亡语",
+				"SkillDesc": "受到致命攻击时，对敌方全体造成风属性伤害，并大概率使受到攻击的敌方目标受到的伤害小幅提高。",
+				"SkillTypeDesc": "天赋",
+				"ElementType": "Wind"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"802401101": {
+		"Id": "802401101",
+		"Name": "虫群•真蛰虫",
+		"Introduction": "成熟体的真蛰虫；博识学会的杜卢伊爵士遨游星海，曾写下三十卷《诸界异虫札记》。书中详实记载了迄今为止被确认的十几种蠹虫种类，以及星系间数之不尽的亚种。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Quantum",
+			"Physical"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0.2,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 802401101,
+				"Name": "作战时刻",
+				"SkillDesc": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入2层风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401102,
+				"Name": "战争兵器",
+				"SkillDesc": "对指定我方单体造成少量风属性伤害。如受到攻击的目标正处于风化状态，则直接造成1次风化伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401103,
+				"Name": "飓风",
+				"SkillDesc": "对我方全体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401104,
+				"Name": "繁殖",
+				"SkillDesc": "繁殖真蛰虫群。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 802401105,
+				"Name": "指挥准备",
+				"SkillDesc": "进入蓄力状态，下次行动施放【虫群突袭】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 802401106,
+				"Name": "虫群突袭",
+				"SkillDesc": "解除场上所有真蛰虫群的控制类负面状态与弱点击破状态，并对我方目标造成风属性伤害，使我方目标每次受到攻击时大概率陷入1层风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401107,
+				"Name": "虫群突袭",
+				"SkillDesc": "解除场上所有真蛰虫群的控制类负面状态与弱点击破状态，并对我方目标造成风属性伤害，使我方目标每次受到攻击时大概率陷入1层风化状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401108,
+				"Name": "传衍信息素",
+				"SkillDesc": "场上每繁殖出1个真蛰虫群，所有真蛰虫群获得1层伤害提高。场上仅能有1个【传衍信息素】效果生效。",
+				"SkillTypeDesc": "天赋"
+			},
+			{
+				"Id": 802401109,
+				"Name": "蛰亡语",
+				"SkillDesc": "受到致命攻击时，对敌方全体造成风属性伤害，并大概率使受到攻击的敌方目标受到的伤害小幅提高。",
+				"SkillTypeDesc": "天赋",
+				"ElementType": "Wind"
+			},
+			{
+				"Id": 802401111,
+				"Name": "繁殖",
+				"SkillDesc": "繁殖真蛰虫群。",
+				"SkillTypeDesc": "技能"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"802501001": {
 		"Id": "802501001",
@@ -39322,6 +43883,74 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"803201004": {
+		"Id": "803201004",
+		"Name": "基层员工•外勤（幻象）",
+		"Introduction": "「星际和平公司」的基层员工，主要负责处理上不得台面的「业务疏漏」。工资不高，只能在公司旗下的企业舰上合租房间。出现于此的是基于你的记忆模拟出的幻影。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803201001,
+				"Name": "打卡",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803201002,
+				"Name": "提升业绩",
+				"SkillDesc": "每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"803201005": {
+		"Id": "803201005",
+		"Name": "基层员工•外勤",
+		"Introduction": "「星际和平公司」的基层员工，主要负责处理上不得台面的「业务疏漏」。工资不高，只能在公司旗下的企业舰上合租房间。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803201001,
+				"Name": "打卡",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803201002,
+				"Name": "提升业绩",
+				"SkillDesc": "每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"803202001": {
 		"Id": "803202001",
 		"Name": "基层员工•安保",
@@ -39426,6 +44055,76 @@
 			}
 		],
 		"VersionAdded": "1.6"
+	},
+	"803202004": {
+		"Id": "803202004",
+		"Name": "基层员工•安保",
+		"Introduction": "「星际和平公司」的基层员工，主要负责维持公司管辖地区的治安秩序。工资不高，只能在公司旗下的企业舰上合租房间。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803202001,
+				"Name": "申诉",
+				"SkillDesc": "对指定我方单体及相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803202002,
+				"Name": "提升业绩",
+				"SkillDesc": "每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"803202005": {
+		"Id": "803202005",
+		"Name": "基层员工•安保",
+		"Introduction": "「星际和平公司」的基层员工，主要负责维持公司管辖地区的治安秩序。工资不高，只能在公司旗下的企业舰上合租房间。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Fire",
+			"Ice"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803202001,
+				"Name": "申诉",
+				"SkillDesc": "对指定我方单体及相邻目标造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803202002,
+				"Name": "提升业绩",
+				"SkillDesc": "每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	},
 	"803301001": {
 		"Id": "803301001",
@@ -39561,6 +44260,213 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"803301003": {
+		"Id": "803301003",
+		"Name": "资深员工•组长",
+		"Introduction": "「星际和平公司」的资深员工，级别至少是项目组的小组长。驾驶的机甲属于公有资产，一旦损坏需要自费赔偿。工资尚可，足够在公司旗下的企业舰上租下一室一厅的单间。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 803301001,
+				"Name": "处分",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301002,
+				"Name": "降本增效",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301003,
+				"Name": "培训中…",
+				"SkillDesc": "进入蓄力状态，下次行动施放【企业文化冲击】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301004,
+				"Name": "企业文化冲击",
+				"SkillDesc": "对我方全体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301005,
+				"Name": "<unbreak>720</unbreak>度考核",
+				"SkillDesc": "夺取所有【基层员工•外勤】和【基层员工•安保】的【绩效点】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301006,
+				"Name": "团建",
+				"SkillDesc": "召唤【基层员工•外勤】或【基层员工•安保】，并使所有【基层员工•外勤】和【基层员工•安保】获得1个【绩效点】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301007,
+				"Name": "提升业绩",
+				"SkillDesc": "每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"803301004": {
+		"Id": "803301004",
+		"Name": "资深员工•组长",
+		"Introduction": "「星际和平公司」的资深员工，级别至少是项目组的小组长。驾驶的机甲属于公有资产，一旦损坏需要自费赔偿。工资尚可，足够在公司旗下的企业舰上租下一室一厅的单间。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Imaginary"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0
+		},
+		"SkillList": [
+			{
+				"Id": 803301001,
+				"Name": "处分",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301002,
+				"Name": "降本增效",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301003,
+				"Name": "培训中…",
+				"SkillDesc": "进入蓄力状态，下次行动施放【企业文化冲击】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301004,
+				"Name": "企业文化冲击",
+				"SkillDesc": "对我方全体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301005,
+				"Name": "<unbreak>720</unbreak>度考核",
+				"SkillDesc": "夺取所有【基层员工•外勤】和【基层员工•安保】的【绩效点】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301006,
+				"Name": "团建",
+				"SkillDesc": "召唤【基层员工•外勤】或【基层员工•安保】，并使所有【基层员工•外勤】和【基层员工•安保】获得1个【绩效点】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301007,
+				"Name": "提升业绩",
+				"SkillDesc": "每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
+	"803301101": {
+		"Id": "803301101",
+		"Name": "资深员工•组长（错误）",
+		"Introduction": "代码受到影响后的错误投影。参照本体为「星际和平公司」的资深员工，级别至少是项目组的小组长。驾驶的机甲属于公有资产，一旦损坏需要自费赔偿。工资尚可，足够在公司旗下的企业舰上租下一室一厅的单间。",
+		"ElementalWeaknesses": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"ElementalResistance": {
+			"Physical": 0.2,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0,
+			"Thunder": 0.2,
+			"Quantum": 0.2,
+			"Imaginary": 0.2
+		},
+		"SkillList": [
+			{
+				"Id": 803301101,
+				"Name": "处分",
+				"SkillDesc": "对指定我方单体造成少量物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301102,
+				"Name": "降本增效",
+				"SkillDesc": "对指定我方单体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301103,
+				"Name": "培训中…",
+				"SkillDesc": "进入蓄力状态，下次行动施放【企业文化冲击】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301104,
+				"Name": "企业文化冲击",
+				"SkillDesc": "对我方全体造成物理属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Physical"
+			},
+			{
+				"Id": 803301105,
+				"Name": "<unbreak>720</unbreak>度考核",
+				"SkillDesc": "夺取所有【基层员工•外勤】和【基层员工•安保】的【绩效点】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301106,
+				"Name": "末位淘汰",
+				"SkillDesc": "消灭1名没有【绩效点】的【基层员工•外勤】或【基层员工•安保】，并召唤至多4名【基层员工•外勤】或【基层员工•安保】，同时使场上所有【基层员工•外勤】和【基层员工•安保】获得1个【绩效点】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301107,
+				"Name": "末位淘汰",
+				"SkillDesc": "消灭1名没有【绩效点】的【基层员工•外勤】或【基层员工•安保】，并召唤至多4名【基层员工•外勤】或【基层员工•安保】，同时使场上所有【基层员工•外勤】和【基层员工•安保】获得1个【绩效点】。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803301108,
+				"Name": "提升业绩",
+				"SkillDesc": "每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
+	},
 	"803301202": {
 		"Id": "803301202",
 		"Name": "资深员工•组长（幻象）",
@@ -39627,5 +44533,80 @@
 			}
 		],
 		"VersionAdded": "1.6"
+	},
+	"803401001": {
+		"Id": "803401001",
+		"Name": "「石心十人」诡弈砂金",
+		"Introduction": "星际和平公司「战略投资部」的高级干部，「石心十人」之一。借由基石分得「存护」令使的权能，以身作骰，置之死地而后生。",
+		"ElementalWeaknesses": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"ElementalResistance": {
+			"Physical": 0,
+			"Fire": 0,
+			"Ice": 0,
+			"Wind": 0.2,
+			"Thunder": 0,
+			"Quantum": 0.2,
+			"Imaginary": 0.4
+		},
+		"SkillList": [
+			{
+				"Id": 803401001,
+				"Name": "押以重注",
+				"SkillDesc": "对指定我方单体造成虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401002,
+				"Name": "分散投资",
+				"SkillDesc": "连续对我方随机单体造成少量虚数属性伤害。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401003,
+				"Name": "点数喷泉",
+				"SkillDesc": "对我方全体造成少量虚数属性伤害，并减少我方全体的能量。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401004,
+				"Name": "对赌时刻",
+				"SkillDesc": "召唤【「所有或一无所有」】并使我方单体进入赌局，每个【「所有或一无所有」】每次受到进入赌局的我方目标攻击时，会使其获得1个随机1到6的点数。进入赌局的我方单体回合结束时，点数低于诡弈砂金视为输掉赌局并受到攻击；点数高于诡弈砂金视为赢得赌局且终结技被激活。同时使没有进入赌局的我方目标陷入【观局勿语】状态，赌局结束后解除。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803401005,
+				"Name": "豪赌盛宴",
+				"SkillDesc": "召唤【「所有或一无所有」】并使我方全体进入赌局，每个【「所有或一无所有」】每次受到攻击时会使进行攻击的我方目标获得1个随机1到6的点数。下次诡弈砂金行动时，点数低于诡弈砂金的我方目标视为输掉赌局并受到攻击；点数高于诡弈砂金的我方目标视为赢得赌局且终结技被激活。",
+				"SkillTypeDesc": "技能"
+			},
+			{
+				"Id": 803401006,
+				"Name": "败者退席",
+				"SkillDesc": "对输掉赌局的我方单体造成虚数属性伤害，并大概率使受到攻击的我方单体陷入禁锢状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401007,
+				"Name": "胜者通杀",
+				"SkillDesc": "对所有输掉赌局的我方目标造成大量虚数属性伤害，并大概率使受到攻击的我方目标陷入禁锢状态。",
+				"SkillTypeDesc": "技能",
+				"ElementType": "Imaginary"
+			},
+			{
+				"Id": 803401008,
+				"Name": "诡弈赌约",
+				"SkillDesc": "每次赢得赌局的我方目标获得【鸿运当头】效果，造成的伤害提高；每次输掉赌局的我方目标获得【时运不济】效果，受到的伤害提高。",
+				"SkillTypeDesc": "天赋"
+			}
+		],
+		"VersionAdded": "2.1"
 	}
 }

@@ -981,55 +981,55 @@
 				"1": {
 					"EffectValues": [
 						1,
-						0.4
+						0
 					]
 				},
 				"2": {
 					"EffectValues": [
 						1.1,
-						0.44
+						0.08
 					]
 				},
 				"3": {
 					"EffectValues": [
 						1.2,
-						0.48
+						0.16
 					]
 				},
 				"4": {
 					"EffectValues": [
 						1.3,
-						0.52
+						0.24
 					]
 				},
 				"5": {
 					"EffectValues": [
 						1.4,
-						0.56
+						0.32
 					]
 				},
 				"6": {
 					"EffectValues": [
 						1.5,
-						0.6
+						0.4
 					]
 				},
 				"7": {
 					"EffectValues": [
 						1.625,
-						0.65
+						0.5
 					]
 				},
 				"8": {
 					"EffectValues": [
 						1.75,
-						0.7
+						0.6
 					]
 				},
 				"9": {
 					"EffectValues": [
 						1.875,
-						0.75
+						0.7
 					]
 				},
 				"10": {
@@ -1041,31 +1041,31 @@
 				"11": {
 					"EffectValues": [
 						2.1,
-						0.84
+						0.88
 					]
 				},
 				"12": {
 					"EffectValues": [
 						2.2,
-						0.88
+						0.96
 					]
 				},
 				"13": {
 					"EffectValues": [
 						2.3,
-						0.92
+						1.04
 					]
 				},
 				"14": {
 					"EffectValues": [
 						2.4,
-						0.96
+						1.12
 					]
 				},
 				"15": {
 					"EffectValues": [
 						2.5,
-						1
+						1.2
 					]
 				}
 			},
@@ -7781,7 +7781,7 @@
 					]
 				}
 			},
-			"ImageIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_BP.png"
+			"ImageIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_BP02.png"
 		},
 		"Ultimate": {
 			"Id": "110903",
@@ -10469,7 +10469,7 @@
 			"SkillTypeText": "Habilidad básica",
 			"MaxLevel": 15,
 			"EffectRaw": "Tras usar la habilidad básica, regenera a un aliado determinado una cantidad de PV equivalente al <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Luocha + <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. Luocha obtiene una acumulación de Flor abisal.\nCuando cualquiera de los aliados tiene un porcentaje de PV igual o inferior al <unbreak>#3[i]%</unbreak>, Luocha le aplica una vez un efecto igual al de su habilidad básica y no consume pts. de habilidad básica. Este efecto se puede volver a activar después de <unbreak>#4[i]</unbreak> turnos.",
-			"AbridgedEffect": "Regenera los PV de un aliado y obtiene una acumulación de Flor abisal.",
+			"AbridgedEffect": "<color=#f29e38ff>Regenera</color> los PV de un aliado y obtiene una acumulación de Flor abisal.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -10603,7 +10603,7 @@
 			"SkillTypeText": "Habilidad definitiva",
 			"MaxLevel": 15,
 			"EffectRaw": "Elimina <unbreak>#2[i]</unbreak> <u>efecto positivo</u> de todos los enemigos y les inflige un Daño Imaginario equivalente al <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Luocha. Además, Luocha obtiene 1 acumulación de Flor abisal.",
-			"AbridgedEffect": "Elimina 1 <u>efecto positivo</u> de todos los enemigos y les inflige Daño Imaginario. Obtiene 1 acumulación de Flor abisal.",
+			"AbridgedEffect": "<color=#f29e38ff>Elimina</color> 1 <color=#f29e38ff><u>efecto positivo</u></color> de todos los enemigos y les inflige Daño Imaginario. Obtiene 1 acumulación de Flor abisal.",
 			"ElementType": "Imaginary",
 			"Levels": {
 				"1": {
@@ -10708,7 +10708,7 @@
 			"SkillTypeText": "Talento",
 			"MaxLevel": 15,
 			"EffectRaw": "Cuando se alcanzan <unbreak>#1[i]</unbreak> acumulaciones de Flor abisal, Luocha las consume todas y genera un campo.\nCuando un objetivo enemigo que está dentro del campo recibe un ataque, el aliado atacante regenera una cantidad de PV equivalente al <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> del ATQ de Luocha + <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nEl campo dura <unbreak>#3[i]</unbreak> turnos. Cuando Luocha es <u>derrotado</u>, el campo desaparece.",
-			"AbridgedEffect": "Genera un campo al alcanzar 2 acumulaciones de Flor abisal. Los aliados regeneran PV al atacar mientras el campo está activo.",
+			"AbridgedEffect": "<color=#f29e38ff>Genera un campo</color> al alcanzar 2 acumulaciones de Flor abisal. Los aliados <color=#f29e38ff>regeneran PV al atacar</color> mientras el campo está activo.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -17288,6 +17288,468 @@
 		},
 		"VersionAdded": "1.5"
 	},
+	"1301": {
+		"Id": "1301",
+		"Name": "Gallagher",
+		"BasicATK": {
+			"Id": "130101",
+			"Name": "Tarifa de descorche",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "ATQ individual",
+			"SkillTypeText": "ATQ básico",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Gallagher como Daño de Fuego a un enemigo.",
+			"AbridgedEffect": "Inflige una pequeña cantidad de Daño de Fuego a un enemigo.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "130108",
+			"Name": "Espuma desbordante",
+			"TriggerKey": "Skill11",
+			"TagType": "SingleAttack",
+			"TagTypeText": "ATQ individual",
+			"SkillTypeText": "ATQ básico",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Gallagher como Daño de Fuego a un enemigo y reduce su ATQ en un <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> durante <unbreak>#3[i]</unbreak> turnos.",
+			"AbridgedEffect": "Inflige Daño de Fuego a un enemigo y reduce su ATQ.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.25,
+						0.1,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.5,
+						0.11,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.75,
+						0.12,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						0.13,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.25,
+						0.14,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.5,
+						0.15,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.75,
+						0.16,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.17,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3.25,
+						0.18,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Normal02.png"
+		},
+		"Skill": {
+			"Id": "130102",
+			"Name": "Mezcla especial",
+			"TriggerKey": "Skill02",
+			"TagType": "Restore",
+			"TagTypeText": "Regeneración",
+			"SkillTypeText": "Habilidad básica",
+			"MaxLevel": 15,
+			"EffectRaw": "Regenera inmediatamente un <color=#f29e38ff><unbreak>#1[i]</unbreak></color> de los PV de un aliado.",
+			"AbridgedEffect": "Regenera inmediatamente los PV de un aliado.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						200
+					]
+				},
+				"2": {
+					"EffectValues": [
+						340
+					]
+				},
+				"3": {
+					"EffectValues": [
+						480
+					]
+				},
+				"4": {
+					"EffectValues": [
+						676
+					]
+				},
+				"5": {
+					"EffectValues": [
+						830
+					]
+				},
+				"6": {
+					"EffectValues": [
+						984
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1138
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1292
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1446
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1600
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1684
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1768
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1852
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1936
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2020
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130103",
+			"Name": "Hora del champán",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "ATQ AdE",
+			"SkillTypeText": "Habilidad definitiva",
+			"MaxLevel": 15,
+			"EffectRaw": "Afecta con Melopea a todos los enemigos durante <unbreak>#2[i]</unbreak> turnos. Al mismo tiempo, inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Gallagher como Daño de Fuego a todos los enemigos, y su siguiente ATQ básico se potencia y se convierte en Espuma desbordante.",
+			"AbridgedEffect": "<color=#f29e38ff>Afecta con Melopea</color> a todos los enemigos y al mismo tiempo les inflige Daño de Fuego. El siguiente ATQ básico se potencia y se convierte en Espuma desbordante.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130104",
+			"Name": "Pelea embriagante",
+			"TriggerKey": "SkillP01",
+			"TagType": "Restore",
+			"TagTypeText": "Regeneración",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "Melopea aumenta el Daño de Ruptura que reciben los objetivos en un <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Cada vez que un objetivo afectado por Melopea recibe el ataque de un aliado, el atacante regenera <color=#f29e38ff><unbreak>#2[i]</unbreak></color> PV.",
+			"AbridgedEffect": "Melopea <color=#f29e38ff>aumenta el Daño de Ruptura</color> que reciben los objetivos. Cada vez que un objetivo con Melopea recibe el ataque de un aliado, <color=#f29e38ff>el atacante regenera PV</color>.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.06,
+						80
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.066,
+						136
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.072,
+						192
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.078,
+						270.4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.084,
+						332
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.09,
+						393.6
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.0975,
+						455.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.105,
+						516.8
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1125,
+						578.4
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.12,
+						640
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.126,
+						673.6
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.132,
+						707.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.138,
+						740.8
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.144,
+						774.4
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.15,
+						808
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Passive.png"
+		},
+		"Technique": {
+			"Id": "130107",
+			"Name": "Cosecha propia",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Ataca inmediatamente al enemigo y entra en combate. Afecta con Melopea a todos los enemigos durante <unbreak>#1[i]</unbreak> turnos y les inflige un <unbreak>#2[i]%</unbreak> del ATQ de Gallagher como Daño de Fuego.",
+			"AbridgedEffect": "Ataca al enemigo y entra en combate. <color=#f29e38ff>Afecta con Melopea</color> a todos los enemigos y les inflige una pequeña cantidad de Daño de Fuego.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1301/SkillIcon_1301_Maze.png"
+		},
+		"VersionAdded": "2.1"
+	},
 	"1302": {
 		"Id": "1302",
 		"Name": "Argenti",
@@ -18147,6 +18609,512 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png"
 		},
 		"VersionAdded": "1.6"
+	},
+	"1304": {
+		"Id": "1304",
+		"Name": "Aventurino",
+		"BasicATK": {
+			"Id": "130401",
+			"Name": "Apuesta directa",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "ATQ individual",
+			"SkillTypeText": "ATQ básico",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de la DEF de Aventurino como Daño Imaginario a un enemigo.",
+			"AbridgedEffect": "Inflige una pequeña cantidad de Daño Imaginario a un enemigo.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Normal.png"
+		},
+		"Skill": {
+			"Id": "130402",
+			"Name": "Piedra angular de la prosperidad",
+			"TriggerKey": "Skill02",
+			"TagType": "Defence",
+			"TagTypeText": "Defensa",
+			"SkillTypeText": "Habilidad básica",
+			"MaxLevel": 15,
+			"EffectRaw": "Otorga a todos los aliados un escudo Apuesta reforzada que absorbe un daño equivalente al <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de la DEF de Aventurino + <color=#f29e38ff><unbreak>#2[i]</unbreak></color> durante <unbreak>#3[i]</unbreak> turnos. Al obtener Apuesta reforzada varias veces, el efecto de escudo se puede acumular hasta un máximo del <unbreak>#4[i]%</unbreak> del efecto de escudo que proporciona la habilidad básica actual.",
+			"AbridgedEffect": "Otorga a todos los aliados un escudo Apuesta reforzada con <color=#f29e38ff>efecto de escudo acumulable</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.16,
+						80,
+						3,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.17,
+						128,
+						3,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						164,
+						3,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.19,
+						200,
+						3,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.2,
+						224,
+						3,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.208,
+						248,
+						3,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.216,
+						266,
+						3,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.224,
+						284,
+						3,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.232,
+						302,
+						3,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						320,
+						3,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.248,
+						338,
+						3,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.256,
+						356,
+						3,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.264,
+						374,
+						3,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.272,
+						392,
+						3,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.28,
+						410,
+						3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130403",
+			"Name": "Prodigio de la ruleta",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "ATQ individual",
+			"SkillTypeText": "Habilidad definitiva",
+			"MaxLevel": 15,
+			"EffectRaw": "Obtiene de 1 a <unbreak>#1[i]</unbreak> pts. de Apuesta ciega al azar y después aplica Sobresalto a un enemigo durante <unbreak>#4[i]</unbreak> turnos. Además, inflige al enemigo un <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de la DEF de Aventurino como Daño Imaginario. Cuando un objetivo aliado golpea a un enemigo con Sobresalto, el Daño CRIT infligido aumenta en un <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.",
+			"AbridgedEffect": "Obtiene Apuesta ciega al azar y afecta con Sobresalto a un enemigo. Además, inflige Daño Imaginario al objetivo. Cuando un aliado ataca a un enemigo con Sobresalto, el <color=#f29e38ff>Daño CRIT que inflige aumenta</color>.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						7,
+						1.62,
+						0.09,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						7,
+						1.728,
+						0.096,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						7,
+						1.836,
+						0.102,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						7,
+						1.944,
+						0.108,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						7,
+						2.052,
+						0.114,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						7,
+						2.16,
+						0.12,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						7,
+						2.295,
+						0.1275,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						7,
+						2.43,
+						0.135,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						7,
+						2.565,
+						0.1425,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						7,
+						2.7,
+						0.15,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						7,
+						2.808,
+						0.156,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						7,
+						2.916,
+						0.162,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						7,
+						3.024,
+						0.168,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						7,
+						3.132,
+						0.174,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						7,
+						3.24,
+						0.18,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130404",
+			"Name": "Bala cargada a la derecha",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "Rebote",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "La RES a efecto de un aliado con Apuesta reforzada aumenta en un <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, y cuando ese aliado recibe un ataque, Aventurino obtiene 1 pt. de Apuesta ciega. Aventurino es inmune a los <u>estados negativos de Control</u> cuando tiene Apuesta reforzada. Este efecto se puede activar de nuevo después de <unbreak>#5[i]</unbreak> turnos, y al recibir un ataque obtiene adicionalmente <unbreak>#1[i]</unbreak> pt. de Apuesta ciega. Tras alcanzar 7 pts. de Apuesta ciega, Aventurino los consume y lanza un <u>ataque adicional</u> de <unbreak>#2[i]</unbreak> golpes. Cada golpe inflige a un enemigo aleatorio un <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> de la DEF de Aventurino como Daño Imaginario. Apuesta ciega puede acumular <unbreak>10</unbreak> pts. como máximo.",
+			"AbridgedEffect": "La RES a efecto de un aliado con Apuesta reforzada aumenta y, cuando ese aliado recibe un ataque, Aventurino acumula Apuesta ciega. Aventurino es inmune a los <u>estados negativos de Control</u> cuando tiene Apuesta reforzada. Tras alcanzar 7 pts. de Apuesta ciega, Aventurino los consume y lanza un <color=#f29e38ff><u>ataque adicional</u></color> que inflige una pequeña cantidad de Daño Imaginario a un enemigo al azar. Se dispara 7 veces.",
+			"ElementType": "Imaginary",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						7,
+						0.125,
+						0.25,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						7,
+						0.1375,
+						0.275,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						7,
+						0.15,
+						0.3,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						7,
+						0.1625,
+						0.325,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						7,
+						0.175,
+						0.35,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						7,
+						0.1875,
+						0.375,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						7,
+						0.2031,
+						0.4063,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						7,
+						0.2188,
+						0.4375,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						7,
+						0.2344,
+						0.4688,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						7,
+						0.25,
+						0.5,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						7,
+						0.2625,
+						0.525,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						7,
+						0.275,
+						0.55,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						7,
+						0.2875,
+						0.575,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						7,
+						0.3,
+						0.6,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						7,
+						0.3125,
+						0.625,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Passive.png"
+		},
+		"Technique": {
+			"Id": "130407",
+			"Name": "Rojo o negro",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Defence",
+			"TagTypeText": "Defensa",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Tras usar la técnica, se obtiene 1 de los siguientes efectos:\nProbabilidad de aumentar la DEF en un <unbreak>#1[i]%</unbreak>.\nGran probabilidad de aumentar la DEF en un <unbreak>#2[i]%</unbreak>.\nPequeña probabilidad de aumentar la DEF en un <unbreak>#3[i]%</unbreak>.\nSi se usa repetidas veces, solo se conserva el efecto con el valor más alto.\nCuando comienza la siguiente batalla, la DEF de todos los aliados aumenta en la cantidad correspondiente durante <unbreak>#4[i]</unbreak> turnos.",
+			"AbridgedEffect": "Al usar la técnica se obtiene 1 de 3 posibles efectos de aumento de DEF al azar. Al entrar en el siguiente combate, la DEF de todos los aliados aumenta en la cantidad correspondiente.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.24,
+						0.36,
+						0.6,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1304/SkillIcon_1304_Maze.png"
+		},
+		"VersionAdded": "2.1"
 	},
 	"1305": {
 		"Id": "1305",
@@ -19618,6 +20586,495 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/1307/SkillIcon_1307_Maze.png"
 		},
 		"VersionAdded": "2.0"
+	},
+	"1308": {
+		"Id": "1308",
+		"Name": "Acheron",
+		"BasicATK": {
+			"Id": "130801",
+			"Name": "Cruce marchito trilateral",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "ATQ individual",
+			"SkillTypeText": "ATQ básico",
+			"MaxLevel": 9,
+			"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Acheron como Daño de Rayo a un enemigo.",
+			"AbridgedEffect": "Inflige una pequeña cantidad de Daño de Rayo a un enemigo.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Normal.png"
+		},
+		"Skill": {
+			"Id": "130802",
+			"Name": "Diluvio de cortes",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Ráfaga",
+			"SkillTypeText": "Habilidad básica",
+			"MaxLevel": 15,
+			"EffectRaw": "Obtiene <unbreak>#3[i]</unbreak> pt. de Sueños rotos. Aplica <unbreak>#3[i]</unbreak> acumulación de Rojo sacrificial a un enemigo, le inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Acheron como Daño de Rayo e inflige un <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> del ATQ de Acheron como Daño de Rayo a los enemigos adyacentes.",
+			"AbridgedEffect": "Obtiene <color=#f29e38ff><color=#f29e38ff><unbreak>#3[i]</unbreak></color> pt. de Sueños rotos</color>. Aplica <color=#f29e38ff><unbreak>#3[i]</unbreak></color> acumulación de Rojo sacrificial a un enemigo, le inflige Daño de Rayo e inflige una pequeña cantidad de Daño de Rayo a los enemigos adyacentes.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8,
+						0.3,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.88,
+						0.33,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.96,
+						0.36,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.04,
+						0.39,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.12,
+						0.42,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						0.45,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.3,
+						0.4875,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.4,
+						0.525,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.5,
+						0.5625,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.6,
+						0.6,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.68,
+						0.63,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.76,
+						0.66,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.84,
+						0.69,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.92,
+						0.72,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						0.75,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_BP.png"
+		},
+		"Ultimate": {
+			"Id": "130803",
+			"Name": "Sueño destrozado, lágrimas escarlata",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "ATQ AdE",
+			"SkillTypeText": "Habilidad definitiva",
+			"MaxLevel": 15,
+			"EffectRaw": "Lanza Pluviespada 3 veces y Resurgimiento estigio 1 vez e inflige hasta un <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> del ATQ de Acheron como Daño de Rayo a un enemigo. También inflige hasta un <color=#f29e38ff><unbreak>#7[i]%</unbreak></color> del ATQ de Acheron como Daño de Rayo a los demás enemigos.\nPluviespada: inflige un <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> del ATQ de Acheron como Daño de Rayo a un enemigo y elimina hasta 3 acumulaciones de Rojo sacrificial del objetivo. Cuando se elimina Rojo sacrificial, inflige a todos los enemigos un <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> del ATQ de Acheron como Daño de Rayo y, por cada acumulación de Rojo sacrificial eliminada, el multiplicador de daño de este ataque aumenta de forma adicional hasta un máximo del <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>.\nResurgimiento estigio: inflige un <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> del ATQ de Acheron como Daño de Rayo a todos los enemigos y elimina todas las acumulaciones de Rojo sacrificial.\nMientras se usa la habilidad definitiva, no se puede aplicar Rojo sacrificial a los enemigos.",
+			"AbridgedEffect": "Inflige una pequeña cantidad de Daño de Rayo 3 veces a un enemigo. Si elimina Rojo sacrificial del objetivo, inflige una pequeña cantidad de Daño de Rayo a todos los enemigos. Después, inflige Daño de Rayo a todos los enemigos 1 vez y elimina todas las acumulaciones de Rojo sacrificial.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.144,
+						0.09,
+						0.72,
+						9,
+						0.36,
+						2.232,
+						1.8
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.1536,
+						0.096,
+						0.768,
+						9,
+						0.384,
+						2.3808,
+						1.92
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.1632,
+						0.102,
+						0.816,
+						9,
+						0.408,
+						2.5296,
+						2.04
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.1728,
+						0.108,
+						0.864,
+						9,
+						0.432,
+						2.6784,
+						2.16
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.1824,
+						0.114,
+						0.912,
+						9,
+						0.456,
+						2.8272,
+						2.28
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.192,
+						0.12,
+						0.96,
+						9,
+						0.48,
+						2.976,
+						2.4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.204,
+						0.1275,
+						1.02,
+						9,
+						0.51,
+						3.162,
+						2.55
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.216,
+						0.135,
+						1.08,
+						9,
+						0.54,
+						3.348,
+						2.7
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.228,
+						0.1425,
+						1.14,
+						9,
+						0.57,
+						3.534,
+						2.85
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						0.15,
+						1.2,
+						9,
+						0.6,
+						3.72,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.2496,
+						0.156,
+						1.248,
+						9,
+						0.624,
+						3.8688,
+						3.12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.2592,
+						0.162,
+						1.296,
+						9,
+						0.648,
+						4.0176,
+						3.24
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.2688,
+						0.168,
+						1.344,
+						9,
+						0.672,
+						4.1664,
+						3.36
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.2784,
+						0.174,
+						1.392,
+						9,
+						0.696,
+						4.3152,
+						3.48
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.288,
+						0.18,
+						1.44,
+						9,
+						0.72,
+						4.464,
+						3.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Ultra.png"
+		},
+		"Talent": {
+			"Id": "130804",
+			"Name": "Hojas otoñales, vacío colosal",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Potenciación",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "La habilidad definitiva se puede activar cuando Sueños rotos alcanza <unbreak>#1[i]</unbreak> pts. Mientras dura la habilidad definitiva, se ignora el tipo de Debilidad y se consume la Firmeza de los enemigos, y además la RES a todos los tipos de todos los enemigos se reduce en un <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> hasta que finalice la habilidad definitiva.\nSi cualquier unidad lanza una habilidad y afecta con un estado negativo a un enemigo, Acheron obtiene 1 pt. de Sueños rotos y aplica 1 acumulación de Rojo sacrificial al objetivo. Si afecta con estados negativos a más de un enemigo, aplica 1 acumulación de Rojo sacrificial al enemigo que tenga más acumulaciones. Este efecto se puede activar 1 vez por acción. \nCuando Acheron esté en la batalla y un enemigo abandone la batalla o sea derrotado por cualquier unidad, las acumulaciones de Rojo sacrificial se traspasarán al objetivo que tenga más acumulaciones de Rojo sacrificial.",
+			"AbridgedEffect": "La habilidad definitiva se puede activar cuando Sueños rotos llega al máximo. Mientras dura la habilidad definitiva, se <color=#f29e38ff>ignora el tipo de Debilidad</color> y se consume la Firmeza de los enemigos, y además se reduce la <color=#f29e38ff>RES a todos los tipos</color> de todos los enemigos.\nSi cualquier unidad lanza una habilidad y afecta con un estado negativo a un enemigo, Acheron obtiene Sueños rotos y aplica Rojo sacrificial al objetivo.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						9,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						9,
+						0.11
+					]
+				},
+				"3": {
+					"EffectValues": [
+						9,
+						0.12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						9,
+						0.13
+					]
+				},
+				"5": {
+					"EffectValues": [
+						9,
+						0.14
+					]
+				},
+				"6": {
+					"EffectValues": [
+						9,
+						0.15
+					]
+				},
+				"7": {
+					"EffectValues": [
+						9,
+						0.1625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						9,
+						0.175
+					]
+				},
+				"9": {
+					"EffectValues": [
+						9,
+						0.1875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						9,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						9,
+						0.21
+					]
+				},
+				"12": {
+					"EffectValues": [
+						9,
+						0.22
+					]
+				},
+				"13": {
+					"EffectValues": [
+						9,
+						0.23
+					]
+				},
+				"14": {
+					"EffectValues": [
+						9,
+						0.24
+					]
+				},
+				"15": {
+					"EffectValues": [
+						9,
+						0.25
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Passive.png"
+		},
+		"Technique": {
+			"Id": "130807",
+			"Name": "Influjo tetravalente",
+			"TriggerKey": "SkillMaze",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Ataca al enemigo inmediatamente. Al comienzo de cada oleada, obtiene Influjo tetravalente, inflige un <unbreak>#1[i]%</unbreak> del ATQ de Acheron como Daño de Rayo a todos los enemigos y reduce su Firmeza ignorando sus tipos de Debilidad. Al infligir Ruptura de Debilidad, activa el efecto de Ruptura de Rayo.\nInflujo tetravalente: tras lanzar la habilidad definitiva, Acheron obtiene <unbreak>#2[i]</unbreak> pt. de Sueños rotos y aplica <unbreak>#2[i]</unbreak> acumulación de Rojo sacrificial a un enemigo al azar.\nSi ataca a un enemigo normal, lo derrota directamente y no entra en combate. Si el ataque no acierta a un enemigo, no se consume el punto de técnica.",
+			"AbridgedEffect": "Ataca al enemigo y obtiene Influjo tetravalente al principio de cada oleada. Inflige Daño de Rayo a todos los enemigos y reduce su Firmeza <color=#f29e38ff>ignorando el tipo de Debilidad</color>.\nSi ataca a enemigos normales, <color=#f29e38ff>los derrota inmediatamente</color> sin entrar en combate. Si el ataque no acierta a un enemigo, no se consume el punto de técnica.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/1308/SkillIcon_1308_Maze.png"
+		},
+		"VersionAdded": "2.1"
 	},
 	"1312": {
 		"Id": "1312",
@@ -21390,7 +22847,7 @@
 					]
 				}
 			},
-			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png"
+			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal02.png"
 		},
 		"Skill": {
 			"Id": "800302",
@@ -21901,7 +23358,7 @@
 					]
 				}
 			},
-			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png"
+			"ImageIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal02.png"
 		},
 		"Skill": {
 			"Id": "800402",
