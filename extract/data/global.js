@@ -150,6 +150,9 @@ let version = '';
 function setVersion(v) {
 	version = v;
 }
+function getVersion() {
+	return version;
+}
 
 // if (!fs.existsSync('./versioncache.json')) fs.writeFileSync('./versioncache.json', '{}');
 const versioncache = require('./versioncache.json');
@@ -203,6 +206,7 @@ function exportData(folder, collateFunc, englishonly, skipwrite) {
 
 module.exports = {
 	setVersion: setVersion,
+	getVersion: getVersion,
 	// exportCurve: exportCurve,
 	exportData: exportData
 }

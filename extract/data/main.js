@@ -1,9 +1,35 @@
+const path = require('path');
+const argv = require('yargs-parser')(process.argv.slice(2), {
+    string: [ 'version' ],
+});
+
 exportStarRailData();
 
 function exportStarRailData() {
-	const { setVersion, exportCurve, exportData } = require('./global.js');
+	const { setVersion, getVersion, exportCurve, exportData } = require('./global.js');
 
-	setVersion('2.1');
+	console.log(argv);
+	if (argv.version) {
+		// parse out version from commit message
+		const matches = argv.version.match(/OSPRODWin(\d*?\.\d*?)\..*/i);
+		if (!matches || !matches[1]) return; // invalid commit
+		console.log(matches[1]);
+
+		setVersion = matches[1];
+
+		const config = require('../config.json');
+		config.StarRailData_folder = path.resolve(__dirname, '../../StarRailData');
+		config.starrail_export_folder = path.resolve(__dirname, '../../data');
+
+	} else {
+		return; // i dont do this manually anymore
+		setVersion('2.1');
+	}
+
+	if (getVersion() === '' || !getVersion()) {
+		console.log(`version failed to parse`);
+		return;
+	}
 
 	exportData('characters', require('./extractfolders/extractCharacters'));
 	exportData('characterskills', require('./extractfolders/extractCharacterSkills'));
