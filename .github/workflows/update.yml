@@ -2,7 +2,7 @@ name: My workflow
 
 on:
   schedule:
-    - cron: "33 16 * * *"
+    - cron: "45 16 * * *"
 
 permissions:
   contents: write
@@ -43,9 +43,5 @@ jobs:
           git config --global user.email "theBowja@users.noreply.github.com"
           git add -all
           git commit -am "Automated update for ${{ steps.lastcommit.outputs.description }}"
+          git push
         if: ${{ success() }}  # Only commit if previous step succeeds (no changes)
-      - name: Push changes (if any)
-        uses: ad-m/github-push-action@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-        if: ${{ success() }}  # Only push if commit was successful
