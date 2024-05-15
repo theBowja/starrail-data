@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const argv = require('yargs-parser')(process.argv.slice(2), {
     string: [ 'version' ],
@@ -30,6 +31,8 @@ function exportStarRailData() {
 		console.log(`version failed to parse`);
 		return;
 	}
+
+	fs.writeFileSync(path.resolve(__dirname, '../../StarRailData.version'), getVersion());
 
 	exportData('characters', require('./extractfolders/extractCharacters'));
 	exportData('characterskills', require('./extractfolders/extractCharacterSkills'));
