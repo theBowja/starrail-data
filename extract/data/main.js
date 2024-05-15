@@ -15,7 +15,7 @@ function exportStarRailData() {
 		if (!matches || !matches[1]) return; // invalid commit
 		console.log(matches[1]);
 
-		setVersion = matches[1];
+		setVersion(matches[1]);
 
 		const config = require('../config.json');
 		config.StarRailData_folder = path.resolve(__dirname, '../../StarRailData');
