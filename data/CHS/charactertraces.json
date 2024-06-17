@@ -29292,7 +29292,7 @@
 				"Name": "明补",
 				"NodeType": 2,
 				"NodeTypeText": "秘技",
-				"EffectRaw": "托帕入场时召唤账账，账账会自动搜寻一定范围内的普通战利品与扑满。\n主动施放秘技使下一场战斗中账账施放首次攻击后，托帕恢复<unbreak>#1[i]</unbreak>点能量。\n主动施放秘技与大地图内的敌人战斗胜利后，若托帕仍在队伍中，则在获取信用点时额外获取少量信用点，每个地球日内最多额外获取<unbreak>#2[i]</unbreak>点。\n主动施放秘技与模拟宇宙内的敌人战斗胜利后，额外获取少量宇宙碎片并有小概率获得1个随机奇物。",
+				"EffectRaw": "托帕入场时召唤账账，账账会自动搜寻一定范围内的普通战利品与扑满。\n主动施放秘技使下一场战斗中账账施放首次攻击后，托帕恢复<unbreak>#1[i]</unbreak>点能量。\n主动施放秘技与大地图内的敌人战斗胜利后，若托帕仍在队伍中，则在获取信用点时额外获取少量信用点，每个地球日内最多额外获取<unbreak>#2[i]</unbreak>点。\n主动施放秘技与模拟宇宙、差分宇宙内的敌人战斗胜利后，额外获取少量宇宙碎片并有小概率获得1个随机奇物。",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"111207"
@@ -38985,7 +38985,7 @@
 				"Name": "箭彻七札",
 				"NodeType": 2,
 				"NodeTypeText": "天赋",
-				"EffectRaw": "施放普攻可额外造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，并使本次攻击的削韧伤害提高<unbreak>#2[i]%</unbreak>，该效果在<unbreak>#3[i]</unbreak>回合后可再次触发。",
+				"EffectRaw": "施放普攻可额外造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，并使本次攻击的削韧值提高<unbreak>#2[i]%</unbreak>，该效果在<unbreak>#3[i]</unbreak>回合后可再次触发。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"120704"
@@ -56403,7 +56403,7 @@
 				"Name": "拭琴抚罗袂",
 				"NodeType": 2,
 				"NodeTypeText": "秘技",
-				"EffectRaw": "使用秘技后，获得【拭琴抚罗袂】，使下一次战斗开始时自动触发<unbreak>#1[i]</unbreak>次战技，此次触发不消耗战技点。\n在模拟宇宙中，当阮•梅拥有【拭琴抚罗袂】时，我方主动攻击敌人时总会视为利用弱点进入战斗，且本次攻击可以无视弱点属性削减敌方全体的韧性。击破弱点时，触发攻击者自身属性的弱点击破效果。每拥有1个祝福，本次攻击造成的削韧伤害额外提高<unbreak>#2[i]%</unbreak>，且击破敌方目标弱点后对其额外造成等同于阮•梅<unbreak>#3[i]%</unbreak>冰属性击破伤害的击破伤害，最多计入<unbreak>#4[i]</unbreak>个祝福。",
+				"EffectRaw": "使用秘技后，获得【拭琴抚罗袂】，使下一次战斗开始时自动触发<unbreak>#1[i]</unbreak>次战技，此次触发不消耗战技点。\n在模拟宇宙、差分宇宙中，当阮•梅拥有【拭琴抚罗袂】时，我方主动攻击敌人时总会视为利用弱点进入战斗，且本次攻击可以无视弱点属性削减敌方全体的韧性。击破弱点时，触发攻击者自身属性的弱点击破效果。每拥有1个祝福，本次攻击的削韧值额外提高<unbreak>#2[i]%</unbreak>，且击破敌方目标弱点后对其额外造成等同于阮•梅<unbreak>#3[i]%</unbreak>冰属性击破伤害的击破伤害，最多计入<unbreak>#4[i]</unbreak>个祝福。",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"130307"
@@ -65683,7 +65683,1473 @@
 				}
 			}
 		},
-		"VersionAdded": "2.2"
+		"VersionAdded": "2.3"
+	},
+	"1310": {
+		"Id": "1310",
+		"Name": "流萤",
+		"Nodes": {
+			"1310001": {
+				"Id": "1310001",
+				"Name": "指令-闪燃推进",
+				"NodeType": 2,
+				"NodeTypeText": "普攻",
+				"EffectRaw": "对指定敌方单体造成等同于装甲「萨姆」<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"131001",
+					"131008"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110181",
+								"Name": "步离犬牙",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1310002": {
+				"Id": "1310002",
+				"Name": "指令-天火轰击",
+				"NodeType": 2,
+				"NodeTypeText": "战技",
+				"EffectRaw": "消耗等同于自身生命上限<unbreak>#2[i]%</unbreak>的生命值固定恢复等同于自身<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>能量上限的能量，对指定敌方单体造成等同于装甲「萨姆」<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。若当前生命值不足，施放战技时装甲「萨姆」的当前生命值降至1点。使自身下一次<u>行动提前</u><unbreak>#4[i]%</unbreak>。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131002",
+					"131009"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.4,
+							0.5,
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1,
+							0.4,
+							0.51,
+							0.25
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2,
+							0.4,
+							0.52,
+							0.25
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110181",
+								"Name": "步离犬牙",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3,
+							0.4,
+							0.53,
+							0.25
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4,
+							0.4,
+							0.54,
+							0.25
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5,
+							0.4,
+							0.55,
+							0.25
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625,
+							0.4,
+							0.5625,
+							0.25
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75,
+							0.4,
+							0.575,
+							0.25
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875,
+							0.4,
+							0.5875,
+							0.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.4,
+							0.6,
+							0.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1310003": {
+				"Id": "1310003",
+				"Name": "火萤Ⅳ型-完全燃烧",
+				"NodeType": 2,
+				"NodeTypeText": "终结技",
+				"EffectRaw": "进入「完全燃烧」状态，自身行动提前<unbreak>100%</unbreak>并获得强化普攻和强化战技。「完全燃烧」状态下速度提高<color=#f29e38ff><unbreak>#3[i]</unbreak></color>点，且施放强化普攻、强化战技时自身弱点击破效率提高<unbreak>#2[i]%</unbreak>、使敌方目标受到装甲「萨姆」造成的击破伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，持续至本次攻击结束。\n行动序列上出现「完全燃烧」倒计时，倒计时回合开始时装甲「萨姆」解除「完全燃烧」状态，倒计时固定拥有<unbreak>#4[i]</unbreak>速度。\n「完全燃烧」状态下装甲「萨姆」无法施放终结技。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131003"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.5,
+							30,
+							70
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11,
+							0.5,
+							33,
+							70
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12,
+							0.5,
+							36,
+							70
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110181",
+								"Name": "步离犬牙",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13,
+							0.5,
+							39,
+							70
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14,
+							0.5,
+							42,
+							70
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15,
+							0.5,
+							45,
+							70
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625,
+							0.5,
+							48.75,
+							70
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175,
+							0.5,
+							52.5,
+							70
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875,
+							0.5,
+							56.25,
+							70
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2,
+							0.5,
+							60,
+							70
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1310004": {
+				"Id": "1310004",
+				"Name": "茧式源火中枢",
+				"NodeType": 2,
+				"NodeTypeText": "天赋",
+				"EffectRaw": "生命值越低受到的伤害越低，生命值小于等于<unbreak>#3[i]%</unbreak>时减伤效果达到最大值，最多降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。「完全燃烧」状态下减伤效果维持最大值，效果抵抗提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。\n战斗开始时若能量不足<unbreak>#2[i]%</unbreak>则使其恢复至<unbreak>#2[i]%</unbreak>。当能量恢复至上限时解除自身所有<u>负面效果</u>。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2,
+							0.5,
+							0.2,
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.22,
+							0.5,
+							0.2,
+							0.12
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.24,
+							0.5,
+							0.2,
+							0.14
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110181",
+								"Name": "步离犬牙",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.26,
+							0.5,
+							0.2,
+							0.16
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.28,
+							0.5,
+							0.2,
+							0.18
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.3,
+							0.5,
+							0.2,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.325,
+							0.5,
+							0.2,
+							0.225
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.35,
+							0.5,
+							0.2,
+							0.25
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.375,
+							0.5,
+							0.2,
+							0.275
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.4,
+							0.5,
+							0.2,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1310007": {
+				"Id": "1310007",
+				"Name": "Δ指令-焦土陨击",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "跳跃至空中并进行自由移动，持续<unbreak>#1[i]</unbreak>秒，此时施放下落攻击可以提前结束持续时间。持续时间结束后，下落并立即攻击一定范围内的所有敌人，每个波次开始时为敌方全体添加火属性弱点，持续<unbreak>#3[i]</unbreak>回合，此后对敌方全体造成等同于装甲「萨姆」<unbreak>#2[i]%</unbreak>攻击力的火属性伤害。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"131007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							5,
+							2,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1310101": {
+				"Id": "1310101",
+				"Name": "α模组-偏时迸发",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "「完全燃烧」状态下，攻击没有火属性弱点的敌人也能削减韧性，效果等同于原技能削韧值的<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.55
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110181",
+								"Name": "步离犬牙",
+								"Count": 3
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1310102": {
+				"Id": "1310102",
+				"Name": "β模组-自限装甲",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "「完全燃烧」状态下，当装甲「萨姆」的击破特攻大于等于<unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>时，攻击处于弱点击破状态下的敌方目标后，会将本次攻击的削韧值转化为1次<unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak>的超击破伤害。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							3.6,
+							0.35,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1310103": {
+				"Id": "1310103",
+				"Name": "γ模组-过载核心",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "若装甲「萨姆」的攻击力高于<unbreak>#1[i]</unbreak>点，每超过<unbreak>#2[i]</unbreak>点攻击力可使自身击破特攻提高<unbreak>#3[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1310/SkillIcon_1310_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1800,
+							10,
+							0.008
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1310201": {
+				"Id": "1310201",
+				"Name": "击破强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "击破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1310202": {
+				"Id": "1310202",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1310101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110181",
+								"Name": "步离犬牙",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思绪末屑",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1310203": {
+				"Id": "1310203",
+				"Name": "击破强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "击破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1310202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1310204": {
+				"Id": "1310204",
+				"Name": "速度强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1310203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1310205": {
+				"Id": "1310205",
+				"Name": "击破强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "击破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1310102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110182",
+								"Name": "狼毒锯牙",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象残晶",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1310206": {
+				"Id": "1310206",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1310205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1310207": {
+				"Id": "1310207",
+				"Name": "击破强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "击破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1310206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1310208": {
+				"Id": "1310208",
+				"Name": "速度强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1310103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1310209": {
+				"Id": "1310209",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1310208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1310210": {
+				"Id": "1310210",
+				"Name": "击破强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "击破特攻提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1310208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110183",
+								"Name": "月狂獠牙",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎镜",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.3"
 	},
 	"1312": {
 		"Id": "1312",
@@ -67107,6 +68573,1471 @@
 			}
 		},
 		"VersionAdded": "2.0"
+	},
+	"1314": {
+		"Id": "1314",
+		"Name": "翡翠",
+		"Nodes": {
+			"1314001": {
+				"Id": "1314001",
+				"Name": "挞楚抽薪",
+				"NodeType": 2,
+				"NodeTypeText": "普攻",
+				"EffectRaw": "对指定敌方单体造成等同于翡翠<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害，同时对其相邻目标造成等同于翡翠<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的量子属性伤害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"131401"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.15
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.54,
+							0.18
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "凌乱草图",
+								"Count": 3
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.63,
+							0.21
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 3
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72,
+							0.24
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 5
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.81,
+							0.27
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 3
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1314002": {
+				"Id": "1314002",
+				"Name": "恣肆吞併的担保",
+				"NodeType": 2,
+				"NodeTypeText": "战技",
+				"EffectRaw": "指定我方单体成为【收债人】，使其速度提高<unbreak>#1[i]</unbreak>点，持续<unbreak>#4[i]</unbreak>回合。\n【收债人】施放攻击后，对每个击中的敌方目标造成1次等同于翡翠<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的量子属性<u>附加伤害</u>，并消耗【收债人】生命上限<unbreak>#2[i]%</unbreak>的生命值，若当前生命值不足，当前生命值降至1点。\n若翡翠成为【收债人】时，无法获得速度提高效果且攻击后不消耗生命值。\n当场上存在【收债人】时，翡翠无法施放战技，翡翠每回合开始时【收债人】状态持续回合数减1。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131402"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.15,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.16,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.17,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "凌乱草图",
+								"Count": 3
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.18,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 3
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.19,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 5
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 7
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.2125,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 3
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.225,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.2375,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							30,
+							0.02,
+							0.25,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1314003": {
+				"Id": "1314003",
+				"Name": "堕此欲渊，立此狱契",
+				"NodeType": 2,
+				"NodeTypeText": "终结技",
+				"EffectRaw": "对敌方全体造成等同于翡翠<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的量子属性伤害。同时使翡翠天赋的<u>追加攻击</u>获得强化，追加攻击造成的伤害倍率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。强化效果可生效<unbreak>#2[i]</unbreak>次。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131403"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.4,
+							2,
+							1.2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.44,
+							2,
+							1.32
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.48,
+							2,
+							1.44
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "凌乱草图",
+								"Count": 3
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.52,
+							2,
+							1.56
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 3
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.56,
+							2,
+							1.68
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 5
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.6,
+							2,
+							1.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 7
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.65,
+							2,
+							1.95
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 3
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7,
+							2,
+							2.1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.75,
+							2,
+							2.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.8,
+							2,
+							2.4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1314004": {
+				"Id": "1314004",
+				"Name": "剔烁之牙",
+				"NodeType": 2,
+				"NodeTypeText": "天赋",
+				"EffectRaw": "翡翠或成为【收债人】的目标施放攻击后，每击中1名敌方目标均可获得1点充能。当充能到达<unbreak>#3[i]</unbreak>点后，消耗<unbreak>#3[i]</unbreak>点充能，发动1次<u>追加攻击</u>，对敌方全体目标造成等同于翡翠<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻击力的量子属性伤害，本次<u>追加攻击</u>无法获得充能。\n翡翠发动天赋的<u>追加攻击</u>时立即获得<unbreak>#4[i]</unbreak>层【当品】，每层【当品】使暴击伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，最多叠加<unbreak>#2[i]</unbreak>层。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"131404"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.012,
+							50,
+							8,
+							5,
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.0132,
+							50,
+							8,
+							5,
+							0.66
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.0144,
+							50,
+							8,
+							5,
+							0.72
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "凌乱草图",
+								"Count": 3
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.0156,
+							50,
+							8,
+							5,
+							0.78
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 3
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.0168,
+							50,
+							8,
+							5,
+							0.84
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 5
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.018,
+							50,
+							8,
+							5,
+							0.9
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 30000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 7
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.0195,
+							50,
+							8,
+							5,
+							0.975
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 3
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.021,
+							50,
+							8,
+							5,
+							1.05
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 80000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.0225,
+							50,
+							8,
+							5,
+							1.125
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.024,
+							50,
+							8,
+							5,
+							1.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 300000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1314007": {
+				"Id": "1314007",
+				"Name": "猎手的视界",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技后使一定区域内的敌人陷入<unbreak>#1[i]</unbreak>秒【盲从】。【盲从】状态下敌人不会主动攻击我方目标。主动攻击陷入【盲从】的敌人进入战斗时，使所有处于【盲从】状态的敌人同时进入战斗。进入战斗后对敌方全体造成等同于翡翠<unbreak>#2[i]%</unbreak>攻击力的量子属性伤害，立即获得<unbreak>#3[i]</unbreak>层【当品】。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"131407"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							0.5,
+							15
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1314101": {
+				"Id": "1314101",
+				"Name": "逆回购",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "在敌方目标进入战斗时，翡翠获得<unbreak>#2[i]</unbreak>层【当品】。处于【收债人】状态的角色回合开始时，额外获得<unbreak>#1[i]</unbreak>层【当品】。",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "凌乱草图",
+								"Count": 3
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1314102": {
+				"Id": "1314102",
+				"Name": "折牙票",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "战斗开始时，翡翠的行动提前<unbreak>#1[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1314103": {
+				"Id": "1314103",
+				"Name": "绝当品",
+				"NodeType": 3,
+				"NodeTypeText": "额外能力",
+				"EffectRaw": "天赋中每层【当品】额外使翡翠的攻击力提高<unbreak>#1[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/1314/SkillIcon_1314_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.005
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命运的足迹",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "同愿的遗音",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1314201": {
+				"Id": "1314201",
+				"Name": "伤害强化•量子",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "量子属性伤害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 2500
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1314202": {
+				"Id": "1314202",
+				"Name": "攻击强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "攻击力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1314101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "凌乱草图",
+								"Count": 3
+							},
+							{
+								"Id": "114001",
+								"Name": "蓄梦元件",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1314203": {
+				"Id": "1314203",
+				"Name": "伤害强化•量子",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "量子属性伤害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1314202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 3
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1314204": {
+				"Id": "1314204",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1314202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 3
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1314205": {
+				"Id": "1314205",
+				"Name": "伤害强化•量子",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "量子属性伤害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1314102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "动态线稿",
+								"Count": 5
+							},
+							{
+								"Id": "114002",
+								"Name": "流梦阀门",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1314206": {
+				"Id": "1314206",
+				"Name": "攻击强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "攻击力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1314205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 3
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1314207": {
+				"Id": "1314207",
+				"Name": "伤害强化•量子",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "量子属性伤害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1314205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 3
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1314208": {
+				"Id": "1314208",
+				"Name": "效果抵抗强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "效果抵抗提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1314103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1314209": {
+				"Id": "1314209",
+				"Name": "攻击强化",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "攻击力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1314103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1314210": {
+				"Id": "1314210",
+				"Name": "伤害强化•量子",
+				"NodeType": 1,
+				"NodeTypeText": "属性加成",
+				"EffectRaw": "量子属性伤害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用点",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "精致色稿",
+								"Count": 8
+							},
+							{
+								"Id": "114003",
+								"Name": "造梦马达",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.3"
 	},
 	"1315": {
 		"Id": "1315",
@@ -68565,7 +71496,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.2"
+		"VersionAdded": "2.3"
 	},
 	"8001": {
 		"Id": "8001",
@@ -75556,7 +78487,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.2"
+		"VersionAdded": "2.3"
 	},
 	"8006": {
 		"Id": "8006",
@@ -76943,6 +79874,6 @@
 				}
 			}
 		},
-		"VersionAdded": "2.2"
+		"VersionAdded": "2.3"
 	}
 }
