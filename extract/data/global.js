@@ -7,7 +7,7 @@ global.getExcel = function(file, mapId=undefined) {
 		if (mapId === undefined)
 			mapId = Object.keys(curr)[0];
 
-		accum[mapId] = curr;
+		accum[curr[mapId]] = curr;
 		return accum;
 	}, {});
 }
