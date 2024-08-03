@@ -1,7 +1,7 @@
 require('../global.js');
 
 const xchar = getExcel('AvatarConfig');
-const xeidolon = getExcel('AvatarRankConfig')
+const xeidolon = getExcel('AvatarRankConfig');
 const xelement = getExcel('DamageType');
 const xpath = getExcel('AvatarBaseType');
 const xskill = getExcel('AvatarSkillConfig');

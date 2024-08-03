@@ -2,7 +2,15 @@ const fs = require('fs');
 
 const config = require('../config.json');
 
-global.getExcel = function(file) { return require(`${config.StarRailData_folder}/ExcelOutput/${file}.json`); }
+global.getExcel = function(file, mapId=undefined) {
+	return require(`${config.StarRailData_folder}/ExcelOutput/${file}.json`).reduce((accum, curr) => {
+		if (mapId === undefined)
+			mapId = Object.keys(curr)[0];
+
+		accum[mapId] = curr;
+		return accum;
+	}, {});
+}
 global.getTextMap = function(langcode) { return require(`${config.StarRailData_folder}/TextMap/TextMap${langcode}.json`); }
 
 const langcodes = ['CHT', 'CHS', 'DE', 'EN', 'ES', 'FR', 'ID', 'JP', 'KR', 'PT', 'RU', 'TH', 'VI'];
