@@ -13536,6 +13536,53 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"11170": {
+		"Id": "11170",
+		"ContactId": "1105",
+		"ParticpatingContactIds": [
+			"1105"
+		],
+		"Sections": [
+			{
+				"Id": "1117000",
+				"StartingMessageId": "111700001",
+				"Messages": {
+					"111700001": {
+						"Id": "111700001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "Those shadows have disappeared.",
+						"NextMessageId": "111700002"
+					},
+					"111700002": {
+						"Id": "111700002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "It looks like the \"Magic of Friendship\" plan is progressing very smoothly.",
+						"NextMessageId": "111700003"
+					},
+					"111700003": {
+						"Id": "111700003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "Before you leave Belobog, can you come to my place one more time?",
+						"NextMessageId": "111700004"
+					},
+					"111700004": {
+						"Id": "111700004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "Someone wants to say goodbye to you."
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
 	"11500": {
 		"Id": "11500",
 		"ContactId": "1000",
@@ -18305,7 +18352,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "38",
-						"Text": "The Exalting Sanctum's sky dome malfunctioned half an hour ago. It was probably caused by the unusual yinyang phenomena from Ambrosial Arbor's new growth",
+						"Text": "The Exalting Sanctum's sky dome malfunctioned half a dual-hour ago. It was probably caused by the unusual yinyang phenomena from Ambrosial Arbor's new growth",
 						"NextMessageId": "121150009"
 					},
 					"121150009": {
@@ -29513,7 +29560,7 @@
 						"Choices": [
 							{
 								"ChoiceType": "Text",
-								"Text": "This chat feels like deja vu",
+								"Text": "This chat feels like déjà vu",
 								"NextMessageId": "121900006"
 							},
 							{
@@ -33271,7 +33318,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "Why do I feel deja vu?",
+								"Text": "Why do I feel déjà vu?",
 								"NextMessageId": "122130018"
 							}
 						]
@@ -35234,6 +35281,78 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"12228": {
+		"Id": "12228",
+		"ContactId": "1209",
+		"ParticpatingContactIds": [
+			"1209",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1222800",
+				"StartingMessageId": "122280000",
+				"Messages": {
+					"122280000": {
+						"Id": "122280000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1209",
+						"Text": "{NICKNAME}! I saw the Sky-Faring Commission's notice that the Express has docked on the Xianzhou",
+						"NextMessageId": "122280001"
+					},
+					"122280001": {
+						"Id": "122280001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1209",
+						"Text": "Are you guys on the Luofu already?",
+						"NextMessageId": "choice2"
+					},
+					"122280002": {
+						"Id": "122280002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yup, fresh off the boat. We're now at Starskiff Haven",
+						"NextMessageId": "122280004"
+					},
+					"122280003": {
+						"Id": "122280003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I see you're quick with the news!",
+						"NextMessageId": "122280004"
+					},
+					"122280004": {
+						"Id": "122280004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1209",
+						"Text": "Heh, the general sent me to welcome you all at Starskiff Haven. See you in a bit!"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Just got to Starskiff Haven!",
+								"NextMessageId": "122280002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Quick with the news, eh?",
+								"NextMessageId": "122280003"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
 	"12233": {
 		"Id": "12233",
 		"ContactId": "13",
@@ -35624,7 +35743,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12234": {
 		"Id": "12234",
@@ -35675,7 +35794,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "151",
-						"Text": "Hello. This is your delivery person. You have a package that's been delivered to the {TEXTJOIN#87} logistics hub",
+						"Text": "Hello. This is your delivery person. You have a package that's been delivered to {TEXTJOIN#87} logistics hub",
 						"NextMessageId": "choice7"
 					},
 					"122340005": {
@@ -35755,7 +35874,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "151",
-						"Text": "The first mate says that he'll take it to the Captain's Quarters for you",
+						"Text": "The first mate volunteered to take it to the Captain's Quarters for you",
 						"NextMessageId": "122340015"
 					},
 					"122340015": {
@@ -35808,7 +35927,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12235": {
 		"Id": "12235",
@@ -36102,7 +36221,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12236": {
 		"Id": "12236",
@@ -36257,7 +36376,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12237": {
 		"Id": "12237",
@@ -36332,7 +36451,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12238": {
 		"Id": "12238",
@@ -36533,7 +36652,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12239": {
 		"Id": "12239",
@@ -36653,7 +36772,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12240": {
 		"Id": "12240",
@@ -36733,7 +36852,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1001",
-						"Text": "Do you want to place it in the Parlor Car? Once do you do, let me know. I wanna touch it. See if I smooch some luck off you",
+						"Text": "Do you want to place it in the Parlor Car? Once you do, let me know. I wanna touch it. See if I smooch some luck off you",
 						"NextMessageId": "122400012"
 					},
 					"122400012": {
@@ -36944,7 +37063,54 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
+	},
+	"12241": {
+		"Id": "12241",
+		"ContactId": "106",
+		"ParticpatingContactIds": [
+			"106"
+		],
+		"Sections": [
+			{
+				"Id": "1224100",
+				"StartingMessageId": "122410000",
+				"Messages": {
+					"122410000": {
+						"Id": "122410000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "Greetings, esteemed {F#Miss}{M#Mr.} {NICKNAME}. I've heard that you've assisted Randolph with data collection. On behalf of myself, I would like to express my most sincere gratitude.",
+						"NextMessageId": "122410001"
+					},
+					"122410001": {
+						"Id": "122410001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "I believe Randolph has rewarded you accordingly, but this is also a part of my gratitude and sincerity. I hope you'll be satisfied.",
+						"NextMessageId": "122410002"
+					},
+					"122410002": {
+						"Id": "122410002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "Thanks to your work, I've already submitted the proposal to The Family for review and recorded your name in the assistant's column.",
+						"NextMessageId": "122410003"
+					},
+					"122410003": {
+						"Id": "122410003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "Finally, please allow me to express my deepest gratitude for your assistance with the store!"
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"12700": {
 		"Id": "12700",
@@ -38170,6 +38336,636 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"12704": {
+		"Id": "12704",
+		"ContactId": "63",
+		"ParticpatingContactIds": [
+			"63",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1270400",
+				"StartingMessageId": "127040000",
+				"Messages": {
+					"127040000": {
+						"Id": "127040000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Since you've already collected a certain amount of Hex Passes, we would like to invite you to participate in a feedback questionnaire regarding any suggestions you have during the \"Hexanexus: Remake\" beta. We hope you will be as honest with us as possible.\n\nYour answers will not be revealed to any third party. Thank you for supporting the Hexanexus secret society!",
+						"NextMessageId": "127040001"
+					},
+					"127040001": {
+						"Id": "127040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Have you noticed that you have already obtained Hex Passes?",
+						"NextMessageId": "choice2"
+					},
+					"127040002": {
+						"Id": "127040002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yes",
+						"NextMessageId": "127040006"
+					},
+					"127040003": {
+						"Id": "127040003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No",
+						"NextMessageId": "127040006"
+					},
+					"127040004": {
+						"Id": "127040004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Take a guess.",
+						"NextMessageId": "127040005"
+					},
+					"127040005": {
+						"Id": "127040005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "You'd definitely have noticed it by now.",
+						"NextMessageId": "127040006"
+					},
+					"127040006": {
+						"Id": "127040006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Have you played a Hexanexus before?",
+						"NextMessageId": "choice9"
+					},
+					"127040007": {
+						"Id": "127040007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yes",
+						"NextMessageId": "127040012"
+					},
+					"127040008": {
+						"Id": "127040008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No",
+						"NextMessageId": "127040012"
+					},
+					"127040009": {
+						"Id": "127040009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I'm a deep tester, and I even hold a Lifetime Hex Club Membership!",
+						"NextMessageId": "127040010"
+					},
+					"127040010": {
+						"Id": "127040010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "WHAT!?",
+						"NextMessageId": "127040011"
+					},
+					"127040011": {
+						"Id": "127040011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "The Hexanexus official site has announced that its Lifetime Hex Club Membership service and other member services were suspended thirty system days ago. Thank you for supporting the Hex Club all this time",
+						"NextMessageId": "127040012"
+					},
+					"127040012": {
+						"Id": "127040012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Do you know what \"Hexanexus: Remake\" is?",
+						"NextMessageId": "choice17"
+					},
+					"127040013": {
+						"Id": "127040013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I know what Hexanexus: Remake is",
+						"NextMessageId": "127040019"
+					},
+					"127040014": {
+						"Id": "127040014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I don't know what Hexanexus: Remake is",
+						"NextMessageId": "127040015"
+					},
+					"127040015": {
+						"Id": "127040015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "You have already obtained a Hex Pass. What you just played was \"Hexanexus: Remake\"!",
+						"NextMessageId": "127040019"
+					},
+					"127040016": {
+						"Id": "127040016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Is it not Hexanexus: Remastered? Why must you use \"Remake\"?",
+						"NextMessageId": "127040017"
+					},
+					"127040017": {
+						"Id": "127040017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Hexanexus is designed, produced, and developed by a multicultural team of people.",
+						"NextMessageId": "127040018"
+					},
+					"127040018": {
+						"Id": "127040018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "The word \"Remake\" brings out the diversity presented in our product that accommodates users across the Cosmos.",
+						"NextMessageId": "127040019"
+					},
+					"127040019": {
+						"Id": "127040019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "How do you find Hexanexus: Remake's difficulty level?",
+						"NextMessageId": "choice26"
+					},
+					"127040020": {
+						"Id": "127040020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Very difficult",
+						"NextMessageId": "127040023"
+					},
+					"127040021": {
+						"Id": "127040021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Moderately difficult",
+						"NextMessageId": "127040023"
+					},
+					"127040022": {
+						"Id": "127040022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Very easy",
+						"NextMessageId": "127040023"
+					},
+					"127040023": {
+						"Id": "127040023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Do you have any additional questions or suggestions for \"Hexanexus: Remake\"?",
+						"NextMessageId": "choice36"
+					},
+					"127040024": {
+						"Id": "127040024",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Are your rewards becoming less than before? You can't retain previous players this way",
+						"NextMessageId": "127040025"
+					},
+					"127040025": {
+						"Id": "127040025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "It's a little hard to get around that right now",
+						"NextMessageId": "127040030"
+					},
+					"127040026": {
+						"Id": "127040026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "My biggest confusion is why there are also Hexanexus here in the Ten-Lords Commission's Shackling Prison?",
+						"NextMessageId": "127040027"
+					},
+					"127040027": {
+						"Id": "127040027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Yeah... It's a long story.",
+						"NextMessageId": "127040030"
+					},
+					"127040028": {
+						"Id": "127040028",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Why does Hexanexus even want to make a sequel?",
+						"NextMessageId": "127040029"
+					},
+					"127040029": {
+						"Id": "127040029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Of course, it's because Hexanexus is number one in the world!",
+						"NextMessageId": "127040030"
+					},
+					"127040030": {
+						"Id": "127040030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Okay, I know you have a lot of questions.",
+						"NextMessageId": "127040031"
+					},
+					"127040031": {
+						"Id": "127040031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "You have collected 3 Hex Passes, I will contact you again when you've collected 6.",
+						"NextMessageId": "127040032"
+					},
+					"127040032": {
+						"Id": "127040032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Thank you for participating in our feedback questionnaire.\nPlease continue to support \"Hexanexus: Remake\"!"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Yes",
+								"NextMessageId": "127040002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No",
+								"NextMessageId": "127040003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Take a guess.",
+								"NextMessageId": "127040004"
+							}
+						]
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Yes",
+								"NextMessageId": "127040007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No",
+								"NextMessageId": "127040008"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "I hold a Lifetime Membership!",
+								"NextMessageId": "127040009"
+							}
+						]
+					},
+					"choice17": {
+						"Id": "choice17",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "I know",
+								"NextMessageId": "127040013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "I dunno",
+								"NextMessageId": "127040014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Hexanexus: Remastered?",
+								"NextMessageId": "127040016"
+							}
+						]
+					},
+					"choice26": {
+						"Id": "choice26",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Very difficult",
+								"NextMessageId": "127040020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Moderately difficult",
+								"NextMessageId": "127040021"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Very easy",
+								"NextMessageId": "127040022"
+							}
+						]
+					},
+					"choice36": {
+						"Id": "choice36",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Not enough rewards...",
+								"NextMessageId": "127040024"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Do you know where this is?",
+								"NextMessageId": "127040026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Why make a sequel?",
+								"NextMessageId": "127040028"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"12705": {
+		"Id": "12705",
+		"ContactId": "63",
+		"ParticpatingContactIds": [
+			"63",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1270500",
+				"StartingMessageId": "127050000",
+				"Messages": {
+					"127050000": {
+						"Id": "127050000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Congratulations, you have completed the entire beta version of \"Hexanexus: Remake\"!",
+						"NextMessageId": "127050001"
+					},
+					"127050001": {
+						"Id": "127050001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Since you are able to complete all of the puzzles, it must be because \"Hexanexus: Remake\" is extremely interesting, right?",
+						"NextMessageId": "choice2"
+					},
+					"127050002": {
+						"Id": "127050002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Hexanexus: Remake is the best in the world!",
+						"NextMessageId": "127050005"
+					},
+					"127050003": {
+						"Id": "127050003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "There's nothing better to do. I solved them while pacing around the prison",
+						"NextMessageId": "127050005"
+					},
+					"127050004": {
+						"Id": "127050004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I have many questions. You said I have to finish collecting everything before you will contact me",
+						"NextMessageId": "127050005"
+					},
+					"127050005": {
+						"Id": "127050005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "You must've noticed that this \"Hexanexus: Remake\" beta test and development environment isn't your run-of-the-mill one",
+						"NextMessageId": "127050006"
+					},
+					"127050006": {
+						"Id": "127050006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "To be able to heavily market \"Hexanexus: Remake\" in The Shackling Prison is a whole new challenge for me too",
+						"NextMessageId": "127050007"
+					},
+					"127050007": {
+						"Id": "127050007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Do you know why I'm massively investing in promoting a new title here?",
+						"NextMessageId": "choice15"
+					},
+					"127050008": {
+						"Id": "127050008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Is it alluding to the fact that your trash game is so torturous that it's no different from being in prison?",
+						"NextMessageId": "127050011"
+					},
+					"127050009": {
+						"Id": "127050009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Your marketing team is incompetent too?",
+						"NextMessageId": "127050011"
+					},
+					"127050010": {
+						"Id": "127050010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Could it be that the Ten-Lords Commission sponsored your lousy game?",
+						"NextMessageId": "127050011"
+					},
+					"127050011": {
+						"Id": "127050011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "I was arrested for making games",
+						"NextMessageId": "127050012"
+					},
+					"127050012": {
+						"Id": "127050012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Ehe!",
+						"NextMessageId": "choice25"
+					},
+					"127050013": {
+						"Id": "127050013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Are you making games, or doing scams?",
+						"NextMessageId": "127050015"
+					},
+					"127050014": {
+						"Id": "127050014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I already knew that you'd get arrested sooner or later for putting these Hexanexus all over the place",
+						"NextMessageId": "127050015"
+					},
+					"127050015": {
+						"Id": "127050015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "As for the details, we'll talk when we meet",
+						"NextMessageId": "127050016"
+					},
+					"127050016": {
+						"Id": "127050016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "I'll be right here in The Shackling Prison. Could you meet me if you have the time? I can't exactly go anywhere",
+						"NextMessageId": "choice32"
+					},
+					"127050017": {
+						"Id": "127050017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Tell me where we should meet",
+						"NextMessageId": "127050018"
+					},
+					"127050018": {
+						"Id": "127050018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "I've sent you the cell's location",
+						"NextMessageId": "127050019"
+					},
+					"127050019": {
+						"Id": "127050019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "I'll be waiting"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Super fun",
+								"NextMessageId": "127050002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Got nothing better to do",
+								"NextMessageId": "127050003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "I have questions for you",
+								"NextMessageId": "127050004"
+							}
+						]
+					},
+					"choice15": {
+						"Id": "choice15",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Game's as bad as being in prison?",
+								"NextMessageId": "127050008"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Your marketing team...",
+								"NextMessageId": "127050009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Ten-Lords sponsored it?",
+								"NextMessageId": "127050010"
+							}
+						]
+					},
+					"choice25": {
+						"Id": "choice25",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Games, or scams?",
+								"NextMessageId": "127050013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "I knew this would happen",
+								"NextMessageId": "127050014"
+							}
+						]
+					},
+					"choice32": {
+						"Id": "choice32",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Okay. Where do we meet",
+								"NextMessageId": "127050017"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"13001": {
 		"Id": "13001",
@@ -43127,7 +43923,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "121",
-						"Text": "We are really fortunate to have you as our \"special guest\". You are simply amazing!",
+						"Text": "We are really fortunate to have you as our \"special guest.\" You are simply amazing!",
 						"NextMessageId": "130400002"
 					},
 					"130400002": {
@@ -43167,7 +43963,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "121",
-						"Text": "Thank you.",
+						"Text": "Thank you",
 						"NextMessageId": "130400007"
 					},
 					"130400007": {
@@ -45584,7 +46380,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13066": {
 		"Id": "13066",
@@ -45700,7 +46496,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13067": {
 		"Id": "13067",
@@ -45782,7 +46578,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13068": {
 		"Id": "13068",
@@ -45871,7 +46667,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13069": {
 		"Id": "13069",
@@ -46110,7 +46906,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13070": {
 		"Id": "13070",
@@ -46136,7 +46932,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1310",
-						"Text": "I'm got it all handled",
+						"Text": "I've got it all handled",
 						"NextMessageId": "130700002"
 					},
 					"130700002": {
@@ -46166,7 +46962,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13071": {
 		"Id": "13071",
@@ -46594,7 +47390,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13072": {
 		"Id": "13072",
@@ -47216,6 +48012,539 @@
 		],
 		"VersionAdded": "2.1"
 	},
+	"13077": {
+		"Id": "13077",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307700",
+				"StartingMessageId": "130770001",
+				"Messages": {
+					"130770001": {
+						"Id": "130770001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Have you seen March 7th? She didn't turn up for practice",
+						"NextMessageId": "choice1"
+					},
+					"130770002": {
+						"Id": "130770002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Did you send her any messages? I haven't seen her either",
+						"NextMessageId": "130770003"
+					},
+					"130770003": {
+						"Id": "130770003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "She's not replying to my messages",
+						"NextMessageId": "130770010"
+					},
+					"130770004": {
+						"Id": "130770004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I was just planning to look for her. Frankly, I haven't seen her around either",
+						"NextMessageId": "130770005"
+					},
+					"130770005": {
+						"Id": "130770005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Oh",
+						"NextMessageId": "130770010"
+					},
+					"130770006": {
+						"Id": "130770006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "March 7th? We never had anyone named March 7th here",
+						"NextMessageId": "130770007"
+					},
+					"130770007": {
+						"Id": "130770007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Helping her skip class, eh? Your friendship must be pretty solid. How about you take her spot for this training session?",
+						"NextMessageId": "130770023"
+					},
+					"130770008": {
+						"Id": "130770008",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "No thanks! I haven't seen her",
+						"NextMessageId": "130770009"
+					},
+					"130770009": {
+						"Id": "130770009",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20005.png",
+						"Text": "[Image]",
+						"NextMessageId": "130770010"
+					},
+					"130770010": {
+						"Id": "130770010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Hm. If I can't find March 7th, then I can only seek out her legal guardian",
+						"NextMessageId": "130770011"
+					},
+					"130770011": {
+						"Id": "130770011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Which is you",
+						"NextMessageId": "choice14"
+					},
+					"130770012": {
+						"Id": "130770012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "First off: I'm definitely not March's legal guardian",
+						"NextMessageId": "130770013"
+					},
+					"130770013": {
+						"Id": "130770013",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "You can go look for Mr. Yang or Miss Himeko. If they're not there, you can find Dan Heng",
+						"NextMessageId": "130770014"
+					},
+					"130770014": {
+						"Id": "130770014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Too many names. Can't remember",
+						"NextMessageId": "130770018"
+					},
+					"130770015": {
+						"Id": "130770015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "If the kid won't perform, seeking the grown-ups out won't do anything either",
+						"NextMessageId": "130770016"
+					},
+					"130770016": {
+						"Id": "130770016",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Besides, when has March ever listened to me",
+						"NextMessageId": "130770017"
+					},
+					"130770017": {
+						"Id": "130770017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Indeed. Grandpa would usually throw out all the complainers...",
+						"NextMessageId": "130770018"
+					},
+					"130770018": {
+						"Id": "130770018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Agh. I was ordered to instruct her in the ways of the sword",
+						"NextMessageId": "130770019"
+					},
+					"130770019": {
+						"Id": "130770019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "She can skip this class, but I can't skip my duty",
+						"NextMessageId": "130770020"
+					},
+					"130770020": {
+						"Id": "130770020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "We need to talk about your child's behavior, {NICKNAME}",
+						"NextMessageId": "130770021"
+					},
+					"130770021": {
+						"Id": "130770021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "How about this — you come find me at Aurum Alley",
+						"NextMessageId": "130770022"
+					},
+					"130770022": {
+						"Id": "130770022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I'll wait for you"
+					},
+					"130770023": {
+						"Id": "130770023",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Image": "SpriteOutput/Emoji/116004.png",
+						"Text": "[Image]",
+						"NextMessageId": "130770008"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Why don't you just message her?",
+								"NextMessageId": "130770002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "I plan to go look for her...",
+								"NextMessageId": "130770004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Who's March 7th?",
+								"NextMessageId": "130770006"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "I'm not her legal guardian",
+								"NextMessageId": "130770012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No use talking to her guardians",
+								"NextMessageId": "130770015"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"13078": {
+		"Id": "13078",
+		"ContactId": "147",
+		"ParticpatingContactIds": [
+			"8001",
+			"147"
+		],
+		"Sections": [
+			{
+				"Id": "1307800",
+				"StartingMessageId": "130780001",
+				"Messages": {
+					"130780001": {
+						"Id": "130780001",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Master Gongshu, there's something I want to talk with you about",
+						"NextMessageId": "choice1"
+					},
+					"130780002": {
+						"Id": "130780002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "General Huaiyan gave the Luofu a sword called Guyun",
+						"NextMessageId": "130780003"
+					},
+					"130780003": {
+						"Id": "130780003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "Don't you worry. General Huaiyan has already conferred his instructions.",
+						"NextMessageId": "130780004"
+					},
+					"130780004": {
+						"Id": "130780004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "Right, I heard from my apprentices that a young lady with a sword barged into the Artisanship Commission.",
+						"NextMessageId": "130780005"
+					},
+					"130780005": {
+						"Id": "130780005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "That's General Huaiyan's granddaughter, right? Is she here to chat or kidnap me?",
+						"NextMessageId": "choice6"
+					},
+					"130780006": {
+						"Id": "130780006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "She already promised me that she wouldn't take Guyun until we've confirmed the situation.",
+						"NextMessageId": "130780007"
+					},
+					"130780007": {
+						"Id": "130780007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "What? She's coming to steal the sword?",
+						"NextMessageId": "130780008"
+					},
+					"130780008": {
+						"Id": "130780008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "My nerves can't take much more of this!",
+						"NextMessageId": "130780009"
+					},
+					"130780009": {
+						"Id": "130780009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "The Knight of Beauty just escorted the sword to the Artisanship Commission. It is currently in the armory without a chance for compromise or mishaps. You just relax.",
+						"NextMessageId": "130780010"
+					},
+					"130780010": {
+						"Id": "130780010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "When I have time, I want to hear that girl tell my why she tried to steal the blade!"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "(Inform Master Gongshu)",
+								"NextMessageId": "130780002"
+							}
+						]
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "She's calmed down now",
+								"NextMessageId": "130780006"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"13079": {
+		"Id": "13079",
+		"ContactId": "42",
+		"ParticpatingContactIds": [
+			"42",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307900",
+				"StartingMessageId": "130790001",
+				"Messages": {
+					"130790001": {
+						"Id": "130790001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "You there, {NICKNAME}?",
+						"NextMessageId": "130790002"
+					},
+					"130790002": {
+						"Id": "130790002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Are you able to cooperate with us for a bit? Care to come by the Artisanship Commission?",
+						"NextMessageId": "choice2"
+					},
+					"130790003": {
+						"Id": "130790003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "What happened?",
+						"NextMessageId": "130790004"
+					},
+					"130790004": {
+						"Id": "130790004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "To make a long story short, the Artisanship Commission received a sword yesterday from General Huaiyan. Today, when they checked in, the sword had vanished.",
+						"NextMessageId": "130790008"
+					},
+					"130790005": {
+						"Id": "130790005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Did something happen to the sword?",
+						"NextMessageId": "130790006"
+					},
+					"130790006": {
+						"Id": "130790006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Whoa. I didn't even say anything. How'd you know?",
+						"NextMessageId": "130790007"
+					},
+					"130790007": {
+						"Id": "130790007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "That's correct. The Artisanship Commission said they received a sword yesterday from General Huaiyan. Today, when we checked in, the sword had vanished.",
+						"NextMessageId": "130790008"
+					},
+					"130790008": {
+						"Id": "130790008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Anyway, the Realm-Keeping Commission is officially conducting an investigation and is interrogating the relevant individuals.",
+						"NextMessageId": "choice9"
+					},
+					"130790009": {
+						"Id": "130790009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "So, I'm a suspect?",
+						"NextMessageId": "130790010"
+					},
+					"130790010": {
+						"Id": "130790010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "C'mon, {F#young lady}{M#my lad}, it's just a routine questioning.",
+						"NextMessageId": "130790011"
+					},
+					"130790011": {
+						"Id": "130790011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "But you did attend the sword-gifting ceremony yesterday at the Palace of Astrum. And some craftsmen said they saw you at the Artisanship Commission.",
+						"NextMessageId": "130790014"
+					},
+					"130790012": {
+						"Id": "130790012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I even told Master Gongshu yesterday to keep careful watch on the sword. Does he know about the current situation?",
+						"NextMessageId": "130790013"
+					},
+					"130790013": {
+						"Id": "130790013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Yeah. He reported this case.",
+						"NextMessageId": "130790014"
+					},
+					"130790014": {
+						"Id": "130790014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Anyway, anyone who attended yesterday's ceremony and lacks a clear alibi will be considered a suspect.",
+						"NextMessageId": "130790015"
+					},
+					"130790015": {
+						"Id": "130790015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "The craftsmen also mentioned a young girl who broke into the Artisanship Commission with a sword in hand. She bears the bulk of the suspicion.",
+						"NextMessageId": "130790016"
+					},
+					"130790016": {
+						"Id": "130790016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Alright. Enough chatter. I'll see you at the Artisanship Commission."
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "What's the matter?",
+								"NextMessageId": "130790003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Something happened to the sword?",
+								"NextMessageId": "130790005"
+							}
+						]
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Do you suspect me?",
+								"NextMessageId": "130790009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "I told them to be careful",
+								"NextMessageId": "130790012"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
 	"13081": {
 		"Id": "13081",
 		"ContactId": "148",
@@ -47433,7 +48762,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13082": {
 		"Id": "13082",
@@ -47480,7 +48809,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13083": {
 		"Id": "13083",
@@ -47592,7 +48921,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13084": {
 		"Id": "13084",
@@ -47898,7 +49227,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13085": {
 		"Id": "13085",
@@ -48098,7 +49427,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13086": {
 		"Id": "13086",
@@ -48354,7 +49683,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13087": {
 		"Id": "13087",
@@ -48546,7 +49875,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13088": {
 		"Id": "13088",
@@ -48698,7 +50027,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13089": {
 		"Id": "13089",
@@ -48928,7 +50257,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13090": {
 		"Id": "13090",
@@ -49115,7 +50444,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13091": {
 		"Id": "13091",
@@ -49216,7 +50545,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13092": {
 		"Id": "13092",
@@ -49356,7 +50685,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13093": {
 		"Id": "13093",
@@ -49496,7 +50825,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13094": {
 		"Id": "13094",
@@ -50034,7 +51363,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13096": {
 		"Id": "13096",
@@ -50226,7 +51555,103 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
+	},
+	"13104": {
+		"Id": "13104",
+		"ContactId": "1214",
+		"ParticpatingContactIds": [
+			"1214",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1310400",
+				"StartingMessageId": "131040000",
+				"Messages": {
+					"131040000": {
+						"Id": "131040000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "|ω・´)",
+						"NextMessageId": "131040001"
+					},
+					"131040001": {
+						"Id": "131040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "I heard that three escapees have already been found hiding in the Shackling Prison. The Ten-Lords Commission has also confirmed that the remaining two have passed away.",
+						"NextMessageId": "131040002"
+					},
+					"131040002": {
+						"Id": "131040002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "(ﾟωﾟ) I'll have Chiyi prepare some rewards for you. Go find her. She will understand.",
+						"NextMessageId": "131040003"
+					},
+					"131040003": {
+						"Id": "131040003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "How are the emoticons?",
+						"NextMessageId": "choice4"
+					},
+					"131040004": {
+						"Id": "131040004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "They give off a very lively vibe. It's hard to imagine the words are coming from Madam Xueyi",
+						"NextMessageId": "131040006"
+					},
+					"131040005": {
+						"Id": "131040005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I don't know why, but they seem kinda odd",
+						"NextMessageId": "131040006"
+					},
+					"131040006": {
+						"Id": "131040006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "(`ー´) Think of it as a sudden impulse of mine",
+						"NextMessageId": "131040007"
+					},
+					"131040007": {
+						"Id": "131040007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "If you have time, go seek out Chiyi"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Feels pretty lively",
+								"NextMessageId": "131040004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Feels kinda odd",
+								"NextMessageId": "131040005"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"20001": {
 		"Id": "20001",
@@ -80422,7 +81847,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1215",
-						"Text": "In the Shackling Prison, I've been immersed in memories of mara-struck individuals for days on end. Meanwhile, in the outside world, I constantly hear people complaining about trivial things like having too much homework or feeling exhausted with only four hours of playtime each day. They complain about being tired.",
+						"Text": "In the Shackling Prison, I've been immersed in memories of mara-struck individuals for days on end. Meanwhile, in the outside world, I constantly hear people complaining about trivial things like having too much homework or feeling exhausted with only 2 dual-hours of playtime each day. They complain about being tired.",
 						"NextMessageId": "201110002"
 					},
 					"201110002": {
@@ -80430,7 +81855,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1215",
-						"Text": "For me, even a short thirty-minute break every few days would be a precious gift from the Ten Lords.",
+						"Text": "For me, even a short break for half a dual-hour every few days would be a precious gift from the Ten Lords.",
 						"NextMessageId": "choice3"
 					},
 					"201110003": {
@@ -88703,7 +90128,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20135": {
 		"Id": "20135",
@@ -89093,7 +90518,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20136": {
 		"Id": "20136",
@@ -89451,7 +90876,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20137": {
 		"Id": "20137",
@@ -89820,7 +91245,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20138": {
 		"Id": "20138",
@@ -90056,7 +91481,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20139": {
 		"Id": "20139",
@@ -90219,7 +91644,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1315",
-						"Text": "Well, shoot, who's talkin' 'bout robin'? You heard wrong, haha. Gonna buy it fair and square, can't do it any other way.",
+						"Text": "Well, shoot, who's talkin' 'bout robbin'? You heard wrong, haha. Gonna buy it fair and square, can't do it any other way.",
 						"NextMessageId": "201390019"
 					},
 					"201390019": {
@@ -90338,7 +91763,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20140": {
 		"Id": "20140",
@@ -90674,7 +92099,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20141": {
 		"Id": "20141",
@@ -90889,7 +92314,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20142": {
 		"Id": "20142",
@@ -91174,7 +92599,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20143": {
 		"Id": "20143",
@@ -91586,7 +93011,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20144": {
 		"Id": "20144",
@@ -92022,7 +93447,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20145": {
 		"Id": "20145",
@@ -92336,7 +93761,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20146": {
 		"Id": "20146",
@@ -92614,7 +94039,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20147": {
 		"Id": "20147",
@@ -92902,7 +94327,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20148": {
 		"Id": "20148",
@@ -93121,7 +94546,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20149": {
 		"Id": "20149",
@@ -93196,7 +94621,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "Sounds \"avant-garde\", maybe something on the dark side of the cooking...",
+						"Text": "Sounds \"avant-garde,\" maybe something on the dark side of the cooking...",
 						"NextMessageId": "201490008"
 					},
 					"201490008": {
@@ -93335,7 +94760,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20150": {
 		"Id": "20150",
@@ -93638,7 +95063,935 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
+	},
+	"20154": {
+		"Id": "20154",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2015400",
+				"StartingMessageId": "201540000",
+				"Messages": {
+					"201540000": {
+						"Id": "201540000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Grandpa says that the Astral Express has been everywhere",
+						"NextMessageId": "201540001"
+					},
+					"201540001": {
+						"Id": "201540001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Have you seen anyone weird recently?",
+						"NextMessageId": "201540002"
+					},
+					"201540002": {
+						"Id": "201540002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "If someone looks weird, they could be in possession of a cursed sword",
+						"NextMessageId": "choice3"
+					},
+					"201540003": {
+						"Id": "201540003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I'm weird. What do you want?",
+						"NextMessageId": "201540004"
+					},
+					"201540004": {
+						"Id": "201540004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "?",
+						"NextMessageId": "201540005"
+					},
+					"201540005": {
+						"Id": "201540005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I think you're perfectly fine",
+						"NextMessageId": "201540006"
+					},
+					"201540006": {
+						"Id": "201540006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I'm quite good at judging people",
+						"NextMessageId": "201540015"
+					},
+					"201540007": {
+						"Id": "201540007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Nope, everyone looks normal to me",
+						"NextMessageId": "201540008"
+					},
+					"201540008": {
+						"Id": "201540008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Is there a possibility that you're the weird one?",
+						"NextMessageId": "201540009"
+					},
+					"201540009": {
+						"Id": "201540009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Just kidding",
+						"NextMessageId": "201540010"
+					},
+					"201540010": {
+						"Id": "201540010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I know you don't have a cursed sword",
+						"NextMessageId": "201540011"
+					},
+					"201540011": {
+						"Id": "201540011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I'm quite good at judging people",
+						"NextMessageId": "201540015"
+					},
+					"201540012": {
+						"Id": "201540012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "What type of weird are you talking about? I know plenty of weird people. Lemme grab one for you to have a chat",
+						"NextMessageId": "201540013"
+					},
+					"201540013": {
+						"Id": "201540013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "...",
+						"NextMessageId": "201540014"
+					},
+					"201540014": {
+						"Id": "201540014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Feel like you misunderstood me",
+						"NextMessageId": "201540015"
+					},
+					"201540015": {
+						"Id": "201540015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Anyways, I'm just asking around",
+						"NextMessageId": "201540016"
+					},
+					"201540016": {
+						"Id": "201540016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "It'll be quicker to just ask you lot about the whereabouts of the cursed swords",
+						"NextMessageId": "choice21"
+					},
+					"201540017": {
+						"Id": "201540017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Is it urgent?",
+						"NextMessageId": "201540018"
+					},
+					"201540018": {
+						"Id": "201540018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Urgent",
+						"NextMessageId": "201540019"
+					},
+					"201540019": {
+						"Id": "201540019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Super urgent",
+						"NextMessageId": "201540020"
+					},
+					"201540020": {
+						"Id": "201540020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "There are a total of 1382 cursed swords forged by Hanguang",
+						"NextMessageId": "201540021"
+					},
+					"201540021": {
+						"Id": "201540021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I've only melted a little more than 300 of them!",
+						"NextMessageId": "201540022"
+					},
+					"201540022": {
+						"Id": "201540022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "The cursed swords are bloodthirsty and love to kill. If you wield it, you'll become its puppet and turn into a puppet that only knows killing",
+						"NextMessageId": "201540023"
+					},
+					"201540023": {
+						"Id": "201540023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Any moment I don't act, the world would see more wronged souls and bloodshed",
+						"NextMessageId": "201540024"
+					},
+					"201540024": {
+						"Id": "201540024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I promised grandpa to wait a while, but I think I've waited long enough",
+						"NextMessageId": "choice31"
+					},
+					"201540025": {
+						"Id": "201540025",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "You said you've waited long enough. What's your grandpa's response to that?",
+						"NextMessageId": "201540026"
+					},
+					"201540026": {
+						"Id": "201540026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "That's not important",
+						"NextMessageId": "201540027"
+					},
+					"201540027": {
+						"Id": "201540027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "What's important is... I want to hunt! Down! All! Cursed! Swords!",
+						"NextMessageId": "201540031"
+					},
+					"201540028": {
+						"Id": "201540028",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Don't give yourself too much pressure",
+						"NextMessageId": "201540029"
+					},
+					"201540029": {
+						"Id": "201540029",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "You're still young",
+						"NextMessageId": "201540030"
+					},
+					"201540030": {
+						"Id": "201540030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Yeah. How can I possibly let myself sleep easy at this age?",
+						"NextMessageId": "201540031"
+					},
+					"201540031": {
+						"Id": "201540031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Anyways",
+						"NextMessageId": "201540032"
+					},
+					"201540032": {
+						"Id": "201540032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "You guys have seen a lot, if you do see any of these swords, please tell me",
+						"NextMessageId": "201540033"
+					},
+					"201540033": {
+						"Id": "201540033",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I will not let a single cursed sword escape"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "I'm weird",
+								"NextMessageId": "201540003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Haven't met anyone like that",
+								"NextMessageId": "201540007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "I know plenty",
+								"NextMessageId": "201540012"
+							}
+						]
+					},
+					"choice21": {
+						"Id": "choice21",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Is it urgent?",
+								"NextMessageId": "201540017"
+							}
+						]
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "What's your grandpa's response?",
+								"NextMessageId": "201540025"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Don't give yourself too much pressure",
+								"NextMessageId": "201540028"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"20155": {
+		"Id": "20155",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2015500",
+				"StartingMessageId": "201550000",
+				"Messages": {
+					"201550000": {
+						"Id": "201550000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "{NICKNAME}, are you there?",
+						"NextMessageId": "201550001"
+					},
+					"201550001": {
+						"Id": "201550001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I'd like to talk to you for a bit",
+						"NextMessageId": "201550002"
+					},
+					"201550002": {
+						"Id": "201550002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "So, your sword",
+						"NextMessageId": "choice3"
+					},
+					"201550003": {
+						"Id": "201550003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "It's a ball bat",
+						"NextMessageId": "201550004"
+					},
+					"201550004": {
+						"Id": "201550004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Your bat sword",
+						"NextMessageId": "201550005"
+					},
+					"201550005": {
+						"Id": "201550005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Seems to be always saying strange things",
+						"NextMessageId": "201550006"
+					},
+					"201550006": {
+						"Id": "201550006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "It's not like something that a sword might say",
+						"NextMessageId": "choice8"
+					},
+					"201550007": {
+						"Id": "201550007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Because it's a bat, not a sword",
+						"NextMessageId": "201550008"
+					},
+					"201550008": {
+						"Id": "201550008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Grandpa says that swords have no fixed shape",
+						"NextMessageId": "201550012"
+					},
+					"201550009": {
+						"Id": "201550009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Can you really hear swords speak?",
+						"NextMessageId": "201550010"
+					},
+					"201550010": {
+						"Id": "201550010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "That's a natural feeling",
+						"NextMessageId": "201550011"
+					},
+					"201550011": {
+						"Id": "201550011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Swords speak truer than humans",
+						"NextMessageId": "201550012"
+					},
+					"201550012": {
+						"Id": "201550012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "But I can't quite see through your sword",
+						"NextMessageId": "201550013"
+					},
+					"201550013": {
+						"Id": "201550013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Its vibe is pretty sharp and straightforward",
+						"NextMessageId": "201550014"
+					},
+					"201550014": {
+						"Id": "201550014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "But it seems somewhat contradictory at the same time",
+						"NextMessageId": "201550015"
+					},
+					"201550015": {
+						"Id": "201550015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Its contradiction is filled with joy",
+						"NextMessageId": "201550016"
+					},
+					"201550016": {
+						"Id": "201550016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Yet that joy seems to have a tinge of bitterness to it",
+						"NextMessageId": "choice23"
+					},
+					"201550017": {
+						"Id": "201550017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Just lay it on me straight, master. What's wrong with my baby?",
+						"NextMessageId": "201550018"
+					},
+					"201550018": {
+						"Id": "201550018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Nothing's wrong",
+						"NextMessageId": "201550019"
+					},
+					"201550019": {
+						"Id": "201550019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "You've taught it well",
+						"NextMessageId": "201550020"
+					},
+					"201550020": {
+						"Id": "201550020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "But...",
+						"NextMessageId": "201550021"
+					},
+					"201550021": {
+						"Id": "201550021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Its emotions are quite elusive",
+						"NextMessageId": "201550022"
+					},
+					"201550022": {
+						"Id": "201550022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "\"It's mid!\"",
+						"NextMessageId": "201550023"
+					},
+					"201550023": {
+						"Id": "201550023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "\"So peak!\"",
+						"NextMessageId": "201550024"
+					},
+					"201550024": {
+						"Id": "201550024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "\"S-tier!\"",
+						"NextMessageId": "201550025"
+					},
+					"201550025": {
+						"Id": "201550025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "\"F-tier!\"",
+						"NextMessageId": "201550026"
+					},
+					"201550026": {
+						"Id": "201550026",
+						"MessageType": "Sticker",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20007.png",
+						"Text": "[Puzzled]",
+						"NextMessageId": "201550027"
+					},
+					"201550027": {
+						"Id": "201550027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "All of the above are words said by your bat sword",
+						"NextMessageId": "201550028"
+					},
+					"201550028": {
+						"Id": "201550028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "That's why I want to interact with it more",
+						"NextMessageId": "201550029"
+					},
+					"201550029": {
+						"Id": "201550029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "The more I think about it, the more urgent it feels",
+						"NextMessageId": "201550030"
+					},
+					"201550030": {
+						"Id": "201550030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I think I shall come and look for you right this moment",
+						"NextMessageId": "201550031"
+					},
+					"201550031": {
+						"Id": "201550031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "See you later"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "It's a ball bat",
+								"NextMessageId": "201550003"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Because it's a bat",
+								"NextMessageId": "201550007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Can you really hear swords speak?",
+								"NextMessageId": "201550009"
+							}
+						]
+					},
+					"choice23": {
+						"Id": "choice23",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Just lay it on me",
+								"NextMessageId": "201550017"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"20156": {
+		"Id": "20156",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2015600",
+				"StartingMessageId": "201560000",
+				"Messages": {
+					"201560000": {
+						"Id": "201560000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I have gossip. Do you wanna hear it?",
+						"NextMessageId": "201560001"
+					},
+					"201560001": {
+						"Id": "201560001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "There are people using delicious food to tempt a master into teaching them martial arts",
+						"NextMessageId": "201560002"
+					},
+					"201560002": {
+						"Id": "201560002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Wait",
+						"NextMessageId": "201560003"
+					},
+					"201560003": {
+						"Id": "201560003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "There's a twist",
+						"NextMessageId": "choice4"
+					},
+					"201560004": {
+						"Id": "201560004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I didn't even agree to listen",
+						"NextMessageId": "201560005"
+					},
+					"201560005": {
+						"Id": "201560005",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "What live gossip is this?",
+						"NextMessageId": "201560006"
+					},
+					"201560006": {
+						"Id": "201560006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I'm currently eavesdropping on two swords whispering at each other",
+						"NextMessageId": "201560007"
+					},
+					"201560007": {
+						"Id": "201560007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "But they are being pretty loud",
+						"NextMessageId": "201560008"
+					},
+					"201560008": {
+						"Id": "201560008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "So, I don't think I'm eavesdropping",
+						"NextMessageId": "201560009"
+					},
+					"201560009": {
+						"Id": "201560009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "The broadsword is saying that its master is a silly boy who can't do anything right",
+						"NextMessageId": "201560010"
+					},
+					"201560010": {
+						"Id": "201560010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "The short sword is saying that its master is a witty girl who has amazing culinary skills",
+						"NextMessageId": "201560011"
+					},
+					"201560011": {
+						"Id": "201560011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Not long ago, the girl accompanied the silly boy on an adventure. They met a master swordsman and wanted to learn from him, but the master refused to teach them anything.",
+						"NextMessageId": "201560012"
+					},
+					"201560012": {
+						"Id": "201560012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Unless they make him gourmet food for 10 days straight, with a different dish every day",
+						"NextMessageId": "choice14"
+					},
+					"201560013": {
+						"Id": "201560013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "So? Did they succeed?",
+						"NextMessageId": "201560014"
+					},
+					"201560014": {
+						"Id": "201560014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "I mean, did they succeed in learning anything?",
+						"NextMessageId": "201560015"
+					},
+					"201560015": {
+						"Id": "201560015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I'm still listening to their conversation",
+						"NextMessageId": "201560016"
+					},
+					"201560016": {
+						"Id": "201560016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "They are saying that the two teamed up and served the master Beggar's Chicken",
+						"NextMessageId": "201560017"
+					},
+					"201560017": {
+						"Id": "201560017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Oh, and they made steamed tofu",
+						"NextMessageId": "201560018"
+					},
+					"201560018": {
+						"Id": "201560018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Stir-fried duck feet",
+						"NextMessageId": "201560019"
+					},
+					"201560019": {
+						"Id": "201560019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Chicken tongue soup",
+						"NextMessageId": "201560020"
+					},
+					"201560020": {
+						"Id": "201560020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Yuanyang pan-fried beef tendon",
+						"NextMessageId": "201560021"
+					},
+					"201560021": {
+						"Id": "201560021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Lotus ham dumplings",
+						"NextMessageId": "201560022"
+					},
+					"201560022": {
+						"Id": "201560022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Stuffed egg rolls",
+						"NextMessageId": "201560023"
+					},
+					"201560023": {
+						"Id": "201560023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Pig's brain soup",
+						"NextMessageId": "201560024"
+					},
+					"201560024": {
+						"Id": "201560024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "My tummy is growling",
+						"NextMessageId": "201560025"
+					},
+					"201560025": {
+						"Id": "201560025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "I'm going to buy some snacks, then I'll be back to listen to the story",
+						"NextMessageId": "201560026"
+					},
+					"201560026": {
+						"Id": "201560026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "...No, not a story. It's the thoughts of these swords",
+						"NextMessageId": "choice29"
+					},
+					"201560027": {
+						"Id": "201560027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "I'm getting hungry too! Buy some for me as well!",
+						"NextMessageId": "201560028"
+					},
+					"201560028": {
+						"Id": "201560028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "No problem"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "I didn't even agree to listen",
+								"NextMessageId": "201560004"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Go on.",
+								"NextMessageId": "201560013"
+							}
+						]
+					},
+					"choice29": {
+						"Id": "choice29",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Buy some for me too!",
+								"NextMessageId": "201560027"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"20998": {
 		"Id": "20998",
@@ -93846,7 +96199,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20999": {
 		"Id": "20999",

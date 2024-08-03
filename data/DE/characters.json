@@ -133,7 +133,7 @@
 			{
 				"Id": "100401",
 				"Name": "Nachlass der Ehre",
-				"Effect": "Nach dem Einsatz des Ultimates werden Welts Fähigkeiten verstärkt. Die nächsten 2 Einsätze seines Standardangriffs oder seiner Fertigkeit fügen dem Ziel zusätzlichen SCH in Höhe von 50% seines Standardangriff-Multiplikators bzw. 80% des SCH-Multiplikators seiner Fertigkeit zu."
+				"Effect": "Nach dem Einsatz des Ultimates wird Welt verstärkt. Die nächsten 2 Einsätze seines Standardangriffs oder seiner Fertigkeit fügen dem Gegner 1-mal zusätzlichen SCH in Höhe von 50% seines Multiplikators von Standardangriff-SCH bzw. 80% des SCH-Multiplikators seiner Fertigkeit zu."
 			},
 			{
 				"Id": "100402",
@@ -256,7 +256,7 @@
 			{
 				"Id": "100801",
 				"Name": "Bis zum bitteren Ende",
-				"Effect": "Liegt Arlans LP-Prozentsatz bei 50 % oder weniger, wird der durch die Fertigkeit verursachte SCH um 10% erhöht."
+				"Effect": "Liegt der LP-Prozentsatz bei 50 % oder weniger, wird der durch die Fertigkeit verursachte SCH um 10% erhöht."
 			},
 			{
 				"Id": "100802",
@@ -871,7 +871,7 @@
 			{
 				"Id": "120101",
 				"Name": "Bauer umgewandelt, Preis erhalten",
-				"Effect": "Der Ultimate fügt 10% mehr SCH zu."
+				"Effect": "Der Ultimate verursacht 10% mehr SCH."
 			},
 			{
 				"Id": "120102",
@@ -886,7 +886,7 @@
 			{
 				"Id": "120104",
 				"Name": "Glückliche Kombination, der letzte Stein wartet",
-				"Effect": "Nach dem Einsatz der Fertigkeit besteht eine Grundchance von 24%, in „Autarkie“ einzutreten. Dieser Status hält bis zum Ende dieser Runde.\nIn „Autarkie“ führt Qingque nach dem Einsatz des Standardangriffs oder verstärkten Standardangriffs sofort einen Folgeangriff aus und fügt dem Ziel Quanten-SCH in Höhe von 100 % des Standardangriffs oder verstärkten Standardangriffs zu."
+				"Effect": "Nach dem Einsatz der Fertigkeit besteht eine feste Chance von 24%, den Status „Autarkie“ zu erhalten. Dieser Status hält bis zum Ende dieser Runde.\nIm Status Autarkie führt Qingque nach dem Einsatz des Standardangriffs oder verstärkten Standardangriffs sofort einen Folgeangriff aus und fügt dem Ziel Quanten-SCH in Höhe von 100 % des Standardangriff-SCH oder verstärkten Standardangriff-SCH zu."
 			},
 			{
 				"Id": "120105",
@@ -921,7 +921,7 @@
 			},
 			{
 				"Id": "120203",
-				"Name": "Geschenk des alten grünen Zuhauses",
+				"Name": "Vermächtnis der gesegneten Tage",
 				"Effect": "Ultimate-Stufe +2 bis max. St. 15. Standardangriff-Stufe +1 bis max. St. 10."
 			},
 			{
@@ -1060,7 +1060,7 @@
 			{
 				"Id": "120506",
 				"Name": "Wie Körper, so Seele",
-				"Effect": "Die maximale Aufladungsanzahl wird auf 4 reduziert. Der SCH des Folgeangriffs, der durch Blades Talent ausgelöst wird, wird zusätzlich um 50% seiner max. LP erhöht."
+				"Effect": "Die maximale Aufladungsanzahl wird auf 4 reduziert. Der durch Folgeangriffe verursachte SCH von Blades Talent wird zusätzlich um 50% seiner max. LP erhöht."
 			}
 		],
 		"VersionAdded": "1.2"
@@ -1183,7 +1183,7 @@
 			{
 				"Id": "120806",
 				"Name": "Wiederaufleben",
-				"Effect": "Sobald die „Matrix der Voraussicht“ aktiviert ist, werden die gesamten LP, die alle Verbündeten im aktuellen Kampf verloren haben, addiert. Der Ultimate-SCH von Fu Xuan erhöht sich um 200% der gesamten LP, die alle Verbündeten im aktuellen Kampf verloren haben.\nDie von allen Verbündeten im aktuellen Kampf verlorenen LP sind auf 120% der max. LP von Fu Xuan begrenzt. Dieser Wert wird zurückgesetzt und neu angesammelt, nachdem Fu Xuans Ultimate eingesetzt wurde."
+				"Effect": "Sobald die „Matrix der Voraussicht“ aktiviert ist, werden die gesamten LP, die alle Verbündeten im aktuellen Kampf verloren haben, addiert. Der durch Ultimate von Fu Xuan verursachte SCH erhöht sich um 200% der gesamten LP, die alle Verbündeten im aktuellen Kampf verloren haben.\nDie von allen Verbündeten im aktuellen Kampf verlorenen LP sind auf 120% der max. LP von Fu Xuan begrenzt. Dieser Wert wird zurückgesetzt und neu angesammelt, nachdem Fu Xuans Ultimate eingesetzt wurde."
 			}
 		],
 		"VersionAdded": "1.3"
@@ -1404,7 +1404,7 @@
 			{
 				"Id": "121401",
 				"Name": "Dvesha, gefesselt",
-				"Effect": "Erhöht den SCH durch Folgeangriffe des Talents um 40%."
+				"Effect": "Erhöht den durch Folgeangriffe verursachten SCH des Talents um 40%."
 			},
 			{
 				"Id": "121402",
@@ -1515,6 +1515,129 @@
 			}
 		],
 		"VersionAdded": "1.5"
+	},
+	"1218": {
+		"Id": "1218",
+		"Name": "Jiaoqiu",
+		"ElementType": "Fire",
+		"ElementTypeText": "Feuer",
+		"PathType": "Warlock",
+		"PathTypeText": "Die Nichtigkeit",
+		"Eidolons": [
+			{
+				"Id": "121801",
+				"Name": "Vorbestimmung der Geschmäcke",
+				"Effect": "Verbündete fügen Gegnern mit dem Status „Aschenbrennen“ 40% mehr SCH zu. Jedes Mal, wenn der Effekt des Talents ausgelöst und ein Gegner mit Aschenbrennen belegt wird, werden die Stapelungen von Aschenbrennen dieses Mal zusätzlich um 1 erhöht."
+			},
+			{
+				"Id": "121802",
+				"Name": "Köstliche Gifte",
+				"Effect": "Wenn der Gegner sich im Status „Aschenbrennen“ befindet, wird der Feuer-DoT-Multiplikator von Aschenbrennen an ihm um 300% erhöht."
+			},
+			{
+				"Id": "121803",
+				"Name": "Unaufhaltsame Harmonie des Geschmacks",
+				"Effect": "Fertigkeitsstufe +2 bis max. St. 15. Standardangriff-Stufe +1 bis max. St. 10."
+			},
+			{
+				"Id": "121804",
+				"Name": "Innerer Frieden, blühende Lebenskraft",
+				"Effect": "Solange das Feld aktiv ist, wird der ANG der Gegner um 15% reduziert."
+			},
+			{
+				"Id": "121805",
+				"Name": "Kollision von Licht und Schatten",
+				"Effect": "Ultimate-Stufe +2 bis max. St. 15. Talentstufe +2 bis max. St. 15."
+			},
+			{
+				"Id": "121806",
+				"Name": "Feuer in neun Stufen",
+				"Effect": "Wenn ein Gegner besiegt wird, werden seine Stapelungen „Aschenbrennen“ auf den Gegner mit der niedrigsten verbleibenden Stapelzahl von Aschenbrennen auf dem Kampffeld übertragen. Das Stapelungslimit von Aschenbrennen wird auf 9 erhöht. Jede Stapelung von Aschenbrennen reduziert den WDS aller Typen des Ziels um 3%."
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"1221": {
+		"Id": "1221",
+		"Name": "Yunli",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physisch",
+		"PathType": "Warrior",
+		"PathTypeText": "Die Zerstörung",
+		"Eidolons": [
+			{
+				"Id": "122101",
+				"Name": "Polierter Stahl",
+				"Effect": "Erhöht den SCH durch „Intuition: Abtrennen“ und „Intuition: Auslöschen“ um 20%. Erhöht die Anzahl des zusätzlichen SCH durch „Intuition: Auslöschen“ um 3."
+			},
+			{
+				"Id": "122102",
+				"Name": "Erwachter Schimmer",
+				"Effect": "Wenn durch einen Konter SCH verursacht wird, werden 20% der VTD des Ziels ignoriert."
+			},
+			{
+				"Id": "122103",
+				"Name": "Bergspalter-Kluft",
+				"Effect": "Ultimate-Stufe +2 bis max. St. 15. Standardangriff-Stufe +1 bis max. St. 10."
+			},
+			{
+				"Id": "122104",
+				"Name": "Meisterschlag",
+				"Effect": "Nach dem Einsatz von „Intuition: Abtrennen“ oder „Intuition: Auslöschen“ wird der eigene Effekt-WDS für 1 Rd. um 50% erhöht."
+			},
+			{
+				"Id": "122105",
+				"Name": "Beharrliche Waffen",
+				"Effect": "Fertigkeitsstufe +2 bis max. St. 15. Talentstufe +2 bis max. St. 15."
+			},
+			{
+				"Id": "122106",
+				"Name": "Mut des Schwerts, Wille der Zither",
+				"Effect": "Wenn ein Gegner während des Status „Parade“ Fähigkeiten einsetzt, wird „Intuition: Auslöschen“ ausgelöst und Parade entfernt, unabhängig davon, ob Yunli angegriffen wird oder nicht. Wenn Intuition: Abtrennen oder Intuition: Auslöschen SCH verursacht, wird die KRIT-Rate um 15% und die physische WDS-DUR um 20% erhöht."
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"1224": {
+		"Id": "1224",
+		"Name": "7. März",
+		"ElementType": "Imaginary",
+		"ElementTypeText": "Imaginär",
+		"PathType": "Rogue",
+		"PathTypeText": "Die Jagd",
+		"Eidolons": [
+			{
+				"Id": "122401",
+				"Name": "Mein Schwert rührt das Sternenlicht",
+				"Effect": "Wenn sich der „Meister“ auf dem Kampffeld befindet, wird 7. März’ GES um 10% erhöht."
+			},
+			{
+				"Id": "122402",
+				"Name": "Klingentanz im Schnee",
+				"Effect": "Jedes Mal, wenn der „Meister“ einen Standardangriff oder eine Fertigkeit gegen einen Gegner einsetzt, startet 7. März sofort einen Folgeangriff, der dem Hauptziel dieses Angriffs imaginären SCH in Höhe von 60% von 7. März’ ANG zufügt und den entsprechenden Effekt basierend auf dem Pfad des Meisters auslöst. 7. März erhält danach 1 Pkt. Aufladung. Greift bei nicht vorhandenem Hauptziel einen zufälligen Gegner an. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden."
+			},
+			{
+				"Id": "122403",
+				"Name": "Kluge Köpfe und starke Fähigkeiten",
+				"Effect": "Fertigkeitsstufe +2 bis max. St. 15. Standardangriff-Stufe +1 bis max. St. 10."
+			},
+			{
+				"Id": "122404",
+				"Name": "Auch Drachen können süß sein",
+				"Effect": "Stellt zu Beginn der Runde 5 Pkt. Energie wieder her."
+			},
+			{
+				"Id": "122405",
+				"Name": "Mehr Kampfkunst, weniger Süßigkeiten",
+				"Effect": "Ultimate-Stufe +2 bis max. St. 15. Talentstufe +2 bis max. St. 15."
+			},
+			{
+				"Id": "122406",
+				"Name": "Das beste Mädchen der Welt",
+				"Effect": "Erhöht nach dem Einsatz des Ultimates den verursachten KRIT-SCH des nächsten verstärkten Standardangriffs um 50%."
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"1301": {
 		"Id": "1301",
@@ -1716,7 +1839,7 @@
 			{
 				"Id": "130506",
 				"Name": "Ewige Wahrheit",
-				"Effect": "Erhöht die Auslösungsanzahl für „Torheit der Weisen“ um 1. Der SCH durch den Folgeangriff des Talents wird um 50% erhöht."
+				"Effect": "Erhöht die Auslösungsanzahl für „Torheit der Weisen“ um 1. Der durch Folgeangriffe verursachte SCH des Talents wird um 50% erhöht."
 			}
 		],
 		"VersionAdded": "1.6"
@@ -1883,7 +2006,7 @@
 				"Effect": "Im Status „Konzert“ wird der KRIT-SCH des vom Ultimate verursachten zusätzlichen physischen SCH zusätzlich um 450% erhöht. „Mondlose Mitternacht“ kann bis zu 8-mal ausgelöst werden. Beim Einsatz des Ultimates wird die Auslösungszahl zurückgesetzt."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"1310": {
 		"Id": "1310",
@@ -1924,7 +2047,7 @@
 				"Effect": "Erhöht im Status „Vollständige Verbrennung“ SAMs Feuer-WDS-DUR um 20%. Beim Einsatz des verstärkten Standardangriffs und der verstärkten Fertigkeit wird die Schwächebruch-Effizienz um 50% erhöht."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"1312": {
 		"Id": "1312",
@@ -1978,12 +2101,12 @@
 			{
 				"Id": "131401",
 				"Name": "Uneigennützigkeit? Auch handelbar",
-				"Effect": "Der Folgeangriff von Jades Talent verursacht 32% mehr SCH. Wenn eine Figur mit „Schuldeneintreiber“ angrifft und 2/1 Gegner trifft, erhält Jade zusätzlich 1/2 Pkt. Aufladung."
+				"Effect": "Erhöht den Folgeangriff-SCH von Jades Talent um 32%. Wenn ein Verbündeter als „Schuldeneintreiber“ angreift und 2/1 Gegner trifft, erhält Jade zusätzlich 1/2 Pkt. Aufladung."
 			},
 			{
 				"Id": "131402",
 				"Name": "Moralität? Hiermit bescheinigt",
-				"Effect": "Wenn „Verpfändung“ 15 Stapelung(en) erreicht, wird Jades KRIT-Rate um 18% erhöht."
+				"Effect": "Wenn „Verpfändung“ 15 Stapelungen erreicht, wird Jades KRIT-Rate um 18% erhöht."
 			},
 			{
 				"Id": "131403",
@@ -2003,10 +2126,10 @@
 			{
 				"Id": "131406",
 				"Name": "Gerechtigkeit? Ausstehender Sponsor",
-				"Effect": "Wenn sich Verbündete mit „Schuldeneintreiber“ auf dem Kampffeld befinden, wird Jades Quanten-WDS-DUR um 20% erhöht und sie tritt in den Status Schuldeneintreiber ein."
+				"Effect": "Wenn sich ein Verbündeter als „Schuldeneintreiber“ auf dem Feld befindet, wird Jades Quanten-WDS-DUR um 20% erhöht und sie tritt in den Status Schuldeneintreiber ein."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"1315": {
 		"Id": "1315",
@@ -2047,7 +2170,7 @@
 				"Effect": "Wenn durch das Talent Bruch-SCH verursacht wird, wird dem Ziel zusätzlich Bruch-SCH in Höhe von 40% des ursprünglichen SCH-Multiplikators und angrenzenden Einheiten zusätzlich Bruch-SCH in Höhe von 70% des ursprünglichen SCH-Multiplikators zugefügt."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"8001": {
 		"Id": "8001",
@@ -2262,7 +2385,7 @@
 				"Effect": "Erhöht die Anzahl des zusätzlichen SCH der Fertigkeit um 2."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"8006": {
 		"Id": "8006",
@@ -2305,6 +2428,6 @@
 				"Effect": "Erhöht die Anzahl des zusätzlichen SCH der Fertigkeit um 2."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	}
 }

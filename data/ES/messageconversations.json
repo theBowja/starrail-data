@@ -13536,6 +13536,53 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"11170": {
+		"Id": "11170",
+		"ContactId": "1105",
+		"ParticpatingContactIds": [
+			"1105"
+		],
+		"Sections": [
+			{
+				"Id": "1117000",
+				"StartingMessageId": "111700001",
+				"Messages": {
+					"111700001": {
+						"Id": "111700001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "Esas sombras han desaparecido.",
+						"NextMessageId": "111700002"
+					},
+					"111700002": {
+						"Id": "111700002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "Parece que la magia de la amistad funciona muy bien.",
+						"NextMessageId": "111700003"
+					},
+					"111700003": {
+						"Id": "111700003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "Antes de que te vayas de Belobog, ¿puedes venir una última vez a verme?",
+						"NextMessageId": "111700004"
+					},
+					"111700004": {
+						"Id": "111700004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1105",
+						"Text": "Hay alguien que quiere despedirse de ti."
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
 	"11500": {
 		"Id": "11500",
 		"ContactId": "1000",
@@ -35234,6 +35281,78 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"12228": {
+		"Id": "12228",
+		"ContactId": "1209",
+		"ParticpatingContactIds": [
+			"1209",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1222800",
+				"StartingMessageId": "122280000",
+				"Messages": {
+					"122280000": {
+						"Id": "122280000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1209",
+						"Text": "¡{NICKNAME}! Vi el mensaje de la Comisión del Transporte Celeste sobre que el Expreso terminó su viaje.",
+						"NextMessageId": "122280001"
+					},
+					"122280001": {
+						"Id": "122280001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1209",
+						"Text": "¿Ya están en el Luofu?",
+						"NextMessageId": "choice2"
+					},
+					"122280002": {
+						"Id": "122280002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Sí, acabamos de llegar a la Dársena de astroesquifes.",
+						"NextMessageId": "122280004"
+					},
+					"122280003": {
+						"Id": "122280003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¡Veo que te enteraste rápido!",
+						"NextMessageId": "122280004"
+					},
+					"122280004": {
+						"Id": "122280004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1209",
+						"Text": "Je, el general me envió a recibirlos a la Dársena de astroesquifes. ¡Nos vemos pronto!"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¡Llegamos a la Dársena de astroesquifes!",
+								"NextMessageId": "122280002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Te enteraste rápido...",
+								"NextMessageId": "122280003"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
 	"12233": {
 		"Id": "12233",
 		"ContactId": "13",
@@ -35624,7 +35743,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12234": {
 		"Id": "12234",
@@ -35808,7 +35927,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12235": {
 		"Id": "12235",
@@ -36102,7 +36221,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12236": {
 		"Id": "12236",
@@ -36257,7 +36376,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12237": {
 		"Id": "12237",
@@ -36332,7 +36451,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12238": {
 		"Id": "12238",
@@ -36400,7 +36519,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1302",
-						"Text": "Pero tendrás que esperar un poco. Alguien acaba de robarle su sombrero.",
+						"Text": "Pero tendréis que esperar un poco. Alguien acaba de robarle su sombrero.",
 						"NextMessageId": "choice7"
 					},
 					"122380008": {
@@ -36424,7 +36543,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1302",
-						"Text": "Oye, tranquil{F#a}{M#o}, amig{F#a}{M#o}.",
+						"Text": "Tranquilizaos, amig{F#a}{M#o}.",
 						"NextMessageId": "122380011"
 					},
 					"122380011": {
@@ -36504,7 +36623,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1302",
-						"Text": "Tu amiga también es nuestra amiga.",
+						"Text": "Vuestra amiga también es nuestra amiga.",
 						"NextMessageId": "122380021"
 					},
 					"122380021": {
@@ -36512,7 +36631,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1302",
-						"Text": "Yo también les daré una mano para arreglar el problema, mis queridos amigos."
+						"Text": "Yo también os daré una mano para arreglar el problema, mis queridos amigos."
 					},
 					"choice7": {
 						"Id": "choice7",
@@ -36533,7 +36652,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12239": {
 		"Id": "12239",
@@ -36653,7 +36772,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"12240": {
 		"Id": "12240",
@@ -36944,7 +37063,54 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
+	},
+	"12241": {
+		"Id": "12241",
+		"ContactId": "106",
+		"ParticpatingContactIds": [
+			"106"
+		],
+		"Sections": [
+			{
+				"Id": "1224100",
+				"StartingMessageId": "122410000",
+				"Messages": {
+					"122410000": {
+						"Id": "122410000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "Saludos, apreciable {F#señorita}{M#señor} {NICKNAME}. Escuché que ayudaste a Randolph con la recolección de datos. Quisiera expresarte mi más sincera gratitud.",
+						"NextMessageId": "122410001"
+					},
+					"122410001": {
+						"Id": "122410001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "Creo que Randolph ya te recompensó como corresponde, pero esto también es parte de mi gratitud y sinceridad. Espero que esto te satisfaga.",
+						"NextMessageId": "122410002"
+					},
+					"122410002": {
+						"Id": "122410002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "Gracias a ti, ya envié la propuesta a La Familia para que la revisen y registré tu nombre en la columna del asistente.",
+						"NextMessageId": "122410003"
+					},
+					"122410003": {
+						"Id": "122410003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "106",
+						"Text": "Por último, permíteme expresarte mi enorme gratitud por tu ayuda en la tienda."
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"12700": {
 		"Id": "12700",
@@ -37107,7 +37273,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "64",
-						"Text": "Además, si completas todos los acertijos del Hexanexus, te obsequiaremos una afiliación vitalicia a la Sociedad Hex.",
+						"Text": "Además, si completas todos los acertijos del Hexanexus, te obsequiaremos una afiliación vitalicia a la Sociedad Secreta Hexanexus.",
 						"NextMessageId": "choice29"
 					},
 					"127000020": {
@@ -37811,7 +37977,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "63",
-						"Text": "De todos modos, quisiéramos tener una reunión contigo. El propósito de la reunión es: 1. Otorgarte tu título de soci{F#a}{M#o} vitalici{F#a}{M#o} de la Sociedad Hex, y 2. Consultar a fondo sobre tu experiencia de usuario y obtener tus opiniones.",
+						"Text": "De todos modos, quisiéramos tener una reunión contigo. El propósito de la reunión es: 1. Otorgarte tu título de soci{F#a}{M#o} vitalici{F#a}{M#o} de la Sociedad Secreta Hexanexus, y 2. Consultar a fondo sobre tu experiencia de usuario y obtener tus opiniones.",
 						"NextMessageId": "choice22"
 					},
 					"127020017": {
@@ -38170,6 +38336,636 @@
 			}
 		],
 		"VersionAdded": "1.0"
+	},
+	"12704": {
+		"Id": "12704",
+		"ContactId": "63",
+		"ParticpatingContactIds": [
+			"63",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1270400",
+				"StartingMessageId": "127040000",
+				"Messages": {
+					"127040000": {
+						"Id": "127040000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Has obtenido varios pases Hex, así que nos gustaría invitarte a participar en un cuestionario de retroalimentación sobre Hexanexus: Reedición. Sé tan {F#sincera}{M#sincero} como sea posible.\n\nTus respuestas no serán reveladas a terceros. ¡Gracias por apoyar a la sociedad secreta Hexanexus!",
+						"NextMessageId": "127040001"
+					},
+					"127040001": {
+						"Id": "127040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¿Te diste cuenta de que ya obtuviste pases Hex?",
+						"NextMessageId": "choice2"
+					},
+					"127040002": {
+						"Id": "127040002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Sí.",
+						"NextMessageId": "127040006"
+					},
+					"127040003": {
+						"Id": "127040003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No.",
+						"NextMessageId": "127040006"
+					},
+					"127040004": {
+						"Id": "127040004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Adivina.",
+						"NextMessageId": "127040005"
+					},
+					"127040005": {
+						"Id": "127040005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Seguro que ahora ya lo sabes.",
+						"NextMessageId": "127040006"
+					},
+					"127040006": {
+						"Id": "127040006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¿Habías probado un Hexanexus antes?",
+						"NextMessageId": "choice9"
+					},
+					"127040007": {
+						"Id": "127040007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Sí.",
+						"NextMessageId": "127040012"
+					},
+					"127040008": {
+						"Id": "127040008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No.",
+						"NextMessageId": "127040012"
+					},
+					"127040009": {
+						"Id": "127040009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Soy {F#una gran verificadora}{M#un gran verificador} e incluso soy {F#una miembro vitalicia}{M#un miembro vitalicio} de la Sociedad Secreta Hexanexus.",
+						"NextMessageId": "127040010"
+					},
+					"127040010": {
+						"Id": "127040010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¡¿Qué?!",
+						"NextMessageId": "127040011"
+					},
+					"127040011": {
+						"Id": "127040011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "La página oficial de Hexanexus anunció que su servicio de membresía vitalicia de la sociedad secreta Hexanexus y otros servicios para miembros se suspendieron hace treinta días del sistema. Gracias por apoyar a la Sociedad Secreta Hexanexus todo este tiempo.",
+						"NextMessageId": "127040012"
+					},
+					"127040012": {
+						"Id": "127040012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¿Sabes qué es el Hexanexus: Reedición?",
+						"NextMessageId": "choice17"
+					},
+					"127040013": {
+						"Id": "127040013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Sé lo que es el Hexanexus: Reedición.",
+						"NextMessageId": "127040019"
+					},
+					"127040014": {
+						"Id": "127040014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No sé lo que es el Hexanexus: Reedición.",
+						"NextMessageId": "127040015"
+					},
+					"127040015": {
+						"Id": "127040015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Ya obtuviste un pase Hex. Lo que acabas de probar es el Hexanexus: Reedición.",
+						"NextMessageId": "127040019"
+					},
+					"127040016": {
+						"Id": "127040016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿No es Hexanexus: Remasterización? ¿Por qué usan \"reedición\"?",
+						"NextMessageId": "127040017"
+					},
+					"127040017": {
+						"Id": "127040017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Hexanexus fue diseñado, producido y desarrollado por un equipo multicultural.",
+						"NextMessageId": "127040018"
+					},
+					"127040018": {
+						"Id": "127040018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "La \"reedición\" representa la diversidad que se presenta en nuestro producto, y que contempla a los usuarios de todo el cosmos.",
+						"NextMessageId": "127040019"
+					},
+					"127040019": {
+						"Id": "127040019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¿Qué te parece el nivel de dificultad de Hexanexus: Reedición?",
+						"NextMessageId": "choice26"
+					},
+					"127040020": {
+						"Id": "127040020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Muy difícil.",
+						"NextMessageId": "127040023"
+					},
+					"127040021": {
+						"Id": "127040021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Moderadamente difícil.",
+						"NextMessageId": "127040023"
+					},
+					"127040022": {
+						"Id": "127040022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Muy fácil.",
+						"NextMessageId": "127040023"
+					},
+					"127040023": {
+						"Id": "127040023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¿Tienes alguna pregunta o sugerencia adicional sobre Hexanexus: Reedición?",
+						"NextMessageId": "choice36"
+					},
+					"127040024": {
+						"Id": "127040024",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Las recompensas han disminuido? Los jugadores anteriores no querrán seguir jugando.",
+						"NextMessageId": "127040025"
+					},
+					"127040025": {
+						"Id": "127040025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Por ahora es un poco difícil evitarlo.",
+						"NextMessageId": "127040030"
+					},
+					"127040026": {
+						"Id": "127040026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Lo que más me genera confusión es saber por qué Hexanexus también está en la Comisión de los Diez Líderes y en la Prisión de los encadenados.",
+						"NextMessageId": "127040027"
+					},
+					"127040027": {
+						"Id": "127040027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Sí... Es una larga historia.",
+						"NextMessageId": "127040030"
+					},
+					"127040028": {
+						"Id": "127040028",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Por qué Hexanexus quiere hacer una secuela?",
+						"NextMessageId": "127040029"
+					},
+					"127040029": {
+						"Id": "127040029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¡Porque Hexanexus es el número uno del mundo, claro!",
+						"NextMessageId": "127040030"
+					},
+					"127040030": {
+						"Id": "127040030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Sé que tienes muchas preguntas.",
+						"NextMessageId": "127040031"
+					},
+					"127040031": {
+						"Id": "127040031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Conseguiste 3 pases Hex. Volveré a contactarte cuando consigas 6.",
+						"NextMessageId": "127040032"
+					},
+					"127040032": {
+						"Id": "127040032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Gracias por participar en nuestro cuestionario.\nPor favor, sigue apoyando a Hexanexus: Reedición."
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Sí.",
+								"NextMessageId": "127040002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No.",
+								"NextMessageId": "127040003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Adivina.",
+								"NextMessageId": "127040004"
+							}
+						]
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Sí.",
+								"NextMessageId": "127040007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No.",
+								"NextMessageId": "127040008"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Soy miembro {F#vitalicia}{M#vitalicio} de la Sociedad Hex.",
+								"NextMessageId": "127040009"
+							}
+						]
+					},
+					"choice17": {
+						"Id": "choice17",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Lo sé.",
+								"NextMessageId": "127040013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No lo sé.",
+								"NextMessageId": "127040014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Hexanexus: Remasterización?",
+								"NextMessageId": "127040016"
+							}
+						]
+					},
+					"choice26": {
+						"Id": "choice26",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Muy difícil.",
+								"NextMessageId": "127040020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Moderadamente difícil.",
+								"NextMessageId": "127040021"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Muy fácil.",
+								"NextMessageId": "127040022"
+							}
+						]
+					},
+					"choice36": {
+						"Id": "choice36",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "No hay suficientes recompensas",
+								"NextMessageId": "127040024"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Sabes dónde están esos sitios?",
+								"NextMessageId": "127040026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Por qué hacer una secuela?",
+								"NextMessageId": "127040028"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"12705": {
+		"Id": "12705",
+		"ContactId": "63",
+		"ParticpatingContactIds": [
+			"63",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1270500",
+				"StartingMessageId": "127050000",
+				"Messages": {
+					"127050000": {
+						"Id": "127050000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Felicidades, has completado la versión beta de Hexanexus: Reedición.",
+						"NextMessageId": "127050001"
+					},
+					"127050001": {
+						"Id": "127050001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Has completado todos los acertijos. Seguramente fue porque Hexanexus: Reedición te resultó muy interesante, ¿verdad?",
+						"NextMessageId": "choice2"
+					},
+					"127050002": {
+						"Id": "127050002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¡Hexanexus: Reedición es lo mejor del mundo!",
+						"NextMessageId": "127050005"
+					},
+					"127050003": {
+						"Id": "127050003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No había nada mejor que hacer. Los resolví mientras caminaba por la prisión.",
+						"NextMessageId": "127050005"
+					},
+					"127050004": {
+						"Id": "127050004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Tengo muchas preguntas. Dijiste que debía terminar de obtener todo antes de que me contactaras.",
+						"NextMessageId": "127050005"
+					},
+					"127050005": {
+						"Id": "127050005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Seguramente notaste que esta prueba beta y este entorno de desarrollo del Hexanexus: Reedición no son algo común y corriente.",
+						"NextMessageId": "127050006"
+					},
+					"127050006": {
+						"Id": "127050006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Promocionar a lo grande el Hexanexus: Reedición en la Prisión de los encadenados es un gran desafío para mí también.",
+						"NextMessageId": "127050007"
+					},
+					"127050007": {
+						"Id": "127050007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¿Quieres saber por qué estoy invirtiendo tanto en promocionar un nuevo título aquí?",
+						"NextMessageId": "choice15"
+					},
+					"127050008": {
+						"Id": "127050008",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Es una alusión al hecho de que tu horrible juego es tan tortuoso como estar en una prisión?",
+						"NextMessageId": "127050011"
+					},
+					"127050009": {
+						"Id": "127050009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Tu equipo de marketing también es incompetente?",
+						"NextMessageId": "127050011"
+					},
+					"127050010": {
+						"Id": "127050010",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Podría ser que la Comisión de los Diez Líderes patrocinaron tu ridículo juego?",
+						"NextMessageId": "127050011"
+					},
+					"127050011": {
+						"Id": "127050011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Me arrestaron por desarrollar juegos.",
+						"NextMessageId": "127050012"
+					},
+					"127050012": {
+						"Id": "127050012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "¡Je!",
+						"NextMessageId": "choice25"
+					},
+					"127050013": {
+						"Id": "127050013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Por desarrollar juegos o por robar?",
+						"NextMessageId": "127050015"
+					},
+					"127050014": {
+						"Id": "127050014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Sabía que te arrestarían tarde o temprano por dejar los Hexanexus por todos lados.",
+						"NextMessageId": "127050015"
+					},
+					"127050015": {
+						"Id": "127050015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "En cuanto a los detalles, hablaremos cuando nos veamos.",
+						"NextMessageId": "127050016"
+					},
+					"127050016": {
+						"Id": "127050016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Estaré en la Prisión de los encadenados. ¿Podrías reunirte conmigo cuando tengas tiempo? No iré a ningún lado.",
+						"NextMessageId": "choice32"
+					},
+					"127050017": {
+						"Id": "127050017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Dime dónde podemos vernos.",
+						"NextMessageId": "127050018"
+					},
+					"127050018": {
+						"Id": "127050018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Te envié la ubicación de la celda.",
+						"NextMessageId": "127050019"
+					},
+					"127050019": {
+						"Id": "127050019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "63",
+						"Text": "Estaré esperando."
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Es superdivertido.",
+								"NextMessageId": "127050002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No tenía nada mejor que hacer.",
+								"NextMessageId": "127050003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Quiero preguntarte algunas cosas.",
+								"NextMessageId": "127050004"
+							}
+						]
+					},
+					"choice15": {
+						"Id": "choice15",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Porque el juego es tan malo como estar en prisión?",
+								"NextMessageId": "127050008"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Tu equipo de marketing...",
+								"NextMessageId": "127050009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Los Diez Líderes lo patrocinaron?",
+								"NextMessageId": "127050010"
+							}
+						]
+					},
+					"choice25": {
+						"Id": "choice25",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Por desarrollar juegos o por robar?",
+								"NextMessageId": "127050013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Sabía que esto pasaría.",
+								"NextMessageId": "127050014"
+							}
+						]
+					},
+					"choice32": {
+						"Id": "choice32",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Bien, ¿dónde nos vemos?",
+								"NextMessageId": "127050017"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"13001": {
 		"Id": "13001",
@@ -45584,7 +46380,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13066": {
 		"Id": "13066",
@@ -45695,12 +46491,12 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1302",
-						"Text": "No te preocupes. ¡La Belleza nos guiará!"
+						"Text": "No os preocupéis. ¡La Belleza nos guiará!"
 					}
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13067": {
 		"Id": "13067",
@@ -45761,7 +46557,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1302",
-						"Text": "Pase lo que pase, sean pacientes.",
+						"Text": "Pase lo que pase, sed pacientes.",
 						"NextMessageId": "130670006"
 					},
 					"130670006": {
@@ -45782,7 +46578,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13068": {
 		"Id": "13068",
@@ -45871,7 +46667,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13069": {
 		"Id": "13069",
@@ -46110,7 +46906,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13070": {
 		"Id": "13070",
@@ -46166,7 +46962,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13071": {
 		"Id": "13071",
@@ -46381,7 +47177,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1302",
-						"Text": "¡No seas grosero, vaquero plateado!",
+						"Text": "¡No seáis grosero, vaquero plateado!",
 						"NextMessageId": "choice43"
 					},
 					"130710024": {
@@ -46421,7 +47217,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "144",
-						"Text": "En fin, la bomba que la Gran Sparkle puso en la nave está escondida en 999 muñecas...",
+						"Text": "En fin, la bomba que la Gran Sparkle puso en la nave está escondida en una de 999 muñecas...",
 						"NextMessageId": "130710029"
 					},
 					"130710029": {
@@ -46594,7 +47390,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13072": {
 		"Id": "13072",
@@ -47216,6 +48012,539 @@
 		],
 		"VersionAdded": "2.1"
 	},
+	"13077": {
+		"Id": "13077",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307700",
+				"StartingMessageId": "130770001",
+				"Messages": {
+					"130770001": {
+						"Id": "130770001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¿Has visto a Siete de Marzo? No vino a entrenar.",
+						"NextMessageId": "choice1"
+					},
+					"130770002": {
+						"Id": "130770002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Le enviaste algún mensaje? No la he visto tampoco.",
+						"NextMessageId": "130770003"
+					},
+					"130770003": {
+						"Id": "130770003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "No contesta mis mensajes.",
+						"NextMessageId": "130770010"
+					},
+					"130770004": {
+						"Id": "130770004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Precisamente iba a buscarla, o sea, que tampoco la he visto últimamente.",
+						"NextMessageId": "130770005"
+					},
+					"130770005": {
+						"Id": "130770005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Oh.",
+						"NextMessageId": "130770010"
+					},
+					"130770006": {
+						"Id": "130770006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Siete de Marzo? Nunca hemos tenido aquí nadie con ese nombre.",
+						"NextMessageId": "130770007"
+					},
+					"130770007": {
+						"Id": "130770007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Ayudándola a saltarse las clases, ¿eh? Deben ser muy buen{F#as}{M#os} amig{F#as}{M#os}. ¿Qué tal si vas a clase tú por ella?",
+						"NextMessageId": "130770023"
+					},
+					"130770008": {
+						"Id": "130770008",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "¡No, gracias! No la he visto.",
+						"NextMessageId": "130770009"
+					},
+					"130770009": {
+						"Id": "130770009",
+						"MessageType": "Sticker",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20005.png",
+						"Text": "[Imagen]",
+						"NextMessageId": "130770010"
+					},
+					"130770010": {
+						"Id": "130770010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¡Hum! Si no puedo encontrar a Siete de Marzo, no me queda más remedio que buscar a su {F#tutora}{M#tutor}.",
+						"NextMessageId": "130770011"
+					},
+					"130770011": {
+						"Id": "130770011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Y es{F#a}{M#e} eres tú.",
+						"NextMessageId": "choice14"
+					},
+					"130770012": {
+						"Id": "130770012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Primero, que quede claro. Yo no soy {F#la tutora}{M#el tutor} de Marzo.",
+						"NextMessageId": "130770013"
+					},
+					"130770013": {
+						"Id": "130770013",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Puedes buscar al Sr. Yang o a Himeko. Si no, puedes buscar a Dan Heng.",
+						"NextMessageId": "130770014"
+					},
+					"130770014": {
+						"Id": "130770014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Son demasiados nombres, no puedo recordarlos.",
+						"NextMessageId": "130770018"
+					},
+					"130770015": {
+						"Id": "130770015",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Si un niño no se esfuerza, buscar a sus padres o tutores tampoco servirá de mucho.",
+						"NextMessageId": "130770016"
+					},
+					"130770016": {
+						"Id": "130770016",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Además, ¿desde cuándo Marzo me ha hecho caso?",
+						"NextMessageId": "130770017"
+					},
+					"130770017": {
+						"Id": "130770017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Es cierto. Mi abuelo habría echado sin miramientos a todos los que hubieran venido a protestar.",
+						"NextMessageId": "130770018"
+					},
+					"130770018": {
+						"Id": "130770018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Ay, pero yo tengo órdenes de enseñarle a manejar la espada.",
+						"NextMessageId": "130770019"
+					},
+					"130770019": {
+						"Id": "130770019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Ella podrá saltarse las clases, pero yo no puedo saltarme mis obligaciones.",
+						"NextMessageId": "130770020"
+					},
+					"130770020": {
+						"Id": "130770020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Tenemos que hablar sobre el comportamiento de esa niña tuya, {NICKNAME}.",
+						"NextMessageId": "130770021"
+					},
+					"130770021": {
+						"Id": "130770021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Hagamos esto. Ven a buscarme al Callejón Aurum.",
+						"NextMessageId": "130770022"
+					},
+					"130770022": {
+						"Id": "130770022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Te espero."
+					},
+					"130770023": {
+						"Id": "130770023",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Image": "SpriteOutput/Emoji/116004.png",
+						"Text": "[Imagen]",
+						"NextMessageId": "130770008"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Por qué no le escribes?",
+								"NextMessageId": "130770002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Justo iba a buscarla...",
+								"NextMessageId": "130770004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Quién es Siete de Marzo?",
+								"NextMessageId": "130770006"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "No soy su tuto{F#ra}{M#r}.",
+								"NextMessageId": "130770012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Buscar a los tutores no sirve.",
+								"NextMessageId": "130770015"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"13078": {
+		"Id": "13078",
+		"ContactId": "147",
+		"ParticpatingContactIds": [
+			"8001",
+			"147"
+		],
+		"Sections": [
+			{
+				"Id": "1307800",
+				"StartingMessageId": "130780001",
+				"Messages": {
+					"130780001": {
+						"Id": "130780001",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Maestro Gongshu, hay algo que tengo que hablar contigo.",
+						"NextMessageId": "choice1"
+					},
+					"130780002": {
+						"Id": "130780002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "El general Huaiyan le regaló al Luofu una espada llamada Guyun.",
+						"NextMessageId": "130780003"
+					},
+					"130780003": {
+						"Id": "130780003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "No te preocupes. El general Huaiyan ya ha dado las instrucciones pertinentes.",
+						"NextMessageId": "130780004"
+					},
+					"130780004": {
+						"Id": "130780004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "Sí, oí a algunos aprendices decir que una muchacha irrumpió espada en mano en la Comisión de Artesanía.",
+						"NextMessageId": "130780005"
+					},
+					"130780005": {
+						"Id": "130780005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "Si no me equivoco, es la nieta del general Huaiyan. Me pregunto qué querrá, hablar conmigo o robarme.",
+						"NextMessageId": "choice6"
+					},
+					"130780006": {
+						"Id": "130780006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Prometió encontrarse conmigo. No hará nada respecto a la espada Guyun sin haber confirmado la situación.",
+						"NextMessageId": "130780007"
+					},
+					"130780007": {
+						"Id": "130780007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "¿Cómo? ¡¿Quiere robar la espada?!",
+						"NextMessageId": "130780008"
+					},
+					"130780008": {
+						"Id": "130780008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "¡No tengo edad para estos sustos!",
+						"NextMessageId": "130780009"
+					},
+					"130780009": {
+						"Id": "130780009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "Ahora mismo un Caballero de la Belleza está escoltándola a la Comisión de Artesanía. Está a buen recaudo en el arsenal y no corre peligro alguno. No te preocupes.",
+						"NextMessageId": "130780010"
+					},
+					"130780010": {
+						"Id": "130780010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "147",
+						"Text": "Cuando tenga tiempo, ¡quiero escuchar de su propia boca por qué intentó robar la espada!"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "(Dar instrucciones al maestro Gongshu).",
+								"NextMessageId": "130780002"
+							}
+						]
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ya se calmó.",
+								"NextMessageId": "130780006"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"13079": {
+		"Id": "13079",
+		"ContactId": "42",
+		"ParticpatingContactIds": [
+			"42",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1307900",
+				"StartingMessageId": "130790001",
+				"Messages": {
+					"130790001": {
+						"Id": "130790001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "{NICKNAME}, ¿estás ahí?",
+						"NextMessageId": "130790002"
+					},
+					"130790002": {
+						"Id": "130790002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "¿Serías tan amable de cooperar con nosotros y pasarte por la Comisión de Artesanía?",
+						"NextMessageId": "choice2"
+					},
+					"130790003": {
+						"Id": "130790003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Qué ocurre?",
+						"NextMessageId": "130790004"
+					},
+					"130790004": {
+						"Id": "130790004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "En pocas palabras, ayer la Comisión de Artesanía recibió una espada de regalo de parte del general Huaiyan. Pero cuando fuimos a verla hoy, había desaparecido.",
+						"NextMessageId": "130790008"
+					},
+					"130790005": {
+						"Id": "130790005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Pasó algo con la espada?",
+						"NextMessageId": "130790006"
+					},
+					"130790006": {
+						"Id": "130790006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Vaya, ni siquiera te había dicho de qué se trataba. ¿Cómo lo supiste?",
+						"NextMessageId": "130790007"
+					},
+					"130790007": {
+						"Id": "130790007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Así es, ayer la Comisión de Artesanía comunicó que había recibido una espada de regalo de parte del general Huaiyan. Pero cuando fuimos a verla hoy, había desaparecido.",
+						"NextMessageId": "130790008"
+					},
+					"130790008": {
+						"Id": "130790008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "En todo caso, la Comisión de Administración del Territorio ha abierto una investigación y está interrogando a todos los implicados.",
+						"NextMessageId": "choice9"
+					},
+					"130790009": {
+						"Id": "130790009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Así que soy sospechos{F#a}{M#o}?",
+						"NextMessageId": "130790010"
+					},
+					"130790010": {
+						"Id": "130790010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "No te pongas así, solo son preguntas rutinarias.",
+						"NextMessageId": "130790011"
+					},
+					"130790011": {
+						"Id": "130790011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Pero ayer asististe a la ceremonia de entrega de la espada en el Palacio Astrum, y algunos artesanos te vieron en la Comisión de Artesanía.",
+						"NextMessageId": "130790014"
+					},
+					"130790012": {
+						"Id": "130790012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Incluso le dije al maestro Gongshu que custodiara bien la espada. ¿Sabe él de esto?",
+						"NextMessageId": "130790013"
+					},
+					"130790013": {
+						"Id": "130790013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Fue él precisamente quien denunció el caso.",
+						"NextMessageId": "130790014"
+					},
+					"130790014": {
+						"Id": "130790014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "De todos modos, cualquiera que haya asistido ayer a la ceremonia y no tenga una coartada sólida será considerado sospechoso.",
+						"NextMessageId": "130790015"
+					},
+					"130790015": {
+						"Id": "130790015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Los artesanos también mencionaron a una chica que irrumpió espada en mano en la Comisión de Artesanía. Ella es la principal sospechosa.",
+						"NextMessageId": "130790016"
+					},
+					"130790016": {
+						"Id": "130790016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "42",
+						"Text": "Bueno, basta de charla. Te espero en la Comisión de Artesanía."
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Pasa algo?",
+								"NextMessageId": "130790003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Le pasó algo a la espada?",
+								"NextMessageId": "130790005"
+							}
+						]
+					},
+					"choice9": {
+						"Id": "choice9",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Sospechas de mí?",
+								"NextMessageId": "130790009"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Les dije que tengan cuidado.",
+								"NextMessageId": "130790012"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
 	"13081": {
 		"Id": "13081",
 		"ContactId": "148",
@@ -47433,7 +48762,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13082": {
 		"Id": "13082",
@@ -47480,7 +48809,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13083": {
 		"Id": "13083",
@@ -47592,7 +48921,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13084": {
 		"Id": "13084",
@@ -47898,7 +49227,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13085": {
 		"Id": "13085",
@@ -48098,7 +49427,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13086": {
 		"Id": "13086",
@@ -48354,7 +49683,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13087": {
 		"Id": "13087",
@@ -48546,7 +49875,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13088": {
 		"Id": "13088",
@@ -48698,7 +50027,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13089": {
 		"Id": "13089",
@@ -48928,7 +50257,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13090": {
 		"Id": "13090",
@@ -49115,7 +50444,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13091": {
 		"Id": "13091",
@@ -49216,7 +50545,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13092": {
 		"Id": "13092",
@@ -49356,7 +50685,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13093": {
 		"Id": "13093",
@@ -49496,7 +50825,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13094": {
 		"Id": "13094",
@@ -49555,7 +50884,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "156",
-						"Text": "Bueno, solo hay 1000 bombas. La Gran Sparkle siempre cumple su palabra.",
+						"Text": "Bueno, solo había 1000 bombas. La Gran Sparkle siempre cumple su palabra.",
 						"NextMessageId": "130940006"
 					},
 					"130940006": {
@@ -50034,7 +51363,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"13096": {
 		"Id": "13096",
@@ -50226,7 +51555,103 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
+	},
+	"13104": {
+		"Id": "13104",
+		"ContactId": "1214",
+		"ParticpatingContactIds": [
+			"1214",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1310400",
+				"StartingMessageId": "131040000",
+				"Messages": {
+					"131040000": {
+						"Id": "131040000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "|ω・´)",
+						"NextMessageId": "131040001"
+					},
+					"131040001": {
+						"Id": "131040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "Escuché que ya encontraron a los tres fugitivos que se escondían en la Prisión de los encadenados. La Comisión de los Diez Líderes confirmó que los dos fugitivos restantes abandonaron este mundo.",
+						"NextMessageId": "131040002"
+					},
+					"131040002": {
+						"Id": "131040002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "(ﾟωﾟ) Le he pedido a Chiyi que prepare una recompensa para ti. Ve a buscarla, ella sabrá qué hacer.",
+						"NextMessageId": "131040003"
+					},
+					"131040003": {
+						"Id": "131040003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "¿Qué tal los emojis?",
+						"NextMessageId": "choice4"
+					},
+					"131040004": {
+						"Id": "131040004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Qué animados. No parecen propios de ti, Xueyi.",
+						"NextMessageId": "131040006"
+					},
+					"131040005": {
+						"Id": "131040005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No sé por qué, pero hay algo raro con ellos.",
+						"NextMessageId": "131040006"
+					},
+					"131040006": {
+						"Id": "131040006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "(`ー´) Me dio un impulso, es solo eso.",
+						"NextMessageId": "131040007"
+					},
+					"131040007": {
+						"Id": "131040007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1214",
+						"Text": "Si tienes tiempo, busca a Chiyi."
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Se ven muy animados.",
+								"NextMessageId": "131040004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Son bastante raros.",
+								"NextMessageId": "131040005"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"20001": {
 		"Id": "20001",
@@ -88703,7 +90128,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20135": {
 		"Id": "20135",
@@ -89093,7 +90518,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20136": {
 		"Id": "20136",
@@ -89451,7 +90876,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20137": {
 		"Id": "20137",
@@ -89820,7 +91245,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20138": {
 		"Id": "20138",
@@ -90056,7 +91481,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20139": {
 		"Id": "20139",
@@ -90338,7 +91763,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20140": {
 		"Id": "20140",
@@ -90674,7 +92099,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20141": {
 		"Id": "20141",
@@ -90889,7 +92314,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20142": {
 		"Id": "20142",
@@ -91174,7 +92599,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20143": {
 		"Id": "20143",
@@ -91586,7 +93011,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20144": {
 		"Id": "20144",
@@ -92022,7 +93447,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20145": {
 		"Id": "20145",
@@ -92121,7 +93546,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1314",
-						"Text": "Si solo consideras su apariencia, su calidad no es la mejor.",
+						"Text": "Sí, si solo consideras su apariencia, su calidad no es la mejor.",
 						"NextMessageId": "201450011"
 					},
 					"201450011": {
@@ -92336,7 +93761,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20146": {
 		"Id": "20146",
@@ -92614,7 +94039,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20147": {
 		"Id": "20147",
@@ -92902,7 +94327,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20148": {
 		"Id": "20148",
@@ -93121,7 +94546,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20149": {
 		"Id": "20149",
@@ -93335,7 +94760,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20150": {
 		"Id": "20150",
@@ -93638,7 +95063,935 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
+	},
+	"20154": {
+		"Id": "20154",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2015400",
+				"StartingMessageId": "201540000",
+				"Messages": {
+					"201540000": {
+						"Id": "201540000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "El abuelo dice que el Expreso Astral ha estado en todas partes.",
+						"NextMessageId": "201540001"
+					},
+					"201540001": {
+						"Id": "201540001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¿Has visto a alguien raro últimamente?",
+						"NextMessageId": "201540002"
+					},
+					"201540002": {
+						"Id": "201540002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Si ves a alguien raro, podría llevar consigo una espada maldita.",
+						"NextMessageId": "choice3"
+					},
+					"201540003": {
+						"Id": "201540003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yo soy rar{F#a}{M#o}. ¿Qué es lo que quieres?",
+						"NextMessageId": "201540004"
+					},
+					"201540004": {
+						"Id": "201540004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¿?",
+						"NextMessageId": "201540005"
+					},
+					"201540005": {
+						"Id": "201540005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Creo que estás perfectamente bien.",
+						"NextMessageId": "201540006"
+					},
+					"201540006": {
+						"Id": "201540006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Soy bastante buena para leer a la gente.",
+						"NextMessageId": "201540015"
+					},
+					"201540007": {
+						"Id": "201540007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No, todo el mundo me parece normal.",
+						"NextMessageId": "201540008"
+					},
+					"201540008": {
+						"Id": "201540008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¿Acaso eres tú {F#la rara}{M#el raro}?",
+						"NextMessageId": "201540009"
+					},
+					"201540009": {
+						"Id": "201540009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Es broma.",
+						"NextMessageId": "201540010"
+					},
+					"201540010": {
+						"Id": "201540010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Sé que no tienes la espada maldita.",
+						"NextMessageId": "201540011"
+					},
+					"201540011": {
+						"Id": "201540011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Soy bastante buena para leer a la gente.",
+						"NextMessageId": "201540015"
+					},
+					"201540012": {
+						"Id": "201540012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿De qué tipo de rareza estás hablando? Conozco muchas personas raras, déjame buscar a una para que puedan hablar.",
+						"NextMessageId": "201540013"
+					},
+					"201540013": {
+						"Id": "201540013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "...",
+						"NextMessageId": "201540014"
+					},
+					"201540014": {
+						"Id": "201540014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Creo que te equivocas.",
+						"NextMessageId": "201540015"
+					},
+					"201540015": {
+						"Id": "201540015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Bien, solo pregunto.",
+						"NextMessageId": "201540016"
+					},
+					"201540016": {
+						"Id": "201540016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Será más rápido preguntar por la ubicación de la espada maldita.",
+						"NextMessageId": "choice21"
+					},
+					"201540017": {
+						"Id": "201540017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Es urgente?",
+						"NextMessageId": "201540018"
+					},
+					"201540018": {
+						"Id": "201540018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Rápido.",
+						"NextMessageId": "201540019"
+					},
+					"201540019": {
+						"Id": "201540019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Es urgente.",
+						"NextMessageId": "201540020"
+					},
+					"201540020": {
+						"Id": "201540020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Hay un total de mil trescientas ochenta y dos espadas malditas forjadas por Hanguang.",
+						"NextMessageId": "201540021"
+					},
+					"201540021": {
+						"Id": "201540021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¡Solo fusioné trescientas!",
+						"NextMessageId": "201540022"
+					},
+					"201540022": {
+						"Id": "201540022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "La espada maldita tiene sed de sangre y le encanta matar. Si la empuñas, te convertirás en una marioneta que solo sabe matar.",
+						"NextMessageId": "201540023"
+					},
+					"201540023": {
+						"Id": "201540023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Si voy un paso más lento, habrá más fantasmas y derramamiento de sangre en este mundo.",
+						"NextMessageId": "201540024"
+					},
+					"201540024": {
+						"Id": "201540024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Le prometí al abuelo esperar un poco, pero creo que ya esperé suficiente.",
+						"NextMessageId": "choice31"
+					},
+					"201540025": {
+						"Id": "201540025",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Dijiste que ya habías esperado suficiente, ¿qué dijo entonces tu abuelo?",
+						"NextMessageId": "201540026"
+					},
+					"201540026": {
+						"Id": "201540026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Nada importante.",
+						"NextMessageId": "201540027"
+					},
+					"201540027": {
+						"Id": "201540027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¡Lo importante es que quiero cazar! ¡Todas! ¡Las espadas malditas!",
+						"NextMessageId": "201540031"
+					},
+					"201540028": {
+						"Id": "201540028",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No te presiones tanto.",
+						"NextMessageId": "201540029"
+					},
+					"201540029": {
+						"Id": "201540029",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Todavía eres joven.",
+						"NextMessageId": "201540030"
+					},
+					"201540030": {
+						"Id": "201540030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Sí, ¿cómo puedo dormir a esta edad?",
+						"NextMessageId": "201540031"
+					},
+					"201540031": {
+						"Id": "201540031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "En fin...",
+						"NextMessageId": "201540032"
+					},
+					"201540032": {
+						"Id": "201540032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Ustedes ya han visto mucho. Si ven alguna, díganmelo.",
+						"NextMessageId": "201540033"
+					},
+					"201540033": {
+						"Id": "201540033",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "No dejaré escapar ni una sola espada maldita."
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Yo soy rar{F#a}{M#o}.",
+								"NextMessageId": "201540003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No he visto a nadie.",
+								"NextMessageId": "201540007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Conozco muchas personas raras.",
+								"NextMessageId": "201540012"
+							}
+						]
+					},
+					"choice21": {
+						"Id": "choice21",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Es urgente?",
+								"NextMessageId": "201540017"
+							}
+						]
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Qué dijo el abuelo?",
+								"NextMessageId": "201540025"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "No te presiones tanto.",
+								"NextMessageId": "201540028"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"20155": {
+		"Id": "20155",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2015500",
+				"StartingMessageId": "201550000",
+				"Messages": {
+					"201550000": {
+						"Id": "201550000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "{NICKNAME}, ¿estás ahí?",
+						"NextMessageId": "201550001"
+					},
+					"201550001": {
+						"Id": "201550001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Me gustaría hablar contigo un rato.",
+						"NextMessageId": "201550002"
+					},
+					"201550002": {
+						"Id": "201550002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Tu espada.",
+						"NextMessageId": "choice3"
+					},
+					"201550003": {
+						"Id": "201550003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Es un bate de béisbol.",
+						"NextMessageId": "201550004"
+					},
+					"201550004": {
+						"Id": "201550004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Tu espada bate.",
+						"NextMessageId": "201550005"
+					},
+					"201550005": {
+						"Id": "201550005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Parece que está diciendo cosas raras.",
+						"NextMessageId": "201550006"
+					},
+					"201550006": {
+						"Id": "201550006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "No es una espada cualquiera, puede hablar.",
+						"NextMessageId": "choice8"
+					},
+					"201550007": {
+						"Id": "201550007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Porque es un bate de béisbol, no una espada.",
+						"NextMessageId": "201550008"
+					},
+					"201550008": {
+						"Id": "201550008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "El abuelo dice que las espadas no tienen forma fija.",
+						"NextMessageId": "201550012"
+					},
+					"201550009": {
+						"Id": "201550009",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿De verdad puedes oír hablar a las espadas?",
+						"NextMessageId": "201550010"
+					},
+					"201550010": {
+						"Id": "201550010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Es un sentimiento natural.",
+						"NextMessageId": "201550011"
+					},
+					"201550011": {
+						"Id": "201550011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "La voz de una espada es más sincera que las voces de los humanos.",
+						"NextMessageId": "201550012"
+					},
+					"201550012": {
+						"Id": "201550012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Pero no puedo ver a través de tu espada.",
+						"NextMessageId": "201550013"
+					},
+					"201550013": {
+						"Id": "201550013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Su energía es aguda y afilada.",
+						"NextMessageId": "201550014"
+					},
+					"201550014": {
+						"Id": "201550014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Pero al mismo tiempo tiene un lado contradictorio.",
+						"NextMessageId": "201550015"
+					},
+					"201550015": {
+						"Id": "201550015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Aunque su contradicción está llena de alegría.",
+						"NextMessageId": "201550016"
+					},
+					"201550016": {
+						"Id": "201550016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Sin embargo, es como si esta alegría tuviera un toque de amargura.",
+						"NextMessageId": "choice23"
+					},
+					"201550017": {
+						"Id": "201550017",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Dime la verdad. ¿Qué le pasa a mi pequeña?",
+						"NextMessageId": "201550018"
+					},
+					"201550018": {
+						"Id": "201550018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Todo está bien.",
+						"NextMessageId": "201550019"
+					},
+					"201550019": {
+						"Id": "201550019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "La has educado bien.",
+						"NextMessageId": "201550020"
+					},
+					"201550020": {
+						"Id": "201550020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Pero...",
+						"NextMessageId": "201550021"
+					},
+					"201550021": {
+						"Id": "201550021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Sus emociones son esquivas.",
+						"NextMessageId": "201550022"
+					},
+					"201550022": {
+						"Id": "201550022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¡Huele mal!",
+						"NextMessageId": "201550023"
+					},
+					"201550023": {
+						"Id": "201550023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¡Huele rico!",
+						"NextMessageId": "201550024"
+					},
+					"201550024": {
+						"Id": "201550024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¡Oh, sí!",
+						"NextMessageId": "201550025"
+					},
+					"201550025": {
+						"Id": "201550025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "¡Genial!",
+						"NextMessageId": "201550026"
+					},
+					"201550026": {
+						"Id": "201550026",
+						"MessageType": "Sticker",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Image": "SpriteOutput/Emoji/20007.png",
+						"Text": "[Confusión]",
+						"NextMessageId": "201550027"
+					},
+					"201550027": {
+						"Id": "201550027",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Todas esas son palabras dichas por tu espada bate.",
+						"NextMessageId": "201550028"
+					},
+					"201550028": {
+						"Id": "201550028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Por eso quiero interactuar más con ella.",
+						"NextMessageId": "201550029"
+					},
+					"201550029": {
+						"Id": "201550029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Cuanto más lo pienso, más urgente me parece.",
+						"NextMessageId": "201550030"
+					},
+					"201550030": {
+						"Id": "201550030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Creo que debería ir a buscarte.",
+						"NextMessageId": "201550031"
+					},
+					"201550031": {
+						"Id": "201550031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Nos vemos."
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Es un bate de béisbol.",
+								"NextMessageId": "201550003"
+							}
+						]
+					},
+					"choice8": {
+						"Id": "choice8",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Porque es un bate de béisbol.",
+								"NextMessageId": "201550007"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿De verdad puedes oír hablar a las espadas?",
+								"NextMessageId": "201550009"
+							}
+						]
+					},
+					"choice23": {
+						"Id": "choice23",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Dime la verdad.",
+								"NextMessageId": "201550017"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"20156": {
+		"Id": "20156",
+		"ContactId": "1221",
+		"ParticpatingContactIds": [
+			"1221",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2015600",
+				"StartingMessageId": "201560000",
+				"Messages": {
+					"201560000": {
+						"Id": "201560000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Tengo chisme, ¿quieres que te cuente?",
+						"NextMessageId": "201560001"
+					},
+					"201560001": {
+						"Id": "201560001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Alguien ha estado usando comida deliciosa para convencer al maestro de que le enseñe artes marciales.",
+						"NextMessageId": "201560002"
+					},
+					"201560002": {
+						"Id": "201560002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Espera.",
+						"NextMessageId": "201560003"
+					},
+					"201560003": {
+						"Id": "201560003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Pasó algo inesperado.",
+						"NextMessageId": "choice4"
+					},
+					"201560004": {
+						"Id": "201560004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ya empezaste.",
+						"NextMessageId": "201560005"
+					},
+					"201560005": {
+						"Id": "201560005",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "¿Cuáles son los chismes del momento?",
+						"NextMessageId": "201560006"
+					},
+					"201560006": {
+						"Id": "201560006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "En este momento, estoy escuchando a dos espadas susurrar.",
+						"NextMessageId": "201560007"
+					},
+					"201560007": {
+						"Id": "201560007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Son bastante ruidosas.",
+						"NextMessageId": "201560008"
+					},
+					"201560008": {
+						"Id": "201560008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Así que no creo que esté espiando.",
+						"NextMessageId": "201560009"
+					},
+					"201560009": {
+						"Id": "201560009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "La espada ancha dice que su maestro es un niño tonto que no puede hacer nada bien.",
+						"NextMessageId": "201560010"
+					},
+					"201560010": {
+						"Id": "201560010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "La daga dice que su maestra es una niña brillante que tiene increíbles habilidades culinarias.",
+						"NextMessageId": "201560011"
+					},
+					"201560011": {
+						"Id": "201560011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Hace poco, la niña y el niño tonto conocieron a un maestro espadachín mientras practicaban al aire libre. Querían aprender de él, pero el maestro se negó.",
+						"NextMessageId": "201560012"
+					},
+					"201560012": {
+						"Id": "201560012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "A menos que le sirvieran comida deliciosa para diez días y todos los platos fueran diferentes.",
+						"NextMessageId": "choice14"
+					},
+					"201560013": {
+						"Id": "201560013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Y? ¿Lo lograron?",
+						"NextMessageId": "201560014"
+					},
+					"201560014": {
+						"Id": "201560014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Digo, ¿aprendieron algo?",
+						"NextMessageId": "201560015"
+					},
+					"201560015": {
+						"Id": "201560015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Estoy escuchando.",
+						"NextMessageId": "201560016"
+					},
+					"201560016": {
+						"Id": "201560016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Dicen que los dos se unieron y le prepararon al maestro pollo del mendigo.",
+						"NextMessageId": "201560017"
+					},
+					"201560017": {
+						"Id": "201560017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Ah, y también hicieron tofu al vapor.",
+						"NextMessageId": "201560018"
+					},
+					"201560018": {
+						"Id": "201560018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Patas de pato salteadas.",
+						"NextMessageId": "201560019"
+					},
+					"201560019": {
+						"Id": "201560019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Sopa de lengua de pollo.",
+						"NextMessageId": "201560020"
+					},
+					"201560020": {
+						"Id": "201560020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Tendón de ternera frito al estilo yin-yang.",
+						"NextMessageId": "201560021"
+					},
+					"201560021": {
+						"Id": "201560021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Empanadillas de jamón de loto.",
+						"NextMessageId": "201560022"
+					},
+					"201560022": {
+						"Id": "201560022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Rollitos de Ruyi.",
+						"NextMessageId": "201560023"
+					},
+					"201560023": {
+						"Id": "201560023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Sopa de cerebro de cerdo.",
+						"NextMessageId": "201560024"
+					},
+					"201560024": {
+						"Id": "201560024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Mi barriga está gruñendo.",
+						"NextMessageId": "201560025"
+					},
+					"201560025": {
+						"Id": "201560025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "Voy a comprar algunos bocadillos y luego seguiré escuchando la historia.",
+						"NextMessageId": "201560026"
+					},
+					"201560026": {
+						"Id": "201560026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "... Escucha los corazones de las espadas.",
+						"NextMessageId": "choice29"
+					},
+					"201560027": {
+						"Id": "201560027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¡A mí también me dio hambre de solo de escuchar! ¡Cómprame unos cuantos!",
+						"NextMessageId": "201560028"
+					},
+					"201560028": {
+						"Id": "201560028",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1221",
+						"Text": "No hay problema"
+					},
+					"choice4": {
+						"Id": "choice4",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ya empezaste.",
+								"NextMessageId": "201560004"
+							}
+						]
+					},
+					"choice14": {
+						"Id": "choice14",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Continúa.",
+								"NextMessageId": "201560013"
+							}
+						]
+					},
+					"choice29": {
+						"Id": "choice29",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¡Cómprame algunos también!",
+								"NextMessageId": "201560027"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "2.4"
 	},
 	"20998": {
 		"Id": "20998",
@@ -93846,7 +96199,7 @@
 				}
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"20999": {
 		"Id": "20999",

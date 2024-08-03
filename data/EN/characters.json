@@ -133,7 +133,7 @@
 			{
 				"Id": "100401",
 				"Name": "Legacy of Honor",
-				"Effect": "After Welt uses his Ultimate, his abilities are enhanced. The next 2 time(s) he uses his Basic ATK or Skill, deals Additional DMG to the target equal to 50% of his Basic ATK's DMG multiplier or 80% of his Skill's DMG multiplier respectively."
+				"Effect": "After using Ultimate, Welt gets enhanced. Then, the next 2 time(s) he uses Basic ATK or Skill, deals 1 extra instance of Additional DMG to the target enemy. The Additional DMG dealt when using Basic ATK is equal to 50% of Basic ATK DMG multiplier. The Additional DMG dealt when using Skill is equal to 80% of Skill DMG multiplier."
 			},
 			{
 				"Id": "100402",
@@ -256,7 +256,7 @@
 			{
 				"Id": "100801",
 				"Name": "To the Bitter End",
-				"Effect": "When HP is lower than or equal to 50% of Max HP, increases Skill's DMG by 10%."
+				"Effect": "When HP is lower than or equal to 50% of Max HP, increases DMG dealt by Skill by 10%."
 			},
 			{
 				"Id": "100802",
@@ -281,7 +281,7 @@
 			{
 				"Id": "100806",
 				"Name": "Self-Sacrifice",
-				"Effect": "When HP drops to 50% or below, Ultimate deals 20% more DMG. The DMG multiplier of DMG taken by the target enemy now applies to adjacent enemies as well."
+				"Effect": "When HP drops to 50% or below, Ultimate deals 20% more DMG. And the DMG multiplier for adjacent targets is raised to the same level as that for the primary target."
 			}
 		],
 		"VersionAdded": "1.0"
@@ -394,7 +394,7 @@
 			{
 				"Id": "110104",
 				"Name": "Take by Surprise",
-				"Effect": "After an ally other than Bronya uses Basic ATK on an enemy with Wind Weakness, Bronya immediately launches a follow-up attack on the target, dealing Wind DMG equal to 80% of Bronya's Basic ATK DMG. This effect can only be triggered 1 time per turn."
+				"Effect": "After any other allied character uses Basic ATK on an enemy target that has Wind Weakness, Bronya immediately launches 1 instance of follow-up attack, dealing Wind DMG to this target by an amount equal to 80% of Basic ATK DMG. This effect can only trigger once per turn."
 			},
 			{
 				"Id": "110105",
@@ -461,7 +461,7 @@
 			{
 				"Id": "110301",
 				"Name": "Echo Chamber",
-				"Effect": "Basic ATK deals Lightning DMG equal to 60% of the Basic ATK's DMG to a random enemy adjacent to the target of the Basic ATK."
+				"Effect": "Basic ATK deals Lightning DMG equal to 60% of Basic ATK DMG to a random target adjacent to the target enemy."
 			},
 			{
 				"Id": "110302",
@@ -527,7 +527,7 @@
 			{
 				"Id": "110406",
 				"Name": "Unyielding Resolve",
-				"Effect": "When his Talent is triggered, Gepard immediately takes action again and restores extra HP equal to 50% of his Max HP."
+				"Effect": "When his Talent is triggered, Gepard immediately takes action and restores extra HP equal to 50% of his Max HP."
 			}
 		],
 		"VersionAdded": "1.0"
@@ -886,7 +886,7 @@
 			{
 				"Id": "120104",
 				"Name": "Right on the Tiles",
-				"Effect": "After this character's Skill is used, there is a 24% fixed chance to gain Self-Sufficer, which lasts until the end of the current turn. \nWith Self-Sufficer, using Basic ATK or Enhanced Basic ATK immediately launches 1 follow-up attack on the same target, dealing Quantum DMG equal to 100% of the previous Basic ATK (or Enhanced Basic ATK)'s DMG."
+				"Effect": "After using Skill, there is a 24% fixed chance to gain Self-Sufficer, lasting until the end of the current turn. \nWith Self-Sufficer, using Basic ATK or Enhanced Basic ATK immediately launches 1 follow-up attack on the same target, dealing Quantum DMG equal to 100% of Basic ATK DMG or Enhanced Basic ATK DMG."
 			},
 			{
 				"Id": "120105",
@@ -953,7 +953,7 @@
 			{
 				"Id": "120301",
 				"Name": "Ablution of the Quick",
-				"Effect": "While the Field is active, ATK of all allies increases by 20%."
+				"Effect": "While the Zone is active, ATK of all allies increases by 20%."
 			},
 			{
 				"Id": "120302",
@@ -968,7 +968,7 @@
 			{
 				"Id": "120304",
 				"Name": "Heavy Lies the Crown",
-				"Effect": "When Luocha's Field is active, enemies become Weakened and deal 12% less DMG."
+				"Effect": "When Luocha's Zone is active, enemies become Weakened and deal 12% less DMG."
 			},
 			{
 				"Id": "120305",
@@ -994,12 +994,12 @@
 			{
 				"Id": "120401",
 				"Name": "Slash, Seas Split",
-				"Effect": "When Lightning-Lord attacks, the DMG multiplier on enemies adjacent to the target enemy increases by an extra amount equal to 25% of the DMG multiplier against the target enemy."
+				"Effect": "When Lightning-Lord attacks, the DMG multiplier on enemies adjacent to the target enemy increases by an extra amount equal to 25% of the DMG multiplier against the primary target enemy."
 			},
 			{
 				"Id": "120402",
 				"Name": "Swing, Skies Squashed",
-				"Effect": "After Lightning-Lord takes action, DMG caused by Jing Yuan's Basic ATK, Skill, and Ultimate increases by 20% for 2 turn(s)."
+				"Effect": "After Lightning-Lord takes action, DMG dealt by Jing Yuan's Basic ATK, Skill, and Ultimate increases by 20%, lasting for 2 turn(s)."
 			},
 			{
 				"Id": "120403",
@@ -1060,7 +1060,7 @@
 			{
 				"Id": "120506",
 				"Name": "Reborn Into an Empty Husk",
-				"Effect": "The maximum number of Charge stacks is reduced to 4. The DMG of the follow-up attack triggered by Blade's Talent additionally increases by 50% of his Max HP."
+				"Effect": "The maximum number of Charge stacks is reduced to 4. The follow-up attack triggered by Talent deals additionally increased DMG, equal to 50% of Blade's Max HP."
 			}
 		],
 		"VersionAdded": "1.2"
@@ -1183,7 +1183,7 @@
 			{
 				"Id": "120806",
 				"Name": "Omnia Vita",
-				"Effect": "Once Matrix of Prescience is activated, it will keep a tally of the total HP lost by all team members in the current battle. Fu Xuan's Ultimate DMG will increase by 200% of this tally of HP loss.\nThis tally is also capped at 120% of Fu Xuan's Max HP and the tally value will reset and re-accumulate after Fu Xuan's Ultimate is used."
+				"Effect": "Once Matrix of Prescience is activated, it will keep a tally of the total HP lost by all team members in the current battle. The DMG dealt by Fu Xuan's Ultimate will increase by 200% of this tally of HP loss.\nThis tally is also capped at 120% of Fu Xuan's Max HP and the tally value will reset and re-accumulate after Fu Xuan's Ultimate is used."
 			}
 		],
 		"VersionAdded": "1.3"
@@ -1516,6 +1516,129 @@
 		],
 		"VersionAdded": "1.5"
 	},
+	"1218": {
+		"Id": "1218",
+		"Name": "Jiaoqiu",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fire",
+		"PathType": "Warlock",
+		"PathTypeText": "Nihility",
+		"Eidolons": [
+			{
+				"Id": "121801",
+				"Name": "Pentapathic Transference",
+				"Effect": "Allies deal 40% increased DMG to enemy targets afflicted with Ashen Roast. Whenever inflicting Ashen Roast on an enemy target via triggering the Talent's effect, additionally increases the number of Ashen Roast applied this time by 1."
+			},
+			{
+				"Id": "121802",
+				"Name": "From Savor Comes Suffer",
+				"Effect": "When an enemy target is afflicted with Ashen Roast, increases the multiplier for the Fire DoT dealt by Ashen Roast to the target by 300%."
+			},
+			{
+				"Id": "121803",
+				"Name": "Flavored Euphony Reigns Supreme",
+				"Effect": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+			},
+			{
+				"Id": "121804",
+				"Name": "Leisure In, Luster Out",
+				"Effect": "When the Zone exists, reduces enemy target's ATK by 15%."
+			},
+			{
+				"Id": "121805",
+				"Name": "Duel in Dawn, Dash in Dusk",
+				"Effect": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+			},
+			{
+				"Id": "121806",
+				"Name": "Nonamorphic Pyrobind",
+				"Effect": "When an enemy target gets defeated, their accumulated \"Ashen Roast\" stacks will transfer to the enemy with the lowest number of \"Ashen Roast\" stacks on the battlefield. The maximum stack limit of Ashen Roast increases to 9, and each \"Ashen Roast\" stack reduces the target's All-Type RES by 3%."
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"1221": {
+		"Id": "1221",
+		"Name": "Yunli",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physical",
+		"PathType": "Warrior",
+		"PathTypeText": "Destruction",
+		"Eidolons": [
+			{
+				"Id": "122101",
+				"Name": "Weathered Blade Does Not Sully",
+				"Effect": "Increases DMG dealt by \"Intuit: Slash\" and \"Intuit: Cull\" by 20%. Increases the number of additional DMG instances for \"Intuit: Cull\" by 3."
+			},
+			{
+				"Id": "122102",
+				"Name": "First Luster Breaks Dawn",
+				"Effect": "When dealing DMG via Counter, ignores 20% of the target's DEF."
+			},
+			{
+				"Id": "122103",
+				"Name": "Mastlength Twirls Mountweight",
+				"Effect": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+			},
+			{
+				"Id": "122104",
+				"Name": "Artisan's Ironsong",
+				"Effect": "After launching \"Intuit: Slash\" or \"Intuit: Cull,\" increases this unit's Effect RES by 50%, lasting for 1 turn(s)."
+			},
+			{
+				"Id": "122105",
+				"Name": "Blade of Old Outlasts All",
+				"Effect": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+			},
+			{
+				"Id": "122106",
+				"Name": "Walk in Blade, Talk in Zither",
+				"Effect": "While Parry is active, if an enemy actively uses their abilities, regardless of whether it attacks Yunli or not, it will trigger \"Intuit: Cull\" and remove the \"Parry\" effect. When dealing DMG via \"Intuit: Slash\" or \"Intuit: Cull,\" increases CRIT Rate by 15% and Physical RES PEN by 20%."
+			}
+		],
+		"VersionAdded": "2.4"
+	},
+	"1224": {
+		"Id": "1224",
+		"Name": "March 7th",
+		"ElementType": "Imaginary",
+		"ElementTypeText": "Imaginary",
+		"PathType": "Rogue",
+		"PathTypeText": "The Hunt",
+		"Eidolons": [
+			{
+				"Id": "122401",
+				"Name": "My Sword Stirs Starlight",
+				"Effect": "When Shifu is on the field, increases March 7th's SPD by 10%."
+			},
+			{
+				"Id": "122402",
+				"Name": "Blade Dances on Waves' Fight",
+				"Effect": "After Shifu uses Basic ATK or Skill to attack an enemy target, March 7th immediately launches a follow-up attack and deals Imaginary DMG equal to 60% of March 7th's ATK to the primary target of this attack. Additionally, triggers the corresponding effect based on Shifu's Path and then gains 1 point(s) of Charge. If there is no primary target available to attack, then attacks a single random enemy instead. This effect can only trigger once per turn."
+			},
+			{
+				"Id": "122403",
+				"Name": "Sharp Wit in Martial Might",
+				"Effect": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+			},
+			{
+				"Id": "122404",
+				"Name": "Being Fabulous Never Frights",
+				"Effect": "At the start of the turn, regenerates 5 Energy."
+			},
+			{
+				"Id": "122405",
+				"Name": "Sword Delights, Sugar Blights",
+				"Effect": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+			},
+			{
+				"Id": "122406",
+				"Name": "Me, the Best Girl in Sight",
+				"Effect": "After using Ultimate, increases the CRIT DMG dealt by the next Enhanced Basic ATK by 50%."
+			}
+		],
+		"VersionAdded": "2.4"
+	},
 	"1301": {
 		"Id": "1301",
 		"Name": "Gallagher",
@@ -1609,7 +1732,7 @@
 			{
 				"Id": "130301",
 				"Name": "Neuronic Embroidery",
-				"Effect": "While the Ultimate's field is deployed, the DMG dealt by all allies ignores 20% of the target's DEF."
+				"Effect": "While the Ultimate's Zone is deployed, the DMG dealt by all allies ignores 20% of the target's DEF."
 			},
 			{
 				"Id": "130302",
@@ -1634,7 +1757,7 @@
 			{
 				"Id": "130306",
 				"Name": "Sash Cascade",
-				"Effect": "Extends the duration of the Ultimate's field by 1 turn(s). The Talent's Break DMG multiplier additionally increases by 200%."
+				"Effect": "Extends the duration of the Ultimate's Zone by 1 turn(s). The Talent's Break DMG multiplier additionally increases by 200%."
 			}
 		],
 		"VersionAdded": "1.6"
@@ -1883,7 +2006,7 @@
 				"Effect": "While the Concerto state is active, the CRIT DMG for the Additional Physical DMG caused by the Ultimate increases by 450%. The effect of Moonless Midnight can trigger up to 8 time(s). And the trigger count resets each time the Ultimate is used."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"1310": {
 		"Id": "1310",
@@ -1924,7 +2047,7 @@
 				"Effect": "While in Complete Combustion, increases SAM's Fire RES PEN by 20%. When using the Enhanced Basic ATK or Enhanced Skill, increases the Weakness Break efficiency by 50%."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"1312": {
 		"Id": "1312",
@@ -2006,7 +2129,7 @@
 				"Effect": "When the Debt Collector character exists on the field, Jade's Quantum RES PEN increases by 20%, and Jade gains the Debt Collector state."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"1315": {
 		"Id": "1315",
@@ -2047,7 +2170,7 @@
 				"Effect": "When triggering the Talent's Break DMG, additionally deals Break DMG to the target equal to 40% of the original DMG multiplier and additionally deals Break DMG to adjacent targets equal to 70% of the original DMG multiplier."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"8001": {
 		"Id": "8001",
@@ -2262,7 +2385,7 @@
 				"Effect": "The number of additional DMG applications by the Skill increases by 2."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	},
 	"8006": {
 		"Id": "8006",
@@ -2305,6 +2428,6 @@
 				"Effect": "The number of additional DMG applications by the Skill increases by 2."
 			}
 		],
-		"VersionAdded": "2.3"
+		"VersionAdded": "2.4"
 	}
 }
