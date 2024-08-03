@@ -2,12 +2,21 @@ const fs = require('fs');
 
 const config = require('../config.json');
 
-global.getExcel = function(file, mapId=undefined) {
-	return require(`${config.StarRailData_folder}/ExcelOutput/${file}.json`).reduce((accum, curr) => {
-		if (mapId === undefined)
-			mapId = Object.keys(curr)[0];
+global.getExcel = function(file) {
+	const data = require(`${config.StarRailData_folder}/ExcelOutput/${file}.json`);
+	const mapId = Object.keys(data[0])[0];
 
-		accum[curr[mapId]] = curr;
+	let subLevel;
+	if (Object.keys(data[0]).includes('Level')) subLevel = 'Level';
+	else if (Object.keys(data[0]).includes('RequireNum')) subLevel = 'RequireNum';
+	else if (Object.keys(data[0]).includes('Lv')) subLevel = 'Lv';
+	return data.reduce((accum, curr) => {
+		if (subLevel) {
+			if (accum[curr[mapId]] === undefined) accum[curr[mapId]] = {};
+			accum[curr[mapId]][curr[subLevel]] = curr;
+		} else {
+			accum[curr[mapId]] = curr;
+		}
 		return accum;
 	}, {});
 }
