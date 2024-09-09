@@ -3838,6 +3838,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "當任意我方目標的攻擊使敵方目標的現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>時，黑塔發動<u>追加攻擊</u>，對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的冰屬性傷害。",
+			"AbridgedEffect": "當任意我方目標的攻擊使敵方目標的現有生命值百分比小於等於<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>時，黑塔立即發動<color=#f29e38ff><u>追加攻擊</u></color>，對敵方全體造成少量冰屬性傷害。",
 			"ElementType": "Ice",
 			"Levels": {
 				"1": {
@@ -3942,6 +3943,7 @@
 			"SkillTypeText": "秘技",
 			"MaxLevel": 1,
 			"EffectRaw": "使用秘技後，下一次戰鬥開始時黑塔攻擊力提高<unbreak>#1[i]%</unbreak>，持續<unbreak>#2[i]</unbreak>回合。",
+			"AbridgedEffect": "使用秘技，下一次戰鬥開始時使自身攻擊力提高。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -17807,7 +17809,696 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1218/SkillIcon_1218_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1220": {
+		"Id": "1220",
+		"Name": "飛霄",
+		"BasicATK": {
+			"Id": "122001",
+			"Name": "閃裂",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "普通攻擊",
+			"MaxLevel": 9,
+			"EffectRaw": "對指定敵方單體造成等同於飛霄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。",
+			"AbridgedEffect": "對敵方單體造成少量風屬性傷害。",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "122008",
+			"Name": "閃裂刃舞",
+			"TriggerKey": "Skill11",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "對所選目標造成等同於飛霄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。若目標處於<u>弱點擊破狀態</u>，傷害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+			"AbridgedEffect": "對敵方單體造成少量風屬性傷害，對<color=#f29e38ff>被擊破</color>的目標傷害倍率提高。",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.36,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.384,
+						0.165
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.408,
+						0.18
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.432,
+						0.195
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.456,
+						0.21
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.48,
+						0.225
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.51,
+						0.2438
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.54,
+						0.2625
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.57,
+						0.2813
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.624,
+						0.315
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.648,
+						0.33
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.672,
+						0.345
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.696,
+						0.36
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.72,
+						0.375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Ultra_on_02.png"
+		},
+		"Skill": {
+			"Id": "122002",
+			"Name": "鉞貫",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "戰技",
+			"MaxLevel": 15,
+			"EffectRaw": "對指定敵方單體造成等同於飛霄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害，隨後立即對該目標額外發動1次天賦的<u>追加攻擊</u>。",
+			"AbridgedEffect": "對敵方單體造成風屬性傷害，隨後額外發動1次天賦的<u>追加攻擊</u>。",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.4
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.75
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.4
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "122009",
+			"Name": "鉞貫天衝",
+			"TriggerKey": "Skill21",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "對所選目標造成等同於飛霄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。若目標未處於<u>弱點擊破狀態</u>，傷害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+			"AbridgedEffect": "對敵方單體造成少量風屬性傷害，對<color=#f29e38ff>未被擊破</color>的目標傷害倍率提高。",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.36,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.384,
+						0.165
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.408,
+						0.18
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.432,
+						0.195
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.456,
+						0.21
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.48,
+						0.225
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.51,
+						0.2438
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.54,
+						0.2625
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.57,
+						0.2813
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.624,
+						0.315
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.648,
+						0.33
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.672,
+						0.345
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.696,
+						0.36
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.72,
+						0.375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Ultra_on_03.png"
+		},
+		"Ultimate": {
+			"Id": "122003",
+			"Name": "鑿破大荒",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "對指定敵方單體造成最多等同於飛霄<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的風屬性傷害，期間可無視弱點屬性削減目標韌性，目標未處於<u>弱點擊破狀態</u>時飛霄的弱點擊破效率提高<unbreak>#2[i]%</unbreak>。\n其中，飛霄先對該目標發動【閃裂刃舞】或【鉞貫天衝】，總計<unbreak>#3[i]</unbreak>次。最後對該目標造成等同於飛霄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。",
+			"AbridgedEffect": "終結技期間可<color=#f29e38ff>無視弱點屬性</color>削減敵方韌性，目標未被擊破時飛霄<color=#f29e38ff>弱點擊破效率提高</color>。\n對敵方單體發動<color=#f29e38ff><unbreak>#3[i]</unbreak></color>次【閃裂刃舞】或【鉞貫天衝】，最後造成風屬性傷害。",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.96,
+						1,
+						6,
+						4.02
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.024,
+						1,
+						6,
+						4.318
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.088,
+						1,
+						6,
+						4.616
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.152,
+						1,
+						6,
+						4.914
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.216,
+						1,
+						6,
+						5.212
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.28,
+						1,
+						6,
+						5.51
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.36,
+						1,
+						6,
+						5.8825
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1,
+						6,
+						6.255
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.52,
+						1,
+						6,
+						6.6275
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.6,
+						1,
+						6,
+						7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.664,
+						1,
+						6,
+						7.298
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.728,
+						1,
+						6,
+						7.596
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.792,
+						1,
+						6,
+						7.894
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.856,
+						1,
+						6,
+						8.192
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.92,
+						1,
+						6,
+						8.49
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Ultra.png"
+		},
+		"Talent": {
+			"Id": "122004",
+			"Name": "雷狩",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "【飛黃】達到<unbreak>#3[i]</unbreak>點時可啟動終結技，最多累積<unbreak>#4[i]</unbreak>點。我方目標每發動<unbreak>#2[i]</unbreak>次攻擊，飛霄便獲得1點【飛黃】，飛霄的終結技攻擊不計入次數。\n當飛霄的隊友對敵方目標發動攻擊後，飛霄立即對主目標發動<u>追加攻擊</u>，造成等同於飛霄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。若沒有可攻擊的主目標，則攻擊敵方隨機單體。該效果每回合最多觸發1次，飛霄回合開始時重置可觸發次數。發動此攻擊時使自身造成的傷害提高<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>，持續<unbreak>#6[i]</unbreak>回合。",
+			"AbridgedEffect": "【飛黃】達到<color=#f29e38ff><unbreak>#3[i]</unbreak></color>點時可啟動終結技，最多累積<color=#f29e38ff><unbreak>#4[i]</unbreak></color>點。我方目標每發動<color=#f29e38ff><unbreak>#2[i]</unbreak></color>次攻擊，飛霄便獲得<color=#f29e38ff>【飛黃】</color>。\n隊友發動攻擊後，飛霄對主目標發動<color=#f29e38ff><u>追加攻擊</u></color>，造成風屬性傷害。該效果每回合最多觸發1次，發動此攻擊時使自身<color=#f29e38ff>造成的傷害提高</color>。",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.55,
+						2,
+						6,
+						12,
+						0.3,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.605,
+						2,
+						6,
+						12,
+						0.33,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.66,
+						2,
+						6,
+						12,
+						0.36,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.715,
+						2,
+						6,
+						12,
+						0.39,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.77,
+						2,
+						6,
+						12,
+						0.42,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.825,
+						2,
+						6,
+						12,
+						0.45,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.8938,
+						2,
+						6,
+						12,
+						0.4875,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.9625,
+						2,
+						6,
+						12,
+						0.525,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.0313,
+						2,
+						6,
+						12,
+						0.5625,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.1,
+						2,
+						6,
+						12,
+						0.6,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.155,
+						2,
+						6,
+						12,
+						0.63,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.21,
+						2,
+						6,
+						12,
+						0.66,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.265,
+						2,
+						6,
+						12,
+						0.69,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.32,
+						2,
+						6,
+						12,
+						0.72,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.375,
+						2,
+						6,
+						12,
+						0.75,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Passive.png"
+		},
+		"Technique": {
+			"Id": "122007",
+			"Name": "嵐身",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "強化",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "使用秘技後進入持續<unbreak>#1[i]</unbreak>秒的【陷鋒】狀態。【陷鋒】狀態下會牽引一定範圍內的敵人，並且自身移動速度提高<unbreak>#2[i]%</unbreak>，進入戰鬥後獲得<unbreak>#4[i]</unbreak>點【飛黃】。\n【陷鋒】狀態下主動攻擊會使所有牽引的敵人進入戰鬥。進入戰鬥後，每個波次開始時對敵方全體造成等同於飛霄<unbreak>#3[i]%</unbreak>攻擊力的風屬性傷害，該傷害必定造成暴擊。若牽引了超過1個敵人，每超過1個敵人，該傷害的倍率便提高<unbreak>#5[i]%</unbreak>，最多提高至<unbreak>#6[i]%</unbreak>。",
+			"AbridgedEffect": "進入【陷鋒】狀態，持續牽引敵人且移動速度提高，進入戰鬥後獲得【飛黃】。\n【陷鋒】狀態下可主動攻擊所有牽引的敵人，每個波次開始時對敵方全體造成風屬性傷害，該傷害必定暴擊。<color=#f29e38ff>牽引敵人越多，傷害倍率越高</color>。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						0.5,
+						2,
+						1,
+						1,
+						10
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Maze.png"
+		},
+		"VersionAdded": "2.5"
 	},
 	"1221": {
 		"Id": "1221",
@@ -18341,7 +19032,987 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1221/SkillIcon_1221_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1222": {
+		"Id": "1222",
+		"Name": "靈砂",
+		"BasicATK": {
+			"Id": "122201",
+			"Name": "肅香",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "普通攻擊",
+			"MaxLevel": 9,
+			"EffectRaw": "對指定敵方單體造成等同於靈砂<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
+			"AbridgedEffect": "對敵方單體造成少量火屬性傷害。",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Normal.png"
+		},
+		"Skill": {
+			"Id": "122202",
+			"Name": "識煙飛彩",
+			"TriggerKey": "Skill02",
+			"TagType": "AoEAttack",
+			"TagTypeText": "群體攻擊",
+			"SkillTypeText": "戰技",
+			"MaxLevel": 15,
+			"EffectRaw": "對敵方全體造成等同於靈砂<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，同時為我方全體回復等同於靈砂<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值，使【浮元】<u>行動提前</u><unbreak>#4[i]%</unbreak>。",
+			"AbridgedEffect": "對敵方全體造成少量火屬性傷害，同時為我方全體<color=#f29e38ff>回復生命值</color>，使【浮元】<u>行動提前</u>。",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.4,
+						0.1,
+						105,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.44,
+						0.105,
+						168,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.48,
+						0.11,
+						215.25,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.52,
+						0.115,
+						262.5,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.56,
+						0.12,
+						294,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.6,
+						0.124,
+						325.5,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.65,
+						0.128,
+						349.125,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.7,
+						0.132,
+						372.75,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.75,
+						0.136,
+						396.375,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.8,
+						0.14,
+						420,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.84,
+						0.144,
+						443.625,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.88,
+						0.148,
+						467.25,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.92,
+						0.152,
+						490.875,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.96,
+						0.156,
+						514.5,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.16,
+						538.125,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_BP.png"
+		},
+		"Ultimate": {
+			"Id": "122203",
+			"Name": "幔亭繚霞",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "群體攻擊",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "使敵方全體陷入【醇醉】狀態，【醇醉】狀態下，使目標受到的<u>擊破傷害</u>提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，持續<unbreak>#5[i]</unbreak>回合。\n對敵方全體造成等同於靈砂<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，同時為我方全體回復等同於靈砂<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值，使【浮元】<u>行動提前</u><unbreak>#6[i]%</unbreak>。",
+			"AbridgedEffect": "使敵方全體<color=#f29e38ff>受到的擊破傷害提高</color>，對敵方全體造成火屬性傷害，同時為我方全體<color=#f29e38ff>回復生命值</color>，使【浮元】<u>行動提前</u>。",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.9,
+						0.08,
+						90,
+						0.15,
+						2,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.96,
+						0.085,
+						144,
+						0.16,
+						2,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.02,
+						0.09,
+						184.5,
+						0.17,
+						2,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.08,
+						0.095,
+						225,
+						0.18,
+						2,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.14,
+						0.1,
+						252,
+						0.19,
+						2,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						0.104,
+						279,
+						0.2,
+						2,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.275,
+						0.108,
+						299.25,
+						0.2125,
+						2,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.35,
+						0.112,
+						319.5,
+						0.225,
+						2,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.425,
+						0.116,
+						339.75,
+						0.2375,
+						2,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5,
+						0.12,
+						360,
+						0.25,
+						2,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.56,
+						0.124,
+						380.25,
+						0.26,
+						2,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.62,
+						0.128,
+						400.5,
+						0.27,
+						2,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.68,
+						0.132,
+						420.75,
+						0.28,
+						2,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.74,
+						0.136,
+						441,
+						0.29,
+						2,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.8,
+						0.14,
+						461.25,
+						0.3,
+						2,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Ultra.png"
+		},
+		"Talent": {
+			"Id": "122204",
+			"Name": "煙斜霧橫，氛氳化生",
+			"TriggerKey": "SkillP01",
+			"TagType": "AoEAttack",
+			"TagTypeText": "群體攻擊",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "施放戰技時召喚【浮元】，初始擁有<unbreak>#1[i]</unbreak>點速度以及<unbreak>#7[i]</unbreak>次行動次數。\n【浮元】行動時發動<u>追加攻擊</u>，對敵方全體造成等同於靈砂<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的火屬性傷害。額外對隨機敵方單體造成等同於靈砂<color=#f29e38ff><unbreak>#8[i]%</unbreak></color>攻擊力的火屬性傷害，本次傷害優先選擇韌性值大於0且有火屬性弱點的目標。解除我方全體的<unbreak>#6[i]</unbreak>個<u>負面效果</u>，並回復等同於靈砂<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\n【浮元】最多累積<unbreak>#5[i]</unbreak>次行動次數，當次數為0或靈砂陷入<u>無法戰鬥狀態</u>時【浮元】消失。\n【浮元】在場時，施放戰技會增加<unbreak>#7[i]</unbreak>次【浮元】的行動次數。",
+			"AbridgedEffect": "施放戰技召喚【浮元】：行動時發動<color=#f29e38ff><u>追加攻擊</u></color>，對敵方全體造成少量火屬性傷害。額外對隨機敵方單體造成少量火屬性傷害，優先選擇韌性值大於0且有火屬性弱點的目標。解除我方全體1個<u>負面效果</u>並<color=#f29e38ff>回復生命值</color>。\n重複施放戰技會增加【浮元】行動次數。",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						90,
+						0.375,
+						0.08,
+						90,
+						5,
+						1,
+						3,
+						0.375
+					]
+				},
+				"2": {
+					"EffectValues": [
+						90,
+						0.4125,
+						0.085,
+						144,
+						5,
+						1,
+						3,
+						0.4125
+					]
+				},
+				"3": {
+					"EffectValues": [
+						90,
+						0.45,
+						0.09,
+						184.5,
+						5,
+						1,
+						3,
+						0.45
+					]
+				},
+				"4": {
+					"EffectValues": [
+						90,
+						0.4875,
+						0.095,
+						225,
+						5,
+						1,
+						3,
+						0.4875
+					]
+				},
+				"5": {
+					"EffectValues": [
+						90,
+						0.525,
+						0.1,
+						252,
+						5,
+						1,
+						3,
+						0.525
+					]
+				},
+				"6": {
+					"EffectValues": [
+						90,
+						0.5625,
+						0.104,
+						279,
+						5,
+						1,
+						3,
+						0.5625
+					]
+				},
+				"7": {
+					"EffectValues": [
+						90,
+						0.6094,
+						0.108,
+						299.25,
+						5,
+						1,
+						3,
+						0.6094
+					]
+				},
+				"8": {
+					"EffectValues": [
+						90,
+						0.6563,
+						0.112,
+						319.5,
+						5,
+						1,
+						3,
+						0.6563
+					]
+				},
+				"9": {
+					"EffectValues": [
+						90,
+						0.7031,
+						0.116,
+						339.75,
+						5,
+						1,
+						3,
+						0.7031
+					]
+				},
+				"10": {
+					"EffectValues": [
+						90,
+						0.75,
+						0.12,
+						360,
+						5,
+						1,
+						3,
+						0.75
+					]
+				},
+				"11": {
+					"EffectValues": [
+						90,
+						0.7875,
+						0.124,
+						380.25,
+						5,
+						1,
+						3,
+						0.7875
+					]
+				},
+				"12": {
+					"EffectValues": [
+						90,
+						0.825,
+						0.128,
+						400.5,
+						5,
+						1,
+						3,
+						0.825
+					]
+				},
+				"13": {
+					"EffectValues": [
+						90,
+						0.8625,
+						0.132,
+						420.75,
+						5,
+						1,
+						3,
+						0.8625
+					]
+				},
+				"14": {
+					"EffectValues": [
+						90,
+						0.9,
+						0.136,
+						441,
+						5,
+						1,
+						3,
+						0.9
+					]
+				},
+				"15": {
+					"EffectValues": [
+						90,
+						0.9375,
+						0.14,
+						461.25,
+						5,
+						1,
+						3,
+						0.9375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Passive.png"
+		},
+		"Technique": {
+			"Id": "122207",
+			"Name": "流翠散雲",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "輔助",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "使用秘技後，下一次戰鬥開始時立即召喚【浮元】，並使敵方全體陷入【醇醉】狀態，持續<unbreak>#1[i]</unbreak>回合。",
+			"AbridgedEffect": "使用秘技，下一次戰鬥開始時立即召喚【浮元】並使敵方全體<color=#f29e38ff>受到的擊破傷害提高</color>。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Maze.png"
+		},
+		"VersionAdded": "2.5"
+	},
+	"1223": {
+		"Id": "1223",
+		"Name": "貊澤",
+		"BasicATK": {
+			"Id": "122301",
+			"Name": "飛鐃",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "普通攻擊",
+			"MaxLevel": 9,
+			"EffectRaw": "對指定敵方單體造成等同於貊澤<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害。",
+			"AbridgedEffect": "對敵方單體造成少量雷屬性傷害。",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Normal.png"
+		},
+		"Skill": {
+			"Id": "122302",
+			"Name": "迅羽掠襲",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "戰技",
+			"MaxLevel": 15,
+			"EffectRaw": "使指定敵方單體目標成為【獵物】，並對其造成等同於貊澤<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，並獲得<unbreak>#2[i]</unbreak>點充能。\n當場上沒有可以戰鬥的其他角色時，貊澤無法使用戰技，並解除敵人的【獵物】狀態。",
+			"AbridgedEffect": "<color=#f29e38ff>使敵方單體成為【獵物】</color>，對其造成雷屬性傷害，並獲得<color=#f29e38ff><unbreak>#2[i]</unbreak></color>點充能。",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75,
+						9
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825,
+						9
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9,
+						9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975,
+						9
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05,
+						9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125,
+						9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188,
+						9
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125,
+						9
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063,
+						9
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5,
+						9
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575,
+						9
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65,
+						9
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725,
+						9
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8,
+						9
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875,
+						9
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_BP.png"
+		},
+		"Ultimate": {
+			"Id": "122303",
+			"Name": "鋒入幽渺，影出凌厲",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "終結技",
+			"MaxLevel": 15,
+			"EffectRaw": "對指定敵方單體造成等同於貊澤<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，並對該目標發動天賦的<u>追加攻擊</u>。若本次<u>追加攻擊</u>發動前目標被消滅則對敵方隨機單體發動<u>追加攻擊</u>。",
+			"AbridgedEffect": "對敵方單體造成雷屬性傷害，並發動天賦的<color=#f29e38ff><u>追加攻擊</u></color>。",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.62
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.728
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.836
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.944
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.052
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.16
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.295
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.43
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.565
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.808
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.916
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.024
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.132
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.24
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Ultra.png"
+		},
+		"Talent": {
+			"Id": "122304",
+			"Name": "伸天卑飛，折翅為芒",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "單體攻擊",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "場上存在【獵物】時，貊澤會進入<u>離場</u>狀態。\n我方目標攻擊【獵物】後，貊澤會額外造成1次等同於自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性<u>附加傷害</u>，並消耗1點充能。每消耗<unbreak>#2[i]</unbreak>點充能，貊澤便會對【獵物】發動1次<u>追加攻擊</u>，造成等同於自身<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻擊力的雷屬性傷害，當充能為0時，解除目標【獵物】狀態，並重置計入發動<u>追加攻擊</u>所需的充能點數。天賦的<u>追加攻擊</u>不會消耗充能。",
+			"AbridgedEffect": "場上存在【獵物】時，貊澤會進入<color=#f29e38ff><u>離場</u></color>狀態。\n我方目標攻擊【獵物】後，貊澤造成雷屬性<color=#f29e38ff><u>附加傷害</u></color>，並消耗1點充能。每消耗<color=#f29e38ff><unbreak>#2[i]</unbreak></color>點充能，貊澤便會對【獵物】發動<color=#f29e38ff><u>追加攻擊</u></color>，造成雷屬性傷害，當充能為0時，解除目標【獵物】狀態。",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						3,
+						0.8
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.165,
+						3,
+						0.88
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						3,
+						0.96
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.195,
+						3,
+						1.04
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.21,
+						3,
+						1.12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.225,
+						3,
+						1.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2438,
+						3,
+						1.3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.2625,
+						3,
+						1.4
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2813,
+						3,
+						1.5
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						3,
+						1.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.315,
+						3,
+						1.68
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.33,
+						3,
+						1.76
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.345,
+						3,
+						1.84
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.36,
+						3,
+						1.92
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.375,
+						3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Passive.png"
+		},
+		"Technique": {
+			"Id": "122307",
+			"Name": "脅翼匿跡",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "強化",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "使用秘技後進入持續<unbreak>#1[i]</unbreak>秒的隱身狀態。隱身狀態下不會被敵人發現，貊澤在隱身狀態下攻擊敵人進入戰鬥時傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
+			"AbridgedEffect": "進入隱身狀態。隱身狀態攻擊敵人進入戰鬥時提高傷害。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						0.3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Maze.png"
+		},
+		"VersionAdded": "2.5"
 	},
 	"1224": {
 		"Id": "1224",
@@ -18880,7 +20551,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1224/SkillIcon_1224_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1301": {
 		"Id": "1301",
@@ -23125,7 +24796,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1309/SkillIcon_1309_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1310": {
 		"Id": "1310",
@@ -23864,7 +25535,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1310/SkillIcon_1310_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1312": {
 		"Id": "1312",
@@ -24823,7 +26494,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1314/SkillIcon_1314_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1315": {
 		"Id": "1315",
@@ -25370,7 +27041,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1315/SkillIcon_1315_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8001": {
 		"Id": "8001",
@@ -25849,6 +27520,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "每次擊破敵方目標的弱點後，攻擊力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，最多疊加<unbreak>#2[i]</unbreak>層。",
+			"AbridgedEffect": "每次擊破敵方目標的弱點後，攻擊力便提高。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -25952,6 +27624,7 @@
 			"SkillTypeText": "秘技",
 			"MaxLevel": 1,
 			"EffectRaw": "使用秘技後立即為我方全體回復等同於各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
+			"AbridgedEffect": "使用秘技後立即為我方全體<color=#f29e38ff>回復生命值</color>。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -26440,6 +28113,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "每次擊破敵方目標的弱點後，攻擊力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，最多疊加<unbreak>#2[i]</unbreak>層。",
+			"AbridgedEffect": "每次擊破敵方目標的弱點後，攻擊力便提高。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -26543,6 +28217,7 @@
 			"SkillTypeText": "秘技",
 			"MaxLevel": 1,
 			"EffectRaw": "使用秘技後立即為我方全體回復等同於各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
+			"AbridgedEffect": "使用秘技後立即為我方全體<color=#f29e38ff>回復生命值</color>。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -26919,6 +28594,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "每受到1次攻擊，便疊加1層【灼熱意志】，最多可疊加<unbreak>#3[i]</unbreak>層。\n【灼熱意志】層數不低於4時，普通攻擊將獲得強化，對指定敵方單體及其相鄰目標同時造成傷害。\n開拓者發動普通攻擊或施放戰技/終結技後，為我方全體提供能夠抵消等同於開拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>傷害的護盾，持續<unbreak>#2[i]</unbreak>回合。",
+			"AbridgedEffect": "被攻擊時疊加【灼熱意志】，【灼熱意志】不低於4層時，普通攻擊獲得<color=#f29e38ff>強化</color>。施放普通攻擊、戰技、終結技後，為我方全體提供護盾。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27052,6 +28728,7 @@
 			"SkillTypeText": "秘技",
 			"MaxLevel": 1,
 			"EffectRaw": "使用秘技後，下一次戰鬥開始時為自身提供強度等同於開拓者<unbreak>#1[i]%</unbreak>防禦力+<unbreak>#2[i]</unbreak>的護盾，持續<unbreak>#3[i]</unbreak>回合。",
+			"AbridgedEffect": "使用秘技後，下一次戰鬥開始時給自身提供護盾。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27430,6 +29107,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "每受到1次攻擊，便疊加1層【灼熱意志】，最多可疊加<unbreak>#3[i]</unbreak>層。\n【灼熱意志】層數不低於4時，普通攻擊將獲得強化，對指定敵方單體及其相鄰目標同時造成傷害。\n開拓者發動普通攻擊或施放戰技/終結技後，為我方全體提供能夠抵消等同於開拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>傷害的護盾，持續<unbreak>#2[i]</unbreak>回合。",
+			"AbridgedEffect": "被攻擊時疊加【灼熱意志】，【灼熱意志】不低於4層時，普通攻擊獲得<color=#f29e38ff>強化</color>。施放普通攻擊、戰技、終結技後，為我方全體提供護盾。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27563,6 +29241,7 @@
 			"SkillTypeText": "秘技",
 			"MaxLevel": 1,
 			"EffectRaw": "使用秘技後，下一次戰鬥開始時為自身提供強度等同於開拓者<unbreak>#1[i]%</unbreak>防禦力+<unbreak>#2[i]</unbreak>的護盾，持續<unbreak>#3[i]</unbreak>回合。",
+			"AbridgedEffect": "使用秘技後，下一次戰鬥開始時給自身提供護盾。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27972,7 +29651,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8005/SkillIcon_8005_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8006": {
 		"Id": "8006",
@@ -28370,6 +30049,6 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8005/SkillIcon_8005_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }

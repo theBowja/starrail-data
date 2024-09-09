@@ -2082,7 +2082,7 @@
 				"Name": "Portée supérieure",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "Lorsque Dan Heng est la cible de la capacité d'un allié, la <u>PÉN de RÉS</u> de vent de sa prochaine attaque augmente de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Cet effet peut se déclencher à nouveau après <unbreak>#2[i]</unbreak> tours.",
+				"EffectRaw": "Lorsque Dan Heng devient la cible de la capacité d'un allié, la <u>PÉN de RÉS</u> de vent de sa prochaine attaque augmente de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Cet effet peut se déclencher à nouveau après <unbreak>#2[i]</unbreak> tours.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100204"
@@ -9247,7 +9247,7 @@
 				"Name": "Douleur et colère",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "Augmente les DGT d'Arlan pour chaque pourcentage de PV en dessous de ses PV max, jusqu'à un maximum de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de DGT supplémentaires.",
+				"EffectRaw": "Obtient un bonus de DGT selon le pourcentage de PV actuels manquants à Arlan, jusqu'à une augmentation maximum de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> des DGT infligés par Arlan.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100804"
@@ -53673,7 +53673,7 @@
 				"Name": "Réprimande ardente",
 				"NodeType": 2,
 				"NodeTypeText": "Technique",
-				"EffectRaw": "Crée une dimension spéciale qui dure <unbreak>#2[i]</unbreak> secondes après avoir utilisé la technique. Inflige des DGT de feu équivalents à <unbreak>#1[i]%</unbreak> de l'ATQ de Jiaoqiu à tous les ennemis, avec <unbreak>#3[i]%</unbreak> de <u>chances de base</u> d'appliquer 1 cumul de Charbons ardents après être entré en combat avec des ennemis dans cette dimension. Il ne peut exister qu'1 dimension créée par les alliés à la fois.",
+				"EffectRaw": "Crée une dimension spéciale qui dure <unbreak>#2[i]</unbreak> secondes après avoir utilisé la technique. Inflige des DGT de feu équivalents à <unbreak>#1[i]%</unbreak> de l'ATQ de Jiaoqiu à tous les ennemis, avec <unbreak>#3[i]%</unbreak> de <u>chances de base</u> d'appliquer 1 cumul de Charbons ardents après être entré en combat avec des ennemis dans cette dimension spéciale. Il ne peut exister qu'1 dimension créée par les alliés à la fois.",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"121807"
@@ -54184,7 +54184,1461 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1220": {
+		"Id": "1220",
+		"Name": "Feixiao",
+		"Nodes": {
+			"1220001": {
+				"Id": "1220001",
+				"Name": "Éclair tonitruant",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ normale",
+				"EffectRaw": "Inflige des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Feixiao à une cible ennemie unique.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"122001"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1220002": {
+				"Id": "1220002",
+				"Name": "Hache de guerre",
+				"NodeType": 2,
+				"NodeTypeText": "Compétence",
+				"EffectRaw": "Inflige des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Feixiao à une cible ennemie, puis lance immédiatement 1 instance de l'<u>attaque de suivi</u> du talent contre la cible.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122002"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1220003": {
+				"Id": "1220003",
+				"Name": "Fracture du monde",
+				"NodeType": 2,
+				"NodeTypeText": "Ultime",
+				"EffectRaw": "Inflige des DGT de vent équivalents à <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> de l'ATQ de Feixiao à une cible ennemie unique, en ignorant ses types de faiblesses pour réduire sa robustesse. Si la cible n'est pas en état de <u>Rupture de faiblesse</u>, l'efficacité de Rupture de faiblesse de Feixiao augmente de <unbreak>#2[i]%</unbreak>.\nDurant l'attaque, Feixiao déclenche d'abord Éclair tonitruant des étoiles ou Hache de guerre céleste <unbreak>#3[i]</unbreak> fois sur la cible.\nPuis elle inflige des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de son ATQ à la cible.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122003",
+					"122008",
+					"122009",
+					"122014"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.96,
+							1,
+							6,
+							4.02
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.024,
+							1,
+							6,
+							4.318
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.088,
+							1,
+							6,
+							4.616
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.152,
+							1,
+							6,
+							4.914
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.216,
+							1,
+							6,
+							5.212
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.28,
+							1,
+							6,
+							5.51
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.36,
+							1,
+							6,
+							5.8825
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.44,
+							1,
+							6,
+							6.255
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.52,
+							1,
+							6,
+							6.6275
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.6,
+							1,
+							6,
+							7
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1220004": {
+				"Id": "1220004",
+				"Name": "Traque-tonnerre",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Feixiao peut activer son ultime à partir de <unbreak>#3[i]</unbreak> points de Chimère volante, le cumul maximum de points étant de <unbreak>#4[i]</unbreak>. Feixiao obtient 1 point de Chimère volante toutes les <unbreak>#2[i]</unbreak> attaques par des cibles alliées, les attaques de l'ultime de Feixiao n'étant pas prises en compte.\nAprès qu'un coéquipier a attaqué une cible ennemie, Feixiao lance immédiatement une <u>attaque de suivi</u> sur la cible principale, infligeant des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Feixiao. S'il n'y a pas de cible principale à attaquer, Feixiao attaque un ennemi unique aléatoire à la place. Cet effet ne peut être déclenché qu'une fois par tour et le nombre de déclenchements se réinitialise au début du tour de Feixiao. Les DGT infligés par Feixiao augmentent de <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> pendant <unbreak>#6[i]</unbreak> tours lorsqu'elle utilise cette attaque.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122004"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.55,
+							2,
+							6,
+							12,
+							0.3,
+							2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.605,
+							2,
+							6,
+							12,
+							0.33,
+							2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.66,
+							2,
+							6,
+							12,
+							0.36,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.715,
+							2,
+							6,
+							12,
+							0.39,
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.77,
+							2,
+							6,
+							12,
+							0.42,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.825,
+							2,
+							6,
+							12,
+							0.45,
+							2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 7
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.8938,
+							2,
+							6,
+							12,
+							0.4875,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.9625,
+							2,
+							6,
+							12,
+							0.525,
+							2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 5
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.0313,
+							2,
+							6,
+							12,
+							0.5625,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.1,
+							2,
+							6,
+							12,
+							0.6,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1220007": {
+				"Id": "1220007",
+				"Name": "Manifestation de tempête",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Après avoir utilisé la technique, le personnage entre dans l'état Charge intrépide pendant <unbreak>#1[i]</unbreak> secondes. Dans cet état, le personnage attire les ennemis à une certaine distance et sa vitesse de déplacement augmente de <unbreak>#2[i]%</unbreak>. Obtient <unbreak>#4[i]</unbreak> point de Chimère volante après être entré en combat.\nAttaquer de manière active en état de Charge intrépide engage le combat avec tous les ennemis attirés. Inflige des DGT de vent équivalents à <unbreak>#3[i]%</unbreak> de l'ATQ de Feixiao à tous les ennemis au début de chaque vague après être entré en combat. Ces DGT sont garantis d'être des DGT critiques. S'il y a plus d'1 ennemi attiré, le multiplicateur de ces DGT augmente de <unbreak>#5[i]%</unbreak> pour chaque ennemi supplémentaire attiré, jusqu'à un maximum de <unbreak>#6[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"122007"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							0.5,
+							2,
+							1,
+							1,
+							10
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1220101": {
+				"Id": "1220101",
+				"Name": "Connexion céleste",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Obtient <unbreak>#1[i]</unbreak> points de Chimère volante en début de combat.\nSi l'attaque de suivi du talent n'a pas été déclenchée lors du tour précédent, cela ajoute une attaque supplémentaire au nombre d'attaques comptabilisées pour obtenir 1 point de Chimère volante au début du tour.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 3
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1220102": {
+				"Id": "1220102",
+				"Name": "Transcendance spirituelle",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Les ultimes utilisés pour infliger des DGT à une cible ennemie sont considérés comme des attaques de suivi. Augmente les DGT critiques des attaques de suivi de <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.36
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1220103": {
+				"Id": "1220103",
+				"Name": "Fulgurance de la foudre",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Lors de l'utilisation de la compétence, l'ATQ augmente de <unbreak>#1[i]%</unbreak> pendant <unbreak>#2[i]</unbreak> tours.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.48,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110503",
+								"Name": "Regret de l'ochéma infini",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1220201": {
+				"Id": "1220201",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1220202": {
+				"Id": "1220202",
+				"Name": "Augmentation des chances de coup critique",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1220101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 3
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1220203": {
+				"Id": "1220203",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1220202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1220204": {
+				"Id": "1220204",
+				"Name": "Augmentation de DÉF",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "La DÉF augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 3
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1220205": {
+				"Id": "1220205",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1220102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 5
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1220206": {
+				"Id": "1220206",
+				"Name": "Augmentation des chances de coup critique",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1220205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1220207": {
+				"Id": "1220207",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 3
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1220208": {
+				"Id": "1220208",
+				"Name": "Augmentation de DÉF",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "La DÉF augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1220103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1220209": {
+				"Id": "1220209",
+				"Name": "Augmentation des chances de coup critique",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1220208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1220210": {
+				"Id": "1220210",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1220208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 8
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.5"
 	},
 	"1221": {
 		"Id": "1221",
@@ -55187,7 +56641,7 @@
 				"Name": "Roue enflammée",
 				"NodeType": 3,
 				"NodeTypeText": "Capacité bonus",
-				"EffectRaw": "Après chaque utilisation de « Sens de l'entaille », la prochaine utilisation de « Sens de l'entaille  » est remplacée par « Sens de l'éradication ».",
+				"EffectRaw": "Après chaque utilisation de Sens de l'entaille, la prochaine utilisation de Sens de l'entaille est remplacée par Sens de l'éradication.",
 				"MaxLevel": 1,
 				"Location": "Point06",
 				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1221/SkillIcon_1221_SkillTree1.png",
@@ -55670,7 +57124,2911 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1222": {
+		"Id": "1222",
+		"Name": "Lingsha",
+		"Nodes": {
+			"1222001": {
+				"Id": "1222001",
+				"Name": "Encens sacré",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ normale",
+				"EffectRaw": "Inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Lingsha à une cible ennemie unique.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"122201"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110241",
+								"Name": "Graine de l'arbre extraterrestre",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1222002": {
+				"Id": "1222002",
+				"Name": "Vapeurs incandescentes",
+				"NodeType": 2,
+				"NodeTypeText": "Compétence",
+				"EffectRaw": "Inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Lingsha à tous les ennemis, tout en restaurant un montant de PV équivalent à <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'ATQ de Lingsha + <color=#f29e38ff><unbreak>#3[i]</unbreak></color> à tous les alliés. D'autre part, <u>avance l'action</u> de Fuyuan de <unbreak>#4[i]%</unbreak>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122202"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.4,
+							0.1,
+							105,
+							0.2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.44,
+							0.105,
+							168,
+							0.2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.48,
+							0.11,
+							215.25,
+							0.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110241",
+								"Name": "Graine de l'arbre extraterrestre",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.52,
+							0.115,
+							262.5,
+							0.2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.56,
+							0.12,
+							294,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.6,
+							0.124,
+							325.5,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.65,
+							0.128,
+							349.125,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7,
+							0.132,
+							372.75,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 5
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.75,
+							0.136,
+							396.375,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.8,
+							0.14,
+							420,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1222003": {
+				"Id": "1222003",
+				"Name": "Voile des brumes évanescentes",
+				"NodeType": 2,
+				"NodeTypeText": "Ultime",
+				"EffectRaw": "Applique Embrumé à tous les ennemis. Les cibles affectées par Embrumé subissent <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> de <u>DGT de rupture</u> supplémentaires pendant <unbreak>#5[i]</unbreak> tours.\nInflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Lingsha à tous les ennemis tout en restaurant un montant de PV équivalent à <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'ATQ de Lingsha + <color=#f29e38ff><unbreak>#3[i]</unbreak></color> à tous les alliés.  D'autre part, <u>avance l'action</u> de Fuyuan de <unbreak>#6[i]%</unbreak>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122203"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.9,
+							0.08,
+							90,
+							0.15,
+							2,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.96,
+							0.085,
+							144,
+							0.16,
+							2,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.02,
+							0.09,
+							184.5,
+							0.17,
+							2,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110241",
+								"Name": "Graine de l'arbre extraterrestre",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.08,
+							0.095,
+							225,
+							0.18,
+							2,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.14,
+							0.1,
+							252,
+							0.19,
+							2,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.2,
+							0.104,
+							279,
+							0.2,
+							2,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.275,
+							0.108,
+							299.25,
+							0.2125,
+							2,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.35,
+							0.112,
+							319.5,
+							0.225,
+							2,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 5
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.425,
+							0.116,
+							339.75,
+							0.2375,
+							2,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							0.12,
+							360,
+							0.25,
+							2,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1222004": {
+				"Id": "1222004",
+				"Name": "Danse nébuleuse",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Lors de l'utilisation de la compétence, invoque Fuyuan, dont la VIT de départ est de <unbreak>#1[i]</unbreak> et le nombre d'actions initial est de <unbreak>#7[i]</unbreak>.\nLors de son action, Fuyuan lance une <u>attaque de suivi</u> qui inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de Lingsha à tous les ennemis. D'autre part, inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#8[i]%</unbreak></color> de l'ATQ de Lingsha à un ennemi unique aléatoire, cette instance de DGT priorisant les cibles dont la robustesse est supérieure à 0 et qui ont une Faiblesse au feu. Dissipe <unbreak>#6[i]</unbreak> <u>malus</u> sur les alliés et restaure un montant de PV équivalent à <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> de l'ATQ de Lingsha + <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nFuyuan peut cumuler jusqu'à <unbreak>#5[i]</unbreak> actions. Fuyuan disparaît lorsque son nombre d'actions tombe à 0 ou que Lingsha est <u>à terre</u>.\nLorsque Fuyuan est sur le champ de bataille, utiliser la compétence augmente le nombre d'actions de Fuyuan de <unbreak>#7[i]</unbreak>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122204"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							90,
+							0.375,
+							0.08,
+							90,
+							5,
+							1,
+							3,
+							0.375
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							90,
+							0.4125,
+							0.085,
+							144,
+							5,
+							1,
+							3,
+							0.4125
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							90,
+							0.45,
+							0.09,
+							184.5,
+							5,
+							1,
+							3,
+							0.45
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110241",
+								"Name": "Graine de l'arbre extraterrestre",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							90,
+							0.4875,
+							0.095,
+							225,
+							5,
+							1,
+							3,
+							0.4875
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							90,
+							0.525,
+							0.1,
+							252,
+							5,
+							1,
+							3,
+							0.525
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							90,
+							0.5625,
+							0.104,
+							279,
+							5,
+							1,
+							3,
+							0.5625
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 7
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							90,
+							0.6094,
+							0.108,
+							299.25,
+							5,
+							1,
+							3,
+							0.6094
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							90,
+							0.6563,
+							0.112,
+							319.5,
+							5,
+							1,
+							3,
+							0.6563
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 5
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							90,
+							0.7031,
+							0.116,
+							339.75,
+							5,
+							1,
+							3,
+							0.7031
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							90,
+							0.75,
+							0.12,
+							360,
+							5,
+							1,
+							3,
+							0.75
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1222007": {
+				"Id": "1222007",
+				"Name": "Effluves de l'aurore",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Invoque immédiatement Fuyuan au début du prochain combat après avoir utilisé la technique, et inflige Embrumé à tous les ennemis pendant <unbreak>#1[i]</unbreak> tours.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"122207"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1222101": {
+				"Id": "1222101",
+				"Name": "Fumée écarlate",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Augmente l'ATQ et les soins prodigués par le personnage à hauteur de <unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak> de son effet de Rupture, jusqu'à un maximum de <unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak> d'ATQ/de soins prodigués respectivement.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25,
+							0.1,
+							0.5,
+							0.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110241",
+								"Name": "Graine de l'arbre extraterrestre",
+								"Count": 3
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1222102": {
+				"Id": "1222102",
+				"Name": "Brume d'orchidée",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Régénère <unbreak>#1[i]</unbreak> points d'énergie supplémentaires lors de l'utilisation de l'ATQ normale.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1222103": {
+				"Id": "1222103",
+				"Name": "Écho des cendres",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Lorsque Fuyuan est sur le champ de bataille et qu'un personnage allié subit des DGT ou consomme des PV, si un personnage de l'équipe a un pourcentage de PV inférieur ou égal à <unbreak>#1[i]%</unbreak>, Fuyuan lance immédiatement l'attaque de suivi du talent. Cela ne consomme pas le nombre d'actions de Fuyuan. Cet effet peut se déclencher à nouveau après <unbreak>#2[i]</unbreak> tours.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1222201": {
+				"Id": "1222201",
+				"Name": "Renforcement de Rupture",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'effet de Rupture augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1222202": {
+				"Id": "1222202",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1222101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110241",
+								"Name": "Graine de l'arbre extraterrestre",
+								"Count": 3
+							},
+							{
+								"Id": "113001",
+								"Name": "Jeune pousse immortelle",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1222203": {
+				"Id": "1222203",
+				"Name": "Renforcement de Rupture",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'effet de Rupture augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1222202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1222204": {
+				"Id": "1222204",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1222203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 3
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1222205": {
+				"Id": "1222205",
+				"Name": "Renforcement de Rupture",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'effet de Rupture augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1222102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110242",
+								"Name": "Suc nourricier",
+								"Count": 5
+							},
+							{
+								"Id": "113002",
+								"Name": "Aérofleur immortelle",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1222206": {
+				"Id": "1222206",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1222205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1222207": {
+				"Id": "1222207",
+				"Name": "Renforcement de Rupture",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'effet de Rupture augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1222206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 3
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1222208": {
+				"Id": "1222208",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1222103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1222209": {
+				"Id": "1222209",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1222103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1222210": {
+				"Id": "1222210",
+				"Name": "Renforcement de Rupture",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'effet de Rupture augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "BreakDamageAddedRatioBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconBreakUp.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110243",
+								"Name": "Myria-Fruit",
+								"Count": 8
+							},
+							{
+								"Id": "113003",
+								"Name": "Branche-lumière immortelle",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.5"
+	},
+	"1223": {
+		"Id": "1223",
+		"Name": "Moze",
+		"Nodes": {
+			"1223001": {
+				"Id": "1223001",
+				"Name": "Dague volante",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ normale",
+				"EffectRaw": "Inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Moze à une cible ennemie unique.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"122301"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 36000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1223002": {
+				"Id": "1223002",
+				"Name": "Frappe de l'aigle",
+				"NodeType": 2,
+				"NodeTypeText": "Compétence",
+				"EffectRaw": "Désigne une cible ennemie unique comme Proie et lui inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Moze. D'autre part, gagne <unbreak>#2[i]</unbreak> points de charge.\nLorsqu'il n'y a aucun autre personnage sur le champ de bataille en état de combattre, Moze ne peut pas utiliser sa compétence et dissipe l'état Proie de l'ennemi.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122302"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.75,
+							9
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.825,
+							9
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.9,
+							9
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.975,
+							9
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.05,
+							9
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.125,
+							9
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.2188,
+							9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 36000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.3125,
+							9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 64000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 4
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.4063,
+							9
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.5,
+							9
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 240000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1223003": {
+				"Id": "1223003",
+				"Name": "Perforation des ténèbres",
+				"NodeType": 2,
+				"NodeTypeText": "Ultime",
+				"EffectRaw": "Inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Moze à une cible ennemie unique et déclenche l'<u>attaque de suivi</u> de son talent sur cette cible. Si la cible est vaincue avant que l'<u>attaque de suivi</u> ne soit utilisée, lance l'<u>attaque de suivi</u> sur un ennemi unique aléatoire à la place.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122303"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.62
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.728
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.836
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.944
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2.052
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2.16
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.295
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 36000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.43
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 64000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 4
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.565
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.7
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 240000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1223004": {
+				"Id": "1223004",
+				"Name": "Assaut des plumes",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Moze entre dans l'état <u>Retrait</u> lorsqu'il y a une Proie sur le champ de bataille.\nLorsque les alliés attaquent la Proie, Moze inflige également 1 instance de <u>DGT de foudre additionnels</u> équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de son ATQ et il consomme 1 point de charge. Moze lance 1 <u>attaque de suivi</u> sur la Proie tous les <unbreak>#2[i]</unbreak> points de charge consommés, ce qui inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> de son ATQ. L'état Proie de la cible est dissipé lorsque la charge tombe à 0 et le nombre de points de charge nécessaires pour lancer l'<u>attaque de suivi</u> est réinitialisé. L'<u>attaque de suivi</u> du talent ne consomme pas de point de charge.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"122304"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.15,
+							3,
+							0.8
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.165,
+							3,
+							0.88
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.18,
+							3,
+							0.96
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.195,
+							3,
+							1.04
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.21,
+							3,
+							1.12
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.225,
+							3,
+							1.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 6
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.2438,
+							3,
+							1.3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 36000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.2625,
+							3,
+							1.4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 64000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 4
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 3
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.2813,
+							3,
+							1.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.3,
+							3,
+							1.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 240000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 11
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1223007": {
+				"Id": "1223007",
+				"Name": "Vol obscur",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Après avoir utilisé sa technique, Moze entre en état de Furtivité pendant <unbreak>#1[i]</unbreak> secondes. Lorsque Moze est en état de Furtivité, il ne peut pas être détecté par les ennemis. Si Moze engage le combat en attaquant des ennemis en état de Furtivité, ses DGT augmentent de <unbreak>#2[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"122307"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							0.3,
+							2
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1223101": {
+				"Id": "1223101",
+				"Name": "Plume nocturne",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Récupère <unbreak>#1[i]</unbreak> point de compétence après avoir utilisé l'attaque de suivi du talent. Cet effet peut se déclencher à nouveau après <unbreak>#2[i]</unbreak> tour.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 2
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1223102": {
+				"Id": "1223102",
+				"Name": "Pointe de dague",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Lorsque Moze dissipe son état Retrait, son action est avancée de <unbreak>#1[i]%</unbreak>. Au début de chaque vague, son action est avancée de <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.2,
+							0.3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1223103": {
+				"Id": "1223103",
+				"Name": "Vengeance",
+				"NodeType": 3,
+				"NodeTypeText": "Capacité bonus",
+				"EffectRaw": "Lorsque Moze inflige des DGT avec son ultime, cela est considéré comme le déclenchement d'une attaque de suivi. Les DGT des attaques de suivi subis par les ennemis marqués en tant que Proie augmentent de <unbreak>#1[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Plume de bon augure",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1223201": {
+				"Id": "1223201",
+				"Name": "Augmentation des DGT critiques",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1223202": {
+				"Id": "1223202",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1223101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110191",
+								"Name": "Balle météore",
+								"Count": 2
+							},
+							{
+								"Id": "113011",
+								"Name": "Module artisanal",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1223203": {
+				"Id": "1223203",
+				"Name": "Augmentation des DGT critiques",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1223202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1223204": {
+				"Id": "1223204",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 2
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1223205": {
+				"Id": "1223205",
+				"Name": "Augmentation des DGT critiques",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1223102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110192",
+								"Name": "Extinction destinée",
+								"Count": 4
+							},
+							{
+								"Id": "113012",
+								"Name": "Roue dentée artisanale",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1223206": {
+				"Id": "1223206",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1223205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 36000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1223207": {
+				"Id": "1223207",
+				"Name": "Augmentation des DGT critiques",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 36000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 2
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1223208": {
+				"Id": "1223208",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1223103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1223209": {
+				"Id": "1223209",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1223208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1223210": {
+				"Id": "1223210",
+				"Name": "Augmentation des DGT critiques",
+				"NodeType": 1,
+				"NodeTypeText": "Bonus de stat",
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							null
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1223208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 128000
+							},
+							{
+								"Id": "110193",
+								"Name": "Tir contre-temporel",
+								"Count": 6
+							},
+							{
+								"Id": "113013",
+								"Name": "Gyrocœur artisanal",
+								"Count": 6
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "2.5"
 	},
 	"1224": {
 		"Id": "1224",
@@ -55681,7 +60039,7 @@
 				"Name": "Lame tueuse de démons",
 				"NodeType": 2,
 				"NodeTypeText": "ATQ normale",
-				"EffectRaw": "Inflige des DGT imaginaires équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de March 7th à un ennemi unique et obtient <unbreak>#2[i]</unbreak> point de charge.",
+				"EffectRaw": "Inflige des DGT imaginaires équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de March 7th à une cible ennemie unique et obtient <unbreak>#2[i]</unbreak> point de charge.",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
 					"122401",
@@ -55824,7 +60182,7 @@
 				"Name": "Maître, c'est l'heure du thé !",
 				"NodeType": 2,
 				"NodeTypeText": "Compétence",
-				"EffectRaw": "Désigne un allié unique (à l'exception de ce personnage) comme Maître et augmente sa VIT de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Seule la dernière cible de la compétence de March 7th est considérée comme son « Maître ».\n\nChaque fois que March 7th utilise son ATQ normale ou qu'elle inflige des DGT avec 1 frappe de son ATQ normale renforcée, elle déclenche l'effet correspondant en fonction de la Voie du Maître :\n\nÉrudition, Destruction, Chasse : Inflige des <u>DGT additionnels</u> (dont le type correspond au type de combat du Maître) équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de March 7th.\nHarmonie, Nihilité, Préservation, Abondance : Augmente la réduction de robustesse de cette instance de DGT de <unbreak>#3[i]%</unbreak>.",
+				"EffectRaw": "Désigne un allié unique (à l'exception de ce personnage) comme Maître et augmente sa VIT de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Seule la dernière cible de la compétence de March 7th est considérée comme son « Maître ».\n\n\nChaque fois que March 7th utilise son ATQ normale ou qu'elle inflige des DGT avec 1 frappe de son ATQ normale renforcée, elle déclenche l'effet correspondant en fonction de la Voie du Maître présent sur le champ de bataille :\n\nÉrudition, Destruction, Chasse : Inflige des <u>DGT additionnels</u> (du type du Maître) équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de March 7th.\n\nHarmonie, Nihilité, Préservation, Abondance : Augmente la réduction de robustesse de cette instance de DGT de <unbreak>#3[i]%</unbreak>.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"122402"
@@ -56330,7 +60688,7 @@
 				"Name": "J'ai compris, Maître !",
 				"NodeType": 2,
 				"NodeTypeText": "Talent",
-				"EffectRaw": "March 7th gagne 1 point de charge à chaque fois que le Maître utilise une attaque ou un ultime.\nÀ <unbreak>#1[i]</unbreak> points de charge ou plus, March 7th agit immédiatement et augmente ses DGT de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Son ATQ normale est renforcée et elle ne peut plus utiliser sa compétence. L'utilisation de l'ATQ normale renforcée consomme <unbreak>#1[i]</unbreak> points de charge. Les points de charge sont limités à un maximum de <unbreak>#3[i]</unbreak>.",
+				"EffectRaw": "March 7th gagne 1 point de charge à chaque fois que le Maître utilise une attaque ou un ultime.\nÀ <unbreak>#1[i]</unbreak> points de charge ou plus, March 7th agit immédiatement et augmente ses DGT de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Son ATQ normale est renforcée et elle ne peut plus utiliser sa compétence. L'utilisation de l'ATQ normale renforcée consomme <unbreak>#1[i]</unbreak> points de charge. Les points de charge sont limités à un maximum de <unbreak>#3[i]</unbreak>.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"122404"
@@ -56640,7 +60998,7 @@
 				"Name": "Frappe minutieuse",
 				"NodeType": 3,
 				"NodeTypeText": "Capacité bonus",
-				"EffectRaw": "March 7th peut réduire la robustesse des ennemis qui ont une Faiblesse du même type que son Maître. Lorsqu'elle inflige une Rupture de faiblesse, elle déclenche également l'effet de Rupture de faiblesse imaginaire.",
+				"EffectRaw": "March 7th peut réduire la robustesse des ennemis qui ont une Faiblesse du même type que son Maître. Lorsqu'elle inflige une Rupture de faiblesse, elle déclenche l'effet de Rupture de faiblesse imaginaire.",
 				"MaxLevel": 1,
 				"Location": "Point07",
 				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1224/SkillIcon_1224_SkillTree2.png",
@@ -57088,7 +61446,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1301": {
 		"Id": "1301",
@@ -63669,7 +68027,7 @@
 				"Name": "Fascination façonnée",
 				"NodeType": 2,
 				"NodeTypeText": "Technique",
-				"EffectRaw": "Crée une dimension spéciale qui provoque les ennemis proches pendant <unbreak>#1[i]</unbreak> secondes après avoir utilisé la technique. Il y a <unbreak>#2[i]%</unbreak> de <u>chances de base</u> de réduire la VIT des ennemis de <unbreak>#3[i]%</unbreak> pendant <unbreak>#4[i]</unbreak> tours en engageant le combat avec des ennemis dans la dimension. Il ne peut exister qu'1 dimension créée par les alliés à la fois.",
+				"EffectRaw": "Crée une dimension spéciale qui provoque les ennemis proches pendant <unbreak>#1[i]</unbreak> secondes après avoir utilisé la technique. Il y a <unbreak>#2[i]%</unbreak> de <u>chances de base</u> de réduire la VIT des ennemis de <unbreak>#3[i]%</unbreak> pendant <unbreak>#4[i]</unbreak> tours en engageant le combat avec des ennemis dans la dimension spéciale. Il ne peut exister qu'1 dimension créée par les alliés à la fois.",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"130507"
@@ -70069,7 +74427,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1310": {
 		"Id": "1310",
@@ -71535,7 +75893,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1312": {
 		"Id": "1312",
@@ -72451,7 +76809,7 @@
 				"Name": "Pas si vite !",
 				"NodeType": 2,
 				"NodeTypeText": "Technique",
-				"EffectRaw": "Crée une dimension spéciale qui dure <unbreak>#1[i]</unbreak> secondes après avoir utilisé la technique. Les ennemis pris dans la dimension sont affectés par Prison onirique et arrêtent toutes leurs actions. Le nombre de frappes par action du prochain ultime de Micha augmente de <unbreak>#2[i]</unbreak> lorsqu'il entre en combat contre des ennemis affectés par Prison onirique. Il ne peut exister qu'1 dimension créée par les alliés à la fois.",
+				"EffectRaw": "Crée une dimension spéciale qui dure <unbreak>#1[i]</unbreak> secondes après avoir utilisé la technique. Les ennemis pris dans la dimension spéciale sont affectés par Prison onirique et arrêtent toutes leurs actions. Le nombre de frappes par action du prochain ultime de Micha augmente de <unbreak>#2[i]</unbreak> lorsqu'il entre en combat contre des ennemis affectés par Prison onirique. Il ne peut exister qu'1 dimension créée par les alliés à la fois.",
 				"MaxLevel": 1,
 				"LeveledSkillIds": [
 					"131207"
@@ -74423,7 +78781,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1315": {
 		"Id": "1315",
@@ -75882,7 +80240,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8001": {
 		"Id": "8001",
@@ -82873,7 +87231,7 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8006": {
 		"Id": "8006",
@@ -84260,6 +88618,6 @@
 				}
 			}
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }

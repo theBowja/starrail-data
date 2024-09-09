@@ -3063,7 +3063,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"21045": {
 		"Id": "21045",
@@ -3114,7 +3114,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"21046": {
 		"Id": "21046",
@@ -3122,45 +3122,96 @@
 		"PathType": "Shaman",
 		"PathTypeText": "Die Harmonie",
 		"EffectName": "Verliere nicht, vergiss nicht",
-		"EffectTemplate": "Erhöht den ANG des Trägers um <color=#f29e38ff>#1[i]%</color>. Wenn nach Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>#2[i]%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
+		"EffectTemplate": "Erhöht den ANG des Trägers um <color=#f29e38ff>#1[i]%</color>. Wenn beim Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>#2[i]%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
 		"Superimpositions": [
 			{
-				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>16%</color>. Wenn nach Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>16%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>16%</color>. Wenn beim Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>16%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
 				"Params": [
 					0.16,
 					0.16
 				]
 			},
 			{
-				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>20%</color>. Wenn nach Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>20%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>20%</color>. Wenn beim Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>20%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
 				"Params": [
 					0.2,
 					0.2
 				]
 			},
 			{
-				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>24%</color>. Wenn nach Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>24%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>24%</color>. Wenn beim Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>24%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
 				"Params": [
 					0.24,
 					0.24
 				]
 			},
 			{
-				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>28%</color>. Wenn nach Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>28%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>28%</color>. Wenn beim Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>28%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
 				"Params": [
 					0.28,
 					0.28
 				]
 			},
 			{
-				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>32%</color>. Wenn nach Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>32%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>32%</color>. Wenn beim Kampfeintritt zwei oder mehr Verbündete demselben Pfad folgen, wird der KRIT-SCH dieser Figuren um <color=#f29e38ff>32%</color> erhöht. Effekte desselben Typs sind nicht stapelbar.",
 				"Params": [
 					0.32,
 					0.32
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"21047": {
+		"Id": "21047",
+		"Name": "Die Nacht der langen Schatten",
+		"PathType": "Rogue",
+		"PathTypeText": "Die Jagd",
+		"EffectName": "Verstecken",
+		"EffectTemplate": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>#1[i]%</color>. Beim Kampfeintritt oder nach dem Verursachen von Bruch-SCH wird die GES für #3[i] Rd. um <color=#f29e38ff>#2[i]%</color> erhöht. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+		"Superimpositions": [
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>28%</color>. Beim Kampfeintritt oder nach dem Verursachen von Bruch-SCH wird die GES für 2 Rd. um <color=#f29e38ff>8%</color> erhöht. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+				"Params": [
+					0.28,
+					0.08,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>35%</color>. Beim Kampfeintritt oder nach dem Verursachen von Bruch-SCH wird die GES für 2 Rd. um <color=#f29e38ff>9%</color> erhöht. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+				"Params": [
+					0.35,
+					0.09,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>42%</color>. Beim Kampfeintritt oder nach dem Verursachen von Bruch-SCH wird die GES für 2 Rd. um <color=#f29e38ff>10%</color> erhöht. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+				"Params": [
+					0.42,
+					0.1,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>49%</color>. Beim Kampfeintritt oder nach dem Verursachen von Bruch-SCH wird die GES für 2 Rd. um <color=#f29e38ff>11%</color> erhöht. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+				"Params": [
+					0.49,
+					0.11,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>56%</color>. Beim Kampfeintritt oder nach dem Verursachen von Bruch-SCH wird die GES für 2 Rd. um <color=#f29e38ff>12%</color> erhöht. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+				"Params": [
+					0.56,
+					0.12,
+					2
+				]
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"22000": {
 		"Id": "22000",
@@ -3308,7 +3359,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"23000": {
 		"Id": "23000",
@@ -4779,7 +4830,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"23026": {
 		"Id": "23026",
@@ -4840,7 +4891,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"23027": {
 		"Id": "23027",
@@ -4896,7 +4947,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"23028": {
 		"Id": "23028",
@@ -4967,7 +5018,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"23029": {
 		"Id": "23029",
@@ -4975,10 +5026,10 @@
 		"PathType": "Warlock",
 		"PathTypeText": "Die Nichtigkeit",
 		"EffectName": "Weltliches hinterlässt keine Spur",
-		"EffectTemplate": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>#1[i]%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von #2[i]%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für #4[i] Rd. um <color=#f29e38ff>#3[i]%</color> erhöht. Wenn das Ziel an vom Träger verursachten DoT leidet, besteht eine Grundchance von #5[i]%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für #4[i] Rd. zusätzlich um <color=#f29e38ff>#6[i]%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
+		"EffectTemplate": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>#1[i]%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von #2[i]%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für #4[i] Rd. um <color=#f29e38ff>#3[i]%</color> erhöht. Wenn das Ziel sich im vom Träger verursachten DoT-Status befindet, besteht eine Grundchance von #5[i]%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für #4[i] Rd. zusätzlich um <color=#f29e38ff>#6[i]%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
 		"Superimpositions": [
 			{
-				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>60%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>10%</color> erhöht. Wenn das Ziel an vom Träger verursachten DoT leidet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>14%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
+				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>60%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>10%</color> erhöht. Wenn das Ziel sich im vom Träger verursachten DoT-Status befindet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>14%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
 				"Params": [
 					0.6,
 					0.6,
@@ -4989,7 +5040,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>70%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>12%</color> erhöht. Wenn das Ziel an vom Träger verursachten DoT leidet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>16%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
+				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>70%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>12%</color> erhöht. Wenn das Ziel sich im vom Träger verursachten DoT-Status befindet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>16%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
 				"Params": [
 					0.7,
 					0.6,
@@ -5000,7 +5051,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>80%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>14%</color> erhöht. Wenn das Ziel an vom Träger verursachten DoT leidet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>18%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
+				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>80%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>14%</color> erhöht. Wenn das Ziel sich im vom Träger verursachten DoT-Status befindet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>18%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
 				"Params": [
 					0.8,
 					0.6,
@@ -5011,7 +5062,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>90%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>16%</color> erhöht. Wenn das Ziel an vom Träger verursachten DoT leidet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>20%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
+				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>90%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>16%</color> erhöht. Wenn das Ziel sich im vom Träger verursachten DoT-Status befindet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>20%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
 				"Params": [
 					0.9,
 					0.6,
@@ -5022,7 +5073,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>100%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>18%</color> erhöht. Wenn das Ziel an vom Träger verursachten DoT leidet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>22%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
+				"Effect": "Erhöht die Effekt-Trefferrate des Trägers um <color=#f29e38ff>100%</color>. Nachdem der Träger Standardangriff, Fertigkeit oder Ultimate auf einen Gegner angewendet hat, besteht eine Grundchance von 60%, diesen Gegner mit „Ungerüstet“ zu belegen. Mit diesem Status wird der erlittene SCH des Gegners für 2 Rd. um <color=#f29e38ff>18%</color> erhöht. Wenn das Ziel sich im vom Träger verursachten DoT-Status befindet, besteht eine Grundchance von 60%, den vom Träger zugefügten Status Ungerüstet zu „In die Enge“ aufzuwerten, wodurch der erlittene SCH des Gegners für 2 Rd. zusätzlich um <color=#f29e38ff>22%</color> erhöht wird. Während dieser Dauer kann der Träger beim Ziel nicht Ungerüstet verursachen.",
 				"Params": [
 					1,
 					0.6,
@@ -5033,7 +5084,7 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"23030": {
 		"Id": "23030",
@@ -5089,7 +5140,119 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"23031": {
+		"Id": "23031",
+		"Name": "Ich wage die Jagd",
+		"PathType": "Rogue",
+		"PathTypeText": "Die Jagd",
+		"EffectName": "Einschüchtern",
+		"EffectTemplate": "Erhöht die KRIT-Rate des Trägers um <color=#f29e38ff>#1[f1]%</color>. Wenn der Träger einen Folgeangriff ausführt, erhält er 1 Stapelung „Lichtfluss“, bis zu #3[i] Stapelungen. Mit jeder Stapelung von Lichtfluss ignoriert der vom Träger verursachte Ultimate-SCH <color=#f29e38ff>#2[i]%</color> der VTD des Ziels. Wenn die Runde des Trägers endet, wird 1 Stapelung Lichtfluss entfernt.",
+		"Superimpositions": [
+			{
+				"Effect": "Erhöht die KRIT-Rate des Trägers um <color=#f29e38ff>15.0%</color>. Wenn der Träger einen Folgeangriff ausführt, erhält er 1 Stapelung „Lichtfluss“, bis zu 2 Stapelungen. Mit jeder Stapelung von Lichtfluss ignoriert der vom Träger verursachte Ultimate-SCH <color=#f29e38ff>27%</color> der VTD des Ziels. Wenn die Runde des Trägers endet, wird 1 Stapelung Lichtfluss entfernt.",
+				"Params": [
+					0.15,
+					0.27,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht die KRIT-Rate des Trägers um <color=#f29e38ff>17.5%</color>. Wenn der Träger einen Folgeangriff ausführt, erhält er 1 Stapelung „Lichtfluss“, bis zu 2 Stapelungen. Mit jeder Stapelung von Lichtfluss ignoriert der vom Träger verursachte Ultimate-SCH <color=#f29e38ff>30%</color> der VTD des Ziels. Wenn die Runde des Trägers endet, wird 1 Stapelung Lichtfluss entfernt.",
+				"Params": [
+					0.175,
+					0.3,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht die KRIT-Rate des Trägers um <color=#f29e38ff>20.0%</color>. Wenn der Träger einen Folgeangriff ausführt, erhält er 1 Stapelung „Lichtfluss“, bis zu 2 Stapelungen. Mit jeder Stapelung von Lichtfluss ignoriert der vom Träger verursachte Ultimate-SCH <color=#f29e38ff>33%</color> der VTD des Ziels. Wenn die Runde des Trägers endet, wird 1 Stapelung Lichtfluss entfernt.",
+				"Params": [
+					0.2,
+					0.33,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht die KRIT-Rate des Trägers um <color=#f29e38ff>22.5%</color>. Wenn der Träger einen Folgeangriff ausführt, erhält er 1 Stapelung „Lichtfluss“, bis zu 2 Stapelungen. Mit jeder Stapelung von Lichtfluss ignoriert der vom Träger verursachte Ultimate-SCH <color=#f29e38ff>36%</color> der VTD des Ziels. Wenn die Runde des Trägers endet, wird 1 Stapelung Lichtfluss entfernt.",
+				"Params": [
+					0.225,
+					0.36,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht die KRIT-Rate des Trägers um <color=#f29e38ff>25.0%</color>. Wenn der Träger einen Folgeangriff ausführt, erhält er 1 Stapelung „Lichtfluss“, bis zu 2 Stapelungen. Mit jeder Stapelung von Lichtfluss ignoriert der vom Träger verursachte Ultimate-SCH <color=#f29e38ff>39%</color> der VTD des Ziels. Wenn die Runde des Trägers endet, wird 1 Stapelung Lichtfluss entfernt.",
+				"Params": [
+					0.25,
+					0.39,
+					2
+				]
+			}
+		],
+		"VersionAdded": "2.5"
+	},
+	"23032": {
+		"Id": "23032",
+		"Name": "Nur ein Duft bleibt zurück",
+		"PathType": "Priest",
+		"PathTypeText": "Der Überfluss",
+		"EffectName": "Erleichterung",
+		"EffectTemplate": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>#1[i]%</color>. Wenn der Träger einen Gegner mit seinem Ultimate angreift, wird das Ziel für #5[i] Rd. mit „Sorglos“ belegt. Der erlittene SCH von Gegnern mit „Sorglos“ wird um <color=#f29e38ff>#2[i]%</color> erhöht. Wenn der aktuelle Brucheffekt des Trägers #3[i]% oder mehr beträgt, wird der erlittene SCH zusätzlich um <color=#f29e38ff>#4[i]%</color> erhöht.",
+		"Superimpositions": [
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>60%</color>. Wenn der Träger einen Gegner mit seinem Ultimate angreift, wird das Ziel für 2 Rd. mit „Sorglos“ belegt. Der erlittene SCH von Gegnern mit „Sorglos“ wird um <color=#f29e38ff>10%</color> erhöht. Wenn der aktuelle Brucheffekt des Trägers 150% oder mehr beträgt, wird der erlittene SCH zusätzlich um <color=#f29e38ff>8%</color> erhöht.",
+				"Params": [
+					0.6,
+					0.1,
+					1.5,
+					0.08,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>70%</color>. Wenn der Träger einen Gegner mit seinem Ultimate angreift, wird das Ziel für 2 Rd. mit „Sorglos“ belegt. Der erlittene SCH von Gegnern mit „Sorglos“ wird um <color=#f29e38ff>12%</color> erhöht. Wenn der aktuelle Brucheffekt des Trägers 150% oder mehr beträgt, wird der erlittene SCH zusätzlich um <color=#f29e38ff>10%</color> erhöht.",
+				"Params": [
+					0.7,
+					0.12,
+					1.5,
+					0.1,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>80%</color>. Wenn der Träger einen Gegner mit seinem Ultimate angreift, wird das Ziel für 2 Rd. mit „Sorglos“ belegt. Der erlittene SCH von Gegnern mit „Sorglos“ wird um <color=#f29e38ff>14%</color> erhöht. Wenn der aktuelle Brucheffekt des Trägers 150% oder mehr beträgt, wird der erlittene SCH zusätzlich um <color=#f29e38ff>12%</color> erhöht.",
+				"Params": [
+					0.8,
+					0.14,
+					1.5,
+					0.12,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>90%</color>. Wenn der Träger einen Gegner mit seinem Ultimate angreift, wird das Ziel für 2 Rd. mit „Sorglos“ belegt. Der erlittene SCH von Gegnern mit „Sorglos“ wird um <color=#f29e38ff>16%</color> erhöht. Wenn der aktuelle Brucheffekt des Trägers 150% oder mehr beträgt, wird der erlittene SCH zusätzlich um <color=#f29e38ff>14%</color> erhöht.",
+				"Params": [
+					0.9,
+					0.16,
+					1.5,
+					0.14,
+					2
+				]
+			},
+			{
+				"Effect": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff>100%</color>. Wenn der Träger einen Gegner mit seinem Ultimate angreift, wird das Ziel für 2 Rd. mit „Sorglos“ belegt. Der erlittene SCH von Gegnern mit „Sorglos“ wird um <color=#f29e38ff>18%</color> erhöht. Wenn der aktuelle Brucheffekt des Trägers 150% oder mehr beträgt, wird der erlittene SCH zusätzlich um <color=#f29e38ff>16%</color> erhöht.",
+				"Params": [
+					1,
+					0.18,
+					1.5,
+					0.16,
+					2
+				]
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"24000": {
 		"Id": "24000",
@@ -5384,6 +5547,6 @@
 				]
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }

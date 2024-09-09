@@ -256,7 +256,7 @@
 			{
 				"Id": "100801",
 				"Name": "Jusqu'au-boutiste",
-				"Effect": "Lorsque les PV du personnage sont inférieurs ou égaux à 50 % de ses PV max, augmente les DGT infligés par la compétence de 10%."
+				"Effect": "Lorsque le pourcentage de PV du personnage est inférieur ou égal à 50 % de ses PV max, augmente les DGT infligés par la compétence de 10%."
 			},
 			{
 				"Id": "100802",
@@ -281,7 +281,7 @@
 			{
 				"Id": "100806",
 				"Name": "Abnégation",
-				"Effect": "Lorsque les PV du personnage sont inférieurs ou égaux à 50 % de ses PV max, l'ultime inflige 20% de DGT supplémentaires. Le multiplicateur de DGT de la cible principale s'applique également aux ennemis adjacents."
+				"Effect": "Lorsque le pourcentage de PV actuels du personnage est inférieur ou égal à 50 % de ses PV max, l'ultime inflige 20% de DGT supplémentaires, et le multiplicateur de DGT de la cible principale s'applique également aux ennemis adjacents."
 			}
 		],
 		"VersionAdded": "1.0"
@@ -1552,10 +1552,51 @@
 			{
 				"Id": "121806",
 				"Name": "Feu des neufs transformations",
-				"Effect": "Lorsqu'une cible ennemie est éliminée, ses cumuls de Charbons ardents accumulés sont transférés à l'ennemi ayant le moins de cumuls de Charbons ardents sur le champ de bataille. La limite de cumuls de Charbons ardents passe à 9. Chaque cumul de Charbons ardents réduit toutes les RÉS de type de la cible de 3%."
+				"Effect": "Lorsqu'une cible ennemie est éliminée, ses cumuls de Charbons ardents sont transférés à l'ennemi ayant le moins de cumuls de Charbons ardents sur le champ de bataille. La limite de cumuls de Charbons ardents passe à 9. Chaque cumul de Charbons ardents réduit toutes les RÉS de type de la cible de 3%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1220": {
+		"Id": "1220",
+		"Name": "Feixiao",
+		"ElementType": "Wind",
+		"ElementTypeText": "Vent",
+		"PathType": "Rogue",
+		"PathTypeText": "La Chasse",
+		"Eidolons": [
+			{
+				"Id": "122001",
+				"Name": "Apaisement des cieux",
+				"Effect": "Après avoir lancé Éclair tonitruant des étoiles ou Hache de guerre céleste, les DGT d'ultime infligés par Feixiao augmentent d'un montant équivalent à 10% des DGT initiaux. Cet effet est cumulable jusqu'à 5 fois et dure jusqu'à la fin de l'action de l'ultime."
+			},
+			{
+				"Id": "122002",
+				"Name": "Prière à la Lune",
+				"Effect": "Dans l'effet du talent, chaque fois qu'une cible alliée déclenche 1 instance de l'attaque de suivi, Feixiao obtient 1 point de Chimère volante. Cet effet peut se déclencher jusqu'à 6 fois par tour."
+			},
+			{
+				"Id": "122003",
+				"Name": "Étoile de prospérité",
+				"Effect": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "122004",
+				"Name": "Chant de la tempête",
+				"Effect": "La réduction de robustesse de l'attaque de suivi du talent augmente de 100%, et la VIT du personnage augmente de 8% pendant 2 tours lorsqu'elle se déclenche."
+			},
+			{
+				"Id": "122005",
+				"Name": "Ascension céleste",
+				"Effect": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "122006",
+				"Name": "Retour à la terre ancestrale",
+				"Effect": "Augmente la PÉN de RÉS à tous les types des DGT d'ultime infligés par Feixiao de 20%. Les DGT de l'attaque de suivi du talent sont également considérés comme des DGT d'ultime, et son multiplicateur de DGT augmente de 140%."
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"1221": {
 		"Id": "1221",
@@ -1596,7 +1637,89 @@
 				"Effect": "Quand l'effet Parade est actif, lorsqu'un ennemi utilise activement une capacité, que ce soit pour attaquer Yunli ou non, Sens de l'éradication se déclenche et supprime l'effet Parade. Lorsque Yunli inflige des DGT via Sens de l'entaille ou Sens de l'éradication, ses chances de coup critique augmentent de 15% et sa PÉN de RÉS physique augmente de 20%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1222": {
+		"Id": "1222",
+		"Name": "Lingsha",
+		"ElementType": "Fire",
+		"ElementTypeText": "Feu",
+		"PathType": "Priest",
+		"PathTypeText": "L'Abondance",
+		"Eidolons": [
+			{
+				"Id": "122201",
+				"Name": "Fumée destructrice",
+				"Effect": "L'efficacité de Rupture de faiblesse de Lingsha augmente de 50%. Lorsqu'une unité ennemie subit une Rupture de faiblesse, sa DÉF est réduite de 20%."
+			},
+			{
+				"Id": "122202",
+				"Name": "Volutes écarlates",
+				"Effect": "L'effet de Rupture de tous les alliés augmente de 40% pendant 3 tours lors de l'utilisation de l'ultime."
+			},
+			{
+				"Id": "122203",
+				"Name": "Mèche parfumée",
+				"Effect": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "122204",
+				"Name": "Senteurs feutrées",
+				"Effect": "Lors de l'action de Fuyuan, restaure un montant de PV équivalent à 40% de l'ATQ de Lingsha à l'allié ayant les PV les plus bas actuellement."
+			},
+			{
+				"Id": "122205",
+				"Name": "Plénitude intérieure",
+				"Effect": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "122206",
+				"Name": "Paradis de l'isolement",
+				"Effect": "Réduit toutes les RÉS de type de tous les ennemis de 20% lorsque Fuyuan est sur le champ de bataille. Fuyuan inflige 4 instances de DGT supplémentaires lors de son attaque, chacune infligeant des DGT de feu équivalents à 50% de l'ATQ de Lingsha et réduisant la robustesse d'un ennemi unique aléatoire de 5. Les cibles dont la robustesse est supérieure à 0 et qui ont une Faiblesse au feu sont touchées en priorité."
+			}
+		],
+		"VersionAdded": "2.5"
+	},
+	"1223": {
+		"Id": "1223",
+		"Name": "Moze",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Foudre",
+		"PathType": "Rogue",
+		"PathTypeText": "La Chasse",
+		"Eidolons": [
+			{
+				"Id": "122301",
+				"Name": "Gardien du serment",
+				"Effect": "Moze gagne 20 points d'énergie après être entré en combat et 2 points d'énergie chaque fois que les DGT additionnels de son talent sont déclenchés."
+			},
+			{
+				"Id": "122302",
+				"Name": "Héraut du châtiment",
+				"Effect": "Augmente de 40% les DGT critiques lorsque tous les alliés infligent des DGT à une cible ennemie marquée comme Proie."
+			},
+			{
+				"Id": "122303",
+				"Name": "Justicier implacable",
+				"Effect": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum.\nNiv. du talent +2, jusqu'au Niv. 15 maximum."
+			},
+			{
+				"Id": "122304",
+				"Name": "Rôdeur des ombres",
+				"Effect": "Les DGT infligés par Moze augmentent de 30.0% pendant 2 tours lors de l'utilisation de l'ultime."
+			},
+			{
+				"Id": "122305",
+				"Name": "Manipulateur de vérité",
+				"Effect": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum.\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+			},
+			{
+				"Id": "122306",
+				"Name": "Rassembleur de loyauté",
+				"Effect": "Le multiplicateur de DGT de l'attaque de suivi du talent augmente de 25%."
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"1224": {
 		"Id": "1224",
@@ -1637,7 +1760,7 @@
 				"Effect": "Augmente les DGT critiques de la prochaine ATQ normale renforcée de 50% après avoir utilisé l'ultime."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1301": {
 		"Id": "1301",
@@ -2006,7 +2129,7 @@
 				"Effect": "Lorsque l'état Concerto est actif, les DGT critiques des DGT physiques additionnels infligés par l'ultime augmentent de 450%. L'effet Minuit sans lune peut être déclenché jusqu'à 8 fois. Le nombre de déclenchements est réinitialisé chaque fois que Robin utilise son ultime."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1310": {
 		"Id": "1310",
@@ -2047,7 +2170,7 @@
 				"Effect": "Augmente de 20% la PÉN de RÉS au feu de SAM dans l'état Combustion complète. Son efficacité de Rupture de faiblesse augmente de 50% lors de l'utilisation de l'ATQ normale renforcée ou de la compétence renforcée."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1312": {
 		"Id": "1312",
@@ -2129,7 +2252,7 @@
 				"Effect": "La PÉN de RÉS quantique de Jade augmente de 20% lorsqu'il y a un Agent de recouvrement de dettes sur le champ de bataille, et elle bénéficie également elle-même de l'effet Agent de recouvrement de dettes."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1315": {
 		"Id": "1315",
@@ -2170,7 +2293,7 @@
 				"Effect": "Lorsque le talent du Fossoyeur inflige des DGT de rupture, il inflige des DGT de rupture supplémentaires équivalents à 40% du multiplicateur des DGT initiaux à la cible et des DGT de rupture supplémentaires équivalents à 70% du multiplicateur des DGT initiaux aux cibles adjacentes."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8001": {
 		"Id": "8001",
@@ -2385,7 +2508,7 @@
 				"Effect": "Augmente les DGT supplémentaires de la compétence de 2 frappes."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8006": {
 		"Id": "8006",
@@ -2428,6 +2551,6 @@
 				"Effect": "Augmente les DGT supplémentaires de la compétence de 2 frappes."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }

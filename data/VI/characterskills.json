@@ -3838,6 +3838,7 @@
 			"SkillTypeText": "Thiên Phú",
 			"MaxLevel": 15,
 			"EffectRaw": "Khi đòn tấn công của mục tiêu bất kỳ phe ta khiến phần trăm HP hiện tại của kẻ địch nhỏ hơn hoặc bằng <unbreak>#1[i]%</unbreak>, thì Herta sẽ phát động <u>Đòn Đánh Theo Sau</u>, gây cho toàn phe địch Sát Thương Băng bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Herta.",
+			"AbridgedEffect": "Khi đòn tấn công của mục tiêu bất kỳ phe ta khiến phần trăm HP hiện tại của mục tiêu phe địch nhỏ hơn hoặc bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, Herta sẽ lập tức phát động <color=#f29e38ff><u>Đòn Đánh Theo Sau</u></color>, gây lượng nhỏ Sát Thương Băng cho toàn thể phe địch.",
 			"ElementType": "Ice",
 			"Levels": {
 				"1": {
@@ -3942,6 +3943,7 @@
 			"SkillTypeText": "Bí Kỹ",
 			"MaxLevel": 1,
 			"EffectRaw": "Sau khi dùng Bí Kỹ, Tấn Công của Herta khi bắt đầu lần chiến đấu tiếp theo tăng <unbreak>#1[i]%</unbreak>, duy trì <unbreak>#2[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo, sẽ tăng Tấn Công của bản thân.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -17807,7 +17809,696 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1218/SkillIcon_1218_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1220": {
+		"Id": "1220",
+		"Name": "Feixiao",
+		"BasicATK": {
+			"Id": "122001",
+			"Name": "Chém Tách Chớp Nhoáng",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 9,
+			"EffectRaw": "Gây Sát Thương Phong cho 1 kẻ địch chỉ định bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Feixiao.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Phong cho 1 kẻ địch.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "122008",
+			"Name": "Vũ Điệu Lưỡi Đao Chớp Nhoáng",
+			"TriggerKey": "Skill11",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Gây sát thương Phong bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Feixiao cho mục tiêu được chọn. Nếu mục tiêu trong trạng thái <u>Phá Vỡ Điểm Yếu</u> thì Bội Số Sát Thương sẽ tăng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+			"AbridgedEffect": "Gây lượng nhỏ sát thương Phong cho 1 kẻ địch, tăng Bội Số Sát Thương đối với mục tiêu <color=#f29e38ff>bị Phá Vỡ Điểm Yếu</color>.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.36,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.384,
+						0.165
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.408,
+						0.18
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.432,
+						0.195
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.456,
+						0.21
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.48,
+						0.225
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.51,
+						0.2438
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.54,
+						0.2625
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.57,
+						0.2813
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.624,
+						0.315
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.648,
+						0.33
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.672,
+						0.345
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.696,
+						0.36
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.72,
+						0.375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Ultra_on_02.png"
+		},
+		"Skill": {
+			"Id": "122002",
+			"Name": "Rìu Chiến Xuyên Kích",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Gây Sát Thương Phong cho 1 kẻ địch chỉ định bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Feixiao, sau đó lập tức phát động thêm 1 lần <u>Đòn Đánh Theo Sau</u> của Thiên Phú lên mục tiêu này.",
+			"AbridgedEffect": "Gây Sát Thương Phong cho 1 kẻ địch, sau đó kích hoạt thêm 1 lần <u>Đòn Đánh Theo Sau</u> của Thiên Phú.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.4
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.75
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.4
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "122009",
+			"Name": "Chém Tách Trời Xanh",
+			"TriggerKey": "Skill21",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Gây sát thương Phong bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Feixiao cho mục tiêu được chọn. Nếu mục tiêu không trong trạng thái <u>Phá Vỡ Điểm Yếu</u> thì Bội Số Sát Thương sẽ tăng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+			"AbridgedEffect": "Gây lượng nhỏ sát thương Phong cho 1 kẻ địch, tăng Bội Số Sát Thương đối với mục tiêu <color=#f29e38ff>chưa bị Phá Vỡ Điểm Yếu</color>.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.36,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.384,
+						0.165
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.408,
+						0.18
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.432,
+						0.195
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.456,
+						0.21
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.48,
+						0.225
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.51,
+						0.2438
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.54,
+						0.2625
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.57,
+						0.2813
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.624,
+						0.315
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.648,
+						0.33
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.672,
+						0.345
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.696,
+						0.36
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.72,
+						0.375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Ultra_on_03.png"
+		},
+		"Ultimate": {
+			"Id": "122003",
+			"Name": "Trảm Phá Đại Địa",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Gây Sát Thương Phong tối đa bằng <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> Tấn Công của Feixao cho 1 kẻ địch chỉ định, trong thời gian đó có thể bỏ qua Điểm Yếu làm giảm Sức Bền của mục tiêu. Khi mục tiêu trong <u>trạng thái Phá Vỡ Điểm Yếu</u>, Hiệu Suất Phá Vỡ Điểm Yếu của Feixiao tăng <unbreak>#2[i]%</unbreak>.\nTrong đó, Feixiao sẽ phát động Vũ Điệu Lưỡi Đao Chớp Nhoáng hoặc Chém Tách Trời Xanh lên mục tiêu này trước, tổng cộng <unbreak>#3[i]</unbreak> lần. Cuối cùng gây Sát Thương Phong bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Feixiao lên mục tiêu này.",
+			"AbridgedEffect": "Trong thời gian Tuyệt Kỹ, có thể <color=#f29e38ff>bỏ qua Thuộc Tính Điểm Yếu</color> làm giảm Sức Bền của phe địch, khi mục tiêu chưa bị Phá Vỡ Điểm Yếu, <color=#f29e38ff>Hiệu Suất Phá Vỡ Điểm Yếu của Feixiao tăng</color>.\nPhát động <color=#f29e38ff><unbreak>#3[i]</unbreak></color> lần Vũ Điệu Lưỡi Đao Chớp Nhoáng hoặc Chém Tách Trời Xanh lên 1 kẻ địch, cuối cùng gây Sát Thương Phong.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.96,
+						1,
+						6,
+						4.02
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.024,
+						1,
+						6,
+						4.318
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.088,
+						1,
+						6,
+						4.616
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.152,
+						1,
+						6,
+						4.914
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.216,
+						1,
+						6,
+						5.212
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.28,
+						1,
+						6,
+						5.51
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.36,
+						1,
+						6,
+						5.8825
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1,
+						6,
+						6.255
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.52,
+						1,
+						6,
+						6.6275
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.6,
+						1,
+						6,
+						7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.664,
+						1,
+						6,
+						7.298
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.728,
+						1,
+						6,
+						7.596
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.792,
+						1,
+						6,
+						7.894
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.856,
+						1,
+						6,
+						8.192
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.92,
+						1,
+						6,
+						8.49
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Ultra.png"
+		},
+		"Talent": {
+			"Id": "122004",
+			"Name": "Sấm Sét Săn Lùng",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Khi Phi Hoàng đạt <unbreak>#3[i]</unbreak> điểm có thể kích hoạt Tuyệt Kỹ, tối đa tích lũy <unbreak>#4[i]</unbreak> điểm. Mục tiêu phe ta mỗi <unbreak>#2[i]</unbreak> lần thi triển tấn công, Feixiao sẽ nhận được 1 điểm Phi Hoàng, tấn công từ Tuyệt Kỹ của Feixiao không tính vào số lần.\nSau khi đồng đội của Feixiao thi triển đòn tấn công lên mục tiêu phe địch, Feixiao sẽ lập tức phát động <u>Đòn Đánh Theo Sau</u> lên mục tiêu chính, gây Sát Thương Phong bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Feixiao. Nếu không tồn tại mục tiêu chính có thể tấn công, thì sẽ tấn công 1 kẻ địch bất kỳ. Hiệu ứng này mỗi hiệp tối đa kích hoạt 1 lần, khi hiệp của Feixiao bắt đầu sẽ làm mới số lần kích hoạt. Khi phát động đòn tấn công này sẽ khiến sát thương bản thân gây ra tăng <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>, duy trì <unbreak>#6[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Khi Phi Hoàng đạt <color=#f29e38ff><unbreak>#3[i]</unbreak></color> điểm có thể kích hoạt Tuyệt Kỹ, tối đa tích lũy <color=#f29e38ff><unbreak>#4[i]</unbreak></color> điểm. Mục tiêu phe ta cứ thi triển <color=#f29e38ff><unbreak>#2[i]</unbreak></color> lần tấn công, thì Feixiao sẽ nhận được <color=#f29e38ff>Phi Hoàng</color>.\nSau khi đồng đội thi triển tấn công, Feixiao sẽ phát động <color=#f29e38ff><u>Đòn Đánh Theo Sau</u></color> lên mục tiêu chính, gây Sát Thương Phong. Hiệu quả này mỗi hiệp tối đa kích hoạt 1 lần, khi phát động đòn tấn công này sẽ khiến <color=#f29e38ff>sát thương bản thân gây ra tăng</color>.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.55,
+						2,
+						6,
+						12,
+						0.3,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.605,
+						2,
+						6,
+						12,
+						0.33,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.66,
+						2,
+						6,
+						12,
+						0.36,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.715,
+						2,
+						6,
+						12,
+						0.39,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.77,
+						2,
+						6,
+						12,
+						0.42,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.825,
+						2,
+						6,
+						12,
+						0.45,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.8938,
+						2,
+						6,
+						12,
+						0.4875,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.9625,
+						2,
+						6,
+						12,
+						0.525,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.0313,
+						2,
+						6,
+						12,
+						0.5625,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.1,
+						2,
+						6,
+						12,
+						0.6,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.155,
+						2,
+						6,
+						12,
+						0.63,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.21,
+						2,
+						6,
+						12,
+						0.66,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.265,
+						2,
+						6,
+						12,
+						0.69,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.32,
+						2,
+						6,
+						12,
+						0.72,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.375,
+						2,
+						6,
+						12,
+						0.75,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Passive.png"
+		},
+		"Technique": {
+			"Id": "122007",
+			"Name": "Hóa Thân Bão Tố",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "Cường Hóa",
+			"SkillTypeText": "Bí Kỹ",
+			"MaxLevel": 1,
+			"EffectRaw": "Sau khi dùng Bí Kỹ sẽ vào trạng thái Khí Thế Vây Hãm duy trì <unbreak>#1[i]</unbreak> giây. Khi trong trạng thái Khí Thế Vây Hãm sẽ lôi kéo kẻ địch trong phạm vi nhất định, và Tốc Độ của bản thân tăng <unbreak>#2[i]%</unbreak>, sau khi vào chiến đấu sẽ nhận được <unbreak>#4[i]</unbreak> điểm Phi Hoàng.\nTrong trạng thái Khí Thế Vây Hãm, chủ động tấn công sẽ khiến tất cả kẻ địch bị lôi kéo vào chiến đấu. Sau khi vào chiến đấu, khi bắt đầu mỗi đợt, sẽ gây sát thương Phong bằng <unbreak>#3[i]%</unbreak> Tấn Công của Feixiao cho toàn thể phe địch, sát thương này chắc chắn bạo kích. Nếu lôi kéo nhiều hơn 1 kẻ địch, thì với mỗi 1 kẻ địch bị lôi kéo thêm, bội số của sát thương này sẽ tăng <unbreak>#5[i]%</unbreak>, tối đa tăng đến <unbreak>#6[i]%</unbreak>.",
+			"AbridgedEffect": "Vào trạng thái Khí Thế Vây Hãm, duy trì lôi kéo kẻ địch và tăng tốc độ di chuyển, sau khi vào chiến đấu sẽ nhận được Phi Hoàng.\nTrong trạng thái Khí Thế Vây Hãm có thể chủ động tấn công tất cả kẻ địch bị lôi kéo, khi bắt đầu mỗi đợt, gây sát thương Phong cho toàn phe địch, sát thương này chắc chắn bạo kích. <color=#f29e38ff>Lôi kéo càng nhiều kẻ địch, Bội Số Sát Thương càng cao</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						0.5,
+						2,
+						1,
+						1,
+						10
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1220/SkillIcon_1220_Maze.png"
+		},
+		"VersionAdded": "2.5"
 	},
 	"1221": {
 		"Id": "1221",
@@ -18341,7 +19032,987 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1221/SkillIcon_1221_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1222": {
+		"Id": "1222",
+		"Name": "Lingsha",
+		"BasicATK": {
+			"Id": "122201",
+			"Name": "Dâng Hương",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 9,
+			"EffectRaw": "Gây Sát Thương Hỏa bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Lingsha cho 1 kẻ địch chỉ định.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Hỏa cho 1 kẻ địch.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Normal.png"
+		},
+		"Skill": {
+			"Id": "122202",
+			"Name": "Khói Sương Óng Ánh",
+			"TriggerKey": "Skill02",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Gây Sát Thương Hỏa bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Lingsha cho toàn thể phe địch, đồng thời giúp toàn thể phe ta hồi HP bằng <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> Tấn Công của Lingsha +<color=#f29e38ff><unbreak>#3[i]</unbreak></color>, khiến Fuyuan <u>Ưu Tiên Hành Động</u> <unbreak>#4[i]%</unbreak>.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Hỏa cho toàn thể phe địch, đồng thời <color=#f29e38ff>hồi HP</color> cho toàn thể phe ta, khiến Fuyuan <u>Ưu Tiên Hành Động</u>.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.4,
+						0.1,
+						105,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.44,
+						0.105,
+						168,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.48,
+						0.11,
+						215.25,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.52,
+						0.115,
+						262.5,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.56,
+						0.12,
+						294,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.6,
+						0.124,
+						325.5,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.65,
+						0.128,
+						349.125,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.7,
+						0.132,
+						372.75,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.75,
+						0.136,
+						396.375,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.8,
+						0.14,
+						420,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.84,
+						0.144,
+						443.625,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.88,
+						0.148,
+						467.25,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.92,
+						0.152,
+						490.875,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.96,
+						0.156,
+						514.5,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.16,
+						538.125,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_BP.png"
+		},
+		"Ultimate": {
+			"Id": "122203",
+			"Name": "Ráng Chiều Che Nghiêng",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Khiến toàn thể phe địch rơi vào trạng thái Say Men, trong trạng thái Say Men, <u>Sát Thương Phá Vỡ</u> mục tiêu phải chịu tăng <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, duy trì <unbreak>#5[i]</unbreak> hiệp.\nGây Sát Thương Hỏa bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Lingsha cho toàn thể phe địch, đồng thời hồi HP bằng <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> Tấn Công của Lingsha +<color=#f29e38ff><unbreak>#3[i]</unbreak></color> cho toàn thể phe ta, khiến Fuyuan <u>Ưu Tiên Hành Động</u> <unbreak>#6[i]%</unbreak>.",
+			"AbridgedEffect": "<color=#f29e38ff>Tăng Sát Thương Phá Vỡ</color> toàn thể phe địch phải chịu, gây Sát Thương Hỏa cho toàn thể phe địch, đồng thời <color=#f29e38ff>hồi HP</color> cho toàn thể phe ta, khiến Fuyuan <u>Ưu Tiên Hành Động</u>.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.9,
+						0.08,
+						90,
+						0.15,
+						2,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.96,
+						0.085,
+						144,
+						0.16,
+						2,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.02,
+						0.09,
+						184.5,
+						0.17,
+						2,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.08,
+						0.095,
+						225,
+						0.18,
+						2,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.14,
+						0.1,
+						252,
+						0.19,
+						2,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						0.104,
+						279,
+						0.2,
+						2,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.275,
+						0.108,
+						299.25,
+						0.2125,
+						2,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.35,
+						0.112,
+						319.5,
+						0.225,
+						2,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.425,
+						0.116,
+						339.75,
+						0.2375,
+						2,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5,
+						0.12,
+						360,
+						0.25,
+						2,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.56,
+						0.124,
+						380.25,
+						0.26,
+						2,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.62,
+						0.128,
+						400.5,
+						0.27,
+						2,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.68,
+						0.132,
+						420.75,
+						0.28,
+						2,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.74,
+						0.136,
+						441,
+						0.29,
+						2,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.8,
+						0.14,
+						461.25,
+						0.3,
+						2,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Ultra.png"
+		},
+		"Talent": {
+			"Id": "122204",
+			"Name": "Khói Sương Nghiêng Ngả, Khí Trời Hóa Sinh",
+			"TriggerKey": "SkillP01",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Khi thi triển Chiến Kỹ sẽ triệu hồi Fuyuan, Fuyuan ban đầu có <unbreak>#1[i]</unbreak> điểm Tốc Độ và <unbreak>#7[i]</unbreak> lần hành động.\nKhi Fuyuan hành động sẽ phát động <u>Đòn Đánh Theo Sau</u>, gây Sát Thương Hỏa bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Lingsha cho toàn thể phe địch. Gây thêm Sát Thương Hỏa bằng <color=#f29e38ff><unbreak>#8[i]%</unbreak></color> Tấn Công của Lingsha cho 1 kẻ địch ngẫu nhiên, lần sát thương này ưu tiên chọn mục tiêu có Sức Bền lớn hơn 0 và có Điểm Yếu Hỏa. Giải trừ <unbreak>#6[i]</unbreak> <u>Hiệu Ứng Xấu</u> cho toàn thể phe ta, đồng thời hồi HP bằng <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> Tấn Công của Lingsha +<color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\nFuyuan tối đa tích lũy <unbreak>#5[i]</unbreak> lần hành động, khi số lần bằng 0 hoặc Lingsha vào <u>trạng thái không thể chiến đấu</u>, thì Fuyuan sẽ biến mất.\nKhi Fuyuan ở trong trận, thi triển Chiến Kỹ sẽ tăng <unbreak>#7[i]</unbreak> lần hành động của Fuyuan.",
+			"AbridgedEffect": "Thi triển Chiến Kỹ triệu hồi Fuyuan: Khi hành động sẽ phát động <color=#f29e38ff><u>Đòn Đánh Theo Sau</u></color>, gây lượng nhỏ Sát Thương Hỏa cho toàn bộ kẻ địch. Gây thêm lượng nhỏ Sát Thương Hỏa cho 1 kẻ địch ngẫu nhiên, ưu tiên chọn mục tiêu có Sức Bền lớn hơn 0 và có Điểm Yếu Hỏa. Giải trừ 1 <u>Hiệu Ứng Xấu</u> của toàn bộ phe ta và <color=#f29e38ff>hồi HP</color>.\nThi triển Chiến Kỹ lặp lại sẽ tăng số lần hành động của Fuyuan.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						90,
+						0.375,
+						0.08,
+						90,
+						5,
+						1,
+						3,
+						0.375
+					]
+				},
+				"2": {
+					"EffectValues": [
+						90,
+						0.4125,
+						0.085,
+						144,
+						5,
+						1,
+						3,
+						0.4125
+					]
+				},
+				"3": {
+					"EffectValues": [
+						90,
+						0.45,
+						0.09,
+						184.5,
+						5,
+						1,
+						3,
+						0.45
+					]
+				},
+				"4": {
+					"EffectValues": [
+						90,
+						0.4875,
+						0.095,
+						225,
+						5,
+						1,
+						3,
+						0.4875
+					]
+				},
+				"5": {
+					"EffectValues": [
+						90,
+						0.525,
+						0.1,
+						252,
+						5,
+						1,
+						3,
+						0.525
+					]
+				},
+				"6": {
+					"EffectValues": [
+						90,
+						0.5625,
+						0.104,
+						279,
+						5,
+						1,
+						3,
+						0.5625
+					]
+				},
+				"7": {
+					"EffectValues": [
+						90,
+						0.6094,
+						0.108,
+						299.25,
+						5,
+						1,
+						3,
+						0.6094
+					]
+				},
+				"8": {
+					"EffectValues": [
+						90,
+						0.6563,
+						0.112,
+						319.5,
+						5,
+						1,
+						3,
+						0.6563
+					]
+				},
+				"9": {
+					"EffectValues": [
+						90,
+						0.7031,
+						0.116,
+						339.75,
+						5,
+						1,
+						3,
+						0.7031
+					]
+				},
+				"10": {
+					"EffectValues": [
+						90,
+						0.75,
+						0.12,
+						360,
+						5,
+						1,
+						3,
+						0.75
+					]
+				},
+				"11": {
+					"EffectValues": [
+						90,
+						0.7875,
+						0.124,
+						380.25,
+						5,
+						1,
+						3,
+						0.7875
+					]
+				},
+				"12": {
+					"EffectValues": [
+						90,
+						0.825,
+						0.128,
+						400.5,
+						5,
+						1,
+						3,
+						0.825
+					]
+				},
+				"13": {
+					"EffectValues": [
+						90,
+						0.8625,
+						0.132,
+						420.75,
+						5,
+						1,
+						3,
+						0.8625
+					]
+				},
+				"14": {
+					"EffectValues": [
+						90,
+						0.9,
+						0.136,
+						441,
+						5,
+						1,
+						3,
+						0.9
+					]
+				},
+				"15": {
+					"EffectValues": [
+						90,
+						0.9375,
+						0.14,
+						461.25,
+						5,
+						1,
+						3,
+						0.9375
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Passive.png"
+		},
+		"Technique": {
+			"Id": "122207",
+			"Name": "Lưu Thúy Tản Vân",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "Hỗ Trợ",
+			"SkillTypeText": "Bí Kỹ",
+			"MaxLevel": 1,
+			"EffectRaw": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo, lập tức triệu hồi Fuyuan, đồng thời khiến toàn thể phe địch rơi vào trạng thái Say Men, duy trì <unbreak>#1[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo, lập tức triệu hồi Fuyuan và khiến toàn thể phe địch <color=#f29e38ff>tăng Sát Thương Phá Vỡ phải chịu</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1222/SkillIcon_1222_Maze.png"
+		},
+		"VersionAdded": "2.5"
+	},
+	"1223": {
+		"Id": "1223",
+		"Name": "Moze",
+		"BasicATK": {
+			"Id": "122301",
+			"Name": "Phi Đao",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 9,
+			"EffectRaw": "Gây Sát Thương Lôi bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Moze cho 1 kẻ địch chỉ định.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Lôi cho 1 kẻ địch.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Normal.png"
+		},
+		"Skill": {
+			"Id": "122302",
+			"Name": "Đột Kích Lướt Gió",
+			"TriggerKey": "Skill02",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Khiến 1 kẻ địch chỉ định trở thành Con Mồi, gây Sát Thương Lôi bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Moze, đồng thời nhận <unbreak>#2[i]</unbreak> điểm Nạp Năng Lượng.\nKhi trong trận không có nhân vật khác có thể chiến đấu, Moze sẽ không thể sử dụng Chiến Kỹ, và giải trừ trạng thái Con Mồi của kẻ địch.",
+			"AbridgedEffect": "<color=#f29e38ff>Khiến 1 kẻ địch trở thành Con Mồi</color>, gây Sát Thương Lôi cho kẻ đó, đồng thời nhận <color=#f29e38ff><unbreak>#2[i]</unbreak></color> điểm Nạp Năng Lượng.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.75,
+						9
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.825,
+						9
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.9,
+						9
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.975,
+						9
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.05,
+						9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.125,
+						9
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.2188,
+						9
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.3125,
+						9
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.4063,
+						9
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.5,
+						9
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.575,
+						9
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.65,
+						9
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.725,
+						9
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.8,
+						9
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.875,
+						9
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_BP.png"
+		},
+		"Ultimate": {
+			"Id": "122303",
+			"Name": "Dao Lạnh Vô Tình",
+			"TriggerKey": "Skill03",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Gây Sát Thương Lôi bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Moze cho 1 kẻ địch chỉ định, đồng thời phát động <u>Đòn Đánh Theo Sau</u> của Thiên Phú lên mục tiêu này. Nếu trước lần thi triển <u>Đòn Đánh Theo Sau</u> này, mục tiêu bị tiêu diệt, thì sẽ phát động <u>Đòn Đánh Theo Sau</u> lên 1 kẻ địch ngẫu nhiên.",
+			"AbridgedEffect": "Gây Sát Thương Lôi cho 1 kẻ địch, đồng thời phát động <color=#f29e38ff><u>Đòn Đánh Theo Sau</u></color> của Thiên Phú.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.62
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.728
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.836
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.944
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.052
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.16
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.295
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.43
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.565
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.808
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.916
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.024
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.132
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.24
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Ultra.png"
+		},
+		"Talent": {
+			"Id": "122304",
+			"Name": "Thu Cánh Tung Đao",
+			"TriggerKey": "SkillP01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Khi trong trận có Con Mồi, Moze sẽ vào trạng thái <u>Rời Trận</u>.\nSau khi mục tiêu phe ta tấn công Con Mồi, Moze sẽ gây thêm 1 lần <u>Sát Thương Lôi kèm theo</u> bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của bản thân, đồng thời tiêu hao 1 điểm Nạp Năng Lượng. Mỗi lần tiêu hao <unbreak>#2[i]</unbreak> điểm Nạp Năng Lượng, Moze sẽ phát động 1 lần <u>Đòn Đánh Theo Sau</u> lên Con Mồi, gây Sát Thương Lôi bằng <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> Tấn Công của bản thân. Khi Nạp Năng Lượng bằng 0, sẽ giải trừ trạng thái Con Mồi của mục tiêu, đồng thời làm mới số điểm Nạp Năng Lượng cần để phát động <u>Đòn Đánh Theo Sau</u>. <u>Đòn Đánh Theo Sau</u> của Thiên Phú sẽ không tiêu hao Nạp Năng Lượng.",
+			"AbridgedEffect": "Khi trong trận có Con Mồi, Moze sẽ vào trạng thái <color=#f29e38ff><u>Rời Trận</u></color>.\nSau khi mục tiêu phe ta tấn công Con Mồi, Moze sẽ gây <color=#f29e38ff><u>Sát Thương Lôi Kèm Theo</u></color>, đồng thời tiêu hao 1 điểm Nạp Năng Lượng. Mỗi khi tiêu hao <color=#f29e38ff><unbreak>#2[i]</unbreak></color> điểm Nạp Năng Lượng, Moze sẽ phát động <color=#f29e38ff><u>Đòn Đánh Theo Sau</u></color> lên Con Mồi, gây Sát Thương Lôi. Khi Nạp Năng Lượng bằng 0, sẽ giải trừ trạng thái Con Mồi của mục tiêu.",
+			"ElementType": "Thunder",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						3,
+						0.8
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.165,
+						3,
+						0.88
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						3,
+						0.96
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.195,
+						3,
+						1.04
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.21,
+						3,
+						1.12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.225,
+						3,
+						1.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2438,
+						3,
+						1.3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.2625,
+						3,
+						1.4
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2813,
+						3,
+						1.5
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						3,
+						1.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.315,
+						3,
+						1.68
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.33,
+						3,
+						1.76
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.345,
+						3,
+						1.84
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.36,
+						3,
+						1.92
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.375,
+						3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Passive.png"
+		},
+		"Technique": {
+			"Id": "122307",
+			"Name": "Đôi Cánh Ẩn Hình",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Enhance",
+			"TagTypeText": "Cường Hóa",
+			"SkillTypeText": "Bí Kỹ",
+			"MaxLevel": 1,
+			"EffectRaw": "Sau khi dùng Bí Kỹ sẽ vào trạng thái Tàng Hình duy trì <unbreak>#1[i]</unbreak> giây. Trong trạng thái Tàng Hình sẽ không bị kẻ địch phát hiện, khi Moze trong trạng thái Tàng Hình tấn công kẻ địch để vào chiến đấu, sát thương sẽ tăng <unbreak>#2[i]%</unbreak>, duy trì <unbreak>#3[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Vào trạng thái Tàng Hình. Khi tấn công kẻ địch trong trạng thái Tàng Hình để vào chiến đấu, sát thương sẽ tăng.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						0.3,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1223/SkillIcon_1223_Maze.png"
+		},
+		"VersionAdded": "2.5"
 	},
 	"1224": {
 		"Id": "1224",
@@ -18629,7 +20300,7 @@
 			"TagTypeText": "Đánh Đơn",
 			"SkillTypeText": "Tuyệt Kỹ",
 			"MaxLevel": 15,
-			"EffectRaw": "Gây Sát Thương Số Ảo bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> tấn công của March 7th cho 1 kẻ địch chỉ định.\nKhiến số đòn đánh trong một lượt ban đầu của lần Cường Hóa Tấn Công Thường tiếp theo tăng <unbreak>#2[i]</unbreak> đòn, tăng <unbreak>#3[i]%</unbreak> <u>xác suất cố định</u> gây thêm sát thương.",
+			"EffectRaw": "Gây Sát Thương Số Ảo bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> tấn công của March 7th cho 1 kẻ địch chỉ định.\nKhiến số đòn đánh trong một lượt ban đầu của lần Tấn Công Thường Cường Hóa tiếp theo tăng <unbreak>#2[i]</unbreak> đòn, tăng <unbreak>#3[i]%</unbreak> <u>xác suất cố định</u> gây thêm sát thương.",
 			"AbridgedEffect": "Gây Sát Thương Số Ảo cho 1 kẻ địch, đồng thời <color=#f29e38ff>tăng</color> số đòn và xác suất gây sát thương của <color=#f29e38ff>Tấn Công Thường Cường Hóa ở lần tiếp theo</color>.",
 			"ElementType": "Imaginary",
 			"Levels": {
@@ -18880,7 +20551,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1224/SkillIcon_1224_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1301": {
 		"Id": "1301",
@@ -23125,7 +24796,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1309/SkillIcon_1309_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1310": {
 		"Id": "1310",
@@ -23864,7 +25535,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1310/SkillIcon_1310_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1312": {
 		"Id": "1312",
@@ -24823,7 +26494,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1314/SkillIcon_1314_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1315": {
 		"Id": "1315",
@@ -25370,7 +27041,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1315/SkillIcon_1315_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8001": {
 		"Id": "8001",
@@ -25849,6 +27520,7 @@
 			"SkillTypeText": "Thiên Phú",
 			"MaxLevel": 15,
 			"EffectRaw": "Sau mỗi lần Phá Vỡ Điểm Yếu của mục tiêu địch, Tấn Công sẽ tăng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, hiệu ứng này tối đa cộng dồn <unbreak>#2[i]</unbreak> tầng.",
+			"AbridgedEffect": "Sau mỗi lần Phá Vỡ Điểm Yếu của mục tiêu phe địch, Tấn Công sẽ tăng.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -25952,6 +27624,7 @@
 			"SkillTypeText": "Bí Kỹ",
 			"MaxLevel": 1,
 			"EffectRaw": "Sau khi dùng Bí Kỹ sẽ hồi ngay HP cho toàn thể phe ta tương đương <unbreak>#1[i]%</unbreak> Giới Hạn HP của mỗi người.",
+			"AbridgedEffect": "Sau khi dùng Bí Kỹ sẽ lập tức <color=#f29e38ff>hồi HP</color> cho toàn bộ phe ta.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -26440,6 +28113,7 @@
 			"SkillTypeText": "Thiên Phú",
 			"MaxLevel": 15,
 			"EffectRaw": "Sau mỗi lần Phá Vỡ Điểm Yếu của mục tiêu địch, Tấn Công sẽ tăng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, hiệu ứng này tối đa cộng dồn <unbreak>#2[i]</unbreak> tầng.",
+			"AbridgedEffect": "Sau mỗi lần Phá Vỡ Điểm Yếu của mục tiêu phe địch, Tấn Công sẽ tăng.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -26543,6 +28217,7 @@
 			"SkillTypeText": "Bí Kỹ",
 			"MaxLevel": 1,
 			"EffectRaw": "Sau khi dùng Bí Kỹ sẽ hồi ngay HP cho toàn thể phe ta tương đương <unbreak>#1[i]%</unbreak> Giới Hạn HP của mỗi người.",
+			"AbridgedEffect": "Sau khi dùng Bí Kỹ sẽ lập tức <color=#f29e38ff>hồi HP</color> cho toàn bộ phe ta.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -26919,6 +28594,7 @@
 			"SkillTypeText": "Thiên Phú",
 			"MaxLevel": 15,
 			"EffectRaw": "Mỗi khi bị tấn công 1 lần sẽ cộng 1 tầng \"Ý Chí Sục Sôi\", tối đa cộng dồn <unbreak>#3[i]</unbreak> tầng.\nKhi số tầng \"Ý Chí Sục Sôi\" không dưới 4, Tấn Công Thường sẽ được cường hóa, gây sát thương cho 1 kẻ địch chỉ định và mục tiêu lân cận kẻ đó.\nSau khi Nhà Khai Phá thi triển Tấn Công Thường, Chiến Kỹ, Tuyệt Kỹ, sẽ cung cấp Khiên cho toàn phe ta để triệt tiêu sát thương bằng <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> Phòng Thủ của Nhà Khai Phá +<color=#f29e38ff><unbreak>#4[i]</unbreak></color>, duy trì <unbreak>#2[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Khi bị tấn công sẽ cộng dồn Ý Chí Sục Sôi, khi Ý Chí Sục Sôi không dưới 4 tầng, Tấn Công Thường sẽ được <color=#f29e38ff>cường hóa</color>. Sau khi thi triển Tấn Công Thường, Chiến Kỹ, Tuyệt Kỹ sẽ cung cấp Khiên cho toàn bộ phe ta.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27052,6 +28728,7 @@
 			"SkillTypeText": "Bí Kỹ",
 			"MaxLevel": 1,
 			"EffectRaw": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo sẽ tạo Khiên cho bản thân giúp triệt tiêu sát thương tương đương <unbreak>#1[i]%</unbreak> Phòng Thủ của Nhà Khai Phá +<unbreak>#2[i]</unbreak>, duy trì <unbreak>#3[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo sẽ cung cấp Khiên cho bản thân.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27430,6 +29107,7 @@
 			"SkillTypeText": "Thiên Phú",
 			"MaxLevel": 15,
 			"EffectRaw": "Mỗi khi bị tấn công 1 lần sẽ cộng 1 tầng \"Ý Chí Sục Sôi\", tối đa cộng dồn <unbreak>#3[i]</unbreak> tầng.\nKhi số tầng \"Ý Chí Sục Sôi\" không dưới 4, Tấn Công Thường sẽ được cường hóa, gây sát thương cho 1 kẻ địch chỉ định và mục tiêu lân cận kẻ đó.\nSau khi Nhà Khai Phá thi triển Tấn Công Thường, Chiến Kỹ, Tuyệt Kỹ, sẽ cung cấp Khiên cho toàn phe ta để triệt tiêu sát thương bằng <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> Phòng Thủ của Nhà Khai Phá +<color=#f29e38ff><unbreak>#4[i]</unbreak></color>, duy trì <unbreak>#2[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Khi bị tấn công sẽ cộng dồn Ý Chí Sục Sôi, khi Ý Chí Sục Sôi không dưới 4 tầng, Tấn Công Thường sẽ được <color=#f29e38ff>cường hóa</color>. Sau khi thi triển Tấn Công Thường, Chiến Kỹ, Tuyệt Kỹ sẽ cung cấp Khiên cho toàn bộ phe ta.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27563,6 +29241,7 @@
 			"SkillTypeText": "Bí Kỹ",
 			"MaxLevel": 1,
 			"EffectRaw": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo sẽ tạo Khiên cho bản thân giúp triệt tiêu sát thương tương đương <unbreak>#1[i]%</unbreak> Phòng Thủ của Nhà Khai Phá +<unbreak>#2[i]</unbreak>, duy trì <unbreak>#3[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo sẽ cung cấp Khiên cho bản thân.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -27972,7 +29651,7 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8005/SkillIcon_8005_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8006": {
 		"Id": "8006",
@@ -28370,6 +30049,6 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8005/SkillIcon_8005_Maze.png"
 		},
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }

@@ -117,7 +117,7 @@
 			{
 				"Id": "100306",
 				"Name": "Trailblaze!",
-				"Effect": "Ultimate mengakibatkan 2 kali DMG tambahan pada musuh secara acak, masing-masing mengakibatkan Fire DMG sebesar 40% dari DMG awal."
+				"Effect": "Ultimate mengakibatkan 2 kali tambahan DMG pada musuh secara acak, masing-masing mengakibatkan Fire DMG sebesar 40% dari DMG aslinya."
 			}
 		],
 		"VersionAdded": "1.0"
@@ -681,7 +681,7 @@
 			{
 				"Id": "110804",
 				"Name": "The Deeper the Love, the Stronger the Hate",
-				"Effect": "Saat Skill mengenai target musuh yang jumlah lapisan status Wind Shear-nya lebih dari atau sama dengan 5 lapis, status Wind Shear yang dimilikinya saat itu akan segera mengakibatkan DMG sebesar 8% DMG Wind Shear."
+				"Effect": "Saat Skill mengenai target musuh yang jumlah lapisan status Wind Shear-nya lebih dari atau sama dengan 5 lapis, maka status Wind Shear yang dimilikinya saat ini akan segera mengakibatkan DMG sebesar 8% dari DMG aslinya."
 			},
 			{
 				"Id": "110805",
@@ -814,7 +814,7 @@
 			{
 				"Id": "111106",
 				"Name": "A Champion's Applause",
-				"Effect": "Setelah \"Rising Uppercut\" dari Enhanced Basic Attack mengenai target musuh berstatus Bleed, maka setiap 1 serangan \"Direct Punch\" yang dilancarkan Enhanced Basic Attack kali ini akan membuat status Bleed musuh segera menghasilkan 1 kali DMG sebesar 8% DMG awal Bleed."
+				"Effect": "Setelah \"Rising Uppercut\" dari Enhanced Basic Attack mengenai target musuh berstatus Bleed, maka setiap 1 serangan \"Direct Punch\" yang dilancarkan Enhanced Basic Attack kali ini akan membuat status Bleed musuh segera menghasilkan 1 kali DMG sebesar 8% dari DMG aslinya."
 			}
 		],
 		"VersionAdded": "1.2"
@@ -1555,7 +1555,48 @@
 				"Effect": "Saat target musuh dikalahkan, lapisan \"Ashen Roast\" yang dimilikinya akan ditumpuk ke musuh dengan jumlah lapisan \"Ashen Roast\" tersedikit yang masih hidup di medan pertempuran. Batas maksimum jumlah lapisan \"Ashen Roast\" bertambah menjadi 9, dan setiap lapis \"Ashen Roast\" akan membuat RES Seluruh Tipe target berkurang 3%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1220": {
+		"Id": "1220",
+		"Name": "Feixiao",
+		"ElementType": "Wind",
+		"ElementTypeText": "Wind",
+		"PathType": "Rogue",
+		"PathTypeText": "Hunt",
+		"Eidolons": [
+			{
+				"Id": "122001",
+				"Name": "Skyward I Quell",
+				"Effect": "Setelah melancarkan \"Boltsunder Blitz\" atau \"Waraxe Skyward\", Ultimate DMG yang diakibatkan Feixiao akan meningkat ekstra, peningkatannya adalah sebesar 10% dari DMG aslinya. Efek ini maksimal dapat ditumpuk hingga 5 lapis, dan berlangsung hingga aksi Ultimate berakhir."
+			},
+			{
+				"Id": "122002",
+				"Name": "Moonward I Wish",
+				"Effect": "Pada efek Talent, setiap kali rekan tim melancarkan 1 kali Serangan Lanjutan akan membuat Feixiao memperoleh 1 poin \"Flying Aureus\". Efek ini maksimal dapat dipicu 6 kali setiap giliran."
+			},
+			{
+				"Id": "122003",
+				"Name": "Starward I Bode",
+				"Effect": "Level Ultimate +2, maksimal Lv. 15. Level Basic Attack +1, maksimal Lv. 10."
+			},
+			{
+				"Id": "122004",
+				"Name": "Stormward I Hear",
+				"Effect": "Pengurangan Toughness dari Serangan Lanjutan Talent meningkat 100%, dan saat melancarkannya, SPD diri sendiri akan meningkat 8% selama 2 giliran."
+			},
+			{
+				"Id": "122005",
+				"Name": "Heavenward I Leap",
+				"Effect": "Level Skill +2, maksimal Lv. 15. Level Talent +2, maksimal Lv. 15."
+			},
+			{
+				"Id": "122006",
+				"Name": "Homeward I Near",
+				"Effect": "RES PEN Seluruh Tipe dari Ultimate DMG yang diakibatkan Feixiao meningkat 20%. DMG Serangan Lanjutan yang diakibatkan Talent akan dianggap sebagai Ultimate DMG, dan DMG Multiplier-nya meningkat 140%."
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"1221": {
 		"Id": "1221",
@@ -1596,7 +1637,89 @@
 				"Effect": "Selama durasi \"Parry\", saat musuh melancarkan kemampuan secara aktif, \"Intuit: Cull\" akan terpicu dan menghapus efek \"Parry\" tanpa peduli apakah musuh tersebut menyerang Yunli atau tidak. Saat melancarkan \"Intuit: Slash\" atau \"Intuit: Cull\" untuk mengakibatkan DMG, CRIT Rate Yunli akan meningkat 15%, dan Physical RES PEN akan meningkat 20%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1222": {
+		"Id": "1222",
+		"Name": "Lingsha",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fire",
+		"PathType": "Priest",
+		"PathTypeText": "Abundance",
+		"Eidolons": [
+			{
+				"Id": "122201",
+				"Name": "Bloom on Vileward Bouquet",
+				"Effect": "Weakness Break Efficiency Lingsha meningkat 50%. Saat ada unit musuh yang terkena Weakness Break, DEF musuh tersebut akan berkurang 20%."
+			},
+			{
+				"Id": "122202",
+				"Name": "Leisure in Carmine Smokeveil",
+				"Effect": "Saat melancarkan Ultimate, Break Effect seluruh rekan tim meningkat 40%, berlangsung selama 3 giliran."
+			},
+			{
+				"Id": "122203",
+				"Name": "Shine of Floral Wick",
+				"Effect": "Level Ultimate +2, maksimal Lv. 15. Level Talent +2, maksimal Lv. 15."
+			},
+			{
+				"Id": "122204",
+				"Name": "Redolence from Canopied Banquet",
+				"Effect": "Saat \"Fuyuan\" beraksi, akan memulihkan HP rekan tim yang HP-nya saat ini paling rendah sebesar 40% ATK Lingsha."
+			},
+			{
+				"Id": "122205",
+				"Name": "Poise Atop Twists and Turns",
+				"Effect": "Level Skill +2, maksimal Lv. 15. Level Basic Attack +1, maksimal Lv. 10."
+			},
+			{
+				"Id": "122206",
+				"Name": "Arcadia Under Deep Seclusion",
+				"Effect": "Saat \"Fuyuan\" berada di medan pertempuran, RES Seluruh Tipe milik seluruh musuh berkurang 20%. Saat \"Fuyuan\" menyerang, akan mengakibatkan ekstra 4 kali DMG, yang setiap DMG-nya akan mengakibatkan Fire DMG sebesar 50% ATK Lingsha dan Pengurangan Toughness sebesar 5 pada musuh acak, memprioritaskan target yang Toughness-nya lebih dari 0 dan memiliki Fire Weakness."
+			}
+		],
+		"VersionAdded": "2.5"
+	},
+	"1223": {
+		"Id": "1223",
+		"Name": "Moze",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Lightning",
+		"PathType": "Rogue",
+		"PathTypeText": "Hunt",
+		"Eidolons": [
+			{
+				"Id": "122301",
+				"Name": "Oathkeeper",
+				"Effect": "Setelah memasuki pertempuran, Moze akan memulihkan 20 poin Energy. Setiap memicu 1 kali DMG Tambahan dari Talent miliknya, Moze akan memulihkan 2 poin Energy."
+			},
+			{
+				"Id": "122302",
+				"Name": "Wrathbearer",
+				"Effect": "Saat rekan tim mengakibatkan DMG pada target musuh yang menjadi \"Prey\", CRIT DMG akan meningkat 40%."
+			},
+			{
+				"Id": "122303",
+				"Name": "Deathchaser",
+				"Effect": "Level Ultimate +2, maksimal Lv. 15. Level Talent +2, maksimal Lv. 15."
+			},
+			{
+				"Id": "122304",
+				"Name": "Heathprowler",
+				"Effect": "Saat melancarkan Ultimate, DMG yang diakibatkan Moze meningkat 30.0%, berlangsung selama 2 giliran."
+			},
+			{
+				"Id": "122305",
+				"Name": "Truthbender",
+				"Effect": "Level Skill +2, maksimal Lv. 15. Level Basic Attack +1, maksimal Lv. 10."
+			},
+			{
+				"Id": "122306",
+				"Name": "Faithbinder",
+				"Effect": "DMG Multiplier Serangan Lanjutan dari Talent meningkat 25%."
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"1224": {
 		"Id": "1224",
@@ -1637,7 +1760,7 @@
 				"Effect": "Setelah melancarkan Ultimate, CRIT DMG yang diakibatkan Enhanced Basic Attack berikutnya akan meningkat 50%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1301": {
 		"Id": "1301",
@@ -2006,7 +2129,7 @@
 				"Effect": "Saat berstatus \"Concerto\", CRIT DMG dari Physical DMG Tambahan yang diakibatkan Ultimate akan meningkat ekstra 450%. Efek \"Moonless Midnight\" maksimal terpicu 8 kali, dan jumlah terpicu akan reset setiap kali melancarkan Ultimate karakter ini."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1310": {
 		"Id": "1310",
@@ -2047,7 +2170,7 @@
 				"Effect": "Fire RES PEN milik SAM saat berstatus \"Complete Combustion\" meningkat 20%. Saat melancarkan Enhanced Basic Attack atau Enhanced Skill, Weakness Break Efficiency meningkat 50%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1312": {
 		"Id": "1312",
@@ -2129,7 +2252,7 @@
 				"Effect": "Saat di medan pertempuran terdapat karakter yang berstatus \"Debt Collector\", Quantum RES PEN Jade akan meningkat 20%, dan Jade juga akan memperoleh status \"Debt Collector\"."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1315": {
 		"Id": "1315",
@@ -2167,10 +2290,10 @@
 			{
 				"Id": "131506",
 				"Name": "Crowbar Hotel's Raccoon",
-				"Effect": "Saat memicu Break DMG yang diakibatkan Talent, akan mengakibatkan Break DMG tambahan pada target sebesar 40% dari DMG Multiplier awal, dan mengakibatkan Break DMG tambahan pada musuh di sekitar target sebesar 70% dari DMG Multiplier awal."
+				"Effect": "Saat memicu Break DMG yang diakibatkan Talent, akan mengakibatkan Break DMG tambahan pada target sebesar 40% dari DMG Multiplier aslinya, dan mengakibatkan Break DMG tambahan pada musuh di sekitar target sebesar 70% dari DMG Multiplier aslinya."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8001": {
 		"Id": "8001",
@@ -2385,7 +2508,7 @@
 				"Effect": "DMG Tambahan dari Skill bertambah 2 kali."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8006": {
 		"Id": "8006",
@@ -2428,6 +2551,6 @@
 				"Effect": "DMG Tambahan dari Skill bertambah 2 kali."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }

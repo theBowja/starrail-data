@@ -256,7 +256,7 @@
 			{
 				"Id": "100801",
 				"Name": "To the Bitter End",
-				"Effect": "When HP is lower than or equal to 50% of Max HP, increases DMG dealt by Skill by 10%."
+				"Effect": "When HP percentage is lower than or equal to 50% of Max HP, increases DMG dealt by Skill by 10%."
 			},
 			{
 				"Id": "100802",
@@ -281,7 +281,7 @@
 			{
 				"Id": "100806",
 				"Name": "Self-Sacrifice",
-				"Effect": "When HP drops to 50% or below, Ultimate deals 20% more DMG. And the DMG multiplier for adjacent targets is raised to the same level as that for the primary target."
+				"Effect": "When the current HP percentage drops to 50% or below, Ultimate deals 20% more DMG, and the DMG multiplier for adjacent targets is raised to the same level as that for the primary target."
 			}
 		],
 		"VersionAdded": "1.0"
@@ -548,7 +548,7 @@
 			{
 				"Id": "110502",
 				"Name": "Clinical Research",
-				"Effect": "When Natasha uses her Ultimate, grant continuous healing for 1 turn(s) to allies whose HP is at 30% or lower. And at the beginning of their turn, their HP is restored by an amount equal to 6% of Natasha's Max HP plus 160."
+				"Effect": "When Natasha uses her Ultimate, grant continuous healing for 1 turn(s) to allies whose HP percentage is at 30% or lower. And at the beginning of their turn, their HP is restored by an amount equal to 6% of Natasha's Max HP plus 160."
 			},
 			{
 				"Id": "110503",
@@ -748,7 +748,7 @@
 			{
 				"Id": "111001",
 				"Name": "Morning of Snow Hike",
-				"Effect": "When healing allies with HP equal to or lower than 50%, Lynx's Outgoing Healing increases by 20%. This effect also works on continuous healing."
+				"Effect": "When healing allies with HP percentage equal to or lower than 50%, Lynx's Outgoing Healing increases by 20%. This effect also works on continuous healing."
 			},
 			{
 				"Id": "111002",
@@ -958,7 +958,7 @@
 			{
 				"Id": "120302",
 				"Name": "Bestowal From the Pure",
-				"Effect": "When his Skill is triggered, if the target ally's HP is lower than 50%, Luocha's Outgoing Healing increases by 30%. If the target ally's HP is at 50% or higher, the ally receives a Shield that can absorb DMG equal to 18% of Luocha's ATK plus 240, lasting for 2 turns."
+				"Effect": "When his Skill is triggered, if the target ally's HP percentage is lower than 50%, Luocha's Outgoing Healing increases by 30%. If the target ally's HP percentage is at 50% or higher, the ally receives a Shield that can absorb DMG equal to 18% of Luocha's ATK plus 240, lasting for 2 turns."
 			},
 			{
 				"Id": "120303",
@@ -1050,7 +1050,7 @@
 			{
 				"Id": "120504",
 				"Name": "Rejected by Death, Infected With Life",
-				"Effect": "When Blade's current HP drops to 50% or lower of his Max HP, increases his Max HP by 20%. Stacks up to 2 time(s)."
+				"Effect": "When Blade's current HP percentage drops to 50% or lower of his Max HP, increases his Max HP by 20%. Stacks up to 2 time(s)."
 			},
 			{
 				"Id": "120505",
@@ -1527,12 +1527,12 @@
 			{
 				"Id": "121801",
 				"Name": "Pentapathic Transference",
-				"Effect": "Allies deal 40% increased DMG to enemy targets afflicted with Ashen Roast. Whenever inflicting Ashen Roast on an enemy target via triggering the Talent's effect, additionally increases the number of Ashen Roast applied this time by 1."
+				"Effect": "Allies deal 40% increased DMG to enemy targets afflicted with Ashen Roast. Whenever inflicting Ashen Roast on an enemy target via triggering the Talent's effect, additionally increases the number of \"Ashen Roast\" stacks applied this time by 1."
 			},
 			{
 				"Id": "121802",
 				"Name": "From Savor Comes Suffer",
-				"Effect": "When an enemy target is afflicted with Ashen Roast, increases the multiplier for the Fire DoT dealt by Ashen Roast to the target by 300%."
+				"Effect": "When an enemy target is afflicted with Ashen Roast, increases the multiplier for the Fire DoT dealt by Ashen Roast to this target by 300%."
 			},
 			{
 				"Id": "121803",
@@ -1555,7 +1555,48 @@
 				"Effect": "When an enemy target gets defeated, their accumulated \"Ashen Roast\" stacks will transfer to the enemy with the lowest number of \"Ashen Roast\" stacks on the battlefield. The maximum stack limit of Ashen Roast increases to 9, and each \"Ashen Roast\" stack reduces the target's All-Type RES by 3%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1220": {
+		"Id": "1220",
+		"Name": "Feixiao",
+		"ElementType": "Wind",
+		"ElementTypeText": "Wind",
+		"PathType": "Rogue",
+		"PathTypeText": "The Hunt",
+		"Eidolons": [
+			{
+				"Id": "122001",
+				"Name": "Skyward I Quell",
+				"Effect": "After launching \"Boltsunder Blitz\" or \"Waraxe Skyward,\" additionally increases the Ultimate DMG dealt by Feixiao by an amount equal to 10% of the original DMG, stacking up to 5 time(s) and lasting until the end of the Ultimate action."
+			},
+			{
+				"Id": "122002",
+				"Name": "Moonward I Wish",
+				"Effect": "In the Talent's effect, for every 1 instance of follow-up attack launched by ally targets, Feixiao gains 1 point of \"Flying Aureus.\" This effect can trigger up to 6 time(s) per turn."
+			},
+			{
+				"Id": "122003",
+				"Name": "Starward I Bode",
+				"Effect": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+			},
+			{
+				"Id": "122004",
+				"Name": "Stormward I Hear",
+				"Effect": "The follow-up attack from Talent has its Toughness Reduction increased by 100%, and when it launches, increases this unit's SPD by 8%, lasting for 2 turn(s)."
+			},
+			{
+				"Id": "122005",
+				"Name": "Heavenward I Leap",
+				"Effect": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+			},
+			{
+				"Id": "122006",
+				"Name": "Homeward I Near",
+				"Effect": "Increases the All-Type RES PEN of Ultimate DMG dealt by Feixiao by 20%. Talent's follow-up attack DMG is considered as Ultimate DMG at the same time, and its DMG multiplier increases by 140%."
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"1221": {
 		"Id": "1221",
@@ -1596,7 +1637,89 @@
 				"Effect": "While Parry is active, if an enemy actively uses their abilities, regardless of whether it attacks Yunli or not, it will trigger \"Intuit: Cull\" and remove the \"Parry\" effect. When dealing DMG via \"Intuit: Slash\" or \"Intuit: Cull,\" increases CRIT Rate by 15% and Physical RES PEN by 20%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"1222": {
+		"Id": "1222",
+		"Name": "Lingsha",
+		"ElementType": "Fire",
+		"ElementTypeText": "Fire",
+		"PathType": "Priest",
+		"PathTypeText": "Abundance",
+		"Eidolons": [
+			{
+				"Id": "122201",
+				"Name": "Bloom on Vileward Bouquet",
+				"Effect": "Lingsha's Weakness Break Efficiency increases by 50%. When an enemy unit's Weakness is Broken, reduces their DEF by 20%."
+			},
+			{
+				"Id": "122202",
+				"Name": "Leisure in Carmine Smokeveil",
+				"Effect": "When using Ultimate, increases all allies' Break Effect by 40%, lasting for 3 turn(s)."
+			},
+			{
+				"Id": "122203",
+				"Name": "Shine of Floral Wick",
+				"Effect": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+			},
+			{
+				"Id": "122204",
+				"Name": "Redolence from Canopied Banquet",
+				"Effect": "When Fuyuan takes action, restores HP equal to 40% of Lingsha's ATK for the ally whose current HP is the lowest."
+			},
+			{
+				"Id": "122205",
+				"Name": "Poise Atop Twists and Turns",
+				"Effect": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+			},
+			{
+				"Id": "122206",
+				"Name": "Arcadia Under Deep Seclusion",
+				"Effect": "While Fuyuan is on the field, reduces all enemies' All-Type RES by 20%. When Fuyuan attacks, additionally deals 4 instance(s) of DMG, with each instance dealing both Fire DMG equal to 50% of Lingsha's ATK and a Toughness Reduction of 5 to a single random enemy. This prioritizes targets with both Toughness greater than 0 and Fire Weakness."
+			}
+		],
+		"VersionAdded": "2.5"
+	},
+	"1223": {
+		"Id": "1223",
+		"Name": "Moze",
+		"ElementType": "Thunder",
+		"ElementTypeText": "Lightning",
+		"PathType": "Rogue",
+		"PathTypeText": "The Hunt",
+		"Eidolons": [
+			{
+				"Id": "122301",
+				"Name": "Oathkeeper",
+				"Effect": "After entering battle, Moze regenerates 20 Energy. Each time the Additional DMG from his Talent is triggered, Moze regenerates 2 Energy."
+			},
+			{
+				"Id": "122302",
+				"Name": "Wrathbearer",
+				"Effect": "When all allies deal DMG to the enemy target marked as \"Prey,\" increases CRIT DMG by 40%."
+			},
+			{
+				"Id": "122303",
+				"Name": "Deathchaser",
+				"Effect": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+			},
+			{
+				"Id": "122304",
+				"Name": "Heathprowler",
+				"Effect": "When using Ultimate, increases the DMG dealt by Moze by 30.0%, lasting for 2 turn(s)."
+			},
+			{
+				"Id": "122305",
+				"Name": "Truthbender",
+				"Effect": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+			},
+			{
+				"Id": "122306",
+				"Name": "Faithbinder",
+				"Effect": "Increases the DMG multiplier of the Talent's follow-up attack by 25%."
+			}
+		],
+		"VersionAdded": "2.5"
 	},
 	"1224": {
 		"Id": "1224",
@@ -1637,7 +1760,7 @@
 				"Effect": "After using Ultimate, increases the CRIT DMG dealt by the next Enhanced Basic ATK by 50%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1301": {
 		"Id": "1301",
@@ -2006,7 +2129,7 @@
 				"Effect": "While the Concerto state is active, the CRIT DMG for the Additional Physical DMG caused by the Ultimate increases by 450%. The effect of Moonless Midnight can trigger up to 8 time(s). And the trigger count resets each time the Ultimate is used."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1310": {
 		"Id": "1310",
@@ -2044,10 +2167,10 @@
 			{
 				"Id": "131006",
 				"Name": "In Finalized Morrow, I Full Bloom",
-				"Effect": "While in Complete Combustion, increases SAM's Fire RES PEN by 20%. When using the Enhanced Basic ATK or Enhanced Skill, increases the Weakness Break efficiency by 50%."
+				"Effect": "While in Complete Combustion, increases SAM's Fire RES PEN by 20%. When using the Enhanced Basic ATK or Enhanced Skill, increases the Weakness Break Efficiency by 50%."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1312": {
 		"Id": "1312",
@@ -2129,7 +2252,7 @@
 				"Effect": "When the Debt Collector character exists on the field, Jade's Quantum RES PEN increases by 20%, and Jade gains the Debt Collector state."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"1315": {
 		"Id": "1315",
@@ -2170,7 +2293,7 @@
 				"Effect": "When triggering the Talent's Break DMG, additionally deals Break DMG to the target equal to 40% of the original DMG multiplier and additionally deals Break DMG to adjacent targets equal to 70% of the original DMG multiplier."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8001": {
 		"Id": "8001",
@@ -2385,7 +2508,7 @@
 				"Effect": "The number of additional DMG applications by the Skill increases by 2."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"8006": {
 		"Id": "8006",
@@ -2428,6 +2551,6 @@
 				"Effect": "The number of additional DMG applications by the Skill increases by 2."
 			}
 		],
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }

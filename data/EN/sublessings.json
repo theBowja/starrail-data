@@ -51,8 +51,8 @@
 		"Id": "612026",
 		"Name": "Resonance Interplay: Reverse Quenching",
 		"Rarity": 1,
-		"Effect": "When using Path Resonance, extends Shield duration by <color=#f29e38ff>2</color> turn(s) on characters whose HP is below <color=#f29e38ff>50%</color> of their Max HP. For every character on which this takes effect, this current Path Resonance deals <color=#f29e38ff>20%</color> more DMG.",
-		"AbridgedEffect": "Casting the Path Resonance extends Shield duration for allies whose HP is below <color=#f29e38ff>50%</color> and enables the next Path Resonance to deal more DMG.",
+		"Effect": "When using Path Resonance, extends Shield duration by <color=#f29e38ff>2</color> turn(s) on characters whose current HP is below <color=#f29e38ff>50%</color> of their Max HP. For every character on which this takes effect, this current use of the Path Resonance deals <color=#f29e38ff>20%</color> more DMG.",
+		"AbridgedEffect": "Casting the Path Resonance extends Shield duration for allies whose HP percentage is below <color=#f29e38ff>50%</color> and enables the next Path Resonance to deal more DMG.",
 		"VersionAdded": "1.6"
 	},
 	"612027": {
@@ -280,7 +280,7 @@
 		"Name": "Resonance Interplay: Faces Places",
 		"Rarity": 1,
 		"Effect": "When the Freeze effect caused by Path Resonance is dispelled or resisted by enemy targets, there is a 150% base chance of lowering the target's All-Type RES by <color=#f29e38ff>15%</color> for <color=#f29e38ff>2</color> turn(s). For every 1% HP that each ally has lost, the target's All-Type RES is additionally lowered by <color=#f29e38ff>0.06%</color>.",
-		"AbridgedEffect": "When the Freeze effect of a Path Resonance is dispelled or resisted, reduces the enemy target(s)' All-Type RES based on the total lost HP of all team members.",
+		"AbridgedEffect": "When the Freeze effect of a Path Resonance is dispelled or resisted, reduces the enemy target(s)' All-Type RES based on the total lost HP percentage of all team members.",
 		"VersionAdded": "1.3"
 	},
 	"612125": {
@@ -431,9 +431,9 @@
 		"Id": "612152",
 		"Name": "Experience: Lost Memory",
 		"Rarity": 1,
-		"Effect": "When attacks reduce an enemy's HP to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>70%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
+		"Effect": "When attacks reduce an enemy's HP percentage to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>70%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
 		"AbridgedEffect": "Enemies have a chance of becoming Frozen when they fall to low health from characters' attacks.",
-		"EnhancedEffect": "When attacks reduce an enemy's HP to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>100%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
+		"EnhancedEffect": "When attacks reduce an enemy's HP percentage to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>100%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "Enemies have a high chance of becoming Frozen when they fall to low HP from allies' attacks.",
 		"VersionAdded": "1.0"
 	},
@@ -615,10 +615,10 @@
 		"Id": "612243",
 		"Name": "Night Beyond Pyre",
 		"Rarity": 1,
-		"Effect": "Increases Weakness Break efficiency by <color=#f29e38ff>30%</color>.",
-		"AbridgedEffect": "Characters' Weakness Break efficiency increases.",
-		"EnhancedEffect": "Increases Weakness Break efficiency by <color=#f29e38ff>45%</color>.",
-		"EnhancedAbridgedEffect": "Characters' Weakness Break efficiency increases.",
+		"Effect": "Increases characters' Weakness Break Efficiency by <color=#f29e38ff>30%</color>.",
+		"AbridgedEffect": "Characters' Weakness Break Efficiency increases.",
+		"EnhancedEffect": "Increases characters' Weakness Break Efficiency by <color=#f29e38ff>45%</color>.",
+		"EnhancedAbridgedEffect": "Characters' Weakness Break Efficiency increases.",
 		"VersionAdded": "1.0"
 	},
 	"612244": {
@@ -776,7 +776,7 @@
 		"Name": "Resonance Interplay: Nullifying Ardor",
 		"Rarity": 1,
 		"Effect": "After using Path Resonance, all allies' Weakness Break Efficiency increases by <color=#f29e38ff>15%</color> and Break Effect increases by <color=#f29e38ff>50%</color>. This effect lasts for <color=#f29e38ff>2</color> turn(s) and stacks up to <color=#f29e38ff>2</color> time(s).",
-		"AbridgedEffect": "After using a Path Resonance, increases all allies' Weakness Break efficiency and Break Effect.",
+		"AbridgedEffect": "After using a Path Resonance, increases all allies' Weakness Break Efficiency and Break Effect.",
 		"VersionAdded": "1.3"
 	},
 	"612326": {
@@ -792,7 +792,7 @@
 		"Name": "Resonance Interplay: Destined Death",
 		"Rarity": 1,
 		"Effect": "Healing from Path Resonance that exceeds a character's Max HP is stored and will be released as automatic healing when the character's HP falls below <color=#f29e38ff>35%</color> of their Max HP. Up to <color=#f29e38ff>50%</color> of the character's Max HP (when the Path Resonance is used) can be stored.",
-		"AbridgedEffect": "Exceeded healing from the Path Resonance is stored and will be released when the character's HP falls below <color=#f29e38ff>35%</color>.",
+		"AbridgedEffect": "Exceeded healing from the Path Resonance is stored and will be released when the character's HP percentage falls below <color=#f29e38ff>35%</color>.",
 		"VersionAdded": "1.6"
 	},
 	"612330": {
@@ -1247,7 +1247,7 @@
 		"Id": "612523",
 		"Name": "Resonance Formation: Event Horizon",
 		"Rarity": 1,
-		"Effect": "When an ally whose current HP is below <color=#f29e38ff>35%</color> gets attacked, automatically releases 1 Path Resonance without consuming Energy. This effect can be triggered up to a max of <color=#f29e38ff>2</color> time(s) in a single battle and cannot be triggered multiple times by the same attack.",
+		"Effect": "When an ally whose current HP percentage is below <color=#f29e38ff>35%</color> gets attacked, automatically releases 1 Path Resonance without consuming Energy. This effect can be triggered up to a max of <color=#f29e38ff>2</color> time(s) in a single battle and cannot be triggered multiple times by the same attack.",
 		"AbridgedEffect": "When a character is hit and their HP is lower than <color=#f29e38ff>35%</color> of their Max HP, Path Resonance will be used 1 time at no cost.",
 		"VersionAdded": "1.0"
 	},
@@ -1264,7 +1264,7 @@
 		"Name": "Resonance Interplay: Zero Age Main Sequence",
 		"Rarity": 1,
 		"Effect": "When a character launches a follow-up attack, regenerates <color=#f29e38ff>5%</color> Energy for Path Resonance. If the character's current HP percentage is lower than <color=#f29e38ff>50%</color>, additionally regenerates <color=#f29e38ff>5%</color> Energy for Path Resonance.",
-		"AbridgedEffect": "When a character launches a follow-up attack, Path Resonance regenerates Energy. If the character's HP is lower than <color=#f29e38ff>50%</color>, increases the amount of Energy regenerated.",
+		"AbridgedEffect": "When a character launches a follow-up attack, Path Resonance regenerates Energy. If the character's HP percentage is lower than <color=#f29e38ff>50%</color>, increases the amount of Energy regenerated.",
 		"VersionAdded": "1.3"
 	},
 	"612526": {
@@ -1272,7 +1272,7 @@
 		"Name": "Resonance Interplay: Nuclear Implosion",
 		"Rarity": 1,
 		"Effect": "When using Path Resonance to attack, additionally deals a set amount of DMG to all enemy targets whose HP is below <color=#f29e38ff>20%</color> of their Max HP, reducing these targets' HP to 1.",
-		"AbridgedEffect": "When using Path Resonance to attack, if an enemy's HP is lower than <color=#f29e38ff>20%</color> of their Max HP, their remaining HP is reduced to 1.",
+		"AbridgedEffect": "When using Path Resonance to attack, if an enemy's HP percentage is lower than <color=#f29e38ff>20%</color> of their Max HP, their remaining HP is reduced to 1.",
 		"VersionAdded": "1.6"
 	},
 	"612527": {
@@ -1287,10 +1287,10 @@
 		"Id": "612530",
 		"Name": "Non-Inverse Antimatter Equation",
 		"Rarity": 1,
-		"Effect": "If a character's current HP is below <color=#f29e38ff>50%</color>, they are considered to have <color=#f29e38ff>16</color> extra stacks of <u>Grit</u>.",
+		"Effect": "If a character's current HP percentage is below <color=#f29e38ff>50%</color>, they are considered to have <color=#f29e38ff>16</color> extra stacks of <u>Grit</u>.",
 		"AbridgedEffect": "If a character's current HP is below <color=#f29e38ff>50%</color>, they are considered to have extra stacks of <u>Grit</u>.",
-		"EnhancedEffect": "If a character's current HP is below <color=#f29e38ff>50%</color>, they are considered to have <color=#f29e38ff>20</color> extra stacks of <u>Grit</u>. For every <color=#f29e38ff>10%</color> further HP lost, gains <color=#f29e38ff>2</color> extra stack(s) of <u>Grit</u>.",
-		"EnhancedAbridgedEffect": "If a character's current HP is below <color=#f29e38ff>50%</color>, they are considered to have extra stacks of <u>Grit</u>. The lower the character's HP is, the higher the stack becomes.",
+		"EnhancedEffect": "If a character's current HP percentage is below <color=#f29e38ff>50%</color>, they are considered to have <color=#f29e38ff>20</color> extra stacks of <u>Grit</u>. For every <color=#f29e38ff>10%</color> further HP lost, gains <color=#f29e38ff>2</color> extra stack(s) of <u>Grit</u>.",
+		"EnhancedAbridgedEffect": "If a character's current HP percentage is below <color=#f29e38ff>50%</color>, they are considered to have extra stacks of <u>Grit</u>. The lower the character's HP is, the higher the stack becomes.",
 		"VersionAdded": "1.0"
 	},
 	"612531": {
@@ -1357,9 +1357,9 @@
 		"Id": "612544",
 		"Name": "Destructive Flare",
 		"Rarity": 1,
-		"Effect": "When a character's HP is lower than <color=#f29e38ff>50%</color>, deals <color=#f29e38ff>40%</color> increased DMG.",
+		"Effect": "When a character's HP percentage is lower than <color=#f29e38ff>50%</color>, deals <color=#f29e38ff>40%</color> increased DMG.",
 		"AbridgedEffect": "When a character's HP percentage is lower than <color=#f29e38ff>50%</color>, they deal increased DMG.",
-		"EnhancedEffect": "When a character's HP is lower than <color=#f29e38ff>50%</color>, deals <color=#f29e38ff>50%</color> increased DMG. When HP's lower than <color=#f29e38ff>35%</color>, DMG dealt further increases by <color=#f29e38ff>20%</color>.",
+		"EnhancedEffect": "When a character's HP percentage is lower than <color=#f29e38ff>50%</color>, deals <color=#f29e38ff>50%</color> increased DMG. When HP's lower than <color=#f29e38ff>35%</color>, DMG dealt further increases by <color=#f29e38ff>20%</color>.",
 		"EnhancedAbridgedEffect": "When a character's current HP percentage is lower than <color=#f29e38ff>50%</color>, they deal increased DMG. When their HP is lower than <color=#f29e38ff>35%</color>, they deal further increased DMG.",
 		"VersionAdded": "1.0"
 	},
@@ -1367,10 +1367,10 @@
 		"Id": "612545",
 		"Name": "Disciplinary Flicker",
 		"Rarity": 1,
-		"Effect": "If a character's HP is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP.",
+		"Effect": "If a character's HP percentage is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP.",
 		"AbridgedEffect": "When a character is hit or have their HP lowered, their HP is restored if their current HP percentage is lower than <color=#f29e38ff>35%</color>.",
-		"EnhancedEffect": "If a character's HP is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP. The lower the current HP is, the more HP will be restored this way, but no more than <color=#f29e38ff>20%</color>.",
-		"EnhancedAbridgedEffect": "When a character is hit or have their HP lowered, their HP is restored if their current HP is lower than <color=#f29e38ff>35%</color>. The lower their HP is, the more HP is restored.",
+		"EnhancedEffect": "If a character's HP percentage is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP. The lower the current HP is, the more HP will be restored this way, but no more than <color=#f29e38ff>20%</color>.",
+		"EnhancedAbridgedEffect": "When a character is hit or have their HP lowered, their HP is restored if their current HP percentage is lower than <color=#f29e38ff>35%</color>. The lower their HP is, the more HP is restored.",
 		"VersionAdded": "1.0"
 	},
 	"612546": {
@@ -1437,9 +1437,9 @@
 		"Id": "612555",
 		"Name": "Sentinel Satellite",
 		"Rarity": 1,
-		"Effect": "When a character's HP is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>20%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
+		"Effect": "When a character's HP percentage is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>20%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
 		"AbridgedEffect": "When a character's current HP percentage is lower than <color=#f29e38ff>50%</color>, they receive a Shield. This buff can only be triggered a limited number of times.",
-		"EnhancedEffect": "When a character's HP is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>30%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
+		"EnhancedEffect": "When a character's HP percentage is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>30%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
 		"EnhancedAbridgedEffect": "When a character's current HP percentage is lower than <color=#f29e38ff>50%</color>, they receive a Shield. This buff can only be triggered a limited number of times.",
 		"VersionAdded": "1.0"
 	},
@@ -1641,10 +1641,10 @@
 		"Id": "612651",
 		"Name": "<i>Mostly Harmful</i>",
 		"Rarity": 1,
-		"Effect": "The Weakness Break efficiency increases by <color=#f29e38ff>35%</color> when characters deal follow-up attack DMG.",
-		"AbridgedEffect": "Follow-up attacks' Weakness Break efficiency increases.",
-		"EnhancedEffect": "The Weakness Break efficiency increases by <color=#f29e38ff>50%</color> when characters deal follow-up attack DMG.",
-		"EnhancedAbridgedEffect": "Follow-up attacks' Weakness Break efficiency increases.",
+		"Effect": "The Weakness Break Efficiency increases by <color=#f29e38ff>35%</color> when characters deal follow-up attack DMG.",
+		"AbridgedEffect": "Follow-up attacks' Weakness Break Efficiency increases.",
+		"EnhancedEffect": "The Weakness Break Efficiency increases by <color=#f29e38ff>50%</color> when characters deal follow-up attack DMG.",
+		"EnhancedAbridgedEffect": "Follow-up attacks' Weakness Break Efficiency increases.",
 		"VersionAdded": "1.0"
 	},
 	"612652": {
@@ -1744,7 +1744,7 @@
 		"Name": "Resonance Interplay: Superposition Eye",
 		"Rarity": 1,
 		"Effect": "After using Path Resonance, nullifies all DMG received by a single target ally except DoT. This status is dispelled after being attacked. If the target ally's current HP percentage is lower than <color=#f29e38ff>50%</color> when Path Resonance is used, it will additionally recover <color=#f29e38ff>1</color> Skill Point(s).",
-		"AbridgedEffect": "After using a Path Resonance, make a target ally able to Block 1 attack. If that ally's HP is lower than <color=#f29e38ff>50%</color>, recover <color=#f29e38ff>1</color> Skill Point(s).",
+		"AbridgedEffect": "After using a Path Resonance, make a target ally able to Block 1 attack. If that ally's HP percentage is lower than <color=#f29e38ff>50%</color>, recover <color=#f29e38ff>1</color> Skill Point(s).",
 		"VersionAdded": "1.3"
 	},
 	"612725": {
@@ -1825,9 +1825,9 @@
 		"Id": "612742",
 		"Name": "Metabolic Cavity",
 		"Rarity": 1,
-		"Effect": "For each <u>Spore</u> that bursts, heals the character with the lowest HP by <color=#f29e38ff>10%</color> of their Max HP.",
+		"Effect": "For each <u>Spore</u> that bursts, heals the character with the lowest HP percentage by <color=#f29e38ff>10%</color> of their Max HP.",
 		"AbridgedEffect": "After <u>Spores</u> burst, restores the HP of the character with the lowest HP percentage.",
-		"EnhancedEffect": "For each <u>Spore</u> possessed by all enemies, reduces the DMG received by all allies by <color=#f29e38ff>0.8%</color>, After the <u>Spores</u> burst, heals the ally with the lowest HP by <color=#f29e38ff>12%</color> of their Max HP.",
+		"EnhancedEffect": "For each <u>Spore</u> possessed by all enemies, reduces the DMG received by all allies by <color=#f29e38ff>0.8%</color>, After the <u>Spores</u> burst, heals the ally with the lowest HP percentage by <color=#f29e38ff>12%</color> of their Max HP.",
 		"EnhancedAbridgedEffect": "Based on the total number of <u>Spores</u> on enemies, lowers DMG received by a character. After <u>Spores</u> burst, restores the HP of the character with the lowest HP percentage.",
 		"VersionAdded": "1.3"
 	},
@@ -1845,9 +1845,9 @@
 		"Id": "612744",
 		"Name": "Exposed Brain Matter",
 		"Rarity": 1,
-		"Effect": "DMG dealt by Basic ATK also deals DMG equal to <color=#f29e38ff>30%</color> of the original DMG to a random adjacent target.",
+		"Effect": "DMG dealt by characters' Basic ATK also deals DMG equal to <color=#f29e38ff>30%</color> of the original DMG to a random adjacent target.",
 		"AbridgedEffect": "Basic ATK DMG will Blast a random adjacent target.",
-		"EnhancedEffect": "DMG dealt by Basic ATK also deals DMG equal to <color=#f29e38ff>35%</color> of the original DMG to adjacent targets.",
+		"EnhancedEffect": "DMG dealt by characters' Basic ATK also deals DMG equal to <color=#f29e38ff>35%</color> of the original DMG to adjacent targets.",
 		"EnhancedAbridgedEffect": "Basic ATK DMG will Blast adjacent targets.",
 		"VersionAdded": "1.3"
 	},
@@ -2185,7 +2185,7 @@
 		"Rarity": 1,
 		"Effect": "Spend 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of Preservation. Provides all allies with a Shield that can absorb DMG equal to <color=#f29e38ff>80%</color> of their respective Max HP, lasting for <color=#f29e38ff>2</color> turn(s). Based on the total Shield effect of all allies, deals Physical DMG to all enemies.",
 		"AbridgedEffect": "After triggering Boundary Equation, provides a Shield for all allies. Based on the total Shield effect of all allies, deals Physical DMG to all enemies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615030": {
 		"Id": "615030",
@@ -2195,7 +2195,7 @@
 		"AbridgedEffect": "After attacking enemies, the attacking character deals <u>Quake</u> DMG based on the current Shield effect on the character.",
 		"EnhancedEffect": "After a character launches an attack, deals <u>Quake</u> DMG equal to <color=#f29e38ff>100%</color> of the character's current Shield effect plus <color=#f29e38ff>20%</color> of the total Shield effect of the character's allies to the hit enemies.",
 		"EnhancedAbridgedEffect": "After attacking enemies, the attacking character deals <u>Quake</u> DMG based on the current total Shield effect on the ally team.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615031": {
 		"Id": "615031",
@@ -2205,7 +2205,7 @@
 		"AbridgedEffect": "After a character is hit by an attack, deals <u>Quake</u> DMG on the attacking enemy based on the total Shield effect on the character before they were hit.",
 		"EnhancedEffect": "After a character is attacked, deals <u>Quake</u> DMG to the attacker, equal to <color=#f29e38ff>420%</color> of the character's Shield effect just before the attack. This DMG cannot defeat the enemy.",
 		"EnhancedAbridgedEffect": "After a character is hit by an attack, deals <u>Quake</u> DMG on the attacking enemy based on the total Shield effect on the character before they were hit.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615032": {
 		"Id": "615032",
@@ -2215,7 +2215,7 @@
 		"AbridgedEffect": "Characters gains a special stackable Shield. When a turn begins, the Shield loses a certain amount of Shield effect.",
 		"EnhancedEffect": "Characters gain a special Shield. When characters obtain other Shields, this special Shield will increase by <color=#f29e38ff>100%</color> of the new Shield effect. At the start of the character's turn, lose <color=#f29e38ff>85%</color> of the Shield effect that exceeds <color=#f29e38ff>45%</color> of the character's Max HP.",
 		"EnhancedAbridgedEffect": "Characters gains a special stackable Shield. When a turn begins, the Shield loses a certain amount of Shield effect.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615040": {
 		"Id": "615040",
@@ -2225,7 +2225,7 @@
 		"AbridgedEffect": "<u>Quake</u> DMG increases and affects enemies adjacent to the target enemy.",
 		"EnhancedEffect": "Characters deal <color=#f29e38ff>15%</color> increased <u>Quake</u> DMG to their target, and other targets also take <u>Quake</u> DMG equal to <color=#f29e38ff>30%</color> of DMG dealt to the primary target enemy.",
 		"EnhancedAbridgedEffect": "<u>Quake</u> DMG increases and is Blasted to all enemies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615041": {
 		"Id": "615041",
@@ -2235,7 +2235,7 @@
 		"AbridgedEffect": "The DMG <u>Quake</u> deals increases with the character's DEF.",
 		"EnhancedEffect": "Deals increased <u>Quake</u> DMG to enemies. The amount of DMG increased is equal to <color=#f29e38ff>120%</color> of the character's current DEF.",
 		"EnhancedAbridgedEffect": "The DMG <u>Quake</u> deals increases with the character's DEF.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615042": {
 		"Id": "615042",
@@ -2245,7 +2245,7 @@
 		"AbridgedEffect": "Shielded characters increase their ATK based on the max DMG that can be absorbed by their current Shields.",
 		"EnhancedEffect": "Shielded characters increase their ATK by <color=#f29e38ff>60%</color> of the Shield effect on them, up to a maximum of <color=#f29e38ff>160%</color> of their Base ATK.",
 		"EnhancedAbridgedEffect": "Shielded characters increase their ATK based on the max DMG that can be absorbed by their current Shields.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615043": {
 		"Id": "615043",
@@ -2255,7 +2255,7 @@
 		"AbridgedEffect": "Characters receive a Shield at the end of the turn.",
 		"EnhancedEffect": "At the end of the turn, characters gain a Shield that can block DMG equal to <color=#f29e38ff>15%</color> of their Max HP, lasting for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "Characters receive a Shield at the end of the turn.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615044": {
 		"Id": "615044",
@@ -2265,7 +2265,7 @@
 		"AbridgedEffect": "Increases the max DMG that can be absorbed by Shields created by characters.",
 		"EnhancedEffect": "When characters' gain a Shield, increases the max DMG that can be absorbed by the Shield by <color=#f29e38ff>35%</color>.",
 		"EnhancedAbridgedEffect": "When a character receives a Shield, increases the max DMG that can be absorbed by the Shield.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615045": {
 		"Id": "615045",
@@ -2275,7 +2275,17 @@
 		"AbridgedEffect": "When a character provides Shield to an ally, the DMG dealt by both characters increases. This effect is stackable.",
 		"EnhancedEffect": "When a character provides Shields to an ally, both units will increase their DMG dealt by <color=#f29e38ff>30%</color>, stacking up to <color=#f29e38ff>5</color> time(s), lasting for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character provides Shield to an ally, the DMG dealt by both characters increases. This effect is stackable.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615046": {
+		"Id": "615046",
+		"Name": "Interstellar Construct: Inversion Cube",
+		"Rarity": 1,
+		"Effect": "Increases CRIT Rate of <u>Quake</u> DMG dealt by characters by <color=#f29e38ff>20%</color> and CRIT DMG by <color=#f29e38ff>50%</color>.",
+		"AbridgedEffect": "Increases the CRIT Rate and CRIT DMG of the <u>Quake</u> dealt by characters.",
+		"EnhancedEffect": "Increases CRIT Rate of <u>Quake</u> DMG dealt by characters by <color=#f29e38ff>30%</color> and CRIT DMG by <color=#f29e38ff>75%</color>.",
+		"EnhancedAbridgedEffect": "Increases the CRIT Rate and CRIT DMG of the <u>Quake</u> dealt by characters.",
+		"VersionAdded": "2.5"
 	},
 	"615050": {
 		"Id": "615050",
@@ -2285,7 +2295,7 @@
 		"AbridgedEffect": "Increases characters' DEF.",
 		"EnhancedEffect": "Increases characters' DEF by <color=#f29e38ff>30%</color>.",
 		"EnhancedAbridgedEffect": "Increases characters' DEF.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615051": {
 		"Id": "615051",
@@ -2295,7 +2305,7 @@
 		"AbridgedEffect": "Upon entering battle, all characters gain a Shield.",
 		"EnhancedEffect": "Upon entering battle, characters gain a Shield equal to <color=#f29e38ff>24%</color> of their Max HP, lasting for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "Upon entering battle, all characters gain a Shield.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615052": {
 		"Id": "615052",
@@ -2305,7 +2315,7 @@
 		"AbridgedEffect": "After being hit, characters gain a Shield based on the HP lost in this attack.",
 		"EnhancedEffect": "After a character is attacked, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>18%</color> of the HP lost during this attack, lasting for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "After being hit, characters gain a Shield based on the HP lost in this attack.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615053": {
 		"Id": "615053",
@@ -2315,7 +2325,7 @@
 		"AbridgedEffect": "When a character inflicts Weakness Break on a target, the character gains a Shield.",
 		"EnhancedEffect": "After a character inflicts Weakness Break on an enemy, characters gain a Shield that can absorb DMG equal to <color=#f29e38ff>18%</color> of their Max HP, lasting for <color=#f29e38ff>3</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character inflicts Weakness Break on a target, the character gains a Shield.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615054": {
 		"Id": "615054",
@@ -2325,7 +2335,7 @@
 		"AbridgedEffect": "Shielded Characters receive reduced DMG.",
 		"EnhancedEffect": "Shielded characters take <color=#f29e38ff>24%</color> less DMG.",
 		"EnhancedAbridgedEffect": "Shielded Characters receive reduced DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615055": {
 		"Id": "615055",
@@ -2335,7 +2345,7 @@
 		"AbridgedEffect": "When a character receives a Shield, there is a small chance of removing a debuff currently on them.",
 		"EnhancedEffect": "When a character gains a Shield, there is a <color=#f29e38ff>30%</color> fixed chance to dispel 1 debuff that is currently placed on the character.",
 		"EnhancedAbridgedEffect": "When a character receives a Shield, there is a small chance of removing a debuff currently on them.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615056": {
 		"Id": "615056",
@@ -2345,7 +2355,7 @@
 		"AbridgedEffect": "Shielded Characters have increased CRIT DMG.",
 		"EnhancedEffect": "Increases the CRIT DMG of Shielded characters by <color=#f29e38ff>45%</color>.",
 		"EnhancedAbridgedEffect": "Shielded Characters have increased CRIT DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615057": {
 		"Id": "615057",
@@ -2355,7 +2365,7 @@
 		"AbridgedEffect": "Shielded Characters have increased CRIT Rate.",
 		"EnhancedEffect": "Increases the CRIT Rate of Shielded characters by <color=#f29e38ff>24%</color>.",
 		"EnhancedAbridgedEffect": "Shielded Characters have increased CRIT Rate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615120": {
 		"Id": "615120",
@@ -2363,7 +2373,7 @@
 		"Rarity": 1,
 		"Effect": "Spend 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of Remembrance, dealing Ice DMG to all enemies with a high chance of Freezing all enemies for <color=#f29e38ff>2</color> turn(s).",
 		"AbridgedEffect": "After triggering the Boundary Equation, deal Ice DMG to all enemies with a high chance of Freezing them for <color=#f29e38ff>2</color> turn(s).",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615130": {
 		"Id": "615130",
@@ -2373,7 +2383,7 @@
 		"AbridgedEffect": "After attacking a Frozen enemy, apply <u>Dissociation</u> on them.",
 		"EnhancedEffect": "When attacking Frozen enemies, there is a <color=#f29e38ff>100%</color> base chance to apply <u>Dissociation</u> to the enemy for <color=#f29e38ff>1</color> turn(s). Additionally deals <color=#f29e38ff>20%</color> more DMG dealt when <u>Dissociation</u> is removed",
 		"EnhancedAbridgedEffect": "After attacking a Frozen enemy, apply <u>Dissociation</u> on them and deal extra DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615131": {
 		"Id": "615131",
@@ -2383,7 +2393,7 @@
 		"AbridgedEffect": "After a character inflicts Weakness Break on an enemy, apply <u>Dissociation</u> on them.",
 		"EnhancedEffect": "After a character inflicts Weakness Break on an enemy, there is a <color=#f29e38ff>100%</color> base chance to apply <u>Dissociation</u> on the enemy for <color=#f29e38ff>1</color> turn(s). This effect ignores enemies' chance to resist Frozen.",
 		"EnhancedAbridgedEffect": "After a character inflicts Weakness Break on an enemy, ignore the enemy's Freeze RES and apply <u>Dissociation</u> on them.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615132": {
 		"Id": "615132",
@@ -2393,7 +2403,7 @@
 		"AbridgedEffect": "The enemy has a high chance to become Frozen for every <color=#f29e38ff>6</color> attack(s) it receives.",
 		"EnhancedEffect": "After an enemy is attacked <color=#f29e38ff>5</color> time(s), they have a <color=#f29e38ff>150%</color> base chance to become Frozen for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "The enemy has a high chance to become Frozen for every <color=#f29e38ff>5</color> attack(s) it receives.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615140": {
 		"Id": "615140",
@@ -2403,7 +2413,7 @@
 		"AbridgedEffect": "Enemies with <u>Dissociation</u> take increased DMG.",
 		"EnhancedEffect": "Increases the DMG taken by enemies with <u>Dissociation</u> by <color=#f29e38ff>54%</color>. This effect will remain for 1 turn after <u>Dissociation</u> is removed.",
 		"EnhancedAbridgedEffect": "Enemies with <u>Dissociation</u> take increased DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615141": {
 		"Id": "615141",
@@ -2413,7 +2423,7 @@
 		"AbridgedEffect": "When <u>Dissociation</u> is removed from an enemy, there is a chance for them to become Frozen.",
 		"EnhancedEffect": "After <u>Dissociation</u> is removed from an enemy, there is a <color=#f29e38ff>75%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "After <u>Dissociation</u> is removed from an enemy, there is a high chance for them to become Frozen.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615142": {
 		"Id": "615142",
@@ -2423,7 +2433,7 @@
 		"AbridgedEffect": "When an enemy's Frozen state is dispelled, the DMG dealt by the enemy is reduced.",
 		"EnhancedEffect": "When Freeze is dispelled, enemy targets deal <color=#f29e38ff>24%</color> less DMG, lasting for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "When an enemy's Frozen state is dispelled, the DMG dealt by the enemy is reduced.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615143": {
 		"Id": "615143",
@@ -2433,7 +2443,7 @@
 		"AbridgedEffect": "When a character Freezes an enemy, their Effect Hit Rate increases. After inflicting Freeze on an enemy, the DMG dealt by the character increases.",
 		"EnhancedEffect": "When a character Freezes an enemy, their Effect Hit Rate increases by <color=#f29e38ff>45%</color>. After Freezing an enemy, the DMG dealt by the character increases by <color=#f29e38ff>60%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character Freezes an enemy, their Effect Hit Rate increases. After inflicting Freeze on an enemy, the DMG dealt by the character increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615144": {
 		"Id": "615144",
@@ -2443,7 +2453,7 @@
 		"AbridgedEffect": "After a character uses their Ultimate, a random enemy gains Ice Weakness.",
 		"EnhancedEffect": "After a character uses their Ultimate, there is a <color=#f29e38ff>70%</color> base chance to apply Ice Weakness to a random enemy who has no Ice Weakness for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "After a character uses their Ultimate, a random enemy without Ice Weakness gains Ice Weakness.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615145": {
 		"Id": "615145",
@@ -2453,7 +2463,17 @@
 		"AbridgedEffect": "Upon entering battle, there is a high chance of inflicting Freeze on all enemies.",
 		"EnhancedEffect": "Upon entering battle, there is a <color=#f29e38ff>150%</color> base chance for all enemies to become Frozen and have their SPD reduced by <color=#f29e38ff>30%</color>, lasting for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "Upon entering battle, there is a high chance of inflicting Freeze on all enemy units, as well as lowering their SPD.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615146": {
+		"Id": "615146",
+		"Name": "Ultimate Experience: Cynicism",
+		"Rarity": 1,
+		"Effect": "After allies use an attack, there is a <color=#f29e38ff>40%</color> base chance to inflict the <u>Dissociation</u> state to the attacked target(s). This effect can trigger a maximum of <color=#f29e38ff>1</color> time(s) per enemy target per battle.",
+		"AbridgedEffect": "After allies use an attack, there is a chance to inflict <u>Dissociation</u> to the attack target.",
+		"EnhancedEffect": "After allies use an attack, there is a <color=#f29e38ff>60%</color> base chance to inflict the <u>Dissociation</u> state to the attacked target(s). This effect can trigger a maximum of <color=#f29e38ff>1</color> time(s) per enemy target per battle.",
+		"EnhancedAbridgedEffect": "After allies use an attack, there is a chance to inflict <u>Dissociation</u> to the attack target.",
+		"VersionAdded": "2.5"
 	},
 	"615150": {
 		"Id": "615150",
@@ -2463,7 +2483,7 @@
 		"AbridgedEffect": "Reduces enemy targets' chance to resist being Frozen.",
 		"EnhancedEffect": "Reduces enemy targets' chance to resist Frozen by <color=#f29e38ff>45%</color>.",
 		"EnhancedAbridgedEffect": "Reduces enemy targets' chance to resist being Frozen.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615151": {
 		"Id": "615151",
@@ -2473,17 +2493,17 @@
 		"AbridgedEffect": "Increases Effect Hit Rate.",
 		"EnhancedEffect": "Characters' Effect Hit Rate increases by <color=#f29e38ff>24%</color>.",
 		"EnhancedAbridgedEffect": "Increases Effect Hit Rate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615152": {
 		"Id": "615152",
 		"Name": "Experience: Lost Memory",
 		"Rarity": 1,
-		"Effect": "When attacks reduce an enemy's HP to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>70%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
+		"Effect": "When attacks reduce an enemy's HP percentage to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>70%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
 		"AbridgedEffect": "Enemies have a chance of becoming Frozen when they fall to low health from characters' attacks.",
-		"EnhancedEffect": "When attacks reduce an enemy's HP to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>100%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
+		"EnhancedEffect": "When attacks reduce an enemy's HP percentage to a point that is lower than <color=#f29e38ff>50%</color> for the first time in this battle, there's a <color=#f29e38ff>100%</color> base chance to Freeze the enemy for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "Enemies have a high chance of becoming Frozen when they fall to low HP from allies' attacks.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615153": {
 		"Id": "615153",
@@ -2493,7 +2513,7 @@
 		"AbridgedEffect": "Characters' Skill and Ultimate deal increased DMG against Frozen enemies.",
 		"EnhancedEffect": "When a character uses their Skill or Ultimate to attack a Frozen enemy, DMG for this attack increases by <color=#f29e38ff>54%</color>.",
 		"EnhancedAbridgedEffect": "Characters' Skill and Ultimate deal increased DMG against Frozen enemies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615154": {
 		"Id": "615154",
@@ -2503,7 +2523,7 @@
 		"AbridgedEffect": "After attacking a Frozen enemy target, deal Additional DMG.",
 		"EnhancedEffect": "After characters attack a Frozen enemy target, deals Additional DMG equal to <color=#f29e38ff>60%</color> of the attacker's ATK.",
 		"EnhancedAbridgedEffect": "After attacking a Frozen enemy target, deal Additional DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615155": {
 		"Id": "615155",
@@ -2513,7 +2533,7 @@
 		"AbridgedEffect": "DMG taken by Frozen enemies increases.",
 		"EnhancedEffect": "Increases the DMG taken by Frozen enemies by <color=#f29e38ff>24%</color>.",
 		"EnhancedAbridgedEffect": "DMG taken by Frozen enemies increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615156": {
 		"Id": "615156",
@@ -2523,7 +2543,7 @@
 		"AbridgedEffect": "Characters regenerate Energy when they apply Freeze on enemies.",
 		"EnhancedEffect": "When a character Freezes an enemy, regenerates <color=#f29e38ff>12</color> Energy. This effect may only trigger once per action.",
 		"EnhancedAbridgedEffect": "Characters regenerate Energy when they apply Freeze on enemies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615157": {
 		"Id": "615157",
@@ -2533,7 +2553,7 @@
 		"AbridgedEffect": "After the Freeze effect on an enemy is removed, the character with the lowest Shield effect gains a Shield.",
 		"EnhancedEffect": "When the Freeze on an enemy target is dispelled, the character with the lowest Shield strength gains a Shield that can block DMG equal to <color=#f29e38ff>45%</color> of their Max HP, lasting for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "After the Freeze effect on an enemy is removed, the character with the lowest Shield effect gains a Shield.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615220": {
 		"Id": "615220",
@@ -2541,7 +2561,7 @@
 		"Rarity": 1,
 		"Effect": "Spend 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of Nihility. Inflicts Burn, Shock, Bleed, and 2 stacks of Wind Shear to all enemies for <color=#f29e38ff>3</color> turn(s). After being attacked by a character, the aforementioned DoTs immediately deal DMG equal to <color=#f29e38ff>25%</color> of the original DMG.",
 		"AbridgedEffect": "After triggering the Boundary Equation, inflict Burn, Shock, Bleed, and Wind Shear on all enemies. After receiving a character's attack, the inflicted DoTs can be triggered.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615230": {
 		"Id": "615230",
@@ -2551,7 +2571,7 @@
 		"AbridgedEffect": "Every time an enemy takes DMG from a DoT, apply <color=#f29e38ff>2</color> stack(s) of <u>Suspicion</u> on them.",
 		"EnhancedEffect": "Every time an enemy takes DMG from a DoT, apply <color=#f29e38ff>2</color> stack(s) of <u>Suspicion</u> on them. After <u>Suspicion</u> reaches 99 stacks for the first time, the provided DoT Vulnerability is no longer affected by the number of stacks and is set at <color=#f29e38ff>120%</color>.",
 		"EnhancedAbridgedEffect": "Every time an enemy takes DMG from a DoT, apply <color=#f29e38ff>2</color> stack(s) of <u>Suspicion</u> on them. After reaching 99 stacks for the first time, DoT Vulnerability increases and is no longer affected by the number of stacks.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615231": {
 		"Id": "615231",
@@ -2561,7 +2581,7 @@
 		"AbridgedEffect": "When a character Breaks an enemy's Weakness or attacks a Weakness Broken enemy, inflicts the <u>Suspicion</u> effect on it.",
 		"EnhancedEffect": "When a character Breaks an enemy's Weakness or attacks a Weakness Broken enemy, inflicts either <color=#f29e38ff>24</color> or <color=#f29e38ff>4</color> stack(s) of <u>Suspicion</u>.",
 		"EnhancedAbridgedEffect": "When a character Breaks an enemy's Weakness or attacks a Weakness Broken enemy, inflicts the <u>Suspicion</u> effect on it.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615232": {
 		"Id": "615232",
@@ -2571,7 +2591,7 @@
 		"AbridgedEffect": "At the start of an enemy's turn, all DoT statuses on it are triggered <color=#f29e38ff>1</color> extra time(s).",
 		"EnhancedEffect": "At the beginning of an enemy target's turn, additionally trigger extra DoT DMG calculations <color=#f29e38ff>1</color> time(s), and each DoT status currently on the target will immediately deal DMG equal to <color=#f29e38ff>135%</color> of the original DMG.",
 		"EnhancedAbridgedEffect": "At the start of an enemy's turn, all DoT statuses on it are triggered <color=#f29e38ff>1</color> extra time(s).",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615240": {
 		"Id": "615240",
@@ -2581,7 +2601,7 @@
 		"AbridgedEffect": "When an enemy afflicted with <u>Suspicion</u> is defeated, transfers the defeated enemy's <u>Suspicion</u> stacks to <color=#f29e38ff>1</color> random enemy target(s).",
 		"EnhancedEffect": "When an enemy inflicted with <u>Suspicion</u> is defeated, inflicts the same number of stacks of <u>Suspicion</u> the defeated enemy has on <color=#f29e38ff>2</color> random enemy target(s).",
 		"EnhancedAbridgedEffect": "When an enemy afflicted with <u>Suspicion</u> is defeated, transfers the defeated enemy's <u>Suspicion</u> stacks to <color=#f29e38ff>2</color> random enemy target(s).",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615241": {
 		"Id": "615241",
@@ -2591,7 +2611,7 @@
 		"AbridgedEffect": "When an enemy becomes afflicted with <u>Suspicion</u>, apply <color=#f29e38ff>1</color> extra stack(s) of <u>Suspicion</u> on them.",
 		"EnhancedEffect": "When an enemy is inflicted with <u>Suspicion</u>, the stacks it gains are doubled.",
 		"EnhancedAbridgedEffect": "When an enemy is afflicted with <u>Suspicion</u>, the stacks they gains is doubled.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615242": {
 		"Id": "615242",
@@ -2601,17 +2621,17 @@
 		"AbridgedEffect": "The more DoTs the enemy takes, the less DMG they deal.",
 		"EnhancedEffect": "After an enemy receives DoT, they deal <color=#f29e38ff>7%</color> reduced DMG, stacking up to <color=#f29e38ff>4</color> time(s) and lasting until the end of the turn.",
 		"EnhancedAbridgedEffect": "The more DoTs the enemy takes, the less DMG they deal.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615243": {
 		"Id": "615243",
 		"Name": "Night Beyond Pyre",
 		"Rarity": 1,
-		"Effect": "Increases Weakness Break efficiency by <color=#f29e38ff>30%</color>.",
-		"AbridgedEffect": "Characters' Weakness Break efficiency increases.",
-		"EnhancedEffect": "Increases Weakness Break efficiency by <color=#f29e38ff>45%</color>.",
-		"EnhancedAbridgedEffect": "Characters' Weakness Break efficiency increases.",
-		"VersionAdded": "2.4"
+		"Effect": "Increases characters' Weakness Break Efficiency by <color=#f29e38ff>30%</color>.",
+		"AbridgedEffect": "Characters' Weakness Break Efficiency increases.",
+		"EnhancedEffect": "Increases characters' Weakness Break Efficiency by <color=#f29e38ff>45%</color>.",
+		"EnhancedAbridgedEffect": "Characters' Weakness Break Efficiency increases.",
+		"VersionAdded": "2.5"
 	},
 	"615244": {
 		"Id": "615244",
@@ -2621,7 +2641,7 @@
 		"AbridgedEffect": "When a character Breaks an enemy's Weakness, deals Break DMG to enemies adjacent to it 1 time.",
 		"EnhancedEffect": "When a character Breaks an enemy's Weakness, deals Break DMG equal to <color=#f29e38ff>210%</color> of the Weakness Break DMG 1 time to all other enemy targets.",
 		"EnhancedAbridgedEffect": "When a character Breaks an enemy's Weakness, deals Break DMG to other enemies 1 time.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615245": {
 		"Id": "615245",
@@ -2631,7 +2651,17 @@
 		"AbridgedEffect": "If an enemy is under any DoT status when receiving an attack, they will take DMG from a random DoT on them.",
 		"EnhancedEffect": "If an enemy is attacked while under any DoT statuses, a random DoT will be triggered, dealing DMG equal to <color=#f29e38ff>150%</color> of the DoT.",
 		"EnhancedAbridgedEffect": "If an enemy is under any DoT status when receiving an attack, they will take DMG from a random DoT on them.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615246": {
+		"Id": "615246",
+		"Name": "Path Through the Woods",
+		"Rarity": 1,
+		"Effect": "When enemy targets enter battle, they gain <color=#f29e38ff>30</color> stack(s) of <u>Suspicion</u>.",
+		"AbridgedEffect": "When enemy targets enter battle, they receive <u>Suspicion</u>.",
+		"EnhancedEffect": "When enemy targets enter battle, they gain <color=#f29e38ff>45</color> stack(s) of <u>Suspicion</u>.",
+		"EnhancedAbridgedEffect": "When enemy targets enter battle, they receive <u>Suspicion</u>.",
+		"VersionAdded": "2.5"
 	},
 	"615250": {
 		"Id": "615250",
@@ -2641,7 +2671,7 @@
 		"AbridgedEffect": "Increases characters' DoT.",
 		"EnhancedEffect": "DoT effects applied by characters deal <color=#f29e38ff>36%</color> more DMG.",
 		"EnhancedAbridgedEffect": "Increases characters' DoT.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615251": {
 		"Id": "615251",
@@ -2651,7 +2681,7 @@
 		"AbridgedEffect": "Increases characters' ATK.",
 		"EnhancedEffect": "Increases characters' ATK by <color=#f29e38ff>27%</color>.",
 		"EnhancedAbridgedEffect": "Increases characters' ATK.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615252": {
 		"Id": "615252",
@@ -2661,7 +2691,7 @@
 		"AbridgedEffect": "Reduces target enemy's Effect RES.",
 		"EnhancedEffect": "Reduces enemies' Effect RES by <color=#f29e38ff>18%</color>.",
 		"EnhancedAbridgedEffect": "Reduces target enemy's Effect RES.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615253": {
 		"Id": "615253",
@@ -2671,7 +2701,7 @@
 		"AbridgedEffect": "Enemies take increased DMG from DoTs.",
 		"EnhancedEffect": "Increases DoT taken by enemies by <color=#f29e38ff>15%</color>.",
 		"EnhancedAbridgedEffect": "Enemies take increased DMG from DoTs.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615254": {
 		"Id": "615254",
@@ -2681,7 +2711,7 @@
 		"AbridgedEffect": "Enemies with their Weakness Broken have their DEF reduced.",
 		"EnhancedEffect": "Reduces DEF of Enemies with their Weakness Broken by <color=#f29e38ff>20%</color>.",
 		"EnhancedAbridgedEffect": "Enemies with their Weakness Broken have their DEF reduced.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615255": {
 		"Id": "615255",
@@ -2691,7 +2721,7 @@
 		"AbridgedEffect": "The more DoTs the enemy has, the more DMG they will receive from all sources.",
 		"EnhancedEffect": "Every time an enemy target is afflicted with a DoT status, the DMG taken by them increases by <color=#f29e38ff>4%</color>. This effect can stack up to <color=#f29e38ff>5</color> time(s).",
 		"EnhancedAbridgedEffect": "The more DoTs the enemy has, the more DMG they will receive from all sources.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615256": {
 		"Id": "615256",
@@ -2701,7 +2731,7 @@
 		"AbridgedEffect": "Every time an enemy takes DMG from a DoT, all characters restore HP.",
 		"EnhancedEffect": "Every time an enemy takes DMG from a DoT, all allies restore HP equal to <color=#f29e38ff>1.5%</color> of their respective Max HP.",
 		"EnhancedAbridgedEffect": "Every time an enemy takes DMG from a DoT, all characters restore HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615257": {
 		"Id": "615257",
@@ -2711,7 +2741,7 @@
 		"AbridgedEffect": "Every time an enemy takes DMG from a DoT, a random ally regenerates Energy.",
 		"EnhancedEffect": "Every time an enemy receives a DoT, regenerates <color=#f29e38ff>3.0</color> Energy for a random ally. Enemies can trigger this effect for a max of <color=#f29e38ff>20</color> time(s) in one turn.",
 		"EnhancedAbridgedEffect": "Every time an enemy takes DMG from a DoT, a random ally regenerates Energy.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615320": {
 		"Id": "615320",
@@ -2719,7 +2749,7 @@
 		"Rarity": 1,
 		"Effect": "Spend 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of Abundance, restoring HP for all allies by <color=#f29e38ff>100%</color> of the triggering character's Max HP, dispelling all debuffs, and applying <u>Purgatorial Eradication</u>, lasting for <color=#f29e38ff>3</color> turn(s).",
 		"AbridgedEffect": "After triggering the boundary Equation, restores HP for all allies and dispels all debuffs while providing the <u>Purgatorial Eradication</u> state.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615330": {
 		"Id": "615330",
@@ -2729,7 +2759,7 @@
 		"AbridgedEffect": "When a character's HP is restored, <u>Dewdrop</u> is Charged according to the amount of healing received.",
 		"EnhancedEffect": "Charges <u>Dewdrop</u> when a character's HP is restored. The Charge value is equal to <color=#f29e38ff>100%</color> of the amount of healing received, and increases <u>Dewdrop</u>'s DMG multiplier by <color=#f29e38ff>40%</color> of the original multiplier.",
 		"EnhancedAbridgedEffect": "When a character's HP is restored, <u>Dewdrop</u> is Charged according to the amount of healing received, and DMG done by <u>Dewdrop</u> is increased.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615331": {
 		"Id": "615331",
@@ -2739,7 +2769,7 @@
 		"AbridgedEffect": "When a character's turn begins, <u>Dewdrop</u> is Charged based on the character's current HP.",
 		"EnhancedEffect": "Charges <u>Dewdrop</u> at the beginning of a character's turn. The Charge value is equal to <color=#f29e38ff>70%</color> of their Max HP.",
 		"EnhancedAbridgedEffect": "When a character's turn begins, <u>Dewdrop</u> is Charged based on the character's Max HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615332": {
 		"Id": "615332",
@@ -2749,7 +2779,7 @@
 		"AbridgedEffect": "Healing effects provided by characters can be Blasted to all allies.",
 		"EnhancedEffect": "Characters' Max HP increases by <color=#f29e38ff>20%</color>. When a character provides healing, allies other than the healed target will also gain HP equal to <color=#f29e38ff>35%</color> of the Outgoing Healing.",
 		"EnhancedAbridgedEffect": "Increases Max HP. Healing effects provided by characters can be Blasted to all allies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615340": {
 		"Id": "615340",
@@ -2759,7 +2789,7 @@
 		"AbridgedEffect": "Restores the character's HP when <u>Dewdrop</u> breaks.",
 		"EnhancedEffect": "Restores HP equal to <color=#f29e38ff>20%</color> of the Charge value when <u>Dewdrop</u> ruptures, up to <color=#f29e38ff>24%</color> of the character's Max HP and no less than <color=#f29e38ff>12%</color> of their Max HP.",
 		"EnhancedAbridgedEffect": "Restores the character's HP to above a minimum value when <u>Dewdrop</u> breaks.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615341": {
 		"Id": "615341",
@@ -2769,7 +2799,7 @@
 		"AbridgedEffect": "When a character's HP is full, <u>Dewdrop</u>'s Charging Efficiency increases.",
 		"EnhancedEffect": "When a character's HP is full, increases the Charging Efficiency for <u>Dewdrop</u> by <color=#f29e38ff>120%</color>.",
 		"EnhancedAbridgedEffect": "When a character's HP is full, <u>Dewdrop</u>'s Charging Efficiency increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615342": {
 		"Id": "615342",
@@ -2779,7 +2809,7 @@
 		"AbridgedEffect": "When a character restores an ally's HP, both units' ATK increases.",
 		"EnhancedEffect": "When a character provides healing to allies, increases the ATK of all allies by <color=#f29e38ff>50%</color> for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character restores an ally's HP, all allies' ATK increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615343": {
 		"Id": "615343",
@@ -2789,7 +2819,7 @@
 		"AbridgedEffect": "After a character uses an attack, they deal Additional DMG based on their current HP.",
 		"EnhancedEffect": "Whenever a character attacks, deals Additional DMG to the enemy equal to <color=#f29e38ff>42%</color> of the character's Max HP.",
 		"EnhancedAbridgedEffect": "After a character uses an attack, they deal Additional DMG based on their Max HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615344": {
 		"Id": "615344",
@@ -2799,7 +2829,7 @@
 		"AbridgedEffect": "When a character's HP is fully restored, their DMG received is reduced and Effect RES is increased until after they are attacked.",
 		"EnhancedEffect": "When a character's HP is fully restored, reduces their DMG received by <color=#f29e38ff>30%</color> and increases Effect RES by <color=#f29e38ff>30%</color> until after they are attacked.",
 		"EnhancedAbridgedEffect": "When a character's HP is fully restored, their DMG received is reduced and Effect RES is increased until after they are attacked.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615345": {
 		"Id": "615345",
@@ -2809,7 +2839,17 @@
 		"AbridgedEffect": "Characters that have their HP restored by an ally also restore extra HP.",
 		"EnhancedEffect": "When being healed by an ally, characters restore extra HP equal to <color=#f29e38ff>45%</color> of the amount of HP healed.",
 		"EnhancedAbridgedEffect": "Characters that have their HP restored by an ally also restore extra HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615346": {
+		"Id": "615346",
+		"Name": "Offering of Incinerated Flesh",
+		"Rarity": 1,
+		"Effect": "<u>Dewdrop</u> DMG caused by characters increase its CRIT Rate by <color=#f29e38ff>20%</color> and CRIT DMG by <color=#f29e38ff>50%</color>.",
+		"AbridgedEffect": "Increases the CRIT Rate and CRIT DMG of <u>Dewdrop</u> DMG dealt by characters.",
+		"EnhancedEffect": "<u>Dewdrop</u> DMG caused by characters increase its CRIT Rate by <color=#f29e38ff>30%</color> and CRIT DMG by <color=#f29e38ff>75%</color>.",
+		"EnhancedAbridgedEffect": "Increases the CRIT Rate and CRIT DMG of <u>Dewdrop</u> DMG dealt by characters.",
+		"VersionAdded": "2.5"
 	},
 	"615350": {
 		"Id": "615350",
@@ -2819,7 +2859,7 @@
 		"AbridgedEffect": "When a character's restored HP exceeds Max HP, their Max HP increases.",
 		"EnhancedEffect": "When a character's restored HP exceeds their Max HP, increases their Max HP by <color=#f29e38ff>36%</color>, lasting for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character's restored HP exceeds Max HP, their Max HP increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615351": {
 		"Id": "615351",
@@ -2829,17 +2869,17 @@
 		"AbridgedEffect": "Increases the amount of HP restored by characters.",
 		"EnhancedEffect": "Increases Incoming Healing by <color=#f29e38ff>18%</color>.",
 		"EnhancedAbridgedEffect": "Increases the amount of HP restored by characters.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615352": {
 		"Id": "615352",
 		"Name": "Extended Life",
 		"Rarity": 1,
-		"Effect": "When a character has their HP lowered to below <color=#f29e38ff>50%</color> for the first time in battle, they restore HP equal to <color=#f29e38ff>30%</color> of their Max HP.",
-		"AbridgedEffect": "When a character has their HP lowered to below <color=#f29e38ff>50%</color> for the first time, their HP is restored.",
-		"EnhancedEffect": "When a character has their HP lowered to below <color=#f29e38ff>50%</color> for the first time in battle, they restore HP equal to <color=#f29e38ff>45%</color> of their Max HP.",
-		"EnhancedAbridgedEffect": "When a character has their HP lowered to below <color=#f29e38ff>50%</color> for the first time, their HP is restored.",
-		"VersionAdded": "2.4"
+		"Effect": "When a character has their HP percentage lowered to below <color=#f29e38ff>50%</color> for the first time in battle, they restore HP equal to <color=#f29e38ff>30%</color> of their Max HP.",
+		"AbridgedEffect": "When a character has their HP percentage lowered to below <color=#f29e38ff>50%</color> for the first time, their HP is restored.",
+		"EnhancedEffect": "When a character has their HP percentage lowered to below <color=#f29e38ff>50%</color> for the first time in battle, they restore HP equal to <color=#f29e38ff>45%</color> of their Max HP.",
+		"EnhancedAbridgedEffect": "When a character has their HP percentage lowered to below <color=#f29e38ff>50%</color> for the first time, their HP is restored.",
+		"VersionAdded": "2.5"
 	},
 	"615353": {
 		"Id": "615353",
@@ -2849,7 +2889,7 @@
 		"AbridgedEffect": "Characters restore HP after inflicting Weakness Break on enemies.",
 		"EnhancedEffect": "After a character inflicts Weakness Break on an enemy, restores HP to the character equal to <color=#f29e38ff>24%</color> of their Max HP.",
 		"EnhancedAbridgedEffect": "Characters restore HP after inflicting Weakness Break on enemies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615354": {
 		"Id": "615354",
@@ -2859,7 +2899,7 @@
 		"AbridgedEffect": "After having their HP restored, the character's DEF increases.",
 		"EnhancedEffect": "After a character is healed, increases their DEF by <color=#f29e38ff>36%</color> for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "After having their HP restored, the character's DEF increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615355": {
 		"Id": "615355",
@@ -2869,7 +2909,7 @@
 		"AbridgedEffect": "After restoring an ally's HP, the healer character also restores HP.",
 		"EnhancedEffect": "After a character provides healing, they restore HP equal to <color=#f29e38ff>18%</color> of their Max HP. This effect can only trigger once per action.",
 		"EnhancedAbridgedEffect": "After restoring an ally's HP, the healer character also restores HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615356": {
 		"Id": "615356",
@@ -2879,7 +2919,7 @@
 		"AbridgedEffect": "After having their HP restored, the character's SPD increases.",
 		"EnhancedEffect": "After a character is healed, increases their SPD by <color=#f29e38ff>15%</color> for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "After having their HP restored, the character's SPD increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615357": {
 		"Id": "615357",
@@ -2889,7 +2929,7 @@
 		"AbridgedEffect": "When a character's restored HP exceeds their Max HP, there is a chance to dispel 1 debuff currently on them.",
 		"EnhancedEffect": "When a character's restored HP exceeds their Max HP, there's a <color=#f29e38ff>25%</color> fixed chance to dispel 1 debuff on the character. This effect can be triggered up to <color=#f29e38ff>2</color> time(s) per turn.",
 		"EnhancedAbridgedEffect": "When a character's restored HP exceeds their Max HP, there is a chance to dispel 1 debuff currently on them.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615420": {
 		"Id": "615420",
@@ -2897,7 +2937,7 @@
 		"Rarity": 1,
 		"Effect": "Spends 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of The Hunt, dealing Wind DMG to all enemies and Advances all allies' actions by <color=#f29e38ff>100%</color>, with the Max Energy being 200.",
 		"AbridgedEffect": "After triggering the boundary Equation, deals Wind DMG to all enemies and Advances all allies' actions by <color=#f29e38ff>100%</color>, with the Max Energy being 200.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615430": {
 		"Id": "615430",
@@ -2907,7 +2947,7 @@
 		"AbridgedEffect": "When a character's turn begins, they gain <color=#f29e38ff>1</color> stack(s) of <u>Critical Boost</u>.",
 		"EnhancedEffect": "When a character's turn begins, they gain <color=#f29e38ff>1</color> stack(s) of <u>Critical Boost</u> and sets the stack limit of <u>Critical Boost</u> to <color=#f29e38ff>12</color>.",
 		"EnhancedAbridgedEffect": "When a character's turn begins, they gain <color=#f29e38ff>1</color> stack(s) of <u>Critical Boost</u> and raises the stack limit of <u>Critical Boost</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615431": {
 		"Id": "615431",
@@ -2917,7 +2957,7 @@
 		"AbridgedEffect": "After defeating an enemy, the character's action is Advanced Forward by 100%. At the beginning of the next turn, they gain <color=#f29e38ff>4</color> stack(s) of <u>Critical Boost</u>.",
 		"EnhancedEffect": "After a character defeats an enemy, their action is Advanced Forward by 100%. At the beginning of the next turn, they gain <color=#f29e38ff>7</color> stack(s) of <u>Critical Boost</u>.",
 		"EnhancedAbridgedEffect": "After defeating an enemy, the character's action is Advanced Forward by 100%. At the beginning of the next turn, they gain <color=#f29e38ff>7</color> stack(s) of <u>Critical Boost</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615432": {
 		"Id": "615432",
@@ -2927,7 +2967,7 @@
 		"AbridgedEffect": "After a character inflicts Weakness Break on an enemy, their action Advances Forward by 100% and increases the DMG dealt by their next attack.",
 		"EnhancedEffect": "After a character Breaks enemy targets' Weakness, their action Advances Forward by 100% and the DMG they deal increases by <color=#f29e38ff>75%</color>. The DMG Boost effect stacks up to <color=#f29e38ff>2</color> time(s) and lasts until the character is attacked.",
 		"EnhancedAbridgedEffect": "After a character inflicts Weakness Break on an enemy, their action Advances Forward by 100% and their DMG dealt increases. The DMG Boost effect can stack and lasts until the character is attacked.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615440": {
 		"Id": "615440",
@@ -2937,7 +2977,7 @@
 		"AbridgedEffect": "When a character has <u>Critical Boost</u>, their excess CRIT Rate turns into CRIT DMG.",
 		"EnhancedEffect": "If a character has higher than 100% CRIT Rate and has the <u>Critical Boost</u> status, for every 1% CRIT Rate that exceeds 100%, CRIT DMG increases by <color=#f29e38ff>3%</color>. CRIT DMG can be increased this way by up to <color=#f29e38ff>240%</color>.",
 		"EnhancedAbridgedEffect": "When a character has <u>Critical Boost</u>, their excess CRIT Rate turns into CRIT DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615441": {
 		"Id": "615441",
@@ -2947,7 +2987,7 @@
 		"AbridgedEffect": "Ultimates can inherit and increase <u>Critical Boost</u> stacks.",
 		"EnhancedEffect": "When any ally uses their Ultimate or performs a follow-up attack, they can inherit <u>Critical Boost</u>, and the number of <u>Critical Boost</u> stacks increases by <color=#f29e38ff>1</color>.",
 		"EnhancedAbridgedEffect": "Follow-up attacks and Ultimates can inherit and increase <u>Critical Boost</u> stacks.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615442": {
 		"Id": "615442",
@@ -2957,7 +2997,7 @@
 		"AbridgedEffect": "When the same character acts consecutively, their ATK increases.",
 		"EnhancedEffect": "When the same character acts consecutively, their ATK increases by <color=#f29e38ff>40%</color>. This effect can stack up to <color=#f29e38ff>2</color> times and gives a <color=#f29e38ff>50%</color> fixed chance to recover 1 Skill Point. This effect cannot be triggered repeatedly.",
 		"EnhancedAbridgedEffect": "When the same character acts consecutively, their ATK increases, and there's a chance of recovering a Skill Point.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615443": {
 		"Id": "615443",
@@ -2967,7 +3007,7 @@
 		"AbridgedEffect": "After a character launches an attack, reduces DMG taken by them. This effect can stack and lasts until the character is attacked.",
 		"EnhancedEffect": "After a character launches an attack, reduces their DMG taken by <color=#f29e38ff>12%</color>. This effect stacks up to <color=#f29e38ff>3</color> time(s) and lasts until character is attacked.",
 		"EnhancedAbridgedEffect": "After a character launches an attack, reduces DMG taken by them. This effect can stack and lasts until the character is attacked.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615444": {
 		"Id": "615444",
@@ -2977,7 +3017,7 @@
 		"AbridgedEffect": "Every time a certain number of turns had passed, the current character's action is Advanced Forward by 100%.",
 		"EnhancedEffect": "After every <color=#f29e38ff>6</color> turn(s) conducted by all allies, the current character's action is Advanced Forward by 100%. The effect cannot be triggered repeatedly by the same character. Upon entering battle, <color=#f29e38ff>5</color> turn(s) are considered to have already passed.",
 		"EnhancedAbridgedEffect": "Every time a certain number of turns had passed, the current character's action is Advanced Forward by 100%. Upon entering a battle, a certain number of turns is considered to have already passed.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615445": {
 		"Id": "615445",
@@ -2987,7 +3027,17 @@
 		"AbridgedEffect": "After a character defeats an enemy, restores all allies' HP and increases their ATK.",
 		"EnhancedEffect": "When a character defeats an enemy, restores all allies' HP equal to <color=#f29e38ff>45%</color> of their respective Max HP and increases their ATK by <color=#f29e38ff>45%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "After a character defeats an enemy, restores all allies' HP and increases their ATK.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615446": {
+		"Id": "615446",
+		"Name": "Plague-Purging Warfare",
+		"Rarity": 1,
+		"Effect": "If a character has <color=#f29e38ff>4</color> stack(s) or higher of <u>Critical Boost</u> at the start of their turn, their SPD increases by <color=#f29e38ff>24%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
+		"AbridgedEffect": "When a character's turn starts, receive a SPD Boost if they have <color=#f29e38ff>4</color> stacks or higher of <u>Critical Boost</u>.",
+		"EnhancedEffect": "If a character has <color=#f29e38ff>4</color> stack(s) or higher of <u>Critical Boost</u> at the start of their turn, their SPD increases by <color=#f29e38ff>36%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
+		"EnhancedAbridgedEffect": "When a character's turn starts, receive a SPD Boost if they have <color=#f29e38ff>4</color> stacks or higher of <u>Critical Boost</u>.",
+		"VersionAdded": "2.5"
 	},
 	"615450": {
 		"Id": "615450",
@@ -2997,7 +3047,7 @@
 		"AbridgedEffect": "Increases characters' SPD.",
 		"EnhancedEffect": "Increases characters' SPD by <color=#f29e38ff>12%</color>.",
 		"EnhancedAbridgedEffect": "Increases characters' SPD.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615451": {
 		"Id": "615451",
@@ -3007,7 +3057,7 @@
 		"AbridgedEffect": "Increases CRIT Rate.",
 		"EnhancedEffect": "Increases CRIT Rate by <color=#f29e38ff>16%</color>.",
 		"EnhancedAbridgedEffect": "Increases CRIT Rate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615452": {
 		"Id": "615452",
@@ -3017,7 +3067,7 @@
 		"AbridgedEffect": "Increases CRIT DMG.",
 		"EnhancedEffect": "Increases CRIT DMG by <color=#f29e38ff>30%</color>.",
 		"EnhancedAbridgedEffect": "Increases CRIT DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615453": {
 		"Id": "615453",
@@ -3027,7 +3077,7 @@
 		"AbridgedEffect": "After a character inflicts Weakness Break on an enemy, the enemy's action is delayed.",
 		"EnhancedEffect": "After a character inflicts Weakness Break on an enemy, delays the enemy's action by <color=#f29e38ff>30%</color>.",
 		"EnhancedAbridgedEffect": "After a character inflicts Weakness Break on an enemy, the enemy's action is delayed.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615454": {
 		"Id": "615454",
@@ -3037,7 +3087,7 @@
 		"AbridgedEffect": "After a character Breaks an enemy's Weakness, SPD increases. Lasts until the character is attacked.",
 		"EnhancedEffect": "After characters Break an enemy's Weakness, increases their SPD by <color=#f29e38ff>45%</color>, lasting until the character is attacked.",
 		"EnhancedAbridgedEffect": "After a character Breaks an enemy's Weakness, SPD increases. Lasts until the character is attacked.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615455": {
 		"Id": "615455",
@@ -3047,7 +3097,7 @@
 		"AbridgedEffect": "When a character's turn ends, their action is Advanced Forward.",
 		"EnhancedEffect": "At the end of a character's turn, their next action is Advanced Forward by <color=#f29e38ff>12%</color>.",
 		"EnhancedAbridgedEffect": "When a character's turn ends, their action is Advanced Forward.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615456": {
 		"Id": "615456",
@@ -3057,7 +3107,7 @@
 		"AbridgedEffect": "When a character's turn begins, regenerate their Energy.",
 		"EnhancedEffect": "At the beginning of a character's turn, they regenerate <color=#f29e38ff>6</color> Energy.",
 		"EnhancedAbridgedEffect": "When a character's turn begins, regenerate their Energy.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615457": {
 		"Id": "615457",
@@ -3067,7 +3117,7 @@
 		"AbridgedEffect": "When a character's turn begins after an ally has completed their turn, increase ATK based on the previous ally who had acted.",
 		"EnhancedEffect": "At the beginning of a character's turn, receives an ATK boost equal to <color=#f29e38ff>15%</color> of the last-acting ally's ATK. This will last until the next turn starts.",
 		"EnhancedAbridgedEffect": "When a character's turn begins after an ally has completed their turn, increase ATK based on the previous ally who had acted.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615520": {
 		"Id": "615520",
@@ -3075,17 +3125,17 @@
 		"Rarity": 1,
 		"Effect": "Spend 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of Destruction, dealing Fire DMG to all enemies. Whenever a character is attacked or loses HP, they will gain an additional hit of DMG the next time the Boundary Resonance is triggered, up to <color=#f29e38ff>20</color> hits.",
 		"AbridgedEffect": "After triggering the boundary Equation, deals Fire DMG to all enemies. Whenever a character is attacked or loses HP, they will gain an additional hit of DMG next time.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615530": {
 		"Id": "615530",
 		"Name": "Quasar Meltdown Constant",
 		"Rarity": 1,
-		"Effect": "Every time a character loses or heals <color=#f29e38ff>20%</color> of their HP, obtain <color=#f29e38ff>1</color> stack(s) of the <u>Grit</u> effect, with up to <color=#f29e38ff>8</color> stacks can be obtained each turn. When the total HP lost or restoration equals to <color=#f29e38ff>100%</color> of HP, increases the character's Break Effect by <color=#f29e38ff>30%</color>.",
+		"Effect": "Every time a character loses or heals <color=#f29e38ff>20%</color> of their HP, obtain <color=#f29e38ff>1</color> stack(s) of the <u>Grit</u> effect, with up to <color=#f29e38ff>8</color> stacks can be obtained each turn. When the total HP lost or restored equals to <color=#f29e38ff>100%</color> of HP, increases the character's Break Effect by <color=#f29e38ff>30%</color>.",
 		"AbridgedEffect": "For every certain percentage of HP that characters lose or heal themselves by, they gain <u>Grit</u>. After cumulatively losing or healing by a certain amount of HP, Break Effect is increased.",
-		"EnhancedEffect": "Every time a character loses or heals <color=#f29e38ff>16%</color> of their HP, obtain <color=#f29e38ff>1</color> stack(s) of the <u>Grit</u> effect, with up to <color=#f29e38ff>12</color> stacks can be obtained each turn. When the total HP lost or restoration equals to <color=#f29e38ff>100%</color> of HP, increases the character's Break Effect by <color=#f29e38ff>45%</color>.",
+		"EnhancedEffect": "Every time a character loses or heals <color=#f29e38ff>16%</color> of their HP, obtain <color=#f29e38ff>1</color> stack(s) of the <u>Grit</u> effect, with up to <color=#f29e38ff>12</color> stacks can be obtained each turn. When the total HP lost or restored equals to <color=#f29e38ff>100%</color> of HP, increases the character's Break Effect by <color=#f29e38ff>45%</color>.",
 		"EnhancedAbridgedEffect": "For every certain percentage of HP that characters lose or heal themselves by, they gain <u>Grit</u>. After cumulatively losing or healing by a certain amount of HP, Break Effect is increased.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615531": {
 		"Id": "615531",
@@ -3095,7 +3145,7 @@
 		"AbridgedEffect": "Every time a character loses HP or heals themselves, they gain <u>Grit</u>.",
 		"EnhancedEffect": "Every time a character loses or has HP restored, they gain <color=#f29e38ff>2</color> stack(s) of the <u>Grit</u> effect and randomly grants <color=#f29e38ff>1</color> of their other teammates <color=#f29e38ff>1</color> stack(s) of the <u>Grit</u> effect. This effect can be triggered up to 1 time for each attack taken.",
 		"EnhancedAbridgedEffect": "Every time a character loses HP or heals themselves, they gain <u>Grit</u> and grant random allies <u>Grit</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615532": {
 		"Id": "615532",
@@ -3105,7 +3155,7 @@
 		"AbridgedEffect": "All allies split incoming DMG.",
 		"EnhancedEffect": "Receives <color=#f29e38ff>15%</color> less DMG. When player characters are hit, DMG taken by the characters is distributed among all allies.",
 		"EnhancedAbridgedEffect": "All allies split incoming DMG, and reduces the DMG taken by targeted character.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615540": {
 		"Id": "615540",
@@ -3115,7 +3165,7 @@
 		"AbridgedEffect": "When characters with <u>Grit</u> use their abilities, the DMG they deal to enemies increases. When <u>Grit</u> reaches more than a certain number of stacks, additionally increases Break DMG taken by enemies.",
 		"EnhancedEffect": "When characters with <u>Grit</u> use their Basic ATK/Skill/Ultimate to deal DMG, increases DMG taken by enemies by <color=#f29e38ff>15%</color>. When <u>Grit</u> reaches more than <color=#f29e38ff>10</color> stacks, additionally increases Break DMG taken by enemies by <color=#f29e38ff>45%</color>.",
 		"EnhancedAbridgedEffect": "When characters with <u>Grit</u> use their abilities, the DMG they deal to enemies increases. When <u>Grit</u> reaches more than a certain number of stacks, additionally increases Break DMG taken by enemies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615541": {
 		"Id": "615541",
@@ -3125,47 +3175,57 @@
 		"AbridgedEffect": "Characters with <u>Grit</u> will take less DMG. When their HP is low, DMG taken is additionally reduced.",
 		"EnhancedEffect": "Characters with <u>Grit</u> will receive <color=#f29e38ff>20%</color> less DMG. When their HP percentage is lower than <color=#f29e38ff>50%</color>, additionally reduces DMG by <color=#f29e38ff>12%</color>.",
 		"EnhancedAbridgedEffect": "Characters with <u>Grit</u> will take less DMG. When their HP is low, DMG taken is additionally reduced.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615542": {
 		"Id": "615542",
 		"Name": "Tide of Devastation",
 		"Rarity": 1,
-		"Effect": "After a character loses HP or heals themselves, the next time they attack a Weakness Broken enemy, converts the Toughness Reduction of the attack into 1 instance of <color=#f29e38ff>70%</color> <u>Super Break DMG</u>.",
-		"AbridgedEffect": "After a character loses HP or heals themselves, their next attack on a Weakness Broken enemy deals <u>Super Break DMG</u>.",
-		"EnhancedEffect": "After a character loses HP or heals themselves, the next time they attack a Weakness Broken enemy, converts the Toughness Reduction of the attack into 1 instance of <color=#f29e38ff>105%</color> <u>Super Break DMG</u>.",
-		"EnhancedAbridgedEffect": "After a character loses HP or heals themselves, their next attack on a Weakness Broken enemy deals <u>Super Break DMG</u>.",
-		"VersionAdded": "2.4"
+		"Effect": "After a character loses or heals themselves for <color=#f29e38ff>40%</color> accumulated HP, the next time they attack a Weakness Broken enemy, converts the Toughness Reduction of the attack into 1 instance of <color=#f29e38ff>70%</color> <u>Super Break DMG</u>.",
+		"AbridgedEffect": "After a character loses HP or heals themselves for <color=#f29e38ff>40%</color> in total, they will deal <u>Super Break DMG</u> after they attack Weakness Broken enemy targets.",
+		"EnhancedEffect": "After a character loses or heals themselves for <color=#f29e38ff>40%</color> accumulated HP, the next time they attack a Weakness Broken enemy, converts the Toughness Reduction of the attack into 1 instance of <color=#f29e38ff>105%</color> <u>Super Break DMG</u>.",
+		"EnhancedAbridgedEffect": "After a character loses HP or heals themselves for <color=#f29e38ff>40%</color> in total, they will deal <u>Super Break DMG</u> after they attack Weakness Broken enemy targets.",
+		"VersionAdded": "2.5"
 	},
 	"615543": {
 		"Id": "615543",
 		"Name": "Decaying Implosion",
 		"Rarity": 1,
-		"Effect": "After a character loses HP or heals themselves, increases their All-Type RES PEN by <color=#f29e38ff>10%</color> and additionally increases Break DMG dealt by <color=#f29e38ff>20%</color> until the start of the next turn.",
-		"AbridgedEffect": "After a character loses HP or heals themselves, increases their All-Type RES PEN and additionally increases Break DMG dealt.",
-		"EnhancedEffect": "After a character loses HP or heals themselves, increases their All-Type RES PEN by <color=#f29e38ff>15%</color> and additionally increases Break DMG dealt by <color=#f29e38ff>30%</color> until the start of the next turn.",
-		"EnhancedAbridgedEffect": "After a character loses HP or heals themselves, increases their All-Type RES PEN and additionally increases Break DMG dealt.",
-		"VersionAdded": "2.4"
+		"Effect": "After a character loses HP or heals themselves for <color=#f29e38ff>40%</color> in total, increase their All-Type RES PEN by <color=#f29e38ff>10%</color>, which additionally increases Super Break DMG dealt by <color=#f29e38ff>20%</color>.",
+		"AbridgedEffect": "After a character loses HP or heals themselves for <color=#f29e38ff>40%</color> in total, increases their All-Type RES PEN, which is additionally increased when they deal Break DMG.",
+		"EnhancedEffect": "After a character loses HP or heals themselves for <color=#f29e38ff>40%</color> in total, increase their All-Type RES PEN by <color=#f29e38ff>15%</color>, which additionally increases Super Break DMG dealt by <color=#f29e38ff>30%</color>.",
+		"EnhancedAbridgedEffect": "After a character loses HP or heals themselves for <color=#f29e38ff>40%</color> in total, increases their All-Type RES PEN, which is additionally increased when they deal Break DMG.",
+		"VersionAdded": "2.5"
 	},
 	"615544": {
 		"Id": "615544",
 		"Name": "Disciplinary Flicker",
 		"Rarity": 1,
-		"Effect": "If a character's HP is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP.",
+		"Effect": "If a character's HP percentage is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP.",
 		"AbridgedEffect": "When a character is hit or have their HP lowered, their HP is restored if their current HP percentage is lower than <color=#f29e38ff>35%</color>.",
-		"EnhancedEffect": "If a character's HP is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP. The lower the current HP is, the more HP will be restored this way, but no more than <color=#f29e38ff>20%</color>.",
-		"EnhancedAbridgedEffect": "When a character is hit or have their HP lowered, their HP is restored if their current HP is lower than <color=#f29e38ff>35%</color>. The lower their HP is, the more HP is restored.",
-		"VersionAdded": "2.4"
+		"EnhancedEffect": "If a character's HP percentage is lower than <color=#f29e38ff>35%</color> after being attacked or losing HP, restores their HP by <color=#f29e38ff>12%</color> of their Max HP. The lower the current HP is, the more HP will be restored this way, but no more than <color=#f29e38ff>20%</color>.",
+		"EnhancedAbridgedEffect": "When a character is hit or have their HP lowered, their HP is restored if their current HP percentage is lower than <color=#f29e38ff>35%</color>. The lower their HP is, the more HP is restored.",
+		"VersionAdded": "2.5"
 	},
 	"615545": {
 		"Id": "615545",
 		"Name": "Disruptive Pulse",
 		"Rarity": 1,
 		"Effect": "When a character's HP percentage falls lower than <color=#f29e38ff>50%</color>, restores a set amount of Energy equal to <color=#f29e38ff>50%</color> of the character's Max Energy. This effect can only trigger again after <color=#f29e38ff>4</color> turn(s).",
-		"AbridgedEffect": "When a character has their HP lowered to below <color=#f29e38ff>50%</color>, their Energy is regenerated.",
+		"AbridgedEffect": "When a character has their HP percentage lowered to below <color=#f29e38ff>50%</color>, their Energy is regenerated.",
 		"EnhancedEffect": "When a character's HP percentage falls lower than <color=#f29e38ff>60%</color>, restores a set amount of Energy equal to <color=#f29e38ff>50%</color> of the character's Max Energy and <color=#f29e38ff>1</color> Skill Point(s). This effect can only trigger again after <color=#f29e38ff>4</color> turn(s).",
-		"EnhancedAbridgedEffect": "When a character has their HP lowered to below <color=#f29e38ff>60%</color>, their Energy is regenerated and Skill Points are recovered.",
-		"VersionAdded": "2.4"
+		"EnhancedAbridgedEffect": "When a character has their HP percentage lowered to below <color=#f29e38ff>60%</color>, their Energy is regenerated and Skill Points are recovered.",
+		"VersionAdded": "2.5"
+	},
+	"615546": {
+		"Id": "615546",
+		"Name": "Regressive Bull Market",
+		"Rarity": 1,
+		"Effect": "When characters enter battle, gain <color=#f29e38ff>12</color> stack(s) of <u>Grit</u>.",
+		"AbridgedEffect": "When characters enter battle, receive <u>Grit</u>.",
+		"EnhancedEffect": "When characters enter battle, gain <color=#f29e38ff>18</color> stack(s) of <u>Grit</u>.",
+		"EnhancedAbridgedEffect": "When characters enter battle, receive <u>Grit</u>.",
+		"VersionAdded": "2.5"
 	},
 	"615550": {
 		"Id": "615550",
@@ -3175,7 +3235,7 @@
 		"AbridgedEffect": "Increases characters' Break Effect.",
 		"EnhancedEffect": "Increases characters' Break Effect by <color=#f29e38ff>75%</color>.",
 		"EnhancedAbridgedEffect": "Increases characters' Break Effect.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615551": {
 		"Id": "615551",
@@ -3185,7 +3245,7 @@
 		"AbridgedEffect": "Characters can resist fatal attacks and restore their own HP. This can take effect a limited number of times among all allies.",
 		"EnhancedEffect": "When struck with a killing blow, instead of becoming downed, characters immediately restore HP by <color=#f29e38ff>30%</color> of their Max HP. The allied team can only trigger this effect <color=#f29e38ff>1</color> time(s) per battle.",
 		"EnhancedAbridgedEffect": "Characters can resist fatal attacks and restore their own HP. This can take effect a limited number of times among all allies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615552": {
 		"Id": "615552",
@@ -3195,7 +3255,7 @@
 		"AbridgedEffect": "Increases Max HP.",
 		"EnhancedEffect": "Increases Max HP by <color=#f29e38ff>24%</color>.",
 		"EnhancedAbridgedEffect": "Increases Max HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615553": {
 		"Id": "615553",
@@ -3205,7 +3265,7 @@
 		"AbridgedEffect": "Enemies receive more Break DMG.",
 		"EnhancedEffect": "Increases Break DMG taken by enemies by <color=#f29e38ff>36%</color>.",
 		"EnhancedAbridgedEffect": "Enemies receive more Break DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615554": {
 		"Id": "615554",
@@ -3215,17 +3275,17 @@
 		"AbridgedEffect": "Upon entering battle, characters will consume their HP to <color=#f29e38ff>50%</color> and gain a Shield.",
 		"EnhancedEffect": "Upon entering battle, characters consume their HP by an amount equal to <color=#f29e38ff>50%</color> of their Max HP, and gain a Shield that can absorb DMG equal to <color=#f29e38ff>150%</color> the HP difference between the character's Max HP and current HP, lasting for <color=#f29e38ff>3</color> turn(s).",
 		"EnhancedAbridgedEffect": "Upon entering battle, characters will consume their HP to <color=#f29e38ff>50%</color> and gain a Shield.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615555": {
 		"Id": "615555",
 		"Name": "Sentinel Satellite",
 		"Rarity": 1,
-		"Effect": "When a character's HP is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>20%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
+		"Effect": "When a character's HP percentage is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>20%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
 		"AbridgedEffect": "When a character's current HP percentage is lower than <color=#f29e38ff>50%</color>, they receive a Shield. This buff can only be triggered a limited number of times.",
-		"EnhancedEffect": "When a character's HP is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>30%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
+		"EnhancedEffect": "When a character's HP percentage is lower than <color=#f29e38ff>50%</color>, they gain a Shield that can absorb DMG equal to <color=#f29e38ff>30%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). This effect can only be triggered <color=#f29e38ff>1</color> time(s) by each character per battle.",
 		"EnhancedAbridgedEffect": "When a character's current HP percentage is lower than <color=#f29e38ff>50%</color>, they receive a Shield. This buff can only be triggered a limited number of times.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615556": {
 		"Id": "615556",
@@ -3235,7 +3295,7 @@
 		"AbridgedEffect": "After a character loses HP or heals themselves, increases their DEF.",
 		"EnhancedEffect": "After a character loses HP or heals themselves, increases their DEF by <color=#f29e38ff>45%</color> until the start of the next turn.",
 		"EnhancedAbridgedEffect": "After a character loses HP or heals themselves, increases their DEF.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615557": {
 		"Id": "615557",
@@ -3245,7 +3305,7 @@
 		"AbridgedEffect": "After a character loses HP or heals themselves, increases their Effect RES.",
 		"EnhancedEffect": "After a character loses HP or heals themselves, increases their Effect RES by <color=#f29e38ff>24%</color> until the start of the next turn.",
 		"EnhancedAbridgedEffect": "After a character loses HP or heals themselves, increases their Effect RES.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615620": {
 		"Id": "615620",
@@ -3253,7 +3313,7 @@
 		"Rarity": 1,
 		"Effect": "Can consume 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of Elation, dealing follow-up attack DMG of a random Type to all enemies for <color=#f29e38ff>5</color> – <color=#f29e38ff>10</color> time(s). And all allies' Basic ATK/Skill/Ultimate DMG are all considered as follow-up attack DMG, lasting for <color=#f29e38ff>1</color> turn(s).",
 		"AbridgedEffect": "After triggering the boundary Equation, deals follow-up attack DMG of a random Type to all enemies for a random number of times and causes all allies' Basic ATK/Skill/Ultimate DMG to be considered as follow-up attack DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615630": {
 		"Id": "615630",
@@ -3263,7 +3323,7 @@
 		"AbridgedEffect": "Every time a character uses a Basic ATK / Skill / Ultimate, they will additionally deal <u>Aftertaste</u> DMG after the next time a follow-up attack is launched.",
 		"EnhancedEffect": "Every time a character uses a Basic ATK / Skill / Ultimate, they will additionally deal <u>Aftertaste</u> DMG 1 time equal to <color=#f29e38ff>120%</color> of their ATK after the next time a follow-up attack is launched. This status can deal DMG up to <color=#f29e38ff>5</color> time(s).",
 		"EnhancedAbridgedEffect": "Every time a character uses a Basic ATK / Skill / Ultimate, they will additionally deal <u>Aftertaste</u> DMG after the next time a follow-up attack is launched.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615631": {
 		"Id": "615631",
@@ -3273,7 +3333,7 @@
 		"AbridgedEffect": "After characters launch follow-up attacks, deals <u>Aftertaste</u> DMG 1 time. If the enemy currently has their Weakness Broken, then deal this DMG <color=#f29e38ff>1</color> extra time(s).",
 		"EnhancedEffect": "When characters launch follow-up attacks to an enemy, deals <u>Aftertaste</u> DMG equal to <color=#f29e38ff>80%</color> of their ATK to the enemy being hit. If the enemy also has their Weakness Broken, then deals DMG for <color=#f29e38ff>2</color> extra time(s).",
 		"EnhancedAbridgedEffect": "After characters launch follow-up attacks, deals <u>Aftertaste</u> DMG 1 time. If the enemy currently has their Weakness Broken, then deal this DMG <color=#f29e38ff>2</color> extra time(s).",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615632": {
 		"Id": "615632",
@@ -3283,7 +3343,7 @@
 		"AbridgedEffect": "When a character launches follow-up attacks on enemies, the enemies' action is delayed.",
 		"EnhancedEffect": "When a character launches a follow-up attack on an enemy, the enemy's action is delayed by <color=#f29e38ff>25%</color>. This can trigger a max of <color=#f29e38ff>3</color> time(s) per enemy target's turn.",
 		"EnhancedAbridgedEffect": "When a character launches follow-up attacks on enemies, the enemies' action is delayed.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615640": {
 		"Id": "615640",
@@ -3293,7 +3353,7 @@
 		"AbridgedEffect": "Every time enemies receive <u>Aftertaste</u> DMG, they also receive extra <u>Aftertaste</u> DMG <color=#f29e38ff>1</color> time(s).",
 		"EnhancedEffect": "When causing <u>Aftertaste</u> DMG to an enemy, characters deal additional <u>Aftertaste</u> DMG of different Types for <color=#f29e38ff>1</color> time(s), at DMG values equal to <color=#f29e38ff>90%</color> of the original DMG.",
 		"EnhancedAbridgedEffect": "Every time enemies receive <u>Aftertaste</u> DMG, they also receive extra <u>Aftertaste</u> DMG <color=#f29e38ff>1</color> time(s).",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615641": {
 		"Id": "615641",
@@ -3303,7 +3363,7 @@
 		"AbridgedEffect": "The more DMG Types an enemy receives from <u>Aftertaste</u>, the more their ATK is reduced.",
 		"EnhancedEffect": "For every 1 Type of <u>Aftertaste</u> DMG the enemy received, reduces their ATK by <color=#f29e38ff>6%</color> until the end of their next action.",
 		"EnhancedAbridgedEffect": "The more DMG Types an enemy receives from <u>Aftertaste</u>, the more their ATK is reduced.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615642": {
 		"Id": "615642",
@@ -3313,7 +3373,7 @@
 		"AbridgedEffect": "Deals Additional DMG based on the number of enemies hit by follow-up attacks.",
 		"EnhancedEffect": "For each enemy hit by a character's follow-up attack, the character deals Additional DMG equal to <color=#f29e38ff>36%</color> of their ATK to all enemies hit.",
 		"EnhancedAbridgedEffect": "Deals Additional DMG based on the number of enemies hit by follow-up attacks.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615643": {
 		"Id": "615643",
@@ -3323,17 +3383,17 @@
 		"AbridgedEffect": "The more follow-up attack DMG a character deals to the enemy target, the higher the follow-up attack DMG becomes. This effect lasts until the start of the next turn.",
 		"EnhancedEffect": "When a character deals follow-up attack DMG to an enemy target, increases follow-up attack DMG by <color=#f29e38ff>5%</color>, stacking up to <color=#f29e38ff>30</color> time(s) and lasting until the start of the next turn.",
 		"EnhancedAbridgedEffect": "The more follow-up attack DMG a character deals to the enemy target, the higher the follow-up attack DMG becomes. This effect lasts until the start of the next turn.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615644": {
 		"Id": "615644",
 		"Name": "As Good As Fleming",
 		"Rarity": 1,
-		"Effect": "When a character uses follow-up attack on an enemy target, increases DMG received by the target by <color=#f29e38ff>8%</color> for a max of <color=#f29e38ff>3</color> time(s), lasting for <color=#f29e38ff>1</color> turn(s).",
+		"Effect": "When a character uses a follow-up attack on an enemy target, increases DMG received by the target by <color=#f29e38ff>8%</color> for a max of <color=#f29e38ff>3</color> time(s), lasting for <color=#f29e38ff>1</color> turn(s).",
 		"AbridgedEffect": "The more follow-up attacks the characters launch on enemy targets, the more DMG targets receive.",
-		"EnhancedEffect": "When a character uses follow-up attack on an enemy target, increases DMG received by the target by <color=#f29e38ff>12%</color> for a max of <color=#f29e38ff>3</color> time(s), lasting for <color=#f29e38ff>1</color> turn(s).",
+		"EnhancedEffect": "When a character uses a follow-up attack on an enemy target, increases DMG received by the target by <color=#f29e38ff>12%</color> for a max of <color=#f29e38ff>3</color> time(s), lasting for <color=#f29e38ff>1</color> turn(s).",
 		"EnhancedAbridgedEffect": "The more follow-up attacks the characters launch on enemy targets, the more DMG targets receive.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615645": {
 		"Id": "615645",
@@ -3343,7 +3403,17 @@
 		"AbridgedEffect": "The follow-up attack DMG dealt by characters ignores a certain proportion of the target's DEF.",
 		"EnhancedEffect": "Characters' follow-up attack DMG ignores <color=#f29e38ff>27%</color> of the target's DEF.",
 		"EnhancedAbridgedEffect": "The follow-up attack DMG dealt by characters ignores a certain proportion of the target's DEF.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615646": {
+		"Id": "615646",
+		"Name": "<i>Last of the Taraka</i>",
+		"Rarity": 1,
+		"Effect": "<u>Aftertaste</u> DMG dealt by characters increases by <color=#f29e38ff>70%</color>.",
+		"AbridgedEffect": "Increase the DMG dealt by <u>Aftertaste</u> triggered by characters.",
+		"EnhancedEffect": "<u>Aftertaste</u> DMG dealt by characters increases by <color=#f29e38ff>105%</color>.",
+		"EnhancedAbridgedEffect": "Increase the DMG dealt by <u>Aftertaste</u> triggered by characters.",
+		"VersionAdded": "2.5"
 	},
 	"615650": {
 		"Id": "615650",
@@ -3353,17 +3423,17 @@
 		"AbridgedEffect": "Increases the CRIT DMG of characters' follow-up attacks.",
 		"EnhancedEffect": "Increases the CRIT DMG of follow-up attacks by <color=#f29e38ff>66%</color>.",
 		"EnhancedAbridgedEffect": "Increases the CRIT DMG of characters' follow-up attacks.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615651": {
 		"Id": "615651",
 		"Name": "<i>Mostly Harmful</i>",
 		"Rarity": 1,
-		"Effect": "The Weakness Break efficiency increases by <color=#f29e38ff>35%</color> when characters deal follow-up attack DMG.",
-		"AbridgedEffect": "Follow-up attacks' Weakness Break efficiency increases.",
-		"EnhancedEffect": "The Weakness Break efficiency increases by <color=#f29e38ff>50%</color> when characters deal follow-up attack DMG.",
-		"EnhancedAbridgedEffect": "Follow-up attacks' Weakness Break efficiency increases.",
-		"VersionAdded": "2.4"
+		"Effect": "The Weakness Break Efficiency increases by <color=#f29e38ff>35%</color> when characters deal follow-up attack DMG.",
+		"AbridgedEffect": "Follow-up attacks' Weakness Break Efficiency increases.",
+		"EnhancedEffect": "The Weakness Break Efficiency increases by <color=#f29e38ff>50%</color> when characters deal follow-up attack DMG.",
+		"EnhancedAbridgedEffect": "Follow-up attacks' Weakness Break Efficiency increases.",
+		"VersionAdded": "2.5"
 	},
 	"615652": {
 		"Id": "615652",
@@ -3373,7 +3443,7 @@
 		"AbridgedEffect": "Follow-up attack DMG increases.",
 		"EnhancedEffect": "Increases characters' follow-up attack DMG dealt by <color=#f29e38ff>39%</color>.",
 		"EnhancedAbridgedEffect": "Follow-up attack DMG increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615653": {
 		"Id": "615653",
@@ -3383,7 +3453,7 @@
 		"AbridgedEffect": "Follow-up attack CRIT Rate increases.",
 		"EnhancedEffect": "Increases the CRIT Rate for follow-up attack DMG dealt by characters by <color=#f29e38ff>39%</color>.",
 		"EnhancedAbridgedEffect": "Follow-up attack CRIT Rate increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615654": {
 		"Id": "615654",
@@ -3393,7 +3463,7 @@
 		"AbridgedEffect": "When a character launches a follow-up attack, they regenerate Energy.",
 		"EnhancedEffect": "When characters use a follow-up attack, restore <color=#f29e38ff>8</color> Energy. This effect can be triggered up to <color=#f29e38ff>1</color> time(s) per turn.",
 		"EnhancedAbridgedEffect": "When a character launches a follow-up attack, they regenerate Energy.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615655": {
 		"Id": "615655",
@@ -3403,7 +3473,7 @@
 		"AbridgedEffect": "When a character launches a follow-up attack, they restore HP.",
 		"EnhancedEffect": "After a character launches a follow-up attack, restores their HP by <color=#f29e38ff>15%</color> of their Max HP.",
 		"EnhancedAbridgedEffect": "When a character launches a follow-up attack, they restore HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615656": {
 		"Id": "615656",
@@ -3413,7 +3483,7 @@
 		"AbridgedEffect": "When a character launches a follow-up attack, their DEF increases.",
 		"EnhancedEffect": "After characters launch follow-up attacks, increase their DEF by <color=#f29e38ff>40%</color> for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character launches a follow-up attack, their DEF increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615657": {
 		"Id": "615657",
@@ -3423,7 +3493,7 @@
 		"AbridgedEffect": "When a character launches a follow-up attack, their SPD increases.",
 		"EnhancedEffect": "After characters launch follow-up attacks, increases SPD by <color=#f29e38ff>16%</color> for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character launches a follow-up attack, their SPD increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615720": {
 		"Id": "615720",
@@ -3431,7 +3501,7 @@
 		"Rarity": 1,
 		"Effect": "Spend 100 points of Energy to use this ability and trigger Boundary Resonance with the Path of Propagation. Enables a target ally to immediately take action and recover <color=#f29e38ff>5</color> Skill Point(s). Gains the <u>Levitation</u> effect. When any enemy unit gets defeated by a character that has <u>Levitation</u>, Boundary Equation regenerates <color=#f29e38ff>50</color> Energy, with the Max Energy set at 200.",
 		"AbridgedEffect": "After triggering the boundary Equation, causes a designated allied target to immediately take action and recovers <color=#f29e38ff>5</color> Skill Point(s) while gaining the <u>Levitation</u> effect. When any enemy unit gets defeated by a character that has <u>Levitation</u>, Boundary Equation regenerates Energy, with the Max Energy set at 200.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615730": {
 		"Id": "615730",
@@ -3441,7 +3511,7 @@
 		"AbridgedEffect": "When a character consumes Skill Points, causes all enemies to receive <u>Spores</u>.",
 		"EnhancedEffect": "For each Skill Point a character consumes, all enemies will gain <color=#f29e38ff>1</color> <u>Spores</u>. When all Skill Points are consumed, the SPD of the character who consumed the last Skill Point increases by <color=#f29e38ff>20%</color> for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character consumes Skill Points, causes all enemies to receive <u>Spores</u>. If Skill Points are consumed to 0, increases the character's SPD.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615731": {
 		"Id": "615731",
@@ -3451,7 +3521,7 @@
 		"AbridgedEffect": "When a character recovers Skill Points, causes a random enemy to receive <u>Spores</u>.",
 		"EnhancedEffect": "For each Skill Point recovered, apply 1 <u>Spore</u> to <color=#f29e38ff>2</color> random enemy target(s). The max number of <u>Spores</u> increases by <color=#f29e38ff>3</color>.",
 		"EnhancedAbridgedEffect": "When a character recovers Skill Points, causes a random enemy to receive <u>Spores</u>. Increases the number of <u>Spores</u> they can bear.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615732": {
 		"Id": "615732",
@@ -3461,7 +3531,7 @@
 		"AbridgedEffect": "After a character uses an Ultimate, when a Skill Point is consumed, it is considered as additionally consuming 1 Skill Point. The more Skill Points a character consumes, the higher their CRIT DMG.",
 		"EnhancedEffect": "After a character uses their Ultimate, the next time they consume or recover Skill Points, it will be considered as 1 additional Skill Point being consumed or recovered. For each Skill Point consumed or recovered, the character's CRIT DMG increases by <color=#f29e38ff>45%</color>. This effect can stack up to <color=#f29e38ff>2</color> time(s), lasting until after the character uses an attack.",
 		"EnhancedAbridgedEffect": "After a character uses an Ultimate, when a Skill Point is consumed or recovered, it is considered as additionally consuming or recovering 1 Skill Point. The more Skill Points a character consumes or recovers, the higher their CRIT DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615740": {
 		"Id": "615740",
@@ -3471,7 +3541,7 @@
 		"AbridgedEffect": "The number of times <u>Spores</u> can spread after bursting increases. Can also spread to the original bearer.",
 		"EnhancedEffect": "Changes the number of times <u>Spores</u> can spread after bursting to <color=#f29e38ff>3</color> times. Can also spread to the original bearer of <u>Spores</u>.",
 		"EnhancedAbridgedEffect": "The number of times <u>Spores</u> can spread after bursting increases. Can also spread to the original bearer.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615741": {
 		"Id": "615741",
@@ -3481,7 +3551,7 @@
 		"AbridgedEffect": "Increases DMG dealt by <u>Spores</u>. After an enemy is defeated, enemies adjacent to it will receive its <u>Spores</u>.",
 		"EnhancedEffect": "Increases the DMG caused by <u>Spores</u> bursting. The DMG increased is equal to <color=#f29e38ff>50%</color> of the original DMG. After the target enemy was defeated, the <u>Spores</u> they were carrying will spread to other enemy targets.",
 		"EnhancedAbridgedEffect": "Increases DMG dealt by <u>Spores</u>. After an enemy is defeated, other enemies will receive its <u>Spores</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615742": {
 		"Id": "615742",
@@ -3491,17 +3561,17 @@
 		"AbridgedEffect": "Increases a character's Basic ATK DMG dealt. After consuming Skill Points, there is a chance to recover 1 Skill Point.",
 		"EnhancedEffect": "Increases the Basic ATK DMG dealt by characters by <color=#f29e38ff>50%</color>. After consuming Skill Points, there is a <color=#f29e38ff>20%</color> fixed chance to recover 1 Skill Point.",
 		"EnhancedAbridgedEffect": "Increases a character's Basic ATK DMG dealt. After consuming Skill Points, there is a chance to recover 1 Skill Point.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615743": {
 		"Id": "615743",
 		"Name": "Exposed Brain Matter",
 		"Rarity": 1,
-		"Effect": "DMG dealt by Basic ATK also deals DMG equal to <color=#f29e38ff>30%</color> of the original DMG to a random adjacent target.",
+		"Effect": "DMG dealt by characters' Basic ATK also deals DMG equal to <color=#f29e38ff>30%</color> of the original DMG to a random adjacent target.",
 		"AbridgedEffect": "Basic ATK DMG will Blast a random adjacent target.",
-		"EnhancedEffect": "DMG dealt by Basic ATK also deals DMG equal to <color=#f29e38ff>35%</color> of the original DMG to adjacent targets.",
+		"EnhancedEffect": "DMG dealt by characters' Basic ATK also deals DMG equal to <color=#f29e38ff>35%</color> of the original DMG to adjacent targets.",
 		"EnhancedAbridgedEffect": "Basic ATK DMG will Blast adjacent targets.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615744": {
 		"Id": "615744",
@@ -3511,7 +3581,7 @@
 		"AbridgedEffect": "The more Skill Points a character consumes, the lower the DMG they receive.",
 		"EnhancedEffect": "For each Skill Point a character consumes, the DMG received by them reduces by <color=#f29e38ff>8%</color> for <color=#f29e38ff>1</color> turn(s). This effect can be stacked up to <color=#f29e38ff>3</color> time(s).",
 		"EnhancedAbridgedEffect": "The more Skill Points a character consumes, the lower the DMG they receive.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615745": {
 		"Id": "615745",
@@ -3521,7 +3591,17 @@
 		"AbridgedEffect": "If, after a character uses their Skill, the Skill does not initiate an attack, increases the DMG of all allies.",
 		"EnhancedEffect": "After a character uses their Skill and if the Skill did not unleash an attack, all allies' DMG dealt increases by <color=#f29e38ff>30%</color> for <color=#f29e38ff>1</color> turn(s). This effect can be stacked up to <color=#f29e38ff>3</color> time(s).",
 		"EnhancedAbridgedEffect": "If, after a character uses their Skill, the Skill does not initiate an attack, increases the DMG of all allies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615746": {
+		"Id": "615746",
+		"Name": "Blocker Amine",
+		"Rarity": 1,
+		"Effect": "After enemy targets receive DMG from <u>Spores</u>, their DEF decreases by <color=#f29e38ff>1%</color>. This effect can stack up to <color=#f29e38ff>15</color> stack(s).",
+		"AbridgedEffect": "Enemy targets' DEF decreases after receiving <u>Spore</u> DMG.",
+		"EnhancedEffect": "After enemy targets receive DMG from <u>Spores</u>, their DEF decreases by <color=#f29e38ff>1%</color>. This effect can stack up to <color=#f29e38ff>20</color> stack(s).",
+		"EnhancedAbridgedEffect": "Enemy targets' DEF decreases after receiving <u>Spore</u> DMG.",
+		"VersionAdded": "2.5"
 	},
 	"615750": {
 		"Id": "615750",
@@ -3531,7 +3611,7 @@
 		"AbridgedEffect": "Characters deal increased Basic ATK DMG.",
 		"EnhancedEffect": "Basic ATK DMG dealt by characters increases by <color=#f29e38ff>36%</color>.",
 		"EnhancedAbridgedEffect": "Characters deal increased Basic ATK DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615751": {
 		"Id": "615751",
@@ -3541,7 +3621,7 @@
 		"AbridgedEffect": "Increases the CRIT Rate of Characters' Basic ATK.",
 		"EnhancedEffect": "The CRIT Rate for characters' Basic ATK DMG increases by <color=#f29e38ff>36%</color>.",
 		"EnhancedAbridgedEffect": "Increases the CRIT Rate of Characters' Basic ATK.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615752": {
 		"Id": "615752",
@@ -3551,7 +3631,7 @@
 		"AbridgedEffect": "Increases the CRIT DMG of Characters' Basic ATK",
 		"EnhancedEffect": "The CRIT DMG for characters' Basic ATK DMG increases by <color=#f29e38ff>60%</color>.",
 		"EnhancedAbridgedEffect": "Increases the CRIT DMG of Characters' Basic ATK",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615753": {
 		"Id": "615753",
@@ -3561,7 +3641,7 @@
 		"AbridgedEffect": "When a character uses a Basic ATK, their DEF increases.",
 		"EnhancedEffect": "After characters use Basic ATKs, their DEF increases by <color=#f29e38ff>40%</color> for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character uses a Basic ATK, their DEF increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615754": {
 		"Id": "615754",
@@ -3571,7 +3651,7 @@
 		"AbridgedEffect": "When a character launches a Basic ATK, their SPD increases.",
 		"EnhancedEffect": "After characters use Basic ATKs, their SPD increases by <color=#f29e38ff>16%</color> for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "When a character launches a Basic ATK, their SPD increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615755": {
 		"Id": "615755",
@@ -3581,7 +3661,7 @@
 		"AbridgedEffect": "After entering battle, allies will recover Skill Points during the first <color=#f29e38ff>3</color> actions.",
 		"EnhancedEffect": "After entering battle, recovers 1 Skill Point after each ally's turn. This effect can be triggered up to <color=#f29e38ff>5</color> time(s) across all allies.",
 		"EnhancedAbridgedEffect": "After entering battle, allies will recover Skill Points during the first <color=#f29e38ff>5</color> actions.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615756": {
 		"Id": "615756",
@@ -3591,7 +3671,7 @@
 		"AbridgedEffect": "Characters regenerate Energy when consuming Skill Points.",
 		"EnhancedEffect": "For each Skill Point a character consumes, the character regenerates <color=#f29e38ff>4</color> extra Energy.",
 		"EnhancedAbridgedEffect": "Characters regenerate Energy when consuming Skill Points.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615757": {
 		"Id": "615757",
@@ -3601,7 +3681,7 @@
 		"AbridgedEffect": "Characters restore HP when consuming Skill Points",
 		"EnhancedEffect": "For each Skill Point a character consumes, the character restores HP equal to <color=#f29e38ff>15%</color> of their Max HP.",
 		"EnhancedAbridgedEffect": "Characters restore HP when consuming Skill Points",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615820": {
 		"Id": "615820",
@@ -3609,7 +3689,7 @@
 		"Rarity": 1,
 		"Effect": "Spend 100 points of Energy to use the ability and achieve Boundary Resonance with the Path of Erudition. Deals minor Imaginary DMG to all enemies. Additionally, links the enemy with the highest Max HP with other enemies, inflicting <u>Central Link</u> on all enemies and regenerating Energy equal to <color=#f29e38ff>50%</color> of Max Energy to all allies.",
 		"AbridgedEffect": "After triggering the boundary Equation, deals Imaginary DMG to all enemies and inflicts the <u>Central Link</u> effect on them, regenerating Energy for all allies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615830": {
 		"Id": "615830",
@@ -3619,7 +3699,7 @@
 		"AbridgedEffect": "When entering battle, charges the <u>Brain in a Vat</u>. Breaking an enemy's Weakness charges the <u>Brain in a Vat</u>.",
 		"EnhancedEffect": "When entering battle, charges <u>Brain in a Vat</u> by <color=#f29e38ff>100%</color>. Breaking an enemy's Weakness or attacking Weakness Broken enemies will charge <u>Brain in a Vat</u> by <color=#f29e38ff>40%</color> or <color=#f29e38ff>5%</color> respectively. This effect can only be triggered once by each enemy during each attack.",
 		"EnhancedAbridgedEffect": "When entering battle, charges the <u>Brain in a Vat</u>. Breaking an enemy's Weakness or attacking Weakness Broken enemies charges the <u>Brain in a Vat</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615831": {
 		"Id": "615831",
@@ -3629,7 +3709,7 @@
 		"AbridgedEffect": "Dealing fatal DMG to enemies charges the <u>Brain in a Vat</u>.",
 		"EnhancedEffect": "Dealing fatal DMG to enemies charges the <u>Brain in a Vat</u> by <color=#f29e38ff>50%</color>. When the <u>Brain in a Vat</u> is fully charged, characters' SPD increases by <color=#f29e38ff>20%</color> for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "Dealing fatal DMG to enemies charges the <u>Brain in a Vat</u>. Every time the <u>Brain in a Vat</u> is fully charged, gains a SPD bonus.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615832": {
 		"Id": "615832",
@@ -3639,7 +3719,7 @@
 		"AbridgedEffect": "Increases the All-Type RES PEN for characters' Ultimate DMG. The more enemy targets the Ultimate attacks, the greater the increase in the All-Type RES PEN for the Ultimate DMG, lasting until the next time the Ultimate is used.",
 		"EnhancedEffect": "The All-Type RES PEN for Ultimate DMG dealt by characters increases by <color=#f29e38ff>25%</color>. For each enemy target hit by the Ultimate that achieves the highest number of enemy hits in a single attack in this battle, the All-Type RES PEN for the Ultimate DMG dealt additionally increases by <color=#f29e38ff>3%</color>.",
 		"EnhancedAbridgedEffect": "Increases the All-Type RES PEN for characters' Ultimate DMG. In this battle, the bigger the maximum number of enemy targets an Ultimate hits in a single attack, the greater the increase in the All-Type RES PEN for the Ultimate DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615840": {
 		"Id": "615840",
@@ -3649,7 +3729,7 @@
 		"AbridgedEffect": "Ultimate cast with the <u>Brain in a Vat</u> deals more CRIT DMG.",
 		"EnhancedEffect": "When characters use Ultimates via <u>Brain in a Vat</u>, their CRIT DMG increases by <color=#f29e38ff>90%</color>. This CRIT DMG increase lasts until the next attack ends.",
 		"EnhancedAbridgedEffect": "Ultimates cast with the <u>Brain in a Vat</u> deals more CRIT DMG. This CRIT DMG bonus lasts until the end of the next ATK.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615841": {
 		"Id": "615841",
@@ -3659,7 +3739,7 @@
 		"AbridgedEffect": "Gains Shield when using an Ultimate via the <u>Brain in a Vat</u>.",
 		"EnhancedEffect": "After characters use their Ultimate via <u>Brain in a Vat</u>, they gain a Shield equal in strength to <color=#f29e38ff>45%</color> of their Max HP, lasting for <color=#f29e38ff>3</color> turns.",
 		"EnhancedAbridgedEffect": "Gains Shield when using an Ultimate via the <u>Brain in a Vat</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615842": {
 		"Id": "615842",
@@ -3669,7 +3749,7 @@
 		"AbridgedEffect": "After characters use an attack, deal additional DMG based on the number of enemies attacked.",
 		"EnhancedEffect": "After characters use an attack, they deal Additional DMG to the attacked enemy target(s). For every enemy target that was attacked, increase Additional DMG by <color=#f29e38ff>20%</color> of the character's ATK. Up to 5 enemies that have been defeated in the current battle will also be regarded as having been attacked.",
 		"EnhancedAbridgedEffect": "After characters use an attack, deal additional DMG based on the number of enemies attacked and the number of enemies defeated during the entire battle.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615843": {
 		"Id": "615843",
@@ -3679,7 +3759,7 @@
 		"AbridgedEffect": "Increases the first instance of Ultimate DMG dealt by the character. Regenerates Energy upon entering battle.",
 		"EnhancedEffect": "Ultimate DMG dealt by characters increases by <color=#f29e38ff>50%</color>. Upon entering battle, regenerates energy equal to <color=#f29e38ff>100%</color> of the character's Max Energy.",
 		"EnhancedAbridgedEffect": "Increases Ultimate DMG dealt by characters. Regenerates Energy upon entering battle.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615844": {
 		"Id": "615844",
@@ -3689,7 +3769,7 @@
 		"AbridgedEffect": "If characters' <u>AoE</u> ability only attacks one enemy, the ability deals a set amount of extra DMG based on the original ability DMG.",
 		"EnhancedEffect": "If characters' <u>AoE ATK</u> ability only attacks 1 enemy, this ATK will deal an additional set amount of DMG equal to <color=#f29e38ff>60%</color> of the original DMG to the attacked enemy target.",
 		"EnhancedAbridgedEffect": "If characters' <u>AoE</u> ability only attacks one enemy, the ability deals a set amount of extra DMG based on the original ability DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615845": {
 		"Id": "615845",
@@ -3699,7 +3779,17 @@
 		"AbridgedEffect": "Ultimate attacks delay all Weakness Broken enemies' actions.",
 		"EnhancedEffect": "When characters use their Ultimate to attack enemies that are Weakness Broken, delay the enemy's action by <color=#f29e38ff>24%</color>. Every time the enemy target becomes Weakness Broken, this effect can be triggered up to <color=#f29e38ff>3</color> times.",
 		"EnhancedAbridgedEffect": "Ultimate attacks delay all Weakness Broken enemies' actions.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"615846": {
+		"Id": "615846",
+		"Name": "Coordination: Resonance Nucleus",
+		"Rarity": 1,
+		"Effect": "After characters use <u>Brain in a Vat</u> to use their Ultimate, their ATK increases by <color=#f29e38ff>60%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
+		"AbridgedEffect": "Characters increase their ATK after using <u>Brain in a Vat</u> to use their Ultimate.",
+		"EnhancedEffect": "After characters use <u>Brain in a Vat</u> to use their Ultimate, their ATK increases by <color=#f29e38ff>90%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
+		"EnhancedAbridgedEffect": "Characters increase their ATK after using <u>Brain in a Vat</u> to use their Ultimate.",
+		"VersionAdded": "2.5"
 	},
 	"615850": {
 		"Id": "615850",
@@ -3709,7 +3799,7 @@
 		"AbridgedEffect": "Increases Ultimate DMG dealt by characters.",
 		"EnhancedEffect": "Ultimate DMG dealt by characters increases by <color=#f29e38ff>27%</color>.",
 		"EnhancedAbridgedEffect": "Increases Ultimate DMG dealt by characters.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615851": {
 		"Id": "615851",
@@ -3719,7 +3809,7 @@
 		"AbridgedEffect": "Increases Ultimate CRIT Rate.",
 		"EnhancedEffect": "The CRIT Rate for Ultimate DMG dealt by characters increases by <color=#f29e38ff>27%</color>.",
 		"EnhancedAbridgedEffect": "Increases Ultimate CRIT Rate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615852": {
 		"Id": "615852",
@@ -3729,7 +3819,7 @@
 		"AbridgedEffect": "Increases Ultimate CRIT DMG.",
 		"EnhancedEffect": "The CRIT DMG for Ultimate DMG dealt by characters increases by <color=#f29e38ff>45%</color>.",
 		"EnhancedAbridgedEffect": "Increases Ultimate CRIT DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615853": {
 		"Id": "615853",
@@ -3739,7 +3829,7 @@
 		"AbridgedEffect": "Increases the DMG of the characters' next attack following their Ultimate.",
 		"EnhancedEffect": "After characters use their Ultimate, their next attack will deal <color=#f29e38ff>75%</color> more DMG.",
 		"EnhancedAbridgedEffect": "Increases the DMG of the characters' next attack following their Ultimate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615854": {
 		"Id": "615854",
@@ -3749,7 +3839,7 @@
 		"AbridgedEffect": "Characters' ATK increases when using Ultimate.",
 		"EnhancedEffect": "When characters use their Ultimate, their ATK increases by <color=#f29e38ff>36%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
 		"EnhancedAbridgedEffect": "Characters' ATK increases when using Ultimate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615855": {
 		"Id": "615855",
@@ -3759,7 +3849,7 @@
 		"AbridgedEffect": "The more enemies a character attacks, the higher their Max HP increases. The effect lasts until the start of the next turn.",
 		"EnhancedEffect": "After a character launches an attack, increase Max HP by <color=#f29e38ff>7.5%</color> for every enemy target attacked to a maximum of <color=#f29e38ff>5</color> time(s). This effect lasts until the start of the next turn.",
 		"EnhancedAbridgedEffect": "The more enemies a character attacks, the higher their Max HP increases. The effect lasts until the start of the next turn.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615856": {
 		"Id": "615856",
@@ -3769,7 +3859,7 @@
 		"AbridgedEffect": "Characters restore HP after using their Ultimate.",
 		"EnhancedEffect": "After characters use their Ultimate, they restore HP equal to <color=#f29e38ff>24%</color> of their Max HP.",
 		"EnhancedAbridgedEffect": "Characters restore HP after using their Ultimate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"615857": {
 		"Id": "615857",
@@ -3779,15 +3869,15 @@
 		"AbridgedEffect": "Characters can resist fatal DMG and can consume Energy to restore their own HP. This can take effect a limited number of times among all allies.",
 		"EnhancedEffect": "When struck with a killing blow, characters will not be knocked down and will instead consume all their Energy, then restore HP equal to <color=#f29e38ff>100%</color> of the consumed Energy. This effect can only be triggered once per battle for the whole team.",
 		"EnhancedAbridgedEffect": "Characters can resist fatal DMG and can consume Energy to restore their own HP. This can take effect a limited number of times among all allies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"670010": {
 		"Id": "670010",
 		"Name": "City Restorer",
 		"Rarity": 1,
-		"Effect": "Comet Nucleus appears in the Action Order: Each time it takes a turn, absorbs all allies' Shields, reducing their values to 1 and turning the absorbed values into its own Shield. Afterward, it deals Physical DMG equal to <color=#f29e38ff>2500%</color> of this value to all enemies, with a <color=#f29e38ff>75%</color> base chance to Freeze enemies for <color=#f29e38ff>1</color> turn(s). When characters take damage, Comet Nucleus's Shield will be consumed first. When characters deal <u>Quake</u> DMG, <color=#f29e38ff>50%</color> of Comet Nucleus's Shield will be considered as the character's Shield.",
+		"Effect": "Comet Nucleus appears in the Action Order: Each time it takes a turn, absorbs all allies' Shields, reducing their values to 1, and turning the absorbed values into its own Shield. Then, it deals Physical DMG equal to <color=#f29e38ff>2500%</color> of its Shield value plus <color=#f29e38ff>1000%</color> <u>base DMG</u> to all enemies, with a <color=#f29e38ff>75%</color> base chance to Freeze enemies for <color=#f29e38ff>1</color> turn(s). When characters take damage, Comet Nucleus's Shield will be consumed first. When <u>Quake</u> DMG is triggered, <color=#f29e38ff>70%</color> of Comet Nucleus's Shield will be considered as the character's Shield.",
 		"AbridgedEffect": "A Comet Nucleus appears in the Action Order to block DMG for the team. During its action, it absorbs Shields from allies to deal Physical DMG to all enemies, with a chance to Freeze them.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"670140": {
 		"Id": "670140",
@@ -3795,63 +3885,103 @@
 		"Rarity": 1,
 		"Effect": "When enemy targets enter battle, there is a <color=#f29e38ff>100%</color> base chance for them to be inflicted with <u>Dissociation</u> that lasts for <color=#f29e38ff>1</color> turn(s). Enemies in <u>Dissociation</u> will resist all DMG, and all CRIT DMG and Break DMG taken are tallied. When the effect is dispelled, additionally deals a set amount of CRIT DMG equal to <color=#f29e38ff>150%</color> of the tallied value to all enemies. When the tallied value reaches <color=#f29e38ff>50%</color> of the target's Max HP, <u>Dissociation</u> will immediately be dispelled.",
 		"AbridgedEffect": "When enemies enter battle, they have a chance to become afflicted with the <u>Dissociation</u> state. Enemies under <u>Dissociation</u> will become resistant to all DMG, and CRIT DMG and Break DMG taken are tallied. When this state is dispelled, deal a set amount of CRIT DMG based on the tallied value to all enemies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"670150": {
+		"Id": "670150",
+		"Name": "Mausoleum of Scars",
+		"Rarity": 1,
+		"Effect": "Oblivion appears in the Action Order: For every 10 actual Toughness Reduction dealt by an ally, the ally's action Advances Forward by <color=#f29e38ff>3%</color>. When Oblivion takes action, deals Ice DMG equal to <color=#f29e38ff>2000%</color> <u>base DMG</u> and deals <color=#f29e38ff>20</color> Toughness Reduction to all enemies, with a <color=#f29e38ff>150%</color> base chance to inflict the <u>Dissociation</u> state on the targets, lasting for <color=#f29e38ff>1</color> turn(s). The state increases DMG taken by <color=#f29e38ff>60%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
+		"AbridgedEffect": "Oblivion appears in the Action Order: The actual Toughness Reduction dealt by allies will cause the ally's action to be Advanced Forward. When taking action, deals Ice DMG and Toughness Reduction to all enemies with a chance of inflicting <u>Dissociation</u> and increasing the DMG taken.",
+		"VersionAdded": "2.5"
 	},
 	"670280": {
 		"Id": "670280",
 		"Name": "Self-Proof Institute",
 		"Rarity": 1,
-		"Effect": "After <u>Suspicion</u> reaches <color=#f29e38ff>99</color> stacks, it will be consumed and turned into 1 stack of Self-Negation: Increases DoT dealt by the attacker by <color=#f29e38ff>70%</color>. Each stack additionally increases it by <color=#f29e38ff>10%</color>, stacking up to <color=#f29e38ff>50</color> time(s). At the start of an enemy's turn, they take Lightning DoT and cause adjacent targets to take Lightning DoT equal to <color=#f29e38ff>20%</color> of the original DMG multiplier. At <color=#f29e38ff>2</color> or more stacks: At the start of the turn, regenerates <color=#f29e38ff>20%</color> of <u>Brain in a Vat</u> for a random character. At <color=#f29e38ff>3</color> or more stacks: At the start of the turn, regenerates <color=#f29e38ff>10%</color> of <u>Brain in a Vat</u> for all allies.",
+		"Effect": "After <u>Suspicion</u> reaches <color=#f29e38ff>99</color> stacks, it will be consumed and turned into 1 stack of Self-Negation: Increases DoT dealt by attackers to this unit by <color=#f29e38ff>70%</color>. Each stack additionally increases DoT dealt by <color=#f29e38ff>10%</color>, stacking up to <color=#f29e38ff>50</color> time(s). At the start of an enemy's turn, they take Lightning DoT equal to <color=#f29e38ff>135%</color> of <u>base DMG</u> and cause adjacent targets to take Lightning DoT equal to <color=#f29e38ff>20%</color> of the original DMG multiplier. At <color=#f29e38ff>2</color> or more stacks: At the start of the turn, regenerates <color=#f29e38ff>20%</color> of <u>Brain in a Vat</u> for a random character. At <color=#f29e38ff>3</color> or more stacks: At the start of the turn, regenerates <color=#f29e38ff>10%</color> of <u>Brain in a Vat</u> for all allies.",
 		"AbridgedEffect": "When <u>Suspicion</u> reaches a certain number of stacks, it automatically becomes Self-Negation. On the basis of the Self-Negation stacks, increases the DoT dealt by the character, and recovers <u>Brain in a Vat</u> for the character and adjacent allied units based on the DMG they dealt at the start of the turn.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"670350": {
 		"Id": "670350",
 		"Name": "Borisin",
 		"Rarity": 1,
-		"Effect": "Flower of Annihilation appears in the Action Order. When <u>Dewdrop</u> breaks, it will Charge Flower of Annihilation by <color=#f29e38ff>550%</color> of the Dewdrop's charge. When Flower of Annihilation takes action, it deals Fire DMG to all enemies based on the Charge value. Every stack of <u>Grit</u> held by the team will additionally increase the DMG by <color=#f29e38ff>1.5%</color>.",
+		"Effect": "Flower of Annihilation appears in the Action Order. When <u>Dewdrop</u> breaks, it will Charge Flower of Annihilation by <color=#f29e38ff>600%</color> of the Dewdrop's charge. When Flower of Annihilation takes action, it deals Charge value + <color=#f29e38ff>1200%</color> of <u>base DMG</u> Fire DMG to all enemies. Every stack of <u>Grit</u> held by the team will additionally increase the DMG by <color=#f29e38ff>1.5%</color>.",
 		"AbridgedEffect": "A Flower of Annihilation appears in the Action Order. During its action, it deals DMG to all enemies. This DMG is affected by the characters' <u>Dewdrop</u> charge and <u>Grit</u> stacks.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"670430": {
+		"Id": "670430",
+		"Name": "Bionic Messiah",
+		"Rarity": 1,
+		"Effect": "When no enemy target has Fiber, Fiber will be applied to random attacked targets after characters use an attack. After targets with Fiber receive a total of <color=#f29e38ff>8</color> attacks or are defeated, the target receives Lightning DMG equal to <color=#f29e38ff>4500%</color> <u>base DMG</u>, adjacent targets receive DMG equal to <color=#f29e38ff>3000%</color> <u>base DMG</u>, and all allies' Max HP increases by <color=#f29e38ff>80%</color>, lasting for <color=#f29e38ff>3</color> turn(s). If only 1 enemy target is attacked, then <color=#f29e38ff>2</color> attacks are considered to have been launched.",
+		"AbridgedEffect": "After characters attack, random attacked targets gain Fiber. When targets with Fiber are cumulatively attacked multiple times or defeated, deals Lightning DMG to it and units adjacent to it, and increases all ally units' Max HP.",
+		"VersionAdded": "2.5"
 	},
 	"670470": {
 		"Id": "670470",
 		"Name": "Molten Knight",
 		"Rarity": 1,
-		"Effect": "After defeating an enemy target or Breaking an Elite Enemy's Weakness, the character will fire out a number of Lux Arrows equal to <color=#f29e38ff>5</color> plus the number of <u>Critical Boost</u> stacks to attack random enemies. Each Lux Arrow deals Additional DMG of the character's Type and applies <color=#f29e38ff>1</color> single <u>Spore</u> on the attacked target. While this effect is active, <u>Spores</u> can stack up to <color=#f29e38ff>99</color> times.",
-		"AbridgedEffect": "After defeating an enemy target or Breaking an Elite Enemy's Weakness, deal DMG to a random enemy target based on the number of <u>Critical Boost</u> stack(s) and apply <u>Spore</u> on attacked target(s).",
-		"VersionAdded": "2.4"
+		"Effect": "Every time the team obtains <color=#f29e38ff>9</color> stack(s) of <u>Critical Boost</u> or defeats the enemy target, fires <color=#f29e38ff>10</color> Lux Arrow(s) to strike random targets. Each Lux Arrow deals Wind DMG equal to <color=#f29e38ff>400%</color> <u>base DMG</u> and applies <color=#f29e38ff>1</color> <u>Spore</u> to the attacked target, while also dealing 1 hit of <u>Spore</u> burst DMG. During this time, max <u>Spore</u> stacks will become <color=#f29e38ff>99</color>.",
+		"AbridgedEffect": "After the team obtains a certain number of <u>Critical Boost</u> stacks or defeats the enemy target, fires Lux Arrows to strike random targets and applies <u>Spore</u> to the attacked target while also dealing <u>Spore</u> Shatter DMG.",
+		"VersionAdded": "2.5"
 	},
 	"670500": {
 		"Id": "670500",
 		"Name": "Voyage Monitor",
 		"Rarity": 1,
-		"Effect": "After a character deals Break DMG, deal a set amount of Additional DMG equal to <color=#f29e38ff>100%</color> of the original damage after the attack. When a character's <u>Grit</u> reaches more than <color=#f29e38ff>30</color> stack(s), they gain a Shield equal to <color=#f29e38ff>50%</color> of their Max HP for <color=#f29e38ff>2</color> turn(s). After dealing Toughness-Reducing damage to all enemies, consume <color=#f29e38ff>20</color> stack(s) of <u>Grit</u>.",
+		"Effect": "After a character deals Break DMG, deal a set amount of Additional DMG equal to <color=#f29e38ff>100%</color> of the original damage after the attack. When a character's <u>Grit</u> is higher than <color=#f29e38ff>30</color> stack(s), they gain a Shield equal to <color=#f29e38ff>50%</color> of their Max HP, lasting for <color=#f29e38ff>2</color> turn(s). Also, deal DMG equal to <color=#f29e38ff>1200%</color> <u>base DMG</u> and <color=#f29e38ff>15</color> Toughness-Reduction to all enemies, and consume <color=#f29e38ff>20</color> stack(s) of <u>Grit</u>.",
 		"AbridgedEffect": "After a character deals Break DMG, deal DMG for 1 extra time. When a character's <u>Grit</u> is higher than a certain number of stacks, obtains a Shield. Then, deals DMG to all enemies by consuming <u>Grit</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"670580": {
+		"Id": "670580",
+		"Name": "Annihilation Scholar",
+		"Rarity": 1,
+		"Effect": "After characters are attacked, receives <color=#f29e38ff>2</color> Annihilation Form(s). After launching a Counter, receives <color=#f29e38ff>1</color> Annihilation Form(s). When a character possesses <color=#f29e38ff>6</color> Annihilation Form(s), removes all Annihilation Forms from them and increases their Ultimate DMG dealt by <color=#f29e38ff>150%</color> until the end of the turn, as well as dealing Additional DMG equal to <color=#f29e38ff>650%</color> of the character's ATK to all enemies. This DMG is considered as Ultimate DMG.",
+		"AbridgedEffect": "After characters are attacked or have launched a Counter, they receive Annihilation Form(s). When characters possess <color=#f29e38ff>6</color> Annihilation Form(s), removes all Annihilation Forms and increases the DMG dealt by Ultimate, as well as dealing Ultimate DMG to all enemies.",
+		"VersionAdded": "2.5"
 	},
 	"670630": {
 		"Id": "670630",
 		"Name": "Advisor Physician",
 		"Rarity": 1,
-		"Effect": "DMG dealt by <u>Dewdrop</u> is considered as follow-up attack DMG. After <u>Dewdrop</u> burst as a result of the character launching a follow-up attack or using an attack, there is a <color=#f29e38ff>12%</color> fixed chance every time for them to trigger the following effect: Charge <u>Dewdrop</u> for <color=#f29e38ff>80%</color> of its maximum, and deals DMG equal to 1/2/3/4 time(s) of <u>Dewdrop</u>'s Charge with a <color=#f29e38ff>15%</color>/<color=#f29e38ff>50%</color>/<color=#f29e38ff>30%</color>/<color=#f29e38ff>5%</color> fixed chance.",
+		"Effect": "DMG dealt by <u>Dewdrop</u> is considered as follow-up attack DMG. After <u>Dewdrop</u> burst as a result of the character launching a follow-up attack or using an attack, there is a <color=#f29e38ff>16%</color> fixed chance every time for them to trigger the following effect: Charge <u>Dewdrop</u> for <color=#f29e38ff>80%</color> of its maximum, and deals DMG equal to 1/2/3/4 time(s) of <u>Dewdrop</u>'s Charge with a <color=#f29e38ff>10%</color>/<color=#f29e38ff>40%</color>/<color=#f29e38ff>40%</color>/<color=#f29e38ff>10%</color> fixed chance.",
 		"AbridgedEffect": "DMG from <u>Dewdrop</u> is considered as follow-up attack DMG. Triggering follow-up attacks or shattering <u>Dewdrops</u> has a chance to charge <u>Dewdrop</u> and additionally deal multiplied DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"670640": {
+		"Id": "670640",
+		"Name": "Phantom Thief",
+		"Rarity": 1,
+		"Effect": "Calling Card appears in the Action Order: After characters launch a follow-up attack, their action advances by <color=#f29e38ff>5%</color>. When taking action, advances the action of the first character in the lineup by <color=#f29e38ff>100%</color>. After this character uses an attack, deals <color=#f29e38ff>10</color> instance(s) of <u>Aftertaste</u> DMG equal to <color=#f29e38ff>40%</color> of the character's ATK, taking effect over a max of <color=#f29e38ff>4</color> attacks. Allies' <u>Aftertaste</u> DMG multiplier increases by <color=#f29e38ff>100%</color> of the original multiplier, and a countdown with <color=#f29e38ff>100</color> SPD appears in the Action Order. The effects last until the countdown's turn begins.",
+		"AbridgedEffect": "Calling Card appears in the Action Order: After a character triggers a follow-up attack, Advance their action Forward. When taking action, Advances Forward the action of the first character in the team lineup. After that character uses an attack, deals multiple instances of <u>Aftertaste</u> DMG and increases <u>Aftertaste</u> DMG dealt by all allies.",
+		"VersionAdded": "2.5"
 	},
 	"670720": {
 		"Id": "670720",
 		"Name": "Child of Calamity",
 		"Rarity": 1,
-		"Effect": "Enemy target obtains Borehole when entering battle: Borehole will record all <u>Spores</u> accumulated by the holder. After accumulating <color=#f29e38ff>18</color> Spores, the spores deal Quantum DMG to all enemies. For every debuff the enemy has, the DMG dealt increases by <color=#f29e38ff>10%</color>, up to <color=#f29e38ff>100%</color>. Then, the accumulated spores are cleared.",
+		"Effect": "Enemy target obtains Borehole when entering battle: Borehole will record all <u>Spores</u> numbers accumulated by the holder. After accumulating <color=#f29e38ff>18</color> Spores, deals Quantum DMG to all enemies equal to <color=#f29e38ff>1800%</color> of <u>base DMG</u>. For every debuff the enemy has, this DMG increases by <color=#f29e38ff>10%</color>, up to an increase of <color=#f29e38ff>100%</color>. Then, the accumulated spore count is cleared.",
 		"AbridgedEffect": "Enemy target obtains Borehole when entering battle: Borehole will record all <u>Spores</u> accumulated by the holder and deals Quantum DMG to all enemies. The more debuffs active, the higher the DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"670860": {
 		"Id": "670860",
 		"Name": "Useless Scholar",
 		"Rarity": 1,
-		"Effect": "After the team uses a total of <color=#f29e38ff>6</color> Ultimate(s) while not under the Overclock effect, gains Overclock: After attacking with an Ultimate, deals <u>Aftertaste</u> DMG equal to <color=#f29e38ff>80%</color> of the attacker's ATK <color=#f29e38ff>1</color> time(s). After using an Ultimate, this status will end. The first character in the team lineup activates their Ultimate, Charges <u>Brain in a Vat</u> to <color=#f29e38ff>200%</color>, and uses Ultimate <color=#f29e38ff>3</color> times before the status ends on them.",
+		"Effect": "After the team uses a total of <color=#f29e38ff>6</color> Ultimate(s) while not under the Overclock effect, gains Overclock: After attacking with an Ultimate, deals <u>Aftertaste</u> DMG equal to <color=#f29e38ff>100%</color> of the attacker's ATK <color=#f29e38ff>3</color> time(s). After using an Ultimate, this status will end. The first character in the team lineup activates their Ultimate, Charges <u>Brain in a Vat</u> to <color=#f29e38ff>200%</color>, and uses Ultimate <color=#f29e38ff>3</color> times before the status ends on them.",
 		"AbridgedEffect": "Enters the Overclock state after all allies have used their Ultimates many times. While in this state, using Ultimates to attack will deal <u>Aftertaste</u> DMG, and the first character in the lineup will Charge <u>Brain in a Vat</u> by <color=#f29e38ff>200%</color> upon using their Ultimate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"670870": {
+		"Id": "670870",
+		"Name": "Aggregator",
+		"Rarity": 1,
+		"Effect": "After allies use their Ultimates a total of <color=#f29e38ff>2</color> times, deals <color=#f29e38ff>2</color> instances of Wind DMG equal to <color=#f29e38ff>400%</color> of <u>base DMG</u> to a random enemy and applies <color=#f29e38ff>1</color> <u>Spore(s)</u> to it. This DMG will deal DMG equal to <color=#f29e38ff>30%</color> of the original DMG to adjacent enemies. Every time this effect is triggered, increases the number of instances in this battle by 1 and increases the Ultimate DMG dealt by characters by <color=#f29e38ff>5%</color>, to a maximum of <color=#f29e38ff>20</color> times.",
+		"AbridgedEffect": "After a total of <color=#f29e38ff>2</color> Ultimates are used across all allies, deals multiple instances of Wind DMG and apply <u>Spores</u> to a random enemy target and their adjacent units. Each time this effect is triggered, the number of instances for this DMG increases by 1 in this battle and increases the Ultimate DMG dealt by the characters.",
+		"VersionAdded": "2.5"
 	},
 	"671020": {
 		"Id": "671020",
@@ -3859,7 +3989,7 @@
 		"Rarity": 1,
 		"Effect": "When the character deals <u>Quake</u> DMG, every type of DoT effect active on the enemy target will increase the current <u>Quake</u> DMG multiplier by <color=#f29e38ff>50%</color> of the original multiplier.",
 		"AbridgedEffect": "The more types of DoTs the enemy has, the higher the <u>Quake</u> DMG dealt to them by characters.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"671030": {
 		"Id": "671030",
@@ -3867,15 +3997,31 @@
 		"Rarity": 1,
 		"Effect": "When characters deal <u>Quake</u> DMG, every character at Max HP will increase the current <u>Quake</u> DMG multiplier by <color=#f29e38ff>35%</color> of the original multiplier.",
 		"AbridgedEffect": "The more characters who have full HP, the higher the <u>Quake</u> DMG the characters deal.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671080": {
+		"Id": "671080",
+		"Name": "Civilization Correspondent",
+		"Rarity": 1,
+		"Effect": "When characters use their Ultimate, they gain a Shield that can offset DMG equal to <color=#f29e38ff>30%</color> of their Max HP, lasting for <color=#f29e38ff>3</color> turn(s). After dealing Ultimate DMG with an attack, deals <u>Quake</u> DMG equal to <color=#f29e38ff>600%</color> of the character's current Shield effect to the attacked targets.",
+		"AbridgedEffect": "When characters use their Ultimate, they gain a Shield. Characters' Ultimate attacks will deal <u>Quake</u> DMG to the attacked targets based on the current total Shield effect on the character.",
+		"VersionAdded": "2.5"
 	},
 	"671130": {
 		"Id": "671130",
 		"Name": "Memory Doctor",
 		"Rarity": 1,
-		"Effect": "After a character launches an attack, <u>Dewdrop</u> will additionally deal <u>Dewdrop</u> DMG 1 time equal to <color=#f29e38ff>200%</color> of the original <u>Dewdrop</u> DMG multiplier to all Frozen enemy targets. Every Frozen enemy target additionally increases the DMG multiplier by <color=#f29e38ff>25%</color>.",
+		"Effect": "After a character launches an attack, <u>Dewdrop</u> will additionally deal <u>Dewdrop</u> DMG 1 time equal to <color=#f29e38ff>250%</color> of the original <u>Dewdrop</u> DMG multiplier to all Frozen enemy targets. Every Frozen enemy target additionally increases the DMG multiplier by <color=#f29e38ff>25%</color>.",
 		"AbridgedEffect": "After a character uses an attack, <u>Dewdrop</u> will additionally deal DMG to all Frozen enemy targets 1 time. The more enemy targets are Frozen, the higher the DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671170": {
+		"Id": "671170",
+		"Name": "Wandering Meme",
+		"Rarity": 1,
+		"Effect": "Increases characters' Basic ATK DMG dealt by <color=#f29e38ff>160%</color>. When using Basic ATK to launch an attack, enemies in the Weakness Broken state will be considered Frozen.",
+		"AbridgedEffect": "Characters' Basic ATK DMG dealt increases. When using a Basic ATK to attack, Weakness Broken enemies will be considered as being Frozen.",
+		"VersionAdded": "2.5"
 	},
 	"671180": {
 		"Id": "671180",
@@ -3883,7 +4029,7 @@
 		"Rarity": 1,
 		"Effect": "When an enemy target leaves the Frozen state, all allies regenerate <color=#f29e38ff>4</color> Energy. When enemies' <u>Dissociation</u> state is dispelled, allies additionally regenerate <color=#f29e38ff>8</color> Energy.",
 		"AbridgedEffect": "When an enemy target leaves the Frozen state, all allies regenerate Energy. After enemies leave <u>Dissociation</u>, allies additionally regenerate Energy.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"671210": {
 		"Id": "671210",
@@ -3891,15 +4037,23 @@
 		"Rarity": 1,
 		"Effect": "When an enemy target becomes Frozen, causes all currently active DoT on the target to immediately deal DMG equal to <color=#f29e38ff>180%</color> of the original DMG. Each active DoT will apply 1 stack of <u>Suspicion</u>.",
 		"AbridgedEffect": "When an enemy target becomes Frozen, immediately triggers DoTs 1 time. Each DoT active on it will apply 1 stack of <u>Suspicion</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671230": {
+		"Id": "671230",
+		"Name": "Death Denier",
+		"Rarity": 1,
+		"Effect": "Increases characters' DoT dealt by <color=#f29e38ff>160%</color>. After applying a debuff on enemy targets, increases the character's Max HP by <color=#f29e38ff>2%</color> to a maximum of <color=#f29e38ff>20</color> stack(s), lasting for <color=#f29e38ff>2</color> turn(s).",
+		"AbridgedEffect": "Increases characters' DoT dealt. After a character inflicts a debuff on an enemy target, the character's Max HP increases.",
+		"VersionAdded": "2.5"
 	},
 	"671260": {
 		"Id": "671260",
 		"Name": "Jester of Anatta",
 		"Rarity": 1,
-		"Effect": "When a character launches a follow-up attack, there is a <color=#f29e38ff>100%</color> base chance to apply 1 random debuff on the attacked target, lasting for <color=#f29e38ff>2</color> turn(s). The random debuffs include: Decrease DMG dealt by <color=#f29e38ff>15.0%</color>, decrease DEF by <color=#f29e38ff>30.0%</color>, and decrease SPD by <color=#f29e38ff>20.0%</color>.",
+		"Effect": "When a character launches a follow-up attack, there is a <color=#f29e38ff>150%</color> base chance to apply 1 random debuff on the attacked target, lasting for <color=#f29e38ff>2</color> turn(s). The random debuffs include: Decrease DMG dealt by <color=#f29e38ff>15.0%</color>, decrease DEF by <color=#f29e38ff>30.0%</color>, and decrease SPD by <color=#f29e38ff>20.0%</color>.",
 		"AbridgedEffect": "After a character launches a follow-up attack, there is a high chance to inflict a random debuff to the target.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"671340": {
 		"Id": "671340",
@@ -3907,39 +4061,63 @@
 		"Rarity": 1,
 		"Effect": "When <u>Dewdrop</u> Charges, for every 1% of CRIT Rate the character has, there is a <color=#f29e38ff>1%</color> fixed chance to increase the Charge value. The increased ratio equals to <color=#f29e38ff>50%</color> of the character's CRIT DMG.",
 		"AbridgedEffect": "When <u>Dewdrop</u> is charging, the charge value has a chance to CRIT.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671360": {
+		"Id": "671360",
+		"Name": "Graveward Lunatic",
+		"Rarity": 1,
+		"Effect": "The characters' Max HP increases by <color=#f29e38ff>40%</color>. After restoring HP equal to <color=#f29e38ff>200%</color> of Max HP, the DMG multiplier of <u>Aftertaste</u> DMG dealt increases by <color=#f29e38ff>100%</color> of the original DMG multiplier.",
+		"AbridgedEffect": "The characters' Max HP increases. After restoring a certain amount of HP, <u>Aftertaste</u> DMG increases.",
+		"VersionAdded": "2.5"
 	},
 	"671370": {
 		"Id": "671370",
 		"Name": "Viscorpus",
 		"Rarity": 1,
-		"Effect": "Increases the maximum limit of <u>Dewdrop</u> by <color=#f29e38ff>75%</color>. When a character breaks <u>Dewdrop</u> by using their Basic ATK, restores <color=#f29e38ff>35%</color> of this <u>Dewdrop</u>'s Charge.",
+		"Effect": "Increases the maximum limit of <u>Dewdrop</u> by <color=#f29e38ff>100%</color>. When a character breaks <u>Dewdrop</u> by using their Basic ATK, restores <color=#f29e38ff>35%</color> of this <u>Dewdrop</u>'s Charge.",
 		"AbridgedEffect": "Increases maximum limit of <u>Dewdrop</u>. When a character breaks <u>Dewdrop</u> with their Basic ATK, restores part of <u>Dewdrop</u>'s Charge.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"671400": {
 		"Id": "671400",
 		"Name": "Disaster-Halting Mechanism",
 		"Rarity": 1,
-		"Effect": "When a character loses any Shield, increases their SPD by <color=#f29e38ff>12%</color>, lasting for <color=#f29e38ff>2</color> turn(s) and stacking up to <color=#f29e38ff>3</color> time(s). At the beginning of a character's next turn, they gain <color=#f29e38ff>2</color> stack(s) of <u>Critical Boost</u>.",
-		"AbridgedEffect": "When a character loses any Shield, increase their SPD, and they gain <u>Critical Boost</u> at the beginning of the next character's turn.",
-		"VersionAdded": "2.4"
+		"Effect": "After enemy targets use an attack to reduce characters' Shields, increases all allies' SPD by <color=#f29e38ff>35%</color>, lasting for <color=#f29e38ff>2</color> turn(s), then gains <color=#f29e38ff>2</color> stack(s) of <u>Critical Boost</u>.",
+		"AbridgedEffect": "After enemy targets use an attack to reduce characters' Shields, increases all allies' SPD, then gains <u>Critical Boost</u>.",
+		"VersionAdded": "2.5"
+	},
+	"671450": {
+		"Id": "671450",
+		"Name": "Court of Homogeneity",
+		"Rarity": 1,
+		"Effect": "When an enemy target attacks and if there are character(s) that have <u>Critical Boost</u>, increases the DMG taken by the enemy target by <color=#f29e38ff>40%</color>, lasting for <color=#f29e38ff>2</color> turn(s). Meanwhile, Action Advance characters with <u>Critical Boost</u>. Each stack of <u>Critical Boost</u> Action Advances the character by <color=#f29e38ff>5%</color>.",
+		"AbridgedEffect": "When an enemy target attacks, if a character has <u>Critical Boost</u>, the enemy target takes increased DMG. Additionally, the action of the character with <u>Critical Boost</u> is Advanced Forward.",
+		"VersionAdded": "2.5"
 	},
 	"671460": {
 		"Id": "671460",
 		"Name": "Bounty Hunter",
 		"Rarity": 1,
-		"Effect": "When a character deals CRIT DMG, there is a <color=#f29e38ff>50%</color> fixed chance to additionally deal a set amount of CRIT DMG equal to 1–100% of the original DMG for <color=#f29e38ff>1</color> time(s). This is considered as follow-up attack DMG.",
+		"Effect": "When a character's attack deals CRIT DMG, there is a <color=#f29e38ff>65%</color> fixed chance to additionally deal a set amount of CRIT DMG equal to 1–100% of the original DMG for <color=#f29e38ff>1</color> time(s). This is considered as follow-up attack DMG.",
 		"AbridgedEffect": "When a character deals CRIT DMG, there is a chance to additionally deal CRIT DMG equal to a certain proportion of the original DMG. This is considered as follow-up attack DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671500": {
+		"Id": "671500",
+		"Name": "Pre-Battle Caregiver",
+		"Rarity": 1,
+		"Effect": "Characters' Break Effect increases by <color=#f29e38ff>100%</color>. When inflicting Weakness Break on an enemy with an attack, the attacking character gains a Shield that can absorb DMG equal to <color=#f29e38ff>100%</color> of their Max HP, lasting for <color=#f29e38ff>1</color> turn(s), and then deals <u>Quake</u> DMG equal to <color=#f29e38ff>1000%</color> of the current Shield effect to the target after an attack.",
+		"AbridgedEffect": "Characters' Break Effect increases. After inflicting Weakness Break to an enemy target, the attacking character gains Shield and deals <u>Quake</u> DMG based on the current Shield effect on the character.",
+		"VersionAdded": "2.5"
 	},
 	"671510": {
 		"Id": "671510",
 		"Name": "Memosnatcher",
 		"Rarity": 1,
-		"Effect": "When a character uses an attack that deals Ultimate DMG, consumes their HP equal to <color=#f29e38ff>20%</color> of their current HP. After this attack, there is a <color=#f29e38ff>50%</color> base chance to inflict Freeze on the attack target, lasting for <color=#f29e38ff>1</color> turn(s). Every stack of <u>Grit</u> increases the character's Effect Hit Rate by <color=#f29e38ff>2%</color>.",
+		"Effect": "When a character uses an attack that deals Ultimate DMG, consumes their HP equal to <color=#f29e38ff>5%</color> of their current HP. After this attack, there is a <color=#f29e38ff>50%</color> base chance to inflict Freeze on the attack target, lasting for <color=#f29e38ff>1</color> turn(s). Every stack of <u>Grit</u> increases the character's Effect Hit Rate by <color=#f29e38ff>2%</color>.",
 		"AbridgedEffect": "Characters' Ultimates consume HP and have a chance to inflict Freeze on the target. The more the <u>Grit</u> stacks they have, the higher the characters' Effect Hit Rate.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"671520": {
 		"Id": "671520",
@@ -3947,15 +4125,23 @@
 		"Rarity": 1,
 		"Effect": "After a character attacks a Weakness Broken enemy, converts the Toughness Reduction of the attack into 1 instance of <color=#f29e38ff>100%</color> <u>Super Break DMG</u>. After accumulating <color=#f29e38ff>30</color> stack(s) of <u>Grit</u>, additionally deals <color=#f29e38ff>100%</color> <u>Super Break DMG</u> caused by this effect.",
 		"AbridgedEffect": "When characters attack a Weakness Broken enemy target, deals <u>Super Break DMG</u>. After accumulating a number of <u>Grit</u> stacks, this <u>Super Break DMG</u> increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671610": {
+		"Id": "671610",
+		"Name": "Reminiscence Artist",
+		"Rarity": 1,
+		"Effect": "<u>Aftertaste</u> has a <color=#f29e38ff>3%</color> base chance of causing enemy targets that are not Frozen to become Frozen, lasting for <color=#f29e38ff>1</color> turn(s). Each attack can cause this effect to be calculated for a max of <color=#f29e38ff>5</color> time(s). Increases the DMG multiplier of <u>Aftertaste</u> against Frozen enemies by <color=#f29e38ff>150%</color> of the original multiplier.",
+		"AbridgedEffect": "<u>Aftertaste</u> DMG has a chance of Freezing enemy targets. <u>Aftertaste</u> DMG multiplier increases against Frozen enemies.",
+		"VersionAdded": "2.5"
 	},
 	"671650": {
 		"Id": "671650",
 		"Name": "Firework Master",
 		"Rarity": 1,
-		"Effect": "After a character launches a follow-up attack, deals to the attacked enemy target <u>Aftertaste</u> DMG equal to <color=#f29e38ff>500%</color> of the total HP the character already lost 1 time. Then, clears the accumulated HP changes. HP change is accumulated up to <color=#f29e38ff>160%</color> of the character's Max HP.",
-		"AbridgedEffect": "After characters launch follow-up attacks, deals <u>Aftertaste</u> DMG based on the tallied HP they have lost.",
-		"VersionAdded": "2.4"
+		"Effect": "Follow-up attack DMG dealt by characters increases by <color=#f29e38ff>50%</color>. After a character launches a follow-up attack, deals to the attacked enemy target 1 instance of <u>Aftertaste</u> DMG equal to <color=#f29e38ff>500%</color> of the total HP the character lost plus the HP they restored. Then, clears the accumulated HP changes. HP change is accumulated up to <color=#f29e38ff>200%</color> of the character's Max HP.",
+		"AbridgedEffect": "Follow-up attack DMG dealt by characters increase. After characters launch follow-up attacks, deals <u>Aftertaste</u> DMG based on the tallied HP they have lost and HP restored to self.",
+		"VersionAdded": "2.5"
 	},
 	"671670": {
 		"Id": "671670",
@@ -3963,7 +4149,7 @@
 		"Rarity": 1,
 		"Effect": "Increases max <u>Spores</u> to <color=#f29e38ff>5</color>. After characters launch a follow-up attack, apply <color=#f29e38ff>3</color> <u>Spore(s)</u> to the target.",
 		"AbridgedEffect": "Increases max <u>Spores</u> limit. When a character launches a follow-up attack, apply <u>Spores</u> to the attacked target.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"671700": {
 		"Id": "671700",
@@ -3971,23 +4157,39 @@
 		"Rarity": 1,
 		"Effect": "When a character gains a Shield, causes <color=#f29e38ff>2</color> random enemy target(s) to gain 1 <u>Spore</u>. <u>Spore's</u> DMG multiplier increases by <color=#f29e38ff>75%</color> of the original multiplier.",
 		"AbridgedEffect": "When a character gains a Shield, cause random enemy targets to gain <u>Spore</u>. <u>Spore</u>'s DMG increases.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671740": {
+		"Id": "671740",
+		"Name": "Diabolical Worker",
+		"Rarity": 1,
+		"Effect": "After a character uses an attack, apply <u>Spores</u> to random enemy targets that were attacked. When allies take consecutive action for <color=#f29e38ff>1</color> / <color=#f29e38ff>2</color> / <color=#f29e38ff>3</color> times or more, the added number of <u>Spores</u> becomes <color=#f29e38ff>2</color> / <color=#f29e38ff>4</color> / <color=#f29e38ff>6</color>.",
+		"AbridgedEffect": "After a character uses an attack, apply <u>Spores</u> to random enemy targets that were attacked. The more consecutive actions allies take, the more <u>Spores</u> will be applied.",
+		"VersionAdded": "2.5"
 	},
 	"671780": {
 		"Id": "671780",
 		"Name": "Deceiver of Calamity",
 		"Rarity": 1,
-		"Effect": "Increases max <u>Spores</u> by <color=#f29e38ff>3</color>. After a character uses an attack that deals Ultimate DMG and if the attacked target's <u>Spore</u> bursts, then additionally deals Ultimate DMG equal to <color=#f29e38ff>200%</color> of the character's ATK to the target. Every <u>Spore</u> burst by this attack increases this DMG multiplier by <color=#f29e38ff>30%</color>.",
+		"Effect": "Increases max <u>Spores</u> by <color=#f29e38ff>3</color>. After a character uses an attack that deals Ultimate DMG and if the attacked target's <u>Spore</u> bursts, then additionally deals Ultimate DMG equal to <color=#f29e38ff>250%</color> of the character's ATK to the target. Every <u>Spore</u> burst by this attack increases this DMG multiplier by <color=#f29e38ff>30%</color>.",
 		"AbridgedEffect": "Increases max <u>Spores</u> limit. After Characters' Ultimate causes <u>Spores</u> to burst, deals 1 instance of Ultimate DMG to the attacked target. Every <u>Spore</u> burst will increase the DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"671820": {
+		"Id": "671820",
+		"Name": "Block Builder",
+		"Rarity": 1,
+		"Effect": "After characters use an attack, every debuff active on the attacked targets increases the character's ATK by <color=#f29e38ff>3%</color> to a max of <color=#f29e38ff>99</color> stack(s). When the turn ends, lose <color=#f29e38ff>10</color> stacks of this ATK boost.",
+		"AbridgedEffect": "After characters use an attack, they receive 1 stack of ATK boost for every debuff on the attacked targets. When the turn ends, lose <color=#f29e38ff>10</color> stack(s) of ATK boost.",
+		"VersionAdded": "2.5"
 	},
 	"671840": {
 		"Id": "671840",
 		"Name": "Silverheart Guards",
 		"Rarity": 1,
-		"Effect": "When a character defeats an enemy or Breaks their Weakness, charges <u>Brain in a Vat</u> by <color=#f29e38ff>25%</color> and also regenerates Energy equal to <color=#f29e38ff>10%</color> of Max Energy. If the target is an Elite Enemy, additionally regenerates Energy equal to <color=#f29e38ff>40%</color> of Max Energy.",
-		"AbridgedEffect": "When a character defeats an enemy or Breaks their Weakness, charges <u>Brain in a Vat</u> and regenerates Energy. If the target is an Elite Enemy, additionally regenerates Energy.",
-		"VersionAdded": "2.4"
+		"Effect": "When a character Breaks an enemy's Weakness, charges <u>Brain in a Vat</u> by <color=#f29e38ff>25%</color> and also regenerates Energy equal to <color=#f29e38ff>10%</color> of Max Energy. After defeating the target, regenerates Energy equal to <color=#f29e38ff>60%</color> of Max Energy.",
+		"AbridgedEffect": "When a character Breaks an enemy's Weakness, charges <u>Brain in a Vat</u> and also regenerates Energy. After defeating the target, regenerates Energy.",
+		"VersionAdded": "2.5"
 	},
 	"671850": {
 		"Id": "671850",
@@ -3995,7 +4197,7 @@
 		"Rarity": 1,
 		"Effect": "When a character uses an Ultimate, consumes HP from all allies equal to <color=#f29e38ff>5%</color> of their current HP and increases their DMG dealt by <color=#f29e38ff>30%</color> to a max of <color=#f29e38ff>4</color> stack(s), lasting for <color=#f29e38ff>2</color> turn(s).",
 		"AbridgedEffect": "When a character uses their Ultimate, all allies consume HP and increase DMG dealt.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672010": {
 		"Id": "672010",
@@ -4003,15 +4205,23 @@
 		"Rarity": 1,
 		"Effect": "If a character attacks and inflicts Freeze on an enemy target, then all allies gain a Shield equal to <color=#f29e38ff>25%</color> of their respective Max HP, lasting for <color=#f29e38ff>3</color> turn(s). Every enemy target Frozen during this attack will increase the obtained Shield effect by <color=#f29e38ff>5%</color> of their respective Max HP.",
 		"AbridgedEffect": "When a character attacks and inflicts Freeze on an enemy target, all allies will gain a Shield. Every target Frozen during this attack will increase the Shield effect gained.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"672030": {
+		"Id": "672030",
+		"Name": "Planetary Purifier",
+		"Rarity": 1,
+		"Effect": "Increases the Shield effect gained by characters by <color=#f29e38ff>30%</color>. After losing the Shield, restores HP equal to <color=#f29e38ff>25%</color> of their Max HP.",
+		"AbridgedEffect": "Increases shields received by characters. After they lose the Shield, they restore HP.",
+		"VersionAdded": "2.5"
 	},
 	"672050": {
 		"Id": "672050",
 		"Name": "Unsinkable",
 		"Rarity": 1,
-		"Effect": "When a character receives a Shield, for every 1% of HP that is different between the character's Max HP and current HP, the Shield effect increases by <color=#f29e38ff>1.0%</color>.",
-		"AbridgedEffect": "When a character receives a Shield, the higher the difference between the character's Max HP and current HP, the higher the Shield effect.",
-		"VersionAdded": "2.4"
+		"Effect": "The Shield effect a character receives increases by <color=#f29e38ff>20%</color>, for every 1% of HP that is different between the character's Max HP and current HP, the Shield effect additionally increases by <color=#f29e38ff>0.8%</color>.",
+		"AbridgedEffect": "The Shield effect received by the characters increases, the higher the difference between the character's Max HP and current HP, the higher the Shield effect.",
+		"VersionAdded": "2.5"
 	},
 	"672060": {
 		"Id": "672060",
@@ -4019,23 +4229,31 @@
 		"Rarity": 1,
 		"Effect": "When a character launches a follow-up attack, deals <u>Quake</u> DMG equal to <color=#f29e38ff>360%</color> of the character's current Shield effect to the attacked target(s).",
 		"AbridgedEffect": "After a character launches a follow-up attack, deals <u>Quake</u> DMG based on the current Shield effect.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672100": {
 		"Id": "672100",
 		"Name": "Scholar of Candles",
 		"Rarity": 1,
-		"Effect": "When a character takes fatal DMG, their HP will become 1, and they will obtain a Shield equal to <color=#f29e38ff>50%</color> of their Max HP before entering a Freeze state that cannot be dispelled, lasting for <color=#f29e38ff>3</color> turn(s). While in this state, their HP cannot be restored, and taking fatal DMG again will dispel this state and cause the character to be downed.",
-		"AbridgedEffect": "When characters take fatal DMG, they will not be knocked down. Instead, they will gain a Shield and become Frozen.",
-		"VersionAdded": "2.4"
+		"Effect": "Increases Character's CRIT DMG by <color=#f29e38ff>50%</color>. When a character takes fatal DMG, their HP will become 1, and they will obtain a Shield equal to <color=#f29e38ff>100%</color> of their Max HP before entering a Freeze state that cannot be dispelled, lasting for <color=#f29e38ff>1</color> turn(s). While in this state, their HP cannot be restored, and the team can trigger this effect <color=#f29e38ff>3</color> time(s) at most. Before the triggers are completely consumed, increase characters' CRIT DMG by <color=#f29e38ff>50%</color>.",
+		"AbridgedEffect": "Increases characters' CRIT DMG. When characters take fatal DMG, they will not be knocked down. Instead, they will gain a Shield and become Frozen. This can only take effect a certain number of times for the whole team.",
+		"VersionAdded": "2.5"
+	},
+	"672140": {
+		"Id": "672140",
+		"Name": "Cognition Reviewer",
+		"Rarity": 1,
+		"Effect": "After characters attack a non-Elite enemy target with less than <color=#f29e38ff>50%</color> current HP percentage, there is a <color=#f29e38ff>150%</color> base chance to inflict the <u>Dissociation</u> state on them, lasting for <color=#f29e38ff>1</color> turn(s), and deals a set amount of CRIT DMG equal to their current HP.",
+		"AbridgedEffect": "After characters attack enemy targets with less than <color=#f29e38ff>50%</color> of current HP percentage, there is a chance of inflicting <u>Dissociation</u> on them and deals fatal damage to the target.",
+		"VersionAdded": "2.5"
 	},
 	"672160": {
 		"Id": "672160",
 		"Name": "Biographer",
 		"Rarity": 1,
-		"Effect": "After a character attacks a Frozen target, deals <u>Aftertaste</u> DMG 1 time equal to <color=#f29e38ff>180%</color> of the character's ATK to the target.",
+		"Effect": "After a character attacks a Frozen target, deals <u>Aftertaste</u> DMG 1 time equal to <color=#f29e38ff>240%</color> of the character's ATK to the target.",
 		"AbridgedEffect": "After a character attacks a Frozen target, deals <u>Aftertaste</u> DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672180": {
 		"Id": "672180",
@@ -4043,7 +4261,7 @@
 		"Rarity": 1,
 		"Effect": "After an enemy target becomes Frozen, increase the Ultimate DMG they receive by <color=#f29e38ff>60%</color>. This effect will last for <color=#f29e38ff>2</color> turn(s) after Freeze is dispelled.",
 		"AbridgedEffect": "When an enemy target becomes Frozen, increases the Ultimate DMG they receive. This effect will endure for a number of turns even after they are no longer Frozen.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672200": {
 		"Id": "672200",
@@ -4051,7 +4269,7 @@
 		"Rarity": 1,
 		"Effect": "When the enemy target enters battle, they are inflicted with the Bleed effect. While Bleeding, they will take Physical DoT equal to <color=#f29e38ff>10%</color> of their Max HP at the start of their turn. This DMG cannot exceed <color=#f29e38ff>650%</color> of all allies' total Shield effect.",
 		"AbridgedEffect": "When enemy targets enter the battle, they are afflicted with Bleed. DMG dealt by Bleed is based on the total sum of Shield on all allies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672240": {
 		"Id": "672240",
@@ -4059,7 +4277,15 @@
 		"Rarity": 1,
 		"Effect": "Characters' DoT can cause CRIT Hit. When dealing DoT, CRIT DMG cannot exceed <color=#f29e38ff>100%</color>.",
 		"AbridgedEffect": "Characters' DoT can CRIT Hit. CRIT DMG is capped.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"672250": {
+		"Id": "672250",
+		"Name": "Rescuer",
+		"Rarity": 1,
+		"Effect": "When enemy targets take Toughness-Reducing DMG during an attack, they have a <color=#f29e38ff>100%</color> base chance of being afflicted with Burn and receiving Fire DMG equal to <color=#f29e38ff>120%</color> <u>base DMG</u> at the start of their turn for <color=#f29e38ff>2</color> turn(s).",
+		"AbridgedEffect": "Enemy targets have a chance of becoming Burned after receiving Toughness-Reducing DMG from an attack.",
+		"VersionAdded": "2.5"
 	},
 	"672280": {
 		"Id": "672280",
@@ -4067,7 +4293,7 @@
 		"Rarity": 1,
 		"Effect": "When an enemy target is defeated, every stack of <u>Suspicion</u> they had will regenerate <color=#f29e38ff>0.30</color> Energy for all allies.",
 		"AbridgedEffect": "When an enemy target is defeated, all allies regenerate Energy based on the <u>Suspicion</u> stacks on it.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672340": {
 		"Id": "672340",
@@ -4075,7 +4301,7 @@
 		"Rarity": 1,
 		"Effect": "When an enemy target is defeated, increase the Charging Efficiency of <u>Dewdrop</u> by <color=#f29e38ff>10%</color> up to a maximum of <color=#f29e38ff>10</color> stack(s). Also restores HP for all allies equal to <color=#f29e38ff>50%</color> of their respective Max HP.",
 		"AbridgedEffect": "When an enemy target is defeated, increases the Charging Efficiency of <u>Dewdrop</u>. Also, restores HP for all allies.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672350": {
 		"Id": "672350",
@@ -4083,15 +4309,23 @@
 		"Rarity": 1,
 		"Effect": "Every stack of <u>Grit</u> a character has will increase their Incoming Healing by <color=#f29e38ff>2%</color>.",
 		"AbridgedEffect": "The higher the <u>Grit</u> stacks are, the higher the character's HP recovery is increased.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672370": {
 		"Id": "672370",
 		"Name": "Symbiote",
 		"Rarity": 1,
-		"Effect": "Increases character's HP restoration by <color=#f29e38ff>35%</color>. After healing allies, there is a <color=#f29e38ff>50%</color> fixed chance to recover 1 Skill Point. This effect can trigger 1 time per character action.",
-		"AbridgedEffect": "Increases characters' HP recovery. Has a chance of recovering Skill Points after healing an allied target.",
-		"VersionAdded": "2.4"
+		"Effect": "Increases character's HP restoration by <color=#f29e38ff>35%</color>. After providing healing to allies, there is a <color=#f29e38ff>50%</color> fixed chance to recover 1 Skill Point. This effect can trigger 1 time per character action.",
+		"AbridgedEffect": "Increases characters' HP recovery. Has a chance of recovering Skill Points after providing healing to an allied target.",
+		"VersionAdded": "2.5"
+	},
+	"672371": {
+		"Id": "672371",
+		"Name": "Tree of Discard",
+		"Rarity": 1,
+		"Effect": "Increases characters' Outgoing Healing by <color=#f29e38ff>30%</color>. After providing healing to an allied target, inflicts <color=#f29e38ff>1</color> <u>Spore(s)</u> to a random enemy target.",
+		"AbridgedEffect": "Increases characters' Outgoing Healing. After providing healing to an allied target, inflict <u>Spores</u> to a random enemy target.",
+		"VersionAdded": "2.5"
 	},
 	"672400": {
 		"Id": "672400",
@@ -4099,7 +4333,7 @@
 		"Rarity": 1,
 		"Effect": "After a character is attacked and if they did not take DMG from this attack, they will only lose <color=#f29e38ff>1</color> stack(s) of <u>Critical Boost</u>.",
 		"AbridgedEffect": "When a character is attacked and does not take DMG, they will only lose a small amount of <u>Critical Boost</u>.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672410": {
 		"Id": "672410",
@@ -4107,7 +4341,7 @@
 		"Rarity": 1,
 		"Effect": "When a character deals DMG to a Frozen enemy target, each stack of <u>Critical Boost</u> additionally increases CRIT Rate by <color=#f29e38ff>4%</color> and CRIT DMG by <color=#f29e38ff>30%</color>.",
 		"AbridgedEffect": "When a character deals DMG to a Frozen enemy target, each stack of <u>Critical Boost</u> additionally increases CRIT Rate and CRIT DMG.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672430": {
 		"Id": "672430",
@@ -4115,7 +4349,23 @@
 		"Rarity": 1,
 		"Effect": "When a character's turn begins, every stack of <u>Critical Boost</u> they have will restore their HP equal to <color=#f29e38ff>5%</color> of their Max HP, and restore HP to allies equal to <color=#f29e38ff>2%</color> of their respective Max HP.",
 		"AbridgedEffect": "When a character's turn begins, restore all allies' HP based on the number of <u>Critical Boost</u> stacks they have.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"672480": {
+		"Id": "672480",
+		"Name": "Rehearser",
+		"Rarity": 1,
+		"Effect": "Increases CRIT DMG by <color=#f29e38ff>8%</color> for each stack of <u>Critical Boost</u>. When a character uses their Ultimate, inherits this max stack number and receives <color=#f29e38ff>2</color> stack(s) of <u>Critical Boost</u>.",
+		"AbridgedEffect": "Each stack of <u>Critical Boost</u> provides additional CRIT DMG. After a character uses their Ultimate, inherits and increases <u>Critical Boost</u> stacks.",
+		"VersionAdded": "2.5"
+	},
+	"672510": {
+		"Id": "672510",
+		"Name": "Gravedigger",
+		"Rarity": 1,
+		"Effect": "After characters Break enemy targets, there is a <color=#f29e38ff>120%</color> base chance to afflict it with Freeze, lasting for <color=#f29e38ff>1</color> turn(s). If this enemy target is already Frozen, then additionally deal 1 instance of Break DMG equal to <color=#f29e38ff>200%</color> of the Break DMG that would have been dealt this time.",
+		"AbridgedEffect": "After characters Break enemy targets, there is a <color=#f29e38ff>120%</color> base chance to afflict it with Freeze, lasting for <color=#f29e38ff>1</color> turn(s). If this enemy target is already Frozen, then additionally deal 1 instance of Break DMG equal to <color=#f29e38ff>200%</color> of the Break DMG that would have been dealt this time.",
+		"VersionAdded": "2.5"
 	},
 	"672520": {
 		"Id": "672520",
@@ -4123,7 +4373,7 @@
 		"Rarity": 1,
 		"Effect": "When a character has <u>Grit</u>, increases their All-Type RES PEN by <color=#f29e38ff>15%</color>. Each stack of <u>Grit</u> a character has will increase their Break Effect by <color=#f29e38ff>3%</color>.",
 		"AbridgedEffect": "When a character has <u>Grit</u>, increases their All-Type RES PEN. Each stack of <u>Grit</u> a character has will increase their Break Effect.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672530": {
 		"Id": "672530",
@@ -4131,7 +4381,7 @@
 		"Rarity": 1,
 		"Effect": "Each stack of <u>Grit</u> increases the character's Max HP by <color=#f29e38ff>6%</color>, but Maximum Restorable HP will be reduced to <color=#f29e38ff>80%</color> of the additional Max HP.",
 		"AbridgedEffect": "Each stack of <u>Grit</u> increases the characters' Max HP, but reduces Maximum Restorable HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672580": {
 		"Id": "672580",
@@ -4139,15 +4389,23 @@
 		"Rarity": 1,
 		"Effect": "Ultimate DMG dealt by characters increases by <color=#f29e38ff>60%</color>. Every 1% of HP a character loses will Charge <u>Brain in a Vat</u> by <color=#f29e38ff>0.5%</color>.",
 		"AbridgedEffect": "Increases Ultimate DMG dealt by characters. Charges <u>Brain in a Vat</u> when characters lose HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"672600": {
+		"Id": "672600",
+		"Name": "Battlefield Magician",
+		"Rarity": 1,
+		"Effect": "After characters attack, receives a Shield equal to <color=#f29e38ff>3%</color> of the character's Max HP for every instance of <u>Aftertaste</u> DMG dealt in this attack. The Shield cannot exceed <color=#f29e38ff>36%</color> of the character's Max HP and lasts for <color=#f29e38ff>1</color> turn(s).",
+		"AbridgedEffect": "After characters use attacks, the more hits dealt from <u>Aftertaste</u>, the higher the Shield effect gained.",
+		"VersionAdded": "2.5"
 	},
 	"672620": {
 		"Id": "672620",
 		"Name": "Candy Knight",
 		"Rarity": 1,
-		"Effect": "Characters' <u>Aftertaste</u> DMG applies Toughness Reduction of the corresponding Type. If this effect breaks an enemy's Weakness, triggers the Weakness Break effect of the attacker's Type.",
-		"AbridgedEffect": "Characters' <u>Aftertaste</u> DMG reduces Toughness of the corresponding Type.",
-		"VersionAdded": "2.4"
+		"Effect": "The <u>Aftertaste</u> DMG dealt by characters can ignore Weakness Type and reduce <color=#f29e38ff>2.5</color> Toughness from enemy targets. In a single attack, this effect can be triggered against each enemy target up to <color=#f29e38ff>7</color> time(s).",
+		"AbridgedEffect": "Characters' <u>Aftertaste</u> DMG can reduce enemy target's Toughness regardless of the corresponding Type.",
+		"VersionAdded": "2.5"
 	},
 	"672630": {
 		"Id": "672630",
@@ -4155,7 +4413,7 @@
 		"Rarity": 1,
 		"Effect": "Every time characters deal <u>Aftertaste</u> DMG, their Max HP increases by <color=#f29e38ff>5%</color>, up to a max of <color=#f29e38ff>15</color> stack(s) and lasting for <color=#f29e38ff>1</color> turn(s).",
 		"AbridgedEffect": "The more hits of <u>Aftertaste</u> DMG triggered by characters, the higher their Max HP become.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672670": {
 		"Id": "672670",
@@ -4163,15 +4421,15 @@
 		"Rarity": 1,
 		"Effect": "Increases the follow-up attack DMG dealt by characters by <color=#f29e38ff>50%</color>. After launching a follow-up attack, there is a <color=#f29e38ff>100%</color> fixed chance to recover 1 Skill Point.",
 		"AbridgedEffect": "Increases the follow-up attack DMG dealt by characters. After launching a follow-up attack, recovers Skill Points.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672710": {
 		"Id": "672710",
 		"Name": "Phantom Worker",
 		"Rarity": 1,
-		"Effect": "Reduces enemies' Effect RES by <color=#f29e38ff>10%</color> for each <u>Spore</u> stack they have.",
-		"AbridgedEffect": "The more <u>Spore</u> stacks enemy targets have, the lower their Effect RES becomes.",
-		"VersionAdded": "2.4"
+		"Effect": "The <u>Spore</u> DMG received by enemy targets increases by <color=#f29e38ff>35%</color>. Reduces enemies' Effect RES by <color=#f29e38ff>10%</color> for each <u>Spore</u> stack they have.",
+		"AbridgedEffect": "The <u>Spore</u> DMG received by the enemy target increases. The more <u>Spore</u> stacks enemy targets have, the lower their Effect RES becomes.",
+		"VersionAdded": "2.5"
 	},
 	"672720": {
 		"Id": "672720",
@@ -4179,15 +4437,23 @@
 		"Rarity": 1,
 		"Effect": "Increases <u>Spore's</u> DMG multiplier by <color=#f29e38ff>60%</color> of the original multiplier. When Spores burst, the DMG multiplier increases additionally by <color=#f29e38ff>3%</color> of the original multiplier for each debuff the enemy target has.",
 		"AbridgedEffect": "Increases <u>Spore</u>'s DMG. When Spores burst, the DMG increases additionally for each debuff the enemy target has.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"672721": {
+		"Id": "672721",
+		"Name": "Pacifist Worker",
+		"Rarity": 1,
+		"Effect": "Every time characters consume Skill Points or have Skill Points overflow, there is a <color=#f29e38ff>150%</color> base chance to inflict a random debuff on random enemy targets, lasting for <color=#f29e38ff>2</color> turn(s). The random debuffs include: Decrease DMG dealt by <color=#f29e38ff>15.0%</color>, decrease Effect RES by <color=#f29e38ff>20.0%</color>, or decrease Effect Hit Rate by <color=#f29e38ff>30.0%</color>.",
+		"AbridgedEffect": "Every time characters consume Skill Points or have Skill Points overflow, there is a chance to inflict a random debuff on random enemy targets. The random debuffs include: Decrease DMG dealt, decrease Effect RES, or decrease Effect Hit Rate.",
+		"VersionAdded": "2.5"
 	},
 	"672750": {
 		"Id": "672750",
 		"Name": "Starcrusher Worker",
 		"Rarity": 1,
-		"Effect": "When a character uses a Basic ATK and their HP percentage is larger than or equal to <color=#f29e38ff>50%</color>, consumes HP equal to <color=#f29e38ff>5%</color> of their Max HP and additionally recovers 1 Skill Point.",
-		"AbridgedEffect": "When a character uses a Basic ATK and their HP percentage is larger than or equal to <color=#f29e38ff>50%</color>, they consume HP and additionally recover Skill Points.",
-		"VersionAdded": "2.4"
+		"Effect": "The characters' Basic ATK DMG increases by <color=#f29e38ff>50%</color>. When a character uses a Basic ATK and their HP percentage is larger than or equal to <color=#f29e38ff>50%</color>, consumes HP equal to <color=#f29e38ff>5%</color> of their Max HP and additionally recovers 1 Skill Point.",
+		"AbridgedEffect": "The Basic ATK DMG dealt by the characters increases. When a character uses Basic ATK and their HP percentage is larger than or equal to <color=#f29e38ff>50%</color>, they consume HP and additionally recover Skill Points.",
+		"VersionAdded": "2.5"
 	},
 	"672840": {
 		"Id": "672840",
@@ -4195,7 +4461,15 @@
 		"Rarity": 1,
 		"Effect": "After a character attacks and deals Ultimate DMG, for every enemy target hit, deals Ultimate DMG equal to <color=#f29e38ff>100%</color> of the character's ATK to the enemy target with the highest Max HP.",
 		"AbridgedEffect": "For every enemy target that the character's Ultimate hits, deals Ultimate DMG to the enemy target with the highest Max HP.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
+	},
+	"672850": {
+		"Id": "672850",
+		"Name": "Star-Picker",
+		"Rarity": 1,
+		"Effect": "When characters use Ultimate, gains <color=#f29e38ff>3</color> stack(s) of <u>Grit</u> and increases SPD by <color=#f29e38ff>25%</color> and ATK by <color=#f29e38ff>20%</color>, lasting for <color=#f29e38ff>2</color> turn(s).",
+		"AbridgedEffect": "Gains <u>Grit</u> when characters use their Ultimate, then boosts their SPD and ATK.",
+		"VersionAdded": "2.5"
 	},
 	"672860": {
 		"Id": "672860",
@@ -4203,7 +4477,7 @@
 		"Rarity": 1,
 		"Effect": "Ultimate DMG dealt by characters increases by <color=#f29e38ff>60%</color>. After triggering a follow-up attack, every enemy target hit by the attack will make the next Ultimate ignore <color=#f29e38ff>5%</color> of the enemy targets' DEF, stacking up to <color=#f29e38ff>5</color> time(s).",
 		"AbridgedEffect": "Increases Ultimate DMG dealt by characters. After using a follow-up attack, every enemy target hit will additionally let the next Ultimate ignore target's DEF.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	},
 	"672870": {
 		"Id": "672870",
@@ -4211,6 +4485,6 @@
 		"Rarity": 1,
 		"Effect": "For every 1 Skill Point consumed by characters, increases their Ultimate DMG dealt by <color=#f29e38ff>45%</color>, up to a max of <color=#f29e38ff>135%</color> and lasting until after using the Ultimate.",
 		"AbridgedEffect": "The more Skill Points characters consume, the more Ultimate DMG they deal.",
-		"VersionAdded": "2.4"
+		"VersionAdded": "2.5"
 	}
 }
