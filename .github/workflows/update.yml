@@ -2,8 +2,8 @@ name: My workflow
 
 on:
   workflow_dispatch:
-#   schedule:
-#     - cron: "36 17 * * *"
+  schedule:
+    - cron: "36 17 * * *"
 
 permissions:
   contents: write
@@ -19,12 +19,15 @@ jobs:
           node-version: 20
       - run: npm ci
 
+      # - name: Check out StarRailData
+      #   uses: actions/checkout@v3
+      #   with:
+      #     repository: Dimbreath/StarRailData
+      #     token: ${{ secrets.PUBLIC_REPO_PAT }}
+      #     path: StarRailData
+
       - name: Check out StarRailData
-        uses: actions/checkout@v3
-        with:
-          repository: Dimbreath/StarRailData
-          token: ${{ secrets.PUBLIC_REPO_PAT }}
-          path: StarRailData
+        run: git clone https://gitlab.com/Dimbreath/turnbasedgamedata.git --depth=1 StarRailData
 
       - id: lastcommit
         uses: nmbgeek/github-action-get-latest-commit@main
