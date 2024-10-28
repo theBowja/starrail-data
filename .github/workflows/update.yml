@@ -29,12 +29,17 @@ jobs:
       - name: Check out StarRailData
         run: git clone https://gitlab.com/Dimbreath/turnbasedgamedata.git --depth=1 StarRailData
 
+      # - id: lastcommit
+      #   uses: nmbgeek/github-action-get-latest-commit@main
+      #   with:
+      #     repository: Dimbreath/StarRailData
+      #     branch: master
+      #     token: ${{ secrets.PUBLIC_REPO_PAT }}
+
       - id: lastcommit
-        uses: nmbgeek/github-action-get-latest-commit@main
-        with:
-          repository: Dimbreath/StarRailData
-          branch: master
-          token: ${{ secrets.PUBLIC_REPO_PAT }}
+        run: |
+          cd StarRailData
+          git show -s --format='description="%s"' >> $GITHUB_OUTPUT
 
       - name: Run update script
         run: npm run update-data -- --version ${{ steps.lastcommit.outputs.description }}
