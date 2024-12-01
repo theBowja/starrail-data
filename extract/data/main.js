@@ -24,7 +24,7 @@ function exportStarRailData() {
 
 	} else {
 		return; // i dont do this manually anymore
-		setVersion('2.1');
+		setVersion('2.6');
 	}
 
 	if (getVersion() === '' || !getVersion()) {

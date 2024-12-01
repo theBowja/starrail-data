@@ -59,7 +59,12 @@ function collateSkills(textmap, skillId) {
 	data.SkillTypeText = textmap[obj['1'].SkillTypeDesc.Hash];
 	data.MaxLevel = obj['1'].MaxLevel;
 
-	data.EffectRaw = textmap[obj['1'].SkillDesc.Hash].replaceAll('\\n', '\n');
+	try {
+		data.EffectRaw = textmap[obj['1'].SkillDesc.Hash].replaceAll('\\n', '\n');
+	} catch(e) {
+		data.EffectRaw = "N/A";
+	}
+	
 	if (textmap[obj['1'].SimpleSkillDesc.Hash]) {
 		data.AbridgedEffect = textmap[obj['1'].SimpleSkillDesc.Hash].replaceAll('\\n', '\n');
 		// if (data.AbridgedEffect.includes('[i') || data.AbridgedEffect.includes['[f'])
