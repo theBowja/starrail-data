@@ -13,7 +13,9 @@ function collate(langCode) {
 		let filename = id;
 
 		data.Name = language[obj.Name.Hash];
-		data.Signature = language[obj.SignatureText.Hash];
+		if (obj.SignatureText) {
+			data.Signature = language[obj.SignatureText.Hash];
+		}
 
 		data.ContactType = obj.ContactsType;
 		data.ContactTypeText = language[xmtype[obj.ContactsType]?.Name?.Hash];

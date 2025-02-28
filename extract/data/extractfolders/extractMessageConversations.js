@@ -84,8 +84,10 @@ function collate(langCode) {
 					} else if (messageObj.ItemType === 'Image') {
 						message.Image = xmimage[messageObj.ItemContentID].ImagePath;
 					}
-
-					message.Text = textmap[messageObj.MainText.Hash]?.replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
+					
+					if (messageObj.MainText) {
+						message.Text = textmap[messageObj.MainText.Hash]?.replaceAll('\\n', '\n').replaceAll('<unbreak>', '').replaceAll('</unbreak>', '');
+					}
 					if (message.Text === undefined && messageObj.ItemType === 'Sticker') {
 						message.Text = `[${textmap[xemoji[messageObj.ItemContentID].KeyWords.Hash]}]`;
 					}
@@ -129,6 +131,9 @@ function collate(langCode) {
 
 function isChoiceMessageItems(textmap, messageItemIds) {
 	for (const mItemId of messageItemIds) {
+		if (xmitem[mItemId].OptionText === undefined) {
+			return false;
+		}
 		const text = textmap[xmitem[mItemId].OptionText.Hash];
 		if (text !== undefined && text !== '') {
 			return true;

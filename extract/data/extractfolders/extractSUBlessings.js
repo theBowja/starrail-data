@@ -26,7 +26,7 @@ function collate(langCode) {
 		}
 
 		// data.BuffDescBattle = language[obj.BuffDescBattle.Hash];
-		if (language[obj.BuffDescBattle.Hash] && language[obj.BuffDesc.Hash] !== language[obj.BuffDescBattle.Hash]) {
+		if (obj.BuffDescBattle && language[obj.BuffDescBattle.Hash] && language[obj.BuffDesc.Hash] !== language[obj.BuffDescBattle.Hash]) {
 			console.log(`${id} has BuffDescBattle`);
 		}
 
