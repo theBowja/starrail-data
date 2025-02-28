@@ -63,7 +63,7 @@ function collate(langCode) {
 			nodeData.Levels[level] = {};
 
 			if (obj[level].PointType === 1) { // minor traces
-				nodeData.Levels[level].EffectValues = global.roundParams([obj[level].StatusAddList[0]]);
+				nodeData.Levels[level].EffectValues = global.roundParams([obj[level].StatusAddList[0].Value.Value]);
 			} else if (obj[level].PointType === 2) { // skills
 				nodeData.Levels[level].EffectValues = global.roundParams(xskill[obj[level].LevelUpSkillID[0]][level].ParamList.map(e => e.Value));
 			} else if (obj[level].PointType === 3) { // major traces
