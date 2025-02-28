@@ -10,13 +10,20 @@ function collate(langCode) {
 		data.Id = id;
 		let filename = id;
 
+		if (obj.TitleName === undefined) return accum;
 		data.Name = textmap[obj.TitleName.Hash];
 
 		data.TabName = textmap[obj.TabName.Hash];
 
-		data.Description = textmap[obj.PanelDesc.Hash]?.replaceAll('\\n', '\n');
-		data.Tag = textmap[obj.TagDesc.Hash];
-		data.Introduction = textmap[obj.IntroDesc.Hash]?.replaceAll('\\n', '\n');
+		if (obj.PanelDesc) {
+			data.Description = textmap[obj.PanelDesc.Hash]?.replaceAll('\\n', '\n');
+		}
+		if (obj.TagDesc) {
+			data.Tag = textmap[obj.TagDesc.Hash];
+		}
+		if (obj.IntroDesc) {
+			data.Introduction = textmap[obj.IntroDesc.Hash]?.replaceAll('\\n', '\n');
+		}
 
 		data.ImageIconTab = obj.TabIcon;
 
