@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 var JSONbig = require('json-bigint');
 
 const config = require('../config.json');
@@ -194,7 +195,7 @@ function updateDataVersionAdded(folder, data) {
 	}
 
 	// save version cache
-	fs.writeFileSync(`./versioncache.json`, JSON.stringify(versioncache, null, '\t'));
+	fs.writeFileSync(path.resolve(__dirname,`./versioncache.json`), JSON.stringify(versioncache, null, '\t'));
 }
 
 // function exportCurve(folder, file) {
