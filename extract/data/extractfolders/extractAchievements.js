@@ -17,10 +17,13 @@ function collate(langCode) {
 		data.SeriesId = obj.SeriesID;
 		data.SeriesText = language[xseries[obj.SeriesID].SeriesTitle.Hash];
 		data.Description = global.replaceParams(language[obj.AchievementDesc.Hash], obj.ParamList);
-		data.HiddenDescription = language[obj.HideAchievementDesc.Hash];
+		if (obj.HideAchievementDesc) {
+			data.HiddenDescription = language[obj.HideAchievementDesc.Hash];
+		}
 
-		data.RecordText = language[obj.RecordText.Hash];
-
+		if (obj.RecordText) {
+			data.RecordText = language[obj.RecordText.Hash];
+		}
 
 		accum[filename] = data;
 		return accum;
