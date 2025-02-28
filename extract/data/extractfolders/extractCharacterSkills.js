@@ -65,7 +65,7 @@ function collateSkills(textmap, skillId) {
 		data.EffectRaw = "N/A";
 	}
 	
-	if (textmap[obj['1'].SimpleSkillDesc.Hash]) {
+	if (obj['1'].SimpleSkillDesc !== undefined && textmap[obj['1'].SimpleSkillDesc.Hash]) {
 		data.AbridgedEffect = textmap[obj['1'].SimpleSkillDesc.Hash].replaceAll('\\n', '\n');
 		// if (data.AbridgedEffect.includes('[i') || data.AbridgedEffect.includes['[f'])
 		// 	console.log(`Error: skill ${skillId} AbridgedEffect includes a replaceable parameter`);
