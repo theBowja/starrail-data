@@ -1,9 +1,15 @@
 const fs = require('fs');
+var JSONbig = require('json-bigint');
 
 const config = require('../config.json');
 
+function readJson(path) {
+	const jsonfile = fs.readFileSync(path)
+	return JSONbig.parse(jsonfile);
+}
+
 global.getExcel = function(file) {
-	const data = require(`${config.StarRailData_folder}/ExcelOutput/${file}.json`);
+	const data = readJson(`${config.StarRailData_folder}/ExcelOutput/${file}.json`);
 	const mapId = Object.keys(data[0])[0];
 
 	let subLevel;
@@ -30,9 +36,9 @@ global.getLanguage = function(abbriev) { return getTextMap(abbriev.toUpperCase()
 
 global.GetStableHash = require('./GetStableHash.js');
 
-global.TrailblazerHash = -2090701432;
+global.TrailblazerHash = "6354779731002018877";
 global.getTrailblazerCanonName = function(textmap, isMale=true) {
-	const str = isMale ? textmap[-1080079556] : textmap[1014580698];
+	const str = isMale ? textmap["1326924780841415949"] : textmap["15712915167873200526"];
 	if (str.includes('「'))
 		return str.substring(str.indexOf('「')+1, str.indexOf('」'));
 	else if (str.includes('„'))
