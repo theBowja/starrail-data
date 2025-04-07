@@ -3703,6 +3703,52 @@
 		],
 		"VersionAdded": "3.1"
 	},
+	"22004": {
+		"Id": "22004",
+		"Name": "Das große kosmische Geschäft",
+		"PathType": "Mage",
+		"PathTypeText": "Die Gelehrsamkeit",
+		"EffectName": "Gegenseitiger Nutzen",
+		"EffectTemplate": "Erhöht den ANG des Trägers um <color=#f29e38ff>#1[i]%</color>. Für jede Schwäche des Gegners eines anderen Typs wird der verursachte SCH des Trägers um <color=#f29e38ff>#2[i]%</color> erhöht, bis zu 7 Schwächetypen.",
+		"Superimpositions": [
+			{
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>8%</color>. Für jede Schwäche des Gegners eines anderen Typs wird der verursachte SCH des Trägers um <color=#f29e38ff>4%</color> erhöht, bis zu 7 Schwächetypen.",
+				"Params": [
+					0.08,
+					0.04
+				]
+			},
+			{
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>10%</color>. Für jede Schwäche des Gegners eines anderen Typs wird der verursachte SCH des Trägers um <color=#f29e38ff>5%</color> erhöht, bis zu 7 Schwächetypen.",
+				"Params": [
+					0.1,
+					0.05
+				]
+			},
+			{
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>12%</color>. Für jede Schwäche des Gegners eines anderen Typs wird der verursachte SCH des Trägers um <color=#f29e38ff>6%</color> erhöht, bis zu 7 Schwächetypen.",
+				"Params": [
+					0.12,
+					0.06
+				]
+			},
+			{
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>14%</color>. Für jede Schwäche des Gegners eines anderen Typs wird der verursachte SCH des Trägers um <color=#f29e38ff>7%</color> erhöht, bis zu 7 Schwächetypen.",
+				"Params": [
+					0.14,
+					0.07
+				]
+			},
+			{
+				"Effect": "Erhöht den ANG des Trägers um <color=#f29e38ff>16%</color>. Für jede Schwäche des Gegners eines anderen Typs wird der verursachte SCH des Trägers um <color=#f29e38ff>8%</color> erhöht, bis zu 7 Schwächetypen.",
+				"Params": [
+					0.16,
+					0.08
+				]
+			}
+		],
+		"VersionAdded": "3.2"
+	},
 	"23000": {
 		"Id": "23000",
 		"Name": "Nacht auf der Milchstraße",
@@ -5775,10 +5821,10 @@
 		"PathType": "Memory",
 		"PathTypeText": "Das Gedenken",
 		"EffectName": "Gestalten",
-		"EffectTemplate": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>#1[i]</color>. Nach einem Angriff durch den Träger und seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>#4[f1]%</color>, bis zu #2[i] Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>#3[f1]%</color>.",
+		"EffectTemplate": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>#1[i]</color>. Nach einem Angriff durch den Träger oder seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>#4[f1]%</color>, bis zu #2[i] Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>#3[f1]%</color>.",
 		"Superimpositions": [
 			{
-				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>12</color>. Nach einem Angriff durch den Träger und seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>9.0%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>9.0%</color>.",
+				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>12</color>. Nach einem Angriff durch den Träger oder seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>9.0%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>9.0%</color>.",
 				"Params": [
 					12,
 					6,
@@ -5787,7 +5833,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>14</color>. Nach einem Angriff durch den Träger und seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>10.5%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>10.5%</color>.",
+				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>14</color>. Nach einem Angriff durch den Träger oder seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>10.5%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>10.5%</color>.",
 				"Params": [
 					14,
 					6,
@@ -5796,7 +5842,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>16</color>. Nach einem Angriff durch den Träger und seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>12.0%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>12.0%</color>.",
+				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>16</color>. Nach einem Angriff durch den Träger oder seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>12.0%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>12.0%</color>.",
 				"Params": [
 					16,
 					6,
@@ -5805,7 +5851,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>18</color>. Nach einem Angriff durch den Träger und seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>13.5%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>13.5%</color>.",
+				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>18</color>. Nach einem Angriff durch den Träger oder seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>13.5%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>13.5%</color>.",
 				"Params": [
 					18,
 					6,
@@ -5814,7 +5860,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>20</color>. Nach einem Angriff durch den Träger und seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>15.0%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>15.0%</color>.",
+				"Effect": "Erhöht die Basis-GES des Trägers um <color=#f29e38ff>20</color>. Nach einem Angriff durch den Träger oder seinen Memogeist erhält der Träger 1 Stapelung „Brokat“. Jede Stapelung von Brokat erhöht den KRIT-SCH des Trägers und seines Memogeistes um <color=#f29e38ff>15.0%</color>, bis zu 6 Stapelungen. Wenn die max. Stapelzahl erreicht wird, erhöht jede Stapelung von Brokat den verursachten Standardangriff-SCH zusätzlich um <color=#f29e38ff>15.0%</color>.",
 				"Params": [
 					20,
 					6,
@@ -5958,10 +6004,10 @@
 		"PathType": "Warrior",
 		"PathTypeText": "Die Zerstörung",
 		"EffectName": "Weitblick",
-		"EffectTemplate": "Erhöht die max. LP des Trägers um <color=#f29e38ff>#1[i]%</color> und die erhaltene Heilung um <color=#f29e38ff>#6[i]%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>#2[f1]%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>#3[i]%</color>. Wenn die dabei verbrauchten LP #4[i] oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>#5[i]%</color> erhöht.\\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
+		"EffectTemplate": "Erhöht die max. LP des Trägers um <color=#f29e38ff>#1[i]%</color> und die erhaltene Heilung um <color=#f29e38ff>#6[i]%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>#2[f1]%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>#3[i]%</color>. Wenn die dabei verbrauchten LP #4[i] Pkt. oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>#5[i]%</color> erhöht.\\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
 		"Superimpositions": [
 			{
-				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>18%</color> und die erhaltene Heilung um <color=#f29e38ff>20%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>6.0%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>30%</color>. Wenn die dabei verbrauchten LP 500 oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>30%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>18%</color> und die erhaltene Heilung um <color=#f29e38ff>20%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>6.0%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>30%</color>. Wenn die dabei verbrauchten LP 500 Pkt. oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>30%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
 				"Params": [
 					0.18,
 					0.06,
@@ -5972,7 +6018,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>21%</color> und die erhaltene Heilung um <color=#f29e38ff>25%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>6.5%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>35%</color>. Wenn die dabei verbrauchten LP 500 oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>35%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>21%</color> und die erhaltene Heilung um <color=#f29e38ff>25%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>6.5%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>35%</color>. Wenn die dabei verbrauchten LP 500 Pkt. oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>35%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
 				"Params": [
 					0.21,
 					0.065,
@@ -5983,7 +6029,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>24%</color> und die erhaltene Heilung um <color=#f29e38ff>30%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>7.0%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>40%</color>. Wenn die dabei verbrauchten LP 500 oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>40%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>24%</color> und die erhaltene Heilung um <color=#f29e38ff>30%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>7.0%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>40%</color>. Wenn die dabei verbrauchten LP 500 Pkt. oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>40%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
 				"Params": [
 					0.24,
 					0.07,
@@ -5994,7 +6040,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>27%</color> und die erhaltene Heilung um <color=#f29e38ff>35%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>7.5%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>45%</color>. Wenn die dabei verbrauchten LP 500 oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>45%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>27%</color> und die erhaltene Heilung um <color=#f29e38ff>35%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>7.5%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>45%</color>. Wenn die dabei verbrauchten LP 500 Pkt. oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>45%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
 				"Params": [
 					0.27,
 					0.075,
@@ -6005,7 +6051,7 @@
 				]
 			},
 			{
-				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>30%</color> und die erhaltene Heilung um <color=#f29e38ff>40%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>8.0%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>50%</color>. Wenn die dabei verbrauchten LP 500 oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>50%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>30%</color> und die erhaltene Heilung um <color=#f29e38ff>40%</color>. Der Einsatz der Fertigkeit oder des Ultimates verbraucht LP in Höhe von <color=#f29e38ff>8.0%</color> der max. LP des Trägers und erhöht den verursachten SCH dieses Angriffs um <color=#f29e38ff>50%</color>. Wenn die dabei verbrauchten LP 500 Pkt. oder mehr betragen, wird der SCH zusätzlich um <color=#f29e38ff>50%</color> erhöht.\nWenn die aktuellen LP nicht ausreichen, werden die aktuellen LP des Trägers auf 1 reduziert.",
 				"Params": [
 					0.3,
 					0.08,
@@ -6017,6 +6063,123 @@
 			}
 		],
 		"VersionAdded": "3.1"
+	},
+	"23040": {
+		"Id": "23040",
+		"Name": "Ein noch schönerer Abschied",
+		"PathType": "Memory",
+		"PathTypeText": "Das Gedenken",
+		"EffectName": "Schnitzen",
+		"EffectTemplate": "Erhöht die max. LP des Trägers um <color=#f29e38ff>#1[i]%</color>. Wenn der Träger oder sein Memogeist während der eigenen Runde LP verlieren, erhält der Träger „Blüte der Unterwelt“, mit der der Träger und sein Memogeist beim Verursachen von SCH für #3[i] Rd. <color=#f29e38ff>#2[i]%</color> der VTD des Ziels ignorieren.\\nWenn der Memogeist des Trägers verschwindet, wird die Aktion des Trägers um <color=#f29e38ff>#4[i]%</color> vorgezogen. Dieser Effekt kann nur 1-mal ausgelöst werden. Die Auslösungsanzahl wird jedes Mal zurückgesetzt, wenn der Träger seinen Ultimate einsetzt.",
+		"Superimpositions": [
+			{
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>30%</color>. Wenn der Träger oder sein Memogeist während der eigenen Runde LP verlieren, erhält der Träger „Blüte der Unterwelt“, mit der der Träger und sein Memogeist beim Verursachen von SCH für 2 Rd. <color=#f29e38ff>30%</color> der VTD des Ziels ignorieren.\nWenn der Memogeist des Trägers verschwindet, wird die Aktion des Trägers um <color=#f29e38ff>12%</color> vorgezogen. Dieser Effekt kann nur 1-mal ausgelöst werden. Die Auslösungsanzahl wird jedes Mal zurückgesetzt, wenn der Träger seinen Ultimate einsetzt.",
+				"Params": [
+					0.3,
+					0.3,
+					2,
+					0.12
+				]
+			},
+			{
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>37%</color>. Wenn der Träger oder sein Memogeist während der eigenen Runde LP verlieren, erhält der Träger „Blüte der Unterwelt“, mit der der Träger und sein Memogeist beim Verursachen von SCH für 2 Rd. <color=#f29e38ff>35%</color> der VTD des Ziels ignorieren.\nWenn der Memogeist des Trägers verschwindet, wird die Aktion des Trägers um <color=#f29e38ff>15%</color> vorgezogen. Dieser Effekt kann nur 1-mal ausgelöst werden. Die Auslösungsanzahl wird jedes Mal zurückgesetzt, wenn der Träger seinen Ultimate einsetzt.",
+				"Params": [
+					0.375,
+					0.35,
+					2,
+					0.15
+				]
+			},
+			{
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>45%</color>. Wenn der Träger oder sein Memogeist während der eigenen Runde LP verlieren, erhält der Träger „Blüte der Unterwelt“, mit der der Träger und sein Memogeist beim Verursachen von SCH für 2 Rd. <color=#f29e38ff>40%</color> der VTD des Ziels ignorieren.\nWenn der Memogeist des Trägers verschwindet, wird die Aktion des Trägers um <color=#f29e38ff>18%</color> vorgezogen. Dieser Effekt kann nur 1-mal ausgelöst werden. Die Auslösungsanzahl wird jedes Mal zurückgesetzt, wenn der Träger seinen Ultimate einsetzt.",
+				"Params": [
+					0.45,
+					0.4,
+					2,
+					0.18
+				]
+			},
+			{
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>52%</color>. Wenn der Träger oder sein Memogeist während der eigenen Runde LP verlieren, erhält der Träger „Blüte der Unterwelt“, mit der der Träger und sein Memogeist beim Verursachen von SCH für 2 Rd. <color=#f29e38ff>45%</color> der VTD des Ziels ignorieren.\nWenn der Memogeist des Trägers verschwindet, wird die Aktion des Trägers um <color=#f29e38ff>21%</color> vorgezogen. Dieser Effekt kann nur 1-mal ausgelöst werden. Die Auslösungsanzahl wird jedes Mal zurückgesetzt, wenn der Träger seinen Ultimate einsetzt.",
+				"Params": [
+					0.525,
+					0.45,
+					2,
+					0.21
+				]
+			},
+			{
+				"Effect": "Erhöht die max. LP des Trägers um <color=#f29e38ff>60%</color>. Wenn der Träger oder sein Memogeist während der eigenen Runde LP verlieren, erhält der Träger „Blüte der Unterwelt“, mit der der Träger und sein Memogeist beim Verursachen von SCH für 2 Rd. <color=#f29e38ff>50%</color> der VTD des Ziels ignorieren.\nWenn der Memogeist des Trägers verschwindet, wird die Aktion des Trägers um <color=#f29e38ff>24%</color> vorgezogen. Dieser Effekt kann nur 1-mal ausgelöst werden. Die Auslösungsanzahl wird jedes Mal zurückgesetzt, wenn der Träger seinen Ultimate einsetzt.",
+				"Params": [
+					0.6,
+					0.5,
+					2,
+					0.24
+				]
+			}
+		],
+		"VersionAdded": "3.2"
+	},
+	"23041": {
+		"Id": "23041",
+		"Name": "Das Leben sollte in Flammen aufgehen",
+		"PathType": "Mage",
+		"PathTypeText": "Die Gelehrsamkeit",
+		"EffectName": "Schmelzen",
+		"EffectTemplate": "Der Träger stellt zu Beginn der Runde #5[i] Pkt. Energie wieder her. Wenn ein Gegner eine vom Träger implantierte Schwäche besitzt, wird der ihm zugefügte SCH durch den Träger um <color=#f29e38ff>#3[i]%</color> erhöht.\\nWenn ein Gegner vom Träger angegriffen wird, verringert der Träger seine VTD für #4[i] Rd. um <color=#f29e38ff>#2[i]%</color>. Effekte der gleichen Art sind nicht stapelbar.",
+		"Superimpositions": [
+			{
+				"Effect": "Der Träger stellt zu Beginn der Runde 10 Pkt. Energie wieder her. Wenn ein Gegner eine vom Träger implantierte Schwäche besitzt, wird der ihm zugefügte SCH durch den Träger um <color=#f29e38ff>60%</color> erhöht.\nWenn ein Gegner vom Träger angegriffen wird, verringert der Träger seine VTD für 2 Rd. um <color=#f29e38ff>12%</color>. Effekte der gleichen Art sind nicht stapelbar.",
+				"Params": [
+					0,
+					0.12,
+					0.6,
+					2,
+					10
+				]
+			},
+			{
+				"Effect": "Der Träger stellt zu Beginn der Runde 10 Pkt. Energie wieder her. Wenn ein Gegner eine vom Träger implantierte Schwäche besitzt, wird der ihm zugefügte SCH durch den Träger um <color=#f29e38ff>70%</color> erhöht.\nWenn ein Gegner vom Träger angegriffen wird, verringert der Träger seine VTD für 2 Rd. um <color=#f29e38ff>15%</color>. Effekte der gleichen Art sind nicht stapelbar.",
+				"Params": [
+					0,
+					0.15,
+					0.7,
+					2,
+					10
+				]
+			},
+			{
+				"Effect": "Der Träger stellt zu Beginn der Runde 10 Pkt. Energie wieder her. Wenn ein Gegner eine vom Träger implantierte Schwäche besitzt, wird der ihm zugefügte SCH durch den Träger um <color=#f29e38ff>80%</color> erhöht.\nWenn ein Gegner vom Träger angegriffen wird, verringert der Träger seine VTD für 2 Rd. um <color=#f29e38ff>18%</color>. Effekte der gleichen Art sind nicht stapelbar.",
+				"Params": [
+					0,
+					0.18,
+					0.8,
+					2,
+					10
+				]
+			},
+			{
+				"Effect": "Der Träger stellt zu Beginn der Runde 10 Pkt. Energie wieder her. Wenn ein Gegner eine vom Träger implantierte Schwäche besitzt, wird der ihm zugefügte SCH durch den Träger um <color=#f29e38ff>90%</color> erhöht.\nWenn ein Gegner vom Träger angegriffen wird, verringert der Träger seine VTD für 2 Rd. um <color=#f29e38ff>21%</color>. Effekte der gleichen Art sind nicht stapelbar.",
+				"Params": [
+					0,
+					0.21,
+					0.9,
+					2,
+					10
+				]
+			},
+			{
+				"Effect": "Der Träger stellt zu Beginn der Runde 10 Pkt. Energie wieder her. Wenn ein Gegner eine vom Träger implantierte Schwäche besitzt, wird der ihm zugefügte SCH durch den Träger um <color=#f29e38ff>100%</color> erhöht.\nWenn ein Gegner vom Träger angegriffen wird, verringert der Träger seine VTD für 2 Rd. um <color=#f29e38ff>24%</color>. Effekte der gleichen Art sind nicht stapelbar.",
+				"Params": [
+					0,
+					0.24,
+					1,
+					2,
+					10
+				]
+			}
+		],
+		"VersionAdded": "3.2"
 	},
 	"24000": {
 		"Id": "24000",

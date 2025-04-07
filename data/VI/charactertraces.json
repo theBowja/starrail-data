@@ -87008,7 +87008,7 @@
 				"Name": "Hỏa Tiễn Một Trăm Tầng",
 				"NodeType": 2,
 				"NodeTypeText": "Tấn Công Thường",
-				"EffectRaw": "Gây sát thương Lượng Tử bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Giới Hạn HP của Tribbie cho 1 kẻ địch chỉ định, gây sát thương Lượng Tử bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Giới Hạn HP của Tribbie cho mục tiêu lân cận.",
+				"EffectRaw": "Gây sát thương Lượng Tử cho 1 kẻ địch chỉ định tương đương <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Giới Hạn HP của Tribbie, gây sát thương Lượng Tử cho mục tiêu lân cận tương đương <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Giới Hạn HP của Tribbie.",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
 					"140301"
@@ -89863,6 +89863,3078 @@
 			}
 		},
 		"VersionAdded": "3.1"
+	},
+	"1405": {
+		"Id": "1405",
+		"Name": "Anaxa",
+		"Nodes": {
+			"1405001": {
+				"Id": "1405001",
+				"Name": "Đau Đớn, Ươm Mầm Sự Thật",
+				"NodeType": 2,
+				"NodeTypeText": "Tấn Công Thường",
+				"EffectRaw": "Gây Sát Thương Phong cho 1 kẻ địch chỉ định tương đương <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Anaxa.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"140501"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "Bản Phác Thảo Lộn Xộn",
+								"Count": 3
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 5
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1405002": {
+				"Id": "1405002",
+				"Name": "Phân Dạng, Ảo Tưởng Của Kẻ Bị Trục Xuất",
+				"NodeType": 2,
+				"NodeTypeText": "Chiến Kỹ",
+				"EffectRaw": "Gây sát thương Phong cho 1 kẻ địch chỉ định bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Anaxa, đồng thời gây thêm <unbreak>#2[i]</unbreak> lần sát thương. Mỗi lần sát thương sẽ gây sát thương Phong cho 1 kẻ địch ngẫu nhiên bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Anaxa, ưu tiên nảy bật vào mục tiêu phe địch chưa bị đánh trúng trong lần Chiến Kỹ này.\nKhi thi triển, cứ 1 mục tiêu phe địch trong trận có thể bị tấn công, sát thương lần Chiến Kỹ này gây ra sẽ tăng <unbreak>#3[i]%</unbreak>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"140502"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35,
+							4,
+							0.2
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.385,
+							4,
+							0.2
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.42,
+							4,
+							0.2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "Bản Phác Thảo Lộn Xộn",
+								"Count": 3
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.455,
+							4,
+							0.2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.49,
+							4,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 5
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.525,
+							4,
+							0.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 30000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 7
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.5688,
+							4,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.6125,
+							4,
+							0.2
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 80000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.6563,
+							4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.7,
+							4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 300000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1405003": {
+				"Id": "1405003",
+				"Name": "Mầm Sống Sinh Sôi, Đắp Tạo Thế Giới",
+				"NodeType": 2,
+				"NodeTypeText": "Tuyệt Kỹ",
+				"EffectRaw": "Khiến toàn bộ phe địch rơi vào trạng thái \"Thăng Hoa\", sau đó gây Sát Thương Phong bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Anaxa lên toàn bộ phe địch.\nỞ trạng thái \"Thăng Hoa\", mục tiêu cùng lúc bị thêm Điểm Yếu Vật Lý, Hỏa, Băng, Lôi, Phong, Lượng Tử, Số Ảo, duy trì đến khi bắt đầu hiệp của mục tiêu. Nếu mục tiêu không có Kháng Khống Chế, thì ở trạng thái \"Thăng Hoa\" sẽ không thể hành động.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"140503"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.8
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.88
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.96
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "Bản Phác Thảo Lộn Xộn",
+								"Count": 3
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.04
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.12
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 5
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.2
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 30000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 7
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 80000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 300000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1405004": {
+				"Id": "1405004",
+				"Name": "Bốn Phần Sáng Suốt, Ba Tầng Tối Cao",
+				"NodeType": 2,
+				"NodeTypeText": "Thiên Phú",
+				"EffectRaw": "Mỗi khi Anaxa đánh trúng mục tiêu phe địch 1 lần, sẽ thêm 1 Điểm Yếu thuộc tính ngẫu nhiên cho mục tiêu, duy trì <unbreak>#2[i]</unbreak> hiệp, ưu tiên thêm Điểm Yếu mà mục tiêu chưa có.\nKhi có Anaxa trong trận, khiến mục tiêu phe địch có tối thiểu <unbreak>#3[i]</unbreak> Điểm Yếu thuộc tính khác nhau rơi vào trạng thái Phơi Bày Tính Chất. Sát thương Anaxa gây ra cho mục tiêu ở trạng thái Phơi Bày Tính Chất tăng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, ngoài ra sau khi thi triển Tấn Công Thường hoặc Chiến Kỹ lên mục tiêu này, sẽ thi triển thêm 1 lần Chiến Kỹ lên mục tiêu này. Chiến Kỹ thêm sẽ không tiêu hao Điểm Chiến Kỹ và sẽ không kích hoạt lại hiệu ứng này lần nữa. Nếu mục tiêu bị tiêu diệt trước khi thi triển Chiến Kỹ thêm, thì sẽ thi triển lên 1 kẻ địch ngẫu nhiên.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"140504"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.18,
+							3,
+							5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.192,
+							3,
+							5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.204,
+							3,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "Bản Phác Thảo Lộn Xộn",
+								"Count": 3
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.216,
+							3,
+							5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.228,
+							3,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 5
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.24,
+							3,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 30000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 7
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.255,
+							3,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.27,
+							3,
+							5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 80000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 5
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.285,
+							3,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.3,
+							3,
+							5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 300000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1405007": {
+				"Id": "1405007",
+				"Name": "Lăng Kính Của Mắt",
+				"NodeType": 2,
+				"NodeTypeText": "Bí Kỹ",
+				"EffectRaw": "Sau khi dùng Bí Kỹ sẽ khiến kẻ địch trong khu vực nhất định rơi vào trạng thái Kinh Hãi. Kẻ địch ở trạng thái Kinh Hãi sẽ trốn chạy thật xa khỏi Anaxa, duy trì <unbreak>#1[i]</unbreak> giây. Phe ta chủ động tấn công kẻ địch ở trạng thái Kinh Hãi luôn được xem là tấn công điểm yếu để vào chiến đấu, sau khi vào chiến đấu, Anaxa sẽ thêm 1 Điểm Yếu mang thuộc tính của người tấn công cho mỗi kẻ địch, duy trì <unbreak>#2[i]</unbreak> hiệp.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"140507"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							3
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1405101": {
+				"Id": "1405101",
+				"Name": "Ký Hiệu Biểu Đạt Tự Do",
+				"NodeType": 3,
+				"EffectRaw": "Khi thi triển Tấn Công Thường sẽ hồi thêm <unbreak>#1[i]</unbreak> điểm Năng Lượng.\nKhi bắt đầu hiệp, nếu trong trận không có mục tiêu phe địch ở trạng thái \"Phơi Bày Tính Chất\", sẽ hồi ngay <unbreak>#2[i]</unbreak> điểm Năng Lượng.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							30
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "Bản Phác Thảo Lộn Xộn",
+								"Count": 3
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1405102": {
+				"Id": "1405102",
+				"Name": "Khoảng Trống Cần Thiết",
+				"NodeType": 3,
+				"EffectRaw": "Căn cứ vào số lượng nhân vật Vận Mệnh \"Tri Thức\" trong đội hình phe ta, trong trận này sẽ kích hoạt 1 hiệu ứng trong số các hiệu ứng sau:\n1 nhân vật: Tăng <unbreak>#1[i]%</unbreak> Sát Thương Bạo Kích của Anaxa.\nTối thiểu 2 nhân vật: Tăng <unbreak>#2[i]%</unbreak> sát thương do toàn phe ta gây ra.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.4,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1405103": {
+				"Id": "1405103",
+				"Name": "Sự Chuyển Biến Về Chất",
+				"NodeType": 3,
+				"EffectRaw": "Mục tiêu phe địch cứ có 1 Điểm Yếu thuộc tính khác nhau, sát thương của Anaxa gây ra cho kẻ đó sẽ bỏ qua <unbreak>#1[i]%</unbreak> Phòng Thủ, tối đa tính 7 Điểm Yếu.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1405/SkillIcon_1405_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110505",
+								"Name": "Dư Âm Đồng Nguyện",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1405201": {
+				"Id": "1405201",
+				"Name": "Cường Hóa Sát Thương - Phong",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Phong <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.032
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1405202": {
+				"Id": "1405202",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1405101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 5000
+							},
+							{
+								"Id": "110201",
+								"Name": "Bản Phác Thảo Lộn Xộn",
+								"Count": 3
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1405203": {
+				"Id": "1405203",
+				"Name": "Cường Hóa Sát Thương - Phong",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Phong <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.032
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1405202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1405204": {
+				"Id": "1405204",
+				"Name": "Cường Hóa HP",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Giới Hạn HP <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1405202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 10000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1405205": {
+				"Id": "1405205",
+				"Name": "Cường Hóa Sát Thương - Phong",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Phong <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.048
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1405102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 20000
+							},
+							{
+								"Id": "110202",
+								"Name": "Bản Phác Thảo Nét Động",
+								"Count": 5
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1405206": {
+				"Id": "1405206",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1405205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1405207": {
+				"Id": "1405207",
+				"Name": "Cường Hóa Sát Thương - Phong",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Phong <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.048
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1405205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1405208": {
+				"Id": "1405208",
+				"Name": "Cường Hóa HP",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Giới Hạn HP <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1405103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1405209": {
+				"Id": "1405209",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1405103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1405210": {
+				"Id": "1405210",
+				"Name": "Cường Hóa Sát Thương - Phong",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Phong <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.064
+						],
+						"LevelRequired": 80,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110203",
+								"Name": "Bản Phác Thảo Màu Tinh Tế",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "3.2"
+	},
+	"1407": {
+		"Id": "1407",
+		"Name": "Castorice",
+		"Nodes": {
+			"1407001": {
+				"Id": "1407001",
+				"Name": "Bi Ai, Gợn Sóng Từ Biển Chết",
+				"NodeType": 2,
+				"NodeTypeText": "Tấn Công Thường",
+				"EffectRaw": "Gây cho 1 kẻ địch chỉ định sát thương Lượng Tử bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Giới Hạn HP của Castorice.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"140701"
+				],
+				"Location": "Point01",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 6
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1407002": {
+				"Id": "1407002",
+				"Name": "Im Lặng, Cái Chạm Khẽ Khàng Của Bướm Ma",
+				"NodeType": 2,
+				"NodeTypeText": "Chiến Kỹ",
+				"EffectRaw": "Tiêu hao <unbreak>#1[i]%</unbreak> HP hiện tại của toàn bộ phe ta, gây Sát Thương Lượng Tử bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Giới Hạn HP của Castorice lên 1 kẻ địch chỉ định, đồng thời gây Sát Thương Lượng Tử bằng <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> Giới Hạn HP của Castorice cho mục tiêu lân cận kẻ đó.\nNếu HP hiện tại không đủ, tối đa khiến HP hiện tại giảm còn 1 điểm.\nNếu có Rồng Tử Vong trong trận, Chiến Kỹ sẽ đổi thành \"Móng Vuốt, Vòng Tay Của Rồng Tử Vong\".",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"140702",
+					"140709"
+				],
+				"Location": "Point02",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.3,
+							0.25,
+							0.15
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3,
+							0.275,
+							0.165
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.3,
+							0.3,
+							0.18
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.3,
+							0.325,
+							0.195
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.3,
+							0.35,
+							0.21
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.3,
+							0.375,
+							0.225
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 6
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.3,
+							0.4063,
+							0.2438
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.3,
+							0.4375,
+							0.2625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 5
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.3,
+							0.4688,
+							0.2813
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.3,
+							0.5,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1407003": {
+				"Id": "1407003",
+				"Name": "Tiếng Thét Tử Vong, Hồi Chuông Tái Sinh",
+				"NodeType": 2,
+				"NodeTypeText": "Tuyệt Kỹ",
+				"EffectRaw": "<u>Triệu hồi Linh Hồn Ký Ức</u> Rồng Tử Vong và khiến nó <u>ưu tiên hành động</u> <unbreak>100%</unbreak>, đồng thời mở ra <u>Vùng Lãnh Thổ</u> Tử Địa Bị Lãng Quên, khiến Kháng Toàn Thuộc Tính của toàn bộ phe địch giảm <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. Nếu Castorice có hiệu ứng tăng sát thương từ Thiên Phú, thì hiệu ứng này sẽ khuếch tán lên Rồng Tử Vong. Rồng Tử Vong ban đầu có <unbreak>#1[i]</unbreak> điểm Tốc Độ và Giới Hạn HP cố định bằng <unbreak>#3[i]%</unbreak> giới hạn của Nhụy Hoa.\nRồng Tử Vong sẽ tan biến sau <unbreak>#2[i]</unbreak> hiệp hoặc khi HP về 0, đồng thời giải trừ <u>Vùng Lãnh Thổ</u> Tử Địa Bị Lãng Quên.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"140703"
+				],
+				"Location": "Point03",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.1,
+							0
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.11,
+							0
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.12,
+							0
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.13,
+							0
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.14,
+							0
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.15,
+							0
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 6
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.1625,
+							0
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.175,
+							0
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 5
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.1875,
+							0
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							165,
+							3,
+							1,
+							0.2,
+							0
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1407004": {
+				"Id": "1407004",
+				"Name": "Cõi Hoang Vu Trong Lòng Bàn Tay",
+				"NodeType": 2,
+				"NodeTypeText": "Thiên Phú",
+				"EffectRaw": "Giới hạn \"Nhụy Hoa\" có liên quan đến cấp của toàn bộ nhân vật trong trận. Toàn phe ta mỗi khi mất đi 1 điểm HP, Castorice sẽ nhận được 1 điểm Nhụy Hoa, khi Nhụy Hoa đạt giới hạn có thể kích hoạt Tuyệt Kỹ. Khi phe ta mất HP, sát thương của Castorice và Rồng Tử Vong gây ra sẽ tăng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, hiệu ứng này tối đa cộng dồn <unbreak>#3[i]</unbreak> tầng, duy trì <unbreak>#4[i]</unbreak> hiệp.\nKhi Rồng Tử Vong trong trận sẽ không thể nhận \"Nhụy Hoa\" thông qua Thiên Phú. Ngoại trừ Rồng Tử Vong, mỗi 1 điểm HP toàn phe ta mất đi sẽ chuyển hóa thành HP tương đương cho Rồng Tử Vong.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"140704"
+				],
+				"Location": "Point04",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0,
+							0.1,
+							3,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0,
+							0.11,
+							3,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0,
+							0.12,
+							3,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0,
+							0.13,
+							3,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0,
+							0.14,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0,
+							0.15,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 6
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0,
+							0.1625,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0,
+							0.175,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 5
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0,
+							0.1875,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0,
+							0.2,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1407007": {
+				"Id": "1407007",
+				"Name": "Tiếng Thét Đau Thương, Điềm Báo Chết Chóc",
+				"NodeType": 2,
+				"NodeTypeText": "Bí Kỹ",
+				"EffectRaw": "Sau khi dùng Bí Kỹ, sẽ vào trạng thái \"U Ám\" trong <unbreak>#3[i]</unbreak> giây. Kẻ địch ở trạng thái \"U Ám\" không thể chủ động áp sát Castorice.\nỞ trạng thái \"U Ám\", chủ động tấn công sẽ khiến tất cả kẻ địch trong phạm vi vào chiến đấu, đồng thời <u>triệu hồi Linh Hồn Ký Ức</u> Rồng Tử Vong và khiến nó <u>ưu tiên hành động</u> <unbreak>100%</unbreak>, cũng như triển khai <u>Vùng Lãnh Thổ</u> \"Tử Địa Bị Lãng Quên\", Rồng Tử Vong có HP hiện tại bằng <unbreak>#2[i]%</unbreak> giới hạn Nhụy Hoa. Sau khi vào chiến đấu, sẽ tiêu hao <unbreak>#1[i]%</unbreak> HP hiện tại của toàn thể phe ta ngoại trừ Rồng Tử Vong.\nSau khi vào chiến đấu và trước khi triệu hồi Rồng Tử Vong, thì Castorice sẽ nhận Nhụy Hoa bằng <unbreak>#4[i]%</unbreak> điểm giới hạn Nhụy Hoa.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"140707"
+				],
+				"Location": "Point05",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.4,
+							0.5,
+							20,
+							0.3
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1407101": {
+				"Id": "1407101",
+				"Name": "Thủy Triều Đen Kìm Giữ",
+				"NodeType": 3,
+				"EffectRaw": "Sau khi mục tiêu phe ta ngoại trừ Rồng Tử Vong nhận trị liệu sẽ chuyển hóa <unbreak>#1[i]%</unbreak> điểm trị liệu thành \"Nhụy Hoa\", khi Rồng Tử Vong trong trận sẽ chuyển hóa thành HP của Rồng Tử Vong. Mỗi mục tiêu phe ta tích lũy điểm chuyển hóa không vượt quá <unbreak>#2[i]%</unbreak> giới hạn Nhụy Hoa. Sau khi đơn vị bất kỳ hành động, sẽ làm mới điểm chuyển hóa tích lũy của tất cả đơn vị.",
+				"MaxLevel": 1,
+				"Location": "Point06",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 5000
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 3
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1407102": {
+				"Id": "1407102",
+				"Name": "Ngọn Đuốc Đảo Ngược",
+				"NodeType": 3,
+				"EffectRaw": "Khi HP hiện tại của Castorice lớn hơn hoặc bằng <unbreak>#1[i]%</unbreak> Giới Hạn HP của bản thân, Castorice sẽ tăng <unbreak>#2[i]%</unbreak> Tốc Độ. Khi Rồng Tử Vong thi triển \"Ngọn Lửa Thiêu Rụi Bóng Tối\" gây sát thương chí tử cho tất cả kẻ địch trong trận hoặc phe địch không thể giảm thêm HP nữa, Rồng Tử Vong sẽ tăng <unbreak>#3[i]%</unbreak> Tốc Độ, duy trì 1 hiệp.",
+				"MaxLevel": 1,
+				"Location": "Point07",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5,
+							0.4,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 20000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1407103": {
+				"Id": "1407103",
+				"Name": "Nơi Gió Tây Dừng Chân",
+				"NodeType": 3,
+				"EffectRaw": "Mỗi khi Rồng Tử Vong thi triển \"Ngọn Lửa Thiêu Rụi Bóng Tối\", sát thương gây ra sẽ tăng <unbreak>#1[i]%</unbreak>, hiệu ứng này tối đa cộng dồn <unbreak>#2[i]</unbreak> tầng, duy trì đến khi kết thúc hiệp này.",
+				"MaxLevel": 1,
+				"Location": "Point08",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.3,
+							6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Dấu Chân Vận Mệnh",
+								"Count": 1
+							},
+							{
+								"Id": "110506",
+								"Name": "Di Sản Quý Giá",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1407201": {
+				"Id": "1407201",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point09",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1407202": {
+				"Id": "1407202",
+				"Name": "Cường Hóa Sát Thương: Lượng Tử",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Lượng Tử <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.032,
+				"Location": "Point10",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.032
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1407201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 4000
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 3
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1407203": {
+				"Id": "1407203",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"Location": "Point11",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1407201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 9000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1407204": {
+				"Id": "1407204",
+				"Name": "Cường Hóa Sát Thương Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point12",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1407101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 9000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1407205": {
+				"Id": "1407205",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point13",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1407101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 19000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1407206": {
+				"Id": "1407206",
+				"Name": "Cường Hóa Sát Thương: Lượng Tử",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Lượng Tử <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.048,
+				"Location": "Point14",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.048
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1407102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1407207": {
+				"Id": "1407207",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"Location": "Point15",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1407102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 45000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1407208": {
+				"Id": "1407208",
+				"Name": "Cường Hóa Sát Thương Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"Location": "Point16",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1407103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 7
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1407209": {
+				"Id": "1407209",
+				"Name": "Cường Hóa Sát Thương: Lượng Tử",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Sát Thương Lượng Tử <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "QuantumAddedRatio",
+				"StatBonusValue": 0.064,
+				"Location": "Point17",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconQuantumAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.064
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1407208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1407210": {
+				"Id": "1407210",
+				"Name": "Cường Hóa Tỷ Lệ Bạo Kích",
+				"NodeType": 1,
+				"EffectRaw": "Tăng Tỷ Lệ Bạo Kích <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"Location": "Point18",
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1407209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1407301": {
+				"Id": "1407301",
+				"Name": "",
+				"NodeType": 4,
+				"Location": "Point19",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_11407_Servant01.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 6
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1407302": {
+				"Id": "1407302",
+				"Name": "",
+				"NodeType": 4,
+				"Location": "Point20",
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_11407_ServantPassive.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Hạt Giống Suy Tưởng",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "Điềm Báo Mơ Hồ",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Mầm Cây Mana",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "Tiếng Khóc Vang Vọng",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Điểm Tín Dụng",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Alayawah",
+								"Count": 6
+							},
+							{
+								"Id": "115013",
+								"Name": "Khóc Than Vô Tận",
+								"Count": 2
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "3.2"
 	},
 	"8001": {
 		"Id": "8001",
