@@ -9,9 +9,9 @@ function readJson(path) {
 	return JSONbig.parse(jsonfile);
 }
 
-global.getExcel = function(file) {
+global.getExcel = function(file, id) {
 	const data = readJson(`${config.StarRailData_folder}/ExcelOutput/${file}.json`);
-	const mapId = Object.keys(data[0])[0];
+	const mapId = id ? id : Object.keys(data[0])[0];
 
 	let subLevel;
 	if (Object.keys(data[0]).includes('Level')) subLevel = 'Level';
