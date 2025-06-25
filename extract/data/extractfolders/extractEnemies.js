@@ -1,6 +1,6 @@
 require('../global.js');
 
-const xmonster = getExcel('MonsterConfig');
+const xmonster = getExcel('MonsterConfig', 'MonsterID');
 const xmtemplate = getExcel('MonsterTemplateConfig');
 const xmskill = getExcel('MonsterSkillConfig');
 
