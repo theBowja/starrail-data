@@ -43,7 +43,7 @@ function exportStarRailData() {
 	exportData('elements', require('./extractfolders/extractElements'));
 	exportData('paths', require('./extractfolders/extractPaths'));
 
-	exportData('enemies', require('./extractfolders/extractEnemies'));
+	// exportData('enemies', require('./extractfolders/extractEnemies'));
 
 	exportData('warps', require('./extractfolders/extractWarps'));
 	exportData('travellogs', require('./extractfolders/extractTravelLogs'));
