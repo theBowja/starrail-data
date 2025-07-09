@@ -15512,7 +15512,7 @@
 			"SkillTypeText": "秘技",
 			"MaxLevel": 1,
 			"EffectRaw": "使用秘技后，在自身周围制造1片持续<unbreak>#3[i]</unbreak>秒的特殊领域，处于特殊领域内的敌人陷入冻结状态。与处于特殊领域内的敌人进入战斗后，立即为自身恢复<unbreak>#6[i]</unbreak>点能量、获得<unbreak>#1[i]</unbreak>层【朔望】并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使敌方目标陷入冻结状态，持续<unbreak>#4[i]</unbreak>回合。冻结状态下，敌方目标无法行动，且每回合开始时受到等同于镜流<unbreak>#5[i]%</unbreak>攻击力的冰属性<u>附加伤害</u>。我方制造的领域效果最多存在1个。",
-			"AbridgedEffect": "在自身周围制造特殊领域。领域内敌人陷入<color=#f29e38ff>冻结状态</color>。与领域内敌人进入战斗后，恢复能量、获得1层朔望并大概率使敌方目标陷入<color=#f29e38ff>冻结状态</color>。",
+			"AbridgedEffect": "在自身周围制造特殊领域。领域内敌人陷入<color=#f29e38ff>冻结状态</color>。与领域内敌人进入战斗后，恢复能量、获得1层【朔望】并大概率使敌方目标陷入<color=#f29e38ff>冻结状态</color>。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -33162,6 +33162,865 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_Maze.png"
 		},
 		"VersionAdded": "3.2"
+	},
+	"1408": {
+		"Id": "1408",
+		"Name": "白厄",
+		"BasicATK": {
+			"Id": "140801",
+			"Name": "逐火救世，行则将至",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "单攻",
+			"SkillTypeText": "普攻",
+			"MaxLevel": 10,
+			"EffectRaw": "对指定敌方单体造成等同于白厄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+			"AbridgedEffect": "对敌方单体造成等同于少量物理属性伤害。",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "140808",
+			"Name": "创生•血棘渡亡",
+			"TriggerKey": "Skill11",
+			"TagType": "Blast",
+			"TagTypeText": "扩散",
+			"SkillTypeText": "普攻",
+			"MaxLevel": 10,
+			"EffectRaw": "获得<unbreak>#3[i]</unbreak>点<u>【毁伤】</u>，对指定敌方单体造成等同于卡厄斯兰那<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，对相邻目标造成等同于卡厄斯兰那<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害。",
+			"AbridgedEffect": "获得<color=#f29e38ff><unbreak>#3[i]</unbreak></color>点<color=#f29e38ff><u>【毁伤】</u></color>，对指定敌方单体造成大量物理属性伤害，对相邻目标造成物理属性伤害。",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.25,
+						0.375,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.5,
+						0.45,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.75,
+						0.525,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						0.6,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.25,
+						0.675,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.5,
+						0.75,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.75,
+						0.825,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.9,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3.25,
+						0.975,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3.5,
+						1.05,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Normal02.png"
+		},
+		"Skill": {
+			"Id": "140802",
+			"Name": "黎明创世，地辟天开",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "扩散",
+			"SkillTypeText": "战技",
+			"MaxLevel": 15,
+			"EffectRaw": "获得<unbreak>#3[i]</unbreak>点【火种】，对指定敌方单体造成等同于白厄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，对相邻目标造成等同于白厄<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害。",
+			"AbridgedEffect": "获得<color=#f29e38ff><unbreak>#3[i]</unbreak></color>点<color=#f29e38ff>【火种】</color>，对敌方单体造成大量物理属性伤害，对相邻目标造成物理属性伤害。",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.6,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.65,
+						0.66,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.8,
+						0.72,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.95,
+						0.78,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.1,
+						0.84,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.25,
+						0.9,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.4375,
+						0.975,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.625,
+						1.05,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.8125,
+						1.125,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						1.2,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3.15,
+						1.26,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3.3,
+						1.32,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.45,
+						1.38,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.6,
+						1.44,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.75,
+						1.5,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "140809",
+			"Name": "灾厄•弑魂焚诏",
+			"TriggerKey": "Skill21",
+			"TagType": "Enhance",
+			"TagTypeText": "强化",
+			"SkillTypeText": "战技",
+			"MaxLevel": 15,
+			"EffectRaw": "获得等同于敌方全体数量的<u>【毁伤】</u>和1层【弑魂之炽】，随后使敌方全体立即行动。\n【弑魂之炽】状态下，卡厄斯兰那受到的伤害降低<unbreak>#2[i]%</unbreak>，敌方目标攻击或行动后叠加1层【弑魂之炽】。上述敌方目标行动完毕后，立即发动<u>反击</u>，对敌方全体造成等同于卡厄斯兰那<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，并额外造成<unbreak>#3[i]</unbreak>次伤害，每次对敌方随机单体造成等同于卡厄斯兰那<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的物理属性伤害，随后解除【弑魂之炽】。每层【弑魂之炽】使本次<u>反击</u>的伤害倍率提高原倍率的<unbreak>#5[i]%</unbreak>。\n通过此技能造成伤害时，被视为造成了战技伤害。若<u>卡厄斯兰那的额外回合</u>开始时仍持有【弑魂之炽】，立即发动<u>反击</u>。",
+			"AbridgedEffect": "基于敌人数量获得等量<color=#f29e38ff><u>【毁伤】</u></color>，使其立即行动。获得【弑魂之炽】：受到的伤害降低，敌方目标都行动过后发动<color=#f29e38ff><u>反击</u></color>，对敌方全体造成少量物理属性伤害并弹射<color=#f29e38ff><unbreak>#3[i]</unbreak></color>次，每次对敌方随机单体造成少量物理属性伤害。敌方行动次数越多伤害越高。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.2,
+						0.75,
+						4,
+						0.15,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.22,
+						0.75,
+						4,
+						0.165,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.24,
+						0.75,
+						4,
+						0.18,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.26,
+						0.75,
+						4,
+						0.195,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.28,
+						0.75,
+						4,
+						0.21,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.3,
+						0.75,
+						4,
+						0.225,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.325,
+						0.75,
+						4,
+						0.2438,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.35,
+						0.75,
+						4,
+						0.2625,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.375,
+						0.75,
+						4,
+						0.2813,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.4,
+						0.75,
+						4,
+						0.3,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.42,
+						0.75,
+						4,
+						0.315,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.44,
+						0.75,
+						4,
+						0.33,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.46,
+						0.75,
+						4,
+						0.345,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.48,
+						0.75,
+						4,
+						0.36,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.5,
+						0.75,
+						4,
+						0.375,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_BP02.png"
+		},
+		"Ultimate": {
+			"Id": "140803",
+			"Name": "永劫燔世，其将背负",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "群攻",
+			"SkillTypeText": "终结技",
+			"MaxLevel": 15,
+			"EffectRaw": "变身为卡厄斯兰那，变身期间展开<u>境界</u>【时墟铁墓】。<u>境界</u>内的其他队友<u>离场</u>且无法行动，敌方全体始终拥有物理属性弱点。\n卡厄斯兰那不会进入自己的回合，但拥有<unbreak>#4[i]</unbreak>个<u>卡厄斯兰那的额外回合</u>，速度固定为卡厄斯兰那基础速度的<unbreak>#3[i]%</unbreak>。最后的<u>卡厄斯兰那的额外回合</u>开始时立即发动最后一击，造成等同于卡厄斯兰那<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性终结技伤害，由敌方全体均分。",
+			"AbridgedEffect": "<color=#f29e38ff>变身为卡厄斯兰那</color>并展开<u>境界</u>：使队友<u>离场</u>且无法行动，敌方全体拥有物理属性弱点。\n卡厄斯兰那不会进入自己的回合但拥有<color=#f29e38ff><unbreak>#4[i]</unbreak></color>个<u>卡厄斯兰那的<color=#f29e38ff>额外回合</color></u>，最后的回合内发动最后一击，造成由敌方全体均分的大量物理属性伤害。",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						4.8,
+						12,
+						0.6,
+						8
+					]
+				},
+				"2": {
+					"EffectValues": [
+						5.28,
+						12,
+						0.6,
+						8
+					]
+				},
+				"3": {
+					"EffectValues": [
+						5.76,
+						12,
+						0.6,
+						8
+					]
+				},
+				"4": {
+					"EffectValues": [
+						6.24,
+						12,
+						0.6,
+						8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						6.72,
+						12,
+						0.6,
+						8
+					]
+				},
+				"6": {
+					"EffectValues": [
+						7.2,
+						12,
+						0.6,
+						8
+					]
+				},
+				"7": {
+					"EffectValues": [
+						7.8,
+						12,
+						0.6,
+						8
+					]
+				},
+				"8": {
+					"EffectValues": [
+						8.4,
+						12,
+						0.6,
+						8
+					]
+				},
+				"9": {
+					"EffectValues": [
+						9,
+						12,
+						0.6,
+						8
+					]
+				},
+				"10": {
+					"EffectValues": [
+						9.6,
+						12,
+						0.6,
+						8
+					]
+				},
+				"11": {
+					"EffectValues": [
+						10.08,
+						12,
+						0.6,
+						8
+					]
+				},
+				"12": {
+					"EffectValues": [
+						10.56,
+						12,
+						0.6,
+						8
+					]
+				},
+				"13": {
+					"EffectValues": [
+						11.04,
+						12,
+						0.6,
+						8
+					]
+				},
+				"14": {
+					"EffectValues": [
+						11.52,
+						12,
+						0.6,
+						8
+					]
+				},
+				"15": {
+					"EffectValues": [
+						12,
+						12,
+						0.6,
+						8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Ultra.png"
+		},
+		"EnhancedBasicATK3": {
+			"Id": "140811",
+			"Name": "支柱•死星天裁",
+			"TriggerKey": "Skill22",
+			"TagType": "Bounce",
+			"TagTypeText": "弹射",
+			"SkillTypeText": "战技",
+			"MaxLevel": 15,
+			"EffectRaw": "解除自身所有<u>负面效果</u>，随后造成最多等同于卡厄斯兰那<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻击力的物理属性伤害。\n其中，每消耗1点<u>【毁伤】</u>造成<unbreak>#3[i]</unbreak>次伤害，每次对敌方随机单体造成等同于卡厄斯兰那<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻击力的物理属性伤害。消耗<unbreak>#4[i]</unbreak>点<u>【毁伤】</u>时，额外造成等同于卡厄斯兰那<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，由敌方全体均分。",
+			"AbridgedEffect": "解除自身所有<u>负面效果</u>。<color=#f29e38ff>每消耗1点<u>【毁伤】</u>弹射<color=#f29e38ff><unbreak>#3[i]</unbreak></color>次</color>，每次对敌方随机单体造成少量物理属性伤害。\n若消耗了<color=#f29e38ff><unbreak>#4[i]</unbreak></color>点<u>【毁伤】</u>，额外造成由敌方全体均分的大量物理属性伤害。",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2.25,
+						0.225,
+						4,
+						4,
+						5.85
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2.475,
+						0.2475,
+						4,
+						4,
+						6.435
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2.7,
+						0.27,
+						4,
+						4,
+						7.02
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2.925,
+						0.2925,
+						4,
+						4,
+						7.605
+					]
+				},
+				"5": {
+					"EffectValues": [
+						3.15,
+						0.315,
+						4,
+						4,
+						8.19
+					]
+				},
+				"6": {
+					"EffectValues": [
+						3.375,
+						0.3375,
+						4,
+						4,
+						8.775
+					]
+				},
+				"7": {
+					"EffectValues": [
+						3.6563,
+						0.3656,
+						4,
+						4,
+						9.5063
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3.9375,
+						0.3938,
+						4,
+						4,
+						10.2375
+					]
+				},
+				"9": {
+					"EffectValues": [
+						4.2188,
+						0.4219,
+						4,
+						4,
+						10.9688
+					]
+				},
+				"10": {
+					"EffectValues": [
+						4.5,
+						0.45,
+						4,
+						4,
+						11.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						4.725,
+						0.4725,
+						4,
+						4,
+						12.285
+					]
+				},
+				"12": {
+					"EffectValues": [
+						4.95,
+						0.495,
+						4,
+						4,
+						12.87
+					]
+				},
+				"13": {
+					"EffectValues": [
+						5.175,
+						0.5175,
+						4,
+						4,
+						13.455
+					]
+				},
+				"14": {
+					"EffectValues": [
+						5.4,
+						0.54,
+						4,
+						4,
+						14.04
+					]
+				},
+				"15": {
+					"EffectValues": [
+						5.625,
+						0.5625,
+						4,
+						4,
+						14.625
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_BP03.png"
+		},
+		"Talent": {
+			"Id": "140804",
+			"Name": "此身为炬",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "强化",
+			"SkillTypeText": "天赋",
+			"MaxLevel": 15,
+			"EffectRaw": "白厄的天赋。【火种】达到<unbreak>#4[i]</unbreak>点时可激活终结技，达到上限后还可最多溢出<unbreak>#3[i]</unbreak>点，变身结束时会基于溢出点数获得【火种】。\n当白厄成为其他任意目标的技能目标时，获得1点【火种】。若施放者为白厄的队友，还会使白厄的暴击伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。",
+			"AbridgedEffect": "白厄的天赋。【火种】达到<color=#f29e38ff><unbreak>#4[i]</unbreak></color>点时可激活终结技。\n当白厄成为<color=#f29e38ff>其他目标的技能目标</color>时，获得<color=#f29e38ff>【火种】</color>。成为队友的技能目标时，暴击伤害提高。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						3,
+						3,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.165,
+						3,
+						3,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						3,
+						3,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.195,
+						3,
+						3,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.21,
+						3,
+						3,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.225,
+						3,
+						3,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2438,
+						3,
+						3,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.2625,
+						3,
+						3,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2813,
+						3,
+						3,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						3,
+						3,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.315,
+						3,
+						3,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.33,
+						3,
+						3,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.345,
+						3,
+						3,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.36,
+						3,
+						3,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.375,
+						3,
+						3,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Passive.png"
+		},
+		"Technique": {
+			"Id": "140806",
+			"Name": "攻击",
+			"TriggerKey": "",
+			"TagType": "MazeAttack",
+			"SkillTypeText": "dev_连携",
+			"MaxLevel": 1,
+			"EffectRaw": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": []
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Normal.png"
+		},
+		"VersionAdded": "3.4"
 	},
 	"1409": {
 		"Id": "1409",

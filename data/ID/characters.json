@@ -174,7 +174,7 @@
 			{
 				"Id": "100501",
 				"Name": "Da Capo",
-				"Effect": "Saat <u>Serangan Lanjutan</u> dari Talent terpicu, ada 100% <u>peluang dasar</u> untuk meningkatkan DoT yang diterima target sebesar 30% selama 2 giliran."
+				"Effect": "Saat Talent memicu <u>Serangan Lanjutan</u>, ada 100% <u>peluang dasar</u> untuk meningkatkan 30% DoT yang diterima target selama 2 giliran."
 			},
 			{
 				"Id": "100502",
@@ -189,7 +189,7 @@
 			{
 				"Id": "100504",
 				"Name": "Recitativo",
-				"Effect": "Saat status Shock yang diakibatkan Kafka pada target musuh mengakibatkan DMG, Kafka akan memulihkan 2 Energy tambahan."
+				"Effect": "Saat status Shock yang diakibatkan Kafka pada target musuh mengakibatkan DMG, Kafka akan memulihkan ekstra 2 Energy."
 			},
 			{
 				"Id": "100505",
@@ -199,7 +199,7 @@
 			{
 				"Id": "100506",
 				"Name": "Leggiero",
-				"Effect": "Meningkatkan 156% DMG Multiplier dari status Shock yang diakibatkan Ultimate, Technique, dan <u>Serangan Lanjutan</u> yang dipicu Talent, serta memperpanjang durasi status Shock sebanyak 1 giliran."
+				"Effect": "DMG Multiplier dari status Shock yang diakibatkan <u>Serangan Lanjutan</u> yang dipicu Talent, Ultimate, atau Technique pada target musuh meningkat 156%, dan durasi status Shock bertambah 1 giliran."
 			}
 		],
 		"VersionAdded": "1.0"
@@ -215,12 +215,12 @@
 			{
 				"Id": "100601",
 				"Name": "Social Engineering",
-				"Effect": "Setelah Silver Wolf melancarkan Ultimate untuk menyerang target musuh, setiap 1 <u>efek Debuff</u> yang dimiliki target musuh akan memulihkan 7 Energy Silver Wolf. Efek ini dapat dipicu maksimal 5 kali setiap kali melancarkan Ultimate."
+				"Effect": "Setelah Silver Wolf melancarkan Ultimate untuk menyerang target musuh, setiap 1 <u>Debuff</u> yang dimiliki target musuh akan memulihkan 7 Energy Silver Wolf. Efek ini dapat dipicu maksimal 5 kali setiap kali melancarkan Ultimate."
 			},
 			{
 				"Id": "100602",
 				"Name": "Zombie Network",
-				"Effect": "Saat target musuh memasuki pertempuran, Effect RES target berkurang 20%."
+				"Effect": "Saat target musuh memasuki pertempuran, mengurangi 20% Effect RES target."
 			},
 			{
 				"Id": "100603",
@@ -230,7 +230,7 @@
 			{
 				"Id": "100604",
 				"Name": "Bounce Attack",
-				"Effect": "Setelah Silver Wolf melancarkan Ultimate untuk menyerang target musuh, setiap 1 <u>efek Debuff</u> yang dimiliki target musuh akan mengakibatkan Quantum <u>DMG Tambahan</u> sebesar 20% ATK Silver Wolf. Efek ini dapat dipicu maksimal 5 kali setiap kali melancarkan Ultimate."
+				"Effect": "Setelah melancarkan Ultimate untuk menyerang target musuh, setiap 1 <u>Debuff</u> yang dimiliki target akan mengakibatkan Quantum <u>DMG Tambahan</u> sebesar 20% ATK Silver Wolf. Efek ini maksimal dapat dipicu 5 kali dalam setiap serangan Ultimate."
 			},
 			{
 				"Id": "100605",
@@ -240,7 +240,7 @@
 			{
 				"Id": "100606",
 				"Name": "Overlay Network",
-				"Effect": "Setiap 1 <u>status Debuff</u> yang dimiliki target musuh akan meningkatkan 20% DMG Silver Wolf pada target tersebut, maksimal hingga 100%."
+				"Effect": "Setiap 1 <u>Debuff</u> yang dimiliki target musuh akan meningkatkan 20% DMG yang diakibatkan Silver Wolf pada target tersebut, maksimal meningkat hingga 100%."
 			}
 		],
 		"VersionAdded": "1.0"
@@ -1035,12 +1035,12 @@
 			{
 				"Id": "120501",
 				"Name": "Blade Cuts the Deepest in Hell",
-				"Effect": "Ultimate DMG yang diakibatkan pada musuh yang ditarget akan meningkat lagi sebanyak 150% perhitungan akumulasi jumlah HP Blade yang berkurang dalam pertempuran ini.\nPerhitungan jumlah akumulasi HP Blade yang berkurang di pertempuran saat ini maksimal tidak dapat melebihi 90% Max HP Blade. Setelah melancarkan Ultimate, perhitungan jumlah akumulasi akan direset ulang dan diakumulasi kembali."
+				"Effect": "DMG yang diakibatkan Ultimate pada 1 musuh yang ditargetkan meningkat ekstra sebesar 150% dari akumulasi HP Blade yang berkurang dalam pertempuran ini.\nAkumulasi HP Blade yang berkurang dalam pertempuran ini maksimal tidak melebihi 90% dari Max HP Blade. Setelah melancarkan Ultimate, perhitungan tersebut akan dihapus dan diakumulasi kembali."
 			},
 			{
 				"Id": "120502",
 				"Name": "Ten Thousand Sorrows From One Broken Dream",
-				"Effect": "Saat Blade memasuki status \"Hellscape\", CRIT Rate dia meningkat 15%."
+				"Effect": "Saat Blade berstatus \"Hellscape\", CRIT Rate akan meningkat 15%."
 			},
 			{
 				"Id": "120503",
@@ -1050,7 +1050,7 @@
 			{
 				"Id": "120504",
 				"Name": "Rejected by Death, Infected With Life",
-				"Effect": "Saat persentase HP Blade saat ini turun dari 50% ke atas menjadi kurang dari atau sama dengan 50% Max HP dirinya, Max HP Blade akan meningkat 20%. Efek ini dapat ditumpuk hingga 2 lapis."
+				"Effect": "Saat persentase HP saat ini berkurang dari 50% ke atas menjadi kurang dari atau sama dengan 50%, Max HP akan meningkat 20%. Efek ini dapat ditumpuk hingga 2 lapis."
 			},
 			{
 				"Id": "120505",
@@ -1060,7 +1060,7 @@
 			{
 				"Id": "120506",
 				"Name": "Reborn Into an Empty Husk",
-				"Effect": "Jumlah maksimum lapisan Charge berkurang menjadi 4 lapis. DMG yang diakibatkan <u>Serangan Lanjutan</u> yang dipicu Talent meningkat sebesar 50% Max HP Blade."
+				"Effect": "Batas maksimum lapisan Charge berkurang menjadi 4 lapis. DMG yang diakibatkan <u>Serangan Lanjutan</u> yang dipicu Talent meningkat ekstra sebesar 50% Max HP Blade."
 			}
 		],
 		"VersionAdded": "1.2"
@@ -1322,12 +1322,12 @@
 			{
 				"Id": "121201",
 				"Name": "Moon Crashes Tianguan Gate",
-				"Effect": "Saat melancarkan Ultimate atau Enhanced Skill, CRIT DMG Jingliu meningkat 24%, berlangsung selama 1 giliran. Jika hanya menyerang 1 target musuh, akan mengakibatkan 1 kali Ice DMG tambahan sebesar 100% ATK Jingliu."
+				"Effect": "Saat melancarkan Ultimate atau Enhanced Skill, CRIT DMG Jingliu akan meningkat 24% selama 1 giliran. Jika hanya menyerang 1 target musuh, maka akan mengakibatkan ekstra 1 kali Ice DMG sebesar 100% ATK Jingliu pada target tersebut."
 			},
 			{
 				"Id": "121202",
 				"Name": "Crescent Shadows Qixing Dipper",
-				"Effect": "Setelah melancarkan Ultimate, DMG dari Enhanced Skill yang dilancarkan berikutnya meningkat 80%."
+				"Effect": "Setelah melancarkan Ultimate, DMG dari Enhanced Skill yang berikutnya meningkat 80%."
 			},
 			{
 				"Id": "121203",
@@ -1337,7 +1337,7 @@
 			{
 				"Id": "121204",
 				"Name": "Lunarlance Shines Skyward Dome",
-				"Effect": "Saat berstatus \"Spectral Transmigration\", ATK yang diperoleh dari mengonsumsi HP rekan tim akan meningkat lagi. Peningkatannya sebesar 90% total jumlah HP yang dikonsumsi dari seluruh rekan tim, dan batas maksimal peningkatan ATK yang diperoleh meningkat 30%."
+				"Effect": "Saat berstatus \"Spectral Transmigration\", ATK yang diperoleh dari mengonsumsi HP rekan Jingliu meningkat ekstra sebesar 90% dari total konsumsi HP seluruh rekan tim, dan batas maksimum peningkatan ATK yang diperoleh meningkat 30%."
 			},
 			{
 				"Id": "121205",
@@ -1347,7 +1347,7 @@
 			{
 				"Id": "121206",
 				"Name": "Eclipse Hollows Corporeal Husk",
-				"Effect": "Saat Jingliu memasuki status \"Spectral Transmigration\", batas maksimal lapisan \"Syzygy\" meningkat 1 lapis, serta memperoleh 1 lapis \"Syzygy\" tambahan. Saat berstatus \"Spectral Transmigration\", CRIT DMG meningkat 50%."
+				"Effect": "Saat Jingliu memasuki status \"Spectral Transmigration\", batas maksimum \"Syzygy\" meningkat 1 lapis dan Jingliu akan memperoleh ekstra 1 lapis \"Syzygy\". Saat berstatus \"Spectral Transmigration\", CRIT DMG meningkat 50%."
 			}
 		],
 		"VersionAdded": "1.4"
@@ -2704,6 +2704,47 @@
 			}
 		],
 		"VersionAdded": "3.2"
+	},
+	"1408": {
+		"Id": "1408",
+		"Name": "Phainon",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physical",
+		"PathType": "Warrior",
+		"PathTypeText": "Destruction",
+		"Eidolons": [
+			{
+				"Id": "140801",
+				"Name": "Fire and Light Bind Virtue and Vice",
+				"Effect": "Persentase pewarisan SPD Dasar dari <u>giliran tambahan Khaslana</u> meningkat menjadi 66%, dan setiap 1 target musuh yang dikalahkan dalam satu pertempuran akan meningkatkan ekstra persentase tersebut sebesar 1.5%, maksimal meningkat hingga 84%.\nSaat melancarkan Ultimate, CRIT DMG akan meningkat 50% selama 3 giliran."
+			},
+			{
+				"Id": "140802",
+				"Name": "Sky and Earth Churn Mortal Froth",
+				"Effect": "Physical <u>RES PEN</u> Khaslana meningkat 20%. Saat jumlah <u>Scourge</u> yang dikonsumsi mencapai 4 poin dalam satu kali pelancaran \"Foundation: Stardeath Verdict\", akan memperoleh 1 <u>giliran tambahan</u>."
+			},
+			{
+				"Id": "140803",
+				"Name": "Depths of Quiet, Entombed in Ruin",
+				"Effect": "Level Ultimate +2, maksimal Lv. 15. Level Basic Attack +1, maksimal Lv. 10."
+			},
+			{
+				"Id": "140804",
+				"Name": "Faces of Titans, Blurred by Time",
+				"Effect": "Saat melancarkan \"Calamity: Soulscorch Edict\", akan memperoleh ekstra 4 lapis \"Soulscorch\"."
+			},
+			{
+				"Id": "140805",
+				"Name": "The Wheel Spins Forevermore",
+				"Effect": "Level Skill +2, maksimal Lv. 15. Level Talent +2, maksimal Lv. 15."
+			},
+			{
+				"Id": "140806",
+				"Name": "Embers of Old Rise Still",
+				"Effect": "Jumlah luapan \"Coreflame\" tidak lagi dibatasi. Saat pertempuran dimulai, akan memperoleh 6 \"Coreflame\".\nSetelah melancarkan serangan \"Foundation: Stardeath Verdict\", akan mengakibatkan ekstra <u>True DMG</u> sebesar 36% dari total DMG serangan kali ini pada target musuh dengan HP tertinggi."
+			}
+		],
+		"VersionAdded": "3.4"
 	},
 	"1409": {
 		"Id": "1409",

@@ -15512,7 +15512,7 @@
 			"SkillTypeText": "Bí Kỹ",
 			"MaxLevel": 1,
 			"EffectRaw": "Sau khi dùng Bí Kỹ, sẽ tạo một vùng đặc biệt xung quanh bản thân, duy trì trong <unbreak>#3[i]</unbreak>s, kẻ địch trong vùng đặc biệt này sẽ rơi vào trạng thái Đóng Băng. Sau khi vào chiến đấu với kẻ địch trong vùng đặc biệt, sẽ hồi ngay <unbreak>#6[i]</unbreak> năng lượng cho bản thân và nhận <unbreak>#1[i]</unbreak> tầng Sóc Vọng, đồng thời có <unbreak>#2[i]%</unbreak> <u>xác suất cơ bản</u> khiến kẻ địch bị Đóng Băng, duy trì <unbreak>#4[i]</unbreak> hiệp. Ở trạng thái Đóng Băng, kẻ địch không thể hành động, đồng thời khi bắt đầu mỗi hiệp sẽ chịu <u>Sát Thương Băng kèm theo</u> bằng <unbreak>#5[i]%</unbreak> tấn công của Jingliu. Tối đa chỉ tồn tại 1 hiệu ứng vùng do phe ta tạo ra.",
-			"AbridgedEffect": "Tạo một vùng đặc biệt xung quanh bản thân. Kẻ địch trong vùng này sẽ rơi vào <color=#f29e38ff>trạng thái Đóng Băng</color>. Sau khi vào chiến đấu với kẻ địch trong vùng này, sẽ hồi năng lượng, và nhận 1 tầng Sóc Vọng đồng thời có xác suất lớn khiến kẻ địch rơi vào <color=#f29e38ff>trạng thái Đóng Băng</color>.",
+			"AbridgedEffect": "Tạo một vùng đặc biệt xung quanh bản thân. Kẻ địch trong vùng này sẽ rơi vào <color=#f29e38ff>trạng thái Đóng Băng</color>. Sau khi vào chiến đấu với kẻ địch trong vùng này, sẽ hồi Năng Lượng, và nhận 1 tầng Sóc Vọng, đồng thời có xác suất lớn khiến mục tiêu phe địch rơi vào <color=#f29e38ff>trạng thái Đóng Băng</color>.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -33162,6 +33162,864 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1407/SkillIcon_1407_Maze.png"
 		},
 		"VersionAdded": "3.2"
+	},
+	"1408": {
+		"Id": "1408",
+		"Name": "Phainon",
+		"BasicATK": {
+			"Id": "140801",
+			"Name": "Săn Đuổi Lửa Cứu Thế, Cứ Đi Sẽ Đến",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 10,
+			"EffectRaw": "Gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Phainon cho 1 kẻ địch chỉ định.",
+			"AbridgedEffect": "Gây lượng nhỏ Sát Thương Vật Lý cho 1 kẻ địch.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "140808",
+			"Name": "Sáng Thế - Gai Máu Độ Vong",
+			"TriggerKey": "Skill11",
+			"TagType": "Blast",
+			"TagTypeText": "Khuếch Tán",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 10,
+			"EffectRaw": "Nhận <unbreak>#3[i]</unbreak> điểm <u>Phá Hủy</u>, gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Khaslana cho 1 kẻ địch chỉ định, gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Khaslana cho mục tiêu lân cận.",
+			"AbridgedEffect": "Nhận <color=#f29e38ff><unbreak>#3[i]</unbreak></color> điểm <color=#f29e38ff><u>Phá Hủy</u></color>, gây lượng lớn Sát Thương Vật Lý cho 1 kẻ địch chỉ định, gây Sát Thương Vật Lý cho mục tiêu lân cận.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.25,
+						0.375,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.5,
+						0.45,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.75,
+						0.525,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						0.6,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.25,
+						0.675,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.5,
+						0.75,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.75,
+						0.825,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.9,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3.25,
+						0.975,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3.5,
+						1.05,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Normal02.png"
+		},
+		"Skill": {
+			"Id": "140802",
+			"Name": "Bình Minh Sáng Thế, Đất Trời Mở Lối",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Khuếch Tán",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Nhận <unbreak>#3[i]</unbreak> điểm \"Ngọn Lửa\", gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Phainon cho 1 kẻ địch chỉ định, gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Phainon cho mục tiêu lân cận.",
+			"AbridgedEffect": "Nhận <color=#f29e38ff><unbreak>#3[i]</unbreak></color> điểm <color=#f29e38ff>Ngọn Lửa</color>, gây lượng lớn Sát Thương Vật Lý cho 1 kẻ địch, gây Sát Thương Vật Lý cho mục tiêu lân cận.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.5,
+						0.6,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.65,
+						0.66,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.8,
+						0.72,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.95,
+						0.78,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.1,
+						0.84,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.25,
+						0.9,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.4375,
+						0.975,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.625,
+						1.05,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.8125,
+						1.125,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						1.2,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3.15,
+						1.26,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3.3,
+						1.32,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.45,
+						1.38,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.6,
+						1.44,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.75,
+						1.5,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "140809",
+			"Name": "Tai Ương - Chiếu Chỉ Thiêu Đốt Linh Hồn",
+			"TriggerKey": "Skill21",
+			"TagType": "Enhance",
+			"TagTypeText": "Cường Hóa",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Nhận <u>Phá Hủy</u> bằng với số lượng toàn bộ phe địch và 1 tầng Ngọn Lửa Diệt Hồn, sau đó khiến toàn bộ phe địch lập tức hành động.\nỞ trạng thái \"Ngọn Lửa Diệt Hồn\", sát thương Khaslana phải chịu giảm <unbreak>#2[i]%</unbreak>, sau khi mục tiêu phe địch tấn công hoặc hành động sẽ cộng dồn 1 tầng \"Ngọn Lửa Diệt Hồn\". Sau khi mục tiêu phe địch nêu trên hành động xong sẽ lập tức phát động <u>Phản Kích</u>, gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Khaslana cho toàn bộ phe địch, đồng thời gây thêm <unbreak>#3[i]</unbreak> lần sát thương, mỗi lần gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> Tấn Công của Khaslana cho 1 kẻ địch ngẫu nhiên, sau đó giải trừ \"Ngọn Lửa Diệt Hồn\". Mỗi tầng \"Ngọn Lửa Diệt Hồn\" khiến Bội Số Sát Thương của lần <u>Phản Kích</u> này tăng <unbreak>#5[i]%</unbreak> của bội số gốc.\nKhi gây sát thương thông qua kỹ năng này, sẽ được xem là gây sát thương Chiến Kỹ. Nếu khi <u>hiệp tăng thêm của Khaslana</u> bắt đầu mà vẫn còn \"Ngọn Lửa Diệt Hồn\", sẽ lập tức phát động <u>Phản Kích</u>.",
+			"AbridgedEffect": "Nhận <color=#f29e38ff><u>Phá Hủy</u></color> bằng với số lượng kẻ địch, khiến kẻ địch lập tức hành động. Nhận \"Ngọn Lửa Diệt Hồn\": Sát thương phải chịu giảm, sau khi tất cả mục tiêu phe địch đều đã hành động sẽ phát động <color=#f29e38ff><u>Phản Kích</u></color>, gây lượng nhỏ Sát Thương Vật Lý cho toàn bộ kẻ địch và nảy bật <color=#f29e38ff><unbreak>#3[i]</unbreak></color> lần, mỗi lần gây lượng nhỏ Sát Thương Vật Lý lên 1 kẻ địch ngẫu nhiên. Số lần hành động của kẻ địch càng nhiều, sát thương càng cao.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.2,
+						0.75,
+						4,
+						0.15,
+						0.2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.22,
+						0.75,
+						4,
+						0.165,
+						0.2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.24,
+						0.75,
+						4,
+						0.18,
+						0.2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.26,
+						0.75,
+						4,
+						0.195,
+						0.2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.28,
+						0.75,
+						4,
+						0.21,
+						0.2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.3,
+						0.75,
+						4,
+						0.225,
+						0.2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.325,
+						0.75,
+						4,
+						0.2438,
+						0.2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.35,
+						0.75,
+						4,
+						0.2625,
+						0.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.375,
+						0.75,
+						4,
+						0.2813,
+						0.2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.4,
+						0.75,
+						4,
+						0.3,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.42,
+						0.75,
+						4,
+						0.315,
+						0.2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.44,
+						0.75,
+						4,
+						0.33,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.46,
+						0.75,
+						4,
+						0.345,
+						0.2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.48,
+						0.75,
+						4,
+						0.36,
+						0.2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.5,
+						0.75,
+						4,
+						0.375,
+						0.2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_BP02.png"
+		},
+		"Ultimate": {
+			"Id": "140803",
+			"Name": "Vĩnh Kiếp Thiêu Thế, Một Mình Gánh Mang",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Biến thân thành Khaslana, triển khai <u>Vùng Lãnh Thổ</u> \"Irontomb Tàn Phá\" trong thời gian biến thân. Đồng đội khác trong <u>Vùng Lãnh Thổ</u> <u>Rời Trận</u> và không thể hành động, toàn bộ phe địch từ đầu đến cuối sẽ luôn mang Điểm Yếu Vật Lý.\nKhaslana sẽ không vào hiệp của bản thân, nhưng có <unbreak>#4[i]</unbreak> <u>Hiệp Tăng Thêm Của Khaslana</u>, Tốc Độ cố định là <unbreak>#3[i]%</unbreak> Tốc Độ cơ bản của Khaslana. Khi <u>hiệp tăng thêm cuối cùng của Khaslana</u> bắt đầu, sẽ lập tức phát động Đòn Đánh Cuối Cùng, gây Sát Thương Tuyệt Kỹ Vật Lý bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Khaslana, chia đều cho toàn bộ phe địch.",
+			"AbridgedEffect": "<color=#f29e38ff>Biến thân thành Khaslana</color> và triển khai <u>Vùng Lãnh Thổ</u>: Khiến đồng đội <u>Rời Trận</u> và không thể hành động, toàn bộ phe địch có Điểm Yếu Vật Lý.\nKhaslana sẽ không vào hiệp của bản thân, nhưng có <color=#f29e38ff><unbreak>#4[i]</unbreak></color> <u><color=#f29e38ff>hiệp tăng thêm</color> của Khaslana</u>, phát động Đòn Đánh Cuối Cùng trong hiệp cuối cùng, gây lượng lớn Sát Thương Vật Lý chia đều cho toàn bộ phe địch.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						4.8,
+						12,
+						0.6,
+						8
+					]
+				},
+				"2": {
+					"EffectValues": [
+						5.28,
+						12,
+						0.6,
+						8
+					]
+				},
+				"3": {
+					"EffectValues": [
+						5.76,
+						12,
+						0.6,
+						8
+					]
+				},
+				"4": {
+					"EffectValues": [
+						6.24,
+						12,
+						0.6,
+						8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						6.72,
+						12,
+						0.6,
+						8
+					]
+				},
+				"6": {
+					"EffectValues": [
+						7.2,
+						12,
+						0.6,
+						8
+					]
+				},
+				"7": {
+					"EffectValues": [
+						7.8,
+						12,
+						0.6,
+						8
+					]
+				},
+				"8": {
+					"EffectValues": [
+						8.4,
+						12,
+						0.6,
+						8
+					]
+				},
+				"9": {
+					"EffectValues": [
+						9,
+						12,
+						0.6,
+						8
+					]
+				},
+				"10": {
+					"EffectValues": [
+						9.6,
+						12,
+						0.6,
+						8
+					]
+				},
+				"11": {
+					"EffectValues": [
+						10.08,
+						12,
+						0.6,
+						8
+					]
+				},
+				"12": {
+					"EffectValues": [
+						10.56,
+						12,
+						0.6,
+						8
+					]
+				},
+				"13": {
+					"EffectValues": [
+						11.04,
+						12,
+						0.6,
+						8
+					]
+				},
+				"14": {
+					"EffectValues": [
+						11.52,
+						12,
+						0.6,
+						8
+					]
+				},
+				"15": {
+					"EffectValues": [
+						12,
+						12,
+						0.6,
+						8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Ultra.png"
+		},
+		"EnhancedBasicATK3": {
+			"Id": "140811",
+			"Name": "Trụ Cột - Phán Quyết Tử Tinh",
+			"TriggerKey": "Skill22",
+			"TagType": "Bounce",
+			"TagTypeText": "Nảy Bật",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Giải trừ tất cả <u>Hiệu Ứng Xấu</u> của bản thân, sau đó gây Sát Thương Vật Lý tối đa bằng <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> Tấn Công của Khaslana.\nTrong đó, mỗi khi tiêu hao 1 điểm <u>Phá Hủy</u> sẽ gây <unbreak>#3[i]</unbreak> lần sát thương, mỗi lần gây Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> Tấn Công của Khaslana cho 1 kẻ địch ngẫu nhiên. Khi tiêu hao <unbreak>#4[i]</unbreak> điểm <u>Phá Hủy</u>, sẽ gây thêm Sát Thương Vật Lý bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Khaslana, chia đều cho toàn bộ phe địch.",
+			"AbridgedEffect": "Giải trừ tất cả <u>Hiệu Ứng Xấu</u> của bản thân. <color=#f29e38ff>Mỗi khi tiêu hao 1 điểm <u>Phá Hủy</u>, nảy bật <color=#f29e38ff><unbreak>#3[i]</unbreak></color> lần</color>, mỗi lần gây lượng nhỏ Sát Thương Vật Lý cho 1 kẻ địch ngẫu nhiên.\nNếu tiêu hao <color=#f29e38ff><unbreak>#4[i]</unbreak></color> điểm <u>Phá Hủy</u>, sẽ gây thêm lượng lớn Sát Thương Vật Lý chia đều cho toàn bộ phe địch.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2.25,
+						0.225,
+						4,
+						4,
+						5.85
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2.475,
+						0.2475,
+						4,
+						4,
+						6.435
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2.7,
+						0.27,
+						4,
+						4,
+						7.02
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2.925,
+						0.2925,
+						4,
+						4,
+						7.605
+					]
+				},
+				"5": {
+					"EffectValues": [
+						3.15,
+						0.315,
+						4,
+						4,
+						8.19
+					]
+				},
+				"6": {
+					"EffectValues": [
+						3.375,
+						0.3375,
+						4,
+						4,
+						8.775
+					]
+				},
+				"7": {
+					"EffectValues": [
+						3.6563,
+						0.3656,
+						4,
+						4,
+						9.5063
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3.9375,
+						0.3938,
+						4,
+						4,
+						10.2375
+					]
+				},
+				"9": {
+					"EffectValues": [
+						4.2188,
+						0.4219,
+						4,
+						4,
+						10.9688
+					]
+				},
+				"10": {
+					"EffectValues": [
+						4.5,
+						0.45,
+						4,
+						4,
+						11.7
+					]
+				},
+				"11": {
+					"EffectValues": [
+						4.725,
+						0.4725,
+						4,
+						4,
+						12.285
+					]
+				},
+				"12": {
+					"EffectValues": [
+						4.95,
+						0.495,
+						4,
+						4,
+						12.87
+					]
+				},
+				"13": {
+					"EffectValues": [
+						5.175,
+						0.5175,
+						4,
+						4,
+						13.455
+					]
+				},
+				"14": {
+					"EffectValues": [
+						5.4,
+						0.54,
+						4,
+						4,
+						14.04
+					]
+				},
+				"15": {
+					"EffectValues": [
+						5.625,
+						0.5625,
+						4,
+						4,
+						14.625
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_BP03.png"
+		},
+		"Talent": {
+			"Id": "140804",
+			"Name": "Thân Này Là Đuốc",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Cường Hóa",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Thiên phú của Phainon. Khi Ngọn Lửa đạt <unbreak>#4[i]</unbreak> điểm có thể kích hoạt Tuyệt Kỹ, sau khi đạt giới hạn còn có thể vượt mức tối đa <unbreak>#3[i]</unbreak> điểm, khi kết thúc biến thân sẽ nhận Ngọn Lửa dựa trên số điểm vượt mức.\nKhi Phainon trở thành mục tiêu kỹ năng của bất kỳ mục tiêu nào khác, sẽ nhận 1 điểm Ngọn Lửa. Nếu người thi triển là đồng đội của Phainon, sẽ có thể khiến sát thương bạo kích của Phainon tăng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, duy trì <unbreak>#2[i]</unbreak> hiệp.",
+			"AbridgedEffect": "Thiên phú của Phainon. Khi Ngọn Lửa đạt <color=#f29e38ff><unbreak>#4[i]</unbreak></color> điểm có thể kích hoạt Tuyệt Kỹ.\nKhi Phainon trở thành <color=#f29e38ff>mục tiêu kỹ năng của mục tiêu khác</color>, sẽ nhận được <color=#f29e38ff>Ngọn Lửa</color>. Khi trở thành mục tiêu kỹ năng của đồng đội, sẽ tăng Sát Thương Bạo Kích.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						3,
+						3,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.165,
+						3,
+						3,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						3,
+						3,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.195,
+						3,
+						3,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.21,
+						3,
+						3,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.225,
+						3,
+						3,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2438,
+						3,
+						3,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.2625,
+						3,
+						3,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2813,
+						3,
+						3,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						3,
+						3,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.315,
+						3,
+						3,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.33,
+						3,
+						3,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.345,
+						3,
+						3,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.36,
+						3,
+						3,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.375,
+						3,
+						3,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Passive.png"
+		},
+		"Technique": {
+			"Id": "140806",
+			"Name": "Tấn Công",
+			"TriggerKey": "",
+			"TagType": "MazeAttack",
+			"MaxLevel": 1,
+			"EffectRaw": "Tấn công kẻ địch, sau khi vào chiến đấu sẽ làm giảm Sức Bền thuộc tính tương ứng của mục tiêu phe địch.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": []
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1408/SkillIcon_1408_Normal.png"
+		},
+		"VersionAdded": "3.4"
 	},
 	"1409": {
 		"Id": "1409",
