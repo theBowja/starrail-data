@@ -4741,6 +4741,120 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"10704": {
+		"Id": "10704",
+		"ContactId": "1009",
+		"ParticpatingContactIds": [
+			"1009",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1070400",
+				"StartingMessageId": "107040000",
+				"Messages": {
+					"107040000": {
+						"Id": "107040000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/111005.png",
+						"Text": "[Чаю?]",
+						"NextMessageId": "107040001"
+					},
+					"107040001": {
+						"Id": "107040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "{NICKNAME}, спасибо за поддержку эксперимента с цифровой Гертой.",
+						"NextMessageId": "107040002"
+					},
+					"107040002": {
+						"Id": "107040002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Средства за эксперимент я уже перевела. Проверь, пришло ли.",
+						"NextMessageId": "choice3"
+					},
+					"107040003": {
+						"Id": "107040003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Кстати, эксперимент можно считать завершённым? Есть новости о дальнейших планах?",
+						"NextMessageId": "107040004"
+					},
+					"107040004": {
+						"Id": "107040004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Госпоже Герте он показался интересным, но не принёс существенных открытий, поэтому в итоге она велела мне удалить данные.",
+						"NextMessageId": "107040007"
+					},
+					"107040005": {
+						"Id": "107040005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Какие ещё средства? Снова платишь из своего кармана?",
+						"NextMessageId": "107040006"
+					},
+					"107040006": {
+						"Id": "107040006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/30001.png",
+						"Text": "[Ухмылка]",
+						"NextMessageId": "107040007"
+					},
+					"107040007": {
+						"Id": "107040007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Кстати, что примечательно, госпожа Герта сказала: «Моя цифровая версия оценила участника по имени {NICKNAME} выше, чем я ожидала».",
+						"NextMessageId": "107040008"
+					},
+					"107040008": {
+						"Id": "107040008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "В этом и заключался смысл эксперимента - проверить, обладает ли копия логикой и разумом оригинала.",
+						"NextMessageId": "107040009"
+					},
+					"107040009": {
+						"Id": "107040009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Как выяснилось, ИИ «Герта» будто... переоценивает людей? Хм, точнее не могу сказать. Но возможно, по этой причине госпожа Герта и решила прекратить эксперимент."
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "(Спросить о продолжении эксперимента.)",
+								"NextMessageId": "107040003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "...Снова из своего кармана?",
+								"NextMessageId": "107040005"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
 	"11100": {
 		"Id": "11100",
 		"ContactId": "2",
@@ -61917,6 +62031,298 @@
 		],
 		"VersionAdded": "3.4"
 	},
+	"14534": {
+		"Id": "14534",
+		"ContactId": "199",
+		"ParticpatingContactIds": [
+			"199",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1453400",
+				"StartingMessageId": "145340000",
+				"Messages": {
+					"145340000": {
+						"Id": "145340000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "{NICKNAME}, насчёт Аполлония",
+						"NextMessageId": "choice1"
+					},
+					"145340001": {
+						"Id": "145340001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Прости, не получилось его найти.",
+						"NextMessageId": "145340004"
+					},
+					"145340002": {
+						"Id": "145340002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Может, не будем его больше искать?",
+						"NextMessageId": "145340003"
+					},
+					"145340003": {
+						"Id": "145340003",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Наверное, он своими делами какими-то занят.",
+						"NextMessageId": "145340004"
+					},
+					"145340004": {
+						"Id": "145340004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "Нет, подождите",
+						"NextMessageId": "145340005"
+					},
+					"145340005": {
+						"Id": "145340005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "Я медленно печатаю, хотела сообщить.",
+						"NextMessageId": "145340006"
+					},
+					"145340006": {
+						"Id": "145340006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "Нашли мы его, возвращайтесь на пир."
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Не получилось найти.",
+								"NextMessageId": "145340001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Может, не будем его больше искать?",
+								"NextMessageId": "145340002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14536": {
+		"Id": "14536",
+		"ContactId": "193",
+		"ParticpatingContactIds": [
+			"193"
+		],
+		"Sections": [
+			{
+				"Id": "1453600",
+				"StartingMessageId": "145360000",
+				"Messages": {
+					"145360000": {
+						"Id": "145360000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "{F#Дорогая гостья}{M#Дорогой гость}, на Поющем берегу собраны все нимфы.",
+						"NextMessageId": "145360001"
+					},
+					"145360001": {
+						"Id": "145360001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "Как и прежде, тут появилась ещё одна нимфа и... м-м-м, какое-то странное устройство.",
+						"NextMessageId": "145360002"
+					},
+					"145360002": {
+						"Id": "145360002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "Посмотрите сами, как будет минутка."
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14537": {
+		"Id": "14537",
+		"ContactId": "200",
+		"ParticpatingContactIds": [
+			"8001",
+			"200"
+		],
+		"Sections": [
+			{
+				"Id": "1453700",
+				"StartingMessageId": "145370000",
+				"Messages": {
+					"145370000": {
+						"Id": "145370000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Поиск сигнала...",
+						"NextMessageId": "145370001"
+					},
+					"145370001": {
+						"Id": "145370001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Нестабильное соединение",
+						"NextMessageId": "145370002"
+					},
+					"145370002": {
+						"Id": "145370002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Привет! {F#Соскучилась}{M#Соскучился}?",
+						"NextMessageId": "choice3"
+					},
+					"145370003": {
+						"Id": "145370003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Есть такое. Ты где?",
+						"NextMessageId": "145370008"
+					},
+					"145370004": {
+						"Id": "145370004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Глупости, мы же не навсегда попрощались!",
+						"NextMessageId": "145370005"
+					},
+					"145370005": {
+						"Id": "145370005",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Где ты? Когда вернёшься?",
+						"NextMessageId": "145370008"
+					},
+					"145370006": {
+						"Id": "145370006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Мы исполнили свой долг.",
+						"NextMessageId": "145370007"
+					},
+					"145370007": {
+						"Id": "145370007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Где ты прячешься? Когда вернёшься?",
+						"NextMessageId": "145370008"
+					},
+					"145370008": {
+						"Id": "145370008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Ошибка отправки сообщения.",
+						"NextMessageId": "145370009"
+					},
+					"145370009": {
+						"Id": "145370009",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Пользователь в настоящее время недоступен. Попробуйте позднее.",
+						"NextMessageId": "145370010"
+					},
+					"145370010": {
+						"Id": "145370010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Дай-ка угадаю... Ты думаешь, что я прячусь, и хочешь узнать где?",
+						"NextMessageId": "145370011"
+					},
+					"145370011": {
+						"Id": "145370011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Ответ: это магия~",
+						"NextMessageId": "145370012"
+					},
+					"145370012": {
+						"Id": "145370012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Перед уходом я оставила это сообщение в Элизии Эйдес с помощью магии фей.",
+						"NextMessageId": "145370013"
+					},
+					"145370013": {
+						"Id": "145370013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Я ещё не скоро вернусь и не хочу, чтобы ты скучал{F#а} без меня~",
+						"NextMessageId": "145370014"
+					},
+					"145370014": {
+						"Id": "145370014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Однако в Элизии Эйдес спрятано множество наших воспоминаний.",
+						"NextMessageId": "145370015"
+					},
+					"145370015": {
+						"Id": "145370015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "А, ещё я оставила тебе письмо. Загляни в Благословенный двор!"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ага, скорее возвращайся.",
+								"NextMessageId": "145370003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Глупости!",
+								"NextMessageId": "145370004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Где ты прячешься?",
+								"NextMessageId": "145370006"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
 	"20001": {
 		"Id": "20001",
 		"ContactId": "1001",
@@ -115483,6 +115889,578 @@
 			}
 		],
 		"VersionAdded": "3.4"
+	},
+	"20192": {
+		"Id": "20192",
+		"ContactId": "1410",
+		"ParticpatingContactIds": [
+			"8001",
+			"1410"
+		],
+		"Sections": [
+			{
+				"Id": "2019200",
+				"StartingMessageId": "201920000",
+				"Messages": {
+					"201920000": {
+						"Id": "201920000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Поиск сигнала...",
+						"NextMessageId": "201920001"
+					},
+					"201920001": {
+						"Id": "201920001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Нестабильное соединение",
+						"NextMessageId": "201920002"
+					},
+					"201920002": {
+						"Id": "201920002",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Файл «Звуки моря ♫» отправлен",
+						"NextMessageId": "201920003"
+					},
+					"201920003": {
+						"Id": "201920003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Серый малёк, тебе слышно? Секундочку! Слышно? [Обнаружен шум. Не удаётся распознать.]",
+						"NextMessageId": "201920004"
+					},
+					"201920004": {
+						"Id": "201920004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920005"
+					},
+					"201920005": {
+						"Id": "201920005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Нам следовало бы разделить бутылочку медового нектара и вместе потанцевать: раньше делали после возвращения с поля боя. Но я знаю, что ты здесь не останешься, и твоё дальнейшее путешествие будет полно ещё больших опасностей. Жаль только, что я не успеваю устроить для тебя победный пир.",
+						"NextMessageId": "201920006"
+					},
+					"201920006": {
+						"Id": "201920006",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920007"
+					},
+					"201920007": {
+						"Id": "201920007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Звуки моря со мной уже тысячу лет, и я дарю их тебе вместе с моей любимой песней. Отдохни хорошенько, и пусть тебе приснятся хорошие сны.",
+						"NextMessageId": "201920008"
+					},
+					"201920008": {
+						"Id": "201920008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920009"
+					},
+					"201920009": {
+						"Id": "201920009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ Взлетает разбитый клинок, пока ветра стихи читают, падает зимний снежок, а буря утихает ♫",
+						"NextMessageId": "201920010"
+					},
+					"201920010": {
+						"Id": "201920010",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920011"
+					},
+					"201920011": {
+						"Id": "201920011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ Волнами бушует медовый нектар, его барашки из пены распускаются цветами. Повеселимся же на пиру в последний раз ♫",
+						"NextMessageId": "201920012"
+					},
+					"201920012": {
+						"Id": "201920012",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920013"
+					},
+					"201920013": {
+						"Id": "201920013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ На острие моего клинка пляшут золотые платья и лазурные огоньки ♫",
+						"NextMessageId": "201920014"
+					},
+					"201920014": {
+						"Id": "201920014",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920015"
+					},
+					"201920015": {
+						"Id": "201920015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ О волны, не уносите их, не покидайте сердца моего ♫",
+						"NextMessageId": "201920016"
+					},
+					"201920016": {
+						"Id": "201920016",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920017"
+					},
+					"201920017": {
+						"Id": "201920017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ Подступает новый рассвет, но почему ты уходишь, прилив? ♫",
+						"NextMessageId": "201920018"
+					},
+					"201920018": {
+						"Id": "201920018",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920019"
+					},
+					"201920019": {
+						"Id": "201920019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ Почему ты уходишь? ♫",
+						"NextMessageId": "201920020"
+					},
+					"201920020": {
+						"Id": "201920020",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920021"
+					},
+					"201920021": {
+						"Id": "201920021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "[Слишком низкая громкость, голосовое сообщение не распознано]",
+						"NextMessageId": "201920022"
+					},
+					"201920022": {
+						"Id": "201920022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Серый малёк, пусть каждый твой шаг сопровождает нежный шум волн.",
+						"NextMessageId": "201920023"
+					},
+					"201920023": {
+						"Id": "201920023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920024"
+					},
+					"201920024": {
+						"Id": "201920024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Кстати, тот океан за пределами неба... он из твоих воспоминаний, да?",
+						"NextMessageId": "201920025"
+					},
+					"201920025": {
+						"Id": "201920025",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920026"
+					},
+					"201920026": {
+						"Id": "201920026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Да, мне нравится. Очень-очень.",
+						"NextMessageId": "201920027"
+					},
+					"201920027": {
+						"Id": "201920027",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "201920028"
+					},
+					"201920028": {
+						"Id": "201920028",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Нестабильное соединение",
+						"NextMessageId": "201920029"
+					},
+					"201920029": {
+						"Id": "201920029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Когда. Получишь. Помоги. Сохрани. Красоту. Я. Не могу. Чувства. При встрече. Смогу. Настоящие. Чувства.",
+						"NextMessageId": "201920030"
+					},
+					"201920030": {
+						"Id": "201920030",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "[Преобразование голосового сообщения завершено]",
+						"NextMessageId": "choice31"
+					},
+					"201920031": {
+						"Id": "201920031",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Послушал{F#а}. Очень красивая песня.",
+						"NextMessageId": "201920032"
+					},
+					"201920032": {
+						"Id": "201920032",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "И все наверняка услышат.",
+						"NextMessageId": "201920036"
+					},
+					"201920033": {
+						"Id": "201920033",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Тогда, когда мы со всеми увидимся.",
+						"NextMessageId": "201920034"
+					},
+					"201920034": {
+						"Id": "201920034",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Споёшь ещё раз!",
+						"NextMessageId": "201920036"
+					},
+					"201920035": {
+						"Id": "201920035",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Когда мы встретимся?",
+						"NextMessageId": "201920036"
+					},
+					"201920036": {
+						"Id": "201920036",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Ошибка отправки сообщения.",
+						"NextMessageId": "201920037"
+					},
+					"201920037": {
+						"Id": "201920037",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Пользователь в настоящее время недоступен. Попробуйте позднее."
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Послушал{F#а}.",
+								"NextMessageId": "201920031"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Споёшь ещё раз!",
+								"NextMessageId": "201920033"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Когда мы встретимся?",
+								"NextMessageId": "201920035"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"20193": {
+		"Id": "20193",
+		"ContactId": "1412",
+		"ParticpatingContactIds": [
+			"8001",
+			"1412"
+		],
+		"Sections": [
+			{
+				"Id": "2019300",
+				"StartingMessageId": "201930000",
+				"Messages": {
+					"201930000": {
+						"Id": "201930000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Поиск сигнала...",
+						"NextMessageId": "201930001"
+					},
+					"201930001": {
+						"Id": "201930001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Нестабильное соединение",
+						"NextMessageId": "201930002"
+					},
+					"201930002": {
+						"Id": "201930002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Спаситель, твои воспоминания поистине удивительны.",
+						"NextMessageId": "201930003"
+					},
+					"201930003": {
+						"Id": "201930003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Климат Белобога напоминает мою родину Гиперборею.",
+						"NextMessageId": "201930004"
+					},
+					"201930004": {
+						"Id": "201930004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Государство на кораблях Альянс Сяньчжоу обладает духом завоевателей.",
+						"NextMessageId": "201930005"
+					},
+					"201930005": {
+						"Id": "201930005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Пенакония, страна пьянящих грёз, кажется очень знакомой.",
+						"NextMessageId": "201930006"
+					},
+					"201930006": {
+						"Id": "201930006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123014.png",
+						"Text": "[Правосудие]",
+						"NextMessageId": "201930007"
+					},
+					"201930007": {
+						"Id": "201930007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Когда законы, держащие Амфореус в путах, разрушатся, люди отправятся к звёздам и оставят свой славный след.",
+						"NextMessageId": "201930008"
+					},
+					"201930008": {
+						"Id": "201930008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Превосходные работы дукса Золотой Ткач не уступают последователям Красоты.",
+						"NextMessageId": "201930009"
+					},
+					"201930009": {
+						"Id": "201930009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Дукс Судьба гораздо лучше объединяет людей, чем последователи Гармонии.",
+						"NextMessageId": "201930010"
+					},
+					"201930010": {
+						"Id": "201930010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Дукс Скороход точно встряхнёт вселенную своими проделками. Я бы хотела взглянуть на её противостояние с Недотёпами в масках.",
+						"NextMessageId": "201930011"
+					},
+					"201930011": {
+						"Id": "201930011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "А дукс Знамя Клинков стоит на пути Небытия. Уверена, она ещё превратит мёртвые воды в шторм.",
+						"NextMessageId": "201930012"
+					},
+					"201930012": {
+						"Id": "201930012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Мы не позволим этому сиянию стать пылью.",
+						"NextMessageId": "201930013"
+					},
+					"201930013": {
+						"Id": "201930013",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123015.png",
+						"Text": "[Генерал]",
+						"NextMessageId": "201930014"
+					},
+					"201930014": {
+						"Id": "201930014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Спаситель, сформируй будущее Амфореуса вместо меня.",
+						"NextMessageId": "201930015"
+					},
+					"201930015": {
+						"Id": "201930015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Если я смогу вернуться, Амфореус отправится к космосу.",
+						"NextMessageId": "201930016"
+					},
+					"201930016": {
+						"Id": "201930016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "И там, на любой из планет, с названием или без",
+						"NextMessageId": "201930017"
+					},
+					"201930017": {
+						"Id": "201930017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "выберешь любую",
+						"NextMessageId": "201930018"
+					},
+					"201930018": {
+						"Id": "201930018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "я выгравирую твоё имя, {NICKNAME}.",
+						"NextMessageId": "choice19"
+					},
+					"201930019": {
+						"Id": "201930019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Амфореус запомнит твоё имя.",
+						"NextMessageId": "201930022"
+					},
+					"201930020": {
+						"Id": "201930020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Вот так щедрость!",
+						"NextMessageId": "201930022"
+					},
+					"201930021": {
+						"Id": "201930021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Договорились. Увидимся в космосе!",
+						"NextMessageId": "201930022"
+					},
+					"201930022": {
+						"Id": "201930022",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Ошибка отправки сообщения.",
+						"NextMessageId": "201930023"
+					},
+					"201930023": {
+						"Id": "201930023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Пользователь в настоящее время недоступен. Попробуйте позднее."
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Цезарь! Цезарь!",
+								"NextMessageId": "201930019"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Вот так щедрость!",
+								"NextMessageId": "201930020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Увидимся в космосе!",
+								"NextMessageId": "201930021"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
 	},
 	"20998": {
 		"Id": "20998",

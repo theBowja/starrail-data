@@ -2330,7 +2330,7 @@
 			"SkillTypeText": "Skill",
 			"MaxLevel": 15,
 			"EffectRaw": "There is a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>base chance</u> to add 1 Weakness of an on-field character's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by <unbreak>#4[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\nIn addition, there is a <unbreak>#5[i]%</unbreak> <u>base chance</u> to further reduce the All-Type RES of the enemy by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).\nDeals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Silver Wolf's ATK to this enemy.",
-			"AbridgedEffect": "There is a high chance to <color=#f29e38ff>apply additional Type Weaknesses</color> to one enemy and deals Quantum DMG to this enemy.",
+			"AbridgedEffect": "There is a high chance to <color=#f29e38ff>apply additional Weakness</color> to one enemy and deals Quantum DMG to this enemy.",
 			"ElementType": "Quantum",
 			"Levels": {
 				"1": {
@@ -2793,7 +2793,7 @@
 			"SkillTypeText": "Technique",
 			"MaxLevel": 1,
 			"EffectRaw": "Immediately attacks the enemy. After entering battle, deals Quantum DMG equal to <unbreak>#1[i]%</unbreak> of Silver Wolf's ATK to all enemies, and ignores Weakness Types and reduces Toughness from all enemies. Enemies with their Weakness Broken in this way will trigger the Quantum Weakness Break effect.",
-			"AbridgedEffect": "Attacks the enemy. After entering battle, deals minor DMG to all enemies and reduces Toughness of all enemies irrespective of Weakness Types.",
+			"AbridgedEffect": "Attacks the enemy. After entering battle, deals minor DMG to all enemies and reduces Toughness of all enemies regardless of Weakness Types.",
 			"ElementType": "Quantum",
 			"Levels": {
 				"1": {
@@ -15331,7 +15331,7 @@
 			"TagTypeText": "Enhance",
 			"SkillTypeText": "Talent",
 			"MaxLevel": 15,
-			"EffectRaw": "When Jingliu has <unbreak>#5[i]</unbreak> stack(s) of Syzygy, she enters the Spectral Transmigration state with her action advanced by <unbreak>#6[i]%</unbreak> and her CRIT Rate increases by <color=#f29e38ff><unbreak>#7[i]%</unbreak></color>. Then, Jingliu's Skill \"Transcendent Flash\" is enhanced to \"Moon On Glacial River,\" and only this enhanced Skill is available for use in battle. When Jingliu uses an attack in the Spectral Transmigration state, she consumes HP from her teammates equal to <unbreak>#2[i]%</unbreak> of their respective Max HP (this cannot reduce teammates' HP to lower than 1). Jingliu's ATK increases by <unbreak>#3[i]%</unbreak> of the total HP consumed from all allies in this attack, capped at <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of her base ATK, lasting until the current attack ends. Jingliu cannot enter the Spectral Transmigration state again until the current Spectral Transmigration state ends. Syzygy can stack up to 3 times. When Syzygy stacks become 0, Jingliu will exit the Spectral Transmigration state.",
+			"EffectRaw": "When Jingliu has <unbreak>#5[i]</unbreak> stack(s) of Syzygy, she enters the Spectral Transmigration state with her action advanced by <unbreak>#6[i]%</unbreak> and her CRIT Rate increased by <color=#f29e38ff><unbreak>#7[i]%</unbreak></color>. Then, Jingliu's Skill \"Transcendent Flash\" is enhanced to \"Moon On Glacial River,\" and only this enhanced Skill is available for use in battle. When Jingliu uses an attack in the Spectral Transmigration state, she consumes HP from her teammates equal to <unbreak>#2[i]%</unbreak> of their respective Max HP (this cannot reduce teammates' HP to lower than 1). Jingliu's ATK increases by <unbreak>#3[i]%</unbreak> of the total HP consumed from all allies in this attack, capped at <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of her base ATK, lasting until the current attack ends. Jingliu cannot enter the Spectral Transmigration state again until the current Spectral Transmigration state ends. Syzygy can stack up to 3 times. When Syzygy stacks become 0, Jingliu will exit the Spectral Transmigration state.",
 			"AbridgedEffect": "When possessing <color=#f29e38ff><unbreak>#5[i]</unbreak></color> stacks of Syzygy, Jingliu enters the Spectral Transmigration state with her <color=#f29e38ff>action advanced by <unbreak>100%</unbreak></color>, her CRIT Rate increased, and her <color=#f29e38ff>Skill becoming enhanced</color>. Using an attack in this state consumes HP from her teammates and <color=#f29e38ff>increases Jingliu's ATK</color> according to the total HP consumed. When Syzygy stacks become 0, exits the Spectral Transmigration state.",
 			"ElementType": "Ice",
 			"Levels": {
@@ -34574,6 +34574,1041 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1409/SkillIcon_1409_Maze.png"
 		},
 		"VersionAdded": "3.3"
+	},
+	"1410": {
+		"Id": "1410",
+		"Name": "Hysilens",
+		"BasicATK": {
+			"Id": "141001",
+			"Name": "Aeolian Mode: Echoes in Still Waters",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 10,
+			"EffectRaw": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hysilens's ATK to one designated enemy.",
+			"AbridgedEffect": "Deals minor Physical DMG to one enemy.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5,
+						1,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6,
+						1,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7,
+						1,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8,
+						1,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9,
+						1,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						1,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1,
+						1,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2,
+						1,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3,
+						1,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						1,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1410/SkillIcon_1410_Normal.png"
+		},
+		"Skill": {
+			"Id": "141002",
+			"Name": "Overtone Hum: Chorus After Dark Tides",
+			"TriggerKey": "Skill02",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Has a <unbreak>#2[i]%</unbreak> <u>base chance</u> to increase the DMG taken by all enemies by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, lasting for <unbreak>#4[i]</unbreak> turn(s). At the same time, deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hysilens's ATK to all enemies.",
+			"AbridgedEffect": "There is a high chance to increase the DMG taken by all enemies, and deals Physical DMG to them.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.7,
+						1,
+						0.1,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.77,
+						1,
+						0.11,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						1,
+						0.12,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.91,
+						1,
+						0.13,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.98,
+						1,
+						0.14,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.05,
+						1,
+						0.15,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1375,
+						1,
+						0.1625,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.225,
+						1,
+						0.175,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3125,
+						1,
+						0.1875,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						1,
+						0.2,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.47,
+						1,
+						0.21,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.54,
+						1,
+						0.22,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.61,
+						1,
+						0.23,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.68,
+						1,
+						0.24,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1.75,
+						1,
+						0.25,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1410/SkillIcon_1410_BP.png"
+		},
+		"Ultimate": {
+			"Id": "141003",
+			"Name": "Maelstrom Rhapsody",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Hysilens deploys a Zone that reduces enemy targets' ATK by <unbreak>#6[f1]%</unbreak> and DEF by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>, and deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hysilens's ATK to all enemies.\nFor every 1 instance of DoT taken by an enemy target within the Zone, Hysilens deals Physical DoT equal to <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of her ATK to them. This damage triggers at the start of each turn or after one attack by an ally target, up to <unbreak>#5[i]</unbreak> time(s). And it cannot repeatedly trigger this effect.\nThe Zone lasts for <unbreak>#2[i]</unbreak> turn(s) and this duration decreases by 1 at the start of this unit's every turn. When Hysilens gets <u>knocked down</u>, the Zone will also be dispelled.",
+			"AbridgedEffect": "Deploys Zone, causes all enemies to <color=#f29e38ff>reduce ATK and DEF</color>, and deals Physical DMG to them. While the Zone exists, for every 1 instance of DoT received by enemy targets, <color=#f29e38ff>deals 1 instance of Physical DoT</color> to them.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.2,
+						3,
+						0.15,
+						0.32,
+						8,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.28,
+						3,
+						0.16,
+						0.3728,
+						8,
+						0.15
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.36,
+						3,
+						0.17,
+						0.4256,
+						8,
+						0.15
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.44,
+						3,
+						0.18,
+						0.4784,
+						8,
+						0.15
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.52,
+						3,
+						0.19,
+						0.5312,
+						8,
+						0.15
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.6,
+						3,
+						0.2,
+						0.584,
+						8,
+						0.15
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.7,
+						3,
+						0.2125,
+						0.632,
+						8,
+						0.15
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.8,
+						3,
+						0.225,
+						0.68,
+						8,
+						0.15
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.9,
+						3,
+						0.2375,
+						0.74,
+						8,
+						0.15
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						3,
+						0.25,
+						0.8,
+						8,
+						0.15
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.08,
+						3,
+						0.26,
+						0.84,
+						8,
+						0.15
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.16,
+						3,
+						0.27,
+						0.88,
+						8,
+						0.15
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.24,
+						3,
+						0.28,
+						0.92,
+						8,
+						0.15
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.32,
+						3,
+						0.29,
+						0.96,
+						8,
+						0.15
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.4,
+						3,
+						0.3,
+						1,
+						8,
+						0.15
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1410/SkillIcon_1410_Ultra.png"
+		},
+		"Talent": {
+			"Id": "141004",
+			"Name": "Sirenic Serenade",
+			"TriggerKey": "SkillP01",
+			"TagType": "Impair",
+			"TagTypeText": "Impair",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "When an ally target attacks, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> for Hysilens to inflict the hit enemy target with one of the following states: Wind Shear, Bleed, Burn, or Shock. Priority is given to inflicting a different state.\nWhile in the Wind Shear/Burn/Shock state, at the start of each turn, the enemy target takes Wind/Fire/Lightning DoT equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Hysilens's ATK for <unbreak>#5[i]</unbreak> turn(s).\nWhile in the Bleed state, at the start of each turn, the enemy target takes Physical DoT equal to <unbreak>#3[f1]%</unbreak> of their Max HP, up to <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Hysilens's ATK, lasting for <unbreak>#5[i]</unbreak> turn(s).",
+			"AbridgedEffect": "When an ally target attacks, Hysilens has a high chance to inflict the hit enemy target with one of the following states: <color=#f29e38ff>Wind Shear/Bleed/Burn/Shock</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.1,
+						0.2,
+						0.1,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						0.1165,
+						0.2,
+						0.1165,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						0.133,
+						0.2,
+						0.133,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						0.1495,
+						0.2,
+						0.1495,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						0.166,
+						0.2,
+						0.166,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.1825,
+						0.2,
+						0.1825,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						0.1975,
+						0.2,
+						0.1975,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						0.2125,
+						0.2,
+						0.2125,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						0.2313,
+						0.2,
+						0.2313,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						0.25,
+						0.2,
+						0.25,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						0.2625,
+						0.2,
+						0.2625,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						0.275,
+						0.2,
+						0.275,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						0.2875,
+						0.2,
+						0.2875,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						0.3,
+						0.2,
+						0.3,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.3125,
+						0.2,
+						0.3125,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1410/SkillIcon_1410_Passive.png"
+		},
+		"Technique": {
+			"Id": "141007",
+			"Name": "At Ocean's Abode",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Impair",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "After using Technique, creates a Special Dimension that lasts for <unbreak>#1[i]</unbreak> seconds and automatically moves forward. Enemies within the Special Dimension enter the \"Soulstruck\" state. \"Soulstruck\" enemies will not attack ally targets and will follow the dimension while it persists.\nAfter entering combat with \"Soulstruck\" enemies, there is a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict each enemy target with <unbreak>#3[i]</unbreak> of the following states: Wind Shear/Bleed/Burn/Shock, all of which are equivalent to those provided by Hysilens's Talent effect. Only 1 Dimension Effect created by allies can exist at the same time.",
+			"AbridgedEffect": "Creates a Special Dimension. Enemies within the dimension will not attack ally targets. After entering combat with enemies within the dimension, there's a high chance to inflict <color=#f29e38ff><unbreak>#3[i]</unbreak></color> state(s) from <color=#f29e38ff>Wind Shear/Bleed/Burn/Shock</color> on each enemy target.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						1,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1410/SkillIcon_1410_Maze.png"
+		},
+		"VersionAdded": "3.5"
+	},
+	"1412": {
+		"Id": "1412",
+		"Name": "Cerydra",
+		"BasicATK": {
+			"Id": "141201",
+			"Name": "King's Castling",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Single Target",
+			"SkillTypeText": "Basic ATK",
+			"MaxLevel": 10,
+			"EffectRaw": "Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Cerydra's ATK to one designated enemy.",
+			"AbridgedEffect": "Deals minor Wind DMG to one enemy.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1412/SkillIcon_1412_Normal.png"
+		},
+		"Skill": {
+			"Id": "141202",
+			"Name": "Pawn's Promotion",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Skill",
+			"MaxLevel": 15,
+			"EffectRaw": "Grants \"Military Merit\" to one designated ally character and gives Cerydra <unbreak>#2[i]</unbreak> points of Charge. Charge is capped at <unbreak>#3[i]</unbreak> points. When Charge reaches <unbreak>#4[i]</unbreak> points, automatically upgrades the character's \"Military Merit\" to \"Peerage\" and dispels their <u>Crowd Control debuffs</u>. The character with \"Peerage\" is considered to have \"Military Merit\" simultaneously. The character with \"Peerage\" increases the CRIT DMG for their dealt Skill DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, increases their All-Type <u>RES PEN</u> by <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>, and triggers <u>Coup de Main</u> when using their Skill on enemy targets. After <u>Coup de Main</u> ends, consumes <unbreak>#4[i]</unbreak> points of Charge to revert \"Peerage\" to \"Military Merit.\"",
+			"AbridgedEffect": "Grants \"Military Merit\" to an ally character and gives Charge to Cerydra. When Charge reaches <color=#f29e38ff><unbreak>#4[i]</unbreak></color> points, automatically upgrades the ally character's \"Military Merit\" to \"Peerage.\" The character with \"Peerage\" <color=#f29e38ff>increases the CRIT DMG for their dealt Skill DMG, increases All-Type <u>RES PEN</u></color>, and can trigger <color=#f29e38ff><u>Coup de Main</u></color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.36,
+						1,
+						8,
+						6,
+						0.08
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.396,
+						1,
+						8,
+						6,
+						0.082
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.432,
+						1,
+						8,
+						6,
+						0.084
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.468,
+						1,
+						8,
+						6,
+						0.086
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.504,
+						1,
+						8,
+						6,
+						0.088
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.54,
+						1,
+						8,
+						6,
+						0.09
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.585,
+						1,
+						8,
+						6,
+						0.0925
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.63,
+						1,
+						8,
+						6,
+						0.095
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.675,
+						1,
+						8,
+						6,
+						0.0975
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.72,
+						1,
+						8,
+						6,
+						0.1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.756,
+						1,
+						8,
+						6,
+						0.102
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.792,
+						1,
+						8,
+						6,
+						0.104
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.828,
+						1,
+						8,
+						6,
+						0.106
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.864,
+						1,
+						8,
+						6,
+						0.108
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.9,
+						1,
+						8,
+						6,
+						0.11
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1412/SkillIcon_1412_BP.png"
+		},
+		"Ultimate": {
+			"Id": "141203",
+			"Name": "Scholar's Mate",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "AoE",
+			"SkillTypeText": "Ultimate",
+			"MaxLevel": 15,
+			"EffectRaw": "Gains <unbreak>#2[i]</unbreak> Charge. Deals Wind DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Cerydra's ATK to all enemies. If no character on the field has \"Military Merit,\" prioritizes granting \"Military Merit\" to the first character in the current team.",
+			"AbridgedEffect": "Gains Charge. Deals Wind DMG to all enemies.",
+			"ElementType": "Wind",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.44,
+						2
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.536,
+						2
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1.632,
+						2
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.728,
+						2
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.824,
+						2
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.92,
+						2
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.04,
+						2
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.16,
+						2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.28,
+						2
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2.4,
+						2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2.496,
+						2
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2.592,
+						2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2.688,
+						2
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2.784,
+						2
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2.88,
+						2
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1412/SkillIcon_1412_Ultra.png"
+		},
+		"Talent": {
+			"Id": "141204",
+			"Name": "Ave Imperator",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "The character with \"Military Merit\" increases ATK by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Cerydra's ATK. When the character uses Basic ATK or Skill, Cerydra gains <unbreak>#1[i]</unbreak> Charge. During <u>Coup de Main</u>, Cerydra cannot gain Charge. After the character with \"Military Merit\" uses an attack, Cerydra additionally deals 1 instance of Wind <u>Additional DMG</u> equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of her ATK. This effect can trigger up to <unbreak>#4[i]</unbreak> time(s). The trigger count resets every time Cerydra uses her Ultimate. \"Military Merit\" only takes effect on the most recent target. When the target changes, Cerydra's Charge is reset to 0.",
+			"AbridgedEffect": "The character with \"Military Merit\" <color=#f29e38ff>increases their ATK</color>. And when they use Basic ATK or Skill, Cerydra gains Charge. After the character with \"Military Merit\" uses an attack, Cerydra additionally deals minor Wind <u>Additional DMG</u>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.18,
+						0.3,
+						20
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						0.186,
+						0.33,
+						20
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						0.192,
+						0.36,
+						20
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						0.198,
+						0.39,
+						20
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						0.204,
+						0.42,
+						20
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.21,
+						0.45,
+						20
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						0.2175,
+						0.4875,
+						20
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						0.225,
+						0.525,
+						20
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						0.2325,
+						0.5625,
+						20
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						0.24,
+						0.6,
+						20
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						0.246,
+						0.63,
+						20
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						0.252,
+						0.66,
+						20
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						0.258,
+						0.69,
+						20
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						0.264,
+						0.72,
+						20
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.27,
+						0.75,
+						20
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1412/SkillIcon_1412_Passive.png"
+		},
+		"Technique": {
+			"Id": "141207",
+			"Name": "First-Move Advantage",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "Support",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "After using Technique, gains \"Military Merit.\" When switching the active character, \"Military Merit\" transfers to the current active character. At the start of the next battle, automatically uses Skill 1 time on the character with \"Military Merit\" without consuming any Skill Points.",
+			"AbridgedEffect": "Grants \"Military Merit\" to the current active character. Automatically uses Skill on the character with \"Military Merit\" at the start of the next battle.",
+			"Levels": {
+				"1": {
+					"EffectValues": []
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1412/SkillIcon_1412_Maze.png"
+		},
+		"VersionAdded": "3.5"
 	},
 	"8001": {
 		"Id": "8001",

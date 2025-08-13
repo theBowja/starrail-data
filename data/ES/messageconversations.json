@@ -4741,6 +4741,120 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"10704": {
+		"Id": "10704",
+		"ContactId": "1009",
+		"ParticpatingContactIds": [
+			"1009",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1070400",
+				"StartingMessageId": "107040000",
+				"Messages": {
+					"107040000": {
+						"Id": "107040000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/111005.png",
+						"Text": "[Taza de té]",
+						"NextMessageId": "107040001"
+					},
+					"107040001": {
+						"Id": "107040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "{NICKNAME}, gracias por tu arduo trabajo y por tu gran apoyo al experimento de la IA Herta.",
+						"NextMessageId": "107040002"
+					},
+					"107040002": {
+						"Id": "107040002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Ya he transferido los fondos del experimento, revisa tu cuenta.",
+						"NextMessageId": "choice3"
+					},
+					"107040003": {
+						"Id": "107040003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Por cierto, ¿este experimento ya terminó? ¿Hay alguna noticia sobre planes futuros o algo así?",
+						"NextMessageId": "107040004"
+					},
+					"107040004": {
+						"Id": "107040004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "La señora Herta lo encontró interesante, pero como no le aportó ninguna inspiración sustancial, al final me hizo borrar la base de datos.",
+						"NextMessageId": "107040007"
+					},
+					"107040005": {
+						"Id": "107040005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Qué fondos del experimento? No me digas que otra vez me estás pagando con tu propio dinero.",
+						"NextMessageId": "107040006"
+					},
+					"107040006": {
+						"Id": "107040006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/30001.png",
+						"Text": "[Risa malévola]",
+						"NextMessageId": "107040007"
+					},
+					"107040007": {
+						"Id": "107040007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Ah, cierto... Hay algo interesante, la señora Herta dijo: \"Mi versión digital tiene una valoración más alta de {NICKNAME} de lo que esperaba\".",
+						"NextMessageId": "107040008"
+					},
+					"107040008": {
+						"Id": "107040008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Eso es precisamente lo que quería comprobar el experimento: si la copia puede poseer el mismo juicio e inteligencia que el original.",
+						"NextMessageId": "107040009"
+					},
+					"107040009": {
+						"Id": "107040009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "Por lo que veo, la IA Herta parece... más generosa con los elogios. Humm, no estoy segura. Aunque... quizás esa sea la razón por la que la señora Herta decidió abandonar el experimento."
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "(Preguntar por planes futuros).",
+								"NextMessageId": "107040003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "... ¿Otra vez estás pagando de tu propio bolsillo?",
+								"NextMessageId": "107040005"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
 	"11100": {
 		"Id": "11100",
 		"ContactId": "2",
@@ -61917,6 +62031,298 @@
 		],
 		"VersionAdded": "3.4"
 	},
+	"14534": {
+		"Id": "14534",
+		"ContactId": "199",
+		"ParticpatingContactIds": [
+			"199",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1453400",
+				"StartingMessageId": "145340000",
+				"Messages": {
+					"145340000": {
+						"Id": "145340000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "{NICKNAME}, sobre Apolonio",
+						"NextMessageId": "choice1"
+					},
+					"145340001": {
+						"Id": "145340001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Lo siento, no pude encontrarlo.",
+						"NextMessageId": "145340004"
+					},
+					"145340002": {
+						"Id": "145340002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Tal vez deberíamos dejar de buscarlo.",
+						"NextMessageId": "145340003"
+					},
+					"145340003": {
+						"Id": "145340003",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Quizás tiene asuntos que atender.",
+						"NextMessageId": "145340004"
+					},
+					"145340004": {
+						"Id": "145340004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "No, no...",
+						"NextMessageId": "145340005"
+					},
+					"145340005": {
+						"Id": "145340005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "Tecleo muy despacio. Lo que quería decir es que",
+						"NextMessageId": "145340006"
+					},
+					"145340006": {
+						"Id": "145340006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "Ya hemos encontrado a Apolonio. Ya puedes volver al banquete."
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "No pude encontrarlo.",
+								"NextMessageId": "145340001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Dejemos de buscarlo.",
+								"NextMessageId": "145340002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14536": {
+		"Id": "14536",
+		"ContactId": "193",
+		"ParticpatingContactIds": [
+			"193"
+		],
+		"Sections": [
+			{
+				"Id": "1453600",
+				"StartingMessageId": "145360000",
+				"Messages": {
+					"145360000": {
+						"Id": "145360000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "Ya has encontrado todas las ninfas de Costa Melodiosa, distinguid{F#a}{M#o} visitante...",
+						"NextMessageId": "145360001"
+					},
+					"145360001": {
+						"Id": "145360001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "Igual que antes, aquí ha aparecido una ninfa más y... un extraño dispositivo.",
+						"NextMessageId": "145360002"
+					},
+					"145360002": {
+						"Id": "145360002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "Ven a echar un vistazo si tienes tiempo."
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14537": {
+		"Id": "14537",
+		"ContactId": "200",
+		"ParticpatingContactIds": [
+			"8001",
+			"200"
+		],
+		"Sections": [
+			{
+				"Id": "1453700",
+				"StartingMessageId": "145370000",
+				"Messages": {
+					"145370000": {
+						"Id": "145370000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Buscando señal...",
+						"NextMessageId": "145370001"
+					},
+					"145370001": {
+						"Id": "145370001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Conexión inestable",
+						"NextMessageId": "145370002"
+					},
+					"145370002": {
+						"Id": "145370002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "¡Hola, soy yo! ¿Me extrañaste?",
+						"NextMessageId": "choice3"
+					},
+					"145370003": {
+						"Id": "145370003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Te extrañé un poco, ¿dónde estás?",
+						"NextMessageId": "145370008"
+					},
+					"145370004": {
+						"Id": "145370004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "No bromees, no es un adiós para siempre.",
+						"NextMessageId": "145370005"
+					},
+					"145370005": {
+						"Id": "145370005",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "¿Dónde estás? ¿Cuándo vuelves?",
+						"NextMessageId": "145370008"
+					},
+					"145370006": {
+						"Id": "145370006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Hemos cumplido nuestra misión.",
+						"NextMessageId": "145370007"
+					},
+					"145370007": {
+						"Id": "145370007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "¿Dónde te has escondido? ¿Cuándo volverás?",
+						"NextMessageId": "145370008"
+					},
+					"145370008": {
+						"Id": "145370008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Error en el envío del mensaje.",
+						"NextMessageId": "145370009"
+					},
+					"145370009": {
+						"Id": "145370009",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "El usuario no se encuentra en el área de servicio. Inténtalo más tarde.",
+						"NextMessageId": "145370010"
+					},
+					"145370010": {
+						"Id": "145370010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Déjame adivinar... ¿Pensaste que me estaba escondiendo y quieres saber dónde?",
+						"NextMessageId": "145370011"
+					},
+					"145370011": {
+						"Id": "145370011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "La respuesta es... ¡magia!",
+						"NextMessageId": "145370012"
+					},
+					"145370012": {
+						"Id": "145370012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Antes de partir, dejé este mensaje en Elisios usando la magia de las hadas.",
+						"NextMessageId": "145370013"
+					},
+					"145370013": {
+						"Id": "145370013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Como no podré volver por un tiempo, no quería que te sintieras sol{F#a}{M#o} y triste.",
+						"NextMessageId": "145370014"
+					},
+					"145370014": {
+						"Id": "145370014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "¡Pero no te preocupes! En Elisios, aún perduran muchos de nuestros recuerdos.",
+						"NextMessageId": "145370015"
+					},
+					"145370015": {
+						"Id": "145370015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "Te dejé una carta, ¡no olvides ir a recogerla al Patio ceremonial!"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Sí, un poco. ¡Vuelve!",
+								"NextMessageId": "145370003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¡No bromees!",
+								"NextMessageId": "145370004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Dónde te escondes?",
+								"NextMessageId": "145370006"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
 	"20001": {
 		"Id": "20001",
 		"ContactId": "1001",
@@ -115483,6 +115889,578 @@
 			}
 		],
 		"VersionAdded": "3.4"
+	},
+	"20192": {
+		"Id": "20192",
+		"ContactId": "1410",
+		"ParticpatingContactIds": [
+			"8001",
+			"1410"
+		],
+		"Sections": [
+			{
+				"Id": "2019200",
+				"StartingMessageId": "201920000",
+				"Messages": {
+					"201920000": {
+						"Id": "201920000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Buscando señal...",
+						"NextMessageId": "201920001"
+					},
+					"201920001": {
+						"Id": "201920001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Conexión inestable",
+						"NextMessageId": "201920002"
+					},
+					"201920002": {
+						"Id": "201920002",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Archivo adjunto \"♫ Sonido de las olas ♫\" enviado",
+						"NextMessageId": "201920003"
+					},
+					"201920003": {
+						"Id": "201920003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Pescadilla gris, ¿me escuchas? Espera, ¿me escuchas? [Ruido detectado, irreconocible]",
+						"NextMessageId": "201920004"
+					},
+					"201920004": {
+						"Id": "201920004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920005"
+					},
+					"201920005": {
+						"Id": "201920005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Deberíamos haber compartido hidromiel y haber bailado junt{F#a}{M#o}s, como lo hacíamos cada vez que regresábamos de una batalla. Pero sé que tus pasos no se detendrán aquí, el camino que tienes por delante será aún más peligroso. Es una lástima que no hayamos podido celebrar un banquete en tu honor por la victoria.",
+						"NextMessageId": "201920006"
+					},
+					"201920006": {
+						"Id": "201920006",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920007"
+					},
+					"201920007": {
+						"Id": "201920007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "El sonido de las olas me ha acompañado durante mil años, te lo regalo junto con mi canción favorita. Relájate y que tengas dulces sueños.",
+						"NextMessageId": "201920008"
+					},
+					"201920008": {
+						"Id": "201920008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920009"
+					},
+					"201920009": {
+						"Id": "201920009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ El viento recita poesía, la nieve cae, la tormenta cesa, y las hojas rotas se elevan ♫",
+						"NextMessageId": "201920010"
+					},
+					"201920010": {
+						"Id": "201920010",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920011"
+					},
+					"201920011": {
+						"Id": "201920011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ El hidromiel agita las olas, la espuma florece como pétalos, cantemos juntos en esta última celebración ♫",
+						"NextMessageId": "201920012"
+					},
+					"201920012": {
+						"Id": "201920012",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920013"
+					},
+					"201920013": {
+						"Id": "201920013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ Vestidos dorados, fuegos artificiales azules, ardiendo en la punta de la hoja de mi espada ♫",
+						"NextMessageId": "201920014"
+					},
+					"201920014": {
+						"Id": "201920014",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920015"
+					},
+					"201920015": {
+						"Id": "201920015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ Oh, olas del mar, no las alejen, no se aparten de mi corazón ♫",
+						"NextMessageId": "201920016"
+					},
+					"201920016": {
+						"Id": "201920016",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920017"
+					},
+					"201920017": {
+						"Id": "201920017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ Un nuevo amanecer está por surgir, marea, ¿por qué te retiras? ♫",
+						"NextMessageId": "201920018"
+					},
+					"201920018": {
+						"Id": "201920018",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920019"
+					},
+					"201920019": {
+						"Id": "201920019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫ ¿Por qué te alejas? ♫",
+						"NextMessageId": "201920020"
+					},
+					"201920020": {
+						"Id": "201920020",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920021"
+					},
+					"201920021": {
+						"Id": "201920021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "[Volumen demasiado bajo, voz no detectada]",
+						"NextMessageId": "201920022"
+					},
+					"201920022": {
+						"Id": "201920022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Pescadilla gris, que las suaves olas del mar te acompañen en cada paso que des hacia adelante.",
+						"NextMessageId": "201920023"
+					},
+					"201920023": {
+						"Id": "201920023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920024"
+					},
+					"201920024": {
+						"Id": "201920024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Por cierto, ese mar de más allá del cielo, ¿viene de tus recuerdos, verdad?",
+						"NextMessageId": "201920025"
+					},
+					"201920025": {
+						"Id": "201920025",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920026"
+					},
+					"201920026": {
+						"Id": "201920026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Sí. Me gusta mucho, mucho.",
+						"NextMessageId": "201920027"
+					},
+					"201920027": {
+						"Id": "201920027",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "201920028"
+					},
+					"201920028": {
+						"Id": "201920028",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Conexión inestable",
+						"NextMessageId": "201920029"
+					},
+					"201920029": {
+						"Id": "201920029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "Si... lo reciben. Por favor, ayuda. Preserva... belleza. Yo. No puedo. Mis sentimientos. Adiós. Si pudiera, hacia ti... Yo verdaderamente. Lo espero.",
+						"NextMessageId": "201920030"
+					},
+					"201920030": {
+						"Id": "201920030",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Mensaje de voz convertido en texto",
+						"NextMessageId": "choice31"
+					},
+					"201920031": {
+						"Id": "201920031",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Lo escuché, es un canto hermoso.",
+						"NextMessageId": "201920032"
+					},
+					"201920032": {
+						"Id": "201920032",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Todo el mundo también podrá oírlo.",
+						"NextMessageId": "201920036"
+					},
+					"201920033": {
+						"Id": "201920033",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Entonces, cuando nos volvamos a encontrar con todos...",
+						"NextMessageId": "201920034"
+					},
+					"201920034": {
+						"Id": "201920034",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "¡Cantémosla otra vez!",
+						"NextMessageId": "201920036"
+					},
+					"201920035": {
+						"Id": "201920035",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Cuándo podremos volver a vernos?",
+						"NextMessageId": "201920036"
+					},
+					"201920036": {
+						"Id": "201920036",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Error en el envío del mensaje.",
+						"NextMessageId": "201920037"
+					},
+					"201920037": {
+						"Id": "201920037",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "El usuario no se encuentra en el área de servicio. Inténtalo más tarde."
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Lo escuché",
+								"NextMessageId": "201920031"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¡Cantémosla otra vez!",
+								"NextMessageId": "201920033"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Cuándo podremos volver a vernos?",
+								"NextMessageId": "201920035"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"20193": {
+		"Id": "20193",
+		"ContactId": "1412",
+		"ParticpatingContactIds": [
+			"8001",
+			"1412"
+		],
+		"Sections": [
+			{
+				"Id": "2019300",
+				"StartingMessageId": "201930000",
+				"Messages": {
+					"201930000": {
+						"Id": "201930000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Buscando señal...",
+						"NextMessageId": "201930001"
+					},
+					"201930001": {
+						"Id": "201930001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Conexión inestable",
+						"NextMessageId": "201930002"
+					},
+					"201930002": {
+						"Id": "201930002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Salvado{F#ra}{M#r}, tus recuerdos son verdaderamente sorprendentes.",
+						"NextMessageId": "201930003"
+					},
+					"201930003": {
+						"Id": "201930003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Belobog tiene un clima similar al de mi tierra natal, Hiperión.",
+						"NextMessageId": "201930004"
+					},
+					"201930004": {
+						"Id": "201930004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "La Alianza Xianzhou, que hace de sus naves su nación, posee el espíritu audaz de conquistar los cuatro rincones del mundo.",
+						"NextMessageId": "201930005"
+					},
+					"201930005": {
+						"Id": "201930005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Colonipenal, aquel país embriagado de sueños, me resulta familiar.",
+						"NextMessageId": "201930006"
+					},
+					"201930006": {
+						"Id": "201930006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123014.png",
+						"Text": "[Justo]",
+						"NextMessageId": "201930007"
+					},
+					"201930007": {
+						"Id": "201930007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Cuando se rompa la \"Ley\" que mantiene prisionero a Amphoreus, los hijos de la humanidad podrán viajar hacia las estrellas del cosmos y dejar su glorioso legado.",
+						"NextMessageId": "201930008"
+					},
+					"201930008": {
+						"Id": "201930008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Los excelentes diseños de Dux Tejedora de Oro no son inferiores a los de los seguidores de la Belleza.",
+						"NextMessageId": "201930009"
+					},
+					"201930009": {
+						"Id": "201930009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "El talento de Dux Fatorum para unir a la gente es mejor que el de los seguidores de la Armonía.",
+						"NextMessageId": "201930010"
+					},
+					"201930010": {
+						"Id": "201930010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Con esas locas ideas suyas, Dux Celeripes seguramente pondrá el cosmos patas arriba. Me encantaría ver su enfrentamiento con los Bufones Enmascarados.",
+						"NextMessageId": "201930011"
+					},
+					"201930011": {
+						"Id": "201930011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Y Dux Gladiorum, en ese camino hacia la Nihilidad, creo que finalmente agitará las aguas estancadas.",
+						"NextMessageId": "201930012"
+					},
+					"201930012": {
+						"Id": "201930012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "No permitiremos que esta luz se desvanezca entre el polvo.",
+						"NextMessageId": "201930013"
+					},
+					"201930013": {
+						"Id": "201930013",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123015.png",
+						"Text": "[General]",
+						"NextMessageId": "201930014"
+					},
+					"201930014": {
+						"Id": "201930014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Salvado{F#ra}{M#r}, por favor, crea el futuro de Amphoreus en mi nombre.",
+						"NextMessageId": "201930015"
+					},
+					"201930015": {
+						"Id": "201930015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Si pudiera volver de nuevo, Amphoreus podría dirigirse hacia el cosmos.",
+						"NextMessageId": "201930016"
+					},
+					"201930016": {
+						"Id": "201930016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Todos los planetas, célebres y desconocidos",
+						"NextMessageId": "201930017"
+					},
+					"201930017": {
+						"Id": "201930017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Como tú elijas.",
+						"NextMessageId": "201930018"
+					},
+					"201930018": {
+						"Id": "201930018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "Grabaré tu nombre, {NICKNAME}.",
+						"NextMessageId": "choice19"
+					},
+					"201930019": {
+						"Id": "201930019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Amphoreus no olvidará tu nombre.",
+						"NextMessageId": "201930022"
+					},
+					"201930020": {
+						"Id": "201930020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¿Es tan generosa?",
+						"NextMessageId": "201930022"
+					},
+					"201930021": {
+						"Id": "201930021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "¡Prometido, nos vemos en el cosmos!",
+						"NextMessageId": "201930022"
+					},
+					"201930022": {
+						"Id": "201930022",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Error en el envío del mensaje.",
+						"NextMessageId": "201930023"
+					},
+					"201930023": {
+						"Id": "201930023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "El usuario no se encuentra en el área de servicio. Inténtalo más tarde."
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "¡Emperatriz! ¡Emperatriz!",
+								"NextMessageId": "201930019"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¿Es tan generosa?",
+								"NextMessageId": "201930020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "¡Nos vemos!",
+								"NextMessageId": "201930021"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
 	},
 	"20998": {
 		"Id": "20998",

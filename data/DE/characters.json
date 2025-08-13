@@ -220,7 +220,7 @@
 			{
 				"Id": "100602",
 				"Name": "Zombienetzwerk",
-				"Effect": "Tritt ein Gegner in den Kampf ein, wird sein Effekt-WDS um 20% reduziert."
+				"Effect": "Beim Kampfeintritt eines Gegners wird sein Effekt-WDS um 20% reduziert."
 			},
 			{
 				"Id": "100603",
@@ -1035,7 +1035,7 @@
 			{
 				"Id": "120501",
 				"Name": "Eine Schwertlänge, tausend Höllentiefen",
-				"Effect": "Blades Ultimate verursacht bei einem anvisierten Gegner zusätzlich erhöhten SCH, wobei der erhöhte Betrag 150% seiner gesamten im aktuellen Kampf verlorenen LP beträgt.\nDie berechneten LP, die Blade im aktuellen Kampf insgesamt verloren hat, werden auf 90% seiner max. LP begrenzt. Nachdem er seinen Ultimate eingesetzt hat, wird dieser Wert zurückgesetzt und neu berechnet."
+				"Effect": "Blades Ultimate verursacht bei einem anvisierten Gegner zusätzlich erhöhten SCH, wobei der erhöhte Betrag 150% seiner gesamten im aktuellen Kampf verlorenen LP beträgt.\nDer im aktuellen Kampf angesammelte LP-Verlust wird auf 90% seiner max. LP begrenzt. Nachdem er seinen Ultimate eingesetzt hat, wird dieser Wert zurückgesetzt und neu berechnet."
 			},
 			{
 				"Id": "120502",
@@ -1337,7 +1337,7 @@
 			{
 				"Id": "121204",
 				"Name": "Hochgehaltenes Mondlicht",
-				"Effect": "Im Status „Seelenwanderung“ wird der ANG, der durch den Verbrauch der LP von Verbündeten erhalten wird, zusätzlich um 90% der insgesamt verbrauchten Menge der LP aller Verbündeten erhöht. Die Obergrenze für den auf diese Weise verstärkten ANG wird um 30% erhöht."
+				"Effect": "Im Status „Seelenwanderung“ wird der ANG, der durch den Verbrauch der LP von Teammitgliedern erhalten wird, zusätzlich um 90% der insgesamt verbrauchten Menge der LP aller Verbündeten erhöht. Die Obergrenze für den auf diese Weise verstärkten ANG wird um 30% erhöht."
 			},
 			{
 				"Id": "121205",
@@ -1347,7 +1347,7 @@
 			{
 				"Id": "121206",
 				"Name": "Finsternis zum Nichts",
-				"Effect": "Wenn Jingliu in den Status „Seelenwanderung“ eintritt, wird das Stapelungslimit von „Lunation“ um 1 erhöht und sie erhält 1 Stapelung „Lunation“. Im Status „Seelenwanderung“ wird ihr KRIT-SCH um 50% erhöht."
+				"Effect": "Wenn Jingliu in den Status „Seelenwanderung“ eintritt, wird das Stapelungslimit von „Lunation“ um 1 erhöht und sie erhält 1 Stapelung Lunation. Im Status Seelenwanderung wird ihr KRIT-SCH um 50% erhöht."
 			}
 		],
 		"VersionAdded": "1.4"
@@ -2786,6 +2786,88 @@
 			}
 		],
 		"VersionAdded": "3.3"
+	},
+	"1410": {
+		"Id": "1410",
+		"Name": "Hysilens",
+		"ElementType": "Physical",
+		"ElementTypeText": "Physisch",
+		"PathType": "Warlock",
+		"PathTypeText": "Die Nichtigkeit",
+		"Eidolons": [
+			{
+				"Id": "141001",
+				"Name": "Du fragst, warum mein Herz so trauert",
+				"Effect": "Wenn sich Hysilens auf dem Kampffeld befindet, verursachen Verbündete DoT in Höhe von 116% des ursprünglichen SCH. Wenn Hysilens durch das Talent Gegner mit Windscherung/Bluten/Brennen/Schock belegt, besteht eine <u>Grundchance</u> von 100%, sie zusätzlich mit einem Status desselben Typs zu belegen, der dem Talenteffekt entspricht und gleichzeitig bestehen kann."
+			},
+			{
+				"Id": "141002",
+				"Name": "Du willst wissen, warum die Wellen so rauschen",
+				"Effect": "Während das Feld aktiv ist, wirkt die SCH-Erhöhung der Spur „Saiten der Perlen“ auf alle Verbündeten."
+			},
+			{
+				"Id": "141003",
+				"Name": "Weißt du, warum die Lichter vergessen",
+				"Effect": "Ultimate-Stufe +2 bis max. St. 15. Standardangriff-Stufe +1 bis max. St. 10."
+			},
+			{
+				"Id": "141004",
+				"Name": "Sieh nur, warum die Zeit dahinfließt",
+				"Effect": "Während das Feld aktiv ist, wird der WDS aller Typen aller Gegner um 20% reduziert."
+			},
+			{
+				"Id": "141005",
+				"Name": "Leise singe ich bei meiner Waschung",
+				"Effect": "Fertigkeitsstufe +2 bis max. St. 15. Talentstufe +2 bis max. St. 15."
+			},
+			{
+				"Id": "141006",
+				"Name": "Versunkene, wann kehrst du zurück",
+				"Effect": "Während das Feld aktiv ist, wird zu Beginn jeder Runde oder nach einem Einzelangriff eines Verbündeten die max. Auslösungszahl von Hysilens’ physischem DoT-Effekt auf 12 und der SCH-Multiplikator des verursachten SCH um 20% erhöht."
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"1412": {
+		"Id": "1412",
+		"Name": "Cerydra",
+		"ElementType": "Wind",
+		"ElementTypeText": "Wind",
+		"PathType": "Shaman",
+		"PathTypeText": "Die Harmonie",
+		"Eidolons": [
+			{
+				"Id": "141201",
+				"Name": "Eroberung der Kronen aller",
+				"Effect": "Die Figur mit „Militärverdienst“ ignoriert beim Verursachen von SCH 16% der VTD des Gegners. Wenn Militärverdienst zu „Adelstitel“ hochgestuft wird, ignoriert diese Figur beim Verursachen von Fertigkeits-SCH zusätzlich 20% der VTD des Gegners. Beim Einsatz von Cerydras Fertigkeit stellt sie bei einem anvisierten Verbündeten 2 Pkt. Energie wieder her."
+			},
+			{
+				"Id": "141202",
+				"Name": "Die vereinte Hoffnung vieler",
+				"Effect": "Erhöht den verursachten SCH von Figuren mit „Militärverdienst“ um 40%. Wenn sich ein Teammitglied mit Militärverdienst auf dem Kampffeld befindet, wird Cerydras verursachter SCH um 160% erhöht."
+			},
+			{
+				"Id": "141203",
+				"Name": "Verbrennen der alten Gesetze",
+				"Effect": "Fertigkeitsstufe +2 bis max. St. 15. Standardangriff-Stufe +1 bis max. St. 10."
+			},
+			{
+				"Id": "141204",
+				"Name": "Rekonstruktion der Menschenreiche",
+				"Effect": "Erhöht den SCH-Multiplikator des Ultimates um 240%."
+			},
+			{
+				"Id": "141205",
+				"Name": "Abrechnung von Gut und Böse",
+				"Effect": "Ultimate-Stufe +2 bis max. St. 15. Talentstufe +2 bis max. St. 15."
+			},
+			{
+				"Id": "141206",
+				"Name": "Reise ins Sternenmeer",
+				"Effect": "Erhöht die <u>WDS-DUR</u> aller Typen von der Figur mit „Militärverdienst“ um 20% und den Multiplikator des <u>zusätzlichen SCH</u>, der durch Militärverdienst ausgelöst wird, um 300%. Wenn sich ein Teammitglied mit Militärverdienst auf dem Kampffeld befindet, wird Cerydras <u>WDS-DUR</u> aller Typen um 20% erhöht."
+			}
+		],
+		"VersionAdded": "3.5"
 	},
 	"8001": {
 		"Id": "8001",

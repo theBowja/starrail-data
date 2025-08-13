@@ -4741,6 +4741,120 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"10704": {
+		"Id": "10704",
+		"ContactId": "1009",
+		"ParticpatingContactIds": [
+			"1009",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1070400",
+				"StartingMessageId": "107040000",
+				"Messages": {
+					"107040000": {
+						"Id": "107040000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/111005.png",
+						"Text": "[お茶をどうぞ]",
+						"NextMessageId": "107040001"
+					},
+					"107040001": {
+						"Id": "107040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "お疲れ様。デジタルヘルタ実験への協力、どうもありがとう",
+						"NextMessageId": "107040002"
+					},
+					"107040002": {
+						"Id": "107040002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "報酬はもう振り込んであるから、確認を忘れないようにね",
+						"NextMessageId": "choice3"
+					},
+					"107040003": {
+						"Id": "107040003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "実験はもう終わり{F#}{M#か}？計画の続きはないの{F#}{M#か}？",
+						"NextMessageId": "107040004"
+					},
+					"107040004": {
+						"Id": "107040004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "ミス・ヘルタにとって面白い内容ではあったみたいだけど、実用的なヒントは得られなかったって。結局データは全部削除することになったわ",
+						"NextMessageId": "107040007"
+					},
+					"107040005": {
+						"Id": "107040005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "報酬って…まさか、また自腹で{F#私}{M#俺}にボーナスを出してるんじゃない{F#よね}{M#よな}？",
+						"NextMessageId": "107040006"
+					},
+					"107040006": {
+						"Id": "107040006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/30001.png",
+						"Text": "[にやり]",
+						"NextMessageId": "107040007"
+					},
+					"107040007": {
+						"Id": "107040007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "そういえば…少し興味深い話があったわ。ミス・ヘルタが「デジタルの私の{NICKNAME}に対する評価は想定以上だった」って言ってたの",
+						"NextMessageId": "107040008"
+					},
+					"107040008": {
+						"Id": "107040008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "これってこの実験の意義そのもの——つまり、コピーはオリジナルと同じだけの判断力と知性を有しているか確かめられた、ってことじゃない？",
+						"NextMessageId": "107040009"
+					},
+					"107040009": {
+						"Id": "107040009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "今のところ、AIヘルタはどうやら…人を褒めるほうが好きみたい。うーん、私にもよくわからないけど…もしかすると、それがミス・ヘルタが実験を諦めた理由かもしれないわね"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "（実験のその後について聞く）",
+								"NextMessageId": "107040003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "…また自腹を切ったの{F#}{M#か}？",
+								"NextMessageId": "107040005"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
 	"11100": {
 		"Id": "11100",
 		"ContactId": "2",
@@ -53655,7 +53769,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "…何がしたい{F#の}{M#んだ}？そんな謎めいた感じにする必要ある{F#}{M#か}？",
+						"Text": "…何がしたい{F#の}{M#んだ}？そんな謎めいた感じにする必要はある{F#の}{M#か}？",
 						"NextMessageId": "130960009"
 					},
 					"130960009": {
@@ -61916,6 +62030,298 @@
 			}
 		],
 		"VersionAdded": "3.4"
+	},
+	"14534": {
+		"Id": "14534",
+		"ContactId": "199",
+		"ParticpatingContactIds": [
+			"199",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1453400",
+				"StartingMessageId": "145340000",
+				"Messages": {
+					"145340000": {
+						"Id": "145340000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "{NICKNAME}様、アポロニウスの件ですが",
+						"NextMessageId": "choice1"
+					},
+					"145340001": {
+						"Id": "145340001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ごめん。見つからなかった",
+						"NextMessageId": "145340004"
+					},
+					"145340002": {
+						"Id": "145340002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "その…一旦探すのやめない{F#}{M#か}？",
+						"NextMessageId": "145340003"
+					},
+					"145340003": {
+						"Id": "145340003",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "彼もいろいろ忙しいのかも",
+						"NextMessageId": "145340004"
+					},
+					"145340004": {
+						"Id": "145340004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "いえ、そうでなくてですね",
+						"NextMessageId": "145340005"
+					},
+					"145340005": {
+						"Id": "145340005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "すみません。私、ちょっと入力が遅くて。つまり…",
+						"NextMessageId": "145340006"
+					},
+					"145340006": {
+						"Id": "145340006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "アポロニウスはこちらで見つけましたので、宴にお戻りいただいて大丈夫です"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "見つからなかった",
+								"NextMessageId": "145340001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "一旦探すのやめない{F#}{M#か}？",
+								"NextMessageId": "145340002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14536": {
+		"Id": "14536",
+		"ContactId": "193",
+		"ParticpatingContactIds": [
+			"193"
+		],
+		"Sections": [
+			{
+				"Id": "1453600",
+				"StartingMessageId": "145360000",
+				"Messages": {
+					"145360000": {
+						"Id": "145360000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "「歌響く大海」のエンドモはすべて集まりました",
+						"NextMessageId": "145360001"
+					},
+					"145360001": {
+						"Id": "145360001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "以前と同様、ここにはエンドモと…奇妙な装置があります",
+						"NextMessageId": "145360002"
+					},
+					"145360002": {
+						"Id": "145360002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "お時間があれば、またいらしてください"
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14537": {
+		"Id": "14537",
+		"ContactId": "200",
+		"ParticpatingContactIds": [
+			"8001",
+			"200"
+		],
+		"Sections": [
+			{
+				"Id": "1453700",
+				"StartingMessageId": "145370000",
+				"Messages": {
+					"145370000": {
+						"Id": "145370000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号検索中",
+						"NextMessageId": "145370001"
+					},
+					"145370001": {
+						"Id": "145370001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号接続不安定",
+						"NextMessageId": "145370002"
+					},
+					"145370002": {
+						"Id": "145370002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "ハーイ、あたしに会いたくて仕方ないんじゃないかしら？",
+						"NextMessageId": "choice3"
+					},
+					"145370003": {
+						"Id": "145370003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "当たり。今どこにいる{F#の}{M#んだ}",
+						"NextMessageId": "145370008"
+					},
+					"145370004": {
+						"Id": "145370004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "冗談はいいから。永遠の別れってわけじゃない{F#でしょ}{M#だろ}？",
+						"NextMessageId": "145370005"
+					},
+					"145370005": {
+						"Id": "145370005",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "今どこ？いつ帰ってくる{F#の}{M#んだ}？",
+						"NextMessageId": "145370008"
+					},
+					"145370006": {
+						"Id": "145370006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "{F#私}{M#俺}たち、使命を果たした{F#よ}{M#ぞ}",
+						"NextMessageId": "145370007"
+					},
+					"145370007": {
+						"Id": "145370007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "どこに隠れてて、いつ帰ってくる{F#の}{M#んだ}？",
+						"NextMessageId": "145370008"
+					},
+					"145370008": {
+						"Id": "145370008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "メッセージの送信に失敗しました",
+						"NextMessageId": "145370009"
+					},
+					"145370009": {
+						"Id": "145370009",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ユーザーが圏外のため、メッセージを送信できません。しばらくしてから、再度お試しください",
+						"NextMessageId": "145370010"
+					},
+					"145370010": {
+						"Id": "145370010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "ええと、当ててみるわね…あたしが隠れてこのメッセージを書いてると思って、今どこにいるか聞きたいんでしょう？",
+						"NextMessageId": "145370011"
+					},
+					"145370011": {
+						"Id": "145370011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "ふふっ、答えは——ちょっとした魔法よ",
+						"NextMessageId": "145370012"
+					},
+					"145370012": {
+						"Id": "145370012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "出発する前に、妖精の魔法でエリュシオンにこのメッセージを仕掛けておいたの",
+						"NextMessageId": "145370013"
+					},
+					"145370013": {
+						"Id": "145370013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "だって、しばらく帰ってこれないから。あなたが寂しくなっちゃわないか心配だったの",
+						"NextMessageId": "145370014"
+					},
+					"145370014": {
+						"Id": "145370014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "でも、このエリュシオンには、あたしたちの思い出がたくさん残ってる",
+						"NextMessageId": "145370015"
+					},
+					"145370015": {
+						"Id": "145370015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "手紙を残しておいたから、祝祭の庭に行ってみてちょうだい"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "{F#うん}{M#ああ}。早く戻って{F#きて}{M#きてくれ}",
+								"NextMessageId": "145370003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "冗談はやめて",
+								"NextMessageId": "145370004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "どこに隠れてる{F#の}{M#んだ}？",
+								"NextMessageId": "145370006"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
 	},
 	"20001": {
 		"Id": "20001",
@@ -113271,7 +113677,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1403",
-						"Text": "あ、あとアナイクスもいるんだった、まだテストちてないけど…たぶん「狂気のミントアイス」だと思うな！",
+						"Text": "あ、あとアナちゃんもいるんだった、まだテストちてないけど…たぶん「狂気のミントアイス」だと思うな！",
 						"NextMessageId": "choice4"
 					},
 					"201820004": {
@@ -115483,6 +115889,578 @@
 			}
 		],
 		"VersionAdded": "3.4"
+	},
+	"20192": {
+		"Id": "20192",
+		"ContactId": "1410",
+		"ParticpatingContactIds": [
+			"8001",
+			"1410"
+		],
+		"Sections": [
+			{
+				"Id": "2019200",
+				"StartingMessageId": "201920000",
+				"Messages": {
+					"201920000": {
+						"Id": "201920000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号検索中",
+						"NextMessageId": "201920001"
+					},
+					"201920001": {
+						"Id": "201920001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号接続不安定",
+						"NextMessageId": "201920002"
+					},
+					"201920002": {
+						"Id": "201920002",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "添付ファイル『波の音♫』を送信しました",
+						"NextMessageId": "201920003"
+					},
+					"201920003": {
+						"Id": "201920003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "灰色の小魚、聞こえるか？…少し待て、どうだ？［ノイズを検知、識別不能］",
+						"NextMessageId": "201920004"
+					},
+					"201920004": {
+						"Id": "201920004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920005"
+					},
+					"201920005": {
+						"Id": "201920005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "これまでの凱旋と同じように、ワタシたちは共にメーレを酌み交わし、共に舞うはずだった。だが、キミはここに留まらないようだ。この先で待つ道は、きっとより危険なものになるだろう。キミのために勝利の宴を開けなかったことが、少しばかり心残りだ。",
+						"NextMessageId": "201920006"
+					},
+					"201920006": {
+						"Id": "201920006",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920007"
+					},
+					"201920007": {
+						"Id": "201920007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "この波の音とワタシは、千年の時を共に過ごしてきた。今、それをワタシの大切な歌と共にキミに贈ろう。くつろぎの中、良い夢を見てくれ。",
+						"NextMessageId": "201920008"
+					},
+					"201920008": {
+						"Id": "201920008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920009"
+					},
+					"201920009": {
+						"Id": "201920009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫風が詩を紡ぎ　雪は舞い散る　嵐が過ぎ去り　折れた鋒は舞い上がる♫",
+						"NextMessageId": "201920010"
+					},
+					"201920010": {
+						"Id": "201920010",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920011"
+					},
+					"201920011": {
+						"Id": "201920011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫メーレは波を呼び　泡沫は花を咲かす　最後の宴を共に過ごそう♫",
+						"NextMessageId": "201920012"
+					},
+					"201920012": {
+						"Id": "201920012",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920013"
+					},
+					"201920013": {
+						"Id": "201920013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫黄金のドレス　紺碧の炎が刃先で燃え上がる♫",
+						"NextMessageId": "201920014"
+					},
+					"201920014": {
+						"Id": "201920014",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920015"
+					},
+					"201920015": {
+						"Id": "201920015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫波よ　どうか彼らをさらわないで　この心から離れないで♫",
+						"NextMessageId": "201920016"
+					},
+					"201920016": {
+						"Id": "201920016",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920017"
+					},
+					"201920017": {
+						"Id": "201920017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫新たな黎明を迎える　潮よ　なぜ引いてゆく♫",
+						"NextMessageId": "201920018"
+					},
+					"201920018": {
+						"Id": "201920018",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920019"
+					},
+					"201920019": {
+						"Id": "201920019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫なぜ引いてゆく♫",
+						"NextMessageId": "201920020"
+					},
+					"201920020": {
+						"Id": "201920020",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920021"
+					},
+					"201920021": {
+						"Id": "201920021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "[ 音量が小さすぎるため、音声を識別できませんでした ]",
+						"NextMessageId": "201920022"
+					},
+					"201920022": {
+						"Id": "201920022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "灰色の小魚、前に進むその時、優しい波の音が共にあらんことを。",
+						"NextMessageId": "201920023"
+					},
+					"201920023": {
+						"Id": "201920023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920024"
+					},
+					"201920024": {
+						"Id": "201920024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "そうだ。あの天外の海は、キミの記憶から来たものなのだろう？",
+						"NextMessageId": "201920025"
+					},
+					"201920025": {
+						"Id": "201920025",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920026"
+					},
+					"201920026": {
+						"Id": "201920026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "とても気に入った。本当に",
+						"NextMessageId": "201920027"
+					},
+					"201920027": {
+						"Id": "201920027",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "201920028"
+					},
+					"201920028": {
+						"Id": "201920028",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号接続不安定",
+						"NextMessageId": "201920029"
+					},
+					"201920029": {
+						"Id": "201920029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "もし。受け取。代わ。保管。美し。ワタシ。できない。気持ち。さようなら。向かって。本当。心。",
+						"NextMessageId": "201920030"
+					},
+					"201920030": {
+						"Id": "201920030",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ボイスメッセージを変換しました",
+						"NextMessageId": "choice31"
+					},
+					"201920031": {
+						"Id": "201920031",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "聞こえた、とても美しい歌声だった",
+						"NextMessageId": "201920032"
+					},
+					"201920032": {
+						"Id": "201920032",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "みんなにも聞こえるはず",
+						"NextMessageId": "201920036"
+					},
+					"201920033": {
+						"Id": "201920033",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "待って{F#}{M#くれ}、みんなと再会したら",
+						"NextMessageId": "201920034"
+					},
+					"201920034": {
+						"Id": "201920034",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "もう一度歌おう！",
+						"NextMessageId": "201920036"
+					},
+					"201920035": {
+						"Id": "201920035",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "次に会えるのはいつになる？",
+						"NextMessageId": "201920036"
+					},
+					"201920036": {
+						"Id": "201920036",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "メッセージの送信に失敗しました",
+						"NextMessageId": "201920037"
+					},
+					"201920037": {
+						"Id": "201920037",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ユーザーが圏外のため、メッセージを送信できません。しばらくしてから、再度お試しください"
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "聞こえた",
+								"NextMessageId": "201920031"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "もう一度歌おう！",
+								"NextMessageId": "201920033"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "次に会えるのはいつになる？",
+								"NextMessageId": "201920035"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"20193": {
+		"Id": "20193",
+		"ContactId": "1412",
+		"ParticpatingContactIds": [
+			"8001",
+			"1412"
+		],
+		"Sections": [
+			{
+				"Id": "2019300",
+				"StartingMessageId": "201930000",
+				"Messages": {
+					"201930000": {
+						"Id": "201930000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号検索中",
+						"NextMessageId": "201930001"
+					},
+					"201930001": {
+						"Id": "201930001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "信号接続不安定",
+						"NextMessageId": "201930002"
+					},
+					"201930002": {
+						"Id": "201930002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "救世主、お前の記憶は実に素晴らしい",
+						"NextMessageId": "201930003"
+					},
+					"201930003": {
+						"Id": "201930003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "ベロブルグ、その気候は僕の故郷ヒュペルボレイオスと似ている",
+						"NextMessageId": "201930004"
+					},
+					"201930004": {
+						"Id": "201930004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "仙舟同盟、舟を国とし、四方を征する覇気を持つ",
+						"NextMessageId": "201930005"
+					},
+					"201930005": {
+						"Id": "201930005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "ピノコニー、あの夢に酔いしれた国は、どこか懐かしく思える",
+						"NextMessageId": "201930006"
+					},
+					"201930006": {
+						"Id": "201930006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123014.png",
+						"Text": "[公正]",
+						"NextMessageId": "201930007"
+					},
+					"201930007": {
+						"Id": "201930007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "オンパロスを縛る「法」が破られた時、人の子たちは群星へ旅立ち、偉大なる功績を刻むことができるだろう",
+						"NextMessageId": "201930008"
+					},
+					"201930008": {
+						"Id": "201930008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "金織卿の卓越した意匠は、「純美」の信奉者にも決して劣らない",
+						"NextMessageId": "201930009"
+					},
+					"201930009": {
+						"Id": "201930009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "運命卿の人々を結束させる力は、「調和」の使徒を凌ぐ",
+						"NextMessageId": "201930010"
+					},
+					"201930010": {
+						"Id": "201930010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "駿足卿はきっと、その突飛な発想で銀河をひっくり返してみせるだろう。彼女と仮面の愚者の掛け合いを是非とも見てみたい",
+						"NextMessageId": "201930011"
+					},
+					"201930011": {
+						"Id": "201930011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "そして剣旗卿——「虚無」へと至る道で、彼女は必ずや死水に波紋を起こすと僕は信じている",
+						"NextMessageId": "201930012"
+					},
+					"201930012": {
+						"Id": "201930012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "このような輝きを、塵に埋もれさせてはならない",
+						"NextMessageId": "201930013"
+					},
+					"201930013": {
+						"Id": "201930013",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123015.png",
+						"Text": "[チェックメイト]",
+						"NextMessageId": "201930014"
+					},
+					"201930014": {
+						"Id": "201930014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "救世主よ——どうか僕に代わり、オンパロスの未来を創ってくれ",
+						"NextMessageId": "201930015"
+					},
+					"201930015": {
+						"Id": "201930015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "もし僕が再び戻り、オンパロスが銀河へ向かうことができたなら",
+						"NextMessageId": "201930016"
+					},
+					"201930016": {
+						"Id": "201930016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "名のある星も、名もなき星も——そのどれでも",
+						"NextMessageId": "201930017"
+					},
+					"201930017": {
+						"Id": "201930017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "好きに選ぶといい",
+						"NextMessageId": "201930018"
+					},
+					"201930018": {
+						"Id": "201930018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "そこにお前の名を刻もう——{NICKNAME}",
+						"NextMessageId": "choice19"
+					},
+					"201930019": {
+						"Id": "201930019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "オンパロスは、決してその名を忘れない",
+						"NextMessageId": "201930022"
+					},
+					"201930020": {
+						"Id": "201930020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "気前がいいんだ{F#ね}{M#な}",
+						"NextMessageId": "201930022"
+					},
+					"201930021": {
+						"Id": "201930021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "じゃあ、銀河でまた会おう。約束{F#}{M#だ}！",
+						"NextMessageId": "201930022"
+					},
+					"201930022": {
+						"Id": "201930022",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "メッセージの送信に失敗しました",
+						"NextMessageId": "201930023"
+					},
+					"201930023": {
+						"Id": "201930023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "ユーザーが圏外のため、メッセージを送信できません。しばらくしてから、再度お試しください"
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "カイザー！カイザー！",
+								"NextMessageId": "201930019"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "気前がいいんだ{F#ね}{M#な}",
+								"NextMessageId": "201930020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "銀河でまた会おう！",
+								"NextMessageId": "201930021"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
 	},
 	"20998": {
 		"Id": "20998",

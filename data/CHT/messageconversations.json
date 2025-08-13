@@ -4741,6 +4741,120 @@
 		],
 		"VersionAdded": "1.6"
 	},
+	"10704": {
+		"Id": "10704",
+		"ContactId": "1009",
+		"ParticpatingContactIds": [
+			"1009",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1070400",
+				"StartingMessageId": "107040000",
+				"Messages": {
+					"107040000": {
+						"Id": "107040000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/111005.png",
+						"Text": "[遞茶]",
+						"NextMessageId": "107040001"
+					},
+					"107040001": {
+						"Id": "107040001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "{NICKNAME}，辛苦啦，感謝你對數位黑塔實驗的大力支持",
+						"NextMessageId": "107040002"
+					},
+					"107040002": {
+						"Id": "107040002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "實驗經費已經轉給你了，別忘了查收",
+						"NextMessageId": "choice3"
+					},
+					"107040003": {
+						"Id": "107040003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "話說這個實驗現在算是結束了嗎？有沒有什麼後續計畫之類的消息",
+						"NextMessageId": "107040004"
+					},
+					"107040004": {
+						"Id": "107040004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "黑塔女士覺得雖然有趣，但沒帶來什麼實質性的啟發，所以最後還是讓我刪庫了",
+						"NextMessageId": "107040007"
+					},
+					"107040005": {
+						"Id": "107040005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "什麼實驗經費，該不會又是你自掏腰包發獎金給我吧",
+						"NextMessageId": "107040006"
+					},
+					"107040006": {
+						"Id": "107040006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Image": "SpriteOutput/Emoji/30001.png",
+						"Text": "[壞笑]",
+						"NextMessageId": "107040007"
+					},
+					"107040007": {
+						"Id": "107040007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "對了…有件事滿有趣的，黑塔女士說：「數位版的我對 {NICKNAME}的評價比我想得還要高。」",
+						"NextMessageId": "107040008"
+					},
+					"107040008": {
+						"Id": "107040008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "這正是實驗的意義所在——看看複製品能否擁有與原版相同的判斷力和智慧",
+						"NextMessageId": "107040009"
+					},
+					"107040009": {
+						"Id": "107040009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1009",
+						"Text": "目前來看，AI黑塔似乎…更喜歡表揚人？唔，我也說不好。不過…可能這就是黑塔女士決定放棄實驗的原因吧"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "（打聽實驗後續）",
+								"NextMessageId": "107040003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "…又是你自掏腰包嗎？",
+								"NextMessageId": "107040005"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
 	"11100": {
 		"Id": "11100",
 		"ContactId": "2",
@@ -24434,7 +24548,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "76",
-						"Text": "【「羅浮」地衡司應急管理中心】提醒您：根據地衡司條例，打架鬥毆屬於違法行為，不僅會對他人身體健康造成威脅，還可能導致嚴重後果。請各位居民與旅客勿要輕信未經證實的小道消息，理性化解矛盾。遇到交通管制情和航道擁塞的情況，合理安排出行與返程計畫，依次有序通行，請勿佔用應急航道，嚴防二次事故。共同維護「羅浮」和諧安定的環境，人人有責！"
+						"Text": "【「羅浮」地衡司應急管理中心】提醒您：根據地衡司條例，打架鬥毆屬於違法行為，不僅會對他人身體健康造成威脅，還可能導致嚴重後果。請各位居民與旅客勿要輕信未經證實的小道消息，理性化解衝突。遇到交通管制情和航道擁塞的情況，合理安排出行與返程計畫，依次有序通行，請勿佔用應急航道，嚴防二次事故。共同維護「羅浮」和諧安定的環境，人人有責！"
 					}
 				}
 			}
@@ -37399,7 +37513,7 @@
 						"MessageType": "Text",
 						"SenderType": "PlayerAuto",
 						"SenderContactId": "8001",
-						"Text": "青雀？發生什麼了？「他們」是誰？"
+						"Text": "青雀？發生什麼事了？「他們」是誰？"
 					},
 					"choice4": {
 						"Id": "choice4",
@@ -52688,7 +52802,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "155",
-						"Text": "非常感謝您的評價！我們後續將根據本次測試的意見回饋，對遊戲內容玩法進行調整與改良，敬請期待！",
+						"Text": "非常感謝您的評價！我們後續將根據這次測試的意見回饋，對遊戲內容玩法進行調整與改良，敬請期待！",
 						"NextMessageId": "130910007"
 					},
 					"130910003": {
@@ -52696,7 +52810,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "還挺有意思的，你們再接再厲。",
+						"Text": "還滿有意思的，你們再接再厲。",
 						"NextMessageId": "130910004"
 					},
 					"130910004": {
@@ -52736,17 +52850,17 @@
 						"Choices": [
 							{
 								"ChoiceType": "Text",
-								"Text": "感覺還行吧。",
+								"Text": "感覺還可以",
 								"NextMessageId": "130910001"
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "還挺好玩的。",
+								"Text": "還滿好玩的",
 								"NextMessageId": "130910003"
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "太敷衍了吧。",
+								"Text": "太敷衍了吧",
 								"NextMessageId": "130910005"
 							}
 						]
@@ -53655,7 +53769,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "…什麼意思？搞得這麼神秘",
+						"Text": "……什麼意思？這麼神秘",
 						"NextMessageId": "130960009"
 					},
 					"130960009": {
@@ -56964,7 +57078,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1006",
-						"Text": "《模擬球籠競速：26》更新了，我去打遊戲",
+						"Text": "《模擬球籠競速：26》更新了，我去打電動",
 						"NextMessageId": "131220015"
 					},
 					"131220015": {
@@ -59891,7 +60005,7 @@
 						"Choices": [
 							{
 								"ChoiceType": "Text",
-								"Text": "我馬上到。",
+								"Text": "我馬上到",
 								"NextMessageId": "145110007"
 							},
 							{
@@ -60178,7 +60292,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "哎，其實我也想休息的，但睡不著",
+						"Text": "唉，其實我也想休息的，但睡不著",
 						"NextMessageId": "145160010"
 					},
 					"145160006": {
@@ -60218,7 +60332,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "就是，最近發生了這麼多嘛，有點想找你聊聊",
+						"Text": "就是，最近發生了這麼多事，有點想找你聊聊",
 						"NextMessageId": "145160011"
 					},
 					"145160011": {
@@ -60226,7 +60340,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "試煉失敗，樹庭，萬敵和懸鋒人，還看了緹寶老師的記憶，這些",
+						"Text": "試煉失敗、樹庭、萬敵和懸鋒人，還看了緹寶老師的記憶，這些",
 						"NextMessageId": "145160012"
 					},
 					"145160012": {
@@ -60315,7 +60429,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "實話說，事情解決歸解決，但看過緹寶老師的記憶之後，我反而越來越迷茫了",
+						"Text": "老實說，事情解決歸解決，但看過緹寶老師的記憶之後，我反而越來越迷惘了",
 						"NextMessageId": "145160023"
 					},
 					"145160023": {
@@ -60543,7 +60657,7 @@
 						"Choices": [
 							{
 								"ChoiceType": "Text",
-								"Text": "在。",
+								"Text": "在",
 								"NextMessageId": "145160001"
 							},
 							{
@@ -60553,7 +60667,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "取決於好事還是壞事。",
+								"Text": "取決於好事還是壞事",
 								"NextMessageId": "145160006"
 							}
 						]
@@ -60580,12 +60694,12 @@
 						"Choices": [
 							{
 								"ChoiceType": "Text",
-								"Text": "為了翁法羅斯的未來。",
+								"Text": "為了翁法羅斯的未來",
 								"NextMessageId": "145160025"
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "為了獲得權力和地位。",
+								"Text": "為了獲得權力和地位",
 								"NextMessageId": "145160028"
 							},
 							{
@@ -60848,7 +60962,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "寶箱？馬上到。",
+						"Text": "寶箱？馬上到",
 						"NextMessageId": "145190014"
 					},
 					"145190014": {
@@ -60894,7 +61008,7 @@
 							},
 							{
 								"ChoiceType": "Text",
-								"Text": "這就來。",
+								"Text": "馬上過去",
 								"NextMessageId": "145190013"
 							}
 						]
@@ -61579,7 +61693,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1315",
-						"Text": "各位親愛的御主：\n大家好，我是巡海遊俠波提歐。\n阿斯德納的晚風逐漸有了夏天的感覺，萬望各位領導玉體金安，不因痰火鬱熱而傷風，白白誤了這盛夏的良辰好景。\n身為一介通緝犯，卻能有幸與諸位領導一起角逐「聖杯」，我倍感榮幸。\n因此，懷著無比崇敬與感激的心情，我鄭重邀請您蒞臨「克勞克影視樂園」。我將以薄酒愚餚盛宴相待。\n在這處暑時節，「克勞克影視樂園」如詩如畫，宛若人間仙境，定會為您帶來難忘的回憶。\n如蒙應允，不勝欣喜，敬候嘉音。願此小聚成為我們關係的美好見證，亦期盼能為您帶來些許愉悅與放鬆。\n順致崇高的敬意與衷心的祝福。\n此致，\n敬禮！\n您卑微的\n波提歐"
+						"Text": "各位親愛的御主：\n大家好，我是巡海遊俠波提歐。\n阿斯德納的晚風逐漸有了夏天的感覺，萬望各位玉體金安，不因痰火鬱熱而傷風，白白誤了這盛夏的良辰好景。\n身為一介通緝犯，卻能有幸與諸位領導一起角逐「聖杯」，我備感榮幸。\n因此，懷著無比崇敬與感激的心情，在下鄭重邀請您蒞臨「克勞克影視樂園」。我將以薄酒寒餚盛宴相待。\n在這處暑時節，「克勞克影視樂園」如詩如畫，宛若人間仙境，定會為您帶來難忘的回憶。\n如蒙應允，不勝欣喜，敬候嘉音。願此小聚成為我們關係的美好見證，亦期盼能為您帶來些許愉悅與放鬆。\n在此致上崇高的敬意與衷心的祝福。\n　　順頌\n時祺\n您卑微的\n波提歐"
 					}
 				}
 			}
@@ -61916,6 +62030,298 @@
 			}
 		],
 		"VersionAdded": "3.4"
+	},
+	"14534": {
+		"Id": "14534",
+		"ContactId": "199",
+		"ParticpatingContactIds": [
+			"199",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1453400",
+				"StartingMessageId": "145340000",
+				"Messages": {
+					"145340000": {
+						"Id": "145340000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "{NICKNAME}閣下，關於阿波羅尼",
+						"NextMessageId": "choice1"
+					},
+					"145340001": {
+						"Id": "145340001",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "抱歉，我沒能找到他",
+						"NextMessageId": "145340004"
+					},
+					"145340002": {
+						"Id": "145340002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "要不然先別找了",
+						"NextMessageId": "145340003"
+					},
+					"145340003": {
+						"Id": "145340003",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "說不定他有自己的事情要忙",
+						"NextMessageId": "145340004"
+					},
+					"145340004": {
+						"Id": "145340004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "不，閣下",
+						"NextMessageId": "145340005"
+					},
+					"145340005": {
+						"Id": "145340005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "我打字的速度有點慢，我的意思是",
+						"NextMessageId": "145340006"
+					},
+					"145340006": {
+						"Id": "145340006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "199",
+						"Text": "我們找到阿波羅尼了，閣下可以重回歡宴啦"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "我沒找到他",
+								"NextMessageId": "145340001"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "要不然，別找他了",
+								"NextMessageId": "145340002"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14536": {
+		"Id": "14536",
+		"ContactId": "193",
+		"ParticpatingContactIds": [
+			"193"
+		],
+		"Sections": [
+			{
+				"Id": "1453600",
+				"StartingMessageId": "145360000",
+				"Messages": {
+					"145360000": {
+						"Id": "145360000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "「酣歌海垠」的若蟲已經全部被貴客集齊了",
+						"NextMessageId": "145360001"
+					},
+					"145360001": {
+						"Id": "145360001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "和之前一樣，這邊多出了一隻若蟲和……一個奇怪的裝置",
+						"NextMessageId": "145360002"
+					},
+					"145360002": {
+						"Id": "145360002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "193",
+						"Text": "有空過來看看"
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"14537": {
+		"Id": "14537",
+		"ContactId": "200",
+		"ParticpatingContactIds": [
+			"8001",
+			"200"
+		],
+		"Sections": [
+			{
+				"Id": "1453700",
+				"StartingMessageId": "145370000",
+				"Messages": {
+					"145370000": {
+						"Id": "145370000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊號搜尋中",
+						"NextMessageId": "145370001"
+					},
+					"145370001": {
+						"Id": "145370001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊號不穩定",
+						"NextMessageId": "145370002"
+					},
+					"145370002": {
+						"Id": "145370002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "嗨，是我，想我了嗎？",
+						"NextMessageId": "choice3"
+					},
+					"145370003": {
+						"Id": "145370003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "是有點想你了，你在哪裡呀",
+						"NextMessageId": "145370008"
+					},
+					"145370004": {
+						"Id": "145370004",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "別開玩笑啦，又不是永別",
+						"NextMessageId": "145370005"
+					},
+					"145370005": {
+						"Id": "145370005",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "你在哪裡？什麼時候回來？",
+						"NextMessageId": "145370008"
+					},
+					"145370006": {
+						"Id": "145370006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我們完成使命了",
+						"NextMessageId": "145370007"
+					},
+					"145370007": {
+						"Id": "145370007",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "你藏在哪裡？什麼時候回來？",
+						"NextMessageId": "145370008"
+					},
+					"145370008": {
+						"Id": "145370008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊息傳送失敗",
+						"NextMessageId": "145370009"
+					},
+					"145370009": {
+						"Id": "145370009",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "使用者不在通訊服務範圍內，請稍後再試",
+						"NextMessageId": "145370010"
+					},
+					"145370010": {
+						"Id": "145370010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "我猜猜看…你是不是以為人家藏起來了，想問人家躲在哪裡呀？",
+						"NextMessageId": "145370011"
+					},
+					"145370011": {
+						"Id": "145370011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "答案是——魔法技巧～",
+						"NextMessageId": "145370012"
+					},
+					"145370012": {
+						"Id": "145370012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "在我們出發之前，我就用妖精的魔法在哀麗秘榭埋下這則訊息啦",
+						"NextMessageId": "145370013"
+					},
+					"145370013": {
+						"Id": "145370013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "因為人家一時半會還回不來哦，怕你孤單寂寞嘛",
+						"NextMessageId": "145370014"
+					},
+					"145370014": {
+						"Id": "145370014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "不過，在這哀麗秘榭，還存留著我們許多的回憶",
+						"NextMessageId": "145370015"
+					},
+					"145370015": {
+						"Id": "145370015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "200",
+						"Text": "我留了一封信給你，記得去祝祭庭院看看哦～"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "有一點，快回來吧",
+								"NextMessageId": "145370003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "別開玩笑啦",
+								"NextMessageId": "145370004"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "你藏在哪裡了？",
+								"NextMessageId": "145370006"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
 	},
 	"20001": {
 		"Id": "20001",
@@ -112337,7 +112743,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "那部「尼卡多利鏖戰粉霞天女」…會上映嗎？",
+						"Text": "那部《尼卡多利鏖戰粉霞天女》…會上演嗎？",
 						"NextMessageId": "201780007"
 					},
 					"201780007": {
@@ -112361,7 +112767,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1402",
-						"Text": "有「哀地里亞人」、「奧赫瑪婦女」這樣的經典，無人不知，無人不曉…",
+						"Text": "有《哀地里亞人》、《奧赫瑪婦女》這樣的經典，無人不知，無人不曉…",
 						"NextMessageId": "201780010"
 					},
 					"201780010": {
@@ -112377,7 +112783,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1402",
-						"Text": "比如，這一批戲裡就有「霸道扎格列斯戀上我」、「一覺醒來我變成了會說話的大地獸」、「懸鋒堡壘」…",
+						"Text": "比如，這一批戲裡就有《霸道扎格列斯戀上我》、《一覺醒來我變成了會說話的大地獸》、《懸鋒堡壘》…",
 						"NextMessageId": "201780012"
 					},
 					"201780012": {
@@ -112589,7 +112995,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1402",
-						"Text": "奧赫瑪的居民肯定非常歡迎",
+						"Text": "奧赫瑪的居民一定非常歡迎",
 						"NextMessageId": "201790012"
 					},
 					"201790012": {
@@ -112629,7 +113035,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1402",
-						"Text": "讓我作為改衣師產生了許多新的靈感",
+						"Text": "讓我身為改衣師產生了許多新的靈感",
 						"NextMessageId": "201790017"
 					},
 					"201790017": {
@@ -112685,7 +113091,7 @@
 						"MessageType": "Text",
 						"SenderType": "Player",
 						"SenderContactId": "8001",
-						"Text": "想試試你那件的同款，喜歡",
+						"Text": "想試試看你那件的同款，喜歡",
 						"NextMessageId": "201790024"
 					},
 					"201790024": {
@@ -112718,7 +113124,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1402",
-						"Text": "從前，我也鍾愛收藏各種美衣，也曾經有一間堪比家宅大小的衣帽藏間",
+						"Text": "從前，我也鍾愛收藏各種美衣，也曾經有一間堪比家宅大小的衣帽間",
 						"NextMessageId": "201790028"
 					},
 					"201790028": {
@@ -112726,7 +113132,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1402",
-						"Text": "不過現在，我更希望服裝不單歸我所有，而是都能為需要它們的人所有。",
+						"Text": "不過現在，我更希望服裝不單歸我所有，而是都能為需要它們的人所有",
 						"NextMessageId": "201790029"
 					},
 					"201790029": {
@@ -112905,7 +113311,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1402",
-						"Text": "那麼，回見",
+						"Text": "那麼，下次見",
 						"NextMessageId": "choice16"
 					},
 					"201800014": {
@@ -113162,7 +113568,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1403",
-						"Text": "等小灰的戰車重新起航，一起暢遊天空吧～",
+						"Text": "等小灰的戰車重新啟航，一起暢遊天空吧～",
 						"NextMessageId": "201810021"
 					},
 					"201810021": {
@@ -114769,7 +115175,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1014",
-						"Text": "能看到嗎？",
+						"Text": "看得到嗎？",
 						"NextMessageId": "choice2"
 					},
 					"201890002": {
@@ -114849,7 +115255,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1014",
-						"Text": "哎，怎麼說呢",
+						"Text": "唉，怎麼說呢",
 						"NextMessageId": "201890012"
 					},
 					"201890012": {
@@ -114857,7 +115263,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1014",
-						"Text": "雖然被後人仰慕是件值得驕傲的事情，但真的落到自己身上，果然還是有些羞恥",
+						"Text": "雖然受到後人仰慕是件值得驕傲的事情，但真的落到自己身上，果然還是有點羞恥",
 						"NextMessageId": "201890013"
 					},
 					"201890013": {
@@ -114945,7 +115351,7 @@
 						"MessageType": "Text",
 						"SenderType": "PlayerAuto",
 						"SenderContactId": "8001",
-						"Text": "我的超古代邪神手辦嗎？",
+						"Text": "我的超古代邪神模型嗎？",
 						"NextMessageId": "201890024"
 					},
 					"201890024": {
@@ -114977,7 +115383,7 @@
 						"Choices": [
 							{
 								"ChoiceType": "Text",
-								"Text": "發生什麼了？",
+								"Text": "發生什麼事了？",
 								"NextMessageId": "201890002"
 							},
 							{
@@ -115334,7 +115740,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "裡面有一本「星海傳奇」，情節跌宕起伏，強推",
+						"Text": "裡面有一本「星海傳奇」，情節跌宕起伏，大推",
 						"NextMessageId": "201910005"
 					},
 					"201910005": {
@@ -115342,7 +115748,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "我正看到主角克服萬難，要去打倒最後的怪物，就沒時間了",
+						"Text": "我正看到主角克服萬難準備好要去打倒最後的怪物，就沒時間了",
 						"NextMessageId": "201910006"
 					},
 					"201910006": {
@@ -115383,7 +115789,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "彼時請一定告訴我，結局是什麼",
+						"Text": "到時候請務必告訴我，結局是什麼",
 						"NextMessageId": "201910011"
 					},
 					"201910011": {
@@ -115399,7 +115805,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1408",
-						"Text": "很帥，你一定喜歡，見面時再送給你！",
+						"Text": "很帥，你一定會喜歡，見面時再送給你！",
 						"NextMessageId": "201910013"
 					},
 					"201910013": {
@@ -115483,6 +115889,578 @@
 			}
 		],
 		"VersionAdded": "3.4"
+	},
+	"20192": {
+		"Id": "20192",
+		"ContactId": "1410",
+		"ParticpatingContactIds": [
+			"8001",
+			"1410"
+		],
+		"Sections": [
+			{
+				"Id": "2019200",
+				"StartingMessageId": "201920000",
+				"Messages": {
+					"201920000": {
+						"Id": "201920000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊號搜尋中",
+						"NextMessageId": "201920001"
+					},
+					"201920001": {
+						"Id": "201920001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊號不穩定",
+						"NextMessageId": "201920002"
+					},
+					"201920002": {
+						"Id": "201920002",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "附件《海浪的聲音♫》已傳送",
+						"NextMessageId": "201920003"
+					},
+					"201920003": {
+						"Id": "201920003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "小灰魚兒，能聽到嗎？等等，能聽到嗎？（無法識別噪音）",
+						"NextMessageId": "201920004"
+					},
+					"201920004": {
+						"Id": "201920004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920005"
+					},
+					"201920005": {
+						"Id": "201920005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "我們本該共飲蜜釀，一同起舞，就像以往每次出征歸來那樣。但我想你不會止步於此，你將踏上的前路一定更加危險。只是沒來得及為你舉辦一場勝利的歡宴，覺得遺憾。",
+						"NextMessageId": "201920006"
+					},
+					"201920006": {
+						"Id": "201920006",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920007"
+					},
+					"201920007": {
+						"Id": "201920007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "海浪的聲音陪伴我度過了千年的時光，我把它送給你，還有那首我最喜歡的歌謠。放鬆下來，做個好夢。",
+						"NextMessageId": "201920008"
+					},
+					"201920008": {
+						"Id": "201920008",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920009"
+					},
+					"201920009": {
+						"Id": "201920009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫風在吟詩，冬雪飄臨，風暴停歇，斷鋒掠起♫",
+						"NextMessageId": "201920010"
+					},
+					"201920010": {
+						"Id": "201920010",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920011"
+					},
+					"201920011": {
+						"Id": "201920011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫蜜釀翻騰起海浪，泡沫盛開出花朵，讓我們最後歡宴一曲♫",
+						"NextMessageId": "201920012"
+					},
+					"201920012": {
+						"Id": "201920012",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920013"
+					},
+					"201920013": {
+						"Id": "201920013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫金色的舞裙，湛藍的焰火，燃燒在我的刀尖♫",
+						"NextMessageId": "201920014"
+					},
+					"201920014": {
+						"Id": "201920014",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920015"
+					},
+					"201920015": {
+						"Id": "201920015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫海浪啊，不要將它們推離，不要離開我的心♫",
+						"NextMessageId": "201920016"
+					},
+					"201920016": {
+						"Id": "201920016",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920017"
+					},
+					"201920017": {
+						"Id": "201920017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫新的黎明即將升起，潮汐，你為何退去♫",
+						"NextMessageId": "201920018"
+					},
+					"201920018": {
+						"Id": "201920018",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920019"
+					},
+					"201920019": {
+						"Id": "201920019",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "♫你為何而退去♫",
+						"NextMessageId": "201920020"
+					},
+					"201920020": {
+						"Id": "201920020",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920021"
+					},
+					"201920021": {
+						"Id": "201920021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "（音量過低，暫未識別語音）",
+						"NextMessageId": "201920022"
+					},
+					"201920022": {
+						"Id": "201920022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "小灰魚兒，願你舉步向前的時候，會有溫柔的濤聲相伴。",
+						"NextMessageId": "201920023"
+					},
+					"201920023": {
+						"Id": "201920023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920024"
+					},
+					"201920024": {
+						"Id": "201920024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "對了，那片天外的大海，來自於你的記憶吧？",
+						"NextMessageId": "201920025"
+					},
+					"201920025": {
+						"Id": "201920025",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920026"
+					},
+					"201920026": {
+						"Id": "201920026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "嗯。我很喜歡。很喜歡。",
+						"NextMessageId": "201920027"
+					},
+					"201920027": {
+						"Id": "201920027",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "201920028"
+					},
+					"201920028": {
+						"Id": "201920028",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊號不穩定",
+						"NextMessageId": "201920029"
+					},
+					"201920029": {
+						"Id": "201920029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1410",
+						"Text": "如果。收。請幫。留存。美。我。無法。心意。再見。能向。我真。心。",
+						"NextMessageId": "201920030"
+					},
+					"201920030": {
+						"Id": "201920030",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "語音訊息轉換完成",
+						"NextMessageId": "choice31"
+					},
+					"201920031": {
+						"Id": "201920031",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "我聽見了，很美的歌聲",
+						"NextMessageId": "201920032"
+					},
+					"201920032": {
+						"Id": "201920032",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "大家也一定能聽見",
+						"NextMessageId": "201920036"
+					},
+					"201920033": {
+						"Id": "201920033",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "等我們，等和所有人再見時",
+						"NextMessageId": "201920034"
+					},
+					"201920034": {
+						"Id": "201920034",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "再唱一遍吧！",
+						"NextMessageId": "201920036"
+					},
+					"201920035": {
+						"Id": "201920035",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "什麼時候能再見",
+						"NextMessageId": "201920036"
+					},
+					"201920036": {
+						"Id": "201920036",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊息傳送失敗",
+						"NextMessageId": "201920037"
+					},
+					"201920037": {
+						"Id": "201920037",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "使用者不在通訊服務範圍內，請稍後再試"
+					},
+					"choice31": {
+						"Id": "choice31",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "我聽見了",
+								"NextMessageId": "201920031"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "再唱一遍吧！",
+								"NextMessageId": "201920033"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "什麼時候能再見",
+								"NextMessageId": "201920035"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
+	},
+	"20193": {
+		"Id": "20193",
+		"ContactId": "1412",
+		"ParticpatingContactIds": [
+			"8001",
+			"1412"
+		],
+		"Sections": [
+			{
+				"Id": "2019300",
+				"StartingMessageId": "201930000",
+				"Messages": {
+					"201930000": {
+						"Id": "201930000",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊號搜尋中",
+						"NextMessageId": "201930001"
+					},
+					"201930001": {
+						"Id": "201930001",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊號不穩定",
+						"NextMessageId": "201930002"
+					},
+					"201930002": {
+						"Id": "201930002",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "救世主，汝的記憶，當真是令人驚喜",
+						"NextMessageId": "201930003"
+					},
+					"201930003": {
+						"Id": "201930003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "貝洛伯格，與我的故國許珀耳氣候相仿",
+						"NextMessageId": "201930004"
+					},
+					"201930004": {
+						"Id": "201930004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "仙舟聯盟，以舟船為國，有征戰四方的豪氣",
+						"NextMessageId": "201930005"
+					},
+					"201930005": {
+						"Id": "201930005",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "匹諾康尼，那夢醉的國度，似曾相識",
+						"NextMessageId": "201930006"
+					},
+					"201930006": {
+						"Id": "201930006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123014.png",
+						"Text": "[公平]",
+						"NextMessageId": "201930007"
+					},
+					"201930007": {
+						"Id": "201930007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "待囚禁翁法羅斯的「律法」破碎，人子們必能前往銀河群星，留下赫赫功名",
+						"NextMessageId": "201930008"
+					},
+					"201930008": {
+						"Id": "201930008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "金織爵那高超的設計，不會比「純美」的追隨者遜色",
+						"NextMessageId": "201930009"
+					},
+					"201930009": {
+						"Id": "201930009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "命運爵團結眾人的本領，可比「同諧」行者高明",
+						"NextMessageId": "201930010"
+					},
+					"201930010": {
+						"Id": "201930010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "捷足爵一定能用她的鬼點子把銀河攪個天翻地覆，我真想看看她與假面愚者的對手戲",
+						"NextMessageId": "201930011"
+					},
+					"201930011": {
+						"Id": "201930011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "還有劍旗爵，在那條通往「虛無」的路上，我相信她終會掀起死水的波瀾",
+						"NextMessageId": "201930012"
+					},
+					"201930012": {
+						"Id": "201930012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "此般光輝，我等絕不願其泯然於微塵之中",
+						"NextMessageId": "201930013"
+					},
+					"201930013": {
+						"Id": "201930013",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Image": "SpriteOutput/Emoji/123015.png",
+						"Text": "[將軍]",
+						"NextMessageId": "201930014"
+					},
+					"201930014": {
+						"Id": "201930014",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "救世主，請你代我創造，翁法羅斯的未來",
+						"NextMessageId": "201930015"
+					},
+					"201930015": {
+						"Id": "201930015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "若我能再次歸來，翁法羅斯能行向銀河",
+						"NextMessageId": "201930016"
+					},
+					"201930016": {
+						"Id": "201930016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "那所有有名的、無名的星球",
+						"NextMessageId": "201930017"
+					},
+					"201930017": {
+						"Id": "201930017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "任你挑選",
+						"NextMessageId": "201930018"
+					},
+					"201930018": {
+						"Id": "201930018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1412",
+						"Text": "我將刻上你的名字——{NICKNAME}",
+						"NextMessageId": "choice19"
+					},
+					"201930019": {
+						"Id": "201930019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "翁法羅斯，不會忘記你的姓名",
+						"NextMessageId": "201930022"
+					},
+					"201930020": {
+						"Id": "201930020",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "這麼大方？",
+						"NextMessageId": "201930022"
+					},
+					"201930021": {
+						"Id": "201930021",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "說好了，銀河再見！",
+						"NextMessageId": "201930022"
+					},
+					"201930022": {
+						"Id": "201930022",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "訊息傳送失敗",
+						"NextMessageId": "201930023"
+					},
+					"201930023": {
+						"Id": "201930023",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "使用者不在通訊服務範圍內，請稍後再試"
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "凱撒！凱撒！",
+								"NextMessageId": "201930019"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "這麼大方？",
+								"NextMessageId": "201930020"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "銀河再見！",
+								"NextMessageId": "201930021"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "3.5"
 	},
 	"20998": {
 		"Id": "20998",
