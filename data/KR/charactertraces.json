@@ -4288,7 +4288,7 @@
 				"Name": "허공 단열",
 				"NodeType": 2,
 				"NodeTypeText": "전투 스킬",
-				"EffectRaw": "지정된 단일 적에게 웰트 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 허수 속성 피해를 주고, 추가로 피해를 2회 가한다. 피해를 가할 때마다 임의의 단일 적에게 웰트 공격력 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼의 허수 속성 피해를 준다. 공격이 명중하면 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>의 <u>기본 확률</u>로 피격된 적의 속도를 <unbreak>#3[i]%</unbreak> 감소시킨다. 지속 시간: <unbreak>#4[i]</unbreak>턴",
+				"EffectRaw": "지정된 단일 적에게 웰트 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 허수 속성 피해를 가하고, 추가로 피해를 2회 가한다. 피해를 가할 때마다 랜덤 단일 적에게 웰트 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 허수 속성 피해를 가한다. 공격이 명중하면 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>의 <u>기본 확률</u>로 피격된 적의 속도를 <unbreak>#3[i]%</unbreak> 감소시킨다, 지속 시간: <unbreak>#4[i]</unbreak>턴",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"100402"
@@ -105048,6 +105048,3206 @@
 			}
 		},
 		"VersionAdded": "3.5"
+	},
+	"1413": {
+		"Id": "1413",
+		"Name": "에버나이트",
+		"Nodes": {
+			"1413001": {
+				"Id": "1413001",
+				"Name": "이제부터 세월은 흐릿해지고",
+				"NodeType": 2,
+				"NodeTypeText": "일반 공격",
+				"EffectRaw": "지정된 단일 적에게 에버나이트 HP 최대치의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 얼음 속성 피해를 가한다",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"141301"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 6
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1413002": {
+				"Id": "1413002",
+				"Name": "조용히 떠나간 낮",
+				"NodeType": 2,
+				"NodeTypeText": "전투 스킬",
+				"EffectRaw": "에버나이트 현재 HP의 <unbreak>#6[i]%</unbreak>를 소모해 <u>기억 정령 「긴 밤」을 소환</u>하고, 모든 아군 기억 정령의 치명타 피해를 에버나이트 치명타 피해의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 증가시킨다, 지속 시간: <unbreak>#2[i]</unbreak>턴, 에버나이트의 턴이 시작될 때마다 지속 턴 수가 1 감소한다. 기억 정령 「긴 밤」이 필드에 있을 시 대상의 HP를 대상 HP 최대치의 <unbreak>#4[i]%</unbreak>만큼 회복한다. 발동 시 [기억 물질]을 <unbreak>#3[i]</unbreak>pt 획득하며, [가장 어두운 수수께끼] 상태일 경우 추가로 [기억 물질]을 <unbreak>#5[i]</unbreak>pt 획득한다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141302",
+					"141309"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.132,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.144,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.156,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.168,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.18,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 6
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.195,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.21,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.225,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.24,
+							2,
+							2,
+							0.5,
+							12,
+							0.1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1413003": {
+				"Id": "1413003",
+				"Name": "잘 자, 깨어있는 세상",
+				"NodeType": 2,
+				"NodeTypeText": "필살기",
+				"EffectRaw": "<u>기억 정령 「긴 밤」을 소환</u>하고, 이후 기억 정령 「긴 밤」이 모든 적에게 「긴 밤」 HP 최대치의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 얼음 속성 피해를 가하며, 에버나이트가 [가장 어두운 수수께끼] 상태에 진입한다. 해당 상태 동안 모든 적이 받는 피해가 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가하고, 에버나이트와 기억 정령 「긴 밤」이 가하는 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가하며, <u>제어류 디버프 상태</u>에 면역된다. [가장 어두운 수수께끼]의 충전을 <unbreak>#2[i]</unbreak>pt 획득하며, 기억 정령 「긴 밤」이 [이슬처럼 사라지는 미몽]을 발동하면 1pt 소모한다. 에버나이트의 턴 시작 시, 남은 충전이 없으면 [가장 어두운 수수께끼] 상태가 종료된다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141303"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							2,
+							0.3,
+							0.15
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1,
+							2,
+							0.33,
+							0.165
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2,
+							2,
+							0.36,
+							0.18
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.3,
+							2,
+							0.39,
+							0.195
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.4,
+							2,
+							0.42,
+							0.21
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.5,
+							2,
+							0.45,
+							0.225
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 6
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.625,
+							2,
+							0.4875,
+							0.2438
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.75,
+							2,
+							0.525,
+							0.2625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.875,
+							2,
+							0.5625,
+							0.2813
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							2,
+							0.6,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1413004": {
+				"Id": "1413004",
+				"Name": "오늘 밤, 나와 함께",
+				"NodeType": 2,
+				"NodeTypeText": "특성",
+				"EffectRaw": "전투 진입 시 <u>기억 정령 「긴 밤」을 소환</u>한다. 기억 정령 「긴 밤」의 기본 속도는 <unbreak>#4[i]</unbreak>pt이며, HP 최대치는 에버나이트의 <unbreak>#5[i]%</unbreak>다. 에버나이트 또는 기억 정령 「긴 밤」의 HP가 감소할 때마다 자신과 기억 정령 「긴 밤」의 치명타 피해가 <unbreak>#3[i]</unbreak>턴 동안 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가하고, [기억 물질]을 <unbreak>#1[i]</unbreak>pt 획득한다. 해당 효과는 각 목표가 피격될 때마다 최대 1회 발동한다.\n에버나이트가 보유한 [기억 물질]이 <unbreak>#6[i]</unbreak>pt 이상일 시 <u>제어류 디버프 상태</u>를 해제하고 이에 면역되며, 기억 정령 「긴 밤」이 필드에 있으면 즉시 대상을 행동하게 한다. 즉시 행동 효과는 기억 정령 「긴 밤」이 [이슬처럼 사라지는 미몽]을 발동한 후에 다시 발동할 수 있다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141304"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.3,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.33,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.36,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.39,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.42,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.45,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 6
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.4875,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.525,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.5625,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.6,
+							2,
+							160,
+							0.5,
+							16,
+							0.05
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1413007": {
+				"Id": "1413007",
+				"Name": "차가운 비가 내리기를",
+				"NodeType": 2,
+				"NodeTypeText": "비술",
+				"EffectRaw": "비술을 사용하면 다음 전투 시작 시 전투 스킬과 동일한 모든 아군 기억 정령 치명타 피해 증가 효과를 획득하고, [기억 물질]을 <unbreak>#1[i]</unbreak>pt 획득한다",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"141307"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							1
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1413101": {
+				"Id": "1413101",
+				"Name": "어두운 하늘, 고요한 달",
+				"NodeType": 3,
+				"EffectRaw": "에버나이트와 기억 정령 「긴 밤」의 치명타 확률이 <unbreak>#1[i]%</unbreak> 증가하고, 스킬 발동 시 자신의 현재 HP의 <unbreak>#2[i]%</unbreak>를 소모해 에버나이트와 기억 정령 「긴 밤」의 치명타 피해를 <unbreak>#3[i]%</unbreak> 증가시킨다, 지속 시간: <unbreak>#4[i]</unbreak>턴. 기억 정령 「긴 밤」이 [이슬처럼 사라지는 미몽] 발동 후 아군의 전투 스킬 포인트를 1pt 회복한다",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.35,
+							0.05,
+							0.15,
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 3
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1413102": {
+				"Id": "1413102",
+				"Name": "촛불이 켜지고, 꺼지네",
+				"NodeType": 3,
+				"EffectRaw": "전투 시작 시 에버나이트가 에너지를 <unbreak>#2[i]</unbreak>pt 회복하고 [기억 물질]을 <unbreak>#3[i]</unbreak>pt 획득한다. 에버나이트 또는 아군 기억 정령이 스킬 발동 시 에버나이트가 에너지를 <unbreak>#4[i]</unbreak>pt 회복하고 [기억 물질]을 <unbreak>#1[i]</unbreak>pt 획득한다",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							70,
+							1,
+							5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1413103": {
+				"Id": "1413103",
+				"Name": "날이 밝고, 비가 내리네",
+				"NodeType": 3,
+				"EffectRaw": "파티에 「기억」 운명의 길 캐릭터 수가 1/2/3/4 이상일 시 에버나이트의 전투 스킬 지속 시간 동안 추가로 모든 아군 기억 정령의 치명타 피해가 <unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>/<unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak> 증가한다",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_1413_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05,
+							0.15,
+							0.5,
+							0.65
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1413201": {
+				"Id": "1413201",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1413202": {
+				"Id": "1413202",
+				"Name": "HP 강화",
+				"NodeType": 1,
+				"EffectRaw": "HP 최대치 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1413201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 4000
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 3
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1413203": {
+				"Id": "1413203",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1413201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 9000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1413204": {
+				"Id": "1413204",
+				"Name": "치명타 피해 강화",
+				"NodeType": 1,
+				"EffectRaw": "치명타 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1413101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 9000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 3
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1413205": {
+				"Id": "1413205",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1413101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 19000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1413206": {
+				"Id": "1413206",
+				"Name": "HP 강화",
+				"NodeType": 1,
+				"EffectRaw": "HP 최대치 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1413102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1413207": {
+				"Id": "1413207",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1413102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 3
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1413208": {
+				"Id": "1413208",
+				"Name": "치명타 피해 강화",
+				"NodeType": 1,
+				"EffectRaw": "치명타 피해 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1413103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 7
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1413209": {
+				"Id": "1413209",
+				"Name": "HP 강화",
+				"NodeType": 1,
+				"EffectRaw": "HP 최대치 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1413208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1413210": {
+				"Id": "1413210",
+				"Name": "치명타 확률 강화",
+				"NodeType": 1,
+				"EffectRaw": "치명타 확률 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1413209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 8
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1413301": {
+				"Id": "1413301",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_11413_Servant03.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 6
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1413302": {
+				"Id": "1413302",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1413/SkillIcon_11413_ServantPassive.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "사량의 씨앗",
+								"Count": 2
+							},
+							{
+								"Id": "115011",
+								"Name": "있는 듯 없는 듯한 조짐",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 2
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "말나 새싹",
+								"Count": 4
+							},
+							{
+								"Id": "115012",
+								"Name": "점점 가까워지는 비명",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 2
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "아뢰야 꽃",
+								"Count": 6
+							},
+							{
+								"Id": "115013",
+								"Name": "끝없는 탄식",
+								"Count": 2
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "3.6"
+	},
+	"1414": {
+		"Id": "1414",
+		"Name": "단항•등황",
+		"Nodes": {
+			"1414001": {
+				"Id": "1414001",
+				"Name": "악을 진압하고 창생을 지키리",
+				"NodeType": 2,
+				"NodeTypeText": "일반 공격",
+				"EffectRaw": "지정된 단일 적에게 단항•등황 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 물리 속성 피해를 가한다",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"141401"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110211",
+								"Name": "흩어진 별모래",
+								"Count": 3
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 5
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1414002": {
+				"Id": "1414002",
+				"Name": "팔황을 품은 변화무쌍한 대지",
+				"NodeType": 2,
+				"NodeTypeText": "전투 스킬",
+				"EffectRaw": "지정된 단일 아군 캐릭터를 [전우]로 만들고, 모든 아군에게 단항•등황 공격력의 <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>만큼 피해를 상쇄할 수 있는 실드를 제공한다, 지속 시간: <unbreak>#3[i]</unbreak>턴. 단항•등황의 실드를 중복 획득할 시 실드량은 중첩되며, 최대 현재 전투 스킬이 제공하는 실드량의 <unbreak>#4[i]%</unbreak>를 초과할 수 없다.\n[전우]는 단항•등황 전투 스킬의 가장 최근 목표에게만 적용된다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141402"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.14,
+							100,
+							3,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.1475,
+							160,
+							3,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.155,
+							205,
+							3,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110211",
+								"Name": "흩어진 별모래",
+								"Count": 3
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.1625,
+							250,
+							3,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.17,
+							280,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 5
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.176,
+							310,
+							3,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 7
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.182,
+							332.5,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.188,
+							355,
+							3,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.194,
+							377.5,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2,
+							400,
+							3,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1414003": {
+				"Id": "1414003",
+				"Name": "<unbreak>후회 없이</unbreak> 세상을 변화시키는 승룡",
+				"NodeType": 2,
+				"NodeTypeText": "필살기",
+				"EffectRaw": "모든 적에게 단항•등황 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 물리 속성 피해를 가하고, 모든 아군에게 단항•등황 공격력의 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>만큼 피해를 상쇄할 수 있는 실드를 부여한다, 지속 시간: <unbreak>#6[i]</unbreak>턴. 단항•등황의 실드를 중복 획득할 시 실드량은 중첩되며, 최대 현재 전투 스킬이 제공하는 실드량의 <unbreak>#7[i]%</unbreak>를 초과할 수 없다.\n[용령]이 강화를 획득하며, [용령] 행동 시 <u>추가 공격</u>을 발동하고, 모든 적에게 단항•등황 공격력의 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼 물리 속성 피해를 가하며, [전우] 공격력의 <color=#f29e38ff><unbreak>#8[f1]%</unbreak></color>만큼 상응하는 속성의 <u>추가 피해</u>를 가한다. 강화는 [용령]의 행동 <unbreak>#3[i]</unbreak>회 동안 지속된다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141403"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.4,
+							2,
+							0.14,
+							100,
+							3,
+							3,
+							0.4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.65,
+							0.44,
+							2,
+							0.1475,
+							160,
+							3,
+							3,
+							0.44
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.8,
+							0.48,
+							2,
+							0.155,
+							205,
+							3,
+							3,
+							0.48
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110211",
+								"Name": "흩어진 별모래",
+								"Count": 3
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.95,
+							0.52,
+							2,
+							0.1625,
+							250,
+							3,
+							3,
+							0.52
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2.1,
+							0.56,
+							2,
+							0.17,
+							280,
+							3,
+							3,
+							0.56
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 5
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2.25,
+							0.6,
+							2,
+							0.176,
+							310,
+							3,
+							3,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 7
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2.4375,
+							0.65,
+							2,
+							0.182,
+							332.5,
+							3,
+							3,
+							0.65
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.625,
+							0.7,
+							2,
+							0.188,
+							355,
+							3,
+							3,
+							0.7
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.8125,
+							0.75,
+							2,
+							0.194,
+							377.5,
+							3,
+							3,
+							0.75
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							0.8,
+							2,
+							0.2,
+							400,
+							3,
+							3,
+							0.8
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1414004": {
+				"Id": "1414004",
+				"Name": "끊임없이 흐르는 만물의 생장",
+				"NodeType": 2,
+				"NodeTypeText": "특성",
+				"EffectRaw": "아군 캐릭터가 [전우]가 될 시 단항•등황이 대상에게 [용령]을 소환한다. [용령]의 기본 속도는 <unbreak>#5[i]</unbreak>pt다.\n[용령] 행동 시 모든 아군의 <u>디버프 효과</u>를 <unbreak>#6[i]</unbreak>개 해제하고, 단항•등황 공격력의 <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>만큼 피해를 상쇄할 수 있는 실드를 제공한다, 지속 시간: <unbreak>#3[i]</unbreak>턴. 단항•등황과 [용령]이 제공하는 실드량은 중첩 가능하며, 최대 단항•등황의 전투 스킬이 제공하는 실드량의 <unbreak>#4[i]%</unbreak>를 초과하지 않는다.\n단항•등황 또는 [전우]가 <u>전투 불능 상태</u>에 빠질 시 [용령]은 사라진다",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141404"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.07,
+							50,
+							3,
+							3,
+							165,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.0738,
+							80,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.0775,
+							102.5,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110211",
+								"Name": "흩어진 별모래",
+								"Count": 3
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.0813,
+							125,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.085,
+							140,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 5
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.088,
+							155,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 30000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 7
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.091,
+							166.25,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.094,
+							177.5,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 80000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.097,
+							188.75,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.1,
+							200,
+							3,
+							3,
+							165,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 300000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1414007": {
+				"Id": "1414007",
+				"Name": "갈라진 땅",
+				"NodeType": 2,
+				"NodeTypeText": "비술",
+				"EffectRaw": "비술 사용 후 [전우]를 획득하고 일정 구역 내의 적을 <unbreak>#1[i]</unbreak>초 동안 현기증 상태에 빠트린다. 현기증 상태의 적은 아군을 선공하지 않는다.\n행동 캐릭터 변경 시 [전우]는 현재 행동 캐릭터에게 이전된다. 다음 전투 시작 시 [전우]를 보유한 캐릭터에게 자동으로 전투 스킬을 1회 발동하며, 해당 전투 스킬은 전투 스킬 포인트를 소모하지 않는다",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"141407"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1414101": {
+				"Id": "1414101",
+				"Name": "천혜의 경관",
+				"NodeType": 3,
+				"EffectRaw": "전투 스킬 발동 시 [전우]가 된 목표의 공격력이 단항•등황 공격력의 <unbreak>#1[i]%</unbreak>만큼 증가한다",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1414201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110211",
+								"Name": "흩어진 별모래",
+								"Count": 3
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1414102": {
+				"Id": "1414102",
+				"Name": "우거진 지엽",
+				"NodeType": 3,
+				"EffectRaw": "전투 시작 시 단항•등황의 <u>행동 게이지가 <unbreak>#1[i]%</unbreak> 증가</u>한다. [전우]가 공격 발동 시 단항•등황의 에너지를 <unbreak>#2[i]</unbreak>pt 회복하고, [용령]의 <u>행동 게이지를 <unbreak>#3[i]%</unbreak> 증가</u>시킨다",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.4,
+							6,
+							0.15
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1414201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1414103": {
+				"Id": "1414103",
+				"Name": "가파른 산세",
+				"NodeType": 3,
+				"EffectRaw": "[용령] 행동 시 추가로 현재 실드량이 가장 낮은 아군에게 단항•등황 공격력의 <unbreak>#2[i]%</unbreak>+<unbreak>#3[i]</unbreak>만큼 피해를 상쇄할 수 있는 실드를 제공한다. 단항•등황의 실드 중복 획득 시 실드량은 중첩되며, 최대 현재 전투 스킬이 제공하는 실드량의 <unbreak>#4[i]%</unbreak>를 초과할 수 없다. 강화된 [용령] 행동 시 추가로 현재 HP가 가장 높은 단일 적에게 [전우] 공격력의 <unbreak>#1[i]%</unbreak>만큼 상응하는 속성의 <u>추가 피해</u>를 1회 가한다",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1414/SkillIcon_1414_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.4,
+							0.05,
+							100,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "운명의 발자취",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "태양과 번개의 회상",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1414201": {
+				"Id": "1414201",
+				"Name": "공격 강화",
+				"NodeType": 1,
+				"EffectRaw": "공격력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1414202": {
+				"Id": "1414202",
+				"Name": "방어 강화",
+				"NodeType": 1,
+				"EffectRaw": "방어력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.05,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.05
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1414101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 5000
+							},
+							{
+								"Id": "110211",
+								"Name": "흩어진 별모래",
+								"Count": 3
+							},
+							{
+								"Id": "115001",
+								"Name": "공포에 짓밟힌 육신",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1414203": {
+				"Id": "1414203",
+				"Name": "공격 강화",
+				"NodeType": 1,
+				"EffectRaw": "공격력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1414202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1414204": {
+				"Id": "1414204",
+				"Name": "속도 강화",
+				"NodeType": 1,
+				"EffectRaw": "속도 <unbreak>#1[i]</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 10000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1414205": {
+				"Id": "1414205",
+				"Name": "공격 강화",
+				"NodeType": 1,
+				"EffectRaw": "공격력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1414102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 20000
+							},
+							{
+								"Id": "110212",
+								"Name": "유성 결정",
+								"Count": 5
+							},
+							{
+								"Id": "115002",
+								"Name": "용기에 찢긴 가슴",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1414206": {
+				"Id": "1414206",
+				"Name": "방어 강화",
+				"NodeType": 1,
+				"EffectRaw": "방어력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.075,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.075
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1414205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1414207": {
+				"Id": "1414207",
+				"Name": "공격 강화",
+				"NodeType": 1,
+				"EffectRaw": "공격력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 45000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1414208": {
+				"Id": "1414208",
+				"Name": "속도 강화",
+				"NodeType": 1,
+				"EffectRaw": "속도 <unbreak>#1[i]</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1414103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1414209": {
+				"Id": "1414209",
+				"Name": "방어 강화",
+				"NodeType": 1,
+				"EffectRaw": "방어력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "DefenceAddedRatio",
+				"StatBonusValue": 0.1,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1414208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1414210": {
+				"Id": "1414210",
+				"Name": "공격 강화",
+				"NodeType": 1,
+				"EffectRaw": "공격력 <unbreak>#1[f1]%</unbreak> 증가",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1414208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "신용 포인트",
+								"Count": 160000
+							},
+							{
+								"Id": "110213",
+								"Name": "신성한 앰버",
+								"Count": 8
+							},
+							{
+								"Id": "115003",
+								"Name": "영광의 세례를 받은 육신",
+								"Count": 8
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "3.6"
 	},
 	"8001": {
 		"Id": "8001",
