@@ -33014,7 +33014,7 @@
 			"SkillTypeText": "Talento",
 			"MaxLevel": 15,
 			"EffectRaw": "O limite máximo de \"Brotar\" está relacionado aos níveis de todos os personagens no campo de batalha. Para cada ponto de PV perdido por todos os aliados, Castorice ganha 1 ponto de \"Brotar\". Quando \"Brotar\" atinge seu limite máximo, a Perícia Suprema pode ser ativada. Quando aliados perdem PV, o Dano causado por Castorice e pelo \"Dragão Abissal\" aumenta em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Este efeito pode se acumular até <unbreak>#3[i]</unbreak> vez(es), durando por <unbreak>#4[i]</unbreak> rodada(s).\nQuando o \"Dragão Abissal\" estiver em Campo, \"Brotar\" não poderá ser adquirido através do Talento, e os PV perdidos por todos os aliados (exceto o \"Dragão Abissal\") serão convertidos na mesma quantidade de PV para o \"Dragão Abissal\".",
-			"AbridgedEffect": "Quando qualquer aliado perde PV, Castorice ganha <color=#f29e38ff>\"Brotar\"</color>. Aumenta o <color=#f29e38ff>Dano causado</color> de Castorice e \"Dragão Abissal\". Quando <color=#f29e38ff>\"Brotar\"</color> alcança o máximo, a Perícia Suprema de Castorice pode ser usada. Enquanto \"Dragão Abissal\" estiver no campo de batalha, os PV perdidos por qualquer unidade aliada (exceto \"Dragão Abissal\") serão convertidos em um valor igual de PV para \"Dragão Abissal\".",
+			"AbridgedEffect": "Quando aliados perdem PV, Castorice ganha <color=#f29e38ff>\"Brotar\"</color>. Aumenta o <color=#f29e38ff>Dano causado</color> de Castorice e do \"Dragão Abissal\". Quando <color=#f29e38ff>\"Brotar\"</color> atinge seu limite máximo, a Perícia Suprema pode ser ativada. Enquanto o \"Dragão Abissal\" estiver em campo, os PV perdidos por aliados (exceto o \"Dragão Abissal\") serão convertidos na mesma quantidade de PV para o \"Dragão Abissal\".",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -36925,6 +36925,609 @@
 		},
 		"VersionAdded": "3.6"
 	},
+	"1415": {
+		"Id": "1415",
+		"Name": "Cyrene",
+		"BasicATK": {
+			"Id": "141501",
+			"Name": "Eis que a Esperança Ganha Asas!",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"SkillTypeText": "ATQ Básico",
+			"MaxLevel": 10,
+			"EffectRaw": "Ganha <unbreak>#2[i]</unbreak> ponto(s) de \"Lembrança\" e causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> dos PV máximos de Cyrene a um inimigo designado.",
+			"AbridgedEffect": "Ganha \"Lembrança\" e causa Dano de Gelo leve a um inimigo.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.25,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.3,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.35,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.4,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.45,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.5,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.55,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.6,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.65,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.7,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "141508",
+			"Name": "Para o Amor e o Amanhã ♪",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Área",
+			"SkillTypeText": "ATQ Básico",
+			"MaxLevel": 10,
+			"EffectRaw": "Ganha <unbreak>#2[i]</unbreak> ponto(s) de \"Lembrança\" e causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> dos PV máximos de Cyrene a um inimigo designado, e em seguida causa Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> dos PV máximos de Cyrene a todos os inimigos.\n\"Para o Amor e o Amanhã ♪\" não pode recuperar Pontos de Perícia.",
+			"AbridgedEffect": "Ganha \"Lembrança\" e causa Dano de Gelo a todos os inimigos.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						3,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.18,
+						3,
+						0.18
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.21,
+						3,
+						0.21
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.24,
+						3,
+						0.24
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.27,
+						3,
+						0.27
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.3,
+						3,
+						0.3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.33,
+						3,
+						0.33
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.36,
+						3,
+						0.36
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.39,
+						3,
+						0.39
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.42,
+						3,
+						0.42
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal02.png"
+		},
+		"Skill": {
+			"Id": "141502",
+			"Name": "Floreie, Elysium do Além",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Suporte",
+			"SkillTypeText": "Perícia",
+			"MaxLevel": 15,
+			"EffectRaw": "Ganha <unbreak>#3[i]</unbreak> ponto(s) de \"Lembrança\" e implanta um Campo que dura por <unbreak>#2[i]</unbreak> rodadas, com sua duração diminuindo em 1 no início da cada rodada de Cyrene. Enquanto o Campo estiver ativo, para cada instância de Dano causado por todos os aliados-alvo, causa uma instância adicional de <u>Dano Verdadeiro</u> igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do Dano original. Quando Cyrene for derrubada, o Campo também será dissipado.",
+			"AbridgedEffect": "Ganha \"Lembrança\" e implanta um Campo. Além disso, causa <color=#f29e38ff><u>Dano Verdadeiro</u></color> depois que todos os aliados-alvo causam Dano.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.12,
+						2,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.132,
+						2,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.144,
+						2,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.156,
+						2,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.168,
+						2,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.18,
+						2,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.195,
+						2,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.21,
+						2,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.225,
+						2,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						2,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.252,
+						2,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.264,
+						2,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.276,
+						2,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.288,
+						2,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "141519",
+			"Name": "Ataque",
+			"TriggerKey": "",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Alvo Único",
+			"MaxLevel": 1,
+			"EffectRaw": "Ataca um inimigo e, após entrar em combate, reduz a Tenacidade dele do Tipo correspondente.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": []
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal.png"
+		},
+		"Ultimate": {
+			"Id": "141503",
+			"Name": "Verso ◦ Juramento ∞",
+			"TriggerKey": "Skill03",
+			"TagType": "Summon",
+			"TagTypeText": "Invocar",
+			"SkillTypeText": "Perícia Suprema",
+			"MaxLevel": 15,
+			"EffectRaw": "<u>Invoca o Memoespírito</u> \"Demiurgo\", fazendo com que ele ganhe imediatamente 1 rodada extra, e ativa a Perícia Suprema de todos os aliados. Em seguida, entra no estado de \"Ondulações de Devaneios Passados\". Aprimoda o ATQ Básico para \"Para o Amor e o Amanhã ♪\" e pode usar apenas este ATQ Básico. A Chance de CRIT de Cyrene e de \"Demiurgo\" aumenta em <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, e aplica o efeito de Campo da Perícia sem limite de duração.\nPode ser usada apenas uma vez por batalha. Os PV iniciais de Demiurgo são iguais a <unbreak>#1[i]%</unbreak> dos PV máximos de Cyrene.",
+			"AbridgedEffect": "<u>Invoca o Memoespírito</u> \"Demiurgo\", concedendo-lhe imediatamente 1 rodada extra e <color=#f29e38ff>ativa as Perícias Supremas de todos os aliados</color>. Em seguida, entra no estado de \"Ondulações de Devaneios Passados\" e obtém ATQ Básico Aprimorado. Aumenta a Chance de CRIT de Cyrene e de \"Demiurgo\" e implanta o efeito de Campo da Perícia sem limite de duração.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						24,
+						0.25,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						24,
+						0.275,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						24,
+						0.3,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						24,
+						0.325,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						24,
+						0.35,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						24,
+						0.375,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						24,
+						0.4063,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						24,
+						0.4375,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						24,
+						0.4688,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						24,
+						0.5,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						24,
+						0.525,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						24,
+						0.55,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						24,
+						0.575,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						24,
+						0.6,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						24,
+						0.625,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Ultra.png"
+		},
+		"Talent": {
+			"Id": "141504",
+			"Name": "Corações se Unem como Um",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Aprimoramento",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "Quando o combate começa ou após Cyrene agir, os outros personagens aliados em qualquer estado e seus Memoespíritos ganham \"Futuro\". Quando aliados-alvo com \"Futuro\" agem, consome \"Futuro\" para conceder à Cyrene <unbreak>#1[i]</unbreak> ponto(s) de \"Lembrança\". Quando Cyrene tem <unbreak>#4[i]</unbreak> ponto(s) de \"Lembrança\", sua Perícia Suprema pode ser ativada, e todas as penalidades nela são removidas. Quando ela tem <unbreak>#5[i]</unbreak> ponto(s) de \"Lembrança\" durante o estado de \"Ondulações de Devaneios Passados\", sua Perícia Suprema pode ser ativada. Após atingir o máximo, os pontos de \"Lembrança\" podem transbordar até <unbreak>#3[i]</unbreak> pontos. Enquanto Cyrene estiver em campo, aumenta o Dano causado por todos os aliados-alvo em <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>.",
+			"AbridgedEffect": "Quando o combate começa ou após Cyrene agir, os aliados-alvo e seus Memoespíritos ganham \"Futuro\". Quando aliados-alvo com \"Futuro\" agem, Cyrene ganha \"Lembrança\". Enquanto Cyrene estiver em campo, aumenta o Dano causado pelos aliados-alvo.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.1,
+						27,
+						24,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						0.11,
+						27,
+						24,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						0.12,
+						27,
+						24,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						0.13,
+						27,
+						24,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						0.14,
+						27,
+						24,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.15,
+						27,
+						24,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						0.1625,
+						27,
+						24,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						0.175,
+						27,
+						24,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						0.1875,
+						27,
+						24,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						0.2,
+						27,
+						24,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						0.21,
+						27,
+						24,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						0.22,
+						27,
+						24,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						0.23,
+						27,
+						24,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						0.24,
+						27,
+						24,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.25,
+						27,
+						24,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Passive.png"
+		},
+		"Technique": {
+			"Id": "141507",
+			"Name": "Paz no Fim do Vento Oeste",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "Suporte",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Após usar a Técnica, cria uma Dimensão Especial que dura por <unbreak>#1[i]</unbreak> segundo(s) ao redor do personagem. Inimigos dentro desta Dimensão Especial entram no estado \"Este Momento, Para Sempre\". Enquanto estiverem nesse estado, os inimigos cessam todas as ações. Personagens aliados dentro desta Dimensão Especial têm a velocidade de movimento aumentada em <unbreak>#2[i]%</unbreak>. Ao entrar em combate durante a duração, é implantado o Campo da Perícia. Apenas 1 Efeito de Dimensão criado por aliados pode existir ao mesmo tempo.",
+			"AbridgedEffect": "Cria uma Dimensão Especial ao redor do personagem. Inimigos dentro dessa Dimensão Especial entram no estado de \"Este Momento, Para Sempre\". Aumenta a velocidade de movimento para os personagens-aliados dentro dessa Dimensão Especial. Após entrar em combate, implanta o Campo da Perícia.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						30,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Maze.png"
+		},
+		"VersionAdded": "3.7"
+	},
 	"8001": {
 		"Id": "8001",
 		"Name": "{NICKNAME}",
@@ -40043,6 +40646,91 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png"
 		},
+		"EnhancedBasicATK": {
+			"Id": "800708",
+			"Name": "Vamos Escrever o Amanhã!",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Área",
+			"SkillTypeText": "ATQ Básico",
+			"MaxLevel": 10,
+			"EffectRaw": "Consome 1 acúmulo de \"Epopeia\" para remover todas as penalidades de Controle Negativo em Mem. {M#O Desbravador}{F#A Desbravadora} e Mem realizam um <u>Ataque Conjunto</u> e causando Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ {M#do Desbravador}{F#da Desbravadora} e <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Mem a todos os inimigos respectivamente. Então, Mem ganha <unbreak>#3[i]%</unbreak> de Carga.",
+			"AbridgedEffect": "Consome 1 acúmulo de \"Epopeia\" para remover as penalidades de Controle Negativo em Mem. {M#O Desbravador}{F#A Desbravadora} e Mem realizam um <u>Ataque Conjunto</u> e causam Dano de Gelo individualmente a todos os inimigos. Em seguida, Mem recebe Carga.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						0.6,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.72,
+						0.72,
+						0.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.84,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.96,
+						0.96,
+						0.1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.08,
+						1.08,
+						0.1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						1.2,
+						0.1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.32,
+						1.32,
+						0.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1.44,
+						0.1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.56,
+						1.56,
+						0.1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.68,
+						1.68,
+						0.1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png"
+		},
 		"Skill": {
 			"Id": "800702",
 			"Name": "Eu Escolho Você!",
@@ -40535,6 +41223,91 @@
 				}
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "800808",
+			"Name": "Vamos Escrever o Amanhã!",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Área",
+			"SkillTypeText": "ATQ Básico",
+			"MaxLevel": 10,
+			"EffectRaw": "Consome 1 acúmulo de \"Epopeia\" para remover todas as penalidades de Controle Negativo em Mem. {M#O Desbravador}{F#A Desbravadora} e Mem realizam um <u>Ataque Conjunto</u> e causando Dano de Gelo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ {M#do Desbravador}{F#da Desbravadora} e <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Mem a todos os inimigos respectivamente. Então, Mem ganha <unbreak>#3[i]%</unbreak> de Carga.",
+			"AbridgedEffect": "Consome 1 acúmulo de \"Epopeia\" para remover as penalidades de Controle Negativo em Mem. {M#O Desbravador}{F#A Desbravadora} e Mem realizam um <u>Ataque Conjunto</u> e causam Dano de Gelo individualmente a todos os inimigos. Em seguida, Mem recebe Carga.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						0.6,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.72,
+						0.72,
+						0.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.84,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.96,
+						0.96,
+						0.1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.08,
+						1.08,
+						0.1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						1.2,
+						0.1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.32,
+						1.32,
+						0.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1.44,
+						0.1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.56,
+						1.56,
+						0.1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.68,
+						1.68,
+						0.1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png"
 		},
 		"Skill": {
 			"Id": "800802",

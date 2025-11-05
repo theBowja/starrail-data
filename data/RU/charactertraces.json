@@ -103770,7 +103770,7 @@
 			},
 			"1412002": {
 				"Id": "1412002",
-				"Name": "Восхождение: От пешки до ферзя",
+				"Name": "Превращение пешки",
 				"NodeType": 2,
 				"NodeTypeText": "Навык",
 				"EffectRaw": "Накладывает на выбранного персонажа статус Боевые заслуги и получает <unbreak>#2[i]</unbreak> ед. заряда до макс. <unbreak>#3[i]</unbreak> ед. Когда заряд достигает <unbreak>#4[i]</unbreak> ед., имеющийся у персонажа статус Боевые заслуги автоматически усиливается до статуса Воинский титул и снимает имеющиеся у персонажа <u>эффекты контроля</u>. Наличие у персонажа статуса Воинский титул также считается наличием статуса Боевые заслуги. Наносимый навыком персонажа со статусом Воинский титул крит. урон повышается на <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, его <u>пробитие всех типов сопротивления</u> повышается на <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>. Использование навыка на противнике активирует <u>Внезапную атаку</u>. После окончания <u>Внезапная атака</u> расходует <unbreak>#4[i]</unbreak> ед. заряда и превращает статус Воинский титул обратно в статус Боевые заслуги.",
@@ -108248,6 +108248,1666 @@
 			}
 		},
 		"VersionAdded": "3.6"
+	},
+	"1415": {
+		"Id": "1415",
+		"Name": "Кирена",
+		"Nodes": {
+			"1415001": {
+				"Id": "1415001",
+				"Name": "Смотри, начало надежды!",
+				"NodeType": 2,
+				"NodeTypeText": "Базовая атака",
+				"EffectRaw": "Даёт <unbreak>#2[i]</unbreak> ед. заряда Воспоминания и наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от макс. НР Кирены.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"141501",
+					"141508"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.25,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.3,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 2
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.35,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 2
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.4,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 4
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.45,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 2
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.5,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 6
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1415002": {
+				"Id": "1415002",
+				"Name": "Цвети, рай будущего",
+				"NodeType": 2,
+				"NodeTypeText": "Навык",
+				"EffectRaw": "Даёт <unbreak>#3[i]</unbreak> ед. заряда Воспоминания и создаёт зону на <unbreak>#2[i]</unbreak> хода. Длительность этой зоны уменьшается на 1 ход в начале каждого хода Кирены. Пока эта зона активна, каждый нанесённый союзниками 1 раз урон дополнительно наносит 1 раз <u>истинный урон</u>, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от изначального урона. Если Кирена становится <u>неспособна сражаться</u>, зона исчезает.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141502"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12,
+							2,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.132,
+							2,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.144,
+							2,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 2
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.156,
+							2,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 2
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.168,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 4
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.18,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 6
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.195,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 2
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.21,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.225,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.24,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1415003": {
+				"Id": "1415003",
+				"Name": "Стихи ◦ Клятва ∞",
+				"NodeType": 2,
+				"NodeTypeText": "Сверхспособность",
+				"EffectRaw": "<u>Призывает духа памяти</u> Демиурга, немедленно даёт ей 1 <u>дополнительный ход</u> и активирует сверхспособности всего отряда, после чего переходит в состояние Рябь прошлого, которое усиливает базовую атаку до умения Навстречу любви и завтрашнему дню ♪, и персонаж может использовать только его. Также повышает крит. шанс Кирены и Демиурга на <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, создаёт зону, описанную в навыке персонажа, и снимает ограничение длительности этой зоны.\nЭто умение может быть использовано только 1 раз за бой. Изначально макс. НР Демиурга равно <unbreak>#1[i]%</unbreak> от макс. НР Кирены.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141503",
+					"141514"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							24,
+							0.25,
+							12
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							24,
+							0.275,
+							12
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							24,
+							0.3,
+							12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 2
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							24,
+							0.325,
+							12
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 2
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							24,
+							0.35,
+							12
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 4
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							24,
+							0.375,
+							12
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 6
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							24,
+							0.4063,
+							12
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 2
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							24,
+							0.4375,
+							12
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							24,
+							0.4688,
+							12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							24,
+							0.5,
+							12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1415004": {
+				"Id": "1415004",
+				"Name": "Желания, соберитесь в песнь",
+				"NodeType": 2,
+				"NodeTypeText": "Талант",
+				"EffectRaw": "В начале боя или после действия Кирены другие персонажи и их духи памяти с каким-либо статусом получают статус Будущее. Во время своего действия союзник со статусом Будущее расходует этот статус и даёт Кирене <unbreak>#1[i]</unbreak> ед. заряда Воспоминания. Когда заряд Воспоминания достигает <unbreak>#4[i]</unbreak> ед., Кирена может использовать свою сверхспособность, и она снимает с себя все <u>ослабления</u>. Сверхспособность также можно использовать, когда заряд Воспоминания достигает <unbreak>#5[i]</unbreak> ед. в состоянии Рябь прошлого. Заряд может накапливать до <unbreak>#3[i]</unbreak> ед. сверх макс. значения. Пока Кирена находится на поле, наносимый всеми союзниками урон повышается на <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"141504"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.1,
+							27,
+							24,
+							12
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1,
+							0.11,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1,
+							0.12,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 2
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 4
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1,
+							0.13,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 2
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1,
+							0.14,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 4
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1,
+							0.15,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 25000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 6
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1,
+							0.1625,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 2
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1,
+							0.175,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 70000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 5
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1,
+							0.1875,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1,
+							0.2,
+							27,
+							24,
+							12
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 240000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 13
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1415007": {
+				"Id": "1415007",
+				"Name": "Покой на краю западного ветра",
+				"NodeType": 2,
+				"NodeTypeText": "Техника",
+				"EffectRaw": "Использование техники создаёт вокруг персонажа пространство, которое существует <unbreak>#1[i]</unbreak> сек. Это пространство накладывает на находящихся в нём противников статус Момент навеки, который прекращает все их действия. Скорость находящихся в пространстве союзников повышается на <unbreak>#2[i]%</unbreak>. Если бой с противником начинается в этом пространстве, то на поле боя создаётся зона, описанная в навыке персонажа. Одновременно может существовать только одно пространство, созданное союзниками.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"141507"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							30,
+							0.5
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1415101": {
+				"Id": "1415101",
+				"Name": "Дитя Памяти",
+				"NodeType": 3,
+				"EffectRaw": "Когда союзник призывает духа памяти, дух памяти получает статус Будущее. Имеющийся у духа памяти статус Будущее не расходуется.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 5000
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 3
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1415102": {
+				"Id": "1415102",
+				"Name": "Рябь во времени",
+				"NodeType": 3,
+				"EffectRaw": "Если среди союзников на поле есть 1, 2 или 3 <u>златиуса</u> или персонажа Пути Памяти, не считая Кирены, то в начале боя Кирена получает <unbreak>#1[i]</unbreak>, <unbreak>#2[i]</unbreak> или <unbreak>#3[i]</unbreak> ед. заряда Воспоминания соответственно.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							3,
+							6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 20000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1415103": {
+				"Id": "1415103",
+				"Name": "Тройственные причина и следствие",
+				"NodeType": 3,
+				"EffectRaw": "Если скорость Кирены становится выше или равна <unbreak>#1[i]</unbreak>, то наносимый союзниками урон повышается на <unbreak>#4[i]%</unbreak>, после чего каждая 1 ед. скорости, превышающая это значение, повышает <u>пробитие ледяного сопротивления</u> Кирены и Демиурга на <unbreak>#2[i]%</unbreak>. Этот эффект может засчитывать до <unbreak>#3[i]</unbreak> ед. скорости, превышающих указанное значение.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							180,
+							0.02,
+							60,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Отпечатки судьбы",
+								"Count": 1
+							},
+							{
+								"Id": "110507",
+								"Name": "Воспоминания о солнце и грозе",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1415201": {
+				"Id": "1415201",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 2500
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1415202": {
+				"Id": "1415202",
+				"Name": "Усиление скорости",
+				"NodeType": 1,
+				"EffectRaw": "Скорость повышается на <unbreak>#1[i]</unbreak> ед.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "1415201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 4000
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 3
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1415203": {
+				"Id": "1415203",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1415201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 9000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1415204": {
+				"Id": "1415204",
+				"Name": "Усиление НР",
+				"NodeType": 1,
+				"EffectRaw": "Макс. НР повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1415101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 9000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 3
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1415205": {
+				"Id": "1415205",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1415101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 19000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 4
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"1415206": {
+				"Id": "1415206",
+				"Name": "Усиление скорости",
+				"NodeType": 1,
+				"EffectRaw": "Скорость повышается на <unbreak>#1[i]</unbreak> ед.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1415102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1415207": {
+				"Id": "1415207",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1415102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 45000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 3
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1415208": {
+				"Id": "1415208",
+				"Name": "Усиление НР",
+				"NodeType": 1,
+				"EffectRaw": "Макс. НР повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1415103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 7
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1415209": {
+				"Id": "1415209",
+				"Name": "Усиление скорости",
+				"NodeType": 1,
+				"EffectRaw": "Скорость повышается на <unbreak>#1[i]</unbreak> ед.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							4
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1415208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 8
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1415210": {
+				"Id": "1415210",
+				"Name": "Усиление крит. урона",
+				"NodeType": 1,
+				"EffectRaw": "Крит. урон повышается на <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.107
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1415209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 160000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 8
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1415301": {
+				"Id": "1415301",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_11415_Servant.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 2
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 2
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 4
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 2
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 6
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1415302": {
+				"Id": "1415302",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_11415_ServantPassive.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 3500
+							},
+							{
+								"Id": "110251",
+								"Name": "Семя раздумий",
+								"Count": 2
+							},
+							{
+								"Id": "115001",
+								"Name": "Раздавленная страхом плоть",
+								"Count": 4
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 7000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 2
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 16000
+							},
+							{
+								"Id": "110252",
+								"Name": "Росток осознания",
+								"Count": 4
+							},
+							{
+								"Id": "115002",
+								"Name": "Разорванная отвагой грудная клетка",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 35000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 2
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Кредиты",
+								"Count": 140000
+							},
+							{
+								"Id": "110253",
+								"Name": "Бутон сознания",
+								"Count": 6
+							},
+							{
+								"Id": "115003",
+								"Name": "Испытанное славой тело",
+								"Count": 2
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "3.7"
 	},
 	"8001": {
 		"Id": "8001",
@@ -116453,7 +118113,8 @@
 				"EffectRaw": "Наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Первопроходца.",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
-					"800701"
+					"800701",
+					"800708"
 				],
 				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png",
 				"Levels": {
@@ -118037,6 +119698,17 @@
 						]
 					}
 				}
+			},
+			"8007501": {
+				"Id": "8007501",
+				"Name": "",
+				"NodeType": 5,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					}
+				}
 			}
 		},
 		"VersionAdded": "3.1"
@@ -118053,7 +119725,8 @@
 				"EffectRaw": "Наносит выбранному противнику ледяной урон, равный <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> от силы атаки Первопроходца.",
 				"MaxLevel": 6,
 				"LeveledSkillIds": [
-					"800801"
+					"800801",
+					"800808"
 				],
 				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png",
 				"Levels": {
@@ -119635,6 +121308,17 @@
 								"Count": 2
 							}
 						]
+					}
+				}
+			},
+			"8008501": {
+				"Id": "8008501",
+				"Name": "",
+				"NodeType": 5,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png",
+				"Levels": {
+					"1": {
+						"Costs": []
 					}
 				}
 			}

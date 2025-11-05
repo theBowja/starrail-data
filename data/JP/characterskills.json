@@ -33014,7 +33014,7 @@
 			"SkillTypeText": "天賦",
 			"MaxLevel": 15,
 			"EffectRaw": "「新蕾」の上限はフィールド上にいるすべてのキャラのレベルと関係している。味方全体がHPを1失うたびに、キャストリスは「新蕾」を1獲得する。「新蕾」が上限に達すると必殺技を発動できる。味方がHPを失った時、キャストリスと死竜の与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、この効果は最大で<unbreak>#3[i]</unbreak>層累積できる。<unbreak>#4[i]</unbreak>ターン継続。\n死竜がフィールドにいる時、キャストリスは天賦を通じて「新蕾」を獲得することはできず、死竜以外の味方がHPを1失うたびに、失ったのと同等のHPが死竜のHPに変換される。",
-			"AbridgedEffect": "味方がHPを失った時、キャストリスは<color=#f29e38ff><u>「新蕾」</u></color>を獲得し、同時にキャストリスと死竜の<color=#f29e38ff><u>与ダメージがアップ</u></color>する。<color=#f29e38ff><u>「新蕾」</u></color>が上限に達すると必殺技を発動できる。死竜がフィールドにいる時、死竜以外の味方が失ったHPは、死竜のHPに変換される。",
+			"AbridgedEffect": "味方がHPを失った時、キャストリスは<color=#f29e38ff>「新蕾」</color>を獲得し、同時にキャストリスと死竜の<color=#f29e38ff>与ダメージがアップ</color>する。<color=#f29e38ff>「新蕾」</color>が上限に達すると必殺技を発動できる。死竜がフィールドにいる時、死竜以外の味方が失ったHPは、死竜のHPに変換される。",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -36925,6 +36925,609 @@
 		},
 		"VersionAdded": "3.6"
 	},
+	"1415": {
+		"Id": "1415",
+		"Name": "キュレネ",
+		"BasicATK": {
+			"Id": "141501",
+			"Name": "さあ、{RUBY_B#きぼう}希望{RUBY_E#}の{RUBY_B#はじ}始{RUBY_E#}まりよ！",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "単体攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "「追憶」を<unbreak>#2[i]</unbreak>層獲得し、指定した敵単体にキュレネの最大HP<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の氷属性ダメージを与える。",
+			"AbridgedEffect": "「追憶」を獲得し、敵単体に少量の氷属性ダメージを与える。",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.25,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.3,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.35,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.4,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.45,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.5,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.55,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.6,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.65,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.7,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "141508",
+			"Name": "{RUBY_B#あい}愛{RUBY_E#}と{RUBY_B#あす}明日{RUBY_E#}へ{RUBY_B#む}向{RUBY_E#}かって♪",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "全体攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "「追憶」を<unbreak>#2[i]</unbreak>層獲得する。指定した敵単体にキュレネの最大HP<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>分の氷属性ダメージを与え、その後、敵全体にキュレネの最大HP<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の氷属性ダメージを与える。\n「愛と明日へ向かって♪」はSPを回復できない。",
+			"AbridgedEffect": "「追憶」を獲得し、敵全体に氷属性ダメージを与える。",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						3,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.18,
+						3,
+						0.18
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.21,
+						3,
+						0.21
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.24,
+						3,
+						0.24
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.27,
+						3,
+						0.27
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.3,
+						3,
+						0.3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.33,
+						3,
+						0.33
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.36,
+						3,
+						0.36
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.39,
+						3,
+						0.39
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.42,
+						3,
+						0.42
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal02.png"
+		},
+		"Skill": {
+			"Id": "141502",
+			"Name": "{RUBY_B#みらい}未来{RUBY_E#}の{RUBY_B#らくえん}楽園{RUBY_E#}よ、{RUBY_B#さ}咲{RUBY_E#}き{RUBY_B#ほこ}誇{RUBY_E#}れ",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "サポート",
+			"SkillTypeText": "戦闘スキル",
+			"MaxLevel": 15,
+			"EffectRaw": "「追憶」を<unbreak>#3[i]</unbreak>層獲得し、<unbreak>#2[i]</unbreak>ターン継続する結界を展開する。キュレネのターンが回ってくるたびに結界の継続時間-1ターン。結界が展開されている間、味方が敵にダメージを1回与えるたびに、追加で本来のダメージ<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の<u>確定ダメージ</u>を1回与える。キュレネが<u>戦闘不能状態</u>になった時、結界は解除される。",
+			"AbridgedEffect": "「追憶」を獲得し、結界を展開する。味方全体がダメージを与えた後、追加で<color=#f29e38ff><u>確定ダメージ</u></color>を与える。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.12,
+						2,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.132,
+						2,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.144,
+						2,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.156,
+						2,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.168,
+						2,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.18,
+						2,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.195,
+						2,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.21,
+						2,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.225,
+						2,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						2,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.252,
+						2,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.264,
+						2,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.276,
+						2,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.288,
+						2,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "141519",
+			"Name": "攻撃",
+			"TriggerKey": "",
+			"TagType": "SingleAttack",
+			"TagTypeText": "単体攻撃",
+			"MaxLevel": 1,
+			"EffectRaw": "敵を攻撃。戦闘に入った後、敵の対応する属性の靭性を削る。",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": []
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal.png"
+		},
+		"Ultimate": {
+			"Id": "141503",
+			"Name": "{RUBY_B#うた}詩{RUBY_E#}の「{RUBY_B#しゅうしふ}◦{RUBY_E#}」と「{RUBY_B#むげん}∞{RUBY_E#}」の{RUBY_B#せいやく}誓約{RUBY_E#}",
+			"TriggerKey": "Skill03",
+			"TagType": "Summon",
+			"TagTypeText": "召喚",
+			"SkillTypeText": "必殺技",
+			"MaxLevel": 15,
+			"EffectRaw": "<u>記憶の精霊</u>デミウルゴスを召喚し、即座に<u>追加ターン</u>を1ターン付与し、自身以外の味方それぞれの必殺技を発動可能にする。その後、「過去のさざ波」状態に入り、通常攻撃が「愛と明日へ向かって♪」に強化され、この強化通常攻撃のみ発動可能となる。キュレネとデミウルゴスの会心率+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。戦闘スキルの結界を展開し、結界の継続時間を無制限にする。\nデミウルゴスの初期HPはキュレネの最大HP<unbreak>#1[i]%</unbreak>分となる。\n「詩の『。』と『∞』の誓約」は、1回の戦闘につき1回のみ発動可能。",
+			"AbridgedEffect": "<u>記憶の精霊</u>デミウルゴスを召喚し、即座に<u>追加ターン</u>を1ターン付与する。さらに、<color=#f29e38ff>自身以外の味方それぞれの必殺技を発動可能</color>にした後、「過去のさざ波」状態に入り、通常攻撃が強化される。キュレネとデミウルゴスの会心率がアップし、戦闘スキルの結界の継続時間が無制限になる。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						24,
+						0.25,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						24,
+						0.275,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						24,
+						0.3,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						24,
+						0.325,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						24,
+						0.35,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						24,
+						0.375,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						24,
+						0.4063,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						24,
+						0.4375,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						24,
+						0.4688,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						24,
+						0.5,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						24,
+						0.525,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						24,
+						0.55,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						24,
+						0.575,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						24,
+						0.6,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						24,
+						0.625,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Ultra.png"
+		},
+		"Talent": {
+			"Id": "141504",
+			"Name": "みんなの{RUBY_B#ねが}願{RUBY_E#}いよ、{RUBY_B#うた}歌{RUBY_E#}のように{RUBY_B#つど}集{RUBY_E#}え",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "強化",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "戦闘開始時またはキュレネが行動した後、キュレネを除く任意状態の味方とその記憶の精霊は「未来」を獲得する。「未来」を持つ味方が行動する時、「未来」を消費してキュレネに「追憶」を<unbreak>#1[i]</unbreak>層付与する。キュレネは、「追憶」が<unbreak>#4[i]</unbreak>層に達すると必殺技を発動できるようになり、自身にある<u>デバフ</u>をすべて解除する。「過去のさざ波」状態中は、「追憶」が<unbreak>#5[i]</unbreak>層に達すると必殺技を発動できるようになる。また、「追憶」は最大で<unbreak>#3[i]</unbreak>層まで上限を超えて溜めることができる。キュレネがフィールド上にいる時、味方全体の与ダメージ+<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>。",
+			"AbridgedEffect": "戦闘開始時またはキュレネの行動後、キュレネ以外の味方とその記憶の精霊は「未来」を獲得する。「未来」を持つ味方は行動する時、キュレネに「追憶」を付与する。キュレネがフィールド上にいる時、味方全体の与ダメージがアップする。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.1,
+						27,
+						24,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						0.11,
+						27,
+						24,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						0.12,
+						27,
+						24,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						0.13,
+						27,
+						24,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						0.14,
+						27,
+						24,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.15,
+						27,
+						24,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						0.1625,
+						27,
+						24,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						0.175,
+						27,
+						24,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						0.1875,
+						27,
+						24,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						0.2,
+						27,
+						24,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						0.21,
+						27,
+						24,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						0.22,
+						27,
+						24,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						0.23,
+						27,
+						24,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						0.24,
+						27,
+						24,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.25,
+						27,
+						24,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Passive.png"
+		},
+		"Technique": {
+			"Id": "141507",
+			"Name": "{RUBY_B#にしかぜ}西風{RUBY_E#}の{RUBY_B#は}果{RUBY_E#}て、{RUBY_B#おだ}穏{RUBY_E#}やかな{RUBY_B#えいえん}永遠{RUBY_E#}",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "サポート",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "秘技を使用した後、自身の周囲に<unbreak>#1[i]</unbreak>秒間継続する特殊領域を作り出す。特殊領域内にいる敵は「この瞬間を永遠に」状態になり、すべての行動を停止する。特殊領域内にいる味方キャラの移動速度+<unbreak>#2[i]%</unbreak>。継続時間内に戦闘に入ると、戦闘スキルの結界を展開する。味方が作り出した領域は1つまで存在できる。",
+			"AbridgedEffect": "自身の周囲に特殊領域を作り出す。領域内の敵は「この瞬間を永遠に」状態になり、領域内の味方キャラの移動速度がアップする。戦闘に入った後、戦闘スキルの結界を展開する。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						30,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Maze.png"
+		},
+		"VersionAdded": "3.7"
+	},
 	"8001": {
 		"Id": "8001",
 		"Name": "{NICKNAME}",
@@ -40043,6 +40646,91 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png"
 		},
+		"EnhancedBasicATK": {
+			"Id": "800708",
+			"Name": "明日を一緒に紡ごう！",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "全体攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "「叙事詩」を1層消費し、ミュリオンに付与されているすべての<u>行動制限系デバフ</u>を解除する。開拓者とミュリオンが<u>連携攻撃</u>を行い、敵全体に開拓者の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の氷属性ダメージとミュリオンの攻撃力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の氷属性ダメージを与える。その後、ミュリオンはチャージを<unbreak>#3[i]%</unbreak>獲得する。",
+			"AbridgedEffect": "「叙事詩」を1層消費し、ミュリオンに付与されている<u>行動制限系デバフ</u>を解除する。開拓者とミュリオンが<u>連携攻撃</u>を行い、それぞれ敵全体に氷属性ダメージを与える。その後、ミュリオンはチャージを獲得する。",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						0.6,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.72,
+						0.72,
+						0.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.84,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.96,
+						0.96,
+						0.1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.08,
+						1.08,
+						0.1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						1.2,
+						0.1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.32,
+						1.32,
+						0.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1.44,
+						0.1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.56,
+						1.56,
+						0.1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.68,
+						1.68,
+						0.1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png"
+		},
 		"Skill": {
 			"Id": "800702",
 			"Name": "ミュリオンに{RUBY_B#き}決{RUBY_E#}めた！",
@@ -40535,6 +41223,91 @@
 				}
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "800808",
+			"Name": "明日を一緒に紡ごう！",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "全体攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "「叙事詩」を1層消費し、ミュリオンに付与されているすべての<u>行動制限系デバフ</u>を解除する。開拓者とミュリオンが<u>連携攻撃</u>を行い、敵全体に開拓者の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の氷属性ダメージとミュリオンの攻撃力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の氷属性ダメージを与える。その後、ミュリオンはチャージを<unbreak>#3[i]%</unbreak>獲得する。",
+			"AbridgedEffect": "「叙事詩」を1層消費し、ミュリオンに付与されている<u>行動制限系デバフ</u>を解除する。開拓者とミュリオンが<u>連携攻撃</u>を行い、それぞれ敵全体に氷属性ダメージを与える。その後、ミュリオンはチャージを獲得する。",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						0.6,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.72,
+						0.72,
+						0.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.84,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.96,
+						0.96,
+						0.1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.08,
+						1.08,
+						0.1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						1.2,
+						0.1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.32,
+						1.32,
+						0.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1.44,
+						0.1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.56,
+						1.56,
+						0.1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.68,
+						1.68,
+						0.1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png"
 		},
 		"Skill": {
 			"Id": "800802",

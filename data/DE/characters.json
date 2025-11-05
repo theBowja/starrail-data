@@ -240,7 +240,7 @@
 			{
 				"Id": "100606",
 				"Name": "Overlay-Netzwerk",
-				"Effect": "Erhöht den von Silberwolf verursachten SCH für jeden <u>Debuff</u> des Gegners um 20%, bis zu max. 100%"
+				"Effect": "Erhöht den von Silberwolf verursachten SCH für jeden <u>Debuff</u> des Gegners um 20%, bis zu 100%"
 			}
 		],
 		"VersionAdded": "1.0"
@@ -343,7 +343,7 @@
 			{
 				"Id": "101302",
 				"Name": "Triumph und Verfolgung",
-				"Effect": "Erhöht für jede Auslösung des Talents die KRIT-Rate von Herta um 3%. Dieser Effekt ist bis zu 5-mal stapelbar."
+				"Effect": "Erhöht für jede Auslösung des Talents die KRIT-Rate dieser Einheit um 3%. Dieser Effekt ist bis zu 5-mal stapelbar."
 			},
 			{
 				"Id": "101303",
@@ -584,7 +584,7 @@
 			{
 				"Id": "110601",
 				"Name": "Siegesbericht",
-				"Effect": "Wird ein Gegner besiegt, erhält Pela 5 Pkt. Energie zurück."
+				"Effect": "Wird ein Gegner besiegt, stellt Pela 5 Pkt. Energie wieder her."
 			},
 			{
 				"Id": "110602",
@@ -1501,7 +1501,7 @@
 			{
 				"Id": "121704",
 				"Name": "Gefesselt im Leben, gebunden im Streit",
-				"Effect": "Wenn sie einen Verbündeten mit ihrer Fertigkeit heilt oder der Effekt ihres Talents ausgelöst wird, erhöht sich Huohuos bewirkte Heilung abhängig davon, wie niedrig die LP des Verbündeten sind, jedoch bis zu 80%."
+				"Effect": "Wenn Huohuo mit ihrer Fertigkeit oder durch Auslösen ihres Talents einen Verbündeten heilt, steigt die bewirkte Heilung umso mehr, je niedriger die aktuellen LP des Verbündeten sind, bis zu einer maximalen Erhöhung von 80%."
 			},
 			{
 				"Id": "121705",
@@ -1614,7 +1614,7 @@
 			{
 				"Id": "122102",
 				"Name": "Erwachter Schimmer",
-				"Effect": "Wenn durch einen <u>Konter</u> SCH verursacht wird, werden 20% der VTD des Ziels ignoriert."
+				"Effect": "Wenn durch einen <u>Konter</u> SCH verursacht wird, werden 20% der VTD des Gegners ignoriert."
 			},
 			{
 				"Id": "122103",
@@ -2075,7 +2075,7 @@
 			{
 				"Id": "130704",
 				"Name": "Tränen, ein Geschenk",
-				"Effect": "Der Effekt-WDS von Gegnern mit dem Status Enthüllung wird um 10% reduziert. Schwarzer Schwan stellt zu Beginn jeder Runde des betroffenen Ziels oder wenn es besiegt wird 8 Pkt. Energie wieder her. Dieser Effekt der Energiewiederherstellung kann während der Dauer von Enthüllung nur 1-mal ausgelöst werden. Die Auslösungsanzahl wird aktualisiert, wenn der Gegner erneut mit Enthüllung belegt wird."
+				"Effect": "Der Effekt-WDS von Gegnern mit dem Status Enthüllung wird um 10% reduziert. Schwarzer Schwan stellt zu Beginn jeder Runde des betroffenen Ziels oder wenn es besiegt wird 8 Pkt. Energie wieder her. Dieser Effekt der Energiewiederherstellung kann während der Dauer von Enthüllung bis zu 1-mal ausgelöst werden. Die Auslösungsanzahl wird aktualisiert, wenn der Gegner erneut mit Enthüllung belegt wird."
 			},
 			{
 				"Id": "130705",
@@ -2839,7 +2839,7 @@
 			{
 				"Id": "141201",
 				"Name": "Eroberung der Kronen aller",
-				"Effect": "Die Figur mit „Militärverdienst“ ignoriert beim Verursachen von SCH 16% der VTD des Gegners. Wenn Militärverdienst zu „Adelstitel“ hochgestuft wird, ignoriert diese Figur beim Verursachen von Fertigkeits-SCH zusätzlich 20% der VTD des Gegners. Beim Einsatz von Cerydras Fertigkeit stellt sie bei einem anvisierten Verbündeten 2 Pkt. Energie wieder her."
+				"Effect": "Die Figur mit „Militärverdienst“ ignoriert beim Verursachen von SCH 16% der VTD des Gegners. Wenn Militärverdienst zu „Adelstitel“ hochgestuft wird, ignoriert diese Figur beim Verursachen von Fertigkeits-SCH zusätzlich 20% der VTD des Ziels. Beim Einsatz von Cerydras Fertigkeit stellt sie bei einem anvisierten Verbündeten 2 Pkt. Energie wieder her."
 			},
 			{
 				"Id": "141202",
@@ -2864,7 +2864,7 @@
 			{
 				"Id": "141206",
 				"Name": "Reise ins Sternenmeer",
-				"Effect": "Erhöht die <u>WDS-DUR</u> aller Typen von der Figur mit „Militärverdienst“ um 20% und den Multiplikator des <u>zusätzlichen SCH</u>, der durch Militärverdienst ausgelöst wird, um 300%. Wenn sich ein Teammitglied mit Militärverdienst auf dem Kampffeld befindet, wird Cerydras <u>WDS-DUR</u> aller Typen um 20% erhöht."
+				"Effect": "Erhöht die <u>WDS-DUR</u> aller Typen der Figur mit „Militärverdienst“ um 20% und den Multiplikator des <u>zusätzlichen SCH</u>, der durch Militärverdienst ausgelöst wird, um 300%. Wenn sich ein Teammitglied mit Militärverdienst auf dem Kampffeld befindet, wird Cerydras <u>WDS-DUR</u> aller Typen um 20% erhöht."
 			}
 		],
 		"VersionAdded": "3.5"
@@ -2950,6 +2950,47 @@
 			}
 		],
 		"VersionAdded": "3.6"
+	},
+	"1415": {
+		"Id": "1415",
+		"Name": "Cyrene",
+		"ElementType": "Ice",
+		"ElementTypeText": "Eis",
+		"PathType": "Memory",
+		"PathTypeText": "Das Gedenken",
+		"Eidolons": [
+			{
+				"Id": "141501",
+				"Name": "Leere, wo das Gedicht beginnt",
+				"Effect": "Wenn der Demiurg die Memogeist-Technik „Gedicht an das Ego“ auslöst und „Walzer von Blumen und Pfeilen“ einsetzt, erhält er 6 Pkt. „Rückerinnerung“ und die Anzahl der Abpraller dieses Angriffs wird zusätzlich um 12 erhöht."
+			},
+			{
+				"Id": "141502",
+				"Name": "Das Morgen in dreizehn leuchtenden Farben",
+				"Effect": "Erhält beim Kampfeintritt zusätzlich 12 Pkt. „Rückerinnerung“. Für jede unterschiedliche verbündete Figur, die den <u>Buff</u> der Memogeist-Technik des Demiurgen erhält, wird der SCH-Multiplikator des von Verbündeten durch das Kraftfeld der Fertigkeit verursachten <u>Tatsächlichen SCH</u> um 6% erhöht, bis zu 24%."
+			},
+			{
+				"Id": "141503",
+				"Name": "Nur durch dich, wie ich es schrieb",
+				"Effect": "Ultimate-Stufe +2 bis max. St. 15. Talentstufe +2 bis max. St. 15. Technikstufe des Memogeists +1 bis max. St. 10."
+			},
+			{
+				"Id": "141504",
+				"Name": "Schreibe die nächste Seite mit einem Lächeln",
+				"Effect": "Jedes Mal, nachdem der Demiurg „Walzer von Blumen und Pfeilen“ eingesetzt hat, wird der Abpraller-SCH-Multiplikator der ausgelösten Memogeist-Technik „Gedicht an das Ego“ für den aktuellen Kampf um 6% erhöht, bis zu 24-fach."
+			},
+			{
+				"Id": "141505",
+				"Name": "Blicke, schweifend über gestrige Blumenbeete",
+				"Effect": "Fertigkeitsstufe +2 bis max. St. 15. Standardangriff-Stufe +1 bis max. St. 10. Talentstufe des Memogeists +1 bis max. St. 10."
+			},
+			{
+				"Id": "141506",
+				"Name": "Erinnerungen, verwandelt in Wellen ♪",
+				"Effect": "Wenn Cyrene zum ersten Mal ihren Ultimate einsetzt, wird <u>die Aktion</u> aller Verbündeten um 100% <u>vorgezogen</u>. Jedes Mal, wenn der Demiurg die Memogeist-Technik „Gedicht an das Ego“ auslöst und „Walzer von Blumen und Pfeilen“ einsetzt, werden basierend auf der Auslösungsanzahl die folgenden Effekte erhalten:\n1-mal: Reduziert die VTD aller Gegner um 20%, wenn sich der Demiurg auf dem Kampffeld befindet.\n2-mal oder mehr: <u>Die Aktion</u> aller Verbündeten wird um 24% <u>vorgezogen</u>."
+			}
+		],
+		"VersionAdded": "3.7"
 	},
 	"8001": {
 		"Id": "8001",

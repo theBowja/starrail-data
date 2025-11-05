@@ -33014,7 +33014,7 @@
 			"SkillTypeText": "Thiên Phú",
 			"MaxLevel": 15,
 			"EffectRaw": "Giới hạn \"Nhụy Hoa\" có liên quan đến cấp của toàn bộ nhân vật trong trận. Toàn phe ta mỗi khi mất đi 1 điểm HP, Castorice sẽ nhận được 1 điểm Nhụy Hoa, khi Nhụy Hoa đạt giới hạn có thể kích hoạt Tuyệt Kỹ. Khi phe ta mất HP, sát thương của Castorice và Rồng Tử Vong gây ra sẽ tăng <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, hiệu ứng này tối đa cộng dồn <unbreak>#3[i]</unbreak> tầng, duy trì <unbreak>#4[i]</unbreak> hiệp.\nKhi Rồng Tử Vong trong trận sẽ không thể nhận \"Nhụy Hoa\" thông qua Thiên Phú. Ngoại trừ Rồng Tử Vong, mỗi 1 điểm HP toàn phe ta mất đi sẽ chuyển hóa thành HP tương đương cho Rồng Tử Vong.",
-			"AbridgedEffect": "Khi phe ta tổn thất HP, Castorice sẽ nhận <color=#f29e38ff><u>Nhụy Hoa</u></color>, đồng thời <color=#f29e38ff><u>tăng sát thương gây ra</u></color> bởi Castorice và Rồng Tử Vong. Khi <color=#f29e38ff><u>Nhụy Hoa</u></color> đạt giới hạn có thể kích hoạt Tuyệt Kỹ. Khi Rồng Tử Vong ở trong trận, ngoài Rồng Tử Vong ra, điểm HP tổn thất của phe ta sẽ chuyển hóa thành điểm HP tương đương cho Rồng Tử Vong.",
+			"AbridgedEffect": "Khi phe ta tổn thất HP, Castorice sẽ nhận <color=#f29e38ff>Nhụy Hoa</color>, đồng thời <color=#f29e38ff>tăng sát thương</color> do Castorice và Rồng Tử Vong gây ra. Khi <color=#f29e38ff>Nhụy Hoa</color> đạt giới hạn có thể kích hoạt Tuyệt Kỹ. Khi Rồng Tử Vong ở trong trận, ngoài Rồng Tử Vong ra, điểm HP tổn thất của phe ta sẽ chuyển hóa thành HP tương đương cho Rồng Tử Vong.",
 			"Levels": {
 				"1": {
 					"EffectValues": [
@@ -36925,6 +36925,609 @@
 		},
 		"VersionAdded": "3.6"
 	},
+	"1415": {
+		"Id": "1415",
+		"Name": "Cyrene",
+		"BasicATK": {
+			"Id": "141501",
+			"Name": "Nhìn Kìa, Khởi Đầu Của Hy Vọng!",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 10,
+			"EffectRaw": "Nhận <unbreak>#2[i]</unbreak> điểm \"Hồi Ức\" và gây cho 1 kẻ địch chỉ định Sát Thương Băng bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Giới Hạn HP của Cyrene.",
+			"AbridgedEffect": "Nhận \"Hồi Ức\" và gây lượng nhỏ Sát Thương Băng cho 1 kẻ địch.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.25,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.3,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.35,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.4,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.45,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.5,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.55,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.6,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.65,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.7,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "141508",
+			"Name": "Hướng Tới Tình Yêu Và Ngày Mai ♪",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 10,
+			"EffectRaw": "Nhận <unbreak>#2[i]</unbreak> điểm \"Hồi Ức\" và gây cho 1 kẻ địch chỉ định Sát Thương Băng bằng <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> Giới Hạn HP của Cyrene, sau đó gây cho toàn bộ phe địch Sát Thương Băng bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Giới Hạn HP của Cyrene.\n\"Hướng Tới Tình Yêu Và Ngày Mai ♪\" không thể hồi Điểm Chiến Kỹ.",
+			"AbridgedEffect": "Nhận \"Hồi Ức\" và gây Sát Thương Băng cho toàn bộ phe địch.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						3,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.18,
+						3,
+						0.18
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.21,
+						3,
+						0.21
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.24,
+						3,
+						0.24
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.27,
+						3,
+						0.27
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.3,
+						3,
+						0.3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.33,
+						3,
+						0.33
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.36,
+						3,
+						0.36
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.39,
+						3,
+						0.39
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.42,
+						3,
+						0.42
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal02.png"
+		},
+		"Skill": {
+			"Id": "141502",
+			"Name": "Nở Rộ Nhé, Thiên Đường Của Kiếp Sau",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Hỗ Trợ",
+			"SkillTypeText": "Chiến Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "Nhận <unbreak>#3[i]</unbreak> điểm \"Hồi Ức\" và triển khai kết giới, duy trì <unbreak>#2[i]</unbreak> hiệp. Mỗi khi bắt đầu hiệp của Cyrene, số hiệp duy trì kết giới giảm 1. Trong thời gian duy trì kết giới, toàn bộ mục tiêu phe ta cứ gây 1 lần sát thương, đều sẽ gây thêm 1 lần <u>Sát Thương Chuẩn</u> bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> sát thương gốc. Khi Cyrene rơi vào <u>trạng thái không thể chiến đấu</u>, kết giới cũng sẽ bị giải trừ.",
+			"AbridgedEffect": "Nhận \"Hồi Ức\" và triển khai kết giới, sau khi toàn bộ mục tiêu phe ta gây sát thương, sẽ gây thêm <color=#f29e38ff><u>Sát Thương Chuẩn</u></color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.12,
+						2,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.132,
+						2,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.144,
+						2,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.156,
+						2,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.168,
+						2,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.18,
+						2,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.195,
+						2,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.21,
+						2,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.225,
+						2,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.24,
+						2,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.252,
+						2,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.264,
+						2,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.276,
+						2,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.288,
+						2,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.3,
+						2,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "141519",
+			"Name": "Tấn Công",
+			"TriggerKey": "",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Đánh Đơn",
+			"MaxLevel": 1,
+			"EffectRaw": "Tấn công kẻ địch, sau khi vào chiến đấu sẽ làm giảm Sức Bền mang thuộc tính tương ứng của mục tiêu phe địch.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": []
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Normal.png"
+		},
+		"Ultimate": {
+			"Id": "141503",
+			"Name": "Áng Thơ \"◦\" Lời Thề \"∞\"",
+			"TriggerKey": "Skill03",
+			"TagType": "Summon",
+			"TagTypeText": "Triệu Hồi",
+			"SkillTypeText": "Tuyệt Kỹ",
+			"MaxLevel": 15,
+			"EffectRaw": "<u>Triệu hồi Linh Hồn Ký Ức</u> Demiurge, khiến đối tượng này nhận ngay 1 <u>hiệp tăng thêm</u> và kích hoạt Tuyệt Kỹ của toàn bộ đồng đội, sau đó vào trạng thái \"Gợn Sóng Của Quá Khứ\", Tấn Công Thường cường hóa thành \"Hướng Tới Tình Yêu Và Ngày Mai ♪\" và chỉ có thể dùng Tấn Công Thường này, Tỷ Lệ Bạo Kích của Cyrene và Demiurge tăng <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, triển khai kết giới của Chiến Kỹ và khiến kết giới của Chiến Kỹ không có thời gian duy trì.\nTrong 1 trận chiến chỉ có thể thi triển 1 lần. Demiurge ban đầu có Giới Hạn HP bằng <unbreak>#1[i]%</unbreak> Giới Hạn HP của Cyrene.",
+			"AbridgedEffect": "<u>Triệu Hồi Linh Hồn Ký Ức</u> Demiurge, khiến đối tượng này nhận ngay 1 <u>hiệp tăng thêm</u> và <color=#f29e38ff>kích hoạt Tuyệt Kỹ của toàn bộ đồng đội</color>, sau đó vào trạng thái \"Gợn Sóng Của Quá Khứ\", nhận Tấn Công Thường Cường Hóa. Tỷ Lệ Bạo Kích của Cyrene và Demiurge tăng, triển khai kết giới của Chiến Kỹ và khiến nó không có thời gian duy trì.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						24,
+						0.25,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						24,
+						0.275,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						24,
+						0.3,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						24,
+						0.325,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						24,
+						0.35,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						24,
+						0.375,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						24,
+						0.4063,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						24,
+						0.4375,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						24,
+						0.4688,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						24,
+						0.5,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						24,
+						0.525,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						24,
+						0.55,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						24,
+						0.575,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						24,
+						0.6,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						24,
+						0.625,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Ultra.png"
+		},
+		"Talent": {
+			"Id": "141504",
+			"Name": "Muôn Ước Nguyện, Hợp Dòng Tựa Khúc Ca",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Cường Hóa",
+			"SkillTypeText": "Thiên Phú",
+			"MaxLevel": 15,
+			"EffectRaw": "Khi bắt đầu chiến đấu hoặc sau khi Cyrene hành động, nhân vật khác trong trạng thái bất kỳ của phe ta và Linh Hồn Ký Ức của người đó sẽ nhận được \"Tương Lai\", khi mục tiêu có \"Tương Lai\" của phe ta hành động sẽ tiêu hao \"Tương Lai\" khiến Cyrene nhận <unbreak>#1[i]</unbreak> điểm \"Hồi Ức\". Khi \"Hồi Ức\" của Cyrene đạt <unbreak>#4[i]</unbreak> điểm có thể kích hoạt Tuyệt Kỹ và giải trừ toàn bộ <u>Hiệu Ứng Xấu</u> của bản thân, khi ở trạng thái \"Gợn Sóng Của Quá Khứ\", khi Hồi Ức đạt <unbreak>#5[i]</unbreak> điểm có thể kích hoạt Tuyệt Kỹ, sau khi đạt giới hạn còn có thể nhận dư ra tối đa đến <unbreak>#3[i]</unbreak> điểm. Khi Cyrene trong trận, sát thương toàn bộ mục tiêu phe ta gây ra tăng <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>.",
+			"AbridgedEffect": "Khi bắt đầu chiến đấu hoặc sau khi Cyrene hành động, đồng đội và Linh Hồn Ký Ức của đồng đội sẽ nhận được \"Tương Lai\", khi mục tiêu có \"Tương Lai\" của phe ta hành động, sẽ khiến Cyrene nhận được \"Hồi Ức\". Khi Cyrene trong trận, sát thương toàn bộ mục tiêu phe ta gây ra tăng.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1,
+						0.1,
+						27,
+						24,
+						12
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1,
+						0.11,
+						27,
+						24,
+						12
+					]
+				},
+				"3": {
+					"EffectValues": [
+						1,
+						0.12,
+						27,
+						24,
+						12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1,
+						0.13,
+						27,
+						24,
+						12
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1,
+						0.14,
+						27,
+						24,
+						12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.15,
+						27,
+						24,
+						12
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1,
+						0.1625,
+						27,
+						24,
+						12
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1,
+						0.175,
+						27,
+						24,
+						12
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1,
+						0.1875,
+						27,
+						24,
+						12
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1,
+						0.2,
+						27,
+						24,
+						12
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1,
+						0.21,
+						27,
+						24,
+						12
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1,
+						0.22,
+						27,
+						24,
+						12
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1,
+						0.23,
+						27,
+						24,
+						12
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1,
+						0.24,
+						27,
+						24,
+						12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						1,
+						0.25,
+						27,
+						24,
+						12
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Passive.png"
+		},
+		"Technique": {
+			"Id": "141507",
+			"Name": "Tận Cùng Gió Tây Là Yên Bình Vĩnh Hằng",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "Hỗ Trợ",
+			"SkillTypeText": "Bí Kỹ",
+			"MaxLevel": 1,
+			"EffectRaw": "Sau khi dùng Bí Kỹ, sẽ tạo ra 1 vùng đặc biệt duy trì <unbreak>#1[i]</unbreak> giây xung quanh bản thân. Kẻ địch trong vùng đặc biệt sẽ rơi vào trạng thái \"Khoảnh Khắc Này Là Mãi Mãi\", kẻ địch trong trạng thái \"Khoảnh Khắc Này Là Mãi Mãi\" sẽ dừng tất cả hành động. Tốc độ di chuyển của nhân vật phe ta trong vùng này tăng <unbreak>#2[i]%</unbreak>. Trong thời gian duy trì, sau khi vào chiến đấu, sẽ triển khai kết giới của Chiến Kỹ. Tối đa chỉ tồn tại 1 hiệu ứng vùng do phe ta tạo ra.",
+			"AbridgedEffect": "Tạo một vùng đặc biệt xung quanh bản thân. Kẻ địch trong vùng này sẽ rơi vào trạng thái \"Khoảnh Khắc Này Là Mãi Mãi\", tốc độ di chuyển của nhân vật phe ta trong vùng này tăng. Sau khi vào trận sẽ triển khai kết giới của Chiến Kỹ.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						30,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Maze.png"
+		},
+		"VersionAdded": "3.7"
+	},
 	"8001": {
 		"Id": "8001",
 		"Name": "{NICKNAME}",
@@ -40043,6 +40646,91 @@
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png"
 		},
+		"EnhancedBasicATK": {
+			"Id": "800708",
+			"Name": "Cùng Nhau Viết Nên Ngày Mai Nhé!",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 10,
+			"EffectRaw": "Tiêu hao 1 tầng \"Sử Thi\", giải trừ tất cả <u>Hiệu Ứng Xấu loại khống chế</u> mà Mem rơi vào. Nhà Khai Phá và Mem phát động <u>Tấn Công Phối Hợp</u>, lần lượt gây Sát Thương Băng bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Nhà Khai Phá và <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Mem cho toàn bộ phe địch, sau đó khiến Mem nhận <unbreak>#3[i]%</unbreak> Nạp Năng Lượng.",
+			"AbridgedEffect": "Tiêu hao 1 tầng \"Sử Thi\", giải trừ <u>Hiệu Ứng Xấu loại khống chế</u> mà Mem rơi vào. Nhà Khai Phá và Mem phát động <u>Tấn Công Phối Hợp</u>, lần lượt gây Sát Thương Băng cho toàn bộ phe địch, sau đó khiến Mem nhận được Nạp Năng Lượng.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						0.6,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.72,
+						0.72,
+						0.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.84,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.96,
+						0.96,
+						0.1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.08,
+						1.08,
+						0.1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						1.2,
+						0.1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.32,
+						1.32,
+						0.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1.44,
+						0.1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.56,
+						1.56,
+						0.1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.68,
+						1.68,
+						0.1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png"
+		},
 		"Skill": {
 			"Id": "800702",
 			"Name": "Tôi Chọn Em!",
@@ -40535,6 +41223,91 @@
 				}
 			},
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "800808",
+			"Name": "Cùng Nhau Viết Nên Ngày Mai Nhé!",
+			"TriggerKey": "Skill11",
+			"TagType": "AoEAttack",
+			"TagTypeText": "Đánh Lan",
+			"SkillTypeText": "Tấn Công Thường",
+			"MaxLevel": 10,
+			"EffectRaw": "Tiêu hao 1 tầng \"Sử Thi\", giải trừ tất cả <u>Hiệu Ứng Xấu loại khống chế</u> mà Mem rơi vào. Nhà Khai Phá và Mem phát động <u>Tấn Công Phối Hợp</u>, lần lượt gây Sát Thương Băng bằng <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Tấn Công của Nhà Khai Phá và <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Tấn Công của Mem cho toàn bộ phe địch, sau đó khiến Mem nhận <unbreak>#3[i]%</unbreak> Nạp Năng Lượng.",
+			"AbridgedEffect": "Tiêu hao 1 tầng \"Sử Thi\", giải trừ <u>Hiệu Ứng Xấu loại khống chế</u> mà Mem rơi vào. Nhà Khai Phá và Mem phát động <u>Tấn Công Phối Hợp</u>, lần lượt gây Sát Thương Băng cho toàn bộ phe địch, sau đó khiến Mem nhận được Nạp Năng Lượng.",
+			"ElementType": "Ice",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.6,
+						0.6,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.72,
+						0.72,
+						0.1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.84,
+						0.84,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.96,
+						0.96,
+						0.1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.08,
+						1.08,
+						0.1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						1.2,
+						0.1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.32,
+						1.32,
+						0.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.44,
+						1.44,
+						0.1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.56,
+						1.56,
+						0.1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.68,
+						1.68,
+						0.1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/8007/SkillIcon_8007_Normal02.png"
 		},
 		"Skill": {
 			"Id": "800802",
