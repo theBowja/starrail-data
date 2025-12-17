@@ -29012,6 +29012,486 @@
 		},
 		"VersionAdded": "3.1"
 	},
+	"1321": {
+		"Id": "1321",
+		"Name": "달리아",
+		"BasicATK": {
+			"Id": "132101",
+			"Name": "헤집어… 기억에 피어난 균열을",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "단일 공격",
+			"SkillTypeText": "일반 공격",
+			"MaxLevel": 10,
+			"EffectRaw": "지정된 단일 적에게 달리아 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 화염 속성 피해를 가한다",
+			"AbridgedEffect": "단일 적에게 소량의 화염 속성 피해를 가한다",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Normal.png"
+		},
+		"Skill": {
+			"Id": "132102",
+			"Name": "핥아… 배반이 내민 혀로",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "확산",
+			"SkillTypeText": "전투 스킬",
+			"MaxLevel": 15,
+			"EffectRaw": "<unbreak>#2[i]</unbreak>턴 동안 지속되는 결계를 활성화하며, 달리아의 턴 시작 시 지속 턴 수가 1 감소한다. 이후 지정된 단일 적 및 인접한 목표에게 달리아 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 화염 속성 피해를 가한다.\n결계가 지속되는 동안 모든 아군의 약점 격파 효율이 <unbreak>#3[i]%</unbreak> 증가하고, 적이 <u>약점 격파 상태</u>가 아닐 때 받는 강인성 감소 수치도 <u>슈퍼 격파 피해</u>로 전환된다",
+			"AbridgedEffect": "결계를 활성화한다. 단일 적 및 인접한 목표에게 화염 속성 피해를 가한다.\n결계가 지속되는 동안 모든 아군의 <color=#f29e38ff>약점 격파 효율이 증가</color>하고, 적은 <color=#f29e38ff><u>약점 격파 상태</u>가 아닐 때도 <u>슈퍼 격파 피해</u>를 받는다</color>",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8,
+						3,
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.88,
+						3,
+						0.5
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.96,
+						3,
+						0.5
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.04,
+						3,
+						0.5
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.12,
+						3,
+						0.5
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						3,
+						0.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.3,
+						3,
+						0.5
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.4,
+						3,
+						0.5
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.5,
+						3,
+						0.5
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.6,
+						3,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.68,
+						3,
+						0.5
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.76,
+						3,
+						0.5
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.84,
+						3,
+						0.5
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.92,
+						3,
+						0.5
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						3,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_BP.png"
+		},
+		"Ultimate": {
+			"Id": "132103",
+			"Name": "빠져들어… <unbreak>재가 흩날리는 묘지로</unbreak>",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "범위 공격",
+			"SkillTypeText": "필살기",
+			"MaxLevel": 15,
+			"EffectRaw": "모든 적을 [영락] 상태에 빠트린다, 지속 시간: <unbreak>#2[i]</unbreak>턴. 이후 달리아 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 화염 속성 피해를 가하고, 이는 모든 적이 균등 분담한다.\n[영락] 상태일 때 적의 방어력이 <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> 감소하고, 모든 [춤 파트너] 속성의 약점이 부여된다",
+			"AbridgedEffect": "모든 적에게 <color=#f29e38ff>[춤 파트너] 속성의 약점을 부여하고</color> 방어력을 감소시킨다. 대량의 화염 속성 피해를 가하고, 이는 모든 적이 균등 분담한다",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.8,
+						4,
+						0.08
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.92,
+						4,
+						0.09
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2.04,
+						4,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2.16,
+						4,
+						0.11
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.28,
+						4,
+						0.12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.4,
+						4,
+						0.13
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.55,
+						4,
+						0.1425
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.7,
+						4,
+						0.155
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.85,
+						4,
+						0.1675
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						4,
+						0.18
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3.12,
+						4,
+						0.19
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3.24,
+						4,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.36,
+						4,
+						0.21
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.48,
+						4,
+						0.22
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.6,
+						4,
+						0.23
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Ultra.png"
+		},
+		"Talent": {
+			"Id": "132104",
+			"Name": "누가 콘스탄스를 두려워하랴?",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "바운스",
+			"SkillTypeText": "특성",
+			"MaxLevel": 15,
+			"EffectRaw": "전투 진입 시 달리아가 에너지를 <unbreak>#4[i]</unbreak>pt 회복하고, 자신과 전투를 시작한 다른 동료를 모두 [춤 파트너]로 만든다. 필드에 다른 [춤 파트너]가 없을 시 자신과 격파 특수효과가 가장 높은 동료를 모두 [춤 파트너]로 만든다. [춤 파트너]가 <u>약점 격파 상태</u>의 적을 공격하면, 이번 공격의 강인성 감소 수치를 <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>의 <u>슈퍼 격파 피해</u>로 전환한다.\n적이 다른 [춤 파트너]에게 피격되면 달리아가 <u>추가 공격</u>을 발동하고, 피해를 <unbreak>#2[i]</unbreak>회 가하며, 회당 랜덤 단일 적에게 달리아 공격력의 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>만큼 화염 속성 피해를 가한다. <u>약점 격파 상태</u>의 적에게 피해를 가할 때마다 이번 피해의 강인성 감소 수치를 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>의 <u>슈퍼 격파 피해</u>로 전환한다.\n해당 효과는 턴마다 최대 1회 발동하며, <u>추가 공격</u> 발동 전에 목표가 처치되면 랜덤 단일 적에게 발동한다",
+			"AbridgedEffect": "전투 진입 시 달리아가 에너지를 회복하고, 자신 및 전투를 시작한 동료를 [춤 파트너]로 만든다. [춤 파트너]가 <u>약점 격파 상태</u>의 적을 공격하면 추가로 <color=#f29e38ff><u>슈퍼 격파 피해</u></color>를 가한다.\n적이 다른 [춤 파트너]에게 피격되면 달리아가 <color=#f29e38ff><u>추가 공격</u></color>을 발동하여 랜덤 단일 적에게 소량의 화염 속성 피해를 가하고, <u>약점 격파 상태</u>의 적에게 추가로 <u>슈퍼 격파 피해</u>를 가하며, 총 <color=#f29e38ff><unbreak>#2[i]</unbreak></color>회 바운스한다",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						5,
+						1,
+						35,
+						0.3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.165,
+						5,
+						1.1,
+						35,
+						0.33
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						5,
+						1.2,
+						35,
+						0.36
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.195,
+						5,
+						1.3,
+						35,
+						0.39
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.21,
+						5,
+						1.4,
+						35,
+						0.42
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.225,
+						5,
+						1.5,
+						35,
+						0.45
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2438,
+						5,
+						1.625,
+						35,
+						0.4875
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.2625,
+						5,
+						1.75,
+						35,
+						0.525
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2813,
+						5,
+						1.875,
+						35,
+						0.5625
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						5,
+						2,
+						35,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.315,
+						5,
+						2.1,
+						35,
+						0.63
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.33,
+						5,
+						2.2,
+						35,
+						0.66
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.345,
+						5,
+						2.3,
+						35,
+						0.69
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.36,
+						5,
+						2.4,
+						35,
+						0.72
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.375,
+						5,
+						2.5,
+						35,
+						0.75
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Passive.png"
+		},
+		"Technique": {
+			"Id": "132107",
+			"Name": "마음은 최고의 무덤",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "방해",
+			"SkillTypeText": "비술",
+			"MaxLevel": 1,
+			"EffectRaw": "비술 사용 후 <unbreak>#1[i]</unbreak>초 동안 지속되는 특수 영역을 1개 만든다. 특수 영역 내의 적은 아군을 선공하지 않는다. 특수 영역 내의 적과 전투에 진입하면 달리아는 즉시 전투 스킬의 결계를 활성화하고, <u>약점 격파 상태</u>의 적에게 전투 시작 시의 강인성 감소 수치를 <unbreak>#2[i]%</unbreak>의 <u>슈퍼 격파 피해</u>로 전환한다.\n아군이 만든 영역 효과는 최대 1개만 존재할 수 있다",
+			"AbridgedEffect": "특수 영역을 만들며, 영역 내의 적은 아군을 공격하지 않는다. 영역 내의 적과 전투에 진입하면 달리아는 즉시 결계를 활성화하고, <u>약점 격파 상태</u>의 적에게 <color=#f29e38ff><u>슈퍼 격파 피해</u></color>를 가한다",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Maze.png"
+		},
+		"VersionAdded": "3.8"
+	},
 	"1401": {
 		"Id": "1401",
 		"Name": "더 헤르타",

@@ -29012,6 +29012,486 @@
 		},
 		"VersionAdded": "3.1"
 	},
+	"1321": {
+		"Id": "1321",
+		"Name": "La Dalia",
+		"BasicATK": {
+			"Id": "132101",
+			"Name": "Jugueteo... con recuerdos desgarrados",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "ATQ individual",
+			"SkillTypeText": "ATQ básico",
+			"MaxLevel": 10,
+			"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de la Dalia como Daño de Fuego a un enemigo.",
+			"AbridgedEffect": "Inflige una pequeña cantidad de Daño de Fuego a un enemigo.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Normal.png"
+		},
+		"Skill": {
+			"Id": "132102",
+			"Name": "Lamo... las llamas de la traición",
+			"TriggerKey": "Skill02",
+			"TagType": "Blast",
+			"TagTypeText": "Ráfaga",
+			"SkillTypeText": "Habilidad básica",
+			"MaxLevel": 15,
+			"EffectRaw": "Despliega un campo que dura <unbreak>#2[i]</unbreak> turnos y cuya duración se reduce en 1 al inicio del turno de la Dalia. Después inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de la Dalia como Daño de Fuego a un enemigo y a los objetivos adyacentes.\nMientras el campo esté activo, la eficiencia de la Ruptura de Debilidad de todos los aliados aumenta en un <unbreak>#3[i]%</unbreak>. Además, cuando los enemigos no están en estado de <u>Ruptura de Debilidad</u>, la Reducción de Firmeza que sufran puede convertirse en <u>Daño de Ultrarruptura</u>.",
+			"AbridgedEffect": "Despliega un campo. Inflige Daño de Fuego a un enemigo y a los objetivos adyacentes.\nMientras el campo está activo, <color=#f29e38ff>aumenta la eficiencia de la Ruptura de Debilidad</color> de todos los aliados y los enemigos también <color=#f29e38ff>pueden recibir <u>Daño de Ultrarruptura</u> aunque no estén en el estado de <u>Ruptura de Debilidad</u></color>.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.8,
+						3,
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.88,
+						3,
+						0.5
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.96,
+						3,
+						0.5
+					]
+				},
+				"4": {
+					"EffectValues": [
+						1.04,
+						3,
+						0.5
+					]
+				},
+				"5": {
+					"EffectValues": [
+						1.12,
+						3,
+						0.5
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1.2,
+						3,
+						0.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.3,
+						3,
+						0.5
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.4,
+						3,
+						0.5
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.5,
+						3,
+						0.5
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.6,
+						3,
+						0.5
+					]
+				},
+				"11": {
+					"EffectValues": [
+						1.68,
+						3,
+						0.5
+					]
+				},
+				"12": {
+					"EffectValues": [
+						1.76,
+						3,
+						0.5
+					]
+				},
+				"13": {
+					"EffectValues": [
+						1.84,
+						3,
+						0.5
+					]
+				},
+				"14": {
+					"EffectValues": [
+						1.92,
+						3,
+						0.5
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						3,
+						0.5
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_BP.png"
+		},
+		"Ultimate": {
+			"Id": "132103",
+			"Name": "Húndete... en la tumba de cenizas",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "ATQ AdE",
+			"SkillTypeText": "Habilidad definitiva",
+			"MaxLevel": 15,
+			"EffectRaw": "Afecta con el estado Derrota marchita a todos los enemigos durante <unbreak>#2[i]</unbreak> turnos. Después, inflige un Daño de Fuego equivalente al <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de la Dalia que se reparte equitativamente entre todos los enemigos.\nEn el estado de Derrota marchita, la DEF del enemigo se reduce en un <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> y se le implantan los tipos de Debilidad de todas las Parejas de baile.",
+			"AbridgedEffect": "Implanta <color=#f29e38ff>las Debilidades del tipo de las Parejas de baile</color> a todos los enemigos y reduce su DEF. Inflige una gran cantidad de Daño de Fuego que se reparte equitativamente entre todos los enemigos.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						1.8,
+						4,
+						0.08
+					]
+				},
+				"2": {
+					"EffectValues": [
+						1.92,
+						4,
+						0.09
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2.04,
+						4,
+						0.1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2.16,
+						4,
+						0.11
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2.28,
+						4,
+						0.12
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2.4,
+						4,
+						0.13
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2.55,
+						4,
+						0.1425
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2.7,
+						4,
+						0.155
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2.85,
+						4,
+						0.1675
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						4,
+						0.18
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3.12,
+						4,
+						0.19
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3.24,
+						4,
+						0.2
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3.36,
+						4,
+						0.21
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3.48,
+						4,
+						0.22
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3.6,
+						4,
+						0.23
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Ultra.png"
+		},
+		"Talent": {
+			"Id": "132104",
+			"Name": "¿Quién teme a Constanza?",
+			"TriggerKey": "SkillP01",
+			"TagType": "Bounce",
+			"TagTypeText": "Rebote",
+			"SkillTypeText": "Talento",
+			"MaxLevel": 15,
+			"EffectRaw": "Al entrar en combate, la Dalia recupera <unbreak>#4[i]</unbreak> pts. de energía y ella y el compañero de equipo que inició la batalla se convierten en Parejas de baile. Cuando no haya otra Pareja de baile en el campo de batalla, se convierte en Pareja de baile junto con el compañero de equipo que tenga el efecto de Ruptura más alto. Después de que una Pareja de baile ataque a un enemigo en estado de <u>Ruptura de Debilidad</u>, convierte la Reducción de Firmeza de este ataque en un <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> de <u>Daño de Ultrarruptura</u>.\nDespués de que el enemigo reciba un ataque de la otra Pareja de baile, la Dalia lanza un <u>ataque adicional</u> que inflige daño <unbreak>#2[i]</unbreak> veces. Cada vez, inflige a un enemigo al azar un Daño de Fuego equivalente al <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de la Dalia. Además, cada vez que inflige daño a un enemigo en el estado de <u>Ruptura de Debilidad</u>, convierte la Reducción de Firmeza de ese daño en un <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> de <u>Daño de Ultrarruptura</u>.\nEste efecto solo se puede activar una vez por turno. Si el objetivo es eliminado antes de que se lance el <u>ataque adicional</u>, este se lanza contra otro enemigo al azar.",
+			"AbridgedEffect": "Al entrar en combate, la Dalia recupera energía y se convierte a sí misma y al compañero de equipo que inició la batalla en Parejas de baile. Cada Pareja de baile inflige adicionalmente <color=#f29e38ff><u>Daño de Ultrarruptura</u></color> tras atacar a enemigos en <u>estado de Ruptura de Debilidad</u>.\nDespués de que un enemigo sea atacado por la otra Pareja de baile, la Dalia lanza un <color=#f29e38ff><u>ataque adicional</u></color> que inflige una pequeña cantidad de Daño de Fuego a enemigos al azar, y además les inflige adicionalmente <u>Daño de Ultrarruptura</u> si están en <u>estado de Ruptura de Debilidad</u>. Se dispara <color=#f29e38ff><unbreak>#2[i]</unbreak></color> veces.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.15,
+						5,
+						1,
+						35,
+						0.3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.165,
+						5,
+						1.1,
+						35,
+						0.33
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.18,
+						5,
+						1.2,
+						35,
+						0.36
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.195,
+						5,
+						1.3,
+						35,
+						0.39
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.21,
+						5,
+						1.4,
+						35,
+						0.42
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.225,
+						5,
+						1.5,
+						35,
+						0.45
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.2438,
+						5,
+						1.625,
+						35,
+						0.4875
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.2625,
+						5,
+						1.75,
+						35,
+						0.525
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.2813,
+						5,
+						1.875,
+						35,
+						0.5625
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.3,
+						5,
+						2,
+						35,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.315,
+						5,
+						2.1,
+						35,
+						0.63
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.33,
+						5,
+						2.2,
+						35,
+						0.66
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.345,
+						5,
+						2.3,
+						35,
+						0.69
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.36,
+						5,
+						2.4,
+						35,
+						0.72
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.375,
+						5,
+						2.5,
+						35,
+						0.75
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Passive.png"
+		},
+		"Technique": {
+			"Id": "132107",
+			"Name": "El corazón es la mejor tumba",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Alteración",
+			"SkillTypeText": "Técnica",
+			"MaxLevel": 1,
+			"EffectRaw": "Tras usar la técnica, crea una zona especial que dura <unbreak>#1[i]</unbreak> segundos. Los enemigos que están dentro de la zona especial no atacan activamente a los aliados. Tras entrar en combate con enemigos que estén dentro de la zona especial, la Dalia despliega inmediatamente el campo de su habilidad básica y transforma 1 vez la Reducción de Firmeza causada al comienzo de la batalla en un <unbreak>#2[i]%</unbreak> de <u>Daño de Ultrarruptura</u> en los enemigos que estén en estado de <u>Ruptura de Debilidad</u>.\nSolo puede haber una zona especial creada por los aliados a la vez.",
+			"AbridgedEffect": "Crea una zona especial donde los enemigos no pueden atacar a los aliados. Tras entrar en combate con los enemigos dentro de la zona, la Dalia despliega inmediatamente su campo e inflige <color=#f29e38ff><u>Daño de Ultrarruptura</u></color> a los enemigos en estado de <u>Ruptura de Debilidad</u>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1321/SkillIcon_1321_Maze.png"
+		},
+		"VersionAdded": "3.8"
+	},
 	"1401": {
 		"Id": "1401",
 		"Name": "Sra. Herta",
