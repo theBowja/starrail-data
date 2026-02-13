@@ -64694,7 +64694,7 @@
 				"Name": "Shifu, É Hora do Chá!",
 				"NodeType": 2,
 				"NodeTypeText": "Perícia",
-				"EffectRaw": "Designa um único aliado (excluindo esta unidade) como \"Shifu\" e aumenta a VEL do \"Shifu\" em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Apenas o alvo mais recente da Perícia de 7 de Março será considerado como \"Shifu\".\n\n\nSempre que usar um ATQ Básico ou aplicar 1 golpe de Dano do ATQ Básico Aprimorado, ativa o efeito correspondente se um \"Shifu\" com o Caminho especificado estiver presente no campo:\n\nA Erudição, A Destruição, A Caça, A Recordação: causa <u>Dano Adicional</u> (Tipo de Dano baseado no Tipo de Combate do \"Shifu\") igual a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de 7 de Março.\n\nA Harmonia, A Inexistência, A Preservação, A Abundância: aumenta a Redução de Tenacidade dessa instância de Dano em <unbreak>#3[i]%</unbreak>.",
+				"EffectRaw": "Designa um único aliado (excluindo esta unidade) como \"Shifu\" e aumenta a VEL do \"Shifu\" em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Apenas o alvo mais recente da Perícia de 7 de Março será considerado como \"Shifu\".\nSempre que usar um ATQ Básico ou realizar 1 golpe do Dano de ATQ Básico Aprimorado, ativa o efeito correspondente se um \"Shifu\" com o Caminho especificado estiver presente no campo:\n\nA Erudição, A Destruição, A Caça, A Recordação, A Euforia: causa Dano Adicional (Tipo de Dano baseado no Tipo de Combate do \"Shifu\") igual a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de 7 de Março.\nA Harmonia, A Inexistência, A Preservação, A Abundância: aumenta a Redução de Tenacidade dessa instância de Dano em <unbreak>#3[i]%</unbreak>.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"122402"
@@ -75698,6 +75698,1438 @@
 						]
 					}
 				}
+			},
+			"11306001": {
+				"Id": "11306001",
+				"Name": "Monodrama",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ Básico",
+				"EffectRaw": "Causa Dano Quântico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Sparkle a um único inimigo designado.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130601"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota do Firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306002": {
+				"Id": "11306002",
+				"Name": "Mergulhadora de Sonhos",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia",
+				"EffectRaw": "Aumenta o Dano CRIT de um aliado designado em <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> do Dano CRIT de Sparkle + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, durando por <unbreak>#3[i]</unbreak> rodada(s). E, ao mesmo tempo, Avança Adiante a ação deste aliado em <unbreak>#4[i]%</unbreak>.\nQuando Sparkle usa essa habilidade em si, sua ação não será Avançada Adiante.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130602"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12,
+							0.27,
+							2,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.132,
+							0.288,
+							2,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.144,
+							0.306,
+							2,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota do Firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.156,
+							0.324,
+							2,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.168,
+							0.342,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.18,
+							0.36,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.195,
+							0.3825,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.21,
+							0.405,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.225,
+							0.4275,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.24,
+							0.45,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306003": {
+				"Id": "11306003",
+				"Name": "A Heroína de Mil Faces",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia Suprema",
+				"EffectRaw": "Recupera <unbreak>#2[i]</unbreak> Pontos de Perícia para todos os aliados. Se os Pontos de Perícia transbordarem durante a restauração, os pontos excedentes serão registrados, até um máximo de <unbreak>#5[i]</unbreak> pontos. Quando a rodada de um personagem aliado termina, se os Pontos de Perícia estiverem abaixo do máximo, Sparkle consome o valor registrado para recuperar Pontos de Perícia até que o limite superior seja atingido. Então, ela concede \"Criptografia\" a todos os aliados. Para aliados-alvo com \"Criptografia\", cada acúmulo de bônus de Dano recebido por inimigos fornecido pelo Talento da Sparkle aumenta adicionalmente em <color=#f29e38ff><unbreak>#3[f2]%</unbreak></color>, durando por <unbreak>#4[i]</unbreak> rodada(s).",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130603"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							6,
+							0.036,
+							3,
+							10
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							6,
+							0.0384,
+							3,
+							10
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							6,
+							0.0408,
+							3,
+							10
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota do Firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							6,
+							0.0432,
+							3,
+							10
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							6,
+							0.0456,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							6,
+							0.048,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							6,
+							0.051,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							6,
+							0.054,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							6,
+							0.057,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							6,
+							0.06,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306004": {
+				"Id": "11306004",
+				"Name": "Pista Falsa",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Enquanto Sparkle estiver no campo de batalha, aumenta adicionalmente o número máximo de Pontos de Perícia em <unbreak>#3[i]</unbreak>. Sempre que um aliado-alvo consome 1 Ponto de Perícia, Sparkle ganha 1 acúmulo de \"Ficção\", e cada acúmulo aumenta o Dano recebido por todos os inimigos em <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. Este efeito dura por <unbreak>#1[i]</unbreak> rodada(s) e pode ser acumulado até <unbreak>#4[i]</unbreak> vez(es).",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130604"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.02,
+							2,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.022,
+							2,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.024,
+							2,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota do Firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.026,
+							2,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.028,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.03,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0325,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.035,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0375,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.04,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306007": {
+				"Id": "11306007",
+				"Name": "Narradora Nada Confiável",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Após usar a Técnica, concede \"Desorientação\" a todos os aliados por <unbreak>#2[i]</unbreak> segundos. Personagens afetados com \"Desorientação\" não serão detectados por inimigos, e entrar em batalha enquanto estão no estado de \"Desorientação\" recupera <unbreak>#1[i]</unbreak> Ponto(s) de Perícia para a equipe e regenera <unbreak>#2[i]</unbreak> de Energia para Sparkle.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130607"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							20
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11306101": {
+				"Id": "11306101",
+				"Name": "Almanaque",
+				"NodeType": 3,
+				"EffectRaw": "Ao usar o ATQ Básico, regenera adicionalmente <unbreak>#1[i]</unbreak> de Energia. Quando um personagem aliado com o efeito de Bônus de Dano CRIT concedido pela Perícia consome Pontos de Perícia, Sparkle regenera adicionalmente <unbreak>#2[i]</unbreak> de Energia.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota do Firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306102": {
+				"Id": "11306102",
+				"Name": "Flor Artificial",
+				"NodeType": 3,
+				"EffectRaw": "Se um personagem aliado consumir <unbreak>#1[i]</unbreak> ou mais Pontos de Perícia em uma única rodada, o próximo uso da Perícia não consumirá Pontos de Perícia.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306103": {
+				"Id": "11306103",
+				"Name": "Noturna",
+				"NodeType": 3,
+				"EffectRaw": "Aumenta o ATQ de todos os aliados em <unbreak>#1[i]%</unbreak>. Quando um personagem aliado possui o efeito de Bônus de Dano CRIT concedido pela Perícia, sua PEN de RES a Todos os Tipos aumenta em <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306201": {
+				"Id": "11306201",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11306202": {
+				"Id": "11306202",
+				"Name": "Bônus de Dano CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11306101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota do Firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Farrapos de Pensamentos",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11306203": {
+				"Id": "11306203",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306204": {
+				"Id": "11306204",
+				"Name": "Bônus de RES a Efeito",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a RES a Efeito em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306205": {
+				"Id": "11306205",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11306102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Seção Celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmentos de Impressão",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306206": {
+				"Id": "11306206",
+				"Name": "Bônus de Dano CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306207": {
+				"Id": "11306207",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306208": {
+				"Id": "11306208",
+				"Name": "Bônus de RES a Efeito",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a RES a Efeito em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11306103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306209": {
+				"Id": "11306209",
+				"Name": "Bônus de Dano CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.107
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306210": {
+				"Id": "11306210",
+				"Name": "Bônus de PV",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta os PV máximos em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Melodia Celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmentos de Desejos",
+								"Count": 8
+							}
+						]
+					}
+				}
 			}
 		},
 		"VersionAdded": "2.0"
@@ -77170,6 +78602,1470 @@
 						],
 						"LevelRequired": 80,
 						"NodeRequired": "1307201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307001": {
+				"Id": "11307001",
+				"Name": "Percepção, Amanhecer Silencioso",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ Básico",
+				"EffectRaw": "Causa Dano de Vento igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Cisne Negro a um único inimigo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130701"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espírito de Fogo",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307002": {
+				"Id": "11307002",
+				"Name": "Decadência, Falso Crepúsculo",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia",
+				"EffectRaw": "Causa Dano de Vento igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Cisne Negro a um único inimigo-alvo e a quaisquer alvos adjacentes. Ao mesmo tempo, há uma chance-base de <unbreak>#3[i]%</unbreak> de reduzir a DEF do inimigo-alvo e alvos adjacentes em <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, durando por <unbreak>#2[i]</unbreak> rodada(s).",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130702"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							3,
+							1,
+							0.148
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.495,
+							3,
+							1,
+							0.154
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.54,
+							3,
+							1,
+							0.16
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espírito de Fogo",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.585,
+							3,
+							1,
+							0.166
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.63,
+							3,
+							1,
+							0.172
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.675,
+							3,
+							1,
+							0.178
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.7313,
+							3,
+							1,
+							0.1855
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7875,
+							3,
+							1,
+							0.193
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.8438,
+							3,
+							1,
+							0.2005
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.9,
+							3,
+							1,
+							0.208
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307003": {
+				"Id": "11307003",
+				"Name": "Bênção do Abraço de Outro Mundo",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia Suprema",
+				"EffectRaw": "Inflige o estado de \"Epifania\" a todos os inimigos por <unbreak>#2[i]</unbreak> rodada(s). Em seguida, causa Dano de Vento a todos os inimigos igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ da Cisne Negro.\nEnquanto estiverem no estado de \"Epifania\", os inimigos-alvo recebem <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> a mais de Dano. Para cada 1 acúmulo de \"Arcana\" infligido, há uma \"chance fixa\" de <unbreak>#4[i]%</unbreak> de aumentar adicionalmente em 1 o número de acúmulos de \"Arcana\" aplicados desta vez. E os acúmulos de \"Arcana\" não serão reduzidos pela metade após causarem Dano no início da rodada.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130703"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							2,
+							0.15,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							2,
+							0.16,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							2,
+							0.17,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espírito de Fogo",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							2,
+							0.18,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							2,
+							0.19,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							2,
+							0.2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							2,
+							0.2125,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							2,
+							0.225,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							2,
+							0.2375,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							2,
+							0.25,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307004": {
+				"Id": "11307004",
+				"Name": "Capricho do Tear do Destino",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Toda vez que um inimigo-alvo recebe 1 instância de Dano Contínuo, há uma \"chance-base\" de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de ele ser infligido com 1 acúmulo de \"Arcana\".\nEnquanto um inimigo-alvo estiver no estado \"Arcana\", ele também é considerado como se estivesse simultaneamente afligido por Cisalhamento de Vento, Sangramento, Queimadura e Choque. O alvo recebe Dano de Vento Contínuo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ da Cisne Negro no início de cada rodada, depois da qual o número de acúmulos é reduzido pela metade. Cada acúmulo de \"Arcana\" aumenta esse multiplicador de Dano em <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. \"Arcana\" pode acumular <unbreak>#8[i]</unbreak> vezes e pode continuar acumulando além desse limite, com os acúmulos excedentes sendo removidos após causar Dano.\nO Dano de \"Arcana\" ignora <unbreak>#7[i]%</unbreak> da DEF do alvo. Somente quando \"Arcana\" causa Dano no início da rodada do inimigo-alvo, alvos adjacentes recebem 1 instância adicional de Dano de Vento Contínuo igual a <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> do ATQ da Cisne Negro.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130704"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.96,
+							0.5,
+							0.048,
+							0.048,
+							0.72,
+							0,
+							0.2,
+							50
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1184,
+							0.515,
+							0.0559,
+							0.0559,
+							0.8388,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2768,
+							0.53,
+							0.0638,
+							0.0638,
+							0.9576,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espírito de Fogo",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.4352,
+							0.545,
+							0.0718,
+							0.0718,
+							1.0764,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.5936,
+							0.56,
+							0.0797,
+							0.0797,
+							1.1952,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.752,
+							0.575,
+							0.0876,
+							0.0876,
+							1.314,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.896,
+							0.5938,
+							0.0948,
+							0.0948,
+							1.422,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.04,
+							0.6125,
+							0.102,
+							0.102,
+							1.53,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.22,
+							0.6313,
+							0.111,
+							0.111,
+							1.665,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.4,
+							0.65,
+							0.12,
+							0.12,
+							1.8,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307007": {
+				"Id": "11307007",
+				"Name": "De Farsa à Verdade",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Depois que esta Técnica é utilizada, existe uma chance-base de <unbreak>#1[i]%</unbreak> de infligir 1 acúmulo de \"Arcana\" em cada inimigo no início da próxima batalha. Para cada aplicação bem-sucedida de \"Arcana\" em um alvo, inflige outro acúmulo de \"Arcana\" no mesmo alvo. Esse processo se repete até que a aplicação de \"Arcana\" falhe neste alvo. Para cada aplicação sucessiva de \"Arcana\" em um alvo, sua chance-base de sucesso é igual a <unbreak>#2[i]%</unbreak> da chance-base da aplicação bem-sucedida anterior de \"Arcana\" nesse alvo.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130707"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11307101": {
+				"Id": "11307101",
+				"Name": "Inquietação das Vísceras",
+				"NodeType": 3,
+				"EffectRaw": "Quando um inimigo-alvo é atacado por Cisne Negro, há <unbreak>#1[i]%</unbreak> de chance-base de infligir <unbreak>#2[i]</unbreak> acúmulo(s) de \"Arcana\" nele.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espírito de Fogo",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307102": {
+				"Id": "11307102",
+				"Name": "Dragas do Cálice",
+				"NodeType": 3,
+				"EffectRaw": "Quando os inimigos-alvo entram em combate, eles têm uma <unbreak>#1[i]%</unbreak> \"chance-base\" de serem afligidos com 1 acúmulo de \"Arcana\", e uma <unbreak>#2[i]%</unbreak> \"chance-base\" de serem afligidos com o efeito da Perícia de redução de DEF, que dura por <unbreak>#3[i]</unbreak> rodada(s).\nApós usar o ATQ Básico ou a Perícia Suprema, também há uma <unbreak>#2[i]%</unbreak> \"chance-base\" de infligir o efeito de redução de DEF da Perícia nos inimigos-alvo atingidos, com duração de <unbreak>#3[i]</unbreak> rodada(s).",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							1,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307103": {
+				"Id": "11307103",
+				"Name": "Presságio da Chama da Vela",
+				"NodeType": 3,
+				"EffectRaw": "Aumenta o Dano causado por todos os aliados em uma quantidade igual a <unbreak>#1[i]%</unbreak> da Taxa de Acerto de Efeito da Cisne Negro, até um aumento máximo de Dano de <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.72
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Males Passados do Desastre do Planeta da Perfuração",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307201": {
+				"Id": "11307201",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11307202": {
+				"Id": "11307202",
+				"Name": "Bônus de Dano: Vento",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano de Vento em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.032,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.032
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11307101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espírito de Fogo",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo Apagado",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11307203": {
+				"Id": "11307203",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307204": {
+				"Id": "11307204",
+				"Name": "Bônus de Taxa de Acerto de Efeito",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Taxa de Acerto de Efeito em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307205": {
+				"Id": "11307205",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11307102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essência de Chama Estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo Cintilante",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307206": {
+				"Id": "11307206",
+				"Name": "Bônus de Dano: Vento",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano de Vento em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.048,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.048
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307207": {
+				"Id": "11307207",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307208": {
+				"Id": "11307208",
+				"Name": "Bônus de Taxa de Acerto de Efeito",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Taxa de Acerto de Efeito em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307209": {
+				"Id": "11307209",
+				"Name": "Bônus de Dano: Vento",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano de Vento em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.064,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.064
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador do Paraíso",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo Contorcido",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307210": {
+				"Id": "11307210",
+				"Name": "Bônus de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o ATQ em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11307201",
 						"Costs": [
 							{
 								"Id": "2",
@@ -83008,7 +85904,7 @@
 				"Name": "Bênção de Papéis e Ritos",
 				"NodeType": 2,
 				"NodeTypeText": "Perícia",
-				"EffectRaw": "Permite que um personagem aliado designado e sua invocação atuem imediatamente, aumentando o Dano causado em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Se o alvo tiver uma invocação, o bônus de Dano adicional aumenta em <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, durando <unbreak>#3[i]</unbreak> rodada(s).\nApós usar a Perícia em O Beatificado, recupera 1 Ponto de Perícia.\nQuando Sunday utiliza essa habilidade em personagens que seguem o Caminho da Harmonia, o efeito de \"ação imediata\" não pode ser ativado.",
+				"EffectRaw": "Permite que um personagem aliado designado e sua invocação atuem imediatamente, aumentando o Dano causado por eles em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Se o alvo tiver uma invocação, o efeito de Bônus de Dano aumenta em um valor adicional de <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, durando por <unbreak>#3[i]</unbreak> rodada(s).\nApós usar a Perícia em O Beatificado, ele recupera 1 Ponto de Perícia.\nQuando Sunday utiliza essa habilidade em personagens que seguem o Caminho da Harmonia, o efeito de \"ação imediata\" não pode ser ativado.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"131302"
@@ -110081,7 +112977,7 @@
 				"Name": "Verso ◦ Juramento ∞",
 				"NodeType": 2,
 				"NodeTypeText": "Perícia Suprema",
-				"EffectRaw": "<u>Invoca o Memoespírito</u> \"Demiurgo\", fazendo com que ele ganhe imediatamente 1 rodada extra, e ativa a Perícia Suprema de todos os aliados. Em seguida, entra no estado de \"Ondulações de Devaneios Passados\". Aprimoda o ATQ Básico para \"Para o Amor e o Amanhã ♪\" e pode usar apenas este ATQ Básico. A Chance de CRIT de Cyrene e de \"Demiurgo\" aumenta em <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, e aplica o efeito de Campo da Perícia sem limite de duração.\nPode ser usada apenas uma vez por batalha. Os PV iniciais de Demiurgo são iguais a <unbreak>#1[i]%</unbreak> dos PV máximos de Cyrene.",
+				"EffectRaw": "<u>Invoca o Memoespírito</u> \"Demiurgo\", fazendo com que ele ganhe imediatamente 1 rodada extra, e ativa a Perícia Suprema de todos os aliados. Em seguida, entra no estado de \"Ondulações de Devaneios Passados\". Aprimora o ATQ Básico para \"Para o Amor e o Amanhã ♪\" e pode usar apenas este ATQ Básico. A Chance de CRIT de Cyrene e de \"Demiurgo\" aumenta em <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, e aplica o efeito de Campo da Perícia sem limite de duração.\nPode ser usada apenas uma vez por batalha. Os PV iniciais de Demiurgo são iguais a <unbreak>#1[i]%</unbreak> dos PV máximos de Cyrene.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"141503",
@@ -111332,6 +114228,3225 @@
 			}
 		},
 		"VersionAdded": "3.7"
+	},
+	"1501": {
+		"Id": "1501",
+		"Name": "Sparxie",
+		"Nodes": {
+			"1501001": {
+				"Id": "1501001",
+				"Name": "Ih! Deu Defeito?",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ Básico",
+				"EffectRaw": "Causa Dano de Fogo igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Sparxie a um único inimigo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150101",
+					"150108"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501002": {
+				"Id": "1501002",
+				"Name": "Bum! A Sparxinha Tá Arrasando",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia",
+				"EffectRaw": "Abra uma live para transformar o ATQ Básico em \"Xablau! O Vencedor Leva Tudo\" e acionar \"Produção de Engajamento\" 1 vez. Durante esta habilidade, \"Produção de Engajamento\" pode ser ativada repetidamente, até <unbreak>#1[i]</unbreak> vez(es). Usar esta habilidade não é considerado como usar uma Perícia.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150102",
+					"150109"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501003": {
+				"Id": "1501003",
+				"Name": "Festa Estranha com Gente Esquisita",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia Suprema",
+				"EffectRaw": "Ganha <unbreak>#1[i]</unbreak> ponto(s) de \"Piada\". Causa Dano de Fogo igual a (<unbreak>#3[f1]</unbreak> × Euforia + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>) do ATQ de Sparxie a todos os inimigos.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150103"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.3,
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.32,
+							0.6
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.34,
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.36,
+							0.6
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.38,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.425,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.45,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.475,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.5,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501004": {
+				"Id": "1501004",
+				"Name": "Prestidigitação Explosiva",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Quando Sparxie possui \"Mandou Bem\":\nAo usar o ATQ Básico Aprimorado, causa <u>Dano de Euforia de Fogo</u> igual a <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> a um inimigo designado e <u>Dano de Euforia de Fogo</u> igual a <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> aos alvos adjacentes. Além disso, a cada vez que \"Produção de Engajamento\" é ativada, o ATQ Básico Aprimorado causa 1 instância adicional de <u>Dano de Euforia de Fogo</u> igual a <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> a 1 inimigo-alvo atacado aleatoriamente.\nAo usar a Perícia Suprema, causa <u>Dano de Euforia de Fogo</u> igual a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> a todos os inimigos.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150104"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.24,
+							0.2,
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11,
+							0.264,
+							0.22,
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12,
+							0.288,
+							0.24,
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13,
+							0.312,
+							0.26,
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14,
+							0.336,
+							0.28,
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15,
+							0.36,
+							0.3,
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625,
+							0.39,
+							0.325,
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175,
+							0.42,
+							0.35,
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875,
+							0.45,
+							0.375,
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2,
+							0.48,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501007": {
+				"Id": "1501007",
+				"Name": "Monetização de Conteúdo",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Após usar a Técnica, inflige \"Bloqueio\" em inimigos dentro de uma área definida por <unbreak>#3[i]</unbreak> segundo(s). Inimigos afligidos com \"Bloqueio\" não conseguem detectar aliados-alvo.\nAo entrar em combate atacando ativamente um inimigo afligido com \"Bloqueio\", causa Dano de Fogo a todos os inimigos igual a <unbreak>#2[i]%</unbreak> do ATQ de Sparxie e recupera <unbreak>#1[i]</unbreak> Ponto(s) de Perícia para os aliados.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150107"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.5,
+							10
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1501101": {
+				"Id": "1501101",
+				"Name": "Legal! Piadinhas Autografadas",
+				"NodeType": 3,
+				"EffectRaw": "Para cada <unbreak>#2[i]</unbreak> ponto(s) do ATQ de Sparxie que exceda(m) <unbreak>#1[i]</unbreak>, aumenta a Euforia desta unidade em <unbreak>#3[f1]%</unbreak>, até um aumento máximo de <unbreak>#4[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2000,
+							100,
+							0.05,
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501102": {
+				"Id": "1501102",
+				"Name": "Deslumbrante! Caleidoscópio de Personagens",
+				"NodeType": 3,
+				"EffectRaw": "Quando houver 1/2/3 ou mais personagens da Euforia na equipe, usar a Perícia Suprema de Sparxie irá adicionalmente conceder <unbreak>#1[i]</unbreak>/<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak> ponto(s) de \"Piada\" e <unbreak>#4[i]</unbreak>/<unbreak>#5[i]</unbreak>/<unbreak>#6[i]</unbreak> ponto(s) de \"Emoção\".",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							4,
+							8,
+							1,
+							1,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501103": {
+				"Id": "1501103",
+				"Name": "Frenesi! Paleta de Verdades e Mentiras",
+				"NodeType": 3,
+				"EffectRaw": "Para cada 1 ponto de <u>Piada</u> atualmente possuído, aumenta o Dano CRIT de todos os aliados em <unbreak>#1[i]%</unbreak>, até um aumento máximo de <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08,
+							0.8
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501201": {
+				"Id": "1501201",
+				"Name": "Bônus de Euforia",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Euforia em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501202": {
+				"Id": "1501202",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1501203": {
+				"Id": "1501203",
+				"Name": "Bônus de Euforia",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Euforia em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501204": {
+				"Id": "1501204",
+				"Name": "Bônus de Dano CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501205": {
+				"Id": "1501205",
+				"Name": "Bônus de Euforia",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Euforia em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1501102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1501206": {
+				"Id": "1501206",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501207": {
+				"Id": "1501207",
+				"Name": "Bônus de Euforia",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Euforia em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501208": {
+				"Id": "1501208",
+				"Name": "Bônus de Dano CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta o Dano CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1501103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501209": {
+				"Id": "1501209",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1501208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501210": {
+				"Id": "1501210",
+				"Name": "Bônus de Euforia",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Euforia em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1501209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501420": {
+				"Id": "1501420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
+	},
+	"1502": {
+		"Id": "1502",
+		"Name": "Yao Guang",
+		"Nodes": {
+			"1502001": {
+				"Id": "1502001",
+				"Name": "Alegria dos Dardos Emplumados",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ Básico",
+				"EffectRaw": "Causa Dano Físico igual a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> do ATQ de Yao Guang a um inimigo designado e Dano Físico igual a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> do ATQ de Yao Guang aos inimigos adjacentes. Aumenta a Energia regenerada pelo ATQ Básico em <unbreak>30</unbreak>.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150201"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.15
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.54,
+							0.18
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.63,
+							0.21
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72,
+							0.24
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.81,
+							0.27
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502002": {
+				"Id": "1502002",
+				"Name": "A Decaluz Ilumina Tudo",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia",
+				"EffectRaw": "Implanta um Campo por <unbreak>#1[i]</unbreak> rodada(s). Essa duração é reduzida em 1 no início de toda rodada desta unidade. Enquanto o Campo estiver ativo, aumenta a Euforia de todos os aliados em um valor igual a <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> da Euforia de Yao Guang. Após Yao Guang usar o ATQ Básico ou a Perícia, ganha <unbreak>#3[i]</unbreak> ponto(s) de \"Piada\".",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150202"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							0.1,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							3,
+							0.11,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							3,
+							0.12,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							3,
+							0.13,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							3,
+							0.14,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							3,
+							0.15,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							3,
+							0.1625,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							3,
+							0.175,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							3,
+							0.1875,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							0.2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502003": {
+				"Id": "1502003",
+				"Name": "Hexagrama da Fortuna Emplumada",
+				"NodeType": 2,
+				"NodeTypeText": "Perícia Suprema",
+				"EffectRaw": "Ganha <unbreak>#1[i]</unbreak> ponto(s) de \"Piada\". Aha ganha imediatamente 1 rodada extra onde uma quantidade fixa de ponto(s) de <unbreak>#4[i]</unbreak> \"Piada\" é levada em consideração. Essa rodada não consome ponto(s) de \"Piada\" e aumenta a PEN de RES a Todos os Tipos de todos os aliados em <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> por <unbreak>#3[i]</unbreak> rodada(s).",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150203"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							5,
+							0.1,
+							3,
+							20,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							5,
+							0.11,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							5,
+							0.12,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							5,
+							0.13,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							5,
+							0.14,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							5,
+							0.15,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							5,
+							0.1625,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							5,
+							0.175,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							5,
+							0.1875,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							5,
+							0.2,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502004": {
+				"Id": "1502004",
+				"Name": "Contemple o Desdobrar da Luz",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Enquanto Yao Guang possui \"Mandou Bem\":\nDepois que um aliado-alvo usa um ataque, ativa o efeito \"Grande Dádiva\", causando 1 instância adicional de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de <u>Dano de Euforia</u> do Tipo correspondente 1 vez a 1 alvo aleatório atingido. Se este ataque consumir Pontos de Perícia, então ativa adicionalmente o efeito \"Grande Dádiva\" 1 vez.\nAo ativar o efeito \"Grande Dádiva\", se o valor de Euforia do atacante for inferior ao de Yao Guang, esta instância de <u>Dano de Euforia</u> utilizará a Euforia de Yao Guang para o cálculo.\nAtivar o efeito \"Grande Dádiva\" não é considerado como usar um ataque.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150204"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502007": {
+				"Id": "1502007",
+				"Name": "O Brilho Liberto Veleja para Longe",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Após usar a Técnica, ativa automaticamente a Perícia 1 vez no início da próxima batalha sem consumir nenhum Ponto de Perícia. Quando Yao Guang está na equipe, quebrar Objetos Destrutíveis concede imediatamente Envelope da Sorte, até <unbreak>#1[i]</unbreak> para cada Semana Terrestre.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150207"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							8
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1502101": {
+				"Id": "1502101",
+				"Name": "Graça Labirín-Tástica",
+				"NodeType": 3,
+				"EffectRaw": "Quando a VEL de Yao Guang for <unbreak>#1[i]</unbreak> ou superior, aumenta a Euforia desta unidade em <unbreak>#2[i]%</unbreak>. Para cada <unbreak>#3[i]</unbreak> de VEL excedente(s), aumenta a Euforia desta unidade em <unbreak>#4[i]%</unbreak>. Até um máximo de <unbreak>#5[i]</unbreak> pontos de VEL excedentes podem ser levados em consideração para esse efeito.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							120,
+							0.3,
+							1,
+							0.01,
+							200
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502102": {
+				"Id": "1502102",
+				"Name": "Elegante e Satisfeita",
+				"NodeType": 3,
+				"EffectRaw": "Aumenta o Dano CRIT desta unidade em <unbreak>#4[i]%</unbreak>. Após usar a Perícia da Euforia, recupera <unbreak>#1[i]</unbreak> Ponto(s) de Perícia para a equipe.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.25,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502103": {
+				"Id": "1502103",
+				"Name": "Conjunto da Felicidade",
+				"NodeType": 3,
+				"EffectRaw": "Quando Yao Guang obtém \"Mandou Bem\", aumenta sua duração em <unbreak>#2[i]</unbreak> rodada(s).",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Rastros de Destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silêncio do Fluxo Derrotado",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502201": {
+				"Id": "1502201",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502202": {
+				"Id": "1502202",
+				"Name": "Bônus de VEL",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a VEL em <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1502203": {
+				"Id": "1502203",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502204": {
+				"Id": "1502204",
+				"Name": "Bônus de Euforia",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Euforia em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502205": {
+				"Id": "1502205",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1502102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1502206": {
+				"Id": "1502206",
+				"Name": "Bônus de VEL",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a VEL em <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502207": {
+				"Id": "1502207",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502208": {
+				"Id": "1502208",
+				"Name": "Bônus de Euforia",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Euforia em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1502103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502209": {
+				"Id": "1502209",
+				"Name": "Bônus de VEL",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a VEL em <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							4
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1502208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502210": {
+				"Id": "1502210",
+				"Name": "Bônus de Chance de CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Aumenta a Chance de CRIT em <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1502209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502420": {
+				"Id": "1502420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Storyboards de \"Fofurinha\" Desenhados à Mão",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cera Caprichosa",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edição Comemorativa de Serialização de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Aço Tece-Sonhos",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edição de Colecionador de \"Fofurinha\"",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "Punção Lúcida",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
 	},
 	"8001": {
 		"Id": "8001",

@@ -20437,7 +20437,7 @@
 			"TagTypeText": "サポート",
 			"SkillTypeText": "戦闘スキル",
 			"MaxLevel": 15,
-			"EffectRaw": "指定した自身以外の味方単体を「師匠」にする。「師匠」の速度+<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。戦闘スキルで最後に指定したターゲットのみ、三月なのかの「師匠」と見なされる。\n通常攻撃を行う、または強化通常攻撃「一に眉間、二に心臓」によるダメージを1段与える時、フィールド上に特定の運命を歩む「師匠」が存在する場合、「師匠」の歩む運命に応じて特定の効果を発動する。\n\n「師匠」の歩む運命が「知恵」、「壊滅」、「巡狩」または「記憶」の場合：三月なのかの攻撃力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の、「師匠」の属性に応じた<u>付加ダメージ</u>を与える。\n\n「師匠」の歩む運命が「調和」、「虚無」、「存護」または「豊穣」の場合：その回の攻撃の削靭値+<unbreak>#3[i]%</unbreak>。",
+			"EffectRaw": "指定した自身以外の味方単体を「師匠」にする。「師匠」の速度+<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。戦闘スキルで最後に指定したターゲットのみ、三月なのかの「師匠」と見なされる。\n通常攻撃を行う、または強化通常攻撃「一に眉間、二に心臓」によるダメージを1段与える時、フィールド上に特定の運命を歩む「師匠」が存在する場合、「師匠」の歩む運命に応じて特定の効果を発動する。\n\n「師匠」の歩む運命が「知恵」、「壊滅」、「巡狩」、「記憶」または「愉悦」の場合：三月なのかの攻撃力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の、「師匠」の属性に応じた<u>付加ダメージ</u>を与える。\n\n「師匠」の歩む運命が「調和」、「虚無」、「存護」または「豊穣」の場合：その回の攻撃の削靭値+<unbreak>#3[i]%</unbreak>。",
 			"AbridgedEffect": "味方単体を「師匠」にする。通常攻撃、または強化通常攻撃を行ってダメージを与える時、<color=#f29e38ff>「師匠」の運命</color>に応じて以下の効果を発動する：\n「師匠」の運命が「知恵」、「壊滅」、「巡狩」、「記憶」の場合：「師匠」の属性に応じた<color=#f29e38ff><u>付加ダメージ</u></color>をさらに与える。\n「師匠」の運命が「調和」、「虚無」、「存護」、「豊穣」の場合：<color=#f29e38ff>削靭値</color>がアップする。",
 			"Levels": {
 				"1": {
@@ -38007,6 +38007,1254 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Maze.png"
 		},
 		"VersionAdded": "3.7"
+	},
+	"1501": {
+		"Id": "1501",
+		"Name": "{RUBY_B#ひばな}火花{RUBY_E#}",
+		"BasicATK": {
+			"Id": "150101",
+			"Name": "{RUBY_B#ふはつ}不発{RUBY_E#}だった？",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "単体攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "指定した敵単体に火花の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の炎属性ダメージを与える。",
+			"AbridgedEffect": "敵単体に少量の炎属性ダメージを与える。",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "150108",
+			"Name": "{RUBY_B#ひゃっかりょうらん}百花繚乱{RUBY_E#}、ひとり{RUBY_B#が}勝{RUBY_E#}ち！",
+			"TriggerKey": "Skill11",
+			"TagType": "Blast",
+			"TagTypeText": "拡散攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "コラボ配信の結果を清算し、指定した敵単体に火花の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の炎属性ダメージを与え、隣接する敵に火花の攻撃力<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>分の炎属性ダメージを与える。",
+			"AbridgedEffect": "敵単体に少量の炎属性ダメージを与え、隣接する敵に少量の炎属性ダメージを与える。",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5,
+						0.25
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8,
+						0.4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9,
+						0.45
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1,
+						0.55
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2,
+						0.6
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3,
+						0.65
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal02.png"
+		},
+		"Skill": {
+			"Id": "150102",
+			"Name": "キャー！{RUBY_B#ひばなはいしんちゅう}火花配信中{RUBY_E#}",
+			"TriggerKey": "Skill02",
+			"TagType": "Enhance",
+			"TagTypeText": "強化",
+			"SkillTypeText": "戦闘スキル",
+			"MaxLevel": 15,
+			"EffectRaw": "コラボ配信を開始し、通常攻撃が「百花繚乱、ひとり勝ち！」となり、「インタラクティブ・トラップ」を1回発動する。今回のスキル発動中、「インタラクティブ・トラップ」を重複して発動できる。最大<unbreak>#1[i]</unbreak>回発動可能。\nこのスキルの発動は戦闘スキルを発動したと見なされない。",
+			"AbridgedEffect": "コラボ配信を開始し、通常攻撃が「百花繚乱、ひとり勝ち！」となり、「インタラクティブ・トラップ」を1回発動する。今回のスキル発動中、「インタラクティブ・トラップ」を<color=#f29e38ff>重複して発動できる</color>。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"2": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"3": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"4": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"6": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"8": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"9": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"10": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"11": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"12": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"13": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"14": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"15": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "150109",
+			"Name": "インタラクティブ・トラップ",
+			"TriggerKey": "Skill21",
+			"TagType": "Enhance",
+			"TagTypeText": "強化",
+			"SkillTypeText": "戦闘スキル",
+			"MaxLevel": 15,
+			"EffectRaw": "「百花繚乱、ひとり勝ち！」の指定した敵単体へのダメージの倍率+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、隣接する敵へのダメージ倍率+<color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>。さらにランダムで以下のギフトを1つ獲得する。\n「大草原」：<u>爆笑ネタ</u>を<unbreak>#3[i]</unbreak>個とSPを<unbreak>#1[i]</unbreak>獲得する。\n「大爆笑」：<u>爆笑ネタ</u>を<unbreak>#2[i]</unbreak>個獲得する。\nこのスキルの発動は戦闘スキルを発動したと見なされない。",
+			"AbridgedEffect": "「百花繚乱、ひとり勝ち！」のダメージ倍率をアップさせ、ランダムでギフト「大草原」または「大爆笑」を獲得する。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.1,
+						0.05
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.11,
+						0.055
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.12,
+						0.06
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.13,
+						0.065
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.14,
+						0.07
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.15,
+						0.075
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.1625,
+						0.0813
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.175,
+						0.0875
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.1875,
+						0.0938
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.2,
+						0.1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.21,
+						0.105
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.22,
+						0.11
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.23,
+						0.115
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.24,
+						0.12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.25,
+						0.125
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP02.png"
+		},
+		"Ultimate": {
+			"Id": "150103",
+			"Name": "{RUBY_B#ひばな}火花{RUBY_E#}で{RUBY_B#も}盛{RUBY_E#}り上がろう！カメラは{RUBY_B#と}止{RUBY_E#}めないで",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "全体攻撃",
+			"SkillTypeText": "必殺技",
+			"MaxLevel": 15,
+			"EffectRaw": "<u>爆笑ネタ</u>を<unbreak>#1[i]</unbreak>個獲得する。敵全体に火花の攻撃力（<unbreak>#3[f1]</unbreak>×愉悦度+<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>）分の炎属性ダメージを与える。",
+			"AbridgedEffect": "<color=#f29e38ff><u>爆笑ネタ</u>を獲得する</color>。敵全体に炎属性ダメージを与える。",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						0.3,
+						0.6
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2,
+						0.32,
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2,
+						0.34,
+						0.6
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						0.36,
+						0.6
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2,
+						0.38,
+						0.6
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.4,
+						0.6
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2,
+						0.425,
+						0.6
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2,
+						0.45,
+						0.6
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2,
+						0.475,
+						0.6
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						0.5,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2,
+						0.52,
+						0.6
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2,
+						0.54,
+						0.6
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2,
+						0.56,
+						0.6
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2,
+						0.58,
+						0.6
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						0.6,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Ultra.png"
+		},
+		"EnhancedBasicATK2": {
+			"Id": "150110",
+			"Name": "{RUBY_B#ひゃっかりょうらん}百花繚乱{RUBY_E#}、ひとり{RUBY_B#が}勝{RUBY_E#}ち！",
+			"TriggerKey": "Skill12",
+			"TagType": "Blast",
+			"TagTypeText": "拡散攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "N/A",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5,
+						0.25
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8,
+						0.4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9,
+						0.45
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1,
+						0.55
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2,
+						0.6
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3,
+						0.65
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal02.png"
+		},
+		"Talent": {
+			"Id": "150104",
+			"Name": "{RUBY_B#うら}裏{RUBY_E#}でタネを{RUBY_B#しか}仕掛{RUBY_E#}ける{RUBY_B#はな}花{RUBY_E#}",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "強化",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "火花が「<u>爆笑の褒美</u>」を持つ時、以下の効果が発動する。\n強化通常攻撃を発動すると、指定した敵単体に<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>分の炎属性の<u>愉悦ダメージ</u>を与え、隣接する敵に<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>分の炎属性の<u>愉悦ダメージ</u>を与える。「インタラクティブ・トラップ」の発動回数1回につき、強化通常攻撃で攻撃を行った時、攻撃を受けたランダムな敵1体に追加で<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>分の炎属性の<u>愉悦ダメージ</u>を1回与える。\n必殺技を発動すると、敵全体に<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の炎属性の<u>愉悦ダメージ</u>を与える。",
+			"AbridgedEffect": "火花が「<u>爆笑の褒美</u>」を持つ時、強化通常攻撃と必殺技を発動すると、敵に炎属性<u>愉悦ダメージ</u>を与えられる。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1,
+						0.24,
+						0.2,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.11,
+						0.264,
+						0.22,
+						0.11
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.12,
+						0.288,
+						0.24,
+						0.12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.13,
+						0.312,
+						0.26,
+						0.13
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.14,
+						0.336,
+						0.28,
+						0.14
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.15,
+						0.36,
+						0.3,
+						0.15
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.1625,
+						0.39,
+						0.325,
+						0.1625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.175,
+						0.42,
+						0.35,
+						0.175
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1875,
+						0.45,
+						0.375,
+						0.1875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.2,
+						0.48,
+						0.4,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.21,
+						0.504,
+						0.42,
+						0.21
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.22,
+						0.528,
+						0.44,
+						0.22
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.23,
+						0.552,
+						0.46,
+						0.23
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.24,
+						0.576,
+						0.48,
+						0.24
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.25,
+						0.6,
+						0.5,
+						0.25
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Passive.png"
+		},
+		"Technique": {
+			"Id": "150107",
+			"Name": "{RUBY_B#しゅうえきか}収益化{RUBY_E#}",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "妨害",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "秘技を使用した後、一定範囲内の敵を<unbreak>#3[i]</unbreak>秒間の「ブロック」状態にする。「ブロック」状態の敵は味方を発見できない。\n「ブロック」状態の敵を先制攻撃して戦闘に入った時、敵全体に火花の攻撃力<unbreak>#2[i]%</unbreak>分の炎属性ダメージを与え、SPを<unbreak>#1[i]</unbreak>回復する。",
+			"AbridgedEffect": "一定範囲内の敵を「ブロック」状態にする。「ブロック」状態の敵を攻撃して戦闘に入った後、敵全体に少量の炎属性ダメージを与え、<color=#f29e38ff>SPを回復する</color>。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						0.5,
+						10
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Maze.png"
+		},
+		"VersionAdded": "4.0"
+	},
+	"1502": {
+		"Id": "1502",
+		"Name": "{RUBY_B#コウコウ}爻光{RUBY_E#}",
+		"BasicATK": {
+			"Id": "150201",
+			"Name": "{RUBY_B#くじゃく}孔雀{RUBY_E#}の{RUBY_B#やばね}矢羽根{RUBY_E#}、{RUBY_B#さいわ}幸{RUBY_E#}いを{RUBY_B#まね}招{RUBY_E#}く{RUBY_B#こうし}嚆矢{RUBY_E#}",
+			"TriggerKey": "Skill01",
+			"TagType": "Blast",
+			"TagTypeText": "拡散攻撃",
+			"SkillTypeText": "通常攻撃",
+			"MaxLevel": 10,
+			"EffectRaw": "指定した敵単体に爻光の攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の物理属性ダメージを与え、隣接する敵に爻光の攻撃力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分の物理属性ダメージを与える。通常攻撃のEPの回復量が<unbreak>30</unbreak>までアップする。",
+			"AbridgedEffect": "敵単体に少量の物理属性のダメージを与え、隣接する敵に少量の物理属性のダメージを与える。",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.45,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.54,
+						0.18
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.63,
+						0.21
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.72,
+						0.24
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.81,
+						0.27
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.9,
+						0.3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.99,
+						0.33
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.08,
+						0.36
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.17,
+						0.39
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.26,
+						0.42
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Normal.png"
+		},
+		"Skill": {
+			"Id": "150202",
+			"Name": "{RUBY_B#じっぽう}十方{RUBY_E#}に{RUBY_B#ひかりは}光映{RUBY_E#}ゆ、{RUBY_B#ばんぽう}万法{RUBY_E#}を{RUBY_B#あ}明{RUBY_E#}かさん",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "サポート",
+			"SkillTypeText": "戦闘スキル",
+			"MaxLevel": 15,
+			"EffectRaw": "<unbreak>#1[i]</unbreak>ターン継続する結界を展開する。爻光のターンが回ってくるたびに結界の継続時間-1ターン。結界が展開されている間、味方全体の愉悦度を、爻光の愉悦度の<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>分アップさせる。爻光が通常攻撃、戦闘スキルを発動した後、<u>爆笑ネタ</u>を<unbreak>#3[i]</unbreak>個獲得する。",
+			"AbridgedEffect": "結界を展開し、味方全体の愉悦度をアップさせる。爻光が通常攻撃または戦闘スキルを発動した後、<u>爆笑ネタ</u>を獲得する。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						3,
+						0.1,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						3,
+						0.11,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						3,
+						0.12,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						3,
+						0.13,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						3,
+						0.14,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						3,
+						0.15,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						3,
+						0.1625,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.175,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3,
+						0.1875,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						0.2,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3,
+						0.21,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3,
+						0.22,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3,
+						0.23,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3,
+						0.24,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.25,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_BP.png"
+		},
+		"Ultimate": {
+			"Id": "150203",
+			"Name": "{RUBY_B#げいしょう}霓裳{RUBY_E#}に{RUBY_B#てつ}鉄{RUBY_E#}の{RUBY_B#はね}羽{RUBY_E#}、{RUBY_B#ろっこう}六爻{RUBY_E#}はすべて{RUBY_B#きち}吉{RUBY_E#}",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "サポート",
+			"SkillTypeText": "必殺技",
+			"MaxLevel": 15,
+			"EffectRaw": "<u>爆笑ネタ</u>を<unbreak>#1[i]</unbreak>個獲得する。<u>アッハ</u>は<u>爆笑ネタ</u>が固定で<unbreak>#4[i]</unbreak>個カウントされる<u>追加ターン</u>を即座に1ターン獲得する。なお、このターンでは<u>爆笑ネタ</u>が消費されない。また、味方全体の全属性<u>耐性貫通</u>+<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。",
+			"AbridgedEffect": "<u>爆笑ネタ</u>を獲得する。<u>アッハ</u>が即座に、一定数の<u>爆笑ネタ</u>がカウントされる<u>追加ターン</u>を1ターン獲得し、味方全体の全属性<u>耐性貫通</u>をアップさせる。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						5,
+						0.1,
+						3,
+						20,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						5,
+						0.11,
+						3,
+						20,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						5,
+						0.12,
+						3,
+						20,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						5,
+						0.13,
+						3,
+						20,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						5,
+						0.14,
+						3,
+						20,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						5,
+						0.15,
+						3,
+						20,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						5,
+						0.1625,
+						3,
+						20,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						5,
+						0.175,
+						3,
+						20,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						5,
+						0.1875,
+						3,
+						20,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						5,
+						0.2,
+						3,
+						20,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						5,
+						0.21,
+						3,
+						20,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						5,
+						0.22,
+						3,
+						20,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						5,
+						0.23,
+						3,
+						20,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						5,
+						0.24,
+						3,
+						20,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						5,
+						0.25,
+						3,
+						20,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Ultra.png"
+		},
+		"Talent": {
+			"Id": "150204",
+			"Name": "{RUBY_B#せん}千{RUBY_E#}の{RUBY_B#ひかり}光{RUBY_E#}を{RUBY_B#ひら}開{RUBY_E#}き、{RUBY_B#あまね}遍{RUBY_E#}く{RUBY_B#かんじざい}観自在{RUBY_E#}なり",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "サポート",
+			"SkillTypeText": "天賦",
+			"MaxLevel": 15,
+			"EffectRaw": "爻光が「<u>爆笑の褒美</u>」を持つ時、以下の効果を獲得する。\n味方が攻撃を行った後「大吉大利」効果を発動する。\n「大吉大利」：攻撃が命中したランダムな敵単体に追加で<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>分の対応する属性の<u>愉悦ダメージ</u>を1回与える。また、その回の攻撃でSPを消費した場合、さらに「大吉大利」の効果を1回発動する。\n「大吉大利」の効果を発動する時、攻撃者の愉悦度が爻光より低い場合、その回の<u>愉悦ダメージ</u>は爻光の愉悦度で計算される。\n「大吉大利」の効果は攻撃を1回発動したと見なされない。",
+			"AbridgedEffect": "爻光が「<u>爆笑の褒美</u>」を持つ時、味方が攻撃を行った後「大吉大利」効果を発動する。\n「大吉大利」：攻撃が命中したランダムな敵単体にさらに1回対応する属性の少量の<u>愉悦ダメージ</u>を与える。その回の攻撃でSPを消費した場合、さらにこの効果を1回発動する。この効果は攻撃を1回発動したと見なされない。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.11
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.13
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.14
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.15
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.1625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.175
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.21
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.22
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.23
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.24
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.25
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Passive.png"
+		},
+		"Technique": {
+			"Id": "150207",
+			"Name": "{RUBY_B#うつ}移{RUBY_E#}りゆく{RUBY_B#じこう}時光{RUBY_E#}、{RUBY_B#なに}何{RUBY_E#}をか{RUBY_B#い}忌{RUBY_E#}むべき",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "サポート",
+			"SkillTypeText": "秘技",
+			"MaxLevel": 1,
+			"EffectRaw": "秘技を使用した後、次の戦闘開始時に戦闘スキルを自動で1回発動する。この発動ではSPを消費しない。爻光がパーティにいる場合、オブジェクトを破壊すると即座に「吉運一封」を獲得する。1週間ごとに最大で<unbreak>#1[i]</unbreak>個獲得できる。",
+			"AbridgedEffect": "戦闘に入る時、戦闘スキルを自動で1回発動する。爻光がパーティにいる時、オブジェクトを破壊すると即座に「吉運一封」を獲得する。",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Maze.png"
+		},
+		"VersionAdded": "4.0"
 	},
 	"8001": {
 		"Id": "8001",

@@ -64694,7 +64694,7 @@
 				"Name": "師父，請喝茶！",
 				"NodeType": 2,
 				"NodeTypeText": "戰技",
-				"EffectRaw": "使除自身以外的我方指定單體成為【師父】，【師父】的速度提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。僅戰技最新的發動目標視為三月七的【師父】。\n每當發動普通攻擊或造成1段強化普通攻擊的傷害時，若場上存在指定命途的【師父】，則觸發對應效果：\n「智識」、「毀滅」、「巡獵」、「記憶」：額外造成等同於三月七<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的基於【師父】屬性的<u>附加傷害</u>。\n「同諧」、「虛無」、「存護」、「豐饒」：本次傷害的削韌值提高<unbreak>#3[i]%</unbreak>。",
+				"EffectRaw": "使除自身以外的我方指定單體成為【師父】，【師父】的速度提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。僅戰技最新的施放目標視為三月七的【師父】。\n每當發動普通攻擊或造成1段強化普通攻擊的傷害時，若場上存在指定命途的【師父】，則觸發對應效果：\n「智識」、「毀滅」、「巡獵」、「記憶」、「歡愉」：額外造成等同於三月七<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的基於【師父】屬性的<u>附加傷害</u>。\n「同諧」、「虛無」、「存護」、「豐饒」：本次傷害的削韌值提高<unbreak>#3[i]%</unbreak>。",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"122402"
@@ -75698,6 +75698,1438 @@
 						]
 					}
 				}
+			},
+			"11306001": {
+				"Id": "11306001",
+				"Name": "獨角戲",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於花火<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130601"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "雲際音符",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306002": {
+				"Id": "11306002",
+				"Name": "夢遊魚",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "使指定我方單體的暴擊傷害提高，提高數值等同於花火<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>暴擊傷害+<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合，並使該目標行動提前<unbreak>#4[i]%</unbreak>。\n當花火對自身施放該技能時，無法觸發行動提前效果。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130602"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12,
+							0.27,
+							2,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.132,
+							0.288,
+							2,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.144,
+							0.306,
+							2,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "雲際音符",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.156,
+							0.324,
+							2,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.168,
+							0.342,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.18,
+							0.36,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.195,
+							0.3825,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.21,
+							0.405,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.225,
+							0.4275,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.24,
+							0.45,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306003": {
+				"Id": "11306003",
+				"Name": "一人千役",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "為我方恢復<unbreak>#2[i]</unbreak>個戰技點，若恢復時戰技點溢出，則記錄溢出的戰技點數，最多記錄<unbreak>#5[i]</unbreak>點。我方角色回合結束後若戰技點小於上限，花火消耗紀錄值為我方恢復戰技點，直至恢復至上限。隨後使我方全體獲得【謎詭】。持有【謎詭】的我方目標觸發花火天賦造成的敵方受到傷害提高效果每層額外提高<color=#f29e38ff><unbreak>#3[f2]%</unbreak></color>，持續<unbreak>#4[i]</unbreak>回合。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130603"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							6,
+							0.036,
+							3,
+							10
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							6,
+							0.0384,
+							3,
+							10
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							6,
+							0.0408,
+							3,
+							10
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "雲際音符",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							6,
+							0.0432,
+							3,
+							10
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							6,
+							0.0456,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							6,
+							0.048,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							6,
+							0.051,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							6,
+							0.054,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							6,
+							0.057,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							6,
+							0.06,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306004": {
+				"Id": "11306004",
+				"Name": "敘述性詭計",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "花火在場時，戰技點上限額外增加<unbreak>#3[i]</unbreak>點。當我方目標每消耗1點戰技點，花火獲得1層【幻相】，每層【幻相】使敵方全體受到的傷害提高<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，該效果持續<unbreak>#1[i]</unbreak>回合，最多可疊加<unbreak>#4[i]</unbreak>層。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130604"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.02,
+							2,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.022,
+							2,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.024,
+							2,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "雲際音符",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.026,
+							2,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.028,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.03,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0325,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.035,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0375,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.04,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306007": {
+				"Id": "11306007",
+				"Name": "不可靠敘事者",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技後，我方全體進入持續<unbreak>#2[i]</unbreak>秒的【迷誤】狀態。【迷誤】狀態下不會被敵人發現。【迷誤】狀態期間進入戰鬥時為我方恢復<unbreak>#1[i]</unbreak>個戰技點，並使花火恢復<unbreak>#2[i]</unbreak>點能量。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130607"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							20
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11306101": {
+				"Id": "11306101",
+				"Name": "歲時記",
+				"NodeType": 3,
+				"EffectRaw": "發動普通攻擊時額外恢復<unbreak>#1[i]</unbreak>點能量。持有戰技的暴擊傷害提高效果的我方角色在消耗戰技點時，花火額外恢復<unbreak>#2[i]</unbreak>點能量。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "雲際音符",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306102": {
+				"Id": "11306102",
+				"Name": "人造花",
+				"NodeType": 3,
+				"EffectRaw": "若我方角色單回合內消耗的戰技點大於等於<unbreak>#1[i]</unbreak>，則花火下一次施放戰技時不會消耗戰技點。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306103": {
+				"Id": "11306103",
+				"Name": "夜想曲",
+				"NodeType": 3,
+				"EffectRaw": "我方全體的攻擊力提高<unbreak>#1[i]%</unbreak>。我方角色持有戰技的暴擊傷害提高效果時，全屬性<u>抗性穿透</u>提高<unbreak>#2[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306201": {
+				"Id": "11306201",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11306202": {
+				"Id": "11306202",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11306101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "雲際音符",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "思緒末屑",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11306203": {
+				"Id": "11306203",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306204": {
+				"Id": "11306204",
+				"Name": "效果抗性強化",
+				"NodeType": 1,
+				"EffectRaw": "效果抗性提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306205": {
+				"Id": "11306205",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11306102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "空際小節",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "印象殘晶",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306206": {
+				"Id": "11306206",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306207": {
+				"Id": "11306207",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306208": {
+				"Id": "11306208",
+				"Name": "效果抗性強化",
+				"NodeType": 1,
+				"EffectRaw": "效果抗性提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11306103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306209": {
+				"Id": "11306209",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.107
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306210": {
+				"Id": "11306210",
+				"Name": "生命強化",
+				"NodeType": 1,
+				"EffectRaw": "生命上限提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "天外樂章",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "欲念碎鏡",
+								"Count": 8
+							}
+						]
+					}
+				}
 			}
 		},
 		"VersionAdded": "2.0"
@@ -77170,6 +78602,1470 @@
 						],
 						"LevelRequired": 80,
 						"NodeRequired": "1307201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307001": {
+				"Id": "11307001",
+				"Name": "洞見，緘默的黎明",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於黑天鵝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130701"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "熾情之靈",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307002": {
+				"Id": "11307002",
+				"Name": "失墜，偽神的黃昏",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "對指定敵方單體及其相鄰目標造成等同於黑天鵝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害，同時有<unbreak>#3[i]%</unbreak>的<u>基礎機率</u>使目標與相鄰目標防禦力降低<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，持續<unbreak>#2[i]</unbreak>回合。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130702"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							3,
+							1,
+							0.148
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.495,
+							3,
+							1,
+							0.154
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.54,
+							3,
+							1,
+							0.16
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "熾情之靈",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.585,
+							3,
+							1,
+							0.166
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.63,
+							3,
+							1,
+							0.172
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.675,
+							3,
+							1,
+							0.178
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.7313,
+							3,
+							1,
+							0.1855
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7875,
+							3,
+							1,
+							0.193
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.8438,
+							3,
+							1,
+							0.2005
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.9,
+							3,
+							1,
+							0.208
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307003": {
+				"Id": "11307003",
+				"Name": "沉醉於彼界的臂灣",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "使敵方全體陷入【揭露】狀態，持續<unbreak>#2[i]</unbreak>回合。隨後對敵方全體造成等同於黑天鵝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。\n【揭露】狀態下，敵方目標受到的傷害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。每陷入1層【<u>奧跡</u>】時，皆有<unbreak>#4[i]%</unbreak>的<u>固定機率</u>使本次疊加層數額外提高1層，並且【<u>奧跡</u>】回合開始造成傷害後層數不會減半。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130703"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							2,
+							0.15,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							2,
+							0.16,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							2,
+							0.17,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "熾情之靈",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							2,
+							0.18,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							2,
+							0.19,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							2,
+							0.2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							2,
+							0.2125,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							2,
+							0.225,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							2,
+							0.2375,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							2,
+							0.25,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307004": {
+				"Id": "11307004",
+				"Name": "無端命運的機杼",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "敵方目標每受到1次持續傷害，便有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>陷入1層【<u>奧跡</u>】。\n敵方目標處於【<u>奧跡</u>】狀態時，也會視為同時陷入了風化、裂傷、灼燒、觸電狀態，每回合開始時受到等同於黑天鵝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性持續傷害，隨後層數減半。每層【<u>奧跡</u>】使此傷害倍率提高<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>。【<u>奧跡</u>】可以疊加<unbreak>#8[i]</unbreak>層，層數達到上限後可繼續疊加，產生傷害後移除超出上限的層數。\n【<u>奧跡</u>】造成的傷害無視目標<unbreak>#7[i]%</unbreak>的防禦力。僅在敵方目標回合開始【<u>奧跡</u>】造成傷害時，相鄰目標額外受到1次等同於黑天鵝<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻擊力的風屬性持續傷害。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130704"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.96,
+							0.5,
+							0.048,
+							0.048,
+							0.72,
+							0,
+							0.2,
+							50
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1184,
+							0.515,
+							0.0559,
+							0.0559,
+							0.8388,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2768,
+							0.53,
+							0.0638,
+							0.0638,
+							0.9576,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "熾情之靈",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.4352,
+							0.545,
+							0.0718,
+							0.0718,
+							1.0764,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.5936,
+							0.56,
+							0.0797,
+							0.0797,
+							1.1952,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.752,
+							0.575,
+							0.0876,
+							0.0876,
+							1.314,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.896,
+							0.5938,
+							0.0948,
+							0.0948,
+							1.422,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.04,
+							0.6125,
+							0.102,
+							0.102,
+							1.53,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.22,
+							0.6313,
+							0.111,
+							0.111,
+							1.665,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.4,
+							0.65,
+							0.12,
+							0.12,
+							1.8,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307007": {
+				"Id": "11307007",
+				"Name": "取此真相，棄捨表徵",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技後，下一次戰鬥開始時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入1層【<u>奧跡</u>】。使其中每個成功陷入【<u>奧跡</u>】的目標再次陷入1層【<u>奧跡</u>】，重複此效果直到未能成功使該目標陷入【<u>奧跡</u>】。每次使目標陷入【<u>奧跡</u>】的<u>基礎機率</u>等同於上一次成功使該目標陷入【<u>奧跡</u>】時的<u>基礎機率</u>的<unbreak>#2[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130707"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11307101": {
+				"Id": "11307101",
+				"Name": "臟中躁動",
+				"NodeType": 3,
+				"EffectRaw": "敵方目標受到黑天鵝攻擊後，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>陷入<unbreak>#2[i]</unbreak>層【<u>奧跡</u>】。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "熾情之靈",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307102": {
+				"Id": "11307102",
+				"Name": "杯底端倪",
+				"NodeType": 3,
+				"EffectRaw": "敵方目標進入戰鬥時，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>陷入1層【<u>奧跡</u>】，並且有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>陷入戰技的防禦力降低效果，持續<unbreak>#3[i]</unbreak>回合。\n發動普通攻擊和終結技的攻擊後，也會有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入戰技的防禦力降低效果，持續<unbreak>#3[i]</unbreak>回合。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							1,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307103": {
+				"Id": "11307103",
+				"Name": "燭影朕兆",
+				"NodeType": 3,
+				"EffectRaw": "使我方全體造成的傷害提高，提高數值等同於黑天鵝效果命中的<unbreak>#1[i]%</unbreak>，最多使造成的傷害提高<unbreak>#2[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.72
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "蛀星孕災的舊惡",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307201": {
+				"Id": "11307201",
+				"Name": "攻擊強化",
+				"NodeType": 1,
+				"EffectRaw": "攻擊力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11307202": {
+				"Id": "11307202",
+				"Name": "傷害強化•風",
+				"NodeType": 1,
+				"EffectRaw": "風屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.032,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.032
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11307101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "熾情之靈",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "熄滅原核",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11307203": {
+				"Id": "11307203",
+				"Name": "攻擊強化",
+				"NodeType": 1,
+				"EffectRaw": "攻擊力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307204": {
+				"Id": "11307204",
+				"Name": "效果命中強化",
+				"NodeType": 1,
+				"EffectRaw": "效果命中提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307205": {
+				"Id": "11307205",
+				"Name": "攻擊強化",
+				"NodeType": 1,
+				"EffectRaw": "攻擊力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11307102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "星火之精",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "微光原核",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307206": {
+				"Id": "11307206",
+				"Name": "傷害強化•風",
+				"NodeType": 1,
+				"EffectRaw": "風屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.048,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.048
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307207": {
+				"Id": "11307207",
+				"Name": "攻擊強化",
+				"NodeType": 1,
+				"EffectRaw": "攻擊力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307208": {
+				"Id": "11307208",
+				"Name": "效果命中強化",
+				"NodeType": 1,
+				"EffectRaw": "效果命中提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307209": {
+				"Id": "11307209",
+				"Name": "傷害強化•風",
+				"NodeType": 1,
+				"EffectRaw": "風屬性傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.064,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.064
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "焚天之魔",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "蠢動原核",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307210": {
+				"Id": "11307210",
+				"Name": "攻擊強化",
+				"NodeType": 1,
+				"EffectRaw": "攻擊力提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11307201",
 						"Costs": [
 							{
 								"Id": "2",
@@ -111332,6 +114228,3225 @@
 			}
 		},
 		"VersionAdded": "3.7"
+	},
+	"1501": {
+		"Id": "1501",
+		"Name": "火花",
+		"Nodes": {
+			"1501001": {
+				"Id": "1501001",
+				"Name": "啞火了嗎",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於火花<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150101",
+					"150108"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501002": {
+				"Id": "1501002",
+				"Name": "尖叫！火花花連線中",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "開啟直播連線，使普通攻擊變為【百花齊放，勝者獨享！】並發動1次【互動陷阱】，本次技能內可以重複發動【互動陷阱】，最多發動<unbreak>#1[i]</unbreak>次。施放本技能不視為使用戰技。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150102",
+					"150109"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501003": {
+				"Id": "1501003",
+				"Name": "萬我狂歡，鏡頭不要停",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "獲得<unbreak>#1[i]</unbreak>個<u>笑點</u>。對敵方全體造成等同於火花（<unbreak>#3[f1]</unbreak>×歡愉度+<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>）攻擊力的火屬性傷害。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150103"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.3,
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.32,
+							0.6
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.34,
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.36,
+							0.6
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.38,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.425,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.45,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.475,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.5,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501004": {
+				"Id": "1501004",
+				"Name": "幕後花手",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "火花持有【<u>好活當賞</u>】時：\n發動強化普通攻擊可對指定敵方單體造成<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的火屬性<u>歡愉傷害</u>，並對其相鄰目標造成<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>的火屬性<u>歡愉傷害</u>。且每發動1次【互動陷阱】便會使強化普通攻擊額外對隨機1個受到攻擊的敵方目標造成1次<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>的火屬性<u>歡愉傷害</u>。\n施放終結技可對敵方全體造成<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的火屬性<u>歡愉傷害</u>。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150104"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.24,
+							0.2,
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11,
+							0.264,
+							0.22,
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12,
+							0.288,
+							0.24,
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13,
+							0.312,
+							0.26,
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14,
+							0.336,
+							0.28,
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15,
+							0.36,
+							0.3,
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625,
+							0.39,
+							0.325,
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175,
+							0.42,
+							0.35,
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875,
+							0.45,
+							0.375,
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2,
+							0.48,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501007": {
+				"Id": "1501007",
+				"Name": "流量變現",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技後使一定區域內的敵人陷入<unbreak>#3[i]</unbreak>秒的【封鎖】狀態，【封鎖】狀態下的敵人無法發現我方目標。\n若主動攻擊陷入【封鎖】狀態的敵人，進入戰鬥後，對敵方全體造成等同於火花<unbreak>#2[i]%</unbreak>攻擊力的火屬性傷害，並為我方恢復<unbreak>#1[i]</unbreak>個戰技點。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150107"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.5,
+							10
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1501101": {
+				"Id": "1501101",
+				"Name": "甜蜜！笑點簽售會",
+				"NodeType": 3,
+				"EffectRaw": "若火花攻擊力高於<unbreak>#1[i]</unbreak>點，則每超過<unbreak>#2[i]</unbreak>點攻擊力可使自身歡愉度提高<unbreak>#3[f1]%</unbreak>，最多提高<unbreak>#4[f1]%</unbreak>。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2000,
+							100,
+							0.05,
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501102": {
+				"Id": "1501102",
+				"Name": "炫目！人設萬花筒",
+				"NodeType": 3,
+				"EffectRaw": "隊伍中「歡愉」命途角色數量等於1/2/3以上時，火花施放終結技額外獲得<unbreak>#1[i]</unbreak>/<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>個<u>笑點</u>及<unbreak>#4[i]</unbreak>/<unbreak>#5[i]</unbreak>/<unbreak>#6[i]</unbreak>個【爆點】。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							4,
+							8,
+							1,
+							1,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501103": {
+				"Id": "1501103",
+				"Name": "沸騰！真偽調色盤",
+				"NodeType": 3,
+				"EffectRaw": "當下每擁有1個<u>笑點</u>，使我方全體暴擊傷害提高<unbreak>#1[i]%</unbreak>，最多提高<unbreak>#2[i]%</unbreak>。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08,
+							0.8
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501201": {
+				"Id": "1501201",
+				"Name": "歡愉度強化",
+				"NodeType": 1,
+				"EffectRaw": "歡愉度提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501202": {
+				"Id": "1501202",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1501203": {
+				"Id": "1501203",
+				"Name": "歡愉度強化",
+				"NodeType": 1,
+				"EffectRaw": "歡愉度提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501204": {
+				"Id": "1501204",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501205": {
+				"Id": "1501205",
+				"Name": "歡愉度強化",
+				"NodeType": 1,
+				"EffectRaw": "歡愉度提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1501102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1501206": {
+				"Id": "1501206",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501207": {
+				"Id": "1501207",
+				"Name": "歡愉度強化",
+				"NodeType": 1,
+				"EffectRaw": "歡愉度提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501208": {
+				"Id": "1501208",
+				"Name": "暴擊傷害強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊傷害提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1501103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501209": {
+				"Id": "1501209",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1501208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501210": {
+				"Id": "1501210",
+				"Name": "歡愉度強化",
+				"NodeType": 1,
+				"EffectRaw": "歡愉度提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1501209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501420": {
+				"Id": "1501420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
+	},
+	"1502": {
+		"Id": "1502",
+		"Name": "爻光",
+		"Nodes": {
+			"1502001": {
+				"Id": "1502001",
+				"Name": "雀翎鳴鏑，過招有喜",
+				"NodeType": 2,
+				"NodeTypeText": "普通攻擊",
+				"EffectRaw": "對指定敵方單體造成等同於爻光<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害，同時對其相鄰目標造成等同於爻光<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性傷害。普通攻擊恢復的能量提高至<unbreak>30</unbreak>點。",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150201"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.15
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.54,
+							0.18
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.63,
+							0.21
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72,
+							0.24
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.81,
+							0.27
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502002": {
+				"Id": "1502002",
+				"Name": "十方光映，萬法皆明",
+				"NodeType": 2,
+				"NodeTypeText": "戰技",
+				"EffectRaw": "展開結界，持續<unbreak>#1[i]</unbreak>回合，自身每回合開始時結界持續回合數減1。結界持續期間，我方全體目標歡愉度提高，提高數值等同於爻光歡愉度的<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，且爻光發動普通攻擊、施放戰技後可獲得<unbreak>#3[i]</unbreak>個<u>笑點</u>。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150202"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							0.1,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							3,
+							0.11,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							3,
+							0.12,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							3,
+							0.13,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							3,
+							0.14,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							3,
+							0.15,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							3,
+							0.1625,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							3,
+							0.175,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							3,
+							0.1875,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							0.2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502003": {
+				"Id": "1502003",
+				"Name": "霓裳鐵羽，六爻皆吉",
+				"NodeType": 2,
+				"NodeTypeText": "終結技",
+				"EffectRaw": "獲得<unbreak>#1[i]</unbreak>個<u>笑點</u>。使<u>阿哈</u>立即獲得1個固定計入<unbreak>#4[i]</unbreak><u>笑點</u>的<u>額外回合</u>，該回合不消耗<u>笑點</u>，並使我方全體目標全屬性<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150203"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							5,
+							0.1,
+							3,
+							20,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							5,
+							0.11,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							5,
+							0.12,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							5,
+							0.13,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							5,
+							0.14,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							5,
+							0.15,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							5,
+							0.1625,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							5,
+							0.175,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							5,
+							0.1875,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							5,
+							0.2,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502004": {
+				"Id": "1502004",
+				"Name": "屏開千光，遍觀自在",
+				"NodeType": 2,
+				"NodeTypeText": "天賦",
+				"EffectRaw": "爻光持有【<u>好活當賞</u>】時：\n使我方目標發動攻擊後觸發【大吉大利】效果，對隨機1個命中的目標額外造成1次<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>的對應屬性<u>歡愉傷害</u>，本次攻擊若消耗戰技點，則額外觸發1次【大吉大利】效果。\n觸發【大吉大利】效果時若攻擊者歡愉度低於爻光，則該次<u>歡愉傷害</u>使用爻光歡愉度來計算。\n觸發【大吉大利】效果不視為1次攻擊。",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150204"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502007": {
+				"Id": "1502007",
+				"Name": "浮光過隙，百無禁忌",
+				"NodeType": 2,
+				"NodeTypeText": "秘技",
+				"EffectRaw": "使用秘技後，使下一次戰鬥開始時自動觸發1次戰技，此次觸發不消耗戰技點。爻光在隊伍中時，擊碎可破壞物時立刻獲得「紅包」，每個地球周內最多獲得<unbreak>#1[i]</unbreak>個。",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150207"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							8
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1502101": {
+				"Id": "1502101",
+				"Name": "開屏有禮",
+				"NodeType": 3,
+				"EffectRaw": "爻光的速度達到<unbreak>#1[i]</unbreak>時，使自身歡愉度提高<unbreak>#2[i]%</unbreak>，之後每超過<unbreak>#3[i]</unbreak>點速度便使自身歡愉度提高<unbreak>#4[i]%</unbreak>，最多計入<unbreak>#5[i]</unbreak>點超出的速度。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							120,
+							0.3,
+							1,
+							0.01,
+							200
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502102": {
+				"Id": "1502102",
+				"Name": "神閒意滿",
+				"NodeType": 3,
+				"EffectRaw": "自身暴擊傷害提高<unbreak>#4[i]%</unbreak>，施放歡愉技後，為我方恢復<unbreak>#1[i]</unbreak>個戰技點。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.25,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502103": {
+				"Id": "1502103",
+				"Name": "鴻運鱗集",
+				"NodeType": 3,
+				"EffectRaw": "爻光獲得【<u>好活當賞</u>】時，使其持續時間增加<unbreak>#2[i]</unbreak>回合。",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "命運的足跡",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "滅流絕溢的緘默",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502201": {
+				"Id": "1502201",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502202": {
+				"Id": "1502202",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1502203": {
+				"Id": "1502203",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502204": {
+				"Id": "1502204",
+				"Name": "歡愉度強化",
+				"NodeType": 1,
+				"EffectRaw": "歡愉度提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502205": {
+				"Id": "1502205",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1502102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1502206": {
+				"Id": "1502206",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502207": {
+				"Id": "1502207",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502208": {
+				"Id": "1502208",
+				"Name": "歡愉度強化",
+				"NodeType": 1,
+				"EffectRaw": "歡愉度提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1502103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502209": {
+				"Id": "1502209",
+				"Name": "速度強化",
+				"NodeType": 1,
+				"EffectRaw": "速度提高<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							4
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1502208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502210": {
+				"Id": "1502210",
+				"Name": "暴擊率強化",
+				"NodeType": 1,
+				"EffectRaw": "暴擊率提高<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1502209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502420": {
+				"Id": "1502420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "《絨絨號》手繪分鏡稿",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "童真蠟筆",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "《絨絨號》連載紀念刊",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "造夢蘸鋼",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "信用點",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "《絨絨號》典藏版合集",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "夢現管錐",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
 	},
 	"8001": {
 		"Id": "8001",

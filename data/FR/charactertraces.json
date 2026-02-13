@@ -64694,7 +64694,7 @@
 				"Name": "Maître, c'est l'heure du thé !",
 				"NodeType": 2,
 				"NodeTypeText": "Compétence",
-				"EffectRaw": "Désigne un allié unique (à l'exception de ce personnage) comme Maître et augmente sa VIT de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Seule la dernière cible de la compétence de March 7th est considérée comme son « Maître ».\n\n\nChaque fois que March 7th utilise son ATQ normale ou qu'elle inflige des DGT avec 1 frappe de son ATQ normale renforcée, elle déclenche l'effet correspondant en fonction de la Voie du Maître présent sur le champ de bataille :\n\nÉrudition, Destruction, Chasse, Souvenir : Inflige des <u>DGT additionnels</u> (du type du Maître) équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de March 7th.\n\nHarmonie, Nihilité, Préservation, Abondance : Augmente la réduction de robustesse de cette instance de DGT de <unbreak>#3[i]%</unbreak>.",
+				"EffectRaw": "Désigne un allié (à l'exception de ce personnage) comme Maître et augmente sa VIT de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Seule la dernière cible de la compétence de March 7th est considérée comme son « Maître ».\nChaque fois que March 7th utilise son ATQ normale ou qu'elle inflige des DGT avec 1 frappe de son ATQ normale renforcée, elle déclenche l'effet correspondant en fonction de la Voie du Maître présent sur le champ de bataille :\nL'Érudition, La Destruction, La Chasse, Le Souvenir, L'Allégresse : Inflige des <u>DGT additionnels</u> (du type du Maître) équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de March 7th.\nL'Harmonie, La Nihilité, La Préservation, L'Abondance : Augmente la réduction de robustesse de cette instance de DGT de <unbreak>#3[i]%</unbreak>.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"122402"
@@ -75698,6 +75698,1438 @@
 						]
 					}
 				}
+			},
+			"11306001": {
+				"Id": "11306001",
+				"Name": "Mélodrame",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ normale",
+				"EffectRaw": "Inflige des DGT quantiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Sparkle à un ennemi désigné.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130601"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Note du firmament",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306002": {
+				"Id": "11306002",
+				"Name": "Anguille sous roche",
+				"NodeType": 2,
+				"NodeTypeText": "Compétence",
+				"EffectRaw": "Augmente les DGT critiques d'une cible alliée désignée à hauteur de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> des DGT critiques de Sparkle + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> pendant <unbreak>#3[i]</unbreak> tours et avance de <unbreak>#4[i]%</unbreak> l'action de cette cible alliée.\nLorsque Sparkle utilise cette capacité sur elle-même, son action n'est pas avancée.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130602"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12,
+							0.27,
+							2,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.132,
+							0.288,
+							2,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.144,
+							0.306,
+							2,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Note du firmament",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.156,
+							0.324,
+							2,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.168,
+							0.342,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.18,
+							0.36,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.195,
+							0.3825,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.21,
+							0.405,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.225,
+							0.4275,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.24,
+							0.45,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306003": {
+				"Id": "11306003",
+				"Name": "Personnage aux mille visages",
+				"NodeType": 2,
+				"NodeTypeText": "Ultime",
+				"EffectRaw": "Accorde <unbreak>#2[i]</unbreak> points de compétence aux alliés. Si les points de compétence récupérés excèdent alors la limite, Sparkle enregistre jusqu'à <unbreak>#5[i]</unbreak> points de compétence en excédent. Si la limite de points de compétence de l'équipe n'est pas atteinte après la fin du tour d'un allié, Sparkle consomme la quantité de points enregistrés pour récupérer des points de compétence jusqu'à atteindre la limite. Ensuite, accorde Énigme à tous les alliés. Renforce le bonus de DGT subis par les ennemis accordé par le talent de Sparkle aux alliés qui bénéficient d'Énigme de <color=#f29e38ff><unbreak>#3[f2]%</unbreak></color> supplémentaires par cumul, pendant <unbreak>#4[i]</unbreak> tours.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130603"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							6,
+							0.036,
+							3,
+							10
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							6,
+							0.0384,
+							3,
+							10
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							6,
+							0.0408,
+							3,
+							10
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Note du firmament",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							6,
+							0.0432,
+							3,
+							10
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							6,
+							0.0456,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							6,
+							0.048,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							6,
+							0.051,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							6,
+							0.054,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							6,
+							0.057,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							6,
+							0.06,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306004": {
+				"Id": "11306004",
+				"Name": "Fausse piste",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Lorsque Sparkle est sur le champ de bataille, la limite de points de compétence augmente de <unbreak>#3[i]</unbreak>. Chaque fois qu'une cible alliée consomme 1 point de compétence, Sparkle obtient 1 cumul de Fantasmagorie. Chaque cumul de Fantasmagorie augmente les DGT subis par tous les ennemis de <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> pour une durée de <unbreak>#1[i]</unbreak> tours. Cet effet peut être cumulé jusqu'à <unbreak>#4[i]</unbreak> fois.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130604"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.02,
+							2,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.022,
+							2,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.024,
+							2,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Note du firmament",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.026,
+							2,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.028,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.03,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0325,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.035,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0375,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.04,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306007": {
+				"Id": "11306007",
+				"Name": "Histoire bancale",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Accorde Tromperie à tous les alliés pendant <unbreak>#2[i]</unbreak> secondes après avoir utilisé la technique. Les personnages qui bénéficient de l'effet Tromperie ne sont pas détectés par les ennemis. Le fait d'engager le combat dans cet état accorde <unbreak>#1[i]</unbreak> points de compétence à l'équipe et régénère <unbreak>#2[i]</unbreak> points d'énergie pour Sparkle.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130607"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							20
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11306101": {
+				"Id": "11306101",
+				"Name": "Chroniques",
+				"NodeType": 3,
+				"EffectRaw": "Utiliser l'ATQ normale régénère <unbreak>#1[i]</unbreak> points d'énergie supplémentaires. Lorsqu'un personnage allié qui bénéficie du bonus de DGT critiques de la compétence consomme des points de compétence, Sparkle régénère <unbreak>#2[i]</unbreak> point d'énergie supplémentaire.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Note du firmament",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306102": {
+				"Id": "11306102",
+				"Name": "Fleur artificielle",
+				"NodeType": 3,
+				"EffectRaw": "Si un personnage allié consomme <unbreak>#1[i]</unbreak> points de compétence ou plus en un seul tour, la prochaine utilisation de la compétence de Sparkle ne consomme pas de points de compétence.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306103": {
+				"Id": "11306103",
+				"Name": "Rêverie nocturne",
+				"NodeType": 3,
+				"EffectRaw": "Augmente l'ATQ de tous les alliés de <unbreak>#1[i]%</unbreak>. Lorsqu'un personnage allié bénéficie du bonus de DGT critiques accordé par la compétence, la <u>PÉN de RÉS</u> à tous les types augmente de <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306201": {
+				"Id": "11306201",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11306202": {
+				"Id": "11306202",
+				"Name": "DGT CRIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11306101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Note du firmament",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Lambeaux de pensée",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11306203": {
+				"Id": "11306203",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306204": {
+				"Id": "11306204",
+				"Name": "RÉS aux effets ↑",
+				"NodeType": 1,
+				"EffectRaw": "La RÉS aux effets augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306205": {
+				"Id": "11306205",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11306102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Séquence céleste",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragments d'impression",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306206": {
+				"Id": "11306206",
+				"Name": "DGT CRIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306207": {
+				"Id": "11306207",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306208": {
+				"Id": "11306208",
+				"Name": "RÉS aux effets ↑",
+				"NodeType": 1,
+				"EffectRaw": "La RÉS aux effets augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11306103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306209": {
+				"Id": "11306209",
+				"Name": "DGT CRIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.107
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306210": {
+				"Id": "11306210",
+				"Name": "Augmentation de PV",
+				"NodeType": 1,
+				"EffectRaw": "Les PV max augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Mélodie céleste",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragments des désirs",
+								"Count": 8
+							}
+						]
+					}
+				}
 			}
 		},
 		"VersionAdded": "2.0"
@@ -77170,6 +78602,1470 @@
 						],
 						"LevelRequired": 80,
 						"NodeRequired": "1307201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307001": {
+				"Id": "11307001",
+				"Name": "Perspicacité de l'aube silencieuse",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ normale",
+				"EffectRaw": "Inflige des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Cygne noir à un ennemi désigné.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130701"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Esprit flamboyant",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307002": {
+				"Id": "11307002",
+				"Name": "Décadence du faux crépuscule",
+				"NodeType": 2,
+				"NodeTypeText": "Compétence",
+				"EffectRaw": "Inflige des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Cygne noir à un ennemi désigné et aux cibles adjacentes, avec <unbreak>#3[i]%</unbreak> de <u>chances de base</u> de réduire la DÉF de la cible ennemie et des cibles adjacentes de <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> pendant <unbreak>#2[i]</unbreak> tours.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130702"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							3,
+							1,
+							0.148
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.495,
+							3,
+							1,
+							0.154
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.54,
+							3,
+							1,
+							0.16
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Esprit flamboyant",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.585,
+							3,
+							1,
+							0.166
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.63,
+							3,
+							1,
+							0.172
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.675,
+							3,
+							1,
+							0.178
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.7313,
+							3,
+							1,
+							0.1855
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7875,
+							3,
+							1,
+							0.193
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.8438,
+							3,
+							1,
+							0.2005
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.9,
+							3,
+							1,
+							0.208
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307003": {
+				"Id": "11307003",
+				"Name": "Bénédiction de l'étreinte de l'au-delà",
+				"NodeType": 2,
+				"NodeTypeText": "Ultime",
+				"EffectRaw": "Applique Épiphanie à tous les ennemis pendant <unbreak>#2[i]</unbreak> tours. Inflige ensuite des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Cygne noir à tous les ennemis.\nDans l'état Épiphanie, les DGT subis par les cibles ennemies augmentent de <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. À chaque fois qu'1 cumul d'<u>Arcanes</u> est appliqué, il y a <unbreak>#4[i]%</unbreak> de <u>chances fixes</u> d'appliquer 1 cumul supplémentaire, et les cumuls d'<u>Arcanes</u> ne sont pas réduits de moitié après avoir infligé des DGT au début du tour.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130703"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							2,
+							0.15,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							2,
+							0.16,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							2,
+							0.17,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Esprit flamboyant",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							2,
+							0.18,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							2,
+							0.19,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							2,
+							0.2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							2,
+							0.2125,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							2,
+							0.225,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							2,
+							0.2375,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							2,
+							0.25,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307004": {
+				"Id": "11307004",
+				"Name": "Toile du caprice du destin",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "A <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de <u>chances de base</u> d'appliquer 1 cumul d'<u>Arcanes</u> à chaque fois qu'une cible ennemie subit des dégâts sur la durée.\nLorsqu'une cible ennemie est affectée par <u>Arcanes</u>, elle est également considérée comme étant affectée par Faille du vent, Saignement, Brûlure et Stupéfaction, et subit au début de chaque tour des dégâts de vent sur la durée équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Cygne noir. Ensuite, les cumuls sont réduits de moitié. Chaque cumul d'<u>Arcanes</u> augmente le multiplicateur de DGT de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. <u>Arcanes</u> peut se cumuler jusqu'à <unbreak>#8[i]</unbreak> fois et peut excéder la limite de cumuls. Les cumuls en excédent sont dissipés après avoir infligé des DGT.\nLes DGT infligés par <u>Arcanes</u> ignorent <unbreak>#7[i]%</unbreak> de la DÉF de la cible. Uniquement lorsqu'<u>Arcanes</u> inflige des DGT au début du tour d'une cible ennemie, les cibles adjacentes subissent des dégâts de vent sur la durée supplémentaires équivalents à <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> de l'ATQ de Cygne noir.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130704"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.96,
+							0.5,
+							0.048,
+							0.048,
+							0.72,
+							0,
+							0.2,
+							50
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1184,
+							0.515,
+							0.0559,
+							0.0559,
+							0.8388,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2768,
+							0.53,
+							0.0638,
+							0.0638,
+							0.9576,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Esprit flamboyant",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.4352,
+							0.545,
+							0.0718,
+							0.0718,
+							1.0764,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.5936,
+							0.56,
+							0.0797,
+							0.0797,
+							1.1952,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.752,
+							0.575,
+							0.0876,
+							0.0876,
+							1.314,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.896,
+							0.5938,
+							0.0948,
+							0.0948,
+							1.422,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.04,
+							0.6125,
+							0.102,
+							0.102,
+							1.53,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.22,
+							0.6313,
+							0.111,
+							0.111,
+							1.665,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.4,
+							0.65,
+							0.12,
+							0.12,
+							1.8,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307007": {
+				"Id": "11307007",
+				"Name": "Du mythe à la réalité",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Il y a <unbreak>#1[i]%</unbreak> de <u>chances de base</u> pour chaque ennemi de se voir infligé 1 cumul d'<u>Arcanes</u> au début du prochain combat après avoir utilisé la technique. Pour chaque application réussie d'<u>Arcanes</u> sur une cible, vous infligez un nouveau cumul d'<u>Arcanes</u> à la même cible. Ce processus se répète jusqu'à ce que l'application d'<u>Arcanes</u> sur cette cible échoue. Pour chaque application successive d'<u>Arcanes</u> sur une cible, ses <u>chances de base</u> de réussite sont équivalentes à <unbreak>#2[i]%</unbreak> des <u>chances de base</u> de la précédente application réussie d'<u>Arcanes</u> sur cette cible.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130707"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11307101": {
+				"Id": "11307101",
+				"Name": "Inquiétude viscérale",
+				"NodeType": 3,
+				"EffectRaw": "Lorsqu'une cible ennemie est attaquée par Cygne noir, il y a <unbreak>#1[i]%</unbreak> de <u>chances de base</u> de lui appliquer <unbreak>#2[i]</unbreak> cumuls d'<u>Arcanes</u>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Esprit flamboyant",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307102": {
+				"Id": "11307102",
+				"Name": "Marc de café",
+				"NodeType": 3,
+				"EffectRaw": "Lorsqu'une cible ennemie entre en combat, il y a <unbreak>#1[i]%</unbreak> de <u>chances de base</u> de lui appliquer 1 cumul d'<u>Arcanes</u>, et <unbreak>#2[i]%</unbreak> de <u>chances de base</u> de lui appliquer l'effet de réduction de DÉF de la compétence pendant <unbreak>#3[i]</unbreak> tours.\nD'autre part, après avoir utilisé l'ATQ normale ou l'ultime, il y a également <unbreak>#2[i]%</unbreak> de <u>chances de base</u> d'appliquer l'effet de réduction de DÉF de la compétence aux cibles ennemies touchées pendant <unbreak>#3[i]</unbreak> tours.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							1,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307103": {
+				"Id": "11307103",
+				"Name": "Présage de la flamme de bougie",
+				"NodeType": 3,
+				"EffectRaw": "Augmente les DGT infligés par tous les alliés d'un montant équivalent à <unbreak>#1[i]%</unbreak> des chances d'appliquer des effets de Cygne noir, jusqu'à une augmentation maximale de <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.72
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Ancienne rancune du Désastre de l'ennui",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307201": {
+				"Id": "11307201",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11307202": {
+				"Id": "11307202",
+				"Name": "Augmentation des DGT de vent",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT de vent augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.032,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.032
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11307101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Esprit flamboyant",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Noyau éteint",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11307203": {
+				"Id": "11307203",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307204": {
+				"Id": "11307204",
+				"Name": "Augmentation des chances d'appliquer des effets",
+				"NodeType": 1,
+				"EffectRaw": "Les chances d'appliquer des effets augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307205": {
+				"Id": "11307205",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11307102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Essence de feu d'étoiles",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Noyau brillant",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307206": {
+				"Id": "11307206",
+				"Name": "Augmentation des DGT de vent",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT de vent augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.048,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.048
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307207": {
+				"Id": "11307207",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307208": {
+				"Id": "11307208",
+				"Name": "Augmentation des chances d'appliquer des effets",
+				"NodeType": 1,
+				"EffectRaw": "Les chances d'appliquer des effets augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307209": {
+				"Id": "11307209",
+				"Name": "Augmentation des DGT de vent",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT de vent augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.064,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.064
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinérateur céleste",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Noyau des méandres",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307210": {
+				"Id": "11307210",
+				"Name": "Augmentation d'ATQ",
+				"NodeType": 1,
+				"EffectRaw": "L'ATQ augmente de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11307201",
 						"Costs": [
 							{
 								"Id": "2",
@@ -111332,6 +114228,3225 @@
 			}
 		},
 		"VersionAdded": "3.7"
+	},
+	"1501": {
+		"Id": "1501",
+		"Name": "Sparxie",
+		"Nodes": {
+			"1501001": {
+				"Id": "1501001",
+				"Name": "La mèche n'a pas pris ?",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ normale",
+				"EffectRaw": "Inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Sparxie à un ennemi désigné.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150101",
+					"150108"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501002": {
+				"Id": "1501002",
+				"Name": "Faites de la place !",
+				"NodeType": 2,
+				"NodeTypeText": "Compétence",
+				"EffectRaw": "Lance un stream pour transformer l'ATQ normale en Détonateur de victoire et déclenche Pêche aux vues 1 fois. Pendant la durée de cette capacité, Pêche aux vues peut être déclenché jusqu'à <unbreak>#1[i]</unbreak> fois. L'utilisation de cette capacité n'est pas considérée comme l'utilisation d'une compétence.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150102",
+					"150109"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501003": {
+				"Id": "1501003",
+				"Name": "Collab de légende",
+				"NodeType": 2,
+				"NodeTypeText": "Ultime",
+				"EffectRaw": "Accorde <unbreak>#1[i]</unbreak> points de <u>Panache</u>. Inflige des DGT de feu équivalents à (<unbreak>#3[f1]</unbreak> × Allégresse + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>) de l'ATQ de Sparxie à tous les ennemis.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150103"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.3,
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.32,
+							0.6
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.34,
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.36,
+							0.6
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.38,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.425,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.45,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.475,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.5,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501004": {
+				"Id": "1501004",
+				"Name": "Maîtresse des étincelles",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Lorsque Sparxie bénéficie de <u>Banger absolu</u> :\nUtiliser l'ATQ normale renforcée inflige <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> de <u>comidégâts</u> de feu à un ennemi désigné, et <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> de <u>comidégâts</u> de feu aux cibles adjacentes. D'autre part, pour chaque activation de Pêche aux vues, l'ATQ normale renforcée inflige 1 instance supplémentaire de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de <u>comidégâts</u> de feu à 1 cible ennemie attaquée aléatoire.\nUtiliser l'ultime inflige <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de <u>comidégâts</u> de feu à tous les ennemis.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150104"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.24,
+							0.2,
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11,
+							0.264,
+							0.22,
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12,
+							0.288,
+							0.24,
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13,
+							0.312,
+							0.26,
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14,
+							0.336,
+							0.28,
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15,
+							0.36,
+							0.3,
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625,
+							0.39,
+							0.325,
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175,
+							0.42,
+							0.35,
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875,
+							0.45,
+							0.375,
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2,
+							0.48,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501007": {
+				"Id": "1501007",
+				"Name": "Monétisation du flux",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Après utilisation de la technique, applique Bannissement aux ennemis situés dans une zone définie pendant <unbreak>#3[i]</unbreak> secondes. Les ennemis bannis ne peuvent pas détecter les cibles alliées.\nEngager le combat après avoir attaqué un ennemi banni inflige des DGT de feu équivalents à <unbreak>#2[i]%</unbreak> de l'ATQ de Sparxie à tous les ennemis et accorde <unbreak>#1[i]</unbreak> points de compétence aux alliés.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150107"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.5,
+							10
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1501101": {
+				"Id": "1501101",
+				"Name": "Dédicaces avec panache !",
+				"NodeType": 3,
+				"EffectRaw": "Si l'ATQ de Sparxie est supérieure à <unbreak>#1[i]</unbreak>, pour chaque tranche de <unbreak>#2[i]</unbreak> points d'ATQ en excédent, augmente son Allégresse de <unbreak>#3[f1]%</unbreak>, jusqu'à un maximum de <unbreak>#4[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2000,
+							100,
+							0.05,
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501102": {
+				"Id": "1501102",
+				"Name": "Kaléidoscope de personnages !",
+				"NodeType": 3,
+				"EffectRaw": "Lorsque l'équipe compte 1/2/3+ personnages de l'Allégresse, utiliser l'ultime de Sparxie accorde <unbreak>#1[i]</unbreak>/<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak> points de <u>Panache</u> et <unbreak>#4[i]</unbreak>/<unbreak>#5[i]</unbreak>/<unbreak>#6[i]</unbreak> points de Frisson supplémentaires.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							4,
+							8,
+							1,
+							1,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501103": {
+				"Id": "1501103",
+				"Name": "Nuancier de l'imposture !",
+				"NodeType": 3,
+				"EffectRaw": "Pour chaque point de <u>Panache</u> en possession, augmente les DGT critiques de tous les alliés de <unbreak>#1[i]%</unbreak>, jusqu'à un maximum de <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08,
+							0.8
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501201": {
+				"Id": "1501201",
+				"Name": "Allégresse ↑",
+				"NodeType": 1,
+				"EffectRaw": "Augmente l'Allégresse de <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501202": {
+				"Id": "1501202",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1501203": {
+				"Id": "1501203",
+				"Name": "Allégresse ↑",
+				"NodeType": 1,
+				"EffectRaw": "Augmente l'Allégresse de <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501204": {
+				"Id": "1501204",
+				"Name": "DGT CRIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501205": {
+				"Id": "1501205",
+				"Name": "Allégresse ↑",
+				"NodeType": 1,
+				"EffectRaw": "Augmente l'Allégresse de <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1501102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1501206": {
+				"Id": "1501206",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501207": {
+				"Id": "1501207",
+				"Name": "Allégresse ↑",
+				"NodeType": 1,
+				"EffectRaw": "Augmente l'Allégresse de <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501208": {
+				"Id": "1501208",
+				"Name": "DGT CRIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les DGT critiques augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1501103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501209": {
+				"Id": "1501209",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1501208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501210": {
+				"Id": "1501210",
+				"Name": "Allégresse ↑",
+				"NodeType": 1,
+				"EffectRaw": "Augmente l'Allégresse de <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1501209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501420": {
+				"Id": "1501420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
+	},
+	"1502": {
+		"Id": "1502",
+		"Name": "Yao Guang",
+		"Nodes": {
+			"1502001": {
+				"Id": "1502001",
+				"Name": "Chant de joie des plumes",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ normale",
+				"EffectRaw": "Inflige des DGT physiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Yao Guang à un ennemi désigné et des DGT physiques équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de son ATQ aux cibles adjacentes. Augmente l'énergie régénérée par l'ATQ normale à <unbreak>30</unbreak>.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150201"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.15
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.54,
+							0.18
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.63,
+							0.21
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72,
+							0.24
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.81,
+							0.27
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502002": {
+				"Id": "1502002",
+				"Name": "Rayonnement d'omniscience",
+				"NodeType": 2,
+				"NodeTypeText": "Compétence",
+				"EffectRaw": "Déploie une zone pour une durée de <unbreak>#1[i]</unbreak> tours. Cette durée diminue de 1 au début de chaque tour de Yao Guang. Lorsque la zone est active, augmente l'Allégresse de tous les alliés d'un montant équivalent à <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'Allégresse de Yao Guang. Après que Yao Guang a utilisé une ATQ normale ou une compétence, elle gagne <unbreak>#3[i]</unbreak> points de <u>Panache</u>.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150202"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							0.1,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							3,
+							0.11,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							3,
+							0.12,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							3,
+							0.13,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							3,
+							0.14,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							3,
+							0.15,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							3,
+							0.1625,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							3,
+							0.175,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							3,
+							0.1875,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							0.2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502003": {
+				"Id": "1502003",
+				"Name": "Plumes auspicieuses",
+				"NodeType": 2,
+				"NodeTypeText": "Ultime",
+				"EffectRaw": "Accorde <unbreak>#1[i]</unbreak> points de <u>Panache</u>. <u>Aha</u> obtient immédiatement 1 <u>tour supplémentaire</u> comptabilisé comme un montant fixe de <unbreak>#4[i]</unbreak> points de <u>Panache</u>. Ce tour ne consomme aucun point de <u>Panache</u> et augmente la <u>PÉN de RÉS</u> à tous les types de tous les alliés de <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> pendant <unbreak>#3[i]</unbreak> tours.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150203"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							5,
+							0.1,
+							3,
+							20,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							5,
+							0.11,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							5,
+							0.12,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							5,
+							0.13,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							5,
+							0.14,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							5,
+							0.15,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							5,
+							0.1625,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							5,
+							0.175,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							5,
+							0.1875,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							5,
+							0.2,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502004": {
+				"Id": "1502004",
+				"Name": "Contemple là où la lumière se déploie",
+				"NodeType": 2,
+				"NodeTypeText": "Talent",
+				"EffectRaw": "Lorsque Yao Guang bénéficie de <u>Banger absolu</u>:\nAprès qu'une cible alliée a utilisé une attaque, active l'effet Belle aubaine, infligeant 1 instance supplémentaire de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de <u>comidégâts</u> du type correspondant à une cible aléatoire touchée. Si des points de compétence sont consommés lors de cette attaque, active Belle aubaine 1 fois supplémentaire.\nLors de l'activation de l'effet Belle aubaine, si l'Allégresse de l'assaillant est inférieure à celle de Yao Guang, cette instance de <u>comidégâts</u> est calculée en fonction de l'Allégresse de Yao Guang.\nL'activation de l'effet Belle aubaine n'est pas considérée comme une attaque.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150204"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502007": {
+				"Id": "1502007",
+				"Name": "Éclat fédérateur",
+				"NodeType": 2,
+				"NodeTypeText": "Technique",
+				"EffectRaw": "Après utilisation de la technique, déclenche automatiquement la compétence 1 fois au début du prochain combat sans consommer de points de compétence. Lorsque Yao Guang est dans l'équipe, détruire un objet destructible accorde immédiatement une Faveur, jusqu'à <unbreak>#1[i]</unbreak> fois par semaine de la Terre.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150207"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							8
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1502101": {
+				"Id": "1502101",
+				"Name": "Salutation de grâce",
+				"NodeType": 3,
+				"EffectRaw": "Lorsque la VIT de Yao Guang est supérieure ou égale à <unbreak>#1[i]</unbreak>, augmente son Allégresse de <unbreak>#2[i]%</unbreak>, puis pour chaque <unbreak>#3[i]</unbreak> point de VIT en excédent, augmente son Allégresse de <unbreak>#4[i]%</unbreak>. Jusqu'à un maximum de <unbreak>#5[i]</unbreak> points de VIT excédentaires sont comptabilisés.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							120,
+							0.3,
+							1,
+							0.01,
+							200
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502102": {
+				"Id": "1502102",
+				"Name": "Exaltation paisible",
+				"NodeType": 3,
+				"EffectRaw": "Augmente les DGT critiques de <unbreak>#4[i]%</unbreak>. Après avoir utilisé une comicompétence, accorde <unbreak>#1[i]</unbreak> point de compétence à l'équipe.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.25,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502103": {
+				"Id": "1502103",
+				"Name": "Fortune réunie",
+				"NodeType": 3,
+				"EffectRaw": "Lorsque Yao Guang obtient <u>Banger absolu</u>, augmente sa durée de <unbreak>#2[i]</unbreak> tour.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Voies de la destinée",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Mutisme de l'unicité",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502201": {
+				"Id": "1502201",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502202": {
+				"Id": "1502202",
+				"Name": "VIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "La VIT augmente de <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1502203": {
+				"Id": "1502203",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502204": {
+				"Id": "1502204",
+				"Name": "Allégresse ↑",
+				"NodeType": 1,
+				"EffectRaw": "Augmente l'Allégresse de <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502205": {
+				"Id": "1502205",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1502102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1502206": {
+				"Id": "1502206",
+				"Name": "VIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "La VIT augmente de <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502207": {
+				"Id": "1502207",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502208": {
+				"Id": "1502208",
+				"Name": "Allégresse ↑",
+				"NodeType": 1,
+				"EffectRaw": "Augmente l'Allégresse de <unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1502103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502209": {
+				"Id": "1502209",
+				"Name": "VIT ↑",
+				"NodeType": 1,
+				"EffectRaw": "La VIT augmente de <unbreak>#1[i]</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							4
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1502208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502210": {
+				"Id": "1502210",
+				"Name": "Chances de coup critique ↑",
+				"NodeType": 1,
+				"EffectRaw": "Les chances de coup critique augmentent de <unbreak>#1[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1502209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502420": {
+				"Id": "1502420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Planches <i>Toudoux</i> dessinées à la main",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Cire fantaisiste",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "<i>Toudoux</i> : Numéro anniversaire",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Plume tissée de rêves",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédits",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "<i>Toudoux</i> : Édition collector",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "Pinceau lucide",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
 	},
 	"8001": {
 		"Id": "8001",

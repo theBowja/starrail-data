@@ -64694,7 +64694,7 @@
 				"Name": "Maestro, ¡toma un poco de té!",
 				"NodeType": 2,
 				"NodeTypeText": "Habilidad básica",
-				"EffectRaw": "Hace que otro aliado distinto a sí misma se convierta en Maestro. La VEL del Maestro aumenta en un <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Solo el último aliado que haya sido objetivo de la habilidad básica de Siete de Marzo se considera su \"Maestro\".\nCuando usa su ATQ básico o inflige daño 1 vez con su ATQ básico potenciado, se activa uno de los siguientes efectos en función de la Vía del Maestro que haya presente en el campo de batalla:\nErudición, Destrucción, Cacería o Reminiscencia: inflige un <u>daño adicional</u> del mismo tipo que el Maestro equivalente al <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> del ATQ de Siete de Marzo.\nArmonía, Nihilidad, Conservación o Abundancia: la Reducción de Firmeza del daño infligido esta vez aumenta en un <unbreak>#3[i]%</unbreak>.",
+				"EffectRaw": "Hace que otro aliado distinto a sí misma se convierta en Maestro. La VEL del Maestro aumenta en un <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Solo el último aliado que haya sido objetivo de la habilidad básica de Siete de Marzo se considera su \"Maestro\".\nCuando usa su ATQ básico o inflige daño 1 vez con su ATQ básico potenciado, se activa uno de los siguientes efectos en función de la Vía del Maestro que haya presente en el campo de batalla:\nErudición, Destrucción, Cacería, Reminiscencia o Exultación: inflige un <u>daño adicional</u> del mismo tipo que el Maestro equivalente al <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> del ATQ de Siete de Marzo.\nArmonía, Nihilidad, Conservación o Abundancia: la Reducción de Firmeza del daño infligido esta vez aumenta en un <unbreak>#3[i]%</unbreak>.",
 				"MaxLevel": 10,
 				"LeveledSkillIds": [
 					"122402"
@@ -75698,6 +75698,1438 @@
 						]
 					}
 				}
+			},
+			"11306001": {
+				"Id": "11306001",
+				"Name": "Espectáculo en solitario",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ básico",
+				"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Sparkle como Daño Cuántico a un enemigo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130601"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota del firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306002": {
+				"Id": "11306002",
+				"Name": "Pez de los sueños",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad básica",
+				"EffectRaw": "Aumenta el Daño CRIT de un aliado en un valor equivalente al <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> del Daño CRIT de Sparkle + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> durante <unbreak>#3[i]</unbreak> turnos y adelanta la acción de ese aliado en un <unbreak>#4[i]%</unbreak>.\nSi Sparkle usa esta habilidad consigo misma, no adelanta su acción.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130602"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.12,
+							0.27,
+							2,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.132,
+							0.288,
+							2,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.144,
+							0.306,
+							2,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota del firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.156,
+							0.324,
+							2,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.168,
+							0.342,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.18,
+							0.36,
+							2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.195,
+							0.3825,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.21,
+							0.405,
+							2,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.225,
+							0.4275,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.24,
+							0.45,
+							2,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306003": {
+				"Id": "11306003",
+				"Name": "Heroína de mil caras",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad definitiva",
+				"EffectRaw": "Recupera <unbreak>#2[i]</unbreak> pts. de habilidad básica para el equipo. Si los pts. de habilidad básica exceden el máximo al recuperarlos, se registra la cantidad excedente hasta un máximo de <unbreak>#5[i]</unbreak> pts. Si los pts. de habilidad básica están por debajo del máximo tras terminar el turno de un personaje aliado, Sparkle consume la cantidad registrada para recuperar pts. de habilidad básica para el equipo hasta alcanzar el máximo. A continuación, otorga Adivinanza a todos los aliados. Para los aliados con Adivinanza, el efecto de aumento de daño que reciben los enemigos proporcionado por el talento de Sparkle se incrementa de forma adicional en un <color=#f29e38ff><unbreak>#3[f2]%</unbreak></color> por cada acumulación durante <unbreak>#4[i]</unbreak> turnos.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130603"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							6,
+							0.036,
+							3,
+							10
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							6,
+							0.0384,
+							3,
+							10
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							6,
+							0.0408,
+							3,
+							10
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota del firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							6,
+							0.0432,
+							3,
+							10
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							6,
+							0.0456,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							6,
+							0.048,
+							3,
+							10
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							6,
+							0.051,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							6,
+							0.054,
+							3,
+							10
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							6,
+							0.057,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							6,
+							0.06,
+							3,
+							10
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306004": {
+				"Id": "11306004",
+				"Name": "Truco narrativo",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Cuando Sparkle está en el campo de batalla, el límite de pts. de habilidad básica aumenta en <unbreak>#3[i]</unbreak>. Cuando un aliado consume 1 pt. de habilidad básica, Sparkle obtiene 1 acumulación de Fantasmagoría. Cada acumulación de Fantasmagoría hace que el daño que reciben todos los enemigos aumente en un <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> durante <unbreak>#1[i]</unbreak> turnos. Se puede acumular hasta <unbreak>#4[i]</unbreak> veces.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130604"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.02,
+							2,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.022,
+							2,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.024,
+							2,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota del firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.026,
+							2,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.028,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.03,
+							2,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 7
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.0325,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.035,
+							2,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.0375,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.04,
+							2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306007": {
+				"Id": "11306007",
+				"Name": "Narradora poco fiable",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Tras usar la técnica, todos los aliados obtienen Despiste durante <unbreak>#2[i]</unbreak> s. Los aliados con Despiste no pueden ser detectados por los enemigos. Al entrar en combate mientras dura Despiste, el equipo recupera <unbreak>#1[i]</unbreak> pts. de habilidad básica y Sparkle recupera <unbreak>#2[i]</unbreak> pts. de energía.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130607"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							20
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11306101": {
+				"Id": "11306101",
+				"Name": "Almanaque",
+				"NodeType": 3,
+				"EffectRaw": "Al lanzar el ATQ básico, recupera adicionalmente <unbreak>#1[i]</unbreak> pts. de energía. Cuando un personaje aliado consume pts. de habilidad básica teniendo activo el efecto de aumento de Daño CRIT de la habilidad básica de Sparkle, Sparkle recupera <unbreak>#2[i]</unbreak> pt. de energía adicional.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							10,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota del firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306102": {
+				"Id": "11306102",
+				"Name": "Flor artificial",
+				"NodeType": 3,
+				"EffectRaw": "Si un personaje aliado consume <unbreak>#1[i]</unbreak> o más pts. de habilidad básica en un solo turno, la siguiente vez que Sparkle lance su habilidad básica no consume pts. de habilidad básica.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306103": {
+				"Id": "11306103",
+				"Name": "Serenata nocturna",
+				"NodeType": 3,
+				"EffectRaw": "El ATQ de todos los aliados aumenta en un <unbreak>#1[i]%</unbreak>. Si un personaje aliado tiene el efecto de aumento de Daño CRIT de la habilidad básica, la <u>PEN de la RES</u> a todos los tipos aumenta en un <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11306/SkillIcon_11306_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11306201": {
+				"Id": "11306201",
+				"Name": "Bonificación de PV",
+				"NodeType": 1,
+				"EffectRaw": "PV máx. +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11306202": {
+				"Id": "11306202",
+				"Name": "Bonificación de Daño CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Daño CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11306101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110231",
+								"Name": "Nota del firmamento",
+								"Count": 3
+							},
+							{
+								"Id": "114011",
+								"Name": "Jirones de pensamientos",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11306203": {
+				"Id": "11306203",
+				"Name": "Bonificación de PV",
+				"NodeType": 1,
+				"EffectRaw": "PV máx. +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306204": {
+				"Id": "11306204",
+				"Name": "Bonificación de RES a efecto",
+				"NodeType": 1,
+				"EffectRaw": "RES a efecto +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306205": {
+				"Id": "11306205",
+				"Name": "Bonificación de PV",
+				"NodeType": 1,
+				"EffectRaw": "PV máx. +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11306102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110232",
+								"Name": "Compás celestial",
+								"Count": 5
+							},
+							{
+								"Id": "114012",
+								"Name": "Fragmento de impresiones",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11306206": {
+				"Id": "11306206",
+				"Name": "Bonificación de Daño CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Daño CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306207": {
+				"Id": "11306207",
+				"Name": "Bonificación de PV",
+				"NodeType": 1,
+				"EffectRaw": "PV máx. +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11306201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 3
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11306208": {
+				"Id": "11306208",
+				"Name": "Bonificación de RES a efecto",
+				"NodeType": 1,
+				"EffectRaw": "RES a efecto +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusResistanceBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11306103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306209": {
+				"Id": "11306209",
+				"Name": "Bonificación de Daño CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Daño CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.107,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.107
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11306210": {
+				"Id": "11306210",
+				"Name": "Bonificación de PV",
+				"NodeType": 1,
+				"EffectRaw": "PV máx. +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "HPAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconMaxHP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11306208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110233",
+								"Name": "Movimiento celestial",
+								"Count": 8
+							},
+							{
+								"Id": "114013",
+								"Name": "Fragmento de deseos",
+								"Count": 8
+							}
+						]
+					}
+				}
 			}
 		},
 		"VersionAdded": "2.0"
@@ -77170,6 +78602,1470 @@
 						],
 						"LevelRequired": 80,
 						"NodeRequired": "1307201",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307001": {
+				"Id": "11307001",
+				"Name": "Discernimiento, alba silenciosa",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ básico",
+				"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Cisne Negro como Daño de Viento a un enemigo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"1130701"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espíritu ardiente",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 6
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 3
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 4
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307002": {
+				"Id": "11307002",
+				"Name": "Decadencia, falso crepúsculo",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad básica",
+				"EffectRaw": "Inflige un Daño de Viento equivalente al <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Cisne Negro a un enemigo y a los enemigos adyacentes. Tiene una <u>probabilidad base</u> del <unbreak>#3[i]%</unbreak> de reducir la DEF del objetivo y los objetivos adyacentes en un <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> durante <unbreak>#2[i]</unbreak> turnos.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130702"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							3,
+							1,
+							0.148
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.495,
+							3,
+							1,
+							0.154
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.54,
+							3,
+							1,
+							0.16
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espíritu ardiente",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.585,
+							3,
+							1,
+							0.166
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.63,
+							3,
+							1,
+							0.172
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.675,
+							3,
+							1,
+							0.178
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.7313,
+							3,
+							1,
+							0.1855
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.7875,
+							3,
+							1,
+							0.193
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.8438,
+							3,
+							1,
+							0.2005
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.9,
+							3,
+							1,
+							0.208
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307003": {
+				"Id": "11307003",
+				"Name": "Regocijo en el abrazo de otro mundo",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad definitiva",
+				"EffectRaw": "Afecta con Desvelación a todos los enemigos durante <unbreak>#2[i]</unbreak> turnos. A continuación, inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Cisne Negro como Daño de Viento a todos los enemigos.\nEn el estado de Desvelación, el daño que reciben los enemigos aumenta en un <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. Por cada acumulación de <u>Arcano</u> aplicada, hay una <u>probabilidad fija</u> del <unbreak>#4[i]%</unbreak> de aplicar 1 acumulación más. Además, después de que <u>Arcano</u> inflija daño al principio del turno, las acumulaciones no se reducen a la mitad.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130703"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.72,
+							2,
+							0.15,
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.768,
+							2,
+							0.16,
+							0.5
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.816,
+							2,
+							0.17,
+							0.5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espíritu ardiente",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.864,
+							2,
+							0.18,
+							0.5
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.912,
+							2,
+							0.19,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.96,
+							2,
+							0.2,
+							0.5
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.02,
+							2,
+							0.2125,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							1.08,
+							2,
+							0.225,
+							0.5
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							1.14,
+							2,
+							0.2375,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							1.2,
+							2,
+							0.25,
+							0.5
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307004": {
+				"Id": "11307004",
+				"Name": "Telar del capricho del destino",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Cada vez que un enemigo recibe Daño con el tiempo, hay una <u>probabilidad base</u> del <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de que reciba 1 acumulación de <u>Arcano</u>.\nCuando un enemigo está afectado con <u>Arcano</u>, se considera que también está afectado con Intemperie, Sangrado, Quemadura y Electrocución, y recibe un Daño de Viento con el tiempo equivalente al <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Cisne Negro al comienzo de cada turno. Después, las acumulaciones se reducen a la mitad. Cada acumulación de <u>Arcano</u> aumenta este multiplicador de daño en un <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. <u>Arcano</u> puede acumularse hasta <unbreak>#8[i]</unbreak> veces y puede seguir acumulándose tras exceder este límite, pero las acumulaciones excedentes se eliminan tras infligir daño.\nEl daño infligido por <u>Arcano</u> ignora el <unbreak>#7[i]%</unbreak> de la DEF del objetivo. Solo cuando <u>Arcano</u> inflige daño al comenzar el turno del enemigo, los objetivos adyacentes también reciben una vez un <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> del ATQ de Cisne Negro como Daño de Viento con el tiempo.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"1130704"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.96,
+							0.5,
+							0.048,
+							0.048,
+							0.72,
+							0,
+							0.2,
+							50
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							1.1184,
+							0.515,
+							0.0559,
+							0.0559,
+							0.8388,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 3
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							1.2768,
+							0.53,
+							0.0638,
+							0.0638,
+							0.9576,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espíritu ardiente",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 6
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							1.4352,
+							0.545,
+							0.0718,
+							0.0718,
+							1.0764,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							1.5936,
+							0.56,
+							0.0797,
+							0.0797,
+							1.1952,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 4
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1.752,
+							0.575,
+							0.0876,
+							0.0876,
+							1.314,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 30000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 7
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 6
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							1.896,
+							0.5938,
+							0.0948,
+							0.0948,
+							1.422,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 3
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2.04,
+							0.6125,
+							0.102,
+							0.102,
+							1.53,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 80000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 5
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2.22,
+							0.6313,
+							0.111,
+							0.111,
+							1.665,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2.4,
+							0.65,
+							0.12,
+							0.12,
+							1.8,
+							0,
+							0.2,
+							50
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 300000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 14
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307007": {
+				"Id": "11307007",
+				"Name": "De la apariencia a la verdad",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Tras usar la técnica, al comenzar la siguiente batalla, hay una <u>probabilidad base</u> del <unbreak>#1[i]%</unbreak> de aplicar 1 acumulación de <u>Arcano</u> a cada enemigo. Por cada aplicación de <u>Arcano</u> a un objetivo, aplica otra acumulación de <u>Arcano</u> al mismo objetivo. Este efecto se repite hasta que no se logre aplicar <u>Arcano</u> a ese objetivo. Cada vez, la <u>probabilidad base</u> de aplicar <u>Arcano</u> a ese objetivo es equivalente al <unbreak>#2[i]%</unbreak> de la <u>probabilidad base</u> de la aplicación anterior de <u>Arcano</u> a ese objetivo.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"1130707"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1.5,
+							0.5
+						],
+						"Costs": []
+					}
+				}
+			},
+			"11307101": {
+				"Id": "11307101",
+				"Name": "La intranquilidad de las vísceras",
+				"NodeType": 3,
+				"EffectRaw": "Tras ser atacados por Cisne Negro, los enemigos tienen una <u>probabilidad base</u> del <unbreak>#1[i]%</unbreak> de recibir <unbreak>#2[i]</unbreak> acumulaciones de <u>Arcano</u>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							5
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espíritu ardiente",
+								"Count": 3
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307102": {
+				"Id": "11307102",
+				"Name": "Los posos de la copa",
+				"NodeType": 3,
+				"EffectRaw": "Cuando el enemigo entra en combate, hay una <u>probabilidad base</u> del <unbreak>#1[i]%</unbreak> de aplicarle 1 acumulación de <u>Arcano</u> y una <u>probabilidad base</u> del <unbreak>#2[i]%</unbreak> de aplicarle la reducción de DEF de la habilidad básica durante <unbreak>#3[i]</unbreak> turnos.\nTras atacar con el ATQ básico o la habilidad definitiva, también hay una <u>probabilidad base</u> del <unbreak>#2[i]%</unbreak> de aplicar a los enemigos atacados la reducción de DEF de la habilidad básica durante <unbreak>#3[i]</unbreak> turnos.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.65,
+							1,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 5
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307103": {
+				"Id": "11307103",
+				"Name": "El portento de las llamas",
+				"NodeType": 3,
+				"EffectRaw": "El daño que infligen todos los aliados aumenta en una cantidad equivalente al <unbreak>#1[i]%</unbreak> del acierto de efecto de Cisne Negro. El daño puede aumentar hasta un máximo del <unbreak>#2[i]%</unbreak> mediante este efecto.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/11307/SkillIcon_11307_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.6,
+							0.72
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110504",
+								"Name": "Agravios pasados de la catástrofe devoraplanetas",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"11307201": {
+				"Id": "11307201",
+				"Name": "Bonificación de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "ATQ +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2500
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"11307202": {
+				"Id": "11307202",
+				"Name": "Bonificación de daño: Viento",
+				"NodeType": 1,
+				"EffectRaw": "Daño de Viento +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.032,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.032
+						],
+						"AscensionRequired": 2,
+						"NodeRequired": "11307101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110221",
+								"Name": "Espíritu ardiente",
+								"Count": 3
+							},
+							{
+								"Id": "111001",
+								"Name": "Núcleo apagado",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"11307203": {
+				"Id": "11307203",
+				"Name": "Bonificación de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "ATQ +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307202",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307204": {
+				"Id": "11307204",
+				"Name": "Bonificación de acierto de efecto",
+				"NodeType": 1,
+				"EffectRaw": "Acierto de efecto +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "11307203",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 3
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307205": {
+				"Id": "11307205",
+				"Name": "Bonificación de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "ATQ +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "11307102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110222",
+								"Name": "Esencia de fuego estelar",
+								"Count": 5
+							},
+							{
+								"Id": "111002",
+								"Name": "Núcleo reluciente",
+								"Count": 4
+							}
+						]
+					}
+				}
+			},
+			"11307206": {
+				"Id": "11307206",
+				"Name": "Bonificación de daño: Viento",
+				"NodeType": 1,
+				"EffectRaw": "Daño de Viento +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.048,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.048
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307207": {
+				"Id": "11307207",
+				"Name": "Bonificación de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "ATQ +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "11307206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 3
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"11307208": {
+				"Id": "11307208",
+				"Name": "Bonificación de acierto de efecto",
+				"NodeType": 1,
+				"EffectRaw": "Acierto de efecto +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "StatusProbabilityBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconStatusProbability.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307209": {
+				"Id": "11307209",
+				"Name": "Bonificación de daño: Viento",
+				"NodeType": 1,
+				"EffectRaw": "Daño de Viento +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "WindAddedRatio",
+				"StatBonusValue": 0.064,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconWindAddedRatio.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.064
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "11307103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110223",
+								"Name": "Incinerador divino",
+								"Count": 8
+							},
+							{
+								"Id": "111003",
+								"Name": "Núcleo serpenteante",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"11307210": {
+				"Id": "11307210",
+				"Name": "Bonificación de ATQ",
+				"NodeType": 1,
+				"EffectRaw": "ATQ +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "AttackAddedRatio",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconAttack.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "11307201",
 						"Costs": [
 							{
 								"Id": "2",
@@ -111332,6 +114228,3225 @@
 			}
 		},
 		"VersionAdded": "3.7"
+	},
+	"1501": {
+		"Id": "1501",
+		"Name": "Chispa",
+		"Nodes": {
+			"1501001": {
+				"Id": "1501001",
+				"Name": "¿Se te apagó la chispa?",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ básico",
+				"EffectRaw": "Inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> del ATQ de Chispa como Daño de Fuego a un enemigo.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150101",
+					"150108"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.5
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.7
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.8
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.9
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501002": {
+				"Id": "1501002",
+				"Name": "¡Griten! Chispa conectando",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad básica",
+				"EffectRaw": "Inicia una conexión en directo, durante la que convierte el ATQ básico en ¡Mi arte, solo para el ganador! y lanza una vez Trampa interactiva. Durante la conexión, Trampa interactiva puede lanzarse repetidamente hasta <unbreak>#1[i]</unbreak> veces. Lanzar esta habilidad no se considera como un uso de la habilidad básica.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150102",
+					"150109"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							20,
+							28,
+							3,
+							7,
+							4
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501003": {
+				"Id": "1501003",
+				"Name": "¡Que el espectáculo no pare!",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad definitiva",
+				"EffectRaw": "Obtiene <unbreak>#1[i]</unbreak> puntos de <u>Chiste</u>. Inflige un Daño de Fuego equivalente a (Exultación ×<unbreak>#3[f1]</unbreak> + el <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> del ATQ de Chispa) a todos los enemigos.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150103"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.3,
+							0.6
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							2,
+							0.32,
+							0.6
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							2,
+							0.34,
+							0.6
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							2,
+							0.36,
+							0.6
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							2,
+							0.38,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							2,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							2,
+							0.425,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							2,
+							0.45,
+							0.6
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							2,
+							0.475,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							2,
+							0.5,
+							0.6
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501004": {
+				"Id": "1501004",
+				"Name": "La chispa maestra",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Cuando Chispa tiene <u>¡Bien hecho!</u>:\nAl lanzar el ATQ básico potenciado, inflige un <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> y un <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> de <u>Daño de Exultación</u> de Fuego a un enemigo y a los objetivos adyacentes respectivamente. Además, cada vez que lance Trampa interactiva, el ATQ básico potenciado inflige una vez adicional un <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de <u>Daño de Exultación</u> de Fuego a uno de los enemigos atacados al azar.\nAl lanzar la habilidad definitiva, inflige un <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de <u>Daño de Exultación</u> de Fuego a todos los enemigos.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150104"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1,
+							0.24,
+							0.2,
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11,
+							0.264,
+							0.22,
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12,
+							0.288,
+							0.24,
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13,
+							0.312,
+							0.26,
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14,
+							0.336,
+							0.28,
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15,
+							0.36,
+							0.3,
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625,
+							0.39,
+							0.325,
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175,
+							0.42,
+							0.35,
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875,
+							0.45,
+							0.375,
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2,
+							0.48,
+							0.4,
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501007": {
+				"Id": "1501007",
+				"Name": "Monetización del tráfico",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Tras usar la técnica, los enemigos de una zona determinada quedan afectados por Lista negra durante <unbreak>#3[i]</unbreak> segundos, lo que les impide detectar a los aliados.\nAl entrar en combate tras atacar a un enemigo afectado por Lista negra, inflige a todos los enemigos un Daño de Fuego equivalente al <unbreak>#2[i]%</unbreak> del ATQ de Chispa y recupera <unbreak>#1[i]</unbreak> pts. de habilidad básica para los aliados.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150107"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							0.5,
+							10
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1501101": {
+				"Id": "1501101",
+				"Name": "¡Bien! Sesión de firmas de chistes",
+				"NodeType": 3,
+				"EffectRaw": "Si el ATQ de Chispa es superior a <unbreak>#1[i]</unbreak>, por cada <unbreak>#2[i]</unbreak> pts. de ATQ que superen este valor, su Exultación aumenta en un <unbreak>#3[f1]%</unbreak>, hasta un máximo del <unbreak>#4[f1]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2000,
+							100,
+							0.05,
+							0.8
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501102": {
+				"Id": "1501102",
+				"Name": "¡Deslumbrante! Caleidoscopio de personajes",
+				"NodeType": 3,
+				"EffectRaw": "Cuando hay 1/2/3 o más personajes de la Vía de la Exultación en el equipo, Chispa obtiene adicionalmente <unbreak>#1[i]</unbreak>/<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak> puntos de <u>Chiste</u> y <unbreak>#4[i]</unbreak>/<unbreak>#5[i]</unbreak>/<unbreak>#6[i]</unbreak> Detonaciones al lanzar la habilidad definitiva.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2,
+							4,
+							8,
+							1,
+							1,
+							4
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501103": {
+				"Id": "1501103",
+				"Name": "¡Frenesí! Paleta de verdades y mentiras",
+				"NodeType": 3,
+				"EffectRaw": "Por cada punto de <u>Chiste</u> que se tenga actualmente, el Daño CRIT de todos los aliados aumenta en un <unbreak>#1[i]%</unbreak>, hasta un aumento máximo del <unbreak>#2[i]%</unbreak>.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08,
+							0.8
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1501201": {
+				"Id": "1501201",
+				"Name": "Bonificación de Exultación",
+				"NodeType": 1,
+				"EffectRaw": "Exultación +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501202": {
+				"Id": "1501202",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1501203": {
+				"Id": "1501203",
+				"Name": "Bonificación de Exultación",
+				"NodeType": 1,
+				"EffectRaw": "Exultación +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501204": {
+				"Id": "1501204",
+				"Name": "Bonificación de Daño CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Daño CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1501101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501205": {
+				"Id": "1501205",
+				"Name": "Bonificación de Exultación",
+				"NodeType": 1,
+				"EffectRaw": "Exultación +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1501102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1501206": {
+				"Id": "1501206",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501207": {
+				"Id": "1501207",
+				"Name": "Bonificación de Exultación",
+				"NodeType": 1,
+				"EffectRaw": "Exultación +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1501206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501208": {
+				"Id": "1501208",
+				"Name": "Bonificación de Daño CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Daño CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalDamageBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalDamage.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1501103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1501209": {
+				"Id": "1501209",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1501208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501210": {
+				"Id": "1501210",
+				"Name": "Bonificación de Exultación",
+				"NodeType": 1,
+				"EffectRaw": "Exultación +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.08,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.08
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1501209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1501420": {
+				"Id": "1501420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
+	},
+	"1502": {
+		"Id": "1502",
+		"Name": "Yao Guang",
+		"Nodes": {
+			"1502001": {
+				"Id": "1502001",
+				"Name": "Alborozo de dardos plumíferos",
+				"NodeType": 2,
+				"NodeTypeText": "ATQ básico",
+				"EffectRaw": "Yao Guang inflige un <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> y un <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de su ATQ como Daño Físico a un enemigo y a los objetivos adyacentes, respectivamente. La energía recuperada con el ATQ básico aumenta a <unbreak>30</unbreak> puntos.",
+				"MaxLevel": 6,
+				"LeveledSkillIds": [
+					"150201"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Normal.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.45,
+							0.15
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.54,
+							0.18
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.63,
+							0.21
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 2
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.72,
+							0.24
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 16000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.81,
+							0.27
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.9,
+							0.3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502002": {
+				"Id": "1502002",
+				"Name": "Decarreflejo discernidor",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad básica",
+				"EffectRaw": "Despliega un campo durante <unbreak>#1[i]</unbreak> turnos. Su duración se reduce en 1 al comienzo de cada turno de Yao Guang. Mientras el campo esté activo, la Exultación de todos los aliados aumenta en una cantidad equivalente al <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de la Exultación de Yao Guang, y Yao Guang obtiene <unbreak>#3[i]</unbreak> puntos de <u>Chiste</u> tras lanzar su ATQ básico o habilidad básica.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150202"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_BP.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3,
+							0.1,
+							3
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							3,
+							0.11,
+							3
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							3,
+							0.12,
+							3
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							3,
+							0.13,
+							3
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							3,
+							0.14,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							3,
+							0.15,
+							3
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							3,
+							0.1625,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							3,
+							0.175,
+							3
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							3,
+							0.1875,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							3,
+							0.2,
+							3
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502003": {
+				"Id": "1502003",
+				"Name": "Ventura vestida de hierro y plumas",
+				"NodeType": 2,
+				"NodeTypeText": "Habilidad definitiva",
+				"EffectRaw": "Obtiene <unbreak>#1[i]</unbreak> puntos de <u>Chiste</u>. <u>Aha</u> obtiene inmediatamente un <u>turno adicional</u> que cuenta como <unbreak>#4[i]</unbreak> puntos fijos de <u>Chiste</u>. Ese turno no consume <u>Chiste</u> y aumenta la <u>PEN de la RES</u> a todos los tipos de todos los aliados en un <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> durante <unbreak>#3[i]</unbreak> turnos.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150203"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Ultra.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							5,
+							0.1,
+							3,
+							20,
+							1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							5,
+							0.11,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							5,
+							0.12,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							5,
+							0.13,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							5,
+							0.14,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							5,
+							0.15,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							5,
+							0.1625,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							5,
+							0.175,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							5,
+							0.1875,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							5,
+							0.2,
+							3,
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502004": {
+				"Id": "1502004",
+				"Name": "Abanico de luz omnividente",
+				"NodeType": 2,
+				"NodeTypeText": "Talento",
+				"EffectRaw": "Cuando Yao Guang posee <u>¡Bien hecho!</u>:\nDespués de que un aliado ataque, activa el efecto Buena suerte, el cual inflige una vez adicional un <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de <u>Daño de Exultación</u> del tipo correspondiente a uno de los objetivos golpeados al azar. Si dicho ataque consume pts. de habilidad básica, el efecto Buena suerte se activa una vez adicional.\nSi la Exultación del atacante es inferior a la de Yao Guang al activarse el efecto Buena suerte, el <u>Daño de Exultación</u> infligido esta vez se calculará con la Exultación de Yao Guang.\nActivar el efecto Buena suerte no cuenta como un ataque.",
+				"MaxLevel": 10,
+				"LeveledSkillIds": [
+					"150204"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Passive.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.1
+						],
+						"Costs": []
+					},
+					"2": {
+						"EffectValues": [
+							0.11
+						],
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"EffectValues": [
+							0.12
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"EffectValues": [
+							0.13
+						],
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"EffectValues": [
+							0.14
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"EffectValues": [
+							0.15
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"EffectValues": [
+							0.1625
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"EffectValues": [
+							0.175
+						],
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"EffectValues": [
+							0.1875
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					},
+					"10": {
+						"EffectValues": [
+							0.2
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502007": {
+				"Id": "1502007",
+				"Name": "Rutilancia desinhibida",
+				"NodeType": 2,
+				"NodeTypeText": "Técnica",
+				"EffectRaw": "Tras usar la técnica, activa automáticamente su habilidad básica 1 vez al comenzar la siguiente batalla sin consumir pts. de habilidad básica. Cuando Yao Guang está en el equipo, obtiene inmediatamente Sobre de la suerte al destruir objetos destruibles, hasta un máximo de <unbreak>#1[i]</unbreak> en cada semana terrestre.",
+				"MaxLevel": 1,
+				"LeveledSkillIds": [
+					"150207"
+				],
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Maze.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							8
+						],
+						"Costs": []
+					}
+				}
+			},
+			"1502101": {
+				"Id": "1502101",
+				"Name": "Salutación airosa",
+				"NodeType": 3,
+				"EffectRaw": "Cuando la VEL de Yao Guang es mayor o igual a <unbreak>#1[i]</unbreak>, su Exultación aumenta en un <unbreak>#2[i]%</unbreak>. Por cada <unbreak>#3[i]</unbreak> pt. de VEL de exceso, su Exultación aumenta en un <unbreak>#4[i]%</unbreak> adicional. Se cuentan como máximo <unbreak>#5[i]</unbreak> pts. de VEL de exceso.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree1.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							120,
+							0.3,
+							1,
+							0.01,
+							200
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502102": {
+				"Id": "1502102",
+				"Name": "Satisfacción serena",
+				"NodeType": 3,
+				"EffectRaw": "Aumenta su Daño CRIT en un <unbreak>#4[i]%</unbreak>. Tras lanzar la habilidad de Exultación, recupera <unbreak>#1[i]</unbreak> pt. de habilidad básica para los aliados.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree2.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							1,
+							0.25,
+							0.4,
+							0.6
+						],
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 20000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502103": {
+				"Id": "1502103",
+				"Name": "Fortuna reunida",
+				"NodeType": 3,
+				"EffectRaw": "Cuando Yao Guang obtiene <u>¡Bien hecho!</u>, su duración aumenta en <unbreak>#2[i]</unbreak> turno.",
+				"MaxLevel": 1,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_SkillTree3.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							20,
+							1
+						],
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 140000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 8
+							},
+							{
+								"Id": "241",
+								"Name": "Huellas del destino",
+								"Count": 1
+							},
+							{
+								"Id": "110508",
+								"Name": "Silencio taponador",
+								"Count": 1
+							}
+						]
+					}
+				}
+			},
+			"1502201": {
+				"Id": "1502201",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"LevelRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502202": {
+				"Id": "1502202",
+				"Name": "Bonificación de VEL",
+				"NodeType": 1,
+				"EffectRaw": "VEL +<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 2,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							2
+						],
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 5000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 6
+							}
+						]
+					}
+				}
+			},
+			"1502203": {
+				"Id": "1502203",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.027,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.027
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502204": {
+				"Id": "1502204",
+				"Name": "Bonificación de Exultación",
+				"NodeType": 1,
+				"EffectRaw": "Exultación +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 3,
+						"NodeRequired": "1502101",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 10000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502205": {
+				"Id": "1502205",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 4,
+						"NodeRequired": "1502102",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 18000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					}
+				}
+			},
+			"1502206": {
+				"Id": "1502206",
+				"Name": "Bonificación de VEL",
+				"NodeType": 1,
+				"EffectRaw": "VEL +<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 3,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							3
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502205",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502207": {
+				"Id": "1502207",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.04,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.04
+						],
+						"AscensionRequired": 5,
+						"NodeRequired": "1502206",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 45000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502208": {
+				"Id": "1502208",
+				"Name": "Bonificación de Exultación",
+				"NodeType": 1,
+				"EffectRaw": "Exultación +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "ElationDamageAddedRatioBase",
+				"StatBonusValue": 0.06,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconJoy.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.06
+						],
+						"AscensionRequired": 6,
+						"NodeRequired": "1502103",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 5
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					}
+				}
+			},
+			"1502209": {
+				"Id": "1502209",
+				"Name": "Bonificación de VEL",
+				"NodeType": 1,
+				"EffectRaw": "VEL +<unbreak>#1[i]</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "SpeedDelta",
+				"StatBonusValue": 4,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconSpeed.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							4
+						],
+						"LevelRequired": 75,
+						"NodeRequired": "1502208",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502210": {
+				"Id": "1502210",
+				"Name": "Bonificación de Prob. CRIT",
+				"NodeType": 1,
+				"EffectRaw": "Prob. CRIT +<unbreak>#1[f1]%</unbreak>",
+				"MaxLevel": 1,
+				"StatBonusType": "CriticalChanceBase",
+				"StatBonusValue": 0.053,
+				"ImageIcon": "SpriteOutput/UI/Avatar/Icon/IconCriticalChance.png",
+				"Levels": {
+					"1": {
+						"EffectValues": [
+							0.053
+						],
+						"LevelRequired": 80,
+						"NodeRequired": "1502209",
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 160000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 8
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 8
+							}
+						]
+					}
+				}
+			},
+			"1502420": {
+				"Id": "1502420",
+				"Name": "",
+				"NodeType": 4,
+				"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Elation.png",
+				"Levels": {
+					"1": {
+						"Costs": []
+					},
+					"2": {
+						"AscensionRequired": 1,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 2000
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 2
+							}
+						]
+					},
+					"3": {
+						"AscensionRequired": 2,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 4000
+							},
+							{
+								"Id": "110261",
+								"Name": "Guion gráfico hecho a mano de Pelosete",
+								"Count": 3
+							},
+							{
+								"Id": "116001",
+								"Name": "Crayón de la inocencia",
+								"Count": 5
+							}
+						]
+					},
+					"4": {
+						"AscensionRequired": 3,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 8000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"5": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 15000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 3
+							}
+						]
+					},
+					"6": {
+						"AscensionRequired": 4,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 24000
+							},
+							{
+								"Id": "110262",
+								"Name": "Edición conmemorativa de la serialización de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116002",
+								"Name": "Pluma creasueños",
+								"Count": 5
+							}
+						]
+					},
+					"7": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 32000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 2
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 2
+							}
+						]
+					},
+					"8": {
+						"AscensionRequired": 5,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 65000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 4
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"9": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 120000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 6
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					},
+					"10": {
+						"AscensionRequired": 6,
+						"Costs": [
+							{
+								"Id": "2",
+								"Name": "Crédito",
+								"Count": 250000
+							},
+							{
+								"Id": "110263",
+								"Name": "Edición de coleccionista de Pelosete",
+								"Count": 12
+							},
+							{
+								"Id": "116003",
+								"Name": "Pincel de los sueños",
+								"Count": 4
+							}
+						]
+					}
+				}
+			}
+		},
+		"VersionAdded": "4.0"
 	},
 	"8001": {
 		"Id": "8001",

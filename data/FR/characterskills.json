@@ -20437,7 +20437,7 @@
 			"TagTypeText": "Soutien",
 			"SkillTypeText": "Compétence",
 			"MaxLevel": 15,
-			"EffectRaw": "Désigne un allié unique (à l'exception de ce personnage) comme Maître et augmente sa VIT de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Seule la dernière cible de la compétence de March 7th est considérée comme son « Maître ».\n\n\nChaque fois que March 7th utilise son ATQ normale ou qu'elle inflige des DGT avec 1 frappe de son ATQ normale renforcée, elle déclenche l'effet correspondant en fonction de la Voie du Maître présent sur le champ de bataille :\n\nÉrudition, Destruction, Chasse, Souvenir : Inflige des <u>DGT additionnels</u> (du type du Maître) équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de March 7th.\n\nHarmonie, Nihilité, Préservation, Abondance : Augmente la réduction de robustesse de cette instance de DGT de <unbreak>#3[i]%</unbreak>.",
+			"EffectRaw": "Désigne un allié (à l'exception de ce personnage) comme Maître et augmente sa VIT de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Seule la dernière cible de la compétence de March 7th est considérée comme son « Maître ».\nChaque fois que March 7th utilise son ATQ normale ou qu'elle inflige des DGT avec 1 frappe de son ATQ normale renforcée, elle déclenche l'effet correspondant en fonction de la Voie du Maître présent sur le champ de bataille :\nL'Érudition, La Destruction, La Chasse, Le Souvenir, L'Allégresse : Inflige des <u>DGT additionnels</u> (du type du Maître) équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de March 7th.\nL'Harmonie, La Nihilité, La Préservation, L'Abondance : Augmente la réduction de robustesse de cette instance de DGT de <unbreak>#3[i]%</unbreak>.",
 			"AbridgedEffect": "Désigne un allié unique comme « Maître ». Chaque fois que March utilise son ATQ normale ou qu'elle inflige des DGT avec son ATQ normale renforcée, elle déclenche un effet qui correspond à la <color=#f29e38ff>Voie du Maître</color> :\nÉrudition, Destruction, Chasse, Souvenir : Inflige des <color=#f29e38ff><u>DGT additionnels</u></color> en fonction du type du Maître.\nHarmonie, Nihilité, Préservation, Abondance : Augmente la <color=#f29e38ff>réduction de robustesse</color>.",
 			"Levels": {
 				"1": {
@@ -38007,6 +38007,1254 @@
 			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1415/SkillIcon_1415_Maze.png"
 		},
 		"VersionAdded": "3.7"
+	},
+	"1501": {
+		"Id": "1501",
+		"Name": "Sparxie",
+		"BasicATK": {
+			"Id": "150101",
+			"Name": "La mèche n'a pas pris ?",
+			"TriggerKey": "Skill01",
+			"TagType": "SingleAttack",
+			"TagTypeText": "Cible unique",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 10,
+			"EffectRaw": "Inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Sparxie à un ennemi désigné.",
+			"AbridgedEffect": "Inflige des DGT de feu mineurs à un ennemi.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal.png"
+		},
+		"EnhancedBasicATK": {
+			"Id": "150108",
+			"Name": "Détonateur de victoire",
+			"TriggerKey": "Skill11",
+			"TagType": "Blast",
+			"TagTypeText": "Propagation",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 10,
+			"EffectRaw": "Termine le stream, inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Sparxie à un ennemi désigné et inflige des DGT de feu équivalents à <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de son ATQ aux cibles adjacentes.",
+			"AbridgedEffect": "Inflige des DGT de feu mineurs à un ennemi et des DGT de feu mineurs aux cibles adjacentes.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5,
+						0.25
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8,
+						0.4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9,
+						0.45
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1,
+						0.55
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2,
+						0.6
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3,
+						0.65
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal02.png"
+		},
+		"Skill": {
+			"Id": "150102",
+			"Name": "Faites de la place !",
+			"TriggerKey": "Skill02",
+			"TagType": "Enhance",
+			"TagTypeText": "Renforcement",
+			"SkillTypeText": "Compétence",
+			"MaxLevel": 15,
+			"EffectRaw": "Lance un stream pour transformer l'ATQ normale en Détonateur de victoire et déclenche Pêche aux vues 1 fois. Pendant la durée de cette capacité, Pêche aux vues peut être déclenché jusqu'à <unbreak>#1[i]</unbreak> fois. L'utilisation de cette capacité n'est pas considérée comme l'utilisation d'une compétence.",
+			"AbridgedEffect": "Lance un stream durant lequel l'ATQ normale se transforme en Détonateur de victoire, et déclenche Pêche aux vues 1 fois. Lorsque le stream est actif, Pêche aux vues peut être déclenché <color=#f29e38ff>plusieurs fois</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"2": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"3": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"4": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"6": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"7": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"8": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"9": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"10": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"11": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"12": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"13": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"14": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				},
+				"15": {
+					"EffectValues": [
+						20,
+						28,
+						3,
+						7,
+						4
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP.png"
+		},
+		"EnhancedSkill": {
+			"Id": "150109",
+			"Name": "Pêche aux vues",
+			"TriggerKey": "Skill21",
+			"TagType": "Enhance",
+			"TagTypeText": "Renforcement",
+			"SkillTypeText": "Compétence",
+			"MaxLevel": 15,
+			"EffectRaw": "Augmente le multiplicateur de DGT de Détonateur de victoire de <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> contre un ennemi désigné, et de <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color> contre les cibles adjacentes. Accorde aléatoirement un des cadeaux suivants :\nHilaropulence : <unbreak>#3[i]</unbreak> points de <u>Panache</u> et <unbreak>#1[i]</unbreak> points de compétence.\nEmbrumarrade : <unbreak>#2[i]</unbreak> point de <u>Panache</u>.\nL'utilisation de cette capacité n'est pas considérée comme l'utilisation d'une compétence.",
+			"AbridgedEffect": "Augmente le multiplicateur de DGT de Détonateur de victoire et accorde aléatoirement l'un des cadeaux suivants : Hilaropulence ou Embrumarrade.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.1,
+						0.05
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.11,
+						0.055
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.12,
+						0.06
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.13,
+						0.065
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.14,
+						0.07
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.15,
+						0.075
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.1625,
+						0.0813
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.175,
+						0.0875
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.1875,
+						0.0938
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.2,
+						0.1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.21,
+						0.105
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.22,
+						0.11
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.23,
+						0.115
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.24,
+						0.12
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						1,
+						2,
+						0.25,
+						0.125
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_BP02.png"
+		},
+		"Ultimate": {
+			"Id": "150103",
+			"Name": "Collab de légende",
+			"TriggerKey": "Skill03",
+			"TagType": "AoEAttack",
+			"TagTypeText": "ZdE",
+			"SkillTypeText": "Ultime",
+			"MaxLevel": 15,
+			"EffectRaw": "Accorde <unbreak>#1[i]</unbreak> points de <u>Panache</u>. Inflige des DGT de feu équivalents à (<unbreak>#3[f1]</unbreak> × Allégresse + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>) de l'ATQ de Sparxie à tous les ennemis.",
+			"AbridgedEffect": "<color=#f29e38ff>Accorde du <u>Panache</u></color>. Inflige des DGT de feu à tous les ennemis.",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						0.3,
+						0.6
+					]
+				},
+				"2": {
+					"EffectValues": [
+						2,
+						0.32,
+						0.6
+					]
+				},
+				"3": {
+					"EffectValues": [
+						2,
+						0.34,
+						0.6
+					]
+				},
+				"4": {
+					"EffectValues": [
+						2,
+						0.36,
+						0.6
+					]
+				},
+				"5": {
+					"EffectValues": [
+						2,
+						0.38,
+						0.6
+					]
+				},
+				"6": {
+					"EffectValues": [
+						2,
+						0.4,
+						0.6
+					]
+				},
+				"7": {
+					"EffectValues": [
+						2,
+						0.425,
+						0.6
+					]
+				},
+				"8": {
+					"EffectValues": [
+						2,
+						0.45,
+						0.6
+					]
+				},
+				"9": {
+					"EffectValues": [
+						2,
+						0.475,
+						0.6
+					]
+				},
+				"10": {
+					"EffectValues": [
+						2,
+						0.5,
+						0.6
+					]
+				},
+				"11": {
+					"EffectValues": [
+						2,
+						0.52,
+						0.6
+					]
+				},
+				"12": {
+					"EffectValues": [
+						2,
+						0.54,
+						0.6
+					]
+				},
+				"13": {
+					"EffectValues": [
+						2,
+						0.56,
+						0.6
+					]
+				},
+				"14": {
+					"EffectValues": [
+						2,
+						0.58,
+						0.6
+					]
+				},
+				"15": {
+					"EffectValues": [
+						2,
+						0.6,
+						0.6
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Ultra.png"
+		},
+		"EnhancedBasicATK2": {
+			"Id": "150110",
+			"Name": "Détonateur de victoire",
+			"TriggerKey": "Skill12",
+			"TagType": "Blast",
+			"TagTypeText": "Propagation",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 10,
+			"EffectRaw": "N/A",
+			"ElementType": "Fire",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.5,
+						0.25
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.6,
+						0.3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.7,
+						0.35
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.8,
+						0.4
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.9,
+						0.45
+					]
+				},
+				"6": {
+					"EffectValues": [
+						1,
+						0.5
+					]
+				},
+				"7": {
+					"EffectValues": [
+						1.1,
+						0.55
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.2,
+						0.6
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.3,
+						0.65
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.4,
+						0.7
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Normal02.png"
+		},
+		"Talent": {
+			"Id": "150104",
+			"Name": "Maîtresse des étincelles",
+			"TriggerKey": "SkillP01",
+			"TagType": "Enhance",
+			"TagTypeText": "Renforcement",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Lorsque Sparxie bénéficie de <u>Banger absolu</u> :\nUtiliser l'ATQ normale renforcée inflige <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> de <u>comidégâts</u> de feu à un ennemi désigné, et <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> de <u>comidégâts</u> de feu aux cibles adjacentes. D'autre part, pour chaque activation de Pêche aux vues, l'ATQ normale renforcée inflige 1 instance supplémentaire de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de <u>comidégâts</u> de feu à 1 cible ennemie attaquée aléatoire.\nUtiliser l'ultime inflige <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de <u>comidégâts</u> de feu à tous les ennemis.",
+			"AbridgedEffect": "Lorsque Sparxie bénéficie de <u>Banger absolu</u>, utiliser l'ATQ normale renforcée ou l'ultime inflige des <u>comidégâts</u> de feu aux ennemis.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1,
+						0.24,
+						0.2,
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.11,
+						0.264,
+						0.22,
+						0.11
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.12,
+						0.288,
+						0.24,
+						0.12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.13,
+						0.312,
+						0.26,
+						0.13
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.14,
+						0.336,
+						0.28,
+						0.14
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.15,
+						0.36,
+						0.3,
+						0.15
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.1625,
+						0.39,
+						0.325,
+						0.1625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.175,
+						0.42,
+						0.35,
+						0.175
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1875,
+						0.45,
+						0.375,
+						0.1875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.2,
+						0.48,
+						0.4,
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.21,
+						0.504,
+						0.42,
+						0.21
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.22,
+						0.528,
+						0.44,
+						0.22
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.23,
+						0.552,
+						0.46,
+						0.23
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.24,
+						0.576,
+						0.48,
+						0.24
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.25,
+						0.6,
+						0.5,
+						0.25
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Passive.png"
+		},
+		"Technique": {
+			"Id": "150107",
+			"Name": "Monétisation du flux",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Impair",
+			"TagTypeText": "Incapacitation",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Après utilisation de la technique, applique Bannissement aux ennemis situés dans une zone définie pendant <unbreak>#3[i]</unbreak> secondes. Les ennemis bannis ne peuvent pas détecter les cibles alliées.\nEngager le combat après avoir attaqué un ennemi banni inflige des DGT de feu équivalents à <unbreak>#2[i]%</unbreak> de l'ATQ de Sparxie à tous les ennemis et accorde <unbreak>#1[i]</unbreak> points de compétence aux alliés.",
+			"AbridgedEffect": "Applique Bannissement à tous les ennemis dans une zone définie. Lorsque vous engagez le combat contre des ennemis bannis, inflige des DGT de feu mineurs à tous les ennemis et <color=#f29e38ff>accorde des points de compétence</color>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						2,
+						0.5,
+						10
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1501/SkillIcon_1501_Maze.png"
+		},
+		"VersionAdded": "4.0"
+	},
+	"1502": {
+		"Id": "1502",
+		"Name": "Yao Guang",
+		"BasicATK": {
+			"Id": "150201",
+			"Name": "Chant de joie des plumes",
+			"TriggerKey": "Skill01",
+			"TagType": "Blast",
+			"TagTypeText": "Propagation",
+			"SkillTypeText": "ATQ normale",
+			"MaxLevel": 10,
+			"EffectRaw": "Inflige des DGT physiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Yao Guang à un ennemi désigné et des DGT physiques équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de son ATQ aux cibles adjacentes. Augmente l'énergie régénérée par l'ATQ normale à <unbreak>30</unbreak>.",
+			"AbridgedEffect": "Inflige des DGT physiques mineurs à une cible ennemie et des DGT physiques mineurs aux cibles adjacentes.",
+			"ElementType": "Physical",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.45,
+						0.15
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.54,
+						0.18
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.63,
+						0.21
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.72,
+						0.24
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.81,
+						0.27
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.9,
+						0.3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.99,
+						0.33
+					]
+				},
+				"8": {
+					"EffectValues": [
+						1.08,
+						0.36
+					]
+				},
+				"9": {
+					"EffectValues": [
+						1.17,
+						0.39
+					]
+				},
+				"10": {
+					"EffectValues": [
+						1.26,
+						0.42
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Normal.png"
+		},
+		"Skill": {
+			"Id": "150202",
+			"Name": "Rayonnement d'omniscience",
+			"TriggerKey": "Skill02",
+			"TagType": "Support",
+			"TagTypeText": "Soutien",
+			"SkillTypeText": "Compétence",
+			"MaxLevel": 15,
+			"EffectRaw": "Déploie une zone pour une durée de <unbreak>#1[i]</unbreak> tours. Cette durée diminue de 1 au début de chaque tour de Yao Guang. Lorsque la zone est active, augmente l'Allégresse de tous les alliés d'un montant équivalent à <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'Allégresse de Yao Guang. Après que Yao Guang a utilisé une ATQ normale ou une compétence, elle gagne <unbreak>#3[i]</unbreak> points de <u>Panache</u>.",
+			"AbridgedEffect": "Déploie une zone qui augmente l'Allégresse de toutes les cibles alliées. Après que Yao Guang a utilisé une ATQ normale ou une compétence, elle obtient du <u>Panache</u>.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						3,
+						0.1,
+						3
+					]
+				},
+				"2": {
+					"EffectValues": [
+						3,
+						0.11,
+						3
+					]
+				},
+				"3": {
+					"EffectValues": [
+						3,
+						0.12,
+						3
+					]
+				},
+				"4": {
+					"EffectValues": [
+						3,
+						0.13,
+						3
+					]
+				},
+				"5": {
+					"EffectValues": [
+						3,
+						0.14,
+						3
+					]
+				},
+				"6": {
+					"EffectValues": [
+						3,
+						0.15,
+						3
+					]
+				},
+				"7": {
+					"EffectValues": [
+						3,
+						0.1625,
+						3
+					]
+				},
+				"8": {
+					"EffectValues": [
+						3,
+						0.175,
+						3
+					]
+				},
+				"9": {
+					"EffectValues": [
+						3,
+						0.1875,
+						3
+					]
+				},
+				"10": {
+					"EffectValues": [
+						3,
+						0.2,
+						3
+					]
+				},
+				"11": {
+					"EffectValues": [
+						3,
+						0.21,
+						3
+					]
+				},
+				"12": {
+					"EffectValues": [
+						3,
+						0.22,
+						3
+					]
+				},
+				"13": {
+					"EffectValues": [
+						3,
+						0.23,
+						3
+					]
+				},
+				"14": {
+					"EffectValues": [
+						3,
+						0.24,
+						3
+					]
+				},
+				"15": {
+					"EffectValues": [
+						3,
+						0.25,
+						3
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_BP.png"
+		},
+		"Ultimate": {
+			"Id": "150203",
+			"Name": "Plumes auspicieuses",
+			"TriggerKey": "Skill03",
+			"TagType": "Support",
+			"TagTypeText": "Soutien",
+			"SkillTypeText": "Ultime",
+			"MaxLevel": 15,
+			"EffectRaw": "Accorde <unbreak>#1[i]</unbreak> points de <u>Panache</u>. <u>Aha</u> obtient immédiatement 1 <u>tour supplémentaire</u> comptabilisé comme un montant fixe de <unbreak>#4[i]</unbreak> points de <u>Panache</u>. Ce tour ne consomme aucun point de <u>Panache</u> et augmente la <u>PÉN de RÉS</u> à tous les types de tous les alliés de <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> pendant <unbreak>#3[i]</unbreak> tours.",
+			"AbridgedEffect": "Accorde du <u>Panache</u>. <u>Aha</u> obtient immédiatement 1 <u>tour supplémentaire</u> avec une montant fixe de <u>Panache</u> comptabilisé, et augmente la <u>PÉN de RÉS</u> à tous les types de tous les alliés.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						5,
+						0.1,
+						3,
+						20,
+						1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						5,
+						0.11,
+						3,
+						20,
+						1
+					]
+				},
+				"3": {
+					"EffectValues": [
+						5,
+						0.12,
+						3,
+						20,
+						1
+					]
+				},
+				"4": {
+					"EffectValues": [
+						5,
+						0.13,
+						3,
+						20,
+						1
+					]
+				},
+				"5": {
+					"EffectValues": [
+						5,
+						0.14,
+						3,
+						20,
+						1
+					]
+				},
+				"6": {
+					"EffectValues": [
+						5,
+						0.15,
+						3,
+						20,
+						1
+					]
+				},
+				"7": {
+					"EffectValues": [
+						5,
+						0.1625,
+						3,
+						20,
+						1
+					]
+				},
+				"8": {
+					"EffectValues": [
+						5,
+						0.175,
+						3,
+						20,
+						1
+					]
+				},
+				"9": {
+					"EffectValues": [
+						5,
+						0.1875,
+						3,
+						20,
+						1
+					]
+				},
+				"10": {
+					"EffectValues": [
+						5,
+						0.2,
+						3,
+						20,
+						1
+					]
+				},
+				"11": {
+					"EffectValues": [
+						5,
+						0.21,
+						3,
+						20,
+						1
+					]
+				},
+				"12": {
+					"EffectValues": [
+						5,
+						0.22,
+						3,
+						20,
+						1
+					]
+				},
+				"13": {
+					"EffectValues": [
+						5,
+						0.23,
+						3,
+						20,
+						1
+					]
+				},
+				"14": {
+					"EffectValues": [
+						5,
+						0.24,
+						3,
+						20,
+						1
+					]
+				},
+				"15": {
+					"EffectValues": [
+						5,
+						0.25,
+						3,
+						20,
+						1
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Ultra.png"
+		},
+		"Talent": {
+			"Id": "150204",
+			"Name": "Contemple là où la lumière se déploie",
+			"TriggerKey": "SkillP01",
+			"TagType": "Support",
+			"TagTypeText": "Soutien",
+			"SkillTypeText": "Talent",
+			"MaxLevel": 15,
+			"EffectRaw": "Lorsque Yao Guang bénéficie de <u>Banger absolu</u>:\nAprès qu'une cible alliée a utilisé une attaque, active l'effet Belle aubaine, infligeant 1 instance supplémentaire de <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> de <u>comidégâts</u> du type correspondant à une cible aléatoire touchée. Si des points de compétence sont consommés lors de cette attaque, active Belle aubaine 1 fois supplémentaire.\nLors de l'activation de l'effet Belle aubaine, si l'Allégresse de l'assaillant est inférieure à celle de Yao Guang, cette instance de <u>comidégâts</u> est calculée en fonction de l'Allégresse de Yao Guang.\nL'activation de l'effet Belle aubaine n'est pas considérée comme une attaque.",
+			"AbridgedEffect": "Lorsque Yao Guang bénéficie de <u>Banger absolu</u>, active l'effet Belle aubaine après l'attaque d'une cible alliée, infligeant 1 instance supplémentaire de <u>comidégâts</u> mineurs du type correspondant à 1 cible touchée aléatoire. Si des points de compétence sont consommés lors de cette attaque, déclenche l'effet Belle aubaine 1 fois supplémentaire. Cet effet n'est pas considéré comme une attaque.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						0.1
+					]
+				},
+				"2": {
+					"EffectValues": [
+						0.11
+					]
+				},
+				"3": {
+					"EffectValues": [
+						0.12
+					]
+				},
+				"4": {
+					"EffectValues": [
+						0.13
+					]
+				},
+				"5": {
+					"EffectValues": [
+						0.14
+					]
+				},
+				"6": {
+					"EffectValues": [
+						0.15
+					]
+				},
+				"7": {
+					"EffectValues": [
+						0.1625
+					]
+				},
+				"8": {
+					"EffectValues": [
+						0.175
+					]
+				},
+				"9": {
+					"EffectValues": [
+						0.1875
+					]
+				},
+				"10": {
+					"EffectValues": [
+						0.2
+					]
+				},
+				"11": {
+					"EffectValues": [
+						0.21
+					]
+				},
+				"12": {
+					"EffectValues": [
+						0.22
+					]
+				},
+				"13": {
+					"EffectValues": [
+						0.23
+					]
+				},
+				"14": {
+					"EffectValues": [
+						0.24
+					]
+				},
+				"15": {
+					"EffectValues": [
+						0.25
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Passive.png"
+		},
+		"Technique": {
+			"Id": "150207",
+			"Name": "Éclat fédérateur",
+			"TriggerKey": "SkillMaze",
+			"TagType": "Support",
+			"TagTypeText": "Soutien",
+			"SkillTypeText": "Technique",
+			"MaxLevel": 1,
+			"EffectRaw": "Après utilisation de la technique, déclenche automatiquement la compétence 1 fois au début du prochain combat sans consommer de points de compétence. Lorsque Yao Guang est dans l'équipe, détruire un objet destructible accorde immédiatement une Faveur, jusqu'à <unbreak>#1[i]</unbreak> fois par semaine de la Terre.",
+			"AbridgedEffect": "Une fois le combat engagé, déclenche automatiquement la compétence 1 fois. Lorsque Yao Guang est dans l'équipe, détruire un objet destructible accorde immédiatement une Faveur.",
+			"Levels": {
+				"1": {
+					"EffectValues": [
+						8
+					]
+				}
+			},
+			"ImageIcon": "SpriteOutput/SkillIcons/Avatar/1502/SkillIcon_1502_Maze.png"
+		},
+		"VersionAdded": "4.0"
 	},
 	"8001": {
 		"Id": "8001",
