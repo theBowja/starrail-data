@@ -71763,6 +71763,94 @@
 		],
 		"VersionAdded": "4.5"
 	},
+	"15080": {
+		"Id": "15080",
+		"ContactId": "1504",
+		"ParticpatingContactIds": [
+			"1504",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1508001",
+				"StartingMessageId": "150800100",
+				"Messages": {
+					"150800100": {
+						"Id": "150800100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "{NICKNAME}, у нас большие проблемы.",
+						"NextMessageId": "150800101"
+					},
+					"150800101": {
+						"Id": "150800101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "Оборудование для транспортировки первоматерии левиафана в Институте биологических исследований вышло из-под контроля.",
+						"NextMessageId": "150800102"
+					},
+					"150800102": {
+						"Id": "150800102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "Что у вас там происходит?",
+						"NextMessageId": "choice3"
+					},
+					"150800103": {
+						"Id": "150800103",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Кажется, у Яполи неприятности.",
+						"NextMessageId": "150800105"
+					},
+					"150800104": {
+						"Id": "150800104",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Кажется, у Яполи неприятности.",
+						"NextMessageId": "150800105"
+					},
+					"150800105": {
+						"Id": "150800105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "...Непрошеный гость. Яполи попала в беду.",
+						"NextMessageId": "150800106"
+					},
+					"150800106": {
+						"Id": "150800106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "Будьте осторожны. Мы с Кутибой уже выдвигаемся."
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Все эрудроиды вышли из строя.",
+								"NextMessageId": "150800103"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Яполи не выходит на связь.",
+								"NextMessageId": "150800104"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
 	"15081": {
 		"Id": "15081",
 		"ContactId": "213",
@@ -72347,6 +72435,231 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"15093": {
+		"Id": "15093",
+		"ContactId": "239",
+		"ParticpatingContactIds": [
+			"239",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1509301",
+				"StartingMessageId": "150930100",
+				"Messages": {
+					"150930100": {
+						"Id": "150930100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Эй~ Говорят, ты только что {F#перенесла}{M#перенёс} величайшее унижение в своей жизни? Ну что, понимаешь теперь, каково мне приходится?",
+						"NextMessageId": "choice1"
+					},
+					"150930101": {
+						"Id": "150930101",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Откуда такая осведомлённость? Это было всего минуту назад, а ты уже в курсе!",
+						"NextMessageId": "150930103"
+					},
+					"150930102": {
+						"Id": "150930102",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Доволен, что наконец-то можешь надо мной посмеяться?",
+						"NextMessageId": "150930103"
+					},
+					"150930103": {
+						"Id": "150930103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Как-никак, у меня в Центре занятости усопших есть несколько знакомых призраков на побегушках. Они уже давно спрятались поблизости и всё это время вели для меня стрим.",
+						"NextMessageId": "150930104"
+					},
+					"150930104": {
+						"Id": "150930104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Но я здесь не только для того, чтобы поглумиться. Я знаю, как тебе помочь.",
+						"NextMessageId": "150930105"
+					},
+					"150930105": {
+						"Id": "150930105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Подробности при встрече. Я нахожусь поблизости, так что приходи.",
+						"NextMessageId": "150930106"
+					},
+					"150930106": {
+						"Id": "150930106",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Скотт делится местоположением",
+						"NextMessageId": "choice12"
+					},
+					"150930107": {
+						"Id": "150930107",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Помочь мне? С чего вдруг такая доброта?",
+						"NextMessageId": "150930108"
+					},
+					"150930108": {
+						"Id": "150930108",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "А ты всё {F#такая же бдительная}{M#такой же бдительный}.",
+						"NextMessageId": "150930109"
+					},
+					"150930109": {
+						"Id": "150930109",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Приходи, тогда и поболтаем. Чего боишься? Я же всё равно тебя не одолею.",
+						"NextMessageId": "150930110"
+					},
+					"150930110": {
+						"Id": "150930110",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Давай скорей, у меня много дел."
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Всё-то ты знаешь.",
+								"NextMessageId": "150930101"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Можно наконец позлорадствовать, да?",
+								"NextMessageId": "150930102"
+							}
+						]
+					},
+					"choice12": {
+						"Id": "choice12",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "С чего вдруг такая доброта?",
+								"NextMessageId": "150930107"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15094": {
+		"Id": "15094",
+		"ContactId": "213",
+		"ParticpatingContactIds": [
+			"213"
+		],
+		"Sections": [
+			{
+				"Id": "1509401",
+				"StartingMessageId": "150940100",
+				"Messages": {
+					"150940100": {
+						"Id": "150940100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "Отправлено дежурным барменом Чжуншаньшань",
+						"NextMessageId": "150940101"
+					},
+					"150940101": {
+						"Id": "150940101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "«Доброе утро, добрый день, добрый вечер и доброй ночи - ваш старый друг Гриб-смотритель Сени снова передаёт вам свои приветствия».",
+						"NextMessageId": "150940102"
+					},
+					"150940102": {
+						"Id": "150940102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "«Жизнь под чужой крышей полна трудностей. В текущей версии, как вам известно: никаких призов нет».",
+						"NextMessageId": "150940103"
+					},
+					"150940103": {
+						"Id": "150940103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "«Впрочем, не отчаивайтесь. Финальный приз уже давно подготовлен, и теперь меня по-настоящему тревожит лишь одно - как вернуть ему прежний смысл».",
+						"NextMessageId": "150940104"
+					},
+					"150940104": {
+						"Id": "150940104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "«Позвольте мне побыть наедине со своей печалью. Да свидимся вновь в спасённой Двумернии».",
+						"NextMessageId": "150940105"
+					},
+					"150940105": {
+						"Id": "150940105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "- Так говорит Зонтоголовый.",
+						"NextMessageId": "150940106"
+					},
+					"150940106": {
+						"Id": "150940106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "Пожалуй, он мог стать неплохим Скорбящим актёром."
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15095": {
+		"Id": "15095",
+		"ContactId": "217",
+		"ParticpatingContactIds": [
+			"217"
+		],
+		"Sections": [
+			{
+				"Id": "1509501",
+				"StartingMessageId": "150950100",
+				"Messages": {
+					"150950100": {
+						"Id": "150950100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "217",
+						"Text": "Поздравляем! Вы собрали всех безымянных эфемеров, размещённых проектом «Кролик звёздного пути» в Институте биологических исследований! Теперь вы можете легче проходить уровни этой локации. Желаем вам приятной игры! (Это автоматическое рекламное push-уведомление системы, не отвечайте на него~)"
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20001": {
 		"Id": "20001",
@@ -144377,6 +144690,914 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"20249": {
+		"Id": "20249",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2024900",
+				"StartingMessageId": "202490000",
+				"Messages": {
+					"202490000": {
+						"Id": "202490000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[На стиле]",
+						"NextMessageId": "202490001"
+					},
+					"202490001": {
+						"Id": "202490001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "В специальном выпуске «Пушистого скитальца» появляется новый персонаж.",
+						"NextMessageId": "202490002"
+					},
+					"202490002": {
+						"Id": "202490002",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10064.png",
+						"NextMessageId": "choice3"
+					},
+					"202490003": {
+						"Id": "202490003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Жемчужная Рыбка такая очаровашка, правда?",
+						"NextMessageId": "202490004"
+					},
+					"202490004": {
+						"Id": "202490004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Очень милая и настоящая.",
+						"NextMessageId": "202490010"
+					},
+					"202490005": {
+						"Id": "202490005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Поздравляю госпожу Жемчуг с новой формой «Жемчужная Рыбка»!",
+						"NextMessageId": "202490006"
+					},
+					"202490006": {
+						"Id": "202490006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Спасибо. Жемчужная Рыбка очень милая и настоящая.",
+						"NextMessageId": "202490010"
+					},
+					"202490007": {
+						"Id": "202490007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Вы специально зашли, чтобы рассказать мне об этом? Представляю, как вы довольны!",
+						"NextMessageId": "202490008"
+					},
+					"202490008": {
+						"Id": "202490008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Это так очевидно?",
+						"NextMessageId": "202490009"
+					},
+					"202490009": {
+						"Id": "202490009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Да. Жемчужная Рыбка очень милая и настоящая.",
+						"NextMessageId": "202490010"
+					},
+					"202490010": {
+						"Id": "202490010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Мои единомышленники из чата «Наши руки не для скуки» тоже пишут, что им очень нравится Жемчужная Рыбка.",
+						"NextMessageId": "202490011"
+					},
+					"202490011": {
+						"Id": "202490011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "А ещё в чате уже просят схемы для термомозаики, чтобы собрать Жемчужную Рыбку.",
+						"NextMessageId": "choice16"
+					},
+					"202490012": {
+						"Id": "202490012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Термомозаика! Вы тоже её любите?",
+						"NextMessageId": "202490013"
+					},
+					"202490013": {
+						"Id": "202490013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Некоторое время назад, когда термомозаика была на пике популярности в Двумернии, я тоже принялась её собирать.",
+						"NextMessageId": "202490016"
+					},
+					"202490014": {
+						"Id": "202490014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Единомышленники? То есть они тоже увлекаются термомозаикой?",
+						"NextMessageId": "202490015"
+					},
+					"202490015": {
+						"Id": "202490015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Да, мы все занимаемся разным рукоделием.",
+						"NextMessageId": "202490016"
+					},
+					"202490016": {
+						"Id": "202490016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Мои сочатовцы увлекаются самыми разными вещами помимо термомозаики. Пиксельные кубики, вышивка крестиком, керамика, лепка из глины - много всего.",
+						"NextMessageId": "202490017"
+					},
+					"202490017": {
+						"Id": "202490017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Но у каждого вида рукоделия есть свои шаблоны и спецификации.",
+						"NextMessageId": "202490018"
+					},
+					"202490018": {
+						"Id": "202490018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Уверенный вывод: слишком уж долго ждать.",
+						"NextMessageId": "202490019"
+					},
+					"202490019": {
+						"Id": "202490019",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Печатает...",
+						"NextMessageId": "202490020"
+					},
+					"202490020": {
+						"Id": "202490020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Готово.",
+						"NextMessageId": "202490021"
+					},
+					"202490021": {
+						"Id": "202490021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Я создала простенький #генератор схем, который на 99,9% удовлетворяет потребности любителей рукоделия (включает бонусную схему термомозаики «Жемчужная Рыбка»)#. Делюсь им и с тобой.",
+						"NextMessageId": "choice34"
+					},
+					"202490022": {
+						"Id": "202490022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ну вы монстр! Ради того, чтобы Жемчужная Рыбка покорила мир рукоделия, вы обогнали 99,9% пользователей!",
+						"NextMessageId": "202490024"
+					},
+					"202490023": {
+						"Id": "202490023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Ради того, чтобы Жемчужная Рыбка покорила мир рукоделия, вы обогнали 99,9% пользователей.",
+						"NextMessageId": "202490024"
+					},
+					"202490024": {
+						"Id": "202490024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Не буду отрицать...",
+						"NextMessageId": "202490025"
+					},
+					"202490025": {
+						"Id": "202490025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Если тебе тоже интересно, рекомендую магазин товаров для рукоделия, куда я часто хожу. Мы с ними сотрудничаем. Назови кодовое словосочетание «Жемчужная Рыбка» - получишь скидку для новых клиентов.",
+						"NextMessageId": "202490026"
+					},
+					"202490026": {
+						"Id": "202490026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Это просто рай для интроверта, я могу там провести хоть целый день... Вот тебе промокод от Жемчужной Рыбки: APchyZZyzdHka. Предъяви его в магазине - и получишь скидку 90%...",
+						"NextMessageId": "202490027"
+					},
+					"202490027": {
+						"Id": "202490027",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[На стиле]"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Жемчужная Рыбка - очаровашка!",
+								"NextMessageId": "202490003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Поздравляю с новой формой!",
+								"NextMessageId": "202490005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Похоже, вы очень довольны!",
+								"NextMessageId": "202490007"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Вы тоже любите термомозаику?!",
+								"NextMessageId": "202490012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Единомышленники?",
+								"NextMessageId": "202490014"
+							}
+						]
+					},
+					"choice34": {
+						"Id": "choice34",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Ну вы монстр!",
+								"NextMessageId": "202490022"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Ну и скорость у вас, госпожа Жемчуг!",
+								"NextMessageId": "202490023"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20250": {
+		"Id": "20250",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025000",
+				"StartingMessageId": "202500000",
+				"Messages": {
+					"202500000": {
+						"Id": "202500000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Адрес: Пир-Пойнт, Корпорация межзвёздного мира, отдел стратегических инвестиций, личная студия Жемчуг, 3-й этаж.",
+						"NextMessageId": "202500001"
+					},
+					"202500001": {
+						"Id": "202500001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "{NICKNAME}, если на Звёздном экспрессе появятся сломанные или ненужные вещи, от которых вы захотите избавиться, можете присылать мне - я отправлю их на переработку.",
+						"NextMessageId": "choice2"
+					},
+					"202500002": {
+						"Id": "202500002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Это у вас халтурка такая?",
+						"NextMessageId": "202500003"
+					},
+					"202500003": {
+						"Id": "202500003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Релевантное значение слова «халтурка»: вторая работа помимо основной, выполняемая в свободное время и приносящая доход.",
+						"NextMessageId": "202500004"
+					},
+					"202500004": {
+						"Id": "202500004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Но вообще-то наоборот: за проект по переработке хлама платить вам буду я.",
+						"NextMessageId": "202500009"
+					},
+					"202500005": {
+						"Id": "202500005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Хлам? Где здесь хлам? Кстати, а людей можно перерабатывать или нет?",
+						"NextMessageId": "202500006"
+					},
+					"202500006": {
+						"Id": "202500006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Замыкание]",
+						"NextMessageId": "202500007"
+					},
+					"202500007": {
+						"Id": "202500007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Строго говоря, органические формы жизни тоже поддаются вторичной переработке - просто её стоимость не вписывается в мой бюджет.",
+						"NextMessageId": "202500008"
+					},
+					"202500008": {
+						"Id": "202500008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Однако его вполне достаточно, чтобы переработать всё остальное.",
+						"NextMessageId": "202500009"
+					},
+					"202500009": {
+						"Id": "202500009",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Вы перерабатываете хлам, чтобы собирать его у себя?",
+						"NextMessageId": "202500010"
+					},
+					"202500010": {
+						"Id": "202500010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Да, это один из этапов перед добавлением в коллекцию. Для меня реставрация предметов из прошлого - это некое «спонтанное мысленное путешествие».",
+						"NextMessageId": "202500011"
+					},
+					"202500011": {
+						"Id": "202500011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "В процессе работы над «Планом восстановления миров» мне доводилось чинить множество бесхозных реликвий.",
+						"NextMessageId": "202500012"
+					},
+					"202500012": {
+						"Id": "202500012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Когда я по крупицам соединяю их текстуры, в мой разум потоком устремляется информация о незнакомых планетах: ветряные колокольчики, отмели, ледники... Бесчисленное множество цивилизаций и пейзажей, не поддающихся описанию.",
+						"NextMessageId": "202500013"
+					},
+					"202500013": {
+						"Id": "202500013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Обычно после этого я надолго погружаюсь в работу.",
+						"NextMessageId": "choice19"
+					},
+					"202500014": {
+						"Id": "202500014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Завидую вашему увлечению...",
+						"NextMessageId": "202500015"
+					},
+					"202500015": {
+						"Id": "202500015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "По сути, это ваша работа.",
+						"NextMessageId": "202500020"
+					},
+					"202500016": {
+						"Id": "202500016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Трудоголики, я принимаю ваш вызов!",
+						"NextMessageId": "202500017"
+					},
+					"202500017": {
+						"Id": "202500017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Что ты имеешь в виду? Сбор термомозаики?",
+						"NextMessageId": "202500018"
+					},
+					"202500018": {
+						"Id": "202500018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Я пошутила.",
+						"NextMessageId": "202500020"
+					},
+					"202500019": {
+						"Id": "202500019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Да ладно, жизнь - это не только починка и реставрация. Работу на паузу! Пора путешествовать!",
+						"NextMessageId": "202500020"
+					},
+					"202500020": {
+						"Id": "202500020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Это напомнило мне вопрос, который я однажды услышала от журналистов: «Как вы находите баланс между работой и жизнью?»",
+						"NextMessageId": "202500021"
+					},
+					"202500021": {
+						"Id": "202500021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Сначала я посоветовала спросить об этом Луи Флеминга, а затем задала встречный вопрос: «Как вы находите баланс между дыханием и жизнью?» Ответа не последовало.",
+						"NextMessageId": "202500022"
+					},
+					"202500022": {
+						"Id": "202500022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Ещё одно соображение: чинить сломанные вещи, оставленные на Звёздном экспрессе или подобранные по пути, - это своеобразное творческое путешествие, позволяющее ощутить дух Освоения.",
+						"NextMessageId": "202500023"
+					},
+					"202500023": {
+						"Id": "202500023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Кстати, интересный факт: морской жемчуг, по сути, тоже является «продуктом переработки отходов».",
+						"NextMessageId": "202500024"
+					},
+					"202500024": {
+						"Id": "202500024",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129002.png",
+						"Text": "[Освежусь]",
+						"NextMessageId": "202500025"
+					},
+					"202500025": {
+						"Id": "202500025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Эта частная сделка действует бессрочно. С нетерпением жду сувениров из путешествий Звёздного экспресса."
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Это у вас халтурка такая?",
+								"NextMessageId": "202500002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Хлам? Где здесь хлам?",
+								"NextMessageId": "202500005"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Завидую вашему увлечению...",
+								"NextMessageId": "202500014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Трудоголики, я принимаю ваш вызов!",
+								"NextMessageId": "202500016"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Берите отпуск - и в путешествие!",
+								"NextMessageId": "202500019"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20251": {
+		"Id": "20251",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025100",
+				"StartingMessageId": "202510000",
+				"Messages": {
+					"202510000": {
+						"Id": "202510000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Замыкание]",
+						"NextMessageId": "202510001"
+					},
+					"202510001": {
+						"Id": "202510001",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[Непонятно]",
+						"NextMessageId": "202510002"
+					},
+					"202510002": {
+						"Id": "202510002",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Замыкание]",
+						"NextMessageId": "202510003"
+					},
+					"202510003": {
+						"Id": "202510003",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Печатает...",
+						"NextMessageId": "202510004"
+					},
+					"202510004": {
+						"Id": "202510004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Печатает...",
+						"NextMessageId": "202510005"
+					},
+					"202510005": {
+						"Id": "202510005",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Печатает...",
+						"NextMessageId": "choice6"
+					},
+					"202510006": {
+						"Id": "202510006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Что случилось? Промедление не в вашем стиле.",
+						"NextMessageId": "202510008"
+					},
+					"202510007": {
+						"Id": "202510007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Вы в раздумьях?",
+						"NextMessageId": "202510008"
+					},
+					"202510008": {
+						"Id": "202510008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "У меня появился новый арт-объект.",
+						"NextMessageId": "202510009"
+					},
+					"202510009": {
+						"Id": "202510009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Как-то один уличный художник попросил меня попозировать. Результатом стало произведение под названием «Жемчуг».",
+						"NextMessageId": "202510010"
+					},
+					"202510010": {
+						"Id": "202510010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Негативное пространство в этой работе производит невероятное впечатление...",
+						"NextMessageId": "202510011"
+					},
+					"202510011": {
+						"Id": "202510011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Ведь художник лишь сделал на бумаге одну-единственную прорезь ножом.",
+						"NextMessageId": "202510012"
+					},
+					"202510012": {
+						"Id": "202510012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Размышление: какова же связь между этим произведением и мной...",
+						"NextMessageId": "choice19"
+					},
+					"202510013": {
+						"Id": "202510013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Всё-таки искусство - это очень сложно.",
+						"NextMessageId": "202510014"
+					},
+					"202510014": {
+						"Id": "202510014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Прорезь... Думаю, эта картина отлично смотрелась бы на коробке салфеток. Возможно, художник хотел сказать...",
+						"NextMessageId": "202510015"
+					},
+					"202510015": {
+						"Id": "202510015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "...«Жемчуг, тяни!»",
+						"NextMessageId": "202510019"
+					},
+					"202510016": {
+						"Id": "202510016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Всё-таки искусство - это очень просто.",
+						"NextMessageId": "202510017"
+					},
+					"202510017": {
+						"Id": "202510017",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Прорезь, рассекающая пространство... Напоминает открытый кошелёк, правда же?",
+						"NextMessageId": "202510018"
+					},
+					"202510018": {
+						"Id": "202510018",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Если засунуть руку внутрь, обязательно что-нибудь да вытащишь...",
+						"NextMessageId": "202510019"
+					},
+					"202510019": {
+						"Id": "202510019",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[Непонятно]",
+						"NextMessageId": "202510020"
+					},
+					"202510020": {
+						"Id": "202510020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Предположение: видимо, это был переодетый продавец коробочек с сюрпризом. Неудивительно, что он остановил меня на улице.",
+						"NextMessageId": "202510021"
+					},
+					"202510021": {
+						"Id": "202510021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Но твоя деконструкция очень интересна.",
+						"NextMessageId": "202510022"
+					},
+					"202510022": {
+						"Id": "202510022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Искусство - это деконструкция жизни.",
+						"NextMessageId": "202510023"
+					},
+					"202510023": {
+						"Id": "202510023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Интерпретация искусства - это также и его деконструкция.",
+						"NextMessageId": "202510024"
+					},
+					"202510024": {
+						"Id": "202510024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Но: даёт ли деконструкция искусства ответы на наши вопросы?",
+						"NextMessageId": "202510025"
+					},
+					"202510025": {
+						"Id": "202510025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Не факт. Поэтому: нужно деконструировать деконструкцию.",
+						"NextMessageId": "choice40"
+					},
+					"202510026": {
+						"Id": "202510026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Что за процесс я запустил{F#а}? Мозг, остановись!",
+						"NextMessageId": "202510028"
+					},
+					"202510027": {
+						"Id": "202510027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Что я наделал{F#а}... Жемчуг сломалась.",
+						"NextMessageId": "202510028"
+					},
+					"202510028": {
+						"Id": "202510028",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[На стиле]",
+						"NextMessageId": "202510029"
+					},
+					"202510029": {
+						"Id": "202510029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Не волнуйся, ты просто вдохновил{F#а} меня на небольшое абстрактное рассуждение.",
+						"NextMessageId": "202510030"
+					},
+					"202510030": {
+						"Id": "202510030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Но теперь я действительно совершенно по-иному понимаю это произведение...",
+						"NextMessageId": "202510031"
+					},
+					"202510031": {
+						"Id": "202510031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Возможно, оно говорит:",
+						"NextMessageId": "202510032"
+					},
+					"202510032": {
+						"Id": "202510032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "«Вскрой раковину! Я - жемчужина».",
+						"NextMessageId": "202510033"
+					},
+					"202510033": {
+						"Id": "202510033",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Замыкание]",
+						"NextMessageId": "202510034"
+					},
+					"202510034": {
+						"Id": "202510034",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Ваш друг не в сети"
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Что случилось?",
+								"NextMessageId": "202510006"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Вы в раздумьях...",
+								"NextMessageId": "202510007"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Всё-таки искусство - это очень сложно.",
+								"NextMessageId": "202510013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Всё-таки искусство - это очень просто.",
+								"NextMessageId": "202510016"
+							}
+						]
+					},
+					"choice40": {
+						"Id": "choice40",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Это что же у неё включилось?",
+								"NextMessageId": "202510026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Ох, беда... Жемчуг сломалась.",
+								"NextMessageId": "202510027"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20998": {
 		"Id": "20998",

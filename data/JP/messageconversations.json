@@ -71763,6 +71763,94 @@
 		],
 		"VersionAdded": "4.5"
 	},
+	"15080": {
+		"Id": "15080",
+		"ContactId": "1504",
+		"ParticpatingContactIds": [
+			"1504",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1508001",
+				"StartingMessageId": "150800100",
+				"Messages": {
+					"150800100": {
+						"Id": "150800100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "{NICKNAME}さん、マズいことになった",
+						"NextMessageId": "150800101"
+					},
+					"150800101": {
+						"Id": "150800101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "生研院にある、古獣の源質を輸送する設備が暴走してる",
+						"NextMessageId": "150800102"
+					},
+					"150800102": {
+						"Id": "150800102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "そっちの状況は？",
+						"NextMessageId": "choice3"
+					},
+					"150800103": {
+						"Id": "150800103",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "アポリは何かトラブルに巻き込まれた{F#みたい}{M#らしい}",
+						"NextMessageId": "150800105"
+					},
+					"150800104": {
+						"Id": "150800104",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "アポリは何かトラブルに巻き込まれた{F#みたい}{M#らしい}",
+						"NextMessageId": "150800105"
+					},
+					"150800105": {
+						"Id": "150800105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "…招かれざる客人がいたんだ。アポリは予想より手強いそいつと出くわしたらしい",
+						"NextMessageId": "150800106"
+					},
+					"150800106": {
+						"Id": "150800106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "よくよく気をつけてくれ、僕と朽葉さんもすぐそっちに行く"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "オムニックが全部ダウンしてる",
+								"NextMessageId": "150800103"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "アポリと連絡が取れなくなった",
+								"NextMessageId": "150800104"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
 	"15081": {
 		"Id": "15081",
 		"ContactId": "213",
@@ -72347,6 +72435,231 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"15093": {
+		"Id": "15093",
+		"ContactId": "239",
+		"ParticpatingContactIds": [
+			"239",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1509301",
+				"StartingMessageId": "150930100",
+				"Messages": {
+					"150930100": {
+						"Id": "150930100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "聞きましたよ。これまでにないほど惨めな目に遭ったとか。どうだ、普段の私の気持ちが少しはわかったでしょう？",
+						"NextMessageId": "choice1"
+					},
+					"150930101": {
+						"Id": "150930101",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "情報が早すぎる！この件が終わってまだ1分も経ってないのに、もう知ってるの{F#}{M#か}？",
+						"NextMessageId": "150930103"
+					},
+					"150930102": {
+						"Id": "150930102",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "どうせ嬉しいん{F#でしょ}{M#だろ}？やっと{F#私}{M#俺}の失敗を笑えて",
+						"NextMessageId": "150930103"
+					},
+					"150930103": {
+						"Id": "150930103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "死後就職センターにも一応、部下の幽霊がいるもので。何人か潜ませて、一部始終を中継させていました",
+						"NextMessageId": "150930104"
+					},
+					"150930104": {
+						"Id": "150930104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "もちろん、ただ嫌味を言いに来たわけじゃありません。助ける方法ならあります",
+						"NextMessageId": "150930105"
+					},
+					"150930105": {
+						"Id": "150930105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "詳しい話は会ってから。近くにいるからこっちまで来てください",
+						"NextMessageId": "150930106"
+					},
+					"150930106": {
+						"Id": "150930106",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "スコートが位置情報の共有を開始しました",
+						"NextMessageId": "choice12"
+					},
+					"150930107": {
+						"Id": "150930107",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "助ける？なんで急にそんな親切{F#なの}{M#なんだ}？",
+						"NextMessageId": "150930108"
+					},
+					"150930108": {
+						"Id": "150930108",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "相変わらずの警戒心ですね",
+						"NextMessageId": "150930109"
+					},
+					"150930109": {
+						"Id": "150930109",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "とりあえず会って話しましょう。どうせ私はあなたには勝てないんですから。何を怖がる必要があるんです？",
+						"NextMessageId": "150930110"
+					},
+					"150930110": {
+						"Id": "150930110",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "早く。こっちは忙しいんです"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "情報が早すぎない{F#}{M#か}？",
+								"NextMessageId": "150930101"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "やっと{F#私}{M#俺}の失敗を笑えるってわけ{F#}{M#か}？",
+								"NextMessageId": "150930102"
+							}
+						]
+					},
+					"choice12": {
+						"Id": "choice12",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "なんで急にそんな親切{F#なの}{M#なんだ}？",
+								"NextMessageId": "150930107"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15094": {
+		"Id": "15094",
+		"ContactId": "213",
+		"ParticpatingContactIds": [
+			"213"
+		],
+		"Sections": [
+			{
+				"Id": "1509401",
+				"StartingMessageId": "150940100",
+				"Messages": {
+					"150940100": {
+						"Id": "150940100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "当番バーテンダー鐘珊が、代理で送信します",
+						"NextMessageId": "150940101"
+					},
+					"150940101": {
+						"Id": "150940101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "「おはようこんにちはこんばんは、それから真夜中もごきげんよう。あんたの友、画の木タケから挨拶を」",
+						"NextMessageId": "150940102"
+					},
+					"150940102": {
+						"Id": "150940102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "「居候の身はいろいろと苦労が絶えなくてな。コンバージョンは賞品がねえんだ」",
+						"NextMessageId": "150940103"
+					},
+					"150940103": {
+						"Id": "150940103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "「だが、がっかりしないでくれ。最後の賞品はもう用意してあるから。いま俺を悩ませてるのは、どうやったらこれにかつてと同じ意味をもたせられるかってことだ」",
+						"NextMessageId": "150940104"
+					},
+					"150940104": {
+						"Id": "150940104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "「しばらく1人で考えさせてくれ。救われた二相楽園で会える日を楽しみにしてるぜ」",
+						"NextMessageId": "150940105"
+					},
+					"150940105": {
+						"Id": "150940105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "——傘男はそう言っていました。",
+						"NextMessageId": "150940106"
+					},
+					"150940106": {
+						"Id": "150940106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "彼は案外、弔伶人に向いているのかもしれませんね。"
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15095": {
+		"Id": "15095",
+		"ContactId": "217",
+		"ParticpatingContactIds": [
+			"217"
+		],
+		"Sections": [
+			{
+				"Id": "1509501",
+				"StartingMessageId": "150950100",
+				"Messages": {
+					"150950100": {
+						"Id": "150950100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "217",
+						"Text": "おめでとうございます。あなたは「星軌の兎」プロジェクトが「生研院」に配置した「名もなき初」をすべて収集しました！これにより、このエリアに配置された「星軌の兎」のステージを、最も簡単な方法でクリアできるようになります。引き続きゲームをお楽しみください！（このメッセージは自動送信広告です。このメッセージに返信されても返答は致しかねます、予めご了承ください）"
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20001": {
 		"Id": "20001",
@@ -144377,6 +144690,914 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"20249": {
+		"Id": "20249",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2024900",
+				"StartingMessageId": "202490000",
+				"Messages": {
+					"202490000": {
+						"Id": "202490000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[上品]",
+						"NextMessageId": "202490001"
+					},
+					"202490001": {
+						"Id": "202490001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "『もふもふ号』の特別番外編に、新たなキャラクターが登場しました",
+						"NextMessageId": "202490002"
+					},
+					"202490002": {
+						"Id": "202490002",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10064.png",
+						"NextMessageId": "choice3"
+					},
+					"202490003": {
+						"Id": "202490003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "パールフィン、かわいい{F#よね}{M#よな}！",
+						"NextMessageId": "202490004"
+					},
+					"202490004": {
+						"Id": "202490004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "可愛らしく、特徴もよく捉えています",
+						"NextMessageId": "202490010"
+					},
+					"202490005": {
+						"Id": "202490005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "パール、「パールフィン」形態の獲得、おめでとう！",
+						"NextMessageId": "202490006"
+					},
+					"202490006": {
+						"Id": "202490006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ありがとうございます。このキャラクターは可愛らしく、特徴もよく捉えています",
+						"NextMessageId": "202490010"
+					},
+					"202490007": {
+						"Id": "202490007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "わざわざ{F#私}{M#俺}に教えに来るなんて、ずいぶん嬉しそう{F#だね}{M#だな}！",
+						"NextMessageId": "202490008"
+					},
+					"202490008": {
+						"Id": "202490008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "そんなにわかりやすいでしょうか？",
+						"NextMessageId": "202490009"
+					},
+					"202490009": {
+						"Id": "202490009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "パールフィンは可愛らしく、特徴もよく捉えています",
+						"NextMessageId": "202490010"
+					},
+					"202490010": {
+						"Id": "202490010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "「作ったもん勝ち」グループの仲間たちも、パールフィンを気に入ったそうです",
+						"NextMessageId": "202490011"
+					},
+					"202490011": {
+						"Id": "202490011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "すでにグループ内では、パールフィンのアイロンビーズ図案を求める声も上がっています",
+						"NextMessageId": "choice16"
+					},
+					"202490012": {
+						"Id": "202490012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "アイロンビーズ！パールも好きなの{F#}{M#か}？",
+						"NextMessageId": "202490013"
+					},
+					"202490013": {
+						"Id": "202490013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "少し前、二相楽園で大流行した際に何度か作りました",
+						"NextMessageId": "202490016"
+					},
+					"202490014": {
+						"Id": "202490014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "仲間って、アイロンビーズ仲間のことだったの{F#ね}{M#か}！",
+						"NextMessageId": "202490015"
+					},
+					"202490015": {
+						"Id": "202490015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "はい、ハンドメイド仲間です",
+						"NextMessageId": "202490016"
+					},
+					"202490016": {
+						"Id": "202490016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "グループにはアイロンビーズのほかにも、ピクセルブロック、クロスステッチ、陶芸、粘土細工、モザイクアートなど、さまざまな分野のハンドメイド愛好家がいます",
+						"NextMessageId": "202490017"
+					},
+					"202490017": {
+						"Id": "202490017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "必要となる図案の規格や条件は、ハンドメイドの種類ごとに異なります",
+						"NextMessageId": "202490018"
+					},
+					"202490018": {
+						"Id": "202490018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "確信：このまま待つのは、あまりにも非効率的です",
+						"NextMessageId": "202490019"
+					},
+					"202490019": {
+						"Id": "202490019",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "パールが入力中…",
+						"NextMessageId": "202490020"
+					},
+					"202490020": {
+						"Id": "202490020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "完成しました",
+						"NextMessageId": "202490021"
+					},
+					"202490021": {
+						"Id": "202490021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "取り急ぎ、#ハンドメイド作家の需要99.9%に対応する図案自動生成ツール（パールフィンのアイロンビーズ図案付き） を作成しました。アナタにも共有します",
+						"NextMessageId": "choice34"
+					},
+					"202490022": {
+						"Id": "202490022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "本当に好きなんだ{F#ね}{M#な}！パールフィンでハンドメイド界を席巻するための{F#あんた}{M#お前}の行動速度は、全ユーザー上位0.1％{F#だね}{M#だな}",
+						"NextMessageId": "202490024"
+					},
+					"202490023": {
+						"Id": "202490023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "パールフィンを世界へ羽ばたかせるための{F#あんた}{M#お前}の行動速度は、全ユーザー上位0.1％{F#だね}{M#だな}",
+						"NextMessageId": "202490024"
+					},
+					"202490024": {
+						"Id": "202490024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "バレてしまいましたか",
+						"NextMessageId": "202490025"
+					},
+					"202490025": {
+						"Id": "202490025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "もしご興味があるのなら、行きつけのハンドメイド関連ショップをおすすめします。「パールフィン」と伝えれば、初回割引が受けられますよ",
+						"NextMessageId": "202490026"
+					},
+					"202490026": {
+						"Id": "202490026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "I型、つまり内向型人間にも優しいハンドメイドショップ。ワタシも一日中いられます…APchyZZyzdHka パールフィン招待コードを保存すると、来店時に90%OFF……",
+						"NextMessageId": "202490027"
+					},
+					"202490027": {
+						"Id": "202490027",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[上品]"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "パールフィン、かわいい{F#よね}{M#よな}！",
+								"NextMessageId": "202490003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "新形態の獲得、おめでとう！",
+								"NextMessageId": "202490005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ずいぶん嬉しそう{F#だね}{M#だな}",
+								"NextMessageId": "202490007"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "アイロンビーズ！",
+								"NextMessageId": "202490012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "仲間？",
+								"NextMessageId": "202490014"
+							}
+						]
+					},
+					"choice34": {
+						"Id": "choice34",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "本当に好きなんだ{F#ね}{M#な}！",
+								"NextMessageId": "202490022"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "神速だ{F#ね}{M#な}！",
+								"NextMessageId": "202490023"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20250": {
+		"Id": "20250",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025000",
+				"StartingMessageId": "202500000",
+				"Messages": {
+					"202500000": {
+						"Id": "202500000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "住所：ピアポイント スターピースカンパニー戦略投資部 パールのアトリエ・3F",
+						"NextMessageId": "202500001"
+					},
+					"202500001": {
+						"Id": "202500001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "{NICKNAME}さん、星穹列車で今後、処分する壊れた品や廃品があればワタシに送ってください。引き取ります。",
+						"NextMessageId": "choice2"
+					},
+					"202500002": {
+						"Id": "202500002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "それって、パールの副業{F#}{M#か}？",
+						"NextMessageId": "202500003"
+					},
+					"202500003": {
+						"Id": "202500003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "副業とは、本業とは別に余暇を使って行い、収入を伴う第二の仕事を指します。",
+						"NextMessageId": "202500004"
+					},
+					"202500004": {
+						"Id": "202500004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ですが、先ほど言った「廃品回収計画」ではワタシが皆様に代金をお支払いします。",
+						"NextMessageId": "202500009"
+					},
+					"202500005": {
+						"Id": "202500005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "廃品？どこにあるかな？人間も回収できるの{F#}{M#か}？",
+						"NextMessageId": "202500006"
+					},
+					"202500006": {
+						"Id": "202500006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ショート]",
+						"NextMessageId": "202500007"
+					},
+					"202500007": {
+						"Id": "202500007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "厳密に言えば、有機生命体も「廃品再生」の対象になりえます。ですが、引き取りにかかる費用が予算を大幅に超えてしまいます",
+						"NextMessageId": "202500008"
+					},
+					"202500008": {
+						"Id": "202500008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "それ以外の品であれば、予算は十分です",
+						"NextMessageId": "202500009"
+					},
+					"202500009": {
+						"Id": "202500009",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "廃品を回収して、コレクションにするの{F#}{M#か}？",
+						"NextMessageId": "202500010"
+					},
+					"202500010": {
+						"Id": "202500010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "その前段階です。ワタシにとって、古い品を修復することは、思い立った時にいつでも出発することができる「脳内旅行」のようなものなのです",
+						"NextMessageId": "202500011"
+					},
+					"202500011": {
+						"Id": "202500011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ワタシは「諸世界再建計画」の業務で、持ち主のいない遺産を数多く修復してきました",
+						"NextMessageId": "202500012"
+					},
+					"202500012": {
+						"Id": "202500012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "模様を少しずつ合わせていくと、知らない星の情報が脳内に流れ込んできます…風鈴、浅瀬、氷河、それから言葉では言い表せない文明と景色の数々が",
+						"NextMessageId": "202500013"
+					},
+					"202500013": {
+						"Id": "202500013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "その後はたいてい、長い間作業に没頭します",
+						"NextMessageId": "choice19"
+					},
+					"202500014": {
+						"Id": "202500014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "そんな趣味があるなんて、羨ましいな……",
+						"NextMessageId": "202500015"
+					},
+					"202500015": {
+						"Id": "202500015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "まさか仕事だったなんて{F#}{M#な}",
+						"NextMessageId": "202500020"
+					},
+					"202500016": {
+						"Id": "202500016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "このワーカホリックめ！{F#私}{M#俺}が相手{F#だよ}{M#だ}！",
+						"NextMessageId": "202500017"
+					},
+					"202500017": {
+						"Id": "202500017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "アナタが修復のいる品だったとは",
+						"NextMessageId": "202500018"
+					},
+					"202500018": {
+						"Id": "202500018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "冗談です",
+						"NextMessageId": "202500020"
+					},
+					"202500019": {
+						"Id": "202500019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "いろいろ直すのもいいけど、出かけよう{F#よ}{M#}！仕事はいったんお休み！旅行だ、旅行！",
+						"NextMessageId": "202500020"
+					},
+					"202500020": {
+						"Id": "202500020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "今ので思い出したことがあります。以前、メディアから「仕事と生活をどのように両立しているのですか？」と聞かれたことがありました",
+						"NextMessageId": "202500021"
+					},
+					"202500021": {
+						"Id": "202500021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ワタシはまず、ルイス・フレミングに聞いてみるよう勧めました。次に「アナタは呼吸することと生きることを、どう両立させているのですか？」と質問しました。そうしたらそれ以上、質問されることはありませんでした",
+						"NextMessageId": "202500022"
+					},
+					"202500022": {
+						"Id": "202500022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "そしてもう1つ。星穹列車で不要になった品や、旅の途中で拾った破損品を修復することも、「開拓」を感じる芸術の旅と言えます",
+						"NextMessageId": "202500023"
+					},
+					"202500023": {
+						"Id": "202500023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "豆知識の1つ付けましょう。海の真珠もまた、「廃品再生」によって生まれたものです",
+						"NextMessageId": "202500024"
+					},
+					"202500024": {
+						"Id": "202500024",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129002.png",
+						"Text": "[メイク直し]",
+						"NextMessageId": "202500025"
+					},
+					"202500025": {
+						"Id": "202500025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "この個人的な取引に期限はありません。星穹列車から届く「旅の掘り出し物」を楽しみにしています"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "それって副業？",
+								"NextMessageId": "202500002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "廃品？どこにあるかな？",
+								"NextMessageId": "202500005"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "その趣味、羨ましい…",
+								"NextMessageId": "202500014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "このワーカホリックめ！",
+								"NextMessageId": "202500016"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "有休を取って旅に出よう",
+								"NextMessageId": "202500019"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20251": {
+		"Id": "20251",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025100",
+				"StartingMessageId": "202510000",
+				"Messages": {
+					"202510000": {
+						"Id": "202510000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ショート]",
+						"NextMessageId": "202510001"
+					},
+					"202510001": {
+						"Id": "202510001",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[理解不能]",
+						"NextMessageId": "202510002"
+					},
+					"202510002": {
+						"Id": "202510002",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ショート]",
+						"NextMessageId": "202510003"
+					},
+					"202510003": {
+						"Id": "202510003",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "パールが入力中…",
+						"NextMessageId": "202510004"
+					},
+					"202510004": {
+						"Id": "202510004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "パールが入力中…",
+						"NextMessageId": "202510005"
+					},
+					"202510005": {
+						"Id": "202510005",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "パールが入力中…",
+						"NextMessageId": "choice6"
+					},
+					"202510006": {
+						"Id": "202510006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "どうした{F#の}{M#んだ}？言いよどむなんて、らしくない{F#よ}{M#な}",
+						"NextMessageId": "202510008"
+					},
+					"202510007": {
+						"Id": "202510007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "もしかして、ディープシンキング中{F#}{M#か}？",
+						"NextMessageId": "202510008"
+					},
+					"202510008": {
+						"Id": "202510008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "1枚の絵を受け取りました",
+						"NextMessageId": "202510009"
+					},
+					"202510009": {
+						"Id": "202510009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "少し前、街角の肖像画家にモデルを頼まれ、その場で描いてもらった「パール」という作品です",
+						"NextMessageId": "202510010"
+					},
+					"202510010": {
+						"Id": "202510010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "この作品の余白には、強烈な緊張感があります——",
+						"NextMessageId": "202510011"
+					},
+					"202510011": {
+						"Id": "202510011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "なぜならこの作品は、画用紙にナイフで切れ目を1本入れただけのものだからです",
+						"NextMessageId": "202510012"
+					},
+					"202510012": {
+						"Id": "202510012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "思考：この作品とワタシの関係性は……",
+						"NextMessageId": "choice19"
+					},
+					"202510013": {
+						"Id": "202510013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "やっぱり芸術って難しい{F#ね}{M#な}",
+						"NextMessageId": "202510014"
+					},
+					"202510014": {
+						"Id": "202510014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "切れ目が1本…こう、何か引っ張り出せそう{F#だね}{M#だな}。これが言いたいのってまさか……",
+						"NextMessageId": "202510015"
+					},
+					"202510015": {
+						"Id": "202510015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "「パールを引くか？」",
+						"NextMessageId": "202510019"
+					},
+					"202510016": {
+						"Id": "202510016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "芸術って、意外と簡単だ{F#ね}{M#な}",
+						"NextMessageId": "202510017"
+					},
+					"202510017": {
+						"Id": "202510017",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "ぱかっと開く感じが、ちょっと財布の口っぽいような気がする{F#ね}{M#な}",
+						"NextMessageId": "202510018"
+					},
+					"202510018": {
+						"Id": "202510018",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "そこに手を入れれば、いつでも何かしら引き出せる…",
+						"NextMessageId": "202510019"
+					},
+					"202510019": {
+						"Id": "202510019",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[理解不能]",
+						"NextMessageId": "202510020"
+					},
+					"202510020": {
+						"Id": "202510020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "推測：なるほど、あれはアートを装ったブラインドボックス業者でしたか。道端でワタシを呼び止めたのも納得です",
+						"NextMessageId": "202510021"
+					},
+					"202510021": {
+						"Id": "202510021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ですが、アナタの脱構築は興味深いですね",
+						"NextMessageId": "202510022"
+					},
+					"202510022": {
+						"Id": "202510022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "芸術：それは、生活の脱構築",
+						"NextMessageId": "202510023"
+					},
+					"202510023": {
+						"Id": "202510023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "芸術の解析：それは、芸術の脱構築でもあります",
+						"NextMessageId": "202510024"
+					},
+					"202510024": {
+						"Id": "202510024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "しかし、芸術を脱構築すれば答えにたどり着けるのでしょうか？",
+						"NextMessageId": "202510025"
+					},
+					"202510025": {
+						"Id": "202510025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "必ずしもそうではありません。ならば、芸術の脱構築そのものを、さらに脱構築する必要があります",
+						"NextMessageId": "choice40"
+					},
+					"202510026": {
+						"Id": "202510026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "なんのスイッチ入れちゃったんだ{F#ろう}{M#}？もう考えるの{F#やめて}{M#やめてくれ}！",
+						"NextMessageId": "202510028"
+					},
+					"202510027": {
+						"Id": "202510027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "まずいまずい、パールが壊れちゃった",
+						"NextMessageId": "202510028"
+					},
+					"202510028": {
+						"Id": "202510028",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[上品]",
+						"NextMessageId": "202510029"
+					},
+					"202510029": {
+						"Id": "202510029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ご心配なく。アナタに触発されて、少し抽象的な思考を試みただけです",
+						"NextMessageId": "202510030"
+					},
+					"202510030": {
+						"Id": "202510030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ですが、あの作品についてはまったく新しい理解を得られました……",
+						"NextMessageId": "202510031"
+					},
+					"202510031": {
+						"Id": "202510031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "おそらく、こういう意味なのでしょう",
+						"NextMessageId": "202510032"
+					},
+					"202510032": {
+						"Id": "202510032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "「貝を開けろ、パールだ」",
+						"NextMessageId": "202510033"
+					},
+					"202510033": {
+						"Id": "202510033",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ショート]",
+						"NextMessageId": "202510034"
+					},
+					"202510034": {
+						"Id": "202510034",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "相手がオフラインになりました"
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "どうした{F#の}{M#んだ}？",
+								"NextMessageId": "202510006"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ディープシンキング中{F#}{M#か}…？",
+								"NextMessageId": "202510007"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "芸術って難しい{F#ね}{M#な}",
+								"NextMessageId": "202510013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "芸術って簡単だ{F#ね}{M#な}",
+								"NextMessageId": "202510016"
+							}
+						]
+					},
+					"choice40": {
+						"Id": "choice40",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "なんのスイッチ入れちゃったんだ{F#ろう}{M#}？",
+								"NextMessageId": "202510026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "まずい、パールが壊れちゃった",
+								"NextMessageId": "202510027"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20998": {
 		"Id": "20998",

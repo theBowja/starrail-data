@@ -69289,7 +69289,7 @@
 						"MessageType": "Text",
 						"SenderType": "NPC",
 						"SenderContactId": "1309",
-						"Text": "พี่ชายฉันก็คือ ราบซันเดย์นักเทเลยล่ะ",
+						"Text": "ชื่อพี่ชายฉันคือ ราบซันเดย์ ไม่ใช่ลาบ!",
 						"NextMessageId": "150510110"
 					},
 					"150510110": {
@@ -69321,7 +69321,7 @@
 						"MessageType": "Text",
 						"SenderType": "PlayerAuto",
 						"SenderContactId": "8001",
-						"Text": "ใครเทต้องเป็นราบซันเดย์",
+						"Text": "ใครเทนัดอดกินลาบซันเดย์",
 						"NextMessageId": "150510109"
 					},
 					"choice3": {
@@ -71763,6 +71763,94 @@
 		],
 		"VersionAdded": "4.5"
 	},
+	"15080": {
+		"Id": "15080",
+		"ContactId": "1504",
+		"ParticpatingContactIds": [
+			"1504",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1508001",
+				"StartingMessageId": "150800100",
+				"Messages": {
+					"150800100": {
+						"Id": "150800100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "{NICKNAME} เกิดเรื่องใหญ่แล้ว",
+						"NextMessageId": "150800101"
+					},
+					"150800101": {
+						"Id": "150800101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "อุปกรณ์ลำเลียงสารตั้งต้น ของอสูรโบราณในสถาบันวิจัยชีวภาพ เกิดอาละวาดขึ้นมาน่ะ",
+						"NextMessageId": "150800102"
+					},
+					"150800102": {
+						"Id": "150800102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "ทางฝั่งพวก{F#เธอ}{M#นาย}เป็นไงบ้าง?",
+						"NextMessageId": "choice3"
+					},
+					"150800103": {
+						"Id": "150800103",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yabuli เหมือนจะเจอปัญหาเข้า",
+						"NextMessageId": "150800105"
+					},
+					"150800104": {
+						"Id": "150800104",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yabuli เหมือนจะเจอปัญหาเข้า",
+						"NextMessageId": "150800105"
+					},
+					"150800105": {
+						"Id": "150800105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "...มีแขกไม่ได้รับเชิญบุกเข้ามา Yabuli เจอตอเข้าให้แล้ว",
+						"NextMessageId": "150800106"
+					},
+					"150800106": {
+						"Id": "150800106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "ระวังตัวด้วยนะ ฉันกับ Kuchiba กำลังจะไปหาเดี๋ยวนี้แหละ"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "หุ่นยนต์หยุดทำงานกันหมดเลย",
+								"NextMessageId": "150800103"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ขาดการติดต่อกับ Yabuli",
+								"NextMessageId": "150800104"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
 	"15081": {
 		"Id": "15081",
 		"ContactId": "213",
@@ -72347,6 +72435,231 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"15093": {
+		"Id": "15093",
+		"ContactId": "239",
+		"ParticpatingContactIds": [
+			"239",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1509301",
+				"StartingMessageId": "150930100",
+				"Messages": {
+					"150930100": {
+						"Id": "150930100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "โย่ว~ ได้ยินว่าเพิ่งเจอเรื่องเจ็บใจ แบบที่ไม่เคยมีมาก่อนเลยใช่มั้ย? เป็นไง เข้าใจความรู้สึกฉันรึยังล่ะ?",
+						"NextMessageId": "choice1"
+					},
+					"150930101": {
+						"Id": "150930101",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ข่าวนายไวแท้? เรื่องเพิ่งจบไปไม่ถึงนาทีก็รู้แล้วเหรอ?",
+						"NextMessageId": "150930103"
+					},
+					"150930102": {
+						"Id": "150930102",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ดีใจล่ะสิ? ในที่สุดก็ได้หัวเราะเยาะฉันแล้วสินะ",
+						"NextMessageId": "150930103"
+					},
+					"150930103": {
+						"Id": "150930103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "ยังไงฉันก็มีลูกสมุนวิญญาณ ในศูนย์จัดหางานหลังความตายอยู่บ้าง เจ้าพวกนั้นคอยแอบซุ่มอยู่ใกล้ๆ แล้วไลฟ์ให้ฉันดูตั้งแต่ต้นจนจบแล้ว",
+						"NextMessageId": "150930104"
+					},
+					"150930104": {
+						"Id": "150930104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "แน่นอนว่าฉันไม่ได้มาเยาะเย้ยเฉยๆ หรอกนะ แต่ฉันมีวิธีช่วย{F#เธอ}{M#นาย}ด้วย",
+						"NextMessageId": "150930105"
+					},
+					"150930105": {
+						"Id": "150930105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "รายละเอียดไว้คุยกันตอนเจอหน้าดีกว่า ฉันอยู่แถวนี้แหละ {F#เธอ}{M#นาย}มาหาฉันแล้วกัน",
+						"NextMessageId": "150930106"
+					},
+					"150930106": {
+						"Id": "150930106",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Skott แชร์โลเคชันแล้ว",
+						"NextMessageId": "choice12"
+					},
+					"150930107": {
+						"Id": "150930107",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ช่วยฉัน? ทำไมจู่ๆ ถึงใจดีขนาดนี้ล่ะ?",
+						"NextMessageId": "150930108"
+					},
+					"150930108": {
+						"Id": "150930108",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "{F#เธอ}{M#นาย}นี่ก็ยังระแวงเหมือนเดิมเลยนะ",
+						"NextMessageId": "150930109"
+					},
+					"150930109": {
+						"Id": "150930109",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "มาคุยกับฉันก่อนสิ ฉันสู้{F#เธอ}{M#นาย}ไม่ได้ด้วยซ้ำ จะกลัวอะไรล่ะ",
+						"NextMessageId": "150930110"
+					},
+					"150930110": {
+						"Id": "150930110",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "เร็วหน่อย ฉันยุ่งอยู่นะ"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "รู้ข่าวไวเชียว?",
+								"NextMessageId": "150930101"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ในที่สุดก็ได้หัวเราะเยาะฉันแล้ว?",
+								"NextMessageId": "150930102"
+							}
+						]
+					},
+					"choice12": {
+						"Id": "choice12",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "ทำไมจู่ๆ ก็ใจดี?",
+								"NextMessageId": "150930107"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15094": {
+		"Id": "15094",
+		"ContactId": "213",
+		"ParticpatingContactIds": [
+			"213"
+		],
+		"Sections": [
+			{
+				"Id": "1509401",
+				"StartingMessageId": "150940100",
+				"Messages": {
+					"150940100": {
+						"Id": "150940100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "ส่งแทน จากบาร์เทนเดอร์ Zhongshanshan",
+						"NextMessageId": "150940101"
+					},
+					"150940101": {
+						"Id": "150940101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "\"อรุณสวัสดิ์ เที่ยงวันสวัสดิ์ สายัณห์สวัสดิ์ ราตรีสวัสดิ์ เห็ดชะโงก เพื่อนเก่าของคุณ ขอทักทายคุณอีกครั้ง\"",
+						"NextMessageId": "150940102"
+					},
+					"150940102": {
+						"Id": "150940102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "\"การใช้ชีวิตใต้ชายคาผู้อื่น มันลำบากยากเข็ญอยู่แล้ว อย่างที่คุณรู้ว่าเวอร์ชันปัจจุบัน ไม่มีของรางวัลอะไรทั้งนั้น\"",
+						"NextMessageId": "150940103"
+					},
+					"150940103": {
+						"Id": "150940103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "\"แต่อย่าเพิ่งท้อใจ รางวัลชิ้นสุดท้ายถูกเตรียมเอาไว้นานแล้ว และสิ่งที่ฉันกลุ้มใจจริงๆ ในตอนนี้ คือทำยังไงให้มันยังมีความหมาย เหมือนเมื่อก่อนต่างหาก\"",
+						"NextMessageId": "150940104"
+					},
+					"150940104": {
+						"Id": "150940104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "\"ให้ฉันกลุ้มใจอยู่คนเดียวสักพักแล้วกัน และขอให้พวกเราได้พบกันอีกครั้งใน Planarcadia ที่ถูกกอบกู้แล้วนะ\"",
+						"NextMessageId": "150940105"
+					},
+					"150940105": {
+						"Id": "150940105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "...หัวร่มพูดไว้แบบนี้น่ะ",
+						"NextMessageId": "150940106"
+					},
+					"150940106": {
+						"Id": "150940106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "บางที เขาอาจจะเหมาะเป็นนักแสดงโศกก็ได้"
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15095": {
+		"Id": "15095",
+		"ContactId": "217",
+		"ParticpatingContactIds": [
+			"217"
+		],
+		"Sections": [
+			{
+				"Id": "1509501",
+				"StartingMessageId": "150950100",
+				"Messages": {
+					"150950100": {
+						"Id": "150950100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "217",
+						"Text": "ยินดีด้วย คุณได้รวบรวมภูตธุลีไร้ชื่อทั้งหมดที่โปรเจกต์ \"กระต่ายรางดาว\" วางไว้ใน \"สถาบันวิจัยชีวภาพ\" ครบแล้ว! ตอนนี้คุณสามารถผ่านด่านที่ \"กระต่ายรางดาว\" วางไว้ในพื้นที่นี้ได้ด้วยวิธีที่ง่ายที่สุดแล้ว ขอให้สนุกกับการเล่นเกม! (ข้อความนี้เป็นโฆษณา ที่ส่งโดยระบบอัตโนมัติ โปรดอย่าตอบกลับ~)"
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20001": {
 		"Id": "20001",
@@ -144377,6 +144690,914 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"20249": {
+		"Id": "20249",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2024900",
+				"StartingMessageId": "202490000",
+				"Messages": {
+					"202490000": {
+						"Id": "202490000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[สง่างาม]",
+						"NextMessageId": "202490001"
+					},
+					"202490001": {
+						"Id": "202490001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "มีตัวละครใหม่ ปรากฏตัวในตอนพิเศษของ \"ขบวนขนฟู\" ด้วยนะ",
+						"NextMessageId": "202490002"
+					},
+					"202490002": {
+						"Id": "202490002",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10064.png",
+						"NextMessageId": "choice3"
+					},
+					"202490003": {
+						"Id": "202490003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "มุกกี้ฟิชน่ารักมากเนอะ!",
+						"NextMessageId": "202490004"
+					},
+					"202490004": {
+						"Id": "202490004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "น่ารักมาก แถมยังดูมีชีวิตชีวามากด้วย",
+						"NextMessageId": "202490010"
+					},
+					"202490005": {
+						"Id": "202490005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ขอแสดงความยินดีกับคุณ Pearl ที่ได้รับร่างใหม่ \"มุกกี้ฟิช\"!",
+						"NextMessageId": "202490006"
+					},
+					"202490006": {
+						"Id": "202490006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ขอบคุณนะ มุกกี้ฟิชน่ารักมาก แถมยังดูมีชีวิตชีวามากด้วย",
+						"NextMessageId": "202490010"
+					},
+					"202490007": {
+						"Id": "202490007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "อุตส่าห์มาบอกฉันโดยเฉพาะเลย คุณดูอารมณ์ดีจังนะ!",
+						"NextMessageId": "202490008"
+					},
+					"202490008": {
+						"Id": "202490008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "มันชัดขนาดนั้นเลยเหรอ?",
+						"NextMessageId": "202490009"
+					},
+					"202490009": {
+						"Id": "202490009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ใช่แล้ว มุกกี้ฟิชน่ารักมาก แถมยังดูมีชีวิตชีวามากด้วย",
+						"NextMessageId": "202490010"
+					},
+					"202490010": {
+						"Id": "202490010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "เพื่อนคอเดียวกันในกลุ่ม \"ต้องบีดส์จึงจะชนะ\" บอกในแชตกลุ่มว่า พวกเขาก็ชอบมุกกี้ฟิชเหมือนกัน",
+						"NextMessageId": "202490011"
+					},
+					"202490011": {
+						"Id": "202490011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แถมยังมีเพื่อนเริ่มขอภาพทำเม็ดบีดส์ \"มุกกี้ฟิช\" กันในกลุ่มแล้วด้วย",
+						"NextMessageId": "choice16"
+					},
+					"202490012": {
+						"Id": "202490012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "เม็ดบีดส์! คุณก็ชอบเม็ดบีดส์ด้วยเหรอ?",
+						"NextMessageId": "202490013"
+					},
+					"202490013": {
+						"Id": "202490013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ช่วงก่อนหน้านี้ ตอนที่เม็ดบีดส์กำลังฮิตใน Planarcadia ฉันเองก็เคยทำอยู่สองสามครั้ง",
+						"NextMessageId": "202490016"
+					},
+					"202490014": {
+						"Id": "202490014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "คนคอเดียวกัน? ที่แท้คุณก็เป็นแฟนคลับเม็ดบีดส์นี่เอง!",
+						"NextMessageId": "202490015"
+					},
+					"202490015": {
+						"Id": "202490015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "อืม เป็นกลุ่มคนที่ชอบในงานฝีมือน่ะ",
+						"NextMessageId": "202490016"
+					},
+					"202490016": {
+						"Id": "202490016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "นอกจากเม็ดบีดส์แล้ว ในกลุ่มยังมีคนที่ชอบงานฝีมืออื่นๆ อีกนะ อย่างเช่น ตัวต่อพิกเซล ครอสติส เซรามิก ดินปั้น ภาพต่อโมเสก และอื่นๆ อีกมากมาย",
+						"NextMessageId": "202490017"
+					},
+					"202490017": {
+						"Id": "202490017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แต่กิจกรรมงานฝีมือแต่ละอย่าง ก็จะมีข้อกำหนดเรื่องเทมเพลตอ้างอิง ที่ต้องใช้แตกต่างกัน",
+						"NextMessageId": "202490018"
+					},
+					"202490018": {
+						"Id": "202490018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "เชื่อมั่นว่า: ถ้ารอต่อไปแบบนี้ จะช้าเกินไป",
+						"NextMessageId": "202490019"
+					},
+					"202490019": {
+						"Id": "202490019",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "อีกฝ่ายกำลังพิมพ์...",
+						"NextMessageId": "202490020"
+					},
+					"202490020": {
+						"Id": "202490020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "เรียบร้อย",
+						"NextMessageId": "202490021"
+					},
+					"202490021": {
+						"Id": "202490021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ฉันได้สร้าง #เครื่องมือสร้างเทมเพลตอัตโนมัติ ที่ตอบโจทย์ความต้องการงานฝีมือได้ 99.9% (ฟรีเทมเพลตเม็ดบีดส์มุกกี้ฟิช)# ขึ้นมาแบบง่ายๆ ก็เลยเอามาแชร์ให้คุณด้วย",
+						"NextMessageId": "choice34"
+					},
+					"202490022": {
+						"Id": "202490022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "รักอะไรขนาดนั้น! เพื่อให้มุกกี้ฟิชครองวงการงานฝีมือ ความเร็วของคุณได้แซงหน้าผู้ใช้กว่า 99.9% แล้ว",
+						"NextMessageId": "202490024"
+					},
+					"202490023": {
+						"Id": "202490023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "เพื่อให้มุกกี้ฟิชก้าวสู่ระดับสากล ความเร็วของคุณได้แซงหน้าผู้ใช้กว่า 99.9% แล้ว",
+						"NextMessageId": "202490024"
+					},
+					"202490024": {
+						"Id": "202490024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ถูกจับได้ซะแล้ว",
+						"NextMessageId": "202490025"
+					},
+					"202490025": {
+						"Id": "202490025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ถ้าคุณสนใจเหมือนกัน ขอแนะนำร้านงานฝีมือที่ฉันไปประจำ และมีการคอลแลบกันอยู่: เพียงแจ้งชื่อ \"มุกกี้ฟิช\" จะได้รับส่วนลดสำหรับลูกค้าใหม่",
+						"NextMessageId": "202490026"
+					},
+					"202490026": {
+						"Id": "202490026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ร้านงานฝีมือที่เป็นมิตรกับชาวอินโทรเวิร์ตแห่งนี้ ฉันสามารถอยู่ได้ทั้งวัน... APchyZZyzdHka เซฟรหัสเชิญมุกกี้ฟิช และรับส่วนลด 90% ที่หน้าร้าน...",
+						"NextMessageId": "202490027"
+					},
+					"202490027": {
+						"Id": "202490027",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[สง่างาม]"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "มุกกี้ฟิชน่ารักมากเลยเนอะ",
+								"NextMessageId": "202490003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ยินดีด้วยที่ได้รับร่างใหม่!",
+								"NextMessageId": "202490005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "คุณดูอารมณ์ดีจัง",
+								"NextMessageId": "202490007"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "เม็ดบีดส์!",
+								"NextMessageId": "202490012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "คนคอเดียวกัน?",
+								"NextMessageId": "202490014"
+							}
+						]
+					},
+					"choice34": {
+						"Id": "choice34",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "คุณรักมากเลยนะเนี่ย!",
+								"NextMessageId": "202490022"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ความเร็วระดับ Pearl!",
+								"NextMessageId": "202490023"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20250": {
+		"Id": "20250",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025000",
+				"StartingMessageId": "202500000",
+				"Messages": {
+					"202500000": {
+						"Id": "202500000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ที่อยู่: สตูดิโอส่วนตัวของ Pearl ชั้น 3 แผนกกลยุทธ์การลงทุน องค์กรสันติภาพแห่งดวงดาว Pier Point",
+						"NextMessageId": "202500001"
+					},
+					"202500001": {
+						"Id": "202500001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "{NICKNAME} ต่อจากนี้ถ้า Astral Express มีของชำรุด หรือของเหลือที่ตั้งใจจะทิ้ง ก็ส่งมาให้ฉันได้ ฉันจะนำไปรีไซเคิลเอง",
+						"NextMessageId": "choice2"
+					},
+					"202500002": {
+						"Id": "202500002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "นี่เป็นจ็อบเสริมของคุณเหรอ?",
+						"NextMessageId": "202500003"
+					},
+					"202500003": {
+						"Id": "202500003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "นิยามของอาชีพเสริม: อาชีพที่สองนอกจากอาชีพหลัก ที่ทำในเวลาว่างและสร้างรายได้",
+						"NextMessageId": "202500004"
+					},
+					"202500004": {
+						"Id": "202500004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แต่ถ้าว่ากันตามตรง \"โครงการรีไซเคิลขยะ\" ฉันเป็นผู้ออกค่าใช้จ่ายให้พวกคุณน่ะ",
+						"NextMessageId": "202500009"
+					},
+					"202500005": {
+						"Id": "202500005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ขยะ? ที่ไหนมีขยะบ้าง? แล้วเอาคนมารีไซเคิลได้มั้ย?",
+						"NextMessageId": "202500006"
+					},
+					"202500006": {
+						"Id": "202500006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ลัดวงจร]",
+						"NextMessageId": "202500007"
+					},
+					"202500007": {
+						"Id": "202500007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ถ้าว่ากันตามตรง สิ่งมีชีวิตอินทรีย์ก็สามารถ \"แปรรูป\" ได้เหมือนกัน เพียงแต่ค่ารีไซเคิล ไม่อยู่ในงบประมาณของฉัน",
+						"NextMessageId": "202500008"
+					},
+					"202500008": {
+						"Id": "202500008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แต่สำหรับของที่เหลือ ฉันมีงบประมาณในการรีไซเคิลเพียงพอ",
+						"NextMessageId": "202500009"
+					},
+					"202500009": {
+						"Id": "202500009",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "รีไซเคิลขยะ แล้วเอามาสะสมงั้นเหรอ?",
+						"NextMessageId": "202500010"
+					},
+					"202500010": {
+						"Id": "202500010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "เป็นขั้นตอนก่อนเก็บสะสมน่ะ สำหรับฉัน การซ่อมแซมสิ่งของในอดีต มันเหมือนกับ \"การเดินทางในหัวไปตามใจชอบ\" มากกว่า",
+						"NextMessageId": "202500011"
+					},
+					"202500011": {
+						"Id": "202500011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ในกระบวนการทำงานของ \"แผนการสร้างโลกใหม่\" ฉันเองก็เคยซ่อมแซมมรดกที่ไร้เจ้าของมามาก",
+						"NextMessageId": "202500012"
+					},
+					"202500012": {
+						"Id": "202500012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "พอฉันค่อยๆ ปะติดปะต่อลวดลายของพวกมันทีละนิด ข้อมูลของดวงดาวที่ไม่คุ้นเคย ก็จะพรั่งพรูเข้ามาในหัวฉัน... ทั้งกระดิ่งลม หาดน้ำตื้น ธารน้ำแข็ง และอารยธรรมกับทิวทัศน์อีกมากมาย ที่ยากจะพรรณนาได้",
+						"NextMessageId": "202500013"
+					},
+					"202500013": {
+						"Id": "202500013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แล้วหลังจากนั้น ฉันก็มักจะดำดิ่งอยู่กับการทำงานยาวๆ",
+						"NextMessageId": "choice19"
+					},
+					"202500014": {
+						"Id": "202500014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "อิจฉางานอดิเรกของคุณจัง...",
+						"NextMessageId": "202500015"
+					},
+					"202500015": {
+						"Id": "202500015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "นี่มันคืองานเหรอเนี่ย",
+						"NextMessageId": "202500020"
+					},
+					"202500016": {
+						"Id": "202500016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "จอมบ้างานอย่างพวกคุณ ฉันขอไฟว้แบบไม่หมกเม็ดเลย",
+						"NextMessageId": "202500017"
+					},
+					"202500017": {
+						"Id": "202500017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "\"เม็ด\" บีดส์เหรอ?",
+						"NextMessageId": "202500018"
+					},
+					"202500018": {
+						"Id": "202500018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ล้อเล่นน่ะ",
+						"NextMessageId": "202500020"
+					},
+					"202500019": {
+						"Id": "202500019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "เอาแต่ซ่อม ไม่สู้เดินทางไกลหรอกนะ พักงานก่อน! แล้วไปเที่ยวกันดีกว่า!",
+						"NextMessageId": "202500020"
+					},
+					"202500020": {
+						"Id": "202500020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "เรื่องนี้ ทำให้ฉันนึกถึงคำถามหนึ่งที่สื่อเคยถามฉัน: คุณรักษาสมดุลระหว่างการทำงาน และการใช้ชีวิตอย่างไร?",
+						"NextMessageId": "202500021"
+					},
+					"202500021": {
+						"Id": "202500021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "อย่างแรก ฉันแนะนำเขาไปว่า: ลองไปถาม Louis Fleming ดู อย่างที่สอง ฉันตอบเขาว่า: คุณรักษาสมดุลระหว่างการหายใจ กับการมีชีวิตอยู่ได้อย่างไร? แล้วเขาก็ไม่ถามต่ออีกเลย",
+						"NextMessageId": "202500022"
+					},
+					"202500022": {
+						"Id": "202500022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "นอกจากนี้: การซ่อมแซมของชำรุดที่ถูกทิ้งไว้บน Astral Express หรือที่เก็บมาได้ระหว่างทาง ก็ถือเป็นการเดินทางแห่งศิลปะเพื่อสัมผัสถึงการ \"บุกเบิก\" อย่างหนึ่งเช่นกัน",
+						"NextMessageId": "202500023"
+					},
+					"202500023": {
+						"Id": "202500023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "จริงสิ มีเกร็ดความรู้เรื่องหนึ่งที่ต้องรู้ไว้: ไข่มุกในทะเลก็ถือเป็นการ \"แปรรูปขยะ\" ชนิดหนึ่งเหมือนกัน",
+						"NextMessageId": "202500024"
+					},
+					"202500024": {
+						"Id": "202500024",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129002.png",
+						"Text": "[เติมหน้า]",
+						"NextMessageId": "202500025"
+					},
+					"202500025": {
+						"Id": "202500025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "การซื้อขายส่วนตัวนี้มีผลในระยะยาว จะตั้งตารอ \"ของดีจากการเดินทาง\" ที่ส่งมาจาก Astral Express นะ"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "นี่เป็นจ็อบเสริมของคุณเหรอ?",
+								"NextMessageId": "202500002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ขยะ ที่ไหนมีขยะบ้าง?",
+								"NextMessageId": "202500005"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "อิจฉางานอดิเรกของคุณจัง...",
+								"NextMessageId": "202500014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "จอมบ้างานอย่างพวกคุณ ฉันขอไฟว้แบบไม่หมกเม็ดเลย",
+								"NextMessageId": "202500016"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ปะ ลาพักร้อนแล้วนั่งรถเที่ยวกัน",
+								"NextMessageId": "202500019"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20251": {
+		"Id": "20251",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025100",
+				"StartingMessageId": "202510000",
+				"Messages": {
+					"202510000": {
+						"Id": "202510000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ลัดวงจร]",
+						"NextMessageId": "202510001"
+					},
+					"202510001": {
+						"Id": "202510001",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[ไม่เข้าใจสักนิด]",
+						"NextMessageId": "202510002"
+					},
+					"202510002": {
+						"Id": "202510002",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ลัดวงจร]",
+						"NextMessageId": "202510003"
+					},
+					"202510003": {
+						"Id": "202510003",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "อีกฝ่ายกำลังพิมพ์...",
+						"NextMessageId": "202510004"
+					},
+					"202510004": {
+						"Id": "202510004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "อีกฝ่ายกำลังพิมพ์...",
+						"NextMessageId": "202510005"
+					},
+					"202510005": {
+						"Id": "202510005",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "อีกฝ่ายกำลังพิมพ์...",
+						"NextMessageId": "choice6"
+					},
+					"202510006": {
+						"Id": "202510006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "มีอะไรเหรอ? อึกอักเหมือนมีอะไรจะพูดแบบนี้ ไม่ใช่สไตล์คุณเลยนะ",
+						"NextMessageId": "202510008"
+					},
+					"202510007": {
+						"Id": "202510007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "กำลังใช้ความคิดอย่างหนักอยู่เหรอ?",
+						"NextMessageId": "202510008"
+					},
+					"202510008": {
+						"Id": "202510008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ฉันได้รับภาพวาดมาภาพหนึ่ง",
+						"NextMessageId": "202510009"
+					},
+					"202510009": {
+						"Id": "202510009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "มันคือภาพวาด \"Pearl\" ที่ช่วงก่อนหน้านี้ ช่างวาดภาพริมถนนคนหนึ่งขอให้ฉันเป็นแบบ แล้ววาดขึ้นมาเดี๋ยวนั้นเลย",
+						"NextMessageId": "202510010"
+					},
+					"202510010": {
+						"Id": "202510010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "การเว้นพื้นที่ว่างของผลงานชิ้นนี้ ดูทรงพลังมาก...",
+						"NextMessageId": "202510011"
+					},
+					"202510011": {
+						"Id": "202510011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "เพราะใช้คัตเตอร์กรีดกระดาษ ให้เป็นรอยขาดโล่งๆ แค่นั้นเลย",
+						"NextMessageId": "202510012"
+					},
+					"202510012": {
+						"Id": "202510012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ครุ่นคิด: ความเชื่อมโยงระหว่างผลงานกับฉันคือ...",
+						"NextMessageId": "choice19"
+					},
+					"202510013": {
+						"Id": "202510013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ศิลปะก็ยังเข้าใจยากเกินไปอยู่ดี",
+						"NextMessageId": "202510014"
+					},
+					"202510014": {
+						"Id": "202510014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "รอยกรีดเหรอ... จริงๆ เอากล่องบางอย่างมาวางไว้ข้างใต้ ก็เหมาะมากเลยนะ... บางทีสิ่งที่เขาจะสื่อก็คือ...",
+						"NextMessageId": "202510015"
+					},
+					"202510015": {
+						"Id": "202510015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "\"Pearl เปิดกล่องสุ่มหน่อย?\"",
+						"NextMessageId": "202510019"
+					},
+					"202510016": {
+						"Id": "202510016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "ศิลปะก็ยังเข้าใจง่ายมากอยู่ดี",
+						"NextMessageId": "202510017"
+					},
+					"202510017": {
+						"Id": "202510017",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "รอยแยกฉีกทะลุมิติ เหมือนตอนเปิดกระเป๋าตังค์รึเปล่า?",
+						"NextMessageId": "202510018"
+					},
+					"202510018": {
+						"Id": "202510018",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "พอเอามือควานลงไปทีไร ก็มักจะหยิบอะไรติดมือขึ้นมาได้ทุกที...",
+						"NextMessageId": "202510019"
+					},
+					"202510019": {
+						"Id": "202510019",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[ไม่เข้าใจสักนิด]",
+						"NextMessageId": "202510020"
+					},
+					"202510020": {
+						"Id": "202510020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ข้อสันนิษฐาน: ที่แท้ก็เป็นพ่อค้ากล่องสุ่มเจ้าเล่ห์นี่เอง มิน่าล่ะ ถึงได้มาดักรอฉันไว้กลางทาง",
+						"NextMessageId": "202510021"
+					},
+					"202510021": {
+						"Id": "202510021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แต่การวิเคราะห์แยกแยะของคุณ ก็น่าสนใจดีนะ",
+						"NextMessageId": "202510022"
+					},
+					"202510022": {
+						"Id": "202510022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ศิลปะ: หมายถึงการรื้อโครงสร้างชีวิต",
+						"NextMessageId": "202510023"
+					},
+					"202510023": {
+						"Id": "202510023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "การวิเคราะห์ศิลปะ: ก็หมายถึง การรื้อโครงสร้างศิลปะเช่นกัน",
+						"NextMessageId": "202510024"
+					},
+					"202510024": {
+						"Id": "202510024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แต่: การรื้อโครงสร้างศิลปะ จะทำให้ได้คำตอบรึเปล่า?",
+						"NextMessageId": "202510025"
+					},
+					"202510025": {
+						"Id": "202510025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "บางทีอาจจะไม่ ดังนั้น: ต้องถอดแยกการรื้อโครงสร้างของศิลปะ",
+						"NextMessageId": "choice40"
+					},
+					"202510026": {
+						"Id": "202510026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "นี่ฉันไปกระตุ้นอะไรเข้าเนี่ย? หยุดคิดนะ หยุดคิดได้แล้ว!",
+						"NextMessageId": "202510028"
+					},
+					"202510027": {
+						"Id": "202510027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "แย่แล้วๆ เอาแล้วไง Pearl พังซะแล้ว",
+						"NextMessageId": "202510028"
+					},
+					"202510028": {
+						"Id": "202510028",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[สง่างาม]",
+						"NextMessageId": "202510029"
+					},
+					"202510029": {
+						"Id": "202510029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "ไม่ต้องห่วง พอดีได้รับแรงบันดาลใจจากคุณ ก็เลยลองคิดในเชิงนามธรรมดูน่ะ",
+						"NextMessageId": "202510030"
+					},
+					"202510030": {
+						"Id": "202510030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "แต่มันก็ทำให้ฉัน ได้เข้าใจผลงานชิ้นนั้นใหม่จริงๆ...",
+						"NextMessageId": "202510031"
+					},
+					"202510031": {
+						"Id": "202510031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "มันอาจจะกำลังพูดว่า:",
+						"NextMessageId": "202510032"
+					},
+					"202510032": {
+						"Id": "202510032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "\"เปิดเปลือกหอยสิ ฉันคือไข่มุกไงล่ะ\"",
+						"NextMessageId": "202510033"
+					},
+					"202510033": {
+						"Id": "202510033",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[ลัดวงจร]",
+						"NextMessageId": "202510034"
+					},
+					"202510034": {
+						"Id": "202510034",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "อีกฝ่ายออฟไลน์แล้ว"
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "มีอะไรเหรอ?",
+								"NextMessageId": "202510006"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "กำลังใช้ความคิดอย่างหนัก...",
+								"NextMessageId": "202510007"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "ศิลปะก็ยังเข้าใจยากเกินไปอยู่ดี",
+								"NextMessageId": "202510013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "ศิลปะก็ยังเข้าใจง่ายมากอยู่ดี",
+								"NextMessageId": "202510016"
+							}
+						]
+					},
+					"choice40": {
+						"Id": "choice40",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "นี่ฉันไปกระตุ้นอะไรเข้าเนี่ย?",
+								"NextMessageId": "202510026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "แย่แล้วๆ Pearl พังแล้ว",
+								"NextMessageId": "202510027"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20998": {
 		"Id": "20998",

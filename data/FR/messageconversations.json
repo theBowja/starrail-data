@@ -71763,6 +71763,94 @@
 		],
 		"VersionAdded": "4.5"
 	},
+	"15080": {
+		"Id": "15080",
+		"ContactId": "1504",
+		"ParticpatingContactIds": [
+			"1504",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1508001",
+				"StartingMessageId": "150800100",
+				"Messages": {
+					"150800100": {
+						"Id": "150800100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "{NICKNAME}, on a un gros problème",
+						"NextMessageId": "150800101"
+					},
+					"150800101": {
+						"Id": "150800101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "La chaîne de transport d'essence de Léviathan à l'Institut des Sciences de la vie est hors de contrôle",
+						"NextMessageId": "150800102"
+					},
+					"150800102": {
+						"Id": "150800102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "Comment ça se passe de ton côté ?",
+						"NextMessageId": "choice3"
+					},
+					"150800103": {
+						"Id": "150800103",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yabuli semble être en difficulté",
+						"NextMessageId": "150800105"
+					},
+					"150800104": {
+						"Id": "150800104",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Yabuli semble être en difficulté",
+						"NextMessageId": "150800105"
+					},
+					"150800105": {
+						"Id": "150800105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "... Il y a des intrus. Yabuli a de gros ennuis",
+						"NextMessageId": "150800106"
+					},
+					"150800106": {
+						"Id": "150800106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1504",
+						"Text": "Fais attention à toi. On arrive avec Kuchiba"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Tous les Omnitrons ont planté.",
+								"NextMessageId": "150800103"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Yabuli ne répond plus.",
+								"NextMessageId": "150800104"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
 	"15081": {
 		"Id": "15081",
 		"ContactId": "213",
@@ -72347,6 +72435,231 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"15093": {
+		"Id": "15093",
+		"ContactId": "239",
+		"ParticpatingContactIds": [
+			"239",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "1509301",
+				"StartingMessageId": "150930100",
+				"Messages": {
+					"150930100": {
+						"Id": "150930100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Hé, j'ai entendu dire que tu venais de te prendre la plus grosse humiliation de ta vie ? Alors, ça fait quel effet d'être enfin à ma place pour une fois ?",
+						"NextMessageId": "choice1"
+					},
+					"150930101": {
+						"Id": "150930101",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Comment tu fais pour être au courant aussi vite ? Ça s'est passé il y a même pas une minute !",
+						"NextMessageId": "150930103"
+					},
+					"150930102": {
+						"Id": "150930102",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "T'es content ? Tu peux enfin rire de moi !",
+						"NextMessageId": "150930103"
+					},
+					"150930103": {
+						"Id": "150930103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "J'ai quelques larbins fantômes au Centre d'emploi post-mortem, tu sais. Ils se planquaient dans le coin et filmaient tout en direct depuis le début",
+						"NextMessageId": "150930104"
+					},
+					"150930104": {
+						"Id": "150930104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Mais bon, je suis pas venu juste pour remuer le couteau dans la plaie. En fait, j'ai un moyen de t'aider",
+						"NextMessageId": "150930105"
+					},
+					"150930105": {
+						"Id": "150930105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "On parlera des détails en personne. Je suis dans le coin, viens me voir",
+						"NextMessageId": "150930106"
+					},
+					"150930106": {
+						"Id": "150930106",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Skott a commencé un partage de position.",
+						"NextMessageId": "choice12"
+					},
+					"150930107": {
+						"Id": "150930107",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "M'aider ? Qu'est-ce qui te rend si aimable tout à coup ?",
+						"NextMessageId": "150930108"
+					},
+					"150930108": {
+						"Id": "150930108",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Toujours aussi méfiant{F#e}, à ce que je vois",
+						"NextMessageId": "150930109"
+					},
+					"150930109": {
+						"Id": "150930109",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Viens juste discuter, d'accord ? C'est pas comme si je pouvais te battre, donc pourquoi avoir peur ?",
+						"NextMessageId": "150930110"
+					},
+					"150930110": {
+						"Id": "150930110",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "239",
+						"Text": "Dépêche-toi, je suis occupé"
+					},
+					"choice1": {
+						"Id": "choice1",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "T'es si bien informé que ça ?",
+								"NextMessageId": "150930101"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "T'allais pas rater l'occasion de te moquer, hein ?",
+								"NextMessageId": "150930102"
+							}
+						]
+					},
+					"choice12": {
+						"Id": "choice12",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Qu'est-ce qui te rend si aimable ?",
+								"NextMessageId": "150930107"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15094": {
+		"Id": "15094",
+		"ContactId": "213",
+		"ParticpatingContactIds": [
+			"213"
+		],
+		"Sections": [
+			{
+				"Id": "1509401",
+				"StartingMessageId": "150940100",
+				"Messages": {
+					"150940100": {
+						"Id": "150940100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "Publié par Zhongshanshan, mixologue de service",
+						"NextMessageId": "150940101"
+					},
+					"150940101": {
+						"Id": "150940101",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "« Bonjour, bonsoir et bonne nuit. Votre vieux pote Grove est de retour pour vous saluer. »",
+						"NextMessageId": "150940102"
+					},
+					"150940102": {
+						"Id": "150940102",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "« La vie sous le toit d'autrui n'est jamais facile, et comme vous pouvez le constater dans la version actuelle : aucune récompense. »",
+						"NextMessageId": "150940103"
+					},
+					"150940103": {
+						"Id": "150940103",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "« Mais je vous en prie, ne perdez pas espoir. La récompense finale est prête depuis longtemps. Ce qui me préoccupe vraiment, c'est de lui redonner le sens qu'elle avait autrefois. »",
+						"NextMessageId": "150940104"
+					},
+					"150940104": {
+						"Id": "150940104",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "« Laissez-moi ruminer mes inquiétudes un moment. Puissions-nous nous retrouver à Planarcadia, rachetés et entiers. »",
+						"NextMessageId": "150940105"
+					},
+					"150940105": {
+						"Id": "150940105",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "... C'est du moins ce que dit ce type à la tête de parapluie.",
+						"NextMessageId": "150940106"
+					},
+					"150940106": {
+						"Id": "150940106",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "213",
+						"Text": "Il pourrait vraiment faire un bon Acteur en deuil."
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"15095": {
+		"Id": "15095",
+		"ContactId": "217",
+		"ParticpatingContactIds": [
+			"217"
+		],
+		"Sections": [
+			{
+				"Id": "1509501",
+				"StartingMessageId": "150950100",
+				"Messages": {
+					"150950100": {
+						"Id": "150950100",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "217",
+						"Text": "Félicitations ! Vous avez collecté tous les Ætherae sans noms placés par le projet Lapin stellaire dans l'Institut des Sciences de la vie ! Vous pouvez désormais terminer en toute facilité les niveaux de Lapin stellaire dans cette zone. Amusez-vous bien ! (Ceci est un message automatique. Veuillez ne pas y répondre.)"
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20001": {
 		"Id": "20001",
@@ -144377,6 +144690,914 @@
 			}
 		],
 		"VersionAdded": "4.5"
+	},
+	"20249": {
+		"Id": "20249",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2024900",
+				"StartingMessageId": "202490000",
+				"Messages": {
+					"202490000": {
+						"Id": "202490000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[Élégant]",
+						"NextMessageId": "202490001"
+					},
+					"202490001": {
+						"Id": "202490001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Le spin-off spécial de <i>Toudoux</i> accueille un nouveau personnage dans son casting",
+						"NextMessageId": "202490002"
+					},
+					"202490002": {
+						"Id": "202490002",
+						"MessageType": "Image",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/PhoneMessagePic/PhoneMessagePic_10064.png",
+						"NextMessageId": "choice3"
+					},
+					"202490003": {
+						"Id": "202490003",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Poissiperle est mignonne comme tout !",
+						"NextMessageId": "202490004"
+					},
+					"202490004": {
+						"Id": "202490004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Mignonne et fidèle à l'originale",
+						"NextMessageId": "202490010"
+					},
+					"202490005": {
+						"Id": "202490005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Félicitations à vous pour avoir débloqué la nouvelle forme de Poissiperle !",
+						"NextMessageId": "202490006"
+					},
+					"202490006": {
+						"Id": "202490006",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Merci. Poissiperle est vraiment mignonne, et elle est fidèle à l'original",
+						"NextMessageId": "202490010"
+					},
+					"202490007": {
+						"Id": "202490007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Vous devez être super contente si vous me contactez juste pour me dire ça !",
+						"NextMessageId": "202490008"
+					},
+					"202490008": {
+						"Id": "202490008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Ça se voit tant que ça ?",
+						"NextMessageId": "202490009"
+					},
+					"202490009": {
+						"Id": "202490009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Je ne peux pas dire le contraire. Poissiperle est vraiment mignonne, et elle est fidèle à l'original",
+						"NextMessageId": "202490010"
+					},
+					"202490010": {
+						"Id": "202490010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Les gens du groupe « La réussite appartient à ceux qui assemblent les pièces » ont aussi dit qu'ils aimaient beaucoup Poissiperle",
+						"NextMessageId": "202490011"
+					},
+					"202490011": {
+						"Id": "202490011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Certains membres demandent même déjà des schémas de perles à repasser de Poissiperle",
+						"NextMessageId": "choice16"
+					},
+					"202490012": {
+						"Id": "202490012",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Des perles à repasser ! Vous êtes fan de perles à repasser, vous aussi ?",
+						"NextMessageId": "202490013"
+					},
+					"202490013": {
+						"Id": "202490013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Il y a quelque temps, quand les perles à repasser étaient très à la mode à Planarcadia, j'ai essayé à quelques reprises",
+						"NextMessageId": "202490016"
+					},
+					"202490014": {
+						"Id": "202490014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Attendez, eux aussi sont fans de perles à repasser ?",
+						"NextMessageId": "202490015"
+					},
+					"202490015": {
+						"Id": "202490015",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Oui, on est tous passionnés d'artisanat, mais chacun à sa façon",
+						"NextMessageId": "202490016"
+					},
+					"202490016": {
+						"Id": "202490016",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "En dehors des perles à repasser, le groupe compte aussi d'autres amateurs de loisirs créatifs. Briques de construction pixelisées, broderie au point de croix, poterie, modelage en argile, art en mosaïque... il y en a pour tous les goûts",
+						"NextMessageId": "202490017"
+					},
+					"202490017": {
+						"Id": "202490017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Mais chaque activité nécessite des critères et des formats différents pour les modèles de référence",
+						"NextMessageId": "202490018"
+					},
+					"202490018": {
+						"Id": "202490018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Conviction : attendre comme ça, c'est bien trop lent.",
+						"NextMessageId": "202490019"
+					},
+					"202490019": {
+						"Id": "202490019",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Votre amie est en train d'écrire...",
+						"NextMessageId": "202490020"
+					},
+					"202490020": {
+						"Id": "202490020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Et voilà",
+						"NextMessageId": "202490021"
+					},
+					"202490021": {
+						"Id": "202490021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "J'ai concocté un #générateur automatique de plans qui répond à 99,9 % de tous les besoins en fabrication (y compris le modèle de perles à repasser Poissiperle)#. Je vais le partager avec toi pendant que j'y suis",
+						"NextMessageId": "choice34"
+					},
+					"202490022": {
+						"Id": "202490022",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Vous êtes à fond ! Vous avez déjà devancé 99,9 % des joueurs dans votre course pour présenter Poissiperle au monde !",
+						"NextMessageId": "202490024"
+					},
+					"202490023": {
+						"Id": "202490023",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Vous avez déjà devancé 99,9 % des joueurs dans votre course pour présenter Poissiperle au monde",
+						"NextMessageId": "202490024"
+					},
+					"202490024": {
+						"Id": "202490024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Tu m'as eue",
+						"NextMessageId": "202490025"
+					},
+					"202490025": {
+						"Id": "202490025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Si ça t'intéresse, je peux te recommander une boutique d'artisanat où je vais souvent. Ils ont un partenariat : il suffit de leur dire le mot « Poissiperle » pour obtenir une réduction à la première visite",
+						"NextMessageId": "202490026"
+					},
+					"202490026": {
+						"Id": "202490026",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Le paradis des introvertis sous forme de boutique artisanale. Je pourrais y rester pour toujours... Enregistre le code d'invitation de Poissiperle APchyZZyzdHka et profite de 90 % de réduction lors de ta visite...",
+						"NextMessageId": "202490027"
+					},
+					"202490027": {
+						"Id": "202490027",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[Élégant]"
+					},
+					"choice3": {
+						"Id": "choice3",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Poissiperle est trop mignonne !",
+								"NextMessageId": "202490003"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Félicitations pour cette nouvelle forme !",
+								"NextMessageId": "202490005"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Vous devez être super contente !",
+								"NextMessageId": "202490007"
+							}
+						]
+					},
+					"choice16": {
+						"Id": "choice16",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Des perles à repasser !",
+								"NextMessageId": "202490012"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Un groupe ?",
+								"NextMessageId": "202490014"
+							}
+						]
+					},
+					"choice34": {
+						"Id": "choice34",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Vous êtes à fond !",
+								"NextMessageId": "202490022"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Vous êtes super rapide, Perle !",
+								"NextMessageId": "202490023"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20250": {
+		"Id": "20250",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025000",
+				"StartingMessageId": "202500000",
+				"Messages": {
+					"202500000": {
+						"Id": "202500000",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Adresse : Studio personnel de Perle, 3e étage du Département des investissements stratégiques, Corporation pour la Paix Interastrale, Embarcadère.",
+						"NextMessageId": "202500001"
+					},
+					"202500001": {
+						"Id": "202500001",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "{NICKNAME}, si l'Astral Express a un jour des objets endommagés ou mis au rebut dont tu souhaites te débarrasser, n'hésite pas à me les envoyer. Je m'occuperai de les recycler",
+						"NextMessageId": "choice2"
+					},
+					"202500002": {
+						"Id": "202500002",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Donc, c'est votre activité secondaire ?",
+						"NextMessageId": "202500003"
+					},
+					"202500003": {
+						"Id": "202500003",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Une activité secondaire, par définition, c'est un deuxième emploi qui génère des revenus, exercé en dehors de son emploi principal pendant son temps libre",
+						"NextMessageId": "202500004"
+					},
+					"202500004": {
+						"Id": "202500004",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Mais à proprement parler, c'est moi qui te paie pour « faire le tri des déchets »",
+						"NextMessageId": "202500009"
+					},
+					"202500005": {
+						"Id": "202500005",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Des déchets ? Où ça ? On peut faire le tri des gens, aussi ?",
+						"NextMessageId": "202500006"
+					},
+					"202500006": {
+						"Id": "202500006",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Court-circuit]",
+						"NextMessageId": "202500007"
+					},
+					"202500007": {
+						"Id": "202500007",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "À proprement parler, la matière organique peut elle aussi faire l'objet d'un recyclage. Seulement, le coût du traitement dépasse mes prévisions budgétaires",
+						"NextMessageId": "202500008"
+					},
+					"202500008": {
+						"Id": "202500008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Mais pour tout le reste, mon budget est amplement suffisant",
+						"NextMessageId": "202500009"
+					},
+					"202500009": {
+						"Id": "202500009",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Vous recyclez les déchets, et ensuite vous les conservez ?",
+						"NextMessageId": "202500010"
+					},
+					"202500010": {
+						"Id": "202500010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "C'est une étape préalable à la conservation. Pour moi, restaurer des objets du passé ressemble plutôt à un voyage intérieur improvisé",
+						"NextMessageId": "202500011"
+					},
+					"202500011": {
+						"Id": "202500011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Au fil de mes travaux sur l'Initiative de renaissance des mondes, j'ai restauré bon nombre de reliques abandonnées au fil des années",
+						"NextMessageId": "202500012"
+					},
+					"202500012": {
+						"Id": "202500012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Alors que j'en reconstitue peu à peu les motifs, les détails d'une planète inconnue déferlent dans mon esprit : des carillons éoliens, des hauts-fonds, des glaciers, ainsi que d'autres civilisations et paysages impossibles à décrire",
+						"NextMessageId": "202500013"
+					},
+					"202500013": {
+						"Id": "202500013",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Après ça, je me perds généralement dans le travail pendant un bon moment",
+						"NextMessageId": "choice19"
+					},
+					"202500014": {
+						"Id": "202500014",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Comme je vous envie d'avoir un tel passe-temps...",
+						"NextMessageId": "202500015"
+					},
+					"202500015": {
+						"Id": "202500015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "C'est votre boulot, en fait",
+						"NextMessageId": "202500020"
+					},
+					"202500016": {
+						"Id": "202500016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Vous aimez trop travailler. Je passe.",
+						"NextMessageId": "202500017"
+					},
+					"202500017": {
+						"Id": "202500017",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Tu passes voir Perle, et moi je repasse mes perles",
+						"NextMessageId": "202500018"
+					},
+					"202500018": {
+						"Id": "202500018",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "C'était une blague",
+						"NextMessageId": "202500020"
+					},
+					"202500019": {
+						"Id": "202500019",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Il y a d'autres choses dans la vie que le recyclage. Déconnectez un peu, allez voyager !",
+						"NextMessageId": "202500020"
+					},
+					"202500020": {
+						"Id": "202500020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Ça me rappelle une question que les médias m'ont posée un jour : « Comment parvenez-vous à équilibrer vie professionnelle et vie privée ? »",
+						"NextMessageId": "202500021"
+					},
+					"202500021": {
+						"Id": "202500021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "En premier lieu, je leur ai conseillé d'aller plutôt voir Louis Fleming. Puis je leur ai lancé : « Et vous, comment conciliez-vous le fait de respirer et le fait d'être en vie ? » Il n'a pas demandé son reste",
+						"NextMessageId": "202500022"
+					},
+					"202500022": {
+						"Id": "202500022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Et puis, restaurer des objets endommagés abandonnés par l'Astral Express ou récupérés sur la route est en soi un voyage artistique au cœur de l'esprit de l'expédition pionnière",
+						"NextMessageId": "202500023"
+					},
+					"202500023": {
+						"Id": "202500023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Au fait, une petite anecdote amusante : les perles dans l'océan sont aussi une forme de déchets recyclés",
+						"NextMessageId": "202500024"
+					},
+					"202500024": {
+						"Id": "202500024",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129002.png",
+						"Text": "[Retouche]",
+						"NextMessageId": "202500025"
+					},
+					"202500025": {
+						"Id": "202500025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Cet arrangement privé reste valable indéfiniment. J'ai hâte de découvrir les « merveilles de voyage » que m'enverra l'Astral Express"
+					},
+					"choice2": {
+						"Id": "choice2",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Donc, c'est votre activité secondaire ?",
+								"NextMessageId": "202500002"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Des déchets ? Où ça ?",
+								"NextMessageId": "202500005"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Comme je vous envie d'avoir un tel passe-temps...",
+								"NextMessageId": "202500014"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Vous aimez trop travailler. Je passe.",
+								"NextMessageId": "202500016"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Prenez des vacances et partez en voyage.",
+								"NextMessageId": "202500019"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
+	},
+	"20251": {
+		"Id": "20251",
+		"ContactId": "1503",
+		"ParticpatingContactIds": [
+			"1503",
+			"8001"
+		],
+		"Sections": [
+			{
+				"Id": "2025100",
+				"StartingMessageId": "202510000",
+				"Messages": {
+					"202510000": {
+						"Id": "202510000",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Court-circuit]",
+						"NextMessageId": "202510001"
+					},
+					"202510001": {
+						"Id": "202510001",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[Incompréhensible]",
+						"NextMessageId": "202510002"
+					},
+					"202510002": {
+						"Id": "202510002",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Court-circuit]",
+						"NextMessageId": "202510003"
+					},
+					"202510003": {
+						"Id": "202510003",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Votre amie est en train d'écrire...",
+						"NextMessageId": "202510004"
+					},
+					"202510004": {
+						"Id": "202510004",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Votre amie est en train d'écrire...",
+						"NextMessageId": "202510005"
+					},
+					"202510005": {
+						"Id": "202510005",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Votre amie est en train d'écrire...",
+						"NextMessageId": "choice6"
+					},
+					"202510006": {
+						"Id": "202510006",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Alors ? Ça ne vous ressemble pas d'hésiter",
+						"NextMessageId": "202510008"
+					},
+					"202510007": {
+						"Id": "202510007",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Vous êtes en pleine réflexion ?",
+						"NextMessageId": "202510008"
+					},
+					"202510008": {
+						"Id": "202510008",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "J'ai reçu un tableau",
+						"NextMessageId": "202510009"
+					},
+					"202510009": {
+						"Id": "202510009",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Il y a quelque temps, un portraitiste de rue m'a demandé de poser pour lui et a réalisé une œuvre intitulée « Perle »",
+						"NextMessageId": "202510010"
+					},
+					"202510010": {
+						"Id": "202510010",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "L'usage des espaces vides dans cette œuvre est empreint d'une incroyable tension...",
+						"NextMessageId": "202510011"
+					},
+					"202510011": {
+						"Id": "202510011",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Tout simplement parce que l'artiste s'est contenté d'inciser la toile d'un coup de lame",
+						"NextMessageId": "202510012"
+					},
+					"202510012": {
+						"Id": "202510012",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Réflexion : le lien entre cette œuvre et moi serait...",
+						"NextMessageId": "choice19"
+					},
+					"202510013": {
+						"Id": "202510013",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "L'art, c'est vraiment trop difficile à comprendre",
+						"NextMessageId": "202510014"
+					},
+					"202510014": {
+						"Id": "202510014",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Une seule entaille... remarquez, ce serait idéal pour y placer une boîte de mouchoirs. Il a peut-être voulu faire passer un message...",
+						"NextMessageId": "202510015"
+					},
+					"202510015": {
+						"Id": "202510015",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Du genre : « Perle, vous pouvez m'en tirer un ? »",
+						"NextMessageId": "202510019"
+					},
+					"202510016": {
+						"Id": "202510016",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "L'art, c'est vraiment trop facile à comprendre, en fait",
+						"NextMessageId": "202510017"
+					},
+					"202510017": {
+						"Id": "202510017",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Une entaille qui déchire l'espace... ça ne ressemblerait pas un peu à un portefeuille ouvert ?",
+						"NextMessageId": "202510018"
+					},
+					"202510018": {
+						"Id": "202510018",
+						"MessageType": "Text",
+						"SenderType": "PlayerAuto",
+						"SenderContactId": "8001",
+						"Text": "Il suffit d'y plonger la main pour toujours en tirer quelque chose...",
+						"NextMessageId": "202510019"
+					},
+					"202510019": {
+						"Id": "202510019",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129001.png",
+						"Text": "[Incompréhensible]",
+						"NextMessageId": "202510020"
+					},
+					"202510020": {
+						"Id": "202510020",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Hypothèse : c'était donc un marchand de boîtes mystères déguisé en peintre. Pas étonnant qu'il m'ait arrêtée en pleine rue",
+						"NextMessageId": "202510021"
+					},
+					"202510021": {
+						"Id": "202510021",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Mais ton interprétation est intéressante",
+						"NextMessageId": "202510022"
+					},
+					"202510022": {
+						"Id": "202510022",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Art : la déconstruction de la vie",
+						"NextMessageId": "202510023"
+					},
+					"202510023": {
+						"Id": "202510023",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Interpréter l'art : désigne également la déconstruction de l'art",
+						"NextMessageId": "202510024"
+					},
+					"202510024": {
+						"Id": "202510024",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Objection : déconstruire l'art donne-t-il des réponses ?",
+						"NextMessageId": "202510025"
+					},
+					"202510025": {
+						"Id": "202510025",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Peut-être pas. Verdict : il faut déconstruire la déconstruction de l'art",
+						"NextMessageId": "choice40"
+					},
+					"202510026": {
+						"Id": "202510026",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Qu'est-ce que je viens de déclencher ? Dites à votre cerveau de s'arrêter !",
+						"NextMessageId": "202510028"
+					},
+					"202510027": {
+						"Id": "202510027",
+						"MessageType": "Text",
+						"SenderType": "Player",
+						"SenderContactId": "8001",
+						"Text": "Oh non. Qu'est-ce que j'ai fait, vous avez buggé",
+						"NextMessageId": "202510028"
+					},
+					"202510028": {
+						"Id": "202510028",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129003.png",
+						"Text": "[Élégant]",
+						"NextMessageId": "202510029"
+					},
+					"202510029": {
+						"Id": "202510029",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Ne t'inquiète pas. Tu m'as simplement inspirée, et je me suis laissé emporter dans une petite digression abstraite",
+						"NextMessageId": "202510030"
+					},
+					"202510030": {
+						"Id": "202510030",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Mais j'ai bel et bien une toute nouvelle compréhension de cette œuvre, désormais...",
+						"NextMessageId": "202510031"
+					},
+					"202510031": {
+						"Id": "202510031",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "Peut-être qu'elle veut dire la chose suivante :",
+						"NextMessageId": "202510032"
+					},
+					"202510032": {
+						"Id": "202510032",
+						"MessageType": "Text",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Text": "« Ouvre-toi, coquillage, je suis ta perle. »",
+						"NextMessageId": "202510033"
+					},
+					"202510033": {
+						"Id": "202510033",
+						"MessageType": "Sticker",
+						"SenderType": "NPC",
+						"SenderContactId": "1503",
+						"Image": "SpriteOutput/Emoji/129004.png",
+						"Text": "[Court-circuit]",
+						"NextMessageId": "202510034"
+					},
+					"202510034": {
+						"Id": "202510034",
+						"MessageType": "Text",
+						"SenderType": "System",
+						"SenderContactId": "8001",
+						"Text": "Votre amie est hors ligne"
+					},
+					"choice6": {
+						"Id": "choice6",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Un problème ?",
+								"NextMessageId": "202510006"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "En pleine réflexion ?",
+								"NextMessageId": "202510007"
+							}
+						]
+					},
+					"choice19": {
+						"Id": "choice19",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "L'art, c'est vraiment trop difficile à comprendre.",
+								"NextMessageId": "202510013"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "L'art, c'est vraiment trop facile à comprendre, en fait.",
+								"NextMessageId": "202510016"
+							}
+						]
+					},
+					"choice40": {
+						"Id": "choice40",
+						"MessageType": "Choice",
+						"Choices": [
+							{
+								"ChoiceType": "Text",
+								"Text": "Qu'est-ce que je viens de déclencher ?",
+								"NextMessageId": "202510026"
+							},
+							{
+								"ChoiceType": "Text",
+								"Text": "Ah, vous avez buggé.",
+								"NextMessageId": "202510027"
+							}
+						]
+					}
+				}
+			}
+		],
+		"VersionAdded": "4.6"
 	},
 	"20998": {
 		"Id": "20998",
